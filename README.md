@@ -34,7 +34,7 @@ The tool is designed for real-world use: search for a phrase you've encountered 
 
 Download `index.html` and open it in any web browser. That's it.
 
-Or visit the hosted version: [](https://alisendjsc-crypto.github.io/efilist-argument-library/)]
+Or visit the hosted version: https://alisendjsc-crypto.github.io/efilist-argument-library/
 
 ## Philosophical Sources
 
