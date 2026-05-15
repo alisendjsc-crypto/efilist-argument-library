@@ -1,127 +1,80 @@
-# Argument Library
+# efilist argument library
 
-**An interactive objection-map and next-move predictor for antinatalist / efilist / negative-utilitarian debate.**
+A structured taxonomy of objections to antinatalism. 78 objections across 5 tiers, attached to 34 psychological mechanisms, with 136 attested real-world deployments mapped to four interlocutor archetypes — sophisticate, defender, drifter, blended.
 
-Version 3.6.1 — April 2026
-
----
-
-## What this is
-
-A single-file web application (`index.html`, ~1.2 MB, no build step, no dependencies beyond CDN D3) that catalogues the objections real interlocutors raise against antinatalist arguments and predicts, given the objection you are *currently* facing, which objection is most likely to come next.
-
-It is not a persuasion tool. It is a terrain map. You still have to walk the terrain.
-
-The tool exists because most antinatalist debate — online and off — cycles through a small set of predictable moves and never reaches the parts of the position where the argument is actually load-bearing. Knowing which move is coming lets you either short-circuit the loop or decide, honestly, that the conversation is not going to go anywhere worth going.
+This is taxonomic work, not advocacy. The objections are catalogued as live moves in real discourse, not strawmen and not specimens. The descriptive content stands as observation regardless of whether you share the suffering-priority axiom; the closing **coda** makes that axiom visible as a stake rather than a derivation. Read both.
 
 ---
 
-## What's new in 3.6.1
+## Status
 
-- **HIGH CONTRAST and LEGIBILITY rendering fixed in Argument Flow (Map 1).** Previous builds flipped the outer shell to a cream palette when HIGH CONTRAST was enabled but left the inner Map 1 panels dark, producing an unreadable hybrid. D3 node strokes also rendered invisibly against the flipped background. Both are now covered by explicit `body.high-contrast .m1-*` and `body.legible .m1-*` override rules (≈85 lines of CSS).
-- **Version strings bumped** across title, header, and in-UI methodology references.
-- **Audit-v1 state embedded.** The `MAP1_TRANSITIONS` dataset reflects the manual pass completed in the v3.5 audit: four canonical overrides dropped (virtue-ethics, phenomenological-existentialism, performative-contradiction, buddhist-objection), one demoted (contractualism-scanlon → harman), ten retained. See `map1_override_audit_v1.md` for full justifications.
+**Archived stable** at canon v26.x. v3.7 is the stable release; no scheduled successor; no forcing function for v3.8. Future maintenance is operator-elective and topic-scoped. The substrate is md5-locked.
 
----
-
-## Architecture
-
-**74 objection nodes** across five tiers:
-
-- **T1 — Emotional / Reflexive.** First-contact objections. "That's depressing." "You're just unhappy." "Have you tried therapy?"
-- **T2 — Folk Philosophical.** The sophomore layer. Appeals to nature, consent handwaves, "but think of the people who enjoy life," the asymmetry denied without engaging Benatar.
-- **T3 — Structural / Pragmatic.** "If it's so bad why don't you kill yourself," extinction-as-catastrophe framings, the is-ought slide, population-ethics gestures without the math.
-- **T4 — Genuine Philosophical.** Where the argument actually lives. Non-identity, Boonin's critique of the asymmetry, Bradley on comparativism, Harman on counterfactuals, the negative-utilitarian aggregation problem, incommensurability.
-- **T5 — Meta-Objection.** "You're just an edgelord." "This is performative." Moves that refuse the object-level.
-
-**13 premise nodes** with **222 dependency edges** feeding a separate dependency-graph view.
-
-**~869 blended edges** in the Argument Flow map, distributed across three interlocutor modes:
-
-- **Sophisticate** (~347 edges) — the philosophy-literate opponent who moves from T2→T4 quickly.
-- **Defender** (~262 edges) — emotionally invested in natalism, cycles T1/T2/T5.
-- **Drifter** (~370 edges) — drifts across tiers without commitment, often lands in T3.
-
-Convergence ratings on transitions: **★★★ ~0.3%** (near-certain next move), **★★ ~12%** (likely), **★ ~87.7%** (plausible). The asymmetry is honest about what we can and can't predict.
-
-**Ten retained canonical overrides** (high-signal transitions that the premise-matcher alone would miss or misweight):
-
-1. `benatar-asymmetry-attack → boonin-critique` (HIGH)
-2. `consent-incoherent → non-identity-problem` (HIGH)
-3. `bradley → incommensurability` (MEDIUM)
-4. `non-identity → harman` (MEDIUM)
-5. `population-ethics → negative-util-aggregation` (HIGH)
-6. `meta-ethical-pluralism → moral-particularism` (MEDIUM)
-7. `flow-states → hedonic-contrast` (MEDIUM)
-8. `neuroscience-positive-states → flow-states` (MEDIUM)
-9. `harman → population-ethics` (HIGH)
-10. `boonin → bradley` (MEDIUM)
-
-Borderline MEDIUMs flagged for future review: `bradley→incommensurability`, `flow-states→hedonic-contrast`.
+If you find an objection missing or a mechanism mis-attached, that's a topic for a future micro-session, not a patch to this release.
 
 ---
 
-## Views
+## What's here
 
-Five tabs across the top:
+```
+corpus/                              authoritative corpus + JSX sibling
+viewer/                              single-file HTML viewer (no build step)
+coda/                                closing artifact — on the axiom this library does not derive
+schema/                              real-world-examples schema (v1.6)
+validator/                           v3'-strict + v1.6 attestation validator
+process/                             archive-state canon + closeout session record
+release_manifest_v3_7_stable.json    md5/sha256 attestation
+CHANGELOG.md                         release notes
+LICENSE                              CC-BY-4.0 (content)
+LICENSE-CODE                         MIT (validator)
+instructions.md                      usage guide — viewer, archetypes, programmatic use, integrity
+.gitattributes                       LF preservation across cross-platform pushes
+```
 
-- **LIBRARY** — browse all 74 objections by tier, with steelman, response, and references.
-- **MECHANISM WEB** — force-directed graph showing how objection classes cluster and share mechanisms.
-- **DEPENDENCY GRAPH** — the 13 premises and their 222 dependency edges. Where the argument rests.
-- **ARGUMENT FLOW (Map 1)** — the predictor. Pick the objection you're facing, get ranked next-move candidates by mode.
-- **METHODOLOGY** — how the transitions were generated, scored, and audited.
-
----
-
-## Legibility modes
-
-Toggle via the controls bar:
-
-- **STANDARD** — default dark theme.
-- **LEGIBILITY** — Georgia serif, 16px base, 1.8 line-height. For extended reading.
-- **HIGH CONTRAST** — cream/beige palette, dark text, high-visibility borders. For low-vision use and for print-like reading.
-- **LEGIBILITY + HIGH CONTRAST** — stack both.
-
-All four modes now render correctly across all five views, including Map 1.
+Filenames preserve their session-of-origin suffixes (`_v3_7_post_*`, `_v1_6`, etc.). The rename window opens at v3.8, not v3.7 — the suffixes are part of the audit trail.
 
 ---
 
-## How to use
+## Reading
 
-Open `index.html` in any modern browser. No server, no build, no install. The file is self-contained except for two CDN imports (D3 v7 and a web font); it degrades gracefully offline if those fail.
+The viewer at `viewer/index_v3_7_post_b3f2_surface_parity_html.html` is a single-file SPA. Open it directly — no build step, no server, works offline. From there, the coda is reachable via the in-app link or at `coda/coda_v3_7.html`.
 
-For debate preparation, the intended workflow is:
+The structured form lives in `corpus/efilist_argument_library_v3_7_post_cluster_insertion_inmendham.json`. The schema describing the real-world-examples table is in `schema/`. The validator at `validator/v3prime_validator_v1_6.py` exercises v3'-strict + v1.6 attestation rules and passes self-test at 13/13.
 
-1. Start in **LIBRARY**. Read the tier your interlocutor tends to operate in.
-2. When you hit a specific objection in-conversation, switch to **ARGUMENT FLOW**, select the source objection, pick the mode that matches your interlocutor's style, and read the top three predicted next moves.
-3. Have your responses to those ready *before* you make your next statement. Most debates are lost in the gap between being right and being prepared.
+The dependency graph (91 nodes, 245 links: 161 strong / 84 weak) anchors each objection to 13 premises — 9 foundational, 4 diagnostic. The objection space across the four archetypes is rendered as a force-directed map embedded in the viewer.
 
----
-
-## Methodology and honest limits
-
-The transition weights were generated by a premise-matcher (shared-premise overlap between objection nodes, weighted by tier distance and mode) and then manually audited against the canonical literature. The audit dropped overrides that reflected the author's philosophical preferences rather than actual observed interlocutor behavior. It retained overrides where the premise-matcher demonstrably misses a high-frequency move (e.g. sophisticates jumping from Benatar's asymmetry attack straight to Boonin's critique rather than to the weaker folk rebuttals the matcher ranks higher).
-
-**This tool does not argue the antinatalist case.** It maps the objection landscape. The `steelman` field on each objection is written to be genuinely strong — if it reads as weak, the author considers that a bug.
-
-**The 87.7% single-star convergence figure is load-bearing.** Most moves in most debates are plausible rather than predictable. The tool's value is in the 12% of two-star transitions and the handful of three-stars, not in a false claim of total predictability.
+For a longer guide — archetype semantics, suggested reading order, programmatic use, integrity verification — see [`instructions.md`](instructions.md).
 
 ---
 
-## Files in this repository
+## Cite
 
-- `index.html` — the application (v3.6.1, 3742 lines).
-- `map1_transitions.json` — raw transition data, post-audit-v1.
-- `map1_methodology_v1_1_locked.md` — scoring rubric and generation methodology.
-- `map1_override_audit_v1.md` — audit trail for the ten retained and five removed/demoted canonical overrides.
-- `map1_generation_log.md` — chronological log of dataset generation.
-- `project_handout_visual_maps_v8.md` — design notes for the visual-map system.
-- `README.md` — this file.
+`CITATION.cff` is forthcoming in a follow-up session. Until then, cite the repository and the `v3.7.0` tag:
+
+```bibtex
+@misc{efilist_argument_library_2026,
+  title   = {efilist argument library},
+  author  = {Cooper, Josiah S.},
+  year    = {2026},
+  version = {3.7.0},
+  url     = {https://github.com/alisendjsc-crypto/efilist-argument-library},
+  note    = {Archived stable release}
+}
+```
 
 ---
 
-## License and attribution
+## License
 
-Author-controlled. If you cite or adapt, reference the version number and the audit iteration (currently v3.6.1 / audit-v1). Pull requests welcome on the transition dataset if you have observational data on real debates; pull requests welcome on the methodology if you can demonstrate a flaw in the premise-matcher's scoring.
+- Corpus, JSX, schema, viewer HTML, coda: **CC-BY-4.0**. Attribution required; no share-alike obligation.
+- `validator/v3prime_validator_v1_6.py`: **MIT**.
 
-Domain-expert review of the ten retained canonical overrides remains open. If you have published work on any of the flagged transitions, the author would like to hear from you.
+Attribution per `CITATION.cff` once authored. Verbatim citation and adaptation both require attribution under CC-BY-4.0; the validator code is permissive.
+
+---
+
+## On the standpoint
+
+The library does not derive the suffering-priority axiom from anything more basic and does not pretend to. The coda is the explicit account of that floor. The descriptive content — the taxonomy, the dependency graph, the mechanism attributions, the attested examples — stands as observation regardless of where you land on the axiom itself.
+
+The library ends here. What remains is the act of standing on it.

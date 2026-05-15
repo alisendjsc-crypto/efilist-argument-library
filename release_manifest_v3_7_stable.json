@@ -1,0 +1,257 @@
+{
+  "manifest_kind": "release_manifest_v3_7_stable",
+  "release_tag": "v3.7-stable",
+  "release_date_iso": "2026-05-14",
+  "session_id": "v3-7-cut",
+  "predecessor_canon_version": "v24.0",
+  "emitted_canon_version": "v24.1",
+  "release_line": "v3.7",
+  "release_kind": "stable_release_manifest_only_zero_artifact_mutation",
+  "artifact_set": {
+    "corpus_json": {
+      "release_path": "/mnt/project/efilist_argument_library_v3_7_post_cluster_insertion_inmendham.json",
+      "size_bytes": 1160847,
+      "md5": "fb0e41ca1c0722e8615b1e7001e229ed",
+      "sha256": "748fc9a8d6b8f76745586bf3adb37f7abb39f9a41e56f7b60ce7cb00169933ad",
+      "logical_role": "authoritative corpus (78 objections, 5 tiers, 136 RWE)",
+      "version_field": "3.7",
+      "generated_field": "2026-05-14",
+      "authored_by_session_chain": [
+        "v3-7-cut (name-cut 3.6.1->3.7)",
+        "sigma-m1-merge -> sigma-m4-merge (RWE batch chain 8a-8j; 81 RWE -> 131)",
+        "cluster-insertion-session-inmendham (+5 RWE; 131 -> 136)"
+      ],
+      "canon_recorded_size_at_cluster_insertion": 1157942,
+      "size_record_correction_note": "Canon cluster_insertion_session_inmendham_session_record.corpus_output_size_bytes reads 1157942; live stat is 1160847 (+2905). md5 is cryptographically identical (fb0e41ca1c0722e8615b1e7001e229ed), so content integrity is binding. Discrepancy is a canon bookkeeping scalar error on size only; falls under documented residue-invariant drift (Q_canon_state_refresh_residue_invariant_drift, LOW). Recorded here as authoritative live size; size record correction deferred to residue-invariant-refresh session per scope policy."
+    },
+    "jsx": {
+      "release_path": "/mnt/project/efilist_argument_library_v3_7_post_surface_parity_jsx.jsx",
+      "size_bytes": 1107006,
+      "md5": "be25b1432e7228db629b7122f85dec4d",
+      "sha256": "dfb9b12033d0ed3452c70475a885d9f470ce36fd7f5d72c74e6a53b663923363",
+      "logical_role": "denormalized React sibling (REAL_WORLD_EXAMPLES const inserted; surface-parity complete)",
+      "authored_by_session": "surface-parity-jsx-only",
+      "canon_attestation": "md5 matches surface_parity_jsx_only_session_record.jsx_output_md5"
+    },
+    "index_html": {
+      "release_path": "/mnt/project/index_v3_7_post_b3f2_surface_parity_html.html",
+      "size_bytes": 1687795,
+      "md5": "39ea0cd42f137bbd3fdc86d6964ac91b",
+      "sha256": "0d7e782610806e3cbd56c14c9d110e3aca44a689ba2673676bce262d50baadc0",
+      "logical_role": "single-file HTML viewer (chrome counters refreshed: 74->78/77, 118->133, 222->245; byte-neutral splice)",
+      "authored_by_session": "surface-parity-html-targeted-anchors",
+      "canon_attestation": "md5 matches index_html_chrome_anchor_remediation_session_surface_parity_targeted.output_artifact.post_patch_md5"
+    },
+    "rwe_schema": {
+      "release_path": "/mnt/project/real_world_examples_schema_v1_6.json",
+      "size_bytes": 80253,
+      "md5": "a5011ddba98cd98c5afc9c28cdc79752",
+      "sha256": "bf17c5e9fff64e23d8cf61e8ac6d7db718775b461bcd182c722ede99fb8417aa",
+      "logical_role": "real-world-examples schema (v1.6 cut spec)",
+      "spec_version": "v1.6",
+      "stable_at": "v3.7-cut"
+    },
+    "coda_html": {
+      "release_path": "/mnt/project/coda_v3_7.html",
+      "size_bytes": 11040,
+      "md5": "e955812115e6aaf5bb1c445cd1c878c0",
+      "sha256": "ea8a475248de76ca03da1a39319895eafdca85dd05c04175edb8d93499b5cd0c",
+      "logical_role": "epistemic coda (surface-parity complete: 78 objections / 34 mechanisms)"
+    },
+    "validator": {
+      "release_path": "/mnt/project/v3prime_validator_v1_6.py",
+      "size_bytes": 21816,
+      "md5": "f114d87c46a05891ac0077854200f000",
+      "sha256": "223d7579094c564715a5928ec3331b8f7c69a9300e097f94e443870696757ab6",
+      "logical_role": "v3'-strict + v1.6 attestation validator",
+      "self_test_status": "13/13 PASS",
+      "self_test_overall_pass": true
+    }
+  },
+  "canon_invariant_attestation": {
+    "attestation_basis": "canon_v24_0_scalar_invariants",
+    "objection_count": {
+      "expected": 78,
+      "actual": 78,
+      "match": true
+    },
+    "tier_count": {
+      "expected": 5,
+      "actual": 5,
+      "match": true
+    },
+    "mechanism_count": {
+      "expected": 34,
+      "actual": 34,
+      "match": true,
+      "note": "canon-locked; no per-corpus enumeration field"
+    },
+    "map1_node_count": {
+      "expected": 77,
+      "actual": 77,
+      "match": true,
+      "note": "HTML-resident MAP1_TRANSITIONS; structural anchor verified present (line ~2879)"
+    },
+    "map_graph_node_count": {
+      "expected": 112,
+      "actual": 112,
+      "match": true,
+      "decomposition": "34 mech + 78 obj = 112"
+    },
+    "map_graph_mechanism_node_count": {
+      "expected": 34,
+      "actual": 34,
+      "match": true
+    },
+    "map_graph_objection_node_count": {
+      "expected": 78,
+      "actual": 78,
+      "match": true
+    },
+    "map_graph_link_count": {
+      "expected": 133,
+      "actual": 133,
+      "match": true
+    },
+    "dep_graph_node_count": {
+      "expected": 91,
+      "actual": 91,
+      "match": true,
+      "decomposition": "13 premise + 78 objection = 91"
+    },
+    "dep_graph_premise_node_count": {
+      "expected": 13,
+      "actual": 13,
+      "match": true,
+      "decomposition": "9 foundational + 4 diagnostic"
+    },
+    "dep_graph_premise_foundational_count": {
+      "expected": 9,
+      "actual": 9,
+      "match": true
+    },
+    "dep_graph_premise_diagnostic_count": {
+      "expected": 4,
+      "actual": 4,
+      "match": true
+    },
+    "dep_graph_objection_node_count": {
+      "expected": 78,
+      "actual": 78,
+      "match": true
+    },
+    "dep_graph_link_count": {
+      "expected": 245,
+      "actual": 245,
+      "match": true
+    },
+    "dep_graph_strong_link_count_v361_locked": {
+      "expected_locked_v361": 159,
+      "actual_live": 161,
+      "documented_drift": true,
+      "drift_disposition": "Q_canon_state_refresh_residue_invariant_drift (LOW; out of scope per v3.7-cut session prompt)"
+    },
+    "dep_graph_weak_link_count_v361_locked": {
+      "expected_locked_v361": 81,
+      "actual_live": 84,
+      "documented_drift": true,
+      "drift_disposition": "Q_canon_state_refresh_residue_invariant_drift (LOW)"
+    },
+    "realWorldExamples_count": {
+      "expected": 136,
+      "actual": 136,
+      "match": true
+    },
+    "premiseDependencyMatrix_keys_count": {
+      "expected": 78,
+      "actual": 78,
+      "match": true
+    },
+    "premises_count": {
+      "expected": 2,
+      "actual": 2,
+      "match": true
+    },
+    "registered_moves_count": {
+      "expected": 4,
+      "actual": 4,
+      "match": true
+    },
+    "totalEntries": {
+      "expected": 78,
+      "actual": 78,
+      "match": true
+    },
+    "totalResponses": {
+      "expected": 238,
+      "actual": 238,
+      "match": true
+    }
+  },
+  "corpus_round_trip_actuals": {
+    "version": "3.7",
+    "generated": "2026-05-14",
+    "totalEntries": 78,
+    "totalResponses": 238,
+    "tiers.len": 5,
+    "objections.len": 78,
+    "realWorldExamples.len": 136,
+    "dependencyGraph.nodes.len": 91,
+    "dependencyGraph.links.len": 245,
+    "dependencyGraph.links.strong": 161,
+    "dependencyGraph.links.weak": 84,
+    "premiseDependencyMatrix.keys.len": 78,
+    "premises.len": 2,
+    "registered_moves.len": 4,
+    "features.len": 9
+  },
+  "pre_session_gate": {
+    "validator_self_test": "13/13 PASS (_overall_pass=true)",
+    "round_trip_parse_corpus": "PASS",
+    "round_trip_parse_canon": "PASS",
+    "fingerprint_capture_complete": true,
+    "all_gates_pass": true
+  },
+  "delta_from_v3_6_1_line": {
+    "objections": {
+      "from": 77,
+      "to": 78,
+      "delta": "+1 (cluster-insertion-session-inmendham; T2 augmentation)"
+    },
+    "realWorldExamples": {
+      "from": 81,
+      "to": 136,
+      "delta": "+55 (batch chain 8a/8b/8c/8d/8e/8f/8g/8h/8i/8j + inmendham cluster)"
+    },
+    "dependencyGraph.links": {
+      "from": 222,
+      "to": 245,
+      "delta": "+23 (cumulative graph extension across batch chain)"
+    },
+    "map_graph_data.links": {
+      "from": 118,
+      "to": 133,
+      "delta": "+15 (mechanism attachments via batch chain)"
+    },
+    "jsx_state": {
+      "from": "registered_moves denormalized only",
+      "to": "registered_moves + realWorldExamples denormalized (multi-surface RWE upgrade)"
+    },
+    "html_state": {
+      "from": "chrome counters stale (74/118/222)",
+      "to": "chrome counters refreshed (78/77/133/245; byte-neutral splice)"
+    },
+    "arc_closures": [
+      "v3_7_surface_parity_arc CLOSED at canon v23.1",
+      "v3_7_cut_prep absorbed at canon v24.0"
+    ]
+  },
+  "out_of_scope_carry_forward": [
+    "Q_canon_state_refresh_residue_invariant_drift (LOW; +5 dep_graph link arithmetic gap)",
+    "canon size_bytes scalar correction for cluster_insertion_session_inmendham_session_record.corpus_output_size_bytes",
+    "All 15 active open_questions per canon v24.0 carry forward"
+  ],
+  "scope_compliance": "Single declared deliverable executed (release manifest + release notes emission + canon MINOR bump). Zero corpus mutation. Zero JSX mutation. Zero HTML mutation. Zero schema change. Zero new objections/mechanisms/RWE. Pre-existing invariant blocks unmodified.",
+  "bump_class": "MINOR",
+  "bump_class_rationale": "Additive-only canon delta: new v3_7_cut_session_record + release_manifest_v3_7_stable invariant blocks. Zero pre-existing invariant block entries revised. Programmatic MINOR criterion satisfied."
+}

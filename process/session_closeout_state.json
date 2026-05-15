@@ -1,0 +1,134 @@
+{
+  "session_id": "closeout_project_archive",
+  "session_kind": "closeout (project archive into single-page handoff state)",
+  "session_date_iso": "2026-05-15",
+  "predecessor_canon_version": "v25.0",
+  "predecessor_session_id": "residue-invariant-refresh",
+  "emitted_canon_version": "v26.0",
+  "bump_class": "MINOR",
+  "bump_class_rationale": "Pure additive delta: archive_attestation invariant block + cold_start_instructions top-level field + open_questions.deferred_on_purpose_summary_table sub-key + scalar populations (project_terminal_state, next_recommended_session restructure). Zero pre-existing invariant-block entries revised; the 14 active open_questions retain statuses verbatim. Programmatic MINOR criterion satisfied.",
+  "completed_tasks": [
+    "Round-trip parsed canon v25.0 (pre-mutation).",
+    "Re-verified 4 v3.7 release artifact md5s against release_manifest_v3_7_stable.json (corpus + JSX + HTML + coda; all MATCH). Validator + schema md5s also re-verified (MATCH).",
+    "Re-ran v3prime_validator_v1_6.py --self-test: 13/13 PASS, _overall_pass: True.",
+    "Compressed 14 active open_questions into open_questions.deferred_on_purpose_summary_table (id / one-line disposition / why-not-blocking per entry). Underlying entries left untouched; statuses unchanged.",
+    "Appended archive_attestation invariant block (release artifact md5 set + canon v25.0 invariant snapshot pointer + cold-start protocol pointer).",
+    "Set project_terminal_state = 'archived_v3_7_stable' (was None).",
+    "Restructured next_recommended_session: dict -> null.",
+    "Added top-level cold_start_instructions field as operator entrypoint for future ad-hoc maintenance.",
+    "Bumped canon to v26.0 (MINOR); appended session_log compact entry; appended canon_version_history_tail entry; emitted version_bump_note_v26_0."
+  ],
+  "verified_facts": {
+    "pre_session_gate": {
+      "canon_v25_0_round_trip_parse": "PASS",
+      "canon_v25_0_md5": "0885141a9842eea8659c7bcf6ac876ea",
+      "canon_v25_0_size_bytes": 365739,
+      "validator_self_test": "13/13 PASS",
+      "validator_overall_pass": true,
+      "release_artifact_md5_re_verification": {
+        "corpus_json": {
+          "path": "/mnt/project/efilist_argument_library_v3_7_post_cluster_insertion_inmendham.json",
+          "md5_observed": "fb0e41ca1c0722e8615b1e7001e229ed",
+          "md5_expected_per_manifest": "fb0e41ca1c0722e8615b1e7001e229ed",
+          "match": true
+        },
+        "jsx": {
+          "path": "/mnt/project/efilist_argument_library_v3_7_post_surface_parity_jsx.jsx",
+          "md5_observed": "be25b1432e7228db629b7122f85dec4d",
+          "md5_expected_per_manifest": "be25b1432e7228db629b7122f85dec4d",
+          "match": true
+        },
+        "index_html": {
+          "path": "/mnt/project/index_v3_7_post_b3f2_surface_parity_html.html",
+          "md5_observed": "39ea0cd42f137bbd3fdc86d6964ac91b",
+          "md5_expected_per_manifest": "39ea0cd42f137bbd3fdc86d6964ac91b",
+          "match": true
+        },
+        "coda_html": {
+          "path": "/mnt/project/coda_v3_7.html",
+          "md5_observed": "e955812115e6aaf5bb1c445cd1c878c0",
+          "md5_expected_per_manifest": "e955812115e6aaf5bb1c445cd1c878c0",
+          "match": true
+        },
+        "validator_py": {
+          "path": "/mnt/project/v3prime_validator_v1_6.py",
+          "md5_observed": "f114d87c46a05891ac0077854200f000",
+          "md5_expected_per_manifest": "f114d87c46a05891ac0077854200f000",
+          "match": true
+        },
+        "rwe_schema": {
+          "path": "/mnt/project/real_world_examples_schema_v1_6.json",
+          "md5_observed": "a5011ddba98cd98c5afc9c28cdc79752",
+          "md5_expected_per_manifest": "a5011ddba98cd98c5afc9c28cdc79752",
+          "match": true
+        }
+      },
+      "all_gates_clear": true
+    },
+    "canon_post": {
+      "path": "/mnt/user-data/outputs/project_canon_v26_0.json",
+      "size_bytes": 377370,
+      "md5": "0449d02d0047e53a58023a1875c1fca9",
+      "round_trip_parse_post_write": "PASS",
+      "canon_version": "26.0",
+      "size_delta_bytes_from_v25_0": 11631
+    },
+    "open_questions_state_after_session": {
+      "active_count": 14,
+      "active_count_unchanged_from_v25_0": true,
+      "active_statuses_unchanged": true,
+      "deferred_on_purpose_summary_table_entries": 14,
+      "deferred_on_purpose_summary_table_role": "compression view only; per-entry status mutation strictly avoided"
+    },
+    "terminal_state": {
+      "project_terminal_state": "archived_v3_7_stable",
+      "branch_complete": true,
+      "next_recommended_session": null,
+      "cold_start_instructions_present": true
+    }
+  },
+  "emitted_artifacts": [
+    "/mnt/user-data/outputs/project_canon_v26_0.json",
+    "/mnt/user-data/outputs/session_closeout_state.json"
+  ],
+  "artifact_mutation_attestation": {
+    "corpus_json": "UNCHANGED (md5 fb0e41ca1c0722e8615b1e7001e229ed preserved)",
+    "jsx_sibling": "UNCHANGED (md5 be25b1432e7228db629b7122f85dec4d preserved)",
+    "index_html": "UNCHANGED (md5 39ea0cd42f137bbd3fdc86d6964ac91b preserved)",
+    "coda_v3_7": "UNCHANGED (md5 e955812115e6aaf5bb1c445cd1c878c0 preserved)",
+    "validator_v1_6": "UNCHANGED (md5 f114d87c46a05891ac0077854200f000 preserved)",
+    "schema_v1_6": "UNCHANGED (md5 a5011ddba98cd98c5afc9c28cdc79752 preserved)",
+    "release_artifact_set_md5_fingerprints": "UNCHANGED (canon-only emission this session)"
+  },
+  "operator_decisions_executed": {
+    "option_selected": "option_closeout (per canon v25.0 next_recommended_session.option_closeout)",
+    "alternative_not_selected": "option_continued_maintenance (deferred indefinitely; available via cold_start_instructions)"
+  },
+  "open_questions_state_change": {
+    "active_count_before": 14,
+    "active_count_after": 14,
+    "per_entry_status_mutations": 0,
+    "compression_artifact": "open_questions.deferred_on_purpose_summary_table (new sibling; pure summary; non-authoritative for status)"
+  },
+  "next_recommended_action": null,
+  "next_recommended_action_replacement": {
+    "field": "cold_start_instructions (top-level canon v26.0)",
+    "summary": "No scheduled successor. Operator opens topic-scoped maintenance from the frozen archive when/if needed. Pre-session gate persists (canon round-trip + 4-artifact md5 + validator 13/13)."
+  },
+  "scope_compliance_summary": {
+    "declared_deliverable_singular": true,
+    "in_scope_executed": [
+      "deferred-on-purpose summary table (compression only)",
+      "archive_attestation invariant block",
+      "terminal-state scalars + next_recommended_session restructure",
+      "MINOR canon bump to v26.0"
+    ],
+    "out_of_scope_avoided": [
+      "any artifact mutation",
+      "resolving any of the 14 active open_questions",
+      "schema / validator / coda touches",
+      "new corpus / mechanism / RWE work"
+    ]
+  },
+  "compact_log_entry": "closeout_project_archive: archive v3.7 stable; archive_attestation + cold_start_instructions + deferred_on_purpose_summary_table appended; next_recommended_session -> null; project_terminal_state -> archived_v3_7_stable; 0-byte artifact mutation; 4/4 release md5 + 13/13 validator + canon round-trip PASS"
+}
