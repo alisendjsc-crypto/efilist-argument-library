@@ -6,9 +6,10 @@ type: software
 authors:
   - family-names: "Cooper"
     given-names: "Josiah S."
-version: "3.7.1"
-date-released: "2026-05-15"
+version: "3.7.2"
+date-released: "2026-05-17"
 repository-code: "https://github.com/alisendjsc-crypto/efilist-argument-library"
+url: "https://library.wuld.ink"
 license: CC-BY-4.0
 keywords:
   - antinatalism
