@@ -31,9 +31,9 @@ The library is one self-contained HTML file. You do not have to clone or downloa
 
 ![Real-world examples surface](screenshots/real-world-examples.png)
 
-Further views — the dependency graph, the mechanism web, an objection-detail deconstruction with RSI, and the surface chrome — are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md).
+Further views — the dependency graph, the mechanism web, an objection-detail deconstruction with RSI, and the surface chrome — are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md). A standalone `rwe.html` (new at v3.7.3) packages the real-world-examples surface for direct viewing or downstream tooling.
 
-> **Rendered-counter note (resolved in v3.7.2).** The static chrome in the dependency-graph and mechanism-web headers previously displayed a *pre-sweep* `74` / `222`. The v3.7.2 content-advance re-cut corrected it (length-preserving, byte-neutral): both headers now read **78 objections / 245 dependencies**, matching the canon-attested invariant truth (**78 objections / 245 dependencies / 91 dependency-graph nodes**). The new artifact is md5-locked under the v3.7.2 contract (see below).
+> **Rendered-counter note (resolved in v3.7.2; held at v3.7.3).** The static chrome in the dependency-graph and mechanism-web headers previously displayed a *pre-sweep* `74` / `222`. The v3.7.2 content-advance re-cut corrected it (length-preserving, byte-neutral): both headers now read **78 objections / 245 dependencies**, matching the canon-attested invariant truth (**78 objections / 245 dependencies / 91 dependency-graph nodes**). v3.7.3 is PATCH-class; the chrome is unchanged.
 
 ---
 
@@ -46,19 +46,23 @@ The shippable artifact is a single file: **`combined.html`**. Library, real-worl
 | Field | Value |
 |---|---|
 | File | `combined.html` |
-| Version tag | `v3.7.2` |
-| md5 | `2accf16a834f31b9e8dbb3fcc7d61a6b` |
-| Size | `2,236,312` bytes |
+| Version tag | `v3.7.3` |
+| md5 | `29f9d5c0d4befac52dae4ca88ea4211f` |
+| Size | `2,243,165` bytes |
 
 That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF).
 
-The binding integrity source is the project canon's `archive_attestation` block (canon v29.0, re-attested at the v3.7.2 re-cut via the `invariant_derivation_harness_v1` hard gate, GREEN exit 0). `release_manifest_v3_7_1.json` in this repo is a **reconstructed** manifest carrying the *invariant attestation* (node/edge/distribution counts), not the md5/sha256 artifact set; the md5 contract above is canon-authoritative.
+The binding integrity source is the project canon's `archive_attestation` block (canon v30.0, attested at the v3.7.3 finalization via the `invariant_derivation_harness_v1` hard gate, GREEN exit 0). `release_manifest_v3_7_1.json` in this repo is a **reconstructed** manifest carrying the *invariant attestation* (node/edge/distribution counts), not the md5/sha256 artifact set; the md5 contract above is canon-authoritative against `release_artifact_md5_set_per_release_manifest_v3_7_3`.
 
 ---
 
 ## Status
 
-**Archived stable** at **v3.7.2** (canon v29.0 line; `project_terminal_state: archived_v3_7_2_stable`; `next_recommended_session: null`). v3.7.2 is a **PATCH** over the v3.7 line — a content-advance re-cut + publication reconciliation: the heavily-deployed `violence-as-reductio` rebuttal regraded **C→B** (its responses.long strengthened; danger quadrant **cleared**), `benatar-asymmetry-attack` responses.long strengthened, all **78/78 graded** (a pre-cut ledger-sync brought the ledger fully consistent, ungraded → 0), and the static graph-chrome residue corrected `74/222 → 78/245`. Structural invariants are byte-identical to the v3.7 line (this is why it is PATCH-class, **not** v3.8); corpus taxonomic content unchanged at 78 objections. The prior v3.7.1 published set is retained in canon as historical-superseded for audit continuity. No scheduled successor; no forcing function for v3.8. Future maintenance is operator-elective and topic-scoped.
+**Archived stable** at **v3.7.3** (canon v30.0 line; `project_terminal_state: archived_v3_7_3_stable`; `next_recommended_session: null`). v3.7.3 is a **PATCH** over the v3.7 line — a `benatar-asymmetry-attack` long-form strengthen + ledger sync re-cut: the long form expanded from 4904ch single-paragraph to 8205ch four-paragraph treatment, axes re-cut to `{v0.88, s0.81, c0.80, r0.78, a0.84}`, `long.rsi_pct` 78.3 → 82.13, `long.grade` **C → B**. The corpus's two highest-deployment objections (`violence-as-reductio` cleared at v3.7.2, `benatar-asymmetry-attack` cleared here) are now both B-band; the deployment × grade danger quadrant is **empty at v3.7.3**.
+
+Structural invariants are byte-identical to the v3.7 line (this is why it is PATCH-class, **not** v3.8); corpus taxonomic content unchanged at 78 objections; `combined.html` re-synced to the v3.7.3 corpus (the v3.7.2-era coherence-note flag on benatar long-form para-1-only divergence is now closed). The prior v3.7.2 published set is retained in canon as historical-superseded for audit continuity. No scheduled successor; no forcing function for v3.8. Future maintenance is operator-elective and topic-scoped.
+
+See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail across v3.7-stable / v3.7.1 / v3.7.2 / v3.7.3.
 
 If you find an objection missing or a mechanism mis-attached, that's a topic for a future operator-elective micro-session, not a patch to this release.
 
@@ -93,7 +97,7 @@ A `CITATION.cff` (CFF 1.2.0) is provided at repository root and enables GitHub's
   title   = {efilist argument library},
   author  = {Cooper, Josiah S.},
   year    = {2026},
-  version = {3.7.2},
+  version = {3.7.3},
   url     = {https://github.com/alisendjsc-crypto/efilist-argument-library},
   note    = {Archived stable release}
 }

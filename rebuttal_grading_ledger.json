@@ -146,11 +146,11 @@
   "benatar-asymmetry-attack": {
    "graded": true,
    "axes": {
-    "v": 0.85,
-    "s": 0.8,
+    "v": 0.88,
+    "s": 0.81,
     "c": 0.8,
-    "r": 0.72,
-    "a": 0.75
+    "r": 0.78,
+    "a": 0.84
    },
    "short": {
     "rsi_pct": 74.5,
@@ -161,10 +161,33 @@
     "grade": "C"
    },
    "long": {
-    "rsi_pct": 78.3,
-    "grade": "C"
+    "rsi_pct": 82.13,
+    "grade": "B"
    },
-   "headline_grade_long": "C"
+   "headline_grade_long": "B",
+   "provenance": {
+    "v3_7_3_finalization": {
+     "date": "2026-05-23",
+     "session": "v3_7_3_finalization",
+     "axes_source": "branch 3a-analogue cold-grade (post-disclosure partial-blindness; S1 freeze-recovery from 16 screenshots)",
+     "long_form_attested": true,
+     "short_medium_form_attested": false,
+     "short_medium_rationale": "Short and medium response prose byte-identical to pre-strengthen forms; rsi_pct snapshots retained per v28.2 cold-grade convention (axes-shift does not auto-propagate to non-regraded forms).",
+     "pre_axes": {
+      "v": 0.85,
+      "s": 0.8,
+      "c": 0.8,
+      "r": 0.72,
+      "a": 0.75
+     },
+     "pre_long_rsi_pct": 78.3,
+     "pre_long_grade": "C",
+     "long_prose_md5_post_strengthen": "0e9bf121860c28a8556bb2187af0945c",
+     "long_prose_md5_pre_strengthen": "b25a0116d5c774c54b6d52b41bcb7b7d",
+     "long_prose_char_count_post": 8205,
+     "long_prose_char_count_pre": 4904
+    }
+   }
   },
   "transhumanist-objection": {
    "graded": true,

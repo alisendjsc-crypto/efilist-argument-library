@@ -49,7 +49,9 @@ attestation of `map1_node_count = 77` was defective against a 78-node shipped
 literal and was re-certified to **78** by the v27.0 invariant snapshot. The
 static UI chrome in the two graph views previously displayed a *pre-sweep*
 `74` / `222`; the **v3.7.2** content-advance re-cut corrected it
-(length-preserving, byte-neutral) to **78 / 245**, matching this table.
+(length-preserving, byte-neutral) to **78 / 245**, matching this table. The
+**v3.7.3** content-advance is PATCH-class (invariants subtree byte-identical to
+the v3.7 line); the table above is unchanged from v3.7.2.
 
 ---
 
@@ -76,7 +78,8 @@ Map 1 is a force-directed *next-move predictor*: from a selected source
 objection it renders predicted successor objections within the selected
 archetype's mode, annotated with convergence tier and mode rationale.
 
-**Edge distribution across the 78 source-keys** (v3.7.2 attestation; unchanged — score-layer + prose re-cut, topology untouched):
+**Edge distribution across the 78 source-keys** (v3.7.3 attestation; unchanged
+from v3.7.2 — topology untouched, this release is score-layer + prose re-cut):
 
 | Archetype | Edges |
 |---|---|
@@ -180,42 +183,49 @@ code's actual modifier — the standing reason every figure is computed, never
 written down.)
 
 **Grade distribution by tier** (long depth; stats-spec reference figures —
-recompute-at-render; ungraded shown explicitly, never dropped):
+recompute-at-render; ungraded shown explicitly, never dropped; post-v3.7.3
+benatar-asymmetry-attack regrade applied — one T4 node moved C→B):
 
 | Tier | A | B | C | Ungraded |
 |---|---|---|---|---|
 | T1 | 6 | 5 | 2 | — |
 | T2 | 4 | 7 | 3 | — |
 | T3 | 5 | 8 | — | 1 |
-| T4 | 7 | 14 | 7 | — |
+| T4 | 7 | 15 | 6 | — |
 | T5 | 4 | 2 | — | — |
 
-**As of v3.7.2: 0 nodes ungraded corpus-wide — all 78/78 graded.** The four
-formerly-ungraded nodes (`violence-as-reductio`, `masochist-counterexample`,
-`joy-outweighs-harms`, `wild-animal-suffering-consistency`) are graded in the
-`index.html` score layer; a v3.7.2 pre-cut ledger-sync brought
-`rebuttal_grading_ledger.json` fully consistent (ungraded → 0). The per-tier
-A/B/C/Ungraded split above is a stats-spec reference matrix that predates the
-four-ungraded grading — **recompute-at-render** for the exact post-v3.7.2
-per-tier distribution; the corpus-wide ungraded count is **0**, not 4. An
-ungraded node, where one ever appears, is a pending grade rendered as risk,
-not absence.
+**As of v3.7.3: 0 nodes ungraded corpus-wide — all 78/78 graded.** The
+four formerly-ungraded nodes (`violence-as-reductio`, `masochist-counterexample`,
+`joy-outweighs-harms`, `wild-animal-suffering-consistency`) were graded in the
+v3.7.2 pre-cut ledger-sync; `rebuttal_grading_ledger.json` (md5
+`9b0b291fe4818587e3d724a7d6daf017` at v3.7.3) is consistent with the
+`index.html` score layer. The per-tier A/B/C/Ungraded split above is a
+stats-spec reference matrix updated for the v3.7.3 benatar regrade —
+**recompute-at-render** against `index.html`'s score layer for any per-tier
+distribution shifts not surfaced here.
 
 **Deployment × grade — the danger quadrant** (the analytical view the project
 most needs: a weak rebuttal that is heavily deployed in the wild):
 
 - **`violence-as-reductio`** — grade **B** (≈83.8) @ 27 RWE (highest
   deployment) — **quadrant CLEARED in v3.7.2**. Its responses.long was
-  strengthened (11795 chars) and it regraded **C(≈0.805) → B(≈0.838)**; the
+  strengthened (11,795 chars) and it regraded **C(≈0.805) → B(≈0.838)**; the
   corpus's single most-deployed node is now robust, not weak.
-- **`benatar-asymmetry-attack`** — grade **C** (≈80.7) @ 15 RWE —
-  **still an active alarm**. responses.long was strengthened (4904 chars) and
-  a blind re-grade moved it C78.3 → C80.7 — the argument is materially
-  harder to a hostile reader but the band is unchanged and the quadrant is
-  **not** cleared. Tracked; an S-axis pass is the evidenced (operator-elective)
-  next move.
+- **`benatar-asymmetry-attack`** — grade **B** (≈82.13) @ 15 RWE —
+  **quadrant CLEARED in v3.7.3**. responses.long re-cut from 4904 chars
+  single-paragraph to 8205 chars four-paragraph treatment; axes re-cut to
+  `{v0.88, s0.81, c0.80, r0.78, a0.84}`; `long.rsi_pct` 78.3 → 82.13;
+  `long.grade` C → B. Short/medium forms held verbatim per v28.2 cold-grade
+  convention.
 - `life-gift` — C @ 4 RWE — not in the quadrant.
 - `ai-fear` — B @ 10 RWE — not in the quadrant.
+
+**No nodes remain in the danger quadrant at v3.7.3.** The analytical view that
+originally motivated the score axis — weak rebuttals heavily deployed in the
+wild — is empty. This does not foreclose future re-entry (an S-axis pass, a new
+attested deployment shifting an existing node into high-RWE territory, or a
+future cold-regrade reverting a band could re-populate it); it states the
+current corpus position.
 
 ---
 
@@ -234,10 +244,10 @@ above are trustworthy:
   the structural conclusion of that arc.
 - **Invariant-derivation harness gate.** Any content mutation to the shipped
   artifact must pass `invariant_derivation_harness_v1` GREEN before close —
-  the project's one standing live obligation. v3.7.2 is a deliberate
+  the project's one standing live obligation. v3.7.3 is a deliberate
   content-advance re-cut (not verbatim); it passed the harness GREEN (exit 0,
   derived == canon == manifest) as a hard gate before close, alongside the
-  cut-invariant roster and the validator self-test.
+  9/9 surface-mutation hard-gate sweep and the validator self-test.
 - **<15-word quotation discipline.** Schema-enforced on every real-world
   example — not a convention, a validation rule.
 - **Compute-at-render, never hand-author.** No derived figure (RSI, share,
@@ -253,9 +263,9 @@ above are trustworthy:
 
 Headline counts (78 / 5 / 34 / 238 / 136 / 91 / 245 / 161-84 / 112 / 133 /
 2,886 and the Map 1 distributions) are read from the canon **invariants** block
-at canon v29.0 (byte-identical to the v3.7 line — the v3.7.2 re-cut left the
-structural invariants subtree unchanged, the version classifier confirming
-PATCH-class) and cross-verified against the `release_manifest_v3_7_1`
+at canon v30.0 (byte-identical to the v3.7 line — the v3.7.2 and v3.7.3 re-cuts
+both left the structural invariants subtree unchanged, the version classifier
+confirming PATCH-class) and cross-verified against the `release_manifest_v3_7_1`
 invariant attestation — they agree. The corpus bytes were **not in scope** for
 the publication-prep session that authored this file; figures requiring corpus
 traversal (RWE attachment edges, archetype-signal distribution, per-tier grade

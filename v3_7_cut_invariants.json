@@ -1,0 +1,195 @@
+{
+  "milestone": "v3.7-cut",
+  "session_id": "v3-7-cut",
+  "cut_kind": "scalar_passthrough_name_cut",
+  "cut_date_iso": "2026-05-13",
+  "rationale": "Coverage threshold >=85% crossed at sigma-m2-merge (actual 85.53%; 65/76 distinct touched). Name-cut milestone marker; zero corpus mutation.",
+  "coverage_pct": 85.53,
+  "distinct_touched": 65,
+  "untouched_count": 11,
+  "untouched_ids_by_tier": {
+    "T1": [],
+    "T2": [
+      "joy-outweighs-harms"
+    ],
+    "T3": [
+      "future-solve",
+      "overpopulation-addressed",
+      "rights-future-generations"
+    ],
+    "T4": [
+      "care-ethics",
+      "flow-states-csikszentmihalyi",
+      "hedonic-contrast",
+      "indigenous-philosophy",
+      "pragmatist-objection"
+    ],
+    "T5": [
+      "heat-death-futility",
+      "moral-particularism"
+    ]
+  },
+  "source_artifact": {
+    "path": "/mnt/project/efilist_argument_library_v3_6_1_post_sigma_m2_merge.json",
+    "md5": "6aa65f5292a07fbeb44ae3fa42b42c8a",
+    "sha256": "1bca53776a1f8b15ab5827641849d3fb48c5a17b080b7739a65ee8fc6f955910",
+    "size_bytes": 1049277,
+    "version_field": "3.6.1",
+    "generated_field": "2026-05-11"
+  },
+  "emitted_artifact": {
+    "path": "/mnt/user-data/outputs/efilist_argument_library_v3_7.json",
+    "md5": "bebdf75e2859d9ed6940103b2c7ef53a",
+    "sha256": "7698203e46def0a744fb756f0f6d6be2089b1531db26fd28e4889cd6f12c9319",
+    "size_bytes": 1049275,
+    "version_field": "3.7",
+    "generated_field": "2026-05-13"
+  },
+  "byte_delta": {
+    "absolute": -2,
+    "expected": -2,
+    "explanation": "'3.6.1' (5 chars) -> '3.7' (3 chars) = -2; '2026-05-11' -> '2026-05-13' = 0; total = -2.",
+    "match_expected": true
+  },
+  "scalar_refreshes_applied": [
+    {
+      "jsonpath": "$.version",
+      "from": "3.6.1",
+      "to": "3.7"
+    },
+    {
+      "jsonpath": "$.generated",
+      "from": "2026-05-11",
+      "to": "2026-05-13"
+    }
+  ],
+  "top_level_key_order_preserved": true,
+  "per_top_level_field_sha256_audit": {
+    "version": {
+      "src_sha256": "4bd0089325a06195a76f8a1379e272eca70acd2e9a30b28bda4cb32ee3bdc0ce",
+      "emit_sha256": "1c7cc7f46639036b6c0dfd158ec3a8963278375202eb3fd244bda3d35e0cfb99",
+      "byte_identical": false
+    },
+    "generated": {
+      "src_sha256": "aa808593aff4d12e2126913df4330e4d8b81e8d1f34c74c2df40a12dd2dbe160",
+      "emit_sha256": "ef842362fe691f9e468999b932d178787fffcf2f04b04ee32ac1efaf07f2ce12",
+      "byte_identical": false
+    },
+    "totalEntries": {
+      "src_sha256": "f74efabef12ea619e30b79bddef89cffa9dda494761681ca862cff2871a85980",
+      "emit_sha256": "f74efabef12ea619e30b79bddef89cffa9dda494761681ca862cff2871a85980",
+      "byte_identical": true
+    },
+    "totalResponses": {
+      "src_sha256": "835d5e8314340ab852a2f979ab4cd53e994dbe38366afb6eed84fe4957b980c8",
+      "emit_sha256": "835d5e8314340ab852a2f979ab4cd53e994dbe38366afb6eed84fe4957b980c8",
+      "byte_identical": true
+    },
+    "tiers": {
+      "src_sha256": "cdcd37c97da74f38bfa3f719bace926501ce950e9255237546dd6808407b170a",
+      "emit_sha256": "cdcd37c97da74f38bfa3f719bace926501ce950e9255237546dd6808407b170a",
+      "byte_identical": true
+    },
+    "features": {
+      "src_sha256": "9b1065f049eff28f0f636fb3e75932c97c366d20526d15a80699a5e2c8794f5f",
+      "emit_sha256": "9b1065f049eff28f0f636fb3e75932c97c366d20526d15a80699a5e2c8794f5f",
+      "byte_identical": true
+    },
+    "objections": {
+      "src_sha256": "3350d1e2780db32a64c81cb7989f6d4683f154618b1a9af45adf663d91b43dbc",
+      "emit_sha256": "3350d1e2780db32a64c81cb7989f6d4683f154618b1a9af45adf663d91b43dbc",
+      "byte_identical": true
+    },
+    "dependencyGraph": {
+      "src_sha256": "ebaf0e349eca5d8f73c8b14635b9f267442bd2c379d9064987d8f50b490461d9",
+      "emit_sha256": "ebaf0e349eca5d8f73c8b14635b9f267442bd2c379d9064987d8f50b490461d9",
+      "byte_identical": true
+    },
+    "premiseDependencyMatrix": {
+      "src_sha256": "e639e9b4deb8f9798ce809d20d47c8dbcb7a4569e87f94daaee8defa82bd6d80",
+      "emit_sha256": "e639e9b4deb8f9798ce809d20d47c8dbcb7a4569e87f94daaee8defa82bd6d80",
+      "byte_identical": true
+    },
+    "premises": {
+      "src_sha256": "e8881131d2cd5bd621f8debe5a7d379f9811bbdc5d52e56ae95e431c874dca54",
+      "emit_sha256": "e8881131d2cd5bd621f8debe5a7d379f9811bbdc5d52e56ae95e431c874dca54",
+      "byte_identical": true
+    },
+    "realWorldExamples": {
+      "src_sha256": "fc88e09b89f62c0fd2a8d79e965df8d3da9a3f103c36f74c6071bab3205c490a",
+      "emit_sha256": "fc88e09b89f62c0fd2a8d79e965df8d3da9a3f103c36f74c6071bab3205c490a",
+      "byte_identical": true
+    },
+    "registered_moves": {
+      "src_sha256": "514079f6c71599141cf6ce6a5dc32048539c222571d26b77408bdf83c2177b51",
+      "emit_sha256": "514079f6c71599141cf6ce6a5dc32048539c222571d26b77408bdf83c2177b51",
+      "byte_identical": true
+    }
+  },
+  "non_refreshed_fields_byte_identical": true,
+  "round_trip_actuals": {
+    "version": "3.7",
+    "generated": "2026-05-13",
+    "totalEntries": 76,
+    "totalResponses": 232,
+    "tiers[2].count": 15,
+    "objections.len": 76,
+    "realWorldExamples.len": 119,
+    "dependencyGraph.nodes.len": 89,
+    "dependencyGraph.links.len": 236,
+    "premiseDependencyMatrix.keys.len": 76,
+    "premises.len": 2,
+    "registered_moves.len": 4,
+    "features.len": 9
+  },
+  "prompt_invariant_table_divergence": {
+    "disposition": "PATH_A_DOCUMENTED_DIVERGENCE",
+    "decision_authority": "Josiah (operator) confirmation in-chat at session open",
+    "summary": "Session-open prompt's invariant verification table (b) anticipates a 77-objection corpus state; actual source is 76. Pattern is consistent +1 T2 objection plus its dependency-graph footprint (+1 DG node, +4 DG links, +1 premiseDependencyMatrix key, +1 totalEntries, +1 tiers[2].count). All other invariants match. Source state corroborated by canon v14.0 (cumulative_distinct_objections_touched_post_sigma_m2_merge.coverage_pct=85.53 over denominator 76; tier_breakdown_post_sigma_m2_merge_actual.aggregate_untouched=11). v3.7-cut executed against true source under strict scalar-only refresh; verification table re-interpreted descriptively against actuals.",
+    "actuals_vs_prompt_table": {
+      "realWorldExamples.len": {
+        "prompt_expected": 119,
+        "source_actual": 119,
+        "match": true
+      },
+      "objections.len": {
+        "prompt_expected": 77,
+        "source_actual": 76,
+        "match": false
+      },
+      "totalEntries": {
+        "prompt_expected": 77,
+        "source_actual": 76,
+        "match": false
+      },
+      "tiers[2].count": {
+        "prompt_expected": 16,
+        "source_actual": 15,
+        "match": false
+      },
+      "dependencyGraph.nodes.len": {
+        "prompt_expected": 90,
+        "source_actual": 89,
+        "match": false
+      },
+      "dependencyGraph.links.len": {
+        "prompt_expected": 240,
+        "source_actual": 236,
+        "match": false
+      },
+      "premiseDependencyMatrix.keys.len": {
+        "prompt_expected": 77,
+        "source_actual": 76,
+        "match": false
+      }
+    }
+  },
+  "out_of_scope_carry_forward": [
+    "JSX surface-parity version refresh (efilist_argument_library_v3_6_1_post_c6_jsx_gd.jsx -> v3.7-jsx-cut micro-session)",
+    "index.html surface-parity version refresh (index_v3_6_1_post_c6_idx_mt.html -> v3.7-idx-cut micro-session)",
+    "coda.html '74 ways' / '76 ways' / version-string surface-parity refresh",
+    "Closing the +1 T2 objection gap (the projected 77th, joy-outweighs-harms attachment OR a different T2 candidate)",
+    "Re-derive stale dependencyGraph + premiseDependencyMatrix fields against v3.6.1 source (carried open from earlier sessions; not within v3.7-cut scope)"
+  ],
+  "validators_not_re_run": "v3'-strict and v2-verbatim component-A audits not re-executed: name-cut is byte-equivalent at all non-refreshed fields per per_top_level_field_sha256_audit; validator state is invariant under scalar version/date refresh. Re-run on next mutation session."
+}
