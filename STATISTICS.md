@@ -50,7 +50,7 @@ literal and was re-certified to **78** by the v27.0 invariant snapshot. The
 static UI chrome in the two graph views previously displayed a *pre-sweep*
 `74` / `222`; the **v3.7.2** content-advance re-cut corrected it
 (length-preserving, byte-neutral) to **78 / 245**, matching this table. The
-**v3.7.3** content-advance is PATCH-class (invariants subtree byte-identical to
+**v3.7.3**–**v3.7.5** content cuts are PATCH-class (invariants subtree byte-identical to
 the v3.7 line); the table above is unchanged from v3.7.2.
 
 ---
@@ -78,7 +78,7 @@ Map 1 is a force-directed *next-move predictor*: from a selected source
 objection it renders predicted successor objections within the selected
 archetype's mode, annotated with convergence tier and mode rationale.
 
-**Edge distribution across the 78 source-keys** (v3.7.3 attestation; unchanged
+**Edge distribution across the 78 source-keys** (v3.7.5 attestation; unchanged
 from v3.7.2 — topology untouched, this release is score-layer + prose re-cut):
 
 | Archetype | Edges |
@@ -194,7 +194,7 @@ benatar-asymmetry-attack regrade applied — one T4 node moved C→B):
 | T4 | 7 | 15 | 6 | — |
 | T5 | 4 | 2 | — | — |
 
-**As of v3.7.3: 0 nodes ungraded corpus-wide — all 78/78 graded.** The
+**As of v3.7.5: 0 nodes ungraded corpus-wide — all 78/78 graded.** The
 four formerly-ungraded nodes (`violence-as-reductio`, `masochist-counterexample`,
 `joy-outweighs-harms`, `wild-animal-suffering-consistency`) were graded in the
 v3.7.2 pre-cut ledger-sync; `rebuttal_grading_ledger.json` (md5

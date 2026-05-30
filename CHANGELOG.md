@@ -12,6 +12,40 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v3.7.5] — 2026-05-29
+
+**PATCH.** `masochist-counterexample` suicide-coda excision (publish-gate ruling). Invariants subtree byte-identical to the v3.7 line (anchor `e1bf216e268dbcd0bc9fe7904537b82c`); corpus taxonomic content unchanged at 78 objections.
+
+### Changed
+
+- **`masochist-counterexample.responses.long`** — an unsourced editorial coda asserting a named forum participant's death by suicide was **excised** (single-line, length-only edit; −244 B per surface). Publish-gate ruling: the death claim did not clear the corpus's real-person sourcing bar (WHO / secondary-reporting standard) and carried public-surface sensitivity exposure. Node grade unchanged — **C** (RSI ≈80.0); the coda was non-axis-bearing.
+- Propagated to all four surfaces: `efilist_argument_library_v3_7_5.json` (corpus, `04b2b6bf16de921f7ab8a7449b393f1a`), `combined.html` (`d8393d3b40bcabf3eceb993fc3e31cdc`), `index_v3_7_5.html` (`556bc1a39d0f5a5919bcaf14f3cdf4f4`), `efilist_argument_library_v3_7_5.jsx` (`da464f2713a29f2c5b3b2d51411996ef`). Mega-literals (`MAP1_TRANSITIONS`, `DEP_GRAPH_DATA`) byte-identical; all 78 nodes deep-equal corpus; coda residue 0.
+
+### Attestation
+
+- Validator `v3prime_validator_v1_6` PASS (rc 0; 136 records). Invariants subtree byte-identical `e1bf216e268dbcd0bc9fe7904537b82c` (G5 pre==post).
+- Canon MAJOR bump v35.1 → v36.0 on published-contract md5-set revision; `release_artifact_md5_set_per_release_manifest_v3_7_5` + `harness_green_attestation_v3_7_5` ADDED. Project terminal state `archived_v3_7_4_stable` → `archived_v3_7_5_stable`.
+- Project version classifier: **PATCH-class v3.7.5** (invariants unchanged); NOT v3.8.
+
+---
+
+## [v3.7.4] — 2026-05-29
+
+**PATCH.** `masochist-counterexample` long-form strengthen + surface propagation. Invariants subtree byte-identical to the v3.7 line; corpus taxonomic content unchanged at 78 objections.
+
+### Changed
+
+- **`masochist-counterexample`** strengthened across all three response depths (`responses.short` / `medium` / `long`) plus `psychMechanism`; `sources` expanded 7 → 8. Single-node, style-preserving propagation to `combined.html`, the JSX sibling, and the index surface.
+- Corpus advanced to `efilist_argument_library_v3_7_4.json` (`fc1a45a140c5b03339eecfd4f57bc97c`).
+
+### Attestation
+
+- Validator PASS; invariants subtree byte-identical `e1bf216e268dbcd0bc9fe7904537b82c`. Canon MAJOR bumps v33.4 → v34.0 (corpus/combined/jsx) → v35.0 (index divergent-carry resolved). Project terminal state → `archived_v3_7_4_stable`.
+- **Note:** v3.7.4 was canon-attested but **staged-never-pushed** to this public repo (the repo remained at v3.7.3); it is superseded by v3.7.5 and published together here.
+- Project version classifier: **PATCH-class v3.7.4**; NOT v3.8.
+
+---
+
 ## [v3.7.3] — 2026-05-23
 
 **PATCH.** `benatar-asymmetry-attack` long-form strengthen + ledger sync re-cut. Invariants subtree byte-identical to v3.7-stable (anchor `f6b94bf0cb3e6832dbdde0017b876e54`); corpus taxonomic content unchanged at 78 objections.
