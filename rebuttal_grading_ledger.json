@@ -1667,25 +1667,25 @@
     "flow-states-csikszentmihalyi": {
       "graded": true,
       "axes": {
-        "v": 0.85,
-        "s": 0.8,
-        "c": 0.85,
-        "r": 0.7,
-        "a": 0.72
+        "v": 0.86,
+        "s": 0.83,
+        "c": 0.87,
+        "r": 0.82,
+        "a": 0.8
       },
       "short": {
-        "rsi_pct": 74.5,
-        "grade": "D"
+        "rsi_pct": 79.9,
+        "grade": "C"
       },
       "medium": {
-        "rsi_pct": 76.5,
-        "grade": "C"
+        "rsi_pct": 82.0,
+        "grade": "B"
       },
       "long": {
-        "rsi_pct": 78.1,
-        "grade": "C"
+        "rsi_pct": 83.6,
+        "grade": "B"
       },
-      "headline_grade_long": "C"
+      "headline_grade_long": "B"
     },
     "luxury-belief": {
       "graded": true,
