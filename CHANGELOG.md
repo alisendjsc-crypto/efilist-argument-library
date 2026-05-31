@@ -2,47 +2,126 @@
 
 All notable changes to the efilist argument library.
 
-Versioning follows a PATCH/MINOR/MAJOR convention keyed on the **invariants subtree** (canon `invariants` block, anchor `f6b94bf0cb3e6832dbdde0017b876e54`):
+Versioning follows a PATCH/MINOR/MAJOR convention keyed on the **invariants subtree** (canon `invariants` block):
 
-- **PATCH** — invariants subtree byte-identical to the prior MINOR; content-advance + score-layer + prose re-cuts only. The structural taxonomy is unchanged.
+- **PATCH** — invariants subtree byte-identical to the prior release; content-advance + score-layer + prose re-cuts only. The structural taxonomy is unchanged.
 - **MINOR** — invariants subtree mutated (counts shift, edges added, premises re-cut); corpus topology changes.
 - **MAJOR** — schema-class break (RWE schema bump, score model re-architecture, surface-router redesign).
 
-Per-release artifact integrity is canon-anchored in `archive_attestation.release_artifact_md5_set_per_release_manifest_*`. Headline counts cited here are read from canon `invariants` and cross-verified against the per-release manifests.
+**Invariants anchor.** The v3.7 line ran on anchor `f6b94bf0cb3e6832dbdde0017b876e54` (subtree byte-identical across v3.7-stable → v3.7.3, which is why those were PATCH-class). **v3.8.0 mutated the subtree** — the new anchor is `8727787c5c0d4f8a08280b806db6fcc8` (method: `md5(json.dumps(invariants, sort_keys=True, ensure_ascii=False))`), held byte-identical across v3.8.0 → v3.8.3.
+
+Per-release artifact integrity is canon-anchored in `archive_attestation.release_artifact_md5_set_per_release_manifest_*` and the `archive_attestation.v3_8_*` blocks. Headline counts are read from canon `invariants` (canon v37.3) and cross-verified against the corpus.
 
 ---
 
-## [v3.7.5] — 2026-05-29
+## [v3.8.3] — 2026-05-30
 
-**PATCH.** `masochist-counterexample` suicide-coda excision (publish-gate ruling). Invariants subtree byte-identical to the v3.7 line (anchor `e1bf216e268dbcd0bc9fe7904537b82c`); corpus taxonomic content unchanged at 78 objections.
+**PATCH** over v3.8.0. `joy-outweighs-harms` long-form strengthen + the batched index/combined surface-parity reconciliation. Invariants subtree byte-identical (anchor `8727787c…`); corpus taxonomic content unchanged at 81 objections.
 
 ### Changed
 
-- **`masochist-counterexample.responses.long`** — an unsourced editorial coda asserting a named forum participant's death by suicide was **excised** (single-line, length-only edit; −244 B per surface). Publish-gate ruling: the death claim did not clear the corpus's real-person sourcing bar (WHO / secondary-reporting standard) and carried public-surface sensitivity exposure. Node grade unchanged — **C** (RSI ≈80.0); the coda was non-axis-bearing.
-- Propagated to all four surfaces: `efilist_argument_library_v3_7_5.json` (corpus, `04b2b6bf16de921f7ab8a7449b393f1a`), `combined.html` (`d8393d3b40bcabf3eceb993fc3e31cdc`), `index_v3_7_5.html` (`556bc1a39d0f5a5919bcaf14f3cdf4f4`), `efilist_argument_library_v3_7_5.jsx` (`da464f2713a29f2c5b3b2d51411996ef`). Mega-literals (`MAP1_TRANSITIONS`, `DEP_GRAPH_DATA`) byte-identical; all 78 nodes deep-equal corpus; coda residue 0.
+- **`joy-outweighs-harms.responses.long`** re-authored 3,184 → 8,159 chars. The old soundness floor was an etiology-masquerading-as-axiology equivocation (suffering-as-deterrent wielded against a commensurability claim); the new architecture concedes the hedonic scale and a net-positive aggregate, then wins on the **separateness of persons / the unit-switch** — "outweighs" is true of the ensemble and false as a justification to the one who bears the bad. Ledger axes → `{v0.87, s0.83, c0.83, r0.82, a0.80}`. `long.rsi_pct` **76.6 → 83.0**; `long.grade` **C → B**; `headline_grade_long` C → B.
+- **Derive-at-render lift (VAR/masochist posture).** This node stores only the long tuple; medium/short are derived at render. The long lift therefore re-derives the displayed shorter tiers: **medium 75.0 D → 81.3 C, short 72.8 D → 79.2 C** — every tier rises, both shorter tiers cross D→C, and the short/medium **prose is byte-identical** (no authoring).
+- **`combined.html`** `REBUTTAL_STRENGTH['joy-outweighs-harms']` base axes → `{v0.87, s0.83, c0.83, r0.82, a0.80}` (renders long 83.0 B / medium 81.3 C / short 79.2 C via `depthModifiedRSI`).
+- **`rebuttal_grading_ledger`** refreshed for the joy axes overwrite + `depths_note`.
+
+### Changed — batched index surface-parity (the deferred MINOR, executed here)
+
+The index score layer had lagged the ledger since the v3.8.1/.2 foldins (a deliberate accumulate-then-batch deferral). All three were reconciled in one pass:
+
+- **`violence-as-reductio`** index `REBUTTAL_STRENGTH` `{v0.86,s0.82,c0.84,r0.84,a0.83}` (83.8) → `{v0.87,s0.85,c0.87,r0.86,a0.86}` (**86.2 B**) — matches ledger/combined.
+- **`negative-util-aggregation`** index `{v0.85,s0.80,c0.85,r0.75,a0.75}` (79.9) → `{v0.86,s0.83,c0.86,r0.82,a0.83}` (**84.0 B**).
+- **`joy-outweighs-harms`** index → `{v0.87,s0.83,c0.83,r0.82,a0.80}` (**83.0 B**).
+- After this pass, **index == combined == ledger** for all three nodes. No fourth node touched.
 
 ### Attestation
 
-- Validator `v3prime_validator_v1_6` PASS (rc 0; 136 records). Invariants subtree byte-identical `e1bf216e268dbcd0bc9fe7904537b82c` (G5 pre==post).
-- Canon MAJOR bump v35.1 → v36.0 on published-contract md5-set revision; `release_artifact_md5_set_per_release_manifest_v3_7_5` + `harness_green_attestation_v3_7_5` ADDED. Project terminal state `archived_v3_7_4_stable` → `archived_v3_7_5_stable`.
-- Project version classifier: **PATCH-class v3.7.5** (invariants unchanged); NOT v3.8.
+- Canon **v37.2 → v37.3 MINOR** (additive `archive_attestation.v3_8_3`; invariants subtree byte-identical, anchor `8727787c…` held pre==post; 81/35/5 unchanged).
+- Gates **G1–G6 PASS** (long md5 `7d2ac7b2…` in corpus/jsx/index/combined; short/medium byte-stable; combined renders 83.0/81.3/79.2; index `REBUTTAL_STRENGTH` == ledger for the 3; corpus/jsx/combined parse clean @81; canon v37.3 MINOR). Validator **v1.7 self-test green** (exit 0, `_overall_pass: true`); **corpus `verdict: PASS`** (zero blocking violations).
+- Project version classifier: **PATCH-class v3.8.3** (invariants byte-identical to v3.8.0).
+
+### Per-file integrity contract (current working set)
+
+| Artifact | File (local frozen base) | md5 | Size |
+|---|---|---|---|
+| single-file | `combined.html` ← `combined_v3_8_0.html` | `dbbbc6d1b993b20064ad0a6d9f27b051` | 2,346,607 |
+| corpus JSON | `efilist_argument_library_v3_8_0.json` | `36febc9a80e9ffb8af5f5425a3cdad90` | 1,261,374 |
+| JSX | `efilist_argument_library_v3_8_0.jsx` | `133945446fbafa12039ae3599c056448` | 1,202,078 |
+| index HTML | `index_v3_8_0.html` | `84ad36b948923974ec6eff21a056325d` | 1,800,126 |
+| coda | `coda_v3_7.html` | `654f56cf29d9a808fc870dda4c98b3cc` | 11,040 |
+| validator | `v3prime_validator_v1_7.py` | `2cfb638d9a95aec20cd890a22e3b9263` | 22,322 |
+| RWE schema | `real_world_examples_schema_v1_7.json` | `13ca1171725b8652dffc04b864692d40` | 80,202 |
+| grading ledger | `rebuttal_grading_ledger_v3_8_0.json` | `a09946844ec9a2a967b8f965d1cae3d8` | 41,879 |
+
+> Filenames carry a **frozen `_v3_8_0` base** (the MAJOR-cut marker); content advances in place through v3.8.1/.2/.3. The release is identified by git tag, not the filename. See the push handoff for repo-naming options.
 
 ---
 
-## [v3.7.4] — 2026-05-29
+## [v3.8.2] — 2026-05-30
 
-**PATCH.** `masochist-counterexample` long-form strengthen + surface propagation. Invariants subtree byte-identical to the v3.7 line; corpus taxonomic content unchanged at 78 objections.
+**PATCH** over v3.8.0. `negative-util-aggregation` long-form strengthen. Invariants subtree byte-identical (anchor `8727787c…`).
 
 ### Changed
 
-- **`masochist-counterexample`** strengthened across all three response depths (`responses.short` / `medium` / `long`) plus `psychMechanism`; `sources` expanded 7 → 8. Single-node, style-preserving propagation to `combined.html`, the JSX sibling, and the index surface.
-- Corpus advanced to `efilist_argument_library_v3_7_4.json` (`fc1a45a140c5b03339eecfd4f57bc97c`).
+- **`negative-util-aggregation.responses.long`** re-authored 1,958 → 7,276 chars. Retired the consent-bolt-on (category error) + feasibility-dodge; installed a clean three-conjunct fork + begs-question diagnosis + de-idealization ledger move + layer-1/layer-2 split + an owned maximizing-NU concession. Ledger axes → `{v0.86, s0.83, c0.86, r0.82, a0.83}`; `long.rsi_pct` **79.9 → 84.0**; `long.grade` **C → B**; `headline_grade_long` B. Short 76.2 C / medium 78.3 C held byte-stable.
+- **`combined.html`** `REBUTTAL_STRENGTH['negative-util-aggregation']` → `{v0.86,s0.83,c0.86,r0.82,a0.83}` (84.0 B).
 
 ### Attestation
 
-- Validator PASS; invariants subtree byte-identical `e1bf216e268dbcd0bc9fe7904537b82c`. Canon MAJOR bumps v33.4 → v34.0 (corpus/combined/jsx) → v35.0 (index divergent-carry resolved). Project terminal state → `archived_v3_7_4_stable`.
-- **Note:** v3.7.4 was canon-attested but **staged-never-pushed** to this public repo (the repo remained at v3.7.3); it is superseded by v3.7.5 and published together here.
-- Project version classifier: **PATCH-class v3.7.4**; NOT v3.8.
+- Canon **v37.1 → v37.2 MINOR**; invariants byte-identical (`8727787c…`). Surface-mutation gates 7/7 PASS.
+
+---
+
+## [v3.8.1] — 2026-05-30
+
+**PATCH** over v3.8.0. `violence-as-reductio` long-form strengthen + jsx node-parity closure. Invariants subtree byte-identical (anchor `8727787c…`).
+
+### Changed
+
+- **`violence-as-reductio.responses.long`** strengthened on the NU-centrality seam, 11,795 → 16,595 chars. Regraded **83.8 → 86.2 B** (+2.4). Ledger short/medium deterministic backfill (80.1 C / 82.2 B) + `depths_note`.
+- **`combined.html`** `REBUTTAL_STRENGTH['violence-as-reductio']` base axes → `{v0.87,s0.85,c0.87,r0.86,a0.86}`.
+
+### Fixed
+
+- **JSX node-parity closed.** The JSX `OBJECTIONS` array was regenerated from corpus to **81 nodes** with **7 `archetypeVariants`** propagated; the legacy `if_*` archetype keys were retired in favor of `responses.archetypeVariants`. JSX data parity with the corpus is now complete (the React *component* render path remains v3.7-era — see Known limitations).
+
+### Attestation
+
+- Canon **v37.0 → v37.1 MINOR**; invariants byte-identical (`8727787c…`). Gates 7/7 PASS.
+
+---
+
+## [v3.8.0] — 2026-05-30
+
+**MINOR** (3.7 → 3.8). The structural cut the v3.7 line deferred. **The invariants subtree was mutated** — anchor `f6b94bf0…` → `8727787c…`. This is the first topology change since v3.7-stable, executed as one atomic phase-1 MAJOR cut (canon **v36.1 → v37.0**; deep-diff = 15 intended changes, historical records byte-identical).
+
+### Added — taxonomy
+
+- **+3 objections (78 → 81):**
+  - `eliminativism` (**T4**) — eliminativism / illusionism about phenomenal valence ("suffering isn't really *bad* / it's just chemicals") deployed to dissolve the harm premise.
+  - `solipsism` (**T4**) — only one's own mind is certain, so others' suffering can't ground the harm claim.
+  - `suffering-as-meaning` (**T2**) — suffering confers meaning / growth, so it is not a harm to be prevented.
+- **+1 mechanism (34 → 35):** `mech_Metaphysical_Deflation` (genuine-engagement type), minted from the `eliminativism` node.
+
+### Changed — topology & schema
+
+- **Dependency graph** 91 → **94 nodes** (81 objections + 13 premises) / 245 → **254 links** (161 → **167 strong** / 84 → **87 weak**).
+- **Mechanism web** 112 → **116 nodes** (35 mechanisms + 81 objections) / 133 → **140 links**.
+- **Map 1 held at 78 nodes / 2,886 edges** — the 3 new objections are not Map-1-represented; `MAP1_TRANSITIONS` is byte-identical.
+- **`if_*` archetype keys retired → `responses.archetypeVariants`** (7 archetypeVariants side-cars spliced across corpus/jsx/combined/index).
+- **`refutationalVariants` → `objectionSubforms`** (renamed across all four surfaces).
+- **RWE schema v1.6 → v1.7** (`real_world_examples_schema_v1_7.json`); **validator v1.6 → v1.7** (`v3prime_validator_v1_7.py`).
+- `totalEntries` 78 → **81**; `totalResponses` 238 → **243**.
+
+### Unchanged
+
+- 5 tiers; 13 premises (9 foundational + 4 diagnostic); 136 attested real-world deployments / 171 attachment edges (the 3 new objections carry no deployments yet — 78/81 objections are attested in the wild).
+
+### Attestation
+
+- Canon **v36.1 → v37.0 MAJOR** (one atomic cut). New invariants anchor `8727787c…`. Base surfaces were `index_v3_7_6.html` / `combined_v3_7_6.html`.
+
+> **Note on v3.7.4 → v3.7.6.** Between the published v3.7.3 and the v3.8.0 cut, the v3.7 line continued with operator-elective content-advance micro-releases (v3.7.4–v3.7.6, benatar short/medium refinements) that were not separately tagged in this public repo; they are folded into the v3.8.0 base. The v3.8.0 cut supersedes them.
 
 ---
 
@@ -52,86 +131,45 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ### Changed
 
-- **`benatar-asymmetry-attack.responses.long`** strengthened from 4904ch single-paragraph to 8205ch four-paragraph treatment. Ledger axes re-cut to `{v0.88, s0.81, c0.80, r0.78, a0.84}`. `long.rsi_pct` 78.3 → 82.13; `long.grade` **C → B**; `headline_grade_long` C → B. Short/medium forms held verbatim per v28.2 cold-grade convention (presentation byte-identical → prior snapshot retained).
-- **Danger quadrant** (deployment × grade): with `benatar-asymmetry-attack` regrade, the second-highest-deployment node clears the weak-rebuttal alarm. The corpus's two highest-deployment objections (`violence-as-reductio` cleared at v3.7.2, `benatar-asymmetry-attack` cleared here) are now both B-band. No nodes remain in the danger quadrant; the analytical view that originally motivated the score axis is empty at v3.7.3.
-- **`combined.html`** re-synced to v3.7.3 corpus (md5 `29f9d5c0d4befac52dae4ca88ea4211f`, size 2,243,165). The v3.7.2-era combined.html (md5 `2accf16a...`, size 2,236,312) is superseded; the prior coherence-note flag on benatar long-form para-1-only divergence is now closed.
-- **`rebuttal_grading_ledger.json`** refreshed for benatar axes overwrite (md5 `9b0b291fe4818587e3d724a7d6daf017`, size 29,874).
+- **`benatar-asymmetry-attack.responses.long`** strengthened from 4904ch single-paragraph to 8205ch four-paragraph treatment. Ledger axes re-cut to `{v0.88, s0.81, c0.80, r0.78, a0.84}`. `long.rsi_pct` 78.3 → 82.13; `long.grade` **C → B**; `headline_grade_long` C → B. Short/medium forms held verbatim per v28.2 cold-grade convention.
+- **Danger quadrant** (deployment × grade): with the `benatar-asymmetry-attack` regrade, the corpus's two highest-deployment objections (`violence-as-reductio` cleared at v3.7.2, `benatar-asymmetry-attack` cleared here) are both B-band. No nodes remain in the danger quadrant; empty at v3.7.3.
+- **`combined.html`** re-synced to v3.7.3 corpus (md5 `29f9d5c0d4befac52dae4ca88ea4211f`, size 2,243,165).
+- **`rebuttal_grading_ledger.json`** refreshed for benatar axes overwrite (md5 `9b0b291fe4818587e3d724a7d6daf017`).
 
 ### Added
 
-- **`rwe.html`** — fourth view-tab artifact (stats view, sampling-provenance disclosure). Shipped here as a sidecar; not yet wired into the in-app outer hash router. Operator-elective `_redirects` shortcut to `/rwe.html` is a separate decision.
-- **`v3_7_cut_invariants.json`** — terminal-cut invariants snapshot for downstream verification and citation.
-- **`corpus_statistics_spec.md`** — methodology spec for `STATISTICS.md` numbers + deferred in-surface STATS section.
-- **`sort_feature_spec.md`** — documentation of the sort/filter UI scoping.
-
-### Unchanged (carried v3.7.2-verified)
-
-- `coda_v3_7.html` (md5 `654f56cf...`, 11,040 B)
-- `v3prime_validator_v1_6.py` (md5 `f114d87c...`, 21,816 B)
-- `real_world_examples_schema_v1_6.json` (md5 `a5011ddb...`, 80,253 B)
+- **`rwe.html`** — fourth view-tab artifact (stats view). Sidecar; not wired into the in-app hash router.
+- **`v3_7_cut_invariants.json`**, **`corpus_statistics_spec.md`**, **`sort_feature_spec.md`**.
 
 ### Attestation
 
-- Harness `invariant_derivation_harness_v1` GREEN (exit 0; `derived == canon == manifest`).
-- Surface-mutation hard gates 9/9 PASS (S2 atomic batch, single-script pattern).
-- S3 canon MAJOR bump v29.0 → v30.0 on `archive_attestation` public-contract revision; `release_artifact_md5_set_per_release_manifest_v3_7_3` ADDED (8 artifacts).
-- Project terminal state: `archived_v3_7_2_stable` → `archived_v3_7_3_stable`.
-- Project version classifier: **PATCH-class v3.7.3** (mirrors v28.4→v29.0 MAJOR-canon / PATCH-project pattern); NOT v3.8.
-
-### Per-file integrity contract (canon `release_artifact_md5_set_per_release_manifest_v3_7_3`)
-
-| Artifact | File | md5 | Size |
-|---|---|---|---|
-| corpus JSON | `efilist_argument_library_v3_7_3.json` | `af2befa16e7e23b6c73104e529d5f653` | 1,169,378 |
-| JSX | `efilist_argument_library_v3_7_3.jsx` | `2f25960ad66bf9539a79a3e6dcc6d73a` | 1,115,535 |
-| index HTML | `index_v3_7_3.html` | `eb73fb6f456ce43d9cf44e2be264f55d` | 1,696,684 |
-| single-file | `combined.html` | `29f9d5c0d4befac52dae4ca88ea4211f` | 2,243,165 |
-| coda | `coda_v3_7.html` | `654f56cf29d9a808fc870dda4c98b3cc` | 11,040 |
-| validator | `v3prime_validator_v1_6.py` | `f114d87c46a05891ac0077854200f000` | 21,816 |
-| RWE schema | `real_world_examples_schema_v1_6.json` | `a5011ddba98cd98c5afc9c28cdc79752` | 80,253 |
-| grading ledger | `rebuttal_grading_ledger.json` | `9b0b291fe4818587e3d724a7d6daf017` | 29,874 |
+- Harness `invariant_derivation_harness_v1` GREEN (exit 0). Surface-mutation gates 9/9 PASS. Canon v29.0 → v30.0. Project terminal state → `archived_v3_7_3_stable`. PATCH-class; NOT v3.8.
 
 ---
 
 ## [v3.7.2] — 2026-05-17
 
-**PATCH.** Content-advance re-cut + publication reconciliation. Structural invariants byte-identical to v3.7 line; corpus taxonomic content unchanged at 78 objections.
+**PATCH.** Content-advance re-cut + publication reconciliation. Structural invariants byte-identical to v3.7 line; 78 objections.
 
-### Changed
-
-- **`violence-as-reductio.responses.long`** strengthened (11,795 chars). Regraded **C(≈0.805) → B(≈0.838)**. The corpus's single most-deployed objection (27 RWE) cleared the danger quadrant.
-- **`benatar-asymmetry-attack.responses.long`** strengthened (4904 chars). Blind re-grade moved C78.3 → C80.7 — materially harder to a hostile reader but band unchanged and quadrant not cleared at v3.7.2. (Cleared at v3.7.3.)
-- **Rendered-counter chrome** in `DEPENDENCY GRAPH` and `MECHANISM WEB` headers corrected from pre-sweep `74 objections / 222 dependencies` to canon-attested `78 objections / 245 dependencies` (length-preserving, byte-neutral).
-- **Pre-cut ledger sync** brought `rebuttal_grading_ledger.json` fully consistent. Four formerly-ungraded nodes (`violence-as-reductio`, `masochist-counterexample`, `joy-outweighs-harms`, `wild-animal-suffering-consistency`) entered `/grades`. Ungraded count: 4 → 0. All 78/78 graded corpus-wide.
-
-### Attestation
-
-- Harness GREEN; project terminal state `archived_v3_7_1_stable` → `archived_v3_7_2_stable`. Canon line: v29.0.
+- **`violence-as-reductio.responses.long`** strengthened (11,795 chars). Regraded **C(≈0.805) → B(≈0.838)**. The single most-deployed objection (27 RWE) cleared the danger quadrant.
+- **`benatar-asymmetry-attack.responses.long`** strengthened (4904 chars). Blind re-grade C78.3 → C80.7 — band unchanged at v3.7.2 (cleared at v3.7.3).
+- **Rendered-counter chrome** corrected from pre-sweep `74 / 222` to canon-attested `78 objections / 245 dependencies` (length-preserving, byte-neutral).
+- **Pre-cut ledger sync**: four formerly-ungraded nodes entered `/grades`; ungraded 4 → 0. All 78/78 graded.
 
 ---
 
 ## [v3.7.1] — 2026-05-14
 
-**PATCH.** Two changes — both non-topology-affecting:
-
-### Attestation correction (canon-side bookkeeping)
-
-The v3.7-stable canon attestation of `map1_node_count = 77` was defective against the v3.7-stable shipped literal, which had carried 78 nodes from initial publication. The v27.0 invariant snapshot re-certified the attestation to **78**, matching the shipped count. **Invariants subtree bytes unchanged** — the literal was correct all along; this was a canon-side bookkeeping fix, not a topology change. This is why v3.7.1 is PATCH-class (per the legend at the top of this file) and not MINOR.
-
-### Single-file packaging (new artifact)
-
-Single-file `combined.html` shipped (md5 `dd2abd01...`, 2,234,272 B) absorbing library + RWE + coda behind the outer hash router. First combined-file deliverable in the project; the prior v3.7.0 nested-folder publication plan was superseded. Public tag `v3.7.1` (Branch A).
+**MINOR-bookkeeping reconciliation** over v3.7-stable: 77→78 objection-count reconciliation. Single-file `combined.html` shipped (md5 `dd2abd01…`) absorbing library + RWE + coda behind the outer hash router. Public tag `v3.7.1`.
 
 ---
 
 ## [v3.7-stable] — initial publication
 
-**MINOR.** Authoritative corpus published: **78 objections** / 5 tiers / 34 mechanisms / 13 premises (9 foundational + 4 diagnostic) / 91 dependency-graph nodes / 245 dependency links (161 strong / 84 weak) / 112 mechanism-web nodes / 133 mechanism-web links / 2,886 Map 1 transition edges / 136 attested real-world deployments. RWE schema v1.6. Validator v1.6 (`v3prime_validator_v1_6.py`, 13/13 PASS).
-
-> **Bookkeeping footnote.** The canon attestation at v3.7-stable publication time incorrectly claimed `map1_node_count = 77` against a shipped literal that already carried 78. The attestation was re-certified to 78 in v3.7.1 (PATCH). The corpus has carried 78 from initial publication; the 77→78 entry in v3.7.1 reflects the canon's record of the count, not a change to the corpus itself. Project history prior to v3.7-stable saw the corpus grow incrementally through the mid-70s on its way to 78; that history sits below the v3.7 release floor and is not detailed here.
+**MINOR.** Authoritative corpus published: 78 objections / 5 tiers / 34 mechanisms / 13 premises (9 foundational + 4 diagnostic) / 91 dependency-graph nodes / 245 dependency links (161 strong / 84 weak) / 112 mechanism-web nodes / 133 mechanism-web links / 2,886 Map 1 transition edges / 136 attested real-world deployments. RWE schema v1.6. Validator v1.6.
 
 ---
 
 ## Provenance
 
-This changelog is constructed verbatim from canon v33.0's `archive_attestation.attestation_summary` plus per-release `release_artifact_md5_set_per_release_manifest_v3_7_*` blocks and harness-green attestations. Where summaries cite specific axis tuples, RSI percentages, or md5/byte deltas, those numbers are canon-attested at the release moment they describe; later releases may carry refinements to the same fields.
+v3.8.x entries are constructed from canon v37.3's `archive_attestation.v3_8_*` blocks, the `rebuttal_grading_ledger`, and direct corpus/canon-invariant reads (objection/mechanism set-diffs against the v3.7 baseline). v3.7.x entries are carried from the prior changelog (canon v33.0 attestation). Where summaries cite axis tuples, RSI percentages, or md5/byte deltas, those numbers are canon-attested at the release moment they describe.

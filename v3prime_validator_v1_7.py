@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
-v3prime_validator_v1_6.py
+v3prime_validator_v1_7.py
 =========================
 
-Canonical mechanical implementation of schema v1.6 validation rules for the
+Canonical mechanical implementation of schema v1.7 validation rules for the
 efilist_argument_library project. Additive superset of v3prime_validator.py
 (schema v1.5): retains the v3' rule logic unchanged and adds three new
 blocking rules (v18, v19, v20) covering the v1.6 speaker-attestation field
 extension.
 
 SCHEMA VERSION COVERAGE
+  - v1.7 (current): the v1.6 blocking rule set (v18/v19/v20) is UNCHANGED. v1.7
+    is a non-breaking field-doc revision: the corpus field `refutationalVariants`
+    was renamed to `objectionSubforms`. The RWE field `refutation_variant_id`
+    (name and all values) is unchanged, so the foreign-key/polarity/attachment
+    rules are semantically unaffected; only the resolution-path doc was updated.
+    `archetypeVariants` is a corpus-objection field and is NOT governed by this
+    RWE-scoped validator.
 -----------------------
 
 This validator covers BOTH:
