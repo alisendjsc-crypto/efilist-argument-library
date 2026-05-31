@@ -1,7 +1,7 @@
 {
- "canon_version": "37.3",
- "last_updated": "2026-05-30",
- "last_updated_by_session": "v3_8_3_joy_outweighs_harms_foldin_cowork",
+ "canon_version": "37.5",
+ "last_updated": "2026-05-31",
+ "last_updated_by_session": "v3_8_variant_cut_merge_deploy_s1",
  "project": {
   "name": "efilist_argument_library port",
   "domain": "antinatalism objection taxonomy",
@@ -1615,23 +1615,12 @@
   "safe_line_number_discovery_pattern": "When you need to locate a line by content match against index.html (especially patterns that might match a mega-literal), use: awk '/regex/{print NR; exit}' /mnt/project/index.html. This outputs only the line number, never the line content. Established session 4b as remediation for the grep -m blast-radius incident."
  },
  "next_recommended_session": {
-  "session_id": "git_push_v3_8_x_pass",
-  "class": "HIGH/Cowork (operator-batched git push; no authoring) — or own-MAX next-strengthen triage.",
-  "rationale": "v3.8.3 joy-outweighs-harms long strengthen (76.6 C->83.0 B) + combined REBUTTAL + ledger refresh LANDED; AND the batched index REBUTTAL_STRENGTH parity (VAR 86.2 / NUA 84.0 / joy 83.0) LANDED same session (canon 37.2->37.3). Standing index/combined badge divergences now RESOLVED. Sole open carry-forward of consequence: v3.8.x line unpushed (single-copy exposure).",
-  "target_node": "n/a (parity+push pass); next strengthen target by pure-triage TBD against post-joy ledger floor.",
-  "fork_options": [
-   "GIT PUSH v3.8.x artifacts -> efilist-argument-library/ repo (HIGH/Cowork; clears single-copy exposure).",
-   "STRENGTHEN next-lowest node (own-MAX, pure-triage pick against current ledger floor)."
-  ],
-  "carry_forward": [
-   "git push pending: v3.8.x artifacts NOT pushed to efilist-argument-library/ repo (operator batches).",
-   "jsx React component is v3.7-era: renders short/med/long only (no archetypeVariants render path; if_* never read by component), stale docstring '75 objections' + hardcoded '74 OBJECTIONS' span at ~L9325. Data parity DONE; component-render + cosmetic refresh deferred to jsx surface-parity session.",
-   "objectionSubforms display surface (D5) still deferred.",
-   "corpus internal 'version' field still '3.8.0' (spec scoped canon-version bump only; not corpus-version).",
-   "index.html REBUTTAL_STRENGTH['negative-util-aggregation'] left at old display value (84.0 B in combined only) — DISPLAY-ONLY divergence; ledger-authoritative per 5a. Batch with VAR divergence in surface-parity MINOR.",
-   "DEFERRED: NUA down-tier propagation — medium/short still run old consent-bolt-on framing; long leads medium by 5.7pt. Future MINOR could propagate begs-question/de-idealization into medium.",
-   "NOTE: corpus internal 'version' field still '3.8.0'; filenames still v3_8_0 (carried since v3.8.1). Confirm whether artifact-version/filenames should track canon.",
-   "index REBUTTAL_STRENGTH surface-parity RESOLVED at v3.8.3: VAR/NUA/joy index badges reconciled to ledger (86.2 / 84.0 / 83.0); index == combined == ledger for all three."
+  "session_id": "v3_8_variant_cut_deploy_s1 (GATED / IRREVERSIBLE)",
+  "class": "HIGH/Cowork — operator-run native git merge + live deploy; no authoring",
+  "rationale": "Render-merge re-attestation LANDED (canon 37.5; counts/R3/md5 done; working set == repo post-sync). Repo git index was corrupt: HEAD truncated 'v3.8.'->needs 'v3.8.x' (REPAIRED in-sandbox), plus corrupt .git/index + stale 0-byte index.lock that the mount CANNOT unlink. Step 4 (rm lock+index, rebuild, add -A, commit, FF-merge v3.8.x->main) + Step 5 (rewrite wuld.ink/library-about counts+md5; deploy main->production library.wuld.ink; spot-check 7 archetype-pill nodes) require native PowerShell + Josiah go/no-go. Production still v3.7.3. Deploy is the only irreversible step — safe to run Step 4 then gate Step 5 separately.",
+  "handoff_files": [
+   "session_v3_8_variant_cut_merge_deploy_s1_state.json",
+   "powershell_git_merge_handoff_v3_8_x.ps1"
   ]
  },
  "open_questions": {
@@ -1758,7 +1747,7 @@
   ],
   "reverts_or_revisions_to_protocol": "None as of 13.1"
  },
- "canon_version_marker": "v37.3",
+ "canon_version_marker": "v37.5",
  "canon_version_history_tail": {
   "compaction_at": "v33.0",
   "preserved_entries": [
@@ -2354,6 +2343,22 @@
    "deferred": [
     "git push v3.8.x line (operator-batched; single-copy exposure in Downloads/Argument Library)"
    ]
+  },
+  "v3_8_x_render_merge": {
+   "version": "v3.8.x (render-path + variant-cut merge re-attestation)",
+   "date": "2026-05-31",
+   "class": "MINOR",
+   "session": "v3_8_variant_cut_merge_deploy_s1",
+   "cut_summary": "Render-path archetypeVariants in-place toggle (7 nodes) spliced combined/index/jsx in predecessor (canon 37.3->37.4). THIS merge pass (37.4->37.5): count regen [combined+index each: 'all 74 entries'->81; 'The 34 mechanism clusters...from the 81 objections'->35]; R3 corpus _provenance_note_r3 (responses.if_sophisticate/if_defender SUPERSEDED by responses.archetypeVariants as of v3.8.0; 16 if_* loci retained for provenance 4h-alt-b/4k-zzz) +207B; md5 re-attest. HELD+flagged out-of-mechanical-scope: combined coda lead L2332 '78 ways/2,886 transitions/34 mechanisms' (authored; coherent w/ shipped 78-node /2886-edge map1); 'all 74 source nodes'+convergence table 3/104/766 (stale map1 gen summary; needs re-derivation). Invariants 81/35/5 + map1 78/2886 byte-stable (inv-hash 8727787c). Repo git HEAD-truncation (v3.8.->v3.8.x) repaired in-sandbox; add/commit/merge routed to native PowerShell (mount blocks unlink).",
+   "release_artifact_md5_set": {
+    "combined_v3_8_0.html": "9ecc34d7c77b744d046b3c99b6e694b9",
+    "index_v3_8_0.html": "4c7bb904d55231bf23fc7dbd461ca28a",
+    "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
+    "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
+    "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
+    "project_canon_v37_3.json": "<self; recorded in session_v3_8_variant_cut_merge_deploy_s1_state.json>"
+   },
+   "supersedes": "v3_8_3 surface md5 set (render-path splice + count regen + R3 note re-hash combined/index/corpus)"
   }
  },
  "cold_start_instructions": {
@@ -2883,6 +2888,7 @@
   "note": "Pre-v33 session_log truncated to ~100-char summaries; full text in repo git history of v32.0 canon."
  },
  "session_log_recent": [
+  "v3_8_render_path_archetype_toggle_s1 2026-05-31 [MINOR v37.3->v37.4]: D5 archetypeVariants in-place per-card toggle BUILT across combined/index/jsx (variant read-path 0->3/3/4); R1 jsx counts + R2 combined/index 78-obj count-set folded; D7 long-body bytes stable; node+esbuild parse PASS; 6/6 gates",
   "cowork-publication-refresh: Branch A doc-set refresh (orientation supersession + README/instructions/CITATION + STATISTICS.md + 6 screenshots) for incremental v3.7.1 repo update; 7/7 canon md5 anchors verified, counts verified correct (no correction), manifest=invariants-only flagged; +1 additive canon key, invariants md5 held pre==post; MINOR v28.3->v28.4; terminus sealed; 5/5",
   "branch_b_content_advance_recut_session 2026-05-17 [MAJOR v28.4->v29.0]: v3.7.2 content-advance re-cut + publication reconciliation. Elected (1b)=post_var_regrade (LINEAR terminal; strictly dominates post_four_ungraded - corrected prompt's imprecise '(1b)=four-ungraded/benatar NOT included': empirically (1b)=(1a)+VAR C->B+VAR prose strengthen). Carries benatar long 4904(b25a0116) + VAR long 11795(0bd12459) + 78/78 grades + VAR@B0.838 quadrant cleared. Pre-cut ledger-sync 3-node (masochist D/joy C/wild-animal B; mirrors v28.2; ungraded 3->0, VAR+74 byte-identical). SCALAR-3: chrome 74/222->78/245 byte-neutral both files; coda fix N/A-by-absence (no 3.7.x string). HG1 harness GREEN exit0 final combined 2accf16a; HG4 validator _overall_pass:true; CI-1..8 PASS. New public contract md5 set v3_7_2. archive_attestation revised (MAJOR canon trigger); invariants subtree HELD f6b94bf0/27c43e15 pre==post (project-version classifier => v3.7.2 PATCH not v3.8). Terminus re-sealed archived_v3_7_2_stable, next_recommended_session null. 1/1 deliverable.",
   "benatar_s_strengthen_recut_freeze_recovery 2026-05-23: cold freeze reconstructed from 16 screenshots (lost container); Para 4 assembled 3299 ch md5 ea21366c; new long 8205 ch md5 0e9bf12; cold tuple {0.88,0.81,0.80,0.78,0.84} RSI 0.8213 B-band branch 3a-analogue; freeze-only, 0 mutations.",
@@ -2901,7 +2907,8 @@
   "rebuttal_strengthening_benatar_short_s1: benatar-asymmetry-attack short D74.5->B81.4 (+6.9) + medium C76.6->B81.2 (+4.6); parity + good-for-whom gaps closed via logical-form (comparison vs two-place deprivation); side-car prose, corpus splice v3.7.5->v3.7.6; long untouched (82.13/B); invariants byte-identical e1bf216e; 9/9 gates",
   "rebuttal_strengthening_violence_nu_seam_s1: VAR long NU-seam strengthen 11795->16595c, RSI 83.8->86.2 B, +jsx parity +ledger short/med backfill, 7/7 PASS",
   "negative_util_aggregation_foldin_cowork: NUA long strengthen 1958->7276c, RSI 79.9 C->84.0 B, +ledger long/headline +combined REBUTTAL, 7/7 PASS",
-  "joy_outweighs_harms_foldin_cowork: joy long strengthen 3184->8159c, RSI 76.6 C->83.0 B, +ledger long/headline +combined REBUTTAL (derive-at-render med 75.0->81.3 / short 72.8->79.2, all D->C); +index REBUTTAL parity VAR 83.8->86.2 / NUA 79.9->84.0 / joy ->83.0 (no 4th); 6 surfaces, G1-G6 PASS"
+  "joy_outweighs_harms_foldin_cowork: joy long strengthen 3184->8159c, RSI 76.6 C->83.0 B, +ledger long/headline +combined REBUTTAL (derive-at-render med 75.0->81.3 / short 72.8->79.2, all D->C); +index REBUTTAL parity VAR 83.8->86.2 / NUA 79.9->84.0 / joy ->83.0 (no 4th); 6 surfaces, G1-G6 PASS",
+  "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* supersession note (corpus +207B) + md5 re-attest v3.8.x render-merge set; merge/commit -> native PowerShell (mount unlink-blocked); canon 37.4->37.5 MINOR (inv 81/35/5 held, inv-hash 8727787c stable). audits anchors-unique+UTF8+NUL0+CR0 PASS"
  ],
  "arc_compacted_legacy_cascade_index": {
   "block_kind": "arc_compacted_legacy_cascade_index",

@@ -60,6 +60,15 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
 }
 .depth-btn:hover { border-color: #555; color: #999; }
 .depth-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
+/* v3.8 D5 archetypeVariants per-card toggle */
+.archetype-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 14px; }
+.archetype-row .archetype-label { font-size: 9px; color: #555; letter-spacing: 2px; }
+.archetype-pill { background: #161616; border: 1px solid #2d2d2d; color: #777; font-family: inherit; font-size: 10px; letter-spacing: 1px; padding: 5px 12px; cursor: pointer; text-transform: uppercase; transition: all .15s; }
+.archetype-pill:hover { border-color: #555; color: #aaa; }
+.archetype-pill.active { background: #3a0f0f; border-color: #8b0000; color: #e0a0a0; }
+.archetype-pill.canonical.active { background: #242424; border-color: #666; color: #ccc; }
+.archetype-register { font-size: 9px; color: #8a6a3a; letter-spacing: 1.5px; }
+@media (max-width: 480px) { .archetype-row .archetype-label { width: 100%; margin-bottom: 2px; } .archetype-pill { font-size: 9px; padding: 4px 9px; } }
 .objection-header {
   background: #111; border: 1px solid #222; padding: 14px 18px;
   cursor: pointer; display: flex; justify-content: space-between;
@@ -910,7 +919,7 @@ body.legible .m1-stars-badge { font-size: 10px; }
   Scores shown are depth-adjusted. DISMANTLE responses carry the base score. DECONSTRUCT responses lose approximately 5 points on Completeness and 3 on Resilience. PUNCH responses lose approximately 12 on Completeness and 6 on Resilience. Validity, Soundness, and Autonomy are consistent across depths — the logical structure doesn't change, only the space available to develop and defend it.
 
   <h4>CALIBRATION NOTES</h4>
-  Scores were assigned through systematic close reading of all 74 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Resilience while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
+  Scores were assigned through systematic close reading of all 81 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Resilience while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
   <br><br>
   The highest-scoring entries in the library are: <code>performative-contradiction</code>, <code>epistemic-humility</code>, <code>bitter-childhood</code>, and <code>slippery-slope-eugenics</code> — each scoring A-grade across all five axes. The most common weakness across the library is Autonomy — responses that invoke the zero-sum hedonic framework or survival-firmware interpretation score lower because these are contested premises within the broader philosophical community.
 </div>
@@ -931,7 +940,7 @@ body.legible .m1-stars-badge { font-size: 10px; }
     <h4>PSYCHOLOGICAL MECHANISM WEB &mdash; MAP 2 METHODOLOGY</h4>
     This visualization answers the question every debater needs answered first: <em>why is my interlocutor saying this?</em> Before you can respond to an objection effectively, you need to understand whether it originates from genuine philosophical inquiry or from a psychological defense mechanism that has dressed itself in philosophical clothing. The Mechanism Web provides that diagnostic layer.
     <br><br>
-    The map displays 34 canonical mechanism clusters connected to 78 objection nodes via 133 edges. Each objection is linked to the psychological, cognitive, or rhetorical mechanisms that generate it. This is not speculation &mdash; each mechanism assignment is derived from the objection's internal logic, its typical deployment context, and the pattern of reasoning it follows when stated by real interlocutors.
+    The map displays 35 canonical mechanism clusters connected to 81 objection nodes via 140 edges. Each objection is linked to the psychological, cognitive, or rhetorical mechanisms that generate it. This is not speculation &mdash; each mechanism assignment is derived from the objection's internal logic, its typical deployment context, and the pattern of reasoning it follows when stated by real interlocutors.
 
     <h4>WHY THIS MAP EXISTS</h4>
     Most argument preparation focuses on <em>what</em> the opponent says. This map focuses on <em>why</em> they say it. The distinction matters because interlocutors operating from the same underlying mechanism will cycle through objections that share that mechanism. A person driven by Terror Management Theory will not stop at one TMT-linked objection &mdash; they will move laterally through the cluster: from "life is a gift" to "you're just depressed" to "why not suicide?" to "you're being edgy." Knowing the mechanism lets you predict the trajectory.
@@ -969,7 +978,7 @@ body.legible .m1-stars-badge { font-size: 10px; }
     <strong style="color:#ccc">3. Dead-end identification.</strong> Some mechanism clusters (particularly TMT and Ad Hominem) produce objections that are fundamentally unreachable through logical argument because the mechanism exists specifically to resist logic. The map helps you recognize when you have entered a dead-end cluster and should redirect or disengage rather than escalate.
 
     <h4>CONSTRUCTION METHODOLOGY</h4>
-    Mechanism assignments were derived through systematic analysis of each objection's logical structure, its documented deployment patterns in philosophical debate and online discourse, and the psychological literature on the relevant cognitive/defense processes. Assignments were validated for consistency: if objection A and objection B deploy structurally identical reasoning patterns, they receive the same mechanism classification regardless of their surface-level topic. The 34 mechanism clusters were derived bottom-up from the 78 objections, not imposed top-down from a pre-existing taxonomy.
+    Mechanism assignments were derived through systematic analysis of each objection's logical structure, its documented deployment patterns in philosophical debate and online discourse, and the psychological literature on the relevant cognitive/defense processes. Assignments were validated for consistency: if objection A and objection B deploy structurally identical reasoning patterns, they receive the same mechanism classification regardless of their surface-level topic. The 35 mechanism clusters were derived bottom-up from the 81 objections, not imposed top-down from a pre-existing taxonomy.
   </div>
   <div id="map-container">
     <svg id="map-graph"></svg>
@@ -1030,7 +1039,7 @@ body.legible .m1-stars-badge { font-size: 10px; }
     <h4>PHILOSOPHICAL DEPENDENCY GRAPH &mdash; MAP 3 METHODOLOGY</h4>
     This visualization answers the question the Mechanism Web cannot: <em>what does each response actually depend on?</em> Where Map 2 diagnoses the psychological origin of objections, Map 3 exposes the philosophical load-bearing structure of responses. It shows which foundational premises each rebuttal invokes, how strongly it depends on them, and where the library is structurally vulnerable to attack.
     <br><br>
-    The graph displays 13 premise nodes connected to 78 objection nodes via 245 dependency edges. Each edge represents an invocation of a philosophical premise within the response text. The graph was constructed through close reading of all 74 entries across all three response depths, with a systematic manual pass across the five previously undercounted premises completed in v3.5.
+    The graph displays 13 premise nodes connected to 81 objection nodes via 254 dependency edges. Each edge represents an invocation of a philosophical premise within the response text. The graph was constructed through close reading of all 81 entries across all three response depths, with a systematic manual pass across the five previously undercounted premises completed in v3.5.
 
     <h4>THE TWO-LAYER ARCHITECTURE</h4>
     Premises are divided into two functional layers:
@@ -1120,7 +1129,7 @@ body.legible .m1-stars-badge { font-size: 10px; }
     These three inference methods combine to generate the full transition matrix for Map 1, turning the library from a static reference tool into a dynamic debate navigation system.
 
     <h4>CONSTRUCTION METHODOLOGY</h4>
-    Dependency edges were identified through systematic close reading of all 74 entries across all three response depths (PUNCH, DECONSTRUCT, DISMANTLE). For each response, every philosophical premise explicitly or implicitly invoked was identified and classified by strength. The initial automated pass used keyword detection. The v3.5 manual pass supplemented this with human-grade reading specifically targeting implicit invocations &mdash; cases where a response operates on a premise without naming it. Strength classification followed the structural collapse test described above. All edge additions and classifications are documented in the review notes accessible through the graph interface.
+    Dependency edges were identified through systematic close reading of all 81 entries across all three response depths (PUNCH, DECONSTRUCT, DISMANTLE). For each response, every philosophical premise explicitly or implicitly invoked was identified and classified by strength. The initial automated pass used keyword detection. The v3.5 manual pass supplemented this with human-grade reading specifically targeting implicit invocations &mdash; cases where a response operates on a premise without naming it. Strength classification followed the structural collapse test described above. All edge additions and classifications are documented in the review notes accessible through the graph interface.
   </div>
   <div id="dep-container">
     <svg id="dep-graph"></svg>
@@ -3954,6 +3963,9 @@ let selectedTier = null;
 let selectedObjection = null;
 let searchTerm = "";
 let responseLevel = "medium";
+let archetypeSel = {};  // {objId: slot} ; key absent = canonical body (v3.8 D5; display-only, D7-safe)
+const ARCHETYPE_ORDER = ['sophisticate', 'defender', 'drifter', 'blended'];
+const ARCHETYPE_REGISTER = { sophisticate: 'TECHNICAL', defender: 'DIRECT', drifter: 'PLAIN', blended: 'ADAPTIVE' };
 
 let currentMode = 'standard';
 
@@ -4048,6 +4060,27 @@ function setDepth(depth) {
   render();
 }
 
+function setArchetype(id, slot) {
+  // v3.8 D5: per-card archetype toggle. Display-only; never mutates responses.short/medium/long (D7).
+  if (archetypeSel[id] === slot) slot = null;        // re-click active pill -> back to canonical
+  if (slot) archetypeSel[id] = slot; else delete archetypeSel[id];
+  render();
+}
+
+function archetypePills(obj) {
+  var av = obj.responses && obj.responses.archetypeVariants;
+  if (!av) return '';
+  var slots = ARCHETYPE_ORDER.filter(function(s){ return typeof av[s] === 'string' && av[s].length; });
+  if (!slots.length) return '';
+  var sel = archetypeSel[obj.id] || null;
+  var h = '<div class="archetype-row"><span class="archetype-label">ARCHETYPE:</span>';
+  h += '<button class="archetype-pill canonical' + (!sel ? ' active' : '') + '" onclick="event.stopPropagation(); setArchetype(\'' + obj.id + '\', null)">CANONICAL</button>';
+  slots.forEach(function(s){
+    h += '<button class="archetype-pill' + (sel === s ? ' active' : '') + '" onclick="event.stopPropagation(); setArchetype(\'' + obj.id + '\',\'' + s + '\')" title="' + ARCHETYPE_REGISTER[s] + ' register">' + s.toUpperCase() + '</button>';
+  });
+  return h + '</div>';
+}
+
 function toggleObjection(id) {
   selectedObjection = selectedObjection === id ? null : id;
   render();
@@ -4056,7 +4089,9 @@ function toggleObjection(id) {
 function copyResponse(id) {
   const obj = OBJECTIONS.find(o => o.id === id);
   if (!obj) return;
-  const text = obj.responses[responseLevel];
+  const _aSlot = archetypeSel[id];
+  const _av = obj.responses.archetypeVariants;
+  const text = (_aSlot && _av && _av[_aSlot]) ? _av[_aSlot] : obj.responses[responseLevel];  // v3.8 D5: copy displayed body
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.getElementById('copy-' + id);
     if (btn) {
@@ -4097,6 +4132,11 @@ function render() {
     const isOpen = selectedObjection === obj.id;
     const tierInfo = TIERS[obj.tier];
     const borderColor = isOpen ? tierInfo.color + '66' : '#222';
+    const _av = obj.responses.archetypeVariants || null;
+    const _aSlot = archetypeSel[obj.id] || null;
+    const _bodyText = (_aSlot && _av && _av[_aSlot]) ? _av[_aSlot] : obj.responses[responseLevel];  // D7: canonical path intact
+    const _rsiLevel = _aSlot ? 'long' : responseLevel;  // D6: variant inherits parent (base/long) RSI; no per-variant grade
+    const _respLabel = _aSlot ? (_aSlot.toUpperCase() + ' &middot; ' + ARCHETYPE_REGISTER[_aSlot]) : depthLabels[responseLevel];
 
     html += `<div class="objection-header ${isOpen ? 'open' : ''}" style="border-color:${borderColor}" onclick="toggleObjection('${obj.id}')">
       <div>
@@ -4123,7 +4163,7 @@ function render() {
         <div class="diagnosis">${obj.diagnosis}</div>
       </div>
       <div class="section">
-        <div class="section-label">RESPONSE — ${depthLabels[responseLevel]}${(() => {
+        <div class="section-label">RESPONSE — ${_respLabel}${(() => {
           const conf = obj.confidence || 'full';
           let badges = '';
           if (conf !== 'full') {
@@ -4133,7 +4173,7 @@ function render() {
               (hasNote ? '<button class="note-toggle" onclick="event.stopPropagation(); toggleNote(\'' + obj.id + '\')">[NOTE]</button>' : '');
           }
           // RSI badge
-          var rsiScores = depthModifiedRSI(obj.id, responseLevel);
+          var rsiScores = depthModifiedRSI(obj.id, _rsiLevel);
           if (rsiScores) {
             var rsi = computeRSI(rsiScores);
             var grade = rsiGrade(rsi);
@@ -4141,10 +4181,10 @@ function render() {
           }
           return badges;
         })()}</div>
-        <div class="response-box ${(obj.confidence === 'provisional' && responseLevel === 'long') ? 'provisional-response' : ''}">${obj.responses[responseLevel]}</div>
+        ${archetypePills(obj)}<div class="response-box ${(obj.confidence === 'provisional' && responseLevel === 'long') ? 'provisional-response' : ''}">${_bodyText}</div>
         ${obj.note && responseLevel === 'long' ? '<div class="confidence-note" id="note-' + obj.id + '">' + obj.note + '</div>' : ''}
         ${(() => {
-          var rsiScores = depthModifiedRSI(obj.id, responseLevel);
+          var rsiScores = depthModifiedRSI(obj.id, _rsiLevel);
           if (!rsiScores) return '';
           var rsi = computeRSI(rsiScores);
           var grade = rsiGrade(rsi);

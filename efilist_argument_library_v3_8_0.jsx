@@ -4,7 +4,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
  * EFIList Argument Library v3.7
  * Full-Feature React Component
  * 
- * 75 objections across 5 tiers, 229 pre-built responses (3 depth levels on all 75, plus 4 archetype-conditional surfaces on violence-as-reductio).
+ * 81 objections across 5 tiers, 243 pre-built responses (3 depth levels on all 81). archetypeVariants authored on 7 nodes (sophisticate/defender/drifter/blended), surfaced via the in-place archetype toggle.
  * 4 cross-cutting registered moves (3 defensive_move + 1 substantive_position; Andreas canonize cascade closed 4k-zzzzz).
  * Integrated Psychological Mechanism Web + Philosophical Dependency Graph (D3.js force-directed graph).
  * Confidence indicator system with methodological notes.
@@ -9112,6 +9112,8 @@ const TIERS = {
 };
 
 const DEPTH_LABELS = { short: "PUNCH", medium: "DECONSTRUCT", long: "DISMANTLE" };
+const ARCHETYPE_ORDER = ["sophisticate", "defender", "drifter", "blended"];
+const ARCHETYPE_REGISTER = { sophisticate: "TECHNICAL", defender: "DIRECT", drifter: "PLAIN", blended: "ADAPTIVE" };
 
 const TIER_COLORS = { 1: "#ff3333", 2: "#ff6633", 3: "#cc9900", 4: "#6699cc", 5: "#9966cc" };
 
@@ -9470,7 +9472,7 @@ const MechanismWeb = React.forwardRef(function MechanismWeb({ onSelectObj, isHig
         {/* Stats */}
         <div style={{ position: "absolute", top: 12, left: 12, fontSize: 9, color: "#555", zIndex: 5, letterSpacing: 0.5, lineHeight: 2 }}>
           <span style={{ color: "#8b0000", fontWeight: 600 }}>34</span> MECHANISMS &middot;{" "}
-          <span style={{ color: "#8b0000", fontWeight: 600 }}>74</span> OBJECTIONS &middot;{" "}
+          <span style={{ color: "#8b0000", fontWeight: 600 }}>81</span> OBJECTIONS &middot;{" "}
           <span style={{ color: "#8b0000", fontWeight: 600 }}>118</span> CONNECTIONS<br />
           CLICK A NODE TO EXPLORE
         </div>
@@ -9592,6 +9594,7 @@ export default function EFIListArgumentLibrary() {
   const [openId, setOpenId] = useState(null);
   const [copiedId, setCopiedId] = useState(null);
   const [visibleNotes, setVisibleNotes] = useState(new Set());
+  const [archetypeSel, setArchetypeSel] = useState({});  // {id: slot} ; absent = canonical (v3.8 D5, D7-safe display-only)
   const [displayMode, setDisplayMode] = useState(() => {
     try { return localStorage.getItem("arglib-mode") || "standard"; } catch { return "standard"; }
   });
@@ -9625,10 +9628,20 @@ export default function EFIListArgumentLibrary() {
     return results;
   }, [searchTerm, selectedTier]);
 
+  const setArchetype = (id, slot) => {
+    // v3.8 D5 per-card archetype toggle; display-only, never mutates responses.short/medium/long (D7).
+    setArchetypeSel((prev) => {
+      const next = { ...prev };
+      if (next[id] === slot || slot === null) delete next[id];
+      else next[id] = slot;
+      return next;
+    });
+  };
+
   const copyResponse = (id) => {
     const obj = OBJECTIONS.find((o) => o.id === id);
     if (!obj) return;
-    navigator.clipboard.writeText(obj.responses[responseLevel]).then(() => {
+    navigator.clipboard.writeText((archetypeSel[id] && obj.responses.archetypeVariants && obj.responses.archetypeVariants[archetypeSel[id]]) ? obj.responses.archetypeVariants[archetypeSel[id]] : obj.responses[responseLevel]).then(() => {
       setCopiedId(id);
       setTimeout(() => setCopiedId(null), 2000);
     });
@@ -9745,6 +9758,10 @@ export default function EFIListArgumentLibrary() {
                 const isOpen = openId === obj.id;
                 const tierInfo = TIERS[obj.tier];
                 const conf = obj.confidence || "full";
+                  const _av = obj.responses.archetypeVariants || null;
+                  const _aSlot = archetypeSel[obj.id] || null;
+                  const _aSlots = _av ? ARCHETYPE_ORDER.filter((s) => typeof _av[s] === "string" && _av[s].length) : [];
+                  const _bodyText = (_aSlot && _av && _av[_aSlot]) ? _av[_aSlot] : obj.responses[responseLevel];
                 return (
                   <div key={obj.id} id={"entry-" + obj.id}>
                     <div className={"ef-obj-header" + (isOpen ? " open" : "")}
@@ -9786,7 +9803,7 @@ export default function EFIListArgumentLibrary() {
                         </div>
                         <div className="ef-section" style={{ marginBottom: 16 }}>
                           <div className="ef-section-label" style={{ fontSize: 9, color: "#555", letterSpacing: 2, marginBottom: 6 }}>
-                            RESPONSE — {DEPTH_LABELS[responseLevel]}
+                            RESPONSE — {_aSlot ? (_aSlot.toUpperCase() + " · " + ARCHETYPE_REGISTER[_aSlot]) : DEPTH_LABELS[responseLevel]}
                             {conf !== "full" && (
                               <span style={{ fontSize: 8, letterSpacing: 1.5, textTransform: "uppercase", padding: "2px 6px", marginLeft: 8, color: conf === "strong" ? "#c90" : "#c55", border: `1px solid ${conf === "strong" ? "rgba(204,153,0,0.2)" : "rgba(204,85,85,0.2)"}`, background: conf === "strong" ? "rgba(204,153,0,0.07)" : "rgba(204,85,85,0.07)" }}>
                                 {conf === "strong" ? "STRONG" : "PROVISIONAL"}
@@ -9799,8 +9816,17 @@ export default function EFIListArgumentLibrary() {
                               </button>
                             )}
                           </div>
+                          {_aSlots.length > 0 && (
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, alignItems: "center", margin: "0 0 12px" }}>
+                              <span style={{ fontSize: 9, color: "#555", letterSpacing: 2 }}>ARCHETYPE:</span>
+                              <button onClick={(e) => { e.stopPropagation(); setArchetype(obj.id, null); }} style={{ background: !_aSlot ? "#242424" : "#161616", border: "1px solid " + (!_aSlot ? "#666" : "#2d2d2d"), color: !_aSlot ? "#ccc" : "#777", fontFamily: "inherit", fontSize: 10, letterSpacing: 1, padding: "5px 12px", cursor: "pointer", textTransform: "uppercase" }}>CANONICAL</button>
+                              {_aSlots.map((s) => (
+                                <button key={s} title={ARCHETYPE_REGISTER[s] + " register"} onClick={(e) => { e.stopPropagation(); setArchetype(obj.id, s); }} style={{ background: _aSlot === s ? "#3a0f0f" : "#161616", border: "1px solid " + (_aSlot === s ? "#8b0000" : "#2d2d2d"), color: _aSlot === s ? "#e0a0a0" : "#777", fontFamily: "inherit", fontSize: 10, letterSpacing: 1, padding: "5px 12px", cursor: "pointer", textTransform: "uppercase" }}>{s.toUpperCase()}</button>
+                              ))}
+                            </div>
+                          )}
                           <div className="ef-response-box" style={{ fontSize: 12, color: "#ddd", lineHeight: 1.8, background: "#0c0c0c", border: "1px solid #222", padding: 16, whiteSpace: "pre-wrap", opacity: conf === "provisional" && responseLevel === "long" ? 0.7 : 1 }}>
-                            {obj.responses[responseLevel]}
+                            {_bodyText}
                           </div>
                           {obj.note && responseLevel === "long" && visibleNotes.has(obj.id) && (
                             <div className="ef-conf-note" style={{ fontSize: 10, color: "#886", lineHeight: 1.6, background: "#141410", border: "1px solid #332", padding: "10px 14px", marginTop: 8, fontStyle: "italic" }}>
