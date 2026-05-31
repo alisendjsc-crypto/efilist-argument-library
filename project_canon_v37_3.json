@@ -1,5 +1,5 @@
 {
- "canon_version": "37.6",
+ "canon_version": "37.7",
  "last_updated": "2026-05-31",
  "last_updated_by_session": "v3_8_variant_cut_merge_deploy_s1",
  "project": {
@@ -1615,12 +1615,11 @@
   "safe_line_number_discovery_pattern": "When you need to locate a line by content match against index.html (especially patterns that might match a mega-literal), use: awk '/regex/{print NR; exit}' /mnt/project/index.html. This outputs only the line number, never the line content. Established session 4b as remediation for the grep -m blast-radius incident."
  },
  "next_recommended_session": {
-  "session_id": "v3_8_x_deploy_s1 (GATED / IRREVERSIBLE)",
-  "class": "HIGH/Cowork — operator native git re-commit + live deploy; no authoring",
-  "rationale": "Coda + convergence HELD loci RESOLVED; library prose now matches about-page 81/35. Working set == repo. Step 4 already committed once; bundle adds combined/index/canon as new uncommitted changes -> ONE more native commit + FF-merge (updated powershell_git_merge_handoff_v3_8_x.ps1 md5 gate), then Step 5 deploy to library.wuld.ink (library-about already updated). Production still v3.7.3.",
+  "session_id": "v3_8_3_display_redeploy + wuld.ink ref-refresh",
+  "class": "HIGH/Cowork operator native re-commit/push; then WULD INK refreshes integrity refs",
+  "rationale": "Library display chrome FINALIZED (version v3.8.3 + graph counts 254/140 in combined+index). One native re-commit + FF-merge + push (handoff powershell_git_recommit_display_v3_8_3.ps1) -> redeploy. FINAL combined.html md5 = e475e0ea8a0b9e36ab5cddfd8bac59d2 (2349639 B). THEN WULD INK refreshes /library-about + homepage + essays ONCE against this md5 + byte count + v3.8.3 + 81/35 (no moving target). Chat-side authoring (parallel, both sites): 'frozen at canon terminus / no successor' -> active-advance reframe.",
   "handoff_files": [
-   "powershell_git_merge_handoff_v3_8_x.ps1 (updated)",
-   "session_v3_8_variant_cut_merge_deploy_s1_state.json"
+   "powershell_git_recommit_display_v3_8_3.ps1"
   ]
  },
  "open_questions": {
@@ -1747,7 +1746,7 @@
   ],
   "reverts_or_revisions_to_protocol": "None as of 13.1"
  },
- "canon_version_marker": "v37.6",
+ "canon_version_marker": "v37.7",
  "canon_version_history_tail": {
   "compaction_at": "v33.0",
   "preserved_entries": [
@@ -2375,6 +2374,23 @@
     "project_canon_v37_3.json": "<self; recorded in session state>"
    },
    "note": "combined +2B / index +2B vs v3_8_x_render_merge; corpus/jsx/ledger unchanged."
+  },
+  "v3_8_x_display_chrome": {
+   "version": "v3.8.x display-chrome finalize (public version label v3.8.3 + graph-view counts)",
+   "date": "2026-05-31",
+   "class": "MINOR",
+   "session": "v3_8_variant_cut_merge_deploy_s1 (library display pass)",
+   "cut_summary": "Finalizes the deployed library's human-facing chrome so the published integrity contract is TRUE. Public version label v3.7.3->v3.8.3 (combined title+h1; index title+h1 v3.7->v3.8.3; 'v3.8 D5' code comments held). Graph-view header spans reconciled to the already-correct graph DATA: dep 245->254, mech 118->140 (DEP_GRAPH_DATA = 94 nodes/254 links == corpus.dependencyGraph; MAP_GRAPH_DATA = 116 nodes/140 links == canon). Hardcoded spans only; NO data regeneration. Invariants byte-stable; inv-hash 8727787c.",
+   "release_artifact_md5_set": {
+    "combined_v3_8_0.html": "e475e0ea8a0b9e36ab5cddfd8bac59d2",
+    "index_v3_8_0.html": "6611d38c2cd91fb020ea3c30c743eb27",
+    "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
+    "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
+    "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
+    "project_canon_v37_3.json": "<self; in session state>"
+   },
+   "combined_byte_count": 2349639,
+   "note": "FINAL deployed combined.html hash for WULD INK /library-about publish — no further pending library changes. Supersedes v3_8_x_coda_convergence_bundle surface set."
   }
  },
  "cold_start_instructions": {
@@ -2925,7 +2941,8 @@
   "negative_util_aggregation_foldin_cowork: NUA long strengthen 1958->7276c, RSI 79.9 C->84.0 B, +ledger long/headline +combined REBUTTAL, 7/7 PASS",
   "joy_outweighs_harms_foldin_cowork: joy long strengthen 3184->8159c, RSI 76.6 C->83.0 B, +ledger long/headline +combined REBUTTAL (derive-at-render med 75.0->81.3 / short 72.8->79.2, all D->C); +index REBUTTAL parity VAR 83.8->86.2 / NUA 79.9->84.0 / joy ->83.0 (no 4th); 6 surfaces, G1-G6 PASS",
   "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* supersession note (corpus +207B) + md5 re-attest v3.8.x render-merge set; merge/commit -> native PowerShell (mount unlink-blocked); canon 37.4->37.5 MINOR (inv 81/35/5 held, inv-hash 8727787c stable). audits anchors-unique+UTF8+NUL0+CR0 PASS",
-  "v3_8_variant_cut_merge_deploy_s1 (bundle): coda 78->81/34->35 (combined) + convergence recompute from MAP1_TRANSITIONS (74->78 nodes; 1010/274/11 @ 78.0/21.2/0.8%, 3-method verified) both files; canon 37.5->37.6 MINOR (inv-hash 8727787c stable); HELD loci RESOLVED; clean library deploy ready."
+  "v3_8_variant_cut_merge_deploy_s1 (bundle): coda 78->81/34->35 (combined) + convergence recompute from MAP1_TRANSITIONS (74->78 nodes; 1010/274/11 @ 78.0/21.2/0.8%, 3-method verified) both files; canon 37.5->37.6 MINOR (inv-hash 8727787c stable); HELD loci RESOLVED; clean library deploy ready.",
+  "v3_8_variant_cut_merge_deploy_s1 (display chrome): public version v3.7.3->v3.8.3 (combined+index title/h1) + graph counts dep 245->254 / mech 118->140 (chrome matched to already-correct data); canon 37.6->37.7 MINOR (inv-hash 8727787c stable). FINAL combined hash for wuld.ink ref-refresh."
  ],
  "arc_compacted_legacy_cascade_index": {
   "block_kind": "arc_compacted_legacy_cascade_index",
