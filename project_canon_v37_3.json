@@ -1,5 +1,5 @@
 {
- "canon_version": "37.5",
+ "canon_version": "37.6",
  "last_updated": "2026-05-31",
  "last_updated_by_session": "v3_8_variant_cut_merge_deploy_s1",
  "project": {
@@ -1615,12 +1615,12 @@
   "safe_line_number_discovery_pattern": "When you need to locate a line by content match against index.html (especially patterns that might match a mega-literal), use: awk '/regex/{print NR; exit}' /mnt/project/index.html. This outputs only the line number, never the line content. Established session 4b as remediation for the grep -m blast-radius incident."
  },
  "next_recommended_session": {
-  "session_id": "v3_8_variant_cut_deploy_s1 (GATED / IRREVERSIBLE)",
-  "class": "HIGH/Cowork — operator-run native git merge + live deploy; no authoring",
-  "rationale": "Render-merge re-attestation LANDED (canon 37.5; counts/R3/md5 done; working set == repo post-sync). Repo git index was corrupt: HEAD truncated 'v3.8.'->needs 'v3.8.x' (REPAIRED in-sandbox), plus corrupt .git/index + stale 0-byte index.lock that the mount CANNOT unlink. Step 4 (rm lock+index, rebuild, add -A, commit, FF-merge v3.8.x->main) + Step 5 (rewrite wuld.ink/library-about counts+md5; deploy main->production library.wuld.ink; spot-check 7 archetype-pill nodes) require native PowerShell + Josiah go/no-go. Production still v3.7.3. Deploy is the only irreversible step — safe to run Step 4 then gate Step 5 separately.",
+  "session_id": "v3_8_x_deploy_s1 (GATED / IRREVERSIBLE)",
+  "class": "HIGH/Cowork — operator native git re-commit + live deploy; no authoring",
+  "rationale": "Coda + convergence HELD loci RESOLVED; library prose now matches about-page 81/35. Working set == repo. Step 4 already committed once; bundle adds combined/index/canon as new uncommitted changes -> ONE more native commit + FF-merge (updated powershell_git_merge_handoff_v3_8_x.ps1 md5 gate), then Step 5 deploy to library.wuld.ink (library-about already updated). Production still v3.7.3.",
   "handoff_files": [
-   "session_v3_8_variant_cut_merge_deploy_s1_state.json",
-   "powershell_git_merge_handoff_v3_8_x.ps1"
+   "powershell_git_merge_handoff_v3_8_x.ps1 (updated)",
+   "session_v3_8_variant_cut_merge_deploy_s1_state.json"
   ]
  },
  "open_questions": {
@@ -1747,7 +1747,7 @@
   ],
   "reverts_or_revisions_to_protocol": "None as of 13.1"
  },
- "canon_version_marker": "v37.5",
+ "canon_version_marker": "v37.6",
  "canon_version_history_tail": {
   "compaction_at": "v33.0",
   "preserved_entries": [
@@ -2359,6 +2359,22 @@
     "project_canon_v37_3.json": "<self; recorded in session_v3_8_variant_cut_merge_deploy_s1_state.json>"
    },
    "supersedes": "v3_8_3 surface md5 set (render-path splice + count regen + R3 note re-hash combined/index/corpus)"
+  },
+  "v3_8_x_coda_convergence_bundle": {
+   "version": "v3.8.x coda + convergence-table bundle (resolves HELD loci from v3_8_x_render_merge)",
+   "date": "2026-05-31",
+   "class": "MINOR",
+   "session": "v3_8_variant_cut_merge_deploy_s1 (bundle, post-Step-4)",
+   "cut_summary": "Settles the two HELD-flagged loci so library prose matches the about-page 81/35 framing before deploy. CODA (combined): 'catalogs 78 ways'->81; 'names 34 mechanisms'->35; '2,886 transitions' KEPT (= all-mode edge total: data-verified 1591 mode + 1295 blended = 2886). CONVERGENCE table (combined+index): '74 source nodes'->78; recomputed from shipped MAP1_TRANSITIONS, 3 methods agree (explicit modes[] field == set-membership == canon): single 766/87.7%->1010/78.0%, 2-mode 104/11.9%->274/21.2%, 3-mode 3/0.3%->11/0.8%; note 87.7%->78.0%. Invariants byte-stable (map1 {1:1010,2:274,3:11}/78/2886 already canon; prose propagated). inv-hash 8727787c.",
+   "release_artifact_md5_set": {
+    "combined_v3_8_0.html": "1d265ef7a0129885e2f9395c9a006f6a",
+    "index_v3_8_0.html": "9a0e8a68ef9a475678ee4c334fc575ab",
+    "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
+    "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
+    "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
+    "project_canon_v37_3.json": "<self; recorded in session state>"
+   },
+   "note": "combined +2B / index +2B vs v3_8_x_render_merge; corpus/jsx/ledger unchanged."
   }
  },
  "cold_start_instructions": {
@@ -2908,7 +2924,8 @@
   "rebuttal_strengthening_violence_nu_seam_s1: VAR long NU-seam strengthen 11795->16595c, RSI 83.8->86.2 B, +jsx parity +ledger short/med backfill, 7/7 PASS",
   "negative_util_aggregation_foldin_cowork: NUA long strengthen 1958->7276c, RSI 79.9 C->84.0 B, +ledger long/headline +combined REBUTTAL, 7/7 PASS",
   "joy_outweighs_harms_foldin_cowork: joy long strengthen 3184->8159c, RSI 76.6 C->83.0 B, +ledger long/headline +combined REBUTTAL (derive-at-render med 75.0->81.3 / short 72.8->79.2, all D->C); +index REBUTTAL parity VAR 83.8->86.2 / NUA 79.9->84.0 / joy ->83.0 (no 4th); 6 surfaces, G1-G6 PASS",
-  "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* supersession note (corpus +207B) + md5 re-attest v3.8.x render-merge set; merge/commit -> native PowerShell (mount unlink-blocked); canon 37.4->37.5 MINOR (inv 81/35/5 held, inv-hash 8727787c stable). audits anchors-unique+UTF8+NUL0+CR0 PASS"
+  "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* supersession note (corpus +207B) + md5 re-attest v3.8.x render-merge set; merge/commit -> native PowerShell (mount unlink-blocked); canon 37.4->37.5 MINOR (inv 81/35/5 held, inv-hash 8727787c stable). audits anchors-unique+UTF8+NUL0+CR0 PASS",
+  "v3_8_variant_cut_merge_deploy_s1 (bundle): coda 78->81/34->35 (combined) + convergence recompute from MAP1_TRANSITIONS (74->78 nodes; 1010/274/11 @ 78.0/21.2/0.8%, 3-method verified) both files; canon 37.5->37.6 MINOR (inv-hash 8727787c stable); HELD loci RESOLVED; clean library deploy ready."
  ],
  "arc_compacted_legacy_cascade_index": {
   "block_kind": "arc_compacted_legacy_cascade_index",
