@@ -1346,24 +1346,24 @@
       "graded": true,
       "axes": {
         "v": 0.85,
-        "s": 0.8,
-        "c": 0.85,
-        "r": 0.75,
-        "a": 0.72
+        "s": 0.84,
+        "c": 0.84,
+        "r": 0.81,
+        "a": 0.81
       },
       "short": {
-        "rsi_pct": 75.6,
-        "grade": "D"
-      },
-      "medium": {
-        "rsi_pct": 77.6,
-        "grade": "C"
-      },
-      "long": {
         "rsi_pct": 79.2,
         "grade": "C"
       },
-      "headline_grade_long": "C"
+      "medium": {
+        "rsi_pct": 81.4,
+        "grade": "C"
+      },
+      "long": {
+        "rsi_pct": 83.0,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
     },
     "contractualism-scanlon": {
       "graded": true,

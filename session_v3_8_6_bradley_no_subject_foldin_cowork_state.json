@@ -1,0 +1,90 @@
+{
+  "session_id": "v3_8_6_bradley_no_subject_foldin_cowork",
+  "date": "2026-06-01",
+  "class": "Cowork (mechanical foldin)",
+  "authoring_predecessor": "v3_8_6_bradley_no_subject_strengthen_s1 (MAX; artifact-only)",
+  "canon_bump": "37.9 -> 37.10 MINOR (per-node score/prose + ledger; no invariant-block entry revised)",
+  "option2_note": "Foldin doc scoped combined/index to score-only, but both EMBED the bradley long prose (one quoted string each) and the deploy flow has NO corpus->combined regen step. Per operator ruling, the new long was propagated into combined + index too (Option-2), so live library.wuld.ink/combined shows the strengthened prose with its matching grade. Firewall doc under-specified for strengthen foldins absent a regen build; same gap flagged for life-gift + just-depressed.",
+  "completed_tasks": [
+    "Mutation A (prose): responses.long 2630->7231ch replaced in corpus JSON (OrderedDict, key-set equality assert, fmt-gate redump==orig, surgical-equivalence) + JSON-escaped ensure_ascii=False quoted-string swap (count==1) in JSX + combined.html + index_v3_8_0.html (Option-2); short/medium byte-stable",
+    "Mutation B (score): REBUTTAL_STRENGTH const s.80->.84 / r.75->.81 / a.72->.81 / c.85->.84 (v hold .85) in index + combined; +1 byte each (0.8->0.84)",
+    "Mutation C (ledger): grades[bradley-no-subject] regraded (short D->C 79.2 / medium C 81.4 / long C->B 83.0 / headline B)",
+    "Post-mutation validation: self-test 13/13 (_overall_pass true) + corpus PASS (violation_count 0)",
+    "Canon bump v37_10 written; invariants md5 stability asserted; next_recommended_session -> life-gift",
+    "Diff-equivalence proof: combined/index changed by ONLY the 2 intended edits (no stray bradley)",
+    "release_v3_8_6.json filled; preflight_v3_8_6.ps1 + push_v3_8_6.ps1 cloned; session state emitted"
+  ],
+  "verified_facts": {
+    "long_prose": {
+      "bytes": 7259,
+      "chars": 7231,
+      "md5": "f9cadb12dff9f5914b8ce5bb0eb0034c",
+      "trailing_newline": false,
+      "newlines": 10,
+      "dquotes": 8
+    },
+    "coldgrade_commit_md5": "51f0095f7db2605a96d23fcee21585c1 (matches foldin spec)",
+    "corpus_long": "2630 -> 7231 chars; +4629 bytes; objections[57]; fmt-gate redump==orig True; surgical-equivalence True",
+    "jsx_long": "+4629 bytes; double-quoted JSON-escaped (ensure_ascii=False) string count==1; short/medium byte-stable",
+    "combined_index_prose": "Option-2 propagation; combined +4630 B (4629 prose + 1 score), index +4630 B; each ONLY-2-EDITS proven",
+    "rebuttal_strength": "block unique count==1 each surface; v.85/s.84/c.84/r.81/a.81; +1 byte (s 0.8->0.84)",
+    "ledger": "short D->C 79.2; medium C 81.4 (raw 81.35); long C->B 83.0; headline_grade_long B; 81 grades",
+    "validation": "self-test _overall_pass=true 13/13; corpus verdict PASS, 0 blocking violations",
+    "counts_unchanged": "81 obj / 35 mech / 5 tier / 81 graded / 243 responses (invariants md5 stable)",
+    "invariants_subtree_md5": "36111f788c0da144c53bd4df98ce9815 stable across cut -> MINOR justified",
+    "post_cut_artifact_md5": {
+      "combined.html": "769762c40548722d026a0b49c0017dc6 (2354413 B)",
+      "index_v3_8_0.html": "9443e4ecdc4f715e9e0ce1bd01dea0e3 (1807936 B)",
+      "efilist_argument_library_v3_8_0.json": "58f21476c01d12ad5d8ecfacef5b25ee (1268198 B)",
+      "efilist_argument_library_v3_8_0.jsx": "d0b5e1245d4ff9468fce476ffcf2352d (1211297 B)",
+      "rebuttal_grading_ledger.json": "56d4a7d3c942cd6dd680ce747450314e (41881 B)",
+      "project_canon_v37_10.json": "d840e7fe4bdd4f38112b34afa5e57a5d (226992 B)"
+    }
+  },
+  "git_pending_native_powershell": {
+    "reason": "in-sandbox git blocked (.git/index.lock; mount blocks unlink) -> run natively in PowerShell from repo root",
+    "baseline_head": "59dbe7d (v3.8.5r)",
+    "stage": [
+      "combined.html",
+      "efilist_argument_library_v3_8_0.json",
+      "efilist_argument_library_v3_8_0.jsx",
+      "index_v3_8_0.html",
+      "rebuttal_grading_ledger.json",
+      "project_canon_v37_10.json"
+    ],
+    "git_rm": [],
+    "git_rm_note": "NO git rm (matches 59dbe7d precedent: 7 files, zero deletions). project_canon_v37_8/v37_9 remain tracked - optional future bookkeeping cleanup.",
+    "session_state_file": "session_v3_8_6_bradley_no_subject_foldin_cowork_state.json (matches push glob *foldin_cowork_state.json)",
+    "expected_staged": 7,
+    "scripts": "preflight_v3_8_6.ps1 + push_v3_8_6.ps1 in Downloads/Argument Library/6-1-2026/ (run with repo as cwd)",
+    "push": [
+      "origin/main",
+      "origin/v3.8.x (parity)"
+    ]
+  },
+  "stray_file_cleanup": "_writetest_tmp (2 B) in repo root from a sandbox mount write-test; sandbox cannot unlink. Operator: del _writetest_tmp before commit (harmless to commit since push uses explicit staging, not git add -A).",
+  "next_recommended_action": "v3_8_7 life-gift: MAX authoring (long 79.9 C; soft r 0.75 / a 0.75) -> Cowork foldin, own session; apply Option-2 prose propagation",
+  "wuldink_pin": {
+    "old": "53db35a40ce265217855021ffe7ba838",
+    "new": "769762c40548722d026a0b49c0017dc6",
+    "rule": "tools/library-pin.py --apply ONLY after live combined == new (verify-live-library.ps1 curl 3x)"
+  },
+  "open_questions": [
+    {
+      "id": "terminus_seam",
+      "status": "ACTIVE",
+      "promote_to_canon": false,
+      "note": "Node defends ANTINATALISM (consent-grounded); does NOT reach pro-mortalist/EFIList terminus (magnitude ledger, no measuring stick). Footnote, not field."
+    },
+    {
+      "id": "firewall_doc_underspecified",
+      "status": "NOTE",
+      "note": "For strengthen foldins absent a corpus->combined regen, 'score -> index+combined only' should read 'score const + long prose -> both'. Apply to life-gift + just-depressed."
+    },
+    {
+      "id": "canon_accumulation",
+      "status": "NOTE",
+      "note": "project_canon_v37_8/v37_9/v37_10 all tracked. Optional git-rm of stale canons in a future bookkeeping pass."
+    }
+  ]
+}
