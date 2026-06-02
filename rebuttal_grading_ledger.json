@@ -1599,24 +1599,24 @@
       "graded": true,
       "axes": {
         "v": 0.85,
-        "s": 0.82,
+        "s": 0.84,
         "c": 0.85,
-        "r": 0.72,
-        "a": 0.72
+        "r": 0.82,
+        "a": 0.82
       },
       "short": {
-        "rsi_pct": 75.3,
-        "grade": "D"
+        "rsi_pct": 79.9,
+        "grade": "C"
       },
       "medium": {
-        "rsi_pct": 77.4,
-        "grade": "C"
+        "rsi_pct": 82.0,
+        "grade": "B"
       },
       "long": {
-        "rsi_pct": 79.0,
-        "grade": "C"
+        "rsi_pct": 83.6,
+        "grade": "B"
       },
-      "headline_grade_long": "C"
+      "headline_grade_long": "B"
     },
     "epistemic-humility": {
       "graded": true,

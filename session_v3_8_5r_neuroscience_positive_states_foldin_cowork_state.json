@@ -1,0 +1,78 @@
+{
+  "session_id": "v3_8_5r_neuroscience_positive_states_foldin_cowork",
+  "date": "2026-06-01",
+  "class": "Cowork (mechanical foldin)",
+  "authoring_predecessor": "v3_8_5_neuroscience_positive_states_strengthen_s1 (MAX; artifact-only)",
+  "canon_bump": "37.8 -> 37.9 MINOR (per-node score/prose + ledger; no invariant-block entry revised)",
+  "supersedes_note": "v3_8_5 (non-r) was the concession draft, never folded in; r artifacts used. Two stray uploads (non-r long .txt + duplicate foldin .md) disregarded.",
+  "completed_tasks": [
+    "Mutation A: responses.long replaced in corpus JSON (OrderedDict, key-set equality assert, round-trip) + surgical JSON-escaped replace in JSX; short/medium byte-stable",
+    "Mutation B: REBUTTAL_STRENGTH const s.82->.84 / r.72->.82 / a.72->.82 in index_v3_8_0.html + combined.html (v/c held .85); byte-length stable",
+    "Mutation C: ledger grades[neuroscience-positive-states] regraded",
+    "Post-mutation validation: self-test 13/13 + corpus PASS",
+    "Canon bump v37_9 written; invariants md5 stability asserted",
+    "Session state emitted"
+  ],
+  "verified_facts": {
+    "r_prose": {
+      "bytes": 7038,
+      "chars": 6996,
+      "md5": "8e834a5903899a11ec1753c53de9ab5e",
+      "trailing_newline": false
+    },
+    "coldgrade_commit_md5": "c14c7aefc6e416f7f426d80c3162b886 (matches foldin spec)",
+    "corpus_long": "5195 -> 6996 chars; corpus line 2282; +1845 bytes; serialization fidelity redump==orig True",
+    "jsx_long": "line 2270; +1845 bytes; double-quoted JSON-escaped string; node-id x6 (no REBUTTAL_STRENGTH in jsx); short/medium byte-stable",
+    "rebuttal_strength": "index L4477-4480, combined L5668-5671; block unique (count==1) each; byte-length stable; v .85 / s .84 / c .85 / r .82 / a .82",
+    "ledger": "short D->C rsi 79.9; medium C->B rsi 82.0; long C->B rsi 83.6; headline_grade_long B",
+    "validation": "self-test _overall_pass=true 13/13; corpus verdict PASS, 0 blocking violations",
+    "counts_unchanged": "81 obj / 35 mech / 5 tier / 81 graded / 243 responses (read from stored invariants; not re-counted)",
+    "invariants_subtree_md5": "8727787c5c0d4f8a08280b806db6fcc8 stable across cut -> MINOR justified",
+    "post_cut_artifact_md5": {
+      "efilist_argument_library_v3_8_0.json": "b2633b1a066352e1a61f1796bfddcfde",
+      "efilist_argument_library_v3_8_0.jsx": "54f5418705fd1cb10ac5e590b60607ca",
+      "index_v3_8_0.html": "9a4e3b5611c6716a670a9bc9133473c4",
+      "combined.html": "53db35a40ce265217855021ffe7ba838",
+      "rebuttal_grading_ledger.json": "229b36b74e5efee1a7de5c0409eb8544",
+      "project_canon_v37_9.json": "6f2966a7ed462d235c77ea198526dc96"
+    }
+  },
+  "git_pending_native_powershell": {
+    "reason": "in-sandbox git blocked post-v3.8.4 (.git/index.lock; mount blocks unlink) -> run natively in PowerShell",
+    "stage": [
+      "efilist_argument_library_v3_8_0.json",
+      "efilist_argument_library_v3_8_0.jsx",
+      "index_v3_8_0.html",
+      "combined.html",
+      "rebuttal_grading_ledger.json",
+      "project_canon_v37_9.json"
+    ],
+    "git_rm": [
+      "project_canon_v37_8.json"
+    ],
+    "commit_msg": "v3.8.5r: neuroscience-positive-states long-strengthen foldin (prose+REBUTTAL_STRENGTH+ledger); canon 37.8->37.9 MINOR",
+    "push": [
+      "origin/main",
+      "origin/v3.8.x (parity; v3.8.4 landed 3735f7b on both)"
+    ]
+  },
+  "next_recommended_action": "v3_8_6 bradley-no-subject: MAX authoring (long 79.2 C; soft a 0.72 / r 0.75) -> Cowork foldin, own session",
+  "open_questions": [
+    {
+      "id": "terminus_seam",
+      "status": "ACTIVE",
+      "promote_to_canon": false,
+      "note": "Node now cleanly defends ANTINATALISM (consent-grounded; survives no-measuring-stick). The EFIList/pro-mortalist TERMINUS still leans on the magnitude ledger, which has no measuring stick; consent does not carry the pro-mortalist conclusion. Canon-budget heuristic: footnote, not field."
+    },
+    {
+      "id": "wuld_ink_library_about_pin",
+      "status": "ACTIVE",
+      "note": "combined.html md5 CHANGED this cut to 53db35a40ce265217855021ffe7ba838. WULD INK /library-about integrity pin (was 51ec8f037ca451dcbd8817e45171ba8b) must move to the new combined md5 once v3_8_5r DEPLOYS. Non-git, parallel, close whenever."
+    },
+    {
+      "id": "canon_files_registry_stale",
+      "status": "NOTE",
+      "note": "canon.files still lists v3_7_3 corpus / v33_0 canon (pre-existing drift). Out of scope for this MINOR foldin; reconcile in a future compaction/bookkeeping session."
+    }
+  ]
+}
