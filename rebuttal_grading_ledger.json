@@ -9,24 +9,24 @@
       "graded": true,
       "axes": {
         "v": 0.85,
-        "s": 0.8,
-        "c": 0.85,
-        "r": 0.75,
-        "a": 0.75
+        "s": 0.84,
+        "c": 0.84,
+        "r": 0.81,
+        "a": 0.81
       },
       "short": {
-        "rsi_pct": 76.2,
+        "rsi_pct": 79.2,
         "grade": "C"
       },
       "medium": {
-        "rsi_pct": 78.3,
+        "rsi_pct": 81.4,
         "grade": "C"
       },
       "long": {
-        "rsi_pct": 79.9,
-        "grade": "C"
+        "rsi_pct": 83.0,
+        "grade": "B"
       },
-      "headline_grade_long": "C"
+      "headline_grade_long": "B"
     },
     "just-depressed": {
       "graded": true,

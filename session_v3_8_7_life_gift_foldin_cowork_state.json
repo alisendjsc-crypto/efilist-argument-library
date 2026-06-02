@@ -1,0 +1,107 @@
+{
+  "session_id": "v3_8_7_life_gift_foldin_cowork",
+  "date": "2026-06-01",
+  "class": "Cowork (mechanical foldin)",
+  "authoring_predecessor": "v3_8_7_life_gift_strengthen_s1 (MAX; artifact-only)",
+  "route": "WULD INK end-to-end (mutate -> push both branches -> verify-live -> pin)",
+  "canon_bump": "37.10 -> 37.11 MINOR (per-node score/prose + ledger; no invariant-block entry revised)",
+  "baseline_correction": "Runbook + v3.8.6 records carried git baseline 402f29e for the bradley commit; that object never existed (git cat-file fatal). Real v3.8.6 HEAD = 492f19e (verified: identical 7-files/3176+/22- diffstat, canon 37.10, combined.html byte-exact 769762c4 @ 2354413 B, both branches FF'd). v3.8.7 baseline = 492f19e. Records to correct: runbook, CLAUDE.md K49 narrative, release seed (corrected here).",
+  "option2_note": "Foldin doc scoped combined/index to score-only, but both EMBED the life-gift long prose (one quoted string each) and the deploy flow has NO corpus->combined regen. Per the operator's K49 ruling, the new long was propagated into combined + index too (Option-2), so live library.wuld.ink/combined shows the strengthened prose with its matching grade.",
+  "neuroscience_backfill_note": "SAME GAP, backward instance: v3.8.5r strengthened neuroscience-positive-states long (5195->6996ch) in corpus+jsx but shipped score-only to combined/index, leaving the built artifacts neuro-stale. Since this pass already opens combined/index for life-gift, the OLD neuro long (extracted from the v3.8.4 corpus via git, count==1 in each) was replaced with the corpus NEW long. combined+index only; corpus+jsx already current at v3.8.5r. K49 backward-gap closed.",
+  "completed_tasks": [
+    "Mutation A (prose): responses.long 1044->8655ch in corpus JSON (OrderedDict, key-set equality, fmt-gate redump==orig, surgical-equivalence) + JSON-escaped ensure_ascii=False quoted-string swap (count==1) in JSX + combined.html + index_v3_8_0.html (Option-2); short/medium byte-stable",
+    "Mutation B (score): REBUTTAL_STRENGTH const s.80->.84 / c.85->.84 / r.75->.81 / a.75->.81 (v hold .85) in index + combined; block count==1 each; +1 byte (0.8->0.84)",
+    "Neuroscience back-fill: neuroscience-positive-states long 5195->6996ch in combined + index (OLD from v3.8.4 git corpus, count==1); corpus+jsx already current",
+    "Mutation C (ledger): grades[life-gift] -> axes v.85/s.84/c.84/r.81/a.81, short 79.2 C / medium 81.4 C / long 83.0 B / headline B; structural diff = 9 paths all under /grades/life-gift",
+    "Canon v37_10 -> v37_11 written; diff = exactly 6 expected paths; invariants md5 36111f788c0d stable; next_recommended_session -> just-depressed",
+    "Post-mutation: validator self-test 13/13 (_overall_pass) + corpus PASS (violation_count 0); counts 81/35/81/243 unchanged",
+    "Diff-equivalence: combined/index/jsx/corpus reproduced from backups by ONLY the intended edits (combined+index = 3 edits each: LG prose + LG score + neuro prose; jsx+corpus = 1 each)",
+    "release_v3_8_7.json filled; preflight_v3_8_7.ps1 + push_v3_8_7.ps1 cloned (baseline 492f19e); session state emitted"
+  ],
+  "verified_facts": {
+    "long_prose_input": {
+      "file": "life_gift_long_v3_8_7.txt",
+      "bytes": 8704,
+      "chars": 8656,
+      "md5": "a923a41453318ec369f0987c920d4ff9",
+      "trailing_newline": true
+    },
+    "long_prose_stored": {
+      "chars": 8655,
+      "bytes": 8703,
+      "md5": "1ae7fa21b785196dc8840e739d094c2f",
+      "trailing_newline": false,
+      "newlines": 14,
+      "dquotes": 26
+    },
+    "coldgrade_commit_md5": "3258700dfee578a3e756b09e6ea7ad27 (matches foldin spec)",
+    "corpus_long": "1044 -> 8655 chars; objections[life-gift]; fmt-gate redump==orig True; surgical-equivalence True; structural diff = 1 path (/responses/long)",
+    "jsx_long": "double-quoted JSON-escaped (ensure_ascii=False) string count==1; short/medium byte-stable",
+    "combined_index_prose": "Option-2 propagation; each ONLY-3-EDITS proven (LG prose + LG score + neuro prose)",
+    "rebuttal_strength": "block unique count==1 each surface; v.85/s.84/c.84/r.81/a.81; +1 byte (s 0.8->0.84)",
+    "neuroscience_backfill": "combined+index OLD neuro long (v3.8.4, 5195ch) -> corpus NEW (6996ch); count==1 each; jsx already NEW",
+    "ledger": "short 79.2 C / medium 81.4 C / long 83.0 B / headline B; 81 grades; diff 9 paths under /grades/life-gift",
+    "validation": "self-test _overall_pass=true 13/13; corpus verdict PASS, 0 blocking violations",
+    "counts_unchanged": "81 obj / 35 mech / 81 graded / 243 responses (corpus structural diff = single value path; invariants md5 stable)",
+    "invariants_subtree_md5": "36111f788c0d... stable across cut -> MINOR justified",
+    "post_cut_artifact_md5": {
+      "combined.html": "c3a2571246f67adff3971f3da69c97a8 (2363948 B)",
+      "index_v3_8_0.html": "3e1cf0d6176067357d37510451460ef1 (1817471 B)",
+      "efilist_argument_library_v3_8_0.json": "ace20d7865e65f3e60963b31136f7061 (1275887 B)",
+      "efilist_argument_library_v3_8_0.jsx": "2a51c083a76b3cc5f44852b9149f0b6d (1218986 B)",
+      "rebuttal_grading_ledger.json": "22c8665a45148c7b9a7e1acd249f529d (41882 B)",
+      "project_canon_v37_11.json": "c6f5db5f519285887c95adfdf30d2b65 (227780 B)"
+    }
+  },
+  "git_pending_native_powershell": {
+    "reason": "in-sandbox git blocked (.git/index.lock; mount blocks unlink) -> run natively in PowerShell from repo root",
+    "baseline_head": "492f19e (v3.8.6 bradley)",
+    "stage": [
+      "combined.html",
+      "index_v3_8_0.html",
+      "efilist_argument_library_v3_8_0.json",
+      "efilist_argument_library_v3_8_0.jsx",
+      "rebuttal_grading_ledger.json",
+      "project_canon_v37_11.json"
+    ],
+    "git_rm": [],
+    "git_rm_note": "NO git rm (matches precedent: 7 files, zero deletions). project_canon_v37_8/v37_9/v37_10 remain tracked - optional future bookkeeping cleanup.",
+    "session_state_file": "session_v3_8_7_life_gift_foldin_cowork_state.json (matches push glob *foldin_cowork_state.json)",
+    "expected_staged": 7,
+    "scripts": "preflight_v3_8_7.ps1 + push_v3_8_7.ps1 in Downloads/Argument Library/6-1-2026/ (run with efilist repo as cwd)",
+    "push": [
+      "origin/main",
+      "origin/v3.8.x (parity)"
+    ]
+  },
+  "stray_file_cleanup": "6-1-2026/_wtest (2 B) + any _writetest_tmp in repo root from sandbox mount write-tests; sandbox cannot unlink. Operator: del before commit (harmless; push uses explicit staging, not git add -A).",
+  "next_recommended_action": "v3_8_8 just-depressed: MAX authoring (long 81.5 C; soft a 0.80 / r 0.78) -> Cowork foldin, own session; apply Option-2 prose propagation. After it, audit all built-artifact surfaces for remaining un-propagated strengthen-prose.",
+  "wuldink_pin": {
+    "old": "769762c40548722d026a0b49c0017dc6",
+    "new": "c3a2571246f67adff3971f3da69c97a8",
+    "rule": "tools/library-pin.py --apply ONLY after live combined == new (verify-live-library.ps1 curl 3x)"
+  },
+  "open_questions": [
+    {
+      "id": "terminus_seam",
+      "status": "ACTIVE",
+      "promote_to_canon": false,
+      "note": "Node defends ANTINATALISM (consent-grounded); does NOT reach pro-mortalist/EFIList terminus. bradley-no-subject carries the in-prose disclaimer; life-gift does not duplicate it. Footnote, not field."
+    },
+    {
+      "id": "firewall_doc_underspecified",
+      "status": "NOTE",
+      "note": "For strengthen foldins absent a corpus->combined regen, 'score -> index+combined only' should read 'score const + long prose -> both'. Confirmed again at life-gift; apply to just-depressed."
+    },
+    {
+      "id": "neuroscience_backfill_closed",
+      "status": "CLOSED",
+      "note": "v3.8.5r neuro prose now in combined+index. The backward-gap class still needs a full sweep after just-depressed."
+    },
+    {
+      "id": "canon_accumulation",
+      "status": "NOTE",
+      "note": "project_canon_v37_8/v37_9/v37_10/v37_11 all tracked. Optional git-rm of stale canons in a future bookkeeping pass."
+    }
+  ]
+}
