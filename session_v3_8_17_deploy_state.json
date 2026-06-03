@@ -1,0 +1,115 @@
+{
+  "session_id": "v3_8_17_deploy",
+  "date": "2026-06-02",
+  "phase": "PHASE A COMPLETE (RECONCILE+PREFLIGHT GREEN). PHASE B PENDING operator GO \u2014 recommended in a FRESH session.",
+  "class": "Cowork deploy \u2014 flush v3.8.8->v3.8.17 live; multi-source md5-verified assembly (NOT git add -A).",
+  "open_gate": {
+    "validator_self_test": "13/13 pass, 0 fail",
+    "validator_corpus": "PASS (zero blocking violations)",
+    "efilist_HEAD": "50b7871 == origin/main, clean tree",
+    "branches_present": [
+      "main",
+      "v3.8.x"
+    ],
+    "old_live_pin_confirmed": {
+      "md5": "c3a2571246f67adff3971f3da69c97a8",
+      "bytes": 2363948,
+      "src": "tools/library-pin-state.json"
+    }
+  },
+  "ledger_resolution": {
+    "issue": "brief target 96121b91 absent from disk at open; not recorded in canon 37.14",
+    "resolved": "operator uploaded rebuttal_grading_ledger-896f3af9.json == md5 96121b91 (post-hygiene). diff vs staging = EXACTLY neuro+flow medium B->C plus a regrade_note annotation on each.",
+    "reconstruction_rejected": "canon-spec grade-only rebuild = 3087808946 (missing the regrade_note) -> correctly NOT used; real uploaded file used instead",
+    "used_source": "uploads/rebuttal_grading_ledger-896f3af9.json"
+  },
+  "assembled_working_tree": {
+    "combined.html": {
+      "md5": "dfa3258b3b44a9f82ea41b90d4f707d1",
+      "bytes": 2379766,
+      "source": "staging render-fix output",
+      "target_match": true
+    },
+    "index_v3_8_0.html": {
+      "md5": "386a4f21f54edf4d6465aeca2280eb9e",
+      "bytes": 1833289,
+      "source": "staging render-fix output",
+      "target_match": true
+    },
+    "efilist_argument_library_v3_8_0.json": {
+      "md5": "13cc617e06dda2e4adb53e1af6cbafed",
+      "bytes": 1290883,
+      "source": "staging foldin",
+      "content_verified": "81 obj; 6 nodes folded (long+sources)"
+    },
+    "efilist_argument_library_v3_8_0.jsx": {
+      "md5": "a3531a434ba90f9c3f71909332b85786",
+      "bytes": 1232866,
+      "source": "staging foldin",
+      "content_verified": "6 longs present; 0 REBUTTAL_STRENGTH const"
+    },
+    "rebuttal_grading_ledger.json": {
+      "md5": "96121b91545952ba91f0b4417934b61c",
+      "bytes": 42409,
+      "source": "uploads/rebuttal_grading_ledger-896f3af9.json",
+      "target_match": true,
+      "note": "post-hygiene neuro/flow medium=C"
+    },
+    "project_canon_v37_14.json": {
+      "md5": "fb2fbc512f3e04d7253f5f87d9980052",
+      "bytes": 233509,
+      "source": "staging",
+      "note": "NEW dev canon (repo had up to v37_11); not web-served"
+    }
+  },
+  "preflight_green": {
+    "invariants_vs_canon": {
+      "objection_count": "81==81",
+      "tier_count": "5==5",
+      "long_graded": "81==81 (0 ungraded)",
+      "dep_graph": "94 nodes / 254 links == canon",
+      "map1_node_count": "78==78",
+      "map1_edge_count_total": "2886==2886",
+      "map1_two_mechanism_disclosure_true_counts": "{defender:5,drifter:42,blended:45} == canon",
+      "map1_blended_mode_count_distribution": "{1:1010,2:274,3:11} == canon",
+      "mechanism_count": "canon 35; in-edge heuristic=33 (in-use subset, not the 35 registry) -> locked by combined md5==canon-attested dfa3258b; NOT drift"
+    },
+    "validator_assembled": "self-test 13/13 + corpus PASS",
+    "git_change_set": "5 modified (combined,index,corpus,jsx,ledger) + 1 new (canon v37_14); carry files (rwe.html/coda/validator/schemas) UNTOUCHED; no stale v3.8.7/Frankenstein",
+    "GREEN": true
+  },
+  "commit_manifest": {
+    "stage_explicit": [
+      "combined.html",
+      "index_v3_8_0.html",
+      "efilist_argument_library_v3_8_0.json",
+      "efilist_argument_library_v3_8_0.jsx",
+      "rebuttal_grading_ledger.json",
+      "project_canon_v37_14.json",
+      "session_v3_8_17_deploy_state.json"
+    ],
+    "do_NOT_stage": [
+      ".cw_wtest (stray sandbox write-test; operator del at convenience)"
+    ],
+    "branches": [
+      "main",
+      "v3.8.x (parity)"
+    ],
+    "commit_message": "v3.8.17: flush v3.8.8->v3.8.17 (6 strengthen foldins + band-true hygiene + render fix) \u2014 combined/index/corpus/jsx/ledger + canon v37.14"
+  },
+  "phase_B_pending": {
+    "5_push": "commit + push BOTH branches (main + v3.8.x parity). Prefer cloning the prior hardened push_v3_8_7.ps1 (GitOrDie + parity + assert-HEAD-advanced); update file list + message + baseline.",
+    "6_cloudflare": "auto-rebuild on push (~30s)",
+    "7_verify_live": "verify-live-library.ps1 / curl.exe x3 \u2014 live https://library.wuld.ink/combined md5 MUST == dfa3258b3b44a9f82ea41b90d4f707d1 / 2,379,766 B. DO NOT pin until live==new (edge flip can lag 2-3 min).",
+    "8_pin": "wuld-ink/tools/library-pin.py --apply \u2014 move pin c3a2571... -> dfa3258b... ; correct releases.json/state sandbox-UTC date to operator-local (K47 cxc).",
+    "9_canon_close": "classify EMPIRICALLY vs canon 37.14 update_protocol. LIKELY MAJOR 37.14->38.0 (advances project_terminal_state from archived_v3_7_3_stable + revises archive_attestation.release_artifact_md5_set = new published contract). Record deploy event + new live/pin md5 + v3.8.17 batch + terminal-state advance; session_log_recent +1; next_recommended_session -> post-deploy follow-ups."
+  },
+  "post_deploy_followups_not_this_session": [
+    "MAX short/medium coherence reconciliation for nihilism-label / love-beauty-art / indigenous-philosophy (prose-only; grades UNCHANGED)",
+    "jsx sources sync (long-only per surface_map_legend; secondary, not live-served)",
+    "neg-util Track B render bug ALREADY resolved by v3.8.17 HELD_OVERRIDE; held<derived sweep SUBSUMED by v3.8.16 full 81x3 sweep"
+  ],
+  "guardrails": "counts FROZEN 81/35/5/81 + map1 78/2886 (ALL CONFIRMED); rsiGrade/depthModifiedRSI UNCHANGED; HELD_OVERRIDE=3 cells; hazard files (combined/index/rwe) surgical-only. Any drift = STOP.",
+  "recommendation": "Run Phase B in a FRESH Cowork session from this checkpoint (working tree persists on disk). See session_v3_8_17_PHASE_B_handoff.md.",
+  "HARD_STOP": "explicit operator GO required before Phase B (irreversible; push->verify->pin is one atomic unit, run once, never half)."
+}
