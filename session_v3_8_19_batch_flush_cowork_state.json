@@ -1,0 +1,60 @@
+{
+  "session_id": "v3_8_19_batch_flush_cowork",
+  "class": "Cowork (mechanical filesystem mutations) -- short/medium coherence foldin + deploy + pin.",
+  "predecessor": "v3_8_18_shortmed_coherence",
+  "single_deliverable": "Fold short+medium coherence prose for 3 nodes across 4 surfaces; deploy v3.8.19; move wuld.ink /library-about pin; canon MINOR.",
+  "foldin": {
+    "nodes": [
+      "nihilism-label",
+      "love-beauty-art",
+      "indigenous-philosophy"
+    ],
+    "scope": "responses.short + responses.medium REPLACE across corpus + jsx + combined + index. const HOLD, ledger HOLD, sources HOLD, long HELD, grades render-time UNCHANGED.",
+    "method": "exact-prose json.dumps(ensure_ascii=False) string swap count==1 each on jsx/combined/index; structured field replace + fmt-gate (indent=2, NO trailing newline) on corpus; surgical diff == 6 target fields; 81 objections held.",
+    "tally": "18 string-surface swaps + 6 corpus fields; all four surfaces +2799 B identical delta",
+    "file_md5_bytes": {
+      "corpus": "3d15885350b3f4dde8bfdb67b1559108 / 1293682",
+      "jsx": "548df8589aa0abb2ffc2c7488a8d31d1 / 1235665",
+      "combined": "b996db1630cbf326924ecbb95dea0797 / 2382565",
+      "index": "b0cf7fdacacc982051c523ae4fb0b63e / 1836088"
+    },
+    "baseline": {
+      "head": "4f6073b",
+      "combined_old": "dfa3258b3b44a9f82ea41b90d4f707d1 / 2379766",
+      "canon": "37.15"
+    }
+  },
+  "gates": {
+    "validator_self_test": "13/13",
+    "corpus_verdict": "PASS (pre + post)",
+    "backward_gap": "all candidates CLOSED per manifest (flow-states, joy-outweighs-harms, negative-util-aggregation, violence-as-reductio)",
+    "rwe_html": "does NOT embed short/medium prose (not a surface)"
+  },
+  "grades_frozen": {
+    "nihilism-label": "short 78.8C / medium 80.9C / long 82.5B (axes .85/.82/.86/.76/.84)",
+    "love-beauty-art": "short 78.6C / medium 80.7C / long 82.3B (axes .85/.82/.86/.76/.83)",
+    "indigenous-philosophy": "short 78.5C / medium 80.6C / long 82.2B (axes .85/.80/.85/.81/.80)"
+  },
+  "deploy": {
+    "release": "v3.8.19",
+    "branches": [
+      "main",
+      "v3.8.x"
+    ],
+    "push_script": "push_v3_8_19.ps1",
+    "verify_live": "curl.exe x3 == b996db1630cbf326924ecbb95dea0797 BEFORE pin"
+  },
+  "pin": {
+    "target": "wuld.ink /library-about v3.8.17 -> v3.8.19; md5 dfa3258b -> b996db16; via tools/library-pin.py --apply AFTER live==new"
+  },
+  "canon": {
+    "bump": "37.15 -> 37.16 MINOR; counts 81/35/81 unchanged; invariants subtree byte-stable; SEPARATE commit (STEP 4)"
+  },
+  "invariants": {
+    "objection_count": 81,
+    "tier_count": 5,
+    "mechanism_count": 35,
+    "map1_node_count": 78,
+    "map1_edge_count_total": 2886
+  }
+}
