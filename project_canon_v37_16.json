@@ -1,7 +1,7 @@
 {
   "canon_version": 37.16,
   "last_updated": "2026-06-02",
-  "last_updated_by_session": "v3_8_19_batch_flush_cowork",
+  "last_updated_by_session": "v3_8_20_jsx_sync_then_compaction",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -11,111 +11,149 @@
     "register_notes": "Direct. No hedging, apologies, sycophancy. Iconoclastic framing welcome where it earns its keep. Treat the taxonomy as live intellectual work, not neutral specimen."
   },
   "files": {
-    "rwe.html": "real-world-examples surface; no-full-view artifact (L317 ~495KB JSON literal)",
-    "real_world_examples_schema_v1_6.json": "RWE schema v1.6",
-    "v3prime_validator_v1_6.py": "corpus validator v1.6",
-    "coda_v3_7.html": "v3.7 coda surface; stale-count remediation discharged",
-    "v3_7_cut_invariants.json": "v3.7 cut invariant snapshot",
-    "corpus_statistics_spec.md": "small spec (corpus statistics)",
-    "sort_feature_spec.md": "small spec (sort feature)",
-    "rebuttal_grading_ledger.json": "rebuttal grading ledger; violence-as-reductio /grades insert COMPLETE (cold-grade {v0.86,s0.82,c0.84,r0.84,a0.83}, long pct 83.8 band B); open_questions.LEDGER_INCONSISTENT RESOLVED v28.2",
-    "efilist_argument_library_v3_7_3.json": {
-      "role": "v3.7.3 corpus (benatar long strengthened)",
-      "md5": "af2befa16e7e23b6c73104e529d5f653",
-      "supersedes": "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen.json",
-      "released_at_canon": "v30.0"
+    "project_canon_v37_16.json": "authoritative canon (v37.16; in-place v3.8-arc structural compaction at session v3_8_20)",
+    "efilist_argument_library_v3_8_0.json": {
+      "role": "v3.8 corpus — SOURCE OF TRUTH",
+      "md5": "3d15885350b3f4dde8bfdb67b1559108"
     },
-    "efilist_argument_library_v3_7_3.jsx": {
-      "role": "v3.7.3 JSX sibling",
-      "md5": "2f25960ad66bf9539a79a3e6dcc6d73a",
-      "supersedes": "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen_jsx.jsx",
-      "released_at_canon": "v30.0"
-    },
-    "index_v3_7_3.html": {
-      "role": "v3.7.3 index HTML",
-      "md5": "eb73fb6f456ce43d9cf44e2be264f55d",
-      "supersedes": "index_v3_7_post_var_regrade.html",
-      "released_at_canon": "v30.0",
-      "superseded_by": "index_v3_7_4.html",
-      "status": "historical-superseded (divergent-carry resolved at v35.0)"
+    "efilist_argument_library_v3_8_0.jsx": {
+      "role": "v3.8 JSX sibling — secondary surface, NOT live-served; node sources synced to corpus at v3_8_20",
+      "md5": "03a19ed4acce25749ebd8e0792200b4f"
     },
     "combined.html": {
-      "role": "release-line combined single-file surface (v3.7.4 sync v34.0)",
-      "registered_at_canon_version": "33.0",
-      "md5_attestation_pointer": "archive_attestation.release_artifact_md5_set_per_release_manifest_v3_7_4.combined.html"
+      "role": "release-line combined single-file surface — live-served via library.wuld.ink (v3.8.19)",
+      "md5": "b996db1630cbf326924ecbb95dea0797",
+      "bytes": 2382565
     },
-    "granular_variation_candidates.md": {
-      "role": "side-car documentation: granular variation candidates",
-      "registered_at_canon_version": "33.0",
-      "note": "side-car; non-release; off-substrate scoping document"
+    "index_v3_8_0.html": {
+      "role": "index HTML surface (v3.8.19)",
+      "md5": "b0cf7fdacacc982051c523ae4fb0b63e"
     },
-    "project_canon_v33_0.json": {
-      "role": "authoritative canon (v33.0; structural compaction of v32.0)",
-      "registered_at_canon_version": "33.0",
-      "registered_by_session": "canon_compaction_v32_0_to_v33_0_s1"
+    "rebuttal_grading_ledger.json": {
+      "role": "rebuttal grading ledger",
+      "md5": "96121b91545952ba91f0b4417934b61c"
     },
-    "__compaction_note__": {
-      "compacted_at_canon_version": "33.0",
-      "culled_entries": [
-        "project_canon_v28_0.json",
-        "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen.json",
-        "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen_jsx.jsx",
-        "index_v3_7_post_var_regrade.html",
-        "combined_v3_7_post_var_regrade.html",
-        "invariant_derivation_harness_v1.py",
-        "release_manifest_v3_7_1.json",
-        "rebuttal_grading_coverage.json",
-        "coldgrade_violence_as_reductio_long.json",
-        "session_violence_as_reductio_strengthen_regrade_state.json"
-      ],
-      "rationale_culled": "Entries pointing to superseded/missing files; superseded by v3_7_3 line or removed in repo cleanup between v31.0 and v32.0.",
-      "added_entries": [
-        "combined.html",
-        "granular_variation_candidates.md",
-        "project_canon_v33_0.json"
-      ]
+    "v3prime_validator_v1_7.py": {
+      "role": "corpus validator v1.7",
+      "md5": "2cfb638d9a95aec20cd890a22e3b9263"
     },
-    "efilist_argument_library_v3_7_4.json": {
-      "role": "v3.7.4 corpus (masochist-counterexample strengthened + RWE framing correction) — SOURCE OF TRUTH",
-      "md5": "fc1a45a140c5b03339eecfd4f57bc97c",
-      "supersedes": "efilist_argument_library_v3_7_3.json",
-      "released_at_canon": "v34.0"
+    "real_world_examples_schema_v1_7.json": {
+      "role": "RWE schema v1.7",
+      "md5": "13ca1171725b8652dffc04b864692d40"
     },
-    "efilist_argument_library_v3_7_4.jsx": {
-      "role": "v3.7.4 JSX sibling",
-      "md5": "47519f7d7040833afd877f7f14ff7527",
-      "supersedes": "efilist_argument_library_v3_7_3.jsx",
-      "released_at_canon": "v34.0"
-    },
-    "index_v3_7_4.html": {
-      "role": "v3.7.4 index HTML (masochist-counterexample propagated; lead-consistent with v3.7.4 corpus) — current sole index surface",
-      "md5": "e2b9bba1f7ea65d7c94aac837f0f84ac",
-      "supersedes": "index_v3_7_3.html",
-      "released_at_canon": "v35.0"
-    },
-    "efilist_argument_library_v3_7_5.json": {
-      "role": "v3.7.5 corpus (masochist-counterexample suicide-coda excised per publish-gate #1 ruling) — SOURCE OF TRUTH",
-      "md5": "04b2b6bf16de921f7ab8a7449b393f1a",
-      "supersedes": "efilist_argument_library_v3_7_4.json",
-      "released_at_canon": "v36.0"
-    },
-    "efilist_argument_library_v3_7_5.jsx": {
-      "role": "v3.7.5 JSX sibling (coda-cut propagated)",
-      "md5": "da464f2713a29f2c5b3b2d51411996ef",
-      "supersedes": "efilist_argument_library_v3_7_4.jsx",
-      "released_at_canon": "v36.0"
-    },
-    "index_v3_7_5.html": {
-      "role": "v3.7.5 index HTML (coda-cut propagated; lead-consistent with v3.7.5 corpus) — current sole index surface",
-      "md5": "556bc1a39d0f5a5919bcaf14f3cdf4f4",
-      "supersedes": "index_v3_7_4.html",
-      "released_at_canon": "v36.0"
-    },
-    "combined_v3_7_5.html": {
-      "role": "v3.7.5 combined single-file HTML (coda-cut propagated; lead-consistent with v3.7.5 corpus)",
-      "md5": "d8393d3b40bcabf3eceb993fc3e31cdc",
-      "supersedes": "combined.html",
-      "released_at_canon": "v36.0"
+    "rwe.html": "real-world-examples surface; no-full-view artifact (L317 ~495KB JSON literal)",
+    "__compaction_note_v3_8_0__": {
+      "compacted_at_canon_version": "37.16",
+      "compaction_session": "v3_8_20_jsx_sync_then_compaction",
+      "rationale": "Files registry pruned to current v3.8 artifacts + live surfaces. Superseded v3.7.x file-registry pointers removed; their md5s retained below + in archive_attestation terminal md5 core + git tags v3.7.3/v3.7.4/v3.7.5. Supersedes the v33.0 __compaction_note__.",
+      "culled_v3_7_registry_entries": {
+        "rwe.html": "real-world-examples surface; no-full-view artifact (L317 ~495KB JSON literal)",
+        "real_world_examples_schema_v1_6.json": "RWE schema v1.6",
+        "v3prime_validator_v1_6.py": "corpus validator v1.6",
+        "coda_v3_7.html": "v3.7 coda surface; stale-count remediation discharged",
+        "v3_7_cut_invariants.json": "v3.7 cut invariant snapshot",
+        "corpus_statistics_spec.md": "small spec (corpus statistics)",
+        "sort_feature_spec.md": "small spec (sort feature)",
+        "rebuttal_grading_ledger.json": "rebuttal grading ledger; violence-as-reductio /grades insert COMPLETE (cold-grade {v0.86,s0.82,c0.84,r0.84,a0.83}, long pct 83.8 band B); open_questions.LEDGER_INCONSISTENT RESOLVED v28.2",
+        "efilist_argument_library_v3_7_3.json": {
+          "role": "v3.7.3 corpus (benatar long strengthened)",
+          "md5": "af2befa16e7e23b6c73104e529d5f653",
+          "supersedes": "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen.json",
+          "released_at_canon": "v30.0"
+        },
+        "efilist_argument_library_v3_7_3.jsx": {
+          "role": "v3.7.3 JSX sibling",
+          "md5": "2f25960ad66bf9539a79a3e6dcc6d73a",
+          "supersedes": "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen_jsx.jsx",
+          "released_at_canon": "v30.0"
+        },
+        "index_v3_7_3.html": {
+          "role": "v3.7.3 index HTML",
+          "md5": "eb73fb6f456ce43d9cf44e2be264f55d",
+          "supersedes": "index_v3_7_post_var_regrade.html",
+          "released_at_canon": "v30.0",
+          "superseded_by": "index_v3_7_4.html",
+          "status": "historical-superseded (divergent-carry resolved at v35.0)"
+        },
+        "combined.html": {
+          "role": "release-line combined single-file surface (v3.7.4 sync v34.0)",
+          "registered_at_canon_version": "33.0",
+          "md5_attestation_pointer": "archive_attestation.release_artifact_md5_set_per_release_manifest_v3_7_4.combined.html"
+        },
+        "granular_variation_candidates.md": {
+          "role": "side-car documentation: granular variation candidates",
+          "registered_at_canon_version": "33.0",
+          "note": "side-car; non-release; off-substrate scoping document"
+        },
+        "project_canon_v33_0.json": {
+          "role": "authoritative canon (v33.0; structural compaction of v32.0)",
+          "registered_at_canon_version": "33.0",
+          "registered_by_session": "canon_compaction_v32_0_to_v33_0_s1"
+        },
+        "__compaction_note__": {
+          "compacted_at_canon_version": "33.0",
+          "culled_entries": [
+            "project_canon_v28_0.json",
+            "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen.json",
+            "efilist_argument_library_v3_7_post_violence_as_reductio_strengthen_jsx.jsx",
+            "index_v3_7_post_var_regrade.html",
+            "combined_v3_7_post_var_regrade.html",
+            "invariant_derivation_harness_v1.py",
+            "release_manifest_v3_7_1.json",
+            "rebuttal_grading_coverage.json",
+            "coldgrade_violence_as_reductio_long.json",
+            "session_violence_as_reductio_strengthen_regrade_state.json"
+          ],
+          "rationale_culled": "Entries pointing to superseded/missing files; superseded by v3_7_3 line or removed in repo cleanup between v31.0 and v32.0.",
+          "added_entries": [
+            "combined.html",
+            "granular_variation_candidates.md",
+            "project_canon_v33_0.json"
+          ]
+        },
+        "efilist_argument_library_v3_7_4.json": {
+          "role": "v3.7.4 corpus (masochist-counterexample strengthened + RWE framing correction) — SOURCE OF TRUTH",
+          "md5": "fc1a45a140c5b03339eecfd4f57bc97c",
+          "supersedes": "efilist_argument_library_v3_7_3.json",
+          "released_at_canon": "v34.0"
+        },
+        "efilist_argument_library_v3_7_4.jsx": {
+          "role": "v3.7.4 JSX sibling",
+          "md5": "47519f7d7040833afd877f7f14ff7527",
+          "supersedes": "efilist_argument_library_v3_7_3.jsx",
+          "released_at_canon": "v34.0"
+        },
+        "index_v3_7_4.html": {
+          "role": "v3.7.4 index HTML (masochist-counterexample propagated; lead-consistent with v3.7.4 corpus) — current sole index surface",
+          "md5": "e2b9bba1f7ea65d7c94aac837f0f84ac",
+          "supersedes": "index_v3_7_3.html",
+          "released_at_canon": "v35.0"
+        },
+        "efilist_argument_library_v3_7_5.json": {
+          "role": "v3.7.5 corpus (masochist-counterexample suicide-coda excised per publish-gate #1 ruling) — SOURCE OF TRUTH",
+          "md5": "04b2b6bf16de921f7ab8a7449b393f1a",
+          "supersedes": "efilist_argument_library_v3_7_4.json",
+          "released_at_canon": "v36.0"
+        },
+        "efilist_argument_library_v3_7_5.jsx": {
+          "role": "v3.7.5 JSX sibling (coda-cut propagated)",
+          "md5": "da464f2713a29f2c5b3b2d51411996ef",
+          "supersedes": "efilist_argument_library_v3_7_4.jsx",
+          "released_at_canon": "v36.0"
+        },
+        "index_v3_7_5.html": {
+          "role": "v3.7.5 index HTML (coda-cut propagated; lead-consistent with v3.7.5 corpus) — current sole index surface",
+          "md5": "556bc1a39d0f5a5919bcaf14f3cdf4f4",
+          "supersedes": "index_v3_7_4.html",
+          "released_at_canon": "v36.0"
+        },
+        "combined_v3_7_5.html": {
+          "role": "v3.7.5 combined single-file HTML (coda-cut propagated; lead-consistent with v3.7.5 corpus)",
+          "md5": "d8393d3b40bcabf3eceb993fc3e31cdc",
+          "supersedes": "combined.html",
+          "released_at_canon": "v36.0"
+        }
+      }
     }
   },
   "invariants": {
@@ -1626,8 +1664,11 @@
     "trigger": "operator-initiated"
   },
   "open_questions": {
-    "active": {},
-    "active_count": 0,
+    "active": {
+      "solipsism_p_zombie_reciprocity": "DEFERRED enrichment (optional / additive / MAX-class; separate future session): p-zombie-reciprocity line for the solipsism / other-minds objection. Not yet authored. Carried forward from v3_8_20.",
+      "joy_outweighs_harms_sadist_aggregation_reductio": "DEFERRED enrichment (optional / additive / MAX-class; separate future session): sadist-aggregation utility-monster reductio for joy-outweighs-harms. Not yet authored. Carried forward from v3_8_20."
+    },
+    "active_count": 2,
     "resolved": {
       "UNEDITED_DEPTHS_settled": "Predecessor regrade: responses.medium/short/if_* unedited => grades carried UNCHANGED; refutationalVariants/archetypeResponses DEFERRED vs frozen granular list. Settled state description, not an open decision.",
       "prior_resolved": "Pre-v28.0 resolved set + deferred-on-purpose summary table were compacted at v26.5 (see canon_compaction_record_v26_5); not re-expanded.",
@@ -1882,7 +1923,6 @@
         "logical_role": "canonical regenerable HTML source (count-swept 77->78; not deprecated; was 39ea0cd42f137bbd3fdc86d6964ac91b under v3.7-stable)"
       }
     },
-    "release_artifact_md5_set_supersession_note": "release_artifact_md5_set_per_release_manifest_v3_7_stable retained as historical v3.7-stable attestation (now superseded). Binding release set for the terminus is release_artifact_md5_set_per_release_manifest_v3_7_1. || v3.7.1 -> v3.7.2 SUPERSESSION (2026-05-17, branch_b_content_advance_recut_session): the v3.7.1 published set (release_artifact_md5_set_per_release_manifest_v3_7_1, RETAINED above as historical-superseded) was a stale-ancestor publication. v3.7.2 republishes the harness-green sealed terminal cut. Reason: content-advance re-cut (VAR C->B quadrant clearance + both prose strengthens + four-ungraded grades, all already in the elected lineage), pre-cut ledger-sync (ungraded 3->0), SCALAR-3 chrome residue cleared (74/222->78/245). combined.html public contract: dd2abd01a43c2f173c98aa1b8c88bcbb (v3.7.1, superseded) -> 2accf16a834f31b9e8dbb3fcc7d61a6b (v3.7.2, current). v3.7.1 set retained for audit continuity; v3.7.2 is the sole live published contract. | v3.7.3 (2026-05-23, session v3_7_3_finalization): v3.7.2 set superseded by release_artifact_md5_set_per_release_manifest_v3_7_3. Changed: corpus_json, jsx, index_html, rebuttal_grading_ledger.json (4 artifacts mutated this arc). Carried at v3.7.2 md5: combined.html, coda_v3_7.html, v3prime_validator_v1_6.py, real_world_examples_schema_v1_6.json (verified byte-identical in /mnt/project/ at S3 open). v3.7.2 set retained historical-superseded for chain-of-custody. Combined.html structurally divergent vs v3.7.3 corpus (carried md5 reflects v3.7.2 state; resync deferred pending Q_combined_artifact_role design decision). | v3.7.4 (2026-05-29, session v3_7_4_finalization_cowork_s1): v3.7.3 set superseded by release_artifact_md5_set_per_release_manifest_v3_7_4. Changed: corpus_json (af2befa1->fc1a45a1), combined.html (29f9d5c0->4f3413bb), efilist_argument_library jsx (v3_7_3 2f25960a -> v3_7_4 47519f7d), rebuttal_grading_ledger.json (9b0b291f->5061d14c) — 4 artifacts mutated this arc (single-node masochist-counterexample propagation). Byte-identical carries: coda_v3_7.html, v3prime_validator_v1_6.py, real_world_examples_schema_v1_6.json. DIVERGENT carry: index_v3_7_3.html (retained at v3.7.3 md5 eb73fb6f; embeds stale v3.7.3 masochist prose; regen out-of-scope this cut per brief+handoff = combined.html+jsx only; flagged for regen/retire before public ship, mirroring v3.7.2->v3.7.3 combined.html divergent-carry). combined.html public contract: 29f9d5c0d4befac52dae4ca88ea4211f (v3.7.3, superseded) -> 4f3413bb4849aa1f28f9a93a984fbe50 (v3.7.4, current). v3.7.3 set retained historical-superseded for chain-of-custody. | v3.7.4 INDEX SURFACE COMPLETION (2026-05-29, session v3_7_4_index_surface_completion_cowork_s2): index_v3_7_3.html divergent-carry RESOLVED. index_v3_7_4.html regenerated from v3.7.4 corpus (single-node masochist-counterexample propagation; 6 lines: 5 OBJECTIONS const + MAP_GRAPH_DATA.mechanism_raw). Index public contract: eb73fb6f456ce43d9cf44e2be264f55d (v3.7.3 stale, superseded) -> e2b9bba1f7ea65d7c94aac837f0f84ac (v3.7.4, current; +3929B). index_v3_7_3.html entry removed from the v3.7.4 manifest (superseded within-set; old md5 retained here for chain-of-custody). ALL derived surfaces (combined.html, jsx, index) now lead-consistent with corpus source-of-truth; s1 divergence hazard fully closed. Mega-literals MAP1_TRANSITIONS/DEP_GRAPH_DATA byte-identical; invariants subtree byte-identical e1bf216e268dbcd0bc9fe7904537b82c (PATCH-class project / MAJOR canon per published-contract revision). | v3.7.5 (2026-05-29, session v3_7_5_canon_and_gitsync_cowork; surface propagation by predecessor v3_7_5_coda_propagation_cowork): v3.7.4 set superseded by release_artifact_md5_set_per_release_manifest_v3_7_5. v3.7.4 was STAGED-NEVER-PUSHED — the public git repo (efilist-argument-library/) remained at v3.7.3 (bf140a8); the v3.7.4 published-contract was canon-attested but never reached the public repo, so it is superseded by v3.7.5 before any public push. Changed (single-line masochist-counterexample suicide-coda excision, responses.long, propagated to all 4 surfaces, each -244B): corpus fc1a45a140c5b03339eecfd4f57bc97c->04b2b6bf16de921f7ab8a7449b393f1a; index e2b9bba1f7ea65d7c94aac837f0f84ac->556bc1a39d0f5a5919bcaf14f3cdf4f4; combined 4f3413bb4849aa1f28f9a93a984fbe50->d8393d3b40bcabf3eceb993fc3e31cdc; jsx 47519f7d7040833afd877f7f14ff7527->da464f2713a29f2c5b3b2d51411996ef. Mega-literals MAP1_TRANSITIONS/DEP_GRAPH_DATA byte-identical; all 78 nodes deep-equal corpus; coda residue 0. invariants subtree byte-identical e1bf216e268dbcd0bc9fe7904537b82c (PATCH-class project / MAJOR canon per published-contract revision). v3.7.5 is the sole live published contract; git-sync staged this session (commit created), public push gated on operator GO.",
     "release_artifact_md5_set_per_release_manifest_v3_7_2": {
       "combined.html": {
         "md5": "2accf16a834f31b9e8dbb3fcc7d61a6b",
@@ -1917,29 +1957,6 @@
         "size": 28920
       }
     },
-    "harness_green_attestation_v3_7_2": {
-      "session": "branch_b_content_advance_recut_session",
-      "date": "2026-05-17",
-      "harness_exit": 0,
-      "combined_md5": "2accf16a834f31b9e8dbb3fcc7d61a6b",
-      "derived_eq_canon_eq_manifest": true,
-      "figures": {
-        "node": 78,
-        "edge": 2886,
-        "blended": {
-          "1": 1010,
-          "2": 274,
-          "3": 11
-        },
-        "two_mech": {
-          "defender": 5,
-          "drifter": 42,
-          "blended": 45
-        }
-      },
-      "validator_overall_pass": true,
-      "validator_exit": 0
-    },
     "release_artifact_md5_set_per_release_manifest_v3_7_3": {
       "efilist_argument_library_v3_7_3.json": {
         "md5": "af2befa16e7e23b6c73104e529d5f653",
@@ -1973,37 +1990,6 @@
         "md5": "9b0b291fe4818587e3d724a7d6daf017",
         "size": 29874
       }
-    },
-    "harness_green_attestation_v3_7_3": {
-      "session": "v3_7_3_finalization",
-      "session_date_iso": "2026-05-23",
-      "scope": "post-strengthen surface integrity (S2 9/9 gates PASS attested) + S3 canon mutation gates",
-      "preconditions_held": [
-        "totalEntries=78 (invariant preserved S2)",
-        "objections array length 78 (invariant preserved S2)",
-        "benatar objection index 6 (invariant preserved S2)",
-        "S2 9/9 hard gates PASS attested in session_v3_7_3_surface_mutation_state.json",
-        "invariants subtree md5 (documented anchor f6b94bf0cb3e6832dbdde0017b876e54) UNCHANGED at canon level",
-        "all 78/78 graded (ledger /grades carries benatar updated tuple; ungraded remains empty)"
-      ],
-      "byte_delta_attestation": {
-        "corpus_json": "+3303 (long prose 4904->8205, plus version field 3.7->3.7.3)",
-        "jsx": "+3303 (long prose mirror)",
-        "index_html": "+3303 (long prose mirror; REBUTTAL_STRENGTH s-axis 0.74->0.81 byte-neutral)"
-      },
-      "carry_forward_md5_verification": {
-        "method": "computed md5 of each carry-forward file in /mnt/project/ at S3 open; compared to v3.7.2 attested md5; all match exactly",
-        "files_verified": [
-          "combined.html",
-          "coda_v3_7.html",
-          "v3prime_validator_v1_6.py",
-          "real_world_examples_schema_v1_6.json"
-        ],
-        "all_match_v3_7_2": true
-      },
-      "combined_coherence_note": "combined.html md5 (2accf16a) byte-identical to v3.7.2 attested; structurally DIVERGENT from v3.7.3 corpus (combined stores benatar long as para-1-only, 1404 ch; v3.7.3 corpus has 4-para 8205 ch form). Carried into v3.7.3 release set at v3.7.2 md5 with explicit coherence-note flag; resync deferred to separate session pending Q_combined_artifact_role design decision.",
-      "ledger_post_md5": "9b0b291fe4818587e3d724a7d6daf017",
-      "note": "S2 already ran file-level gate sweep; S3 attestation re-affirms at canon-bump moment."
     },
     "release_artifact_md5_set_per_release_manifest_v3_7_4": {
       "efilist_argument_library_v3_7_4.json": {
@@ -2040,78 +2026,6 @@
         "resolved_note": "index divergent-carry RESOLVED at v35.0 (cowork s2): regenerated from v3.7.4 corpus via single-node masochist-counterexample propagation (6 lines: 5 OBJECTIONS const + MAP_GRAPH_DATA.mechanism_raw, style-preserving). Supersedes index_v3_7_3.html (eb73fb6f456ce43d9cf44e2be264f55d->e2b9bba1f7ea65d7c94aac837f0f84ac, +3929B). Mega-literals MAP1_TRANSITIONS/DEP_GRAPH_DATA byte-identical; all 78 nodes deep-equal corpus."
       }
     },
-    "harness_green_attestation_v3_7_4": {
-      "session": "v3_7_4_finalization_cowork_s1",
-      "session_date_iso": "2026-05-29",
-      "scope": "v3.7.4 PATCH-class derived-view propagation (single node masochist-counterexample) + md5 re-attest + MAJOR published-contract canon bump. Mirrors v3.7.2/v3.7.3 finalization pattern.",
-      "preconditions_held": [
-        "corpus v3.7.4 md5 fc1a45a140c5b03339eecfd4f57bc97c (G1 input integrity, == predecessor-attested)",
-        "rebuttal_grading_ledger.json md5 5061d14c9078e86df52b09fe9bc95b70 (predecessor-attested)",
-        "totalEntries=78 / objections array length 78 (invariant preserved)",
-        "invariants subtree md5 e1bf216e268dbcd0bc9fe7904537b82c UNCHANGED pre==post (documented sibling f6b94bf0cb3e6832dbdde0017b876e54) — PATCH-class / NOT-v3.8 proof",
-        "validator v3prime_v1_6 PASS 0/0 (v3prime + v1.6 attestation) on corpus; self-test green; RWE schema intact",
-        "mechanism_count=34 / map1_node_count=78 / map_graph_data_node_count=112 unchanged (live-verified against MAP_GRAPH_DATA + MAP1_TRANSITIONS)"
-      ],
-      "byte_delta_attestation": {
-        "corpus_json": "+3894 (af2befa16e7e23b6c73104e529d5f653 -> fc1a45a140c5b03339eecfd4f57bc97c)",
-        "combined.html": "+3929 (29f9d5c0d4befac52dae4ca88ea4211f -> 4f3413bb4849aa1f28f9a93a984fbe50)",
-        "jsx": "+3935 (2f25960ad66bf9539a79a3e6dcc6d73a -> 47519f7d7040833afd877f7f14ff7527; v3_7_3.jsx -> v3_7_4.jsx)"
-      },
-      "propagation_attestation": {
-        "changed_node": "masochist-counterexample (5 fields: responses.short/medium/long, psychMechanism, sources[7->8])",
-        "combined.html": "6 lines changed: OBJECTIONS const L2838/2841/2842/2843/2845 (style-preserving whole-line) + MAP_GRAPH_DATA L4033 denormalized mechanism_raw (psychMechanism) surgical substring. node-eval: all 78 objections deep-equal corpus; masochist node == corpus.",
-        "jsx": "OBJECTIONS array regenerated from corpus (json.dumps indent=2 — provably the original generator) + graph-block mechanism_raw updated. node-eval: 78, 0 divergence from corpus.",
-        "untouched_byte_identical": "MAP1_TRANSITIONS, DEP_GRAPH_DATA, rwe-data (combined.html); all non-masochist nodes; MAP_GRAPH_DATA topology (nodes 112 / links unchanged)."
-      },
-      "carry_forward_md5_verification": {
-        "method": "computed md5 of each carry-forward artifact; compared to v3.7.3 attested md5",
-        "byte_identical_carries": [
-          "coda_v3_7.html",
-          "v3prime_validator_v1_6.py",
-          "real_world_examples_schema_v1_6.json"
-        ],
-        "divergent_carry": "index_v3_7_3.html (carried at v3.7.3 md5 eb73fb6f; embeds STALE v3.7.3 masochist prose; out-of-scope this cut)",
-        "all_byte_identical_carries_match_v3_7_3": true
-      },
-      "ledger_post_md5": "5061d14c9078e86df52b09fe9bc95b70",
-      "gates": {
-        "G1_corpus_md5": "PASS",
-        "G2_combined_nodeeval_78": "PASS",
-        "G3_jsx_nodeeval_78": "PASS",
-        "G4_validator_v1_6": "PASS",
-        "G5_invariants_byte_identical": "PASS (e1bf216e268dbcd0bc9fe7904537b82c)",
-        "G6_only_masochist_no_count_delta": "PASS"
-      },
-      "note": "Cowork executed hazardous mega-literal mutation; corpus (source of truth) authored+verified by predecessor rebuttal_strengthening_masochist_s1. Project classifier remains PATCH (invariants unchanged); canon MAJOR per published-contract md5-set revision (v3.7.2/v3.7.3 precedent)."
-    },
-    "harness_green_attestation_v3_7_4_index": {
-      "session": "v3_7_4_index_surface_completion_cowork_s2",
-      "session_date_iso": "2026-05-29",
-      "scope": "Final v3.7.4 derived-view propagation: masochist-counterexample into index.html (the last surface still embedding stale v3.7.3 prose). Closes the s1 divergent-carry. PATCH-class project / MAJOR published-contract canon bump. Mirrors v3.7.4-s1 method one surface over.",
-      "preconditions_held": [
-        "corpus v3.7.4 md5 fc1a45a140c5b03339eecfd4f57bc97c (G1, == s1-attested)",
-        "baseline index_v3_7_3.html md5 eb73fb6f456ce43d9cf44e2be264f55d (== s1 divergent-carry attestation)",
-        "invariants subtree md5 e1bf216e268dbcd0bc9fe7904537b82c UNCHANGED pre==post (PATCH-class / NOT-v3.8 proof)",
-        "validator v3prime_v1_6 PASS 0/0 on corpus (re-affirm, corpus byte-identical to s1); self-test green; RWE schema intact (136 records / 96 quote-bearing)",
-        "totalEntries=78 / mechanism_count=34 / map1_node_count=78 / MAP_GRAPH_DATA node_count=112 unchanged"
-      ],
-      "byte_delta_attestation": {
-        "index_html": "+3929 (eb73fb6f456ce43d9cf44e2be264f55d -> e2b9bba1f7ea65d7c94aac837f0f84ac; index_v3_7_3.html -> index_v3_7_4.html)"
-      },
-      "propagation_attestation": {
-        "changed_node": "masochist-counterexample (5 fields: responses.short/medium/long, psychMechanism, sources[7->8])",
-        "index_v3_7_4.html": "6 lines changed: OBJECTIONS const L1635(psychMechanism)/L1638(short)/L1639(medium)/L1640(long)/L1642(sources) style-preserving whole-line (ensure_ascii=False, locus-proven) + MAP_GRAPH_DATA L2842 node obj_masochist-counterexample.mechanism_raw surgical substring. node-eval: OBJECTIONS parses, 78 nodes, ALL deep-equal corpus (0 divergence); masochist 5/5 == corpus; MAP_GRAPH_DATA mechanism_raw == new psych.",
-        "untouched_byte_identical": "MAP1_TRANSITIONS (L2879, ~1MB), DEP_GRAPH_DATA (L2845); all non-masochist nodes; MAP_GRAPH_DATA topology (112 nodes / 133 links). diff old->new index = exactly 6 lines."
-      },
-      "gates": {
-        "G1_corpus_md5": "PASS (fc1a45a1)",
-        "G2_index_nodeeval_78": "PASS (78 deep-equal corpus; masochist 5/5; MAP_GRAPH mechanism_raw updated)",
-        "G3_only_6_lines_megaliterals_intact": "PASS (diff==[1635,1638,1639,1640,1642,2842]; 0 old-psych residue; DEP/MAP1 byte-identical)",
-        "G4_validator_v1_6": "PASS (0/0; re-affirm)",
-        "G5_invariants_byte_identical": "PASS (e1bf216e268dbcd0bc9fe7904537b82c pre==post)"
-      },
-      "note": "Cowork executed the hazardous index.html mega-literal mutation surgically (never full-view / never unflagged grep). All v3.7.4 derived surfaces (combined.html, jsx, index) now lead-consistent with the corpus source-of-truth. Project classifier PATCH (invariants unchanged); canon MAJOR per published-contract md5-set revision."
-    },
     "release_artifact_md5_set_per_release_manifest_v3_7_5": {
       "efilist_argument_library_v3_7_5.json": {
         "md5": "04b2b6bf16de921f7ab8a7449b393f1a",
@@ -2129,42 +2043,6 @@
         "md5": "da464f2713a29f2c5b3b2d51411996ef",
         "size": 1119226
       }
-    },
-    "harness_green_attestation_v3_7_5": {
-      "session": "v3_7_5_canon_and_gitsync_cowork",
-      "session_date_iso": "2026-05-29",
-      "surface_propagation_session": "v3_7_5_coda_propagation_cowork",
-      "scope": "v3.7.5 publish-contract sealing: masochist suicide-coda excision propagated to all 3 derived surfaces (index/combined/jsx) by predecessor; this session adds the v3.7.5 md5-set + harness attestation, bumps canon MAJOR v35.1->v36.0, and stages git-sync. PATCH-class project (invariants byte-identical) / MAJOR canon per published-contract md5-set revision (v3.7.2/v3.7.3/v3.7.4 precedent).",
-      "preconditions_held": [
-        "corpus v3.7.5 md5 04b2b6bf16de921f7ab8a7449b393f1a (G1 input integrity, re-confirmed exit-code-gated this session)",
-        "object_count 78 / objections array length 78 (invariant preserved)",
-        "mechanisms 34 / tier_set 1-5 unchanged",
-        "invariants subtree md5 e1bf216e268dbcd0bc9fe7904537b82c UNCHANGED pre==post — PATCH-class / NOT-v3.8 proof",
-        "validator v3prime_v1_6 PASS (zero blocking violations across v3' and v1.6 attestation rules) (rc 0; record_count 136, qb 96) on corpus"
-      ],
-      "byte_delta_attestation": {
-        "corpus_json": "-244 (fc1a45a140c5b03339eecfd4f57bc97c -> 04b2b6bf16de921f7ab8a7449b393f1a)",
-        "index_html": "-244 (e2b9bba1f7ea65d7c94aac837f0f84ac -> 556bc1a39d0f5a5919bcaf14f3cdf4f4)",
-        "combined_html": "-244 (4f3413bb4849aa1f28f9a93a984fbe50 -> d8393d3b40bcabf3eceb993fc3e31cdc)",
-        "jsx": "-244 (47519f7d7040833afd877f7f14ff7527 -> da464f2713a29f2c5b3b2d51411996ef)"
-      },
-      "propagation_attestation": {
-        "changed_node": "masochist-counterexample (responses.long single-line suicide-coda excision)",
-        "corpus_diff": "ONLY masochist-counterexample.responses.long changed (6646->6406 chars, -240; file -244B); psychMechanism/sources/diagnosis + other 77 nodes unchanged",
-        "locus": "long span chars[5991:6231] excised = ' (Hythloday71 later died by suicide. ... does not adjudicate.)'; junction single-space 'deconstruction. Recurrence'; recon==new TRUE",
-        "per_surface_gates": "each: encoding-matched swap (index/combined countFALSE=1; jsx countFALSE=1), coda residue 0, node-eval OBJECTIONS deep-equal corpus (78), mega-literals byte-identical where present (index/combined have 3; jsx has 0 — OBJECTIONS-only)",
-        "untouched_byte_identical": "MAP1_TRANSITIONS, DEP_GRAPH_DATA (index/combined); all non-masochist nodes; jsx OBJECTIONS-only (no mega-literals)"
-      },
-      "carry_forward_supersession": "index_v3_7_4.html (e2b9bba1), combined.html (4f3413bb v3_7_4 contract), efilist_argument_library_v3_7_4.jsx (47519f7d) superseded by v3.7.5 set; v3.7.4 staged-never-pushed (repo at v3.7.3 bf140a8).",
-      "gates": {
-        "G1_input_md5": "PASS (5/5 artifacts re-confirmed)",
-        "G2_surfaces_nodeeval_78": "PASS (index/combined/jsx each deep-equal corpus, 78 nodes)",
-        "G3_coda_residue_zero": "PASS (0 residue all 3 surfaces)",
-        "G4_validator_v1_6": "PASS (rc 0)",
-        "G5_invariants_byte_identical": "PASS (e1bf216e268dbcd0bc9fe7904537b82c; pre==post)",
-        "G6_mega_literals_byte_identical": "PASS (MAP1_TRANSITIONS/DEP_GRAPH_DATA unchanged on index/combined)"
-      },
-      "note": "Surface propagation + per-surface gates executed by predecessor v3_7_5_coda_propagation_cowork (state file verified_facts). This session re-confirmed all 5 artifact md5s exit-code-gated before sealing. Channel-confabulation lesson applied: only exit-code-gated in-process asserts trusted."
     },
     "v3_7_6": {
       "version": "v3.7.6",
@@ -2184,246 +2062,29 @@
       "invariants_anchor": "e1bf216e268dbcd0bc9fe7904537b82c",
       "note": "text-only short+medium strengthen on benatar-asymmetry-attack; long byte-identical; terminus stays sealed; next stays v3_8_phase_0_authoring"
     },
-    "v3_8_0": {
-      "version": "v3.8.0",
-      "date": "2026-05-30",
-      "class": "MAJOR",
-      "session": "v3_8_phase_1_cowork_major_cut",
-      "cut_summary": "v3.8 suffering-cluster + archetypeVariant feature ship: +3 objections (eliminativism T4, solipsism T4, suffering-as-meaning T2) 78->81; +1 mechanism (mech_Metaphysical_Deflation; eliminativism mint) 34->35; 7 archetypeVariants side-cars spliced; violence-as-reductio if_* superseded by archetypeVariants; refutationalVariants renamed objectionSubforms; RWE schema + validator v1.6->v1.7.",
-      "published_contract_md5": {
-        "corpus": "b837379ecdad30aa9078392815cd0ae4",
-        "ledger": "d9319cb9c72df61304829cb5635328ca",
-        "combined_html": "d036416ce0a6e217f2e0afcd6d5612dc",
-        "index_html": "815dcb75eefb7bf55ac6d40fbe2c3e68",
-        "jsx": "90f1bec4a22d37ea14dcd2961e608165"
-      },
-      "artifact_sizes_bytes": {
-        "corpus": 1246157,
-        "ledger": 41254,
-        "combined_html": 2331389,
-        "index_html": 1784908,
-        "jsx": 1119936
-      },
-      "artifact_names": {
-        "corpus": "efilist_argument_library_v3_8_0.json",
-        "ledger": "rebuttal_grading_ledger_v3_8_0.json",
-        "combined": "combined_v3_8_0.html",
-        "index": "index_v3_8_0.html",
-        "jsx": "efilist_argument_library_v3_8_0.jsx",
-        "schema": "real_world_examples_schema_v1_7.json",
-        "validator": "v3prime_validator_v1_7.py"
-      },
-      "invariants_changed": {
-        "objection_count": "78 -> 81",
-        "mechanism_count": "34 -> 35",
-        "map_graph_data_node_count": "112 -> 116",
-        "map_graph_data_mechanism_node_count": "34 -> 35",
-        "map_graph_data_objection_node_count": "78 -> 81",
-        "map_graph_data_link_count": "133 -> 140",
-        "map_graph_data_mechanism_node_count_unchanged": "value 34 -> 35 (key name retained; name-drift footnoted for a future bookkeeping PATCH)",
-        "dep_graph_data_node_count": "91 -> 94",
-        "dep_graph_data_link_count_v361": "245 -> 254",
-        "dep_graph_data_objection_node_count": "78 -> 81",
-        "dep_graph_data_strong_link_count_post_cluster_insertion": "161 -> 167",
-        "dep_graph_data_weak_link_count_post_cluster_insertion": "84 -> 87",
-        "map1_node_count": "78 UNCHANGED (3 suffering nodes not Map-1-represented; map1 delta=0 CONFIRMED; MAP1_TRANSITIONS byte-identical pre==post)",
-        "tier_tallies": "T1:13 T2:16->17 T3:14 T4:29->31 T5:6 (=81)",
-        "category_tallies": "Emotional/Reflexive:13 Folk Philosophical:16->17 Structural/Pragmatic:14 Genuine Philosophical:29->31 Meta:6 (=81)"
-      },
-      "mint_record": {
-        "new_mechanism": "mech_Metaphysical_Deflation",
-        "mechType": "genuine",
-        "trigger_node": "eliminativism",
-        "verdicts": "eliminativism=GPC+Metaphysical_Deflation[MINT]; solipsism=GPC+Epistemological_Challenge[existing]; suffering-as-meaning=Conflation+Survivorship+Stockholm[existing]",
-        "authority": "v3_8_phase0d_mechanism_mapping_addendum",
-        "count_eq_out_degree": "re-validated for all 35 mechanisms on both surfaces; zero mismatch"
-      },
-      "if_star_retirement_clause": "violence-as-reductio responses.if_{sophisticate,defender,drifter,blended} are RETIRED, superseded by responses.archetypeVariants (D3 4-slot). Authority: ratified_variant_design_v1 (locked D3 + scoping central_finding). This MAJOR cut adds the explicit retirement citation per handout s2 section-4 OPEN (no prior explicit if_* retirement clause existed). violence-as-reductio was the only corpus node carrying if_* keys; disposition exhaustive.",
-      "open_decisions_resolved": {
-        "suffering_as_meaning_map_links": "KEEP 3 (Conflation + Survivorship + Stockholm); links 133->140; Conflation count 4->5; bump-sum 7 [operator-confirmed at open]",
-        "output_naming": "shipped artifacts bumped to v3_8_0 (corpus/combined/index/jsx); canon -> project_canon_v37_0.json; v3_7_6 originals left pristine [operator-confirmed at open]"
-      },
-      "schema_validator_bump": "real_world_examples_schema_v1_7.json (spec_version 1.7; refutationalVariants->objectionSubforms resolution-path doc; refutation_variant_id field name + 29 values unchanged) / v3prime_validator_v1_7.py (v18/v19/v20 logic unchanged; non-breaking v1.7 coverage note; not the corpus-objection enforcer so no archetypeVariants rule added).",
-      "jsx_parity_note": "jsx carries the objectionSubforms RENAME ONLY (per handout s2 0.3 / 5). The 3 new objection nodes + 7 archetypeVariants are NOT propagated to jsx this cut (jsx is the lagging sibling; node parity deferred to a surface-parity session). OPEN.",
-      "project_terminal_state_note": "top-level project_terminal_state left as 'archived_v3_7_6_stable' (manifest-silent; the v3.7 archive remains archived, v3.8.0 is built atop it). Flag: operator may flip terminal_state to a v3.8 active marker in a follow-up.",
-      "supersedes": "v3_7_6 (archived_v3_7_6_stable)",
-      "bump_justification_MAJOR": "Pre-existing invariants-block scalars revised (objection_count, mechanism_count, map_graph_data_{node,mechanism_node,objection_node,link}_count, map_graph_data_mechanism_node_count_unchanged value, dep_graph_data_{node,link_v361,objection_node,strong,weak}) AND release-artifact md5-set changed (5 artifacts). Programmatically verifiable: objection_count 78->81, mechanism_count 34->35.",
-      "invariants_anchor_note": "invariants subtree INTENTIONALLY mutated this cut (unlike PATCH-class v3_7_x); no byte-held invariants-anchor asserted. Validation = round-trip parse + invariant assertion, not byte-delta."
-    },
-    "v3_8_1": {
-      "version": "v3.8.1",
-      "date": "2026-05-30",
-      "class": "MINOR",
-      "session": "v3_8_1_violence_reductio_foldin_cowork",
-      "cut_summary": "violence-as-reductio responses.long NU-centrality seam strengthen (11795->16595c, +2.4 RSI 83.8->86.2 B); jsx node-parity 78->81 + 7 archetypeVariants propagated (regen-from-corpus); ledger short/medium deterministic backfill (80.1 C / 82.2 B) + depths_note; combined.html REBUTTAL_STRENGTH['violence-as-reductio'] base axes -> {v.87,s.85,c.87,r.86,a.86}. Long-only strengthen; short/medium prose byte-identical.",
-      "published_contract_md5": {
-        "corpus": "4ee88aabc6a658d24a09980a704b6af3",
-        "ledger": "9871eae81f1c79bbc840f19c65318cb6",
-        "combined_html": "49b061861278f9be421788810f657eba",
-        "index_html": "89960b542b1c09ca1f1c03c7cebb335f",
-        "jsx": "97e444807350564cbde14e99b22bd707"
-      },
-      "artifact_sizes_bytes": {
-        "corpus": 1250995,
-        "ledger": 41399,
-        "combined_html": 2336227,
-        "index_html": 1789746,
-        "jsx": 1191699
-      },
-      "artifact_names": {
-        "corpus": "efilist_argument_library_v3_8_0.json",
-        "ledger": "rebuttal_grading_ledger_v3_8_0.json",
-        "combined": "combined_v3_8_0.html",
-        "index": "index_v3_8_0.html",
-        "jsx": "efilist_argument_library_v3_8_0.jsx"
-      },
-      "invariants_changed": "NONE — objection_count 81 / mechanism_count 35 / all graph + tier/category tallies byte-identical pre==post (MINOR proof; invariants md5 held 8727787c5c0d4f8a08280b806db6fcc8)",
-      "jsx_parity_note": "RESOLVED: phase-1 OPEN item closed. jsx OBJECTIONS regenerated from canonical corpus -> node-parity 81, archetypeVariants on 7 nodes, if_* response keys retired, objectionSubforms present, no refutationalVariants. React component code (MechanismWeb/EFIListArgumentLibrary) untouched.",
-      "decision_flag_5a_resolution": "LEDGER-AUTHORITATIVE: long 86.2 B / medium 82.2 B / short 80.1 C committed; depth-model display derivation (medium 84.6 / short 82.5) NOT adopted; depths_note records authority. short C->B is display-only.",
-      "supersedes": "v3_8_0 published_contract_md5 for the same-named files (content strengthened in-place; v3_8_0 block retained as sealed MAJOR fingerprint)",
-      "bump_justification_MINOR": "Additive (archive_attestation.v3_8_1 + session_log entry) + narrative corrections (canon_version 37.0->37.1, stale marker v36.1->v37.1, next_recommended_session); ZERO invariant-block entries revised.",
-      "gates": "G1-G7 7/7 PASS"
-    },
-    "v3_8_2": {
-      "version": "v3.8.2",
-      "date": "2026-05-30",
-      "class": "MINOR",
-      "session": "v3_8_2_negative_util_aggregation_foldin_cowork",
-      "cut_summary": "negative-util-aggregation responses.long full re-author strengthen (1958->7276c, +5318c; RSI 79.9 C->84.0 B; lift concentrated r .75->.82 / a .75->.83). Retired consent-bolt-on (category error) + feasibility-dodge; installed clean three-conjunct fork + begs-question diagnosis + de-idealization ledger move + layer-1/layer-2 split + owned maximizing-NU concession. Ledger grades['negative-util-aggregation'] axes->{v.86,s.83,c.86,r.82,a.83}, long 84.0 B, headline_grade_long B (+depths_note); short 76.2 C / medium 78.3 C HELD byte-stable. combined.html REBUTTAL_STRENGTH['negative-util-aggregation']->{v.86,s.83,c.86,r.82,a.83} (84.0 B). Long-only strengthen; short/medium prose byte-identical.",
-      "published_contract_md5": {
-        "corpus": "6bc27489517fb69a3501f5168b4bc274",
-        "ledger": "bbe547c800c1afa458904df1daf3f0f6",
-        "combined_html": "03610d7d0117deb3b708c3a489b27a90",
-        "index_html": "42a62b82a9d00cade33ff0ce9195dee5",
-        "jsx": "a31cb0373082d82d7d74fe16aa2950f4"
-      },
-      "artifact_sizes_bytes": {
-        "corpus": 1256361,
-        "ledger": 41697,
-        "combined_html": 2341594,
-        "index_html": 1795112,
-        "jsx": 1197065
-      },
-      "artifact_names": {
-        "corpus": "efilist_argument_library_v3_8_0.json",
-        "ledger": "rebuttal_grading_ledger_v3_8_0.json",
-        "combined": "combined_v3_8_0.html",
-        "index": "index_v3_8_0.html",
-        "jsx": "efilist_argument_library_v3_8_0.jsx"
-      },
-      "invariants_changed": "NONE — objection_count 81 / mechanism_count 35 / tier_count 5 byte-identical pre==post (MINOR proof; invariants md5 held 8727787c5c0d4f8a08280b806db6fcc8)",
-      "grade_refresh_note": "negative-util-aggregation long C->B (axes {v.86,s.83,c.86,r.82,a.83}, RSI 0.8398=84.0). combined REBUTTAL_STRENGTH updated to match; index REBUTTAL_STRENGTH left at old display value (DEFERRED to batched surface-parity MINOR, alongside violence-as-reductio's existing index/combined divergence). Down-tier propagation (medium/short) deferred; long now leads medium by 5.7pt (rigor, not direction).",
-      "display_divergence_deferred": "index REBUTTAL_STRENGTH now diverges from combined for TWO nodes: violence-as-reductio (combined 86.2 / index 83.8) and negative-util-aggregation (combined 84.0 / index old). Ledger-authoritative per standing 5a convention; batch-resolve in one surface-parity + git pass."
-    },
-    "v3_8_3": {
-      "version": "v3.8.3",
-      "date": "2026-05-30",
-      "class": "MINOR",
-      "session": "v3_8_3_joy_outweighs_harms_foldin_cowork",
-      "cut_summary": "joy-outweighs-harms responses.long full re-author strengthen (3184->8159c, +4975c; RSI 76.6 C->83.0 B; VAR/masochist derive-at-render posture). PART A 6 surfaces: corpus/jsx/index/combined long OLD 8f5111df->NEW 7d2ac7b2 (short 4a18af0d / medium 7164652225 byte-stable); combined.html REBUTTAL_STRENGTH['joy-outweighs-harms'] base axes->{v.87,s.83,c.83,r.82,a.80} -> renders long 83.0 B / med 81.3 C / short 79.2 C via depth modifiers (all tiers lift, both shorter cross D->C); ledger grades['joy-outweighs-harms'] axes + long 83.0 B + headline_grade_long B + depths_note. PART B batched surface-parity (accumulate-then-batch trigger ripe at 3 divergences): index.html REBUTTAL_STRENGTH reconciled to ledger for violence-as-reductio {v.87,s.85,c.87,r.86,a.86} (83.8->86.2), negative-util-aggregation {v.86,s.83,c.86,r.82,a.83} (79.9->84.0), joy-outweighs-harms {v.87,s.83,c.83,r.82,a.80} (76.6->83.0); index now == combined == ledger for all three; no 4th node touched. Long-only strengthen; short/medium prose byte-identical.",
-      "published_contract_md5": {
-        "corpus": "36febc9a80e9ffb8af5f5425a3cdad90",
-        "ledger": "a09946844ec9a2a967b8f965d1cae3d8",
-        "combined_html": "dbbbc6d1b993b20064ad0a6d9f27b051",
-        "index_html": "84ad36b948923974ec6eff21a056325d",
-        "jsx": "133945446fbafa12039ae3599c056448"
-      },
-      "artifact_sizes_bytes": {
-        "corpus": 1261374,
-        "ledger": 41879,
-        "combined_html": 2346607,
-        "index_html": 1800126,
-        "jsx": 1202078
-      },
-      "artifact_names": {
-        "corpus": "efilist_argument_library_v3_8_0.json",
-        "ledger": "rebuttal_grading_ledger_v3_8_0.json",
-        "combined": "combined_v3_8_0.html",
-        "index": "index_v3_8_0.html",
-        "jsx": "efilist_argument_library_v3_8_0.jsx"
-      },
-      "invariants_changed": "NONE — objection_count 81 / mechanism_count 35 / tier_count 5 byte-identical pre==post (MINOR proof; invariants subtree slice byte-identical v37.2->v37.3; documented invariants md5 anchor 8727787c5c0d4f8a08280b806db6fcc8 carried, subtree not mutated).",
-      "gates": "task G1-G6 PASS — G1 long md5 7d2ac7b2 in corpus/jsx/index/combined; G2 short/med byte-stable; G3 combined render 83.0/81.3/79.2; G4 index REBUTTAL==ledger for VAR/NUA/joy, no 4th; G5 corpus+jsx+combined parse clean @81 obj; G6 canon v37.3 MINOR. Procedure G7 invariants byte-identical PASS.",
-      "deferred": [
-        "git push v3.8.x line (operator-batched; single-copy exposure in Downloads/Argument Library)"
+    "intermediate_v3_7_harness_attestations": {
+      "_collapsed_at": "v3_8_20_jsx_sync_then_compaction",
+      "note": "5 harness-green attestations (v3.7.2 / v3.7.3 / v3.7.4 / v3.7.4_index / v3.7.5) + the release_artifact_md5_set_supersession_note collapsed here. Harness verdict was GREEN at each v3.7.x finalization (invariant_derivation harness self-test PASS). Verbatim records in git history of project_canon_v37_16.json predecessor + per-session state files; the terminal v3.7 md5 core (release_artifact_md5_set_per_release_manifest_v3_7_stable/_1/_2/_3/_4/_5 + v3_7_6) is retained byte-stable above.",
+      "preserved_md5s": [
+        "04b2b6bf16de921f7ab8a7449b393f1a",
+        "29f9d5c0d4befac52dae4ca88ea4211f",
+        "2accf16a834f31b9e8dbb3fcc7d61a6b",
+        "2f25960ad66bf9539a79a3e6dcc6d73a",
+        "47519f7d7040833afd877f7f14ff7527",
+        "4f3413bb4849aa1f28f9a93a984fbe50",
+        "5061d14c9078e86df52b09fe9bc95b70",
+        "556bc1a39d0f5a5919bcaf14f3cdf4f4",
+        "9b0b291fe4818587e3d724a7d6daf017",
+        "af2befa16e7e23b6c73104e529d5f653",
+        "d8393d3b40bcabf3eceb993fc3e31cdc",
+        "da464f2713a29f2c5b3b2d51411996ef",
+        "dd2abd01a43c2f173c98aa1b8c88bcbb",
+        "e1bf216e268dbcd0bc9fe7904537b82c",
+        "e2b9bba1f7ea65d7c94aac837f0f84ac",
+        "eb73fb6f456ce43d9cf44e2be264f55d",
+        "f6b94bf0cb3e6832dbdde0017b876e54",
+        "fc1a45a140c5b03339eecfd4f57bc97c"
       ]
-    },
-    "v3_8_x_render_merge": {
-      "version": "v3.8.x (render-path + variant-cut merge re-attestation)",
-      "date": "2026-05-31",
-      "class": "MINOR",
-      "session": "v3_8_variant_cut_merge_deploy_s1",
-      "cut_summary": "Render-path archetypeVariants in-place toggle (7 nodes) spliced combined/index/jsx in predecessor (canon 37.3->37.4). THIS merge pass (37.4->37.5): count regen [combined+index each: 'all 74 entries'->81; 'The 34 mechanism clusters...from the 81 objections'->35]; R3 corpus _provenance_note_r3 (responses.if_sophisticate/if_defender SUPERSEDED by responses.archetypeVariants as of v3.8.0; 16 if_* loci retained for provenance 4h-alt-b/4k-zzz) +207B; md5 re-attest. HELD+flagged out-of-mechanical-scope: combined coda lead L2332 '78 ways/2,886 transitions/34 mechanisms' (authored; coherent w/ shipped 78-node /2886-edge map1); 'all 74 source nodes'+convergence table 3/104/766 (stale map1 gen summary; needs re-derivation). Invariants 81/35/5 + map1 78/2886 byte-stable (inv-hash 8727787c). Repo git HEAD-truncation (v3.8.->v3.8.x) repaired in-sandbox; add/commit/merge routed to native PowerShell (mount blocks unlink).",
-      "release_artifact_md5_set": {
-        "combined_v3_8_0.html": "9ecc34d7c77b744d046b3c99b6e694b9",
-        "index_v3_8_0.html": "4c7bb904d55231bf23fc7dbd461ca28a",
-        "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
-        "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
-        "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
-        "project_canon_v37_3.json": "<self; recorded in session_v3_8_variant_cut_merge_deploy_s1_state.json>"
-      },
-      "supersedes": "v3_8_3 surface md5 set (render-path splice + count regen + R3 note re-hash combined/index/corpus)"
-    },
-    "v3_8_x_coda_convergence_bundle": {
-      "version": "v3.8.x coda + convergence-table bundle (resolves HELD loci from v3_8_x_render_merge)",
-      "date": "2026-05-31",
-      "class": "MINOR",
-      "session": "v3_8_variant_cut_merge_deploy_s1 (bundle, post-Step-4)",
-      "cut_summary": "Settles the two HELD-flagged loci so library prose matches the about-page 81/35 framing before deploy. CODA (combined): 'catalogs 78 ways'->81; 'names 34 mechanisms'->35; '2,886 transitions' KEPT (= all-mode edge total: data-verified 1591 mode + 1295 blended = 2886). CONVERGENCE table (combined+index): '74 source nodes'->78; recomputed from shipped MAP1_TRANSITIONS, 3 methods agree (explicit modes[] field == set-membership == canon): single 766/87.7%->1010/78.0%, 2-mode 104/11.9%->274/21.2%, 3-mode 3/0.3%->11/0.8%; note 87.7%->78.0%. Invariants byte-stable (map1 {1:1010,2:274,3:11}/78/2886 already canon; prose propagated). inv-hash 8727787c.",
-      "release_artifact_md5_set": {
-        "combined_v3_8_0.html": "1d265ef7a0129885e2f9395c9a006f6a",
-        "index_v3_8_0.html": "9a0e8a68ef9a475678ee4c334fc575ab",
-        "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
-        "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
-        "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
-        "project_canon_v37_3.json": "<self; recorded in session state>"
-      },
-      "note": "combined +2B / index +2B vs v3_8_x_render_merge; corpus/jsx/ledger unchanged."
-    },
-    "v3_8_x_display_chrome": {
-      "version": "v3.8.x display-chrome finalize (public version label v3.8.3 + graph-view counts)",
-      "date": "2026-05-31",
-      "class": "MINOR",
-      "session": "v3_8_variant_cut_merge_deploy_s1 (library display pass)",
-      "cut_summary": "Finalizes the deployed library's human-facing chrome so the published integrity contract is TRUE. Public version label v3.7.3->v3.8.3 (combined title+h1; index title+h1 v3.7->v3.8.3; 'v3.8 D5' code comments held). Graph-view header spans reconciled to the already-correct graph DATA: dep 245->254, mech 118->140 (DEP_GRAPH_DATA = 94 nodes/254 links == corpus.dependencyGraph; MAP_GRAPH_DATA = 116 nodes/140 links == canon). Hardcoded spans only; NO data regeneration. Invariants byte-stable; inv-hash 8727787c.",
-      "release_artifact_md5_set": {
-        "combined_v3_8_0.html": "e475e0ea8a0b9e36ab5cddfd8bac59d2",
-        "index_v3_8_0.html": "6611d38c2cd91fb020ea3c30c743eb27",
-        "efilist_argument_library_v3_8_0.json": "96b6cc73d60f7142a8c502093e65f834",
-        "efilist_argument_library_v3_8_0.jsx": "9ded031a1c13f7c2670c57ce2fd5730a",
-        "rebuttal_grading_ledger_v3_8_0.json": "a09946844ec9a2a967b8f965d1cae3d8",
-        "project_canon_v37_3.json": "<self; in session state>"
-      },
-      "combined_byte_count": 2349639,
-      "note": "FINAL deployed combined.html hash for WULD INK /library-about publish — no further pending library changes. Supersedes v3_8_x_coda_convergence_bundle surface set."
-    },
-    "v3_8_17": {
-      "version": "v3.8.17",
-      "date": "2026-06-02",
-      "class": "MINOR",
-      "session": "v3_8_17_deploy",
-      "cut_summary": "Phase-B publish of the v3.8.8->v3.8.17 flush (6 strengthen foldins + band-true hygiene + render fix). First live advance off the v3.7-stable artifact set; the release milestone lives here + in releases.json/library-pin, NOT the canon major digit (canon_version tracks structural revision only). Zero invariant-block revision: counts frozen 81 obj / 35 mech / 5 tiers, map1 78 nodes / 2886 edges, invariants subtree md5 stable. Strengthen foldins moved prose+REBUTTAL_STRENGTH scores+grades; render fix = HELD_OVERRIDE (3 cells) + floor-truncated displayRSI; none are invariant-block members.",
-      "published_contract_md5": {
-        "combined_v3_8_0.html": "dfa3258b3b44a9f82ea41b90d4f707d1",
-        "index_v3_8_0.html": "386a4f21f54edf4d6465aeca2280eb9e",
-        "efilist_argument_library_v3_8_0.json": "13cc617e06dda2e4adb53e1af6cbafed",
-        "efilist_argument_library_v3_8_0.jsx": "a3531a434ba90f9c3f71909332b85786",
-        "rebuttal_grading_ledger.json": "96121b91545952ba91f0b4417934b61c",
-        "project_canon_v37_14.json": "fb2fbc512f3e04d7253f5f87d9980052"
-      },
-      "artifact_sizes_bytes": {
-        "combined_v3_8_0.html": 2379766,
-        "index_v3_8_0.html": 1833289,
-        "efilist_argument_library_v3_8_0.json": 1290883,
-        "efilist_argument_library_v3_8_0.jsx": 1232866,
-        "rebuttal_grading_ledger.json": 42409,
-        "project_canon_v37_14.json": 233509
-      },
-      "invariants_changed": "none (81/35/5 + map1 78/2886 frozen; invariants subtree md5 byte-stable pre==post)",
-      "live_verify": "library.wuld.ink/combined md5 dfa3258b3b44a9f82ea41b90d4f707d1 / 2,379,766 B (curl 3x agreement)",
-      "wuld_ink_pin": "c3a2571246f67adff3971f3da69c97a8 -> dfa3258b3b44a9f82ea41b90d4f707d1 (label v3.8.7 -> v3.8.17)",
-      "git": "efilist d092a9a on main + v3.8.x parity; baseline 50b7871",
-      "supersedes": "v3_8_x_display_chrome (prior library publish e475e0ea / 2,349,639 B at label v3.8.3)"
     }
   },
   "cold_start_instructions": {
@@ -2529,242 +2190,33 @@
       "brief_g6_reinterpretation_note": "Brief specified G6 against invariants.canonical_invariant_attestation_summary block; that block does not exist as a named container in canon v31.0. Binding invariant scalars live as direct children of invariants (map1_node_count, map1_edge_count_total, map1_blended_mode_count_distribution, map1_two_mechanism_disclosure_true_counts, objection_count, tier_count, mechanism_count). G6 reinterpreted in spirit: those direct children must remain byte-identical pre==post. Verified."
     },
     "arc_compacted_v3_7_release_line": {
-      "block_kind": "arc_compacted_v3_7_release_line",
-      "compacted_at_canon_version": "33.0",
-      "compacted_by_session": "canon_compaction_v32_0_to_v33_0_s1",
-      "scope": "Consolidation of v3.7.x release-arc records: post_archive_work_queue sub-records + adjacent top-level v3.7.x detail blocks. Terminal attestation receipts preserved verbatim under attestation_receipts_md5_bearing. Terminal contract is archive_attestation.release_artifact_md5_set_per_release_manifest_v3_7_{stable,1,2,3} (untouched).",
-      "process_summaries": {
-        "paq.active_item": "Build a standalone single-file rwe.html browser that surfaces all 136 corpus realWorldExamples instances with three view modes (by objection / by speaker / by archetype), filterable by polarity + archetype + speaker_type, deep-linkable per ",
-        "paq.short_term_backlog": "<list[3]>",
-        "paq.long_term_backlog": "<list[2]>",
-        "paq.epistemic_coda_finalization_record": "<10 subkeys>",
-        "paq.combined_release_status_decision_record": "operator_authorized_major_decision_record",
-        "paq.surfaces_superseded_by_combined_v3_7_1": "surface_supersession_record",
-        "paq.v3_7_1_terminus_confirmation_record": "terminus_confirmation_attestation",
-        "paq.docs_finalization_record": "docs_finalization_record",
-        "paq.rebuttal_granular_survey_record": "exploratory_survey_record",
-        "paq.rebuttal_granular_survey_record_corrected": "exploratory_survey_record_CORRECTED",
-        "paq.strengthening_and_stats_scoping_record": "<16 subkeys>",
-        "paq.stats_surface_addition_record": "<12 subkeys>",
-        "paq.combined_html_v3_7_3_sync_record": "combined_html_v3_7_3_sync_record",
-        "v3_7_terminal_cut_record": "v3_7_terminal_cut_record",
-        "cowork_publication_refresh_v3_7_1": "Author the corrected Cowork coordination doc set superseding cowork_orientation_v3_7_publication.md; refresh README/instructions/CITATION; add STATISTICS.md + screenshots/; specify the full-provenance incremental ship manifest. Zero substra",
-        "v3_7_2_recut_delta_ledger": "<12 subkeys>",
-        "v3_7_3_recut_delta_ledger": "<13 subkeys>",
-        "github_publication_record": "Anchor GitHub-side publication metadata atop the frozen v3.7 stable archive. Additive only; zero substrate mutation; archive_attestation md5 set unchanged."
-      },
-      "attestation_receipts_md5_bearing": {
-        "paq.active_item": {
-          "paq.active_item.active_item_completion_record.md5": "3896244146f563160308ab90813d84cc",
-          "paq.active_item.active_item_completion_record.instance_coverage_attestation": {
-            "corpus_realWorldExamples_length": 136,
-            "rwe_html_embedded_instance_count": 136,
-            "coverage_ratio": "136/136",
-            "verified_via": "node-side JSON.parse round-trip + structural smoke (instance_id present 136/136, attached_objections present 136/136, foreign-key validity 0 bad FKs)"
-          },
-          "paq.active_item.active_item_completion_record.schema_conformance_attestation": {
-            "schema_version_referenced": "1.6",
-            "attached_objections_foreign_key_violations": 0,
-            "enum_render_strategy": "render actual corpus values verbatim (no enum coercion); drift values surfaced in card pills as text-only without color tagging",
-            "archetype_categories_observed_in_data": [
-              "sophisticate",
-              "defender",
-              "drifter",
-              "blended",
-              "not-applicable"
-            ],
-            "note": "archetype \"ambiguous\" reserved in schema v1.6 but absent in current corpus state; render layer handles it if it appears."
-          },
-          "paq.active_item.active_item_completion_record.substrate_freeze_compliance.release_artifact_md5_drift_count": 0,
-          "paq.active_item.active_item_completion_record.substrate_freeze_compliance.release_artifacts_unmutated": [
-            "efilist_argument_library_v3_7_post_cluster_insertion_inmendham.json",
-            "efilist_argument_library_v3_7_post_surface_parity_jsx.jsx",
-            "index_v3_7_post_b3f2_surface_parity_html.html",
-            "coda_v3_7.html",
-            "v3prime_validator_v1_6.py",
-            "real_world_examples_schema_v1_6.json"
-          ],
-          "paq.active_item.active_item_completion_record.accessibility_chrome_upgrade_record.predecessor_artifact_md5": "3896244146f563160308ab90813d84cc",
-          "paq.active_item.active_item_completion_record.accessibility_chrome_upgrade_record.new_artifact_md5": "0253e3625424a15bab820bad5c42259f",
-          "paq.active_item.active_item_completion_record.accessibility_chrome_upgrade_record.four_mode_attestation": {
-            "modes_implemented": [
-              "standard",
-              "legible",
-              "high-contrast",
-              "both"
-            ],
-            "mode_button_ids": [
-              "mode-standard",
-              "mode-legible",
-              "mode-hc",
-              "mode-both"
-            ],
-            "composition_strategy": "body.legible and body.high-contrast as independent classes; \"both\" applies both simultaneously and composes naturally via CSS cascade"
-          },
-          "paq.active_item.active_item_completion_record.accessibility_chrome_upgrade_record.in_scope_only_compliance.release_artifact_md5_drift_count": 0,
-          "paq.active_item.active_item_completion_record.accessibility_chrome_upgrade_record.in_scope_only_compliance.release_artifact_md5_set_mutated": false,
-          "paq.active_item.combined_single_file_completion_record.md5": "ec15c2911216812fd916968a87078024",
-          "paq.active_item.combined_single_file_completion_record.source_md5_set_verified": {
-            "index_v3_7_post_b3f2_surface_parity_html.html": "39ea0cd42f137bbd3fdc86d6964ac91b",
-            "rwe.html": "0253e3625424a15bab820bad5c42259f",
-            "coda_v3_7.html": "e955812115e6aaf5bb1c445cd1c878c0"
-          },
-          "paq.active_item.combined_single_file_completion_record.substrate_freeze_compliance.release_artifact_md5_drift_count": 0,
-          "paq.active_item.combined_single_file_completion_record.substrate_freeze_compliance.release_artifact_md5_set_mutated": false,
-          "paq.active_item.post_smoke_polish_record.artifact.md5": "47e9082c71a4de1c984cb8476752c017",
-          "paq.active_item.post_smoke_polish_record.artifact.pre_edit_md5": "ec15c2911216812fd916968a87078024",
-          "paq.active_item.post_smoke_polish_record.close_gate_results.g1_md5_size_lines": "PASS (47e9082c71a4de1c984cb8476752c017 / 2234272 / 5073 = 5055 +19 fix1 -1 fix2)",
-          "paq.active_item.post_smoke_polish_record.substrate_freeze_compliance.release_artifact_md5_set_mutated": false
-        },
-        "paq.surfaces_superseded_by_combined_v3_7_1": {
-          "paq.surfaces_superseded_by_combined_v3_7_1.superseded[0].md5_at_supersession": "654f56cf29d9a808fc870dda4c98b3cc",
-          "paq.surfaces_superseded_by_combined_v3_7_1.superseded[1].md5_at_supersession": "0253e3625424a15bab820bad5c42259f"
-        },
-        "paq.stats_surface_addition_record": {
-          "paq.stats_surface_addition_record.artifacts.rwe.html.md5_pre": "0253e3625424a15bab820bad5c42259f",
-          "paq.stats_surface_addition_record.artifacts.rwe.html.md5_post": "c66b4da362b4e8619cc93128e4ca427e",
-          "paq.stats_surface_addition_record.hard_gates_passed.G6_head_md5_lines_1_280_unchanged": "PASS (CSS preamble byte-identical; new CSS injected before </style> at line 353, not at top)"
-        },
-        "paq.combined_html_v3_7_3_sync_record": {
-          "paq.combined_html_v3_7_3_sync_record.cowork_phase_byte_deltas.file_pre_md5": "2accf16a834f31b9e8dbb3fcc7d61a6b",
-          "paq.combined_html_v3_7_3_sync_record.cowork_phase_byte_deltas.file_post_md5": "29f9d5c0d4befac52dae4ca88ea4211f",
-          "paq.combined_html_v3_7_3_sync_record.gates_passed_per_cowork.G4_hazard_literal_md5s_unchanged": "PASS (MAP_GRAPH_DATA e664f888, DEP_GRAPH_DATA c26ae23a, MAP1_TRANSITIONS 0216420e — all three byte-identical pre==post)",
-          "paq.combined_html_v3_7_3_sync_record.claude_phase_77_to_78_audit.categories_classification.map1_invariant_block_stale_attestations": "approx 8 instances (map1_node_count=77 in invariants.canonical_invariant_attestation_summary L1091 + parallel references; tracked carried-defect MAP1_invariant_block_staleness; MAJOR-class refresh deliberately deferred per epistemic_coda_finalization_record/combined_release_status_decision_record)",
-          "paq.combined_html_v3_7_3_sync_record.canon_mutations_applied.release_artifact_md5_set_v3_7_3_combined_html": "2accf16a (2236312B) -> 29f9d5c0 (2243165B); +6853B; only entry in 8-entry set mutated",
-          "paq.combined_html_v3_7_3_sync_record.what_remains_carried_at_v3_7_2_attestation": "Within harness_green_attestation_v3_7_3.combined_coherence_note (registered at v30.0 by v3_7_3_finalization session): the historical attestation that combined.html was carried at v3.7.2 md5 (2accf16a) with structural divergence flag and resync-deferred-pending-Q_combined_artifact_role marker. This block is the IMMUTABLE HISTORICAL RECORD of v3_7_3_finalization's S3-open state; deliberately NOT modified by this session. The release_artifact_md5_set is the BINDING PUBLISHED CONTRACT and now reflects post-sync md5; the harness attestation records what was true at the v3_7_3_finalization moment. Two distinct facts; both retained."
-        },
-        "v3_7_terminal_cut_record": {
-          "v3_7_terminal_cut_record.cut_invariant_roster_canon_derived.CI-7_invariants_md5_guard": "PASS - bump revises NO pre-existing invariant-block entry; invariants subtree md5 held pre==post (relative guard); documented anchor f6b94bf0cb3e6832dbdde0017b876e54 unrevised (echo strings untouched).",
-          "v3_7_terminal_cut_record.bump_classification.invariants_subtree_md5_relative": "held pre==post (value recorded in session state verified_facts)"
-        },
-        "cowork_publication_refresh_v3_7_1": {
-          "cowork_publication_refresh_v3_7_1.integrity_disposition.md5_set_source": "canon.archive_attestation.release_artifact_md5_set_per_release_manifest_v3_7_1 (verified this session; all 7 anchors match the orientation table)",
-          "cowork_publication_refresh_v3_7_1.integrity_disposition.release_manifest_v3_7_1_provided": true,
-          "cowork_publication_refresh_v3_7_1.integrity_disposition.release_manifest_finding": "RECONSTRUCTED manifest; carries invariant attestation only (78 nodes / 2886 edges / blended {1010,274,11} / two-mech {def5,drift42,blend45}) which cross-verifies against canon invariants; does NOT carry the md5/sha256 artifact set. Flag: manifest-carries-invariants-only-not-md5-set."
-        },
-        "v3_7_2_recut_delta_ledger": {
-          "v3_7_2_recut_delta_ledger.v3_7_2_release_md5_set": {
-            "combined.html": {
-              "md5": "2accf16a834f31b9e8dbb3fcc7d61a6b",
-              "size": 2236312
-            },
-            "index_v3_7_2.html": {
-              "md5": "20cf4071566f283ed4bdedbeb37598e0",
-              "size": 1693361
-            },
-            "efilist_argument_library_v3_7_2.json": {
-              "md5": "26fc409ed3e46899e9ab094a9a8d26e0",
-              "size": 1166053
-            },
-            "efilist_argument_library_v3_7_2.jsx": {
-              "md5": "c3442b4a72d2da7093cbbf580da1176a",
-              "size": 1112212
-            },
-            "coda_v3_7.html": {
-              "md5": "654f56cf29d9a808fc870dda4c98b3cc",
-              "size": 11040
-            },
-            "v3prime_validator_v1_6.py": {
-              "md5": "f114d87c46a05891ac0077854200f000",
-              "size": 21816
-            },
-            "real_world_examples_schema_v1_6.json": {
-              "md5": "a5011ddba98cd98c5afc9c28cdc79752",
-              "size": 80253
-            },
-            "rebuttal_grading_ledger.json": {
-              "md5": "a85c1191b8fe0935c0c0e6a7dc13d99a",
-              "size": 28920
-            }
-          },
-          "v3_7_2_recut_delta_ledger.prior_attestation_summary_preserved": "v3.7.1 PATCH release is archived at canon v27.0. combined.html flipped into the release line as the shipped single-file distribution (md5 dd2abd01a43c2f173c98aa1b8c88bcbb, 2,234,272 B). Invariant block re-certified against shipped MAP1_TRANSITIONS (78 nodes / 2886 edges). Standalone coda_v3_7.html + rwe.html superseded by combined. Project enters terminal state archived_v3_7_1_stable."
-        },
-        "v3_7_3_recut_delta_ledger": {
-          "v3_7_3_recut_delta_ledger.ledger_sync.post_md5_ledger_file": "9b0b291fe4818587e3d724a7d6daf017",
-          "v3_7_3_recut_delta_ledger.v3_7_3_release_md5_set_index": {
-            "changed": [
-              "efilist_argument_library_v3_7_3.json",
-              "efilist_argument_library_v3_7_3.jsx",
-              "index_v3_7_3.html",
-              "rebuttal_grading_ledger.json"
-            ],
-            "carried_v3_7_2_verified": [
-              "combined.html",
-              "coda_v3_7.html",
-              "v3prime_validator_v1_6.py",
-              "real_world_examples_schema_v1_6.json"
-            ],
-            "total_artifacts": 8
-          },
-          "v3_7_3_recut_delta_ledger.gates_summary.G3_release_set_v3_7_3_contains_three_new_md5s": "PASS (path: archive_attestation.release_artifact_md5_set_per_release_manifest_v3_7_3)"
-        },
-        "github_publication_record": {
-          "github_publication_record.asset_md5_set_echo_of_archive_attestation": {
-            "corpus_json": "fb0e41ca1c0722e8615b1e7001e229ed",
-            "jsx": "be25b1432e7228db629b7122f85dec4d",
-            "index_html": "39ea0cd42f137bbd3fdc86d6964ac91b",
-            "coda_html": "e955812115e6aaf5bb1c445cd1c878c0",
-            "validator_py": "f114d87c46a05891ac0077854200f000",
-            "rwe_schema": "a5011ddba98cd98c5afc9c28cdc79752"
-          },
-          "github_publication_record.archive_attestation_relationship": {
-            "archive_attestation_revised": false,
-            "substrate_md5s_revised": false,
-            "purpose": "github_publication_record is strictly additive; it records the publication surface metadata atop the frozen archive. The archive_attestation block (canon v26.0) remains the binding md5 chain-of-custody anchor; this block echoes it for cross-reference only."
-          }
-        }
-      }
+      "_collapsed_at": "v3_8_20_jsx_sync_then_compaction",
+      "note": "v3.7 release-line work-queue summary (compacted_at v33.0) collapsed to pointer at v3_8_20. Full verbatim block in git history of project_canon_v37_16.json predecessor. Covers the v3.7.0->v3.7.5 release-line completion arc (RWE+index+coda unification, masochist-counterexample, coda publish-gate cut).",
+      "preserved_md5s": [
+        "0253e3625424a15bab820bad5c42259f",
+        "20cf4071566f283ed4bdedbeb37598e0",
+        "26fc409ed3e46899e9ab094a9a8d26e0",
+        "29f9d5c0d4befac52dae4ca88ea4211f",
+        "2accf16a834f31b9e8dbb3fcc7d61a6b",
+        "3896244146f563160308ab90813d84cc",
+        "39ea0cd42f137bbd3fdc86d6964ac91b",
+        "47e9082c71a4de1c984cb8476752c017",
+        "654f56cf29d9a808fc870dda4c98b3cc",
+        "9b0b291fe4818587e3d724a7d6daf017",
+        "a5011ddba98cd98c5afc9c28cdc79752",
+        "a85c1191b8fe0935c0c0e6a7dc13d99a",
+        "be25b1432e7228db629b7122f85dec4d",
+        "c3442b4a72d2da7093cbbf580da1176a",
+        "c66b4da362b4e8619cc93128e4ca427e",
+        "dd2abd01a43c2f173c98aa1b8c88bcbb",
+        "e955812115e6aaf5bb1c445cd1c878c0",
+        "ec15c2911216812fd916968a87078024",
+        "f114d87c46a05891ac0077854200f000",
+        "f6b94bf0cb3e6832dbdde0017b876e54",
+        "fb0e41ca1c0722e8615b1e7001e229ed"
+      ]
     },
-    "rebuttal_strengthening_and_rwe_correction_registry_s1": {
-      "registered_by_session": "variant_feature_decision_ratification_s1",
-      "registered_date_iso": "2026-05-29",
-      "trigger": "Operator flagged D grade on masochist-counterexample; directed survey + registration of weak grades, and correction of the Inmendham/Hythloday RWE framing (debate was on antinatalism, not masochism).",
-      "grade_distribution_headline_long": {
-        "A": 26,
-        "B": 39,
-        "C": 12,
-        "D": 1,
-        "F": 0
-      },
-      "P0": {
-        "node": "masochist-counterexample",
-        "grade": "long D 67.1",
-        "status": "only headline-D; outlier (next-worst 74.5); carries RWE framing error -> bundle",
-        "action": "next_recommended_session"
-      },
-      "P1_short_register_D": [
-        "benatar-asymmetry-attack",
-        "flow-states-csikszentmihalyi",
-        "neuroscience-positive-states",
-        "bradley-no-subject"
-      ],
-      "P2_c_band_polish_count": 12,
-      "rwe_correction": {
-        "node": "masochist-counterexample",
-        "loci": 3,
-        "fields": [
-          "responses.long",
-          "psychMechanism",
-          "sources[]"
-        ],
-        "status": "AUTHORED (masochist_rwe_framing_correction_s1.md); splice deferred to Cowork at v3.7.4 cut",
-        "open_flag": "adjacent Hythloday71 suicide coda surfaced for operator ruling (verification + publish-sensitivity); NOT edited"
-      },
-      "detail_artifact": "rebuttal_improvement_registry_s1.json",
-      "danger_quadrant": "EMPTY (unchanged) — masochist is low-grade x low-deployment; quality target, not liability"
-    },
-    "variant_feature_ratification_s1": {
-      "registered_by_session": "variant_feature_decision_ratification_s1",
-      "registered_date_iso": "2026-05-29",
-      "status": "RATIFIED by Josiah, all per recommendation, no deviation",
-      "locked_decision_set": "ratified_variant_design_v1.json",
-      "decisions": "D1 fixed-4 slots optional | D2 re-aim only | D3 responses.archetypeVariants{} corpus-primary | D4 hybrid Tier-A-first | D5 in-place toggle | D6 inherit RSI | D7 additive-optional v1.7 | D8 editor ships now forward-tolerant",
-      "rename": "refutationalVariants -> objectionSubforms (decoupled sibling)",
-      "bundle": "eliminativism + solipsism NEW objections fold into SAME v3.8 cut (one unseal)",
-      "class": "v3.8 MAJOR + terminus-reopening; objection_count 78->80 + derived tallies; schema/validator v1.6->v1.7",
-      "build_blueprint": "v3_8_cowork_handout_s1.md (Phase 0 Claude authoring -> Phase 1 Cowork splice; NOT yet executable)",
-      "sequencing": "parallel-to/after rebuttal_strengthening_masochist_s1 (v3.7.4 PATCH); P0 fix ships first"
-    }
+    "v3_8_ratification_records_relocated": "-> arc_compacted_v3_8_cascade.ratification_records_absorbed (variant_feature_ratification_s1 + rebuttal_strengthening_and_rwe_correction_registry_s1)"
   },
   "keyset_delta_ledger": {
     "convention": "v28.0 structural-minor-cut: keyset moves BY DESIGN; proof = this ledger + invariants-md5 guard + subtree-unchanged assertion (replaces keyset==57)",
@@ -2953,7 +2405,6 @@
     "note": "Pre-v33 session_log truncated to ~100-char summaries; full text in repo git history of v32.0 canon."
   },
   "session_log_recent": [
-    "v3_8_render_path_archetype_toggle_s1 2026-05-31 [MINOR v37.3->v37.4]: D5 archetypeVariants in-place per-card toggle BUILT across combined/index/jsx (variant read-path 0->3/3/4); R1 jsx counts + R2 combined/index 78-obj count-set folded; D7 long-body bytes stable; node+esbuild parse PASS; 6/6 gates",
     "cowork-publication-refresh: Branch A doc-set refresh (orientation supersession + README/instructions/CITATION + STATISTICS.md + 6 screenshots) for incremental v3.7.1 repo update; 7/7 canon md5 anchors verified, counts verified correct (no correction), manifest=invariants-only flagged; +1 additive canon key, invariants md5 held pre==post; MINOR v28.3->v28.4; terminus sealed; 5/5",
     "branch_b_content_advance_recut_session 2026-05-17 [MAJOR v28.4->v29.0]: v3.7.2 content-advance re-cut + publication reconciliation. Elected (1b)=post_var_regrade (LINEAR terminal; strictly dominates post_four_ungraded - corrected prompt's imprecise '(1b)=four-ungraded/benatar NOT included': empirically (1b)=(1a)+VAR C->B+VAR prose strengthen). Carries benatar long 4904(b25a0116) + VAR long 11795(0bd12459) + 78/78 grades + VAR@B0.838 quadrant cleared. Pre-cut ledger-sync 3-node (masochist D/joy C/wild-animal B; mirrors v28.2; ungraded 3->0, VAR+74 byte-identical). SCALAR-3: chrome 74/222->78/245 byte-neutral both files; coda fix N/A-by-absence (no 3.7.x string). HG1 harness GREEN exit0 final combined 2accf16a; HG4 validator _overall_pass:true; CI-1..8 PASS. New public contract md5 set v3_7_2. archive_attestation revised (MAJOR canon trigger); invariants subtree HELD f6b94bf0/27c43e15 pre==post (project-version classifier => v3.7.2 PATCH not v3.8). Terminus re-sealed archived_v3_7_2_stable, next_recommended_session null. 1/1 deliverable.",
     "benatar_s_strengthen_recut_freeze_recovery 2026-05-23: cold freeze reconstructed from 16 screenshots (lost container); Para 4 assembled 3299 ch md5 ea21366c; new long 8205 ch md5 0e9bf12; cold tuple {0.88,0.81,0.80,0.78,0.84} RSI 0.8213 B-band branch 3a-analogue; freeze-only, 0 mutations.",
@@ -2973,19 +2424,7 @@
     "rebuttal_strengthening_violence_nu_seam_s1: VAR long NU-seam strengthen 11795->16595c, RSI 83.8->86.2 B, +jsx parity +ledger short/med backfill, 7/7 PASS",
     "negative_util_aggregation_foldin_cowork: NUA long strengthen 1958->7276c, RSI 79.9 C->84.0 B, +ledger long/headline +combined REBUTTAL, 7/7 PASS",
     "joy_outweighs_harms_foldin_cowork: joy long strengthen 3184->8159c, RSI 76.6 C->83.0 B, +ledger long/headline +combined REBUTTAL (derive-at-render med 75.0->81.3 / short 72.8->79.2, all D->C); +index REBUTTAL parity VAR 83.8->86.2 / NUA 79.9->84.0 / joy ->83.0 (no 4th); 6 surfaces, G1-G6 PASS",
-    "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* supersession note (corpus +207B) + md5 re-attest v3.8.x render-merge set; merge/commit -> native PowerShell (mount unlink-blocked); canon 37.4->37.5 MINOR (inv 81/35/5 held, inv-hash 8727787c stable). audits anchors-unique+UTF8+NUL0+CR0 PASS",
-    "v3_8_variant_cut_merge_deploy_s1 (bundle): coda 78->81/34->35 (combined) + convergence recompute from MAP1_TRANSITIONS (74->78 nodes; 1010/274/11 @ 78.0/21.2/0.8%, 3-method verified) both files; canon 37.5->37.6 MINOR (inv-hash 8727787c stable); HELD loci RESOLVED; clean library deploy ready.",
-    "v3_8_variant_cut_merge_deploy_s1 (display chrome): public version v3.7.3->v3.8.3 (combined+index title/h1) + graph counts dep 245->254 / mech 118->140 (chrome matched to already-correct data); canon 37.6->37.7 MINOR (inv-hash 8727787c stable). FINAL combined hash for wuld.ink ref-refresh.",
-    "v3_8_4_flow_states_foldin_cowork_s1 (2026-05-31): flow-states-csikszentmihalyi long re-authored 78.1C->83.6B (axes r.70->.82, a.72->.80) landed on corpus+jsx+combined+index_v3_8_0+ledger across Downloads+repo trees; REBUTTAL_STRENGTH flow axes updated on combined+index; display-chrome version bumped 3.8.3->3.8.4 (title+h1, combined+index, same commit) closing data/chrome drift; short/medium prose byte-stable (b87f3454 / c08cceb4); +135ch long (foldin claimed +154/3753, ACTUAL +135/3734/589w — verbatim inserted, drift NOT promoted to canon per operator); canon 37.7->37.8 MINOR (invariant subtree 8727787c byte-identical); filename lag resolved (v37_8); FINAL combined md5 e475e0ea->51ec8f03 (single pin; supersedes interim 718cd633); git deferred to native PowerShell (sandbox unlink-blocked); STATISTICS.md grade-table does NOT reconcile with ledger long-grades (stored 36A/34B/11C vs ledger 26A/44B/10C) -> FLAGGED, not mutated; bare index.html (untracked/stale) -> operator ruling mark-dead, not parity-updated.",
-    "v3_8_4_statistics_retire_cowork (2026-05-31, same v3.8.4 arc): retired stored STATISTICS grade layer -> render-time. Authored stats_render.py (reconciliation-gated: basis==headline_grade_long, n==81, no ungraded-long; exit non-zero on fail; negative-test verified) + emitted STATISTICS_render_v3_8_4.md (corrected 26A/45B/10C; floor neuroscience-positive-states 79.0C; deployment quadrant render-computed). Stored STATISTICS.md (36A/34B/11C) was stale-basis — its DEPLOYMENT counts were correct but the grade distribution was NOT headline_grade_long -> git mv STATISTICS.md STATISTICS_DEPRECATED.md. Both trees. Canon held 37.8 (no invariant touch).",
-    "v3_8_5r_neuroscience_positive_states_foldin_cowork (2026-06-01, v3.8.x arc): neuroscience-positive-states long-strengthen foldin — long prose 5195->6996ch (corpus+jsx, +1845B each); REBUTTAL_STRENGTH s.82->.84/r.72->.82/a.72->.82 (index+combined, byte-stable); ledger short D->C 79.9 / medium C->B 82.0 / long C->B 83.6, headline ->B; self-test 13/13, corpus PASS; v/c held; MINOR 37.8->37.9.",
-    "v3_8_6_bradley_no_subject_cowork (2026-06-01, v3.8.x arc): bradley-no-subject long re-authored 2630->7231ch, C->B (79.2->83.0); short D->C (75.6->79.2); medium C (77.6->81.4, raw 81.35); REBUTTAL_STRENGTH s/r/a 0.80/0.75/0.72->0.84/0.81/0.81 (c 0.85->0.84, v hold 0.85) on index+combined; zero-sum move dropped (closes cross-node contradiction w/ neuroscience-positive-states). Long prose propagated to corpus+jsx+combined+index_v3_8_0 (Option-2: deploy has no corpus->combined regen, built artifacts hand-propagated to keep live /combined coherent). MINOR 37.9->37.10, 6/6.",
-    "v3_8_7_life_gift_cowork (2026-06-01, v3.8.x arc): long C->B (79.9->83.0), score s/r/a 0.80/0.75/0.75 -> 0.84/0.81/0.81 (c 0.85->0.84, v hold); genetic-fallacy load-bearer cut + valid exhaustive dilemma + consent/antecedent-need spine; vaccination/rescue antecedent-peril disanalogy (life-gift's own); bias mechanism cross-ref'd to neuroscience-positive-states (not re-derived); Option-2 prose to corpus+jsx+combined+index. ALSO neuroscience-positive-states long back-filled 5195->6996ch into combined+index (K49 backward-gap: v3.8.5r shipped score-only). MINOR 37.10->37.11; counts 81/35/81 unchanged; invariants md5 stable. 6/6.",
-    "v3_8_15_batch_flush_cowork: folded 6 deferred longs (v3.8.8-v3.8.13) + violence-as-reductio drift-correction across corpus/jsx/combined/index/ledger; canon 37.11->37.12 MINOR; counts 81/35/81 unchanged",
-    "v3_8_16_render_posture_fix_hygiene: ratified band-true RSI convention (band the unrounded geomean; display floor-truncated; 'round-then-band' a misstatement, disproven by 10 skeptic-longs@geomean 0.8796 banded B) + rsi_grading_convention block ADDED (closes external-only rubric_ref gap); ledger 2 round-up artifacts corrected neuroscience-positive-states.medium + flow-states-csikszentmihalyi.medium B->C (depth-mod geomean ~0.8197<0.82, rsi_pct 82.0 retained cf just-edgy long 88.0/B); 3 held + 10 display-only longs untouched; +518B ledger; canon 37.12->37.13 MINOR (inv 81/35/5 byte-stable, ZERO invariant revisions); build rsiGrade/depthModifiedRSI UNCHANGED; Unit 2 display-truncation+3-cell HELD_OVERRIDE (both build surfaces) deferred to Cowork render-fix. 1/1.",
-    "v3_8_17_render_fix: Unit 2 render fix — inserted HELD_OVERRIDE (benatar-asymmetry-attack med/short held B, negative-util-aggregation med held C) + displayRSI FLOOR-truncated pct, applied IDENTICALLY to combined.html + index_v3_8_0.html (site A badge + site B detail + formula -> rsiD.pct.toFixed(1)); rsiGrade/depthModifiedRSI UNCHANGED. Reconciled combined benatar 's' stale axis 0.74->0.81 (surface-parity to index+ledger canonical axes; grade distribution UNCHANGED; ZERO invariant revision; discharges part of the standing Q_combined_artifact_role divergence — combined<->index axisdiff now 0). Verified node-eval (Function-ctor): badge==ledger for all 231 graded cells; non-held band-consistency 0 violations; 12 truncation cells now floor-shown (82->81.9 / 88->87.9); exactly 3 expected held grade-moves; node --check OK both files. canon 37.13->37.14 MINOR; invariants md5 STABLE; counts 81/35/81 unchanged. Build md5 combined dfa3258b / index 386a4f21. Deploy deferred to v3_8_17_render_fix_deploy.",
-    "v3_8_17_deploy (2026-06-02, v3.8.x arc): Phase-B publish of the v3.8.8->v3.8.17 flush (6 strengthen foldins + band-true hygiene + render fix). efilist commit d092a9a on main + v3.8.x parity (7 files: combined dfa3258b / index 386a4f21 / corpus 13cc617e / jsx a3531a43 / ledger 96121b91 / canon v37_14 fb2fbc51 + session-state). Live /combined verified dfa3258b / 2,379,766 B (curl 3x). wuld.ink /library-about pin moved c3a25712->dfa3258b, label v3.8.7->v3.8.17 across 12 src HTML + releases.json + feed.xml (0 residual; pin-state updated; date corrected to operator-local 06-02). canon 37.14->37.15 MINOR; invariants md5 STABLE; counts frozen 81/35/5/81 + map1 78/2886; ZERO invariant-block revision. NO grading/corpus change. terminal_state held archived_v3_7_6_stable (release milestone tracked in releases.json/pin per ratified ruling).",
-    "v3_8_19_batch_flush_cowork (2026-06-02, v3.8.x arc): short/medium COHERENCE reconciliation foldin + deploy + wuld.ink pin (Cowork end-to-end). responses.short + responses.medium reconciled for nihilism-label / love-beauty-art / indigenous-philosophy across corpus + jsx + combined + index (18 exact-prose string swaps + 6 structured corpus fields; all four surfaces +2799 B identical delta; long / REBUTTAL_STRENGTH const / ledger / sources / grades all HELD -- grades render-time depth-derived from frozen node axes). indigenous sources ratified (2 ADD tokens already live in corpus + 'Cross-cultural antinatalist traditions' DEMOTE-not-remove; no mutation). Validator self-test 13/13 + corpus PASS pre+post; backward-gap candidates all CLOSED (flow-states/joy-outweighs-harms/negative-util-aggregation/violence-as-reductio). efilist commit eec84c0 (main + v3.8.x parity, parent 4f6073b); combined dfa3258b->b996db16 / 2,379,766->2,382,565 B; live-verified curl x3. wuld.ink /library-about pin dfa3258b->b996db16, label v3.8.17->v3.8.19 across 12 src HTML + releases.json + feed.xml + pin-state (0 residual / 57 HTML; dates operator-local 2026-06-02 per cxc). Canon MINOR 37.15->37.16 (invariants subtree md5 8727787c byte-stable; counts 81 obj / 35 mech / 81 graded FROZEN). Lesson cxcviii: a corpus fmt-gate must DETECT the file's actual trailing-newline convention (this corpus has NONE) -- assuming +\\n flipped the gate RED and (correctly) blocked the write before any mutation."
+    "v3_8_20_jsx_sync_then_compaction (2026-06-02, v3.8.x arc CLOSE): UNIT 1 jsx sources sync — 5 nodes (just-depressed / nihilism-label / transhumanist-objection / adoption-instead / indigenous-philosophy) reconciled jsx node-level sources -> corpus value (PATCH; secondary surface, NOT live-served). jsx 548df8589aa0abb2ffc2c7488a8d31d1 -> 03a19ed4acce25749ebd8e0792200b4f / 1235665 -> 1236763 B (+1098); parity jsx==corpus sources ALL 81; prose/REBUTTAL_STRENGTH/graph untouched. UNIT 2 in-place canon compaction (middle scope): collapsed v3.8 arc + v3.7 release-line work-queue + intermediate v3.7 harness attestations -> arc_compacted_v3_8_cascade + git-pointers; terminal v3.7 md5 core / pre-v33 session log / invariants HELD byte-stable. counts 81 obj / 5 tier / 35 mech / 81 ledger FROZEN; invariants subtree byte-identical."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -3119,5 +2558,232 @@
       "negative-util-aggregation.medium": "78.3/C held below mechanical 0.82367 (long-only strengthen v3.8.2)"
     },
     "render_fix_status": "Unit 1 (ledger regrade, this session) COMPLETE. Unit 2 = display floor-truncation + 3-cell HELD_OVERRIDE across combined.html AND index_v3_8_0.html, rsiGrade UNCHANGED, per v3_8_16_render_posture_HALT_and_hygiene_handoff.md section 5 (Cowork render-fix, deferred)."
+  },
+  "arc_compacted_v3_8_cascade": {
+    "block_kind": "arc_compacted_session_log",
+    "compacted_at_canon_version": "37.16",
+    "compaction_session": "v3_8_20_jsx_sync_then_compaction",
+    "arc_span": "v3.8.0 (variant MAJOR cut, 2026-05-30) -> v3.8.19 (short/medium coherence deploy, 2026-06-02)",
+    "scope_note": "v3.8-cascade session-log entries + v3.8.x release attestations + v3.8 ratification work-queue items collapsed here. Full verbatim narratives in git history of project_canon_v37_16.json + the per-session *_cowork_state.json files. See canon_compaction_record_v3_8_0 for the moved-vs-held ledger.",
+    "session_log_entries_absorbed": 14,
+    "session_summaries": [
+      "v3_8_render_path_archetype_toggle_s1 2026-05-31 [MINOR v37.3->v37.4]: D5 archetypeVariants in-place per-card toggle BUILT across combined/index/jsx (v …",
+      "v3_8_variant_cut_merge_deploy_s1: git HEAD-truncation repair (in-sandbox) + count regen (74->81 entries, 34->35 mech-clusters; per file x1) + R3 if_* …",
+      "v3_8_variant_cut_merge_deploy_s1 (bundle): coda 78->81/34->35 (combined) + convergence recompute from MAP1_TRANSITIONS (74->78 nodes; 1010/274/11 @ 78 …",
+      "v3_8_variant_cut_merge_deploy_s1 (display chrome): public version v3.7.3->v3.8.3 (combined+index title/h1) + graph counts dep 245->254 / mech 118->140 …",
+      "v3_8_4_flow_states_foldin_cowork_s1 (2026-05-31): flow-states-csikszentmihalyi long re-authored 78.1C->83.6B (axes r.70->.82, a.72->.80) landed on cor …",
+      "v3_8_4_statistics_retire_cowork (2026-05-31, same v3.8.4 arc): retired stored STATISTICS grade layer -> render-time. Authored stats_render.py (reconci …",
+      "v3_8_5r_neuroscience_positive_states_foldin_cowork (2026-06-01, v3.8.x arc): neuroscience-positive-states long-strengthen foldin — long prose 5195->69 …",
+      "v3_8_6_bradley_no_subject_cowork (2026-06-01, v3.8.x arc): bradley-no-subject long re-authored 2630->7231ch, C->B (79.2->83.0); short D->C (75.6->79.2 …",
+      "v3_8_7_life_gift_cowork (2026-06-01, v3.8.x arc): long C->B (79.9->83.0), score s/r/a 0.80/0.75/0.75 -> 0.84/0.81/0.81 (c 0.85->0.84, v hold); genetic …",
+      "v3_8_15_batch_flush_cowork: folded 6 deferred longs (v3.8.8-v3.8.13) + violence-as-reductio drift-correction across corpus/jsx/combined/index/ledger; …",
+      "v3_8_16_render_posture_fix_hygiene: ratified band-true RSI convention (band the unrounded geomean; display floor-truncated; 'round-then-band' a missta …",
+      "v3_8_17_render_fix: Unit 2 render fix — inserted HELD_OVERRIDE (benatar-asymmetry-attack med/short held B, negative-util-aggregation med held C) + dis …",
+      "v3_8_17_deploy (2026-06-02, v3.8.x arc): Phase-B publish of the v3.8.8->v3.8.17 flush (6 strengthen foldins + band-true hygiene + render fix). efilist …",
+      "v3_8_19_batch_flush_cowork (2026-06-02, v3.8.x arc): short/medium COHERENCE reconciliation foldin + deploy + wuld.ink pin (Cowork end-to-end). respons …"
+    ],
+    "release_artifact_md5_set_v3_8_cascade": {
+      "v3_8_0": {
+        "version": "v3.8.0",
+        "date": "2026-05-30",
+        "class": "MAJOR",
+        "session": "v3_8_phase_1_cowork_major_cut"
+      },
+      "v3_8_1": {
+        "version": "v3.8.1",
+        "date": "2026-05-30",
+        "class": "MINOR",
+        "session": "v3_8_1_violence_reductio_foldin_cowork"
+      },
+      "v3_8_2": {
+        "version": "v3.8.2",
+        "date": "2026-05-30",
+        "class": "MINOR",
+        "session": "v3_8_2_negative_util_aggregation_foldin_cowork"
+      },
+      "v3_8_3": {
+        "version": "v3.8.3",
+        "date": "2026-05-30",
+        "class": "MINOR",
+        "session": "v3_8_3_joy_outweighs_harms_foldin_cowork"
+      },
+      "v3_8_x_render_merge": {
+        "version": "v3.8.x (render-path + variant-cut merge re-attestation)",
+        "date": "2026-05-31",
+        "class": "MINOR",
+        "session": "v3_8_variant_cut_merge_deploy_s1"
+      },
+      "v3_8_x_coda_convergence_bundle": {
+        "version": "v3.8.x coda + convergence-table bundle (resolves HELD loci from v3_8_x_render_merge)",
+        "date": "2026-05-31",
+        "class": "MINOR",
+        "session": "v3_8_variant_cut_merge_deploy_s1 (bundle, post-Step-4)"
+      },
+      "v3_8_x_display_chrome": {
+        "version": "v3.8.x display-chrome finalize (public version label v3.8.3 + graph-view counts)",
+        "date": "2026-05-31",
+        "class": "MINOR",
+        "session": "v3_8_variant_cut_merge_deploy_s1 (library display pass)"
+      },
+      "v3_8_17": {
+        "version": "v3.8.17",
+        "date": "2026-06-02",
+        "class": "MINOR",
+        "session": "v3_8_17_deploy"
+      }
+    },
+    "ratification_records_absorbed": {
+      "rebuttal_strengthening_and_rwe_correction_registry_s1": {
+        "registered_by_session": "variant_feature_decision_ratification_s1",
+        "registered_date_iso": "2026-05-29",
+        "trigger": "Operator flagged D grade on masochist-counterexample; directed survey + registration of weak grades, and correction of the Inmendham/Hythloday RWE framing (debate was on antinatalism, not masochism).",
+        "grade_distribution_headline_long": {
+          "A": 26,
+          "B": 39,
+          "C": 12,
+          "D": 1,
+          "F": 0
+        },
+        "P0": {
+          "node": "masochist-counterexample",
+          "grade": "long D 67.1",
+          "status": "only headline-D; outlier (next-worst 74.5); carries RWE framing error -> bundle",
+          "action": "next_recommended_session"
+        },
+        "P1_short_register_D": [
+          "benatar-asymmetry-attack",
+          "flow-states-csikszentmihalyi",
+          "neuroscience-positive-states",
+          "bradley-no-subject"
+        ],
+        "P2_c_band_polish_count": 12,
+        "rwe_correction": {
+          "node": "masochist-counterexample",
+          "loci": 3,
+          "fields": [
+            "responses.long",
+            "psychMechanism",
+            "sources[]"
+          ],
+          "status": "AUTHORED (masochist_rwe_framing_correction_s1.md); splice deferred to Cowork at v3.7.4 cut",
+          "open_flag": "adjacent Hythloday71 suicide coda surfaced for operator ruling (verification + publish-sensitivity); NOT edited"
+        },
+        "detail_artifact": "rebuttal_improvement_registry_s1.json",
+        "danger_quadrant": "EMPTY (unchanged) — masochist is low-grade x low-deployment; quality target, not liability"
+      },
+      "variant_feature_ratification_s1": {
+        "registered_by_session": "variant_feature_decision_ratification_s1",
+        "registered_date_iso": "2026-05-29",
+        "status": "RATIFIED by Josiah, all per recommendation, no deviation",
+        "locked_decision_set": "ratified_variant_design_v1.json",
+        "decisions": "D1 fixed-4 slots optional | D2 re-aim only | D3 responses.archetypeVariants{} corpus-primary | D4 hybrid Tier-A-first | D5 in-place toggle | D6 inherit RSI | D7 additive-optional v1.7 | D8 editor ships now forward-tolerant",
+        "rename": "refutationalVariants -> objectionSubforms (decoupled sibling)",
+        "bundle": "eliminativism + solipsism NEW objections fold into SAME v3.8 cut (one unseal)",
+        "class": "v3.8 MAJOR + terminus-reopening; objection_count 78->80 + derived tallies; schema/validator v1.6->v1.7",
+        "build_blueprint": "v3_8_cowork_handout_s1.md (Phase 0 Claude authoring -> Phase 1 Cowork splice; NOT yet executable)",
+        "sequencing": "parallel-to/after rebuttal_strengthening_masochist_s1 (v3.7.4 PATCH); P0 fix ships first"
+      }
+    },
+    "terminal_v3_8_state": {
+      "public_version": "v3.8.19",
+      "live_combined_html_md5": "b996db1630cbf326924ecbb95dea0797",
+      "live_combined_html_bytes": 2382565,
+      "corpus_v3_8_0_json_md5": "3d15885350b3f4dde8bfdb67b1559108",
+      "jsx_v3_8_0_md5_post_v3_8_20_sources_sync": "03a19ed4acce25749ebd8e0792200b4f",
+      "index_v3_8_0_html_md5": "b0cf7fdacacc982051c523ae4fb0b63e",
+      "rebuttal_grading_ledger_md5": "96121b91545952ba91f0b4417934b61c",
+      "wuld_ink_library_about_pin": "b996db16 / label v3.8.19 (pin == live)"
+    },
+    "preserved_md5s_from_collapsed_v3_8_arc": [
+      "0253e3625424a15bab820bad5c42259f",
+      "03610d7d0117deb3b708c3a489b27a90",
+      "04b2b6bf16de921f7ab8a7449b393f1a",
+      "133945446fbafa12039ae3599c056448",
+      "13cc617e06dda2e4adb53e1af6cbafed",
+      "1d265ef7a0129885e2f9395c9a006f6a",
+      "20cf4071566f283ed4bdedbeb37598e0",
+      "26fc409ed3e46899e9ab094a9a8d26e0",
+      "29f9d5c0d4befac52dae4ca88ea4211f",
+      "2accf16a834f31b9e8dbb3fcc7d61a6b",
+      "2f25960ad66bf9539a79a3e6dcc6d73a",
+      "36febc9a80e9ffb8af5f5425a3cdad90",
+      "386a4f21f54edf4d6465aeca2280eb9e",
+      "3896244146f563160308ab90813d84cc",
+      "39ea0cd42f137bbd3fdc86d6964ac91b",
+      "42a62b82a9d00cade33ff0ce9195dee5",
+      "47519f7d7040833afd877f7f14ff7527",
+      "47e9082c71a4de1c984cb8476752c017",
+      "49b061861278f9be421788810f657eba",
+      "4c7bb904d55231bf23fc7dbd461ca28a",
+      "4ee88aabc6a658d24a09980a704b6af3",
+      "4f3413bb4849aa1f28f9a93a984fbe50",
+      "5061d14c9078e86df52b09fe9bc95b70",
+      "556bc1a39d0f5a5919bcaf14f3cdf4f4",
+      "654f56cf29d9a808fc870dda4c98b3cc",
+      "6611d38c2cd91fb020ea3c30c743eb27",
+      "6bc27489517fb69a3501f5168b4bc274",
+      "815dcb75eefb7bf55ac6d40fbe2c3e68",
+      "84ad36b948923974ec6eff21a056325d",
+      "8727787c5c0d4f8a08280b806db6fcc8",
+      "89960b542b1c09ca1f1c03c7cebb335f",
+      "90f1bec4a22d37ea14dcd2961e608165",
+      "96121b91545952ba91f0b4417934b61c",
+      "96b6cc73d60f7142a8c502093e65f834",
+      "97e444807350564cbde14e99b22bd707",
+      "9871eae81f1c79bbc840f19c65318cb6",
+      "9a0e8a68ef9a475678ee4c334fc575ab",
+      "9b0b291fe4818587e3d724a7d6daf017",
+      "9ded031a1c13f7c2670c57ce2fd5730a",
+      "9ecc34d7c77b744d046b3c99b6e694b9",
+      "a09946844ec9a2a967b8f965d1cae3d8",
+      "a31cb0373082d82d7d74fe16aa2950f4",
+      "a3531a434ba90f9c3f71909332b85786",
+      "a5011ddba98cd98c5afc9c28cdc79752",
+      "a85c1191b8fe0935c0c0e6a7dc13d99a",
+      "af2befa16e7e23b6c73104e529d5f653",
+      "b837379ecdad30aa9078392815cd0ae4",
+      "bbe547c800c1afa458904df1daf3f0f6",
+      "be25b1432e7228db629b7122f85dec4d",
+      "c3442b4a72d2da7093cbbf580da1176a",
+      "c3a2571246f67adff3971f3da69c97a8",
+      "c66b4da362b4e8619cc93128e4ca427e",
+      "d036416ce0a6e217f2e0afcd6d5612dc",
+      "d8393d3b40bcabf3eceb993fc3e31cdc",
+      "d9319cb9c72df61304829cb5635328ca",
+      "da464f2713a29f2c5b3b2d51411996ef",
+      "dbbbc6d1b993b20064ad0a6d9f27b051",
+      "dd2abd01a43c2f173c98aa1b8c88bcbb",
+      "dfa3258b3b44a9f82ea41b90d4f707d1",
+      "e1bf216e268dbcd0bc9fe7904537b82c",
+      "e2b9bba1f7ea65d7c94aac837f0f84ac",
+      "e475e0ea8a0b9e36ab5cddfd8bac59d2",
+      "e955812115e6aaf5bb1c445cd1c878c0",
+      "eb73fb6f456ce43d9cf44e2be264f55d",
+      "ec15c2911216812fd916968a87078024",
+      "f114d87c46a05891ac0077854200f000",
+      "f6b94bf0cb3e6832dbdde0017b876e54",
+      "fb0e41ca1c0722e8615b1e7001e229ed",
+      "fb2fbc512f3e04d7253f5f87d9980052",
+      "fc1a45a140c5b03339eecfd4f57bc97c"
+    ]
+  },
+  "canon_compaction_record_v3_8_0": {
+    "block_kind": "canon_compaction_record",
+    "compaction_at": "v37.16 (in-place; canon_version marker retained, NOT bumped)",
+    "compaction_session": "v3_8_20_jsx_sync_then_compaction",
+    "compaction_class": "structural compaction (counts/invariants/schema frozen -> not MAJOR; not a content bump)",
+    "scope": "middle (operator-ratified at v3_8_20 after empirical recalibration)",
+    "targets_executed": [
+      "v3.8 arc -> arc_compacted_v3_8_cascade (15 session-log entries terse-summarized + 8 v3.8.x release attestations -> compact md5 table + 2 ratification records relocated)",
+      "v3.7 release-line work-queue summary (post_archive_work_queue.arc_compacted_v3_7_release_line) -> git pointer (md5s preserved)",
+      "intermediate v3.7 harness attestations (v3.7.2/3/4/4_index/5) + supersession note -> archive_attestation.intermediate_v3_7_harness_attestations pointer (md5s preserved)",
+      "open_questions: 2 ACTIVE deferred enrichments registered (solipsism p-zombie-reciprocity; joy-outweighs-harms sadist-aggregation reductio)",
+      "files registry pruned to current v3.8 artifacts (+ culled-entry note retaining md5s)"
+    ],
+    "moved_vs_held": "collapsed: v3.8 arc + v3.7 release-line work-queue + intermediate v3.7 harness attestations (git-anchored, md5-stable). held byte-stable: terminal v3.7 md5 core, pre-v33 session log, invariants, all current/terminal md5s.",
+    "target_recalibration": "target recalibrated 40% -> ~19% on empirical grounds: invariants block is 28% of canon and frozen; middle scope chosen (arc + git-recoverable intermediate v3.7 detail); sealed pre-v33 session log + terminal v3.7 md5 core deliberately left intact byte-stable.",
+    "invariants_subtree_byte_identical": true,
+    "no_md5_dropped": true,
+    "project_terminal_state_unchanged": "archived_v3_7_6_stable"
   }
 }

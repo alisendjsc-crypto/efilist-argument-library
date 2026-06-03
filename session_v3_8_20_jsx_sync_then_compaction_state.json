@@ -1,0 +1,65 @@
+{
+  "session_id": "v3_8_20_jsx_sync_then_compaction",
+  "date_iso": "2026-06-02",
+  "class": "Cowork (mechanical; filesystem + canon-structure). No content judgment, no regrade, no new prose.",
+  "predecessor": "v3_8_19_batch_flush_cowork",
+  "canon_version_at_close": "37.16 (in-place structural compaction; marker retained, NOT bumped)",
+  "unit_1_jsx_sources_sync": {
+    "operation": "reconcile jsx node-level sources -> corpus value (PATCH; secondary surface, not live-served)",
+    "nodes_changed": [
+      "just-depressed",
+      "nihilism-label",
+      "transhumanist-objection",
+      "adoption-instead",
+      "indigenous-philosophy"
+    ],
+    "nodes_changed_count": 5,
+    "nodes_unchanged": 76,
+    "jsx_md5_before": "548df8589aa0abb2ffc2c7488a8d31d1",
+    "jsx_md5_after": "03a19ed4acce25749ebd8e0792200b4f",
+    "jsx_bytes_before": 1235665,
+    "jsx_bytes_after": 1236763,
+    "jsx_byte_delta": 1098,
+    "parity": "jsx sources == corpus sources for ALL 81 objections (programmatic equality, disk-verified, fresh-process re-check)",
+    "untouched": "jsx prose; REBUTTAL_STRENGTH (absent from jsx); GRAPH_DATA graph literals; all non-sources fields byte-identical (fmt-gate: indent=2 ensure_ascii=False reproduces OBJECTIONS byte-for-byte)",
+    "deploy": "none (jsx not live-served; combined.html served surface unchanged)"
+  },
+  "unit_2_canon_compaction": {
+    "type": "CANON-COMPACTION (in-place; canon_version 37.16 marker retained)",
+    "scope": "middle (operator-ratified at 2 AskUserQuestion forks after empirical recalibration of the 40% target)",
+    "canon_bytes_before": 237876,
+    "canon_bytes_after": 193411,
+    "reduction_bytes": 44465,
+    "reduction_pct": 18.7,
+    "moved": "v3.8 arc (14 v3.8 session-log entries terse-summarized + 8 v3.8.x release attestations -> compact md5 table + 2 ratification records) -> arc_compacted_v3_8_cascade; v3.7 release-line work-queue summary -> git pointer; intermediate v3.7 harness attestations (v3.7.2/3/4/4_index/5) + supersession note -> archive_attestation.intermediate_v3_7_harness_attestations pointer",
+    "held_byte_stable": "invariants (md5-identical to git HEAD); terminal v3.7 md5 core (8 keys); pre-v33 session log; all schemas/protocols/legacy-arc indexes; all current/terminal artifact md5s",
+    "open_questions_active_added": [
+      "solipsism_p_zombie_reciprocity",
+      "joy_outweighs_harms_sadist_aggregation_reductio"
+    ],
+    "files_registry": "pruned to 9 current artifacts + __compaction_note_v3_8_0__ (culled v3.7.x entries retained with md5s)"
+  },
+  "verified_facts": {
+    "jsx_corpus_sources_parity_all_81": true,
+    "canon_invariants_byte_identical_vs_git_head": true,
+    "md5_anchors_dropped": 0,
+    "md5_count_orig": 109,
+    "md5_count_new": 116,
+    "counts_frozen": {
+      "objection_count": 81,
+      "tier_count": 5,
+      "mechanism_count": 35,
+      "ledger_graded": 81
+    },
+    "held_sections_drift": "NONE",
+    "terminal_v3_7_md5_core_drift": "NONE",
+    "canon_disk_md5_after": "b306439ecfa498e1b08ad83c07072a5e",
+    "canon_lines_after": 2790
+  },
+  "carry_forward": {
+    "operator_commit_push": "efilist repo: jsx + project_canon_v37_16.json + this session-state (bookkeeping; combined.html unchanged -> no live deploy). PowerShell handoff at close incl .git\\*.lock cleanup (cxcv) + stray-file del.",
+    "operator_reupload_canon": "re-upload project_canon_v37_16.json (compacted) to the project knowledge panel (replaces the pre-compaction copy)",
+    "sandbox_strays": "efilist/.k_v3820_wtest (write-probe; sandbox cannot unlink -> operator del); untracked push_v3_8_19.ps1 (last session deploy script)",
+    "deferred_enrichments_active": "solipsism p-zombie-reciprocity; joy-outweighs-harms sadist-aggregation utility-monster reductio (both optional/additive, MAX-class, separate future sessions)"
+  }
+}
