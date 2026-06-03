@@ -1,0 +1,42 @@
+{
+  "artifact": "session_v3_8_21_joy_cowork_fold_state.json",
+  "session": "v3_8_21_joy_cowork_fold",
+  "class": "Cowork (wuld.ink end-to-end per ship-to-live routing rule)",
+  "date": "2026-06-03",
+  "authoring_predecessor": "v3_8_21_joy_sadist_aggregation_strengthen (MAX, 2026-06-02, parked)",
+  "baseline": {
+    "efilist_HEAD": "0caba9d (v3_8_20)",
+    "canon": "project_canon_v37_16.json b306439ecfa498e1b08ad83c07072a5e / 193411 B",
+    "combined_pre": "b996db1630cbf326924ecbb95dea0797 / 2382565 B == live == wuld.ink pin (verified curl, byte-exact)",
+    "old_prose_md5s_verified": {
+      "long": "7d2ac7b2147c2c81d4ac7b46701e566e",
+      "medium": "7164652225c700c7150c6d0c9936664b",
+      "short": "4a18af0d3369a36a8e8ad9661048041f"
+    },
+    "validator_pre": "self-test _overall_pass true + corpus PASS"
+  },
+  "forks_ratified": {
+    "canon_band": "MINOR 37.16 -> 37.17 (library-Claude corrected own directive: grades live in ledger, not canon invariant block; invariants subtree 8727787c byte-stable)",
+    "flush_scope": "joy alone as v3.8.21 (the 6 manifest entries already FOLDED+deployed at v3.8.15 flush)",
+    "ledger_version_field": "NONE exists -- adjacent check resolved: provenance carried in grade_source/depths_note strings"
+  },
+  "mutations": {
+    "prose": "long+medium+short REPLACE on corpus (structural, fmt NONE) + jsx/combined/index (json ensure_ascii=False quoted swaps, count==1 each); prose delta +3706 B IDENTICAL across all four surfaces",
+    "sources": "ADD x2 -> 8 (Nozick utility monster; Rawls/Nozick separateness) on all four surfaces (+117 B at 6sp, +121 B corpus 8sp)",
+    "strength_const": "combined+index axes block count==1 swap: v.87 HOLD, s.83->.84, c.83->.86, r.82->.84, a.8->.82 (+1 B); identifier = bare per-node axes map (NOT literally REBUTTAL_STRENGTH)",
+    "ledger": "grades[joy-outweighs-harms]: axes + long.rsi_pct 83.0->84.6 (grade B hold, headline B hold) + grade_source/depths_note updated to v3_8_21 provenance",
+    "canon": "project_canon_v37_17.json NEW (clone, fmt NL); exactly 6 top-level keys changed; invariants byte-stable; next_recommended -> v3_8_x_solipsism_pzombie_reciprocity",
+    "manifest": "pending_foldin_manifest.json first committed to repo; joy entry PENDING -> FOLDED (2026-06-03)"
+  },
+  "results": {
+    "combined_NEW": "d0dc59b570956c6450d8158423845cb8 / 2386389 B",
+    "index_NEW": "33f55ff4804b44550a61404d51c38f6e / 1839912 B",
+    "corpus_NEW": "68d5bb33fdb819ccfe9e2a3c70bdddab / 1297509 B",
+    "jsx_NEW": "20189fb80ffac37f105749b8c2496605 / 1240586 B",
+    "ledger_NEW": "c5935b7c22ada6af997e5076f3d5ca32 / 42518 B",
+    "canon_NEW": "4430aa074ed7fd2ab87857921edb00d5 / 193660 B",
+    "counts": "81 obj / 243 responses / sources joy 8; FROZEN 81/5/35/78/2886",
+    "validator_post": "self-test _overall_pass true + corpus PASS; NEW prose md5s verified on corpus; new tokens count==1 on all string surfaces"
+  },
+  "deploy": "push_v3_8_21.ps1 (8-file explicit staging, single commit incl. canon -- band pre-ratified in-session); gate d0dc59b5 / 2386389 / canon 37.17 / baseline 0caba9d; then curl x3 -> library-pin.py --apply (b996db16 -> d0dc59b5, v3.8.19 -> v3.8.21)"
+}

@@ -1,0 +1,649 @@
+{
+  "manifest": "pending_foldin_manifest",
+  "schema_version": "1.0",
+  "purpose": "Single EXECUTION source of truth for batched Cowork foldins. Cowork executes this manifest; it does not rediscover what to fold. Grading rationale/provenance lives in each entry's referenced regrade_record.",
+  "created": "2026-06-01",
+  "updated": "2026-06-03",
+  "created_in_session": "v3_8_8_just_depressed_strengthen_s1",
+  "durability": "Un-deployed work lives OUTSIDE the repo until flush. This manifest AND every referenced prose file MUST be parked in the project knowledge panel between authoring sessions, or the backlog is only as durable as the chat. Re-upload alongside canon; each session reads this, appends (last-write-wins per objection_id), re-emits.",
+  "policy": {
+    "atomicity": "Two separate atomic units. (1) Per-node fold into all surfaces is batchable and MUST checkpoint per node. (2) Deploy = push both branches -> verify-live (curl x3 agreement) -> pin, runs ONCE, LAST, only after every pending node is confirmed across all four surfaces. A mid-run crash resumes from the last folded node and cannot half-update live, because deploy is the final step, never interleaved.",
+    "batch_size_cap": 10,
+    "batch_size_note": "Default conservative. Calibrate on the FIRST real batch: if Cowork finishes with headroom, raise; if it strains toward its own timeout, lower. Never exceed what Cowork can complete in a single run; if the backlog exceeds the cap, run two deploys, never one over-long one. Operator-adjustable.",
+    "flush_trigger": "EARLIER of: (a) pending_count >= batch_size_cap; (b) any pending node must go public; (c) operator-initiated. Operator-adjustable.",
+    "release_model": "Batching supersedes per-node release_vX.json seeds. ONE release is stamped per flush (covering every node in the batch), via library-pin.py after live == new.",
+    "canon_bump_per_flush": "One MINOR bump per flush covers the whole batch (score/prose/sources revisions; no invariant-block entry revised; counts 81/35/81 unchanged; grades render-time). Confirm at foldin.",
+    "interim_invariant": "Between flushes, corpus + ledger LEAD live by this pending set. Correct GREEN state is: pin == live == last-flushed-batch, AND corpus ahead by this manifest. Deliberate lag, NOT drift — do not 'fix' it outside a flush."
+  },
+  "deploy_recipe_ref": {
+    "flow": "Standing wuld.ink Cowork end-to-end: foldin (Option-2, per-node checkpoint) -> preflight + push both branches (gated) -> verify-live-library.ps1 (curl.exe x3 agreement) -> library-pin.py --apply (ONLY after live == new). Pin stamps sandbox-UTC (a day ahead) -> correct releases.json/state to operator-local.",
+    "baseline_at_seed_time": "efilist HEAD 50b7871 (verify IN-TREE at flush, do not transcribe); canon 37.11; corpus 81 obj / 35 mech; ledger 81 graded; live /combined md5 c3a2571246f67adff3971f3da69c97a8 / 2,363,948 B (= old pin, confirm in tree at flush).",
+    "open_gate": "v3prime_validator_v1_7.py --self-test 13/13 + corpus PASS before any foldin work."
+  },
+  "surface_map_legend": {
+    "corpus": "efilist_argument_library_v3_8_0.json -- responses.long REPLACE + sources REPLACE (sources is a corpus-objection field).",
+    "jsx": "efilist_argument_library_v3_8_0.jsx -- responses.long REPLACE only. NO REBUTTAL_STRENGTH const (grep -c = 0). sources presence UNVERIFIED -- audit grep -c before scoping.",
+    "combined": "combined.html -- responses.long REPLACE + REBUTTAL_STRENGTH const REPLACE. HAZARD literal class. sources presence UNVERIFIED -- audit.",
+    "index": "index_v3_8_0.html -- responses.long REPLACE + REBUTTAL_STRENGTH const REPLACE. HAZARD literal class. sources presence UNVERIFIED -- audit.",
+    "hazard_access": "Do NOT unfiltered-grep index/combined. grep -n the quoted prose string + grep -n REBUTTAL_STRENGTH -> awk to each region -> str_replace. Node ids recur in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data.",
+    "depth_mods": "Render-time: medium c-0.05 r-0.03; short c-0.12 r-0.06. Const stores the long base tuple only; short/medium are derived."
+  },
+  "pending": [
+    {
+      "objection_id": "just-depressed",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_8_just_depressed_strengthen_s1",
+      "regrade_record": "regrade_just_depressed_v3_8_8.json",
+      "prose_file": "just_depressed_long_v3_8_8_honest.txt",
+      "grade_summary": {
+        "prior_long": "81.5 C",
+        "new_long": "84.2 B",
+        "drags_cleared": "r +0.06, a +0.03"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.86,
+        "s": 0.82,
+        "c": 0.86,
+        "r": 0.84,
+        "a": 0.83
+      },
+      "sources_op": "REPLACE",
+      "sources_value": [
+        "Genetic / circumstantial ad hominem fallacy",
+        "Optimism bias / positive illusions (Taylor & Brown, 1988)",
+        "Depressive realism (Alloy & Abramson, 1979)",
+        "Depressive realism meta-analysis (Moore & Fresco, 2012)",
+        "Terror Management Theory (Becker/Greenberg)",
+        "Mortality Salience research"
+      ],
+      "ledger_patch": {
+        "path": "grades['just-depressed']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.86,
+            "s": 0.82,
+            "c": 0.86,
+            "r": 0.84,
+            "a": 0.83
+          },
+          "short": {
+            "rsi_pct": 80.5,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 82.6,
+            "grade": "B"
+          },
+          "long": {
+            "rsi_pct": 84.2,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "pending"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        }
+      },
+      "short_medium": "byte-stable (unchanged); only responses.long mutates",
+      "hazard": "just-depressed recurs in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data -- surgical grep -n + awk + str_replace only",
+      "note": "Honest variant (operator-approved). No 'arguments survive' stamp; bad-faith recharacterisation; genuine-concern residual preserved. See regrade_record divergence_from_directive.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "adoption-instead",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_9_adoption_instead_strengthen_s1",
+      "regrade_record": "regrade_adoption_instead_v3_8_9.json",
+      "prose_file": "adoption_instead_long_v3_8_9.txt",
+      "grade_summary": {
+        "prior_long": "80.9 C",
+        "new_long": "84.2 B",
+        "drags_cleared": "r +0.09, a +0.04 (s +0.02, c +0.01, v hold)"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.85,
+        "s": 0.82,
+        "c": 0.86,
+        "r": 0.84,
+        "a": 0.84
+      },
+      "sources_op": "REPLACE",
+      "sources_value": [
+        "Adoption as antinatalism-consistent",
+        "Antinatalism targets the act of creation, not the role of parenthood",
+        "Two distinct desires: to parent vs. to reproduce biologically (conceptual decomposition)",
+        "Arguer vs. argument — ad hominem cannot refute a thesis",
+        "Constructive antinatalism: adoption, fostering, kinship care, alleviation of existing suffering"
+      ],
+      "ledger_patch": {
+        "path": "grades['adoption-instead']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.85,
+            "s": 0.82,
+            "c": 0.86,
+            "r": 0.84,
+            "a": 0.84
+          },
+          "short": {
+            "rsi_pct": 80.5,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 82.6,
+            "grade": "B"
+          },
+          "long": {
+            "rsi_pct": 84.2,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "pending"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        }
+      },
+      "short_medium": "byte-stable (unchanged); only responses.long mutates",
+      "hazard": "adoption-instead recurs in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data -- surgical grep -n + awk + str_replace only",
+      "note": "Cut the genetic-narcissism motive-attack (r-drag, ad hominem) and the totalizing motive-claim (a-drag, over-claim); excised the gift-collapse intrusion (life-gift territory, do NOT duplicate). De-empiricized the two-desires point to a purely conceptual decomposition (no foster-care revealed-preference inference). Added + defused the non-propositional sincerity/'costless abstention' reading (closes the 'no third refutational branch' claim). const tuple = long base; JSX has no const. See regrade_record divergence_from_directive.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "transhumanist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_10_transhumanist_objection_strengthen_s1",
+      "regrade_record": "regrade_transhumanist_objection_v3_8_10.json",
+      "prose_file": "transhumanist_objection_long_v3_8_10.txt",
+      "grade_summary": {
+        "prior_long": "80.9 C",
+        "new_long": "84.0 B",
+        "drags_cleared": "r +0.08, a +0.04 (s +0.02, c +0.01, v hold)"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.85,
+        "s": 0.82,
+        "c": 0.86,
+        "r": 0.83,
+        "a": 0.84
+      },
+      "sources_op": "REPLACE",
+      "sources_value": [
+        "Pearce — The Hedonistic Imperative (abolition granted arguendo)",
+        "Benatar's asymmetry survives suffering-abolition — no benefit-side reason to create a guaranteed-blissful being",
+        "Non-consensual imposition of existence (consent objection)",
+        "Transition-generation problem — instrumentalisation of pre-abolition subjects as means",
+        "Tail-risk aggregation across deep time under deep uncertainty (expected-value line)",
+        "Irreversible value-lock-in of hedonic set-points under moral uncertainty",
+        "Asymmetry-based antinatalist core vs. negative-utilitarian extinction terminus — clean division under abolition"
+      ],
+      "ledger_patch": {
+        "path": "grades['transhumanist-objection']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.85,
+            "s": 0.82,
+            "c": 0.86,
+            "r": 0.83,
+            "a": 0.84
+          },
+          "short": {
+            "rsi_pct": 80.3,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 82.4,
+            "grade": "B"
+          },
+          "long": {
+            "rsi_pct": 84.0,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "pending"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        }
+      },
+      "short_medium": "byte-stable (unchanged); only responses.long mutates",
+      "hazard": "transhumanist-objection recurs in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data -- surgical grep -n + awk + str_replace only; no unfiltered-grep of index/combined.",
+      "note": "HARDEST node in the C-floor sweep: the one objection that accepts EFIlism's empirical premise and contests the EXTINCTION conclusion. r-drag was a load-path failure, not a motive-attack. Supplied the absent decoupling spine (asymmetry DEPLOYED not re-derived: even granting full abolition arguendo, no benefit-side reason to create a guaranteed-blissful being + non-consensual imposition => 'solve suffering therefore create' is a non sequitur); re-grounded transition-generation in consent/instrumentalisation; added tail-risk as an explicitly-flagged INDEPENDENT expected-value line; REPLACED the species track-record smear with a hedged irreversibility/value-lock-in-under-uncertainty point. DIVERGENCES (MAX calls, see regrade divergence_from_directive): (a) CUT the ontological-discontinuity gesture entirely (collapses into the asymmetry; residue risks the Pearce-wireheading strawman the directive hard-guards); (b) tail-risk rewritten as a distinct second line rather than asymmetry-subsumed (avoids double-counting) -> residual r-limit, r capped 0.83. HONEST SEAM: concedes it does NOT defeat abolition; bisects cleanly -- asymmetry-based antinatalist CORE survives, but the EXTINCTION terminus rests on negative-util suffering-minimisation and IS genuinely pressured by abolition success; routed to bradley-no-subject, not resolved here. const tuple = long base; JSX has NO const (grep -c = 0) -> exclude JSX from const push.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "nihilism-label",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_11_nihilism_label_strengthen_s1",
+      "regrade_record": "regrade_nihilism_label_v3_8_11.json",
+      "prose_file": "nihilism_label_long_v3_8_11.txt",
+      "grade_summary": {
+        "prior_long": "79.9 C",
+        "new_long": "82.5 B",
+        "drags_cleared": "a +0.09 (s +0.02, c +0.01, r +0.01 incidental, v hold)"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.85,
+        "s": 0.82,
+        "c": 0.86,
+        "r": 0.76,
+        "a": 0.84
+      },
+      "sources_op": "ADD",
+      "sources_value": [
+        "Alogical Isness / Illogicaliter est",
+        "Contextus Claudit",
+        "Negative utilitarianism",
+        "Schopenhauer — Will",
+        "Zapffe — cognitive mechanisms",
+        "Benatar — asymmetry (the never-existent is deprived of nothing)"
+      ],
+      "ledger_patch": {
+        "path": "grades['nihilism-label']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.85,
+            "s": 0.82,
+            "c": 0.86,
+            "r": 0.76,
+            "a": 0.84
+          },
+          "short": {
+            "rsi_pct": 78.8,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 80.9,
+            "grade": "C"
+          },
+          "long": {
+            "rsi_pct": 82.5,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "pending"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "audit_then_pending_or_na"
+        }
+      },
+      "short_medium": "byte-stable (unchanged) this session; only responses.long mutates. COHERENCE FLAG: short+medium prose retain the NU-monist 'only coherent metric' phrasing the strengthened long disclaims; node-level axes tuple drives all three registers via depth_mods, so reconcile short+medium prose to the non-monist framing at flush or a future minor pass. Non-blocking.",
+      "hazard": "nihilism-label occurs x6 in combined.html (safe grep -c; surgical grep -n + awk + str_replace only at flush; no unfiltered-grep). Recurs in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data class. index_v3_8_0.html intentionally not uploaded (near-identical to combined.html) -- request upload at flush IF the cut touches index surfaces; do not re-flag.",
+      "note": "C-floor sweep, node 4. Recipe = CHARITY / OVER-CLAIM REPAIR, NOT rigor-supply (a was the binding drag; r held as lever, +0.01 incidental only). Granted three bundled worries (pessimistic affect; the genuine refusal to let goods license harms; the omnicidal-slide fear), then deployed the VALENCE-REVERSAL spine: axiological nihilism would DISSOLVE antinatalism (no disvalue => no objection to creating sufferers), so the conclusion has force only BECAUSE disvalue is real -- the most value-committed stance in the room, the opposite of 'nothing matters'. Excised two over-claims that were the charge's only ammunition: (1) NU-monism ('only coherent metric') -> asymmetry needs no monism, concede love/beauty/joy are real goods for the existing, the never-existent is deprived of nothing; (2) self-undermining 'logic is merely coping' -> norms bind existing agents without cosmic underwriting. Resolved omnicidal slide on the same distinction (asymmetry forbids CREATING subjects of harm, opposite of devaluing existing ones). Kept Alogical-Isness metaphysical-nihilism foundation intact; distinguished it sharply from value-nihilism. HONEST SEAM: long 82.5 B (clears B at strict-r-hold 82.3 and literal a=0.83 82.3); moderate-skeptical floor 81.5 C disclosed, honest-shortfall considered + DECLINED. sources ADD Benatar-asymmetry (5->6). const tuple = long base; JSX has NO const (grep -c = 0) -> exclude JSX from const push.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "love-beauty-art",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_12_love_beauty_art_strengthen_s1",
+      "regrade_record": "regrade_love_beauty_art_v3_8_12.json",
+      "prose_file": "love_beauty_art_long_v3_8_12.txt",
+      "grade_summary": {
+        "prior_long": "79.9 C",
+        "new_long": "82.3 B",
+        "drags_cleared": "a +0.08 (s +0.02, c +0.01, r +0.01 incidental, v hold)"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.85,
+        "s": 0.82,
+        "c": 0.86,
+        "r": 0.76,
+        "a": 0.83
+      },
+      "sources_op": "HOLD",
+      "sources_value": [
+        "Pollyanna Principle",
+        "Asymmetry — good does not cancel bad",
+        "Neuroscience of love/beauty",
+        "Art and mental illness correlation",
+        "Proxy Gamble"
+      ],
+      "ledger_patch": {
+        "path": "grades['love-beauty-art']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.85,
+            "s": 0.82,
+            "c": 0.86,
+            "r": 0.76,
+            "a": 0.83
+          },
+          "short": {
+            "rsi_pct": 78.6,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 80.7,
+            "grade": "C"
+          },
+          "long": {
+            "rsi_pct": 82.3,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "hold_unchanged"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "hold_unchanged"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "hold_unchanged"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "hold_unchanged"
+        }
+      },
+      "short_medium": "byte-stable (unchanged) this session; only responses.long mutates. COHERENCE FLAG: short ('consolation prizes... prison') + medium (genetic-fallacy + impermanence framing) retain the over-claims the strengthened long disclaims. Single node-level axes tuple drives all three registers via depth_mods; reconcile prose at flush / future minor. Non-blocking.",
+      "hazard": "love-beauty-art occurs x6 in combined.html (safe grep -c; surgical grep -n + awk line-slice + str_replace at flush, never view/unfiltered-grep). JSX x10 prose-only, REBUTTAL_STRENGTH grep -c = 0 -> NO const push. index_v3_8_0.html intentionally not uploaded (near-identical to combined.html, deduped) -> request upload at flush IF cut touches index surfaces; do NOT re-flag as anomaly.",
+      "note": "C-floor sweep, node 5. Recipe = CHARITY / OVER-CLAIM REPAIR (debunk-excision), NOT rigor-supply (a=0.75 was the binding drag). Excised genetic fallacy + impermanence-debunks-value; full concession of goods' reality; asymmetry was already present (LEAD-with-concession, not add-asymmetry). sources_op HOLD: asymmetry token already in node ('Asymmetry — good does not cancel bad'). Headline 82.3 B is MARGINAL (+0.3); moderate-skeptical floor 81.1 C disclosed in regrade.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "indigenous-philosophy",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_13_indigenous_philosophy_strengthen_s1",
+      "regrade_record": "regrade_indigenous_philosophy_v3_8_13.json",
+      "prose_file": "indigenous_philosophy_long_v3_8_13.txt",
+      "grade_summary": {
+        "prior_long": "79.9 C",
+        "new_long": "82.2 B",
+        "drags_cleared": "c +0.05, r +0.06 (MIXED lever)"
+      },
+      "rebuttal_strength_const": {
+        "v": 0.85,
+        "s": 0.8,
+        "c": 0.85,
+        "r": 0.81,
+        "a": 0.8
+      },
+      "sources_op": "ADD",
+      "sources_value": [
+        "Cultural consensus is not a truth-maker (description vs. normativity)",
+        "Anti-imposition logic is self-applying (forbids coercive worldview-imposition)"
+      ],
+      "ledger_patch": {
+        "path": "grades['indigenous-philosophy']",
+        "set": {
+          "graded": true,
+          "axes": {
+            "v": 0.85,
+            "s": 0.8,
+            "c": 0.85,
+            "r": 0.81,
+            "a": 0.8
+          },
+          "short": {
+            "rsi_pct": 78.5,
+            "grade": "C"
+          },
+          "medium": {
+            "rsi_pct": 80.6,
+            "grade": "C"
+          },
+          "long": {
+            "rsi_pct": 82.2,
+            "grade": "B"
+          },
+          "headline_grade_long": "B"
+        }
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "pending",
+          "sources": "pending"
+        },
+        "jsx": {
+          "prose": "pending",
+          "sources": "na_prose_only_no_const"
+        },
+        "combined": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "pending"
+        },
+        "index": {
+          "prose": "pending",
+          "const": "pending",
+          "sources": "pending"
+        }
+      },
+      "short_medium": "byte-stable (unchanged); only responses.long mutates",
+      "hazard": "indigenous-philosophy recurs in MAP_GRAPH_DATA / DEP_GRAPH_DATA / rwe-data -- surgical grep -n + awk slice + node Function-eval only; combined.html grep -c at flush; JSX prose-only (grep -c REBUTTAL_STRENGTH = 0).",
+      "note": "MIXED-lever node (NOT charity-twin): rigor+clarity both moved, a held 0.80 (no debunk). HONEST RESIDUAL ties-not-wins against the strong relational axiology; boundary B, floor 81.8-82.0. sources_op ADD is CANDIDATE -- next session ratifies the exact list AND reviews the existing 'Cross-cultural antinatalist traditions' token for DEMOTE-not-remove (the head-count tu quoque is demoted in scope, retained as a one-liner). Diagnosis correction: the head-count is MEDIUM-level, not long-level. 3rd node carrying short+medium coherence debt.",
+      "folded_in_session": "v3_8_15_batch_flush_cowork",
+      "folded_date": "2026-06-02"
+    },
+    {
+      "objection_id": "joy-outweighs-harms",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_21_joy_sadist_aggregation_strengthen",
+      "regrade_record": "regrade_joy_outweighs_harms_v3_8_21.json",
+      "prose_file": "joy_outweighs_harms_long_v3_8_21.txt",
+      "grade_summary": "long 83.0/B -> 84.6/B (COLD, +1.6, mid-B); derived medium 81.3/C -> 83.0/B (downward propagation); short 79.2/C -> 80.9/C (stays C). base axes v.87 s.84 c.86 r.84 a.82. NOT A (b_not_a in regrade); honest residual = relocates-to-asymmetry vs the asymmetry-denier.",
+      "rebuttal_strength_const": {
+        "op": "UPDATE",
+        "new_base_axes": {
+          "v": 0.87,
+          "s": 0.84,
+          "c": 0.86,
+          "r": 0.84,
+          "a": 0.82
+        },
+        "new_rsi_pct": 84.6,
+        "new_grade": "B",
+        "note": "Const stores LONG base axes; display tiers derive at render. Replace joy-outweighs-harms axis tuple/rsi/grade on combined.html AND index_v3_8_0.html. 'REBUTTAL_STRENGTH' is NOT a literal string in combined.html (grep-absent) — confirm the actual const/table identifier on each surface during fold."
+      },
+      "sources_op": "ADD",
+      "sources_value": [
+        "Utility monster (Nozick, Anarchy, State, and Utopia, 1974)",
+        "Separateness of persons (Rawls; Nozick)"
+      ],
+      "sources_after_count": 8,
+      "ledger_patch": {
+        "op": "PATCH",
+        "path": "grades['joy-outweighs-harms']",
+        "axes": {
+          "v": 0.87,
+          "s": 0.84,
+          "c": 0.86,
+          "r": 0.84,
+          "a": 0.82
+        },
+        "long": {
+          "rsi_pct": 84.6,
+          "grade": "B"
+        },
+        "headline_grade_long": "B",
+        "note": "letter unchanged B->B; rsi_pct 83.0->84.6. VAR posture: no separately-stored short/medium grades; displayed badges re-derive (medium 83.0/B, short 80.9/C)."
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "REPLACE long+medium+short",
+          "sources": "ADD x2 (-> 8)"
+        },
+        "jsx": {
+          "prose": "REPLACE long+medium+short (corpus mirror)",
+          "sources": "audit_then_add_or_na",
+          "const": "na (no strength const in jsx)"
+        },
+        "combined": {
+          "prose": "REPLACE long+medium+short",
+          "const": "UPDATE base axes",
+          "sources": "audit_then_add_or_na"
+        },
+        "index": {
+          "prose": "REPLACE long+medium+short",
+          "const": "UPDATE base axes",
+          "sources": "audit_then_add_or_na"
+        }
+      },
+      "short_medium": {
+        "op": "REPLACE both",
+        "source_file": "joy_outweighs_harms_short_medium_v3_8_21.md",
+        "medium": "\"The good outweighs the bad\" runs on agent-neutral hedonic aggregation—a net balance of pleasure over suffering, indifferent by construction to whose pleasure and whose pain get summed. Grant commensurability, grant the sum comes out positive: the slogan still licenses the transaction its own user rejects. An aggregation blind to who carries which entry licenses the utility monster—the sadist whose delight outweighs, magnitude for magnitude, the victim's agony, making the torture the optimum. Recoil from that, as nearly everyone does, and you have abandoned agent-neutral aggregation as a principle of justification, which means you cannot reach for it to license procreation either. The one thing that blocks the monster is a side-constraint—the separateness of persons, the refusal to make one being's welfare raw material for another's surplus—and that constraint, applied consistently, equally forbids conscripting a non-consenting newcomer into guaranteed harm for the sake of an aggregate. The rescue closes the case it was meant to save. Justify procreation by expected value across possible lives and the aggregation is interpersonal—the monster's structure exactly; justify it by the actual child's net balance and you presuppose the very subject whose creation is in question, since a foregone joy deprives no one when there is no one yet to deprive. Against the naive aggregator that is decisive; against someone who denies the asymmetry it relocates the dispute rather than ending it—but it strips the slogan of any force of its own.",
+        "medium_chars": 1551,
+        "short": "The calculus that turns \"joy outweighs harm\" into \"so create\" is the same one that turns \"a sadist's pleasure outweighs his victim's pain\" into \"so torture\"—a hedonic sum is blind to who carries which entry. Reject that monster, as you do, and you've dropped the principle doing the justifying; whatever blocks the monster also forbids drafting a newcomer into guaranteed harm to fund a sum that was never theirs.",
+        "short_chars": 413,
+        "embedded": "exact strings inline for Cowork; long prose in prose_file"
+      },
+      "hazard": "combined.html + index_v3_8_0.html carry MAP1_TRANSITIONS-class single-line literals — NEVER full-view, NEVER unfiltered-grep. Locate the joy strength entry + the three response strings via TARGETED grep for 'joy-outweighs-harms' constrained to the strength/axes + responses region; awk line-slice to mutate; node-eval (Function ctor, not eval) for any JS-literal parse. combined.html IS live-served: this fold TRIGGERS a Cloudflare deploy (push -> curl x3 -> pin) — unlike the v3.8.20 jsx-only fold.",
+      "note": "Strengthen via sadist-aggregation / utility-monster reductio (Nozick). Recasts the rebuttal as a dilemma: justify procreation by expected hedonic sum (interpersonal => monster's structure) OR by the actual child's net (presupposes the subject => asymmetry backstop). DISCHARGES the joy-outweighs-harms reversibility horizon item. All three registers REPLACE and all carry the spine (reconciled in THIS session; v3.8.18 split-register failure not re-created). const UPDATE (axes moved); ledger PATCH; sources ADD x2.",
+      "folded_in_session": "v3_8_21_joy_cowork_fold",
+      "folded_date": "2026-06-03"
+    }
+  ],
+  "backward_gap_audit_candidates": {
+    "purpose": "Operationalises the backward-gap-class closure carry-forward. Pre-Option-2 strengthens may have shipped score-only (prose reached corpus but const/prose stale on the built artifacts). VERIFY each against corpus + built artifacts before/with the next flush -- do NOT assume. The neuroscience-positive-states back-fill already closed one such gap.",
+    "method": "For each: surgically grep -n the corpus responses.long vs the combined/index responses.long and compare; grep the REBUTTAL_STRENGTH const vs the ledger axes. MISMATCH -> add a normal pending[] entry (prose REPLACE and/or const REPLACE) so the next flush closes it. MATCH -> mark CLOSED.",
+    "candidates": [
+      {
+        "objection_id": "flow-states",
+        "release": "v3_8_4",
+        "status": "CLOSED",
+        "closure": "CLOSED v3.8.14 audit: corpus vs built MATCH (no prose/const staleness)."
+      },
+      {
+        "objection_id": "joy-outweighs-harms",
+        "release": "v3_8_3",
+        "status": "CLOSED",
+        "closure": "CLOSED v3.8.14 audit: corpus vs built MATCH."
+      },
+      {
+        "objection_id": "negative-util-aggregation",
+        "release": "v3_8_2",
+        "status": "CLOSED",
+        "closure": "CLOSED (prose-gap class) v3.8.14 audit: prose MATCH. NOTE: separate Track-B render bug (held medium 78.3 C renders 82.4 B via depthModifiedRSI) is OUT OF SCOPE this flush."
+      },
+      {
+        "objection_id": "violence-as-reductio",
+        "release": "v3_8_1",
+        "status": "CLOSED",
+        "closure": "CLOSED v3.8.15: const drift {v.87 s.85 c.87 r.86 a.86}->{v.86 s.82 c.84 r.84 a.83} on combined+index; ledger long 86.2->83.8 B; prose already folded."
+      }
+    ]
+  },
+  "updated_in_session": "v3_8_21_joy_sadist_aggregation_strengthen",
+  "flush_record": {
+    "session": "v3_8_15_batch_flush_cowork",
+    "date": "2026-06-02",
+    "release": "v3.8.15",
+    "canon": "37.11->37.12 MINOR",
+    "folded": [
+      "just-depressed",
+      "adoption-instead",
+      "transhumanist-objection",
+      "nihilism-label",
+      "love-beauty-art",
+      "indigenous-philosophy"
+    ],
+    "violence_drift_correction": "applied (const combined+index + ledger axes/long)",
+    "counts": "81 obj / 35 mech / 81 graded UNCHANGED",
+    "surfaces": "corpus, jsx, combined.html, index_v3_8_0.html, rebuttal_grading_ledger.json",
+    "deferred": [
+      "deploy + wuld.ink pin (post-v3.8 stable)",
+      "neg-util held-vs-derived render fix (Track B)",
+      "short/medium coherence (nihilism/love-beauty/indigenous)",
+      "corpus-wide held<derived sweep",
+      "jsx sources sync (long-only per legend)"
+    ]
+  }
+}
