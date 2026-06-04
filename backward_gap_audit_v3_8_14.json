@@ -1,0 +1,181 @@
+{
+  "audit_id": "backward_gap_audit_v3_8_14",
+  "session": "v3_8_14_backward_gap_audit",
+  "class": "HIGH read-only",
+  "date": "2026-06-02",
+  "baseline": {
+    "canon": "37.11 (project_canon_v37_11.json)",
+    "corpus": "81 totalEntries / 243 totalResponses (efilist_argument_library_v3_8_0.json)",
+    "ledger": "81 graded (rebuttal_grading_ledger_v3_8_0.json)",
+    "mech": "35 (trusted; not re-derived)",
+    "manifest_pending": "6 of 10 (pending_foldin_manifest.json)",
+    "validator": "v3prime_validator_v1_7.py --self-test => _overall_pass: true",
+    "open_gate": "GO — all open-gate values matched"
+  },
+  "node_id_note": "'flow-states' (directive shorthand) resolves to corpus/ledger/const id 'flow-states-csikszentmihalyi'. Not an absence-straggler.",
+  "matrix": {
+    "violence-as-reductio": {
+      "corpus": {
+        "state": "synced",
+        "evidence": "responses.long present; phrase 'The maximizer has not run the framework' present; sources=10. Secondary: corpus long 16595c vs regrade-graded 11795c (likely markup/archetypeVariants; content confirmed by phrase) — non-blocking."
+      },
+      "ledger": {
+        "state": "drift",
+        "evidence": "grades.axes {v.87 s.85 c.87 r.86 a.86}=86.2 != regrade.stored {v.86 s.82 c.84 r.84 a.83}=83.8; contradicts entry's OWN grade_source note (rsi 0.8379->83.8) and its OWN medium(82.2)/short(80.1) which depth-derive from stored."
+      },
+      "combined_const": {
+        "state": "drift",
+        "evidence": "REBUTTAL_STRENGTH['violence-as-reductio']={v.87 s.85 c.87 r.86 a.86} (line~5546 region; awk-slice + node-eval) != stored {v.86 s.82 c.84 r.84 a.83}. Agrees with ledger.axes; matches NO grade record."
+      },
+      "combined_prose": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1 (prose folded)."
+      },
+      "jsx": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1; REBUTTAL_STRENGTH grep -c == 0 (prose-only, expected)."
+      }
+    },
+    "negative-util-aggregation": {
+      "corpus": {
+        "state": "synced",
+        "evidence": "responses.long present; phrase 'Strip the rhetoric and the objection reduces' present; sources=5."
+      },
+      "ledger": {
+        "state": "synced",
+        "evidence": "axes {v.86 s.83 c.86 r.82 a.83} == ref; medium 78.3 C / short 76.2 C stored (HELD posture correctly recorded in ledger)."
+      },
+      "combined_const": {
+        "state": "synced",
+        "evidence": "REBUTTAL_STRENGTH long-tuple {v.86 s.83 c.86 r.82 a.83} == ref."
+      },
+      "combined_prose": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      },
+      "jsx": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      }
+    },
+    "joy-outweighs-harms": {
+      "corpus": {
+        "state": "synced",
+        "evidence": "responses.long present; phrase 'by stroke or violence do not contribute' present; sources=6."
+      },
+      "ledger": {
+        "state": "synced",
+        "evidence": "axes {v.87 s.83 c.83 r.82 a.80} == ref; medium/short = DERIVE-AT-RENDER (depths_note records 81.3 C / 79.2 C)."
+      },
+      "combined_const": {
+        "state": "synced",
+        "evidence": "long-tuple {v.87 s.83 c.83 r.82 a.80} == ref."
+      },
+      "combined_prose": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      },
+      "jsx": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      }
+    },
+    "flow-states-csikszentmihalyi": {
+      "corpus": {
+        "state": "synced",
+        "evidence": "responses.long present; phrase 'Because the organism is so thoroughly built' present; sources=6."
+      },
+      "ledger": {
+        "state": "synced",
+        "evidence": "axes {v.86 s.83 c.87 r.82 a.80} == ref; medium 82.0 B / short 79.9 C == standard depth-derivation (verified)."
+      },
+      "combined_const": {
+        "state": "synced",
+        "evidence": "long-tuple {v.86 s.83 c.87 r.82 a.80} == ref (key 'flow-states-csikszentmihalyi'; 'flow-states' ABSENT — shorthand only)."
+      },
+      "combined_prose": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      },
+      "jsx": {
+        "state": "synced",
+        "evidence": "grep -cF phrase == 1."
+      }
+    }
+  },
+  "per_node_verdict": {
+    "violence-as-reductio": {
+      "verdict": "DRIFT_REMEDIATE",
+      "fix": "const(combined+index) + ledger.axes carry unbacked {v.87 s.85 c.87 r.86 a.86}/86.2 (matches neither regrade.stored 83.8 nor audit_rescore 84.0). Build depth-derives short->82.5 B but canonical short=80.1 C => VISIBLE short-badge drift; medium 84.6 B vs canonical 82.2 B and long 86.2 vs 83.8 are B-band-either-way (wrong pct only). FIX: const REPLACE -> {v.86 s.82 c.84 r.84 a.83} on combined.html + index_v3_8_0.html, and correct ledger.grades['violence-as-reductio'].axes to the same. Med/short auto-correct at render (stored already yields 82.2 B / 80.1 C); NO re-grade, NO recompute. Deterministic and flush-bundleable. Requires operator ratification of 'stored' as canonical."
+    },
+    "negative-util-aggregation": {
+      "verdict": "DRIFT_REMEDIATE (render-posture; all 5 matrix cells synced)",
+      "fix": "const long-tuple is CORRECT and ledger holds medium 78.3 C / short 76.2 C, but depthModifiedRSI() (line 6128) UNCONDITIONALLY depth-derives => build renders medium 82.4 B (VISIBLE B-vs-held-C drift; short coincidentally C/C at 80.3). The build has no held path. FIX (operator decision): (A, recommended) add a per-node held-grades override consulted by depthModifiedRSI so held nodes render their stored med/short — a dedicated RENDER pass, NOT a content fold; or (B) abandon the held posture, accept derived 82.4 B / 80.3 C, and reconcile the ledger note (zero code change). Non-flush-blocking (analogous to the directive's short/medium-coherence future-minor class)."
+    },
+    "joy-outweighs-harms": {
+      "verdict": "DONE_SYNCED",
+      "fix": "None. Prose folded on corpus/combined/jsx; const long-tuple matches; med/short DERIVE-AT-RENDER and build output (81.3 C / 79.2 C) == VAR intent. Not part of any batch."
+    },
+    "flow-states-csikszentmihalyi": {
+      "verdict": "DONE_SYNCED",
+      "fix": "None. Prose folded on corpus/combined/jsx; const long-tuple matches; stored med 82.0 B / short 79.9 C == standard depth-derivation == build output. Not part of any batch."
+    }
+  },
+  "posture_check": {
+    "render_logic": "depthModifiedRSI() (combined.html line 6128) returns the long tuple as-is and depth-derives medium (c-0.05, r-0.03) and short (c-0.12, r-0.06) from it; rsiGrade() (line 6121) bands it. Call sites 5367/5370 and 5378/5381 feed the DISPLAYED register badge. There is NO held-value path — every node's med/short badge is derived from its const long-tuple.",
+    "joy-outweighs-harms": "CONSISTENT — VAR-derived intent (81.3 C / 79.2 C) equals the standard depth-mod, which equals the build output. Ledger med/short = DERIVE-AT-RENDER. No drift.",
+    "negative-util-aggregation": "DRIFT — held intent medium 78.3 C / short 76.2 C; build derives 82.4 B / 80.3 C => MEDIUM badge shows B, not the intended C. Architectural (no held path).",
+    "generalization_note": "Any node whose held grade is LOWER than its depth-derived grade is mis-rendered by the current build. Recommend the operator set a corpus-wide policy (support held overrides vs derive-only) when the neg-util render pass is scheduled — there may be other held<derived nodes outside this 4-node scope."
+  },
+  "violence_tuple_resolution": {
+    "holders": {
+      "corpus": "carries strengthened PROSE only (no tuple); phrase present => v3.8.1 long is in the corpus.",
+      "ledger.grades.axes": "{v.87 s.85 c.87 r.86 a.86} => 86.2  [DRIFTED]",
+      "ledger.grade_source_note": "embeds 'rsi 0.8379 -> 83.8 band B' => 83.8 (= stored)",
+      "ledger.medium/short": "82.2 / 80.1 — depth-derive from STORED {v.86 s.82 c.84 r.84 a.83}, not from the axes block",
+      "combined_const": "{v.87 s.85 c.87 r.86 a.86} => 86.2  [DRIFTED; agrees with ledger.axes]",
+      "index_const": "NOT uploaded; expected identical drift (audited combined as proxy per directive)",
+      "regrade.stored": "{v.86 s.82 c.84 r.84 a.83} => 83.8 B (drove the deterministic depth-backfill)",
+      "regrade.audit_rescore": "{v.86 s.81 c.85 r.83 a.85} => 84.0 B (offsetting redistribution)",
+      "regrade.net_effect": "'Stored axes are defensible; not worth a ledger axis mutation.'"
+    },
+    "recommended_canonical": "stored {v.86 s.82 c.84 r.84 a.83} => 83.8 B",
+    "rationale": "Four authoritative witnesses converge on 83.8 (regrade.stored, regrade.net_effect, ledger.grade_source note, and the ledger's own med/short which derive from stored). The {v.87...}/86.2 tuple on const+ledger.axes is backed by NO grade record (it equals neither stored nor audit_rescore) — almost certainly a stale pre-cold-grade optimistic value left unreconciled when the v3.8.1 prose foldin + register grades landed (a score-stale-high inversion of the classic prose-stale gap). Flag for operator ratification; directive default is 'stored' and the evidence here strongly supports it.",
+    "operator_ratification_required": true
+  },
+  "violence_manifest_entry_spec": {
+    "_label": "DRIFT-CORRECTION entry (NOT a prose straggler — prose already folded). 16-key shape matching existing pending[] entries. SPEC ONLY — not applied this session. Add at flush IF operator ratifies stored.",
+    "objection_id": "violence-as-reductio",
+    "tier": 3,
+    "category": "Structural/Pragmatic",
+    "status": "PENDING_DRIFT_CORRECTION",
+    "added_in_session": "v3_8_14_backward_gap_audit",
+    "regrade_record": "regrade_violence_as_reductio_v3_8_0.json (stored canonical; net_effect = no axis mutation)",
+    "prose_file": "violence_as_reductio_long_v3_8_1.txt (ALREADY FOLDED on corpus/combined/jsx — NO prose op)",
+    "grade_summary": "long 83.8 B / medium 82.2 B / short 80.1 C (from stored; corrects build's inflated 86.2 / 84.6 / 82.5)",
+    "rebuttal_strength_const": "REPLACE {v.87 s.85 c.87 r.86 a.86} -> {v.86 s.82 c.84 r.84 a.83} on combined.html AND index_v3_8_0.html",
+    "sources_op": "NONE",
+    "sources_value": null,
+    "ledger_patch": "grades['violence-as-reductio'].axes := {v.86 s.82 c.84 r.84 a.83}; medium/short already canonical (82.2/80.1); grade_source note already says 83.8 — no edit",
+    "surfaces": [
+      "combined.html const",
+      "index_v3_8_0.html const",
+      "rebuttal_grading_ledger_v3_8_0.json axes"
+    ],
+    "short_medium": "auto-correct at render once const fixed; no stored short/medium edit; ledger short/medium already canonical",
+    "hazard": "const region only: grep -n REBUTTAL_STRENGTH -> awk slice -> node-eval (Function ctor). NEVER view/unfiltered-grep combined/index hazard literals; rwe.html line 317 awk-slice-only.",
+    "note": "Deterministic REPLACE to stored; no re-grade. Sub-band on long/medium (B unchanged) but FIXES a visible short-badge B->C error. Requires operator ratification of stored as canonical before applying."
+  },
+  "flush_recommendation": {
+    "verdict": "HOLD",
+    "rationale": "Two DRIFT nodes found (violence-as-reductio tuple; negative-util-aggregation render-posture). Neither is in the 6-node deferred flush batch, so a six-only flush is mechanically safe and does not worsen them — but shipping the six and deferring these incurs the exact second-bump this audit exists to prevent.",
+    "track_A_violence_bundle_into_flush": "RATIFY canonical = stored. Add the violence drift-correction entry (spec above) to the manifest; flush the 6 deferred + violence under ONE MINOR bump (counts stay 81/35/81; no invariant-block entry revised; grades render-time). Request index_v3_8_0.html upload to fix index const parity (expected identical drift).",
+    "track_B_negutil_dedicated_render_pass": "Schedule separately. Recommended: honor held via a per-node held-grades override in depthModifiedRSI. Alternative: abandon held + reconcile ledger note. Code-architecture change — do NOT fold into the content flush. Non-flush-blocking; may defer to a future minor.",
+    "minimum_action_if_shipping_six_now": "AT LEAST bundle Track A (violence). Leaving the violence const/ledger.axes at 86.2 guarantees a separate violence bump later and a visibly wrong short badge (B instead of C) in the interim."
+  },
+  "gates": {
+    "G1_read_only_no_mutation": "PASS — zero mutations to /mnt/project; reads + /home/claude scratch slices only.",
+    "G2_hazard_literals_untouched": "PASS — MAP_GRAPH_DATA / DEP_GRAPH_DATA / MAP1_TRANSITIONS / rwe-data never viewed or unfiltered-grepped. Const via awk-slice (5546-6128) + node-eval; render fn via awk-slice (6118-6230); all other checks grep -cF (count-only) or json.load.",
+    "G3_one_deliverable": "PASS — single audit report + protocol state file."
+  }
+}
