@@ -1,0 +1,137 @@
+{
+  "session_id": "v3_9_k66_clusterD_indigenous",
+  "session_class": "Max (archetype coverage-check / triage adjudication)",
+  "date": "2026-06-04",
+  "outcome": "NO-CARRIER / NO-FOLD",
+  "headline": "Coverage-check NEGATIVE. The indigenous-philosophy defender register does NOT genuinely diverge from canonical: the committed-decolonial deployment is closed move-for-move at parent strength across all three registers. No carrier authored; no Cowork fold; v3.9 archetype-variant arc closes at v3.9.2; no v3.9.3 ships.",
+  "deliverable": "This state file (the documented coverage-check finding). Per Exchange 23 §1, a short no-fold state file is the ratified-legitimate outcome when the canonical close already does the candidate-divergence work at parent strength.",
+  "adjudication": {
+    "gate_applied": "Coverage-check canonical FIRST, author LAST (Exchange 23 §1). Triage card: needs_variants FALSE, archetypes [], est_effort none, 'Contestable; flagged rather than granted.' NO-CARRIER is a ratified-legitimate outcome; do not author to justify the session.",
+    "candidate_divergence_per_triage": "Defender register = the committed decolonial interlocutor ('your framework is colonial/Western, it doesn't apply to us'). Flagged candidate: naming the genetic move + the standing question BEFORE content engagement.",
+    "finding": "Both candidate-divergence moves are DEPLOYED in the canonical at parent strength; the committed-decolonial deployment is closed move-for-move.",
+    "coverage_map": {
+      "genetic_move_naming": "DEPLOYED — long (Dismantle) names it outright ('where a belief comes from says nothing about whether it is true') and shows it cuts BOTH ways (antinatalist pessimism has its own genealogy), which directly pre-empts the defender's framework-origin disqualifier. Present-compressed in medium ('cuts the same way').",
+      "standing_imperialism_question": "DEPLOYED IN ALL THREE REGISTERS — self-applying anti-imposition ('the logic forbidding the imposition of a life forbids the imposition of a worldview ... The view is self-applying'), present even in the 557-ch short, essentially co-equal with the content move. The defender's LEAD charge ('you have no standing to apply this to us') is fully closed at parent strength; front-loading it is cosmetic re-sequencing of identical content, not divergence.",
+      "content_engagement_asymmetry_decoupling": "DEPLOYED (all registers) — sufferer-appears-under-any-ontology / no-web-can-consent / 'the frame redescribes the act, it does not supply a consenter or dissolve the sufferer' / burden-is-to-license-not-redescribe.",
+      "concede_heavily_and_route_residual": "DEPLOYED (medium + long) — the honest rival-axiology concession ('not a redescription but a rival axiology ... against that reading it ties rather than wins; portable across descriptions, not across every axiology') IS the larger concession the kickoff specified, and it routes the genuine ontological residue to its terminus in place. A defender slot re-making this concession re-deploys canon.",
+      "anti_strawman_guard": "DEPLOYED — 'I will not answer by debunking'; reverence-is-a-fact-about-the-tradition; explicit refusal to call life-affirmation 'coping.' The care-flag's hardest constraint (never strawman the tradition as naive 'life is good') is already honored in-canon."
+    },
+    "sole_genuinely_absent_candidate": {
+      "move": "The OFFENSIVE monolith / re-essentialization turning-the-tables: 'invoking indigenous-philosophy-values-life re-essentializes diverse traditions into a single life-affirming bloc and ventriloquizes them to defend natalism — itself the colonial flattening the objection charges.'",
+      "verdict": "NOT GRANTED.",
+      "reasons": [
+        "D2 — the diversity material is latent in the node's NOTE but deployed there DEFENSIVELY (disclaiming representational authority). Weaponizing it OFFENSIVELY against the interlocutor is a different speech act, arguably a NEW move absent from parent rather than a legitimate re-aim. A defender slot is re-aim-only; an absent move violates D2.",
+        "Care-flag hazard — this is the single move most apt to commit the node's signature error. The care-flag warns that letting dodge-naming 'slide into dismissing the cultural critique wholesale ... would itself be the colonial move the objection charges.' Charging a decolonial interlocutor with 're-essentializing your own peoples' is a high-wire move that easily reads as condescending/dismissive.",
+        "Payload partly already carried — the canonical MEDIUM dissolves the life-affirming-monolith framing implicitly by naming anti-birth currents WITHIN non-Western traditions (al-Ma'arri, the Cathars, strands of Jain and Buddhist thought): 'cross-cultural disagreement shows the question is hard.' The monolith's payload (the framing is false) is thus already partly in-canon."
+      ]
+    },
+    "contrast_with_granted_defender_slots": "Inverse of privileged-first-world. That slot was GRANTED and earned its keep because its sharp closers (standpoint-disqualifies-the-natalist-FIRST boomerang; premise-concession trap) were NOT already foregrounded in its canonical at defender strength — a genuine re-aim adding punch. indigenous-philosophy's canonical ALREADY foregrounds the genetic-naming and the self-applying anti-imposition cleanly (the latter in all three registers), so a defender re-aim is redundant. This is exactly why the triage rated it needs_variants FALSE while privileged-first-world was in the authoring set."
+  },
+  "verified_facts": {
+    "mount_state_at_open": {
+      "corpus_efilist_argument_library_v3_8_0.json": "md5 6ac568fcd2e9ba712063ded7d239ddb0 / 1302369 B — STALE (pre-A+B; corroborated by privileged_first_world.inherited_grade.ledger_md5_read citing the same md5). Does NOT match deployed post-C 9af9dd5c / 1326017. K65 stale-mount class.",
+      "jsx_efilist_argument_library_v3_8_0.jsx": "md5 2dd6d5c2ce33430bbbf9702d394bb189 / 1245444 B — STALE (pre-A+B). Does NOT match deployed 46e5a704 / 1272145.",
+      "ledger_rebuttal_grading_ledger.json": "md5 9b979e4e2a6f4b8c6200842045ea0f0d / 42750 B — MATCHES deployed (band-corrected, READ-ONLY). On-disk verified.",
+      "canon_project_canon_v37_26.json": "md5 3dd5a2b4045664cb71fd375ea553ad37 / 212334 B — MATCHES deployed (v37.26). On-disk verified.",
+      "surfaces_combined_and_index": "ABSENT from Library mount (Cowork-side surfaces). No fold this session, so not needed.",
+      "resolution": "indigenous-philosophy is tier-4 and untouched by clusters A/B/C — node content identical across stale-mount and deployed, confirmed by verbatim register-md5 match. The whole-file corpus md5 delta is entirely the absence of folded variants, NOT a content discrepancy on this node (adjudication-1 shape, same as K65 red-button). Deployed md5s govern any future fold."
+    },
+    "node": {
+      "id": "indigenous-philosophy",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "matched_by_id": 1,
+      "key_order": [
+        "id",
+        "tier",
+        "category",
+        "trigger",
+        "keywords",
+        "psychMechanism",
+        "diagnosis",
+        "confidence",
+        "note",
+        "responses",
+        "sources"
+      ],
+      "extra_keys_vs_red_button": [
+        "confidence",
+        "note"
+      ],
+      "register_md5_VERBATIM_MATCH_to_handoff": {
+        "short": "146496c429abe8474827daec8d708b55 / 557 ch — MATCH",
+        "medium": "27f84e83f4cc7298cabc435d75352920 / 2205 ch — MATCH",
+        "long": "675df750a82ab3b924b7ff1227b25c4a / 3080 ch — MATCH"
+      },
+      "note_field_read": "Care-flag in the corpus's own words: traditions enormously diverse, cannot be responsibly collapsed; entry identifies the structural challenge but claims NO representational authority; the Dismantle engages the structure while acknowledging limits; a fully adequate treatment needs specific traditions engaged by their own practitioners. This honest-limits posture is already in-canon and is part of why the offensive monolith move is hazardous to add.",
+      "archetypeVariants": "ABSENT (would have been a clean add). REMAINS ABSENT — no carrier authored."
+    },
+    "band_corrected_ledger_entry_indigenous_philosophy": {
+      "verification_read": "ledger md5 9b979e4e (this mount == deployed == relay).",
+      "axes": {
+        "v": 0.85,
+        "s": 0.8,
+        "c": 0.85,
+        "r": 0.81,
+        "a": 0.8
+      },
+      "short": {
+        "rsi_pct": 78.5,
+        "grade": "C"
+      },
+      "medium": {
+        "rsi_pct": 80.6,
+        "grade": "C"
+      },
+      "long": {
+        "rsi_pct": 82.2,
+        "grade": "B"
+      },
+      "headline_grade_long": "B",
+      "band_coherence": "82.2 in [82,88) — band-coherent. The kickoff's B-headline 'default' was an un-grounded assumption (made without the band-corrected ledger attached); it proves correct against the actual entry. Recorded here grounded, not assumed. NOT INHERITED (no variant authored); referenced for completeness only.",
+      "grade_action_this_session": "NONE — no variant => no inherit, no cold-grade. The Exchange-23 inherit-or-cold-grade decision is MOOT for cluster D (no body to grade)."
+    },
+    "deployed_verify_before_tips_NOT_USED_no_fold": {
+      "note": "Carried from Exchange 23 for the record only. NO fold this session, so no gate runs. These are the deployed-truth values a FUTURE fold would verify against.",
+      "main_commit": "097c5ac",
+      "combined.html": "f3870f6e86b91730048f6fdc1ef947bb / 2931550",
+      "index_v3_8_0.html": "6c2a670acfbfbfd717f97c7232f51ae5 / 2385163",
+      "corpus": "9af9dd5c24d7801e9f58ddc36353e9e7 / 1326017",
+      "jsx": "46e5a70492b1466fa82f1f229d0b1e9c / 1272145",
+      "ledger": "9b979e4e2a6f4b8c6200842045ea0f0d / 42750",
+      "canon_v37_26": "3dd5a2b4045664cb71fd375ea553ad37 / 212334"
+    }
+  },
+  "counts_NO_DELTA": {
+    "warning": "The kickoff's assumed deltas (av-nodes 16->17, variant bodies 39->40, carrier files 11->12) DO NOT APPLY — they presupposed a carrier. No carrier => NO delta. A future session must NOT apply these.",
+    "av_nodes": "16 (unchanged)",
+    "variant_bodies": "39 (unchanged)",
+    "v3_9_carrier_files": "11 (unchanged)",
+    "nodes": "81 (frozen)"
+  },
+  "version_and_canon_implication": {
+    "v3_9_archetype_variant_arc": "CLOSED at v3.9.2 (deploy 097c5ac, canon 37.26). indigenous-philosophy was the last archetype slot under consideration; coverage-check negative => the arc completes with no further carriers.",
+    "v3_9_3": "NOT SHIPPED — no fold, no deploy, no pin. Live pin remains v3.9.2.",
+    "canon": "Stays 37.26. No content fold => no MINOR required. OPTIONAL (Cowork/operator call): a narrative-only MINOR 37.26->37.27 could record 'v3.9 archetype-variant arc closed; indigenous-philosophy coverage-check negative, no-carrier ratified.' Proposed, not directed — bookkeeping, not content; no invariant-block revision.",
+    "frozen_invariants_untouched": "objection_count 81, tier_count 5, mechanism_count 35, all map scalars — untouched (no content change)."
+  },
+  "cowork_action_K66": "NONE. There is no K66 fold to run — no carrier, no surface mutation, no deploy, no pin. The only possible Cowork touch is the OPTIONAL narrative canon MINOR above, at the operator's election; otherwise K66 closes in-chat with this state file.",
+  "next_recommended_action": {
+    "horizon": "v3.9 RWE-surfacing — the real remaining v3.9 work (kickoff 'AFTER K66' + Exchange 23).",
+    "specifics": "Cowork QA flags BOTH-mode RWE cards still light on red-button-repugnant (and likely others). Next session = the v3.9 RWE render pass against v3_9_rwe_schema.json / real_world_examples_schema_v1_7.json. Confirm scope-closure against v3_9_inventory.json at open; verify mount freshness (panel corpus is pre-A+B 6ac568fc).",
+    "class": "Confirm at open. RWE surfacing/render-propagation is likely High/Cowork-routed; any RWE-card AUTHORING is Max."
+  },
+  "open_questions": [
+    "PARKED (Exchange 23, yours to propose post-D): whether cluster-C/D variant cold-grades enter the ledger or stay carrier-local. NOTE: cluster D produced NO cold-grade (no carrier), so this is now C-only — the red-button defender (long 82.9/B) and red-button sophisticate cold-grades are the only carrier-local grades pending a ledger-fold decision.",
+    "DEFERRED maintenance (from privileged_first_world.boundary_observation_deferred): parent long rsi 88.0 displayed B while the band rule is A>=88 inclusive-after-rounding — likely a raw pre-round ~87.96 displayed as 88.0, or a latent ledger band/display inconsistency. v3.8 frozen; not acted on; future maintenance pass.",
+    "OPERATOR: panel re-attach of corpus + jsx recommended — current mount is pre-A+B (corpus 6ac568fc / jsx 2dd6d5c2), two-plus folds behind deployed. Not blocking (deployed md5s govern; node content verbatim-verified), but a refresh removes the recurring stale-mount flag.",
+    "OVERRIDE NOTE for Josiah (IP owner): if you want the offensive monolith turning-the-tables built despite the D2 and care-flag-hazard reasons above, that is your call to make against my recommendation — it would be a deliberate, documented divergence, not a coverage-driven one."
+  ],
+  "k66_close_ratifications_cowork_side": {
+    "date": "2026-06-04",
+    "no_carrier": "ACCEPTED — operator AQ; coverage-map spot-checked empirically Cowork-side (self-applying anti-imposition verbatim in the 557-ch short register).",
+    "ip_owner_override_offensive_monolith": "DECLINED — operator AQ ('valid argument, committed meta-error; buys hazard for redundancy'). Arc stays closed.",
+    "canon_minor_37_27": "RATIFIED — dual-purpose: re-point stale-false next_rec (dead cluster-D fold -> v3.9 RWE-surfacing horizon) + record arc closure. Narrative-only; invariants untouched.",
+    "sole_copy_resolution": "This file committed to efilist repo at K66 close (was chat-only)."
+  }
+}
