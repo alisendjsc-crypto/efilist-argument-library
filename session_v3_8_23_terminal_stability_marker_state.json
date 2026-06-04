@@ -1,0 +1,55 @@
+{
+  "session_id": "v3_8_23_terminal_stability_marker_decision",
+  "class": "MAX (in-chat, library-Claude, read-only)",
+  "date": "2026-06-03",
+  "effort": "Opus-Max (confirmed at open)",
+  "objective": "Decide and author the v3.8 terminal-stability marker, gated on a read-only coherence audit. No mutation in-chat; Cowork stamps.",
+  "decision": "STAMP. v3.8.22 = terminal-stable release of the v3.8 line. Audit 5/5 clean against live artifacts.",
+
+  "completed_tasks": [
+    "Empirically verified state; caught and resolved a mid-session mount re-sync (v37.17 -> v37.18, ledger solipsism 85.2 -> 87.0) confirming the mount now holds the ACTUAL v3.8.22 release, not a proxy.",
+    "Ran the 5-point coherence audit read-only against live v3.8.22; all PASS.",
+    "Authored the terminal_stability_marker canon block (for Cowork splice).",
+    "Flagged two prompt-stance inaccuracies (Map1=78 not 81; corpus reaches A, high-B is residual-only) and corrected them in the marker.",
+    "Wrote the Cowork stamp-handoff (MINOR splice + scalar reconfirm + open_questions hygiene + deploy/pin; K55 library-pin.py held separate)."
+  ],
+
+  "verified_facts": {
+    "canon": "project_canon_v37_18.json (v37.18); next_recommended_session = v3_8_x_terminal_stability_marker_decision; v3_8_22_solipsism_cowork_fold logged; terminal_stability_marker NOT yet present; project_terminal_state = archived_v3_7_6_stable (distinct prior archive).",
+    "counts": "objections 81 / tiers 5 (13/17/14/31/6) / mechanisms 35 (map-layer). corpus == ledger (81/81, ungraded=[]) == depgraph obj-nodes == canon map/dep obj-nodes.",
+    "map_scalars_canon_locked": "Map1 78 nodes / 2886 edges; MAP_GRAPH 116 nodes (81 obj + 35 mech) / 140 links; DEP_GRAPH 94 nodes (81 obj + 13 premise) / 254 links. NOT re-derived in-chat (combined.html hazard).",
+    "depgraph_integrity": "94 nodes / 254 links; 0 dangling; totalCount==strong+weak for all; 0 objections missing psychMechanism.",
+    "grades": "81/81 graded. Headline(long) A:26 / B:54 / C:1 (lone C = masochist-counterexample 80.0). Max 95.0 performative-contradiction. Residuals high-B: solipsism 87.0, joy 84.6, transhumanist 84.0, life-gift 83.0, love-beauty-art 82.3.",
+    "register_spotcheck": "solipsism short scopes 'defeats not as metaphysics — nothing can — but as a license'; long 'dissolves'. No over-claim.",
+    "validator": "v3prime_validator_v1_7.py --self-test PASS (exit 0); corpus PASS, 0 violations, exit 0."
+  },
+
+  "honest_residuals_named": [
+    "solipsism dissolves-not-defeats the global skeptic (no metaphysical defeat possible; defeat only as license-to-procreate)",
+    "asymmetry-dependent amplifiers (positive-states cluster) openly contingent on Benatar's asymmetry as load-bearing spine"
+  ],
+
+  "deliverables": [
+    "v3_8_23_terminal_stability_marker_DECISION.md",
+    "terminal_stability_marker_block.json",
+    "v3_8_23_coherence_audit_findings.json",
+    "v3_8_23_cowork_stamp_handoff.md",
+    "session_v3_8_23_terminal_stability_marker_state.json"
+  ],
+
+  "next_recommended_action": "Cowork: splice terminal_stability_marker (MINOR v37.18->v37.19, additions-only) + reconfirm Map1=78/mech=35/edges=2886 on live combined.html + clear 2 stale open_questions + optional 'v3.8 stable release' chrome + commit/redeploy/curl x3/pin GREEN. After splice: v3.8 FROZEN; default content path = open a v3.9 line via new-objection-intake bundle (MAJOR + terminus-reopening) only when candidates exist. K55 library-pin.py fix as a separate quiet pass.",
+
+  "open_questions": {
+    "RESOLVED": [
+      "v3.8 terminal-marker decision (STAMP; this session)",
+      "POPULATE->UPDATE lesson (v3.8.22; logged; no action)"
+    ],
+    "ACTIVE": [
+      "Two canon open_questions.active (solipsism + joy enrichments) are STALE post-fold -> Cowork moves to RESOLVED in the splice.",
+      "K55 library-pin.py reposition-on-bump + --date (Cowork, separate)."
+    ]
+  },
+
+  "canon_bump_in_chat": "NONE (read-only). Cowork stamps MINOR at handoff.",
+  "compact_log_entry": "v3_8_23_terminal_stability_marker_decision (2026-06-03, in-chat read-only): audit 5/5 PASS against live v3.8.22; STAMP decision + terminal_stability_marker block + Cowork handoff authored; 0B canon delta in-chat; 2 prompt-stance corrections (Map1=78; corpus reaches A)."
+}

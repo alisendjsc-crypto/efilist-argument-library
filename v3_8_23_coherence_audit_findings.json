@@ -1,0 +1,63 @@
+{
+  "audit_id": "v3_8_23_coherence_audit",
+  "session": "v3_8_23_terminal_stability_marker_decision",
+  "date": "2026-06-03",
+  "mode": "read-only, hazard-disciplined (grep -n / targeted json.load / awk-slice; no full-view of canon, corpus, combined.html, ledger)",
+  "audited_state": {
+    "canon": "project_canon_v37_18.json (v37.18; last_updated 2026-06-03 by v3_8_22_solipsism_cowork_fold)",
+    "corpus": "efilist_argument_library_v3_8_0.json (version 3.8.0 filename frozen; content = v3.8.22; generated 2026-05-30; objections re-synced)",
+    "ledger": "rebuttal_grading_ledger.json (status: REAL GRADES; 81 entries)",
+    "resync_note": "Mount re-synced to v3.8.22 mid-session. Tells: project_canon_v37_17.json (193660B at first read) was replaced by project_canon_v37_18.json (194514B); solipsism ledger long_rsi moved 85.2 (axes .88/.85/.86/.85/.82) -> 87.0 (axes .89/.88/.86/.88/.84), the expected v/s/r/a bump from the reciprocity strengthen. So checks below reflect the ACTUAL v3.8.22 release, not a proxy."
+  },
+  "verdict": "CLEAN — 5/5 checks pass. STAMP warranted.",
+
+  "checks": {
+    "1_counts_coherent": {
+      "result": "PASS",
+      "objection_count": {"corpus_objections": 81, "corpus_totalEntries": 81, "ledger_grades": 81, "ledger_ungraded": 0, "depgraph_objection_nodes": 81, "canon_map_graph_objection_nodes": 81, "canon_dep_graph_objection_nodes": 81, "coherent": true},
+      "tier_count": {"value": 5, "split": {"1": 13, "2": 17, "3": 14, "4": 31, "5": 6}, "sum": 81},
+      "mechanism_count": {"value": 35, "source": "map-layer (MAP_GRAPH mechanism nodes), canon-locked", "independently_re_derived_this_session": false, "reason": "would require parsing the combined.html mega-literal (hazard); trusted via canon + deploy integrity", "cowork_reconfirm": true},
+      "map_scalars": {"map1_node_count": 78, "map1_edge_count_total": 2886, "map_graph_nodes": 116, "map_graph_links": 140, "dep_graph_nodes": 94, "dep_graph_links": 254},
+      "correction": "Prompt audit target said '81 map nodes'. Live canon Map 1 = 78 nodes (version-tracked 77->78 at v27.0). The 81 is MAP_GRAPH's objection-node count. Marker cites 78."
+    },
+    "2_no_orphans_dangling_outdegree": {
+      "result": "PASS",
+      "dependency_graph": {"nodes": 94, "node_types": {"premise": 13, "objection": 81}, "links": 254},
+      "dangling_links": 0,
+      "totalCount_eq_strong_plus_weak_mismatches": 0,
+      "objections_missing_psychMechanism": 0,
+      "note": "count==out-degree invariant holds across all 94 nodes; every link source/target resolves to an existing node."
+    },
+    "3_grade_coverage": {
+      "result": "PASS",
+      "graded": "81/81",
+      "ungraded": [],
+      "headline_basis": "long-form RSI; bands A>=88 / B[82,88) / C[76,82) / D<76",
+      "distribution_headline_long": {"A": 26, "B": 54, "C": 1},
+      "lone_C": {"id": "masochist-counterexample", "long_rsi": 80.0},
+      "stored_short_distribution": {"A": 7, "B": 43, "C": 25, "note": "75 stored; 6 derive-at-render"},
+      "stored_medium_distribution": {"A": 15, "B": 46, "C": 14, "note": "75 stored; 6 derive-at-render"},
+      "extrema_long_rsi": {"highest": [["performative-contradiction", 95.0], ["epistemic-humility", 93.4], ["slippery-slope-eugenics", 93.0], ["bitter-childhood", 93.0], ["moral-particularism", 92.0]], "lowest": [["masochist-counterexample", 80.0], ["benatar-asymmetry-attack", 82.1], ["indigenous-philosophy", 82.2], ["love-beauty-art", 82.3], ["economy-population", 82.5]]},
+      "correction": "Prompt stance 'corpus tops out at high-B' is FALSE for the corpus (max 95.0; 26 A-nodes). High-B is the ceiling of the named RESIDUAL nodes only."
+    },
+    "4_register_coherence": {
+      "result": "PASS (spot-check)",
+      "solipsism": {"short_scopes_claim": true, "short_excerpt": "defeats solipsism not as a metaphysics — nothing can — but as a license to procreate", "long_uses": "dissolves", "over_claim_detected": false},
+      "joy_outweighs_harms": {"short_lead": "sadist-aggregation / utility-monster reductio (non-asymmetry front line)", "long_carries": "asymmetry / benatar / grant", "over_claim_detected": false},
+      "note": "dissolves-not-defeats and contingent-amplifier residuals are intact in the prose; short/medium do not out-claim the long."
+    },
+    "5_validator": {
+      "result": "PASS",
+      "self_test": {"exit": 0, "status": "all v3-prime + v1.6 attestation self-tests pass"},
+      "corpus_validation": {"input": "efilist_argument_library_v3_8_0.json", "record_count": 136, "quote_bearing_record_count": 96, "violation_count": 0, "verdict": "PASS (zero blocking violations across v3-prime and v1.6 attestation rules)", "exit": 0}
+    }
+  },
+
+  "verification_boundary": "Corpus / ledger / dependency-graph / validator: directly verified at v3.8.22. combined.html map-layer scalars (Map1=78, mech=35, edges=2886): canon-locked + deploy-integrity-corroborated (pin==live==15ffaebf, 0 residual), NOT re-derived in-chat. Cowork reconfirms on live build at splice.",
+
+  "incidental_findings_non_blocking": {
+    "stale_open_questions": "canon open_questions.active still lists 'solipsism_p_zombie_reciprocity' and 'joy_outweighs_harms_sadist_aggregation_reductio' as DEFERRED/'not yet authored'. Both were folded (v3.8.22 solipsism, v3.8.21 joy). These are stale -> move to RESOLVED in the same MINOR splice (canon hygiene).",
+    "prompt_scalar_imprecision": "Prompt audit target '81 nodes / 35 mech / 2886 edges' for the map: the 81 is wrong for Map 1 (which is 78). Corrected in marker + decision.",
+    "prompt_ceiling_imprecision": "Prompt stance 'corpus tops out at high-B' is inaccurate for the corpus (26 A-nodes). Corrected in marker + decision."
+  }
+}
