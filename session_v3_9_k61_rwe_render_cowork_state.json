@@ -1,0 +1,59 @@
+{
+  "session": "v3_9_k61_rwe_render_cowork",
+  "date": "2026-06-03",
+  "repo_branch": "v3.9.x",
+  "baseline_tip": "4fb5a96",
+  "scope": "RWE card-render COMMIT-ONLY; NO deploy, NO pin move; live/pin HELD 15ffaebf/2,391,247B (verified curl -sL)",
+  "probe_corrections_cc_class": [
+    "RWEs are corpus TOP-LEVEL realWorldExamples (136 instances, 29-field schema, attached_objections = dicts w/ per-node fit + rationale; 171 attachments, 78/81 covered, max 27, uncovered: eliminativism/solipsism/suffering-as-meaning) - NOT per-node",
+    "K59 'combined 6 hits' were 2 provenance-prose mentions; render-absent confirmed; index 0; jsx declared-unused literal (render-only gap confirmed)",
+    "jsx RWE literal is redump-exact (indent=2, ensure_ascii=False) AND byte-identical to corpus redump: 509,888 B md5 b1e45c85 - single-source splice"
+  ],
+  "aq_rulings": [
+    "scope: just-depressed sophisticate fold DEFERRED to K62 as ONE 5-carrier cluster-B set (fold-unit attestation atomicity > gate-closer earliness); carrier side-car rescued to repo root UN-FOLDED",
+    "payload: FULL 136-instance literal x2 surfaces (four-surface identity sentinel; trimmed 210,238B projection rejected - shape fork + dropped fields; gzip moots wire cost)",
+    "render: count-badge->expand, LAZY-MOUNT on first expand (no hidden-mounted DOM), capped reveal 6 + show-N-more, uniform across attested nodes; polarity tag display-only (filter -> sort_feature_spec later)"
+  ],
+  "mutations": {
+    "combined.html": {
+      "old": "c697653d/2,399,249B",
+      "new": "27f59f45f4e2c6c682832b16a920a054/2,914,217B",
+      "delta": 514968
+    },
+    "index_v3_8_0.html": {
+      "old": "65c92080/1,852,772B",
+      "new": "8266adceaf6a6f9e23e16fd853a74b47/2,367,740B",
+      "delta": 514968
+    },
+    "efilist_argument_library_v3_8_0.jsx": {
+      "old": "68951cb1/1,253,447B",
+      "new": "08307ff9882fdde8560eb2a29552a2a3/1,256,557B",
+      "delta": 3110,
+      "note": "render-only: RWE_BY_NODE + RweBlock + docstring + usage; lit md5s HELD; balance-checked (no JSX checker in sandbox)"
+    },
+    "project_canon_v37_22.json": {
+      "new": "69a42329bf3bde986af3917a9bd85b15/207,919B",
+      "paths": "exactly 5 (mirrors 20->21); invariants 8727787c byte-stable; slr 25->26"
+    }
+  },
+  "untouched": {
+    "corpus": "3cda0af38489321b64208393e9a219fa",
+    "ledger": "3b71a3e97c363d62261396c666c6c981",
+    "canon_v37_21": "49602d03c9ba58171f633c81731e43d0"
+  },
+  "render_contract": {
+    "anchors": [
+      "CSS before D5 comment",
+      "data after OBJECTIONS ;",
+      "JS before function archetypePills",
+      "hook ${rweBlock(obj)} at single call-site"
+    ],
+    "qa_notes": [
+      "badge row sits between archetype pills and response-box; panel expands under badge (single-anchor decision; flag at checkpoint QA)",
+      "jsx RweBlock renders as first detail section above KEYWORD TRIGGERS (placement parity divergence, non-served surface)",
+      "heavy node (27) opens capped at 6 + show-21-more"
+    ]
+  },
+  "validator": "pre PASS (self-test + corpus); post logically redundant - corpus/ledger byte-untouched (K56 posture); node --check PASS x2 post-build",
+  "next": "K62 = cluster-B fold, ALL FIVE sophisticate carriers as one set onto v3.9.x; checkpoint unchanged (merge->deploy->ONE pin move)"
+}

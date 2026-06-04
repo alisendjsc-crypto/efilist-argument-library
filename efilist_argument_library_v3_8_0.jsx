@@ -4,7 +4,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
  * EFIList Argument Library v3.7
  * Full-Feature React Component
  * 
- * 81 objections across 5 tiers, 243 pre-built responses (3 depth levels on all 81). archetypeVariants authored on 11 nodes (sophisticate/defender/drifter/blended), surfaced via the in-place archetype toggle.
+ * 81 objections across 5 tiers, 243 pre-built responses (3 depth levels on all 81). archetypeVariants authored on 11 nodes (sophisticate/defender/drifter/blended), surfaced via the in-place archetype toggle. 136 real-world deployment instances (REAL_WORLD_EXAMPLES) surfaced via per-card RWE disclosure (count-badge, lazy-mount, capped reveal; K61).
  * 4 cross-cutting registered moves (3 defensive_move + 1 substantive_position; Andreas canonize cascade closed 4k-zzzzz).
  * Integrated Psychological Mechanism Web + Philosophical Dependency Graph (D3.js force-directed graph).
  * Confidence indicator system with methodological notes.
@@ -7722,6 +7722,43 @@ const REAL_WORLD_EXAMPLES = [
   }
 ];
 
+/* v3.9 K61: RWE per-card disclosure. Lazy-mount on expand; capped reveal at 6. */
+const RWE_BY_NODE = (() => {
+  const m = {};
+  REAL_WORLD_EXAMPLES.forEach((inst) => (inst.attached_objections || []).forEach((att) => {
+    (m[att.objection_id] = m[att.objection_id] || []).push({ inst, att });
+  }));
+  return m;
+})();
+
+function RweBlock({ objId }) {
+  const rows = RWE_BY_NODE[objId] || [];
+  const [open, setOpen] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+  if (!rows.length) return null;
+  const upto = showAll ? rows.length : Math.min(6, rows.length);
+  return (
+    <div className="ef-section" style={{ marginBottom: 16 }}>
+      <button onClick={() => setOpen(!open)} style={{ fontFamily: "inherit", fontSize: 11, letterSpacing: 1, background: open ? "#8b0000" : "#111", color: open ? "#fff" : "#c9c4bc", border: "1px solid #8b0000", padding: "3px 10px", cursor: "pointer" }}>RWE · {rows.length}</button>
+      {open && (
+        <div style={{ marginTop: 8, borderLeft: "3px solid #8b0000", padding: "2px 0 2px 12px" }}>
+          {rows.slice(0, upto).map((row, ri) => (
+            <div key={row.inst.instance_id + "-" + ri} style={{ border: "1px solid #222", background: "#0d0d0d", padding: "10px 12px", margin: "8px 0", fontSize: 13, lineHeight: 1.55 }}>
+              <div style={{ fontSize: 10, letterSpacing: 1, color: "#8a857d", textTransform: "uppercase", marginBottom: 6 }}>{row.inst.source_publication} · {row.inst.source_date} · {String(row.inst.speaker_type).replace(/_/g, " ")} <span style={{ border: "1px solid #444", padding: "1px 6px", marginLeft: 6 }}>{row.inst.instance_polarity}</span></div>
+              {row.inst.short_quote_under_15_words ? <div style={{ color: "#f0ebe5", margin: "4px 0 6px 0" }}>“{row.inst.short_quote_under_15_words}”</div> : null}
+              <div style={{ color: "#c9c4bc", margin: "4px 0" }}>{row.inst.paraphrased_summary}</div>
+              {row.att.attachment_rationale ? <div style={{ color: "#9a958d", margin: "4px 0", fontStyle: "italic" }}>Attaches here: {row.att.attachment_rationale}</div> : null}
+              <div style={{ color: "#8a857d", fontSize: 11, margin: "4px 0" }}>MOVE: {row.inst.rhetorical_move_observed}</div>
+              <div style={{ marginTop: 6, fontSize: 11 }}><a href={row.inst.source_url} target="_blank" rel="noopener noreferrer" style={{ color: "#c0392b", marginRight: 12 }}>source</a>{row.inst.archive_url ? <a href={row.inst.archive_url} target="_blank" rel="noopener noreferrer" style={{ color: "#c0392b" }}>archive</a> : null}</div>
+            </div>
+          ))}
+          {!showAll && rows.length > 6 ? <button onClick={() => setShowAll(true)} style={{ background: "#111", color: "#c9c4bc", border: "1px dashed #444", padding: "3px 10px", cursor: "pointer", fontFamily: "inherit", fontSize: 11 }}>show {rows.length - 6} more</button> : null}
+        </div>
+      )}
+    </div>
+  );
+}
+
 const GRAPH_DATA = {
   "nodes": [
     {
@@ -9803,6 +9840,7 @@ export default function EFIListArgumentLibrary() {
 
                     {isOpen && (
                       <div className="ef-detail" style={{ background: "#0f0f0f", padding: "20px 18px", marginBottom: 2, border: `1px solid ${tierInfo.color}33`, borderTop: "none" }}>
+                        <RweBlock objId={obj.id} />
                         <div className="ef-section" style={{ marginBottom: 16 }}>
                           <div className="ef-section-label" style={{ fontSize: 9, color: "#555", letterSpacing: 2, marginBottom: 6 }}>KEYWORD TRIGGERS</div>
                           <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>

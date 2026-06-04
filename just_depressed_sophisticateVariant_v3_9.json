@@ -1,0 +1,75 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "just-depressed",
+  "built_in_session": "v3_9_clusterB_sophisticate_empirical",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all FOUR built surfaces (corpus JSON / JSX / combined.html / index_v3_8_0.html); NOT applied to corpus; no canon bump in-chat. SOPHISTICATE SLOT ONLY (this cluster). Defender slot was built in Cluster A (just_depressed_defenderVariant_v3_9.json, session v3_9_clusterA_defender_dodge). Folds onto branch v3.9.x.",
+  "checkpoint_gating": true,
+  "intra_node_route_closed": true,
+  "parent_refutation_summary": "Core (tier 1, Emotional/Reflexive; psychMechanism = TMT distal defense / ad hominem / pathologization). The parent long (6196 chars) carries the full apparatus diffusely; this slot owns the EPISTEMIC half the defender slot routed out: (a) the smuggled premise — that depression distorts toward falsehood while cheerfulness sees clearly — is unwarranted; (b) the only systematic, well-established mood-linked distortion of life-appraisal runs UPWARD (optimism bias; positive-illusions literature defends it on adaptiveness, not accuracy, so the cheerful baseline is the documented distortion); (c) depressive realism is narrow/contested and is explicitly NOT leaned on; (d) the symmetric overreach 'depression sees truth' is disclaimed (severe depression under-values); (e) the decoupling spine — validity of the asymmetry/consent arguments is computed mood-independently; the only legitimate objection-form is to exhibit a specific mood-driven distorted premise, which the deflection never does.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "rebuttal_grading_ledger.json grades['just-depressed'] (key-path; verified this session)",
+    "verification_read": "ledger md5 3b71a3e97c363d62261396c666c6c981; corpus md5 6ac568fcd2e9ba712063ded7d239ddb0; both re-verified 2026-06-04 in v3_9_clusterB_sophisticate_empirical (match clusterA defender carrier attestation).",
+    "axes": {
+      "v": 0.86,
+      "s": 0.82,
+      "c": 0.86,
+      "r": 0.84,
+      "a": 0.83
+    },
+    "short": {
+      "rsi_pct": 80.5,
+      "grade": "C"
+    },
+    "medium": {
+      "rsi_pct": 82.6,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 84.2,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B; short 80.5/C, medium 82.6/B, long 84.2/B). The sophisticate variant was NOT independently graded; it inherits the parent headline-long B per ratified policy D6, independent of the C-grade short. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "sophisticate": "The defender slot handled the actor; this slot handles the framework, because the sophisticate does not say get-help. He advances a real epistemic claim: that affective state is a defeater, that depressive cognition systematically distorts the very judgments the asymmetry and consent arguments rest on, so the conclusion is an artifact of clinical mood rather than a truth-tracked inference. That is the only version of 'you're just depressed' worth answering, and it is answerable. A defeater has to be directional and documented, and the literature documents exactly one systematic, mood-linked distortion of how people appraise their own lives, and it runs upward. Optimism bias and the positive-illusions program (Taylor and Brown) find that mildly inflated, self-flattering belief is the signature of mental health, and that more accurate self-appraisal correlates with depression; the field's own defense of these illusions is that they are adaptive, not that they are accurate. Concede that and the cheerful baseline is the documented distortion wearing the costume of normalcy, and the defeater, taken at full strength, disqualifies the optimist's read of life's worth first and hardest. Note what this does not do. It does not lean on depressive realism: that finding is narrow, contested, and a sophisticate who reached for it would be cherry-picking the one result that flatters him, which is a different objection's failure mode, not this slot's argument. Nor does it claim depression sees truth; severe depression under-values through anhedonia and hopelessness as surely as optimism over-values. The point is strictly the dissociation of accuracy from mood and the direction of the one robust bias. So the inversion neutralizes the objection and backfires on the one who pressed it, but it settles nothing about the asymmetry, because showing that optimism distorts is not showing that pessimism is correct. Here is where the framework closes it: validity is computed mood-independently by construction. A depressed evaluator and a euthymic one run the consent argument and the asymmetry by the identical standard; affect can shift which premises feel salient, but it cannot reach the validity of a structural inference. The legitimate form of the objection is therefore the only one that ever carried force: exhibit a specific load-bearing premise and show that despair, not reason, produced it. Do that and you are doing premise-criticism, which is welcome and is the sophisticate's proper terrain. Decline to, and you have inferred falsity from etiology, which is the fallacy you charged the pessimist with, now in your own hands."
+  },
+  "slots_not_built": {
+    "defender": "BUILT in Cluster A (just_depressed_defenderVariant_v3_9.json, session v3_9_clusterA_defender_dodge) — not in this file. Defender owns the bad-faith dodge: dodge-as-subject-change, the get-help/why-don't-you-kill-yourself tell, the minimal boomerang-with-seam, the ~1-in-100 good-faith concession.",
+    "drifter": "NOT BUILT — collapses to canonical (triage rationale): the casual 'you're just down' read is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B (short 80.5/C noted, non-blocking; D6 inherits headline-long).",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. Single sophisticate slot in this cluster; defender slot was built in Cluster A.",
+    "distinctness_note": "Distinctness is by PARTITION (the misanthropic-carrier method: full parent content preserved across the archetype set, redistributed by which interlocutor triggers which move). The sophisticate isolates the EPISTEMIC-DEFEATER treatment — affective state as a candidate defeater; the directional-distortion inversion (optimism bias / positive illusions, defended on adaptiveness not accuracy); the explicit depressive-realism disclaimer; the symmetric-overreach disclaimer; and the mood-independence-of-validity decoupling spine. The defender's bad-faith apparatus (the get-help/kill-yourself tell, the dodge-naming lead) is NOT reproduced here (it is the defender slot's deployed work). No move is introduced that is absent from the parent long + diagnosis."
+  },
+  "slot_attestation": {
+    "sophisticate": {
+      "authored": true,
+      "lead_point": "Raise the bar from ad hominem to a genuine epistemic-defeater claim (affect systematically distorting the truth-tracking that the asymmetry/consent arguments rest on) — the only version worth answering — then INVERT it: the one systematic, documented mood-linked distortion of life-appraisal runs upward (optimism bias / positive illusions), defended in its own literature on adaptiveness not accuracy, so the defeater disqualifies the optimist's read first and hardest.",
+      "concede_route": "Concede arguendo that affect CAN in principle distort judgment (that is what makes the sophisticate's claim worth engaging, unlike the defender's dodge). DISCLAIM two overreaches inside the slot: (1) does NOT lean on depressive realism (narrow/contested; leaning on it is cherry-picking → the cherry-picking-worst failure mode); (2) does NOT claim 'depression sees truth' (severe depression under-values via anhedonia/hopelessness). Seam: the inversion NEUTRALIZES the objection and backfires, but does NOT prove the asymmetry true.",
+      "register": "analytic / empirical-rigorous (direct)",
+      "char_count": 2648,
+      "D2_status": "re-aim only; no move absent from parent. Re-aims the parent long's epistemic half (smuggled-premise analysis, directional-distortion inversion, positive-illusions, depressive-realism disclaimer, decoupling) to the framework-level interlocutor. The decoupling spine (validity computed mood-independently; defeat the structure or concede) is the parent's own 'truth fully decoupled from arguer's wellbeing' line re-aimed, NOT the literal asymmetry-decoupling mandate (which governs transhumanist/abolition nodes) misapplied here. No strength shift; inherits parent headline-long B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The epistemic-defeater treatment — affect-as-candidate-defeater, the directional-distortion inversion (optimism bias as the only documented systematic distortion; positive illusions defended on adaptiveness not accuracy), the depressive-realism disclaimer, the symmetric-overreach disclaimer, and the mood-independence-of-validity decoupling spine — is THIS slot's own work, DEPLOYED in the sophisticate slot.",
+    "routed_in": {
+      "from": "just-depressed::defender",
+      "residue_received": "Whether mood-congruent cognition actually functions as an epistemic defeater of the reasoning (the optimism-bias / positive-illusions / depressive-realism apparatus). The defender slot conceded this as 'a real and harder question', explicitly DID NOT argue it, and routed it here.",
+      "status": "RECEIVED + CLOSED. The open dependency the defender carrier flagged ('valid only once the sophisticate slot is authored in session_B') is hereby SATISFIED. Both slots of just-depressed = [sophisticate, defender] are now authored."
+    },
+    "same_node_route_note": "This is the INTRA-NODE route (defender -> sophisticate slot of the same objection), the misanthropic-pattern partition (sophisticate = framework/epistemic, defender = actor/bad-faith). It is the ONLY dangling intra-node route in the v3.9 set and it GATES the post-session_B v3.9 coherence checkpoint. With this file authored, the route is closed; the checkpoint's just-depressed precondition is met.",
+    "not_a_route": "The decoupling spine is the parent's own disclaimer ('the argument's truth is fully decoupled from the arguer's wellbeing'), preserved in substance — an internal layer reference, not an archetype route-out."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (sophisticate). Defender BUILT in Cluster A (granted, not omitted); drifter NOT BUILT (collapses to canonical); blended OMITTED. No padding.",
+    "D2": "Sophisticate re-aims the parent's epistemic-defeater half to the framework-level interlocutor; no move introduced absent from responses.long + diagnosis. Depressive realism explicitly NOT leaned on (mirrors the parent's own disclaimer). No strength shift; inherits parent headline-long B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered. archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated. Folds to responses.archetypeVariants.sophisticate per D3."
+  }
+}
