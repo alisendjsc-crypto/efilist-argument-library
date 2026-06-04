@@ -43,18 +43,18 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
 .search-box:focus { border-color: #8b0000; }
 .filters { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
 .filter-btn {
-  background: #181818; border: 1px solid #333; color: #666;
-  font-family: inherit; font-size: 10px; padding: 6px 12px;
+  background: #181818; border: 1px solid #333; color: #999;
+  font-family: inherit; font-size: 11px; padding: 6px 12px;
   cursor: pointer; letter-spacing: 2px; text-transform: uppercase;
   transition: all 0.15s ease;
 }
 .filter-btn:hover { border-color: #555; color: #999; }
 .filter-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
 .depth-controls { display: flex; gap: 6px; margin-bottom: 24px; align-items: center; }
-.depth-label { font-size: 10px; color: #555; letter-spacing: 2px; margin-right: 8px; }
+.depth-label { font-size: 10px; color: #777; letter-spacing: 2px; margin-right: 8px; }
 .depth-btn {
-  background: #181818; border: 1px solid #333; color: #666;
-  font-family: inherit; font-size: 10px; padding: 6px 14px;
+  background: #181818; border: 1px solid #333; color: #999;
+  font-family: inherit; font-size: 11px; padding: 6px 14px;
   cursor: pointer; letter-spacing: 2px; text-transform: uppercase;
   transition: all 0.15s ease;
 }
@@ -62,31 +62,61 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
 .depth-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
 /* v3.9 RWE real-world-examples per-card disclosure (K61). Lazy-mount on expand; capped reveal. */
 .rwe-row { margin: 8px 0 10px 0; }
-.rwe-badge { font-family: inherit; font-size: 0.8rem; letter-spacing: 0.04em; background: #111; color: #c9c4bc; border: 1px solid #8b0000; padding: 3px 10px; cursor: pointer; }
+.rwe-badge { font-family: inherit; font-size: 10px; letter-spacing: 0.04em; background: #111; color: #c9c4bc; border: 1px solid #8b0000; padding: 3px 10px; cursor: pointer; }
 .rwe-badge:hover, .rwe-badge.open { background: #8b0000; color: #fff; }
 .rwe-panel { margin-top: 8px; border-left: 3px solid #8b0000; padding: 2px 0 2px 12px; }
-.rwe-card { border: 1px solid #222; background: #0d0d0d; padding: 10px 12px; margin: 8px 0; font-size: 0.95rem; line-height: 1.55; }
-.rwe-meta { font-size: 0.78rem; letter-spacing: 0.05em; color: #8a857d; text-transform: uppercase; margin-bottom: 6px; }
+.rwe-card { border: 1px solid #222; background: #0d0d0d; padding: 10px 12px; margin: 8px 0; font-size: 12px; line-height: 1.7; }
+.rwe-meta { font-size: 10px; letter-spacing: 0.05em; color: #8a857d; text-transform: uppercase; margin-bottom: 6px; }
 .rwe-meta .rwe-pol { border: 1px solid #444; padding: 1px 6px; margin-left: 6px; }
 .rwe-pol-against { color: #ff6b6b; }
 .rwe-pol-for { color: #7dc97d; }
 .rwe-pol-neutral { color: #c9c4bc; }
 .rwe-pol-refutes { color: #e0c060; }
-.rwe-quote { color: #f0ebe5; font-size: 1rem; margin: 4px 0 6px 0; }
+.rwe-quote { color: #f0ebe5; font-size: 13px; font-style: italic; line-height: 1.7; margin: 4px 0 6px 0; }
 .rwe-sum { color: #c9c4bc; margin: 4px 0; }
 .rwe-fit { color: #9a958d; margin: 4px 0; font-style: italic; }
-.rwe-move { color: #8a857d; font-size: 0.85rem; margin: 4px 0; }
-.rwe-links { margin-top: 6px; font-size: 0.82rem; }
+.rwe-move { color: #8a857d; font-size: 10.5px; margin: 4px 0; }
+.rwe-links { margin-top: 6px; font-size: 10px; }
 .rwe-links a { color: #c0392b; margin-right: 12px; }
-.rwe-more button { background: #111; color: #c9c4bc; border: 1px dashed #444; padding: 3px 10px; cursor: pointer; font-family: inherit; font-size: 0.8rem; }
+.rwe-more button { background: #111; color: #c9c4bc; border: 1px dashed #444; padding: 3px 10px; cursor: pointer; font-family: inherit; font-size: 10px; }
+/* K64: RWE mode adaptation (legible / high-contrast) for the K61 card set */
+body.legible .rwe-badge { background: #efe7d8; color: #4a4540; }
+body.legible .rwe-card { background: #fffdf7; border-color: #d8d0c0; font-size: 14px; }
+body.legible .rwe-quote { color: #1a1816; font-size: 15px; }
+body.legible .rwe-meta { color: #6b665e; font-size: 10.5px; }
+body.legible .rwe-meta .rwe-pol { border-color: #9a948a; }
+body.legible .rwe-pol-against { color: #a83232; }
+body.legible .rwe-pol-for { color: #2e6b2e; }
+body.legible .rwe-pol-neutral { color: #555; }
+body.legible .rwe-pol-refutes { color: #7a5d12; }
+body.legible .rwe-sum { color: #3a362f; }
+body.legible .rwe-fit { color: #6b665e; }
+body.legible .rwe-move { color: #5a554d; font-size: 12px; }
+body.legible .rwe-links a { color: #a02818; }
+body.legible .rwe-more button { background: #efe7d8; color: #4a4540; border-color: #8a8478; }
+body.high-contrast .rwe-badge { background: #000; color: #fff; border-color: #fff; }
+body.high-contrast .rwe-card { background: #000; border-color: #fff; }
+body.high-contrast .rwe-quote { color: #fff; }
+body.high-contrast .rwe-meta { color: #ddd; }
+body.high-contrast .rwe-meta .rwe-pol { border-color: #fff; }
+body.high-contrast .rwe-pol-against { color: #ff9090; }
+body.high-contrast .rwe-pol-for { color: #90ee90; }
+body.high-contrast .rwe-pol-neutral { color: #fff; }
+body.high-contrast .rwe-pol-refutes { color: #ffe080; }
+body.high-contrast .rwe-sum { color: #fff; }
+body.high-contrast .rwe-fit { color: #ddd; }
+body.high-contrast .rwe-move { color: #ddd; }
+body.high-contrast .rwe-links a { color: #ff7060; }
+body.high-contrast .rwe-more button { background: #000; color: #fff; border-color: #fff; }
+body.high-contrast .rwe-badge:hover, body.high-contrast .rwe-badge.open { background: #fff; color: #000; }
 /* v3.8 D5 archetypeVariants per-card toggle */
 .archetype-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 14px; }
-.archetype-row .archetype-label { font-size: 9px; color: #555; letter-spacing: 2px; }
+.archetype-row .archetype-label { font-size: 10px; color: #777; letter-spacing: 2px; }
 .archetype-pill { background: #161616; border: 1px solid #2d2d2d; color: #777; font-family: inherit; font-size: 10px; letter-spacing: 1px; padding: 5px 12px; cursor: pointer; text-transform: uppercase; transition: all .15s; }
 .archetype-pill:hover { border-color: #555; color: #aaa; }
 .archetype-pill.active { background: #3a0f0f; border-color: #8b0000; color: #e0a0a0; }
 .archetype-pill.canonical.active { background: #242424; border-color: #666; color: #ccc; }
-.archetype-register { font-size: 9px; color: #8a6a3a; letter-spacing: 1.5px; }
+.archetype-register { font-size: 10px; color: #8a6a3a; letter-spacing: 1.5px; }
 @media (max-width: 480px) { .archetype-row .archetype-label { width: 100%; margin-bottom: 2px; } .archetype-pill { font-size: 9px; padding: 4px 9px; } }
 .objection-header {
   background: #111; border: 1px solid #222; padding: 14px 18px;
@@ -96,10 +126,10 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
 .objection-header:hover { background: #141414; border-color: #333; }
 .objection-header.open { background: #141414; margin-bottom: 0; }
 .tier-badge {
-  font-size: 9px; font-weight: 700; letter-spacing: 2px; padding: 2px 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: 2px; padding: 2px 6px;
   display: inline-block;
 }
-.category-label { font-size: 9px; color: #555; letter-spacing: 1px; }
+.category-label { font-size: 10px; color: #777; letter-spacing: 1px; }
 .trigger-text { font-size: 13px; color: #ddd; font-weight: 500; margin-top: 4px; }
 .expand-icon { color: #444; font-size: 18px; transition: transform 0.2s; flex-shrink: 0; margin-left: 12px; }
 .expand-icon.open { transform: rotate(45deg); }
@@ -108,7 +138,7 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
   display: none; border: 1px solid transparent; border-top: none;
 }
 .detail-panel.open { display: block; }
-.section-label { font-size: 9px; color: #555; letter-spacing: 2px; margin-bottom: 6px; }
+.section-label { font-size: 10px; color: #777; letter-spacing: 2px; margin-bottom: 6px; }
 .section { margin-bottom: 16px; }
 .keywords { display: flex; flex-wrap: wrap; gap: 4px; }
 .keyword {
@@ -125,15 +155,15 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
   background: #0c0c0c; border: 1px solid #222; padding: 16px;
   white-space: pre-wrap;
 }
-.sources { font-size: 10px; color: #666; line-height: 1.6; }
+.sources { font-size: 10px; color: #888; line-height: 1.6; }
 .footer {
   margin-top: 40px; padding-top: 16px; border-top: 1px solid #1a1a1a;
-  font-size: 9px; color: #333; letter-spacing: 2px; text-align: center;
+  font-size: 10px; color: #666; letter-spacing: 2px; text-align: center;
 }
 .empty-state { color: #444; font-size: 12px; padding: 40px 0; text-align: center; letter-spacing: 2px; }
 .copy-btn {
   background: #1a0000; border: 1px solid #330000; color: #8b0000;
-  font-family: inherit; font-size: 9px; padding: 4px 10px;
+  font-family: inherit; font-size: 10px; padding: 4px 10px;
   cursor: pointer; letter-spacing: 1px; text-transform: uppercase;
   margin-top: 8px; transition: all 0.15s ease;
 }
@@ -145,8 +175,8 @@ body.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b00
   display: flex; gap: 6px; margin-top: 12px;
 }
 .mode-btn {
-  background: #181818; border: 1px solid #333; color: #666;
-  font-family: inherit; font-size: 10px; padding: 6px 14px;
+  background: #181818; border: 1px solid #333; color: #999;
+  font-family: inherit; font-size: 11px; padding: 6px 14px;
   cursor: pointer; letter-spacing: 2px; text-transform: uppercase;
   transition: all 0.15s ease;
 }
@@ -270,7 +300,7 @@ body.high-contrast .confidence-badge.confidence-provisional { color: #a33; borde
 .rsi-detail .rsi-axis { display: flex; justify-content: space-between; margin: 2px 0; }
 .rsi-detail .rsi-axis-label { color: #666; }
 .rsi-detail .rsi-axis-bar { display: inline-block; height: 8px; margin-left: 8px; border-radius: 1px; vertical-align: middle; }
-.rsi-detail .rsi-formula { color: #555; font-size: 9px; margin-top: 8px; border-top: 1px solid #1a1a1a; padding-top: 8px; }
+.rsi-detail .rsi-formula { color: #777; font-size: 10px; margin-top: 8px; border-top: 1px solid #1a1a1a; padding-top: 8px; }
 .rsi-methodology-btn {
   background: none; border: 1px solid #222; color: #444;
   font-family: inherit; font-size: 9px; padding: 4px 10px;

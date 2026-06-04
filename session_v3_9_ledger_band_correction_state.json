@@ -1,0 +1,35 @@
+{
+  "session_id": "v3_9_ledger_band_correction",
+  "class": "High/maintenance (band relabel; ledger-file-only; no prose, no scores, no large-file touch)",
+  "post_terminal_compliance": "Correction-class on frozen v3.8 line — permitted. No one-node strengthening; zero prose/score mutation.",
+  "completed_tasks": [
+    "Empirically audited all 243 length-grades against canonical band rule (verified, did NOT trust relay's 2-entry scope).",
+    "Corrected 14 grade cells + 10 headline_grade_long mirrors across 13 nodes; grade := band(stored rsi_pct).",
+    "Emitted drop-in corrected ledger (same filename) + audit record."
+  ],
+  "verified_facts": {
+    "source_ledger": {"md5": "3b71a3e97c363d62261396c666c6c981", "bytes": 42750, "note": "matches relay K63 hash — ledger mount current to K63"},
+    "corrected_ledger": {"md5": "9b979e4e2a6f4b8c6200842045ea0f0d", "bytes": 42750, "note": "byte count preserved (single-char band swaps); formatting byte-identical to source unmodified -> diff is band-labels only"},
+    "band_rule": "A>=88 / B[82,88) / C[76,82) / D<76 (inclusive boundaries after rounding)",
+    "relay_flagged_subset": ["cherry-picking-worst.long", "future-solve.long"],
+    "actual_AB_boundary_long_nodes_88pt0_B_to_A": ["just-edgy","western-philosophy","speak-for-everyone","future-solve","pinker-better-world","privileged-first-world","change-your-mind","cherry-picking-worst","moral-progress","survivor-testimony"],
+    "BC_boundary_82pt0_C_to_B": ["neuroscience-positive-states.medium","flow-states-csikszentmihalyi.medium"],
+    "benatar_downgrade_B_to_C": ["benatar-asymmetry-attack.short(81.4)","benatar-asymmetry-attack.medium(81.2)"],
+    "long_dist_before": {"A": 26, "B": 54, "C": 1},
+    "long_dist_after": {"A": 36, "B": 44, "C": 1},
+    "medium_dist_after": {"A": 15, "B": 47, "C": 13},
+    "short_dist_after": {"A": 7, "B": 42, "C": 26},
+    "invariants_untouched": "objection_count 81, tier_count 5, mechanism_count 35, map1/MAP_GRAPH/DEP_GRAPH scalars — all unchanged. No SCALARS invariant-block entry revised."
+  },
+  "canon_bump": {
+    "class": "MINOR (narrative-only: headline_grades figure A26->A36 long; no invariant scalar revised)",
+    "collision_flag": "Relay reserves canon 37.24 for K64 render sweep. This correction also needs a MINOR narrative entry. Cowork: fold ledger-grade-distribution correction INTO 37.24 if co-shipped with K64, else take 37.25. Do not double-allocate 37.24.",
+    "log_delta": "headline_grades(long): A 26->36, B 54->44, C 1 (unchanged). keyset unchanged."
+  },
+  "next_recommended_action": "Cowork: (1) deploy corrected ledger to live; (2) propagate corrected grade labels to combined.html grade displays + canon headline_grades figure (A26->36) — Folds-propagate-in-sync requirement; (3) sequence the MINOR canon entry per collision_flag.",
+  "open_questions": [
+    "benatar-asymmetry-attack short/medium: applied relabel B->C for coherence. If the INTENDED repair is a score/prose lift on the corpus spine node (asymmetry), that is a separate Max-class regrade — revert these two lines and queue the regrade instead. Operator decision.",
+    "Does live combined.html render per-length grades or only headline_grade_long? Propagation surface area depends on this — Cowork confirm before deploy."
+  ],
+  "next_in_queue": "Cluster C archetype-variant carriers (Max-class, fresh session). Primer emitted: cluster_C_kickoff_primer.md."
+}

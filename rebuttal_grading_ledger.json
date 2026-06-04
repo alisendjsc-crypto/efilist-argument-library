@@ -154,11 +154,11 @@
       },
       "short": {
         "rsi_pct": 81.4,
-        "grade": "B"
+        "grade": "C"
       },
       "medium": {
         "rsi_pct": 81.2,
-        "grade": "B"
+        "grade": "C"
       },
       "long": {
         "rsi_pct": 82.13,
@@ -389,9 +389,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "meaning-through-suffering": {
       "graded": true,
@@ -602,9 +602,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "antinatalism-misanthropic": {
       "graded": true,
@@ -648,9 +648,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "evolution-purpose": {
       "graded": true,
@@ -694,9 +694,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "extinction-culture": {
       "graded": true,
@@ -809,9 +809,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "privileged-first-world": {
       "graded": true,
@@ -832,9 +832,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "selfish-lazy": {
       "graded": true,
@@ -1131,9 +1131,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "anthropic-principle": {
       "graded": true,
@@ -1246,9 +1246,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "revealed-preference": {
       "graded": true,
@@ -1315,9 +1315,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "non-identity-problem": {
       "graded": true,
@@ -1610,7 +1610,7 @@
       },
       "medium": {
         "rsi_pct": 82.0,
-        "grade": "C"
+        "grade": "B"
       },
       "long": {
         "rsi_pct": 83.6,
@@ -1680,7 +1680,7 @@
       },
       "medium": {
         "rsi_pct": 82.0,
-        "grade": "C"
+        "grade": "B"
       },
       "long": {
         "rsi_pct": 83.6,
@@ -1754,9 +1754,9 @@
       },
       "long": {
         "rsi_pct": 88.0,
-        "grade": "B"
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "care-ethics": {
       "graded": true,

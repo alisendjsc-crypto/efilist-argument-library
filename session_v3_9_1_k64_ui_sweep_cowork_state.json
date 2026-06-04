@@ -1,0 +1,50 @@
+{
+  "session_id": "v3_9_1_k64_ui_sweep_cowork",
+  "date": "2026-06-04",
+  "routed": "wuld.ink Cowork (K64)",
+  "scope": "render-only CSS sweep (combined + index) + ledger band-correction ride; ZERO corpus/jsx mutation; deploy + pin v3.9.0->v3.9.1 same session",
+  "verify_before": {
+    "efilist_main": "75bcc1b",
+    "combined": "c4decefedf75f05ca7b289d77f1f55d4/2924838",
+    "index": "f4f5f7e1/2378361",
+    "corpus": "3dc2ca64/1321042",
+    "jsx": "b529c95c/1267178",
+    "canon_v37_23": "cef3f677/210211",
+    "ledger": "3b71a3e9/42750",
+    "live_eq_pin": "c4decefe x2 agree"
+  },
+  "probe_corrections_cc_N9": [
+    "prompt's 'shared style block byte-identical x2' FALSE — combined CSS 65,821 B vs index 45,537 B; only the K61 gen-1 RWE block (1,456 B, d45c01f2) is byte-identical x2",
+    "the serif/oversize culprit is NOT a global base rule: combined's second RWE card system (explorer view) is fully scoped under body[data-active-view=rwe] with own vars + mode palettes — no bleed; defect was gen-1's rem sizes + hard dark colors + zero mode overrides",
+    "index HAS modes — flat body.legible syntax (59 rules / 134 HC), not nesting; mode-override syntax forked per file",
+    "K63a 'legible 6 / hc 1 rwe overrides' were the explorer's own scoped rules, not partial coverage of the K61 set"
+  ],
+  "aq_rulings": {
+    "ledger_ride": "ride K64",
+    "quote_font": "inherit per mode + explicit italic + px",
+    "floor_pass": "yes (13 rules)",
+    "canon_bump": "yes 37.24",
+    "d6_panel_move": "skipped (passed K63 QA)",
+    "pin_date": "2026-06-04"
+  },
+  "mutations": {
+    "combined.html": "c4decefe -> eeb52b8e5423ffe027022cffa9327127 / 2,926,583 (+1,745)",
+    "index_v3_8_0.html": "f4f5f7e1 -> 60a429d964485bd9c23b70180809ce20 / 2,380,196 (+1,835)",
+    "delta_gap": "+90 = ('&'->'body' prefix x3B x29 rules) + hover-rule double prefix x2 — fully accounted",
+    "rebuttal_grading_ledger.json": "3b71a3e9 -> 9b979e4e2a6f4b8c6200842045ea0f0d / 42,750 held (24 band-letter swaps verified leaf-by-leaf)",
+    "side_cars_committed": [
+      "ledger_band_audit_v3_9.json c11422d4",
+      "session_v3_9_ledger_band_correction_state.json 1c4487d4",
+      "cluster_C_kickoff_primer.md 23087bd4",
+      "session_v3_9_1_k64_ui_sweep_cowork_state.json (this file)"
+    ],
+    "canon": "project_canon_v37_24.json NEW (5 value paths off the 22->23 template; next_rec keyset preserved incl. after; invariants subtree byte-identical; slr 27->28)"
+  },
+  "checks": {
+    "node_check": "PASS x2 (data-island type-filtered per K61)",
+    "hygiene": "0 NUL / 0 CR / tails </body></html> x2",
+    "corpus_jsx": "byte-held (md5 assert; validator not required — corpus untouched)",
+    "gen1_rem_residual": "0"
+  },
+  "next": "operator PS block #1 (efilist 8-file commit on MAIN) -> Pages deploy -> live verify x3 -> pin v3.9.1 --date 2026-06-04 -> wuld-ink close block"
+}

@@ -1,0 +1,132 @@
+{
+  "artifact": "ledger_band_audit_v3_9.json",
+  "task": "ledger band-correction (queue item i); grade := band(stored rsi_pct), scores untouched",
+  "source_ledger_md5": "3b71a3e97c363d62261396c666c6c981",
+  "source_bytes": 42750,
+  "corrected_ledger_md5": "9b979e4e2a6f4b8c6200842045ea0f0d",
+  "corrected_bytes": 42750,
+  "band_rule": "A>=88 / B[82,88) / C[76,82) / D<76 (inclusive boundaries)",
+  "relay_scope_flagged": [
+    "cherry-picking-worst.long",
+    "future-solve.long"
+  ],
+  "actual_mismatches": 14,
+  "changes": [
+    {
+      "node": "benatar-asymmetry-attack",
+      "length": "short",
+      "rsi_pct": 81.4,
+      "from": "B",
+      "to": "C"
+    },
+    {
+      "node": "benatar-asymmetry-attack",
+      "length": "medium",
+      "rsi_pct": 81.2,
+      "from": "B",
+      "to": "C"
+    },
+    {
+      "node": "just-edgy",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "western-philosophy",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "speak-for-everyone",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "future-solve",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "pinker-better-world",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "privileged-first-world",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "change-your-mind",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "cherry-picking-worst",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "moral-progress",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "node": "neuroscience-positive-states",
+      "length": "medium",
+      "rsi_pct": 82.0,
+      "from": "C",
+      "to": "B"
+    },
+    {
+      "node": "flow-states-csikszentmihalyi",
+      "length": "medium",
+      "rsi_pct": 82.0,
+      "from": "C",
+      "to": "B"
+    },
+    {
+      "node": "survivor-testimony",
+      "length": "long",
+      "rsi_pct": 88.0,
+      "from": "B",
+      "to": "A"
+    }
+  ],
+  "long_dist_before": {
+    "A": 26,
+    "B": 54,
+    "C": 1
+  },
+  "long_dist_after": {
+    "A": 36,
+    "B": 44,
+    "C": 1
+  },
+  "human_review_flag": {
+    "node": "benatar-asymmetry-attack",
+    "lengths": [
+      "short",
+      "medium"
+    ],
+    "issue": "NOT boundary-inclusivity: rsi 81.4/81.2 < 82 so rule yields C, but stored B. Applied B->C for ledger coherence. If intended repair is a SCORE/prose lift (flagship asymmetry node), that is a separate Max-class regrade, not a relabel — revert this one line and queue regrade instead."
+  }
+}
