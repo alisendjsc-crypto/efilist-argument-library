@@ -1847,19 +1847,19 @@
     "solipsism": {
       "graded": true,
       "axes": {
-        "v": 0.88,
-        "s": 0.85,
+        "v": 0.89,
+        "s": 0.88,
         "c": 0.86,
-        "r": 0.85,
-        "a": 0.82
+        "r": 0.88,
+        "a": 0.84
       },
       "long": {
-        "rsi_pct": 85.2,
+        "rsi_pct": 87.0,
         "grade": "B"
       },
       "headline_grade_long": "B",
-      "depths_note": "long graded (85.2=B); short/medium prose authored in-node but depth-modified grades derived at render, NOT separately committed (VAR posture, same as violence-as-reductio/masochist/wild-animal). Modifier-derived preview for Phase-1 surface REBUTTAL_STRENGTH population (carry-forward #1): short~=81.5(C) medium~=83.6(B) [short=long*0.9571, medium=long*0.9807, modal modifiers from committed-78].",
-      "grade_source": "coldgrade_solipsism_long [v3_8_phase_0c_coldgrade_suffering_nodes_s1] (cold=true, sealed_consulted_before_commit=false, prose_md5 fff118ead43ced58a19be2326bd27158, rsi 0.8518 -> pct 85.2 band B; pre-committed; STAGED for Phase-1 ledger merge -- canonical ledger UNCHANGED this session). Fresh-cold form (violence-as-reductio /grades template), NOT the wild-animal surface-attested-tuple form: these nodes carry no surface REBUTTAL_STRENGTH tuple yet (un-spliced), so there is nothing to attest against -- the tuple is populated AT Phase-1 splice from these axes."
+      "depths_note": "v3.8.22 strengthen; VAR posture (long graded, short/medium DERIVE-AT-RENDER; per-axis depth-mod canon v37.13: medium c-0.05 r-0.03, short c-0.12 r-0.06). long 85.2/B -> 87.0/B (cold, +1.8, high-B; display 86.9). Derived tiers from new base axes: medium 85.4/B (display 85.3), short 83.2/B (display 83.1) — short C->B verified substance-driven (old axes under the same method give 81.5/C). NOT A: a-axis ceiling .84 (no empirical RWE; amplifier openly a-dependent; honest partiality vs the global skeptic — defeats-as-license, dissolves-as-metaphysics). Supersedes the committed-78 modal-modifier preview (short~81.5C medium~83.6B).",
+      "grade_source": "v3_8_22_solipsism_reciprocity_strengthen cold regrade (regrade_solipsism_v3_8_22.json); reciprocity/special-plea limb authored (enrichment flag discharged) + zombie one-way-ratchet + epistemic-retreat preempt + AMP-4 weak-dominance reframe; surface-attested tuple == index/combined strength-const, UPDATED in place in the v3_8_22 Cowork fold (directive's POPULATE label was a stale-mount inference; live map holds all 81 nodes — corrected at AQ). Contamination disclosed in regrade (baseline visible pre-freeze; axes re-scored against absolute rubric)."
     },
     "suffering-as-meaning": {
       "graded": true,

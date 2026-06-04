@@ -589,6 +589,85 @@
       "note": "Strengthen via sadist-aggregation / utility-monster reductio (Nozick). Recasts the rebuttal as a dilemma: justify procreation by expected hedonic sum (interpersonal => monster's structure) OR by the actual child's net (presupposes the subject => asymmetry backstop). DISCHARGES the joy-outweighs-harms reversibility horizon item. All three registers REPLACE and all carry the spine (reconciled in THIS session; v3.8.18 split-register failure not re-created). const UPDATE (axes moved); ledger PATCH; sources ADD x2.",
       "folded_in_session": "v3_8_21_joy_cowork_fold",
       "folded_date": "2026-06-03"
+    },
+    {
+      "objection_id": "solipsism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "status": "FOLDED",
+      "added_in_session": "v3_8_22_solipsism_reciprocity_strengthen",
+      "regrade_record": "regrade_solipsism_v3_8_22.json",
+      "prose_file": "solipsism_long_v3_8_22.txt",
+      "grade_summary": "long 85.2/B -> 87.0/B (COLD, +1.8, high-B; display 86.9); derived medium 85.4/B (display 85.3), short 83.2/B (display 83.1) — short C->B verified substance-driven (old axes same method = 81.5/C). base axes v.89 s.88 c.86 r.88 a.84. NOT A (a-axis ceiling .84: no RWE + a-dependent amplifier + honest partiality vs the global skeptic; geomean 0.86983 < .88 A-floor).",
+      "rebuttal_strength_const": {
+        "op": "UPDATE (in-place)",
+        "new_base_axes": {
+          "v": 0.89,
+          "s": 0.88,
+          "c": 0.86,
+          "r": 0.88,
+          "a": 0.84
+        },
+        "new_rsi_pct": 87.0,
+        "new_grade": "B",
+        "note": "Const stores LONG base axes; display tiers derive at render. The v3_8_22 directive's original POPULATE/SPLICE call was a stale-mount inference (token-count grep); Cowork's live enumeration found all 81 nodes incl. solipsism at baseline axes in var REBUTTAL_STRENGTH on combined+index — corrected to in-place UPDATE at AQ (file-tree-wins, K54 cxcix posture; library-Claude ratified + corrected its three JSONs)."
+      },
+      "sources_op": "ADD",
+      "sources_value": [
+        "Nagel — subjective character of experience / the view from nowhere: the first-person standpoint is indexical, so 'mine is certain, yours inferred' is a fact about point of view, not about which minds exist; underwrites the special-pleading diagnosis."
+      ],
+      "sources_after_count": 7,
+      "ledger_patch": {
+        "op": "PATCH",
+        "path": "grades['solipsism']",
+        "axes": {
+          "v": 0.89,
+          "s": 0.88,
+          "c": 0.86,
+          "r": 0.88,
+          "a": 0.84
+        },
+        "long": {
+          "rsi_pct": 87.0,
+          "grade": "B"
+        },
+        "headline_grade_long": "B",
+        "note": "letter unchanged B->B; rsi_pct 85.2->87.0. VAR posture: no separately-stored short/medium grades; displayed badges re-derive (medium 85.4/B, short 83.2/B; per-axis depth-mod canon v37.13). The addendum->canonical merge was ALREADY done pre-fold; this is an in-place update."
+      },
+      "surfaces": {
+        "corpus": {
+          "prose": "REPLACE long+medium+short",
+          "sources": "ADD x1 (-> 7)"
+        },
+        "jsx": {
+          "prose": "REPLACE long+medium+short (corpus mirror)",
+          "sources": "ADD x1 (-> 7; embedded array present)",
+          "const": "na (no strength const in jsx — verified count 0)"
+        },
+        "combined": {
+          "prose": "REPLACE long+medium+short",
+          "const": "UPDATE base axes (in place)",
+          "sources": "ADD x1 (-> 7)"
+        },
+        "index": {
+          "prose": "REPLACE long+medium+short",
+          "const": "UPDATE base axes (in place)",
+          "sources": "ADD x1 (-> 7)"
+        }
+      },
+      "short_medium": {
+        "op": "REPLACE both",
+        "source_file": "solipsism_short_medium_v3_8_22.md",
+        "medium": "Solipsism is the epistemic, not metaphysical, member of the suffering-denial family: it concedes suffering is bad — your own is undeniable — but asks how you could know you impose it on anyone, since every other mind is inferred and admits a defeater, the behaviorally seamless zombie. The attribution genuinely is defeasible, so the reply concedes the uncertainty and denies only that it does the exculpatory work.\n\nThe core needs no asymmetry. Skepticism is reciprocal: every other mind is unprovable from the solipsist's seat, but his own is exactly as unprovable from every other seat. \"Mine is certain, yours inferred\" is a fact about which chair one sits in, not about minds — the gap is indexical. So doubting the child's suffering while trusting his own is special-pleading: a warrant he grants himself and denies everyone else, one that cannot even enter the public adjudication of permissibility. And conceivability cuts every way: if the child can be a zombie so can his partner and his future self, yet he suspends the doubt for exactly the being whose creation he wants cleared — a one-way ratchet, betrayed by a life spent grieving and demanding to be understood.\n\nRetreat to mere caution only hands the next move its premise. Acting under uncertainty about whether you create a subject of suffering is the structure for restraint, not permission — the hunter firing into a bush he cannot confirm empty is not exculpated by the doubt. The asymmetry sharpens this to weak dominance: non-creation costs nothing whether or not anyone is there, while creation risks real harm in the only branch where someone is, at any probability of sentience. That step leans on the asymmetry and says so; deny it and the dispute reopens as expected value, but the first two moves stand without it.\n\nNone of this refutes solipsism as a metaphysics — nothing can, from inside. It defeats it as a license. The global skeptic who doubts even his own mind escapes only by forfeiting every warrant that could justify a birth, so the dialectic dissolves rather than resolving in his favor.",
+        "medium_chars": 2091,
+        "short": "Other-minds skepticism is reciprocal: every other mind is unprovable from the solipsist's seat, but his own is just as unprovable from every other. \"Mine is certain, yours inferred\" tracks which chair he sits in, not which beings have minds — so doubting the child while trusting himself is special-pleading. Conceivability cuts every way; he suspends the doubt only for the being whose creation he wants cleared, all while grieving and demanding to be understood. Granting the uncertainty changes nothing: creating a possible subject of suffering is the structure for caution, not permission, and under the asymmetry non-creation costs nothing whether or not anyone is there. This defeats solipsism not as a metaphysics — nothing can — but as a license to procreate.",
+        "short_chars": 773,
+        "embedded": "exact strings inline for Cowork; long prose in prose_file; chars = UTF-8 bytes (md5 is the identity check)"
+      },
+      "hazard": "combined.html + index_v3_8_0.html carry MAP_GRAPH_DATA / DEP_GRAPH_DATA / MAP1_TRANSITIONS single-line literals — NEVER full-view, NEVER unfiltered-grep; targeted constrained-window probes only. rwe.html line 317 ~495KB JSON literal — never viewed. combined.html IS live-served: this fold TRIGGERS a Cloudflare deploy (push -> curl x3 -> pin).",
+      "note": "Strengthen via p-zombie reciprocity / symmetry-of-skepticism / special-plea (asymmetry-independent core) + zombie one-way-ratchet + epistemic-retreat preempt + AMP-4 weak-dominance (a-dependence named). LAST content piece — v3.8 line CONTENT-COMPLETE at this fold; terminal-stability-marker question goes live. All three registers carry the spine (no v3.8.18 split-register failure).",
+      "folded_in_session": "v3_8_22_solipsism_cowork_fold",
+      "folded_date": "2026-06-03"
     }
   ],
   "backward_gap_audit_candidates": {
@@ -621,7 +700,7 @@
       }
     ]
   },
-  "updated_in_session": "v3_8_21_joy_sadist_aggregation_strengthen",
+  "updated_in_session": "v3_8_22_solipsism_cowork_fold",
   "flush_record": {
     "session": "v3_8_15_batch_flush_cowork",
     "date": "2026-06-02",

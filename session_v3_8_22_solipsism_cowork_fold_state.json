@@ -1,0 +1,50 @@
+{
+  "_artifact": "cowork_fold_session_state",
+  "session": "v3_8_22_solipsism_cowork_fold",
+  "cowork": "K55",
+  "date": "2026-06-03",
+  "baseline": {
+    "efilist_head": "7a1a7ad",
+    "combined_old": "d0dc59b570956c6450d8158423845cb8 / 2386389 B",
+    "live_at_open": "d0dc59b5 (curl x3) == wuld.ink pin",
+    "canon_old": 37.17
+  },
+  "inputs": {
+    "long": "solipsism_long_v3_8_22.txt md5 cd8539d1 (strip trailing NL -> 043eb46f / 7427 B)",
+    "medium": "05acfed72799089fa77db39ca079f47b / 2091 B (manifest-embedded)",
+    "short": "7668a3ca99ee47a068152134eac9b2ab / 773 B (manifest-embedded)",
+    "corrected_set": "pending_foldin_manifest-44aa5f92 / regrade_solipsism_v3_8_22-7141f60b / session_state-744d34e4 (op label POPULATE->UPDATE corrected by library-Claude post-AQ; register md5s unchanged)"
+  },
+  "divergence_resolved": {
+    "id": "const_op_class",
+    "directive": "POPULATE/SPLICE (claimed solipsism absent from the REBUTTAL_STRENGTH map, 'verified')",
+    "empirical": "var REBUTTAL_STRENGTH on combined+index holds ALL 81 nodes incl. solipsism at baseline axes (v.88 s.85 c.86 r.85 a.82); map literal byte-identical across both files; count==1 anchors",
+    "resolution": "in-place UPDATE, AQ-ratified (file-tree-wins, K54 cxcix posture); library-Claude ratified + corrected its three JSONs"
+  },
+  "mutations": {
+    "prose": "REPLACE x3 registers x4 surfaces; old fff118ea/b23b4c57/8b570121 -> new 043eb46f/05acfed7/7668a3ca; quoted-delta +4596 B IDENTICAL x4 (K53 landing sentinel)",
+    "sources": "ADD x1 Nagel -> 7 on all four surfaces (+262 B strings 6sp indent / +264 B corpus 8sp); array-tail position asserted; Chalmers/Wittgenstein dedupe held",
+    "const": "UPDATE in place on combined+index: v .88->.89, s .85->.88, c .86 HOLD, r .85->.88, a .82->.84 (byte-neutral); jsx verified no-const (count 0)",
+    "ledger": "grades.solipsism axes -> new; long 85.2 -> 87.0 B; grade_source + depths_note -> v3_8_22 (VAR posture, per-axis depth-mod v37.13: medium 85.4/B, short 83.2/B); diff confined to grades.solipsism",
+    "canon": "v37_17 -> NEW project_canon_v37_18.json; 6-key fold template; invariants subtree md5 b32b056d STABLE; session_log_recent 21->22; next_recommended -> v3_8_x_terminal_stability_marker_decision",
+    "manifest": "solipsism entry appended FOLDED (8 total; 7 prior FOLDED preserved; joy key-schema mirrored); updated 2026-06-03"
+  },
+  "post": {
+    "combined_new": "15ffaebf55d225d107432c62df0a661f / 2391247 B",
+    "index_new": "1d393c48fc7f7d182ffdf589a15e7529 / 1844770 B",
+    "jsx_new": "2dd6d5c2ce33430bbbf9702d394bb189 / 1245444 B",
+    "corpus_new": "6ac568fcd2e9ba712063ded7d239ddb0 / 1302369 B",
+    "ledger_new": "3b71a3e97c363d62261396c666c6c981 / 42750 B",
+    "manifest_new": "395ff617be74e3afe9a996782b6476cb / 40451 B",
+    "canon_new": "db20bab1cdb46c274896a962fb274821 / 194514 B",
+    "validator": "self-test PASS + corpus 136 RWE PASS (pre AND post)",
+    "counts": "FROZEN 81 obj / 5 tiers / 35 mech / 2886 map1 edges"
+  },
+  "deploy": {
+    "script": "push_v3_8_22.ps1 (cloned from push_v3_8_21; cxcv lock-cleanup + cxcvi BOM-less ASCII carried verbatim; 8-file EXPLICIT staging)",
+    "release": "v3.8.22",
+    "baseline_gate": "HEAD must read 7a1a7ad pre-commit",
+    "pin": "wuld.ink tools/library-pin.py --apply after live==15ffaebf (d0dc59b5 -> 15ffaebf, v3.8.21 -> v3.8.22)"
+  },
+  "milestone": "v3.8 line CONTENT-COMPLETE at this fold -> terminal-stability-marker question goes live"
+}
