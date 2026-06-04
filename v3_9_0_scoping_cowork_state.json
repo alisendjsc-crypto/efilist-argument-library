@@ -1,0 +1,122 @@
+{
+  "file": "v3_9_0_scoping_cowork_state.json",
+  "session": "v3_9_0_scoping_cowork (wuld.ink Cowork K58, 2026-06-03)",
+  "canon": "v37.19 -> v37.20 (MINOR, additions-only; post_terminal_policy added; keyset 36->37; invariants subtree 8727787c UNCHANGED)",
+  "completed_tasks": {
+    "1_compaction": "checklist delivered (v3_9_compaction_checklist.md). BLOCKING FINDING: git history does NOT retain the per-node remove-list (0 of 93 ever-committed files match regrade_*/long_*/foldin/v3_7-state patterns; Downloads empty) -> operator fork: archive-then-delete (recommended) vs delete-outright. Panel deletion + resulting-% are operator-side; Cowork cannot see the panel.",
+    "2_inventory": "v3_9_inventory.json - 81 nodes; 7 variant-carriers (handout's ~8 corrected), all 4 slots, single-body, no per-slot RSI; objectionSubforms = violence-as-reductio only (D5 deferred); framing-diverges flag TRUE on 37 nodes vs needs_variants on 9 - divergent framing rarely shifts the response (D2).",
+    "3_charter": "post_terminal_policy spliced into project_canon_v37_20.json (NEW file; v37_19 byte-untouched). v3.8 frozen / v3.9 enrichment (archetype-depth + RWE-surfacing) / v4.0 intake GATED-renumbered, sealed texts annotated not rewritten. canon_version stored as STRING '37.20' per v37_10 precedent (float collapses to 37.2).",
+    "4_rwe_schema": "v3_9_rwe_schema.json - binding already explicit: corpus.realWorldExamples[136].attached_objections[] {objection_id, fit_to_trigger_phrases, attachment_rationale}; 136/136 bound, 78/81 covered, 0 homeless (unbound: eliminativism, solipsism, suffering-as-meaning). v3.9 gap is RENDER-side only. Defender-RWE intake: 7 criteria, v1_7 attestation, no-force rule; 15 defender-signal + 23 refutation-polarity instances are the precedent set.",
+    "5_triage": "v3_9_archetype_triage_PROVISIONAL.json - real calls under D2, default FEWER.",
+    "6_state": "this file"
+  },
+  "reclaimed_capacity_pct": null,
+  "reclaimed_capacity_note": "Operator reads post-% off the project settings page after panel deletions; pre ~83%. Keep-set ~5.35 MB dominated by corpus+jsx+combined (~4.94 MB); per-node removals = real but modest. Escalation lever if needed: un-mount combined.html (2.39 MB, reproducible from repo + live URL) - Library-Claude ratification required, not default.",
+  "triage_summary": {
+    "cards_triaged": 74,
+    "built_excluded": 7,
+    "needs_0": 65,
+    "needs_1": 7,
+    "needs_2": 2,
+    "new_slots": 11,
+    "slots_detail": {
+      "just-depressed": [
+        "sophisticate",
+        "defender"
+      ],
+      "red-button-repugnant": [
+        "sophisticate",
+        "defender"
+      ],
+      "next-person-cure-cancer": [
+        "sophisticate"
+      ],
+      "most-people-happy": [
+        "sophisticate"
+      ],
+      "cherry-picking-worst": [
+        "sophisticate"
+      ],
+      "future-solve": [
+        "sophisticate"
+      ],
+      "privileged-first-world": [
+        "defender"
+      ],
+      "selfish-lazy": [
+        "defender"
+      ],
+      "bitter-childhood": [
+        "defender"
+      ]
+    },
+    "note": "Leaner than the prior 20-30-node guess; D2 strictly applied. borderline[] is the widening valve - ratification can promote without re-triage."
+  },
+  "borderline": [
+    {
+      "id": "red-button-repugnant",
+      "lean": "grant sophisticate+defender",
+      "note": "NET-NEW K58 call - the only high-charge accusatory node without slots; biggest single addition, ratify explicitly"
+    },
+    {
+      "id": "bitter-childhood",
+      "lean": "grant defender",
+      "note": "prior-session phrasing ambiguous between 0 and 1"
+    },
+    {
+      "id": "most-people-happy",
+      "lean": "grant sophisticate"
+    },
+    {
+      "id": "cherry-picking-worst",
+      "lean": "grant sophisticate"
+    },
+    {
+      "id": "future-solve",
+      "lean": "grant sophisticate"
+    },
+    {
+      "id": "consent-both-ways",
+      "lean": "deny - collapses to bradley-no-subject / consent-incoherent"
+    },
+    {
+      "id": "masochist-counterexample",
+      "lean": "deny - strengthen candidate (v3.8 frozen), not variant"
+    },
+    {
+      "id": "extinction-culture",
+      "lean": "deny - impersonal-value machinery lives in population-ethics nodes"
+    },
+    {
+      "id": "indigenous-philosophy",
+      "lean": "deny - decolonial standpoint-dodge close arguably diverges; culturally loaded, materiality unclear"
+    }
+  ],
+  "grading_policy": {
+    "status": "NOT OPEN in Cowork's reading: D6 (variants inherit parent RSI, no per-variant cold-grade) is Josiah-ratified 2026-05-29 (ratified_variant_design_v1, canon-registered variant_feature_ratification_s1) and honored by all 28 existing slot bodies.",
+    "recommendation": "HOLD D6. Reopening a ratified lock with zero new information is process churn; the handout's own/derive/ungraded triple was adjudicated by that ratification.",
+    "burden_estimates": {
+      "D6_inherit_recommended": "0 grading sessions; display = parent grade; ledger untouched.",
+      "derive_at_render": "~1 design session (modifier rule + render change); no cold grades; risk: displays precision never graded.",
+      "own_RSI_cold_grade": "39 bodies (28 built + 11 proposed) at demonstrated cadence 1-3 nodes/MAX session = ~13-39 sessions, i.e. the months horn; blocks enrichment throughput; contradicts the lock.",
+      "ungraded_explicit": "zero burden; = D6 with explicit labeling copy."
+    }
+  },
+  "handout_corrections": [
+    "archetypeVariants carriers = 7, not ~8",
+    "git-history-retention premise FALSE for per-node panel files",
+    "held-separate library-pin.py item was already CLOSED at K57 (prepend-per-release + --date shipped)",
+    "backward_gap_audit_v3_8_14.json is panel-only (not in repo) - download + commit it"
+  ],
+  "repo_hygiene": [
+    "5 files were staged-for-deletion in the index (incl. v3prime_validator_v1_7.py + the marker's audit_ref) - K58 PS block unstages them; flag if un-tracking was deliberate",
+    "strays: .k58_wtest (sandbox cannot unlink), push_v3_8_19/21/22.ps1 untracked"
+  ],
+  "artifact_md5": {
+    "project_canon_v37_20.json": "ad091dc6a939d65cf13f62480867cd4a / 205154 B",
+    "v3_9_inventory.json": "d4454e91196a54793ef59a1295cf1f1b / 33281 B",
+    "v3_9_archetype_triage_PROVISIONAL.json": "30191e6b697b8eb4bb0e2e16c4e9dfb4 / 44587 B",
+    "v3_9_rwe_schema.json": "dab5ba7fa434d6c51518a5bd5cfe2837 / 3439 B",
+    "v3_9_compaction_checklist.md": "45f9299c436d219196f2ba325843e4a6 / 3585 B"
+  }
+}

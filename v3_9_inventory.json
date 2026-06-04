@@ -1,0 +1,834 @@
+{
+  "_meta": {
+    "file": "v3_9_inventory.json",
+    "session": "v3_9_0_scoping_cowork (K58, 2026-06-03)",
+    "source": "efilist_argument_library_v3_8_0.json (v3.8.22 frozen content)",
+    "handout_corrections": [
+      "archetypeVariants carriers = 7, not the handout's approx-8",
+      "RWE binding: 136/136 bound (zero homeless), 78/81 objections covered",
+      "framing_diverges_by_interlocutor is a WIDER set (37) than needs_variants (9): divergent deployment framing usually does NOT shift the response (D2)"
+    ]
+  },
+  "counts": {
+    "objections": 81,
+    "tiers": {
+      "1": 13,
+      "2": 17,
+      "3": 14,
+      "4": 31,
+      "5": 6
+    },
+    "variant_carriers": 7,
+    "variant_slots_existing": 28,
+    "rwe_instances": 136,
+    "rwe_bound": 136,
+    "rwe_objections_covered": 78,
+    "rwe_homeless": 0
+  },
+  "variant_carriers": {
+    "ai-fear": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "antinatalism-misanthropic": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "benatar-asymmetry-attack": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "slippery-slope-eugenics": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "violence-as-reductio": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "why-not-suicide": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ],
+    "wild-animal-suffering-consistency": [
+      "blended",
+      "defender",
+      "drifter",
+      "sophisticate"
+    ]
+  },
+  "objectionSubforms_nodes": [
+    "violence-as-reductio (display surface = deferred D5; out of v3.9 scope)"
+  ],
+  "rwe_unbound_objections": [
+    "eliminativism",
+    "solipsism",
+    "suffering-as-meaning"
+  ],
+  "rwe_top_coverage": {
+    "violence-as-reductio": 27,
+    "benatar-asymmetry-attack": 15,
+    "ai-fear": 10,
+    "why-not-suicide": 7,
+    "antinatalism-misanthropic": 6,
+    "slippery-slope-eugenics": 5,
+    "policy-proposal": 5,
+    "transhumanist-objection": 5,
+    "life-gift": 4,
+    "non-identity-problem": 4
+  },
+  "collapse_pairs_and_targets": {
+    "animals-reproduce": "natural-reproduce",
+    "natural-reproduce (sophisticate)": "evolution-purpose",
+    "suffering-as-meaning <-> meaning-through-suffering": "folk/sophisticate pair - corpus encodes speaker split as node pair",
+    "gods-plan <-> free-will-defense": "folk/sophisticate pair",
+    "western-philosophy <-> buddhist-objection": "folk/sophisticate pair",
+    "transhumanist-objection (drifter)": "future-solve",
+    "consent-both-ways (sophisticate)": "bradley-no-subject / consent-incoherent",
+    "nihilism-label (sophisticate)": "meta-ethical-pluralism / moral-particularism",
+    "extinction-culture (sophisticate impersonal-value)": "population-ethics-paradoxes / non-identity-problem"
+  },
+  "nodes": [
+    {
+      "id": "life-gift",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Optimism Bias / Pollyanna Principle / Terror Management Theory",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 4
+    },
+    {
+      "id": "just-depressed",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Terror Management Theory — Distal Defense / Ad Hominem / Pathologization",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "why-not-suicide",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Conflation of antinatalism with promortalism / Aggressive TMT defense / Definitional weaponization",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 7
+    },
+    {
+      "id": "consent-both-ways",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "False symmetry / Misapplication of consent framework",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "nihilism-label",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Conflation of metaphysical nihilism with moral apathy / Failure to distinguish descriptive from prescriptive",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "economy-population",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Status Quo Bias / Economic anxiety as moral deflection",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "benatar-asymmetry-attack",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — requires substantive response",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 15
+    },
+    {
+      "id": "transhumanist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — requires substantive response",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 5
+    },
+    {
+      "id": "self-defeating",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Category error — confusing memetic success with philosophical validity",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "imposing-values",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Projection — the interlocutor accuses the antinatalist of the exact act the natalist commits",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "ai-fear",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Substrate chauvinism — unexamined assumption that carbon-based consciousness has inherent moral priority / Terror Management at species level",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 10
+    },
+    {
+      "id": "violence-as-reductio",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Genetic-fallacy-by-proxy (advocate behavior judges framework content) / Terror Management around projected violence / Refusal of philosophical engagement via consequentialist redirection / Out-group threat construction (the philosophy's adherents become a threatening category)",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 27
+    },
+    {
+      "id": "natural-reproduce",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Appeal to Nature fallacy / Naturalistic fallacy / Is-Ought confusion",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "gods-plan",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Theological foundationalism / Terror Management via symbolic immortality / Axiomatic assertion",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "just-edgy",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Dismissal via social categorization / TMT distal defense / Age-based authority fallacy",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "meaning-through-suffering",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Post-hoc rationalization of harm / Stockholm Syndrome with existence / Survivorship bias",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "free-will-defense",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Theological defense / Illusion of agency / Failure to account for unchosen biological constraints",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "most-people-happy",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Optimism Bias applied to self-report / Pollyanna Principle / Adaptation / Survivorship bias",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "love-beauty-art",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Cherry-picking positive valence experiences / Ignoring the asymmetry / Romanticism as deflection",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "joy-outweighs-harms",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Autobiographical-projection of personal positive-valence as universal claim / Optimism Bias in first-person register / Survivorship bias as evidence-base / Anecdotal hedonic-balance assertion",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "masochist-counterexample",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Counterexample-by-anecdote / Surface-behavior reading without mechanistic interrogation / Conflation of pain-relief regulation with positive-substance pleasure / Stubborn rhetorical move-wielding (recurrent across decades of antinatalism dialectic, e.g., as one defender move among many throughout the Inmendham/Hythloday corpus)",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "procreative-liberty",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Rights-based framework deployed without accounting for the rights of the created entity",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "negative-util-aggregation",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — reductio ad absurdum of negative utilitarian premises",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "wild-animal-suffering-consistency",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Consistency-reductio via scope-extension / Equivocation between creation-obligation and intervention-obligation / Practicality-impossibility deflection deployed as principled consistency challenge / Anthropocentric-bias accusation / Demandingness objection (Williams / Wolf) deployed at species-extension scope / Genuine philosophical challenge in its strong form; gotcha-deflection in its weak form",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 2
+    },
+    {
+      "id": "western-philosophy",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Genetic fallacy applied to cultural origin / Relativism as deflection",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "antinatalism-misanthropic",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Inversion of care — confusing compassion-driven critique with contempt",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 6
+    },
+    {
+      "id": "speak-for-everyone",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Anecdotal evidence / Sample-of-one reasoning / Failure to grasp structural argument",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "evolution-purpose",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Teleological projection onto non-teleological process / Appeal to Nature variant",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "future-solve",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Optimism Bias projected forward in time / Deferral of ethical responsibility",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "extinction-culture",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Terror Management — symbolic immortality through cultural legacy / Status Quo Bias",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "playing-god",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Authority deflection / Inverted hubris accusation / Status Quo as neutral default",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "policy-proposal",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Pragmatic deflection — substituting 'how' for 'whether' / Action bias",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 5
+    },
+    {
+      "id": "next-person-cure-cancer",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Speculative positive outcome used to justify guaranteed negative exposure / Lottery fallacy",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "pinker-better-world",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Selective statistical framing / Survivorship bias at civilizational scale / Optimism Bias with empirical clothing",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 3
+    },
+    {
+      "id": "privileged-first-world",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Genetic fallacy via socioeconomic positioning / Tu quoque variant / Deflection from argument to arguer",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "selfish-lazy",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Projection — the interlocutor attributes selfishness to the person NOT imposing existence, while defending the act of imposing it",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "consent-incoherent",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — this attacks the logical structure of the consent premise itself",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "suffering-makes-human",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Normalization of harm / Stockholm Syndrome with existence / Definitional circularity",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "red-button-repugnant",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Conflation of theoretical painless cessation with violent mass murder / Emotional collapse of distinction",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "slippery-slope-eugenics",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Associative fallacy / Reductio via historical atrocity / Guilt by superficial resemblance",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": true,
+      "rwe_attached": 5
+    },
+    {
+      "id": "adoption-instead",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Deflection to pragmatic alternative / Misidentification of the philosophical target",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "bitter-childhood",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Genetic fallacy / Psychologizing the arguer / Biographical reductionism",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 3
+    },
+    {
+      "id": "cant-prove-nonexistence-better",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Epistemological challenge to comparative claims / Genuine philosophical engagement",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "animals-reproduce",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Appeal to Nature variant / Biological determinism as moral justification",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "overpopulation-addressed",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Pragmatic deflection — confusing demographic trends with ethical resolution",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "hedonic-contrast",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Hedonic contrast theory deployed as metaphysical necessity / False dichotomy",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "ableist-objection",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Misidentification of the philosophical target — confusing a universal claim with a selective one",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "change-your-mind",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Age-based authority fallacy / Condescension as dismissal / Survivorship bias in older populations",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "anthropic-principle",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Anthropocentric projection onto cosmological structure / Teleological fallacy at universal scale",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "meta-ethical-pluralism",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Genuine meta-ethical challenge — questions the foundational axiom rather than specific conclusions",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "heat-death-futility",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Cosmic futility deployed AGAINST antinatalism — 'if nothing matters, why does suffering matter?'",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "happiness-is-choice",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "psychMechanism": "Voluntarist delusion / Ignoring neurochemical, environmental, and genetic determinants of wellbeing / Victim-blaming structure",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "cherry-picking-worst",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Dismissal of tail-risk ethics / Failure to grasp that procreation is a gamble with the full distribution",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "revealed-preference",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Revealed preference theory applied to existence / Conflation of survival drive with rational endorsement",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "social-contract",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Post-hoc consent fabrication / Implicit consent fallacy / Conflation of coping with endorsement",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "moral-progress",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Optimism Bias applied to moral trajectory / Speculative future deployed against present suffering",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "non-identity-problem",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — exploits the metaphysical gap between counterfactual identity and harm attribution",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 4
+    },
+    {
+      "id": "bradley-no-subject",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — symmetry attack on the evaluative status of non-existence states",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "contractualism-scanlon",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys an alternative ethical architecture that claims to bypass utilitarian calculations entirely",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "phenomenological-existentialism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — reframes imposed existence as the precondition for authentic self-creation, converting a complaint into a feature",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "harman-benign-creation",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — argues that creation is justified when the resulting life clears a quality-of-life threshold, bypassing consent via outcome",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "population-ethics-paradoxes",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys formal paradoxes in population ethics to argue that antinatalist axioms generate unacceptable theoretical consequences",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "boonin-critique",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — systematic formal-logical reconstruction and attempted refutation of Benatar's asymmetry from within analytic philosophy",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "moral-particularism",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "psychMechanism": "Genuine meta-ethical challenge — attacks the legitimacy of systematic ethical reasoning itself, not any specific conclusion within it",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "performative-contradiction",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — argues that the act of antinatalist reasoning existentially presupposes the value of the existence it condemns",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 2
+    },
+    {
+      "id": "marxist-materialist",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Deflection of ontological critique into political critique — substitutes system reform for structural evaluation of existence itself",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 3
+    },
+    {
+      "id": "buddhist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys an established soteriological framework that addresses suffering through transformation of consciousness rather than elimination of existence",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "virtue-ethics-flourishing",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys an ethical framework that evaluates existence by flourishing and excellence rather than by the suffering axis",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "neuroscience-positive-states",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine empirical challenge — deploys neuroscientific evidence to argue that positive hedonic states are neurochemically distinct from pain relief, directly challenging the zero-sum framework",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "epistemic-humility",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys epistemological constraints to argue that the antinatalist's confidence level exceeds what the evidence warrants",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 3
+    },
+    {
+      "id": "incommensurability",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — denies the logical possibility of comparison between existence and non-existence at the foundational level",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "flow-states-csikszentmihalyi",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine empirical challenge — deploys flow research to argue that intrinsically motivated engagement constitutes positive value independent of the suffering-relief axis",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "luxury-belief",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Sociological reductionism — reduces a philosophical position to its sociological function as perceived status marker, evading engagement with its content",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "pragmatist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — evaluates beliefs by their practical consequences rather than their correspondence to reality, reframing truth as instrumental value",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "survivor-testimony",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Anecdotal evidence elevated to universal principle / Survivorship bias compounded by neurochemical reset / Conflation of post-crisis relief with philosophical endorsement of existence",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "care-ethics",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys a relational ethical framework that evaluates moral acts through the lens of caring relationships rather than abstract principles",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "rights-future-generations",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "psychMechanism": "Rights-based framework projected onto non-existent entities — extends the concept of rights beyond its logical domain to manufacture obligations to the unconceived",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "indigenous-philosophy",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Genuine philosophical engagement — deploys alternative ontological frameworks that do not share the individualist, subject-centered metaphysics antinatalism operates within",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 1
+    },
+    {
+      "id": "eliminativism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Metaphysical deflation deployed as harm-premise dissolution / Hard-physicalist eliminativism about phenomenal valence imported to void the badness antinatalism's harm premise quantifies over / Self-exempting universal skepticism (the deflation is aimed at suffering's badness but never at the eliminativist's own normative commitments) / Sophisticated grade = genuine illusionism (Frankish, Dennett); folk grade = 'it's just chemicals' category error",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 0
+    },
+    {
+      "id": "solipsism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "psychMechanism": "Other-minds skepticism weaponized as harm-premise defeater / A genuine epistemic problem (the inferential, defeasible character of other-mind attribution) deployed selectively to void the victim of imposed suffering / Performative inconsistency (the skepticism is never lived, only invoked where it would excuse procreation) / Asymmetry-blindness (treats epistemic uncertainty as warrant to impose, ignoring the decision-theoretic structure of acting under that uncertainty)",
+      "framing_diverges_by_interlocutor": false,
+      "has_archetypeVariants": false,
+      "rwe_attached": 0
+    },
+    {
+      "id": "suffering-as-meaning",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "psychMechanism": "Toll-mistaken-for-goal / Instrumental value smuggled in as intrinsic (suffering as occasion-for-meaning misread as constitutively meaning-conferring) / Post-hoc rationalization of unchosen suffering (meaning extracted after the fact, then back-projected as justification) / Survivorship-filtered evidence (the meaning-from-suffering testimony comes only from those the suffering did not destroy)",
+      "framing_diverges_by_interlocutor": true,
+      "has_archetypeVariants": false,
+      "rwe_attached": 0
+    }
+  ]
+}

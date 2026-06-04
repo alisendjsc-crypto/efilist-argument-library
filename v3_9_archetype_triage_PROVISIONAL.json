@@ -1,0 +1,1002 @@
+{
+  "_meta": {
+    "file": "v3_9_archetype_triage_PROVISIONAL.json",
+    "session": "v3_9_0_scoping_cowork (K58, 2026-06-03)",
+    "status": "PROVISIONAL - Library-Claude ratification required (borderline[] especially)",
+    "gating_rule": "D2 (ratified_variant_design_v1): a variant earns a slot only when the archetype fundamentally shifts which true point leads, what must be conceded, or what closes the attack - re-aim only, never rephrase-or-strength-adjust. Default FEWER; register shifts are 0.",
+    "provenance_note": "Calls marked prior-session derive from operator-supplied screenshots of the failed Library-Claude session and are honored, not re-derived. Calls marked k58 are this session's own.",
+    "built_excluded": [
+      "ai-fear",
+      "antinatalism-misanthropic",
+      "benatar-asymmetry-attack",
+      "slippery-slope-eugenics",
+      "violence-as-reductio",
+      "why-not-suicide",
+      "wild-animal-suffering-consistency"
+    ]
+  },
+  "summary": {
+    "cards_triaged": 74,
+    "needs_0_variants": 65,
+    "needs_1_variant": 7,
+    "needs_2_variants": 2,
+    "new_slots_total": 11,
+    "borderline_count": 9
+  },
+  "cards": [
+    {
+      "id": "life-gift",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Soft reflex; recipient-requirement + asymmetry refutation lands identically regardless of speaker. Sophisticates do not deploy it as a structural attack; pressed, it collapses to benatar-asymmetry-attack.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "just-depressed",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate",
+        "defender"
+      ],
+      "rationale": "Canonically pure ad hominem, but two slots are material: sophisticate frames mood-congruent cognition as an epistemic defeater (does affective state undermine the reasoning) needing distinct epistemic handling, not just truth-independence; defender weaponizes the dodge to keep the indictment off the argument - naming the biographical genetic fallacy is the move. Drifter collapses to canonical; blended omitted.",
+      "confidence": "high",
+      "est_effort": "medium",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "why-not-suicide",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "consent-both-ways",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "False symmetry; no-preferences-no-wrong closes the folk deployment. The formal symmetry version is already a different node (bradley-no-subject); the consent-framework version is consent-incoherent. Collapse, not variant.",
+      "confidence": "medium",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "nihilism-label",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Conflation; the valence-backwards counter closes all. The metaethical sophisticate version collapses to meta-ethical-pluralism / moral-particularism.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "economy-population",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Economic-units confession-framing closes all; the dependency-ratio sophisticate version concedes the mechanics and meets the same instrumentalization point.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "benatar-asymmetry-attack",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "transhumanist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Drifter tech-optimism collapses to future-solve.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "self-defeating",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Truth-is-not-propagation (heliocentrism) closes memetic-formal and casual versions alike.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "imposing-values",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Imposition-inversion closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "ai-fear",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "violence-as-reductio",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "natural-reproduce",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Is-ought refutation is speaker-invariant; the sophisticate naturalistic-teleology version collapses into evolution-purpose.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "gods-plan",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Theological reflex; the theodicy-grade version is free-will-defense (its own node - the corpus pair already encodes the speaker split). Register-only otherwise.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "just-edgy",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Dismissal via social categorization; categorization-is-not-refutation plus receipts closes all speakers. The defender teenage-phase dodge takes identical handling - too weak to warrant a slot.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "meaning-through-suffering",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Sophisticate node of the suffering-as-meaning pair; the pair already encodes the speaker split.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "free-will-defense",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Sophisticate node of the gods-plan pair.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "most-people-happy",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate"
+      ],
+      "rationale": "Drifter vibe-claim closes on bias-naming. A sophisticate deploying wellbeing research (life-satisfaction data, hedonic measurement) shifts the close: concede the data exists, attack self-report validity, then pivot - even granting the data, aggregate satisfaction cannot license unconsented imposition on the distribution tail. The leading point shifts from bias to license.",
+      "confidence": "medium",
+      "est_effort": "small",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "love-beauty-art",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "v3.8.19-reconciled; the real-goods concession + good-does-not-cancel-bad closes all. The axiological sophisticate version collapses to virtue-ethics-flourishing / hedonic-contrast.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "joy-outweighs-harms",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "v3.8.21 strengthen already absorbed the sophisticate spread (utility-monster reductio, two-horn dilemma, intrapersonal rescue) across all three registers; variants would duplicate fresh work.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "masochist-counterexample",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Anecdote-class; pain-used-not-valued mechanism closes all speakers. The lone C wants register strengthening (v3.8 frozen - defer), not archetype slots; a heterogeneity-of-valuation sophisticate version is a strengthen candidate, not a variant.",
+      "confidence": "medium",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "procreative-liberty",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Rights-trump-card debate deployment meets the same harm-boundary point.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "negative-util-aggregation",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Drifters do not deploy formal reductios.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "wild-animal-suffering-consistency",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "western-philosophy",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Origin genetic fallacy; the global-pessimism receipts (Buddhism, Jainism, dukkha) close all speakers identically.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "antinatalism-misanthropic",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "speak-for-everyone",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Sample-of-one reasoning; structural restatement closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "evolution-purpose",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Teleology projection; blind-algorithm + is-ought closes all. Collapse TARGET for natural-reproduce sophisticate deployments - keep canonical strong, no slots.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "future-solve",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate"
+      ],
+      "rationale": "Drifter deferral closes on transitional-sacrifice. The sophisticate longtermist expected-value version (astronomical future value justifying present suffering) is a genuinely distinct framework attack: the close requires the NU-versus-total-utilitarian aggregation critique, the non-consent of transitional generations, and EV asymmetry under uncertainty - machinery the canonical only gestures at.",
+      "confidence": "medium",
+      "est_effort": "small",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "extinction-culture",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Consolation-prize close works for the folk deployment. Impersonal-value axiology (art and knowledge as agent-neutral goods) is the real sophisticate pressure, but that machinery lives in population-ethics-paradoxes / non-identity-problem; collapse note rather than slot.",
+      "confidence": "medium",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "playing-god",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Inverted hubris; inaction-requires-no-authority closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "policy-proposal",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Whether-versus-how plus the actual policy list closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "next-person-cure-cancer",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate"
+      ],
+      "rationale": "Drifter lottery-reflex closes on canonical inversion; the sophisticate expected-value / decision-theory framing shifts what closes: guaranteed harms imposed for speculative goods, plus you also create the next torturer, argued as formal decision theory under uncertainty rather than rhetoric.",
+      "confidence": "high",
+      "est_effort": "small",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "pinker-better-world",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical already concedes the full dataset and closes structurally (improved prison conditions do not license the prison); statistical sophistication changes nothing.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "privileged-first-world",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": true,
+      "archetypes": [
+        "defender"
+      ],
+      "rationale": "Defender invokes standpoint - your privilege invalidates this - as a discussion-stopper; the slot names the genetic fallacy and carries the empirical point that suffering is worse precisely where privilege is absent. Drifter closes on canonical receipts.",
+      "confidence": "high",
+      "est_effort": "small",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "selfish-lazy",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": true,
+      "archetypes": [
+        "defender"
+      ],
+      "rationale": "Motive attack; the defender dodge impugns motives mid-debate, so the slot carries the framework-versus-motive distinction. Parallels antinatalism-misanthropic (built, 4 slots) but narrower - defender only.",
+      "confidence": "high",
+      "est_effort": "small",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "consent-incoherent",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "suffering-makes-human",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Definitional circle; naming the circle closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "red-button-repugnant",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate",
+        "defender"
+      ],
+      "rationale": "High-charge accusatory - same class as the built seven, and the only one of that class without slots. Sophisticate: the NU-entails-omnicide formal reductio needs person-affecting / ex-ante machinery plus the painless-cessation-versus-killing distinction argued formally, not just conflation-naming. Defender: the public-square smear (he wants everyone dead) needs VAR-style separation of thought-experiment from advocacy plus de-escalation. Drifter horror-reflex closes on canonical. NET-NEW call this session - ratify explicitly.",
+      "confidence": "medium",
+      "est_effort": "medium",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "slippery-slope-eugenics",
+      "status": "built",
+      "archetypes": [
+        "sophisticate",
+        "defender",
+        "drifter",
+        "blended"
+      ],
+      "needs_variants": false,
+      "note": "all 4 slots shipped pre-v3.9; out of triage scope"
+    },
+    {
+      "id": "adoption-instead",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Pragmatic deflection; antinatalists-support-adoption closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "bitter-childhood",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": true,
+      "archetypes": [
+        "defender"
+      ],
+      "rationale": "Biographical ad hominem, same pattern as the depression and selfishness objections: the defender dodge is the biographical genetic fallacy, and the slot names it. Otherwise the Newton-counter closes all. Prior-session phrasing was ambiguous between 0 and 1 - included for ratification.",
+      "confidence": "medium",
+      "est_effort": "small",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "cant-prove-nonexistence-better",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Structural-not-experiential clarification closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "animals-reproduce",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "A variant of the natural-reproduce appeal to nature; does not earn a slot.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "prior-session (operator screenshots, pre-shutdown Library-Claude triage)"
+    },
+    {
+      "id": "overpopulation-addressed",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Ethics-not-demographics closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "hedonic-contrast",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Asymmetry-holds-regardless closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "ableist-objection",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Universality response closes all; standpoint deployment gets the same misidentification-naming.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "change-your-mind",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Age-based authority + survivorship bias; the receipts (Schopenhauer to 72, Cioran to 84, Benatar for decades) close all speakers. A preference-adaptation sophisticate version collapses to revealed-preference / most-people-happy.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "anthropic-principle",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Ego-projected-onto-void close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "meta-ethical-pluralism",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Sophisticate-native; suffering-acknowledgment-or-aesthetics close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "heat-death-futility",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Scale-does-not-nullify-now closes the cosmic gotcha at any sophistication grade.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "happiness-is-choice",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Voluntarist folk reflex; sophisticates deploy adaptation or set-point arguments instead (most-people-happy territory). The victim-blaming inversion closes all deployments.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "cherry-picking-worst",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": true,
+      "archetypes": [
+        "sophisticate"
+      ],
+      "rationale": "Drifter most-lives-are-fine closes on the gamble framing. The sophisticate risk-ethics version (ex-ante permissibility, acceptable tail-risk, actuarial framing) shifts the machinery: non-consent defeats ex-ante justification, tail severity is unbounded, and the bearer cannot be compensated - a different concession set than the rhetorical close.",
+      "confidence": "medium",
+      "est_effort": "small",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "revealed-preference",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Folk versions drift to why-not-suicide (built) or most-people-happy.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "social-contract",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Kidnapping-victim analogy closes all registers.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "moral-progress",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Now-sufferers-as-transitional-sacrifices closes regardless of trajectory optimism grade.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "non-identity-problem",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "bradley-no-subject",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). v3.8.6 strengthen carried all registers.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "contractualism-scanlon",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Scanlon-own-test inversion.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "phenomenological-existentialism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "harman-benign-creation",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "population-ethics-paradoxes",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "boonin-critique",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Framework does not rest on Benatar alone.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "moral-particularism",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Sophisticate-native; suffering-survives-the-framework-debate close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "performative-contradiction",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). 95.0 A ceiling; hostage-telephone closes gotcha and formal versions alike.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "marxist-materialist",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Post-capitalist-residue closes all; the demobilizing-reactionary-pessimism function-attack gets framework-versus-function severance (luxury-belief machinery) - same close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "buddhist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Folk pair is western-philosophy.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "virtue-ethics-flourishing",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Flourishing-presupposes-existence.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "neuroscience-positive-states",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). v3.8.5r strengthen current.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "epistemic-humility",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). The permanent-deferral agnostic shield gets the same default-inversion (uncertainty defaults to restraint).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "incommensurability",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Evaluating-the-act-not-the-comparison closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "flow-states-csikszentmihalyi",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2).",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "luxury-belief",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Sociological reduction; truth/function severance closes all. The Henderson-citing sophisticate gets the same close formalized as a genetic fallacy.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "pragmatist-objection",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Utility-is-not-truth closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "survivor-testimony",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Survivorship bias closes all; the emotional-authority defender push gets the same bias-naming.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "care-ethics",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). Bond-created-by-unilateral-fiat closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "rights-future-generations",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Rights-holder requirement closes all.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "indigenous-philosophy",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "v3.8.19-reconciled; sufferer-appears-under-either-ontology closes the philosophical version. The decolonial standpoint-dodge (your framework is colonial) is a live-debate move whose close - naming the genetic move and the standing question before content engagement - arguably diverges from canonical. Contestable; flagged rather than granted.",
+      "confidence": "medium",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "eliminativism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). v3.8-cut addition; doing-anything-IS-the-badness close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "solipsism",
+      "tier": 4,
+      "category": "Genuine Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Canonical response is already written to the steelman - the sophisticate IS the canonical speaker. Drifter/defender deployments simplify the register without shifting which point leads, what is conceded, or what closes (D2). v3.8.22 strengthen current; reciprocity close.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    },
+    {
+      "id": "suffering-as-meaning",
+      "tier": 2,
+      "category": "Folk Philosophical",
+      "needs_variants": false,
+      "archetypes": [],
+      "rationale": "Toll-versus-goal equivocation closes all; the sophisticate version IS meaning-through-suffering (its own node) - the corpus already splits this objection by speaker grade.",
+      "confidence": "high",
+      "est_effort": "none",
+      "provenance": "k58 cowork provisional"
+    }
+  ],
+  "borderline": [
+    {
+      "id": "consent-both-ways",
+      "lean": "deny (0 slots)",
+      "why_contestable": "False symmetry; no-preferences-no-wrong closes the folk deployment. The formal symmetry version is already a different node (bradley-no-subject); the consent-framework version is consent-incoherent. Collapse, not variant.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "most-people-happy",
+      "lean": "grant sophisticate",
+      "why_contestable": "Drifter vibe-claim closes on bias-naming. A sophisticate deploying wellbeing research (life-satisfaction data, hedonic measurement) shifts the close: concede the data exists, attack self-report validity, then pivot - even granting the data, aggregate satisfaction cannot license unconsented imposition on the distribution tail. The leading point shifts from bias to license.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "masochist-counterexample",
+      "lean": "deny (0 slots)",
+      "why_contestable": "Anecdote-class; pain-used-not-valued mechanism closes all speakers. The lone C wants register strengthening (v3.8 frozen - defer), not archetype slots; a heterogeneity-of-valuation sophisticate version is a strengthen candidate, not a variant.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "future-solve",
+      "lean": "grant sophisticate",
+      "why_contestable": "Drifter deferral closes on transitional-sacrifice. The sophisticate longtermist expected-value version (astronomical future value justifying present suffering) is a genuinely distinct framework attack: the close requires the NU-versus-total-utilitarian aggregation critique, the non-consent of transitional generations, and EV asymmetry under uncertainty - machinery the canonical only gestures at.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "extinction-culture",
+      "lean": "deny (0 slots)",
+      "why_contestable": "Consolation-prize close works for the folk deployment. Impersonal-value axiology (art and knowledge as agent-neutral goods) is the real sophisticate pressure, but that machinery lives in population-ethics-paradoxes / non-identity-problem; collapse note rather than slot.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "red-button-repugnant",
+      "lean": "grant sophisticate+defender",
+      "why_contestable": "High-charge accusatory - same class as the built seven, and the only one of that class without slots. Sophisticate: the NU-entails-omnicide formal reductio needs person-affecting / ex-ante machinery plus the painless-cessation-versus-killing distinction argued formally, not just conflation-naming. Defender: the public-square smear (he wants everyone dead) needs VAR-style separation of thought-experiment from advocacy plus de-escalation. Drifter horror-reflex closes on canonical. NET-NEW call this session - ratify explicitly.",
+      "slots_at_stake": 2
+    },
+    {
+      "id": "bitter-childhood",
+      "lean": "grant defender",
+      "why_contestable": "Biographical ad hominem, same pattern as the depression and selfishness objections: the defender dodge is the biographical genetic fallacy, and the slot names it. Otherwise the Newton-counter closes all. Prior-session phrasing was ambiguous between 0 and 1 - included for ratification.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "cherry-picking-worst",
+      "lean": "grant sophisticate",
+      "why_contestable": "Drifter most-lives-are-fine closes on the gamble framing. The sophisticate risk-ethics version (ex-ante permissibility, acceptable tail-risk, actuarial framing) shifts the machinery: non-consent defeats ex-ante justification, tail severity is unbounded, and the bearer cannot be compensated - a different concession set than the rhetorical close.",
+      "slots_at_stake": 1
+    },
+    {
+      "id": "indigenous-philosophy",
+      "lean": "deny (0 slots)",
+      "why_contestable": "v3.8.19-reconciled; sufferer-appears-under-either-ontology closes the philosophical version. The decolonial standpoint-dodge (your framework is colonial) is a live-debate move whose close - naming the genetic move and the standing question before content engagement - arguably diverges from canonical. Contestable; flagged rather than granted.",
+      "slots_at_stake": 1
+    }
+  ]
+}

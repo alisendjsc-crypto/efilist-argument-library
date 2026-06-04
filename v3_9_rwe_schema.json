@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "file": "v3_9_rwe_schema.json",
+    "session": "v3_9_0_scoping_cowork (K58, 2026-06-03)",
+    "posture": "DOCUMENTS the existing binding (it already exists and is explicit) + defines defender-RWE intake. No corpus mutation."
+  },
+  "link_schema_current": {
+    "location": "corpus.realWorldExamples[] (136 instances, corpus-embedded; rendered by rwe.html)",
+    "binding": "instance.attached_objections[] = {objection_id, fit_to_trigger_phrases (exact | parallel-structure-different-anchor | ...), attachment_rationale} - explicit many-to-many, no inference layer",
+    "instance_attestation_fields": [
+      "source_url",
+      "archive_url",
+      "source_date",
+      "accessed_date",
+      "source_title",
+      "source_byline",
+      "source_publication",
+      "source_register",
+      "short_quote_under_15_words",
+      "paraphrased_summary",
+      "engagement_context",
+      "rhetorical_move_observed",
+      "corpus_decay_risk",
+      "notes_for_schema"
+    ],
+    "archetype_fields": [
+      "archetype_signal_observed (sophisticate 72 / defender 15 / drifter 6 / blended 5 / not-applicable 38)",
+      "archetype_signal_rationale",
+      "archetype_signal_additional_tags",
+      "speaker_type",
+      "instance_polarity"
+    ],
+    "instance_polarity_distribution": {
+      "deploys-against": 91,
+      "refutation-of-deployment": 23,
+      "deploys-for": 10,
+      "neutral-attestation": 12
+    },
+    "state": "136/136 bound; 78/81 objections covered; homeless = NONE. Unbound objections (no RWE yet): eliminativism, solipsism, suffering-as-meaning - the three newest nodes. Absence is recorded absence, not error."
+  },
+  "v3_9_surfacing_gap": "Binding lives in the corpus and renders on rwe.html only. Card-level surfacing (per-objection RWE panel on combined/index) is the v3.9 RWE-surfacing deliverable: render-path work, zero schema change required - attached_objections already carries everything a per-card panel needs.",
+  "defender_rwe_intake": {
+    "definition": "A defender-RWE documents a real-world instance of the DEFENSE side: either a defender-archetype deployment of the objection (archetype_signal_observed=defender) or a refutation-of-deployment instance (instance_polarity=refutation-of-deployment, 23 already exist; deploys-for, 10 exist).",
+    "criteria": [
+      "1. Primary source: source_url + archive_url + accessed_date all present (v1.7 attestation - no paywalled-memory or recalled-from-training sourcing)",
+      "2. Verbatim short_quote_under_15_words + paraphrased_summary, quote checkable against the archive copy",
+      "3. Explicit attached_objections[] with fit_to_trigger_phrases + attachment_rationale at the evidential bar of existing instances",
+      "4. archetype_signal_observed=defender requires archetype_signal_rationale grounded in the source text, not vibes",
+      "5. Defamation posture per defamation_posture_note_v1_6 for named individuals",
+      "6. NO-FORCE RULE (handout-locked): where the defender stance has no real-world instance, the slot stays empty - absence recorded as absence; synthesizing or stretching an instance to fill coverage is the forbidden padding",
+      "7. Every intake must pass v3prime_validator_v1_7.py attestation rules before fold"
+    ],
+    "sourcing_bar": "Same bar as the existing 136 - the 15 defender-signal + 23 refutation-polarity instances are the working precedent set; mirror their field discipline."
+  }
+}
