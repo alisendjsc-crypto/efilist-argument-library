@@ -1,0 +1,69 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "bitter-childhood",
+  "built_in_session": "v3_9_clusterA_defender_dodge",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all four surfaces; NOT applied to corpus; no canon bump in-chat.",
+  "parent_refutation_summary": "Core (tier 1, Emotional/Reflexive; psychMechanism = genetic fallacy / psychologizing the arguer / biographical reductionism): reducing a philosophical position to its biographical origin to imply that identifying the personal catalyst invalidates it. Parent moves: (a) genetic fallacy run across philosophy — if biographical reduction invalidated belief it would void Nietzsche (illness), Marx (poverty), Kierkegaard (broken engagement), each catalyst real and each irrelevant to truth-value; (b) pathologization-of-dissent — medicalizing a position one cannot refute (the Soviet 'sluggish schizophrenia' parallel: convert opposition into clinical illness so it can be 'treated' rather than answered); (c) the consent-irony closer — if the childhood WAS the catalyst, that childhood was itself imposed without consent, so the objection inadvertently proves the proxy-gamble point. Newton-counter (medium/short): a troubled childhood did not invalidate calculus; the burned child's observation about fire is not less valid for the burn. Sources: EFIList genetic-fallacy/biographical-reductionism, pathologization-of-dissent, consent-irony.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "bitter-childhood (rebuttal_grading_ledger.json L977)",
+    "ledger_md5_read": "3b71a3e97c363d62261396c666c6c981; corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 corroborated; 2026-06-03.",
+    "axes": {
+      "v": 0.95,
+      "s": 0.9,
+      "c": 0.95,
+      "r": 0.9,
+      "a": 0.95
+    },
+    "short": {
+      "rsi_pct": 89.3,
+      "grade": "A"
+    },
+    "medium": {
+      "rsi_pct": 91.3,
+      "grade": "A"
+    },
+    "long": {
+      "rsi_pct": 93.0,
+      "grade": "A"
+    },
+    "headline_grade_long": "A",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long A — the strongest node in Cluster A). The defender variant was NOT independently graded; it inherits the parent RSI per ratified policy D6. Display must state 'inherited', never imply independent grading. Authoring held to A-grade standard (tight, no padding) to be worthy of the inheritance."
+  },
+  "responses_archetypeVariants": {
+    "defender": "The biographical dodge is the most personal form the genetic fallacy takes: \"you don't believe this, you're just wounded — bad parents made you this way.\" Concede the biography without flinching, because flinching is the tell and the honesty costs nothing: yes, many antinatalists did arrive through their own suffering, and they should say so plainly rather than perform a laboratory neutrality nobody actually has. How you reached a truth is not evidence against it. That is the fallacy named, and naming it is most of the work — but the defender slot earns its keep on what comes next, because the move is a bet the interlocutor cannot collect on. He needs the hidden premise that trauma distorts toward falsehood. It does not. The one thing a bad childhood reliably does is strip the optimism filter that comfortable lives keep installed — so the wounded arguer is not seeing falsely, he is seeing without the anaesthetic. The child who was burned is not a less reliable witness to fire; he is the more reliable one, and \"you only flinch at the stove because it hurt you\" is not a refutation, it is a confession that the speaker has been spared the lesson. Then spring the dilemma the dodge walks straight into. To explain an entire philosophy by the childhood, the interlocutor must concede the childhood was severe enough to generate a whole worldview of opposition — which means he has just granted that the suffering was real and formative, the exact magnitude the antinatalist is pointing at. He cannot hold both \"your pain was trivial, get over it\" and \"your pain was foundational enough to explain everything you believe.\" Pick one. If formative, it is data, and the argument is its report. If trivial, it cannot be the cause, and the diagnosis collapses. There is no third setting on which the biography both explains the belief and discredits it."
+  },
+  "slots_not_built": {
+    "sophisticate": "NOT GRANTED (triage).",
+    "drifter": "NOT BUILT — 'the Newton-counter closes all' (triage rationale): the loose biographical jab is fully closed by the parent's genetic-fallacy/Newton-counter at parent strength; a slot would be padding.",
+    "blended": "NOT GRANTED."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = A.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored directly from responses.short/medium/long + diagnosis + psychMechanism. Single defender slot per ratified scope; no if_* ancestor on this node. Prior-session phrasing was ambiguous between 0 and 1 variant; ratified to 1 (defender) for consistency with just-depressed/selfish-lazy."
+  },
+  "slot_attestation": {
+    "defender": {
+      "authored": true,
+      "lead_point": "Biographical genetic fallacy named (origin orthogonal to truth) + the data-source reversal: trauma does not distort toward falsehood, it strips the optimism filter — the burned child is the MORE reliable witness to fire, not the less. Re-aims the parent's own burned-child/fire image (responses.medium) into a witness-reliability frame.",
+      "concede_route": "Concede the biography cleanly (many antinatalists DID arrive via suffering; say so plainly; denial forfeits credibility). NO route-out. DEPLOYED closer: the trivial-or-formative dilemma — to use the childhood as explanation the interlocutor must concede it was severe/formative (granting the harm's magnitude), so he cannot also call it trivial; if formative it is data, if trivial it cannot be the cause.",
+      "register": "direct",
+      "char_count": 1859,
+      "D2_status": "re-aim only; no move absent from parent. The parent's cross-philosophy list (Nietzsche/Marx/Kierkegaard), the Soviet pathologization parallel, and the consent-irony closer are NOT reproduced (targeting divergence); the defender slot re-aims to the data-source reversal (sharpening the parent's burned-child image) plus the trivial-or-formative severity dilemma. Introduces nothing absent from responses + diagnosis; no strength shift; inherits parent A."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "Genetic-fallacy naming, the data-source reversal, and the severity dilemma are this node's OWN moves — DEPLOYED in the defender slot. This node owns the biographical-reductionism answer; routing would be circular.",
+    "routed_out": {
+      "none": "Defender slot is parent-strength self-contained; no residue routed. The parent's consent-irony closer (imposed childhood proves the gamble) is the parent's own move, deliberately not deployed here to keep the slot distinct; it remains available in the canonical long."
+    },
+    "not_a_route": "The burned-child/fire image is the PARENT's (responses.medium), re-aimed into a witness-reliability frame — an internal node-image reference, not a cross-archetype route-out."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-scope slot authored (defender). Sophisticate/blended NOT GRANTED per triage; drifter NOT BUILT (Newton-counter closes all). No padding.",
+    "D2": "Defender re-aims parent moves to the committed biographical-ad-hominem framing; no move introduced absent from responses.short/medium/long + diagnosis. The burned-child image is the parent's, sharpened (targeting, not a new argument). No strength shift; inherits parent A.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered. archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated."
+  }
+}

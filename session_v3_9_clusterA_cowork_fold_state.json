@@ -1,0 +1,42 @@
+{
+  "session_id": "v3_9_clusterA_cowork_fold",
+  "date": "2026-06-03",
+  "cowork_session": "K60",
+  "predecessor": "v3_9_clusterA_defender_dodge (MAX, in-chat, 2026-06-03)",
+  "scope_ruling": "Operator AQ x2 (2026-06-03): (1) FOLD+COMMIT ONLY - no deploy, no pin move; pin holds v3.8.22/15ffaebf (terminal-stable citable release) until the post-session_B v3.9 coherence checkpoint, which resolves the just-depressed defender->sophisticate intra-node route before anything ships; batch-deploy resource math 4:1. (2) RWE card-render bumped to K61 (commit-only, same checkpoint) - one mega-literal splice per session.",
+  "branch_plan": "All K60 efilist commits land on NEW branch v3.9.x (from main @15c7f55). Pushing main would Pages-autodeploy the mutated combined.html and break pin==live; the branch push still gets sole-copies off-panel onto origin. Merge v3.9.x->main at the checkpoint = the deploy.",
+  "baseline_verified": {
+    "efilist_HEAD": "15c7f55",
+    "corpus_md5": "6ac568fcd2e9ba712063ded7d239ddb0",
+    "ledger_md5": "3b71a3e97c363d62261396c666c6c981",
+    "combined": "15ffaebf / 2391247 B == pin == live (curl -sL)",
+    "canon": "v37_20 ad091dc6",
+    "validator": "self-test _overall_pass true + corpus PASS pre & post"
+  },
+  "fold": {
+    "method": "OBJECTIONS-literal bracket-matched structural round-trip; literal 579570 B byte-identical across combined/index/jsx, redump-exact (indent=2, ensure_ascii=False), json-equal to corpus objections; corpus redump-exact too -> zero prose regex",
+    "nodes": {
+      "privileged-first-world": "f9516881/1802ch",
+      "selfish-lazy": "00c72c95/1908ch",
+      "bitter-childhood": "5cd90817/1859ch",
+      "just-depressed": "8c4c10d2/2125ch"
+    },
+    "carriers": "7->11; new nodes defender-only (D1 omit-where-nil); old 7 byte-intact; base short/medium/long verbatim (D7 asserted); ledger READ-ONLY (D6); wrapper untouched (3.8.0/81/243)",
+    "deltas": {
+      "corpus": "+8026 -> 3cda0af3 / 1310395 B",
+      "combined": "+8002 -> c697653d / 2399249 B",
+      "index": "+8002 -> 65c92080 / 1852772 B",
+      "jsx": "+8003 (incl chrome 'authored on 7'->'11' nodes) -> 68951cb1 / 1253447 B"
+    }
+  },
+  "handoff_corrections": [
+    "fold_spec listed 3 mutation surfaces; index_v3_8_0.html also embeds OBJECTIONS (4th surface) - cc-class N=4, folded",
+    "Exchange-17/K41 'variants render INVISIBLE until toggle ships' is STALE: combined/index/jsx all carry the D5 archetype toggle read-path + .archetype-row CSS + ARCHETYPE_ORDER/REGISTER consts (shipped in the v3.8.8-17 flush); jsx R1 docstring fix also already shipped. Variants render visibly at checkpoint deploy; the 'flip visible' render session is MOOT for archetypeVariants (RWE render still real)"
+  ],
+  "sole_copy_rescues": [
+    "ratified_variant_design_v1.json",
+    "v3_8_render_path_archetype_toggle_s1_directive.md (historical: superseded by shipped toggle; committed for provenance per operator instruction)"
+  ],
+  "canon": "MINOR 37.20->37.21 (project_canon_v37_21.json NEW; exactly 5 value paths; no key adds -> no keyset delta; invariants subtree 8727787c byte-stable; v37_20 untouched)",
+  "next": "Library-Claude session_B (just-depressed sophisticate PRIORITY); fold -> Cowork onto v3.9.x; checkpoint after B: merge v3.9.x->main + deploy + ONE pin move (new library-pin.py path, explicit --date) + releases.json entry"
+}

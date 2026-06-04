@@ -1,0 +1,69 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "selfish-lazy",
+  "built_in_session": "v3_9_clusterA_defender_dodge",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all four surfaces; NOT applied to corpus; no canon bump in-chat.",
+  "parent_refutation_summary": "Core (tier 1, Emotional/Reflexive; psychMechanism = projection — attributing selfishness to the one NOT imposing existence while defending the act of imposing it): structural projection. Parent moves: the selfishness charge is logically incoherent (it must call creating-for-one's-own-needs generous AND call declining-to-impose selfish); the cost-ledger — the natalist gets continuation, social approval, validation, old-age caretaker, legacy, pair-bond/parental neurochemistry, while the antinatalist gets stigma, suspicion, economic penalty, line-termination; conclusion — overriding the deepest biological programming for an entity who will never exist to thank you is 'the most radical form of altruism available to a biological organism.' Sources: EFIList projection-diagnosis, motivations-for-procreation inventory, altruism-reframe.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "selfish-lazy (rebuttal_grading_ledger.json L839)",
+    "ledger_md5_read": "3b71a3e97c363d62261396c666c6c981; corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 corroborated; 2026-06-03.",
+    "axes": {
+      "v": 0.9,
+      "s": 0.85,
+      "c": 0.9,
+      "r": 0.85,
+      "a": 0.85
+    },
+    "short": {
+      "rsi_pct": 83.3,
+      "grade": "B"
+    },
+    "medium": {
+      "rsi_pct": 85.4,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 87.0,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B). The defender variant was NOT independently graded; it inherits the parent RSI per ratified policy D6. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "defender": "Mid-argument, losing on premises, the interlocutor reaches for motive: \"this isn't philosophy, it's an excuse — you're lazy, you don't want the work, it's cowardice dressed up as ethics.\" Grant the part that is sometimes true, because some of it is and pretending otherwise is its own tell: yes, some people who land on antinatalism are selfish, idle, or afraid, and reach a defensible conclusion for indefensible reasons. A true belief held by a coward is still true. That is the entire hinge — motive and validity are orthogonal. Whether the arguer would have made a good parent, or is hiding from diapers behind Benatar, has precisely no bearing on whether imposing guaranteed, unconsented suffering on a new person is permissible. You have slid from \"your motive is bad\" to \"your conclusion is false,\" and the second does not follow from the first; it is the actor-to-claim collapse, and reaching for it concedes you have run out of things to say about the claim. Even granting, for argument, that every antinatalist alive were moved by pure sloth, the asymmetry would stand exactly as it stands now, because arguments do not weaken when their advocates are unworthy of them. Then turn the charge around, because it has a blade on the reverse. \"Selfishness\" indicts the antinatalist for declining a costly project for self-interested reasons. But the procreator's reasons — legacy, validation, company in old age, the biological itch, the terror-managed reach for a genetic afterlife — are at least as self-interested, and unlike the antinatalist's restraint they are discharged onto a third party who never agreed to carry them. Laziness that produces no victim and fulfillment purchased with someone else's guaranteed suffering are not in the same moral category. If self-interest is the crime, the one who manufactures a sufferer to satisfy it is the deeper offender, not the one who quietly declines."
+  },
+  "slots_not_built": {
+    "sophisticate": "NOT GRANTED (triage): 'Parallels antinatalism-misanthropic (built, 4 slots) but narrower — defender only.' The motive attack is a committed-interlocutor move; there is no distinct sophisticate axiological version that would not duplicate misanthropic's framework-level slot.",
+    "drifter": "NOT GRANTED.",
+    "blended": "NOT GRANTED."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored directly from responses.short/medium/long + diagnosis + psychMechanism. Single defender slot per ratified scope; no if_* ancestor on this node."
+  },
+  "slot_attestation": {
+    "defender": {
+      "authored": true,
+      "lead_point": "Framework-versus-motive cut: motive and validity are orthogonal — a true belief held by a coward is still true; the asymmetry's force does not track whether the arguer would have made a good parent. Names the actor-to-claim collapse ('your motive is bad' -> 'your conclusion is false').",
+      "concede_route": "Concede the kernel (some antinatalists ARE selfish/idle/afraid and reach a right conclusion for wrong reasons; denial forfeits credibility). NO route-out. DEPLOYED closer: the self-interest charge boomerangs with an asymmetry the parent ledger implies but does not sharpen — the natalist's self-interest (legacy/validation/old-age/biological/terror-management) is discharged onto a non-consenting third party, so self-interest-that-creates-a-victim is the deeper offense than self-interest-that-produces-none.",
+      "register": "direct",
+      "char_count": 1908,
+      "D2_status": "re-aim only; no move absent from parent. The parent's full cost-ledger and 'most radical altruism' reframe are NOT reproduced (targeting divergence); the defender slot re-aims to motive/validity orthogonality plus the victim-asymmetry sharpening of the parent's procreation-motive inventory. Introduces nothing absent from responses + diagnosis; no strength shift; inherits parent B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "Projection-inversion, the framework-vs-motive cut, and the victim-asymmetry are this node's OWN moves — DEPLOYED in the defender slot. This node owns the motive-attack answer; routing would be circular.",
+    "routed_out": {
+      "none": "Defender slot is parent-strength self-contained; no residue routed."
+    },
+    "not_a_route": "The procreation-motive inventory (legacy/validation/old-age/biological/terror-management) is the parent's cost-ledger compressed — an internal layer reference, not an archetype route-out."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-scope slot authored (defender). Sophisticate/drifter/blended NOT GRANTED per triage (narrower than misanthropic; defender-only). No padding.",
+    "D2": "Defender re-aims parent moves to the committed motive-attack framing; no move introduced absent from responses.short/medium/long + diagnosis. Cost-ledger compressed and re-pointed to the victim-asymmetry (targeting, not a new argument). No strength shift; inherits parent B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered. archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated."
+  }
+}

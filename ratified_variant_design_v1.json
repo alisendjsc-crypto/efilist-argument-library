@@ -1,0 +1,71 @@
+{
+  "artifact": "ratified_variant_design",
+  "version": "v1",
+  "ratified_by": "Josiah",
+  "ratified_in_session": "variant_feature_decision_ratification_s1",
+  "ratified_date_iso": "2026-05-29",
+  "ruling_basis": "All items ACCEPTED per Claude recommendation in proposal v0.2, no deviation.",
+  "source_proposal": "variant_feature_design_proposal_v0_2.md",
+  "status": "LOCKED. Governs the v3.8 implementation arc. Supersedes proposal as the binding decision record.",
+  "project_state": "archived_v3_7_3_stable (unchanged by this ratification; v3.8 is a future MAJOR cut)",
+
+  "decisions": {
+    "D1_slot_structure": {
+      "ruling": "ACCEPTED",
+      "locked": "One variant per archetype. Fixed 4-slot axis: sophisticate / defender / drifter / blended. Each slot optional (omit where divergence is nil rather than pad near-duplicates). No N-per-archetype."
+    },
+    "D2_variant_definition": {
+      "ruling": "ACCEPTED",
+      "locked": "A variant is the same refutation re-aimed per archetype (which true point leads, what register, what to concede). NOT rephrasing. NOT new arguments. A strength shift signals drift to argument-level = a D2 violation to catch."
+    },
+    "D3_schema_location": {
+      "ruling": "ACCEPTED",
+      "locked": "Nested object responses.archetypeVariants{sophisticate, defender, drifter, blended}. Corpus JSON is primary authority (authored content); index.html / JSX are derived views. Variants flow DOWN the canonical chain (no surface-only denormalization \u2014 unlike RSI)."
+    },
+    "D4_authoring_workflow": {
+      "ruling": "ACCEPTED",
+      "locked": "Hybrid. Template scaffolds the four slots + per-archetype failure-mode / register rubric; prose handwritten per node where real divergence exists. Build order Tier-A first: slippery-slope-eugenics (A93) -> why-not-suicide (A89) -> ai-fear (B83.9), then Tier-B."
+    },
+    "D5_display_surface": {
+      "ruling": "ACCEPTED",
+      "locked": "In-place archetype toggle (pills: sophisticate | defender | drifter | blended) on the response view, defaulting to the canonical short/medium/long body. NOT a separate VARIANTS tab. NOT hover/expand.",
+      "deferred_subdecision": "If objectionSubforms (B) is surfaced, it gets its OWN disclosure-panel decision, separate from this toggle. Deferred."
+    },
+    "D6_grading": {
+      "ruling": "ACCEPTED",
+      "locked": "Variant set inherits the parent objection RSI grade. No per-variant cold-grade initially.",
+      "revisit_trigger": "Revisit per-variant grading ONLY if post-build evidence shows register choice materially moves persuasive strength.",
+      "precondition_status": "SATISFIED \u2014 corpus is 78/78 graded; not a blocker."
+    },
+    "D7_backward_compat": {
+      "ruling": "ACCEPTED",
+      "locked": "Additive optional field; no hard break. A node with only {short, medium, long} stays valid under the v3.8 schema. Validator v1.6 -> v1.7 adds presence-conditional validation (if present, all present keys non-empty; absence valid; variants MUST NOT alter short/medium/long)."
+    },
+    "D8_editor_html": {
+      "ruling": "ACCEPTED",
+      "locked": "Ship editor.html for v3.7.3 now without variant support. Its validation is forward-tolerant: ignore-and-PRESERVE unknown optional fields (never reject-on-unknown / never silently strip). Variant support lands in a follow-on editor version."
+    }
+  },
+
+  "rename_and_decouple": {
+    "ruling": "ACCEPTED",
+    "locked": "Rename refutationalVariants -> objectionSubforms at the v3.8 cut. It is an attack-decomposition / objection sub-form layer (provenance-heavy: locus_of_refusal, first_attested_*, corpus_anchors), NOT an archetype variant. Keep its shape; it remains a sibling field (not under responses). Its display surface is a separate, deferred decision."
+  },
+
+  "bundle": {
+    "ruling": "ACCEPTED",
+    "locked": "Fold the 2 new suffering-denial objections (eliminativism, solipsism) into the SAME v3.8 terminus-reopening MAJOR cut as the variant feature + the rename. One unseal, one re-attestation, one md5-set revision. Do not unseal the terminus twice.",
+    "cluster": "suffering-denial family by route-of-denial: eliminativist (NEW) + solipsist (NEW) + illusionist (buddhist-objection, EXISTS), cross-linked."
+  },
+
+  "v3_8_invariant_delta_preview": {
+    "note": "These change at the v3.8 cut (MAJOR + terminus-reopening). Listed for planning only; NOT applied here.",
+    "objection_count": "78 -> 80",
+    "also_revised": ["map1_node_count", "dep_graph + map_graph node/link counts", "tier/category tallies", "schema v1.6 -> v1.7", "validator v1.6 -> v1.7", "release md5 set", "archive_attestation"]
+  },
+
+  "build_sequence": [
+    "Phase 0 (Claude, philosophy sessions): author (a) responses + diagnosis + psychMechanism for eliminativism + solipsism nodes; (b) archetypeVariants prose for Tier-A nodes (D4 order).",
+    "Phase 1 (Cowork, single MAJOR splice): see v3_8_cowork_handout_s1.md."
+  ]
+}

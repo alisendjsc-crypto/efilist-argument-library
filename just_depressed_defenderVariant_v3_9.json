@@ -1,0 +1,73 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "just-depressed",
+  "built_in_session": "v3_9_clusterA_defender_dodge",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all four surfaces; NOT applied to corpus; no canon bump in-chat. DEFENDER SLOT ONLY (this cluster); sophisticate slot is Cluster B.",
+  "parent_refutation_summary": "Core (tier 1, Emotional/Reflexive; psychMechanism = Terror Management distal defense / ad hominem / pathologization): 'that's just the depression talking' is a biological immune response, not a counterargument. Parent long (comprehensive, 6196 chars) runs the full apparatus: (a) the live-exchange dodge — conversation-ending circumstantial ad hominem; the get-help/why-don't-you-kill-yourself tell; ~1-in-100 genuine worry; (b) the etiology-orthogonal-to-truth core; (c) the boomerang-with-honest-seam — the principle 'emotionally-caused beliefs are suspect' boomerangs onto the natalist's optimism-biased affirmation harder, but only shows the principle self-refuting, does NOT prove antinatalism (reverse genetic fallacy disclaimed); (d) the EPISTEMIC half — optimism bias is the only documented systematic distortion (directional, upward; positive-illusions literature defends it on adaptiveness not accuracy); depressive realism is narrow/contested and nothing leans on it; (e) the surviving kernel — motivated reasoning exists; the legitimate worry is a premise-level critique, which the dodge refuses. Sources: depressive-realism, optimism-bias/positive-illusions, TMT distal defense, genetic-fallacy.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "just-depressed (rebuttal_grading_ledger.json L31)",
+    "ledger_md5_read": "3b71a3e97c363d62261396c666c6c981; corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 corroborated; 2026-06-03.",
+    "axes": {
+      "v": 0.86,
+      "s": 0.82,
+      "c": 0.86,
+      "r": 0.84,
+      "a": 0.83
+    },
+    "short": {
+      "rsi_pct": 80.5,
+      "grade": "C"
+    },
+    "medium": {
+      "rsi_pct": 82.6,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 84.2,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B; short 80.5/C, medium 82.6/B, long 84.2/B). The defender variant was NOT independently graded; it inherits the parent headline-long B per ratified policy D6, independent of the C-grade short. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "defender": "This is the dodge the rest of the cluster imitates, in its purest form: not an argument, a diagnosis deployed to end the argument. Concede immediately that the arguer may well be depressed — many antinatalists are, denying it walks straight into the trap, and the concession costs nothing because it was never the point. You have not touched the asymmetry or the consent objection; you have changed the subject to the person holding them, and a syllogism's validity does not track anyone's serotonin. But the defender slot's real work is exposing the bad faith, because here it leaves fingerprints. The same interlocutor who says \"get help\" will, a few lines down the same thread, say \"so why don't you kill yourself\" — and those two sentences cannot be reconciled under a single motive of concern. They reconcile instantly under a single motive of hostility. The \"care\" is contempt with better public relations, and naming that is the move: not defending against the diagnosis, but pointing at the second sentence and asking which one was sincere. A boomerang is available and worth one pass — if emotional etiology discredits a belief, the natalist's life-affirmation is discredited harder, since it is the species-wide default, evolution-installed precisely to keep organisms reproducing, a far heavier psychological load than the minority dissent. But that only shows the principle is self-refuting when applied evenly; it does not prove antinatalism, because diagnosing the natalist's optimism would be the identical fallacy fired in reverse, and the slot does not get to spend the opponent's argument while keeping its own. Hold the honest remainder: roughly one deployment in a hundred is genuine worry, and that person gets met in good faith — but good-faith worry cashes out as a specific premise-level critique that points at the load-bearing claim and shows mood produced it, and the dodge never does that. Whether affect actually defeats the reasoning is a real and harder question — and it is the sophisticate's question, answered in that slot, not this one. The defender move stops where the bad faith is named."
+  },
+  "slots_not_built": {
+    "sophisticate": "DEFERRED to session_B (sophisticate-empirical/EV cluster), per ratified authoring_plan. The sophisticate slot handles mood-congruent cognition as an EPISTEMIC DEFEATER (does affective state undermine the reasoning) — the parent's epistemic half (optimism-bias/positive-illusions/depressive-realism). NOT authored here; the defender slot explicitly ROUTES the epistemic question to it. just-depressed = [sophisticate, defender]; only defender is in Cluster A.",
+    "drifter": "NOT BUILT — 'collapses to canonical' (triage rationale): the casual 'you're just down' read is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B (short 80.5/C noted, non-blocking; D6 inherits headline-long).",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. Single defender slot in this cluster; sophisticate slot deferred to session_B. DISTINCTNESS NOTE: the canonical long is comprehensive (6196 chars) and already contains the dodge, the tell, the boomerang, AND the epistemic apparatus diffusely; the defender slot is a FOCUSED ~2.2k re-aim that partitions parent content by archetype — defender isolates the bad-faith dodge with the get-help/kill-yourself tell as the organizing LEAD and explicitly routes the epistemic-defeater half OUT to the sophisticate slot. Distinctness is by partition (the misanthropic-carrier method: full parent content preserved across the set, redistributed by which archetype triggers which move)."
+  },
+  "slot_attestation": {
+    "defender": {
+      "authored": true,
+      "lead_point": "Name the dodge as a subject-change (validity is serotonin-independent), then LEAD with the bad-faith tell — the same mouth says 'get help' and 'why don't you kill yourself,' irreconcilable under concern, instant under hostility; 'care' is contempt with better PR. The move is pointing at the second sentence, not defending against the first.",
+      "concede_route": "Concede the arguer may well be depressed (denial walks into the trap; it was never the point). Keep the parent's ~1-in-100 genuine-worry concession and meet it in good faith. ROUTE-OUT: the epistemic-defeater question (does affect defeat the reasoning) is explicitly routed to the SOPHISTICATE slot (in-node, session_B) — the defender slot deliberately does NOT argue the optimism-bias/depressive-realism case.",
+      "register": "direct",
+      "char_count": 2125,
+      "D2_status": "re-aim only; no move absent from parent. The boomerang is carried at one pass WITH the parent's honest self-refutation seam (does NOT prove antinatalism; reverse genetic fallacy disclaimed) — the load-bearing seam is preserved, not dropped. The parent's epistemic apparatus (optimism-bias directionality, positive-illusions, depressive-realism caveat) is NOT reproduced (routed to sophisticate, targeting divergence). Introduces nothing absent from responses.long + diagnosis; no strength shift; inherits parent headline-long B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The dodge-naming, the get-help/kill-yourself bad-faith tell, the minimal boomerang-with-seam, and the 1-in-100 good-faith concession are this node's OWN moves for the COMMITTED bad-faith interlocutor — DEPLOYED in the defender slot.",
+    "routed_out": {
+      "residue": "Whether mood-congruent cognition actually functions as an epistemic defeater of the reasoning (the optimism-bias / positive-illusions / depressive-realism apparatus). Conceded as 'a real and harder question'; NOT argued in the defender slot.",
+      "targets": {
+        "just-depressed::sophisticate": "The sophisticate slot (deferred to session_B) owns the epistemic-defeater treatment — affective state as a candidate defeater, optimism bias as the only documented systematic distortion, depressive-realism as narrow/contested. SAME-NODE cross-slot route (the misanthropic pattern: sophisticate=framework/epistemic, defender=actor/bad-faith)."
+      },
+      "same_node_route_note": "This is an INTRA-NODE route (defender -> sophisticate slot of the same objection), not a cross-objection route. It is valid only once the sophisticate slot is authored in session_B; flagged as an open dependency."
+    },
+    "not_a_route": "The boomerang's honest seam (boomerang shows self-refutation, not antinatalism's truth) is the parent's own disclaimer, preserved verbatim-in-substance — an internal layer reference, not an archetype route-out."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (defender). Sophisticate DEFERRED to session_B (granted, not omitted); drifter NOT BUILT (collapses to canonical); blended OMITTED. No padding.",
+    "D2": "Defender re-aims parent moves to the committed bad-faith framing; no move introduced absent from responses.long + diagnosis. The epistemic apparatus is routed to the sophisticate slot (targeting divergence); the boomerang seam is preserved. No strength shift; inherits parent headline-long B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered. archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated."
+  }
+}
