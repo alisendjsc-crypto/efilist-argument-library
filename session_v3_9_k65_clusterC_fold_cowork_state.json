@@ -1,0 +1,48 @@
+{
+  "session_id": "v3_9_k65_clusterC_fold_cowork",
+  "date": "2026-06-04",
+  "role": "wuld.ink Cowork (fold + deploy + pin)",
+  "two_phase": "gate-fail at open (no carriers) -> relay D:\\K65-relay-to-library-claude.md -> same-day delivery -> gate re-pass FULL",
+  "sequencing": "(a) deploy-per-fold on MAIN - library-Claude CONFIRM, no nudge; operator routed the decision to library-Claude",
+  "fold": {
+    "node": "red-button-repugnant",
+    "slots": [
+      "sophisticate",
+      "defender"
+    ],
+    "insert": "sophisticate-BEFORE-defender, archetypeVariants after long",
+    "counts": {
+      "av_nodes": "15->16",
+      "variant_bodies": "37->39",
+      "nodes": 81,
+      "prompt_arithmetic_correction": "K65 prompt said carriers 15->17; no real metric matches 17 - av-nodes is the K62 11->15 metric and goes to 16; v3.9 carrier files 9->11; bodies 37->39 (cc N=10)"
+    },
+    "deltas": {
+      "literal": "+4967 identical x3 (95ef3465/601107 base)",
+      "corpus": "+4975 = literal + 2sp x4 lines"
+    },
+    "pre": {
+      "combined": "f26dfdd420c7b61ab2a77ec7ab6dae02/2926583",
+      "index": "ebbd64961b741931be0197188c35ece5/2380196",
+      "corpus": "3dc2ca64e839dacf99cf0000a903a699/1321042",
+      "jsx": "b529c95c02880c2c2ea33636772623ca/1267178"
+    },
+    "post": {
+      "combined": "f3870f6e86b91730048f6fdc1ef947bb/2931550",
+      "index": "6c2a670acfbfbfd717f97c7232f51ae5/2385163",
+      "corpus": "9af9dd5c24d7801e9f58ddc36353e9e7/1326017",
+      "jsx": "46e5a70492b1466fa82f1f229d0b1e9c/1272145"
+    },
+    "gates": {
+      "validator_v1_7": "self-test + corpus PASS pre AND post",
+      "node_check": "PASS x2 (data-island filter)",
+      "jsx_balance": "0/0/0",
+      "hygiene": "0 NUL / 0 CR / tails OK x4",
+      "D7": "3 register md5s byte-verbatim pre+post",
+      "jsx_docstring": "authored on 15 nodes -> 16 (nodes metric, byte-neutral)"
+    },
+    "ledger": "9b979e4e UNTOUCHED (read-only; C cold-grades carrier-local)",
+    "canon": "37.25->37.26 MINOR, 5-value-path template exact, invariants serialized-identical, slr 30",
+    "carriers_verify": "22a six-md5 6/6 + register md5 3/3 + body md5 == state claims x2 + bodylen==claimed x2 + gating false x2"
+  }
+}
