@@ -46,5 +46,17 @@
     "corpus_jsx": "byte-held (md5 assert; validator not required — corpus untouched)",
     "gen1_rem_residual": "0"
   },
-  "next": "operator PS block #1 (efilist 8-file commit on MAIN) -> Pages deploy -> live verify x3 -> pin v3.9.1 --date 2026-06-04 -> wuld-ink close block"
+  "next": "operator PS block #1 (efilist 8-file commit on MAIN) -> Pages deploy -> live verify x3 -> pin v3.9.1 --date 2026-06-04 -> wuld-ink close block",
+  "k64a_addendum": {
+    "date": "2026-06-04",
+    "trigger": "operator QA screenshots at K64 close: BOTH mode rendered black RWE cards on cream",
+    "root_cause": "K64 ordered HC overrides after legible -> HC won the legible+high-contrast stack; library BOTH semantics = legible/light surface wins (cascade emergence, zero combo rules)",
+    "fix": "reorder K64 block (legible AFTER high-contrast) x2 files; byte-neutral",
+    "mutations": {
+      "combined.html": "eeb52b8e -> f26dfdd420c7b61ab2a77ec7ab6dae02 / 2,926,583 held",
+      "index_v3_8_0.html": "60a429d9 -> ebbd64961b741931be0197188c35ece5 / 2,380,196 held"
+    },
+    "bookkeeping": "pin v3.9.1->v3.9.1r (K47 revision-suffix precedent) + canon 37.25 (operator-AQ-ratified; keeps next_rec tips true)",
+    "lesson": "BOTH-stack semantics are per-library emergent — probe the stacked state empirically before choosing cascade order; QA matrix must include the stacked mode"
+  }
 }
