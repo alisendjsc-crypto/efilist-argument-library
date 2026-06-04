@@ -1,0 +1,71 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "future-solve",
+  "built_in_session": "v3_9_clusterB_sophisticate_empirical",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all FOUR built surfaces (corpus JSON / JSX / combined.html / index_v3_8_0.html); NOT applied to corpus; no canon bump in-chat. SOPHISTICATE SLOT ONLY (S-single per ratified triage v3_9_archetype_triage_PROVISIONAL). Defender/drifter collapse to canonical; blended omitted — no defender apparatus on this node. Folds onto branch v3.9.x as one of the cluster-B 5-carrier set (single canon bump 37.22->37.23; no partial fold).",
+  "checkpoint_gating": false,
+  "intra_node_route_closed": "N/A — S-single (sophisticate-only); no intra-node cross-slot route exists on this node.",
+  "parent_refutation_summary": "Core (tier 3, Structural/Pragmatic; psychMechanism = Optimism Bias projected forward in time / deferral of ethical responsibility). The parent long treats 'the future will solve it' as the temporal proxy gamble: present beings bear 100% of current conditions as non-consenting transitional sacrifices for descendants who may never exist; the progress narrative converts imposed misery into purpose and suppresses the recognition that consent was never sought; the improvement period is always now and always projected to close ahead; and empirically progress is lateral, not directional (antibiotics and nuclear weapons in the same century), so the capacity that might reduce suffering also manufactures novel forms of it.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "rebuttal_grading_ledger.json grades['future-solve'] (key-path; D6 inherit, no cold-grade).",
+    "verification_read": "ledger md5 3b71a3e97c363d62261396c666c6c981 (verified this session; matches K62 relay). corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 (authoring-mount value; matches the just-depressed exemplar + clusterA carriers). Parent long byte-count verified identical to register attestation. DIVERGENCE FLAGGED: K62 relay asserts live post-clusterA corpus md5 3cda0af38489321b64208393e9a219fa; this authoring mount reads pre-clusterA 6ac568fc (with canon already at v37.22). This carrier mirrors the exemplar's verified-authoring-mount convention rather than transcribing an unobserved hash; Cowork must re-verify against the live tree at fold.",
+    "axes": {
+      "v": 0.9,
+      "s": 0.85,
+      "c": 0.9,
+      "r": 0.85,
+      "a": 0.9
+    },
+    "short": {
+      "rsi_pct": 84.2,
+      "grade": "B"
+    },
+    "medium": {
+      "rsi_pct": 86.3,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 88.0,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B; short 84.2/B, medium 86.3/B, long 88.0/B). The sophisticate variant was NOT independently graded; it inherits the parent headline-long B per ratified policy D6. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "sophisticate": "The sophisticate version is not naive techno-utopianism; it is a discounting argument. Suffering, he says, is a solvable engineering problem, and once that trajectory is granted, present procreation is justified as the cost of arriving — the early generations are the price of the cure. Grant the trajectory arguendo. Grant that descendants centuries out suffer far less. The case still fails, and on the project's own spine, because the asymmetry does not run through the people who will benefit. The beings created now bear one hundred percent of present conditions — disease, decline, the full existential load, death — and they are non-consenting transitional sacrifices for a population that does not yet exist and may never. The asymmetry is decisive precisely because suffering-abolition is conceded: had those present beings not been created, the absence of their suffering would be good, while the absence of the speculative future-good they were spent to purchase deprives no one, because there is no one there to be deprived. You cannot net a benefit owed to hypothetical descendants against a harm imposed on actual people who never agreed to fund it. And the deferral itself is the tell. Every generation has been told its suffering was the meaningful down-payment on a better tomorrow; the narrative's function is to convert imposed misery into purpose and so suppress the recognition that consent was never sought. The improvement period is always now and always projected to close just ahead. The empirical record is a secondary point and must not carry the argument, but it is unkind to the optimist: progress is lateral, not directional — the century of antibiotics was equally the century of nuclear weapons and industrial confinement — so the same capacity that might one day reduce suffering reliably manufactures novel forms of it. The trajectory is assumed; the bill is certain; and it is sent to people who never signed for it."
+  },
+  "slots_not_built": {
+    "defender": "NOT BUILT — collapses to canonical (triage rationale): the simplified folk/voluntarist register shifts nothing about which point leads, what is conceded, or what closes (D2). No defender apparatus on this node.",
+    "drifter": "NOT BUILT — collapses to canonical (triage rationale): the casual deployment is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. S-single: sophisticate slot only (ratified triage); defender/drifter collapse to canonical, blended omitted. Parent long is THIN (1.7-2.1k ch vs the just-depressed exemplar's 6.2k); the sophisticate body is a proportional re-aim, not padded — partition is by which framework-level move organizes the canonical content.",
+    "distinctness_note": "Organized by the TRANSITIONAL-SACRIFICE non-consent under the ASYMMETRY-DECOUPLING SPINE (mandated for abolition/futurist nodes): the suffering-abolition trajectory is granted arguendo and the asymmetry is shown to run through the present non-consenting sacrifices, not the future beneficiaries (absent present beings = absent suffering, good; absent speculative future-good = no one deprived). Lateral-progress empirics are kept explicitly SECONDARY. Distinct from next-person-cure-cancer (expected-value/lottery + symmetry) by organizing on TEMPORAL deferral rather than speculative individual upside."
+  },
+  "slot_attestation": {
+    "sophisticate": {
+      "authored": true,
+      "lead_point": "Reframe the objection from naive techno-utopianism to a discounting argument (present cost for a future cure), grant the suffering-abolition trajectory arguendo, then deploy the ASYMMETRY-DECOUPLING SPINE: the asymmetry runs through the present non-consenting transitional sacrifices, not the future beneficiaries — absent the present beings their suffering would be good, while the absence of the speculative future-good deprives no one, so you cannot net a hypothetical-descendant benefit against a harm imposed on actual people who never agreed to fund it.",
+      "concede_route": "Grant the abolition trajectory arguendo — that is the POINT of the decoupling, so the case does not hinge on 'suffering will not actually be solved.' Seam: the asymmetry close neutralizes the deferral; the empirical lateral-progress point (antibiotics alongside nuclear weapons) is explicitly SECONDARY and must not carry the argument.",
+      "register": "analytic (direct)",
+      "char_count": 1951,
+      "D2_status": "re-aim only; no move absent from parent. Re-aims the parent long's temporal-proxy-gamble, transitional-sacrifice, meaning-making-suppresses-consent, and lateral-progress material to the discounting interlocutor. The ASYMMETRY-DECOUPLING SPINE is DEPLOYED per the PROJECT MANDATE for transhumanist/abolition nodes (future-solve qualifies): it makes explicit the structure the parent's 'temporal proxy gamble + non-consent' framing already rests on — not a foreign import. Empirical record kept secondary per decoupling discipline. No strength shift; inherits parent headline-long B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The discounting-reframe, the transitional-sacrifice non-consent, the deferral-as-consent-manufacture diagnosis, and the asymmetry-decoupling spine (grant abolition arguendo; the asymmetry runs through the present sacrifices) are this node's OWN moves, DEPLOYED in the sophisticate slot. The lateral-progress empirics are deployed as an explicitly secondary, non-load-bearing point.",
+    "no_routed_in": "No routed_in dependency: this is an S-single with no intra-node cross-slot route (unlike just-depressed, whose defender routed the epistemic half to its sophisticate slot). No defender/drifter/blended slot exists on this node to route from or to.",
+    "not_a_route": "The asymmetry-decoupling spine is the canonical apparatus for this abolition/futurist node-class (project mandate) — an internal layer reference grounding the parent's gamble framing, not an archetype route-out.",
+    "no_cross_node_route": "Triage collapse-notes (e.g. 'drifter tech-optimism collapses to future-solve', 'folk versions drift to most-people-happy / why-not-suicide') are TRIAGE classifications of where simpler registers fold, NOT deployed cross-objection routes FROM this sophisticate slot. No cross-node route is surfaced; none manufactured (diminishing-returns discipline)."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (sophisticate). S-single per ratified triage: defender + drifter NOT BUILT (collapse to canonical); blended OMITTED. No padding; thin parent -> proportional re-aim, not inflation.",
+    "D2": "re-aim only; no move absent from parent. Re-aims the parent long's temporal-proxy-gamble, transitional-sacrifice, meaning-making-suppresses-consent, and lateral-progress material to the discounting interlocutor. The ASYMMETRY-DECOUPLING SPINE is DEPLOYED per the PROJECT MANDATE for transhumanist/abolition nodes (future-solve qualifies): it makes explicit the structure the parent's 'temporal proxy gamble + non-consent' framing already rests on — not a foreign import. Empirical record kept secondary per decoupling discipline. No strength shift; inherits parent headline-long B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered (byte-count verified identical to register attestation). archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated. Folds to responses.archetypeVariants.sophisticate per D3."
+  }
+}

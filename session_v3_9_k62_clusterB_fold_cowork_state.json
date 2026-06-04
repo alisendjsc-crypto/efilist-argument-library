@@ -1,0 +1,47 @@
+{
+  "artifact": "session_v3_9_k62_clusterB_fold_cowork_state",
+  "session": "K62 (wuld.ink Cowork)",
+  "date": "2026-06-03",
+  "class": "v3.9 cluster-B sophisticate fold - ALL FIVE as ONE set; COMMIT-ONLY on branch v3.9.x; NO deploy, NO pin move",
+  "gate_history": "K62 opened on the standing prompt; hard gate found 1/5 carriers (jd in-repo). Operator AQ ruled: draft relay for library-Claude (D:/K62-relay-to-library-claude.md, tree-verified node facts). All 4 carriers + authoring state delivered same day; gate re-passed; full session ran.",
+  "verify_before_fold": {
+    "branch_tip": "e2b1854",
+    "corpus": "3cda0af38489321b64208393e9a219fa",
+    "combined": "27f59f45f4e2c6c682832b16a920a054",
+    "index": "8266adceaf6a6f9e23e16fd853a74b47",
+    "jsx": "08307ff9882fdde8560eb2a29552a2a3",
+    "canon_v37_22": "69a42329bf3bde986af3917a9bd85b15",
+    "ledger_READ_ONLY": "3b71a3e97c363d62261396c666c6c981",
+    "live_pin_held": "15ffaebf55d225d107432c62df0a661f / 2,391,247 B (curl -sL x2 this session)"
+  },
+  "fold": {
+    "method": "K60 whole-literal structural round-trip; mutate parsed objections ONCE, redump x3 surfaces + corpus; zero prose regex",
+    "objections_literal": "5b353ec8 (590,486 B; byte-identical x3; redump-exact; json-equal to corpus) -> 95ef3465; delta +10,621 B IDENTICAL x3",
+    "corpus_delta": "+10,647 B (2sp-deeper indent on 13 structural lines)",
+    "carriers": "11 -> 15 (4 net-new + just-depressed sophisticate inserted BEFORE defender; intra-node route CLOSED; checkpoint gate CLOSED)",
+    "bodies_ch": {
+      "just-depressed": 2648,
+      "most-people-happy": 2093,
+      "cherry-picking-worst": 1708,
+      "future-solve": 1951,
+      "next-person-cure-cancer": 1897
+    },
+    "D6_inherited_headlines": "B/B/B/B/A (next-person-cure-cancer A; labels say inherited)",
+    "D7": "register md5s asserted pre/post x5 nodes - HELD; 81 nodes FROZEN; jsx docstring 11->15 (byte-neutral, count==1)"
+  },
+  "checks": {
+    "validator_v1_7": "self-test _overall_pass:true; corpus 136-RWE PASS pre AND post (corpus changed - K61 redundancy posture N/A)",
+    "node_check": "PASS x2 (combined: 1 application/json data-island type-filtered per K61; index clean)",
+    "jsx": "brace/paren/bracket balance 0/0/0 (no syntax-checker in sandbox - standing)"
+  },
+  "canon": {
+    "file": "project_canon_v37_23.json NEW",
+    "bump": "MINOR 37.22 -> 37.23; exactly 5 top-level value paths (template mirrored from 21->22 diff); next_rec keyset preserved incl. 'after'; invariants subtree 8727787c BYTE-STABLE; slr 26->27; v37_22 untouched",
+    "next_rec": "v3_9_coherence_checkpoint (operator AQ-ratified at K62: checkpoint BEFORE clusters C/D)"
+  },
+  "adjudications": [
+    "corpus-md5: library-Claude authoring mount was STALE pre-clusterA (6ac568fc); live tree 3cda0af3 won (cc N=7). Carriers recorded BOTH values per relay design - adjudicated without a fork.",
+    "ledger band defect x2 (OUT OF SCOPE, D6 read-only): canon band 'A>=88' (v37_23 line ~2158) makes the stored 88.0/B longs on cherry-picking-worst + future-solve A-band; correction directive relayed to library-Claude (Exchange 20).",
+    "relay-spec drop (non-blocking): carriers verified base registers by byte-count, not the relay's register-md5 embed; D7 held by Cowork's own pre/post assert against the live tree."
+  ]
+}

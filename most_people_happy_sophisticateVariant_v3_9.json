@@ -1,0 +1,71 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "most-people-happy",
+  "built_in_session": "v3_9_clusterB_sophisticate_empirical",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all FOUR built surfaces (corpus JSON / JSX / combined.html / index_v3_8_0.html); NOT applied to corpus; no canon bump in-chat. SOPHISTICATE SLOT ONLY (S-single per ratified triage v3_9_archetype_triage_PROVISIONAL). Defender/drifter collapse to canonical; blended omitted — no defender apparatus on this node. Folds onto branch v3.9.x as one of the cluster-B 5-carrier set (single canon bump 37.22->37.23; no partial fold).",
+  "checkpoint_gating": false,
+  "intra_node_route_closed": "N/A — S-single (sophisticate-only); no intra-node cross-slot route exists on this node.",
+  "parent_refutation_summary": "Core (tier 2, Folk Philosophical; psychMechanism = Optimism Bias applied to self-report / Pollyanna Principle / Adaptation / Survivorship bias). The parent long runs five compounding errors in the appeal to life-satisfaction surveys: (a) self-report cannot assess welfare from outside experience, and the rating instrument is the rated, selection-calibrated brain; (b) the hedonic treadmill flattens satisfaction across objective conditions; (c) survivorship deletes the worst outcomes from the dataset; (d) social-desirability inflates reported positives; (e) the decisive close — even granting accurate surveys and 90% net-positive lives, the argument holds, because procreation is a non-consensual gamble and the catastrophic-draw minority never consented to play for the winners.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "rebuttal_grading_ledger.json grades['most-people-happy'] (key-path; D6 inherit, no cold-grade).",
+    "verification_read": "ledger md5 3b71a3e97c363d62261396c666c6c981 (verified this session; matches K62 relay). corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 (authoring-mount value; matches the just-depressed exemplar + clusterA carriers). Parent long byte-count verified identical to register attestation. DIVERGENCE FLAGGED: K62 relay asserts live post-clusterA corpus md5 3cda0af38489321b64208393e9a219fa; this authoring mount reads pre-clusterA 6ac568fc (with canon already at v37.22). This carrier mirrors the exemplar's verified-authoring-mount convention rather than transcribing an unobserved hash; Cowork must re-verify against the live tree at fold.",
+    "axes": {
+      "v": 0.9,
+      "s": 0.85,
+      "c": 0.9,
+      "r": 0.82,
+      "a": 0.85
+    },
+    "short": {
+      "rsi_pct": 82.6,
+      "grade": "B"
+    },
+    "medium": {
+      "rsi_pct": 84.7,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 86.3,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B; short 82.6/B, medium 84.7/B, long 86.3/B). The sophisticate variant was NOT independently graded; it inherits the parent headline-long B per ratified policy D6. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "sophisticate": "The sophisticate does not say cheer up. He treats aggregate life-satisfaction data as evidence — a real empirical claim that most lives are net-positive, and therefore that the wager pays out for nearly everyone. That is the version worth answering, and it fails at the inference rather than the data. Concede the surveys exist and are stable across cultures. Self-report still cannot bridge to objective welfare, because the instrument doing the rating is the same nervous system whose output is being rated, and selection has no stake in calibrating that instrument for accuracy — only for persistence. The one systematic, well-documented mood-linked distortion of self-appraisal runs upward. Optimism bias and the positive-illusions program (Taylor and Brown) find that mildly inflated self-assessment is the signature of psychological health and that more accurate appraisal tracks depression; the field defends these illusions on adaptiveness, never on accuracy. Grant that and the cheerful baseline is the documented distortion wearing the costume of normalcy, and the defeater disqualifies the optimist's read first and hardest. Three truncations compound it: adaptation flattens reported satisfaction across wildly different objective conditions, so the paraplegic and the lottery winner converge within two years — which indicts the instrument, not the conditions; social-desirability pressure inflates the upward read, since admitting a bad life invites pathologization; and survivorship silently deletes the worst outcomes — the suicides, the unrescuable, the dead infants file no response. But grant even all of this is wrong. Grant the surveys pristine and ninety percent of lives genuinely net-positive. The argument is untouched, because it was never an averages argument. Procreation is a non-consensual wager run on a third party, and the ten percent who draw catastrophically never agreed to play for the comfort of the winners. You do not get to gamble with someone else's welfare and then exhibit the people who happened to win as the justification for the people who lost."
+  },
+  "slots_not_built": {
+    "defender": "NOT BUILT — collapses to canonical (triage rationale): the simplified folk/voluntarist register shifts nothing about which point leads, what is conceded, or what closes (D2). No defender apparatus on this node.",
+    "drifter": "NOT BUILT — collapses to canonical (triage rationale): the casual deployment is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. S-single: sophisticate slot only (ratified triage); defender/drifter collapse to canonical, blended omitted. Parent long is THIN (1.7-2.1k ch vs the just-depressed exemplar's 6.2k); the sophisticate body is a proportional re-aim, not padded — partition is by which framework-level move organizes the canonical content.",
+    "distinctness_note": "Organized by the MEASUREMENT-VALIDITY attack: the inference from self-report to objective welfare fails because the rating instrument is the rated system, and the one documented systematic mood-linked distortion runs UPWARD (optimism bias / positive illusions, defended on adaptiveness not accuracy). Adaptation, survivorship, and social-desirability are compounding truncations. The consent-gamble close is the parent long's OWN final move. Distinct from cherry-picking-worst (which leads on the structure of the decision, not the reliability of the evidence) and from the abolition nodes (asymmetry-decoupling spine) by which move LEADS."
+  },
+  "slot_attestation": {
+    "sophisticate": {
+      "authored": true,
+      "lead_point": "Raise the bar from sentiment to a genuine empirical claim (aggregate satisfaction data as evidence of net-positive lives), then attack the INFERENCE, not the data: self-report cannot bridge to objective welfare (the rating instrument is the selection-calibrated rated system), and the one documented systematic mood-linked distortion runs UPWARD (optimism bias / positive illusions, defended on adaptiveness not accuracy), so the cheerful baseline is the documented distortion and the defeater disqualifies the optimist's read first.",
+      "concede_route": "Concede the surveys exist and are cross-culturally stable; concede arguendo that 90% of lives are genuinely net-positive. Seam: the directional-bias inversion plus the adaptation/survivorship/social-desirability truncations NEUTRALIZE the inference, but the close is the parent's consent-gamble move — which does not prove the average life bad, it makes averages irrelevant to a non-consensual wager.",
+      "register": "analytic / empirical-rigorous (direct)",
+      "char_count": 2093,
+      "D2_status": "re-aim only; no move absent from parent. Re-aims the parent long's measurement-validity apparatus (instrument-identical-to-experience, hedonic treadmill, survivorship, social-desirability) and the optimism-bias directionality (diagnosis + psychMechanism) to the empirical-claim interlocutor; the consent-gamble close is the parent long's OWN final move re-aimed (tier-2 Folk node — NOT the abolition-node asymmetry-decoupling mandate, which governs transhumanist/abolition nodes only). No new arguments; no strength shift; inherits parent headline-long B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The measurement-validity attack (self-report cannot bridge to welfare; the directional-distortion inversion via optimism bias / positive illusions; the adaptation, survivorship, and social-desirability truncations) and the consent-gamble close are this node's OWN moves, DEPLOYED in the sophisticate slot.",
+    "no_routed_in": "No routed_in dependency: this is an S-single with no intra-node cross-slot route (unlike just-depressed, whose defender routed the epistemic half to its sophisticate slot). No defender/drifter/blended slot exists on this node to route from or to.",
+    "not_a_route": "The consent-gamble close is the parent long's own final move (an internal layer reference), not an archetype route-out. This is a tier-2 Folk-Philosophical node, so the close is the parent's, NOT the abolition-node asymmetry-decoupling mandate.",
+    "no_cross_node_route": "Triage collapse-notes (e.g. 'drifter tech-optimism collapses to future-solve', 'folk versions drift to most-people-happy / why-not-suicide') are TRIAGE classifications of where simpler registers fold, NOT deployed cross-objection routes FROM this sophisticate slot. No cross-node route is surfaced; none manufactured (diminishing-returns discipline)."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (sophisticate). S-single per ratified triage: defender + drifter NOT BUILT (collapse to canonical); blended OMITTED. No padding; thin parent -> proportional re-aim, not inflation.",
+    "D2": "re-aim only; no move absent from parent. Re-aims the parent long's measurement-validity apparatus (instrument-identical-to-experience, hedonic treadmill, survivorship, social-desirability) and the optimism-bias directionality (diagnosis + psychMechanism) to the empirical-claim interlocutor; the consent-gamble close is the parent long's OWN final move re-aimed (tier-2 Folk node — NOT the abolition-node asymmetry-decoupling mandate, which governs transhumanist/abolition nodes only). No new arguments; no strength shift; inherits parent headline-long B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered (byte-count verified identical to register attestation). archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated. Folds to responses.archetypeVariants.sophisticate per D3."
+  }
+}

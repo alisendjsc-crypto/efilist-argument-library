@@ -1,0 +1,35 @@
+{
+  "artifact": "session_state",
+  "session_id": "v3_9_clusterB_sophisticate_empirical_k62_completion",
+  "date": "2026-06-03",
+  "class": "MAX (philosophy-dense; sophisticate re-aim authoring)",
+  "declared_deliverable": "Author the 4 remaining cluster-B sophisticate archetypeVariants carriers. DELIVERED (all 4).",
+  "verified_facts": {
+    "canon_present": "project_canon_v37_22.json (mount refreshed mid-session; v37_21 at open)",
+    "corpus_md5_authoring_mount": "6ac568fcd2e9ba712063ded7d239ddb0 (pre-clusterA; matches jd exemplar + clusterA carriers)",
+    "corpus_md5_relay_claim": "3cda0af38489321b64208393e9a219fa (K62 relay live post-clusterA; NOT observed on this mount)",
+    "ledger_md5": "3b71a3e97c363d62261396c666c6c981 (verified; matches relay)",
+    "exemplar": "just_depressed_sophisticateVariant_v3_9.json present (11679 B); full schema mirrored",
+    "parent_longs_byte_verified": {
+      "most-people-happy": 1854,
+      "cherry-picking-worst": 1874,
+      "future-solve": 1729,
+      "next-person-cure-cancer": 2106
+    },
+    "triage": "all 4 = S-single (sophisticate only); defender+drifter collapse to canonical, blended omitted (v3_9_archetype_triage_PROVISIONAL.json)",
+    "validator": "v3prime_validator_v1_7.py present; NOT run (no corpus mutation; carriers are side-cars)"
+  },
+  "discrepancies_flagged": [
+    "CORPUS MD5: mount reads pre-clusterA 6ac568fc while canon is v37.22 (post-clusterA-implied) and relay claims live 3cda0af3. Carriers embed the verified-mount value per the exemplar convention and flag the divergence in-artifact (inherited_grade.verification_read). Cowork MUST re-verify against the live tree at fold; if live is genuinely 3cda0af3, the verification_read note already records both values.",
+    "GRADE BOUNDARY: cherry-picking-worst and future-solve long rsi = 88.0 (displayed) graded B; canon band is A>=88. Inherited as B per ledger/relay (D6 inherit; no cold-grade). If the ledger intends 88.0 as boundary-inclusive A, that is a ledger correction OUTSIDE this session's scope."
+  ],
+  "scope_discipline": "S-single only; no defender/drifter/blended; base registers untouched; no canon bump; no fold/commit; no cold-grade.",
+  "deliverables_for_K62_fold": [
+    "most_people_happy_sophisticateVariant_v3_9.json",
+    "cherry_picking_worst_sophisticateVariant_v3_9.json",
+    "future_solve_sophisticateVariant_v3_9.json",
+    "next_person_cure_cancer_sophisticateVariant_v3_9.json"
+  ],
+  "next_recommended_action": "Operator uploads all 4 carriers (the in-repo jd sophisticate exemplar is already present) into the K62 re-run. Cowork folds all 5 in one whole-literal pass (carriers 11->15), canon MINOR 37.22->37.23, commit-only on v3.9.x. Resolve the corpus-md5 divergence at/before fold; optionally clarify the 88.0/B ledger boundary.",
+  "note": "This session_state file is a record + handoff; NOT a K62 fold input."
+}

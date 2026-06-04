@@ -1,0 +1,71 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "next-person-cure-cancer",
+  "built_in_session": "v3_9_clusterB_sophisticate_empirical",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all FOUR built surfaces (corpus JSON / JSX / combined.html / index_v3_8_0.html); NOT applied to corpus; no canon bump in-chat. SOPHISTICATE SLOT ONLY (S-single per ratified triage v3_9_archetype_triage_PROVISIONAL). Defender/drifter collapse to canonical; blended omitted — no defender apparatus on this node. Folds onto branch v3.9.x as one of the cluster-B 5-carrier set (single canon bump 37.22->37.23; no partial fold).",
+  "checkpoint_gating": false,
+  "intra_node_route_closed": "N/A — S-single (sophisticate-only); no intra-node cross-slot route exists on this node.",
+  "parent_refutation_summary": "Core (tier 1, Emotional/Reflexive; psychMechanism = speculative positive outcome used to justify guaranteed negative exposure / lottery fallacy). The parent long dismantles the 'next Einstein' appeal in five moves: (a) the statistics — against ~140M births/yr, paradigm-shifting contributions are vanishingly rare, so creation priced off the jackpot defends a ruinous casino; (b) the symmetry problem — speculative extraordinary downside condemns on the identical logic; (c) the structural guarantee — suffering and death are certain regardless of achievement; (d) the instrumentalization — the child is valued for its utility to existing beings; (e) the deepest point — cancer-curers are motivated by the suffering the system produces, so celebrating the cure while defending the disease-factory is incoherent.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "rebuttal_grading_ledger.json grades['next-person-cure-cancer'] (key-path; D6 inherit, no cold-grade).",
+    "verification_read": "ledger md5 3b71a3e97c363d62261396c666c6c981 (verified this session; matches K62 relay). corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 (authoring-mount value; matches the just-depressed exemplar + clusterA carriers). Parent long byte-count verified identical to register attestation. DIVERGENCE FLAGGED: K62 relay asserts live post-clusterA corpus md5 3cda0af38489321b64208393e9a219fa; this authoring mount reads pre-clusterA 6ac568fc (with canon already at v37.22). This carrier mirrors the exemplar's verified-authoring-mount convention rather than transcribing an unobserved hash; Cowork must re-verify against the live tree at fold.",
+    "axes": {
+      "v": 0.9,
+      "s": 0.9,
+      "c": 0.95,
+      "r": 0.85,
+      "a": 0.9
+    },
+    "short": {
+      "rsi_pct": 86.3,
+      "grade": "B"
+    },
+    "medium": {
+      "rsi_pct": 88.3,
+      "grade": "A"
+    },
+    "long": {
+      "rsi_pct": 89.9,
+      "grade": "A"
+    },
+    "headline_grade_long": "A",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long A; short 86.3/B, medium 88.3/A, long 89.9/A). The sophisticate variant was NOT independently graded; it inherits the parent headline-long A per ratified policy D6, independent of the B-grade short. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "sophisticate": "The sophisticate refuses the sentimental form and presses the expected-value form: across enough births, extraordinary positive outcomes occur — a cancer cure, a moral revolution — and the prospect of those tail-benefits, summed over the population, justifies the practice. This is the lottery fallacy with better posture, and it breaks three ways before the spine even arrives. The statistics: against roughly a hundred and forty million births a year, paradigm-shifting contributions are countable on one hand, so pricing creation off the jackpot is defending a casino that ruins thousands because one patron once won. The symmetry: if speculative extraordinary upside licenses creation, speculative extraordinary downside condemns it on the identical logic — the next genocidaire, the next engineered pathogen, the next predator are drawn from the same urn, and you do not get to invoke the right tail while suppressing the left. The instrumentalization: the argument values the child not for itself but for its utility to the already-existing, which is the proxy gamble in its most transparent dress. Then the spine, which holds even if you grant the jackpot. Suppose this child does cure cancer. The asymmetry is unmoved, because the good a possible person might produce is not a good whose absence harms anyone — uncreated, there is no one deprived of the cure — whereas the suffering and death the actual child is guaranteed to undergo is a real harm imposed without consent. A certain harm to a real person cannot be retired by a fantasy benefit to existing others. And the framing eats itself: the people who cure cancer are overwhelmingly driven by the suffering the system produces, so to celebrate the hypothetical cure while defending the machine that guarantees the disease is incoherent. You do not need cancer researchers in a world that does not manufacture beings who get cancer."
+  },
+  "slots_not_built": {
+    "defender": "NOT BUILT — collapses to canonical (triage rationale): the simplified folk/voluntarist register shifts nothing about which point leads, what is conceded, or what closes (D2). No defender apparatus on this node.",
+    "drifter": "NOT BUILT — collapses to canonical (triage rationale): the casual deployment is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = A.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. S-single: sophisticate slot only (ratified triage); defender/drifter collapse to canonical, blended omitted. Parent long is THIN (1.7-2.1k ch vs the just-depressed exemplar's 6.2k); the sophisticate body is a proportional re-aim, not padded — partition is by which framework-level move organizes the canonical content.",
+    "distinctness_note": "Organized by the LOTTERY/EXPECTED-VALUE structure + SYMMETRY problem, closed by the ASYMMETRY-DECOUPLING SPINE (mandated): the statistics, the left-tail symmetry (the same urn yields the genocidaire), and the instrumentalization precede the spine, which holds even granting the jackpot — the good a possible person might produce is not a good whose absence harms anyone, while the actual child's suffering is a real harm imposed without consent. Distinct from future-solve (temporal deferral) by organizing on speculative INDIVIDUAL upside; distinct from cherry-picking by foregrounding the speculative GOOD rather than the dismissed tail-BAD."
+  },
+  "slot_attestation": {
+    "sophisticate": {
+      "authored": true,
+      "lead_point": "Refuse the sentimental form and press the expected-value/lottery form (tail-benefits summed over the population justify the practice), then break it three ways — statistics (the jackpot is vanishingly rare; this defends a ruinous casino), symmetry (speculative downside condemns on identical logic: the next genocidaire is drawn from the same urn), and instrumentalization (the child valued for utility to the already-existing) — before deploying the ASYMMETRY-DECOUPLING SPINE.",
+      "concede_route": "Grant arguendo that the child COULD cure cancer — that is the premise of the decoupling. Seam: the asymmetry retires the jackpot regardless of its probability (uncreated, no one is deprived of the cure; the actual child's suffering is a real harm without consent), so the case does not rest on 'it is unlikely' alone; the incoherence of celebrating cures while running the disease-factory closes it.",
+      "register": "analytic (direct)",
+      "char_count": 1897,
+      "D2_status": "re-aim only; no move absent from parent. Re-aims the parent long's lottery-fallacy/statistics, symmetry-problem, instrumentalization, and cure-curers-motivated-by-suffering material to the expected-value interlocutor. The ASYMMETRY-DECOUPLING SPINE is DEPLOYED per the PROJECT MANDATE for futurist/speculative nodes (next-person-cure-cancer qualifies): it grounds the parent's 'guaranteed harm vs fantasy benefit' structure — not a foreign import. No strength shift; inherits parent headline-long A (medium 88.3/A, long 89.9/A)."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The expected-value/lottery reframe, the statistics, the left-tail symmetry, the instrumentalization diagnosis, the asymmetry-decoupling spine (grant the jackpot arguendo), and the disease-factory-incoherence close are this node's OWN moves, DEPLOYED in the sophisticate slot.",
+    "no_routed_in": "No routed_in dependency: this is an S-single with no intra-node cross-slot route (unlike just-depressed, whose defender routed the epistemic half to its sophisticate slot). No defender/drifter/blended slot exists on this node to route from or to.",
+    "not_a_route": "The asymmetry-decoupling spine is the canonical apparatus for this futurist/speculative node-class (project mandate) — an internal layer reference grounding the parent's gamble framing, not an archetype route-out.",
+    "no_cross_node_route": "Triage collapse-notes (e.g. 'drifter tech-optimism collapses to future-solve', 'folk versions drift to most-people-happy / why-not-suicide') are TRIAGE classifications of where simpler registers fold, NOT deployed cross-objection routes FROM this sophisticate slot. No cross-node route is surfaced; none manufactured (diminishing-returns discipline)."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (sophisticate). S-single per ratified triage: defender + drifter NOT BUILT (collapse to canonical); blended OMITTED. No padding; thin parent -> proportional re-aim, not inflation.",
+    "D2": "re-aim only; no move absent from parent. Re-aims the parent long's lottery-fallacy/statistics, symmetry-problem, instrumentalization, and cure-curers-motivated-by-suffering material to the expected-value interlocutor. The ASYMMETRY-DECOUPLING SPINE is DEPLOYED per the PROJECT MANDATE for futurist/speculative nodes (next-person-cure-cancer qualifies): it grounds the parent's 'guaranteed harm vs fantasy benefit' structure — not a foreign import. No strength shift; inherits parent headline-long A (medium 88.3/A, long 89.9/A).",
+    "D7": "responses.short / medium / long carried verbatim, unaltered (byte-count verified identical to register attestation). archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated. Folds to responses.archetypeVariants.sophisticate per D3."
+  }
+}

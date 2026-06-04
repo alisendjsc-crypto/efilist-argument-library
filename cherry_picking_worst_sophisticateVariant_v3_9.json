@@ -1,0 +1,71 @@
+{
+  "artifact": "node_archetypeVariants_block",
+  "node_id": "cherry-picking-worst",
+  "built_in_session": "v3_9_clusterB_sophisticate_empirical",
+  "scaffold_ref": "archetype_variant_scaffold_v1",
+  "staging_status": "SIDE-CAR — staged for Cowork foldin to all FOUR built surfaces (corpus JSON / JSX / combined.html / index_v3_8_0.html); NOT applied to corpus; no canon bump in-chat. SOPHISTICATE SLOT ONLY (S-single per ratified triage v3_9_archetype_triage_PROVISIONAL). Defender/drifter collapse to canonical; blended omitted — no defender apparatus on this node. Folds onto branch v3.9.x as one of the cluster-B 5-carrier set (single canon bump 37.22->37.23; no partial fold).",
+  "checkpoint_gating": false,
+  "intra_node_route_closed": "N/A — S-single (sophisticate-only); no intra-node cross-slot route exists on this node.",
+  "parent_refutation_summary": "Core (tier 2, Folk Philosophical; psychMechanism = Dismissal of tail-risk ethics / failure to grasp that procreation is a gamble with the full distribution). The parent long answers the cherry-picking charge with risk ethics: every serious risk domain weighs the full distribution including the tails (regulators do not dismiss fatal side-effects because most respond well); the tails are structural features of the outcome space, not rhetoric; the parent cannot guarantee the child avoids the tail; and even excluding the tails, the guaranteed baseline (grief, illness, aging, death) suffices to trigger the asymmetry — you need only the certainty of pain, loss, and death without consent.",
+  "inherited_grade": {
+    "policy": "D6 — inherits parent objection RSI; no per-variant cold-grade. Ratified v3_9 (HOLD D6 + explicit inheritance label).",
+    "source_ledger_node": "rebuttal_grading_ledger.json grades['cherry-picking-worst'] (key-path; D6 inherit, no cold-grade).",
+    "verification_read": "ledger md5 3b71a3e97c363d62261396c666c6c981 (verified this session; matches K62 relay). corpus md5 6ac568fcd2e9ba712063ded7d239ddb0 (authoring-mount value; matches the just-depressed exemplar + clusterA carriers). Parent long byte-count verified identical to register attestation. DIVERGENCE FLAGGED: K62 relay asserts live post-clusterA corpus md5 3cda0af38489321b64208393e9a219fa; this authoring mount reads pre-clusterA 6ac568fc (with canon already at v37.22). This carrier mirrors the exemplar's verified-authoring-mount convention rather than transcribing an unobserved hash; Cowork must re-verify against the live tree at fold.",
+    "axes": {
+      "v": 0.9,
+      "s": 0.85,
+      "c": 0.9,
+      "r": 0.85,
+      "a": 0.9
+    },
+    "short": {
+      "rsi_pct": 84.2,
+      "grade": "B"
+    },
+    "medium": {
+      "rsi_pct": 86.3,
+      "grade": "B"
+    },
+    "long": {
+      "rsi_pct": 88.0,
+      "grade": "B"
+    },
+    "headline_grade_long": "B",
+    "inheritance_label": "GRADE INHERITED from canonical parent (headline-long B; short 84.2/B, medium 86.3/B, long 88.0/B). The sophisticate variant was NOT independently graded; it inherits the parent headline-long B per ratified policy D6. Display must state 'inherited', never imply independent grading."
+  },
+  "responses_archetypeVariants": {
+    "sophisticate": "The charge is methodological and deserves a methodological answer: the sophisticate says the antinatalist parades atrocities to misrepresent a distribution whose mass sits nowhere near the tails. Concede the mass. The average life is not bone cancer, and granting that costs nothing, because the argument was never about the average — it is about the object of a risk decision, and in every serious domain of risk ethics that object is the whole distribution, tails included. A regulator does not wave through a fatal adverse effect because most patients tolerate the drug; a safety board does not strike death from its analysis because most workers clock out alive. The tails are not rhetoric smuggled in to inflame. They are structural features of the outcome space that every act of procreation actually engages, because the parent cannot bind which ticket the child draws. To call their inclusion cherry-picking is to confuse a complete accounting of a gamble with a biased sample of a population — a category error, and one that cuts the other way: it is the optimist who is sampling, pricing the wager off the modal outcome while discounting the tail he cannot rule out for his own child. And the decisive move needs no tail at all. Strip the distribution to its guaranteed baseline — not catastrophe, only the certainties: aging, the loss of everyone loved, bodily decline, death — and that baseline already triggers the asymmetry, because it is suffering imposed on someone who never consented to receive it. You do not need leukemia to make the case. You need only the certainty that the created being will be made to undergo pain and loss it did not agree to, which the modal life delivers in full."
+  },
+  "slots_not_built": {
+    "defender": "NOT BUILT — collapses to canonical (triage rationale): the simplified folk/voluntarist register shifts nothing about which point leads, what is conceded, or what closes (D2). No defender apparatus on this node.",
+    "drifter": "NOT BUILT — collapses to canonical (triage rationale): the casual deployment is fully closed by the parent at parent strength.",
+    "blended": "OMITTED (triage rationale)."
+  },
+  "_variant_meta": {
+    "variant_axis": "archetype-strategic (D2)",
+    "grade_policy": "inherits parent RSI (D6); parent headline-long = B.",
+    "build_status": "v3.9 enrichment RE-AIM-from-base. Authored from responses.long + diagnosis + psychMechanism. S-single: sophisticate slot only (ratified triage); defender/drifter collapse to canonical, blended omitted. Parent long is THIN (1.7-2.1k ch vs the just-depressed exemplar's 6.2k); the sophisticate body is a proportional re-aim, not padded — partition is by which framework-level move organizes the canonical content.",
+    "distinctness_note": "Organized by the RISK-ETHICS REFRAME: the correct object of a procreation decision is the full distribution incl. tails (the regulator / safety-board analogy), so 'cherry-picking' is a category error (complete gamble-accounting vs biased population sample) that backfires onto the optimist who prices off the mode. The guaranteed-baseline-suffices close is the parent's own final move. Distinct from most-people-happy by leading on the STRUCTURE of the decision rather than the reliability of the evidence; distinct from next-person-cure-cancer by foregrounding the dismissed tail-BAD rather than a speculative GOOD."
+  },
+  "slot_attestation": {
+    "sophisticate": {
+      "authored": true,
+      "lead_point": "Reframe the methodological charge as risk ethics: the correct object of a procreation decision is the full distribution including the tails (regulators and safety boards weigh fatal outcomes despite modal tolerance), so calling tail-inclusion 'cherry-picking' is a category error — confusing a complete accounting of a gamble with a biased population sample — and it backfires, because it is the optimist who is sampling, pricing off the mode while discounting the tail he cannot rule out for his own child.",
+      "concede_route": "Concede the modal life is not catastrophic and the distribution's mass sits away from the tails. Seam: even granting all of that, the GUARANTEED baseline (aging, loss, decline, death) alone triggers the asymmetry — no tail required. Does not claim the average life is terrible; it makes the average's pleasantness irrelevant to a non-consensual imposition.",
+      "register": "analytic (direct)",
+      "char_count": 1708,
+      "D2_status": "re-aim only; no move absent from parent. Re-aims the parent long's risk-ethics apparatus (pharma / workplace full-distribution, tails-as-structural-features, the un-bindable ticket) to the methodological interlocutor, and carries the parent's own 'even the average includes grief/illness/aging/death -> triggers the asymmetry -> you need only certainty of pain/loss/death without consent' as the close. Tier-2 Folk node: the baseline-asymmetry close is the parent's OWN move, NOT the abolition-node decoupling mandate. No new arguments; no strength shift; inherits parent headline-long B."
+    }
+  },
+  "route_target_justification": {
+    "deployed_not_routed": "The risk-ethics reframe (full-distribution object, the regulator/safety-board analogy, the category-error diagnosis with its backfire onto the sampling optimist) and the guaranteed-baseline-suffices close are this node's OWN moves, DEPLOYED in the sophisticate slot.",
+    "no_routed_in": "No routed_in dependency: this is an S-single with no intra-node cross-slot route (unlike just-depressed, whose defender routed the epistemic half to its sophisticate slot). No defender/drifter/blended slot exists on this node to route from or to.",
+    "not_a_route": "The baseline-asymmetry close is the parent long's own final move (an internal layer reference), not an archetype route-out. Tier-2 Folk-Philosophical node: the close is the parent's, NOT the abolition-node asymmetry-decoupling mandate.",
+    "no_cross_node_route": "Triage collapse-notes (e.g. 'drifter tech-optimism collapses to future-solve', 'folk versions drift to most-people-happy / why-not-suicide') are TRIAGE classifications of where simpler registers fold, NOT deployed cross-objection routes FROM this sophisticate slot. No cross-node route is surfaced; none manufactured (diminishing-returns discipline)."
+  },
+  "guard_attestation": {
+    "D1": "1/1 in-CLUSTER slot authored (sophisticate). S-single per ratified triage: defender + drifter NOT BUILT (collapse to canonical); blended OMITTED. No padding; thin parent -> proportional re-aim, not inflation.",
+    "D2": "re-aim only; no move absent from parent. Re-aims the parent long's risk-ethics apparatus (pharma / workplace full-distribution, tails-as-structural-features, the un-bindable ticket) to the methodological interlocutor, and carries the parent's own 'even the average includes grief/illness/aging/death -> triggers the asymmetry -> you need only certainty of pain/loss/death without consent' as the close. Tier-2 Folk node: the baseline-asymmetry close is the parent's OWN move, NOT the abolition-node decoupling mandate. No new arguments; no strength shift; inherits parent headline-long B.",
+    "D7": "responses.short / medium / long carried verbatim, unaltered (byte-count verified identical to register attestation). archetypeVariants is an additive optional field; base registers untouched. No if_* keys on this node; none created or mutated. Folds to responses.archetypeVariants.sophisticate per D3."
+  }
+}
