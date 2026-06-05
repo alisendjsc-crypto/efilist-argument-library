@@ -425,10 +425,12 @@ body[data-active-view="library"] {
 #rsi-methodology-panel h4 { color: #8b0000; font-size: 11px; letter-spacing: 2px; margin: 16px 0 8px 0; }
 #rsi-methodology-panel h4:first-child { margin-top: 0; }
 #rsi-methodology-panel code { color: #6699cc; background: #111; padding: 1px 4px; font-size: 10px; }
+#rsi-methodology-panel pre { background: #111; color: #6699cc; padding: 8px 10px; margin: 8px 0; font-size: 10px; line-height: 1.7; overflow-x: auto; }
 &.high-contrast .rsi-detail { background: #f0ebe3; border-color: #ccc; color: #555; }
 &.high-contrast .rsi-detail .rsi-axis-label { color: #777; }
 &.high-contrast .rsi-detail .rsi-formula { color: #888; border-top-color: #ccc; }
 &.high-contrast #rsi-methodology-panel { background: #fff; border-color: #ccc; color: #555; }
+&.high-contrast #rsi-methodology-panel pre { background: #f0ebe3; color: #555; }
 &.high-contrast .rsi-methodology-btn { border-color: #bbb; color: #777; }
 .map-methodology-btn, .dep-methodology-btn {
   background: none; border: 1px solid #222; color: #444;
@@ -1531,6 +1533,11 @@ body[data-active-view="library"].legible .methodology-panel h4 { font-size: 13px
 body[data-active-view="library"].legible .methodology-panel code { font-size: 12px; }
 body[data-active-view="library"].legible .methodology-panel .mp-note { font-size: 12px; }
 body[data-active-view="library"].legible .methodology-panel .mp-premise-table { font-size: 12px; }
+/* K76: #rsi-methodology-panel (ID) legible treatment — K73 styled the .methodology-panel class; the RSI panel div carries no class */
+body[data-active-view="library"].legible #rsi-methodology-panel { font-size: 13px; line-height: 1.85; }
+body[data-active-view="library"].legible #rsi-methodology-panel h4 { font-size: 13px; }
+body[data-active-view="library"].legible #rsi-methodology-panel code { font-size: 12px; }
+body[data-active-view="library"].legible #rsi-methodology-panel pre { font-size: 12px; }
 
 /* ===== K74: graph-frame — graph tabs keep the full frame under LEGIBLE/BOTH ===== */
 /* The legible reading measure (max-width: 900px on body.legible) is correct for prose
@@ -1586,7 +1593,7 @@ body[data-active-view="library"].legible.graph-frame { max-width: none; }
 <div id="rsi-methodology-panel">
   <h4>REBUTTAL STRENGTH INDEX — FORMAL METHODOLOGY</h4>
   Each response in this library carries an RSI grade derived from five independent axes scored 0–1. The composite is the geometric mean:
-  <br><br><code>RSI = (V × S × C × R × A)^(1/5)</code>
+  <br><br><code>RSI = (v × s × c × r × a)^(1/5)</code>
   <br><br>The geometric mean penalizes imbalance: a fatal weakness on any single axis drags the composite score down regardless of strength on other axes. A score of 0 on any axis yields RSI = 0.
 
   <h4>AXES</h4>
@@ -1599,8 +1606,8 @@ body[data-active-view="library"].legible.graph-frame { max-width: none; }
   <strong style="color:#ccc">C — COMPLETENESS</strong><br>
   Does the response address the full objection, or only a convenient subset of it? A complete response engages the strongest version of the objection (the steel man), not a weakened or partial version. Scores low if it addresses a strawman or ignores a significant dimension of the challenge. PUNCH responses inherently score lower on this axis than DISMANTLE responses due to length constraints.
   <br><br>
-  <strong style="color:#ccc">R — RESILIENCE</strong><br>
-  How well does the response withstand a competent counter-attack? A resilient response anticipates the interlocutor's next move and preemptively addresses it. Scores low if a sharp philosopher could identify an exploitable weakness within 1–2 moves. PUNCH responses inherently score lower here due to less space for preemptive defense.
+  <strong style="color:#ccc">R — ROBUSTNESS</strong><br>
+  How well does the response withstand a competent counter-attack? A robust response anticipates the interlocutor's next move and preemptively addresses it. Scores low if a sharp philosopher could identify an exploitable weakness within 1–2 moves. PUNCH responses inherently score lower here due to less space for preemptive defense.
   <br><br>
   <strong style="color:#ccc">A — AUTONOMY</strong><br>
   Does the argument stand on widely-accepted premises, or does it require the interlocutor to pre-accept contested EFIList axioms? A fully autonomous response (A = 1.0) could convince someone who has never encountered antinatalism. A low-autonomy response depends on the zero-sum framework, Alogical Isness, or other premises the interlocutor is likely to reject, limiting its persuasive reach to those already sympathetic.
@@ -1611,13 +1618,29 @@ body[data-active-view="library"].legible.graph-frame { max-width: none; }
   <strong style="color:#c90">C ≥ 76%</strong> — Competent. Effective but has identifiable vulnerabilities.<br>
   <strong style="color:#c55">D &lt; 76%</strong> — Contested. Depends on premises the interlocutor is likely to reject.
 
+  <h4>BANDING CONVENTION</h4>
+  Grades band the <strong>unrounded</strong> geometric mean (A ≥ 0.88 / B ≥ 0.82 / C ≥ 0.76 / D &lt; 0.76). The displayed percentage is the mean × 100 <strong>rounded to one decimal</strong> — for reading only, never an input to the grade. Boundary cells legitimately read <strong>88.0/B</strong> (12 such at v3.9.4), because banding uses the exact mean while display rounds.
+
   <h4>DEPTH MODIFIERS</h4>
-  Scores shown are depth-adjusted. DISMANTLE responses carry the base score. DECONSTRUCT responses lose approximately 5 points on Completeness and 3 on Resilience. PUNCH responses lose approximately 12 on Completeness and 6 on Resilience. Validity, Soundness, and Autonomy are consistent across depths — the logical structure doesn't change, only the space available to develop and defend it.
+  Scores shown are depth-adjusted. DISMANTLE responses carry the base score. DECONSTRUCT responses lose approximately 5 points on Completeness and 3 on Robustness. PUNCH responses lose approximately 12 on Completeness and 6 on Robustness. Validity, Soundness, and Autonomy are consistent across depths — the logical structure doesn't change, only the space available to develop and defend it.
 
   <h4>CALIBRATION NOTES</h4>
-  Scores were assigned through systematic close reading of all 81 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Resilience while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
+  Scores were assigned through systematic close reading of all 81 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Robustness while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
   <br><br>
-  The highest-scoring entries in the library are: <code>performative-contradiction</code>, <code>epistemic-humility</code>, <code>bitter-childhood</code>, and <code>slippery-slope-eugenics</code> — each scoring A-grade across all five axes. The most common weakness across the library is Autonomy — responses that invoke the zero-sum hedonic framework or survival-firmware interpretation score lower because these are contested premises within the broader philosophical community.
+  The highest-scoring entries in the library are: <code>performative-contradiction</code>, <code>epistemic-humility</code>, <code>bitter-childhood</code>, and <code>slippery-slope-eugenics</code> — each scoring A-grade across all five axes. The most common drag across the library is Robustness — the lowest-mean axis, and the sole drag on 32 of 81 nodes.
+
+  <div id="rsi-worked-example" class="rsi-worked-example">
+    <h4>WORKED EXAMPLE — <code>privileged-first-world</code> (LONG FORM)</h4>
+    Five axes, geometric mean, banded on the unrounded value:
+    <pre>
+axes      v=.90  s=.85  c=.90  r=.85  a=.90
+product   .90 × .85 × .90 × .85 × .90  = 0.5267025
+mean      0.5267025 ^ (1/5)            = 0.879656
+× 100                                  = 87.9656
+display   round(87.9656, 1)            = 88.0
+band      0.879656 &lt; 0.88              → B</pre>
+    PFW <strong>displays 88.0</strong> but is <strong>graded B</strong>: banding reads the exact mean (0.879656), which sits just under the A line. The grade is not rounded up.
+  </div>
 </div>
 
 <div id="results"></div>

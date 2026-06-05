@@ -44,15 +44,15 @@ The single weak axis (`r = .50`) costs a full band under the geometric mean and 
 
 ## The five axes
 
-> **Provenance:** these definitions are reconstructed from the corpus's own grading rationales and pending ratification as the canonical legend. `r` and `a` are fixed by the grading record; `v` is strongly indicated; `s` and `c` are the working readings.
+> **Legend.** Ratified 2026-06-05, recovered from the deployed `#rsi-methodology-panel` — the definitions the stored ledger scores were actually assigned against. Canonized at `axis_legend` (canon v37.33). An earlier draft of this page glossed `c` as *Cogency* and `a` as *Charity*; both were reconstruction artifacts written without the panel in view, and are superseded below by *Completeness* and *Autonomy*.
 
 - **v — Validity.** Granting its premises, does the rebuttal's central inference actually follow? The logical spine: no equivocation, no fallacy, the conclusion genuinely carried by the move.
 - **s — Soundness.** Are the premises it stands on true and well-grounded — and is its load *not* staked on a single contestable empirical claim? (A rebuttal that wins only if one disputed fact holds is fragile here.)
-- **c — Cogency.** Is the reasoning expressed clearly and followably — would a careful reader track the move without supplying the missing steps themselves?
+- **c — Completeness.** Does the rebuttal address the *full* objection — including its strongest version, the steelman — or only a convenient subset? It scores low on a strawman, or on quietly ignoring a dimension of the charge. This is one of the two length-sensitive axes: a shorter form has less room to cover the whole objection (see the depth modifier).
 - **r — Robustness.** Does it preempt the live counter-moves and route the surviving residue to a *named* terminus — or does it leave the strongest reply dangling?
-- **a — Charity.** Does it engage the objection at its strongest form (the steelman), rather than scoring against a weak version? Over-claiming — for the rebuttal, or against the objection — drags this axis.
+- **a — Autonomy.** Does the rebuttal stand on widely-accepted premises, or does it require the reader to pre-accept contested EFIList axioms? An `a` near 1.0 could convince someone new to antinatalism; `a` is low when the move leans on the in-house scaffolding — the zero-sum framework, the Alogical Isness, survival-firmware. It measures premise-independence: how far the rebuttal's reach extends beyond people who already share the frame.
 
-The project's own diagnostic shorthand maps straight onto two of these: an **"A-drag"** node has a low `a` (a charity / over-claim fault); an **"R-drag"** node has a low `r` (an unpreempted counter-move). They are not separate metrics — they name *which axis* is holding a grade down.
+The project's own diagnostic shorthand maps straight onto two of these: an **"A-drag"** node has a low `a` — it leans on contested EFIList axioms and so cannot reach a reader who has not already accepted them; an **"R-drag"** node has a low `r` — an unpreempted counter-move left standing. They are not separate metrics; they name *which axis* is holding a grade down.
 
 ---
 
@@ -68,9 +68,9 @@ The project's own diagnostic shorthand maps straight onto two of these: an **"A-
 |---|---|---|
 | v | 0.90 | the genetic-fallacy diagnosis is logically clean |
 | s | 0.85 | rests partly on a contestable symmetry claim (comfort-distortion cuts both ways) — slightly off the top |
-| c | 0.90 | the move is stated plainly |
+| c | 0.90 | the full objection is worked at strength — genetic-fallacy diagnosis, the symmetry rebuttal, and the granted narrow-standpoint point — not a soft "you're just privileged" subset |
 | r | 0.85 | preempts the main replies but grants a narrow standpoint point, leaving a small residue |
-| a | 0.90 | engages the strong version, not the lazy "you're privileged" jab |
+| a | 0.90 | the defeater rides standpoint-*independent* reasoning — the genetic-fallacy / symmetry move — not contested EFIList axioms; it would land on someone new to the frame |
 
 The two `0.85`s (`s`, `r`) are the profile's weaker legs — exactly what a standpoint-rebuttal that *grants a narrow point* should look like. The numbers are the grader's judgment on each axis; the rest of this page is arithmetic anyone can repeat.
 
@@ -89,7 +89,7 @@ band      0.879656 < 0.88              → B
 
 ### All three registers — the depth modifier
 
-A shorter rebuttal is graded on a modified profile, because brevity costs exactly two things: room to be fully clear (`c`) and room to preempt counter-moves and route residue (`r`). Validity, soundness, and charity do not degrade with length the way those two do — so the modifier touches only `c` and `r`:
+A shorter rebuttal is graded on a modified profile, because brevity costs exactly two things: room to cover the full objection (`c`) and room to preempt counter-moves and route residue (`r`). Validity, soundness, and autonomy do not degrade with length the way those two do — so the modifier touches only `c` and `r`:
 
 | register | modifier | axes (v, s, c, r, a) | mean | display | band |
 |---|---|---|---|---|---|

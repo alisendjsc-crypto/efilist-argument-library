@@ -1,0 +1,27 @@
+{
+  "session_id": "v3_9_7_k76_axis_legend_reconcile_fold",
+  "date": "2026-06-05",
+  "track": "library axis-legend reconcile fold per fold-spec v2 (axis_legend_reconcile_authoring), ROUTED to wuld.ink Cowork end-to-end; logged K76 wuld-ink-side (package said K75 = library-side numbering)",
+  "hard_gate": {
+    "wuld_ink": "021b63b == origin (K75-close PS block LANDED); working-copy CLAUDE.md ccix truncation repaired from HEAD blob (9a249e39)",
+    "efilist": "f3010ba == origin, clean, no locks",
+    "live": "combined e6d0ebf2/2,943,220 == pin v3.9.6 == repo (x2 reads); /library-about/ v3.9.6 x8",
+    "inputs": "rubric d012fd14/7,850 byte-held; canon 5279e96c/223,581; ledger 204fcdbe; fold-spec v2 4-file package verified (panel spans byte-identical x2 d3ecfe9b/4,664)"
+  },
+  "operator_aq": "SHIP + all three detail calls ON: A5 replace-not-drop (ledger-true Robustness sentence), A6 lowercase formula, A2 normalize all 5 (spec ~3 was an estimate; tree ground truth 5; adjective -> 'robust'). Riders: (1) calibration r-drag stated once verified (kept mention = mechanism claim, new sentence = distribution claim); (2) version-lineage scalars reconciled at 37.33.",
+  "deltas": {
+    "combined.html": "e6d0ebf2 -> 729b4f5cbcd40f11b62470e702a64277 / 2,944,946 (+1,726: panel +985 + CSS 741)",
+    "index_v3_8_0.html": "8e36f723 -> 7a46aaba5850ff85a1a25608187b0e36 / 2,386,923 (+1,585: panel +985 + CSS 600)",
+    "rubric_worked_example_RSI.md": "d012fd14/7,850 -> b96b01c5a800f8d7a556bc300722312f / 8,802 (library-Claude re-authoring committed verbatim; Cogency/Charity survive only as 2 supersession refs; frozen numbers held)",
+    "project_canon_v37_33.json": "NEW 39471b3e820f2537db707924a5ad0893 / 232,611 (37.32 -> 37.33 MINOR; round-trip serializer PROVEN on 37_32; flat-diff EXACTLY 4 value paths [canon_version, canon_version_marker, last_updated_by_session, next_rec.thesis lineage-reconcile] + adds [axis_legend adjacent to rsi_grading_convention, v37_33_delta, history-tail append, slr 36->37]; keyset 37->38; invariants + compaction index serialized-identical; invariants_md5 36f5495018d19b8c5b77deb9150eea5f recorded; last_updated HELD 2026-06-03 N=7)",
+    "held": "corpus 9af9dd5c + jsx f2f46efa + ledger 204fcdbe byte-untouched; jsx zero-RSI-parity = notes-audit, separate"
+  },
+  "panel_edit_counts": {
+    "resilience_normalized": 5,
+    "unrounded_in_panel": 2,
+    "h4_sections": "5 -> 7 (BANDING CONVENTION + WORKED EXAMPLE)",
+    "whole_file_resilien": "14 -> 9 both files (9 non-panel occurrences out of scope by spec)"
+  },
+  "pin": "v3.9.6 -> v3.9.7 at PS2 (pin==live gate; manifest release_v3_9_7.json fs-PROVEN 6 surfaces)",
+  "next": "canon next_rec stays none__maintenance_posture; no successor invented. Standing: v4.0 enforcement seam; notes-audit step 2 paste still pending (library seat)."
+}
