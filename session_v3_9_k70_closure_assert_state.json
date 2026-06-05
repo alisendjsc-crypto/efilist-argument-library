@@ -1,0 +1,50 @@
+{
+  "session_id": "v3_9_k70_closure_assert",
+  "date": "2026-06-04",
+  "project": "efilist argument library v3.9",
+  "actor": "wuld.ink Cowork (K70) — glance Cowork-driven via Chrome MCP per operator AQ ('Use Chrome to double check')",
+  "ruling": "v3.9 CLOSURE ASSERTED — round-2 QA PASS on all anchors; commit-only; NO build, NO deploy, NO pin; live stays d576d412d420f196e5e734539188d6e4 / 2,931,643 (v3.9.3).",
+  "hard_gate": {
+    "wuld_ink_head": "78d8cf3 (exact; K69 close block landed; tree clean; no stale locks)",
+    "efilist_main": "2a8441f (HEAD==main; tree clean)",
+    "canon_v37_30": "bb69b912 / 218,918",
+    "ledger": "d794ff88 / 44,900 (untouched)",
+    "live_combined_md5_x2": "d576d412d420f196e5e734539188d6e4 == pin (curl -sL x2 agree)",
+    "panel_items": "CLOSED at open per operator confirm (post-K69): v37_30 uploaded; Project-Instructions headline long-grade count refreshed A26/B54/C1 -> A36/B44/C1. Verify-don't-redo."
+  },
+  "glance_evidence": {
+    "anchors": {
+      "pfw_long": "88.0 A (DISMANTLE)",
+      "benatar_short": "81.4 C (PUNCH)",
+      "benatar_medium": "81.2 C (DECONSTRUCT)",
+      "standard_rwe_cards": "rgb(13,13,13) with STANDARD pill active, 6/6 visible (violence-as-reductio panel)",
+      "legible": "rgb(255,253,247) cream",
+      "high_contrast": "rgb(0,0,0)",
+      "both": "rgb(255,253,247) cream — K64a order holds",
+      "titles": "combined 'efilist argument library — combined' (rendered) + index 'EFIList Argument Library' (live==repo 3e315b6b at /index_v3_8_0[.html]) — version-free; index FILENAME v3_8_0 = R4 HOLD convention (artifact-version lags canon by design), not staleness"
+    },
+    "non_anchor_spot_checks": {
+      "benatar_long": "82.1 B (ledger rsi_pct 82.13 -> one-decimal display)",
+      "pfw_short": "84.2 B",
+      "pfw_medium": "86.3 B",
+      "render_eq_ledger": "6/6 MATCH (rendered pct == round(ledger rsi_pct,1); grades equal; K69 band-on-rounded semantics)"
+    },
+    "protocol": "ccv visible-instance sampling (offsetParent filter); ccvi owning-disclosure-first (objection-header sibling-walk from #rwe-panel-<id> across the FLAT header/detail-panel list structure); pill checked at every sample; depth pills PUNCH/DECONSTRUCT/DISMANTLE == short/medium/long (proven by respLen 240/1200/2112 PFW + ledger agreement); operator saved-mode 'legible' restored at end (no footprint); two probe corrections en route (raw-0.x rsi assumption, strict-equality vs one-decimal display) — validate-gate blocked both pre-write, zero wrong bytes"
+  },
+  "canon_transition": {
+    "from": "v37_30 bb69b912/218,918",
+    "to": "v37_31 (md5/size in commit gate)",
+    "template": "7 value paths + slr append 34->35; [MINOR v37.30->v37.31]; last_updated HELD 2026-06-03 (N=5); round-trip serializer byte-identical PROVEN pre-compose; invariants + compaction index serialized-identical; next_rec keyset preserved incl. after",
+    "next_rec": "EMPTY/maintenance posture; v4.0 ENFORCEMENT SEAM parked"
+  },
+  "arc": [
+    "v3.9.0 K61/K63 RWE render + checkpoint",
+    "v3.9.1/1r K64/K64a UI sweep + cascade",
+    "v3.9.2 K65 cluster-C",
+    "K66 cluster-D NO-CARRIER (correct negative)",
+    "K67 RWE-surfacing VERIFY-CLOSE",
+    "K68 ledger-grade-fold (option a)",
+    "K69 render==ledger 231/231 + titles + card-gripe verify-close",
+    "K70 round-2 glance PASS -> CLOSURE"
+  ]
+}
