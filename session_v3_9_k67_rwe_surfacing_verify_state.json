@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "file": "session_v3_9_k67_rwe_surfacing_verify_state.json",
+    "session": "v3_9_k67_rwe_surfacing_verify_close (K67, 2026-06-04, wuld.ink Cowork + operator AQ)",
+    "class": "VERIFY-CLOSE — NO build / NO deploy / NO pin; v3.9.3 label unburned; live stays f3870f6e/2,931,550",
+    "headline": "v3.9 ENRICHMENT COMPLETE — the RWE-surfacing deliverable was already in the tree (K61 build, live since v3.9.0)"
+  },
+  "hard_gate": {
+    "wuld_ink_HEAD": "2c5287f clean",
+    "efilist_main": "46c8d0a (one-ref-per-call)",
+    "live_eq_pin": "combined f3870f6e86b91730048f6fdc1ef947bb / 2,931,550 B ×2 agree; /library-about/ v3.9.2 ×8",
+    "scope_files": "v3_9_inventory.json + v3_9_rwe_schema.json + real_world_examples_schema_v1_7.json + rwe.html all in-tree"
+  },
+  "ratification": {
+    "disposition": "verify-close + canon 37.28 (operator AQ; build-anyway rejected as manufacture-coverage anti-pattern)",
+    "rider_1": "verify-close is a CONTENT check on served surfaces, not a version-number check — executed, see served_surface_content_check",
+    "rider_2": "next_rec must be tree-grounded, verified-or-empty — executed, see v3_9_remainder_sweep",
+    "next_rec_ruling": "ledger-grade-fold decision, on DEPENDENCY grounds: v3.9 closure cannot be asserted while the ledger carries K65 red-button variant grades carrier-local/unreconciled",
+    "queue_chain": [
+      "ledger-grade-fold (next)",
+      "v3.9 closure QA (operator browser, after ledger coherence)",
+      "privileged-first-world 88.0/B band-display — rides general v3.8 maintenance, no headline"
+    ]
+  },
+  "served_surface_content_check": {
+    "method": "live curl -sL fetch, md5 == repo == pin proven, then parse of the LIVE bytes; binding maps compared to corpus ground truth (efilist_argument_library_v3_8_0.json 9af9dd5c)",
+    "combined": {
+      "live_md5": "f3870f6e86b91730048f6fdc1ef947bb",
+      "bytes": 2931550,
+      "rwe_data_island": {
+        "objections": 78,
+        "rwe": 136
+      },
+      "binding_map_eq_corpus": true
+    },
+    "index_v3_8_0": {
+      "live_md5": "6c2a670acfbfbfd717f97c7232f51ae5",
+      "bytes": 2385163,
+      "embedding": "inline REAL_WORLD_EXAMPLES (no island — design difference, not defect)",
+      "instances": 136,
+      "binding_map_eq_corpus": true,
+      "quote_bearing": "96/136 == corpus exactly (40 corpus-native quote-absent; no-url 0)"
+    },
+    "rwe_html": {
+      "live_md5": "8c8d704ef30af69318a3a4dec1608f61",
+      "bytes": 530664,
+      "instances": 136,
+      "covered": 78,
+      "binding_map_eq_corpus": true,
+      "v3_7_3_strings": "×2, BOTH dated provenance comments ('added v3.7.3-rwe-stats' stats panel) — kept per clii, NOT version chrome",
+      "meta_description": "current: '136 real-world example instances across 78 objections'"
+    },
+    "render_system": "K61 disclosure block identical ×2 (RWE_BY_NODE ×3 / RWE_CAP ×8 / byte-same badge JS); unbound trio (eliminativism/solipsism/suffering-as-meaning) structurally badge-absent — RWE_BY_NODE built only from attached_objections",
+    "top_coverage": {
+      "violence-as-reductio": 27,
+      "benatar-asymmetry-attack": 15,
+      "ai-fear": 10
+    }
+  },
+  "v3_9_remainder_sweep": {
+    "rwe_surfacing": "SHIPPED K61, verified live — the v3_9_rwe_schema.json surfacing-gap clause is satisfied",
+    "archetype_arc": "CLOSED v3.9.2 (K66 no-carrier ratified; do NOT reopen)",
+    "defender_rwe_intake": "authoring CHANNEL definition (gated, no-force rule) — not an enrichment deliverable",
+    "objectionSubforms_display": "out of v3.9 scope by v3_9_inventory.json's own line (deferred D5)",
+    "enrichment_remaining": "NONE — v3.9 enrichment line complete; closure gated on ledger coherence + browser QA"
+  },
+  "counts_frozen_reverified": {
+    "av_nodes": 16,
+    "variant_bodies": 39,
+    "objections": 81,
+    "rwe_instances": 136,
+    "rwe_covered": 78,
+    "metric_note": "counted at responses.archetypeVariants (K60 convention) — a root-level o.archetypeVariants probe reads 0; count by node/body metrics, never prompt arithmetic"
+  },
+  "six_tip_verify": {
+    "combined": "f3870f6e/2,931,550",
+    "index": "6c2a670a/2,385,163",
+    "corpus": "9af9dd5c/1,326,017",
+    "jsx": "46e5a704/1,272,145",
+    "ledger": "9b979e4e/42,750 READ-ONLY",
+    "canon_before": "v37_27 3dd13cc6/213,344"
+  },
+  "canon_after": {
+    "file": "project_canon_v37_28.json",
+    "md5": "7d2cbc63c329c5c70d240310b4c9d767",
+    "bytes": 215244,
+    "template": "flat-diff 7 changed value paths exact + slr append 31->32; last_updated HELD 2026-06-03 (26->27 empirical convention); invariants + invariants_compaction_index serialized-identical; next_rec keyset preserved incl. after; [MINOR v37.27->v37.28] marker; round-trip serializer proven byte-identical on 37_27 before compose"
+  },
+  "grade_fold_session_preload": {
+    "constraint": "81 FROZEN — variant grades must NOT become new ledger rows",
+    "grades": {
+      "sophisticate": "84.5/B",
+      "defender": "82.9/B",
+      "locus": "carrier-local (K65)"
+    },
+    "options": [
+      "(a) carrier-local + ledger cross-reference (D6-consistent; canonical RSI inherits; 81 clean)",
+      "(b) annotate existing red-button-repugnant ledger entry with labeled sub-grades (no count change)"
+    ],
+    "operator_lean": "(a) — but decide against the live ledger structure, not pre-ruled",
+    "ledger": "9b979e4e READ-ONLY since K64 band correction"
+  }
+}

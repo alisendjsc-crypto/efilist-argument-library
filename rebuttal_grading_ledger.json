@@ -1878,5 +1878,53 @@
       "depths_note": "long graded (84.8=B); short/medium prose authored in-node but depth-modified grades derived at render, NOT separately committed (VAR posture, same as violence-as-reductio/masochist/wild-animal). Modifier-derived preview for Phase-1 surface REBUTTAL_STRENGTH population (carry-forward #1): short~=81.2(C) medium~=83.2(B) [short=long*0.9571, medium=long*0.9807, modal modifiers from committed-78].",
       "grade_source": "coldgrade_suffering-as-meaning_long [v3_8_phase_0c_coldgrade_suffering_nodes_s1] (cold=true, sealed_consulted_before_commit=false, prose_md5 177c2dbbdae08a8069905eb6f0e36842, rsi 0.8478 -> pct 84.8 band B; pre-committed; STAGED for Phase-1 ledger merge -- canonical ledger UNCHANGED this session). Fresh-cold form (violence-as-reductio /grades template), NOT the wild-animal surface-attested-tuple form: these nodes carry no surface REBUTTAL_STRENGTH tuple yet (un-spliced), so there is nothing to attest against -- the tuple is populated AT Phase-1 splice from these axes."
     }
+  },
+  "archetype_variant_grades": {
+    "_note": "Carrier-local archetype-variant grades reconciled into the ledger by cross-reference (K68, option a). The 81-entry canonical grades table is unchanged; these are NOT new ledger rows and do NOT alter any canonical RSI, band, or headline. Authoritative source for each variant grade is its md5-pinned carrier file; values mirrored here for legibility and drift-detection only.",
+    "policy": "COLD-GRADE (K65 adj.2) - an explicit exception to D6 canonical-RSI inheritance. Only the long register diverges; short and medium inherit the canonical node grade.",
+    "red-button-repugnant": {
+      "canonical_long": {
+        "rsi_pct": 83.4,
+        "grade": "B"
+      },
+      "short_medium_inheritance": "D6 - short 79.8/C, medium 81.8/C inherited from canonical (no divergence)",
+      "variants": {
+        "sophisticate": {
+          "register": "long",
+          "rsi_pct": 84.5,
+          "grade": "B",
+          "axes": {
+            "v": 0.9,
+            "s": 0.87,
+            "c": 0.87,
+            "r": 0.82,
+            "a": 0.77
+          },
+          "grade_policy": "COLD-GRADE (K65 adj.2), NOT D6-inherit",
+          "carrier_file": "red_button_repugnant_sophisticateVariant_v3_9.json",
+          "carrier_md5": "c570cbfc2b8ad1021cf56da05de76138",
+          "authoritative": "carrier_file"
+        },
+        "defender": {
+          "register": "long",
+          "rsi_pct": 82.9,
+          "grade": "B",
+          "axes": {
+            "v": 0.88,
+            "s": 0.83,
+            "c": 0.86,
+            "r": 0.8,
+            "a": 0.78
+          },
+          "grade_policy": "COLD-GRADE (K65 adj.2), NOT D6-inherit",
+          "carrier_file": "red_button_repugnant_defenderVariant_v3_9.json",
+          "carrier_md5": "2b1d0202b151958db7d4c42fe22f6aa2",
+          "authoritative": "carrier_file"
+        }
+      },
+      "band_impact": "none - canonical and both variants are band B at long; headline_grade_long unchanged (B)",
+      "frozen_constraint": "81 canonical entries unchanged; variant grades carrier-local + cross-referenced (option a)",
+      "reconciled_in": "K68"
+    }
   }
 }

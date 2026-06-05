@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "session": "K68",
+    "label": "ledger-grade-fold",
+    "role": "Library-Claude (in-chat, commit-only by default; Cowork routes nothing — no ship-to-live fold emerged)",
+    "date": "2026-06-04",
+    "class": "High / maintenance (recording pre-computed K65 grades into the master ledger, NOT cold-grading)",
+    "headline": "Red-button-repugnant carrier-local archetype-variant grades reconciled into the master ledger via option (a) cross-reference; v3.9 ledger-coherence gate cleared.",
+    "project": "efilist_argument_library",
+    "ground_truth_note": "81 objections / 5 tiers / 35 mechanisms; tier split 13/17/14/31/6; canon v37.28 (md5 7d2cbc63 / 215,244 B). userMemories block (78 obj / v37.19 / v3.8.22) is STALE — file tree is authoritative.",
+    "predecessor": "session_v3_9_k67_rwe_surfacing_verify_state.json"
+  },
+  "decision": {
+    "ruling": "option (a) — carrier-local variant files remain authoritative; the ledger cross-references them with values + axes + carrier md5 pins under one new sibling top-level key.",
+    "grounds": [
+      "single-source-of-truth: carrier files stay authoritative; ledger pins md5 rather than duplicating grade authority — no dual-source drift.",
+      "lightest-touch on frozen content: a sibling top-level ADDITION, not a mutation of the frozen 81-entry grades table.",
+      "ledger uniformity preserved: option (b) inline sub-grades would make red-button the lone non-uniform entry in the grades map."
+    ],
+    "refinement_on_operator_lean": "a bare pointer is too thin to count as 'reconciled' — the cross-ref carries rsi_pct + grade + axes + carrier md5 + authoritative flag, so it is legible AND drift-detectable.",
+    "rejected_option_b": "annotate the existing grades entry with inline sub-grades — rejected on uniformity + frozen-touch grounds above.",
+    "alignment_note": "K67 preloaded the (a)-lean into canon; this ruling was reached on independent structural grounds, not deference."
+  },
+  "fold_applied": {
+    "method": "textual injection — no whole-file re-serialize. Ledger is dumped ensure_ascii=False (unicode); no standard json.dumps option round-trips it byte-for-byte, so one new ASCII top-level key was inserted (indent=2) before the final brace; every prior byte preserved.",
+    "new_top_level_key": "archetype_variant_grades",
+    "on_disk_subkeys": ["band_impact", "canonical_long", "frozen_constraint", "reconciled_in", "short_medium_inheritance", "variants"],
+    "frozen_bytes_preserved": "all 81 grades entries byte-identical; head-byte identical to source ledger.",
+    "records": {
+      "red-button-repugnant": {
+        "policy": "COLD-GRADE (K65 adjudication 2), D6-exception, LONG-only divergence.",
+        "canonical_long": {"rsi_pct": 83.4, "grade": "B"},
+        "short_medium_inheritance": "short 79.8/C and medium 81.8/C genuinely inherit canonical — no divergence at those registers.",
+        "variants": {
+          "sophisticate": {"register": "long", "rsi_pct": 84.5, "grade": "B", "axes": {"v": 0.90, "s": 0.87, "c": 0.87, "r": 0.82, "a": 0.77}, "carrier_file": "red_button_repugnant_sophisticateVariant_v3_9.json", "carrier_md5": "c570cbfc2b8ad1021cf56da05de76138", "authoritative": "carrier"},
+          "defender": {"register": "long", "rsi_pct": 82.9, "grade": "B", "axes": {"v": 0.88, "s": 0.83, "c": 0.86, "r": 0.80, "a": 0.78}, "carrier_file": "red_button_repugnant_defenderVariant_v3_9.json", "carrier_md5": "2b1d0202b151958db7d4c42fe22f6aa2", "authoritative": "carrier"}
+        },
+        "band_impact": "none — canonical, sophisticate, defender all band B at long; headline_grade_long unchanged (B).",
+        "frozen_constraint": "variant grades are NOT new ledger rows; recorded only under archetype_variant_grades.",
+        "reconciled_in": "K68"
+      }
+    }
+  },
+  "verified_facts": {
+    "source_ledger": {"md5": "9b979e4e2a6f4b8c6200842045ea0f0d", "bytes": 42750},
+    "output_ledger": {"md5": "d794ff88dda713617d1107162e5ddac5", "bytes": 44900, "lines": 1929, "delta_bytes": "+2150 (appended key only)"},
+    "grades_deep_equal": true,
+    "n_grades": 81,
+    "head_byte_identical": true,
+    "band_distribution": {"long": "A36 / B44 / C1 (n=81)", "medium": "A15 / B47 / C13 (n=75)", "short": "A7 / B42 / C26 (n=75)"},
+    "long_only_nodes": ["joy-outweighs-harms", "masochist-counterexample", "wild-animal-suffering-consistency", "eliminativism", "solipsism", "suffering-as-meaning"],
+    "privileged_first_world": "ledger long = 88.0/A (K64-corrected). The K67-queued '88.0/B' is a LIVE combined.html render lag (separate Cowork item), NOT a ledger defect — out of K68 scope.",
+    "validator_self_test": "v3prime_validator_v1_7.py --self-test -> _overall_pass true (the one shown 'violation' is the intended self-test catch-case). It is an RWE/instance validator, not a ledger validator; the ledger was validated via round-trip parse + structural asserts instead.",
+    "invariants_untouched": "81 objections / 5 tiers / 35 mechanisms — unchanged."
+  },
+  "surface_propagation": "NONE required. This is a ledger-internal change. The variant PROSE already lives on corpus + jsx + combined since K65; combined.html derives its grade DISPLAY from the corpus, not from this ledger. Four-surface sync is satisfied. Commit-only.",
+  "canon_handoff": "MINOR keyset delta (+ archetype_variant_grades top-level key). Owner: Cowork, folded at the next canon touch (approx v37.29). No standalone deploy.",
+  "commit_only_tail": "Commit the drop-in ledger (same filename) to repo alisendjsc-crypto/efilist-argument-library. NO deploy, NO integrity-pin.",
+  "next_recommended_action": "v3.9 closure QA (operator browser pass) — now UNBLOCKED; the coherence gate it was waiting on is cleared.",
+  "queue_chain_remaining": [
+    "v3.9 closure QA (operator browser).",
+    "privileged-first-world live-render B->A propagation — rides v3.8 maintenance, Cowork-owned, no headline."
+  ],
+  "operator_panel_items_carried_from_K67": [
+    "panel upload project_canon_v37_28.json ONLY (skip-straight).",
+    "re-attach corpus (9af9dd5c) and jsx (46e5a704) — stale-mount refresh. Operator-side housekeeping, not a session deliverable."
+  ],
+  "open_questions": [
+    "carrier files store the cold grade under a misleadingly-named 'inherited_grade' field while attesting NOT-D6 — carrier-internal misnomer, cosmetic, out of scope.",
+    "a future v4.0 variant promotion would convert this cross-ref into a real grades row = MAJOR canon event; not now."
+  ]
+}
