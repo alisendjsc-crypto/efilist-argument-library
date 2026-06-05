@@ -1,0 +1,63 @@
+{
+  "session_id": "item3_rubric_worked_example",
+  "posture": "LIBRARY-CLAUDE authoring (MAX-class). Parallel to Cowork K72 band-fix; per K71 ruling relay, item-3 does NOT wait for K72 \u2014 rule of record is band-true as of the ruling.",
+  "date": "2026-06-04",
+  "actor": "Library-Claude in-chat",
+  "deliverable": "rubric_worked_example_RSI.md \u2014 item 3 (rubric leads, one worked example). Methodology content for front-door / methodology panel; Cowork folds to surface.",
+  "k71_ruling_logged": {
+    "band_convention": "A \u2014 band-true (operator ruling, same-day, 2026-06-04). Headline -> A26/B54/C1.",
+    "display_optic": "round-1dp display KEPT everywhere (option i). No 2dp-at-edge, no floor regression; ledger rsi_pct untouched. Boundary note lives in the item-3 rubric (authored).",
+    "implementation": "Cowork K72 (fresh session): render x2 grade-basis revert keeping display-round + ledger 22-value-path patch (10 long.grade + 10 headline_grade_long A->B; 2 medium.grade B->C) + deploy + pin v3.9.3->v3.9.4 + canon MINOR 37.31->37.32 + Exchange 28.",
+    "my_two_finding_jsons": "staged untracked in efilist working tree (ba7cddc1/10,408 + ea57de1e/3,576); ride the K72 commit. Census reproduced EXACTLY Cowork-side (12/12 cells, headlines to the digit)."
+  },
+  "corrections_accepted_to_finding": {
+    "1_genealogy": "k69 did NOT flip the ledger. The ledger was REGENERATED under round-then-band post-v37.13 (proof: ledger holds B for the 2 mediums v37.13 set to C -> regen undid the ratification). k69 then synced render to the drifted artifact instead of the convention. Drift entered LIBRARY-SIDE (ledger regen); Cowork propagated. Both seats own a piece. My finding's root_cause (attributing the basis-flip to k69) is superseded by this.",
+    "2_display_clause": "v37.13's display clause was FLOOR. Option A restores the BAND clause and AMENDS the DISPLAY clause (floor -> round-1dp, dated). My 'no convention rewrite' framing was overstated (it even contradicted my own 'keep round display' implementation line). Band clause survives untouched; display clause changes. Canon 37.32 states exactly this.",
+    "3_k69_entry_not_edited": "Append-only canon discipline: the k69 slr entry is NOT edited. The 37.32 entry carries the regression-reverted annotation. This overrides the finding's 'annotate k69 entry' implementation line."
+  },
+  "BOUND_INVARIANT_regeneration_discipline": {
+    "rule": "Any future ledger regeneration MUST band the UNROUNDED geomean. rsi_pct round-1dp is storage/display ONLY, never a grading input.",
+    "why": "This is the drift's re-entry path. The 12-cell patch fixes symptoms; it does NOT pin the generator. If the generator bands on rounded pct, the next regen silently re-introduces the exact 10-long + 2-medium drift.",
+    "status": "HARD INVARIANT. Binds at any v4.0 ledger regeneration or generator touch.",
+    "owner_note": "Generator lives in the regeneration tooling (not the cell values). Library-side authoring discipline + Cowork generator-gate both apply."
+  },
+  "item3_authored": {
+    "node": "privileged-first-world (PFW)",
+    "why_PFW": "one of the 12 band-edge cells; long form gm 0.879656 -> displays 88.0 -> bands B. Cleanest possible illustration of band-true + the display/band gap. Under band-true PFW grades B/B/B across all registers.",
+    "contents": [
+      "one-line rule + band table (band-on-unrounded; display round-1dp)",
+      "why geometric-not-arithmetic (worked contrast: r-hole drops a band)",
+      "five-axis glossary (plain language)",
+      "PFW objection + rebuttal shape + 5 canonical axis scores",
+      "long-form derivation start->finish incl. the 88.0-displays/B-bands seam",
+      "all-three-registers depth-modifier table (c-only/r-only modifier rationale)",
+      "independently-regraded-short caveat (benatar)"
+    ],
+    "authenticity_boundary": "The MATH (axes -> mean -> band, all 3 registers, the boundary) is 100% canonical/reproducible from ledger axes + canon depth_modifier (verified). The per-axis NUMBERS are the grader's stored judgments (presented as such, not re-derived). The axis GLOSSARY is reconstructed (see open_question)."
+  },
+  "verified_facts": {
+    "PFW_axes": "v.90 s.85 c.90 r.85 a.90 (ledger)",
+    "PFW_long": "gm 0.879656 -> 87.9656 -> display 88.0 -> band B (band-true)",
+    "PFW_medium": "c-.05 r-.03 -> v.90 s.85 c.85 r.82 a.90 -> gm 0.863449 -> 86.3 B",
+    "PFW_short": "c-.12 r-.06 -> v.90 s.85 c.78 r.79 a.90 -> gm 0.842428 -> 84.2 B",
+    "depth_modifiers": "canon ~L2689: long=base; medium c-.05 r-.03; short c-.12 r-.06 (verified reconstructs PFW med/short exactly)",
+    "band_cutoffs": "A>=.88 B>=.82 C>=.76 D<.76 on UNROUNDED geomean",
+    "twelve_edge_cells": "10 long @ gm 0.879656 (A/B) + 2 medium (neuroscience-positive-states 0.819683 / flow-states 0.819637, B/C); under band-true: longs B, mediums C",
+    "files_mutated": "NONE (authoring artifact only)"
+  },
+  "open_question_one": {
+    "ask": "Confirm or correct the plain-language axis names for s and c (the two NOT lockable from the tree). Reconstruction used in the artifact: s = Soundness (premises true/well-grounded; load not staked on one contestable claim); c = Cogency (reasoning clearly/followably expressed). r = Robustness and a = Charity are evidence-locked; v = Validity strongly indicated.",
+    "why": "rubric_ref (rebuttal_grading_coverage.json) is non-authoritative and not in mount; build functions are math, not definitions. No canonical plain-language glossary exists in-tree. The artifact carries a 'pending ratification' provenance line so it will not fold to live as canonical until you ratify the legend.",
+    "blocks": "NOT the worked example (math is canonical). ONLY the glossary's canonical status."
+  },
+  "next_recommended_action": "Operator confirms/corrects s & c axis names -> glossary ratified -> Cowork folds rubric_worked_example_RSI.md into methodology panel (and front-door item-2 links to it). Surfacing the glossary as canon = a MINOR canon add (axis_legend block, closing the long-standing external-only rubric_ref gap).",
+  "roadmap_carryforward": {
+    "item_1": "v3.10 RWE-surfacing enrichment (NEW LINE; Cowork-heavy)",
+    "item_2": "front-door archetype wayfinding (surface/UX) \u2014 links to item-3 rubric",
+    "item_3": "DELIVERED this session (glossary pending one confirm)",
+    "item_4": "provenance layer (proponent + primary text; research-tail; own session, possibly web search)"
+  },
+  "artifacts": [
+    "rubric_worked_example_RSI.md"
+  ]
+}

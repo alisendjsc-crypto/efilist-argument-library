@@ -1,0 +1,69 @@
+{
+ "session": "v3_9_4_k72_band_true_revert",
+ "date": "2026-06-04",
+ "seat": "wuld.ink Cowork end-to-end",
+ "ruling_record": {
+  "band": "A band-true: band the UNROUNDED geomean (A>=0.88/B>=0.82/C>=0.76/D<0.76); v37.13 restored on basis",
+  "display": "round-1dp display KEPT everywhere (K69 half ratified as display clause, amending v37.13 floor clause)",
+  "timing": "dedicated atomic session; no half-applied published-contract mutation",
+  "genealogy": "B->A drift entered via post-v37.13 ledger regeneration (undid v37.13 medium corrections, promoted 10 boundary longs); K69 propagated drifted basis to render; ccvii both seats; K69 slr entry NOT edited"
+ },
+ "hard_gate": {
+  "wuld_ink_head": "5da281b",
+  "efilist_main": "3d0c48d",
+  "live_eq_pin": "d576d412 x2 / 2,931,643",
+  "lock_stray": "wuld-ink .git/index.lock noted; close block cleans",
+  "untracked_staged": [
+   "band_convention_incoherence_finding.json ba7cddc1/10408",
+   "session_v3_9_k71_band_convention_finding_state.json ea57de1e/3576"
+  ]
+ },
+ "census": {
+  "divergent_cells": 12,
+  "longs_0_879656_AtoB": [
+   "just-edgy",
+   "western-philosophy",
+   "speak-for-everyone",
+   "future-solve",
+   "pinker-better-world",
+   "privileged-first-world",
+   "change-your-mind",
+   "cherry-picking-worst",
+   "moral-progress",
+   "survivor-testimony"
+  ],
+  "mediums_BtoC": {
+   "neuroscience-positive-states": 0.819683,
+   "flow-states-csikszentmihalyi": 0.819637
+  },
+  "headline": "A36/B44/C1 -> A26/B54/C1",
+  "note": "13th raw flag negative-util-aggregation.medium = override cell, stored 78.3/C authoritative + band-stable; excluded by override-aware rule"
+ },
+ "edits": {
+  "render_x2": "grade -> rsiGrade(rsi) unrounded; pct stays Math.round(rsi*1000)/10; rationale comment band-true; +82 B identical delta; node --check 3+1 PASS",
+  "ledger": "exactly 22 value paths; 44,900 byte-held; avg tail byte-held; rsi_pct untouched",
+  "canon": "10 value paths + slr append 35->36; invariants + compaction index serialized-identical TRUE (RSI clause lives under /open_questions/resolved); last_updated HELD 2026-06-03 N=6"
+ },
+ "verification": {
+  "recompute": "243-tier band-true == render == ledger; 231 graded; 12 ledger-silent formula-true",
+  "pfw_long": "g=0.879656 -> 88.0/B",
+  "sole_pct_drift": "benatar-long 82.13~82.1 display-equal (K70)",
+  "held_override": "4 entries C-stable both bases; probe-derived, basis-immune"
+ },
+ "aq": {
+  "ratified": "proceed + riders + item-3 files (3x yes)",
+  "conditions": [
+   "slr entry: band-fix core visually distinct from hygiene riders",
+   "item-3 rubric commit-only, NOT rendered to live; s/c axis confirm outstanding (canon+ledger hold zero axis-name strings)"
+  ]
+ },
+ "md5": {
+  "combined": "d576d412 -> 0c7d25be / 2,931,725",
+  "index": "3e315b6b -> 8e36f723 / 2,385,338",
+  "ledger": "d794ff88 -> 204fcdbe / 44,900",
+  "canon_v37_32": "5279e96c / 223,581",
+  "corpus_jsx": "9af9dd5c / 46e5a704 UNTOUCHED",
+  "rubric": "d012fd14 / 7,850",
+  "item3_state": "2c19efd1 / 6,523"
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "session_id": "v3_9_k71_band_convention_finding",
+  "posture": "MAINTENANCE (post-v3.9-closure); decision-gated",
+  "date": "2026-06-04",
+  "actor": "Library-Claude in-chat (MAX-class)",
+  "ruling": "FINDING EMITTED, decision pending. Band convention is self-contradictory in canon; A36 headline depends on an unratified k69 flip. RECOMMEND option A (band-true revert -> A26/B54/C1). No file mutated.",
+  "completed_tasks": [
+    "Oriented to TRUE frontier vs stale directive block: canon = v37.31 (not v37.19); v3.9 CLOSED at k70 (round-2 QA PASS); next_rec EMPTY/maintenance; live v3.9.3 d576d412/2,931,643.",
+    "Selected roadmap item-3 (rubric worked example) as in-seat Library-Claude deliverable; deferred items 1/2 (surface/Cowork) and 4 (provenance, research-tail).",
+    "Pre-authoring verification of the worked node (PFW) surfaced a BLOCKING band-convention incoherence.",
+    "Verified canon depth_modifier formula (line ~2689) reconstructs PFW medium 86.3 / short 84.2 exactly.",
+    "Ran exhaustive 81x3 boundary census; identified all 12 divergent cells; confirmed stored grades reflect band-on-rounded.",
+    "Authored band_convention_incoherence_finding.json with recommendation + both Cowork implementation paths."
+  ],
+  "verified_facts": {
+    "canon_version": "v37.31 (project_canon_v37_31.json, 219,678B)",
+    "v3_9_status": "CLOSED @ k70; arc k61..k70; commit-only; live pinned v3.9.3 d576d412d420f196e5e734539188d6e4 / 2,931,643",
+    "ledger": "rebuttal_grading_ledger.json 81 grades / ungraded=[]; grades[*] keys: graded, axes, short, medium, long, headline_grade_long",
+    "depth_modifiers": "canon ~L2689: long=base; medium c-0.05 r-0.03; short c-0.12 r-0.06 (VERIFIED vs PFW 86.3/84.2)",
+    "band_true_locus": "canon rsi_grading_convention ~L2689-2693 + v37.13 ratification ~L1823",
+    "band_on_rounded_locus": "k69 ~L2566 ('grade->rsiGrade(rounded)'); k70 state ('band-on-rounded semantics')",
+    "divergent_cells": "12 total = 10 long (gm 0.879656, A/B) + 2 medium (neuroscience-positive-states 0.819683 / flow-states 0.819637, B/C) + 0 short",
+    "headline": "band-on-rounded(current) A36/B44/C1  vs  band-true(revert) A26/B54/C1; pivot = 10 longs A-by-rounding",
+    "files_mutated": "NONE"
+  },
+  "decision_pending": {
+    "question": "Which band convention is canonical?",
+    "option_A_RECOMMENDED": "band-true revert -> A26/B54/C1 (Cowork: render grade-basis revert + 12-cell ledger PATCH + redeploy + canon MINOR)",
+    "option_B": "band-on-rounded ratify -> A36/B44/C1 retained (Cowork: canon doc rewrite + supersede v37.13; no redeploy)"
+  },
+  "next_recommended_action": "Operator rules A vs B. Then -> Cowork implements per finding.implementation_paths. Then -> Library-Claude authors item-3 PFW worked example under the ratified rule (unblocked either way).",
+  "open_questions": [
+    "Display optics under A: '88.0 displayed / B banded' at the 0.879656 edge \u2014 accept w/ footnote, 2dp-at-edge, or floor-at-edge? (Cowork render, downstream of ruling.)",
+    "Redeploy now (if A) or batch the band-fix with other surface/UI backlog items?"
+  ],
+  "artifacts": [
+    "band_convention_incoherence_finding.json"
+  ],
+  "roadmap_carryforward": {
+    "item_1": "v3.10 RWE-surfacing enrichment (NEW LINE; mostly surfaces existing data; Cowork-heavy)",
+    "item_2": "front-door archetype wayfinding (surface/UX)",
+    "item_3": "rubric worked example (THIS seat; BLOCKED pending band ruling; PFW node ready)",
+    "item_4": "provenance layer (proponent + primary text; research-tail; own session, possibly web search)"
+  }
+}

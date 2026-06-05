@@ -1,0 +1,173 @@
+{
+  "finding_id": "band_convention_incoherence",
+  "session": "v3_9_k71_band_convention_finding (maintenance posture; post-v3.9-closure)",
+  "date": "2026-06-04",
+  "actor": "Library-Claude in-chat (MAX-class)",
+  "mode": "read-only, hazard-disciplined (grep -n / targeted json.load / canon line-refs; NO full-view of canon/corpus/combined.html/ledger). Census recomputed from ledger axes + canon depth_modifier formula.",
+  "severity": "BLOCKING for item-3 (rubric worked example); HEADLINE-bearing (sets A-count). Not a data-corruption bug \u2014 ledger is internally self-consistent.",
+  "summary": "Canon's RATIFIED band convention (band-true, v37.13) contradicts the grading actually IMPLEMENTED at k69 (band-on-rounded) and carried in the live ledger. The flagship A36 long-grade headline exists ONLY because of the k69 flip; under the convention canon still documents as ratified, the headline is A26. The flip was bundled into a 'render reconcile' bugfix and never superseded as a governance act.",
+  "the_contradiction": {
+    "canon_says_BAND_TRUE": {
+      "rule": "band the UNROUNDED geomean; A>=0.88 B>=0.82 C>=0.76 D<0.76; display pct rounded 1dp is presentation-only.",
+      "loci": [
+        "project_canon_v37_31.json rsi_grading_convention block (~line 2689-2693)",
+        "v37.13 ratification entry (~line 1823, 2026-06-02): 'round-then-band was a misstatement, disproven by 10 skeptic-longs@0.879656 banded B'"
+      ],
+      "embedded_proof_now_FALSE": "the block cites the 10 skeptic-cluster longs as stored 88.0/B and the 2 mediums corrected B->C as PROOF band-true is operative. Ledger now stores all 10 longs at 88.0/A and both mediums at B."
+    },
+    "ledger_and_k69_say_BAND_ON_ROUNDED": {
+      "rule": "grade = rsiGrade(round(geomean*100,1)); A if rounded-pct>=88.0 etc.",
+      "loci": [
+        "k69 render_maintenance_bundle entry (~line 2566, 2026-06-04): 'grade -> rsiGrade(rounded)'; 'PFW renders 88.0/A'; 'render == ledger 231/231 EXACT'",
+        "session_v3_9_k70_closure_assert_state.json: 'K69 band-on-rounded semantics'"
+      ],
+      "stored_grade_confirmation": {
+        "ten_long_cells_all_stored_A": true,
+        "two_medium_cells_all_stored_B": true,
+        "stored_long_sample": {
+          "just-edgy": [
+            88.0,
+            "A"
+          ],
+          "western-philosophy": [
+            88.0,
+            "A"
+          ],
+          "speak-for-everyone": [
+            88.0,
+            "A"
+          ],
+          "future-solve": [
+            88.0,
+            "A"
+          ],
+          "pinker-better-world": [
+            88.0,
+            "A"
+          ],
+          "privileged-first-world": [
+            88.0,
+            "A"
+          ],
+          "change-your-mind": [
+            88.0,
+            "A"
+          ],
+          "cherry-picking-worst": [
+            88.0,
+            "A"
+          ],
+          "moral-progress": [
+            88.0,
+            "A"
+          ],
+          "survivor-testimony": [
+            88.0,
+            "A"
+          ]
+        },
+        "stored_medium": {
+          "neuroscience-positive-states": [
+            82.0,
+            "B"
+          ],
+          "flow-states-csikszentmihalyi": [
+            82.0,
+            "B"
+          ]
+        }
+      }
+    },
+    "net": "Identical axes -> identical geomean -> OPPOSITE grade-of-record between canon prose (B / C) and live ledger (A / B). Self-contradiction inside the project's authoritative documents."
+  },
+  "boundary_census": {
+    "method": "all 81 nodes x 3 registers; long=base axes; medium c-0.05 r-0.03; short c-0.12 r-0.06 (canon line 2689, VERIFIED: reconstructs PFW medium 86.34->86.3 and short 84.24->84.2 exactly). geomean classified under both conventions.",
+    "divergent_cells_total": 12,
+    "long_AB_boundary": {
+      "count": 10,
+      "geomean": 0.879656,
+      "band_true": "B",
+      "band_on_rounded": "A",
+      "nodes": [
+        "just-edgy",
+        "western-philosophy",
+        "speak-for-everyone",
+        "future-solve",
+        "pinker-better-world",
+        "privileged-first-world",
+        "change-your-mind",
+        "cherry-picking-worst",
+        "moral-progress",
+        "survivor-testimony"
+      ]
+    },
+    "medium_BC_boundary": {
+      "count": 2,
+      "nodes": {
+        "neuroscience-positive-states": 0.819683,
+        "flow-states-csikszentmihalyi": 0.819637
+      },
+      "band_true": "C",
+      "band_on_rounded": "B",
+      "note": "these are the exact 2 cells canon line 1823 corrected B->C when band-true was ratified; k69 silently reverted them to B."
+    },
+    "short_boundary": {
+      "count": 0
+    },
+    "matches_k69_12_band_mismatch_figure": true
+  },
+  "headline_dependency": {
+    "band_true_revert": "A26 / B54 / C1",
+    "band_on_rounded_current": "A36 / B44 / C1",
+    "pivot": "the 10 long cells at geomean 0.879656 are A ONLY by 1dp rounding (g>=0.8795, not g>=0.88). 10 of 36 A-grades are rounding-boundary A's.",
+    "lone_C_unaffected": "masochist-counterexample 80.0/C stable under both."
+  },
+  "root_cause": "k69 bundled a LEGITIMATE display fix (pct floor->round; floor was the bug) with an UNRATIFIED band-BASIS change (band on rounded-pct instead of raw geomean). The basis change reversed the v37.13 ratification under the banner of a render bugfix; the canon rsi_grading_convention block was never updated, so canon now documents the opposite of what it implements.",
+  "options": {
+    "A_band_true_RECOMMENDED": {
+      "action": "revert grade BASIS to unrounded geomean; KEEP k69 display-round (pct=round(g*100,1)).",
+      "effects": "10 longs -> B; 2 mediums -> C; headline A26/B54/C1. No convention rewrite (honors v37.13 ratification); canon block's proof becomes true again.",
+      "reasons": [
+        "Geometric-mean integrity: the mean is CONJUNCTIVE precisely so a rebuttal is only as strong as its weakest axis. band-on-rounded reintroduces forgiveness at the edge, letting 0.8797 (which the conjunctive logic places below the A bar) buy an A via a display artifact. band-true keeps the mean honest to the band edge.",
+        "Reconstructability (item-3's literal goal): a skeptic with the 5 axes + the formula computes 0.8797 and asks 'is that >=0.88? No -> B.' Self-consistent. band-on-rounded forces a non-obvious 'round pct to 1dp THEN band' rule not implied by (v*s*c*r*a)^(1/5)*100, that promotes a sub-threshold value. It makes the rubric LESS reconstructable from first principles.",
+        "Governance trail: band-true was formally RATIFIED with proof; band-on-rounded was never ratified as a convention, only slipped in via a render fix. Restoring band-true honors the ratification; adopting B requires retroactively legitimizing an undocumented reversal.",
+        "Register / anti-overclaim: A26/B54/C1 is still strong; the project's frame is pessimistic-honest, not triumphalist. 10 A's that exist only by a rounding rule contradicting the documented convention is the manufactured-coverage / soft-score-targeting smell the project's own anti-patterns warn against."
+      ],
+      "cost": "lose 10 A-grades from the public headline."
+    },
+    "B_band_on_rounded": {
+      "action": "rewrite canon rsi_grading_convention to band-on-rounded; supersede v37.13 with a dated entry; replace the now-false 10-cell proof.",
+      "effects": "ledger unchanged (already matches); NO redeploy needed; headline A36/B44/C1 retained but documented as carrying 10 boundary-rounding A's.",
+      "reasons": [
+        "'grade the number you actually display' has a surface logic; pct has long been 1dp.",
+        "operator engaged k69 (AQ x4) \u2014 direction may already be endorsed.",
+        "cheapest to execute (doc-only; no rebuild)."
+      ],
+      "cost": "must retroactively reverse a ratified convention in writing; the A36 headline carries a permanent asterisk (effective A threshold ~0.8795); a critic reconstructing from the formula still lands on B for those 10."
+    }
+  },
+  "recommendation": "A (band-true). Restore the ratified convention; keep k69's display-round. PFW remains the ideal item-3 worked node under EITHER resolution.",
+  "display_optics_caveat": "Under A, a 0.879656 node DISPLAYS '88.0' (rounded pct) but BANDS B (raw geomean < 0.88). The '88.0 but B' optic is the most likely thing that drove k69's flip. Resolve at render by one of: (i) accept the optic with a boundary footnote; (ii) show 2dp at the band edge (87.97); (iii) floor-truncate display at the edge. Cowork render decision, downstream of the convention ruling.",
+  "implementation_paths": {
+    "if_A": {
+      "owner": "wuld.ink Cowork",
+      "steps": [
+        "combined.html + index_v3_8_0.html: grade fn -> rsiGrade(unrounded geomean); keep pct=round (awk-slice -> node-eval the strength const, project pattern; line ~4070 hazard avoided)",
+        "ledger PATCH 12 cells: 10 longs A->B (gm 0.879656), 2 mediums B->C (neuroscience-positive-states / flow-states); regen HELD_OVERRIDE ledger-true; headline_grade_long for the 10 longs A->B",
+        "re-deploy + wuld.ink pin-move (grade-band CORRECTION = permitted maintenance on frozen v3.8 per post-terminal policy)",
+        "canon MINOR: rsi_grading_convention block reaffirmed; 10-cell proof restored as true; k69 entry annotated as basis-regression-now-reverted; headline note -> A26/B54/C1"
+      ],
+      "frozen_constraint": "counts 81/5/35/78/2886 + invariants byte-stable (grade correction, not structural)."
+    },
+    "if_B": {
+      "owner": "wuld.ink Cowork",
+      "steps": [
+        "canon: rewrite rsi_grading_convention to band-on-rounded; supersede v37.13 (dated); replace false proof; ledger + render UNCHANGED; no redeploy",
+        "headline A36/B44/C1 retained with boundary-rounding annotation"
+      ],
+      "frozen_constraint": "doc-only; no surface mutation."
+    }
+  },
+  "blocks_item_3": "YES. A 'reconstructable-from-canon' worked example requires ONE rule of record; right now canon documents two contradictory ones. Resolve the convention, then the worked example (PFW: 5 axes -> product -> fifth root -> band) is trivial and credibility-positive.",
+  "verification_boundary": "Ledger axes + full 81x3 census directly computed in-chat. depth_modifier formula verified against PFW stored medium/short. combined.html grade fn NOT re-derived in-chat (canon-locked + k69-attested); Cowork confirms on live build at any splice. No file mutated this session."
+}
