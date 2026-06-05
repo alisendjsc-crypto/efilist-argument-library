@@ -1,0 +1,52 @@
+{
+  "artifact": "session_v3_9_k69_render_maintenance_bundle_state.json",
+  "session": "v3_9_k69_render_maintenance_bundle",
+  "date": "2026-06-04",
+  "route": "wuld.ink Cowork end-to-end (K69); operator AQ ×4 ratified (A verify-close / B round+4-overrides / C version-free / pin date 2026-06-04)",
+  "gates_at_open": {
+    "wuld_ink_head": "a3909e7 clean",
+    "efilist_main": "4b7abf7 (K68 5-file block landed)",
+    "live_eq_pin": "f3870f6e86b91730048f6fdc1ef947bb ×2 / 2,931,550",
+    "claude_md_trim": "163,468->156,952 B (K64-K64a -> CLAUDE-history.md 782,355 B)"
+  },
+  "deliverable_A": {
+    "verdict": "VERIFY-CLOSE — no patch; defect NON-REPRODUCING",
+    "matrix": "16 cells: {mode-at-render standard,legible}×{view standard,legible,hc,both}×(940px; resize to 1520 ineffective — innerWidth pinned 941, axis covered by source: zero @media on .rwe-card) + boot cell. ALL to spec: standard rgb(13,13,13)/#222 border/quote #f0ebe5; legible #fffdf7; hc #000; both cream (K64a order holds). nVis=6 visible-instance sampling per ccv.",
+    "boot_cell": "localStorage arglib-mode='legible' + fresh load + ZERO clicks -> body.legible, LEGIBLE pill active, cards cream — reproduces every K68b sighting; pill sync at boot VERIFIED",
+    "nest_map": "K61 disclosure base + K64 mode sets ALL under body[data-active-view=library]; explorer card system + both --card-bg defs ALL under body[data-active-view=rwe]; zero bleed (K64 probe re-confirmed; K68b collision hypothesis dead)",
+    "ccv_extension": "computed-style verification must record body.className + active mode pill alongside the visible instance"
+  },
+  "deliverable_B": {
+    "old_defect": "FLOOR pct (Math.floor(rsi*1000+1e-6)/10) + rsiGrade(RAW) + 3-entry stale HELD_OVERRIDE -> 120/231 tier mismatches vs ledger d794ff88 (108 display-only 0.1-low; 12 band incl. PFW long 87.9/B vs 88.0/A; benatar S/M stale B vs C; negutil-short 80.2 vs stored 76.2 uncovered)",
+    "k68a_pin_correction": "PFW mechanism was floor-vs-round display semantics + override gaps; rsiGrade(raw) alone could never render 88.0/B (floor forbids display crossing a band threshold)",
+    "fix": "pct -> Math.round(rsi*1000)/10; grade -> rsiGrade(Math.round(rsi*1000)/1000); HELD_OVERRIDE -> 4-entry ledger-true {benatar-asymmetry-attack: short 81.4/C, medium 81.2/C; negative-util-aggregation: short 76.2/C, medium 78.3/C}; rationale comment rewritten ×2",
+    "post_fix": "render == ledger 231/231 EXACT (pct@1dec + grade); PFW long 88.0/A; 12 ledger-silent tiers (masochist/joy-outweighs/wild-animal/eliminativism/solipsism/suffering-as-meaning × short+medium) formula-true; axes file==ledger 81/81",
+    "expected_visual_delta": "127 tiers display +0.1 vs old floor render; 12 grade flips all TO ledger"
+  },
+  "deliverable_C": {
+    "combined_title": "efilist argument library — combined",
+    "index_title": "EFIList Argument Library",
+    "rwe_html": "already version-free — untouched"
+  },
+  "files": {
+    "combined.html": {
+      "old": "f3870f6e86b91730048f6fdc1ef947bb/2931550",
+      "new": "d576d412d420f196e5e734539188d6e4/2931643",
+      "delta": "+93"
+    },
+    "index_v3_8_0.html": {
+      "old": "6c2a670acfbfbfd717f97c7232f51ae5/2385163",
+      "new": "3e315b6b76688c6e7c8fa5fc24b8e28f/2385256",
+      "delta": "+93"
+    },
+    "untouched": "corpus 9af9dd5c / jsx 46e5a704 / ledger d794ff88 / rwe.html 8c8d704e"
+  },
+  "checks": {
+    "node_check": "combined 3 classic scripts + index 1 — PASS (data-island filter)",
+    "hygiene": "0 NUL; CR counts held; tails </html>\\n; UTF-8 valid",
+    "delta_accounting": "+93 ×2 identical = RET(-10+? net) + HO(+~118) + comment + title(-7) — asserted exactly pre-write"
+  },
+  "canon": "37.29 -> 37.30 (project_canon_v37_30.json; 7 value paths + slr 33->34; invariants serialized-identical; last_updated HELD 2026-06-03 N=4)",
+  "pin_plan": "release_v3_9_3.json at wuld-ink root (6 surfaces fs-PROVEN) -> --no-live dry-run -> --apply --date 2026-06-04 -> summary hand-rewrite -> gen_feed -> word-boundary residual grep",
+  "next": "v3_9_closure_qa_assert_round2 (canon 37.30 next_rec)"
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>efilist argument library v3.8.4 — combined</title>
+<title>efilist argument library — combined</title>
 <meta name="description" content="Antinatalism objection taxonomy: library, real-world examples, coda. Combined single-file build.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10917,13 +10917,10 @@ function depthModifiedRSI(id, depth) {
   return {v:s.v, s:s.s, c:Math.max(0,s.c-0.12), r:Math.max(0,s.r-0.06), a:s.a};
 }
 
-var HELD_OVERRIDE = {
-  "benatar-asymmetry-attack": { "medium": { "pct": 81.2, "grade": "B" }, "short": { "pct": 81.4, "grade": "B" } },
-  "negative-util-aggregation": { "medium": { "pct": 78.3, "grade": "C" } }
-};
-// Faithful display: held override grade where the ledger holds one; else the build's
-// (correct) band-true grade. Displayed pct is FLOOR-truncated so it never rounds across
-// a band threshold (kills "82.0% -> C" / "88.0% -> B").
+var HELD_OVERRIDE = { "benatar-asymmetry-attack": { "short": { "pct": 81.4, "grade": "C" }, "medium": { "pct": 81.2, "grade": "C" } }, "negative-util-aggregation": { "short": { "pct": 76.2, "grade": "C" }, "medium": { "pct": 78.3, "grade": "C" } } };
+// Faithful display: held override (pct+grade) where the ledger's stored per-tier value
+// diverges from the depth-modifier formula; else compute. Display pct AND band both use
+// the ROUNDED one-decimal value (ledger semantics, inclusive at .88/.82/.76) — render == ledger.
 function displayRSI(id, level) {
   var scores = depthModifiedRSI(id, level);
   if (!scores) return null;
@@ -10933,7 +10930,7 @@ function displayRSI(id, level) {
     return { scores: scores, pct: ov.pct, grade: rsiGrade(probe) };
   }
   var rsi = computeRSI(scores);
-  return { scores: scores, pct: Math.floor(rsi * 1000 + 1e-6) / 10, grade: rsiGrade(rsi) };
+  return { scores: scores, pct: Math.round(rsi * 1000) / 10, grade: rsiGrade(Math.round(rsi * 1000) / 1000) };
 }
 
 var depSimulation, depSvgG, depLinkSel, depPremSel, depObjSel, depZoom;
