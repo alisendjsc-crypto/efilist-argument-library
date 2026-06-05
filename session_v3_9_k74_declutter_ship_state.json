@@ -1,0 +1,107 @@
+{
+  "session": "K74",
+  "date": "2026-06-04",
+  "track": "dep-graph de-clutter + legible-frame fix (library-Claude spec; wuld.ink Cowork end-to-end)",
+  "gate_at_open": {
+    "wuld_ink": "c800cff==origin",
+    "efilist": "88ff63a==origin",
+    "live_x2_eq_pin": "00d302ed/2937998",
+    "literals": {
+      "MAP_GRAPH_DATA": "50460aef/43379",
+      "DEP_GRAPH_DATA": "72eb8b57/52076",
+      "MAP1_TRANSITIONS": "313e3cae/1001348"
+    }
+  },
+  "deliverable": {
+    "file": "combined.html",
+    "baseline": "00d302eda301ab6c78046a4499bdb686/2937998",
+    "shipped": "e6d0ebf25d86c48a62cf8d19aedddba0/2943220",
+    "delta_bytes": 5222,
+    "rounds": [
+      {
+        "r": 1,
+        "md5": "2a26e18a",
+        "delta": 3149,
+        "note": "columns+damping+widen+frame fix; 17 overlaps; ~6px bottom clip"
+      },
+      {
+        "r": 2,
+        "md5": "1c3a3676",
+        "delta": 391,
+        "note": "zigzag n>=19 +/-55; band 0.48; clip dead; 15 overlaps"
+      },
+      {
+        "r": 3,
+        "md5": "2b7b5457",
+        "delta": 1163,
+        "note": "per-side size-aware chains; REGRESSED heads to 18 - sides started same y; interleave is load-bearing"
+      },
+      {
+        "r": 4,
+        "md5": "bed4c939",
+        "delta": 298,
+        "note": "single interleaved size-aware chain; 13 overlaps; map1 width verified 1659"
+      },
+      {
+        "r": 5,
+        "md5": "472bfe1e",
+        "delta": 152,
+        "note": "zig 60 / yStrength 0.40 / stepMin 11; first ccx 3240 probe artifact seen"
+      },
+      {
+        "r": 6,
+        "md5": "e6d0ebf2",
+        "delta": 69,
+        "note": "stepMin 10 (floor sets dense-column height post-normalization); SETTLED: 6 grazes/3240, worst 7.7px, no clip; RATIFIED"
+      }
+    ],
+    "final_levers": {
+      "padLFrac": 0.05,
+      "padRFrac": 0.12,
+      "bandHFrac": 0.48,
+      "xStrength": 0.3,
+      "yStrength": 0.4,
+      "collidePadPx": 3,
+      "collideMinPx": 10,
+      "hubCapDeg": 20,
+      "hubDistDeg": 26,
+      "hubDistBoostPx": 80,
+      "zigzagMinN": 16,
+      "zigzagPx": 60,
+      "slotGapPx": 4,
+      "chainStepMinPx": 10
+    }
+  },
+  "frame_fix": {
+    "js": "body.graph-frame via __graphDefaultMode first line + both MutationObserver branches",
+    "css": "body[data-active-view=\"library\"].legible.graph-frame{max-width:none} (0,3,1) beats nested &.legible (0,2,1)",
+    "coverage_condition_verified": {
+      "dep": 1657,
+      "map": 1657,
+      "map1": 1659,
+      "prose_on_return": 900,
+      "both_mode": 1657
+    },
+    "k73_machine": "intact (standard-on-entry, takeover persists, restore-on-exit)",
+    "console_errors": 0
+  },
+  "findings": {
+    "ccx": "settle-aware probing - force-layout metrics need a settle check; fixed-wait in-batch probes read 3240/3240 pairs mid-flight while same-second screenshots showed settled columns; rendered screenshot is the tiebreaker",
+    "dep_constraint": "depZoomFit is FIXED translate(5%)/scale(0.9), not bbox - world extent must stay <= ~1.05*container; chainStepMinPx*n sets dense-column height (floor applies after normalization)",
+    "r3_lesson": "independent per-side chains start at same y; right-extending labels cross the opposite sub-chain at the head - interleave the sides"
+  },
+  "untouched_verified": {
+    "jsx": "f2f46efa (zero-parity: no graph engines)",
+    "index": "8e36f723",
+    "corpus": "9af9dd5c",
+    "ledger": "204fcdbe",
+    "canon": "5279e96c"
+  },
+  "ship": {
+    "manifest": "release_v3_9_6.json (wuld-ink root, fs-proven 6 surfaces)",
+    "pin": "v3.9.5->v3.9.6 at PS2",
+    "canon": "HELD v37.32",
+    "releases": "2026-06-04-library-v3-9-6 prepended (18)",
+    "exchange": "30 appended"
+  }
+}

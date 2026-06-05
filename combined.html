@@ -1531,6 +1531,13 @@ body[data-active-view="library"].legible .methodology-panel h4 { font-size: 13px
 body[data-active-view="library"].legible .methodology-panel code { font-size: 12px; }
 body[data-active-view="library"].legible .methodology-panel .mp-note { font-size: 12px; }
 body[data-active-view="library"].legible .methodology-panel .mp-premise-table { font-size: 12px; }
+
+/* ===== K74: graph-frame — graph tabs keep the full frame under LEGIBLE/BOTH ===== */
+/* The legible reading measure (max-width: 900px on body.legible) is correct for prose
+   but halves the graph canvases (K73a finding 2; library-Claude condition: cover all
+   three — argument-flow, mechanism-web, dependency-graph; they share the wrapper).
+   body.graph-frame is toggled by the K73 view hooks while map/dep/map1 is active. */
+body[data-active-view="library"].legible.graph-frame { max-width: none; }
 </style>
 </head>
 <body data-active-view="library">
@@ -10290,6 +10297,8 @@ function __graphModeLeave() {
   }
 }
 function __graphDefaultMode(nextView) {
+  // K74: graph-frame — full-width canvas while a graph tab is active (CSS un-narrows the legible 900px measure)
+  document.body.classList.toggle('graph-frame', __isGraphView(nextView));
   if (__isGraphView(nextView) && !__isGraphView(currentView)) __graphModeEnter();
   else if (!__isGraphView(nextView) && __isGraphView(currentView)) __graphModeLeave();
 }
@@ -10299,8 +10308,8 @@ document.addEventListener('arglib:mode-change', function () {
 if (window.MutationObserver) {
   new MutationObserver(function () {
     var outer = document.body.getAttribute('data-active-view') || 'library';
-    if (outer !== 'library') __graphModeLeave();
-    else if (__isGraphView(currentView)) __graphModeEnter();
+    if (outer !== 'library') { __graphModeLeave(); document.body.classList.remove('graph-frame'); }
+    else { if (__isGraphView(currentView)) __graphModeEnter(); document.body.classList.toggle('graph-frame', __isGraphView(currentView)); }
   }).observe(document.body, { attributes: true, attributeFilter: ['data-active-view'] });
 }
 
@@ -11046,7 +11055,7 @@ function initDepGraph() {
 
   // Assign initial positions — stratified layout
   var yFound = H * 0.12, yDiag = H * 0.28;
-  var yObjBase = H * 0.55;
+  var yObjBase = H * 0.50; // K74: band top raised (was 0.55) for taller objection band
 
   // Foundational premises spread across width
   foundNodes.forEach(function(n, i) {
@@ -11071,16 +11080,72 @@ function initDepGraph() {
     tierGroups[n.tier].push(n);
   });
 
+  // K74: tier-keyed COLUMN layout (de-clutter spec, library-Claude 2026-06-04).
+  // Levers, not magic numbers — tune against the live render.
+  var DEP_TUNE = {
+    padLFrac: 0.05,      // left margin fraction of W before first column
+    padRFrac: 0.12,      // right margin fraction (labels extend right of dots)
+    bandHFrac: 0.48,     // objection band vertical extent (was 0.38); collide chain-expansion adds ~0.05H below the last slot — keep slots+expansion <= ~1.03H (depZoomFit is a FIXED 0.9/5% transform, not a bbox fit)
+    zigzagMinN: 16,      // columns at/above this population zigzag their nodes around the column line (T2 n=17, T4 n=31)
+    slotGapPx: 4,        // breathing room between size-aware slots in zigzag columns
+    chainStepMinPx: 10,  // floor on per-node chain advance — clears the 8px label rows; floor applies AFTER normalization, so it sets the dense column's real height (T4: ~30 steps x floor)
+    zigzagPx: 60,        // horizontal zigzag half-offset — staggers label rows in dense columns; 60 keeps right-side labels out of the NEXT column's left sub-chain at W~1657
+    xStrength: 0.30,     // pull to tier-column center
+    yStrength: 0.40,     // pull to per-node column slot — firm enough that sim drift can't eat the cross-side label clearance
+    collidePadPx: 3,     // collision pad over dot radius
+    collideMinPx: 10,    // collision floor
+    hubCapDeg: 20,       // above this out-degree, link strength scales by cap/degree (Consent 67, Benatar 35, Proxy 34)
+    hubDistDeg: 26,      // links from premises at/above this degree get a distance boost
+    hubDistBoostPx: 80   // the boost — hubs fan dependents instead of knotting them
+  };
   var tierKeys = Object.keys(tierGroups).sort();
-  var tierBandH = (H * 0.38) / tierKeys.length;
+  var bandH = H * DEP_TUNE.bandHFrac;
+  var colW = W * (1 - DEP_TUNE.padLFrac - DEP_TUNE.padRFrac) / tierKeys.length;
+  var colX = {};
   tierKeys.forEach(function(t, ti) {
-    var group = tierGroups[t];
-    var yRow = yObjBase + ti * tierBandH;
-    var spacing = W / (group.length + 1);
-    group.forEach(function(n, i) {
-      n.x = (i + 1) * spacing;
-      n.y = yRow + (Math.random() - 0.5) * tierBandH * 0.3;
-    });
+    colX[t] = W * DEP_TUNE.padLFrac + (ti + 0.5) * colW;
+    var group = tierGroups[t];               // already tier-asc, depCount-desc (objNodes sort above)
+    var zig = group.length >= DEP_TUNE.zigzagMinN ? DEP_TUNE.zigzagPx : 0;
+    if (zig) {
+      // K74 r4: single size-aware chain with sides INTERLEAVED (the r3 independent
+      // side-chains started at the same y, so left labels — which extend right —
+      // crossed the right chain at the column head). Each node advances the chain
+      // by half the adjacent collide diameters; same-side pairs therefore get two
+      // steps (~their full diameters), and cross-side label rows keep >= chainStepMinPx.
+      var rads = group.map(function(n) {
+        var r = 4 + (n.depCount || 0) * 1.2;
+        return Math.max(DEP_TUNE.collideMinPx, r + DEP_TUNE.collidePadPx);
+      });
+      var steps = [0];
+      for (var gi = 1; gi < group.length; gi++)
+        steps.push((rads[gi - 1] + rads[gi]) / 2 + DEP_TUNE.slotGapPx);
+      var total = steps.reduce(function(a, b) { return a + b; }, 0);
+      var k = total > bandH ? bandH / total : 1;
+      var yAcc = 0;
+      group.forEach(function(n, i) {
+        var st = steps[i] * k;
+        if (i > 0 && st < DEP_TUNE.chainStepMinPx) st = DEP_TUNE.chainStepMinPx;
+        yAcc += st;
+        n.__colX = colX[t] + (i % 2 ? zig : -zig);
+        n.__slotY = yObjBase + rads[0] + yAcc;
+        n.x = n.__colX + (Math.random() - 0.5) * 8;
+        n.y = n.__slotY;
+      });
+    } else {
+      var pitch = bandH / (group.length + 1);
+      group.forEach(function(n, i) {
+        n.__colX = colX[t];
+        n.__slotY = yObjBase + (i + 1) * pitch;
+        n.x = n.__colX + (Math.random() - 0.5) * 8;
+        n.y = n.__slotY;
+      });
+    }
+  });
+  // Premise out-degree map for mega-hub damping
+  var depDegree = {};
+  DEP_GRAPH_DATA.links.forEach(function(l) {
+    var sid = typeof l.source === 'object' ? l.source.id : l.source;
+    depDegree[sid] = (depDegree[sid] || 0) + 1;
   });
 
   // Deep copy links with source/target references
@@ -11090,14 +11155,29 @@ function initDepGraph() {
 
   // Force simulation — gentle, mainly for objection x-positioning
   depSimulation = d3.forceSimulation(DEP_GRAPH_DATA.nodes)
-    .force('link', d3.forceLink(links).id(function(d){return d.id;}).distance(120).strength(0.02))
-    .force('collide', d3.forceCollide().radius(function(d) { return d.type === 'premise' ? 30 : 12; }).strength(0.6))
-    .force('x', d3.forceX(function(d) { return d.fx || d.x || W/2; }).strength(function(d) { return d.type === 'premise' ? 1 : 0.05; }))
+    .force('link', d3.forceLink(links).id(function(d){return d.id;})
+      .distance(function(l) {
+        var sid = typeof l.source === 'object' ? l.source.id : l.source;
+        return 120 + ((depDegree[sid] || 0) >= DEP_TUNE.hubDistDeg ? DEP_TUNE.hubDistBoostPx : 0);
+      })
+      .strength(function(l) {
+        var sid = typeof l.source === 'object' ? l.source.id : l.source;
+        var deg = depDegree[sid] || 1;
+        return 0.02 * Math.min(1, DEP_TUNE.hubCapDeg / deg); // K74: mega-hub damping
+      }))
+    .force('collide', d3.forceCollide().radius(function(d) {
+      if (d.type === 'premise') return 30;
+      var r = 4 + (d.depCount || 0) * 1.2;
+      return Math.max(DEP_TUNE.collideMinPx, r + DEP_TUNE.collidePadPx); // K74: node+label-aware spacing (vertical pitch carries the label box; columns carry the horizontal)
+    }).strength(0.7))
+    .force('x', d3.forceX(function(d) {
+      if (d.type === 'premise') return d.fx || d.x || W/2;
+      return d.__colX !== undefined ? d.__colX : W/2; // K74: tier-column pull
+    }).strength(function(d) { return d.type === 'premise' ? 1 : DEP_TUNE.xStrength; }))
     .force('y', d3.forceY(function(d) {
       if (d.type === 'premise') return d.fy;
-      var tIdx = tierKeys.indexOf(String(d.tier));
-      return yObjBase + tIdx * tierBandH;
-    }).strength(function(d) { return d.type === 'premise' ? 1 : 0.3; }))
+      return d.__slotY !== undefined ? d.__slotY : yObjBase + bandH / 2; // K74: column slot pull
+    }).strength(function(d) { return d.type === 'premise' ? 1 : DEP_TUNE.yStrength; }))
     .alphaDecay(0.03)
     .velocityDecay(0.4);
 
@@ -11106,11 +11186,11 @@ function initDepGraph() {
   depSvgG.append('text').attr('class','dep-layer-label').attr('x', 14).attr('y', yDiag - 20).text('DIAGNOSTIC FRAMEWORKS');
   depSvgG.append('text').attr('class','dep-layer-label').attr('x', 14).attr('y', yObjBase - 20).text('OBJECTIONS');
 
-  // Tier sub-labels
-  tierKeys.forEach(function(t, ti) {
+  // Tier column headers (K74: columns, not rows)
+  tierKeys.forEach(function(t) {
     depSvgG.append('text').attr('class','dep-layer-label')
-      .attr('x', W - 14).attr('y', yObjBase + ti * tierBandH + 4)
-      .attr('text-anchor','end')
+      .attr('x', colX[t]).attr('y', yObjBase - 8)
+      .attr('text-anchor','middle')
       .attr('fill', DEP_TIER_COLORS[t])
       .text('TIER ' + t);
   });
