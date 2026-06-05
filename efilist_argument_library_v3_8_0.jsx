@@ -9242,8 +9242,9 @@ const STYLES = `
   .efilist-root.legible .ef-obj-header { padding: 18px 22px !important; }
   .efilist-root.legible .ef-detail { padding: 28px 22px !important; }
   .efilist-root.legible .ef-section { margin-bottom: 22px !important; }
-  .efilist-root.legible .map-node-mech text { font-size: 11px; }
-  .efilist-root.legible .map-node-obj text { font-size: 9px; }
+  .efilist-root.legible .map-node-mech text { font-size: 11.5px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; } /* K73 graph-label treatment */
+  .efilist-root.legible .map-node-obj text { font-size: 9.5px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
+  .efilist-root.legible.high-contrast .map-node-mech text, .efilist-root.legible.high-contrast .map-node-obj text { stroke: rgba(238,232,221,0.85); }
 
   /* === HIGH CONTRAST MODE === */
   .efilist-root.high-contrast { background: #f5f0e8 !important; color: #1a1a1a !important; }

@@ -1,0 +1,41 @@
+{
+  "session_id": "k73_legibility_ship",
+  "date": "2026-06-04",
+  "scope": "Graph-view legibility ship (combined.html + jsx) per legibility_behavior_spec_graph_views.md + notes-audit step 1 (annotation inventory extraction). Pin v3.9.4 -> v3.9.5 (maintenance). Canon HELD v37.32 (pure-CSS/JS ship; bump rides the rubric-fold ship).",
+  "build": {
+    "combined": {
+      "delta_bytes": 6273,
+      "md5": "00d302eda301ab6c78046a4499bdb686",
+      "bytes": 2937998,
+      "css": "K73 block before </style>: map mech 11.5/obj 9.5, dep premise 11/obj 9/count 9/layer 10, m1 label 11/source 12.5, all w600 + paint-order stroke halo (rgba container-color .8; cream .85 under BOTH); side panels (#map/#dep-info-panel, stats, m1-detail) + .methodology-panel 13px/1.85 scale (B.3 fix); flat selectors mirror body[data-active-view=library] nest parent for cascade supersession",
+      "js": "K73 block + __graphDefaultMode(view) first line of switchView: enter map/dep/map1 stashes mode + forces standard + rewrites saved prose preference back to localStorage (no clobber); leave restores; explicit in-graph mode click = takeover; MutationObserver on data-active-view restores on outer-view exit / re-defaults on return"
+    },
+    "jsx": {
+      "delta_bytes": 416,
+      "md5": "f2f46efa2c847def71b22db269f0307f",
+      "bytes": 1272561,
+      "note": "two shared selectors upgraded (.efilist-root.legible .map-node-mech/obj text) + BOTH stroke variant; jsx carries NO graph engines/panels - structural parity gap routed to notes audit"
+    },
+    "mega_literals": "MAP_GRAPH_DATA / DEP_GRAPH_DATA / MAP1_TRANSITIONS md5-held in-pass; index_v3_8_0.html untouched 8e36f723",
+    "chip_decision": "halo-chip via paint-order:stroke chosen over rect chips (rect needs getBBox render hooks in 3 engines + re-measure on zoom; halo is mode-reactive for free, zero geometry cost) - flagged to library-Claude for objection"
+  },
+  "verify": {
+    "node_check": "full 2.29MB touched script block PASS; style braces 741/741",
+    "harness": "6/6 state machine (default-entry / storage-preserve / restore-on-leave / takeover / outer-leave restore / re-default on return)",
+    "browser_smoke": "6/6 via Chrome MCP on operator-opened file:// tab: library-legible->map = standard + storage legible + stash held; explicit in-graph LEGIBLE = takeover + mech computed 11.5px/600/rgba(10,10,10,.8)/paint-order stroke; dep obj 9px/600 + layer 10px #555 + methodology 13px; zero console errors. Operator eye-validated halo on premises.",
+    "extension_file_url_lesson": "Chrome-extension navigate cannot reach file:// (forces https://); operator manual open lands the tab in the MCP group and unblocks Cowork-driven local smoke (ccviii)"
+  },
+  "notes_audit_step1": {
+    "inventory": "D:/K73-annotation-inventory-for-library-claude.md (50,902 B)",
+    "content": "4 methodology panels RAW + map/dep stats + 32 surface/render AUDIT-TARGETS (11 HTML + 21 render; stale dep NOTE captured x2 loci) of 1,216 merged windows; 1,184 corpus-internal omitted; jsx structural-parity note; operator dep-graph CLUSTERING observation routed for design-seat de-clutter spec (geometry excluded from this ship by spec)"
+  },
+  "rulings": {
+    "rubric_fold": "DEFERRED to own ship (operator): legibility-first sequencing - legibility makes the methodology panel readable before the fold deposits dense text; keeps canon-bumping fold out of a pure-CSS deploy; fold spec exists library-side (k73_trackB_rubric_fold_spec.md), paste to Cowork at the fold session",
+    "screenshots": "2 PNGs (argument-flow-map1, real-world-examples) = sync casualty, restore from HEAD in PS1",
+    "git": "K72 hazard held - sandbox git READ-ONLY all session; efilist .git/index found EMPTY (0/97) at open, repair = PS1 git reset + checkout screenshots/; wuld-ink pin-state truncation repaired sandbox-side from HEAD blob"
+  },
+  "pin": {
+    "from": "v3.9.4 / 0c7d25be / 2931725",
+    "to": "v3.9.5 / 00d302ed / 2937998"
+  }
+}

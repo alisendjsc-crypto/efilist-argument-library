@@ -1498,6 +1498,39 @@ body[data-active-view="coda"] {
     .return { margin-bottom: 3.25rem; }
   }
 }
+
+/* ===== K73: graph-view legibility treatment (spec: legibility_behavior_spec_graph_views.md, library-Claude 2026-06-04) =====
+   LEGIBLE/BOTH inside the graph views = typographic treatment, not a theme repaint:
+   SVG label size one step up + weight ~600 + semi-opaque rounded halo-chip (paint-order
+   stroke under fill) so labels read against busy linework without enlarging geometry.
+   Side panels + methodology panels ride the same scale (B.3 fix). Flat selectors mirror
+   the body[data-active-view="library"] nest parent for cascade supersession. */
+body[data-active-view="library"].legible .map-node-mech text { font-size: 11.5px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
+body[data-active-view="library"].legible .map-node-obj text { font-size: 9.5px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
+body[data-active-view="library"].legible.high-contrast .map-node-mech text, body[data-active-view="library"].legible.high-contrast .map-node-obj text { stroke: rgba(238,232,221,0.85); }
+body[data-active-view="library"].legible .dep-node-premise text { font-size: 11px; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
+body[data-active-view="library"].legible .dep-node-obj text { font-size: 9px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
+body[data-active-view="library"].legible.high-contrast .dep-node-premise text, body[data-active-view="library"].legible.high-contrast .dep-node-obj text { stroke: rgba(238,232,221,0.85); }
+body[data-active-view="library"].legible .dep-node-premise .dep-count-label { font-size: 9px; font-weight: 500; }
+body[data-active-view="library"].legible .dep-layer-label { font-size: 10px; fill: #555; }
+body[data-active-view="library"].legible.high-contrast .dep-layer-label { fill: #777; }
+body[data-active-view="library"].legible .m1-node-label { font-size: 11px; font-weight: 600; paint-order: stroke fill; stroke: rgba(15,15,15,0.8); stroke-width: 3px; stroke-linejoin: round; }
+body[data-active-view="library"].legible .m1-node-label-source { font-size: 12.5px; paint-order: stroke fill; stroke: rgba(15,15,15,0.8); stroke-width: 3.5px; stroke-linejoin: round; }
+body[data-active-view="library"].legible.high-contrast .m1-node-label, body[data-active-view="library"].legible.high-contrast .m1-node-label-source { stroke: rgba(237,232,223,0.85); }
+body[data-active-view="library"].legible #map-info-panel .mp-type, body[data-active-view="library"].legible #dep-info-panel .dp-type { font-size: 11px; }
+body[data-active-view="library"].legible #map-info-panel .mp-title, body[data-active-view="library"].legible #dep-info-panel .dp-title { font-size: 14px; }
+body[data-active-view="library"].legible #map-info-panel .mp-conns, body[data-active-view="library"].legible #dep-info-panel .dp-conns { font-size: 12.5px; line-height: 1.9; }
+body[data-active-view="library"].legible #dep-info-panel .dp-desc { font-size: 12.5px; line-height: 1.7; }
+body[data-active-view="library"].legible #map-stats, body[data-active-view="library"].legible #dep-stats { font-size: 11px; }
+body[data-active-view="library"].legible .m1-detail-panel { font-size: 13.5px; }
+body[data-active-view="library"].legible .m1-detail-panel h4 { font-size: 13.5px; }
+body[data-active-view="library"].legible .m1-mode-rationale-label { font-size: 11px; }
+body[data-active-view="library"].legible .m1-mode-rationale-text { font-size: 13px; line-height: 1.6; }
+body[data-active-view="library"].legible .methodology-panel { font-size: 13px; line-height: 1.85; }
+body[data-active-view="library"].legible .methodology-panel h4 { font-size: 13px; }
+body[data-active-view="library"].legible .methodology-panel code { font-size: 12px; }
+body[data-active-view="library"].legible .methodology-panel .mp-note { font-size: 12px; }
+body[data-active-view="library"].legible .methodology-panel .mp-premise-table { font-size: 12px; }
 </style>
 </head>
 <body data-active-view="library">
@@ -10223,7 +10256,56 @@ let mapInitialized = false;
 let depInitialized = false;
 let map1Initialized = false;
 
+// ===== K73: graph tabs default to STANDARD; restore prior mode on leave =====
+// Spec: legibility_behavior_spec_graph_views.md (library-Claude, 2026-06-04).
+// Entering a graph tab (map/dep/map1) defaults display mode to standard (layout-
+// optimal) WITHOUT clobbering the saved prose preference; leaving restores it.
+// An explicit mode click while in a graph tab takes over (stash drops, persists).
+var __graphModeStash = null;
+var __graphModeProgrammatic = false;
+function __isGraphView(v) { return v === 'map' || v === 'dep' || v === 'map1'; }
+function __currentModeFromBody() {
+  var l = document.body.classList.contains('legible');
+  var h = document.body.classList.contains('high-contrast');
+  return l && h ? 'both' : l ? 'legible' : h ? 'high-contrast' : 'standard';
+}
+function __graphModeEnter() {
+  var cur = __currentModeFromBody();
+  if (cur === 'standard' || __graphModeStash !== null) return;
+  if (!(window.__arglib && window.__arglib.setMode)) return;
+  __graphModeStash = cur;
+  __graphModeProgrammatic = true;
+  window.__arglib.setMode('standard');
+  __graphModeProgrammatic = false;
+  try { localStorage.setItem('arglib-mode', cur); } catch (e) {}
+}
+function __graphModeLeave() {
+  if (__graphModeStash === null) return;
+  var back = __graphModeStash;
+  __graphModeStash = null;
+  if (window.__arglib && window.__arglib.setMode) {
+    __graphModeProgrammatic = true;
+    window.__arglib.setMode(back);
+    __graphModeProgrammatic = false;
+  }
+}
+function __graphDefaultMode(nextView) {
+  if (__isGraphView(nextView) && !__isGraphView(currentView)) __graphModeEnter();
+  else if (!__isGraphView(nextView) && __isGraphView(currentView)) __graphModeLeave();
+}
+document.addEventListener('arglib:mode-change', function () {
+  if (!__graphModeProgrammatic) __graphModeStash = null;
+});
+if (window.MutationObserver) {
+  new MutationObserver(function () {
+    var outer = document.body.getAttribute('data-active-view') || 'library';
+    if (outer !== 'library') __graphModeLeave();
+    else if (__isGraphView(currentView)) __graphModeEnter();
+  }).observe(document.body, { attributes: true, attributeFilter: ['data-active-view'] });
+}
+
 function switchView(view) {
+  __graphDefaultMode(view);
   currentView = view;
   document.getElementById('library-view').style.display = view === 'library' ? 'block' : 'none';
   document.getElementById('map-view').style.display = view === 'map' ? 'block' : 'none';
