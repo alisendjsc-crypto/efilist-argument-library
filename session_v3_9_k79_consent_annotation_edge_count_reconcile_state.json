@@ -1,0 +1,56 @@
+{
+  "session": "v3_9_9_k79_consent_annotation_edge_count_reconcile",
+  "date": "2026-06-05",
+  "class": "library maintenance correction (narrative-only) on the CLOSED v3.9 line; wuld.ink Cowork end-to-end (pin==live)",
+  "open_gate": {
+    "efilist_head": "e2a9832 == origin/main, clean (atop 0dfcbff)",
+    "wuld_pin_state": "v3.9.8 / cdf2c0d7 / 2945005",
+    "live_eq_pin": "K78 deploy landed (cdf2c0d7)",
+    "feed_xml_note": "worktree 18745 vs HEAD blob 20825 = ccix mount-read truncation; HEAD intact+pushed; regenerates at pin-apply; no repair routed"
+  },
+  "evidence": {
+    "dep_graph_total_edges": 254,
+    "consent_source_edges": 67,
+    "consent_strong": 42,
+    "consent_weak": 25,
+    "consent_target_edges": 0,
+    "percent_of_254": "26%",
+    "method": "DEP_GRAPH_DATA JSON-parsed + regex cross-check, both = 67",
+    "node": "prem_consent-impossibility",
+    "class": "pure foundational source (0 as target), same class as zero-sum / alogical-isness"
+  },
+  "stale_figures_corrected": [
+    "leading: 62 edges, 28% of all dependencies (28% = stale ~221 v3.5 denominator)",
+    "present-tense 40/22 strong-weak split",
+    "'40 remaining strong edges' live count"
+  ],
+  "fix": "hard-update + version-stamped history (whole-paragraph-rider REJECTED). One present-tense figure: 67 edges / 42 strong / 25 weak / 26% of 254. v3.5 audit figures frozen + version-stamped ('v3.5 audit: 62 edges, 40 strong / 22 weak'); percent dropped. Trailing count de-numbered to 'the current strong edges' (anti-staleness).",
+  "surfaces": {
+    "combined.html": {
+      "before": "cdf2c0d7/2945005",
+      "after": "82bf3a8e/2945090"
+    },
+    "index_v3_8_0.html": {
+      "before": "2e9a2084/2386982",
+      "after": "d19391f9/2387067"
+    },
+    "delta": "+85 bytes byte-identical splice x2",
+    "jsx": "SOLE-CARRIER exempt (no dep-graph strings; untouched f2f46efa)"
+  },
+  "canon": {
+    "from": "37.34 (55893f8a)",
+    "to": "37.35 (ca8ad239/237894)",
+    "flat_diff": "EXACTLY 4 value paths (canon_version, canon_version_marker, last_updated_by_session, next_recommended_session.thesis) + 1 slr append [MINOR v37.34->v37.35]",
+    "invariants_md5": "36f5495018d19b8c5b77deb9150eea5f HELD",
+    "keyset": "38 HELD",
+    "last_updated": "2026-06-03 HELD (N=9)"
+  },
+  "deferral_closed": "K73a/K74/K77 consent 66-vs-67 deferral settled at 67",
+  "ship": {
+    "manifest": "release_v3_9_9.json",
+    "releases_id": "2026-06-05-library-v3-9-9 (hand-prose pre-prepend)",
+    "exchange": "Exchange 35 (docs/library-claude-coordination.md)"
+  },
+  "ps_blocks": "TWO ORDERED: PS1 efilist FIRST (4-file md5 gate + foreach stage + commit + push + curl.exe live-verify 82bf3a8e); PS2 wuld-ink SECOND (library-pin.py --manifest release_v3_9_9.json --apply --date 2026-06-05; pin-state re-read guard; 4-file md5 gate; git add -u + manifest; commit + push; verify /library-about/ v3.9.9)",
+  "pin": "v3.9.8 -> v3.9.9 (cdf2c0d7 -> 82bf3a8e)"
+}
