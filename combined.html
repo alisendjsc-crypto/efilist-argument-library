@@ -1545,6 +1545,8 @@ body[data-active-view="library"].legible #rsi-methodology-panel pre { font-size:
    three — argument-flow, mechanism-web, dependency-graph; they share the wrapper).
    body.graph-frame is toggled by the K73 view hooks while map/dep/map1 is active. */
 body[data-active-view="library"].legible.graph-frame { max-width: none; }
+/* K82: legible dep-review-note fix — review notes join the legible set (K81 operator gripe). Standard/HC untouched; BOTH takes size here + HC colors from the nested rule. */
+body[data-active-view="library"].legible .dep-review-note { font-size: 12.5px; line-height: 1.75; }
 </style>
 </head>
 <body data-active-view="library">

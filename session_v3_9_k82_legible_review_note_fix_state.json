@@ -1,0 +1,55 @@
+{
+  "session": "K82",
+  "date": "2026-06-05",
+  "track": "library legible dep-review-note fix -> v3.9.11 (render follow-up; K81 operator gripe; Exchange 38 green-light)",
+  "riders_honored": {
+    "class": "maintenance",
+    "canon": "HELD v37.36 (no bump; Exchange 38 ruling)",
+    "trace": "releases.json prose + manifest note name the legible note fix explicitly",
+    "historical_status_class": "NOT ridden (deferred pending Exchange-36 Q2 spec)"
+  },
+  "build": {
+    "combined.html": {
+      "pre": "a72779819e08f08782e570022954111b/2945213",
+      "post": "c436e7208ced7bce015e6143d5195037/2945490",
+      "delta": "+277",
+      "rule": "body[data-active-view=\"library\"].legible .dep-review-note { font-size: 12.5px; line-height: 1.75; }",
+      "anchor": "after K74 graph-frame rule (style-block tail)"
+    },
+    "index_v3_8_0.html": {
+      "pre": "632cc7a18bb6361c82e2b5b8254c68f2/2387190",
+      "post": "36b11ffea96413bd9f5c0d007527bf72/2387362",
+      "delta": "+172",
+      "rule": "body.legible .dep-review-note { font-size: 12.5px; line-height: 1.75; }",
+      "anchor": "after flat body.high-contrast .dep-review-note (per-file architecture, K76 lesson)"
+    },
+    "validate": "all-then-write; anchors count==1; braces +1/+1; NUL 0; CR 0 held; </style> 1 held; off-limits rsi sentence count==1 untouched; FIRST RUN PASS"
+  },
+  "qa": {
+    "method": "Chrome MCP file:// tab (ccviii); dep view; NB premises render as svg RECTs, objections as circles -- circle-only probes miss premises",
+    "matrix": {
+      "standard": "10px/16px #888 mono UNCHANGED",
+      "legible": "12.5px/21.875px Georgia #888 -- THE FIX",
+      "hc": "10px #555 bg rgba(0,0,0,0.03) UNCHANGED",
+      "both": "12.5px Georgia + HC colors -- K64a order holds",
+      "standard_reentry": "clean revert",
+      "convergent_spot": "12.5px PASS"
+    },
+    "badge": "8px IBM Plex Mono all modes -- operator ruled LEAVE (chrome, not content)",
+    "console": "zero errors",
+    "graph_frame": "width intact under legible takeover",
+    "index": "static mechanism-parity (identical base rule; body.legible mechanism live since v3.9.7)"
+  },
+  "new_flag_parked": "dep render drops ONE strong edge vs literal: panel 'DEPENDENT OBJECTIONS (66)' + node sublabel '41 strong / 25 weak' vs DEP_GRAPH_DATA parse 67 edges -> 67 unique obj targets (42 strong / 25 weak; zero prem-targets, in-page probe). K80 rider text literal-true; divergence is render-side counting. K83+ material, NOT the jsx lane.",
+  "held": {
+    "jsx": "f2f46efa UNTOUCHED (sole-carrier exempt)",
+    "corpus": "9af9dd5c",
+    "canon": "eaca97a9 v37_36",
+    "ledger": "204fcdbe"
+  },
+  "arc": {
+    "prev": "K81 report-only -> Exchange 38 green-light",
+    "this": "v3.9.11 deploy+pin land operator-side via TWO ORDERED PS blocks",
+    "next": "K83 = jsx GRAPH_DATA resync + render-from-data stat label -> v3.9.12, canon 37.37 MINOR"
+  }
+}
