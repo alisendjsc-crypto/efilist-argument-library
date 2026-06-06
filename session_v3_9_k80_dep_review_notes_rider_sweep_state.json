@@ -1,0 +1,76 @@
+{
+  "session_id": "v3_9_10_k80_dep_review_notes_rider_sweep",
+  "date": "2026-06-05",
+  "track": "DEP_REVIEW_NOTES current-rider sweep (deferred-maintenance on CLOSED v3.9 line; K79-spawned; library-gated)",
+  "routing": "wuld.ink Cowork end-to-end (pin==live)",
+  "gate_at_open": {
+    "efilist_HEAD": "6ee526e == origin, clean",
+    "wuld_ink_HEAD": "bd582a0 == origin (refs-only per ccix)",
+    "pin_state": "v3.9.9 / 82bf3a8e / 2945090",
+    "live==pin": "yes (combined fs == 82bf3a8e)",
+    "wrong_reply_diagnosed": "operator's first paste was the Exchange-35 (K79 ship-confirm) reply, not the K80 ruling; HOLD declared, candidate list pre-derived, Exchange-36 ruling landed same session"
+  },
+  "library_ruling_exchange_36": {
+    "Q1": "append-don't-rewrite; rider only where rendered note reads as live (the 5 premise notes)",
+    "Q2": "bare inline '(v3.5; current: M)'; NO historical status-class this cut (render-layer; defer to cut bundled with parked legibility-modifier CSS-scope fix)",
+    "a": "grain-match: 4 total-only notes ride total-only; consent rides the split",
+    "b": "consent tail 'Remaining 40 strong edges confirmed' HELD VERBATIM; current 42 stated once in lead rider",
+    "entry_list": "exactly the 5 premise notes; 14 objection notes clean (4 edge-counts match in-degree)",
+    "jsx": "SOLE-CARRIER exempt confirmed both seats"
+  },
+  "operator_AQ": "ratified ship as validated; REJECTED drop-v3.5-stamp (load-bearing retroactive stamp) and REJECTED consent placement move (split-rider-in-lead + verbatim tail IS the (a)/(b) ruling)",
+  "patches": [
+    {
+      "note": "_premise_consent-impossibility",
+      "old": "weak after v3.5 audit). 16 edges downgraded",
+      "new": "weak after v3.5 audit) (v3.5; current: 67 — 42 strong / 25 weak). 16 edges downgraded"
+    },
+    {
+      "note": "_premise_suffering-deterrence",
+      "old": "note:'13 connections after v3.5 manual pass (+11).",
+      "new": "note:'13 connections (v3.5; current: 19) after v3.5 manual pass (+11)."
+    },
+    {
+      "note": "_premise_contextus-claudit",
+      "old": "...note:'8 connections after v3.5 manual pass (+6). [key-anchored]",
+      "new": "...note:'8 connections (v3.5; current: 9) after..."
+    },
+    {
+      "note": "_premise_alogical-isness",
+      "old": "...note:'8 connections after v3.5 manual pass (+6). [key-anchored]",
+      "new": "...note:'8 connections (v3.5; current: 11) after..."
+    },
+    {
+      "note": "_premise_convergent-architecture",
+      "old": "note:'13 connections after v3.5 manual pass (+12).",
+      "new": "note:'13 connections (v3.5; current: 17) after v3.5 manual pass (+12)."
+    }
+  ],
+  "current_figures_derivation": "live DEP_GRAPH_DATA literal parsed (94 nodes / 254 links): consent 42s/25w/67 in=0; suff-det 10s/9w/19; contextus 6s/3w/9; alogical 5s/6w/11; convergent 11s/6w/17",
+  "surfaces": {
+    "combined.html": "82bf3a8e/2945090 -> a72779819e08f08782e570022954111b/2945213 (+123)",
+    "index_v3_8_0.html": "d19391f9/2387067 -> 632cc7a18bb6361c82e2b5b8254c68f2/2387190 (+123)",
+    "deltas_identical_x2": true,
+    "DEP_GRAPH_DATA_literal": "byte-HELD 7c1abdbd both files",
+    "node_check": "combined 3 JS blocks pass; index 1 pass (on written files)",
+    "off_limits": "rsi-panel 'sole drag on 32 of 81 nodes' + K79 mp-note '67 edges &mdash;...' count==1 untouched both files"
+  },
+  "canon": {
+    "file": "project_canon_v37_36.json",
+    "md5": "eaca97a9d8304c196067a67e1a439be8",
+    "bytes": 240829,
+    "gates": "round-trip byte-identical on v37_35; flat-diff EXACTLY 4 value paths + slr append 39->40 [MINOR v37.35->v37.36]; invariants md5 36f5495018d19b8c5b77deb9150eea5f HELD; keyset HELD 38; last_updated HELD 2026-06-03 (N=11)"
+  },
+  "ship": {
+    "manifest": "release_v3_9_10.json (wuld-ink root)",
+    "pin": "v3.9.9 -> v3.9.10 at PS2 --apply --date 2026-06-05",
+    "releases_entry": "2026-06-05-library-v3-9-10 pre-prepended (22 entries; id-idempotent at apply)",
+    "exchanges": "36 (K79 relay folded) + 37 (K80 record) in docs/library-claude-coordination.md"
+  },
+  "parked_not_k80": [
+    "jsx hardcoded '118 CONNECTIONS' (line ~9488, MAP_GRAPH panel) — future jsx-stat pass; unconfirmed",
+    "review-note historical status-class visual treatment — bundle with the parked legibility-modifier CSS-scope fix",
+    "corpus-md5 filename-frozen-vs-live reconcile — hygiene, corpus/canon pass not a deploy"
+  ],
+  "lesson_ccxv": "A stale-figure sweep must speak the surface's vocabulary: the first probe searched 'edges' and missed 4/5 stale notes phrased 'connections'; and the referent class differs by node type (premise notes count OUT-edges, objection notes count IN-edges — the four objection 'N edges' figures are correct against in-degree). Enumerate the artifact's own figure-words first, then sweep."
+}
