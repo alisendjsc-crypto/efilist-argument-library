@@ -1,0 +1,31 @@
+{
+  "session_id": "v3_9_k77_notes_audit_step2_cowork_close",
+  "date": "2026-06-05",
+  "class": "verify + handoff (NO deploy / NO pin / NO canon bump)",
+  "routing": "wuld.ink Cowork; notes-audit close + v3.9.8 spec spawn. pin==live invariant unaffected (no deploy this session); live stays 729b4f5c.",
+  "deliverable": "Cowork-side close of the K73/K77 notes-audit step 2: ground-truth-verify library-Claude's disposition against live 729b4f5c, close the audit, spawn the v3.9.8 surface-edit spec.",
+  "hard_gate_4of4_green": {
+    "efilist": "21b314e == origin/main, tree clean, no stray lock",
+    "wuld_ink": "7b2c1c8 == origin/main, tree clean, no stray lock",
+    "live_eq_pin": "combined.html 729b4f5c / 2,944,946 == pin v3.9.7 (tree==pin; live==pin operator-asserted post-K76)",
+    "inputs": {"disposition_md": "363e5130 / 10,457 B", "library_state_json": "3f411c61 / 5,782 B"}
+  },
+  "verification_findings": {
+    "prompt_premise_was_wrong": "The K77 prompt asserted the one finding (ledger-false 'Autonomy = most common weakness') was ALREADY CLOSED at K76 and instructed verify-close. In-tree grep of live 729b4f5c disproved it: TWO panels ~20 KB apart, K76 fixed only one.",
+    "rsi_panel_VERIFIED_CORRECT_do_not_touch": {"offset": 81454, "text": "the most common drag across the library is Robustness — the lowest-mean axis, and the sole drag on 32 of 81 nodes", "ledger_check": "r is unique strict-minimum in exactly 32 entries (204fcdbe); disposition's 64/81 = r at-or-tied-lowest, a different true measure; the 32/81 sole-drag framing is correct, no change"},
+    "real_stale_locus": {"offset": 101651, "panel": "Dependency-Graph strategic-application list, item '3. RSI Autonomy correlation'", "false_claim": "the RSI system's most common weakness: the Autonomy axis", "site_self_contradicts": true},
+    "index_sibling": "index_v3_8_0.html 7a46aaba carries all three stale strings (most-common-weakness x1, stale H1 v3.8.4 x1, top-entries sentence) — v3.9.8 touches BOTH surfaces",
+    "locus_correction": "library-seat disposition guessed rsi-panel A·74622 (blind to live); Cowork in-tree grep pinned dep-graph panel offset ~101651"
+  },
+  "disposition_outcome": {
+    "notes_audit": "CLOSED — disposition delivered (library-seat) + Cowork-verified against live bytes; sound.",
+    "inventory_net": "overwhelmingly KEEP, overtaken by K74/K76; rsi-panel refreshes shipped K76; Section E superseded by K74; Section D jsx-parity = SOLE-CARRIER ruling (combined.html + index_v3_8_0.html only; jsx = prose-only; do NOT port).",
+    "spawned_v3_9_8": ["EDIT 1: dep-graph panel item 3 Autonomy reframe (verbatim AFTER staged in spec)", "EDIT 2: H1 v3.8.4 de-version (K69 staleness-kill, x2 surfaces)", "EDIT 3: top-entries 'are'->'include', A-across-5 set is 10 not the 4 named"],
+    "deferred": ["Consent edge count (dep mp-note ~99896: live 62/40-22/28% = v3.5 figure) — verify live DEP_GRAPH_DATA literal FIRST (66 vs 67 unresolved across K73a/K74); separate refresh", "DEP_REVIEW_NOTES v3.5 historical figures — do not rewrite; current-rider only where misreadable", "Corpus md5 filename-frozen-vs-live-literal divergence — hygiene, route to a corpus/canon pass"],
+    "operator_ratification_pending": "jsx sole-carrier ruling -> fold as one-line canon scope-note at the 37.34 bump"
+  },
+  "spawned_spec_artifact": "D:\\v3_9_8-deploy-spec.md (paste-ready: full BEFORE/AFTER for EDIT 1, H1 + top-entries directives, deferred items, close discipline)",
+  "no_efilist_served_change": "Only this side-car lands efilist-side (commit-only). Post-verify live combined STILL 729b4f5c.",
+  "next_recommended_action": "Fresh Cowork session runs the v3.9.8 deploy per D:\\v3_9_8-deploy-spec.md: edit x2 surfaces, canon 37.33->37.34 MINOR, pin v3.9.7->v3.9.8, two ordered PS blocks (efilist first, wuld-ink pin-apply second).",
+  "tool_budget": {"projected_verify_close": "6-12", "actual_through_close": "~11", "note": "disposition carried real surface work contra the prompt premise; pre-flagged + re-scoped to handoff per operator AQ; ZERO live bytes touched"}
+}
