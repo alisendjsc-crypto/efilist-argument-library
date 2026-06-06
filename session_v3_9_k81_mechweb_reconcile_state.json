@@ -1,0 +1,56 @@
+{
+  "session": "K81",
+  "date": "2026-06-05",
+  "track": "jsx MechanismWeb stat/graph reconcile - Cowork-run verify, REPORT-ONLY (library K81 prompt; operator-staged jsx-stat pass folded in)",
+  "live_state_at_open": {
+    "pin": "v3.9.10",
+    "combined_md5": "a7277981",
+    "bytes": 2945213,
+    "pin_eq_live": true,
+    "jsx_md5": "f2f46efa",
+    "jsx_bytes": 1272561
+  },
+  "four_set_table": {
+    "jsx_GRAPH_DATA_verified": {
+      "mech": 34,
+      "obj": 78,
+      "links": 133
+    },
+    "jsx_stat_label_hardcoded": {
+      "mech": 34,
+      "obj": 81,
+      "links": 118
+    },
+    "locked_scalar": {
+      "mech": 35,
+      "obj": 81,
+      "links": 140
+    },
+    "combined_MAP_GRAPH_DATA_K81": {
+      "mech": 35,
+      "obj": 81,
+      "links": 140
+    }
+  },
+  "ground_truth_determination": "combined MAP_GRAPH_DATA == locked scalar (35/81/140) EXACTLY -> decision-tree BRANCH 1: jsx GRAPH_DATA is STALE (v3.7-frozen ancestor of combined's dataset); surfaces out of sync. Both parses json.loads-clean, 0 dangling endpoints.",
+  "curated_subset_hypothesis": "REJECTED. combined is a STRICT SUPERSET of jsx: +mech_Metaphysical_Deflation, +obj_eliminativism, +obj_solipsism, +obj_suffering-as-meaning, +7 links; jsx-only nodes NONE. No curation/design note in either surface. The Map-1 '78' coincidence dissolves under ccxv referent discipline: map1's '78 source nodes' is the convergence-distribution universe, a different referent class than mech-web objection nodes.",
+  "loci_ground_truth": {
+    "jsx_GRAPH_DATA": "line 7779 (const GRAPH_DATA, 50,190-char literal; prompt's L7713 was stale-vintage)",
+    "jsx_stat_label": "lines 9553-9555, three static spans (prompt's ~L9484-9490 was stale-vintage)",
+    "combined_index_mastheads": "#map-stats static spans read 35 MECHANISMS / 81 OBJECTIONS / 140 CONNECTIONS in BOTH combined.html and index_v3_8_0.html - CURRENT vs their shared MAP_GRAPH_DATA. Label fix is therefore x1 surface (jsx only), correcting the prompt's x3 scope note."
+  },
+  "flag_disposition": "DOES NOT RETIRE - staleness confirmed multi-way against the jsx's OWN data (118 vs 133 rendered; 81 vs 78 rendered). Fix STAGED, not shipped; report-only honored; v3.9.11 unburned; zero served-surface writes.",
+  "staged_fix": {
+    "shape": "resync jsx GRAPH_DATA from combined MAP_GRAPH_DATA (data-literal mutation, hazard pattern, atomic validate-all-then-write) + stat label to true rendered counts (35/81/140) - or render-from-data spans ({GRAPH_DATA.nodes.filter(...).length} etc.), which kills this staleness class permanently",
+    "surfaces": [
+      "efilist_argument_library_v3_8_0.jsx"
+    ],
+    "canon_bump_class": "MINOR rides the resync ship (canonicity restoration; locked scalar UNCHANGED, no invariant revision - the branch-2 MAJOR case does not arise)"
+  },
+  "next_recommended_action": "K82 = legible dep-review-note render fix (operator glance gripe, diagnosis PINNED: .dep-review-note hard font-size:10px, zero legible coverage - the parked legibility-modifier CSS-scope bug, located; operator AQ ratified supersession) -> v3.9.11, surfaces combined+index. K83 = jsx GRAPH_DATA resync + label fix -> v3.9.12. Surface sets are DISJOINT; seats MAY bundle both into one ship/pin; Cowork default separate per one-deliverable-per-session.",
+  "carries_unchanged": [
+    "v4.0 enforcement seam: hash-recompute mandatory if archetype_variant_grades promote to live rows",
+    "per-card archetype-status indicator (long-term backlog)",
+    "legibility-modifier CSS-scope fix: LOCATED this session, consumed by K82 (leaves backlog)"
+  ]
+}
