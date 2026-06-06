@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "session": "K78",
+    "label": "dep-panel calibration + masthead de-version + top-entries fix (v3.9.8)",
+    "role": "wuld.ink Cowork end-to-end (build + verify + canon + ship artifacts authored/verified in working trees; commit/deploy/pin OPERATOR-SIDE via two ordered PS blocks)",
+    "date": "2026-06-05",
+    "class": "Maintenance correction pin on the CLOSED v3.9 line (narrative/text-only; no grading invariant touched; zero ledger scores changed)",
+    "headline": "Three narrative text corrections x2 served surfaces; the dep-graph panel's ledger-FALSE Autonomy-frequency claim reframed to a structural reach-limiter; masthead de-versioned; top-entries are->include.",
+    "spawned_by": "K77 notes-audit step 2 (the single v3.9 surface-edit the disposition produced)",
+    "predecessor": "session_v3_9_k77_notes_audit_step2_cowork_close_state.json"
+  },
+  "edits": {
+    "EDIT1_dep_panel_item3": {
+      "locus": "combined.html @101569 / index_v3_8_0.html @74993; strategic-application list item 3 'RSI Autonomy correlation'",
+      "before": "...explains the RSI system's most common weakness: the Autonomy axis. ... The graph makes this relationship structural rather than merely numerical.",
+      "after": "...makes the RSI Autonomy axis structural rather than merely numerical. ... &mdash; so the graph shows at a glance which responses have capped persuasive reach against a skeptic who grants none of the framework.",
+      "reason": "ledger 204fcdbe: modal weakness is Robustness (mean 0.838, sole drag 32/81), NOT Autonomy; the frequency claim was false AND contradicted the K76-correct rsi-methodology-panel. Reframed Autonomy as a structural reach-limiter (no competing frequency claim).",
+      "build_rider": "DISCHARGED. DEP_GRAPH_DATA = 13 premise + 81 objection nodes / 254 source-target edges; prem_zero-sum (Zero-Sum Framework) sources ~9 edges, prem_alogical-isness (Alogical Isness) sources ~11, both to obj_* response nodes -> 'graph shows at a glance' clause grounded; shipped library-Claude candidate VERBATIM."
+    },
+    "EDIT2_masthead_h1": {
+      "locus": "combined @75819 / index @48743",
+      "change": "<h1>ARGUMENT LIBRARY v3.8.4</h1> -> <h1>ARGUMENT LIBRARY</h1>",
+      "reason": "K69 title-staleness-kill; literal was 3 pins stale (live v3.9.7); retires the parked header-reconciliation backlog item."
+    },
+    "EDIT3_top_entries": {
+      "locus": "combined @~81213 / index sibling",
+      "change": "'entries in the library are: <code>performative-contradiction</code>' -> '...include:...'",
+      "reason": "the 4 named are members of the 10-entry A-on-all-5 set (ledger-verified), not the exhaustive set; 'are' was false-exhaustive."
+    }
+  },
+  "verification": {
+    "deltas": "byte-identical +59 each: combined 729b4f5c->cdf2c0d7/2,945,005; index 7a46aaba->2e9a2084/2,386,982",
+    "off_limits": "rsi-methodology-panel Robustness sentence count==1 untouched both files",
+    "no_js": "all three offsets in the pre-literal HTML body; element open/close counts unchanged; node --check moot",
+    "canon_flat_diff": "EXACTLY 4 changed paths (canon_version, canon_version_marker, last_updated_by_session, next_recommended_session/thesis) + 1 slr append; invariants md5 36f5495018... HELD; keyset HELD 38; serializer round-trip byte-identical"
+  },
+  "ship": {
+    "canon": "project_canon_v37_34.json 55893f8a/235,650 (MINOR 37.33->37.34)",
+    "manifest": "release_v3_9_8.json (wuld-ink); pin 729b4f5c->cdf2c0d7",
+    "releases": "src/releases.json hand-prose entry 2026-06-05-library-v3-9-8 pre-prepended (id-idempotent at --apply)",
+    "ps_blocks": "TWO ORDERED: PS1 efilist (combined+index+canon+this side-car; commit+push+live verify cdf2c0d7), PS2 wuld-ink (pin apply --date 2026-06-05; 4-file gate; feed regen)"
+  },
+  "next_recommended_action": "EMPTY/maintenance posture -- v3.9 CLOSED, v3.9.8 = current pin; no successor scheduled, none to be invented. Any future library deploy still forces a same-session wuld.ink pin move (pin==live)."
+}
