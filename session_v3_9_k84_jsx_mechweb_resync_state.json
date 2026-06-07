@@ -1,0 +1,29 @@
+{
+  "session": "K84",
+  "date": "2026-06-06",
+  "track": "jsx MechanismWeb resync (Exchange-38 branch-1; displaced once by K83 gallery)",
+  "deliverable": "v3.9.12 — jsx GRAPH_DATA resync + render-from-data masthead + vintage marker; canon MINOR v37.36->v37.37",
+  "self_test": {
+    "jsx_before": "34 mech / 78 obj / 133 links (lit 50,190 chars @ L7779)",
+    "combined_source": "35/81/140 (lit 43,219 chars) == locked scalar",
+    "superset": "combined-only: mech_Metaphysical_Deflation + obj_eliminativism/solipsism/suffering-as-meaning + 7 links; jsx-only: none"
+  },
+  "edits": {
+    "data": "GRAPH_DATA literal replaced verbatim with combined MAP_GRAPH_DATA",
+    "label": "masthead spans render-from-data: nodes.filter(n=>n.type===\"mechanism\").length / objection variant / links.length; footer 5 TIERS HELD",
+    "vintage": "header v3.7 line stamped with v3.9.12 resync provenance"
+  },
+  "gates": "validator self-test pre-write on both untouched sources; post-write json.loads 35/81/140; brace/paren/bracket net-balance held; read-back md5",
+  "deltas": {
+    "jsx": "f2f46efa -> 029a91d85a3671c0c3ccbff831912002 / 1,265,927 (-6,634)",
+    "byte_held": "combined c436e720 / index 36b11ffe / corpus 9af9dd5c / ledger 204fcdbe",
+    "canon": "eaca97a9 -> 2e001e8692c41025d8faa288ab45226e / 242719"
+  },
+  "pin": "v3.9.11 -> v3.9.12; first pin where version moves and combined bytes don't (pin.old == pin.new == c436e720)",
+  "next_rec": "EMPTY/maintenance HELD (operator AQ); latent debt: combined/index static #map-stats -> render-from-data at v4.0 data-touch",
+  "parked_unchanged": [
+    "dep render-count 66-vs-67 relay",
+    "historical status-class (Exchange-36 Q2 spec)",
+    "corpus-md5 filename reconcile (hygiene)"
+  ]
+}
