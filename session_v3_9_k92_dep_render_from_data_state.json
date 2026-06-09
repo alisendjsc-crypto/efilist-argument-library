@@ -1,0 +1,28 @@
+{
+  "session": "K92",
+  "date": "2026-06-08",
+  "track": "library dep-graph render-from-data fix (Exchange-40 ruling; K82 66-vs-67 flag; routed to wuld.ink Cowork end-to-end)",
+  "deliverable": "v3.9.13 \u2014 dep-graph render-from-data x2 surfaces + mandatory in-page validator; canon MINOR v37.37->v37.38",
+  "diagnosis_K91": "6 of 13 premise nodes carried stale stored strongCount/weakCount/totalCount (stored sum 245 vs 254 links); render faithful, data stale",
+  "fix": {
+    "derive": "top-level DEP_DERIVED groups DEP_GRAPH_DATA.links by source.id; depCount(node) single read path",
+    "reads_driven": "7 (premMaxCount L11238, width L11240, x L11242, sublabel L11256, header L11320, premise sorts L11075/76) \u2014 last 2 beyond the seat's enumerated 5, operator-ratified",
+    "validator": "in-page self-test: sum==len(links)==254, every premise present, total==strong+weak; console.error on fail",
+    "stored_fields": "left inert in literal (strip on next literal touch)"
+  },
+  "gates": "build validator derive==254 + exact-token swaps (8, counted) + delimiter-delta invariant + node --check (block + engine script); literal byte-identical (bytes-through-literal unchanged, literal-line md5 held, data2==data)",
+  "deltas": {
+    "combined": "c436e7208ced7bce015e6143d5195037 -> 8e0d823f975665fc2b3f948793893d02 / 2,946,927 (+1,437)",
+    "index": "36b11ffea96413bd9f5c0d007527bf72 -> a1e67ee5da8dc81859ae00db25d8a0e0 / 2,388,799 (+1,437)",
+    "byte_held": "jsx 029a91d8 / corpus 9af9dd5c / ledger 204fcdbe",
+    "canon": "2e001e86 -> 192ee6b3cf05d8842550a085dd4d6b0a / 246095"
+  },
+  "pin": "v3.9.12 -> v3.9.13; combined bytes MOVE this time (c436e720->8e0d823f); pin==live invariant held via two ordered PS blocks",
+  "boundaries": "254 reaffirmed not revised; no invariant block changed; not a v4.0 trigger (display-aggregate, not grade computation); K80 mp-note + MAP_GRAPH untouched",
+  "parked_unchanged": [
+    "dep render-count now FIXED (this session)",
+    "historical status-class (Exchange-36 Q2 spec)",
+    "combined/index static #map-stats -> render-from-data at v4.0 data-touch",
+    "corpus-md5 filename reconcile (hygiene)"
+  ]
+}
