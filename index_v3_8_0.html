@@ -909,6 +909,11 @@ body.legible .m1-node-label { font-size: 10.5px; }
 body.legible .m1-node-label-source { font-size: 12px; }
 body.legible .m1-stars-badge { font-size: 10px; }
 
+/* K108: shared-link landing highlight (objection cards) -- steady, no motion */
+.objection-header.focused {
+  border-color: #B8AC95;
+  box-shadow: 0 0 0 1px rgba(184, 172, 149, 0.18);
+}
 </style>
 </head>
 <body>
@@ -8845,7 +8850,7 @@ function rweCardHtml(row) {
   h += '<div class="rwe-sum">' + rweEsc(inst.paraphrased_summary) + '</div>';
   if (att.attachment_rationale) h += '<div class="rwe-fit">Attaches here: ' + rweEsc(att.attachment_rationale) + '</div>';
   h += '<div class="rwe-move">MOVE: ' + rweEsc(inst.rhetorical_move_observed) + '</div>';
-  h += '<div class="rwe-links"><a href="' + rweEsc(inst.source_url) + '" target="_blank" rel="noopener">source</a>' + (inst.archive_url ? '<a href="' + rweEsc(inst.archive_url) + '" target="_blank" rel="noopener">archive</a>' : '') + '</div>';
+  h += '<div class="rwe-links"><a href="' + rweEsc(inst.source_url) + '" target="_blank" rel="noopener">source</a>' + (inst.archive_url ? '<a href="' + rweEsc(inst.archive_url) + '" target="_blank" rel="noopener">archive</a>' : '') + '<button class="copy-btn copy-link-btn" onclick="event.stopPropagation(); copyCardLink(\'rwe-' + inst.instance_id + '\', this)">COPY LINK</button>' + '</div>';
   return h + '</div>';
 }
 function rweRenderPanel(oid, showAll) {
@@ -8948,7 +8953,7 @@ function render() {
     const _rsiLevel = _aSlot ? 'long' : responseLevel;  // D6: variant inherits parent (base/long) RSI; no per-variant grade
     const _respLabel = _aSlot ? (_aSlot.toUpperCase() + ' &middot; ' + ARCHETYPE_REGISTER[_aSlot]) : depthLabels[responseLevel];
 
-    html += `<div class="objection-header ${isOpen ? 'open' : ''}" style="border-color:${borderColor}" onclick="toggleObjection('${obj.id}')">
+    html += `<div id="obj-${obj.id}" class="objection-header ${isOpen ? 'open' : ''}" style="border-color:${borderColor}" onclick="toggleObjection('${obj.id}')">
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
           <span class="tier-badge" style="color:${tierInfo.color};border:1px solid ${tierInfo.color}44;background:${tierInfo.color}11">TIER ${obj.tier}</span>
@@ -9013,7 +9018,7 @@ function render() {
             '<div class="rsi-formula">RSI = (V × S × C × R × A)<sup>1/5</sup> = <strong>' + rsiD.pct.toFixed(1) + '%</strong> → Grade ' + grade.letter +
             '<br>' + grade.desc + '</div></div>';
         })()}
-        <button class="copy-btn" id="copy-${obj.id}" onclick="event.stopPropagation(); copyResponse('${obj.id}')">COPY RESPONSE</button>
+        <button class="copy-btn" id="copy-${obj.id}" onclick="event.stopPropagation(); copyResponse('${obj.id}')">COPY RESPONSE</button><button class="copy-btn copy-link-btn" onclick="event.stopPropagation(); copyCardLink('obj-${obj.id}', this)">COPY LINK</button>
       </div>
       <div class="section">
         <div class="section-label">SOURCES & FRAMEWORKS</div>
@@ -10677,6 +10682,65 @@ function m1ToggleEdgeCard(idx) {
     else c.classList.remove('expanded');
   });
 }
+/* K108: per-card link copy -- canonical extensionless /combined#anchor (K105 mechanism: clipboard + execCommand fallback, replaceState, 1.4s flip) */
+window.copyCardLink = function(anchor, btn) {
+  var url = 'https://library.wuld.ink/combined#' + anchor;
+  function done() {
+    try { history.replaceState(null, '', '#' + anchor); } catch(e) {}
+    if (!btn) return;
+    var prev = btn.textContent;
+    btn.textContent = 'COPIED'; btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = prev; btn.classList.remove('copied'); }, 1400);
+  }
+  function fallback() {
+    var ta = document.createElement('textarea');
+    ta.value = url; ta.setAttribute('readonly',''); ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(ta); done();
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, fallback);
+  else fallback();
+};
+
+/* -- K108: card-anchor routing (objection side) + anchor self-test (append-only covenant, canon v37.39) -- */
+window.__arglibRouteObj = function(key) {
+  if (!OBJECTIONS.some(function(o){ return o.id === key; })) return; /* silent degrade: unknown/stale anchor */
+  selectedObjection = key;
+  render();
+  var el = document.getElementById('obj-' + key);
+  if (!el) { /* filtered out: reset filters via native paths, retry once */
+    var sb = document.getElementById('searchBox'); if (sb) sb.value = '';
+    if (typeof searchTerm !== 'undefined') searchTerm = '';
+    if (typeof selectedTier !== 'undefined' && selectedTier !== null && typeof setTier === 'function') setTier(null);
+    selectedObjection = key;
+    render();
+    el = document.getElementById('obj-' + key);
+  }
+  if (el) { el.classList.add('focused'); el.scrollIntoView({ block: 'start' }); }
+};
+function __k108RouteHash() {
+  var m = /^(obj|rwe)-([A-Za-z0-9_-]+)$/.exec((location.hash || '').replace(/^#/, ''));
+  if (m && m[1] === 'obj') window.__arglibRouteObj(m[2]); /* rwe anchors have no home on this surface: silent degrade */
+}
+__k108RouteHash();
+window.addEventListener('hashchange', __k108RouteHash);
+(function(){
+  var seen = {}, bad = [];
+  OBJECTIONS.forEach(function(o){ var k = 'obj-' + o.id; if (!/^[A-Za-z0-9_-]+$/.test(o.id) || seen[k]) bad.push(k); seen[k] = 1; });
+  if (typeof REAL_WORLD_EXAMPLES !== 'undefined') REAL_WORLD_EXAMPLES.forEach(function(r){ var k = 'rwe-' + r.instance_id; if (!/^[A-Za-z0-9_-]+$/.test(r.instance_id) || seen[k]) bad.push(k); seen[k] = 1; });
+  if (bad.length) console.error('K108 anchor self-test: vocabulary violations: ' + bad.join(', '));
+  setTimeout(function(){
+    var miss = document.querySelectorAll('#results .objection-header:not([id^="obj-"])').length;
+    if (miss) console.error('K108 anchor self-test: ' + miss + ' objection cards missing anchors');
+    var n = document.querySelectorAll('#results .objection-header[id^="obj-"]').length;
+    if (n && typeof getFiltered === 'function' && n !== getFiltered().length) console.error('K108 anchor self-test: rendered ' + n + ' != filtered ' + getFiltered().length);
+  }, 250);
+  if (window.__arglib && window.__arglib.pendingObjAnchor) {
+    var pk = window.__arglib.pendingObjAnchor; window.__arglib.pendingObjAnchor = null;
+    window.__arglibRouteObj(pk);
+  }
+})();
 </script>
 </body>
 </html>
