@@ -191,6 +191,9 @@ function deepLinkTarget(hash, nodes){
       return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c];
     });
   }
+  function mdEmph(s){
+    return s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>").replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+  }
   function $(id){ return document.getElementById(id); }
 
   if(location.protocol === "file:"){ $("file-notice").style.display = "block"; }
@@ -209,7 +212,7 @@ function deepLinkTarget(hash, nodes){
     var dk = depthKey(state.depth);
     var resp = (n.responses && n.responses[dk]) ? String(n.responses[dk]).trim() : "";
     var respHtml = resp
-      ? '<p>'+esc(resp)+'</p>'
+      ? resp.split(/\n\n+/).map(function(para){ return '<p>'+mdEmph(esc(para))+'</p>'; }).join("")
       : '<p class="empty">— awaiting authoring —</p>';
     var mech = (n.strands && n.strands.length)
       ? '<div class="mech">strands · '+n.strands.map(esc).join(" · ")+'</div>' : "";

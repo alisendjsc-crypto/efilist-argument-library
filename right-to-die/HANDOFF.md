@@ -16,7 +16,7 @@ RATIFIED except two overrides; all landed here, pre-authoring, so they cost no m
    data populated downstream, lighter). The `rwe_refs`-resolve check is IMPLEMENTED NOW (validator
    `check_rwe`), vacuous while `realWorldExamples == []`, and engages automatically when RWE data lands.
 
-**Authoring log — v0.2.0 (2026-06-22):** pass 1 folded 5 fork-2b nodes (suicide-is-selfish, temporary-problem, mentally-ill-cant-consent, sanctity-of-life, dying-alone); 5x headline B (4 short-forms band C on depth-mod); seed stubs dropped; validator GREEN. **v0.2.1 (2026-06-22):** temporary-problem `long` = canonical §1 categorical rebuttal; its short/medium blanked pending re-authoring (pass-1 versions argued the struck treatment-resistance line) + re-grade pending. RWE schema -> v0.2: recovery_status STRUCK; instance_polarity / attestation_status / subject_type enforced in check_rwe (vacuous until records land).
+**Authoring log — v0.2.0 (2026-06-22):** pass 1 folded 5 fork-2b nodes (suicide-is-selfish, temporary-problem, mentally-ill-cant-consent, sanctity-of-life, dying-alone); 5x headline B (4 short-forms band C on depth-mod); seed stubs dropped; validator GREEN. **v0.2.1 (2026-06-22):** temporary-problem `long` = canonical §1 categorical rebuttal; its short/medium blanked pending re-authoring (pass-1 versions argued the struck treatment-resistance line) + re-grade pending. RWE schema -> v0.2: recovery_status STRUCK; instance_polarity / attestation_status / subject_type enforced in check_rwe (vacuous until records land). **v0.2.2 (2026-06-22):** temporary-problem complete across all three depths (authored short/medium folded; Suite-placement meta trimmed from long); RWE PRESENCE enforcement (subject_type + instance_polarity required on every record; a real-person record omitting subject_type now FAILs); the render honors markdown emphasis (*italic* / **bold**) + paragraph splitting. Re-grade still owed (library-Claude grading pass).
 
 ---
 
@@ -25,7 +25,7 @@ RATIFIED except two overrides; all landed here, pre-authoring, so they cost no m
 | File | Role / contract |
 |---|---|
 | `right_to_die_corpus_v0_1.json` | Corpus (v0.2.0). Sized-down flagship node shape. **Authoring pass 1: 5 fork-2b obstruction-line objections; seed stubs dropped.** Single source of truth. |
-| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+strands[]+trigger+diagnosis) - `access_basis` badge - `#obj-<id>` deep-links. NO graph subsystem. |
+| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+strands[]+trigger+diagnosis) - `access_basis` badge - markdown emphasis + paragraph rendering in responses - `#obj-<id>` deep-links. NO graph subsystem. |
 | `right_to_die_grading_ledger.json` | RSI grades live HERE only. Empty. `band_thresholds` + `entry_shape_reference`. |
 | `right_to_die_rwe_schema_v0_1.json` | Vendored RWE record schema (sized-down sibling of `real_world_examples_schema_v1_7.json`). Append-only `instance_id` anchors; `attached_objections[].objection_id` foreign-keyed to corpus ids; reverse slot = node `rwe_refs[]`. |
 | `build_right_to_die_index.py` | Search-export generator. Deterministic, validator-gated. |

@@ -264,6 +264,10 @@ def check_rwe(corpus):
         att = rec.get("attestation_status")
         if att is not None and att not in RWE_ATTESTATION_VALUES:
             out.append(_v("rwe", "attestation_status %r not in allowed set" % att, iid or None))
+        if "subject_type" not in rec:
+            out.append(_v("rwe", "RWE record missing required subject_type (real-person attestation guard)", iid or None))
+        if "instance_polarity" not in rec:
+            out.append(_v("rwe", "RWE record missing required instance_polarity", iid or None))
         if st == "real-person":
             if att is None:
                 out.append(_v("rwe", "real-person record requires attestation_status", iid or None))
@@ -363,32 +367,28 @@ def run_synthetic_tests():
                                 "long": {"rsi_pct": 83.0, "grade": "B"}, "headline_grade_long": "A"}}}
     cases["band_headline_mismatch_fires"] = (len(check_band_geomean(_good_corpus(), led)) > 0, True)
 
-    # rwe referential integrity
+    # rwe referential integrity + v0.2 enforcement (presence + enum + real-person attestation)
+    def _rwe(**kw):
+        r = {"instance_id": "rwe-x", "subject_type": "category", "instance_polarity": "neutral-illustration",
+             "attached_objections": [{"objection_id": "alpha"}]}
+        r.update(kw)
+        return r
+    def _corp(recs, refs):
+        c = _good_corpus(); c["realWorldExamples"] = recs; c["objections"][0]["rwe_refs"] = refs
+        return c
     cases["rwe_launch_empty_passes"] = (len(check_rwe(_good_corpus())) == 0, True)
-    c = _good_corpus()
-    c["realWorldExamples"] = [{"instance_id": "rwe-x", "attached_objections": [{"objection_id": "alpha"}]}]
-    c["objections"][0]["rwe_refs"] = ["rwe-x"]
-    cases["rwe_clean_link_passes"] = (len(check_rwe(c)) == 0, True)
-    c = _good_corpus()
-    c["realWorldExamples"] = [{"instance_id": "rwe-x", "attached_objections": [{"objection_id": "ghost"}]}]
-    cases["rwe_bad_attach_fires"] = (len(check_rwe(c)) > 0, True)
-    c = _good_corpus(); c["objections"][0]["rwe_refs"] = ["rwe-nope"]
-    cases["rwe_dangling_ref_fires"] = (len(check_rwe(c)) > 0, True)
-    c = _good_corpus()
-    c["realWorldExamples"] = [{"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]},
-                              {"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]}]
-    cases["rwe_dup_instance_fires"] = (len(check_rwe(c)) > 0, True)
-    # rwe v0.2 enforcement (enum + real-person attestation conditional)
-    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
-    cases["rwe_realperson_no_attestation_fires"] = (len(check_rwe(c)) > 0, True)
-    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attestation_status": "unverified", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
-    cases["rwe_realperson_unverified_fires"] = (len(check_rwe(c)) > 0, True)
-    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attestation_status": "public-record", "instance_polarity": "neutral-illustration", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
-    cases["rwe_realperson_attested_passes"] = (len(check_rwe(c)) == 0, True)
-    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-s", "subject_type": "structural", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-s"]
-    cases["rwe_structural_no_attestation_passes"] = (len(check_rwe(c)) == 0, True)
-    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-x", "instance_polarity": "bogus", "subject_type": "category", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-x"]
-    cases["rwe_bad_polarity_fires"] = (len(check_rwe(c)) > 0, True)
+    cases["rwe_clean_record_passes"] = (len(check_rwe(_corp([_rwe()], ["rwe-x"]))) == 0, True)
+    cases["rwe_bad_attach_fires"] = (len(check_rwe(_corp([_rwe(attached_objections=[{"objection_id": "ghost"}])], ["rwe-x"]))) > 0, True)
+    cases["rwe_dangling_ref_fires"] = (len(check_rwe(_corp([], ["rwe-nope"]))) > 0, True)
+    cases["rwe_dup_instance_fires"] = (len(check_rwe(_corp([_rwe(), _rwe()], ["rwe-x"]))) > 0, True)
+    cases["rwe_missing_subject_type_fires"] = (len(check_rwe(_corp([{"instance_id": "rwe-x", "instance_polarity": "neutral-illustration", "attached_objections": [{"objection_id": "alpha"}]}], ["rwe-x"]))) > 0, True)
+    cases["rwe_missing_polarity_fires"] = (len(check_rwe(_corp([{"instance_id": "rwe-x", "subject_type": "category", "attached_objections": [{"objection_id": "alpha"}]}], ["rwe-x"]))) > 0, True)
+    cases["rwe_realperson_omits_subject_type_fires"] = (len(check_rwe(_corp([{"instance_id": "rwe-x", "instance_polarity": "neutral-illustration", "attestation_status": "public-record", "attached_objections": [{"objection_id": "alpha"}]}], ["rwe-x"]))) > 0, True)
+    cases["rwe_realperson_no_attestation_fires"] = (len(check_rwe(_corp([_rwe(subject_type="real-person")], ["rwe-x"]))) > 0, True)
+    cases["rwe_realperson_unverified_fires"] = (len(check_rwe(_corp([_rwe(subject_type="real-person", attestation_status="unverified")], ["rwe-x"]))) > 0, True)
+    cases["rwe_realperson_attested_passes"] = (len(check_rwe(_corp([_rwe(subject_type="real-person", attestation_status="public-record")], ["rwe-x"]))) == 0, True)
+    cases["rwe_structural_passes"] = (len(check_rwe(_corp([_rwe(subject_type="structural")], ["rwe-x"]))) == 0, True)
+    cases["rwe_bad_polarity_fires"] = (len(check_rwe(_corp([_rwe(instance_polarity="bogus")], ["rwe-x"]))) > 0, True)
 
     results, all_pass = {}, True
     for name, (observed, expected) in cases.items():
