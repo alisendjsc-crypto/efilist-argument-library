@@ -3,9 +3,9 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "generated": "2026-06-22",
-  "status": "SKELETON — empty plumbing. Objections + prose authored downstream by library-Claude + Josiah. Not deployed; no pin move. v0.1.1 applies the library-Claude change-order: renamed the strand field, added optional access_basis, vendored the RWE schema.",
+  "status": "Authoring pass 1 (2026-06-22): 5 fork-2b obstruction-line objections folded; seed stubs dropped. RSI grades in the ledger. Not deployed; no pin.",
   "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
@@ -29,58 +29,164 @@
     "5": "Meta"
   },
   "tier_note": "Inherited tier-methodology FRAME (provisional reference, NOT authoritative). Tier count + enumeration are AUTHORED downstream, not scaffolded — the render derives its tier filter from the nodes actually present, not from this map.",
-  "totalEntries": 2,
-  "totalResponses": 0,
+  "totalEntries": 5,
+  "totalResponses": 15,
   "objections": [
     {
-      "id": "stub-tier-1",
-      "tier": 1,
-      "category": "Emotional/Reflexive",
-      "trigger": "STUB — placeholder Tier-1 objection (awaiting authoring)",
+      "id": "dying-alone",
+      "trigger": "Assisting or even being present at a suicide should be a crime — it deters, and it refuses complicity in a grave act.",
+      "tier": 2,
+      "category": "obstruction-concrete",
       "keywords": [
-        "stub",
-        "placeholder",
-        "tier-1"
+        "criminalize assisting suicide",
+        "assisted suicide illegal",
+        "accomplice",
+        "dying alone",
+        "present at a death",
+        "deterrence",
+        "complicity"
       ],
       "strands": [
-        "harm",
-        "consent"
+        "sovereignty-obstruction",
+        "obstruction-backfire",
+        "self-defeating-regime",
+        "claim-vs-license",
+        "self-ownership",
+        "companionship-criminalized"
       ],
+      "diagnosis": "Criminalizing assistance and presence does not prevent the sovereign exit — it manufactures the solitary, more violent death its proponents lament, and the obstruction is wrong on sovereignty before any consequence is counted.",
       "access_basis": "universal",
-      "diagnosis": "Placeholder diagnosis line for the Tier-1 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
       "responses": {
-        "short": "",
-        "medium": "",
-        "long": ""
+        "short": "This objection is self-refuting on its own aim. Criminalizing assistance and presence does not stop the sovereign exit — it strips it of company and forces it toward more solitary, more violent means, so a present loved one isn't prosecuted. The regime that claims to protect against a lonely, brutal death is the thing that manufactures it. And the obstruction was wrong on sovereignty before the backfire was even counted.",
+        "medium": "The criminalization case is the obstruction charge made concrete, and it collapses under its own stated purpose. The argument for punishing those who assist or are merely present is that it deters and marks the act as grave. But it does not deter the determined sovereign agent; it only determines the conditions under which they go. Drive assistance and witness under threat of prosecution and you do not get fewer exits — you get lonelier ones, undertaken in secret, by harsher means chosen precisely because they need no accomplice and leave no one exposed. The objection that elsewhere laments the person 'dying alone' is, in this form, the direct cause of their dying alone: it makes the presence of a companion a crime. So the regime fails twice over. It fails consequentially, producing the isolation and brutality it purports to prevent and forfeiting the very deliberation and farewell that the survivor-grief objection claims to want. And it fails at the root, because even a criminalization scheme that somehow worked would still be obstructing a sovereign exit — wrong on sovereignty before any of its effects are tallied. The backfire is the vivid part; the sovereignty violation is the load-bearing part.",
+        "long": "Of all the objections in this family, this is the one whose obstruction is least abstract, because it asks for an actual coercive apparatus — the criminalization of assisting, or even being present at, a death. Its proponents do not merely disapprove; they want the law to punish the companion. Meeting it well means taking both its arms: the consequentialist case for the regime, and the deeper question of whether the obstruction would be legitimate even if the regime worked.\n\nStart with the regime's own logic, because it is where the objection is weakest and does not know it. The case for criminalizing assistance and presence rests on two claims: that it deters the act, and that it expresses the gravity of the act by refusing complicity. Take deterrence first. The sovereign, determined agent is not deterred by prosecuting the people around them — they are not the one being threatened. What the threat actually controls is not whether the exit happens but the conditions under which it happens. Make the presence of a companion prosecutable and you do not produce a living person; you produce a person who must go without a companion, in secret, by means chosen for requiring no accomplice and exposing no one. The regime does not subtract deaths from the world. It subtracts witnesses, deliberation, and care from the deaths that occur. And here the criminalization case runs directly into the objection that so often sits beside it — the lament that people should not 'die alone,' that the tragedy is the isolation and the violence. That lament, in this form, is self-inflicted: the law that criminalizes presence is the mechanism that enforces dying alone. It manufactures precisely the solitary, brutal death it claims to stand against, and it forecloses the very window for goodbye and reconsideration that the survivor-grief objection insists it wants to preserve. A regime that produces the harm it names as its reason is not a hard moral tradeoff; it is incoherent on its own terms.\n\nThe expressive arm fares no better. Marking the act as grave by punishing the companion does not express reverence for the dying person; it expresses a willingness to prosecute the one human being who refused to let them be alone. Whatever symbolic content that has, it is not on the side of the person the regime claims to protect.\n\nNow the part that matters even if every empirical claim above were contested — the obstruction charge proper. Suppose an objector grants none of the backfire, or claims the deterrent works better than I allow. The criminalization regime is still obstructing a sovereign exit. It is wrong on sovereignty before a single consequence is counted, in exactly the way the other nodes establish: a competent agent's authority over their own life is not contingent on the state's approval of how, or whether, they end it, and turning their companions into criminals is simply obstruction conducted at one remove — coercing the exit by coercing everyone who might stand beside it. This is why the consequentialist collapse, vivid as it is, is not actually the foundation. The foundation is that the exit was the agent's to make, and the regime has no standing to forbid it however it dresses the forbidding. The backfire shows the regime is also stupid; the sovereignty point shows it is also wrong.\n\nResidual, marked honestly. The consequentialist arm leans on empirical claims about what criminalization does to the manner of death — claims that are well-supported but contestable, and that are owed real documentation rather than assertion (the records that would carry them are an RWE matter, not yet attached). Strip that arm away entirely and the node still stands on its second leg, but that second leg is the same one the whole library rests on: sovereignty over one's own life. An objector who denies robust self-ownership can accept every word about the backfire and still insist the obstruction is licensed by the community's interest in preventing the act — at which point the disagreement has relocated, as it always does, to the premise. The argument wins the coherence point outright and stakes the rest where everything here is staked."
       },
-      "rwe_refs": [],
-      "sources": [],
-      "_stub": true
+      "rwe_refs": []
     },
     {
-      "id": "stub-tier-3",
+      "id": "mentally-ill-cant-consent",
+      "trigger": "You can't give valid consent to dying when you're mentally ill — the illness is making the choice, so honoring it isn't respecting autonomy, it's abandoning someone to their disorder.",
       "tier": 3,
-      "category": "Structural/Pragmatic",
-      "trigger": "STUB — placeholder Tier-3 objection (awaiting authoring)",
+      "category": "autonomy-competence",
       "keywords": [
-        "stub",
-        "placeholder",
-        "tier-3",
-        "structural"
+        "can't consent",
+        "mentally ill",
+        "the illness is talking",
+        "not in their right mind",
+        "capacity",
+        "the depression talking",
+        "disorder"
       ],
       "strands": [
-        "sovereignty",
-        "compensation"
+        "sovereignty-obstruction",
+        "decision-specific-capacity",
+        "diagnosis-vs-incapacity",
+        "value-distortion-objection",
+        "access-gating",
+        "treatment-resistance",
+        "competence-threshold"
       ],
-      "diagnosis": "Placeholder diagnosis line for the Tier-3 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
+      "diagnosis": "The objection vaults from 'this condition can impair some decisions' to 'this person can validly decide nothing about their own life' — an overgeneralization capacity assessment is built to refuse; gating the exercise on assessed competence is the honest answer, abolishing the right is not.",
+      "access_basis": "gated",
       "responses": {
-        "short": "",
-        "medium": "",
-        "long": ""
+        "short": "A diagnosis is not a global revocation of decisional standing. Capacity is decision-specific and assessable — that is why clinics assess it rather than reading it off a chart. The objection's leap is from 'illness can impair some choices' to 'this person may decide nothing,' and that leap is the error. Gate the exercise on assessed competence; do not abolish the right.",
+        "medium": "The objection's force depends on a slide between two very different claims. The defensible one: mental illness can impair decision-making, sometimes severely. The indefensible one it slides into: that a diagnosed person therefore cannot validly decide anything about their own continuation. Capacity does not work that way and clinical practice already knows it — capacity is assessed for a specific decision at a specific time, and people with serious psychiatric conditions routinely retain it for many grave decisions, including refusals of treatment that foreseeably end in death. So the honest structure is a gate, not a wall: a decision-specific competence threshold determines who may exercise the right, while the right itself remains. That is what 'gated access' means and why this is the node where gating is correct rather than a dodge. Now the deepest version of the objection, which deserves naming: not that the illness clouds the reasoning, but that it manufactures the very desire — that depression doesn't merely impair the choice, it authors it, so honoring the preference honors the disorder. This has real force, and only for some conditions, and it meets its limit at the same place the 'temporary' slogan does — the treatment-resistant case, where the desire has persisted through every attempt to lift the condition allegedly producing it. A preference that survives the exhaustion of treatment is no longer plausibly just the symptom speaking.",
+        "long": "This is the hardest objection in the family and the one most easily mishandled in both directions — either by waving away a real worry or by surrendering an entire class of persons to a blanket disqualification. Both are failures. The argument has to hold a competence gate open while refusing a competence wall, and it has to engage the strongest form of the worry rather than the strawman.\n\nBegin with what is true, because the objection earns a real concession and conceding it is what makes the rest credible. Mental illness can impair decision-making, sometimes profoundly; acute psychosis, severe cognitive distortion, states in which a person cannot retain or weigh the relevant considerations are real, and in such states the conditions for valid consent are genuinely absent. None of that is in dispute. What is in dispute is the inference the objection draws from it: that because some psychiatric states defeat capacity, a diagnosed person as such cannot validly decide about their own continuation. That inference is an overgeneralization, and it is precisely the one that the entire practice of capacity assessment exists to refuse. Capacity is not a global property you have or lack by virtue of a label; it is decision-specific and time-specific — the ability to understand, retain, weigh, and communicate a choice about this matter, now. People with serious, chronic psychiatric conditions routinely retain capacity for grave decisions, including the legally recognized right to refuse life-sustaining treatment in full knowledge that refusal will kill them. We do not tell the competent patient with severe depression that their refusal of dialysis is 'the illness talking' and override it. The objection, applied consistently, would have to — and that exposes it as proving far too much.\n\nSo the honest structure is a gate, not a wall, and this is the node where that distinction is load-bearing. A decision-specific competence threshold determines who may exercise the right; the right itself is not contingent on the absence of all diagnosis. That is what gated access is for. It is not a hedge or a softening of the sovereignty claim — it is the sovereignty claim applied correctly to a population in which capacity genuinely varies. The 2b spine runs straight through it: where competence is present, obstruction is wrong on sovereignty, exactly as it is for any competent agent; where competence is absent, the conditions for an autonomous exit are not met and the question is different in kind. The objector who wants a wall has to deny that the competent psychiatric patient exists at all, and the assessment literature, and the ordinary law of treatment refusal, both say otherwise.\n\nNow the strongest version, which a serious treatment of this cannot skip. The deepest objection is not that the illness clouds the reasoning around the choice; it is that the illness manufactures the choice — that depression does not merely impair deliberation but authors the very desire to die, so that a capacity assessment finding 'understands, retains, weighs, communicates' can be satisfied while the preference being assessed is itself the symptom. On this view, respecting the preference is not respecting autonomy; it is taking dictation from the disorder. This has genuine force and I will not pretend it dissolves. It has force for some conditions and not all, and it meets a hard limit at the same place the 'temporary problem' objection does: the treatment-resistant case. If the worry is that the desire is an artifact of a condition that treatment would lift, then the case where the condition has been subjected to every available treatment and has not lifted — and the desire has persisted across that whole arc — is the case where the 'it's just the symptom' story has run out of explanatory room. A preference that outlives the exhaustion of the treatments aimed at its alleged source is no longer plausibly reducible to that source. The value-distortion objection is strongest against the freshly-diagnosed, untreated, acute presentation, and weakest exactly where the right is most defensibly exercised — the durable, competent, treatment-resistant case. That is not a coincidence; it is the gate doing its work.\n\nTwo residuals, stated plainly. First, the gate is real, which means this node concedes more than the others: there are persons and states for whom the competence condition is not met and for whom an exit is not an autonomous one, and the argument does not claim sovereignty for them — it claims that their existence does not retract it from the competent. Second, the value-distortion worry does not vanish for the hard cases; it weakens, and reasonable people will disagree about how completely treatment-resistance answers it. The argument earns the competent, treatment-resistant case and the gating principle; it does not earn the claim that capacity assessment is infallible or that distortion is ever fully ruled out. And underneath all of it sits the same premise the whole library leans on — sovereignty over one's own life. Deny it and even a flawless competence finding licenses nothing. The gate is where this objection is honestly met; the premise is where, like every other, it is finally staked."
       },
-      "rwe_refs": [],
-      "sources": [],
-      "_stub": true
+      "rwe_refs": []
+    },
+    {
+      "id": "sanctity-of-life",
+      "trigger": "Life is sacred and inviolable — ending it is wrong whatever the person wants, and society may step in to honor that inviolability.",
+      "tier": 3,
+      "category": "external-value-imposition",
+      "keywords": [
+        "sanctity of life",
+        "sacred",
+        "inviolable",
+        "life is a gift",
+        "playing God",
+        "only God decides",
+        "sin"
+      ],
+      "strands": [
+        "sovereignty-obstruction",
+        "self-ownership",
+        "claim-vs-license",
+        "external-value-imposition",
+        "value-pluralism",
+        "debt-rejection-survival"
+      ],
+      "diagnosis": "The argument leaps from 'life has (sacred) value' to 'others may forcibly preserve this life against its bearer' — a license that only follows if the sanctity binds the agent without their consent, i.e. as an external imposition on a sovereign body.",
+      "access_basis": "universal",
+      "responses": {
+        "short": "Grant that life has value — even that it's sacred. The leap is from 'life is sacred' to 'others may forcibly preserve this life against its bearer.' That doesn't follow. To license obstruction, the sanctity has to bind the agent independent of their consent — which means imposing one party's metaphysics on a sovereign body. For the agent who doesn't share it, that's not reverence. It's coercion wearing reverence's clothes.",
+        "medium": "The sanctity objection borrows the same invalid step the 'selfish' charge does, with the creditor swapped out. There, the survivors were owed; here, the value — or God — is owed. Concede the premise at its strongest: suppose life genuinely carries intrinsic, even sacred, value. It still does not follow that third parties may enforce that value on the body of someone who rejects it. The claim that life is sacred and the claim that others may forcibly preserve a particular life against its bearer's will are different claims, and only the first has any independent plausibility. For the second to license obstruction, the agent must be bound by the sanctity whether or not they accept it — the value has to reach into a life from outside and override the person living it. That is exactly what a secular, or simply dissenting, agent denies. Honoring an inviolability the bearer does not hold is not protecting them from error; it is conscripting their body into the service of someone else's commitment. The objection cannot get from a value to a license without quietly assuming that its value is binding on people who never signed up for it.",
+        "long": "This objection has an old and serious pedigree, and it is worth meeting on its strongest ground rather than the caricature. The strongest version is not a slogan about life being precious; it is the claim that life possesses intrinsic, perhaps sacred, value — value it has independent of whether its bearer recognizes it — and that this value grounds a duty of preservation binding on everyone, including third parties who may therefore act to prevent its destruction. Stated that fully, it is a real argument. It also contains a seam, and the seam is the same one that runs through the obstruction charge generally.\n\nConcede the front half. Suppose life does carry intrinsic value, even sacredness — grant the objector their richest metaphysics of worth. The question is what follows for third parties. The inference the objection needs is: life is sacred, therefore others may forcibly preserve a given life against the will of the one living it. That inference is invalid, and the reason is structural. Having value and being subject to others' coercive preservation are not the same status. A great many things carry genuine value without thereby licensing strangers to seize and protect them against the wishes of the person whose value it is; the value of a life, in particular, is realized through the agent living it, not stored in a vault others may guard over the agent's objection. To move from the sacredness of life to a license to obstruct, the objector has to add a premise: that the sanctity binds the agent regardless of the agent's own commitments — that it reaches into the life from outside and overrides the person whose life it is. And that added premise is precisely what the dissenting agent rejects.\n\nThis is the obstruction charge in its purest external-imposition form, and it survives an objector who has abandoned the entire debt-and-compensation framing, because it never used that framing. The survivors-are-owed story does not appear; the agent owes no one anything in this version. The only thing being asserted is a value, and the only thing being claimed from it is a license to coerce. The 2b spine cuts straight through: an agent sovereign over their own life cannot be conscripted into honoring a sanctity they do not hold, on their own body, by parties who do hold it. Reverence enforced on the unwilling is not reverence; it is the use of another person's body as the site where someone else's metaphysics gets vindicated. The sanctity may be real to the one who believes it. It does not thereby become binding on the one who does not, and a pluralist order — one that does not let any single account of the sacred command the bodies of those outside it — has to say so.\n\nThe residual is sharp and I will not soften it, because it is where the committed objector actually lives. Suppose the sanctity is not merely sincerely held but objectively true and binding on all rational agents whether or not they assent — strong theistic or natural-law realism, on which the duty of preservation is as real for the unbeliever as the law of gravity. On that view the agent IS bound, their dissent is simply error, and obstruction could be the enforcement of a duty they genuinely have. The argument does not refute that metaphysics; nothing short of a full engagement with the realism could. What it does is force the cost into the open: to license obstruction, the objector must claim not only that their account of the sacred is correct, but that its correctness entitles them to override a sovereign agent's authority over their own body and compel continuation on the strength of a value that agent rejects. Some will affirm exactly that. Most pluralists, asked whether one contested account of the sacred should command the bodies of everyone outside it, will not — and that refusal is the whole of what this rebuttal needs. The premise it finally rests on is, again, sovereignty over one's own life; deny it and the external value walks back in."
+      },
+      "rwe_refs": []
+    },
+    {
+      "id": "suicide-is-selfish",
+      "trigger": "Suicide is selfish — it dumps unbearable pain on the people left behind, who never consented to that grief.",
+      "tier": 2,
+      "category": "obligation-to-others",
+      "keywords": [
+        "selfish",
+        "selfishness",
+        "abandonment",
+        "the people left behind",
+        "grief",
+        "survivors",
+        "duty to others",
+        "owe it to my family"
+      ],
+      "strands": [
+        "sovereignty-obstruction",
+        "self-ownership",
+        "debt-rejection-survival",
+        "burden-inversion",
+        "claim-vs-license"
+      ],
+      "diagnosis": "The charge conflates a debt owed to others with a license for others to forcibly hold the body — but a debt grounds a claim against the agent, never the right to imprison them.",
+      "access_basis": "universal",
+      "responses": {
+        "short": "Grant the debt — assume you owe your survivors everything the objection claims. It still doesn't follow that they may forcibly keep you alive. A debt licenses a claim against you, not ownership of your body. 'Selfish' describes the ledger; it says nothing about who holds the key to the cell.",
+        "medium": "The objection runs two claims together and the rebuttal only needs the seam. Claim one is descriptive: a death inflicts grief on survivors who didn't consent to it. Concede it entirely — it's often true. Claim two is the smuggled inference: that this uncompensated harm licenses others to obstruct the exit. That inference is invalid. We recognize debts everywhere — to creditors, dependents, the people who love us — and none of them convert into a right to seize the debtor's body and run it against their will. A parent who abandons a child owes that child; the child does not thereby acquire the right to chain the parent to the house. The selfishness charge, even if it lands, scores a moral ledger. It cannot also hand the survivors the key. And note what the charge inverts: it weighs an agent's entire remaining life — every hour they would have to live inside the suffering — against the discomfort their absence causes others, and rules that the others' discomfort is decisive. That is the selfishness, relocated.",
+        "long": "Take the objection at its strongest. Don't dispute the grief; assume it's severe, foreseeable, and uncompensated — that the survivors are genuinely harmed and genuinely did not consent. The objection's whole force is supposed to flow from that. It doesn't, and seeing why isolates the one thing this rebuttal actually rests on.\n\nThere are two propositions doing work. The first is a fact about consequences: an exit injures the people left behind. The second is a normative claim: that this injury makes the exit something others may rightfully prevent. The move from the first to the second is where the argument lives, and it is a non sequitur. Owing something to a person is not the same as that person owning you. We hold debts of every kind — financial, relational, the diffuse debt of being loved and depended upon — and not one of them licenses the creditor to take physical control of the debtor's body and operate it against their will. The deadbeat parent owes the child; the child does not acquire a right to imprison the parent. The defaulting borrower owes the lender; the lender does not get to forcibly extract labor. The structure is identical here: even a real, grave, uncompensated debt to survivors generates a claim against the agent — moral pressure, an obligation to consider, to soften, to say goodbye — never a license for the survivors (or the state acting in their name) to seize the body and hold it shut.\n\nThis is the obstruction charge, and it is built to survive an objector who rejects the entire surrounding apparatus of compensation. Someone can deny that exit is permissible, deny that the agent has compensated anyone, deny the whole debt-and-balance framing — and the rebuttal still stands, because it never needed that framing. It needs one premise: that an agent is sovereign over their own life, that the body running their suffering is theirs and not a held asset of the people around them. Grant that, and obstruction is wrong on sovereignty alone, debt or no debt.\n\nThat single premise — self-ownership over one's own life — is also the only place this argument can be attacked, and honesty requires naming it. The serious objector does not re-press the grief; they deny the premise. They say your life is not yours in the relevant sense: it is constituted by the relationships that made you, partly owned by the people woven into it, never a solitary holding you can liquidate. This is the communitarian and the theistic move, and it is not stupid — it points at something real about how lives are embedded. But notice the cost of taking it seriously enough to license obstruction: it entails that the people around you hold a standing veto over the continuation of your existence, that you may be compelled to remain alive inside unbearable suffering because others have an interest in your staying. State that conclusion plainly and most people who reach for 'selfish' recoil from it. The charge was meant to express that the agent weighs too lightly the harm to others. The rebuttal returns the weighing: an objection that resolves a person's entire remaining lifetime of suffering against the grief their absence would cause, and decides for the grief, has not corrected a selfishness — it has performed one, with the agent's body as the disputed property.\n\nThe residual is exact and I won't paper over it. If robust self-ownership over one's own life genuinely fails — if a life really is a partly-held asset of the community — then the obstruction charge gets traction and this rebuttal weakens with it. The argument does not defeat that metaphysics; it forces the objector to own it, and to own its implication that an interest in your company can compel your continuation. Most won't. That is where the load sits."
+      },
+      "rwe_refs": []
+    },
+    {
+      "id": "temporary-problem",
+      "trigger": "Suicide is a permanent solution to a temporary problem — whatever's driving it will pass, and then the irreversible choice is made on a feeling that would have lifted.",
+      "tier": 3,
+      "category": "epistemic-reversibility",
+      "keywords": [
+        "permanent solution temporary problem",
+        "it gets better",
+        "it will pass",
+        "temporary",
+        "reversible",
+        "you'll regret it",
+        "things change"
+      ],
+      "strands": [
+        "sovereignty-obstruction",
+        "irreversibility-asymmetry",
+        "intractability-empirical",
+        "decision-competence-vs-certainty",
+        "access-gating",
+        "treatment-resistance"
+      ],
+      "diagnosis": "The slogan smuggles a universal ('all such problems are temporary') that is empirically false for intractable cases, and even where reversibility is uncertain it conflates the authority to choose with a guarantee of the outcome.",
+      "access_basis": "both",
+      "responses": {
+        "short": "Two failures, one fatal. First, the empirical: some problems are not temporary — treatment-resistant and terminal suffering is the standing counterexample the slogan pretends away. Second, the normative: we let competent people make irreversible self-regarding choices under uncertainty all the time. 'It might pass' is a reason to deliberate, not a license for others to decide.",
+        "medium": "The slogan packs a universal quantifier and hopes you won't check it. 'A temporary problem' — all of them? The intractable case is the one that refuses the frame: treatment-resistant depression that has outlasted every intervention, suffering with no remission on the horizon and a clinical track record to prove it. For that person the major premise is simply false, and the argument collapses before the ethics even start. But concede the contested ground — concede you can't always be certain at the moment of decision whether a given case is the temporary kind or the intractable kind. The slogan then retreats to: under that uncertainty, others may obstruct. They may not, and the reason is that we do not require certainty of outcome to recognize authority over a choice. People make irreversible, self-affecting decisions on incomplete information as a matter of course; sovereignty is the right to decide, not a warranty that the decision will look correct in retrospect. The honest disagreement is narrow and worth marking: a time-bounded pause for the plausibly-temporary, competent case is not obviously a sovereignty violation — it can be the system taking the uncertainty seriously rather than overriding the person. What the slogan cannot license is permanent obstruction justified by a 'temporary' that the evidence, in the intractable case, has already refuted.",
+        "long": "This is the strongest objection in the family, and it deserves to be met at full strength rather than dismissed, because two different claims are braided inside it and they fail in different ways.\n\nStart with the empirical claim, because it is doing more work than it admits. 'A temporary problem' is a universal: it asserts that whatever drives the exit will, in every case, pass. That universal is false, and its falsity is not exotic. There are conditions — treatment-resistant depression that has survived years of exhausted interventions, degenerative and terminal disease, certain forms of intractable physical suffering — where the honest clinical answer is not 'this will lift' but 'we have no remaining means to make this lift, and the record shows it has not.' For the person in that situation the slogan is not a hard truth they are too clouded to see; it is a comforting falsehood aimed at them. The major premise simply does not hold, and where it does not hold the entire argument is void before any question of permission arises. This is also exactly where the evidence has to be real rather than gestured at: a case marked as having failed intervention after intervention is the counterexample that rebuts 'temporary,' and the inverse — a case that recovered — is what the objector will weaponize. The empirical crux is load-bearing and contested, and it is owed careful documentation rather than assertion. (The records that would carry it are not yet attached here.)\n\nNow grant the objector their best retreat. Suppose they say: fine, some cases are intractable, but you can never be fully certain at the moment of decision which kind you are in, and under that uncertainty obstruction by others is justified. This is the serious version, and meeting it requires a distinction the slogan elides — between the authority to make a choice and a guarantee about how the choice turns out. We do not, anywhere else, condition a competent person's authority over a grave self-regarding decision on certainty of outcome. People undergo irreversible surgeries, renounce fertility, end careers, leave faiths, on judgments that might prove mistaken and sometimes do. Sovereignty over one's own life is the right to decide under exactly that condition of fallibility; it was never the claim that the decider sees the future. The asymmetry the objector leans on — irreversibility — cuts both ways, and this is the move the slogan never lets you make: forced continuation is also irreversible in the only currency that matters, the lived hours of suffering that cannot be returned to the person afterward. 'You might have gotten better' is symmetric with 'you were made to endure what you had competently judged unendurable, and that endurance is now spent and unrecoverable.' The objection treats one of these irreversibilities as decisive and the other as invisible.\n\nI'll mark the genuine concession, because the obstruction charge is sharpened, not weakened, by being precise about where it does not reach. A time-limited pause — a competent person, a plausibly-temporary picture, a bounded interval before an irreversible act — is not self-evidently a sovereignty violation. It can be read as the system declining to act on the same uncertainty the agent faces, rather than as overriding the agent's authority. The 2b line does not need to deny this. What it denies is the slogan's actual conclusion: standing, permanent obstruction, justified by appeal to a temporariness that, for the intractable and competent case, the evidence has already foreclosed. Where the problem is genuinely not temporary, the premise is false; where it might be, sovereignty licenses the competent agent to decide under uncertainty just as it does everywhere else. The slogan survives only against the strawman who is certainly, briefly, and recoverably in pain — and against that person, almost no one was proposing to act anyway.\n\nResidual, named: the rebuttal's empirical half leans on facts about intractability that must be shown, not stipulated, and the normative half rests — like every node here — on sovereignty over one's own life. Deny robust self-ownership and the symmetry argument loses its second term. The argument forces the objector onto the intractable, competent case and onto the self-ownership premise; it does not pretend to win on the easy case, because there was never an easy case to win."
+      },
+      "rwe_refs": []
     }
   ],
   "realWorldExamples": []

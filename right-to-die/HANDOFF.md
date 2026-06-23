@@ -16,13 +16,15 @@ RATIFIED except two overrides; all landed here, pre-authoring, so they cost no m
    data populated downstream, lighter). The `rwe_refs`-resolve check is IMPLEMENTED NOW (validator
    `check_rwe`), vacuous while `realWorldExamples == []`, and engages automatically when RWE data lands.
 
+**Authoring log — v0.2.0 (2026-06-22):** pass 1 folded 5 fork-2b nodes (suicide-is-selfish, temporary-problem, mentally-ill-cant-consent, sanctity-of-life, dying-alone); 5x headline B (4 short-forms band C on depth-mod); seed stubs dropped; validator GREEN.
+
 ---
 
 ## 1. Vessel files
 
 | File | Role / contract |
 |---|---|
-| `right_to_die_corpus_v0_1.json` | Corpus (v0.1.1). Sized-down flagship node shape. 2 seed STUB nodes (tiers 1+3), zero content. Single source of truth. |
+| `right_to_die_corpus_v0_1.json` | Corpus (v0.2.0). Sized-down flagship node shape. **Authoring pass 1: 5 fork-2b obstruction-line objections; seed stubs dropped.** Single source of truth. |
 | `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+strands[]+trigger+diagnosis) - `access_basis` badge - `#obj-<id>` deep-links. NO graph subsystem. |
 | `right_to_die_grading_ledger.json` | RSI grades live HERE only. Empty. `band_thresholds` + `entry_shape_reference`. |
 | `right_to_die_rwe_schema_v0_1.json` | Vendored RWE record schema (sized-down sibling of `real_world_examples_schema_v1_7.json`). Append-only `instance_id` anchors; `attached_objections[].objection_id` foreign-keyed to corpus ids; reverse slot = node `rwe_refs[]`. |

@@ -38,5 +38,121 @@
     "headline_grade_long": "D"
   },
   "ungraded": [],
-  "grades": {}
+  "grades": {
+    "dying-alone": {
+      "graded": true,
+      "axes": {
+        "v": 0.88,
+        "s": 0.83,
+        "c": 0.85,
+        "r": 0.83,
+        "a": 0.84
+      },
+      "short": {
+        "rsi_pct": 80.8,
+        "grade": "C"
+      },
+      "medium": {
+        "rsi_pct": 82.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 84.6,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "mentally-ill-cant-consent": {
+      "graded": true,
+      "axes": {
+        "v": 0.89,
+        "s": 0.82,
+        "c": 0.82,
+        "r": 0.81,
+        "a": 0.85
+      },
+      "short": {
+        "rsi_pct": 79.9,
+        "grade": "C"
+      },
+      "medium": {
+        "rsi_pct": 82.1,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 83.7,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "sanctity-of-life": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.83,
+        "c": 0.84,
+        "r": 0.83,
+        "a": 0.88
+      },
+      "short": {
+        "rsi_pct": 81.7,
+        "grade": "C"
+      },
+      "medium": {
+        "rsi_pct": 83.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 85.6,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "suicide-is-selfish": {
+      "graded": true,
+      "axes": {
+        "v": 0.92,
+        "s": 0.85,
+        "c": 0.86,
+        "r": 0.84,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 83.7,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 85.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.5,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "temporary-problem": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.83,
+        "c": 0.83,
+        "r": 0.82,
+        "a": 0.87
+      },
+      "short": {
+        "rsi_pct": 81.1,
+        "grade": "C"
+      },
+      "medium": {
+        "rsi_pct": 83.3,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 84.9,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    }
+  }
 }
