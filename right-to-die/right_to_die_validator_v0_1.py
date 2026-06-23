@@ -38,7 +38,7 @@ import sys, os, json, re, importlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 CANON_THRESHOLDS = {"A": 0.88, "B": 0.82, "C": 0.76, "D": 0.0}
 ACCESS_BASIS_VALUES = {"universal", "gated", "both"}
-RWE_POLARITY_VALUES = {"response-supporting", "objector-weaponized", "neutral-illustration"}
+RWE_POLARITY_VALUES = {"response-supporting", "objector-weaponized", "neutral-illustration", "contested"}
 RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
 RWE_ATTESTATION_VALUES = {"public-record", "published-case", "subject-public-testimony", "family-attested-public", "unverified"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
@@ -389,6 +389,7 @@ def run_synthetic_tests():
     cases["rwe_realperson_attested_passes"] = (len(check_rwe(_corp([_rwe(subject_type="real-person", attestation_status="public-record")], ["rwe-x"]))) == 0, True)
     cases["rwe_structural_passes"] = (len(check_rwe(_corp([_rwe(subject_type="structural")], ["rwe-x"]))) == 0, True)
     cases["rwe_bad_polarity_fires"] = (len(check_rwe(_corp([_rwe(instance_polarity="bogus")], ["rwe-x"]))) > 0, True)
+    cases["rwe_contested_polarity_passes"] = (len(check_rwe(_corp([_rwe(instance_polarity="contested")], ["rwe-x"]))) == 0, True)
 
     results, all_pass = {}, True
     for name, (observed, expected) in cases.items():

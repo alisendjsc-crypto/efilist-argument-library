@@ -1,6 +1,6 @@
 {
   "spec_id": "right_to_die_rwe_schema",
-  "spec_version": "0.2.1",
+  "spec_version": "0.2.2",
   "library": "right-to-die",
   "generated": "2026-06-22",
   "status": "SKELETON — empty plumbing. No RWE records yet (corpus.realWorldExamples == []). v0.2 (2026-06-22): recovery_status STRUCK; instance_polarity/attestation_status/subject_type value-sets fixed for enforcement. Data populated downstream, lighter than the flagship.",
@@ -73,9 +73,10 @@
       "values": [
         "response-supporting",
         "objector-weaponized",
-        "neutral-illustration"
+        "neutral-illustration",
+        "contested"
       ],
-      "_doc": "Replaces the prior values_ref:parent. Its main driver (recovery-after-intervention cases) is gone with recovery_status; temporary-problem itself ships empty or neutral-illustration only. Other nodes may still carry genuinely two-sided cases. A 4th value 'contested' is reserved — add only if records authoring surfaces two-sided cases."
+      "_doc": "Replaces the prior values_ref:parent. Its main driver (recovery-after-intervention cases) is gone with recovery_status; temporary-problem itself ships empty or neutral-illustration only. Other nodes may still carry genuinely two-sided cases. 'contested' (4th value, added v0.2.2) = one source cited by BOTH sides (e.g. an official report read as evidence by disability-rights critics AND disputed by MAiD-supportive analysts)."
     },
     "short_quote_under_15_words": {
       "type": "string",
@@ -120,7 +121,7 @@
       "rwe_refs_resolve — every objection.rwe_refs[] resolves to a realWorldExamples[].instance_id (both directions)",
       "subject_type_required — subject_type present on EVERY record (FAIL if absent; the real-person attestation guard)",
       "instance_polarity_required — instance_polarity present on every record (per required:true)",
-      "polarity_enum — instance_polarity in {response-supporting,objector-weaponized,neutral-illustration}",
+      "polarity_enum — instance_polarity in {response-supporting,objector-weaponized,neutral-illustration,contested}",
       "subject_type_enum — subject_type in {real-person,structural,category}",
       "attestation_enum — attestation_status in {public-record,published-case,subject-public-testimony,family-attested-public,unverified}",
       "real_person_attestation_required — subject_type==real-person => attestation_status present AND != unverified"
