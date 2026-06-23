@@ -1,0 +1,73 @@
+{
+  "library": "right-to-die",
+  "wing": 1,
+  "wing_label": "Harm & Autonomy",
+  "title": "Right to Die",
+  "version": "0.1.0",
+  "generated": "2026-06-22",
+  "status": "SKELETON — empty plumbing. Objections + prose authored downstream by library-Claude + Josiah. Not deployed; no pin move.",
+  "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth, no dual-home drift). No graph subsystem (charter v0.1: omit at launch).",
+  "strands": [
+    "harm",
+    "consent",
+    "sovereignty",
+    "compensation"
+  ],
+  "strand_note": "Wing-1 four-strand instrument (Refusal Suite Charter v0.1). Each node's mechanisms[] tags which strand(s) it engages. Right to Die carries all four at full weight — the pilot.",
+  "tiers": {
+    "1": "Emotional/Reflexive",
+    "2": "Folk/Common-sense",
+    "3": "Structural/Pragmatic",
+    "4": "Genuine-philosophical",
+    "5": "Meta"
+  },
+  "tier_note": "Inherited tier-methodology FRAME (provisional reference, NOT authoritative). Tier count + enumeration are AUTHORED downstream, not scaffolded — the render derives its tier filter from the nodes actually present, not from this map.",
+  "totalEntries": 2,
+  "totalResponses": 0,
+  "objections": [
+    {
+      "id": "stub-tier-1",
+      "tier": 1,
+      "category": "Emotional/Reflexive",
+      "trigger": "STUB — placeholder Tier-1 objection (awaiting authoring)",
+      "keywords": [
+        "stub",
+        "placeholder",
+        "tier-1"
+      ],
+      "mechanisms": [],
+      "diagnosis": "Placeholder diagnosis line for the Tier-1 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
+      "responses": {
+        "short": "",
+        "medium": "",
+        "long": ""
+      },
+      "rwe_refs": [],
+      "sources": [],
+      "_stub": true
+    },
+    {
+      "id": "stub-tier-3",
+      "tier": 3,
+      "category": "Structural/Pragmatic",
+      "trigger": "STUB — placeholder Tier-3 objection (awaiting authoring)",
+      "keywords": [
+        "stub",
+        "placeholder",
+        "tier-3",
+        "structural"
+      ],
+      "mechanisms": [],
+      "diagnosis": "Placeholder diagnosis line for the Tier-3 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
+      "responses": {
+        "short": "",
+        "medium": "",
+        "long": ""
+      },
+      "rwe_refs": [],
+      "sources": [],
+      "_stub": true
+    }
+  ],
+  "realWorldExamples": []
+}

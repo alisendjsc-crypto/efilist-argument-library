@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Right to Die — Refusal Libraries (skeleton)</title>
+<!--
+  right-to-die/combined.html — Refusal Suite pilot render surface (skeleton).
+  Stripped instance of the flagship combined.html idiom: tab(s), tier filter,
+  response-depth toggle (punch/deconstruct/dismantle), keyword detection.
+  NO graph subsystem (charter v0.1: omit at launch).
+
+  SINGLE SOURCE OF TRUTH: this page FETCHES right_to_die_corpus_v0_1.json at
+  runtime — the corpus is never inlined here (no dual-home drift). Serve over
+  HTTP (production: library.wuld.ink; local: `python -m http.server` in this
+  folder). Opening as a file:// URL cannot fetch the corpus — a notice is shown.
+
+  Deep-link anchors: each objection card is id="obj-<id>"; #obj-<id> scroll +
+  flash on load and hashchange. Anchors are APPEND-ONLY — never recycle an id.
+
+  Pure render-logic lives between the PURE-LOGIC sentinels and is node-harness
+  tested by slicing between them (project verification idiom). Do not edit the
+  sentinel lines.
+-->
+<style>
+:root{
+  --bg:#0b0b0c; --panel:#101012; --fg:#d8d4cc; --dim:#7a766e; --faint:#4a4742;
+  --accent:#c41e3a; --line:#23211f; --stub:#b8902a;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{font-size:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--mono);
+  line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:60rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+header.site{border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
+.sub{color:var(--dim);font-size:.85rem}
+.badge{display:inline-block;border:1px solid var(--stub);color:var(--stub);
+  font-size:.62rem;letter-spacing:.12em;padding:.12rem .4rem;border-radius:2px;
+  text-transform:uppercase;vertical-align:middle;margin-left:.5rem}
+.notice{display:none;border:1px solid var(--accent);background:#1a0c0f;
+  color:var(--fg);padding:.7rem .9rem;margin:1rem 0;font-size:.8rem;border-radius:3px}
+.tabs{display:flex;gap:.25rem;margin:1rem 0 .5rem}
+.tab{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;
+  font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;
+  cursor:pointer;border-radius:2px}
+.tab[aria-selected="true"]{color:var(--fg);border-color:var(--accent)}
+.controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;
+  border:1px solid var(--line);background:var(--panel);padding:.8rem;border-radius:3px;
+  margin-bottom:1.25rem}
+.ctl-group{display:flex;flex-direction:column;gap:.35rem}
+.ctl-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.chips{display:flex;gap:.3rem;flex-wrap:wrap}
+.chip{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;
+  font-size:.7rem;padding:.25rem .6rem;cursor:pointer;border-radius:2px}
+.chip[aria-pressed="true"]{color:var(--fg);border-color:var(--accent);background:#15090c}
+.search{flex:1 1 12rem}
+.search input{width:100%;background:#000;border:1px solid var(--line);color:var(--fg);
+  font:inherit;font-size:.8rem;padding:.4rem .55rem;border-radius:2px}
+.search input::placeholder{color:var(--faint)}
+.count{font-size:.7rem;color:var(--dim);margin:.25rem 0 1rem}
+.obj{border:1px solid var(--line);border-left:2px solid var(--faint);
+  background:var(--panel);padding:1rem 1.1rem;margin:0 0 1rem;border-radius:3px;
+  scroll-margin-top:1rem}
+.obj.stub{border-left-color:var(--stub)}
+.obj.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%{background:#1a1206}100%{background:var(--panel)}}
+.obj-meta{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.obj-stubtag{color:var(--stub)}
+.obj h2{font-size:1.02rem;margin:.3rem 0 .55rem;font-weight:600;line-height:1.35}
+.kw{display:flex;gap:.3rem;flex-wrap:wrap;margin:.2rem 0 .5rem}
+.kw span{font-size:.62rem;color:var(--dim);border:1px solid var(--line);
+  padding:.05rem .35rem;border-radius:2px}
+.mech{font-size:.7rem;color:var(--dim);margin-bottom:.5rem}
+.diag{font-size:.82rem;color:var(--fg);margin:.4rem 0 .7rem;padding-left:.7rem;
+  border-left:1px solid var(--line)}
+.diag .lbl{color:var(--faint);font-size:.6rem;letter-spacing:.14em;display:block;
+  text-transform:uppercase;margin-bottom:.15rem}
+.resp{background:#000;border:1px solid var(--line);border-radius:2px;padding:.6rem .75rem}
+.resp .lbl{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.resp p{margin:.3rem 0 0;font-size:.86rem}
+.resp .empty{color:var(--faint);font-style:italic}
+.permalink{display:inline-block;margin-top:.6rem;font-size:.64rem;color:var(--faint)}
+footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
+  font-size:.68rem;color:var(--faint)}
+.err{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="eyebrow">Refusal Libraries · Harm &amp; Autonomy</div>
+    <h1>Right to Die <span class="badge" id="skel-badge">skeleton</span></h1>
+    <div class="sub" id="site-sub">empty plumbing — objections authored downstream</div>
+  </header>
+
+  <div class="notice" id="file-notice">
+    <strong>Serve over HTTP to load the corpus.</strong> This page fetches
+    <code>right_to_die_corpus_v0_1.json</code> at runtime; browsers block that on a
+    <code>file://</code> URL. From this folder run
+    <code>python&nbsp;-m&nbsp;http.server</code> and open
+    <code>http://localhost:8000/combined.html</code>.
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="tab-library" aria-selected="true" aria-controls="panel-library">Library</button>
+    <button class="tab" role="tab" id="tab-about" aria-selected="false" aria-controls="panel-about">About</button>
+  </nav>
+
+  <section id="panel-library" role="tabpanel" aria-labelledby="tab-library">
+    <div class="controls">
+      <div class="ctl-group">
+        <span class="ctl-label">Tier</span>
+        <div class="chips" id="tier-chips"></div>
+      </div>
+      <div class="ctl-group">
+        <span class="ctl-label">Response depth</span>
+        <div class="chips" id="depth-chips">
+          <button class="chip" data-depth="punch" aria-pressed="true">punch</button>
+          <button class="chip" data-depth="deconstruct" aria-pressed="false">deconstruct</button>
+          <button class="chip" data-depth="dismantle" aria-pressed="false">dismantle</button>
+        </div>
+      </div>
+      <div class="ctl-group search">
+        <span class="ctl-label">Keyword</span>
+        <input id="kw-input" type="search" placeholder="filter by keyword or trigger…" autocomplete="off">
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </section>
+
+  <section id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
+    <p class="sub">Pilot library of <strong>The Refusal Libraries</strong> (suite charter v0.1),
+    Wing&nbsp;1 / <em>Harm &amp; Autonomy</em>. Chosen as the pilot because it exercises all
+    four Wing-1 strands — harm, consent, sovereignty, compensation — at full weight.</p>
+    <p class="sub">This is an <strong>empty-plumbing skeleton</strong>: render surface, corpus
+    JSON, grading ledger, and search-export generator, with seed stub nodes only. Objection
+    enumeration, tier depth, and prose are authored downstream. The flagship antinatalism
+    library is untouched and terminal-frozen. No graph subsystem at launch.</p>
+    <p class="sub" id="about-meta"></p>
+  </section>
+
+  <footer class="site" id="footer"></footer>
+</div>
+
+<script>
+"use strict";
+/* ===PURE-LOGIC-START — node-testable; do not edit sentinels=== */
+function deriveTiers(nodes){
+  return [...new Set((nodes||[]).map(function(n){return n.tier;}))]
+    .filter(function(t){return t!=null;})
+    .sort(function(a,b){return a-b;});
+}
+function depthKey(toggle){
+  return ({punch:"short",deconstruct:"medium",dismantle:"long"})[toggle] || "short";
+}
+function matchKeyword(node, q){
+  q = (q||"").trim().toLowerCase();
+  if(!q) return true;
+  var hay = [node.trigger||"", node.diagnosis||""]
+    .concat(node.keywords||[], node.mechanisms||[]).join(" ").toLowerCase();
+  return hay.indexOf(q) !== -1;
+}
+function filterNodes(nodes, opts){
+  opts = opts || {};
+  return (nodes||[]).filter(function(n){
+    return (opts.tier==null || n.tier===opts.tier) && matchKeyword(n, opts.q);
+  });
+}
+function deepLinkTarget(hash, nodes){
+  var m = /^#obj-(.+)$/.exec(hash||"");
+  if(!m) return null;
+  var id = m[1];
+  return (nodes||[]).some(function(n){return String(n.id)===id;}) ? id : null;
+}
+/* ===PURE-LOGIC-END=== */
+
+(function(){
+  var CORPUS_URL = "right_to_die_corpus_v0_1.json";
+  var state = {nodes:[], tier:null, depth:"punch", q:""};
+
+  function esc(s){
+    return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c];
+    });
+  }
+  function $(id){ return document.getElementById(id); }
+
+  if(location.protocol === "file:"){ $("file-notice").style.display = "block"; }
+
+  function renderTierChips(){
+    var tiers = deriveTiers(state.nodes);
+    var host = $("tier-chips");
+    var html = ['<button class="chip" data-tier="" aria-pressed="'+(state.tier==null)+'">all</button>'];
+    tiers.forEach(function(t){
+      html.push('<button class="chip" data-tier="'+t+'" aria-pressed="'+(state.tier===t)+'">tier '+t+'</button>');
+    });
+    host.innerHTML = html.join("");
+  }
+
+  function card(n){
+    var dk = depthKey(state.depth);
+    var resp = (n.responses && n.responses[dk]) ? String(n.responses[dk]).trim() : "";
+    var respHtml = resp
+      ? '<p>'+esc(resp)+'</p>'
+      : '<p class="empty">— awaiting authoring —</p>';
+    var mech = (n.mechanisms && n.mechanisms.length)
+      ? '<div class="mech">strands · '+n.mechanisms.map(esc).join(" · ")+'</div>' : "";
+    var kws = (n.keywords && n.keywords.length)
+      ? '<div class="kw">'+n.keywords.map(function(k){return '<span>'+esc(k)+'</span>';}).join("")+'</div>' : "";
+    var stubTag = n._stub ? ' · <span class="obj-stubtag">stub</span>' : "";
+    return ''
+      + '<article class="obj'+(n._stub?' stub':'')+'" id="obj-'+esc(n.id)+'">'
+      +   '<div class="obj-meta">tier '+esc(n.tier)+' · '+esc(n.category||"")+stubTag+'</div>'
+      +   '<h2>'+esc(n.trigger)+'</h2>'
+      +   kws + mech
+      +   '<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis||"")+'</div>'
+      +   '<div class="resp"><span class="lbl">response · '+esc(state.depth)+'</span>'+respHtml+'</div>'
+      +   '<a class="permalink" href="#obj-'+esc(n.id)+'">#obj-'+esc(n.id)+'</a>'
+      + '</article>';
+  }
+
+  function renderList(){
+    var shown = filterNodes(state.nodes, {tier:state.tier, q:state.q});
+    $("count").textContent = shown.length + " / " + state.nodes.length + " objection(s)";
+    $("list").innerHTML = shown.length
+      ? shown.map(card).join("")
+      : '<p class="sub">no objections match.</p>';
+  }
+
+  function flashTarget(){
+    var id = deepLinkTarget(location.hash, state.nodes);
+    if(!id) return;
+    var el = $("obj-"+id);
+    if(!el) return;
+    el.scrollIntoView({behavior:"smooth", block:"start"});
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+
+  function wire(){
+    $("tier-chips").addEventListener("click", function(e){
+      var b = e.target.closest("[data-tier]"); if(!b) return;
+      var t = b.getAttribute("data-tier");
+      state.tier = (t==="") ? null : Number(t);
+      renderTierChips(); renderList();
+    });
+    $("depth-chips").addEventListener("click", function(e){
+      var b = e.target.closest("[data-depth]"); if(!b) return;
+      state.depth = b.getAttribute("data-depth");
+      [].forEach.call($("depth-chips").children, function(c){
+        c.setAttribute("aria-pressed", String(c===b));
+      });
+      renderList();
+    });
+    $("kw-input").addEventListener("input", function(e){
+      state.q = e.target.value; renderList();
+    });
+    document.querySelector(".tabs").addEventListener("click", function(e){
+      var b = e.target.closest(".tab"); if(!b) return;
+      var lib = b.id==="tab-library";
+      $("tab-library").setAttribute("aria-selected", String(lib));
+      $("tab-about").setAttribute("aria-selected", String(!lib));
+      $("panel-library").hidden = !lib;
+      $("panel-about").hidden = lib;
+    });
+    window.addEventListener("hashchange", flashTarget);
+  }
+
+  function meta(c){
+    var m = "v"+esc(c.version||"?")+" · generated "+esc(c.generated||"?")
+      +" · "+esc(c.objections.length)+" entry(ies) · source: "+esc(CORPUS_URL);
+    $("footer").innerHTML = m + ' · <span class="sub">RSI grades live in the ledger; '
+      + 'no graph subsystem at launch.</span>';
+    $("about-meta").textContent = m;
+    if(c.status){ $("site-sub").textContent = c.status; }
+  }
+
+  fetch(CORPUS_URL, {cache:"no-cache"})
+    .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+    .then(function(c){
+      state.nodes = c.objections || [];
+      meta(c); renderTierChips(); wire(); renderList(); flashTarget();
+    })
+    .catch(function(err){
+      $("file-notice").style.display = "block";
+      $("list").innerHTML = '<p class="err">corpus load failed: '+esc(err.message)+'</p>';
+      $("count").textContent = "";
+      wire();
+    });
+})();
+</script>
+</body>
+</html>

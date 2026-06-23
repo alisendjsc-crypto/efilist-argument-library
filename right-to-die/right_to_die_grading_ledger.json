@@ -1,0 +1,42 @@
+{
+  "artifact": "right_to_die_grading_ledger.json",
+  "library": "right-to-die",
+  "version": "0.1.0",
+  "generated": "2026-06-22",
+  "status": "EMPTY — skeleton ledger; no objections graded yet. Grows with authored content. Stub corpus nodes (_stub:true) are exempt from grade-coverage accounting.",
+  "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
+  "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
+  "band_thresholds": {
+    "A": 0.88,
+    "B": 0.82,
+    "C": 0.76,
+    "D": 0.0
+  },
+  "entry_shape_reference": {
+    "_comment": "Shape a real graded entry takes (keyed by corpus objection id under grades{}). Empty at launch.",
+    "graded": true,
+    "axes": {
+      "v": 0.0,
+      "s": 0.0,
+      "c": 0.0,
+      "r": 0.0,
+      "a": 0.0
+    },
+    "geomean": 0.0,
+    "short": {
+      "rsi_pct": 0.0,
+      "grade": "D"
+    },
+    "medium": {
+      "rsi_pct": 0.0,
+      "grade": "D"
+    },
+    "long": {
+      "rsi_pct": 0.0,
+      "grade": "D"
+    },
+    "headline_grade_long": "D"
+  },
+  "ungraded": [],
+  "grades": {}
+}
