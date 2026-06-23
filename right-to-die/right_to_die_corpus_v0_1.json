@@ -5,7 +5,7 @@
   "title": "Right to Die",
   "version": "0.2.2",
   "generated": "2026-06-22",
-  "status": "Authoring: 5 fork-2b objections, all 3 depths populated. temporary-problem = canonical §1 categorical rebuttal (long, Suite-placement meta trimmed) + authored short/medium (2026-06-22). RSI grades in the ledger; temporary-problem re-grade pending. Not deployed; no pin.",
+  "status": "Authoring: 5 fork-2b objections, all 3 depths populated. temporary-problem = canonical §1 categorical rebuttal (long, Suite-placement meta trimmed) + authored short/medium (2026-06-22). RSI grades in the ledger; temporary-problem re-graded long/medium/short = A/B/B (2026-06-22). Not deployed; no pin.",
   "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",

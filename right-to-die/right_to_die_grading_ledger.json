@@ -134,25 +134,25 @@
     "temporary-problem": {
       "graded": true,
       "axes": {
-        "v": 0.9,
-        "s": 0.83,
-        "c": 0.83,
-        "r": 0.82,
-        "a": 0.87
+        "v": 0.93,
+        "s": 0.88,
+        "c": 0.85,
+        "r": 0.86,
+        "a": 0.93
       },
       "short": {
-        "rsi_pct": 81.1,
-        "grade": "C"
+        "rsi_pct": 85.0,
+        "grade": "B"
       },
       "medium": {
-        "rsi_pct": 83.3,
+        "rsi_pct": 87.2,
         "grade": "B"
       },
       "long": {
-        "rsi_pct": 84.9,
-        "grade": "B"
+        "rsi_pct": 88.9,
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     }
   }
 }
