@@ -38,6 +38,9 @@ import sys, os, json, re, importlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 CANON_THRESHOLDS = {"A": 0.88, "B": 0.82, "C": 0.76, "D": 0.0}
 ACCESS_BASIS_VALUES = {"universal", "gated", "both"}
+RWE_POLARITY_VALUES = {"response-supporting", "objector-weaponized", "neutral-illustration"}
+RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
+RWE_ATTESTATION_VALUES = {"public-record", "published-case", "subject-public-testimony", "family-attested-public", "unverified"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "category", "trigger", "keywords",
                         "strands", "diagnosis", "responses", "rwe_refs"]
@@ -252,6 +255,20 @@ def check_rwe(corpus):
             lid = str((link or {}).get("objection_id", "")).strip()
             if lid and lid not in obj_ids:
                 out.append(_v("rwe", "attached objection_id does not resolve: %s" % lid, iid or None))
+        pol = rec.get("instance_polarity")
+        if pol is not None and pol not in RWE_POLARITY_VALUES:
+            out.append(_v("rwe", "instance_polarity %r not in allowed set" % pol, iid or None))
+        st = rec.get("subject_type")
+        if st is not None and st not in RWE_SUBJECT_TYPES:
+            out.append(_v("rwe", "subject_type %r not in allowed set" % st, iid or None))
+        att = rec.get("attestation_status")
+        if att is not None and att not in RWE_ATTESTATION_VALUES:
+            out.append(_v("rwe", "attestation_status %r not in allowed set" % att, iid or None))
+        if st == "real-person":
+            if att is None:
+                out.append(_v("rwe", "real-person record requires attestation_status", iid or None))
+            elif att == "unverified":
+                out.append(_v("rwe", "real-person record attestation_status is 'unverified' (blocks the record)", iid or None))
     inst_set = set(inst_ids)
     for o in objs:
         for ref in (o.get("rwe_refs") or []):
@@ -361,6 +378,17 @@ def run_synthetic_tests():
     c["realWorldExamples"] = [{"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]},
                               {"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]}]
     cases["rwe_dup_instance_fires"] = (len(check_rwe(c)) > 0, True)
+    # rwe v0.2 enforcement (enum + real-person attestation conditional)
+    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
+    cases["rwe_realperson_no_attestation_fires"] = (len(check_rwe(c)) > 0, True)
+    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attestation_status": "unverified", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
+    cases["rwe_realperson_unverified_fires"] = (len(check_rwe(c)) > 0, True)
+    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-rp", "subject_type": "real-person", "attestation_status": "public-record", "instance_polarity": "neutral-illustration", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-rp"]
+    cases["rwe_realperson_attested_passes"] = (len(check_rwe(c)) == 0, True)
+    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-s", "subject_type": "structural", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-s"]
+    cases["rwe_structural_no_attestation_passes"] = (len(check_rwe(c)) == 0, True)
+    c = _good_corpus(); c["realWorldExamples"] = [{"instance_id": "rwe-x", "instance_polarity": "bogus", "subject_type": "category", "attached_objections": [{"objection_id": "alpha"}]}]; c["objections"][0]["rwe_refs"] = ["rwe-x"]
+    cases["rwe_bad_polarity_fires"] = (len(check_rwe(c)) > 0, True)
 
     results, all_pass = {}, True
     for name, (observed, expected) in cases.items():

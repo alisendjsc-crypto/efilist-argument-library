@@ -16,7 +16,7 @@ RATIFIED except two overrides; all landed here, pre-authoring, so they cost no m
    data populated downstream, lighter). The `rwe_refs`-resolve check is IMPLEMENTED NOW (validator
    `check_rwe`), vacuous while `realWorldExamples == []`, and engages automatically when RWE data lands.
 
-**Authoring log — v0.2.0 (2026-06-22):** pass 1 folded 5 fork-2b nodes (suicide-is-selfish, temporary-problem, mentally-ill-cant-consent, sanctity-of-life, dying-alone); 5x headline B (4 short-forms band C on depth-mod); seed stubs dropped; validator GREEN.
+**Authoring log — v0.2.0 (2026-06-22):** pass 1 folded 5 fork-2b nodes (suicide-is-selfish, temporary-problem, mentally-ill-cant-consent, sanctity-of-life, dying-alone); 5x headline B (4 short-forms band C on depth-mod); seed stubs dropped; validator GREEN. **v0.2.1 (2026-06-22):** temporary-problem `long` = canonical §1 categorical rebuttal; its short/medium blanked pending re-authoring (pass-1 versions argued the struck treatment-resistance line) + re-grade pending. RWE schema -> v0.2: recovery_status STRUCK; instance_polarity / attestation_status / subject_type enforced in check_rwe (vacuous until records land).
 
 ---
 
