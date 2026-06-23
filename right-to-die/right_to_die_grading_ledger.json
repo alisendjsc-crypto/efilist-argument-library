@@ -153,6 +153,29 @@
         "grade": "A"
       },
       "headline_grade_long": "A"
+    },
+    "coercion-of-the-vulnerable": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.84,
+        "c": 0.86,
+        "r": 0.82,
+        "a": 0.9
+      },
+      "short": {
+        "rsi_pct": 82.7,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 84.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 86.5,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
     }
   }
 }
