@@ -72,6 +72,7 @@ h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
 @keyframes flash{0%{background:#1a1206}100%{background:var(--panel)}}
 .obj-meta{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .obj-stubtag{color:var(--stub)}
+.obj-access{color:var(--accent);font-size:.6rem;letter-spacing:.04em}
 .obj h2{font-size:1.02rem;margin:.3rem 0 .55rem;font-weight:600;line-height:1.35}
 .kw{display:flex;gap:.3rem;flex-wrap:wrap;margin:.2rem 0 .5rem}
 .kw span{font-size:.62rem;color:var(--dim);border:1px solid var(--line);
@@ -164,7 +165,7 @@ function matchKeyword(node, q){
   q = (q||"").trim().toLowerCase();
   if(!q) return true;
   var hay = [node.trigger||"", node.diagnosis||""]
-    .concat(node.keywords||[], node.mechanisms||[]).join(" ").toLowerCase();
+    .concat(node.keywords||[], node.strands||[]).join(" ").toLowerCase();
   return hay.indexOf(q) !== -1;
 }
 function filterNodes(nodes, opts){
@@ -210,14 +211,15 @@ function deepLinkTarget(hash, nodes){
     var respHtml = resp
       ? '<p>'+esc(resp)+'</p>'
       : '<p class="empty">— awaiting authoring —</p>';
-    var mech = (n.mechanisms && n.mechanisms.length)
-      ? '<div class="mech">strands · '+n.mechanisms.map(esc).join(" · ")+'</div>' : "";
+    var mech = (n.strands && n.strands.length)
+      ? '<div class="mech">strands · '+n.strands.map(esc).join(" · ")+'</div>' : "";
     var kws = (n.keywords && n.keywords.length)
       ? '<div class="kw">'+n.keywords.map(function(k){return '<span>'+esc(k)+'</span>';}).join("")+'</div>' : "";
     var stubTag = n._stub ? ' · <span class="obj-stubtag">stub</span>' : "";
+    var accessTag = n.access_basis ? ' · <span class="obj-access">access: '+esc(n.access_basis)+'</span>' : "";
     return ''
       + '<article class="obj'+(n._stub?' stub':'')+'" id="obj-'+esc(n.id)+'">'
-      +   '<div class="obj-meta">tier '+esc(n.tier)+' · '+esc(n.category||"")+stubTag+'</div>'
+      +   '<div class="obj-meta">tier '+esc(n.tier)+' · '+esc(n.category||"")+stubTag+accessTag+'</div>'
       +   '<h2>'+esc(n.trigger)+'</h2>'
       +   kws + mech
       +   '<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis||"")+'</div>'

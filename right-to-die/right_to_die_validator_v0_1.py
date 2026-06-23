@@ -9,7 +9,7 @@ it grows with authored content.
 
 CHECKS:
   1. schema validity      — corpus shape + required node fields + count/response
-                            self-consistency.
+                            self-consistency + access_basis allowed-values (when present).
   2. anchor uniqueness    — objection ids unique AND anchor-safe (^[a-z0-9][a-z0-9-]*$);
                             ids are the append-only deep-link targets (obj-<id>).
   3. ledger<->corpus sync — every graded/ungraded id exists in the corpus and is
@@ -20,6 +20,14 @@ CHECKS:
                             (rsi_pct is 1dp display-only); headline == long grade.
   5. export determinism   — build the index twice via build_right_to_die_index;
                             byte-identical; id-set == corpus.
+  6. rwe referential integ— RWE instance_ids unique; every attached_objections[].
+                            objection_id resolves to a corpus objection id; every
+                            objection.rwe_refs[] resolves to an RWE instance_id.
+                            VACUOUS while realWorldExamples == [] (engages on data).
+
+Change-order (library-Claude, 2026-06-22): node field `mechanisms[]` -> `strands[]`;
+optional `access_basis` in {universal,gated,both} (compensation fork 3); RWE schema
+vendored at right_to_die_rwe_schema_v0_1.json.
 
 Usage:
   python3 right_to_die_validator_v0_1.py --self-test     # synthetic + live, JSON, 0/1
@@ -29,9 +37,10 @@ import sys, os, json, re, importlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CANON_THRESHOLDS = {"A": 0.88, "B": 0.82, "C": 0.76, "D": 0.0}
+ACCESS_BASIS_VALUES = {"universal", "gated", "both"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "category", "trigger", "keywords",
-                        "mechanisms", "diagnosis", "responses", "rwe_refs"]
+                        "strands", "diagnosis", "responses", "rwe_refs"]
 DEPTHS = ("short", "medium", "long")
 ROUND_TOL = 0.0005   # half of a 0.1% display step — the rsi_pct rounding band
 
@@ -66,9 +75,12 @@ def check_schema(corpus):
             out.append(_v("schema", "empty trigger", oid))
         if not isinstance(o.get("tier"), int):
             out.append(_v("schema", "tier not an int", oid))
-        for f in ("keywords", "mechanisms", "rwe_refs"):
+        for f in ("keywords", "strands", "rwe_refs"):
             if f in o and not isinstance(o[f], list):
                 out.append(_v("schema", "%s not a list" % f, oid))
+        ab = o.get("access_basis")
+        if ab is not None and ab not in ACCESS_BASIS_VALUES:
+            out.append(_v("schema", "access_basis %r not in {universal,gated,both}" % ab, oid))
         r = o.get("responses")
         if not isinstance(r, dict) or any(k not in r for k in DEPTHS):
             out.append(_v("schema", "responses missing short/medium/long", oid))
@@ -210,6 +222,45 @@ def check_export_determinism(corpus):
     return out
 
 
+def check_rwe(corpus):
+    """Referential integrity for vendored RWE plumbing. VACUOUS while
+    realWorldExamples == [] and all rwe_refs empty (the launch state); engages
+    automatically when RWE data lands. (Mirrors the parent v1/v4 rules.)"""
+    out = []
+    if not isinstance(corpus, dict):
+        return out
+    objs = corpus.get("objections", []) or []
+    rwe = corpus.get("realWorldExamples", [])
+    if not isinstance(rwe, list):
+        return [_v("rwe", "realWorldExamples is not a list")]
+    obj_ids = {str(o.get("id", "")).strip() for o in objs}
+    inst_ids, seen = [], set()
+    for rec in rwe:
+        if not isinstance(rec, dict):
+            out.append(_v("rwe", "realWorldExamples record is not an object")); continue
+        iid = str(rec.get("instance_id", "")).strip()
+        if not iid:
+            out.append(_v("rwe", "RWE record with empty instance_id"))
+        else:
+            if iid in seen:
+                out.append(_v("rwe", "duplicate instance_id (anchor collision): %s" % iid))
+            seen.add(iid); inst_ids.append(iid)
+        ao = rec.get("attached_objections", [])
+        if not isinstance(ao, list) or len(ao) < 1:
+            out.append(_v("rwe", "attached_objections must have >=1 item", iid or None)); ao = ao if isinstance(ao, list) else []
+        for link in ao:
+            lid = str((link or {}).get("objection_id", "")).strip()
+            if lid and lid not in obj_ids:
+                out.append(_v("rwe", "attached objection_id does not resolve: %s" % lid, iid or None))
+    inst_set = set(inst_ids)
+    for o in objs:
+        for ref in (o.get("rwe_refs") or []):
+            r = str(ref).strip()
+            if r and r not in inst_set:
+                out.append(_v("rwe", "rwe_refs id does not resolve to an RWE instance_id: %s" % r, o.get("id")))
+    return out
+
+
 def validate_all(corpus, ledger):
     issues = []
     issues += check_schema(corpus)
@@ -217,6 +268,7 @@ def validate_all(corpus, ledger):
     issues += check_ledger_corpus_sync(corpus, ledger)
     issues += check_band_geomean(corpus, ledger)
     issues += check_export_determinism(corpus)
+    issues += check_rwe(corpus)
     return issues
 
 
@@ -226,88 +278,91 @@ def _good_corpus():
         "totalEntries": 1, "totalResponses": 0,
         "objections": [{
             "id": "alpha", "tier": 1, "category": "Emotional/Reflexive",
-            "trigger": "t", "keywords": [], "mechanisms": [], "diagnosis": "d",
+            "trigger": "t", "keywords": [], "strands": [], "diagnosis": "d",
             "responses": {"short": "", "medium": "", "long": ""}, "rwe_refs": [],
         }],
+        "realWorldExamples": [],
     }
 
 
 def run_synthetic_tests():
     cases = {}
 
-    # schema: totalEntries mismatch fires
+    # schema
     c = _good_corpus(); c["totalEntries"] = 9
     cases["schema_count_mismatch_fires"] = (len(check_schema(c)) > 0, True)
-    # schema: missing responses depth fires
     c = _good_corpus(); c["objections"][0]["responses"] = {"short": ""}
     cases["schema_missing_depth_fires"] = (len(check_schema(c)) > 0, True)
-    # schema: clean passes
     cases["schema_clean_passes"] = (len(check_schema(_good_corpus())) == 0, True)
+    # strands rename: a node carrying the OLD field name lacks `strands` -> fires
+    c = _good_corpus(); del c["objections"][0]["strands"]; c["objections"][0]["mechanisms"] = []
+    cases["schema_missing_strands_fires"] = (len(check_schema(c)) > 0, True)
+    # access_basis allowed-values
+    c = _good_corpus(); c["objections"][0]["access_basis"] = "gated"
+    cases["access_basis_valid_passes"] = (len(check_schema(c)) == 0, True)
+    c = _good_corpus(); c["objections"][0]["access_basis"] = "both"
+    cases["access_basis_both_passes"] = (len(check_schema(c)) == 0, True)
+    c = _good_corpus(); c["objections"][0]["access_basis"] = "sometimes"
+    cases["access_basis_bad_fires"] = (len(check_schema(c)) > 0, True)
+    cases["access_basis_absent_passes"] = (len(check_schema(_good_corpus())) == 0, True)
 
-    # anchor: duplicate id fires
-    c = _good_corpus(); c["objections"].append(dict(c["objections"][0]))
-    c["totalEntries"] = 2
+    # anchor
+    c = _good_corpus(); c["objections"].append(dict(c["objections"][0])); c["totalEntries"] = 2
     cases["anchor_dup_fires"] = (len(check_anchor_uniqueness(c)) > 0, True)
-    # anchor: bad-char id fires
     c = _good_corpus(); c["objections"][0]["id"] = "Bad_ID"
     cases["anchor_badchar_fires"] = (len(check_anchor_uniqueness(c)) > 0, True)
-    # anchor: clean passes
     cases["anchor_clean_passes"] = (len(check_anchor_uniqueness(_good_corpus())) == 0, True)
 
-    # sync: graded id absent from corpus fires
+    # sync
     led = {"grades": {"ghost": {}}, "ungraded": [], "band_thresholds": CANON_THRESHOLDS}
     cases["sync_ghost_grade_fires"] = (len(check_ledger_corpus_sync(_good_corpus(), led)) > 0, True)
-    # sync: grading a stub fires
     c = _good_corpus(); c["objections"][0]["_stub"] = True
     led = {"grades": {"alpha": {}}, "ungraded": [], "band_thresholds": CANON_THRESHOLDS}
     cases["sync_stub_graded_fires"] = (len(check_ledger_corpus_sync(c, led)) > 0, True)
-    # sync: gradeable-but-uncovered fires
     led = {"grades": {}, "ungraded": [], "band_thresholds": CANON_THRESHOLDS}
     cases["sync_uncovered_gradeable_fires"] = (len(check_ledger_corpus_sync(_good_corpus(), led)) > 0, True)
-    # sync: bad thresholds fire
     led = {"grades": {}, "ungraded": ["alpha"], "band_thresholds": {"A": 0.9, "B": 0.8, "C": 0.7, "D": 0.0}}
     cases["sync_bad_thresholds_fire"] = (len(check_ledger_corpus_sync(_good_corpus(), led)) > 0, True)
-    # sync: stub-only corpus + empty ledger passes (the launch state)
     c = _good_corpus(); c["objections"][0]["_stub"] = True
     led = {"grades": {}, "ungraded": [], "band_thresholds": CANON_THRESHOLDS}
     cases["sync_launch_state_passes"] = (len(check_ledger_corpus_sync(c, led)) == 0, True)
 
-    # band: geomean inconsistency fires
-    led = {"grades": {"alpha": {"axes": {"v": .8, "s": .8, "c": .8, "r": .8, "a": .8},
-                                "geomean": 0.5,
-                                "short": {"rsi_pct": 80.0, "grade": "C"},
-                                "medium": {"rsi_pct": 80.0, "grade": "C"},
-                                "long": {"rsi_pct": 80.0, "grade": "C"},
-                                "headline_grade_long": "C"}}}
+    # band
+    led = {"grades": {"alpha": {"axes": {"v": .8, "s": .8, "c": .8, "r": .8, "a": .8}, "geomean": 0.5,
+                                "short": {"rsi_pct": 80.0, "grade": "C"}, "medium": {"rsi_pct": 80.0, "grade": "C"},
+                                "long": {"rsi_pct": 80.0, "grade": "C"}, "headline_grade_long": "C"}}}
     cases["band_bad_geomean_fires"] = (len(check_band_geomean(_good_corpus(), led)) > 0, True)
-    # band: grade two bands off fires (0.70 -> D, labelled A; interval all-D)
-    led = {"grades": {"alpha": {"axes": {"v": .7, "s": .7, "c": .7, "r": .7, "a": .7},
-                                "geomean": 0.7,
-                                "short": {"rsi_pct": 70.0, "grade": "A"},
-                                "medium": {"rsi_pct": 70.0, "grade": "D"},
-                                "long": {"rsi_pct": 70.0, "grade": "D"},
-                                "headline_grade_long": "D"}}}
+    led = {"grades": {"alpha": {"axes": {"v": .7, "s": .7, "c": .7, "r": .7, "a": .7}, "geomean": 0.7,
+                                "short": {"rsi_pct": 70.0, "grade": "A"}, "medium": {"rsi_pct": 70.0, "grade": "D"},
+                                "long": {"rsi_pct": 70.0, "grade": "D"}, "headline_grade_long": "D"}}}
     cases["band_two_off_fires"] = (len(check_band_geomean(_good_corpus(), led)) > 0, True)
-    # band: consistent grades pass (0.830 -> B clean; geomean from axes)
     gm = geomean5({"v": .83, "s": .83, "c": .83, "r": .83, "a": .83})
-    led = {"grades": {"alpha": {"axes": {"v": .83, "s": .83, "c": .83, "r": .83, "a": .83},
-                                "geomean": gm,
-                                "short": {"rsi_pct": 79.0, "grade": "C"},
-                                "medium": {"rsi_pct": 81.0, "grade": "C"},
-                                "long": {"rsi_pct": 83.0, "grade": "B"},
-                                "headline_grade_long": "B"}}}
+    led = {"grades": {"alpha": {"axes": {"v": .83, "s": .83, "c": .83, "r": .83, "a": .83}, "geomean": gm,
+                                "short": {"rsi_pct": 79.0, "grade": "C"}, "medium": {"rsi_pct": 81.0, "grade": "C"},
+                                "long": {"rsi_pct": 83.0, "grade": "B"}, "headline_grade_long": "B"}}}
     cases["band_consistent_passes"] = (len(check_band_geomean(_good_corpus(), led)) == 0, True)
-    # band: headline mismatch fires
-    led = {"grades": {"alpha": {"axes": {"v": .83, "s": .83, "c": .83, "r": .83, "a": .83},
-                                "geomean": gm,
-                                "short": {"rsi_pct": 83.0, "grade": "B"},
-                                "medium": {"rsi_pct": 83.0, "grade": "B"},
-                                "long": {"rsi_pct": 83.0, "grade": "B"},
-                                "headline_grade_long": "A"}}}
+    led = {"grades": {"alpha": {"axes": {"v": .83, "s": .83, "c": .83, "r": .83, "a": .83}, "geomean": gm,
+                                "short": {"rsi_pct": 83.0, "grade": "B"}, "medium": {"rsi_pct": 83.0, "grade": "B"},
+                                "long": {"rsi_pct": 83.0, "grade": "B"}, "headline_grade_long": "A"}}}
     cases["band_headline_mismatch_fires"] = (len(check_band_geomean(_good_corpus(), led)) > 0, True)
 
-    results = {}
-    all_pass = True
+    # rwe referential integrity
+    cases["rwe_launch_empty_passes"] = (len(check_rwe(_good_corpus())) == 0, True)
+    c = _good_corpus()
+    c["realWorldExamples"] = [{"instance_id": "rwe-x", "attached_objections": [{"objection_id": "alpha"}]}]
+    c["objections"][0]["rwe_refs"] = ["rwe-x"]
+    cases["rwe_clean_link_passes"] = (len(check_rwe(c)) == 0, True)
+    c = _good_corpus()
+    c["realWorldExamples"] = [{"instance_id": "rwe-x", "attached_objections": [{"objection_id": "ghost"}]}]
+    cases["rwe_bad_attach_fires"] = (len(check_rwe(c)) > 0, True)
+    c = _good_corpus(); c["objections"][0]["rwe_refs"] = ["rwe-nope"]
+    cases["rwe_dangling_ref_fires"] = (len(check_rwe(c)) > 0, True)
+    c = _good_corpus()
+    c["realWorldExamples"] = [{"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]},
+                              {"instance_id": "rwe-d", "attached_objections": [{"objection_id": "alpha"}]}]
+    cases["rwe_dup_instance_fires"] = (len(check_rwe(c)) > 0, True)
+
+    results, all_pass = {}, True
     for name, (observed, expected) in cases.items():
         passed = observed == expected
         all_pass = all_pass and passed
@@ -359,12 +414,8 @@ def _main(argv):
     if os.path.exists(lp):
         ledger = json.load(open(lp, encoding="utf-8"))
     issues = validate_all(corpus, ledger)
-    report = {
-        "input_path": argv[1],
-        "violation_count": len(issues),
-        "violations": issues,
-        "verdict": "PASS" if not issues else "FAIL",
-    }
+    report = {"input_path": argv[1], "violation_count": len(issues),
+              "violations": issues, "verdict": "PASS" if not issues else "FAIL"}
     print(json.dumps(report, indent=2, ensure_ascii=False))
     return 0 if not issues else 1
 

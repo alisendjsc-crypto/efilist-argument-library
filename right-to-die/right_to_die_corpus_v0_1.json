@@ -3,17 +3,24 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "generated": "2026-06-22",
-  "status": "SKELETON — empty plumbing. Objections + prose authored downstream by library-Claude + Josiah. Not deployed; no pin move.",
-  "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth, no dual-home drift). No graph subsystem (charter v0.1: omit at launch).",
+  "status": "SKELETON — empty plumbing. Objections + prose authored downstream by library-Claude + Josiah. Not deployed; no pin move. v0.1.1 applies the library-Claude change-order: renamed the strand field, added optional access_basis, vendored the RWE schema.",
+  "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
     "consent",
     "sovereignty",
     "compensation"
   ],
-  "strand_note": "Wing-1 four-strand instrument (Refusal Suite Charter v0.1). Each node's mechanisms[] tags which strand(s) it engages. Right to Die carries all four at full weight — the pilot.",
+  "strand_note": "Wing-1 four-strand instrument (Refusal Suite Charter v0.1). Each node's strands[] tags which strand(s) it engages. Right to Die carries all four at full weight — the pilot.",
+  "access_basis_values": [
+    "universal",
+    "gated",
+    "both"
+  ],
+  "access_basis_note": "Compensation fork 3 (universal vs conditional access). 'gated' = the suffering-conditional branch (canonical term, supersedes 'conditional'). Optional per node; absence = not-applicable. Pick per-objection which standing-point the node argues from; do not silently mix across adjacent nodes.",
+  "rwe_schema": "right_to_die_rwe_schema_v0_1.json",
   "tiers": {
     "1": "Emotional/Reflexive",
     "2": "Folk/Common-sense",
@@ -35,7 +42,11 @@
         "placeholder",
         "tier-1"
       ],
-      "mechanisms": [],
+      "strands": [
+        "harm",
+        "consent"
+      ],
+      "access_basis": "universal",
       "diagnosis": "Placeholder diagnosis line for the Tier-1 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
       "responses": {
         "short": "",
@@ -57,7 +68,10 @@
         "tier-3",
         "structural"
       ],
-      "mechanisms": [],
+      "strands": [
+        "sovereignty",
+        "compensation"
+      ],
       "diagnosis": "Placeholder diagnosis line for the Tier-3 seed stub — replaced when this objection is authored. Present so the search-export gloss source, the render, and the deep-link anchor are all exercisable on empty plumbing.",
       "responses": {
         "short": "",

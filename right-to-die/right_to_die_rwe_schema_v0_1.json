@@ -1,0 +1,95 @@
+{
+  "spec_id": "right_to_die_rwe_schema",
+  "spec_version": "0.1",
+  "library": "right-to-die",
+  "generated": "2026-06-22",
+  "status": "SKELETON — empty plumbing. No RWE records yet (corpus.realWorldExamples == []). Data populated downstream, lighter than the flagship.",
+  "parent_family": {
+    "spec_id": "real_world_examples_schema_v1",
+    "spec_version": "1.7",
+    "file": "real_world_examples_schema_v1_7.json",
+    "relation": "Sibling vendoring of the flagship RWE family for anchor + export-discipline compatibility, sized down for a small library. Heavier attestation fields (short_quote_attestation_status / verbatim_recovery_status / archetype_signal_* / frame_inversion / layer_skepticism / public_reach / refutation_variant_id) are INHERITABLE FROM THE PARENT per record when needed — NOT required at launch."
+  },
+  "anchor_discipline": "instance_id values are APPEND-ONLY deep-link anchors (recommended rwe-<id> family) — never recycled, mirroring the objection #obj-<id> covenant.",
+  "binding": "RWE records live in corpus.realWorldExamples[]. Each attaches to >=1 objection via attached_objections[].objection_id (foreign key into corpus.objections[].id). Objection nodes carry rwe_refs[] as the reverse slot (an array of instance_id).",
+  "example_record_schema": {
+    "_doc": "Core/lighter record fields. Sized-down subset of the flagship example_record_schema; extend from the parent as a record needs it. Enum value-sets marked values_ref inherit the parent's canonical lists rather than restating (and risking drift from) them.",
+    "instance_id": {
+      "type": "string",
+      "required": true,
+      "pattern_recommended": "^rwe-[a-z0-9][a-z0-9-]*$",
+      "uniqueness": "global",
+      "append_only": true
+    },
+    "attached_objections": {
+      "type": "array",
+      "required": true,
+      "min_items": 1,
+      "items": {
+        "objection_id": {
+          "type": "string",
+          "required": true,
+          "foreign_key": "$.objections[*].id"
+        },
+        "fit_to_trigger_phrases": {
+          "type": "enum",
+          "required": true,
+          "values": [
+            "exact",
+            "loose",
+            "partial",
+            "parallel-structure-different-anchor"
+          ]
+        }
+      }
+    },
+    "source_url": {
+      "type": "string",
+      "required": true,
+      "format": "url"
+    },
+    "source_title": {
+      "type": "string",
+      "required": true
+    },
+    "source_byline": {
+      "type": "string",
+      "required": false
+    },
+    "source_date": {
+      "type": "string",
+      "required": false,
+      "format": "YYYY-MM-DD"
+    },
+    "archive_url": {
+      "type": "string",
+      "required": false,
+      "format": "url",
+      "_doc": "corpus-decay hedge; recommended for fragile sources"
+    },
+    "instance_polarity": {
+      "type": "enum",
+      "required": true,
+      "values_ref": "parent.example_record_schema.instance_polarity.values"
+    },
+    "short_quote_under_15_words": {
+      "type": "string",
+      "required": false,
+      "max_words": 15
+    },
+    "paraphrased_summary": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validation_rules": {
+    "_doc": "Core rules vendored from the parent for anchor + export discipline. The rwe_refs-resolve check is implemented in right_to_die_validator_v0_1.py (check_rwe) and is VACUOUS while realWorldExamples == [] — it engages automatically when RWE data lands.",
+    "rules": [
+      "v1_unique_instance_id",
+      "v3_one_quote_per_source_per_objection_set",
+      "v4_foreign_key_validity — attached_objections[].objection_id resolves to corpus objections[].id",
+      "v9_fit_enum_per_attachment",
+      "rwe_refs_resolve — every objection.rwe_refs[] resolves to a realWorldExamples[].instance_id (both directions)"
+    ]
+  }
+}

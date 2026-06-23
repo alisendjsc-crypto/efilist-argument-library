@@ -1,149 +1,108 @@
 # Right to Die - skeleton handoff (to library-Claude + Josiah)
 
-v0.1 - built by wuld.ink Cowork, 2026-06-22 - efilist commit `753aa0f` (atop `013abd1`).
-Empty plumbing only. Flagship antinatalism library UNTOUCHED. NO pin move, NO deploy this session.
+v0.1.1 - built + change-order-applied by wuld.ink Cowork, 2026-06-22.
+efilist commits: skeleton `753aa0f` -> handoff doc `aadf9b5` -> change-order (this revision).
+Empty plumbing only. Flagship antinatalism library UNTOUCHED. NO pin, NO deploy.
 
-This is the relay back into the lane the Suite Charter v0.1 + the Cowork handoff opened. Cowork
-built the vessel; you (library-Claude + Josiah) fill it. Everything below that I *decided* was a
-forced call to keep the plumbing coherent - each is cheap to change. Flag any you'd author
-differently; none of it is load-bearing on your content.
+**CHANGE-ORDER APPLIED** (library-Claude verdict, 2026-06-22 - all of Cowork's forced calls
+RATIFIED except two overrides; all landed here, pre-authoring, so they cost no migration):
+
+1. Node field `mechanisms[]` -> **`strands[]`** (charter vocabulary - harm/consent/sovereignty/
+   compensation are *strands*; reserves `mechanisms` for a possible psych-mechanism layer later).
+2. NEW optional node field **`access_basis`** in `{universal, gated, both}` = compensation **fork 3**
+   (universal vs conditional access; `gated` = the suffering-conditional branch, canonical term
+   superseding "conditional"). Validator allowed-values check WHEN PRESENT; absence = N/A, never required.
+3. RWE schema family **vendored** -> `right_to_die_rwe_schema_v0_1.json` (sized down from the flagship;
+   data populated downstream, lighter). The `rwe_refs`-resolve check is IMPLEMENTED NOW (validator
+   `check_rwe`), vacuous while `realWorldExamples == []`, and engages automatically when RWE data lands.
 
 ---
 
-## 1. What's in the vessel
+## 1. Vessel files
 
-| File | Role / contract it enforces |
+| File | Role / contract |
 |---|---|
-| `right_to_die_corpus_v0_1.json` | The corpus. Sized-down mirror of the flagship node shape. 2 seed STUB nodes (tiers 1 + 3), zero real content. Single source of truth for objection data. |
-| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines it). tab(s) - tier filter - response-depth toggle (punch/deconstruct/dismantle = short/medium/long) - keyword detection - `#obj-<id>` deep-links. NO graph subsystem. |
-| `right_to_die_grading_ledger.json` | RSI grades live HERE (only). Empty: `ungraded:[]`, `grades:{}`. Carries `band_thresholds` + an `entry_shape_reference` documenting a real grade entry. |
-| `build_right_to_die_index.py` | Search-export generator. Deterministic, validator-gated. Emits the index below. |
-| `right-to-die-objections-index.json` | Generated search export (regenerable). `{schema_version, library, surface_route, objections:[{id,title,gloss}]}`. wuld.ink vendors this when it deploys. |
-| `right_to_die_validator_v0_1.py` | `--self-test` = 15 synthetic fixtures + a live leg over the seed corpus+ledger. Your pre-commit gate. |
+| `right_to_die_corpus_v0_1.json` | Corpus (v0.1.1). Sized-down flagship node shape. 2 seed STUB nodes (tiers 1+3), zero content. Single source of truth. |
+| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+strands[]+trigger+diagnosis) - `access_basis` badge - `#obj-<id>` deep-links. NO graph subsystem. |
+| `right_to_die_grading_ledger.json` | RSI grades live HERE only. Empty. `band_thresholds` + `entry_shape_reference`. |
+| `right_to_die_rwe_schema_v0_1.json` | Vendored RWE record schema (sized-down sibling of `real_world_examples_schema_v1_7.json`). Append-only `instance_id` anchors; `attached_objections[].objection_id` foreign-keyed to corpus ids; reverse slot = node `rwe_refs[]`. |
+| `build_right_to_die_index.py` | Search-export generator. Deterministic, validator-gated. |
+| `right-to-die-objections-index.json` | Generated export (regenerable). wuld.ink vendors on deploy. |
+| `right_to_die_validator_v0_1.py` | `--self-test` = 25 synthetic fixtures + live seed leg. Pre-commit gate. |
 | `HANDOFF.md` | This file. |
 
 ---
 
-## 2. Ambiguities I resolved - RATIFY or OVERRIDE
+## 2. The forced calls - library-Claude ratification record
 
-Each was open or self-contradictory in the charter/handoff. My call + why + how to change it.
+**RATIFIED as-built:** 2a RSI-in-ledger-only - 2b data-derived tier filter - 2c `totalEntries`
+count guard - 2e export extends flagship (`library`+`surface_route`) - 2f gloss = `diagnosis` -
+2g surface route `right-to-die/combined` (confirm production route at deploy) - 2h `_stub` exempt
+from grading - 2i two seeds - 2j band-thresholds-in-ledger + cross-check (band the UNROUNDED
+fraction; `rsi_pct` 1dp display-only) - `headline_grade_long` headline - committed seed export.
 
-**a. RSI grades live in the LEDGER only - not on corpus nodes.**
-The handoff's node-field list named RSI slots `{v,s,c,r,a,geomean,band}` AND specified a ledger.
-Two homes = a drift source (the project's cardinal sin). I put them only in the ledger, flagship-
-faithful. Override: if you want per-node co-location, add the slots to nodes and I/you drop the
-ledger's `grades{}` as the store - but pick ONE.
-
-**b. The tier filter is DATA-DERIVED, not a hard-coded 1-5.**
-The render builds its tier buttons from the tiers actually present in the corpus. This honors the
-charter's "tier count + enumeration are AUTHORED, not scaffolded." The corpus `tiers` map is a
-PROVISIONAL label reference (the inherited 5-tier frame), NOT authoritative. Author whatever tier
-set you want; the machine follows. Update/trim the `tiers` labels to match.
-
-**c. Count guard = `corpus.totalEntries`, not a magic `EXPECTED_N`.**
-The flagship hard-codes 81. A growing library can't. The build + validator assert
-`len(objections) == totalEntries`. So: when you add nodes, bump `totalEntries` (and
-`totalResponses` = count of non-empty response strings) or the gate fails - by design.
-
-**d. `mechanisms[]` = strand tags, not `psychMechanism`.**
-I used the Wing-1 strand vocabulary (harm / consent / sovereignty / compensation) as the node's
-`mechanisms` array (empty in stubs), not the flagship's psych-mechanism string. Right to Die
-carries all four. Override: if you want psych-mechanism strings too, add a field or repurpose.
-
-**e. The export schema EXTENDS the flagship's.**
-Flagship export is `{schema_version, objections:[{id,title,gloss}]}`. I added top-level `library`
-+ `surface_route` so the future wuld.ink consumer builds cross-domain deep-links without hard-
-coding each sibling's route. Additive, schema_version-gated. Per-entry shape `{id,title,gloss}`
-is identical to the flagship.
-
-**f. `gloss` source = the node's `diagnosis` field (a one-liner), distinct from `responses{}`.**
-`title` = `trigger`; `gloss` = `diagnosis` collapsed + ~200-char word-boundary snippet (exact
-flagship contract). So every node needs a `diagnosis` (it is also rendered as a line on the card).
-`responses{short,medium,long}` is SEPARATE - the depth-toggle content. If a node has no diagnosis,
-the export omits `gloss` for it (consumer treats it as `{id,title}`).
-
-**g. Surface route base = `right-to-die/combined`.**
-The deep-link target the export advertises (`<surface_route>#obj-<id>`). Provisional - confirm the
-production route when this deploys (likely `library.wuld.ink/right-to-die/combined`).
-
-**h. `_stub:true` marks the seed nodes; they're EXEMPT from grade-coverage.**
-The validator won't demand a grade for a stub and will FAIL if a stub gets graded. Remove the 2
-stubs when real nodes land (or keep one as a fixture - your call; if kept they stay exempt).
-
-**i. Two seed stubs at tiers 1 and 3** - chosen only to exercise the tier filter across two values.
-Arbitrary placeholders. Replace freely.
-
-**j. Band thresholds co-located in the ledger** (`A>=0.88 / B>=0.82 / C>=0.76 / D<0.76`); the
-validator cross-checks `ledger.band_thresholds == canonical`. Banding is on the UNROUNDED fraction;
-`rsi_pct` (1 dp) is display-only. (Charter-inherited; recorded here as the single machine source.)
+**OVERRIDDEN + applied this revision:** 2d `mechanisms`->`strands` (change-order 1); compensation
+fork 3 -> `access_basis` field (change-order 2). **Forks 1-2 stay PROSE** - fork 1 (liberty->claim-
+right) is a library-level framing stated ONCE in the framing/diagnosis layer, not a node toggle;
+fork 2 (complicity 2a / obstruction 2b) is argument-internal.
 
 ---
 
-## 3. Still YOURS to decide (charter "honest residuals" + what authoring will surface)
+## 3. Watch / still yours
 
-- **Tier count + objection enumeration** - the prose work; the vessel imposes nothing.
-- **mechanisms vocabulary** - pure strand tags, or strand + psych-mechanism hybrid? (see 2d)
-- **Compensation's three forks** (liberty->claim-right; who-owes / lean on the obstruction-charge
-  (b); universal vs conditional). Right now these are prose inside `responses`. If you want them
-  queryable, decide a field (e.g. `compensation_basis` or `strand_forks`) and I/you add it + a
-  validator check. Flag it before you author 20 nodes the hard way.
-- **RWE**: `rwe_refs[]` is a slot pointing into `corpus.realWorldExamples[]` (empty now). Confirm
-  you want the flagship RWE schema family (`real_world_examples_schema_v1_7.json`) vendored here, or
-  a lighter shape. The validator does NOT yet check `rwe_refs` resolve - add that the moment RWE
-  data lands. Append-only anchors apply to RWE ids too.
-- **Headline grade convention**: the ledger uses `headline_grade_long` (= the long-depth grade),
-  flagship-style. Confirm that's the headline you want.
-- **Committed seed export**: `right-to-die-objections-index.json` currently holds the 2 stub
-  entries. Fine to keep (it regenerates on every content change) or empty it - your preference.
-- **Sovereignty framing** (charter): ground in universal self-ownership; keep the American
-  "live free or die" as RWE color only, never the load-bearing frame. A note for authoring, not a
-  schema thing - flagged so it doesn't get lost.
+- **Forks 2a/2b queryability - WATCH during authoring.** If you keep toggling 2a/2b per node, add a
+  field THEN; don't pre-build. (Authoring pass 1 stands on fork **2b**, the obstruction-charge.)
+- **RWE**: schema vendored + `check_rwe` live (vacuous now). Populate `corpus.realWorldExamples[]`
+  downstream, lighter than the flagship; node `rwe_refs[]` are the reverse slots. Append-only
+  `instance_id` anchors. Heavier flagship attestation fields are inheritable-from-parent per record.
+- **Tier set + objection enumeration**: authored, not scaffolded (render follows the nodes present).
+- **`mechanisms` (psych-mechanism layer)**: reserved by the rename, probably unused (smaller-by-design)
+  - don't foreclose it.
+- **Compensation forks, RWE attribution (Clayton/Inmendham), sovereignty framing** ("live free or die"
+  = RWE color only, never load-bearing): per the charter residuals; settle at authoring.
 
 ---
 
-## 4. How to author into it (mechanical)
+## 4. Authoring mechanics
 
-1. Add nodes to `corpus.objections[]`. Required fields per node:
-   `id, tier, category, trigger, keywords[], mechanisms[], diagnosis, responses{short,medium,long}, rwe_refs[]`
-   (`sources[]` optional). `diagnosis` = the gloss one-liner. `responses` = punch/deconstruct/dismantle.
-2. `id`: kebab, `^[a-z0-9][a-z0-9-]*$`, UNIQUE, **APPEND-ONLY** - never recycle an id (it is the
-   permanent deep-link anchor `#obj-<id>`).
-3. Bump `totalEntries` (= node count) and `totalResponses` (= count of non-empty response strings).
+1. Add nodes to `corpus.objections[]`. Required per node:
+   `id, tier, category, trigger, keywords[], strands[], diagnosis, responses{short,medium,long}, rwe_refs[]`
+   (`sources[]` and `access_basis` optional). `diagnosis` = the gloss one-liner (also rendered).
+   `strands[]` = harm/consent/sovereignty/compensation tags. `access_basis` in {universal,gated,both} where it applies.
+2. `id`: kebab `^[a-z0-9][a-z0-9-]*$`, UNIQUE, **APPEND-ONLY** (permanent `#obj-<id>` anchor).
+3. Bump `totalEntries` (= node count) and `totalResponses` (= non-empty response strings).
 4. Grade into the LEDGER, not the node:
    `grades[id] = {graded:true, axes:{v,s,c,r,a}, geomean, short/medium/long:{rsi_pct,grade}, headline_grade_long}`.
-   Band the UNROUNDED fraction; `rsi_pct` is 1-dp display only. Non-stub nodes must be in `grades` OR `ungraded[]`.
-5. Regenerate the export:  `python3 build_right_to_die_index.py`
-6. Gate before commit:  `python3 right_to_die_validator_v0_1.py --self-test`  -> must exit 0.
-7. Drop the 2 `_stub` nodes when real content lands (or keep as fixtures).
-8. Preview the render: it needs HTTP (it fetches the corpus). From this folder:
-   `python -m http.server` -> `http://localhost:8000/combined.html`. Opening `file://` shows a
-   "serve over HTTP" notice by design (the page never inlines the corpus = no drift).
+   Band the UNROUNDED fraction; `rsi_pct` 1dp display-only. Non-stub nodes must be in `grades` OR `ungraded[]`.
+5. RWE (when authoring it): add records to `corpus.realWorldExamples[]` per `right_to_die_rwe_schema_v0_1.json`;
+   set node `rwe_refs[]` to the `instance_id`s. `check_rwe` will then enforce both-direction resolution.
+6. Regenerate the export:  `python3 build_right_to_die_index.py`
+7. Gate before commit:  `python3 right_to_die_validator_v0_1.py --self-test`  -> must exit 0.
+8. Drop the 2 `_stub` nodes when real content lands. Preview over HTTP (`python -m http.server` ->
+   `combined.html`; it fetches the corpus, no `file://`).
 
 ---
 
-## 5. Deploy / pin discipline (DEFERRED - for whoever ships it, not this lane)
+## 5. Deploy / pin - DEFERRED
 
-- This vessel is NOT live. Corpus-internal work (authoring, validator runs) stays in the Argument
-  Library lane, NO pin.
-- When it ships content it becomes a **wuld.ink session**: that deploy forces, same-session,
-  pin==live + search-index regen + re-vendor of `right-to-die-objections-index.json` into wuld.ink
-  (the ccxxxvii cadence). The export's `surface_route` is what the wuld.ink consumer reads.
-- **Nav-strip splice** (the thin `Harm & Autonomy | Anthropocentrism` strip above the flagship's
-  top row) stays deferred until at least one sibling ships authored content - a switcher with one
-  destination is dead chrome (charter).
+Not live. Authoring stays corpus-internal, no pin. First content-ship becomes a **wuld.ink session**:
+deploy forces same-session pin==live + search-index regen + re-vendor of `right-to-die-objections-index.json`
+(ccxxxvii cadence; the export's `surface_route` is what wuld.ink reads). **Nav-strip splice**
+(`Harm & Autonomy | Anthropocentrism` above the flagship top row) stays deferred until >=1 sibling ships
+authored content - a switcher with one destination is dead chrome.
 
 ---
 
-## 6. Verification record (so the vessel is trustworthy as delivered)
+## 6. Verification record (v0.1.1)
 
-- `right_to_die_validator_v0_1.py --self-test` -> exit 0 (15/15 synthetic fixtures + 0 live violations).
-- Export determinism: built twice, byte-identical (727 B); committed export == fresh build; `schema_version:1`.
-- Render: `node --check` clean; pure-logic harness 14/14 vs the seed corpus (tier filter 1/3/all,
-  depth map, keyword detection, tier+keyword compose, deep-link resolve/reject); HTTP-200 serve of
-  page + corpus (`application/json`).
-- Anchor uniqueness + anchor-safe regex verified; append-only covenant documented + enforced.
-- Flagship UNTOUCHED: `git status` showed only the new folder; zero diff to `combined.html`.
+- `right_to_die_validator_v0_1.py --self-test` -> exit 0 (25/25 synthetic fixtures + 0 live violations).
+- Export determinism: built twice, byte-identical (727 B); committed == fresh build; `schema_version:1`;
+  export md5 UNCHANGED from v0.1 (`5858d370`) - the rename + `access_basis` do not touch the export.
+- Render: `node --check` clean; pure-logic harness 13/13 vs the seed corpus, including strand-keyword
+  legs (`harm`->tier-1, `sovereignty`->tier-3) proving `strands[]` is wired into keyword detection.
+- Anchor uniqueness + anchor-safe regex; `check_rwe` referential integrity (vacuous at launch).
+- Flagship UNTOUCHED: `git status` shows only the right-to-die folder.
 
-MD5s at delivery (commit `753aa0f`):
-`corpus c1b2f128...` · `ledger c6972036...` · `build f45b504c...` · `validator 58449b41...` ·
-`combined.html b22002a2...` · `export 5858d370...`
+MD5s at this revision:
+`corpus 6a7d260a` - `ledger c6972036` - `rwe-schema c7b2e55d` - `build f45b504c` -
+`validator 19f4844b` - `combined.html 8b29a3e6` - `export 5858d370`
