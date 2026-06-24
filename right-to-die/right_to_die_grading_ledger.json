@@ -160,19 +160,19 @@
         "v": 0.91,
         "s": 0.84,
         "c": 0.86,
-        "r": 0.82,
-        "a": 0.9
+        "r": 0.87,
+        "a": 0.91
       },
       "short": {
-        "rsi_pct": 82.7,
+        "rsi_pct": 83.9,
         "grade": "B"
       },
       "medium": {
-        "rsi_pct": 84.9,
+        "rsi_pct": 86.1,
         "grade": "B"
       },
       "long": {
-        "rsi_pct": 86.5,
+        "rsi_pct": 87.8,
         "grade": "B"
       },
       "headline_grade_long": "B"
