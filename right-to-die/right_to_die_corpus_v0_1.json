@@ -3,9 +3,9 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.3.2",
-  "generated": "2026-06-22",
-  "status": "Authoring: 6 objections + 3 RWE records (coercion). coercion-of-the-vulnerable strengthened (categorical-worseness counter named+defeated; r 0.82->0.87; B/B/B held, gap-closure). anchor KEEP. RSI grades in the ledger. Not deployed; no pin.",
+  "version": "0.3.3",
+  "generated": "2026-06-23",
+  "status": "Authoring: 7 objections + 3 RWE records. palliative-care-sufficiency folded (tier 3, remedy-substitution; B/B/B 87.6/85.9/83.7). former 'dying alone' node renamed -> assisting-is-complicity (claim-naming, sibling parity). RSI grades in the ledger. Not deployed; no pin.",
   "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
@@ -29,11 +29,11 @@
     "5": "Meta"
   },
   "tier_note": "Inherited tier-methodology FRAME (provisional reference, NOT authoritative). Tier count + enumeration are AUTHORED downstream, not scaffolded — the render derives its tier filter from the nodes actually present, not from this map.",
-  "totalEntries": 6,
-  "totalResponses": 18,
+  "totalEntries": 7,
+  "totalResponses": 21,
   "objections": [
     {
-      "id": "dying-alone",
+      "id": "assisting-is-complicity",
       "trigger": "Assisting or even being present at a suicide should be a crime — it deters, and it refuses complicity in a grave act.",
       "tier": 2,
       "category": "obstruction-concrete",
@@ -225,6 +225,40 @@
         "rwe-coercion-mcs-housing",
         "rwe-coercion-track2-marginalization"
       ]
+    },
+    {
+      "id": "palliative-care-sufficiency",
+      "trigger": "Good palliative and hospice care can control suffering to the very end — terminal sedation reaches even the cases nothing else does. So no one truly *needs* assisted death; they are driven to it by gaps in care. Fund palliation properly and the demand dissolves. Permitting death just lets us avoid fixing what is actually broken.",
+      "tier": 3,
+      "category": "remedy-substitution",
+      "keywords": [
+        "palliative care sufficient",
+        "hospice",
+        "pain can be managed",
+        "terminal sedation",
+        "palliative sedation",
+        "under-treatment",
+        "fix palliative access first",
+        "no one needs assisted death",
+        "comfort care",
+        "refractory symptoms"
+      ],
+      "strands": [
+        "sovereignty-obstruction",
+        "remedy-substitution-fallacy",
+        "threshold-authority",
+        "access-not-permission",
+        "empirical-load-distributed",
+        "informed-refusal-safeguard"
+      ],
+      "diagnosis": "The objection treats palliation as a substitute for permission — assuming the request is exhaustively a demand for pain relief, so any relief a clinician can supply renders it moot — when 'manageable' is not 'acceptable to this person' and funding care and forbidding the choice are opposite levers, not the same one.",
+      "access_basis": "both",
+      "responses": {
+        "short": "A substitution argument that substitutes the wrong thing. Grant the clinical claim whole — palliation, up to terminal sedation, can blunt suffering to the end. It still does not reach *forbid the exit*, for two reasons. First, 'manageable' is not 'acceptable to this person': sedation into unconsciousness-until-death is the very mode of dying many requesters are declining, and offering it as proof their suffering is handled installs the clinician's threshold over the patient's — yet whose threshold governs a person's own death is the whole question, and it is the patient's. Second, even granting flawless palliative access, that is an argument to *fund palliation*, not to *prohibit the choice*: access and permission answer different questions, and the right regime runs both. 'Fix palliative care' and 'ban the exit' are opposite levers; the objection welds them only by assuming the exit was never more than a workaround for under-treatment — which begs the sovereignty question it has to win.",
+        "medium": "The objection's strength is that it aims at the hardest case — the terminal, irremediable patient — and meets it with a genuine clinical fact: suffering can be controlled to the end, terminal sedation included. Take the fact at full value and the inference fails anyway.\n\nDisambiguate first. *Applied to a person* — better care would relieve what is driving your request — it is a clinical claim about one case the library does not adjudicate. Whether the palliation on offer is acceptable to that patient is the patient's call; if it meets their need and they take it, nothing here says otherwise. *Applied as a categorical bar* — because palliation can manage suffering, the option must be closed to everyone — it is the objection to the right, and it fails.\n\nIt fails on a premise it never states: that the request is exhaustively about pain, so any relief a clinician can deliver is acceptable by definition. Both halves are false. 'Manageable' is not 'acceptable to this person.' The objection's trump card — sedation to the end — describes permanent oblivion until death, which is exactly the mode of dying many requesters are refusing. Offered as proof their suffering is handled, it quietly swaps the clinician's threshold for the patient's — but the threshold for what counts as an acceptable death is the patient's to set.\n\nAnd even granting perfect palliative access arguendo: that is an argument to *fund palliation*, not to *prohibit the choice*. The two are opposite levers — one expands what is available, the other removes it — and a regime can run both at once, which is what the patient is owed. The objection welds 'improve care' to 'ban the exit' only by assuming the exit was always a mere workaround for inadequate care.\n\nThe residual, honestly: real palliative access is uneven, and some requests *are* under-treatment talking — a reason to screen for it (were palliative options offered and declined?) and to build access, not to delete the choice. Strip the empirical residual entirely and the bar still fails on the two structural points. The disagreement, as ever, relocates to whether sovereignty over one's own death exists.",
+        "long": "Of the clinical objections, this is the one that aims at the paradigm case and lands closest. Where 'it's temporary' fails precisely on the intractable patient, palliative-sufficiency is built for them: it concedes the suffering is real and says care, fully resourced, can still meet it — up to and including sedation that carries the patient unconscious to death. It is the objection that most deserves to be met on the terminal, irremediable case rather than dodged toward easier ones. So meet it there, granting the clinical claim at full strength, and the inference still does not arrive.\n\nBegin by disambiguating two claims the slogan runs together.\n\n(A) Applied to a person — *for you, specifically, better palliation would relieve what is driving this.* A clinical claim about one case, which neither the objector nor this library adjudicates. Whether the palliation actually on offer is acceptable to this patient is the patient's determination; if it meets their need and they choose it, the library says nothing against that — it never tells anyone they should take the exit. The point is only that the answer is theirs.\n\n(B) Applied as a categorical bar — *because palliation can manage suffering, the option must be unavailable to everyone.* This is the objection to the right, and it is the one that fails.\n\nIt fails because the clinical premise does not reach the conclusion without a bridge the objector never builds: the assumption that the request is *exhaustively* a request for relief from pain, so that any relief a clinician can supply renders it moot. Pull that assumption into the light and it is plainly false, in two directions.\n\nFirst, and load-bearing: *manageable* is not *acceptable to this person*. The objection's strongest move — total or terminal sedation exists, therefore no suffering is unbearable-to-the-end — is the place it defeats itself, because what it describes is a patient rendered permanently unconscious until they die. For many who ask for the exit, that is not relief from the thing they fear; it *is* the thing they fear — the dissolution of the self before death, days or weeks of oblivion in a bed. To offer it as proof their suffering has been handled is to answer 'I do not want to die that way' with 'but you can be made not to know you are dying that way.' It installs the clinician's threshold for an acceptable death over the patient's own. And the threshold for what counts as an acceptable way to die is exactly the thing that is the patient's to set — not because their pain is worse than the objector imagines, but because it is their death. The objection has to assume the question of whose threshold governs is already settled in the clinician's favor. It is settled the other way.\n\nSecond: grant the empirical claim its best case — suppose flawless, universal palliative access, every dying person with impeccable hospice care. That is an argument to *fund palliation*. It is not an argument to *prohibit the exit*, because the two are not the same lever and not even adjacent ones. Funding palliation expands what is available to the patient; prohibiting the exit removes what is available to the patient. They answer different questions, and a regime can — and on the patient's behalf should — do both at once: maximal palliative access *and* the preserved choice. The objection's whole rhetorical force comes from welding the good half ('fix palliative care') to the bad half ('so ban the exit') and presenting the weld as a single act of conscience. Unwelded, the good half survives on its own and indicts no one's autonomy, and the bad half is left needing its own justification — which is the sovereignty question, not the palliation question. 'Improve care so the choice is unnecessary' only follows if the choice was never anything but a workaround for inadequate care, which is the conclusion the objection needed and never earned.\n\nNow the empirical arm, routed deliberately so the core does not depend on it. The clinical premise — *adequate palliation can manage suffering to the end* — is contestable: a real fraction of dying patients have refractory symptoms that resist control, existential and total suffering that pharmacology does not reach, and access in the actual world is uneven, thinner for non-cancer trajectories, the rural, the uninsured. All of that strengthens the case against the bar. None of it is the spine. If palliation worked perfectly for everyone, the two structural points above would *still* defeat the categorical bar — the request can be grounded in sovereignty over one's mode of dying rather than in unrelieved pain, and funding is still not prohibition. The empirical shortfall is an amplifier; the argument is built to stand without it.\n\nThe residual, marked honestly. The objection is right about one thing, and it is not small: under-treatment is real, and some proportion of 'I want to die' is 'I am in pain that no one is treating,' which adequate palliation would dissolve. That is a genuine failure mode — and the correct response to it is to build the safeguard and the access, not to delete the choice. Crucially, this is a safeguard the regime can actually run: whether palliative options were offered, understood, and declined is *verifiable*, in a way that 'will this depression remit' is not — so the screening palliative-sufficiency motivates is more credible than the screening its sibling objections demand, not less. What does not sand away is the retreat: an objector can grant all of this and say that if palliation were truly universal and excellent, the only requests left would be sovereignty-driven, and that they deny sovereignty grounds the right. Correct — and that is where the disagreement belongs. The node wins the substitution point outright: care is something to provide, not a reason to forbid. The remainder relocates, as it always does, to whether a competent person holds authority over their own death."
+      },
+      "rwe_refs": []
     }
   ],
   "realWorldExamples": [

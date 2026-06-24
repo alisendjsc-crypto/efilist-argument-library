@@ -39,7 +39,7 @@
   },
   "ungraded": [],
   "grades": {
-    "dying-alone": {
+    "assisting-is-complicity": {
       "graded": true,
       "axes": {
         "v": 0.88,
@@ -173,6 +173,29 @@
       },
       "long": {
         "rsi_pct": 87.8,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "palliative-care-sufficiency": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.85,
+        "c": 0.85,
+        "r": 0.86,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 83.7,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 85.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.6,
         "grade": "B"
       },
       "headline_grade_long": "B"
