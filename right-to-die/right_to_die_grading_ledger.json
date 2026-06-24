@@ -245,6 +245,52 @@
         "grade": "B"
       },
       "headline_grade_long": "B"
+    },
+    "slippery-slope-headline": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.87,
+        "c": 0.86,
+        "r": 0.86,
+        "a": 0.89
+      },
+      "short": {
+        "rsi_pct": 83.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 85.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.6,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "compensational-bridge-fork2b": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.86,
+        "c": 0.87,
+        "r": 0.88,
+        "a": 0.9
+      },
+      "short": {
+        "rsi_pct": 84.6,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.7,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.4,
+        "grade": "A"
+      },
+      "headline_grade_long": "A"
     }
   }
 }
