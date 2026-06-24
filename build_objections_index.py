@@ -10,7 +10,7 @@ hand-edited derived artifact is just a new drift source.
 
 CONTRACT (recorded here per coordination Exchange 47/48; bump schema_version
 on any breaking shape change so the consumer can detect it):
-  shape : {"schema_version": <int>, "objections": [ {id, title, gloss}, ... ]}
+  shape : {"schema_version": <int>, "objections": [ {id, title, gloss, keywords}, ... ]}
   id    : corpus objections[].id  -- the K108 anchor target  obj-<id>
   title : corpus objections[].trigger  -- the displayed objection statement;
           combined.html renders trigger as the objection-card heading, so a
@@ -20,6 +20,11 @@ on any breaking shape change so the consumer can detect it):
           NEVER hand-authored. Both fields are non-empty for all 81 today; if a
           future objection lacks a diagnosis, gloss is omitted for that entry
           (the consumer treats it as {id,title}).
+  keywords : corpus objections[].keywords, whitespace-collapsed, empties
+          dropped, corpus order preserved. Additive-optional at
+          schema_version 1 (consumer ignores when absent); omitted when an
+          objection has no keywords. Folded into the consumer's searchable
+          text for keyword recall (K129); site-search.js matches [title|text|route].
   bytes : sorted keys, ensure_ascii=True, compact separators, trailing newline,
           NO timestamps. Same corpus -> same bytes. md5-gateable.
 
@@ -68,6 +73,21 @@ def snippet(s, n=GLOSS_MAX):
     return cut.rstrip(" ,;:") + "…"
 
 
+def project_keywords(o):
+    """corpus objections[].keywords -> list of whitespace-collapsed, non-empty
+    strings, corpus order preserved (authored salience). Faithful projection:
+    no sort, no dedupe; the corpus is authoritative. Absent/!list -> []."""
+    kws = o.get("keywords")
+    if not isinstance(kws, list):
+        return []
+    out = []
+    for k in kws:
+        k = " ".join(str(k).split())
+        if k:
+            out.append(k)
+    return out
+
+
 def build(corpus):
     objs = corpus.get("objections")
     if not isinstance(objs, list):
@@ -84,6 +104,9 @@ def build(corpus):
         diag = " ".join(str(o.get("diagnosis", "")).split())
         if diag:
             rec["gloss"] = snippet(diag)
+        kw = project_keywords(o)
+        if kw:
+            rec["keywords"] = kw
         out.append(rec)
     out.sort(key=lambda r: r["id"])
     return {"schema_version": SCHEMA_VERSION, "objections": out}

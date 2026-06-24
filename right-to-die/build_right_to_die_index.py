@@ -13,7 +13,7 @@ CONTRACT (sibling of flagship Exchange 47/48; bump schema_version on any
 breaking shape change so the consumer can detect it):
   shape        : {"schema_version": <int>, "library": "right-to-die",
                   "surface_route": "<route base>",
-                  "objections": [ {id, title, gloss}, ... ]}
+                  "objections": [ {id, title, gloss, keywords}, ... ]}
   surface_route: deep-link base; the consumer builds <surface_route>#obj-<id>
                  (i.e. "right-to-die/combined#obj-<id>"). Self-describing so the
                  wuld.ink consumer need not hard-code each sibling's route.
@@ -25,6 +25,11 @@ breaking shape change so the consumer can detect it):
                  to a GLOSS_MAX-char snippet at a word boundary. Corpus-sourced
                  one-liner, NEVER hand-authored. Omitted for an entry whose
                  diagnosis is empty (consumer treats it as {id,title}).
+  keywords     : corpus objections[].keywords, whitespace-collapsed, empties
+                 dropped, corpus order preserved. Additive-optional at
+                 schema_version 1 (consumer ignores when absent); omitted when
+                 an objection has no keywords. Folded into the consumer's
+                 searchable text for keyword recall (K129).
   bytes        : sorted keys, ensure_ascii=True, compact separators, trailing
                  newline, NO timestamps. Same corpus -> same bytes. md5-gateable.
 
@@ -75,6 +80,21 @@ def snippet(s, n=GLOSS_MAX):
     return cut.rstrip(" ,;:") + "…"
 
 
+def project_keywords(o):
+    """corpus objections[].keywords -> list of whitespace-collapsed, non-empty
+    strings, corpus order preserved (authored salience). Faithful projection:
+    no sort, no dedupe; the corpus is authoritative. Absent/!list -> []."""
+    kws = o.get("keywords")
+    if not isinstance(kws, list):
+        return []
+    out = []
+    for k in kws:
+        k = " ".join(str(k).split())
+        if k:
+            out.append(k)
+    return out
+
+
 def build(corpus):
     objs = corpus.get("objections")
     if not isinstance(objs, list):
@@ -91,6 +111,9 @@ def build(corpus):
         diag = " ".join(str(o.get("diagnosis", "")).split())
         if diag:
             rec["gloss"] = snippet(diag)
+        kw = project_keywords(o)
+        if kw:
+            rec["keywords"] = kw
         out.append(rec)
     out.sort(key=lambda r: r["id"])
     return {"schema_version": SCHEMA_VERSION, "library": LIBRARY,
