@@ -119,6 +119,29 @@ This governs fork-1 framing copy when the library-layer is authored, and all fut
 
 ---
 
+## Firewall rule — suffering-reduction may rebut, never recommend (added 2026-06-24, library-Claude)
+
+The suite's motive is suffering-reduction (see *Umbrella*). This rule fixes how that motive may and may not enter a node, so the motive never hardens into a premise.
+
+**Asymmetry-independence (binding on all node authoring).** Nodes argue **only** from sovereignty, consent, or role. They do **not** invoke Benatar's value-asymmetry — the pleasure/pain asymmetry — as a rebuttal premise. The harm-reductionist / negative-utilitarian convergence (right-to-die, abortion, trans care, and veganism each lower suffering by some route) is acknowledged here, at charter surface, as authorial **motivation**. It is never a warrant inside a node.
+
+**REBUT, never RECOMMEND.** The operative boundary:
+
+- **Permitted (defensive).** Suffering-reduction may *neutralize* an opponent's premise — e.g. dismantling the assumption that continued life is costless, as the coercion and palliative-care-sufficiency nodes already do. Here suffering is invoked to deny the objector a free move, not to ground a positive claim.
+- **Prohibited (affirmative).** No node may argue "this reduces suffering, therefore the choice is good / better / recommended." That is a value-ranking of lives, and the suite does not rank lives — it defends a right against the people who would override it.
+
+**Why this is load-bearing, not fastidiousness.** An affirmative harm-reduction framing inside Right-to-Die would put the library on record that less-of-this-kind-of-life is better — which is *precisely the expressivist objection's content*. Affirm it and you make that objection true at charter level, spend the expressivist node to buy the linkage, and re-import the asymmetry the whole suite is built to run without. The firewall is what keeps asymmetry-independence real rather than nominal.
+
+**Lone licensed positive.** Abortion alone carries a positive but strictly advisory claim (per the *Register / scope invariant*). Every other node is optionality-only: it defeats objections to the right; it does not exhort the act.
+
+**Three sharpenings (banked).**
+
+1. **Veganism is other-regarding** — the patient is the animal, not the chooser. Its core is therefore a first-order *harm* claim, not an optionality claim, and it cannot be optionality-defended without contaminating this firewall; it argues like the flagship (harm + consent), not like Right-to-Die (sovereignty). *(Note: the sharpening as relayed tags veganism to the Anthropocentrism wing; this sits in tension with its current Wing-1 placement in the strand-map. Flagged for the structural ruling — not resolved here.)*
+2. **Trans care stays sovereignty-framed** — "yours to determine," never suffering/dysphoria-framed. The dysphoria frame is both weaker on the merits and pathologizing. Same lesson as *anti-conscription > self-ownership*: the autonomy frame beats the value frame whenever the question is forced.
+3. **Crossover is at the diagnosis, not the spine.** Right-to-Die's spine is sovereignty; antinatalism's is harm-asymmetry + consent-impossibility. The two converge at exactly one point — *selective precaution as a smuggled value* — and nowhere else. The shared front door (the orientation note) states a diagnosis the two libraries share; it is not a shared premise either library leans on.
+
+---
+
 ## Honest residuals (not yet decided)
 
 - Right-to-Die tier count + objection set → authored as we go, not scaffolded.
