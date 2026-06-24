@@ -199,6 +199,52 @@
         "grade": "B"
       },
       "headline_grade_long": "B"
+    },
+    "expressivist": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.87,
+        "c": 0.88,
+        "r": 0.87,
+        "a": 0.89
+      },
+      "short": {
+        "rsi_pct": 84.6,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.7,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.4,
+        "grade": "A"
+      },
+      "headline_grade_long": "A"
+    },
+    "medical-integrity": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.87,
+        "c": 0.88,
+        "r": 0.85,
+        "a": 0.89
+      },
+      "short": {
+        "rsi_pct": 84.2,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.3,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.0,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
     }
   }
 }
