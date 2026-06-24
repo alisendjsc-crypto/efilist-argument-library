@@ -3,9 +3,9 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "generated": "2026-06-23",
-  "status": "v0.3.4 spine-tightening: Change A (self-ownership -> anti-conscription) reframes suicide-is-selfish + assisting-is-complicity; Change B (optimism-bias rationality-symmetry amplifier) strengthens temporary-problem. 7 objections + 3 RWE records. RSI grades in the ledger. Live RTD sibling surface; flagship library + pin untouched.",
+  "status": "v0.3.5 RWE corpus-decay hedge: archive_url (Wayback snapshots) added to all 3 realWorldExamples records (farsoud / mcs-housing Globe / track2 OCSWSSW mirror). No canonical OCC public URL exists (verified 2026-06-23) — mirror+archive is the durable axis; records were already provenance-honest. Objections + grades untouched. 7 objections + 3 RWE records. Live RTD sibling surface; flagship library + pin untouched.",
   "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
@@ -276,6 +276,7 @@
       "source_url": "https://thenational.shorthandstories.com/canada-euthanasia-maid-assisted-death/",
       "source_title": "Canada's assisted-dying regime and the case of a man who feared homelessness (The National; originating interview CityNews, Oct 2022)",
       "source_byline": "The National",
+      "archive_url": "http://web.archive.org/web/20250414084522/https://thenational.shorthandstories.com/canada-euthanasia-maid-assisted-death/",
       "short_quote_under_15_words": "If it comes to being dead or being homeless, I'm going to be dead.",
       "paraphrased_summary": "Ontario man on provincial disability support, living with chronic back pain, who stated publicly that the prospect of homelessness — after his rental was sold and he could not afford accessible housing on his benefits — rather than his medical condition, was what drove his MAiD request; he qualified on the chronic-pain criterion. After his case was publicized and a crowdfunding campaign secured housing, he withdrew the request. Objector reading: structural coercion — deprivation, not illness, manufactured the request. Rebuttal reading: the reversal-on-provision is direct evidence for provision-not-prohibition, and the ad hoc publicity functioned as the very checkpoint prohibition would delete. Both sides cite the case. Policy / regime level only."
     },
@@ -294,6 +295,7 @@
       "source_title": "Ontario MAiD Death Review Committee Report 2024-3, Office of the Chief Coroner (anonymized case), as summarized by The Globe and Mail",
       "source_byline": "The Globe and Mail",
       "source_date": "2026-04-15",
+      "archive_url": "http://web.archive.org/web/20260414135021/https://www.theglobeandmail.com/canada/article-ontario-overhauls-maid-oversight-committee-critics-say-its-to-remove/",
       "paraphrased_summary": "Anonymized case in the Office of the Chief Coroner of Ontario's MAiD Death Review Committee report (Report 2024-3, Navigating Vulnerability in Non-Reasonably-Foreseeable Natural Deaths): a woman in her 50s with multiple chemical sensitivity and a history of depression and suicidality who received MAiD after failing to secure housing that met her medical needs. Objector reading: a death the safeguards should have caught, with material deprivation as the documented backdrop — the structural residual made fatal. Rebuttal reading: conceded as the genuine residual the safeguards must be proportioned to, answered by provision plus stronger screening, not abolition; and MAiD-supportive analysts dispute that housing access was the operative cause. The same official case is cited both ways — paradigm contested. Regime / policy level; no further detail carried."
     },
     {
@@ -310,6 +312,7 @@
       "source_url": "https://www.ocswssw.org/wp-content/uploads/MAiD-Death-Review-Committee-Report-2024.pdf",
       "source_title": "Ontario MAiD Death Review Committee — Marginalization Data Perspectives / Report 2024-3, Office of the Chief Coroner of Ontario (released October 2024)",
       "source_byline": "Office of the Chief Coroner of Ontario",
+      "archive_url": "http://web.archive.org/web/20260303095355/https://www.ocswssw.org/wp-content/uploads/MAiD-Death-Review-Committee-Report-2024.pdf",
       "paraphrased_summary": "Official marginalization findings from Ontario's Chief Coroner MAiD Death Review Committee (2024): Track-2 (non-reasonably-foreseeable-death) recipients are drawn disproportionately from the most housing-unstable and lowest-material-resource populations (the worst housing-instability quintile supplied roughly 48% of Track-2 deaths versus ~34% of Track-1; the lowest material-resource quintile ~28% versus ~22%), and the committee flagged structural-coercion / undue-influence risk for persons without social supports, noting housing and income supports were offered to a low proportion of those reviewed. The objector's core structural evidence — conceded by the rebuttal as the genuine residual (the ambient 'I am a burden' produced by underfunded provision, not a coercer), answered by bundling the exit with material provision rather than by prohibition. MAiD-supportive analysts contest the causal reading of the correlation. Regime / policy / statistical level."
     }
   ]
