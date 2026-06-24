@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Right to Die — Refusal Libraries (skeleton)</title>
+<title>Right to Die — Refusal Libraries</title>
 <!--
   right-to-die/combined.html — Refusal Suite pilot render surface (skeleton).
   Stripped instance of the flagship combined.html idiom: tab(s), tier filter,
@@ -90,14 +90,17 @@ h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
 footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
   font-size:.68rem;color:var(--faint)}
 .err{color:var(--accent)}
+.wing-switcher a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.wing-switcher a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.wing-switcher [aria-current="page"]{color:var(--fg)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="site">
-    <div class="eyebrow">Refusal Libraries · Harm &amp; Autonomy</div>
-    <h1>Right to Die <span class="badge" id="skel-badge">skeleton</span></h1>
-    <div class="sub" id="site-sub">empty plumbing — objections authored downstream</div>
+    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries">Refusal Libraries <span aria-hidden="true">·</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <span aria-current="page">Harm &amp; Autonomy</span></nav>
+    <h1>Right to Die <span class="badge" id="skel-badge">pilot</span></h1>
+    <div class="sub" id="site-sub">Wing 1 — Harm &amp; Autonomy</div>
   </header>
 
   <div class="notice" id="file-notice">
@@ -140,10 +143,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
     <p class="sub">Pilot library of <strong>The Refusal Libraries</strong> (suite charter v0.1),
     Wing&nbsp;1 / <em>Harm &amp; Autonomy</em>. Chosen as the pilot because it exercises all
     four Wing-1 strands — harm, consent, sovereignty, compensation — at full weight.</p>
-    <p class="sub">This is an <strong>empty-plumbing skeleton</strong>: render surface, corpus
-    JSON, grading ledger, and search-export generator, with seed stub nodes only. Objection
-    enumeration, tier depth, and prose are authored downstream. The flagship antinatalism
-    library is untouched and terminal-frozen. No graph subsystem at launch.</p>
+    <p class="sub">This wing is <strong>live</strong>: seven objections served from the corpus JSON, each graded in the rebuttal ledger and exposed through the search-export generator. The flagship antinatalism library remains canon-frozen. No graph subsystem at launch.</p>
     <p class="sub" id="about-meta"></p>
   </section>
 
