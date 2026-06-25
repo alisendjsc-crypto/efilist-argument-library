@@ -74,8 +74,8 @@ fork 2 (complicity 2a / obstruction 2b) is argument-internal.
 2. `id`: kebab `^[a-z0-9][a-z0-9-]*$`, UNIQUE, **APPEND-ONLY** (permanent `#obj-<id>` anchor).
 3. Bump `totalEntries` (= node count) and `totalResponses` (= non-empty response strings).
 4. Grade into the LEDGER, not the node:
-   `grades[id] = {graded:true, axes:{v,s,c,r,a}, geomean, short/medium/long:{rsi_pct,grade}, headline_grade_long}`.
-   Band the UNROUNDED fraction; `rsi_pct` 1dp display-only. Non-stub nodes must be in `grades` OR `ungraded[]`.
+   `grades[id] = {graded:true, axes:{v,s,c,r,a}, short/medium/long:{rsi_pct,grade}, headline_grade_long}`.
+   geomean is DERIVED from axes at regen (validator recomputes); NOT stored — never copy-forward (band-true discipline). Band the UNROUNDED fraction; `rsi_pct` 1dp display-only. Non-stub nodes must be in `grades` OR `ungraded[]`.
 5. RWE (when authoring it): add records to `corpus.realWorldExamples[]` per `right_to_die_rwe_schema_v0_1.json`;
    set node `rwe_refs[]` to the `instance_id`s. `check_rwe` will then enforce both-direction resolution.
 6. Regenerate the export:  `python3 build_right_to_die_index.py`

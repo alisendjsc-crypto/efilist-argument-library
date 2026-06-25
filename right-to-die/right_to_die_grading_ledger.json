@@ -14,6 +14,7 @@
   },
   "entry_shape_reference": {
     "_comment": "Shape a real graded entry takes (keyed by corpus objection id under grades{}). Empty at launch.",
+    "_geomean_note": "DERIVED from axes at regen (validator recomputes); NOT stored — never copy-forward (band-true discipline).",
     "graded": true,
     "axes": {
       "v": 0.0,
@@ -22,7 +23,6 @@
       "r": 0.0,
       "a": 0.0
     },
-    "geomean": 0.0,
     "short": {
       "rsi_pct": 0.0,
       "grade": "D"
