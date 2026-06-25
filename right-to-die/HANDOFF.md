@@ -25,7 +25,7 @@ RATIFIED except two overrides; all landed here, pre-authoring, so they cost no m
 | File | Role / contract |
 |---|---|
 | `right_to_die_corpus_v0_1.json` | Corpus (v0.3.0). Sized-down flagship node shape. **6 objections (5 fork-2b + coercion-of-the-vulnerable); seed stubs dropped.** Single source of truth. |
-| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+strands[]+trigger+diagnosis) - `access_basis` badge - markdown emphasis + paragraph rendering in responses - `#obj-<id>` deep-links. NO graph subsystem. |
+| `combined.html` | Render surface. FETCHES the corpus at runtime (never inlines). tab(s) - tier filter (data-derived) - depth toggle (punch/deconstruct/dismantle) - keyword detection (over keywords[]+move_tags[]+trigger+diagnosis) - `access_basis` badge - markdown emphasis + paragraph rendering in responses - `#obj-<id>` deep-links. NO graph subsystem. |
 | `right_to_die_grading_ledger.json` | RSI grades live HERE only. Empty. `band_thresholds` + `entry_shape_reference`. |
 | `right_to_die_rwe_schema_v0_1.json` | Vendored RWE record schema (sized-down sibling of `real_world_examples_schema_v1_7.json`). Append-only `instance_id` anchors; `attached_objections[].objection_id` foreign-keyed to corpus ids; reverse slot = node `rwe_refs[]`. |
 | `build_right_to_die_index.py` | Search-export generator. Deterministic, validator-gated. |
@@ -68,9 +68,9 @@ fork 2 (complicity 2a / obstruction 2b) is argument-internal.
 ## 4. Authoring mechanics
 
 1. Add nodes to `corpus.objections[]`. Required per node:
-   `id, tier, category, trigger, keywords[], strands[], diagnosis, responses{short,medium,long}, rwe_refs[]`
+   `id, tier, category, trigger, keywords[], move_tags[], diagnosis, responses{short,medium,long}, rwe_refs[]`
    (`sources[]` and `access_basis` optional). `diagnosis` = the gloss one-liner (also rendered).
-   `strands[]` = harm/consent/sovereignty/compensation tags. `access_basis` in {universal,gated,both} where it applies.
+   `move_tags[]` = granular dialectical move-tags (internal taxonomy, e.g. sovereignty-obstruction / claim-vs-license; renamable, NOT charter strands). Top-level `strands` reserves the four charter strands (harm/consent/sovereignty/compensation). [strands[]->move_tags[] covenant, 2026-06-24] `access_basis` in {universal,gated,both} where it applies.
 2. `id`: kebab `^[a-z0-9][a-z0-9-]*$`, UNIQUE, **APPEND-ONLY** (permanent `#obj-<id>` anchor).
 3. Bump `totalEntries` (= node count) and `totalResponses` (= non-empty response strings).
 4. Grade into the LEDGER, not the node:

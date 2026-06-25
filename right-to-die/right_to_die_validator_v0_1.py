@@ -34,6 +34,8 @@ CHECKS:
 Change-order (library-Claude, 2026-06-22): node field `mechanisms[]` -> `strands[]`;
 optional `access_basis` in {universal,gated,both} (compensation fork 3); RWE schema
 vendored at right_to_die_rwe_schema_v0_1.json.
+Strand-vocabulary covenant (library-Claude, 2026-06-24): node field `strands[]` -> `move_tags[]`
+(per-node field holds granular move-tags, not the 4 charter strands; top-level `strands` reserved).
 
 Usage:
   python3 right_to_die_validator_v0_1.py --self-test     # synthetic + live, JSON, 0/1
@@ -49,7 +51,7 @@ RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
 RWE_ATTESTATION_VALUES = {"public-record", "published-case", "subject-public-testimony", "family-attested-public", "unverified"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "category", "trigger", "keywords",
-                        "strands", "diagnosis", "responses", "rwe_refs"]
+                        "move_tags", "diagnosis", "responses", "rwe_refs"]
 DEPTHS = ("short", "medium", "long")
 ROUND_TOL = 0.0005   # half of a 0.1% display step — the rsi_pct rounding band
 
@@ -84,7 +86,7 @@ def check_schema(corpus):
             out.append(_v("schema", "empty trigger", oid))
         if not isinstance(o.get("tier"), int):
             out.append(_v("schema", "tier not an int", oid))
-        for f in ("keywords", "strands", "rwe_refs"):
+        for f in ("keywords", "move_tags", "rwe_refs"):
             if f in o and not isinstance(o[f], list):
                 out.append(_v("schema", "%s not a list" % f, oid))
         ab = o.get("access_basis")
@@ -350,7 +352,7 @@ def _good_corpus():
         "totalEntries": 1, "totalResponses": 0,
         "objections": [{
             "id": "alpha", "tier": 1, "category": "Emotional/Reflexive",
-            "trigger": "t", "keywords": [], "strands": [], "diagnosis": "d",
+            "trigger": "t", "keywords": [], "move_tags": [], "diagnosis": "d",
             "responses": {"short": "", "medium": "", "long": ""}, "rwe_refs": [],
         }],
         "realWorldExamples": [],
@@ -366,9 +368,9 @@ def run_synthetic_tests():
     c = _good_corpus(); c["objections"][0]["responses"] = {"short": ""}
     cases["schema_missing_depth_fires"] = (len(check_schema(c)) > 0, True)
     cases["schema_clean_passes"] = (len(check_schema(_good_corpus())) == 0, True)
-    # strands rename: a node carrying the OLD field name lacks `strands` -> fires
-    c = _good_corpus(); del c["objections"][0]["strands"]; c["objections"][0]["mechanisms"] = []
-    cases["schema_missing_strands_fires"] = (len(check_schema(c)) > 0, True)
+    # move_tags rename: a node carrying the OLD field name lacks `move_tags` -> fires
+    c = _good_corpus(); del c["objections"][0]["move_tags"]; c["objections"][0]["strands"] = []
+    cases["schema_missing_move_tags_fires"] = (len(check_schema(c)) > 0, True)
     # access_basis allowed-values
     c = _good_corpus(); c["objections"][0]["access_basis"] = "gated"
     cases["access_basis_valid_passes"] = (len(check_schema(c)) == 0, True)

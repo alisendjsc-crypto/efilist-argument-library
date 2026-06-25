@@ -165,7 +165,7 @@ function matchKeyword(node, q){
   q = (q||"").trim().toLowerCase();
   if(!q) return true;
   var hay = [node.trigger||"", node.diagnosis||""]
-    .concat(node.keywords||[], node.strands||[]).join(" ").toLowerCase();
+    .concat(node.keywords||[], node.move_tags||[]).join(" ").toLowerCase();
   return hay.indexOf(q) !== -1;
 }
 function filterNodes(nodes, opts){
@@ -214,8 +214,8 @@ function deepLinkTarget(hash, nodes){
     var respHtml = resp
       ? resp.split(/\n\n+/).map(function(para){ return '<p>'+mdEmph(esc(para))+'</p>'; }).join("")
       : '<p class="empty">— awaiting authoring —</p>';
-    var mech = (n.strands && n.strands.length)
-      ? '<div class="mech">strands · '+n.strands.map(esc).join(" · ")+'</div>' : "";
+    var mech = (n.move_tags && n.move_tags.length)
+      ? '<div class="mech">moves · '+n.move_tags.map(esc).join(" · ")+'</div>' : "";
     var kws = (n.keywords && n.keywords.length)
       ? '<div class="kw">'+n.keywords.map(function(k){return '<span>'+esc(k)+'</span>';}).join("")+'</div>' : "";
     var stubTag = n._stub ? ' · <span class="obj-stubtag">stub</span>' : "";

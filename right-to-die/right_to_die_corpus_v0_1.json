@@ -3,17 +3,17 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "generated": "2026-06-24",
-  "status": "v0.3.8 node-pair C fold: +2 graded objections appended. welfare-substitution (tier 3, structural-substitution, long 87.2/B) + autonomy-illusion (tier 4, autonomy-defeater, long 86.2/B). 13 objections / 39 responses. Tier dist 2:2/3:8/4:3. Band the UNROUNDED geomean. New categories structural-substitution, autonomy-defeater; new strands provision-substitution-fallacy, systemic-not-interpersonal, reason-vs-coercer, duress-symmetry-regress, duress-not-incapacity, authentic-agency-contested (first-ship immutables). anti-conscription spine carriers 3->5; NO new self-ownership carriers (3/3->5/3 split held pending covenant ruling). welfare-substitution rwe_refs empty (Canadian MAID-and-deprivation surfacing deferred to micro-session). Scope firewall intact: rebuttals defend the optionality/right only, never recommend the act. Live RTD sibling surface; flagship library + pin untouched.",
-  "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node strands[] = Wing-1 strand tags; optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
+  "status": "v0.3.9 strand-vocabulary covenant fold (library-Claude ruling, 2026-06-24). B1: self-ownership move-tag deprecated corpus-wide (3->0); its 3 carriers (assisting-is-complicity, sanctity-of-life, suicide-is-selfish) retagged anti-conscription (cohort 5->8) — a mislabel correction: all three run the standing-denial move and suicide-is-selfish explicitly disclaims propertarianism. C1: per-node strands[] renamed move_tags[] across corpus + combined.html + validator (the field holds 40 granular move-tags, not the 4 charter strands); strand_note + schema_note corrected (the collision had written a false note). Annotation-class per Clause A — move-tags are internal taxonomy (renamable/removable); grades score prose not tags, so NO re-grade. FENCE held: charter grounding of Sovereignty in self-ownership UNTOUCHED. Export byte-invariant (5cc2b0e7; generator strand-silent) — no re-vendor, no search-index regen. 13 objections / 39 responses unchanged. Live RTD sibling; flagship library + pin 5f068153 untouched.",
+  "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node move_tags[] = granular dialectical move-tags (internal taxonomy, NOT charter strands); optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
     "consent",
     "sovereignty",
     "compensation"
   ],
-  "strand_note": "Wing-1 four-strand instrument (Refusal Suite Charter v0.1). Each node's strands[] tags which strand(s) it engages. Right to Die carries all four at full weight — the pilot.",
+  "strand_note": "Wing-1 four-strand instrument (Refusal Suite Charter v0.1). The top-level strands list names the four charter strands — harm, consent, sovereignty, compensation — which Right to Die carries at full weight (the pilot). Per-node move_tags[] is a separate internal taxonomy of granular dialectical move-tags (e.g. sovereignty-obstruction, claim-vs-license), NOT charter-strand engagement. Strand-vocabulary covenant (library-Claude, 2026-06-24): per-node strands[] renamed move_tags[] to end the field-name collision that made the prior note false.",
   "access_basis_values": [
     "universal",
     "gated",
@@ -46,12 +46,12 @@
         "deterrence",
         "complicity"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "obstruction-backfire",
         "self-defeating-regime",
         "claim-vs-license",
-        "self-ownership",
+        "anti-conscription",
         "companionship-criminalized"
       ],
       "diagnosis": "Criminalizing assistance and presence does not prevent the sovereign exit — it manufactures the solitary, more violent death its proponents lament, and the obstruction is wrong on sovereignty before any consequence is counted.",
@@ -77,7 +77,7 @@
         "the depression talking",
         "disorder"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "decision-specific-capacity",
         "diagnosis-vs-incapacity",
@@ -109,9 +109,9 @@
         "only God decides",
         "sin"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
-        "self-ownership",
+        "anti-conscription",
         "claim-vs-license",
         "external-value-imposition",
         "value-pluralism",
@@ -141,9 +141,9 @@
         "duty to others",
         "owe it to my family"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
-        "self-ownership",
+        "anti-conscription",
         "debt-rejection-survival",
         "burden-inversion",
         "claim-vs-license"
@@ -171,7 +171,7 @@
         "you'll regret it",
         "things change"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "irreversibility-asymmetry",
         "intractability-empirical",
@@ -205,7 +205,7 @@
         "right to die becomes duty to die",
         "thin end of the wedge"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "irreversibility-asymmetry",
         "liberty-abuse-containment",
@@ -243,7 +243,7 @@
         "comfort care",
         "refractory symptoms"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "remedy-substitution-fallacy",
         "threshold-authority",
@@ -277,7 +277,7 @@
         "not worth sustaining",
         "symbolic harm"
       ],
-      "strands": [
+      "move_tags": [
         "anti-conscription",
         "sovereignty-obstruction",
         "access-not-permission",
@@ -310,7 +310,7 @@
         "erodes trust",
         "conscientious objection"
       ],
-      "strands": [
+      "move_tags": [
         "anti-conscription",
         "sovereignty-obstruction",
         "role-telos-contested",
@@ -346,7 +346,7 @@
         "the gate widens",
         "non-hypothetical expansion"
       ],
-      "strands": [
+      "move_tags": [
         "consent-gating",
         "line-drawing-inside-consent",
         "liberty-abuse-containment",
@@ -386,7 +386,7 @@
         "anti-conscription",
         "negative versus positive duty"
       ],
-      "strands": [
+      "move_tags": [
         "anti-conscription",
         "sovereignty-obstruction",
         "claim-vs-license",
@@ -422,7 +422,7 @@
         "Canada MAID poverty",
         "exit instead of provision"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "anti-conscription",
         "provision-substitution-fallacy",
@@ -458,7 +458,7 @@
         "overwhelmed deliberation",
         "not the author of the request"
       ],
-      "strands": [
+      "move_tags": [
         "sovereignty-obstruction",
         "anti-conscription",
         "reason-vs-coercer",
