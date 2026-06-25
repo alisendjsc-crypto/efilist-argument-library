@@ -3,7 +3,7 @@
   "library": "right-to-die",
   "version": "0.1.0",
   "generated": "2026-06-24",
-  "status": "v0.3.8 node-pair C grades appended: welfare-substitution (87.2/85.5/83.4 B/B/B) + autonomy-illusion (86.2/84.5/82.4 B/B/B). 13 grades, ungraded:[]. Band the UNROUNDED geomean; rsi_pct 1dp display-only. autonomy-illusion short is a near-floor B (unrounded 0.8237 >= 0.82, band-true). Cold-graded: RSI tuples + node md5s committed before computation; contamination (2 neighbor ledger entries viewed during shape-extraction) disclosed in session state.",
+  "status": "v0.3.10 irreversibility-precaution grade appended: 87.8/86.1/83.9 B/B/B (headline B; long unrounded geomean 0.877537 < 0.88 A-line — band-true, not round-then-band). 14 grades, ungraded:[]. Cold-graded: RSI tuple + node md5 (77b764d0…) committed before consulting per-node scores; depth modifiers (medium c-0.05/r-0.03, short c-0.12/r-0.06) verified empirically against flagship life-gift. r-axis capped 0.84 (categorical-worseness residual conceded — same pattern as suicide-is-selfish).",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
   "band_thresholds": {
@@ -334,6 +334,29 @@
       },
       "long": {
         "rsi_pct": 86.2,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
+    },
+    "irreversibility-precaution": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.86,
+        "c": 0.87,
+        "r": 0.84,
+        "a": 0.92
+      },
+      "short": {
+        "rsi_pct": 83.9,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.1,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.8,
         "grade": "B"
       },
       "headline_grade_long": "B"
