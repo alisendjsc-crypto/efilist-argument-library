@@ -28,6 +28,12 @@ on any breaking shape change so the consumer can detect it):
   bytes : sorted keys, ensure_ascii=True, compact separators, trailing newline,
           NO timestamps. Same corpus -> same bytes. md5-gateable.
 
+SCHEMA_VERSION CONVENTION (ratified coordination Exchange 54/57): schema_version
+is a compatibility generation, not a shape-changelog. Bump ONLY on a
+non-backward-compatible shape change; additive-optional fields (a consumer that
+does not know them ignores them) hold the version -- the additive change is
+logged at commit + relay, which is its home. K129 keywords[] rode v1 by this rule.
+
 VALIDATOR (gates the build; exits non-zero on any failure):
   - exactly EXPECTED_N (81) objections
   - export id set == corpus OBJECTIONS id set (exact)

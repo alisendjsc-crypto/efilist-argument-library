@@ -24,6 +24,12 @@ CHECKS:
                             objection_id resolves to a corpus objection id; every
                             objection.rwe_refs[] resolves to an RWE instance_id.
                             VACUOUS while realWorldExamples == [] (engages on data).
+  7. keyword projection   — every objection's corpus keywords[] project into the
+                            export non-empty + corpus-order-preserved (the
+                            project_keywords contract); guards the K129 cadence-
+                            lock: a stale generator dropping keywords fails LOUD
+                            here, not silently in search recall.
+
 
 Change-order (library-Claude, 2026-06-22): node field `mechanisms[]` -> `strands[]`;
 optional `access_basis` in {universal,gated,both} (compensation fork 3); RWE schema
@@ -225,6 +231,50 @@ def check_export_determinism(corpus):
     return out
 
 
+def _keyword_projection_violations(corpus, payload):
+    """Pure: every corpus objection carrying non-empty keywords[] must appear in
+    the export with those keywords projected non-empty and corpus-order-preserved
+    (the generator's project_keywords contract: whitespace-collapsed, empties
+    dropped, no sort, no dedupe). Guards the K129 cadence-lock — a stale generator
+    that drops keywords fails LOUD here instead of silently reverting search
+    recall. Pure over (corpus, built-payload) so the synthetic leg can fire it
+    with a hand-crafted stale-export payload (like export determinism, the live
+    generator build is exercised by the live leg)."""
+    out = []
+    by_id = {str(r.get("id", "")).strip(): r for r in payload.get("objections", [])}
+    for o in corpus.get("objections", []):
+        oid = str(o.get("id", "")).strip()
+        kws = o.get("keywords")
+        if not isinstance(kws, list):
+            continue
+        expect = [k for k in (" ".join(str(x).split()) for x in kws) if k]
+        if not expect:
+            continue
+        rec = by_id.get(oid)
+        if rec is None:
+            out.append(_v("keywords", "objection with keywords[] missing from export", oid)); continue
+        got = rec.get("keywords")
+        if not got:
+            out.append(_v("keywords", "corpus keywords[] not projected into export (stale generator?)", oid))
+        elif got != expect:
+            out.append(_v("keywords", "export keywords differ from corpus projection (order/content drift)", oid))
+    return out
+
+
+def check_keyword_projection(corpus):
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    try:
+        mod = importlib.import_module("build_right_to_die_index")
+    except Exception as e:  # pragma: no cover
+        return [_v("keywords", "cannot import build_right_to_die_index: %r" % e)]
+    try:
+        payload = mod.build(corpus)
+    except SystemExit as e:
+        return [_v("keywords", "build raised SystemExit(%s)" % e.code)]
+    return _keyword_projection_violations(corpus, payload)
+
+
 def check_rwe(corpus):
     """Referential integrity for vendored RWE plumbing. VACUOUS while
     realWorldExamples == [] and all rwe_refs empty (the launch state); engages
@@ -289,6 +339,7 @@ def validate_all(corpus, ledger):
     issues += check_ledger_corpus_sync(corpus, ledger)
     issues += check_band_geomean(corpus, ledger)
     issues += check_export_determinism(corpus)
+    issues += check_keyword_projection(corpus)
     issues += check_rwe(corpus)
     return issues
 
@@ -390,6 +441,16 @@ def run_synthetic_tests():
     cases["rwe_structural_passes"] = (len(check_rwe(_corp([_rwe(subject_type="structural")], ["rwe-x"]))) == 0, True)
     cases["rwe_bad_polarity_fires"] = (len(check_rwe(_corp([_rwe(instance_polarity="bogus")], ["rwe-x"]))) > 0, True)
     cases["rwe_contested_polarity_passes"] = (len(check_rwe(_corp([_rwe(instance_polarity="contested")], ["rwe-x"]))) == 0, True)
+
+    # keyword projection (Rider 2): pure over (corpus, built-payload); like export
+    # determinism the live generator build runs in the live leg, so here the pure
+    # projection-comparison is fired with hand-crafted stale-export payloads.
+    _kw = _good_corpus(); _kw["objections"][0]["keywords"] = ["aa", "bb"]
+    cases["kw_projected_passes"] = (len(_keyword_projection_violations(_kw, {"objections": [{"id": "alpha", "keywords": ["aa", "bb"]}]})) == 0, True)
+    cases["kw_dropped_fires"] = (len(_keyword_projection_violations(_kw, {"objections": [{"id": "alpha", "title": "t"}]})) > 0, True)
+    cases["kw_reordered_fires"] = (len(_keyword_projection_violations(_kw, {"objections": [{"id": "alpha", "keywords": ["bb", "aa"]}]})) > 0, True)
+    cases["kw_missing_entry_fires"] = (len(_keyword_projection_violations(_kw, {"objections": []})) > 0, True)
+    cases["kw_no_keywords_passes"] = (len(_keyword_projection_violations(_good_corpus(), {"objections": [{"id": "alpha"}]})) == 0, True)
 
     results, all_pass = {}, True
     for name, (observed, expected) in cases.items():
