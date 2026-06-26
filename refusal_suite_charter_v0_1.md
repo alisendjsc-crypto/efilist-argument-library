@@ -142,6 +142,26 @@ The suite's motive is suffering-reduction (see *Umbrella*). This rule fixes how 
 
 ---
 
+## Bystander-harm posture — run the harm principle before conceding coercion (added 2026-06-25, library-Claude)
+
+Optionality nodes have answered harms to the *chooser*. The first **third-party / bystander-harm** objection — legal assisted death allegedly raising non-assisted suicide among suggestible people *outside* the eligibility set (Werther effect) — needs a posture the suite holds consistently, before the next harm-to-others objection (resource-diversion, body-count-normalization) re-derives one ad hoc. This fixes it as a **test set, not a stock answer.**
+
+**The move it blocks.** A harm-to-others objection looks self-executing: harm to others is *just what* licenses coercion, so the optionality claim seems to collapse the instant any third-party cost is shown. It does not. "Harm to others" is not "any third-party cost ⇒ coercion permitted"; it is the **gate a coercion claim must pass through** — and the gate has preconditions the objection still has to meet. Run them before conceding the act may be foreclosed.
+
+**Prong 1 — Directness.** Is the harm the optionality-holder's own act, or routed through an intervening autonomous agent — most strongly, the *harmed party's own deliberation*? The more the chain passes through another's free choice, the more the harm is attenuated and attributable to that agent, not to the optionality-holder's lawful act. Attribution, not endorsement; firewall-clean. **Test, not verdict:** a *direct* harm — one subtracting from a third party with no intervening choice — does not end the analysis; it fails this prong and the weight shifts to Prong 2. Directness attenuates where it applies; the posture does not require it.
+
+**Prong 2 — Proportionality (+ backfire).** Granting the harm in full, the harm principle licenses the **narrowest effective instrument**, not the maximal one — and foreclosing the optionality is maximal. The objection carries only if no narrower instrument is both available and effective. (a) *Narrower instrument:* one targeting the actual harm channel rather than the optionality itself — if it exists, the harm principle licenses *that*. (b) *Backfire:* does foreclosure worsen the very metric the objection invokes — driving the harm into unregulated, sensationalized, or costlier forms? Where it does, the objection fails on its own terms before any rights claim. The backfire check is **metric-relative to the objection** — it denies the objector their instrument on their own ledger, never a suffering-reduction argument for the act.
+
+**Prong 3 — Anti-conscription firebreak-refusal (the spine).** Backstop, not replacement. The objection conscripts the optionality-holder's life as a *firebreak* for others' restraint — foreclose the exit so third parties are spared a cost their own agency or institutional policy could meet. Refuse the instrument: no one is conscripted as a safety margin for others when narrower instruments exist. **Not autonomy-absolutism** — it does not deny that harm to others can *ever* license coercion; it denies *this* instrument when narrower ones are available, which Prongs 1–2 establish. Anti-conscription stays load-bearing; the harm-principle tests gate *in front of* it.
+
+**Scope of the test set.** Directness and proportionality are **general harm-principle preconditions** — they run on any bystander objection, mediated or direct. **Node-local, not charter text:** the contagion *findings* that this harm is mediated by the bystander's deliberation and that the narrower instrument is responsible-reporting discipline. A resource-diversion claim runs the same three prongs and resolves differently: it reads as **direct** (subtracts capacity, no intervening choice) → fails Prong 1 → is then carried or defeated on Prong 2 (is foreclosure the narrowest instrument, or is capacity/triage reform — and does foreclosure even reduce, or perversely *increase*, resource load?). The posture does **not** depend on harms being mediated; Prong 2 and the anti-conscription backstop carry direct-harm cases.
+
+**Honest residual.** A robust, established net-additive third-party effect ⇒ **stronger safeguards and channel-discipline, never foreclosure.** The posture denies not the harm but that the harm licenses foreclosing the optionality when a narrower instrument reaches it.
+
+**Invariants.** Firewall held — Prong-2 backfire is metric-relative, no suffering-reduction-as-recommendation. Asymmetry-independence held — the tests are Millian, no Benatar asymmetry. **No strand added** — a methods statement gating in front of the four strands (harm / consent / sovereignty / compensation), which stand unchanged.
+
+---
+
 ## Honest residuals (not yet decided)
 
 - Right-to-Die tier count + objection set → authored as we go, not scaffolded.
