@@ -68,7 +68,7 @@ h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
   background:var(--panel);padding:1rem 1.1rem;margin:0 0 1rem;border-radius:3px;
   scroll-margin-top:1rem}
 .obj.stub{border-left-color:var(--stub)}
-.obj.flash{animation:flash 1.6s ease-out}
+@media (prefers-reduced-motion: no-preference){.obj.flash{animation:flash 1.6s ease-out}}
 @keyframes flash{0%{background:#1a1206}100%{background:var(--panel)}}
 .obj-meta{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .obj-stubtag{color:var(--stub)}
@@ -93,6 +93,23 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .wing-switcher a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
 .wing-switcher a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .wing-switcher [aria-current="page"]{color:var(--fg)}
+.rwe{margin:.55rem 0 .2rem;padding-left:.7rem;border-left:1px solid var(--stub)}
+.rwe>.lbl{color:var(--stub);font-size:.6rem;letter-spacing:.14em;display:block;text-transform:uppercase;margin-bottom:.35rem}
+.rwe-item{margin:0 0 .55rem}
+.rwe-item:last-child{margin-bottom:0}
+.rwe-src a{font-size:.78rem}
+.rwe-src a::after{content:" \2197";font-size:.62rem;color:var(--faint)}
+.rwe-byline{display:block;font-size:.62rem;color:var(--faint);margin:.12rem 0 .3rem}
+.rwe-quote{margin:.3rem 0;padding:.2rem 0 .2rem .6rem;border-left:2px solid var(--line);font-size:.8rem;color:var(--fg)}
+.rwe-more{margin:.3rem 0}
+.rwe-more summary{cursor:pointer;color:var(--dim);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;list-style:none}
+.rwe-more summary::-webkit-details-marker{display:none}
+.rwe-more summary::after{content:" [+]";color:var(--faint)}
+.rwe-more[open] summary::after{content:" [-]"}
+.rwe-more summary:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.rwe-more p{margin:.35rem 0 0;font-size:.8rem;color:var(--fg)}
+.rwe-meta{font-size:.6rem;color:var(--faint);letter-spacing:.04em;margin-top:.3rem}
+.rwe-meta a{color:var(--dim)}
 </style>
 </head>
 <body>
@@ -180,11 +197,20 @@ function deepLinkTarget(hash, nodes){
   var id = m[1];
   return (nodes||[]).some(function(n){return String(n.id)===id;}) ? id : null;
 }
+function rweFor(node, rweIndex){
+  var refs = (node && node.rwe_refs) || [];
+  if(!refs.length || !rweIndex) return [];
+  return refs.map(function(id){ return rweIndex[id]; }).filter(Boolean);
+}
+function rweFit(record, nodeId){
+  var ao = (((record||{}).attached_objections) || []).filter(function(a){ return a && a.objection_id===nodeId; })[0];
+  return ao ? (ao.fit_to_trigger_phrases||null) : null;
+}
 /* ===PURE-LOGIC-END=== */
 
 (function(){
   var CORPUS_URL = "right_to_die_corpus_v0_1.json";
-  var state = {nodes:[], tier:null, depth:"punch", q:""};
+  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}};
 
   function esc(s){
     return String(s==null?"":s).replace(/[&<>"']/g, function(c){
@@ -208,6 +234,34 @@ function deepLinkTarget(hash, nodes){
     host.innerHTML = html.join("");
   }
 
+  function rweBlock(node){
+    var recs = rweFor(node, state.rweIndex);
+    if(!recs.length) return "";
+    var items = recs.map(function(r){
+      var fit = rweFit(r, node.id);
+      var srcText = (r.source_title!=null && r.source_title!=="") ? r.source_title : (r.source_url||"source");
+      var src = r.source_url
+        ? '<a href="'+esc(r.source_url)+'" target="_blank" rel="noopener noreferrer">'+esc(srcText)+'</a>'
+        : esc(srcText);
+      var byParts = [];
+      if(r.source_byline) byParts.push(esc(r.source_byline));
+      if(r.source_date) byParts.push(esc(r.source_date));
+      var bylineHtml = byParts.length ? '<span class="rwe-byline">'+byParts.join(" \u00b7 ")+'</span>' : "";
+      var quote = r.short_quote_under_15_words
+        ? '<blockquote class="rwe-quote">\u201c'+esc(r.short_quote_under_15_words)+'\u201d</blockquote>' : "";
+      var more = r.paraphrased_summary
+        ? '<details class="rwe-more"><summary>both readings</summary><p>'+esc(r.paraphrased_summary)+'</p></details>' : "";
+      var bits = [];
+      if(fit) bits.push('fit: '+esc(fit));
+      if(r.instance_polarity) bits.push(esc(r.instance_polarity));
+      if(r.archive_url) bits.push('<a href="'+esc(r.archive_url)+'" target="_blank" rel="noopener noreferrer">archived</a>');
+      var meta = bits.length ? '<div class="rwe-meta">'+bits.join(" \u00b7 ")+'</div>' : "";
+      return '<div class="rwe-item"><div class="rwe-src">'+src+'</div>'+bylineHtml+quote+more+meta+'</div>';
+    }).join("");
+    var label = recs.length>1 ? "real-world examples" : "real-world example";
+    return '<div class="rwe"><span class="lbl">'+label+'</span>'+items+'</div>';
+  }
+
   function card(n){
     var dk = depthKey(state.depth);
     var resp = (n.responses && n.responses[dk]) ? String(n.responses[dk]).trim() : "";
@@ -227,6 +281,7 @@ function deepLinkTarget(hash, nodes){
       +   kws + mech
       +   '<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis||"")+'</div>'
       +   '<div class="resp"><span class="lbl">response · '+esc(state.depth)+'</span>'+respHtml+'</div>'
+      +   rweBlock(n)
       +   '<a class="permalink" href="#obj-'+esc(n.id)+'">#obj-'+esc(n.id)+'</a>'
       + '</article>';
   }
@@ -244,7 +299,8 @@ function deepLinkTarget(hash, nodes){
     if(!id) return;
     var el = $("obj-"+id);
     if(!el) return;
-    el.scrollIntoView({behavior:"smooth", block:"start"});
+    var smooth = !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    el.scrollIntoView({behavior: smooth ? "smooth" : "auto", block:"start"});
     el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
   }
 
@@ -290,6 +346,8 @@ function deepLinkTarget(hash, nodes){
     .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
     .then(function(c){
       state.nodes = c.objections || [];
+      state.rweIndex = {};
+      (c.realWorldExamples || []).forEach(function(r){ if(r && r.instance_id) state.rweIndex[r.instance_id] = r; });
       meta(c); renderTierChips(); wire(); renderList(); flashTarget();
     })
     .catch(function(err){
