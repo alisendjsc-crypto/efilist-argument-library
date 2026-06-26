@@ -3,9 +3,9 @@
   "wing": 1,
   "wing_label": "Harm & Autonomy",
   "title": "Right to Die",
-  "version": "0.3.18",
+  "version": "0.3.19",
   "generated": "2026-06-25",
-  "status": "v0.3.18 medical-integrity's first real-world examples added (Cowork RWE fold, 2026-06-25; web-verified). realWorldExamples 12 -> 15: the AAFP's 2018 adoption of 'engaged neutrality' on medical aid in dying (a national body revising its role-image; a two-thirds vote was required because it broke from AMA Opinion 5.7 - response-supporting, exact), the 2019 Court of Appeal for Ontario ruling upholding the CPSO effective-referral requirement over conscientious objection (the objector declines, the patient routes to a non-objector - response-supporting, exact), and the AMA House of Delegates' June 2019 vote (360-190) to keep both Opinion 5.7 opposing and Opinion 1.1.7 supporting assisted dying in one code (the opposition body's own code encodes the role of medicine as contested - contested) - all attached to medical-integrity (its first RWE; rwe_refs [] -> 3 ids). The profession's self-conception is revisable, plural, and in some bodies deliberately unresolved, so 'the role of medicine' is itself contested and cannot adjudicate a competent patient's right over their own death. objections / responses held at 17 / 51 (tiers 2:2 / 3:8 / 4:7); export byte-invariant (realWorldExamples / rwe_refs not export-projected); no objection content changed.",
+  "status": "v0.3.18 medical-integrity's first real-world examples added (Cowork RWE fold, 2026-06-25; web-verified). realWorldExamples 12 -> 15: the AAFP's 2018 adoption of 'engaged neutrality' on medical aid in dying (a national body revising its role-image; a two-thirds vote was required because it broke from AMA Opinion 5.7 - response-supporting, exact), the 2019 Court of Appeal for Ontario ruling upholding the CPSO effective-referral requirement over conscientious objection (the objector declines, the patient routes to a non-objector - response-supporting, exact), and the AMA House of Delegates' June 2019 vote (360-190) to keep both Opinion 5.7 opposing and Opinion 1.1.7 supporting assisted dying in one code (the opposition body's own code encodes the role of medicine as contested - contested) - all attached to medical-integrity (its first RWE; rwe_refs [] -> 3 ids). The profession's self-conception is revisable, plural, and in some bodies deliberately unresolved, so 'the role of medicine' is itself contested and cannot adjudicate a competent patient's right over their own death. objections / responses held at 17 / 51 (tiers 2:2 / 3:8 / 4:7); export byte-invariant (realWorldExamples / rwe_refs not export-projected); no objection content changed. v0.3.19 Wing-1 objection set marked structural-complete and frozen-citable (K144 audit: 11 candidates surveyed, 0 survived the G1 distinctness falsifier; T1/T5 absence by-design); honest residuals stand, not a dialectical-victory claim.",
   "schema_note": "Sized-down mirror of efilist_argument_library_v3_8_0.json node shape. RSI grades live ONLY in right_to_die_grading_ledger.json (single source of truth). Node move_tags[] = granular dialectical move-tags (internal taxonomy, NOT charter strands); optional access_basis in {universal,gated,both} = compensation fork 3. RWE record schema vendored at right_to_die_rwe_schema_v0_1.json (data lighter than flagship; realWorldExamples populated downstream). No graph subsystem (charter v0.1).",
   "strands": [
     "harm",
@@ -949,5 +949,16 @@
       "short_quote_under_15_words": "Physician-assisted suicide is fundamentally incompatible with the physician's role as healer",
       "paraphrased_summary": "In June 2019 the American Medical Association's House of Delegates, by 360 to 190, adopted its Council on Ethical and Judicial Affairs report recommending no change to the Code of Medical Ethics, thereby retaining Opinion 5.7's judgment that assisted suicide is incompatible with the physician's role as healer. The same decision deliberately kept Opinion 1.1.7 beside it — the moral basis of physicians who in equally good faith support a patient's request — the council concluding that supporters and opponents draw different conclusions from values they share. Objector reading: organized medicine's largest body, after years of study, declined to abandon its judgment that assisted death betrays the healer's role, so the integrity objection is medicine's own considered position rather than a fringe scruple. Rebuttal reading: the very same vote refused to settle the question, housing the opposed view and the supportive view in one code and calling both good-faith readings of shared values, so even the body that retained opposition institutionally encodes medicine's role as contested rather than settled — and a self-conception its own ethics council declines to adjudicate cannot be the fixed fact that adjudicates the patient's right. Professional-policy / institutional level only."
     }
-  ]
+  ],
+  "wing1_objection_set_marker": {
+    "status": "structural-completeness + internal-coherence; frozen-citable; NOT dialectical victory",
+    "basis": "K144 Wing-1 completeness audit: T1/T5 absence by-design (operative/patient-facing scope); 11 candidates surveyed, 0 survived the G1 distinctness falsifier",
+    "honest_residuals": [
+      "asymmetry-independence requirement",
+      "inalienability-residual conceded @ kantian-duty-to-self",
+      "dissolve-not-defeat dispatches",
+      "distributed coverage @ disability-justice / relational-autonomy"
+    ],
+    "marked": "2026-06-25"
+  }
 }
