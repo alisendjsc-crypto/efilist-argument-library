@@ -116,7 +116,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 <div class="wrap">
   <header class="site">
     <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries">Refusal Libraries <span aria-hidden="true">·</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Harm &amp; Autonomy</a> <span aria-hidden="true">/</span> <span aria-current="page">Anthropocentrism</span></nav>
-    <h1>Anthropocentrism <span class="badge" id="skel-badge">genesis</span></h1>
+    <h1>Anthropocentrism <span class="badge" id="skel-badge"></span></h1>
     <div class="sub" id="site-sub">Wing 2 — Anthropocentrism</div>
   </header>
 
@@ -339,7 +339,12 @@ function rweFit(record, nodeId){
     $("footer").innerHTML = m + ' · <span class="sub">RSI grades live in the ledger; '
       + 'no graph subsystem at launch.</span>';
     $("about-meta").textContent = m;
-    if(c.status){ $("site-sub").textContent = c.status; }
+    var mk = c["wing"+c.wing+"_objection_set_marker"];
+    $("site-sub").textContent = $("site-sub").textContent
+      + " · " + c.objections.length + " objections · v" + (c.version||"?")
+      + (mk ? " · provisional-complete" : "");
+    var bdg = $("skel-badge");
+    if(bdg){ if(mk){ bdg.textContent = "provisional-complete"; } else { bdg.style.display = "none"; } }
   }
 
   fetch(CORPUS_URL, {cache:"no-cache"})
