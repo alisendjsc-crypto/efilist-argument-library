@@ -162,7 +162,7 @@ Optionality nodes have answered harms to the *chooser*. The first **third-party 
 
 ---
 
-### Wing 2 — Anthropocentrism (architecture) — K146, library-Claude, 2026-06-26
+## Wing 2 — Anthropocentrism (architecture) — K146, library-Claude, 2026-06-26
 
 **Thesis (logical type).** *Permissibility of dissent* — not optionality-of-an-act, not positive-fittingness. Wing 2 defends the **right to *hold*** an anti-anthropocentric / critical-of-humanity stance against objections that human-centric attitudes are *obligatory* or that dissent is *a moral failing* — "right to refuse the anthropocentric mandate." "Fittingness" = defensible-as-permitted, never obligatory. Governed by the suite axis: **the suite defends permissions, never positive value-rankings** (abortion = lone advisory exception). Wing 1 = permission-to-act; Wing 2 = permission-to-hold-a-stance; flagship = the positive engine. A positive "supremacy is unfitting" claim is **RULED OUT** — it would violate the Firewall (a stance-ranking), and the abortion carve does not transfer (no patient; structurally load-bearing, not advisory).
 
