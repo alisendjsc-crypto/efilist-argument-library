@@ -1,9 +1,9 @@
 {
   "artifact": "anthropocentrism_grading_ledger.json",
   "library": "anthropocentrism",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "generated": "2026-06-26",
-  "status": "v0.1.0 genesis: inaugural Wing-2 RSI reference. human-centrism-is-the-default cold-graded 83.5/85.7/87.4 B/B/B (headline B; long unrounded geomean 0.87358, band-true, no boundary cells, no score-targeting). 1 grade, ungraded: [].",
+  "status": "v0.1.1: +privilege-tracks-a-capacity (the parity / capacity-tracking node) cold-graded 85.8/87.9/89.6 B/B/A (headline A; long unrounded geomean 0.895743 clears the 0.88 A-line; short/medium band B from unrounded; band-true, no score-targeting). 2 grades, ungraded: [].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
   "band_thresholds": {
@@ -61,6 +61,29 @@
         "grade": "B"
       },
       "headline_grade_long": "B"
+    },
+    "privilege-tracks-a-capacity": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.89,
+        "c": 0.88,
+        "r": 0.87,
+        "a": 0.93
+      },
+      "short": {
+        "rsi_pct": 85.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 89.6,
+        "grade": "A"
+      },
+      "headline_grade_long": "A"
     }
   }
 }
