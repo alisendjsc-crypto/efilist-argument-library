@@ -162,10 +162,24 @@ Optionality nodes have answered harms to the *chooser*. The first **third-party 
 
 ---
 
+### Wing 2 — Anthropocentrism (architecture) — K146, library-Claude, 2026-06-26
+
+**Thesis (logical type).** *Permissibility of dissent* — not optionality-of-an-act, not positive-fittingness. Wing 2 defends the **right to *hold*** an anti-anthropocentric / critical-of-humanity stance against objections that human-centric attitudes are *obligatory* or that dissent is *a moral failing* — "right to refuse the anthropocentric mandate." "Fittingness" = defensible-as-permitted, never obligatory. Governed by the suite axis: **the suite defends permissions, never positive value-rankings** (abortion = lone advisory exception). Wing 1 = permission-to-act; Wing 2 = permission-to-hold-a-stance; flagship = the positive engine. A positive "supremacy is unfitting" claim is **RULED OUT** — it would violate the Firewall (a stance-ranking), and the abortion carve does not transfer (no patient; structurally load-bearing, not advisory).
+
+**Membership.** Cut stays **operative/attitudinal**. Positive criterion: a node qualifies iff **(i)** the objection asserts an anthropocentric *mandate*, **and (ii)** the rebuttal discharges on attitudinal-deontic grounds *without* a suffering calculus. Veganism fails (ii) → stays Wing 1. Own-existence / independent-others re-cut: **re-deferred** (forced only by a node that strains the cut; cross-cuts operative/attitudinal regardless).
+
+**Fittingness axis-set** (replaces the four-strand map for Wing 2): **anti-mandate** (spine, load-bearing) · **parity / capacity-tracking** (load-bearing) · **substrate-neutrality / successor-legitimacy** (provisional, likely folds into parity) · **misanthropy-distinction** (fence-guard, node-sparse). All refusal-of-mandate shaped.
+
+**Tiers.** **T1–T5**, full range — the mirror of Wing 1's T2–T4. Wing 2 populates the T1 (raw speciesist reflex) and T5 (self-undermining / meta) that operative/patient-facing scope structurally lacks. Populate fresh, author-not-scaffold, size down.
+
+**Flagship demarcation (G1 filter).** Flagship defends a *truth* (antinatalism is correct); Wing 2 defends a *permission* (you may hold the stance). Conditional-rewrite test: "even granting it's defensible, you may not hold it" → Wing 2; "the stance is *false* because R" → flagship-or-out. Wing 2 *presupposes* the flagship's case, never re-runs it.
+
+---
+
 ## Honest residuals (not yet decided)
 
 - Right-to-Die tier count + objection set → authored as we go, not scaffolded.
-- Wing 2 axis-set → built when Wing 2 is built.
+- Wing 2 axis-set → **discharged K146**: scoped in *Wing 2 — Anthropocentrism (architecture)* (nodes authored when Wing 2 is built).
 - Abortion / Veganism compensation strands → provisional; refine at their authoring.
 - Umbrella *word* → "Refusal" taken per delegation; Josiah's veto stands.
 - Clayton case / Inmendham attribution → verified at RWE-authoring, not certified here. Categories hold regardless of attribution.
