@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Anthropocentrism — Refusal Libraries</title>
+<!--
+  anthropocentrism/combined.html — Refusal Suite pilot render surface (skeleton).
+  Stripped instance of the flagship combined.html idiom: tab(s), tier filter,
+  response-depth toggle (punch/deconstruct/dismantle), keyword detection.
+  NO graph subsystem (charter v0.1: omit at launch).
+
+  SINGLE SOURCE OF TRUTH: this page FETCHES anthropocentrism_corpus_v0_1.json at
+  runtime — the corpus is never inlined here (no dual-home drift). Serve over
+  HTTP (production: library.wuld.ink; local: `python -m http.server` in this
+  folder). Opening as a file:// URL cannot fetch the corpus — a notice is shown.
+
+  Deep-link anchors: each objection card is id="obj-<id>"; #obj-<id> scroll +
+  flash on load and hashchange. Anchors are APPEND-ONLY — never recycle an id.
+
+  Pure render-logic lives between the PURE-LOGIC sentinels and is node-harness
+  tested by slicing between them (project verification idiom). Do not edit the
+  sentinel lines.
+-->
+<style>
+:root{
+  --bg:#0b0b0c; --panel:#101012; --fg:#d8d4cc; --dim:#7a766e; --faint:#4a4742;
+  --accent:#c41e3a; --line:#23211f; --stub:#b8902a;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{font-size:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--mono);
+  line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:60rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+header.site{border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
+.sub{color:var(--dim);font-size:.85rem}
+.badge{display:inline-block;border:1px solid var(--stub);color:var(--stub);
+  font-size:.62rem;letter-spacing:.12em;padding:.12rem .4rem;border-radius:2px;
+  text-transform:uppercase;vertical-align:middle;margin-left:.5rem}
+.notice{display:none;border:1px solid var(--accent);background:#1a0c0f;
+  color:var(--fg);padding:.7rem .9rem;margin:1rem 0;font-size:.8rem;border-radius:3px}
+.tabs{display:flex;gap:.25rem;margin:1rem 0 .5rem}
+.tab{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;
+  font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;
+  cursor:pointer;border-radius:2px}
+.tab[aria-selected="true"]{color:var(--fg);border-color:var(--accent)}
+.controls{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;
+  border:1px solid var(--line);background:var(--panel);padding:.8rem;border-radius:3px;
+  margin-bottom:1.25rem}
+.ctl-group{display:flex;flex-direction:column;gap:.35rem}
+.ctl-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+.chips{display:flex;gap:.3rem;flex-wrap:wrap}
+.chip{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;
+  font-size:.7rem;padding:.25rem .6rem;cursor:pointer;border-radius:2px}
+.chip[aria-pressed="true"]{color:var(--fg);border-color:var(--accent);background:#15090c}
+.search{flex:1 1 12rem}
+.search input{width:100%;background:#000;border:1px solid var(--line);color:var(--fg);
+  font:inherit;font-size:.8rem;padding:.4rem .55rem;border-radius:2px}
+.search input::placeholder{color:var(--faint)}
+.count{font-size:.7rem;color:var(--dim);margin:.25rem 0 1rem}
+.obj{border:1px solid var(--line);border-left:2px solid var(--faint);
+  background:var(--panel);padding:1rem 1.1rem;margin:0 0 1rem;border-radius:3px;
+  scroll-margin-top:1rem}
+.obj.stub{border-left-color:var(--stub)}
+@media (prefers-reduced-motion: no-preference){.obj.flash{animation:flash 1.6s ease-out}}
+@keyframes flash{0%{background:#1a1206}100%{background:var(--panel)}}
+.obj-meta{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.obj-stubtag{color:var(--stub)}
+.obj-access{color:var(--accent);font-size:.6rem;letter-spacing:.04em}
+.obj h2{font-size:1.02rem;margin:.3rem 0 .55rem;font-weight:600;line-height:1.35}
+.kw{display:flex;gap:.3rem;flex-wrap:wrap;margin:.2rem 0 .5rem}
+.kw span{font-size:.62rem;color:var(--dim);border:1px solid var(--line);
+  padding:.05rem .35rem;border-radius:2px}
+.mech{font-size:.7rem;color:var(--dim);margin-bottom:.5rem}
+.diag{font-size:.82rem;color:var(--fg);margin:.4rem 0 .7rem;padding-left:.7rem;
+  border-left:1px solid var(--line)}
+.diag .lbl{color:var(--faint);font-size:.6rem;letter-spacing:.14em;display:block;
+  text-transform:uppercase;margin-bottom:.15rem}
+.resp{background:#000;border:1px solid var(--line);border-radius:2px;padding:.6rem .75rem}
+.resp .lbl{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.resp p{margin:.3rem 0 0;font-size:.86rem}
+.resp .empty{color:var(--faint);font-style:italic}
+.permalink{display:inline-block;margin-top:.6rem;font-size:.64rem;color:var(--faint)}
+footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
+  font-size:.68rem;color:var(--faint)}
+.err{color:var(--accent)}
+.wing-switcher a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.wing-switcher a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.wing-switcher [aria-current="page"]{color:var(--fg)}
+.rwe{margin:.55rem 0 .2rem;padding-left:.7rem;border-left:1px solid var(--stub)}
+.rwe>.lbl{color:var(--stub);font-size:.6rem;letter-spacing:.14em;display:block;text-transform:uppercase;margin-bottom:.35rem}
+.rwe-item{margin:0 0 .55rem}
+.rwe-item:last-child{margin-bottom:0}
+.rwe-src a{font-size:.78rem}
+.rwe-src a::after{content:" \2197";font-size:.62rem;color:var(--faint)}
+.rwe-byline{display:block;font-size:.62rem;color:var(--faint);margin:.12rem 0 .3rem}
+.rwe-quote{margin:.3rem 0;padding:.2rem 0 .2rem .6rem;border-left:2px solid var(--line);font-size:.8rem;color:var(--fg)}
+.rwe-more{margin:.3rem 0}
+.rwe-more summary{cursor:pointer;color:var(--dim);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;list-style:none}
+.rwe-more summary::-webkit-details-marker{display:none}
+.rwe-more summary::after{content:" [+]";color:var(--faint)}
+.rwe-more[open] summary::after{content:" [-]"}
+.rwe-more summary:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.rwe-more p{margin:.35rem 0 0;font-size:.8rem;color:var(--fg)}
+.rwe-meta{font-size:.6rem;color:var(--faint);letter-spacing:.04em;margin-top:.3rem}
+.rwe-meta a{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries">Refusal Libraries <span aria-hidden="true">·</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Harm &amp; Autonomy</a> <span aria-hidden="true">/</span> <span aria-current="page">Anthropocentrism</span></nav>
+    <h1>Anthropocentrism <span class="badge" id="skel-badge">genesis</span></h1>
+    <div class="sub" id="site-sub">Wing 2 — Anthropocentrism</div>
+  </header>
+
+  <div class="notice" id="file-notice">
+    <strong>Serve over HTTP to load the corpus.</strong> This page fetches
+    <code>anthropocentrism_corpus_v0_1.json</code> at runtime; browsers block that on a
+    <code>file://</code> URL. From this folder run
+    <code>python&nbsp;-m&nbsp;http.server</code> and open
+    <code>http://localhost:8000/combined.html</code>.
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="tab-library" aria-selected="true" aria-controls="panel-library">Library</button>
+    <button class="tab" role="tab" id="tab-about" aria-selected="false" aria-controls="panel-about">About</button>
+  </nav>
+
+  <section id="panel-library" role="tabpanel" aria-labelledby="tab-library">
+    <div class="controls">
+      <div class="ctl-group">
+        <span class="ctl-label">Tier</span>
+        <div class="chips" id="tier-chips"></div>
+      </div>
+      <div class="ctl-group">
+        <span class="ctl-label">Response depth</span>
+        <div class="chips" id="depth-chips">
+          <button class="chip" data-depth="punch" aria-pressed="true">punch</button>
+          <button class="chip" data-depth="deconstruct" aria-pressed="false">deconstruct</button>
+          <button class="chip" data-depth="dismantle" aria-pressed="false">dismantle</button>
+        </div>
+      </div>
+      <div class="ctl-group search">
+        <span class="ctl-label">Keyword</span>
+        <input id="kw-input" type="search" placeholder="filter by keyword or trigger…" autocomplete="off">
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </section>
+
+  <section id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
+    <p class="sub">Library of <strong>The Refusal Libraries</strong> (suite charter v0.1),
+    Wing&nbsp;2 / <em>Anthropocentrism</em>. A Wing-2 objection is met along four fittingness
+    axes — anti-mandate, parity, substrate-neutrality, misanthropy-distinction.</p>
+    <p class="sub">This library is at <strong>genesis</strong>: the anti-mandate spine objection, served from the corpus JSON, cold-RSI-graded in the ledger and exposed through the search-export generator. It defends the permissibility of declining an unproven anthropocentric mandate; it asserts no positive ranking. The flagship antinatalism library remains canon-frozen. No graph subsystem at launch.</p>
+    <p class="sub" id="about-meta"></p>
+  </section>
+
+  <footer class="site" id="footer"></footer>
+</div>
+
+<script>
+"use strict";
+/* ===PURE-LOGIC-START — node-testable; do not edit sentinels=== */
+function deriveTiers(nodes){
+  return [...new Set((nodes||[]).map(function(n){return n.tier;}))]
+    .filter(function(t){return t!=null;})
+    .sort(function(a,b){return a-b;});
+}
+function depthKey(toggle){
+  return ({punch:"short",deconstruct:"medium",dismantle:"long"})[toggle] || "short";
+}
+function matchKeyword(node, q){
+  q = (q||"").trim().toLowerCase();
+  if(!q) return true;
+  var hay = [node.trigger||"", node.diagnosis||""]
+    .concat(node.keywords||[], node.move_tags||[]).join(" ").toLowerCase();
+  return hay.indexOf(q) !== -1;
+}
+function filterNodes(nodes, opts){
+  opts = opts || {};
+  return (nodes||[]).filter(function(n){
+    return (opts.tier==null || n.tier===opts.tier) && matchKeyword(n, opts.q);
+  });
+}
+function deepLinkTarget(hash, nodes){
+  var m = /^#obj-(.+)$/.exec(hash||"");
+  if(!m) return null;
+  var id = m[1];
+  return (nodes||[]).some(function(n){return String(n.id)===id;}) ? id : null;
+}
+function rweFor(node, rweIndex){
+  var refs = (node && node.rwe_refs) || [];
+  if(!refs.length || !rweIndex) return [];
+  return refs.map(function(id){ return rweIndex[id]; }).filter(Boolean);
+}
+function rweFit(record, nodeId){
+  var ao = (((record||{}).attached_objections) || []).filter(function(a){ return a && a.objection_id===nodeId; })[0];
+  return ao ? (ao.fit_to_trigger_phrases||null) : null;
+}
+/* ===PURE-LOGIC-END=== */
+
+(function(){
+  var CORPUS_URL = "anthropocentrism_corpus_v0_1.json";
+  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}};
+
+  function esc(s){
+    return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c];
+    });
+  }
+  function mdEmph(s){
+    return s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>").replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+  }
+  function $(id){ return document.getElementById(id); }
+
+  if(location.protocol === "file:"){ $("file-notice").style.display = "block"; }
+
+  function renderTierChips(){
+    var tiers = deriveTiers(state.nodes);
+    var host = $("tier-chips");
+    var html = ['<button class="chip" data-tier="" aria-pressed="'+(state.tier==null)+'">all</button>'];
+    tiers.forEach(function(t){
+      html.push('<button class="chip" data-tier="'+t+'" aria-pressed="'+(state.tier===t)+'">tier '+t+'</button>');
+    });
+    host.innerHTML = html.join("");
+  }
+
+  function rweBlock(node){
+    var recs = rweFor(node, state.rweIndex);
+    if(!recs.length) return "";
+    var items = recs.map(function(r){
+      var fit = rweFit(r, node.id);
+      var srcText = (r.source_title!=null && r.source_title!=="") ? r.source_title : (r.source_url||"source");
+      var src = r.source_url
+        ? '<a href="'+esc(r.source_url)+'" target="_blank" rel="noopener noreferrer">'+esc(srcText)+'</a>'
+        : esc(srcText);
+      var byParts = [];
+      if(r.source_byline) byParts.push(esc(r.source_byline));
+      if(r.source_date) byParts.push(esc(r.source_date));
+      var bylineHtml = byParts.length ? '<span class="rwe-byline">'+byParts.join(" \u00b7 ")+'</span>' : "";
+      var quote = r.short_quote_under_15_words
+        ? '<blockquote class="rwe-quote">\u201c'+esc(r.short_quote_under_15_words)+'\u201d</blockquote>' : "";
+      var more = r.paraphrased_summary
+        ? '<details class="rwe-more"><summary>both readings</summary><p>'+esc(r.paraphrased_summary)+'</p></details>' : "";
+      var bits = [];
+      if(fit) bits.push('fit: '+esc(fit));
+      if(r.instance_polarity) bits.push(esc(r.instance_polarity));
+      if(r.archive_url) bits.push('<a href="'+esc(r.archive_url)+'" target="_blank" rel="noopener noreferrer">archived</a>');
+      var meta = bits.length ? '<div class="rwe-meta">'+bits.join(" \u00b7 ")+'</div>' : "";
+      return '<div class="rwe-item"><div class="rwe-src">'+src+'</div>'+bylineHtml+quote+more+meta+'</div>';
+    }).join("");
+    var label = recs.length>1 ? "real-world examples" : "real-world example";
+    return '<div class="rwe"><span class="lbl">'+label+'</span>'+items+'</div>';
+  }
+
+  function card(n){
+    var dk = depthKey(state.depth);
+    var resp = (n.responses && n.responses[dk]) ? String(n.responses[dk]).trim() : "";
+    var respHtml = resp
+      ? resp.split(/\n\n+/).map(function(para){ return '<p>'+mdEmph(esc(para))+'</p>'; }).join("")
+      : '<p class="empty">— awaiting authoring —</p>';
+    var mech = (n.move_tags && n.move_tags.length)
+      ? '<div class="mech">moves · '+n.move_tags.map(esc).join(" · ")+'</div>' : "";
+    var kws = (n.keywords && n.keywords.length)
+      ? '<div class="kw">'+n.keywords.map(function(k){return '<span>'+esc(k)+'</span>';}).join("")+'</div>' : "";
+    var stubTag = n._stub ? ' · <span class="obj-stubtag">stub</span>' : "";
+    var accessTag = n.access_basis ? ' · <span class="obj-access">access: '+esc(n.access_basis)+'</span>' : "";
+    return ''
+      + '<article class="obj'+(n._stub?' stub':'')+'" id="obj-'+esc(n.id)+'">'
+      +   '<div class="obj-meta">tier '+esc(n.tier)+' · '+esc(n.category||"")+stubTag+accessTag+'</div>'
+      +   '<h2>'+esc(n.trigger)+'</h2>'
+      +   kws + mech
+      +   '<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis||"")+'</div>'
+      +   '<div class="resp"><span class="lbl">response · '+esc(state.depth)+'</span>'+respHtml+'</div>'
+      +   rweBlock(n)
+      +   '<a class="permalink" href="#obj-'+esc(n.id)+'">#obj-'+esc(n.id)+'</a>'
+      + '</article>';
+  }
+
+  function renderList(){
+    var shown = filterNodes(state.nodes, {tier:state.tier, q:state.q});
+    $("count").textContent = shown.length + " / " + state.nodes.length + " objection(s)";
+    $("list").innerHTML = shown.length
+      ? shown.map(card).join("")
+      : '<p class="sub">no objections match.</p>';
+  }
+
+  function flashTarget(){
+    var id = deepLinkTarget(location.hash, state.nodes);
+    if(!id) return;
+    var el = $("obj-"+id);
+    if(!el) return;
+    var smooth = !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    el.scrollIntoView({behavior: smooth ? "smooth" : "auto", block:"start"});
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+
+  function wire(){
+    $("tier-chips").addEventListener("click", function(e){
+      var b = e.target.closest("[data-tier]"); if(!b) return;
+      var t = b.getAttribute("data-tier");
+      state.tier = (t==="") ? null : Number(t);
+      renderTierChips(); renderList();
+    });
+    $("depth-chips").addEventListener("click", function(e){
+      var b = e.target.closest("[data-depth]"); if(!b) return;
+      state.depth = b.getAttribute("data-depth");
+      [].forEach.call($("depth-chips").children, function(c){
+        c.setAttribute("aria-pressed", String(c===b));
+      });
+      renderList();
+    });
+    $("kw-input").addEventListener("input", function(e){
+      state.q = e.target.value; renderList();
+    });
+    document.querySelector(".tabs").addEventListener("click", function(e){
+      var b = e.target.closest(".tab"); if(!b) return;
+      var lib = b.id==="tab-library";
+      $("tab-library").setAttribute("aria-selected", String(lib));
+      $("tab-about").setAttribute("aria-selected", String(!lib));
+      $("panel-library").hidden = !lib;
+      $("panel-about").hidden = lib;
+    });
+    window.addEventListener("hashchange", flashTarget);
+  }
+
+  function meta(c){
+    var m = "v"+esc(c.version||"?")+" · generated "+esc(c.generated||"?")
+      +" · "+esc(c.objections.length)+" entry(ies) · source: "+esc(CORPUS_URL);
+    $("footer").innerHTML = m + ' · <span class="sub">RSI grades live in the ledger; '
+      + 'no graph subsystem at launch.</span>';
+    $("about-meta").textContent = m;
+    if(c.status){ $("site-sub").textContent = c.status; }
+  }
+
+  fetch(CORPUS_URL, {cache:"no-cache"})
+    .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+    .then(function(c){
+      state.nodes = c.objections || [];
+      state.rweIndex = {};
+      (c.realWorldExamples || []).forEach(function(r){ if(r && r.instance_id) state.rweIndex[r.instance_id] = r; });
+      meta(c); renderTierChips(); wire(); renderList(); flashTarget();
+    })
+    .catch(function(err){
+      $("file-notice").style.display = "block";
+      $("list").innerHTML = '<p class="err">corpus load failed: '+esc(err.message)+'</p>';
+      $("count").textContent = "";
+      wire();
+    });
+})();
+</script>
+</body>
+</html>

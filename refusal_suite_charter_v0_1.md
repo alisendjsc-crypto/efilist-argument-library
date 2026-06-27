@@ -27,6 +27,8 @@ Acts *on* a subject's suffering or self-authorship: prevent the victim, end the 
 Judges what stance is *fitting* toward humanity-as-such. Suffering is descriptive backdrop, never operative.
 → AI-as-Separation · Misanthropy Defense · Bio-Chauvinism Critique
 
+> *Wing 2 realized as one Anthropocentrism library; the three "Two wings" items (AI-as-Separation / Misanthropy Defense / Bio-Chauvinism Critique) are its axis-clusters, not a library-count.*
+
 **Boundary:** Wing 1 *reduces* suffering; Wing 2 *judges the thing that produces it.* The cut is operative-vs-attitudinal — **not** consent-vs-anthropocentrism. (Consent fails as the axis: suffering-reduction lives on both sides of a consent cut. The operative/attitudinal cut survives that, because Wing 2's relationship to suffering is descriptive only.)
 
 ---
