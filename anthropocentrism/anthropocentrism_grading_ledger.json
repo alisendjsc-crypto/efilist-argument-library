@@ -1,9 +1,9 @@
 {
   "artifact": "anthropocentrism_grading_ledger.json",
   "library": "anthropocentrism",
-  "version": "0.1.4",
-  "generated": "2026-06-26",
-  "status": "v0.1.4: +graded-privilege-tracks-capacity (the graded-status / scalar-standing retreat, T3, parity-family sibling) cold-graded 85.2/87.4/89.0 B/B/A (long unrounded geomean 0.88989 >= 0.88 A-line; banded from unrounded; band-true, no score-targeting; second long-A, near-twin of parity a hair below on the named genuine-biter residual, clear of the brute-ground band; discharges parity's named-open graded-privilege residual). 5 grades, ungraded: [].",
+  "version": "0.1.5",
+  "generated": "2026-06-27",
+  "status": "v0.1.5: +dissent-is-misanthropy (the misanthropy / motive-contamination fence-guard, T4, brute-ground-terminus-from-the-side) cold-graded 85.6/87.7/89.4 B/B/A (long unrounded geomean 0.893765 >= 0.88 A-line; banded from unrounded; band-true, no score-targeting; third long-A, a clean-dissolve fence-guard with no primitive-concession ceiling, clear of the brute-ground band; discharges brute-kind's named bad-faith-charge-residual via the general motive-orthogonality principle). 6 grades, ungraded: [].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
   "band_thresholds": {
@@ -150,6 +150,29 @@
       },
       "long": {
         "rsi_pct": 89.0,
+        "grade": "A"
+      },
+      "headline_grade_long": "A"
+    },
+    "dissent-is-misanthropy": {
+      "graded": true,
+      "axes": {
+        "v": 0.93,
+        "s": 0.88,
+        "c": 0.89,
+        "r": 0.87,
+        "a": 0.9
+      },
+      "short": {
+        "rsi_pct": 85.6,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.7,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 89.4,
         "grade": "A"
       },
       "headline_grade_long": "A"
