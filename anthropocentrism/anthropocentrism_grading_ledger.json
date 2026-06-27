@@ -1,9 +1,9 @@
 {
   "artifact": "anthropocentrism_grading_ledger.json",
   "library": "anthropocentrism",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "generated": "2026-06-26",
-  "status": "v0.1.1: +privilege-tracks-a-capacity (the parity / capacity-tracking node) cold-graded 85.8/87.9/89.6 B/B/A (headline A; long unrounded geomean 0.895743 clears the 0.88 A-line; short/medium band B from unrounded; band-true, no score-targeting). 2 grades, ungraded: [].",
+  "status": "v0.1.2: +species-membership-is-the-ground (the brute-kind / membership-not-capacity ground, T4) cold-graded 83.4/85.6/87.3 all-B (long unrounded geomean 0.873321 < 0.88 A-line; banded from unrounded; band-true, no score-targeting; correct - a node that concedes the primitive ceilings below A). 3 grades, ungraded: [].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
   "band_thresholds": {
@@ -84,6 +84,29 @@
         "grade": "A"
       },
       "headline_grade_long": "A"
+    },
+    "species-membership-is-the-ground": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.88,
+        "c": 0.84,
+        "r": 0.83,
+        "a": 0.92
+      },
+      "short": {
+        "rsi_pct": 83.4,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 85.6,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.3,
+        "grade": "B"
+      },
+      "headline_grade_long": "B"
     }
   }
 }

@@ -170,7 +170,7 @@ Optionality nodes have answered harms to the *chooser*. The first **third-party 
 
 **Membership.** Cut stays **operative/attitudinal**. Positive criterion: a node qualifies iff **(i)** the objection asserts an anthropocentric *mandate*, **and (ii)** the rebuttal discharges on attitudinal-deontic grounds *without* a suffering calculus. Veganism fails (ii) → stays Wing 1. Own-existence / independent-others re-cut: **re-deferred** (forced only by a node that strains the cut; cross-cuts operative/attitudinal regardless).
 
-**Fittingness axis-set** (replaces the four-strand map for Wing 2): **anti-mandate** (spine, load-bearing) · **parity / capacity-tracking** (load-bearing) · **substrate-neutrality / successor-legitimacy** (provisional, likely folds into parity) · **misanthropy-distinction** (fence-guard, node-sparse). All refusal-of-mandate shaped.
+**Fittingness axis-set** (replaces the four-strand map for Wing 2): **anti-mandate** (spine, load-bearing) · **parity / capacity-tracking** (load-bearing) · **substrate-neutrality / successor-legitimacy** (provisional, routes to **kind-membership** / brute-ground not parity: substrate has no capacity-gap; reconfirm when authored) · **misanthropy-distinction** (fence-guard, node-sparse) · **kind-membership** (brute-ground, load-bearing at T4; met by primitive-non-bindingness and the partiality/standing distinction, not the parity capacity-gap; added K149). All refusal-of-mandate shaped.
 
 **Tiers.** **T1–T5**, full range — the mirror of Wing 1's T2–T4. Wing 2 populates the T1 (raw speciesist reflex) and T5 (self-undermining / meta) that operative/patient-facing scope structurally lacks. Populate fresh, author-not-scaffold, size down.
 

@@ -47,7 +47,7 @@ import sys, os, json, re, importlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CANON_THRESHOLDS = {"A": 0.88, "B": 0.82, "C": 0.76, "D": 0.0}
-FITTINGNESS_AXES = {"anti-mandate", "parity", "substrate-neutrality", "misanthropy-distinction"}
+FITTINGNESS_AXES = {"anti-mandate", "parity", "substrate-neutrality", "misanthropy-distinction", "kind-membership"}
 WING_AXIS_VOCAB = {2: FITTINGNESS_AXES}  # corpus.wing -> controlled vocab for the embedded fittingness-axis move_tag
 RWE_POLARITY_VALUES = {"response-supporting", "objector-weaponized", "neutral-illustration", "contested"}
 RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
