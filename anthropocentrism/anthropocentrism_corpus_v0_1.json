@@ -188,5 +188,124 @@
       "rwe_refs": []
     }
   ],
-  "realWorldExamples": []
+  "realWorldExamples": [],
+  "wing2_objection_set_marker": {
+    "marker_type": "objection_set_provisional_complete",
+    "pattern_ref": "RTD wing1_objection_set_marker",
+    "status": "provisional-complete",
+    "as_of": "K153 / 2026-06-27",
+    "wing": 2,
+    "wing_label": "Anthropocentrism",
+    "assertion": "The standing 6-node roster exhausts the distinct grounds for the anthropocentric-mandate dissent that clear a fresh G1 distinctness/subsumption test. Capacity lattice CLOSED, misanthropy perimeter COVERED. 'provisional-complete' = a frozen, citable closure of the objection-set asserting structural completeness + internal coherence — NOT dialectical victory, NOT 'done'. Continuous improvement runs on new lines; new-objection intake reopens the set.",
+    "honest_residuals": "Two nodes concede their primitives openly and rebut by binds-no-dissenter, not by defeat (consistent with dissolves-not-defeats): species-membership-is-the-ground (87.3/B) and substrate-is-the-ground (87.4/B). The spine (87.4/B) is a burden-allocation, not a positive ranking. parity / graded-status / dissent are clean A.",
+    "roster": [
+      {
+        "id": "human-centrism-is-the-default",
+        "role": "spine",
+        "tier": 2,
+        "long": {
+          "rsi_pct": 87.4,
+          "grade": "B"
+        }
+      },
+      {
+        "id": "privilege-tracks-a-capacity",
+        "role": "parity",
+        "tier": 3,
+        "long": {
+          "rsi_pct": 89.6,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "graded-privilege-tracks-capacity",
+        "role": "graded-status",
+        "tier": 3,
+        "long": {
+          "rsi_pct": 89.0,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "species-membership-is-the-ground",
+        "role": "brute-kind",
+        "tier": 4,
+        "long": {
+          "rsi_pct": 87.3,
+          "grade": "B"
+        }
+      },
+      {
+        "id": "substrate-is-the-ground",
+        "role": "substrate",
+        "tier": 4,
+        "long": {
+          "rsi_pct": 87.4,
+          "grade": "B"
+        }
+      },
+      {
+        "id": "dissent-is-misanthropy",
+        "role": "fence-guard",
+        "tier": 4,
+        "long": {
+          "rsi_pct": 89.4,
+          "grade": "A"
+        }
+      }
+    ],
+    "tier_structure": {
+      "effective_populated": [
+        2,
+        3,
+        4
+      ],
+      "t1_emotional": "UNPOPULATED — the bare-incumbency / reflexive 'it's just obvious humans come first' move is folded into the spine's burden-allocation (default-not-justification); no distinct T1 node earns its keep.",
+      "t5_meta": "UNPOPULATED — the fence-guard-as-its-own-tier (T5/Meta) enumeration election is NOT opened at closure. A closure marker does not force the tier-enumeration; dissent-is-misanthropy stands at T4 by precedent.",
+      "frame_note": "Inherited tier map {1 Emotional, 2 Folk, 3 Structural, 4 Genuine-philosophical, 5 Meta} is a provisional reference; the render derives its tier filter from nodes actually present (T2–T4)."
+    },
+    "consolidation_survey": {
+      "method": "G1 distinctness/subsumption falsifier applied to every surveyed vector. A node is individuated by a DISTINCT GROUND, not by rebuttal-move — every node ultimately routes through the spine's permission-to-decline; that shared engine is NOT subsumption. Subsumption = the candidate's ground reduces to a roster ground.",
+      "vectors": [
+        {
+          "vector": "AI-as-Separation",
+          "gloss": "AI is outside the circle, vindicating the human inside.",
+          "verdict": "FAILS G1",
+          "routing": "Substrate-flavored reading is already templated by substrate-is-the-ground (its long subsumes/templates the AI/substrate case). Its only non-substrate rescue is the artifactuality ground — which itself bifurcates (see below). No surviving distinct ground."
+        },
+        {
+          "vector": "Bio-Chauvinism",
+          "gloss": "Privileging life over non-life; anti-human-privilege is special pleading.",
+          "verdict": "FAILS G1 (both readings)",
+          "routing": "(a) 'life-as-such grounds standing' → substrate-is-the-ground (life qua biological constitution = a primitive). (b) 'you privilege life over non-life, so dissent is special pleading' (tu-quoque) → spine: decline the life-mandate on the same unproven-mandate grounds; declining-not-asserting generalises across in-group boundaries."
+        },
+        {
+          "vector": "Artifactuality / made-vs-born",
+          "gloss": "Standing tracks ORIGIN (born/natural), not substrate (made-OF) or capacity; humans paradigm-born, AI made-for-purpose -> tool-status.",
+          "verdict": "FAILS G1 by bifurcation (THE close call)",
+          "routing": "The teleological-void premise ('made-FOR-a-purpose voids standing') presents as a fifth axis but has no stable distinct cashing-out. (1) END-OWNERSHIP reading ('externally-fixed telos, cannot self-originate ends') -> 'capacity for self-originated ends' IS a capacity -> PARITY (graded; doesn't track the species line; + graded-status on the degree point). (2) BARE-ORIGIN reading ('born/natural-origin just confers standing') -> a primitive offered without a mediating reason -> BRUTE-KIND template (primitive-ground-binds-no-dissenter). TERTIUM NON DATUR: origin can bear on standing only brutely (->brute-kind) or via a present feature the made-thing lacks (->parity); there is no third register. SECONDARY independent defeater: even granting AI lacks standing, the made/born line over-shoots the species line (it would enfranchise all born animals), so the wedge cannot re-establish the human-supremacy mandate -> spine burden/over-shoot.",
+          "axis_fork": "The once-per-arc fittingness-axis fork remains UNSPENT — correctly. No genuine ground beyond the five exists here; 'kind-membership' (axis 5) already absorbs the born-kind reading, parity/substrate-neutrality absorb the rest.",
+          "liveness_note": "The 'AI is just a tool we built' intuition is a live 2026 AI-standing objection — which is precisely why it is recorded here as ABSORBED-and-routed rather than silently omitted. A reader arriving with it is routed: capacity-flavored worry -> parity; bare made/born intuition -> brute-kind/substrate; supremacy inference -> spine."
+        },
+        {
+          "vector": "contractarian / reciprocity",
+          "verdict": "absorbed",
+          "routing": "PARITY — reciprocity is a capacity."
+        },
+        {
+          "vector": "dignity / imago-dei",
+          "verdict": "absorbed",
+          "routing": "PARITY (rational-dignity) or BRUTE-KIND (brute-property)."
+        },
+        {
+          "vector": "potentiality",
+          "verdict": "absorbed",
+          "routing": "BRUTE-KIND / Cohen transmission (transmission-principle-not-established)."
+        }
+      ]
+    },
+    "register_invariant": "Permission-only / permissibility-of-dissent — defends the RIGHT to withhold assent to the anthropocentric mandate, never asserts a rival ranking (Williams-trap avoided). Firewall: no suffering calculus. Asymmetry-independent: no Benatar. Dissolves-not-defeats. Malignant-outliers OUT (charter L117). A positive 'supremacy is unfitting' claim remains RULED OUT (charter L169).",
+    "reopening": "New-objection intake reopens the set (MAJOR, its own bundled cut, terminus-reopening). A future candidate clearing G1 reopens it; none found at K153. The T5-Meta tier-enumeration election remains a separate, unforced decision.",
+    "export_invariance": "Non-rendering metadata. Marker is corpus + doc only: no index regen, no JSX/combined.html splice, no ledger change, no flagship pin. Cowork proves combined.html / index / JSX byte-unchanged at fold."
+  }
 }
