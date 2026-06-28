@@ -1,0 +1,61 @@
+{
+  "library": "transgenderism",
+  "wing": 1,
+  "wing_label": "Harm & Autonomy",
+  "title": "Transgenderism (optionality)",
+  "version": "0.1.0",
+  "generated": "2026-06-27",
+  "status": "v0.1.0 GENESIS (K159; Cowork fold of library-Claude's authored spine node). Transgenderism optionality library -- Refusal Suite Wing 1 (Harm & Autonomy), sibling of Right to Die. 3-strand verdict: harm / consent / sovereignty (compensation does NOT transfer -- absorbed into sovereignty as the defensive gift-of-body inversion). 1 objection authored (sovereignty spine); 13 inventoried. Optionality-only register: defends the right to self-determine, never exhorts transition. Status authored Cowork-side; overridable.",
+  "schema_note": "Greenfield trans corpus; node schema established K159 (library-Claude). Node fields: objection / rebuttal{short,medium,long} / strand / role / mechanism / move_tags / tier(int) / tier_justification / register_compliance / rwe. strand in {harm,consent,sovereignty} (3-strand verdict, validator-enforced). No access_basis (optionality-only). No diagnosis field (render omits it; index gloss derives from rebuttal.short). RSI grades live ONLY in transgenderism_grading_ledger.json. RWE schema vendored at transgenderism_rwe_schema_v0_1.json (append-only; none yet).",
+  "strands": [
+    "harm",
+    "consent",
+    "sovereignty"
+  ],
+  "strand_note": "Wing-1 instrument, 3 strands (Refusal Suite Charter v0.1; Transgenderism Build-Charter K159). sovereignty (spine; non-domination / anti-conscription) absorbs the non-consented natal-assignment imposition as the substance of the non-domination claim. consent (informed-consent axis; capacity-under-distress is L142-delicate -- rebut on autonomy without the dysphoria-pathologizing frame). harm (to the chooser -- regret / detransition / medical-harm / irreversibility; answered defensively, NOT dysphoria-relief, which the Firewall forbids). compensation does NOT transfer (its positive claim-right fork is firewalled for optionality-only trans). Bystander harm is NOT a strand -- it runs the charter three-prong posture gating in front of the strands.",
+  "rwe_schema": "transgenderism_rwe_schema_v0_1.json",
+  "tiers": {
+    "1": "Emotional/Reflexive",
+    "2": "Folk/Common-sense",
+    "3": "Structural/Pragmatic",
+    "4": "Genuine-philosophical",
+    "5": "Meta"
+  },
+  "tier_note": "Inherited tier-methodology FRAME (provisional reference, NOT authoritative). Tier count + enumeration are AUTHORED downstream, not scaffolded -- the render derives its tier filter from the nodes actually present, not from this map.",
+  "totalEntries": 1,
+  "totalResponses": 3,
+  "objections": [
+    {
+      "id": "gender-self-determination-is-the-default",
+      "anchor": "gender-self-determination-is-the-default",
+      "tier": 3,
+      "strand": "sovereignty",
+      "role": "spine",
+      "mechanism": "burden-inversion / anti-conscription (non-domination)",
+      "move_tags": [
+        "burden-inversion",
+        "anti-conscription",
+        "non-domination",
+        "dissolves-not-defeats",
+        "parity",
+        "arguendo-concession",
+        "autonomy-frame"
+      ],
+      "objection": "The burden is on the trans person to justify departing from their natal sex. Absent a successful justification — metaphysical (that one can change sex) or therapeutic (that intervention is medically necessary) — there is no right to transition; the default is to remain as assigned.",
+      "rebuttal": {
+        "short": "The objection loses on the burden before any evidence is heard. A sex-role assigned at birth was assigned without the assignee's assent — and an ascription no one consented to cannot be the thing a dissenter is obliged to rebut. So the demand to justify departing from your natal sex inverts: the standing question is not what licenses departure but what licenses holding a person to an unchosen assignment over their own name, body, and bearing. Nothing does, by default. The authority runs to the chooser; the one asserting power over another's self-presentation carries the burden of justifying that conscription. And this needs no claim that sex really changed: the right is a permission to withhold assent to an assignment, not a thesis about gender's metaphysics — so however that dispute resolves, it never reaches the right.",
+        "medium": "The objection loses on the burden before any evidence is weighed. It frames departure from one's natal sex as the thing requiring a warrant — metaphysical or therapeutic — and treats remaining-as-assigned as the costless default. But the assignment was made at birth, without the assignee's assent, and an ascription no one consented to has no default authority to bind the person it was placed on. We grant this everywhere else: a person owes no justification for departing from the religion, name, nationality, or vocation ascribed to them at birth before they are conceded authority over their own life. Sex/gender presentation is not the exception; treating it as one is the move that has to be argued, and the objection simply assumes it.\n\nSo the burden inverts. The standing question is not \"what licenses departure?\" but \"what licenses holding a person to an unchosen assignment over their own name, body, and bearing?\" — and the party asserting that power carries it, not the dissenter.\n\nCrucially, this concedes the objector's strongest premise and still wins. Grant arguendo that sex is biologically fixed and immutable. The right is untouched, because it never rested on sex being changeable — it rests on the chooser, not the assignment, holding authority over how they present and embody themselves. The metaphysical dispute is real and may go the objector's way; it lands on a claim the right does not make. Nor does the right need the therapeutic warrant: it does not say transition relieves suffering and is therefore owed — that would smuggle in a value-ranking the suite refuses. It says only that an unchosen assignment binds no one against their assent.",
+        "long": "The objection is a burden-allocation move wearing the costume of an evidentiary demand, and it loses at the allocation step, before any evidence is heard.\n\nIts structure: departure from one's natal sex is the thing that needs a warrant — either metaphysical (a demonstration that sex can be changed) or therapeutic (a demonstration that intervention is medically necessary) — while remaining-as-assigned is the costless, pre-justified default. Two burdens are bundled here and should be pulled apart. One is the burden of establishing a positive claim about the world (that sex is mutable) or about a treatment (that it is indicated). The other is the burden of exercising a self-regarding permission — of being the one who decides how one is named, embodied, and presented. The objection's whole force comes from charging the second to the account of the first: it makes the permission hostage to a metaphysical or clinical proof.\n\nBut the sex-role at issue was assigned at birth, without the assignee's assent. An ascription that no one consented to cannot be the default authority that a dissenter must overcome — it is not authority at all until something makes it so, and \"it was assigned\" makes nothing so. We treat this as obvious in every neighboring case. A person raised in a faith, given a name, sorted into a nationality or a trade at birth, owes no one a justification for leaving it before being conceded authority over their own life; the authority is theirs by default, and anyone who would hold them to the natal ascription is the one who must justify the holding. Sex/gender presentation is asserted to be the lone exception to this. That assertion is exactly what the objection needs and exactly what it never argues — it assumes the exception and calls the assumption a burden of proof.\n\nAllocate the burden honestly and it inverts. The standing question is not \"what licenses departure from the assignment?\" but \"what licenses holding a person to an unchosen assignment, over their own name, body, and bearing, against their assent?\" That is a claim of authority over another person, and the party making it carries the burden — not the dissenter, who is merely declining to be bound by something they never agreed to.\n\nThis is why the node concedes the objector's strongest card and still takes the hand. Grant, arguendo and in full, that sex is biological, fixed, and immutable — that no intervention really changes it. The right is untouched. It never rested on sex being changeable; it rests on the chooser, not the assignment, holding authority over self-presentation. The metaphysical dispute is genuine and may resolve against the trans claimant on its own terms; it resolves about a thesis the right does not assert. Symmetrically, the right declines the therapeutic warrant on purpose. It does not argue that transition relieves dysphoria and is therefore owed or advisable — that would convert a permission into a value-ranking of how a life should go, which this library refuses across the board. It argues only the narrow thing: an assignment made without assent binds no one against it.\n\nOne gesture remains. Society has an interest in stable categories — in shared sex-terms, in sorted spaces, in legible records. Granted; but this is a claim about effects on third parties, and it is adjudicated where third-party claims are adjudicated — through the harm principle's preconditions: is the cost direct or routed through others' choices, is foreclosing the right the narrowest effective instrument or does a channel-specific policy reach the cost, does foreclosure backfire on the very metric invoked. It does not retroactively convert a self-regarding permission into something requiring pre-justification. The interest, however real, is not a license to conscript a person's self-presentation as the instrument that secures it.\n\nWhat is left when the burden is set straight is the spine the rest of the library inherits: no one is conscripted into living under a sex/gender assignment made without their assent, and the standing refusal of that conscription simply is the authority to self-determine. That is the autonomy frame, and it is deliberately not the value frame. The case never says transition is good, healthy, or to be encouraged. It says the assignment has no claim on the assignee that the assignee did not grant — which is the most the suite will ever say, and, against an objection that the burden falls the other way, exactly enough."
+      },
+      "register_compliance": {
+        "optionality_only": true,
+        "autonomy_frame_not_dysphoria": true,
+        "asymmetry_independent": true,
+        "firewall_clean": "Suffering/dysphoria-relief is explicitly DECLINED as a warrant (the therapeutic-decline passages), not invoked. The node grounds only a non-domination permission; it makes no suffering-reduction claim, defensive or affirmative."
+      },
+      "tier_justification": "Conceptual-Residue Arguendo: grant the burden-allocation premise (default-to-remain + burden-on-the-dissenter) arguendo — the rebuttal DEFEATS it (exposed as question-begging via burden-inversion + parity), it does not merely dissolve-but-leave-standing. The 'sex is biologically fixed' premise the node grants arguendo is NOT this node's objection; it is the objection of S1 (metaphysical-denial, T4). Clean defeat of the burden-allocation move ⇒ T3 (structural/pragmatic). Clean-dissolve ⇒ A-long is consistent with the charter tier-grade signature.",
+      "rwe": []
+    }
+  ],
+  "realWorldExamples": []
+}

@@ -1,0 +1,144 @@
+{
+  "spec_id": "transgenderism_rwe_schema",
+  "spec_version": "0.2.2",
+  "library": "transgenderism",
+  "generated": "2026-06-27",
+  "status": "SKELETON -- empty plumbing (corpus.realWorldExamples == []). Trans genesis K159; forked from the RTD RWE schema (sibling vendoring of the flagship RWE family, sized down). instance_polarity/attestation_status/subject_type value-sets enforced by transgenderism_validator_v0_1.py (check_rwe). Data populated downstream (append-only); none fabricated.",
+  "parent_family": {
+    "spec_id": "real_world_examples_schema_v1",
+    "spec_version": "1.7",
+    "file": "real_world_examples_schema_v1_7.json",
+    "relation": "Sibling vendoring of the flagship RWE family for anchor + export-discipline compatibility, sized down for a small library. Heavier attestation fields (archetype_signal_* / frame_inversion / layer_skepticism / public_reach / refutation_variant_id) are INHERITABLE FROM THE PARENT per record when needed — NOT required at launch."
+  },
+  "anchor_discipline": "instance_id values are APPEND-ONLY deep-link anchors (recommended rwe-<id> family) — never recycled, mirroring the objection #obj-<id> covenant.",
+  "binding": "RWE records live in corpus.realWorldExamples[]. Each attaches to >=1 objection via attached_objections[].objection_id (foreign key into corpus.objections[].id). Objection nodes carry rwe[] as the reverse slot (the trans node field; RTD uses rwe_refs) (an array of instance_id).",
+  "example_record_schema": {
+    "_doc": "Core/lighter record fields, sized down from the flagship example_record_schema; extend from the parent as a record needs it. instance_polarity/attestation_status/subject_type carry explicit enforced value-sets (validator-checked). recovery_status is STRUCK (see struck_fields).",
+    "instance_id": {
+      "type": "string",
+      "required": true,
+      "pattern_recommended": "^rwe-[a-z0-9][a-z0-9-]*$",
+      "uniqueness": "global",
+      "append_only": true
+    },
+    "attached_objections": {
+      "type": "array",
+      "required": true,
+      "min_items": 1,
+      "items": {
+        "objection_id": {
+          "type": "string",
+          "required": true,
+          "foreign_key": "$.objections[*].id"
+        },
+        "fit_to_trigger_phrases": {
+          "type": "enum",
+          "required": true,
+          "values": [
+            "exact",
+            "loose",
+            "partial",
+            "parallel-structure-different-anchor"
+          ]
+        }
+      }
+    },
+    "source_url": {
+      "type": "string",
+      "required": true,
+      "format": "url"
+    },
+    "source_title": {
+      "type": "string",
+      "required": true
+    },
+    "source_byline": {
+      "type": "string",
+      "required": false
+    },
+    "source_date": {
+      "type": "string",
+      "required": false,
+      "format": "YYYY-MM-DD"
+    },
+    "archive_url": {
+      "type": "string",
+      "required": false,
+      "format": "url",
+      "_doc": "corpus-decay hedge; recommended for fragile sources"
+    },
+    "instance_polarity": {
+      "type": "enum",
+      "required": true,
+      "values": [
+        "response-supporting",
+        "objector-weaponized",
+        "neutral-illustration",
+        "contested"
+      ],
+      "_doc": "Replaces the prior values_ref:parent. Its main driver (recovery-after-intervention cases) is gone with recovery_status; temporary-problem itself ships empty or neutral-illustration only. Other nodes may still carry genuinely two-sided cases. 'contested' (4th value, added v0.2.2) = one source cited by BOTH sides (e.g. an official report read as evidence by disability-rights critics AND disputed by MAiD-supportive analysts)."
+    },
+    "short_quote_under_15_words": {
+      "type": "string",
+      "required": false,
+      "max_words": 15
+    },
+    "paraphrased_summary": {
+      "type": "string",
+      "required": false
+    },
+    "subject_type": {
+      "type": "enum",
+      "required": true,
+      "values": [
+        "real-person",
+        "structural",
+        "category"
+      ],
+      "_doc": "Enforcement discriminator. subject_type == real-person triggers the attestation requirement."
+    },
+    "attestation_status": {
+      "type": "enum",
+      "required": false,
+      "required_when": "subject_type == real-person",
+      "values": [
+        "public-record",
+        "published-case",
+        "subject-public-testimony",
+        "family-attested-public",
+        "unverified"
+      ],
+      "_doc": "Real-person records: REQUIRED and must not be 'unverified' ('unverified' blocks the record). The responsible-citation spine — independent of the (struck) futility question."
+    }
+  },
+  "validation_rules": {
+    "_doc": "Core rules vendored from the parent + the v0.2 enforcement set. Implemented in transgenderism_validator_v0_1.py (check_rwe): PRESENCE checks (subject_type + instance_polarity required on every record) + enum checks on instance_polarity/attestation_status/subject_type; subject_type==real-person requires attestation_status != unverified. VACUOUS while realWorldExamples == []; engages automatically when RWE data lands. NO recovery_status checks.",
+    "rules": [
+      "v1_unique_instance_id",
+      "v3_one_quote_per_source_per_objection_set",
+      "v4_foreign_key_validity — attached_objections[].objection_id resolves to corpus objections[].id",
+      "v9_fit_enum_per_attachment",
+      "rwe_refs_resolve — every objection.rwe_refs[] resolves to a realWorldExamples[].instance_id (both directions)",
+      "subject_type_required — subject_type present on EVERY record (FAIL if absent; the real-person attestation guard)",
+      "instance_polarity_required — instance_polarity present on every record (per required:true)",
+      "polarity_enum — instance_polarity in {response-supporting,objector-weaponized,neutral-illustration,contested}",
+      "subject_type_enum — subject_type in {real-person,structural,category}",
+      "attestation_enum — attestation_status in {public-record,published-case,subject-public-testimony,family-attested-public,unverified}",
+      "real_person_attestation_required — subject_type==real-person => attestation_status present AND != unverified"
+    ]
+  },
+  "struck_fields": {
+    "recovery_status": "STRUCK for this library (trans, K159). Not applicable to an optionality-only register: the library makes no therapeutic/outcome claim (the Firewall forbids it), so no treatment-futility / regret-outcome field enters. Do NOT add recovery_status to records or the validator."
+  },
+  "citation_standard": {
+    "_doc": "Responsible-citation discipline (forked from RTD; trans-generic).",
+    "rules": [
+      "public-record only; no private individuals, no reconstructing a private person's case",
+      "attestation required + truthful on real-person records (unverified -> flag/FAIL)",
+      "no medical means/protocols, ever -- policy / population / clinical-outcome level only",
+      "no exhortation -- a record illustrates an empirical claim; never a model anyone should follow",
+      "catalogue the inverse honestly (general suite discipline)",
+      "conservative attribution -- verify subject/case at authoring; categories hold regardless"
+    ]
+  }
+}

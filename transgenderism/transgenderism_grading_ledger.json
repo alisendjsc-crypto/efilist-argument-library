@@ -1,0 +1,72 @@
+{
+  "artifact": "transgenderism_grading_ledger",
+  "library": "transgenderism",
+  "version": "0.1.0",
+  "generated": "2026-06-27",
+  "status": "v0.1.0 GENESIS. 1 grade: gender-self-determination-is-the-default -- short 84.3 / medium 86.5 / long 88.1 (B/B/A; headline A). Long is BOUNDARY A (unrounded geomean 0.8813); A/B-sensitive (see note). Geomean-less ledger (axes stored; band derived at regen; rsi_pct display-only). Cold-grade, greenfield. ungraded:[].",
+  "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
+  "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
+  "band_thresholds": {
+    "A": 0.88,
+    "B": 0.82,
+    "C": 0.76,
+    "D": 0.0
+  },
+  "entry_shape_reference": {
+    "_comment": "Shape a graded entry takes (keyed by corpus objection id under grades{}).",
+    "_geomean_note": "DERIVED from axes at regen (validator recomputes + bands); NOT stored -- band-true discipline.",
+    "graded": true,
+    "axes": {
+      "v": 0.0,
+      "s": 0.0,
+      "c": 0.0,
+      "r": 0.0,
+      "a": 0.0
+    },
+    "short": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "medium": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "long": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "headline_grade_long": "X"
+  },
+  "ungraded": [],
+  "grades": {
+    "gender-self-determination-is-the-default": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.85,
+        "c": 0.86,
+        "r": 0.85,
+        "a": 0.94
+      },
+      "short": {
+        "rsi_pct": 84.3,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.5,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.1,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "BOUNDARY A. A/B-sensitive: weight the contestability of the non-domination premise and the parity-rejection counter heavily and it crosses to B (~0.871). Committed read leaves it fractionally over 0.88 because the arguendo-concession genuinely neutralizes the strongest objector. Flagged, not smoothed.",
+      "prose_md5": {
+        "short": "6e847fa3959aefadd26373921cdd6eeb",
+        "medium": "10c9f3f9f28bcffdb9ffbf5c0cb52720",
+        "long": "3956f7f2dc10eddbabbb4dfe562368b7"
+      }
+    }
+  }
+}

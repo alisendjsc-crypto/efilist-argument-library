@@ -48,7 +48,7 @@ Wing 1 decomposes on four strands. Wing 2 runs on a separate *fittingness* axis,
 | Right to Die | ●● | ● | ●● | ●● |
 | Abortion | ● | ●● | ~ | ~ |
 | Veganism | ●● | proxy only *(can't self-author)* | — | — |
-| Anatomy Alteration | ~ *(dysphoria)* | ● | ●● | ●● |
+| Anatomy Alteration | ● *(medical-harm/regret)* | ● | ●● | — |
 
 Right to Die carries all four at full weight → richest → **pilot.**
 
