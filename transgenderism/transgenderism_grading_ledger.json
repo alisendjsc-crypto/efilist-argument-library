@@ -1,9 +1,9 @@
 {
   "artifact": "transgenderism_grading_ledger",
   "library": "transgenderism",
-  "version": "0.1.2",
-  "generated": "2026-06-27",
-  "status": "v0.1.2 (K161). 3 grades. Long-headline tally: A2 / B1. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
+  "version": "0.1.3",
+  "generated": "2026-06-28",
+  "status": "v0.1.3 (K162). 4 grades. Long-headline tally: A3 / B1. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
   "band_thresholds": {
@@ -124,6 +124,35 @@
         "short": "fa80337dd93ba2f32c6596a0b3762bfb",
         "medium": "5f831ea71037ccc3d6d53889cba09f4b",
         "long": "f87d42a88a3c63c03af80d9e2d43d563"
+      }
+    },
+    "the-limiting-principle-is-the-self-regarding-line": {
+      "graded": true,
+      "axes": {
+        "v": 0.92,
+        "s": 0.88,
+        "c": 0.9,
+        "r": 0.87,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 85.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 89.6,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-grade committed before reference comparison (axes tuple + per-depth prose_md5 fixed first; sibling calibration consulted only as post-commit sanity). G1 required reading siblings up front for distinctness — axes were nonetheless each derived from S3's intrinsic features with explicit reasoning, then sibling alignment observed, not targeted. T3 limiting-principle-defeat: Route A exhibits the self-regarding/other-regarding boundary as a non-arbitrary limiting line and DEFEATS the universal-negative 'no line exists' by counterexample; concedes no surviving primitive (unlike S1), so headline reaches A-long per charter L179 — NOT the T4-conceder B-cap. MEDIUM is BOUNDARY-B (unrounded 0.8794, just under the 0.88 A-edge): weight the scoped-defeat residual (S3 routes, does not resolve, the contestable-margin pronoun case) lighter and it would not cross; committed read leaves it fractionally under 0.88 because the medium compression drops the rung-by-rung sort and the explicit retreat-horn, thinning completeness exactly where the A-margin would have to come from. Flagged, not smoothed. s=0.88 (between spine 0.85 and S2 0.89): Route A leans on a harm-principle commitment an illiberal objector can reject — a real soundness cost vs S2's commitment-free tu-quoque — but Route B is a harm-principle-FREE proves-too-much floor that catches even that objector, so the discount is one notch, not more. a=0.91 (= S1/S2, below spine 0.94): Route A's dependence on the harm-jurisdiction line is the one auxiliary a hostile reader leans on; the named-amplifier discipline and Route-B floor offset it. Headline A consistent with S2's 89.8/A and seated fractionally below it via the justified s and a.",
+      "prose_md5": {
+        "short": "d5640923ac60997b320cc8fa274d68bf",
+        "medium": "6259c894e4604b7219c69a1f7122c68e",
+        "long": "3d89277c2e2cef9d5f37c57aef400f02"
       }
     }
   }
