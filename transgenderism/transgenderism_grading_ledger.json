@@ -1,9 +1,9 @@
 {
   "artifact": "transgenderism_grading_ledger",
   "library": "transgenderism",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "generated": "2026-06-28",
-  "status": "v0.1.4 (K163). 5 grades. Long-headline tally: A4 / B1. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
+  "status": "v0.1.5 (K164). 6 grades. Long-headline tally: A4 / B2. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). the-bystander-harm-licenses-no-foreclosure -- 84.2 / 86.3 / 88.0 (B/B/B; headline B; T3 harm-gate-defeat, the wing's first harm-to-third-parties node and the first to RUN the charter three-prong; A-ELIGIBLE per charter L179 [clean DEFEAT, no surviving primitive] but the axes land B-long; long BOUNDARY CELL, unrounded 0.87973 displays 88.0 but bands B, the wing's heaviest honest residual depresses r to .85; band-true at regen, NOT a primitive-conceder cap -- structurally distinct from S1's B; A/B-sensitive on r alone, r=.86 -> A). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
   "band_thresholds": {
@@ -182,6 +182,35 @@
         "short": "b847dd06da73955ab05707aae8a4d252",
         "medium": "a904f25b8b81ebcfb1ff285bf3cf33dc",
         "long": "2062e056d61388c858aa27bb9c067d93"
+      }
+    },
+    "the-bystander-harm-licenses-no-foreclosure": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.87,
+        "c": 0.87,
+        "r": 0.85,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 84.2,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.3,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.0,
+        "grade": "B"
+      },
+      "headline_grade_long": "B",
+      "note": "Cold-graded: axes committed from B1 intrinsic per-axis merit BEFORE sibling comparison (K162/K163 discipline); sibling RSI observed post-commit as sanity only, axes NOT adjusted to slot between siblings. v.90 — tight structure (harm-principle gate -> narrowest-instrument -> arena-routing; the impeach-right / arena-only fork is a clean dilemma; the aggregate proves-too-much move closes the re-aggregation probe), held off .91 by a soft spot in the pivotal 'arena-policy reaches the cost' premise (already-realized and interim displacement is not fully reached by a downstream eligibility rule). s.87 — the load-bearing premises are defended, not axiomatic (proportionality is standard liberal least-restrictive-means; the fork, the backfire-sort, and the aggregate parity are argued/exemplified), but the 'reaches the cost' premise carries heavy weight with a real un-neutralized residue (the cis athlete who already lost the final; the pre-rule interim), keeping s below S4's .88. c.87 — completeness relative-to-objection: sorts the family (sport / spaces / vulnerable-population), runs all three prongs, handles the fork and the re-aggregation retreat, sorts backfire honestly (bites in space, weak in sport); the routed-out category-eligibility and safeguarding questions are NOT c-gaps (S3/S4 precedent: routing a residual to the correct downstream adjudicator is not a c-penalty); the minor residue (interim/already-realized displacement) is what holds c off higher. r.85 — THE contested axis and the one that lands the headline. The core claim (the arena-cost does not license foreclosing the right) is hard to defeat: proportionality is tight, the fork closes the retreats, the aggregate proves-too-much closes the strongest probe. BUT two genuine costs hold r at .85: (i) the wing's HEAVIEST honest residual — the routed-out questions (elite-sport eligibility under retained advantage; vulnerable-population safety) are real, substantial, and unresolved, and a determined reader experiences the win as the narrowest in the wing; (ii) the pivotal 'reaches the cost' premise has an un-neutralized exception (already-realized/interim displacement) that is a dent, not mere narrowness. r.85 (not .86) is decisive: at r=.86 the long geomean clears 0.88 (A); at r=.85 it lands 0.8797 (B). Derived cold, NOT targeted. a.91 — register-signature axis: optionality-clean, firewall-clean, Williams-clean; both-sided non-domination (concedes the dissenter every cost in full and routes to legitimate adjudicators; refuses to conscript the claimant's gendered life as a safety/fairness margin); held off higher because the node DECLINES to secure the claimant's full outcome (category/space access is routed out), vindicating the RIGHT but explicitly not the ACCESS (cf. S4 a.91, same partial-outcome structure). Geomeans band-true on the UNROUNDED value: short 0.8416 -> 84.2 B, medium 0.8631 -> 86.3 B, long 0.87973 -> displays 88.0, BANDS B. BOUNDARY CELL FLAGGED (long): rsi_pct rounds to 88.0 (A's threshold) but the unrounded geomean 0.87973 < 0.88 bands B — the canonical boundary-cell phenomenon (display-only round vs band-on-unrounded), NOT smoothed. Medium (86.3) and short (84.2) are band-interior, no boundary. Headline_grade_long = B. HEADLINE-BAND LICENSING: the B is NOT a primitive-conceder cap. B1 is A-ELIGIBLE per charter L179 — clean T3 DEFEAT, no surviving primitive (physiology conceded arguendo, not load-bearing for the defeat, which runs on instrument-mismatch; cf. S2 A-long via arguendo-concession-then-defeat). The B is axes-driven: the wing's heaviest honest residual depresses r and the geomean falls fractionally under 0.88. Structurally distinct from S1's B (S1 = primitive-conceder B-cap, a STANDING sex-fact caps the ceiling; B1 = A-eligible, fell under the line on the axes). A/B-sensitivity is on r ALONE: r=.86 -> 88.2 A, r=.85 -> 88.0 B; the committed read takes r=.85 because the heaviest-residual and the 'reaches-the-cost' exception are real, so the honest landing is B-long with a flagged 88.0 boundary. Depth modifiers applied: medium c-0.05 r-0.03, short c-0.12 r-0.06; v/s/a depth-invariant.",
+      "prose_md5": {
+        "short": "7add6346da51e569b7dbdeac617b0a8a",
+        "medium": "31991dd8b78b8a2b785f58836f0e4fae",
+        "long": "c86044d17bfbd8a69b84134dd57ebf15"
       }
     }
   }
