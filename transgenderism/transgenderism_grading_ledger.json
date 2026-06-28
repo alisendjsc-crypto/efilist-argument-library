@@ -1,9 +1,9 @@
 {
   "artifact": "transgenderism_grading_ledger",
   "library": "transgenderism",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "generated": "2026-06-28",
-  "status": "v0.1.3 (K162). 4 grades. Long-headline tally: A3 / B1. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
+  "status": "v0.1.4 (K163). 5 grades. Long-headline tally: A4 / B1. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
   "band_thresholds": {
@@ -153,6 +153,35 @@
         "short": "d5640923ac60997b320cc8fa274d68bf",
         "medium": "6259c894e4604b7219c69a1f7122c68e",
         "long": "3d89277c2e2cef9d5f37c57aef400f02"
+      }
+    },
+    "the-permission-conscripts-no-one": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.88,
+        "c": 0.87,
+        "r": 0.87,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 84.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.6,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-graded: axes committed from S4 intrinsic per-axis merit BEFORE sibling comparison (K162 discipline); sibling RSI observed post-commit as sanity only, axes NOT adjusted to slot between siblings. v.90 — clean scope-defeat on the permission's logical form + a valid symmetric anti-conscription extension; faint equivocation-allegation surface on 'conscription' (held: assignment-enforcement and compelled-affirmation are one domination in two directions) keeps v off .91. s.88 — the permission/claim-right characterization is the correct analysis (the objection's whole force is the conflation) and the social-constitution counter self-undermines, but the premise is defended (analogy + tu-quoque), not axiomatic. c.87 — completeness relative-to-objection: thoroughly handles the misfire incl. the professional case and the social-constitution retreat; the live compulsion-policy question is correctly B1's lane, not an S4 gap (S3 precedent: routing a residual to the correct downstream node is not a c-penalty — S3 routes more and grades A-long). r.87 — the both-ways move makes the node hard to attack without self-undermining; a bullet-biting social-constructivist residue (fringe, and symmetric) keeps r off .88. a.91 — register-signature axis: both-ways non-domination respects dissenter and claimant equally, optionality-clean; the objector's autonomy is not FULLY vindicated by S4 alone (genuine-regime residual waits on B1), keeping a off .92. Geomeans band-true on the UNROUNDED value: short 84.8 B, medium 86.9 B, long 88.6 A. NO boundary cells (all three clear their band interiors). Headline A licensed: clean T3 DEFEAT concedes no surviving primitive (charter L179, A-eligible); the all-B signature is T4-primitive-conceder-only (cf. S2 A-long via arguendo-concession-then-defeat). A is robust — long stays ≥ 88.4 even at c_long=.86, so the A is not a threshold artifact of c=.87. Depth modifiers: medium c-0.05 r-0.03, short c-0.12 r-0.06; v/s/a depth-invariant.",
+      "prose_md5": {
+        "short": "b847dd06da73955ab05707aae8a4d252",
+        "medium": "a904f25b8b81ebcfb1ff285bf3cf33dc",
+        "long": "2062e056d61388c858aa27bb9c067d93"
       }
     }
   }
