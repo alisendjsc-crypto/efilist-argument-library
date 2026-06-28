@@ -21,7 +21,7 @@ Suffering-reduction is the **motive** (tagline over both wings); refusal is the 
 
 **Wing 1 — Operative / patient-facing**   (nav shorthand: *Harm & Autonomy*)
 Acts *on* a subject's suffering or self-authorship: prevent the victim, end the suffering, free the chooser.
-→ Antinatalism (flagship) · Right to Die · Abortion · Veganism · Anatomy Alteration
+→ Antinatalism (flagship) · Right to Die · Abortion · Veganism · Transgenderism
 
 **Wing 2 — Attitudinal / category-facing**   (nav shorthand: *Anthropocentrism*)
 Judges what stance is *fitting* toward humanity-as-such. Suffering is descriptive backdrop, never operative.
@@ -48,7 +48,7 @@ Wing 1 decomposes on four strands. Wing 2 runs on a separate *fittingness* axis,
 | Right to Die | ●● | ● | ●● | ●● |
 | Abortion | ● | ●● | ~ | ~ |
 | Veganism | ●● | proxy only *(can't self-author)* | — | — |
-| Anatomy Alteration | ● *(medical-harm/regret)* | ● | ●● | — |
+| Transgenderism | ● *(medical-harm/regret)* | ● | ●● | — |
 
 Right to Die carries all four at full weight → richest → **pilot.**
 
@@ -71,7 +71,7 @@ Compensation is owed to *everyone* (imposition is quality-independent, asymmetry
 - Suffering-gated answers threshold-arbitrariness. Audience: broad-secular.
 Pick per-objection which one you're standing on.
 
-Compensation also appears in **Anatomy Alteration** (alteration compensates the non-consented natal assignment) → promoted to suite primitive. Building Right to Die also pilots the compensational bridge Anatomy will reuse.
+Compensation is a suite primitive on the strength of Right to Die (●●), abortion (~), and the flagship (origin). It was provisionally expected in Transgenderism too — but the K159 strand-count verdict drops that: the non-consented natal assignment is a genuine imposition, yet compensation's load-bearing fork is the liberty→claim-right positive upgrade (fork 1), which the trans firewall forecloses (optionality-only; the positive carve is abortion-exclusive). The imposition's only firewall-safe use there is the defensive inversion of the gift-of-body objection, housed inside Sovereignty — not a compensation strand. The Transgenderism library therefore inherits Right to Die's sovereignty/obstruction load-bearer (fork-2 (b)), not its compensational bridge.
 
 ---
 

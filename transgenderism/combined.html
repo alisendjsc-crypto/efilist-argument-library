@@ -229,7 +229,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
   </section>
 
   <section id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
-    <p class="sub">This library defends the right to self-determine one's own gender presentation and embodiment, against the objections raised against it. It is not a claim that anyone <em>should</em> transition; it is a defense of the option, grounded in anti-conscription — no one is bound by a sex or gender assignment made without their assent. Answers run across three strands — sovereignty (the spine), consent, and harm to the chooser — in an optionality-only register that never argues from dysphoria-relief. Genesis pass (v0.1.0): the sovereignty spine is authored; the rest of the inventory awaits authoring.</p>
+    <p class="sub">This library defends the right to self-determine one's own gender presentation and embodiment, against objections raised to it. It is not a claim that anyone <em>should</em> transition; it is a defense of the option, grounded in anti-conscription — no one is bound by a sex or gender assignment made without their assent. Answers run across three strands — sovereignty (the spine), consent, and harm to the chooser — in an optionality-only register that never argues from dysphoria-relief. Genesis pass (v0.1.0): the sovereignty spine is authored; the rest of the inventory awaits authoring.</p>
     <p class="sub" id="about-meta"></p>
   </section>
 
@@ -267,7 +267,7 @@ function deepLinkTarget(hash, nodes){
   return (nodes||[]).some(function(n){return String(n.id)===id;}) ? id : null;
 }
 function rweFor(node, rweIndex){
-  var refs = (node && (node.rwe_refs || node.rwe)) || [];
+  var refs = (node && node.rwe_refs) || [];
   if(!refs.length || !rweIndex) return [];
   return refs.map(function(id){ return rweIndex[id]; }).filter(Boolean);
 }

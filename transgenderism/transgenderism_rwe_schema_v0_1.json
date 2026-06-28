@@ -11,7 +11,7 @@
     "relation": "Sibling vendoring of the flagship RWE family for anchor + export-discipline compatibility, sized down for a small library. Heavier attestation fields (archetype_signal_* / frame_inversion / layer_skepticism / public_reach / refutation_variant_id) are INHERITABLE FROM THE PARENT per record when needed — NOT required at launch."
   },
   "anchor_discipline": "instance_id values are APPEND-ONLY deep-link anchors (recommended rwe-<id> family) — never recycled, mirroring the objection #obj-<id> covenant.",
-  "binding": "RWE records live in corpus.realWorldExamples[]. Each attaches to >=1 objection via attached_objections[].objection_id (foreign key into corpus.objections[].id). Objection nodes carry rwe[] as the reverse slot (the trans node field; RTD uses rwe_refs) (an array of instance_id).",
+  "binding": "RWE records live in corpus.realWorldExamples[]. Each attaches to >=1 objection via attached_objections[].objection_id (foreign key into corpus.objections[].id). Objection nodes carry rwe_refs[] as the reverse slot (an array of instance_id).",
   "example_record_schema": {
     "_doc": "Core/lighter record fields, sized down from the flagship example_record_schema; extend from the parent as a record needs it. instance_polarity/attestation_status/subject_type carry explicit enforced value-sets (validator-checked). recovery_status is STRUCK (see struck_fields).",
     "instance_id": {

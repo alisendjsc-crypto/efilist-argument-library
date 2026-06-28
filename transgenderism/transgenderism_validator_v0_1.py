@@ -32,9 +32,9 @@ CHECKS:
 
 
 Trans genesis (K159): forked from the RTD validator. Node shape:
-objection/rebuttal/strand/role/mechanism/move_tags/tier(int)/rwe (NO trigger/responses/
+objection/rebuttal/strand/role/mechanism/move_tags/tier(int)/rwe_refs (NO trigger/responses/
 category/diagnosis/access_basis/keywords). strand in {harm,consent,sovereignty} (3-strand
-verdict, enforced). rwe[] is the RWE ref slot (RTD's rwe_refs). Keyword-projection source =
+verdict, enforced). rwe_refs[] is the RWE ref slot (RTD pattern). Keyword-projection source =
 node keywords if present else move_tags. Ledger is geomean-less; band derived from axes at
 regen (check_band_geomean recomputes the long-axes band).
 
@@ -51,7 +51,7 @@ RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
 RWE_ATTESTATION_VALUES = {"public-record", "published-case", "subject-public-testimony", "family-attested-public", "unverified"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "strand", "role", "objection",
-                        "move_tags", "rebuttal", "rwe"]
+                        "move_tags", "rebuttal", "rwe_refs"]
 STRAND_VALUES = {"harm", "consent", "sovereignty"}
 DEPTHS = ("short", "medium", "long")
 ROUND_TOL = 0.0005   # half of a 0.1% display step — the rsi_pct rounding band
@@ -87,7 +87,7 @@ def check_schema(corpus):
             out.append(_v("schema", "empty objection", oid))
         if not isinstance(o.get("tier"), int):
             out.append(_v("schema", "tier not an int", oid))
-        for f in ("move_tags", "rwe"):
+        for f in ("move_tags", "rwe_refs"):
             if f in o and not isinstance(o[f], list):
                 out.append(_v("schema", "%s not a list" % f, oid))
         s = o.get("strand")
@@ -333,7 +333,7 @@ def check_rwe(corpus):
                 out.append(_v("rwe", "real-person record attestation_status is 'unverified' (blocks the record)", iid or None))
     inst_set = set(inst_ids)
     for o in objs:
-        for ref in (o.get("rwe") or o.get("rwe_refs") or []):
+        for ref in (o.get("rwe_refs") or []):
             r = str(ref).strip()
             if r and r not in inst_set:
                 out.append(_v("rwe", "rwe_refs id does not resolve to an RWE instance_id: %s" % r, o.get("id")))
@@ -359,7 +359,7 @@ def _good_corpus():
         "objections": [{
             "id": "alpha", "tier": 1, "strand": "sovereignty", "role": "spine",
             "objection": "o", "move_tags": [],
-            "rebuttal": {"short": "", "medium": "", "long": ""}, "rwe": [],
+            "rebuttal": {"short": "", "medium": "", "long": ""}, "rwe_refs": [],
         }],
         "realWorldExamples": [],
     }
@@ -438,7 +438,7 @@ def run_synthetic_tests():
              "attached_objections": [{"objection_id": "alpha"}]}
         r.update(kw); return r
     def _corp(recs, refs):
-        c = _good_corpus(); c["realWorldExamples"] = recs; c["objections"][0]["rwe"] = refs
+        c = _good_corpus(); c["realWorldExamples"] = recs; c["objections"][0]["rwe_refs"] = refs
         return c
     cases["rwe_launch_empty_passes"] = (len(check_rwe(_good_corpus())) == 0, True)
     cases["rwe_clean_record_passes"] = (len(check_rwe(_corp([_rwe()], ["rwe-x"]))) == 0, True)
