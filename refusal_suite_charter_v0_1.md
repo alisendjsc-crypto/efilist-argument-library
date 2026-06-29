@@ -180,6 +180,87 @@ Optionality nodes have answered harms to the *chooser*. The first **third-party 
 
 ---
 
+## Abortion wing — register and precondition gate (L137) — K171, library-Claude, 2026-06-29
+
+**The governing problem.** The Refusal Suite defends rights, not acts (the Firewall). The K170 capstone (`the-firewall-does-not-misfire`) proved this appraisal-silence is *structural* and rested the suite's entire meta-defense on the Abortion wing being the lone, marked, bounded exception — the exception that measures the rule. A careless positive claim here retroactively breaks that capstone. The gate's task is to license exactly one exception, precisely bounded, without loosening anything else.
+
+---
+
+### 0. The two-layer model (the load-bearing move)
+
+The Abortion wing is built in two strictly separated layers, each with its own rules:
+
+**Layer 1 — Optionality (shared with every wing).** The competent pregnant person holds the sovereign right to choose abortion. Layer-1 nodes defeat objections to that *right*. They are **rebut-only, appraisal-silent on the act, and asymmetry-independent** — identical in discipline to the Transgenderism and Right-to-Die wings. The right must stand for someone who rejects antinatalism entirely.
+
+**Layer 2 — The advisory positive claim (the lone exception).** In addition, and only here, the suite licenses a **strictly-advisory, antinatalist-grounded positive moral claim** bearing on the *act's* general moral status. Layer-2 nodes are **not** appraisal-silent. They are the single place in the entire suite where a positive moral appraisal of a contested act is asserted.
+
+Every abortion node sits in exactly one layer and declares which. The layers never blur. The architecture's integrity *is* the separation: Layer 1 carries the right thesis-independently; Layer 2 carries the appraisal thesis-dependently; neither contaminates the other.
+
+---
+
+### A. The distinctive register
+
+**Layer 1 (optionality).** As every wing: the sovereign right of a competent adult over a contested choice, defended by burden-inversion and defeater-removal, appraisal-silent, asymmetry-independent. Nothing new in kind.
+
+**Layer 2 (the licensed positive claim).**
+
+- *Content.* On antinatalist grounds, terminating a pregnancy wrongs no one: there is no existing subject deprived of life's goods (Benatar's asymmetry — the absence of life's goods is not bad *for anyone* where there is no one, while the absence of life's harms is good), and abortion prevents the imposition of existence's guaranteed harms on a being who would otherwise be born to bear them. On these grounds abortion is morally permissible, and antinatalism supplies a positive reason in its favor. This is asserted as a consideration bearing on the act's moral status — **never** as a directive to any pregnant person.
+
+- *Grounding.* The flagship antinatalist thesis (the efilist corpus). The Abortion wing is the one seam where the Refusal Suite touches the efilist library: Layer 2 cites the flagship's conclusion as its warrant. The asymmetry is *imported here, by license.*
+
+- *Status — load-bearing.* The claim is a genuinely held, weight-bearing normative commitment — the suite's actual considered position on procreation — not a disposable hedge. This is what "load-bearing, not merely advisory like RTD" means: in RTD any positive lean would be a gratuitous add-on the suite forgoes; here the positive claim is a real plank.
+
+- *Force — strictly advisory.* Zero directive force: no enforcement, no coercion, no duty, no exhortation of any individual.
+
+- *Status and force are orthogonal.* "Load-bearing" describes the claim's standing (a committed thesis); "strictly advisory" describes its force (non-directive). The Abortion Layer-2 claim is **high-standing, zero-force** — the suite means it, and the suite directs no one by it. That dissolves the apparent paradox of a claim that is at once load-bearing and merely advisory: it is load-bearing in standing and advisory in force, and those are different axes.
+
+**What Layer 2 is NOT.** Not an exhortation-to-act. Not an enforcement or coercion warrant. Not a duty-generator (no one is obligated to abort, and no one may be made to). Not a comparative or selective judgment that particular beings, for who they would be, are better unborn — the **"malignant outliers" musing is out of scope.** The claim is the *universal, non-comparative* antinatalist consideration: it applies to all coming-into-existence equally and identically; it never singles out a life as specially unworthy.
+
+---
+
+### B. The contrast — line by line vs the optionality-only wings
+
+| | Transgenderism / Right-to-Die | Abortion |
+|---|---|---|
+| Defends the right (optionality) | yes | yes (Layer 1) |
+| Appraisal-silent on the act | yes (absolute) | **no — Layer 2 appraises** |
+| Positive moral claim about the act | forbidden | **licensed, advisory (Layer 2)** |
+| Exhorts / directs / enforces the act | never | never (both layers) |
+| Asymmetry / antinatalism in play | never | Layer 2 only (quarantined) |
+
+**Why the asymmetry between the cases is principled, not arbitrary.** The other wings concern **self-regarding** acts (one's own transition, one's own death). The suite stays appraisal-silent there for two reasons: appraising a purely self-regarding choice *for* the chooser would be the very paternalism the suite exists to refuse; and the suite holds no positive thesis about those acts to assert. Abortion differs on both counts. It engages the **procreation question** — whether a new center of harm is brought into existence — which is the one moral question on which the suite *does* hold a committed thesis (antinatalism). Where the suite has a considered position and the choice squarely engages it, appraisal-silence is not required; it offers the consideration, advisorily. The exception is licensed by a conjunction: **a committed thesis + a choice that engages it.** No other wing meets both conditions, which is why no other wing receives the exception.
+
+---
+
+### C. The firewall-relationship — the hard joint
+
+Resolve the Firewall into two components the rest of the suite has always run together:
+
+- **Firewall-A — no exhortation.** The suite never directs, urges, coerces, or enforces the act against or upon any individual. **Absolute. All wings. Both abortion layers. No exceptions, ever.**
+- **Firewall-B — appraisal-silence.** The suite asserts no positive moral appraisal of the contested act. **Default everywhere; the Abortion Layer-2 claim is the single licensed exception.**
+
+The Abortion wing **breaches Firewall-B and honors Firewall-A absolutely.** The phrase "strictly advisory / no enforcement / no coercion" *is* the statement that Firewall-A still binds in the one wing where Firewall-B is lifted. H4 defended both components and named abortion as the exception to B specifically; this gate makes that precise and leaves H4 intact.
+
+**(i) The appraisal / directive gap.** The Layer-2 claim attaches to the act's *general* moral status and to the procreation question — not to any pregnant person's all-things-considered decision. "Abortion is morally permissible-to-commendable on antinatalist grounds" is a general appraisal; "you, here, now, should abort" is a practical directive for a particular agent. The suite occupies only the former. The chooser's own countervailing reasons — which the suite neither supplies nor adjudicates — remain entirely hers; the suite adds a consideration to the public moral ledger and directs no one's entry in it. This is the very gap the K170 capstone relied on (defeating-O is not doing-R), and Layer 2 lives on the appraisal side of it.
+
+**(ii) Sealed to this wing.** The exception does not convert the other wings' optionality defenses into covert exhortation. The seal is structural: appraisal-silence remains the standing default *everywhere*, lifted only where the licensing conjunction holds. Transgenderism and RTD meet neither condition, so their silence is untouched, and the H4 capstone — which certifies that those wings only ever remove defeaters — stands unaltered. The abortion exception measures the rule precisely because it is the lone place the conditions are met.
+
+**(iii) The asymmetry quarantine.** The antinatalist asymmetry is imported in **Layer 2 only**, and is fenced three ways. *First*, it is not a suffering-calculus: Benatar's asymmetry is a structural claim about the non-symmetry of harms and goods relative to existence, not a netting of suffering against benefit — so it does not breach the harm-strand's ban on benefit-risk balancing *in kind*; that ban binds elsewhere on independent grounds. *Second*, it is fenced from **Abortion's own Layer 1** — the optionality defense must remain asymmetry-independent so the right survives for someone who rejects antinatalism outright. *Third*, it is fenced from **every other wing**, whose harm-strands remain Benatar-free as before. The governing principle: **optionality is thesis-independent; positive appraisal is thesis-grounded; the two are kept in separate layers and never cross.**
+
+---
+
+### D. The precondition gates — every abortion node must pass before authoring
+
+1. **Layer tag.** Declares Layer 1 (optionality; rebut-only, asymmetry-independent, appraisal-silent) or Layer 2 (advisory positive claim; antinatalist-grounded, non-enforcing). No blurring — a node is one or the other.
+2. **Firewall-A seal.** Neither layer exhorts, directs, coerces, or enforces the act. Absolute.
+3. **Quarantine seal.** The asymmetry / antinatalism appears in Layer 2 only; Layer-1 nodes stand asymmetry-independent; nothing leaks to another wing.
+4. **Non-comparative seal.** Layer-2 claims deploy the universal, non-comparative antinatalist consideration only. No malignant-outliers, no selective life-judgment.
+5. **G1 distinctness.** Distinct vs adjacent abortion nodes *and* vs the other wings — in particular, a Layer-1 abortion node must carry machinery a Transgenderism/RTD optionality node does not, or it folds across wings.
+6. **Competent-adult bracket.** The right-holder is the competent pregnant person; capacity-limited choosers are out of scope, stated in-node.
+7. **Personhood-independence (design parameter for the foundation node).** The Layer-1 right routes *around* the fetal-personhood metaphysics rather than settling it — the structural analog of Transgenderism's S1 (`the-right-does-not-turn-on-the-metaphysics`). Personhood-specialness retreats absorb into the wing's foundation node on status-independence grounds; that foundation node is written **no-defeat**, like S1.
+
+---
+
 ## Honest residuals (not yet decided)
 
 - Right-to-Die tier count + objection set → authored as we go, not scaffolded.
