@@ -1,9 +1,9 @@
 {
   "artifact": "transgenderism_grading_ledger",
   "library": "transgenderism",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "generated": "2026-06-28",
-  "status": "v0.1.6 (K165). 7 grades. Long-headline tally: A5 / B2. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). the-bystander-harm-licenses-no-foreclosure -- 84.2 / 86.3 / 88.0 (B/B/B; headline B; T3 harm-gate-defeat, the wing's first harm-to-third-parties node and the first to RUN the charter three-prong; A-ELIGIBLE per charter L179 [clean DEFEAT, no surviving primitive] but the axes land B-long; long BOUNDARY CELL, unrounded 0.87973 displays 88.0 but bands B, the wing's heaviest honest residual depresses r to .85; band-true at regen, NOT a primitive-conceder cap -- structurally distinct from S1's B; A/B-sensitive on r alone, r=.86 -> A). uncertainty-does-not-void-consent -- 84.3 / 86.4 / 88.1 (B/B/A; headline A; T3 consent-standard-defeat, the wing's FIRST consent-strand node [establishes the consent strand]; clean DEFEAT reaches A-long per charter L179 [no surviving primitive -- the thinner evidence base is conceded arguendo, not load-bearing]; long BOUNDARY CELL, unrounded geomean 0.8806, ~0.0006 over 0.88, band-true at regen, flagged-not-smoothed; r=0.878 the boundary axis -- the thin-data disanalogy absorbed at the limit). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
+  "status": "v0.1.7 (K166). 8 grades. Long-headline tally: A6 / B2. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). the-bystander-harm-licenses-no-foreclosure -- 84.2 / 86.3 / 88.0 (B/B/B; headline B; T3 harm-gate-defeat, the wing's first harm-to-third-parties node and the first to RUN the charter three-prong; A-ELIGIBLE per charter L179 [clean DEFEAT, no surviving primitive] but the axes land B-long; long BOUNDARY CELL, unrounded 0.87973 displays 88.0 but bands B, the wing's heaviest honest residual depresses r to .85; band-true at regen, NOT a primitive-conceder cap -- structurally distinct from S1's B; A/B-sensitive on r alone, r=.86 -> A). uncertainty-does-not-void-consent -- 84.3 / 86.4 / 88.1 (B/B/A; headline A; T3 consent-standard-defeat, the wing's FIRST consent-strand node [establishes the consent strand]; clean DEFEAT reaches A-long per charter L179 [no surviving primitive -- the thinner evidence base is conceded arguendo, not load-bearing]; long BOUNDARY CELL, unrounded geomean 0.8806, ~0.0006 over 0.88, band-true at regen, flagged-not-smoothed; r=0.878 the boundary axis -- the thin-data disanalogy absorbed at the limit). origin-does-not-void-voluntariness -- 85.4 / 87.5 / 89.2 (B/B/A; headline A; T3 voluntariness-standard-defeat, the wing's second consent-strand node; clean DEFEAT reaches A-long per charter L179 [no surviving primitive -- the conceded social-causation residual granted arguendo, non-load-bearing; persistence / stable-endorsement worry routed to the consent process, C3-adjacent]; NO boundary cells, all depths clear +/-0.0005 of 0.88; r=0.87 the ceiling axis). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
   "band_thresholds": {
@@ -240,6 +240,35 @@
         "short": "2198fc7977b1f3a6269a7e786e89db2b",
         "medium": "f574b477171f373b43565e5527816817",
         "long": "8f0e9b9a1f21f1fce157009e079c17ee"
+      }
+    },
+    "origin-does-not-void-voluntariness": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.88,
+        "c": 0.88,
+        "r": 0.87,
+        "a": 0.92
+      },
+      "short": {
+        "rsi_pct": 85.4,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.5,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 89.2,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-grade: axes tuple committed on merit BEFORE sibling comparison (K162-K165 discipline), then scale-checked against C1/B1/S1 ledger anchors confirmed same-scale; v and s refined down 0.01 each on re-read (symmetric-closure validity slightly over-credited; process-efficacy exposure offsets the undue-influence soundness asset) — band A unchanged throughout, no band-targeting. r=0.87 is the ceiling axis: the conceded social-causation residual (granted arguendo, non-load-bearing) plus the persistence/stable-endorsement worry routed out to the consent process (C3-adjacent). Clean DEFEAT, no surviving primitive (A-eligible per L179). Long geomean 0.89179/A (rsi 89.2), medium 0.87525/B (rsi 87.5), short 0.85373/B (rsi 85.4). No boundary cells: all three depths clear the +/-0.0005 ROUND_TOL of the 0.88 line. prose_md5 binds grade to bytes. Status echo: DEFEATS / origin-irrelevance (no-defeat-language invariant, Exch 92).",
+      "prose_md5": {
+        "short": "a92f3c420f750f6ccbf70f479ecd5643",
+        "medium": "799d71c5468657ebccb19a5aad3e740d",
+        "long": "610eb8a15cc41790ea7b52efef707174"
       }
     }
   }
