@@ -1,9 +1,9 @@
 {
   "artifact": "transgenderism_grading_ledger",
   "library": "transgenderism",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "generated": "2026-06-28",
-  "status": "v0.1.5 (K164). 6 grades. Long-headline tally: A4 / B2. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). the-bystander-harm-licenses-no-foreclosure -- 84.2 / 86.3 / 88.0 (B/B/B; headline B; T3 harm-gate-defeat, the wing's first harm-to-third-parties node and the first to RUN the charter three-prong; A-ELIGIBLE per charter L179 [clean DEFEAT, no surviving primitive] but the axes land B-long; long BOUNDARY CELL, unrounded 0.87973 displays 88.0 but bands B, the wing's heaviest honest residual depresses r to .85; band-true at regen, NOT a primitive-conceder cap -- structurally distinct from S1's B; A/B-sensitive on r alone, r=.86 -> A). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
+  "status": "v0.1.6 (K165). 7 grades. Long-headline tally: A5 / B2. gender-self-determination-is-the-default -- 84.3 / 86.5 / 88.1 (B/B/A; headline A; long BOUNDARY-A, unrounded 0.8813). the-right-does-not-turn-on-the-metaphysics -- 83.5 / 85.7 / 87.3 (all-B; T4 primitive-conceder, permission-win caps at B per charter L179; cold-grade committed before reference comparison). the-preservation-duty-is-gerrymandered -- 86.0 / 88.1 / 89.8 (B/A/A; headline A; T3 consistency-defeat, clean defeat reaches A-long per charter L179; medium BOUNDARY-A, unrounded 0.8814, band-true at regen). the-limiting-principle-is-the-self-regarding-line -- 85.8 / 87.9 / 89.6 (B/B/A; headline A; T3 limiting-principle-defeat, Route A DEFEATS the no-limiting-principle premise, A-long per charter L179; medium BOUNDARY-B, unrounded 0.8794, flagged-not-smoothed, band-true at regen). the-permission-conscripts-no-one -- 84.8 / 86.9 / 88.6 (B/B/A; headline A; T3 scope-misfire-defeat, clean DEFEAT reaches A-long per charter L179; NO boundary cells, A robust to c_long=.86). the-bystander-harm-licenses-no-foreclosure -- 84.2 / 86.3 / 88.0 (B/B/B; headline B; T3 harm-gate-defeat, the wing's first harm-to-third-parties node and the first to RUN the charter three-prong; A-ELIGIBLE per charter L179 [clean DEFEAT, no surviving primitive] but the axes land B-long; long BOUNDARY CELL, unrounded 0.87973 displays 88.0 but bands B, the wing's heaviest honest residual depresses r to .85; band-true at regen, NOT a primitive-conceder cap -- structurally distinct from S1's B; A/B-sensitive on r alone, r=.86 -> A). uncertainty-does-not-void-consent -- 84.3 / 86.4 / 88.1 (B/B/A; headline A; T3 consent-standard-defeat, the wing's FIRST consent-strand node [establishes the consent strand]; clean DEFEAT reaches A-long per charter L179 [no surviving primitive -- the thinner evidence base is conceded arguendo, not load-bearing]; long BOUNDARY CELL, unrounded geomean 0.8806, ~0.0006 over 0.88, band-true at regen, flagged-not-smoothed; r=0.878 the boundary axis -- the thin-data disanalogy absorbed at the limit). Geomean-less ledger (axes stored; band derived at regen; rsi_pct 1dp display-only). ungraded:[].",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Transgenderism Build-Charter K159.",
   "band_thresholds": {
@@ -211,6 +211,35 @@
         "short": "7add6346da51e569b7dbdeac617b0a8a",
         "medium": "31991dd8b78b8a2b785f58836f0e4fae",
         "long": "c86044d17bfbd8a69b84134dd57ebf15"
+      }
+    },
+    "uncertainty-does-not-void-consent": {
+      "graded": true,
+      "axes": {
+        "v": 0.885,
+        "s": 0.88,
+        "c": 0.88,
+        "r": 0.878,
+        "a": 0.88
+      },
+      "short": {
+        "rsi_pct": 84.3,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.4,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.1,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-grade: axes tuple committed on merit BEFORE any sibling comparison (K162/K163/K164 discipline); prose_md5 binds the grade to the committed bytes. Band on UNROUNDED geomean (A>=0.88 / B>=0.82 / C>=0.76); rsi_pct 1dp display-only; geomean not stored. Long-base axes v=0.885 s=0.880 c=0.880 r=0.878 a=0.880. LONG geomean=0.8806 -> 88.1 -> A: BOUNDARY CELL, ~0.0006 over the 0.88 threshold; the A bands on the unrounded mean (>=0.88), NOT a display artifact, and is NOT score-targeted. MEDIUM (c-0.05,r-0.03)=0.8643 -> 86.4 -> B. SHORT (c-0.12,r-0.06)=0.8431 -> 84.3 -> B. r=0.878 is the live boundary axis and the reason this lands A not B: the strongest counter (the thin-data disanalogy) is ABSORBED AT THE LIMIT — first-in-human / no-data consent is valid because the absence of data is disclosed and understood — so robustness holds high; capped just below 0.88 by a genuine conceded empirical residual (the evidence base IS thinner for some interventions), which is LIGHTER than B1's core elite-sport-fairness residual, so r exceeds B1's depressed r. v=0.885: airtight four-move structure, no enthymematic gaps, decisive reductio; shy of 0.89 only by the in-principle/particular scope distinction (the node defeats the in-principle inference and defers particular-consent adequacy to the process). s=0.880: orthodox informed-consent doctrine (disclosure-not-omniscience) plus true empirical claims about medical practice under uncertainty. c=0.880: covers all four moves + the understanding-prong + the honest residual + the efficacy-blind disclaimer. a=0.880: self-standing defeat on a standard consent account + consistency test, binds no dissenter, asymmetry-independent, firewall-clean; held from higher only by operating downstream of the spine's grant and sharing the concede-then-route form. headline_grade_long = A. Post-fold tally A4/B2 -> A5/B2. Post-commit sanity (NOT a target): lands in the spine/B1 clean-T3 cluster (spine long 88.1, B1 88.0), below the multi-route S2/S3 (89.8/89.6) — coherent with 'cleaner than B1, not as clean as S2/S3.'",
+      "prose_md5": {
+        "short": "2198fc7977b1f3a6269a7e786e89db2b",
+        "medium": "f574b477171f373b43565e5527816817",
+        "long": "8f0e9b9a1f21f1fce157009e079c17ee"
       }
     }
   }
