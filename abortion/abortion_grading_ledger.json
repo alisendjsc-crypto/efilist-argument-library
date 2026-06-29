@@ -1,0 +1,72 @@
+{
+  "artifact": "abortion_grading_ledger",
+  "library": "abortion",
+  "version": "0.1.0",
+  "generated": "2026-06-29",
+  "status": "v0.1.0 (K172; Abortion wing genesis). 1 grade. Long-headline tally: A1 / B0. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765, clear of the 0.88 boundary by 0.0018; T3 A-eligible -- the bodily non-conscriptability default-setter, holding c/r at 0.86 for the three weighty contests it routes rather than closes). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
+  "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
+  "band_thresholds": {
+    "A": 0.88,
+    "B": 0.82,
+    "C": 0.76,
+    "D": 0.0
+  },
+  "entry_shape_reference": {
+    "_comment": "Shape a graded entry takes (keyed by corpus objection id under grades{}).",
+    "_geomean_note": "DERIVED from axes at regen (validator recomputes + bands); NOT stored -- band-true discipline.",
+    "graded": true,
+    "axes": {
+      "v": 0.0,
+      "s": 0.0,
+      "c": 0.0,
+      "r": 0.0,
+      "a": 0.0
+    },
+    "short": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "medium": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "long": {
+      "rsi_pct": 0.0,
+      "grade": "X"
+    },
+    "headline_grade_long": "X"
+  },
+  "ungraded": [],
+  "grades": {
+    "gestational-self-determination-is-the-default": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.88,
+        "c": 0.86,
+        "r": 0.86,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 84.3,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.5,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.2,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-graded on merit before any cross-wing scale-check; axes committed on the written prose, bands derived from the UNROUNDED geomean. long geomean 0.881765 (rsi 88.2) -> A, clear of the boundary band (0.88 + 0.0018); medium geomean 0.865099 (rsi 86.5/B); short geomean 0.843369 (rsi 84.3/B). No flagged boundary cell at any depth. Axis reasoning. v=0.90: the burden-inversion is valid and the bodily non-conscriptability core (a right to life is not a right to use an unwilling other's body) is a clean, decisive engine; held at 0.90 rather than 0.91/0.92 because the spine is a default-SETTER that ROUTES its three hardest contests (personhood-as-trump, causal-responsibility, withdrawing-vs-killing) rather than closing them in-node — valid as a burden-placement, not offered as a complete defeat. s=0.88: the non-conscriptability premise is rock-solid (settled law and common morality forbid compelled organ/marrow/blood donation even to save a life); the single A-club contestable joint is the FIT of the bodily-donation analogy to gestation (the natural-dependency and disanalogy pressures), which the spine meets via the general principle and routes at its sharpest rather than conceding. c=0.86: complete AS A DEFAULT-SETTER — it fixes the default, motivates it, grants personhood arguendo to show the default survives, and accounts for the override-attempts by naming and routing them; tempered to 0.86 (the H1-style deferral penalty, slightly heavier) because it defers three genuinely weighty contests to as-yet-unbuilt nodes (the foundation node and two Layer-1 nodes), so a reader of the spine alone is left with the hardest questions explicitly routed-but-open. r=0.86: the burden-inversion is robust, and the turn that every override-attempt CONCEDES the default (an objection that must work to place the burden on the chooser has granted it does not start there) is a strong robustness anchor; held at 0.86 because three weighty contests remain genuinely open and routed, so a peer pressing any one finds the spine has deferred rather than defeated — heavier routed weight than the Transgenderism spine carried. a=0.91: a clean optionality/autonomy register — appraisal-silent, asymmetry-independent, importing no antinatalist consideration, the right standing for a pregnant person who rejects antinatalism outright, competent-adult bracket stated; held at 0.91 (with the Transgenderism spine and the K169/H4 cluster) rather than 0.92 because the case forces the spine to engage the second party's standing (granting personhood arguendo to route it), one step from the purely self-regarding autonomy that earns 0.92. L137 precondition gates verified in the prose: Layer-1 tag; Firewall-A seal (no exhortation); quarantine seal (asymmetry-independent, zero antinatalism in-node); G1 distinctness vs the other wings (the bodily/gestational-sovereignty / non-conscriptability machinery, which a Transgenderism or RTD optionality node does not carry); competent-adult bracket stated; personhood granted arguendo and ROUTED to the foundation node, never settled in-spine. prose_md5 binds the grade to the exact rebuttal bytes read back from the written node file. Cross-wing scale-check (long unrounded, AFTER the cold grade): the abortion spine 0.881765 sits essentially co-located with the Transgenderism spine (0.881254/A) — honest structural kinship, since both are burden-inversion default-setters opening their wings; the abortion spine's stronger Thomson-style core is offset by its heavier routed weight from the genuine second party. It lands just above uncertainty (0.880597/A) and the Transgenderism spine (0.881254/A) and just below distress (0.881855/A); above the B siblings regret (0.879704) and bystander (0.879728); below permission (0.885852/A), the K169/H4 pair (0.889843/A), origin (0.891790/A), limiting (0.895808/A), and preservation (0.897834/A). A wing-opening spine sitting in the low-A band is the honest place for a node that does this much routing; the tuple was committed before comparison, not score-targeted.",
+      "prose_md5": {
+        "short": "30c1fcb981ac430c40ddce311febd439",
+        "medium": "0b80aa4ded8af5c6d7bd7fdca9e80e0e",
+        "long": "a2bd5dade2bb98629274fbad0efecc73"
+      }
+    }
+  }
+}
