@@ -1,9 +1,9 @@
 {
   "artifact": "abortion_grading_ledger",
   "library": "abortion",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "generated": "2026-06-29",
-  "status": "v0.1.3 (K175; +the-manner-of-removal-does-not-forfeit-the-right). 4 grades. Long-headline tally: A3 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). the-manner-of-removal-does-not-forfeit-the-right -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881651; T3 A-eligible -- the routed withdrawing-versus-killing counter, withdrawal-death identity at previability; the wing's hardest Layer-1 node, a knife-edge A). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "status": "v0.1.4 (K176; +a-valuable-future-grounds-no-claim-on-the-body). 5 grades. Long-headline tally: A4 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). the-manner-of-removal-does-not-forfeit-the-right -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881651; T3 A-eligible -- the routed withdrawing-versus-killing counter, withdrawal-death identity at previability; the wing's hardest Layer-1 node, a knife-edge A). a-valuable-future-grounds-no-claim-on-the-body -- 85.6 / 87.7 / 89.4 (B/B/A; headline A; long unrounded 0.893674; T3 A-eligible -- the Marquis future-like-ours counter: grant the fetus's valuable future whole, route the negative reading to the spine, defeat the positive duty-to-sustain residue on the stakes-invariant bodily boundary; the wing's highest long-geomean, a comfortable A). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
   "band_thresholds": {
@@ -153,6 +153,35 @@
         "short": "bf02ee124ab5df0f6cffc8813aeb6c47",
         "medium": "f2244a0ff11d20537afea02782337b57",
         "long": "bb5bccba9b6516463314a8506ebbad30"
+      }
+    },
+    "a-valuable-future-grounds-no-claim-on-the-body": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.88,
+        "c": 0.89,
+        "r": 0.86,
+        "a": 0.93
+      },
+      "short": {
+        "rsi_pct": 85.6,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.7,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 89.4,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-graded on merit before any cross-wing scale-check; axes committed on the written prose, bands derived from the UNROUNDED geomean. long geomean 0.893674 (rsi 89.4) -> A, a comfortable A (0.013674 above the 0.88 A-floor); medium geomean 0.877148 (rsi 87.7/B); short geomean 0.855692 (rsi 85.6/B). No cell within +/-0.0005 of a band threshold. Nearest-to-line is medium at geomean 0.877148, d=0.002852 below the A-floor (0.88) — outside the boundary band, reported B. Long sits 0.013674 above the A-floor: a comfortable A. Axis reasoning. v=0.91 — inferences valid throughout; the load-bearing step (gestation is the commandeering of the body, so it falls inside the stakes-invariant bodily boundary) follows cleanly. Held at parity with the manner node, not above: the negative-reading route and the forced-donation engine are inherited from the foundation/manner/responsibility nodes and credited in-node, not re-derived — valid inherited routes, not self-contained proof of every step. s=0.88 — grants Marquis's account of the wrong of killing whole and rests on the bodily-boundary datum (no positive duty to sustain another reaches compelled use of the body), robust common morality and correctly qualified to sustaining-donation rather than all bodily intrusion. The contestable joint is the gestation-as-bodily-donation analogy: the natural/ordinary-condition disanalogy is a live, standard reply (the violinist-disanalogy literature). The node meets it (naturalness is not the axis the boundary tracks; what bars compelled donation is the demand reaching into the body, and gestation reaches exactly there) but does not dissolve the disagreement against a persistent critic. Net parity with the responsibility node. c=0.89 — the most rejoinder-dense node in the wing: both readings (negative routed to spine, positive defeated on the residue), three flagged angles (identity/continuity, contraception/abstinence symmetry, ordinary-vs-extraordinary), the kinship extension, the post-viability residual, and the firewall, all engaged. Single debit: the contraception/abstinence symmetry is assigned to the proponent's burden (bracketed, not closed) — defensibly, since it is an internal tension in FLO, not a challenge to the right-defense. Routing the negative reading to the foundation is correct architecture, not a gap. r=0.86 — the stakes-invariance core is non-escalable: the compelled-donation case already carries supreme stakes, a sole averter, and kinship, so there is no higher-stakes counter to mount. Held below a higher mark because the gestation/donation disanalogy critic persists as a live, soundness-linked exposure, and the post-viability foothold remains a named residual (routed to the manner node's terrain, but real). a=0.93 — competent-adult bracket named in-node; Firewall-B explicit and central (the future's value is granted, so its forfeit is never called good); appraisal-silent on the choice and on method; asymmetry-independent (the node grants the future its full value and leans on no Benatar asymmetry); anti-conscription is the node's spine. Among the wing's strongest on this axis. Cross-wing scale-check (vs the-manner-of-removal-does-not-forfeit-the-right (the wing's other A-node)): This node sits ~1.2 rsi above the manner node, driven entirely by base c (broader rejoinder coverage) and a (firewall/anti-conscription centrality); v, s, r are identical. Its A is more comfortable than the manner node's knife-edge A (0.013674 of cushion above the A-floor vs the manner node's 0.001651). Plausibility: a fifth person-horn node scoring at-or-above its siblings is consistent with it deploying an already-proven engine (forced-donation) against the highest-value lever, where the engine's stakes-invariance does the decisive work. Coverage breadth and firewall-cleanliness are real gains, not inflation; the soundness ceiling (the disanalogy, met-not-dissolved) keeps it from running away. prose_md5 binds the grade to the exact rebuttal bytes read back from the written node file. Abortion ledger on fold: A4/B1.",
+      "prose_md5": {
+        "short": "70f247450dd52a8a14faf451c129d3d5",
+        "medium": "b09ab86fe3992d59b6c89fa73e9513ec",
+        "long": "66cf3c3e941ade0494b74906af301817"
       }
     }
   }
