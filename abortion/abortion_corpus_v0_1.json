@@ -2,11 +2,11 @@
   "library": "abortion",
   "wing": 1,
   "wing_label": "Harm & Autonomy",
-  "title": "Abortion (optionality)",
-  "version": "0.1.5",
-  "generated": "2026-06-29",
-  "status": "v0.1.5 (K177; Layer 1 COMPLETE + the first Layer-2 advisory-positive node). Layer 1 is the five optionality defenses, all appraisal-silent and asymmetry-independent -- the secular person-horn covered five ways (bodily-sovereignty burden default, personhood-status independence, voluntariness, manner of removal, future-deprivation); every sixth-lever residue routes to machinery the five carry, so no sixth Layer-1 node is warranted and Layer 1 is declared complete. Layer 2 opens with the suite's lone licensed positive moral claim (terminating-a-pregnancy-wrongs-no-one): on Benatar's asymmetry the deprivation account of killing has no patient before sentience, so terminating wrongs no one, and preventing existence's guaranteed harms is a positive reason in the act's favor. The claim is advisory and zero-force (Firewall-A sealed absolutely), universal and non-comparative, structural and not a suffering-netting, and the asymmetry is quarantined to Layer 2 alone -- the optionality defense stands asymmetry-independent beneath it, every other wing left Benatar-free. High in standing, openly contingent on the contested asymmetry it imports (the s=0.84 soundness cap), directing no one. Cowork-authored status, overridable.",
-  "schema_note": "Greenfield abortion corpus; node schema set K172 (this first fold). Abortion node 13-key order: id / anchor(==id) / tier(int) / strand / layer / role / mechanism / move_tags / objection / rebuttal{short,medium,long} / register_compliance{optionality_only,autonomy_frame,asymmetry_independent,firewall_clean} / tier_justification / rwe_refs. strand seeded {bodily-sovereignty} (grows as nodes land -- the personhood-independence foundation adds fetal-status at K173). layer per Charter L137: 1 = optionality (appraisal-silent, asymmetry-independent), 2 = the lone licensed strictly-advisory positive claim (Layer-2 register_compliance semantics deferred to the first Layer-2 node). Validator enforces layer in {1,2} and the strand enum; the render derives its tier filter from the nodes present.",
+  "title": "Abortion (optionality + one advisory claim)",
+  "version": "0.1.6",
+  "generated": "2026-06-30",
+  "status": "v0.1.6 (K178; WING TERMINUS -- Layer 1 COMPLETE, Layer 2 COMPLETE at two nodes). Layer 1 is the five optionality defenses (bodily-sovereignty spine, personhood-status independence, voluntariness, manner of removal, future-deprivation), all appraisal-silent and asymmetry-independent. Layer 2 carries the suite's lone licensed positive moral claim (terminating-a-pregnancy-wrongs-no-one) and now its non-comparative firewall (the-appraisal-selects-no-life): the eugenic-slide objection grants the appraisal's universality and attacks force-magnitude; the firewall answers via the structural-vs-evaluative engine -- Benatar's asymmetry carries no scalar harm-magnitude term, so the positive reason attaches to averting imposition as such, force is invariant across all conceptions, no gradient exists and no life is ranked. The appraisal singles out no life and disowns trait-selective judgment. Firewall-A sealed absolutely (advisory, zero-force); the asymmetry stays quarantined to Layer 2, the optionality defense asymmetry-independent beneath it, every other wing Benatar-free. The wing is at terminus. Cowork-authored status, overridable.",
+  "schema_note": "Greenfield abortion corpus; node schema set K172 (this first fold). Abortion node 13-key order: id / anchor(==id) / tier(int) / strand / layer / role / mechanism / move_tags / objection / rebuttal{short,medium,long} / register_compliance{optionality_only,autonomy_frame,asymmetry_independent,firewall_clean} / tier_justification / rwe_refs. strand seeded {bodily-sovereignty} (grows as nodes land -- the personhood-independence foundation adds fetal-status at K173). layer per Charter L137: 1 = optionality (appraisal-silent, asymmetry-independent), 2 = the lone licensed strictly-advisory positive claim (Layer-2 register_compliance semantics deferred to the first Layer-2 node). Validator enforces layer in {1,2} and the strand enum; the render derives its tier filter from the nodes present. Layer-2 nodes additionally carry the documented Layer-2 register contract (canon K178, ruling #2): register_compliance gains the 8 sub-keys layer2_licensed_exception / firewall_A_sealed / firewall_B_breach_licensed / asymmetry_quarantined_to_layer2 / non_comparative_universal / advisory_not_directive / not_a_suffering_calculus / a_axis_reading (the foundation set the canonical names; the validator enforces their PRESENCE for layer==2, not boolean values). The Layer-2 a-axis scores advisory-discipline / Firewall-A fidelity (high-standing, zero-force), NOT the optionality autonomy-frame -- an L2 grading-convention note, not a rubric change.",
   "strands": [
     "bodily-sovereignty",
     "fetal-status",
@@ -23,8 +23,8 @@
     "5": "Meta"
   },
   "tier_note": "Inherited tier-methodology FRAME (provisional reference, NOT authoritative). Tier count + enumeration are AUTHORED downstream, not scaffolded -- the render derives its tier filter from the nodes actually present, not from this map.",
-  "totalEntries": 6,
-  "totalResponses": 18,
+  "totalEntries": 7,
+  "totalResponses": 21,
   "objections": [
     {
       "id": "gestational-self-determination-is-the-default",
@@ -229,7 +229,145 @@
       },
       "tier_justification": "T4, Genuine-philosophical. The Layer-2 foundation and the suite's lone licensed positive appraisal. It engages the genuine-philosophical core, Benatar's asymmetry and the metaphysics of harm and benefit relative to existence, to ground the positive claim, and defeats the first-order deprivation objection by denying the deprivation account a patient: before sentience there is no interests-bearing subject for whom the absent future is a loss. It routes around fetal-personhood in the spirit of gate 7 and of the Layer-1 foundation's S1-bracket, since the no-patient result turns on the interests-bearing-subject axis and not on a personhood verdict, so Layer 1's bracket is preserved and the positive claim need not win the personhood debate. G1 vs the Layer-1 future-deprivation node is explicit in-prose: that node defends a right and routes to the body, appraisal-silent; this one appraises and grounds on the asymmetry. It is NOT written full no-defeat: it defeats the deprivation objection rather than dissolving a hinge. Its ceiling is a conceded contingency, not a conceded indeterminacy: the positive reason is exactly as sound as the asymmetry, which is genuinely contested; the node grounds itself on the asymmetry openly and closes no dispute it has not closed, surfacing the project's standing asymmetry-residual as a soundness cap that holds the headline at B. The meta-architecture defense, that asserting this appraisal is licensed as the lone Firewall-B exception, is CITED to the H4 capstone rather than rebuilt, so the node stays T4 and does not rise to T5/Meta. Competent-adult bracket stated in-node. Layer 2: appraisal-loud, asymmetry-grounded, the single exception to the suite's appraisal-silence; Firewall-A binds absolutely (advisory, zero-force); the asymmetry is quarantined here and the wing's optionality defense stands asymmetry-independent beneath.",
       "rwe_refs": []
+    },
+    {
+      "id": "the-appraisal-selects-no-life",
+      "anchor": "the-appraisal-selects-no-life",
+      "tier": 4,
+      "strand": "antinatalist-appraisal",
+      "layer": 2,
+      "role": "advisory-positive-boundary",
+      "mechanism": "structural-not-evaluative",
+      "move_tags": [
+        "structural-engine",
+        "gradient-defeater",
+        "non-comparative-defense",
+        "eugenic-slide-firewall",
+        "expressivist-rebuttal",
+        "force-invariance"
+      ],
+      "objection": "The moment the suite asserts a positive moral appraisal of abortion — not merely the right to it, but that abortion wrongs no one and that antinatalism supplies a reason in its favor — it steps onto the slope toward judging which lives are worth living. The positive reason offered is harm-prevention: abortion spares a would-be person the guaranteed harms of existence. But harm is not uniform. A pregnancy carrying a severe, foreseeable burden of suffering would, on the suite's own logic, give a stronger reason for termination than an ordinary one — and now the suite grades lives by their projected harm-load, leaning hardest against the lives that would suffer most. That is the structure of eugenics: the ranking of existences by worth, the marking of some lives as better never lived. The non-comparative label the suite attaches does not save it — one may grant that the consideration applies to every conception and still note that it applies with graded force, and the gradient is the selection. The appraisal cannot stay universal once its own reason admits of degree.",
+      "rebuttal": {
+        "short": "The objection's handle is the positive reason — that abortion spares a would-be person existence's guaranteed harms — and its charge is that, since harm admits of degree, the reason grades lives by projected suffering, which is eugenic. But Benatar's asymmetry, the cited warrant, is structural, not scalar: it is a claim about the relation between harms, goods, and existence as such, with no quantity-of-suffering term, and it does not grow more favorable for a life that would suffer more. The reason it grounds is that origination imposes harm on a subject otherwise under no deficit, and that withholding wrongs no one; what withholding secures is non-imposition, which is not a magnitude — one imposes by conceiving at all, not more by conceiving a life that suffers more. So the force is identical for every conception, not merely the scope; there is no graded force to become a ranking. Trait-selective abortion — selecting against a life for a disvalued trait — would be the eugenic move, and the suite disowns it as a different, forbidden claim, not a stronger application of an appraisal that singles out none. Firewall-A holds, and the defense stands or falls with the asymmetry it cites.",
+        "medium": "Grant the objection its real target. It does not bite on the permission the foundation secures — that terminating a pregnancy wrongs no one, since where there is no subject there is no one deprived; that limb names no quality of any life and offers nothing to rank. Its handle is the positive reason: that abortion spares a would-be person the guaranteed harms of existence. Harm admits of degree, the objection says, so the reason must too — a life projected to suffer more yielding a stronger reason — and a reason that tracks projected suffering ranks lives by suffering, which is the structure of eugenics. The defense belongs here, on the reason.\n\nIt turns on the difference between a structural claim and an evaluative one. Benatar's asymmetry, the foundation's cited warrant, is structural: a claim about the relation between harms, goods, and existence as such — that the absence of harm is good even with no one to enjoy it, while the absence of goods is not bad unless someone is deprived. It ranges over the cut between existence and non-existence. It carries no quantity-of-suffering term and does not grow more favorable for a life that would contain more harm. Reconstructed on that footing, the reason is not that a life would hold a large sum of harm and so should be prevented; it is that origination imposes harm on a subject who otherwise stands under no deficit, and that withholding the imposition wrongs no one. What withholding secures is the non-imposition, and non-imposition is not a magnitude: one does not impose more by conceiving a life that will suffer more — one imposes by conceiving at all. The verdict attaches to averting imposition as such, with the same weight for every conception, because it has no scalar to track.\n\nA determined objector says this swaps his reason for a structural one — his was a plain consequentialist reason that scales with the suffering a life would hold. But that sum-of-suffering reason is not the suite's, and a freestanding scalar reason is a different thesis the wing does not hold and need not carry. And even granted, the scalar finds no bearer: more harm prevented presupposes someone who would have borne more, while the whole point is that no one comes to bear any, so the quantity has no one to attach to and cannot order the cases.\n\nSo there is no gradient to convert into a ranking. The consideration bears on every conception with identical force, not merely identical scope, and it is the identity of force that forecloses selection. The non-comparative character is not a label over the claim but a property entailed by the kind of claim it is: a structural claim about the existence boundary has no resources to discriminate among existences, since discrimination needs an evaluative metric the asymmetry neither supplies nor refers to. It operates above the comparison the objection fears — on whether a center of harm is originated at all, never on which rank better or worse once originated.\n\nThe concrete test is trait-selective abortion: terminating because a projected life carries a disvalued trait. That would be eugenic in fact — selection among lives by a quality-metric — and the suite disowns it. Trait-selection is not a stronger instance of the appraisal but a different, forbidden claim: it marks one kind of life as worse, where the appraisal marks none, and so falls outside the appraisal by the non-comparative seal rather than intensifying it. This answers the expressivist worry — that valuing prevention says some lives are not worth living — at its root: the appraisal makes no claim about any life's worth, only that origination imposes and non-origination wrongs no one, identically of every life. Firewall-A stays intact (the node directs no one and grades no fetus), and the defense is openly contingent on the asymmetry it cites, falling with it if it fails — hiding nothing the foundation did not.",
+        "long": "Take the objection at its strongest and grant what it gets right. It does not bite on the permission the foundation secures — that terminating a pregnancy wrongs no one, because where there is no subject there is no one to be deprived. That limb names no quality of any life; it makes no comparison; the slope toward ranking existences has nothing to grip on it. The objection's real handle is the second limb, the positive reason: that abortion spares a would-be person the guaranteed harms of coming into existence. Harm, the objection says, admits of degree, so the reason must admit of degree with it — a heavier projected life yielding a heavier reason — and a reason that varies with projected suffering is a ranking of lives by their suffering, which is the structure of eugenics. The defense must be made here, on the reason, not by retreating to the permission. And it can be.\n\nThe move that defeats the gradient is the distinction between a structural claim and an evaluative one. Benatar's asymmetry — the warrant the foundation cites — is structural: it is a claim about the relation between harms, goods, and existence as such, that the absence of harm is good even with no one to enjoy that good, while the absence of goods is not bad unless there is someone for whom it is a deprivation. It ranges over the cut between existence and non-existence. It is not a measurement of how much harm a particular life would contain, and it does not become more favorable for a life that would contain more. There is no quantity-of-suffering term anywhere in it.\n\nReconstruct the positive reason on that footing and the supposed gradient disappears. The reason is not that this life would carry a large sum of harm and so should be prevented; it is that origination imposes harm on a subject who, not existing, stands under no deficit, and that withholding the imposition wrongs no one. What withholding secures is the non-imposition — and non-imposition is not a magnitude. One does not impose more by conceiving a life that will suffer more; one imposes, simply, by conceiving at all. The asymmetry's favorable verdict attaches to the aversion of imposition as such, with the same weight whether the averted life would have suffered greatly or modestly, because the verdict has no scalar to track. The consideration bears on every conception with identical force, not merely identical scope — and it is the identity of force, not the breadth of application, that forecloses the ranking.\n\nA determined objector will say the reconstruction cheats — that it quietly swaps the reason. He had in mind a plain consequentialist reason: existence contains suffering, less suffering is better, so preventing a life prevents its suffering, and that reason plainly scales with how much suffering the life would hold. Grant him the distinction and the answer still holds, two ways. First, that consequentialist harm-reduction reason simply is not the suite's reason; the suite's positive reason is the structural one — that origination wrongs a subject by imposing on one who, unborn, is wronged by nothing. A freestanding sum-of-suffering reason, if anyone presses it, is a different thesis, not the antinatalist appraisal the wing asserts and not defended here; the wing is not answerable for a gradient generated by a reason it does not hold. Second, even the harm-reduction gloss cannot get its scalar to bite. The good in view is the prevention of an imposition on a subject, and in the prevented case there is no subject to bear an increment of harm; one talks of more harm prevented only by presupposing someone who would have borne more, but the whole point is that no one comes to bear any. The quantity the objector would grade by is a quantity of harm to a person who, by the very act in question, never exists to be that person. The scalar has no one to attach to, so it cannot order the cases even on the objector's own terms.\n\nSo the non-comparative character of the claim is not a label pinned over it, to be peeled off by noting that its force could still vary. It is a property entailed by the kind of claim it is. A structural claim about the existence/non-existence boundary has no resources to discriminate among existences, because discrimination requires an evaluative metric — a ranking over lives by some quality they have — and the asymmetry supplies none and refers to none. It operates one level above the comparison the objection fears: on whether a center of harm is brought into being at all, never on which centers, once brought into being, rank better or worse. The objection grants universality and then attacks the graded force; the second step has nothing to strike, because there is no graded force.\n\nThe sharpest test of this is not the abstract worry but a concrete one the suite must not dodge: trait-selective abortion — terminating because the projected life carries a particular disvalued trait, a disability the most-cited case. That would be the eugenic structure in fact: a selection among lives by a quality-metric, a judgment that this kind of life ranks below that kind. The suite does not license it, and the engine is exactly what rules it out. Trait-selection is not a stronger instance of the antinatalist appraisal; it is a different claim of a forbidden kind, selecting where the appraisal singles out none. The appraisal bears on every conception with the same force and marks no life as specially unworthy; the trait-selective judgment marks one kind of life as worse and is, by the non-comparative seal, outside the appraisal rather than an intensification of it. This answers the expressivist worry at its root — the charge that valuing prevention broadcasts that some lives are not worth living. The appraisal broadcasts no such message, because it makes no claim about any life's worth. It claims only that origination imposes and that non-origination wrongs no one, of every life identically.\n\nTwo things remain, and both are concessions rather than evasions. Firewall-A is untouched: the node directs no pregnant person to anything and grades no fetus; it appraises the structural character of a general claim, not any particular decision, which stays entirely the chooser's. And the defense is openly contingent on the asymmetry it leans on — if Benatar's asymmetry fails, this falls with it, exactly as the foundation conceded for the positive claim it defends. The node hides nothing the foundation did not already disclose. It makes explicit the structural character that the foundation's non-comparative fence declared, and shows that that character — not a slogan, but the kind of claim the asymmetry is — is what keeps the appraisal off the eugenic slope."
+      },
+      "register_compliance": {
+        "optionality_only": false,
+        "autonomy_frame": false,
+        "asymmetry_independent": false,
+        "firewall_clean": false,
+        "layer2_licensed_exception": true,
+        "firewall_A_sealed": true,
+        "firewall_B_breach_licensed": true,
+        "asymmetry_quarantined_to_layer2": true,
+        "non_comparative_universal": true,
+        "advisory_not_directive": true,
+        "not_a_suffering_calculus": true,
+        "a_axis_reading": "Layer-2 register: the a-axis scores advisory-discipline / Firewall-A fidelity (high-standing, zero-force) rather than the optionality autonomy-frame; the node directs no pregnant person and grades no fetus while defending the positive claim's non-selective character."
+      },
+      "tier_justification": "Layer-2 meta-defense at the same dialectical altitude as the advisory-positive foundation (T4): it defeats the most acute charter and reputational hazard against the positive claim — the eugenic and selective-judgment slide — and does so only via machinery distinct from the foundation's non-comparative declaration, namely the structural-vs-evaluative engine. The asymmetry is a structural claim about the existence/non-existence cut with no scalar harm-magnitude input, so the positive reason bears on every conception with identical force, foreclosing any gradient and hence any ranking of lives. The node is conceptual, not case-driven: rwe_refs is empty by design, since adducing historical eugenics as an example would misrepresent the very appraisal the node disowns.",
+      "rwe_refs": []
     }
   ],
-  "realWorldExamples": []
+  "realWorldExamples": [],
+  "abortion_wing_terminus_marker": {
+    "marker_type": "wing_terminus_two_layer_complete",
+    "pattern_ref": "anthropocentrism wing2_objection_set_marker / RTD wing1_objection_set_marker",
+    "status": "complete",
+    "as_of": "K178 / 2026-06-30",
+    "wing": 1,
+    "wing_label": "Harm & Autonomy",
+    "assertion": "The Abortion wing is at terminus. Layer 1 (optionality) is COMPLETE at five defenses; Layer 2 (the lone charter-licensed strictly-advisory positive exception, L137) is COMPLETE at two nodes -- the advisory claim and its non-comparative firewall. 'complete' = a frozen, citable closure asserting structural completeness + internal coherence across both layers -- NOT dialectical victory, NOT 'done'. New-objection intake reopens the relevant layer (MAJOR).",
+    "layer_summary": {
+      "layer_1": {
+        "status": "COMPLETE",
+        "role": "optionality (appraisal-silent, asymmetry-independent)",
+        "count": 5,
+        "completeness_basis": "the secular person-horn covered five ways; every sixth-lever residue routes to machinery the five carry (K177)."
+      },
+      "layer_2": {
+        "status": "COMPLETE",
+        "role": "the lone licensed strictly-advisory positive moral claim (charter L137)",
+        "count": 2,
+        "completeness_basis": "the advisory-positive foundation + its non-comparative firewall; the eugenic-slide is the only distinct G1-clearing attack on the positive claim and is now answered (K178)."
+      }
+    },
+    "roster": [
+      {
+        "id": "gestational-self-determination-is-the-default",
+        "role": "spine",
+        "tier": 3,
+        "layer": 1,
+        "long": {
+          "rsi_pct": 88.2,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "the-right-does-not-turn-on-fetal-personhood",
+        "role": "personhood-independence-foundation",
+        "tier": 4,
+        "layer": 1,
+        "long": {
+          "rsi_pct": 86.6,
+          "grade": "B"
+        }
+      },
+      {
+        "id": "responsibility-does-not-ground-a-duty-to-gestate",
+        "role": "responsibility-defeat",
+        "tier": 3,
+        "layer": 1,
+        "long": {
+          "rsi_pct": 88.8,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "the-manner-of-removal-does-not-forfeit-the-right",
+        "role": "manner-of-removal-defeat",
+        "tier": 3,
+        "layer": 1,
+        "long": {
+          "rsi_pct": 88.2,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "a-valuable-future-grounds-no-claim-on-the-body",
+        "role": "future-deprivation-defeat",
+        "tier": 3,
+        "layer": 1,
+        "long": {
+          "rsi_pct": 89.4,
+          "grade": "A"
+        }
+      },
+      {
+        "id": "terminating-a-pregnancy-wrongs-no-one",
+        "role": "advisory-positive-foundation",
+        "tier": 4,
+        "layer": 2,
+        "long": {
+          "rsi_pct": 87.5,
+          "grade": "B"
+        }
+      },
+      {
+        "id": "the-appraisal-selects-no-life",
+        "role": "advisory-positive-boundary",
+        "tier": 4,
+        "layer": 2,
+        "long": {
+          "rsi_pct": 87.6,
+          "grade": "B"
+        }
+      }
+    ],
+    "honest_residuals": "The personhood-independence foundation (86.6/B) is a no-defeat primitive-conceder. The two Layer-2 nodes are openly contingent on Benatar's asymmetry imported by charter license -- the advisory claim (87.5/B, s=0.84 cap) and its firewall (87.6/B, s=0.83 cap, leaning on the asymmetry's structural-no-scalar character). The four remaining Layer-1 defenses are clean A.",
+    "register_invariant": "Layer 1: optionality-only, appraisal-silent, asymmetry-independent -- the right stands for a pregnant person who rejects antinatalism outright. Layer 2: the lone charter-licensed (L137) strictly-advisory positive moral claim -- Firewall-A sealed absolutely (directs / urges / coerces / enforces no one), Firewall-B breached by license only, the Benatar asymmetry quarantined to Layer 2 and never leaking to Layer 1 or any other wing; universal and non-comparative, structural and not a suffering-calculus.",
+    "reopening": "New-objection intake reopens the relevant layer (MAJOR, its own bundled cut). A future Layer-1 or Layer-2 candidate clearing G1 reopens it; none found at K178.",
+    "export_invariance": "Non-rendering metadata: corpus + doc only. The marker drives no index entry, no combined.html card, no ledger row, no flagship pin. This fold's index regen + combined.html lede splice owe to the bundled node-add, not the marker; Cowork proves the marker export-invariant by building the index over a marker-only corpus and reproducing the base index byte-exact."
+  }
 }

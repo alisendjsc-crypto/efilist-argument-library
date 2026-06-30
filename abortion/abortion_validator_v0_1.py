@@ -53,6 +53,9 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "strand", "layer", "role", "objection",
                         "move_tags", "rebuttal", "rwe_refs"]
 STRAND_VALUES = {"bodily-sovereignty", "fetal-status", "voluntariness", "antinatalist-appraisal"}
+L2_REGISTER_KEYS = {"layer2_licensed_exception", "firewall_A_sealed", "firewall_B_breach_licensed",
+                    "asymmetry_quarantined_to_layer2", "non_comparative_universal", "advisory_not_directive",
+                    "not_a_suffering_calculus", "a_axis_reading"}
 DEPTHS = ("short", "medium", "long")
 ROUND_TOL = 0.0005   # half of a 0.1% display step — the rsi_pct rounding band
 
@@ -96,6 +99,14 @@ def check_schema(corpus):
         ly = o.get("layer")
         if ly not in (1, 2):
             out.append(_v("schema", "layer %r not in {1,2}" % (ly,), oid))
+        if ly == 2:
+            rc = o.get("register_compliance")
+            if not isinstance(rc, dict):
+                out.append(_v("schema", "layer-2 node missing register_compliance dict", oid))
+            else:
+                missing = sorted(k for k in L2_REGISTER_KEYS if k not in rc)
+                if missing:
+                    out.append(_v("schema", "layer-2 register_compliance missing sub-keys %s" % missing, oid))
         r = o.get("rebuttal")
         if not isinstance(r, dict) or any(k not in r for k in DEPTHS):
             out.append(_v("schema", "rebuttal missing short/medium/long", oid))
@@ -397,8 +408,16 @@ def run_synthetic_tests():
     cases["strand_compensation_fires"] = (len(check_schema(c)) > 0, True)
     c = _good_corpus(); del c["objections"][0]["strand"]
     cases["strand_missing_fires"] = (len(check_schema(c)) > 0, True)
-    c = _good_corpus(); c["objections"][0]["layer"] = 2
+    L2RC = {k: True for k in ("layer2_licensed_exception", "firewall_A_sealed", "firewall_B_breach_licensed",
+            "asymmetry_quarantined_to_layer2", "non_comparative_universal", "advisory_not_directive",
+            "not_a_suffering_calculus", "a_axis_reading")}
+    c = _good_corpus(); c["objections"][0]["layer"] = 2; c["objections"][0]["register_compliance"] = dict(L2RC)
     cases["layer_two_passes"] = (len(check_schema(c)) == 0, True)
+    c = _good_corpus(); c["objections"][0]["layer"] = 2  # layer-2 with no register_compliance
+    cases["layer2_register_absent_fires"] = (len(check_schema(c)) > 0, True)
+    c = _good_corpus(); c["objections"][0]["layer"] = 2
+    c["objections"][0]["register_compliance"] = {k: vv for k, vv in L2RC.items() if k != "a_axis_reading"}
+    cases["layer2_register_missing_key_fires"] = (len(check_schema(c)) > 0, True)
     c = _good_corpus(); c["objections"][0]["layer"] = 3
     cases["layer_bad_fires"] = (len(check_schema(c)) > 0, True)
     c = _good_corpus(); del c["objections"][0]["layer"]
