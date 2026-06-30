@@ -145,6 +145,14 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .resp-d[open]>summary::after{content:" [-]"}
 .resp-d>summary:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
 .resp-d .resp{margin-top:.3rem}
+/* K176b: RSI grade panel -- flagship-parity, aux tokens + reading-modes */
+.rsi-badge{display:inline-block;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;border:1px solid;border-radius:2px;padding:.02rem .28rem;margin-left:.4rem;vertical-align:middle}
+.rsi-detail{margin-top:.5rem;padding-top:.4rem;border-top:1px solid var(--line);font-family:var(--mono)}
+.rsi-detail .rsi-axis{display:flex;justify-content:space-between;align-items:center;margin:.16rem 0;font-size:.62rem;letter-spacing:.04em}
+.rsi-detail .rsi-axis-label{color:var(--faint)}
+.rsi-detail .rsi-axis-val{color:var(--dim);white-space:nowrap}
+.rsi-detail .rsi-axis-bar{display:inline-block;height:7px;margin-left:.4rem;border-radius:1px;vertical-align:middle;max-width:100px}
+.rsi-detail .rsi-formula{color:var(--dim);font-size:.62rem;line-height:1.5;margin-top:.45rem;border-top:1px solid var(--line);padding-top:.4rem}
 </style>
 <script>
 /* K156 reading-mode bootstrap - pre-paint, no FOUC */
@@ -278,11 +286,28 @@ function rweFit(record, nodeId){
   var ao = (((record||{}).attached_objections) || []).filter(function(a){ return a && a.objection_id===nodeId; })[0];
   return ao ? (ao.fit_to_trigger_phrases||null) : null;
 }
+function rsiAxesFor(longAxes, dk){
+  var v=longAxes.v, s=longAxes.s, c=longAxes.c, r=longAxes.r, a=longAxes.a;
+  if(dk==="medium"){ c=Math.max(0,c-0.05); r=Math.max(0,r-0.03); }
+  else if(dk==="short"){ c=Math.max(0,c-0.12); r=Math.max(0,r-0.06); }
+  return {v:v,s:s,c:c,r:r,a:a};
+}
+function rsiBandColor(val, bands){
+  return val>=bands.A?"#4a7":val>=bands.B?"#6699cc":val>=bands.C?"#c90":"#c55";
+}
+function rsiLabel(letter){
+  return ({
+    A:{color:"#4a7",desc:"Structurally airtight \u2014 minimal vulnerability to counter-attack"},
+    B:{color:"#6699cc",desc:"Robust \u2014 strong on most axes, minor pressure points"},
+    C:{color:"#c90",desc:"Competent \u2014 effective but has identifiable vulnerabilities"},
+    D:{color:"#c55",desc:"Contested \u2014 depends on premises the interlocutor is likely to reject"}
+  })[letter] || {color:"#888",desc:""};
+}
 /* ===PURE-LOGIC-END=== */
 
 (function(){
   var CORPUS_URL = "transgenderism_corpus_v0_1.json";
-  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}};
+  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}, gradeIndex:{}, bands:{A:0.88,B:0.82,C:0.76,D:0}};
 
   function esc(s){
     return String(s==null?"":s).replace(/[&<>"']/g, function(c){
@@ -334,6 +359,32 @@ function rweFit(record, nodeId){
     return '<div class="rwe"><span class="lbl">'+label+'</span>'+items+'</div>';
   }
 
+  function rsiBlock(n){
+    var g = state.gradeIndex[n.id];
+    if(!g || !g.axes) return "";
+    var dk = depthKey(state.depth);
+    var d = g[dk]; if(!d) return "";
+    var ax = rsiAxesFor(g.axes, dk);
+    var bands = state.bands;
+    var rows = [["VALIDITY",ax.v],["SOUNDNESS",ax.s],["COMPLETENESS",ax.c],["RESILIENCE",ax.r],["AUTONOMY",ax.a]]
+      .map(function(x){
+        var pct = Math.round(x[1]*100);
+        var col = rsiBandColor(x[1], bands);
+        return '<div class="rsi-axis"><span class="rsi-axis-label">'+x[0]+'</span>'
+          + '<span class="rsi-axis-val">'+pct+'% <span class="rsi-axis-bar" style="width:'+pct+'px;background:'+col+'"></span></span></div>';
+      }).join("");
+    var lab = rsiLabel(d.grade);
+    return '<div class="rsi-detail">'+rows
+      + '<div class="rsi-formula">RSI = (V \u00d7 S \u00d7 C \u00d7 R \u00d7 A)<sup>1/5</sup> = <strong>'
+      + Number(d.rsi_pct).toFixed(1)+'%</strong> \u2192 Grade '+esc(d.grade)
+      + '<br>'+esc(lab.desc)+'</div></div>';
+  }
+  function rsiBadge(n){
+    var g = state.gradeIndex[n.id]; if(!g) return "";
+    var d = g[depthKey(state.depth)]; if(!d) return "";
+    var lab = rsiLabel(d.grade);
+    return ' <span class="rsi-badge" style="color:'+lab.color+';border-color:'+lab.color+'">RSI '+esc(d.grade)+'</span>';
+  }
   function card(n){
     var dk = depthKey(state.depth);
     var src = n.rebuttal || n.responses;
@@ -353,9 +404,10 @@ function rweFit(record, nodeId){
       +   '<h2>'+esc(n.objection||n.trigger)+'</h2>'
       +   kws + mech
       +   (n.diagnosis?'<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis)+'</div>':'')
-      +   '<details class="resp-d" data-for="'+esc(n.id)+'"><summary>response · '+esc(state.depth)+'</summary>'
+      +   '<details class="resp-d" data-for="'+esc(n.id)+'"><summary>response · '+esc(state.depth)+rsiBadge(n)+'</summary>'
       +   '<div class="resp">'+respHtml+'</div>'
       +   rweBlock(n)
+      +   rsiBlock(n)
       +   '</details>'
       +   '<a class="permalink" href="#obj-'+esc(n.id)+'">#obj-'+esc(n.id)+'</a>'
       + '</article>';
@@ -439,7 +491,7 @@ function rweFit(record, nodeId){
   function meta(c){
     var m = "v"+esc(c.version||"?")+" · generated "+esc(c.generated||"?")
       +" · "+esc(c.objections.length)+" entry(ies) · source: "+esc(CORPUS_URL);
-    $("footer").innerHTML = m + ' · <span class="sub">RSI grades live in the ledger; '
+    $("footer").innerHTML = m + ' · <span class="sub">RSI grades rendered per card from the ledger; '
       + 'no graph subsystem at launch.</span>';
     $("about-meta").textContent = m;
     var mk = c["wing"+c.wing+"_objection_set_marker"];
@@ -450,13 +502,20 @@ function rweFit(record, nodeId){
     if(bdg){ if(mk){ bdg.textContent = "provisional-complete"; } else { bdg.style.display = "none"; } }
   }
 
+  var LEDGER_URL = CORPUS_URL.replace(/_corpus.*\.json$/, "_grading_ledger.json");
+  function loadLedger(){
+    return fetch(LEDGER_URL, {cache:"no-cache"})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(l){ if(l){ state.gradeIndex = l.grades || {}; if(l.band_thresholds) state.bands = l.band_thresholds; } })
+      .catch(function(){});
+  }
   fetch(CORPUS_URL, {cache:"no-cache"})
     .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
     .then(function(c){
       state.nodes = c.objections || [];
       state.rweIndex = {};
       (c.realWorldExamples || []).forEach(function(r){ if(r && r.instance_id) state.rweIndex[r.instance_id] = r; });
-      meta(c); renderTierChips(); wire(); renderList(); flashTarget();
+      return loadLedger().then(function(){ meta(c); renderTierChips(); wire(); renderList(); flashTarget(); });
     })
     .catch(function(err){
       $("file-notice").style.display = "block";
