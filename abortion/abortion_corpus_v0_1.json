@@ -11,7 +11,7 @@
     "bodily-sovereignty",
     "fetal-status"
   ],
-  "strand_note": "Wing-1 instrument (Refusal Suite Charter v0.1; Abortion gate L137, K171). bodily-sovereignty (spine; non-conscriptability / bodily self-determination -- a right to life is not a right to the use of an unwilling body; the burden-inversion default that override-attempts must work to overturn, thereby conceding it). Strand set grows as nodes land.",
+  "strand_note": "Wing-1 instrument (Refusal Suite Charter v0.1; Abortion gate L137, K171). bodily-sovereignty (spine; non-conscriptability / bodily self-determination -- a right to life is not a right to the use of an unwilling body; the burden-inversion default that override-attempts must work to overturn, thereby conceding it). fetal-status (the personhood-independence foundation; status-invariance -- the right holds on both horns of the personhood dilemma and is decided by whether a right to life reaches the body of an unwilling other, a question invariant under fetal status; the metaphysics is bracketed, not settled). Strand set grows as nodes land.",
   "rwe_schema": "abortion_rwe_schema_v0_1.json",
   "tiers": {
     "1": "Emotional/Reflexive",
