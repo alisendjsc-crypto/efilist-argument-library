@@ -1,9 +1,9 @@
 {
   "artifact": "abortion_grading_ledger",
   "library": "abortion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "generated": "2026-06-29",
-  "status": "v0.1.0 (K172; Abortion wing genesis). 1 grade. Long-headline tally: A1 / B0. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765, clear of the 0.88 boundary by 0.0018; T3 A-eligible -- the bodily non-conscriptability default-setter, holding c/r at 0.86 for the three weighty contests it routes rather than closes). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "status": "v0.1.1 (K173; +the-right-does-not-turn-on-fetal-personhood). 2 grades. Long-headline tally: A1 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
   "band_thresholds": {
@@ -66,6 +66,35 @@
         "short": "30c1fcb981ac430c40ddce311febd439",
         "medium": "0b80aa4ded8af5c6d7bd7fdca9e80e0e",
         "long": "a2bd5dade2bb98629274fbad0efecc73"
+      }
+    },
+    "the-right-does-not-turn-on-fetal-personhood": {
+      "graded": true,
+      "axes": {
+        "v": 0.89,
+        "s": 0.86,
+        "c": 0.84,
+        "r": 0.84,
+        "a": 0.9
+      },
+      "short": {
+        "rsi_pct": 82.7,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 84.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 86.6,
+        "grade": "B"
+      },
+      "headline_grade_long": "B",
+      "note": "Cold-graded on merit before any cross-wing scale-check; axes committed on the written prose, bands derived from the UNROUNDED geomean. This is a T4 B-cap PRIMITIVE-CONCEDER (the abortion S1-analog) and lands in B at every depth ON MERIT — the conceded indeterminacy and the routed person-horn temper s/c/r below A; no administrative cap is applied. long geomean 0.865641 (rsi 86.6/B); medium 0.848885 (rsi 84.9/B); short 0.827012 (rsi 82.7/B). No boundary cell at any depth (all well clear of 0.88). Axis reasoning. v=0.89: the independence demonstration is a valid structure, not a metaphysics — a disjunction-elimination across the personhood dilemma (right holds on both horns -> right is invariant under the question) plus a hinge-relocation (the determinant is the conscription question, not fetal status); held below the spine's 0.90 because the move's PURCHASE rests on the person horn, whose full security is the spine's plus routed nodes' work, not the foundation's. s=0.86: the not-a-person horn is trivially sound; the person horn is the spine's non-conscriptability result, asserted here ON CREDIT (it leans on the spine + the still-routed responsibility and withdrawing-versus-killing nodes); and the load-bearing primitive — the suite does not adjudicate personhood, staking the right on independence from a verdict it declines to render — is a genuine concession. Capped below A accordingly. c=0.84: complete on the structural claim (both horns run, the hinge relocated, the concession owned), but the person horn's full security is DEFERRED to as-yet-unbuilt nodes (the H1-style deferral, heavier here because the whole independence claim is hostage to that horn); a reader of the foundation alone gets the structure with the person horn on credit. r=0.84: the independence/hinge-relocation is robust GIVEN the person horn, and the no-defeat bedrock genuinely absorbs every 'but is it really a person?' retreat (the answer moves neither the conscription question nor the right); but two coherent residuals remain — the objector who contests the person horn (routed, not closed here) and the objector who reads the indeterminacy-concession as evasion (answered by the verdict-changes-nothing point, but pressed while the person horn is unsecured). Primitive-conceder; B-level. a=0.90: a clean optionality/autonomy register — appraisal-silent, asymmetry-independent, no antinatalist consideration, the right standing for a pregnant person who rejects antinatalism, competent-adult bracket stated; held at 0.90 (just under the spine's 0.91) because this is the metaphysics-bracketing node — it foregrounds the contested second-party-status question more than the spine even while declining to settle it, and a primitive-conceder's autonomy-assertion is one notch softened by conceding the suite's reach. L137 + no-defeat verified in the prose: Layer-1 tag; Firewall-A seal; quarantine seal (asymmetry-independent, zero antinatalism); G1 distinctness vs the spine (this runs BOTH horns to establish metaphysics-INDEPENDENCE and relocates the hinge, where the spine ran one arguendo horn to set the burden-default and ROUTED personhood here); competent-adult bracket; and the holding is never written as defeated — retreats absorb into it, the indeterminacy concession is about the suite's reach not the right. prose_md5 binds the grade to the exact rebuttal bytes read back from the written node file. Cross-wing scale-check (long unrounded, AFTER the cold grade): 0.865641 sits where a primitive-conceder foundation belongs — in B, structurally kin to Transgenderism's S1 (the B-cap referent-independence foundation), both conceding a contested deeper metaphysics and staking the right on independence from it. It sits below every A node in the suite (the abortion spine 0.881765/A, regret 0.879704/B and bystander 0.879728/B above it among the B siblings) and reads as the deliberate floor of the wing, not a weak node: a B-cap foundation is doing exactly its job. The tuple was committed before comparison, not score-targeted. Abortion wing ledger on fold: A1/B1.",
+      "prose_md5": {
+        "short": "6097843fd473c54ad30ae94fa242903d",
+        "medium": "be73d5b2a6e21b62b5424d401ac17063",
+        "long": "9373b7fab47e0bec8917775486c5e147"
       }
     }
   }
