@@ -1,9 +1,9 @@
 {
   "artifact": "abortion_grading_ledger",
   "library": "abortion",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "generated": "2026-06-29",
-  "status": "v0.1.1 (K173; +the-right-does-not-turn-on-fetal-personhood). 2 grades. Long-headline tally: A1 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "status": "v0.1.2 (K174; +responsibility-does-not-ground-a-duty-to-gestate). 3 grades. Long-headline tally: A2 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
   "band_thresholds": {
@@ -95,6 +95,35 @@
         "short": "6097843fd473c54ad30ae94fa242903d",
         "medium": "be73d5b2a6e21b62b5424d401ac17063",
         "long": "9373b7fab47e0bec8917775486c5e147"
+      }
+    },
+    "responsibility-does-not-ground-a-duty-to-gestate": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.88,
+        "c": 0.87,
+        "r": 0.87,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 85.0,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 87.1,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.8,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-graded on merit before any cross-wing scale-check; axes committed on the written prose, bands derived from the UNROUNDED geomean. long geomean 0.887812 (rsi 88.8) -> A, clear of the boundary band (0.88 + 0.0078); medium geomean 0.871228 (rsi 87.1/B); short geomean 0.849615 (rsi 85.0/B). No flagged boundary cell at any depth. Axis reasoning. v=0.91: the defeat is a clean proves-too-much reductio (a parallel built to carry every feature the objection leans on — voluntary foreseeable act, created exclusive dependency, sole compatible source — would compel forced organ donation, which is rejected) plus the causation-to-aid-not-body distinction; held at 0.91 rather than 0.92 because the sharpest residue (the created-exclusive-dependency disanalogy) is engaged-and-collapsed rather than deductively foreclosed. s=0.88: the premises are firm — forced organ donation is rejected even from the responsible and even from the sole source; foreseeing a risk is not waiving a right — with the single A-club contestable joint being the created-exclusive-dependency disanalogy (she made both the being and its sole reliance on her), which the node answers via the unique-donor cases but a committed Boonin-style objector keeps pressing. c=0.87: the node CLOSES the responsibility objection across its forms (causation-grounds-duty, exclusive-dependency, tacit-consent) and DEFERS to no unbuilt node — better than the spine, which deferred this very contest here; held just below 0.88 because the created-exclusive-dependency is the one form engaged-but-not-fully-dissolved, the live disanalogy in the actual literature. r=0.87: the proves-too-much is decisive and robust (the forced-donation rejection is firm across the parallel cases), and the consent-equivocation and exclusivity-does-not-convert moves hold under pressure; the one coherent residual is the bullet-biter who accepts forced organ donation from the responsible-and-exclusive source — defeated by proves-too-much but coherent at a heavy price, the same shape as the irreversibility node's hard-paternalist biter (0.87). a=0.91: a clean optionality/autonomy register — appraisal-silent, asymmetry-independent, no antinatalist consideration, the right standing for a pregnant person who rejects antinatalism, competent-adult bracket stated, the whole argument run on bodily sovereignty; level with the spine (0.91). L137 + no-defeat verified in the prose: Layer-1 tag; Firewall-A seal; quarantine seal (asymmetry-independent, zero antinatalism); G1 distinctness vs the spine (this engages causation-grounds-a-duty, where the spine set the burden-default and ROUTED this) and vs the foundation (this discharges the person-horn credit the foundation leaned here, where the foundation ran metaphysics-independence); competent-adult bracket; routes nothing to the foundation as defeated. prose_md5 binds the grade to the exact rebuttal bytes read back from the written node file. Cross-wing scale-check (long unrounded, AFTER the cold grade): 0.887812 is the strongest abortion node so far — a clean proves-too-much defeat, self-contained (closes the objection, defers nothing), sitting just below the K169/H4 pair (0.889843/A) by a hair because the created-exclusive-dependency residual is heavier than their reductio-biters, and above the spine (0.881765/A, which deferred this contest). Well above the foundation (0.865641/B-cap). Among A nodes it slots beside permission (0.885852/A). Committed before comparison, not score-targeted. Abortion ledger on fold: A2/B1.",
+      "prose_md5": {
+        "short": "6223d9e8a8956a0006ab08a03a02af44",
+        "medium": "0c2e8848c3a0f85608ceeacf3a598d37",
+        "long": "162f6ad115756309cdff11b5efe17f53"
       }
     }
   }
