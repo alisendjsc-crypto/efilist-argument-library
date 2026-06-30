@@ -1,9 +1,9 @@
 {
   "artifact": "abortion_grading_ledger",
   "library": "abortion",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "generated": "2026-06-29",
-  "status": "v0.1.2 (K174; +responsibility-does-not-ground-a-duty-to-gestate). 3 grades. Long-headline tally: A2 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "status": "v0.1.3 (K175; +the-manner-of-removal-does-not-forfeit-the-right). 4 grades. Long-headline tally: A3 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). the-manner-of-removal-does-not-forfeit-the-right -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881651; T3 A-eligible -- the routed withdrawing-versus-killing counter, withdrawal-death identity at previability; the wing's hardest Layer-1 node, a knife-edge A). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
   "band_thresholds": {
@@ -124,6 +124,35 @@
         "short": "6223d9e8a8956a0006ab08a03a02af44",
         "medium": "0c2e8848c3a0f85608ceeacf3a598d37",
         "long": "162f6ad115756309cdff11b5efe17f53"
+      }
+    },
+    "the-manner-of-removal-does-not-forfeit-the-right": {
+      "graded": true,
+      "axes": {
+        "v": 0.91,
+        "s": 0.88,
+        "c": 0.85,
+        "r": 0.86,
+        "a": 0.91
+      },
+      "short": {
+        "rsi_pct": 84.3,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 86.5,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 88.2,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "Cold-graded on merit before any cross-wing scale-check; axes committed on the written prose, bands derived from the UNROUNDED geomean. long geomean 0.881651 (rsi 88.2) -> A, a knife-edge A (0.88 + 0.001651, the closest-to-line of the wing's three A-nodes; c 0.85 -> 0.84 would flip it to B); medium geomean 0.864862 (rsi 86.5/B); short geomean 0.842938 (rsi 84.3/B). No cell within +/-0.0005 of a band threshold. Long sits +0.001651 above the A-threshold (0.881651) — a clean A, but the closest-to-line of the wing's three A-nodes; a single completeness step (c 0.85 -> 0.84) flips it to B. Flagged in tier_justification as a knife-edge A, consistent with this being the wing's hardest Layer-1 node. Axis reasoning. v=0.91 — inferences valid throughout; the load-bearing step (the killing/letting-die binary presupposes a self-subsisting patient under an intrinsic threat; the previable fetus is not one; so withdrawal=death and the binary is inapplicable) follows cleanly. s=0.88 — the no-self-subsisting-patient grounding makes the disanalogy principled, not merely labelled (disease vs dependence); held at 0.88 not 0.89 because it introduces a contestable structural premise (a purely causation-based theory of killing/letting-die would dispute the self-subsistence presupposition), netting to parity with the responsibility node rather than above it. c=0.85 — covers the objection across the range where it bites (previability, where the overwhelming majority of abortion sits): primary case, method-retreat, right-to-the-available-means both ways, viability boundary named. Costs: the post-viability death-question is routed not resolved; the narrow lethal-fetal-anomaly edge (where the fetus DOES carry an intrinsic lethal process, making induction genuinely letting-die) is unengaged. Above the foundation's 0.84 because the routing here is peripheral, not at the claim's core. r=0.86 — robust where it claims to win (the previable core is bulletproof); the strengthened disanalogy closes the strongest reply (the 'death-by-loss-of-required-support is symmetric' move); the honest viability concession means the viable case cannot embarrass it. Held below the responsibility node's 0.87 by two pressure-points: the contestable self-subsistence premise and the conceded viability foothold. a=0.91 — exemplary optionality discipline: appraisal-silent on the manner-choice ('any business but her own'), no positive recommendation, Layer-1, asymmetry-independent, competent-adult bracket named, routes-not-defeats; the viability material scopes the lever and routes the death-question rather than issuing any substantive ruling. L137 + no-defeat verified in the prose: Layer-1 tag; Firewall-A seal; quarantine seal (asymmetry-independent, zero antinatalism); G1 distinctness -- siblings touch violinist/withdraw/kill vocabulary but none runs killing/letting-die as its engine (spine: kidnapping/non-conscription feature; responsibility: voluntary-risk feature; foundation: personhood-invariance); the unplug-vs-stab act/omission and causal-channel structure was unclaimed until this node; competent-adult bracket stated; routes nothing to the foundation as defeated, the post-viability death-question routed to the right's independence from fetal status. prose_md5 binds the grade to the exact rebuttal bytes read back from the written node file. Performed AFTER the cold grade. Ordering is monotone and sensible: responsibility (0.887812/A, 91/88/87/87/91) > spine (0.881765/A, 90/88/86/86/91) ~= this node (0.881651/A, 91/88/85/86/91; Delta -0.000114 vs spine) > foundation (0.865641/B, 89/86/84/84/90). This node grades at the spine's level — both strong Layer-1 bodily-sovereignty nodes — trading the spine's higher c for higher v. It sits above the foundation (the other primitive-engaging node) by 0.016 and below the wing's strongest by 0.006: the lowest of the three A-nodes, as expected for the hardest entry. Abortion ledger on fold: A3/B1.",
+      "prose_md5": {
+        "short": "bf02ee124ab5df0f6cffc8813aeb6c47",
+        "medium": "f2244a0ff11d20537afea02782337b57",
+        "long": "bb5bccba9b6516463314a8506ebbad30"
       }
     }
   }
