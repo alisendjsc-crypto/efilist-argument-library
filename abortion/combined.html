@@ -131,6 +131,9 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 [data-mode="legible"] .chip[aria-pressed="true"]{background:#efe4cf}
 [data-mode="both"] .chip[aria-pressed="true"]{background:#e6e6e6}
 [data-mode="legible"] .notice,[data-mode="both"] .notice{background:#fbeaec}
+/* K175b legible: serif prose, mono instrument chrome (flagship-parity reading mode) */
+[data-mode="legible"] body,[data-mode="both"] body{font-family:'Georgia','Times New Roman',serif}
+[data-mode="legible"] .eyebrow,[data-mode="both"] .eyebrow,[data-mode="legible"] .mode-toggle button,[data-mode="both"] .mode-toggle button,[data-mode="legible"] .lbl,[data-mode="both"] .lbl,[data-mode="legible"] .lib-meta,[data-mode="both"] .lib-meta{font-family:var(--mono)}
 .mode-toggle{display:flex;gap:.25rem;margin:.6rem 0 0;flex-wrap:wrap}
 .mode-toggle button{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .5rem;cursor:pointer;border-radius:2px}
 .mode-toggle button.active{color:var(--fg);border-color:var(--accent)}
@@ -175,7 +178,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 <body>
 <div class="wrap">
   <header class="site">
-    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries">Refusal Libraries <span aria-hidden="true">·</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <span aria-current="page">Harm &amp; Autonomy</span></nav>
+    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries"><a href="/libraries">Refusal Libraries</a> <span aria-hidden="true">·</span>  <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Right to Die</a> <span aria-hidden="true">/</span> <span aria-current="page">Abortion</span> <span aria-hidden="true">/</span> <a href="/transgenderism/combined">Transgenderism</a> <span aria-hidden="true">/</span> <a href="/anthropocentrism/combined">Anthropocentrism</a></nav>
     <h1>Abortion (optionality) <span class="badge" id="skel-badge"></span></h1>
     <div class="sub" id="site-sub">Abortion · Wing 1 — Harm &amp; Autonomy</div>
     <div class="mode-toggle" role="group" aria-label="reading mode">
