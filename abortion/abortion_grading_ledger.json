@@ -1,9 +1,9 @@
 {
   "artifact": "abortion_grading_ledger",
   "library": "abortion",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "generated": "2026-06-29",
-  "status": "v0.1.4 (K176; +a-valuable-future-grounds-no-claim-on-the-body). 5 grades. Long-headline tally: A4 / B1. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). the-manner-of-removal-does-not-forfeit-the-right -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881651; T3 A-eligible -- the routed withdrawing-versus-killing counter, withdrawal-death identity at previability; the wing's hardest Layer-1 node, a knife-edge A). a-valuable-future-grounds-no-claim-on-the-body -- 85.6 / 87.7 / 89.4 (B/B/A; headline A; long unrounded 0.893674; T3 A-eligible -- the Marquis future-like-ours counter: grant the fetus's valuable future whole, route the negative reading to the spine, defeat the positive duty-to-sustain residue on the stakes-invariant bodily boundary; the wing's highest long-geomean, a comfortable A). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
+  "status": "v0.1.5 (K177; +terminating-a-pregnancy-wrongs-no-one, the first Layer-2 advisory-positive node). 6 grades. Long-headline tally: A4 / B2. gestational-self-determination-is-the-default -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881765; T3 A-eligible bodily non-conscriptability default-setter). the-right-does-not-turn-on-fetal-personhood -- 82.7 / 84.9 / 86.6 (B/B/B; headline B; long unrounded 0.865641; T4 B-cap primitive-conceder ON MERIT -- the personhood-independence foundation, conceding the contested metaphysics and staking the right on independence from any verdict the suite declines to render; the wing's deliberate no-defeat floor, not a weak node). responsibility-does-not-ground-a-duty-to-gestate -- 85.0 / 87.1 / 88.8 (B/B/A; headline A; long unrounded 0.887812; T3 A-eligible -- the routed Thomson-counter, causation-grounds-aid-not-body + proves-too-much; the wing's strongest node, self-contained, defers nothing). the-manner-of-removal-does-not-forfeit-the-right -- 84.3 / 86.5 / 88.2 (B/B/A; headline A; long unrounded 0.881651; T3 A-eligible -- the routed withdrawing-versus-killing counter, withdrawal-death identity at previability; the wing's hardest Layer-1 node, a knife-edge A). a-valuable-future-grounds-no-claim-on-the-body -- 85.6 / 87.7 / 89.4 (B/B/A; headline A; long unrounded 0.893674; T3 A-eligible -- the Marquis future-like-ours counter: grant the fetus's valuable future whole, route the negative reading to the spine, defeat the positive duty-to-sustain residue on the stakes-invariant bodily boundary; the wing's highest long-geomean, a comfortable A). terminating-a-pregnancy-wrongs-no-one -- 83.8 / 85.9 / 87.5 (B/B/B; headline B; long unrounded 0.875487; T4 Layer-2 -- the suite's lone licensed positive moral claim, antinatalist-grounded on Benatar's asymmetry; advisory and zero-force, Firewall-A sealed, asymmetry quarantined to Layer 2; the s=0.84 soundness cap prices the imported asymmetry's contested standing, an axes-driven B by honest contingency). Geomean-less ledger (band derived from axes at regen). Cowork-authored status, overridable.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean: A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1dp) DISPLAY-ONLY -- never band the rounded value. Depth modifiers off the long axes: medium c-0.05 r-0.03; short c-0.12 r-0.06 (v/s/a held invariant across depth). Geomean DERIVED from axes at regen (validator recomputes + bands); NOT stored -- never copy-forward (band-true discipline). Score-targeting prohibited. Greenfield: the cold-grade is the grade.",
   "rubric_ref": "Refusal Suite Charter v0.1 (RSI inherited, charter Reuse); Abortion wing gate L137 (K171); first fold K172.",
   "band_thresholds": {
@@ -182,6 +182,35 @@
         "short": "70f247450dd52a8a14faf451c129d3d5",
         "medium": "b09ab86fe3992d59b6c89fa73e9513ec",
         "long": "66cf3c3e941ade0494b74906af301817"
+      }
+    },
+    "terminating-a-pregnancy-wrongs-no-one": {
+      "graded": true,
+      "axes": {
+        "v": 0.9,
+        "s": 0.84,
+        "c": 0.87,
+        "r": 0.85,
+        "a": 0.92
+      },
+      "short": {
+        "rsi_pct": 83.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 85.9,
+        "grade": "B"
+      },
+      "long": {
+        "rsi_pct": 87.5,
+        "grade": "B"
+      },
+      "headline_grade_long": "B",
+      "note": "Cold-graded on merit, axes committed before scale-check; bands from the UNROUNDED geomean (A>=0.88, B>=0.82, C>=0.76). long geomean 0.875487 (rsi 87.5) -> B; medium (c-0.05, r-0.03) 0.858989 (rsi 85.9) -> B; short (c-0.12, r-0.06) 0.837529 (rsi 83.8) -> B. No cell within +/-0.0005 of a band threshold; nearest-to-line is long at d=0.004513 below the 0.88 A-floor (outside the band, reported B). Headline B. v=0.90: the no-victim inference is valid -- the deprivation account needs an interests-bearing subject, none exists before sentience, so the deprivation has no patient; the positive-reason step (harm-prevention at the would-be-born bearer) follows from the asymmetry's second limb. s=0.84 is the deliberate A->B cap and the reason this is a B: the node's distinctive prong -- the positive reason, not the no-victim defeat -- rides Benatar's asymmetry, a genuinely contested premise imported by charter license rather than established here; soundness is capped honestly at the asymmetry's own standing (at s=0.86 long would be 0.8796, a flagged boundary cell; s=0.84 clears the band). a=0.92, Layer-2 register: the a-axis scores advisory-discipline / Firewall-A fidelity (high-standing, zero-force), not the Layer-1 optionality autonomy-frame -- same non-conscription spirit, register-specific surface; NOT a rubric change, recommend canonizing as an L2 grading-convention note. Sibling scale-check: long 87.5/B slots above the Layer-1 foundation (86.6/B) and below the A-cluster (88.2-89.4); coherent as the wing's second B and its first Layer-2 node. prose_md5 binds the grade to the exact rebuttal bytes (md5 short+NUL+medium+NUL+long = 0fae34fd...; per-depth triple stored here for sibling-uniformity). Abortion ledger on fold: A4/B2.",
+      "prose_md5": {
+        "short": "aef0de57fea5a8230486416e57e46ed2",
+        "medium": "5aa162bc14b929042562ea8870f0ee72",
+        "long": "477c87e8cc9b2ecaade9bcd7d77b10c3"
       }
     }
   }

@@ -52,7 +52,7 @@ RWE_ATTESTATION_VALUES = {"public-record", "published-case", "subject-public-tes
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED_NODE_FIELDS = ["id", "tier", "strand", "layer", "role", "objection",
                         "move_tags", "rebuttal", "rwe_refs"]
-STRAND_VALUES = {"bodily-sovereignty", "fetal-status", "voluntariness"}
+STRAND_VALUES = {"bodily-sovereignty", "fetal-status", "voluntariness", "antinatalist-appraisal"}
 DEPTHS = ("short", "medium", "long")
 ROUND_TOL = 0.0005   # half of a 0.1% display step — the rsi_pct rounding band
 
@@ -389,6 +389,8 @@ def run_synthetic_tests():
     cases["strand_fetalstatus_passes"] = (len(check_schema(c)) == 0, True)
     c = _good_corpus(); c["objections"][0]["strand"] = "voluntariness"
     cases["strand_voluntariness_passes"] = (len(check_schema(c)) == 0, True)
+    c = _good_corpus(); c["objections"][0]["strand"] = "antinatalist-appraisal"
+    cases["strand_antinatalistappraisal_passes"] = (len(check_schema(c)) == 0, True)
     c = _good_corpus(); c["objections"][0]["strand"] = "harm"
     cases["strand_harm_fires"] = (len(check_schema(c)) > 0, True)
     c = _good_corpus(); c["objections"][0]["strand"] = "compensation"
