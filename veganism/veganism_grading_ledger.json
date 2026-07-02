@@ -1,9 +1,9 @@
 {
   "artifact": "veganism_grading_ledger",
   "module": "veganism",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "generated": "2026-07-01",
-  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward.",
+  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule.",
   "method": "RSI = (v*s*c*r*a)^(1/5), 0-1 scale. Band the UNROUNDED geomean: A>=0.88 / B>=0.82 / C>=0.76 / D<0.76. Band letters DERIVED at regen time, never copied forward. rsi_pct = round(geomean*100, 1dp), storage/display only — NEVER band the rounded value.",
   "depth_modifiers": "medium: c-0.05, r-0.03; short: c-0.12, r-0.06 (applied to the staked long-axes tuple; clamp at 0). VERIFIED K180 against live flagship row 'life-gift': all three depths recompute exactly (79.2/C, 81.4/C, 83.0/B).",
   "prose_md5_convention": "md5 hex over the UTF-8 DECODED prose string per depth (post-JSON-decode, no surrounding whitespace added), not the escaped literal",
@@ -45,6 +45,35 @@
         "short": "3f5d8d79055410b41a201304b4c9ad34",
         "medium": "6ce138df55e7b5e32163644a4fd8fc5b",
         "long": "dc3452c5c4a58aa7922dd1810ee33ba8"
+      }
+    },
+    "better-off-existing": {
+      "graded": true,
+      "axes": {
+        "v": 0.93,
+        "s": 0.92,
+        "c": 0.91,
+        "r": 0.89,
+        "a": 0.93
+      },
+      "short": {
+        "rsi_pct": 87.8,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 89.9,
+        "grade": "A"
+      },
+      "long": {
+        "rsi_pct": 91.6,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "K181; cold-graded (axes staked and justified at file write, pre-computation; only sibling data seen pre-stake = display grades quoted in the session relay, sibling axes tuple unseen); scope = individual benefit-attribution; replaceability and covenant fenced; asymmetry import: NO — thin no-subject point only, comparativism granted arguendo; tier 2 (harm-accounting) admitted under growth rule",
+      "prose_md5": {
+        "short": "30befdbf56fbd49447daac1b4bf79ace",
+        "medium": "c64e55813e54fc4d0f21352f66b72f8b",
+        "long": "dcb53ebd9d2b777f5be6e243191ec582"
       }
     }
   }
