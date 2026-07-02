@@ -1,9 +1,9 @@
 {
   "artifact": "veganism_grading_ledger",
   "module": "veganism",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "generated": "2026-07-01",
-  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule.",
+  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule. v0.1.2 (K182, 2026-07-01) -- 3 grades: nature-needs-no-defense short 87.7/B, medium 89.9/A, long 91.5/A, headline A. Short is the module's third live band-true short: displays 87.7, bands B off the unrounded geomean 0.877028 (< 0.88). Tier 3 (license-and-inference) admitted under the growth rule.",
   "method": "RSI = (v*s*c*r*a)^(1/5), 0-1 scale. Band the UNROUNDED geomean: A>=0.88 / B>=0.82 / C>=0.76 / D<0.76. Band letters DERIVED at regen time, never copied forward. rsi_pct = round(geomean*100, 1dp), storage/display only — NEVER band the rounded value.",
   "depth_modifiers": "medium: c-0.05, r-0.03; short: c-0.12, r-0.06 (applied to the staked long-axes tuple; clamp at 0). VERIFIED K180 against live flagship row 'life-gift': all three depths recompute exactly (79.2/C, 81.4/C, 83.0/B).",
   "prose_md5_convention": "md5 hex over the UTF-8 DECODED prose string per depth (post-JSON-decode, no surrounding whitespace added), not the escaped literal",
@@ -74,6 +74,35 @@
         "short": "30befdbf56fbd49447daac1b4bf79ace",
         "medium": "c64e55813e54fc4d0f21352f66b72f8b",
         "long": "dcb53ebd9d2b777f5be6e243191ec582"
+      }
+    },
+    "nature-needs-no-defense": {
+      "graded": true,
+      "axes": {
+        "v": 0.95,
+        "s": 0.91,
+        "c": 0.9,
+        "r": 0.87,
+        "a": 0.95
+      },
+      "short": {
+        "rsi_pct": 87.7,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 89.9,
+        "grade": "A"
+      },
+      "long": {
+        "rsi_pct": 91.5,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "K182 predation node; cold-graded (axes staked pre-computation, no sibling/flagship reference comparison); scope = naturalness / third-party-behaviour licensing (natural-license); tier 3 (license-and-inference) admitted under the growth rule — objection concedes standing (fails tier 1) and books no benefit (fails tier 2). Three defeaters: selective-appeal is–ought gap, necessity asymmetry, agency asymmetry. Predation-reduction reductio met by negative/positive-duty distinction + tractability/iatrogenic bounds + harm+consent scope. r priced below v/s/c: wild-animal-suffering intervention debate stays genuinely open, severed from (not settled by) the abstention conclusion. Short band-true (87.7 display, B off unrounded 0.877028). No existence question; asymmetry import: NO.",
+      "prose_md5": {
+        "short": "cb24e05576ad4063dee93c8038c3dcc5",
+        "medium": "1881a24b9464f5ff4424ccf564970232",
+        "long": "24e69b608944093b0790cae41599d652"
       }
     }
   }
