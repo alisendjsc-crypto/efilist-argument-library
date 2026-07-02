@@ -1,0 +1,51 @@
+{
+  "artifact": "veganism_grading_ledger",
+  "module": "veganism",
+  "version": "0.1.0",
+  "generated": "2026-07-01",
+  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward.",
+  "method": "RSI = (v*s*c*r*a)^(1/5), 0-1 scale. Band the UNROUNDED geomean: A>=0.88 / B>=0.82 / C>=0.76 / D<0.76. Band letters DERIVED at regen time, never copied forward. rsi_pct = round(geomean*100, 1dp), storage/display only — NEVER band the rounded value.",
+  "depth_modifiers": "medium: c-0.05, r-0.03; short: c-0.12, r-0.06 (applied to the staked long-axes tuple; clamp at 0). VERIFIED K180 against live flagship row 'life-gift': all three depths recompute exactly (79.2/C, 81.4/C, 83.0/B).",
+  "prose_md5_convention": "md5 hex over the UTF-8 DECODED prose string per depth (post-JSON-decode, no surrounding whitespace added), not the escaped literal",
+  "cold_grade_discipline": "Stake the axes tuple and commit the prose_md5 triple BEFORE any flagship/sibling reference comparison; score-targeting PROHIBITED — prose improves independently, grades are downstream, axes never revised after geomean computation",
+  "rubric_ref": "flagship RSI rubric (project-file d012fd14); validator lineage v3prime_validator_v1_7.py (2cfb638d); band law verified K180 against flagship row 'life-gift' (79.2/C, 81.4/C, 83.0/B exact recompute)",
+  "band_thresholds": {
+    "A": 0.88,
+    "B": 0.82,
+    "C": 0.76,
+    "D": 0.0
+  },
+  "row_shape": "Flagship entry shape verbatim (graded / axes{v,s,c,r,a} / short{rsi_pct,grade} / medium{rsi_pct,grade} / long{rsi_pct,grade} / headline_grade_long) PLUS note and prose_md5{short,medium,long} (superset: flagship row 'life-gift' lacks the last two; module carries them from genesis)",
+  "ungraded": [],
+  "grades": {
+    "no-one-to-wrong": {
+      "graded": true,
+      "axes": {
+        "v": 0.94,
+        "s": 0.9,
+        "c": 0.9,
+        "r": 0.88,
+        "a": 0.94
+      },
+      "short": {
+        "rsi_pct": 87.4,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 89.5,
+        "grade": "A"
+      },
+      "long": {
+        "rsi_pct": 91.2,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "K180 genesis node; cold-graded (axes staked at file write, pre-computation, no reference comparison); scope = property-criterion standing denials; dominion fenced; uncertainty limb is decision-theoretic, no Benatar import",
+      "prose_md5": {
+        "short": "3f5d8d79055410b41a201304b4c9ad34",
+        "medium": "6ce138df55e7b5e32163644a4fd8fc5b",
+        "long": "dc3452c5c4a58aa7922dd1810ee33ba8"
+      }
+    }
+  }
+}
