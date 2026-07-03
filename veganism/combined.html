@@ -4,14 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Transgenderism (optionality) — Refusal Libraries</title>
+<title>Veganism — Refusal Libraries</title>
 <!--
-  transgenderism/combined.html — Refusal Suite render surface (trans genesis, K159).
+  veganism/combined.html — Refusal Libraries reader surface (K184b, Cowork).
+  Forked from right-to-die/combined.html; flagship-adjacent module (K179), NOT a suite wing.
   Stripped instance of the flagship combined.html idiom: tab(s), tier filter,
   response-depth toggle (punch/deconstruct/dismantle), keyword detection.
   NO graph subsystem (charter v0.1: omit at launch).
 
-  SINGLE SOURCE OF TRUTH: this page FETCHES transgenderism_corpus_v0_1.json at
+  SINGLE SOURCE OF TRUTH: this page FETCHES veganism_module_v0_1.json at
   runtime — the corpus is never inlined here (no dual-home drift). Serve over
   HTTP (production: library.wuld.ink; local: `python -m http.server` in this
   folder). Opening as a file:// URL cannot fetch the corpus — a notice is shown.
@@ -78,6 +79,11 @@ h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
 .kw span{font-size:.62rem;color:var(--dim);border:1px solid var(--line);
   padding:.05rem .35rem;border-radius:2px}
 .mech{font-size:.7rem;color:var(--dim);margin-bottom:.5rem}
+.sources{font-size:.72rem;color:var(--dim);margin:.5rem 0 .2rem;padding-left:.7rem;border-left:1px solid var(--line)}
+.sources .lbl{color:var(--faint);font-size:.6rem;letter-spacing:.14em;display:block;text-transform:uppercase;margin-bottom:.3rem}
+.sources ul{margin:0;padding-left:1.1rem}
+.sources li{margin:.15rem 0}
+.psych{font-size:.7rem;color:var(--faint);font-style:italic;margin:.3rem 0 .5rem}
 .diag{font-size:.82rem;color:var(--fg);margin:.4rem 0 .7rem;padding-left:.7rem;
   border-left:1px solid var(--line)}
 .diag .lbl{color:var(--faint);font-size:.6rem;letter-spacing:.14em;display:block;
@@ -186,9 +192,9 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 <body>
 <div class="wrap">
   <header class="site">
-    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries"><a href="/libraries">Refusal Libraries</a> <span aria-hidden="true">·</span>  <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Right to Die</a> <span aria-hidden="true">/</span> <a href="/abortion/combined">Abortion</a> <span aria-hidden="true">/</span> <span aria-current="page">Transgenderism</span> <span aria-hidden="true">/</span> <a href="/anthropocentrism/combined">Anthropocentrism</a> <span aria-hidden="true">/</span> <a href="/veganism/combined">Veganism</a></nav>
-    <h1>Transgenderism (optionality) <span class="badge" id="skel-badge"></span></h1>
-    <div class="sub" id="site-sub">Transgenderism · Wing 1 — Harm &amp; Autonomy</div>
+    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries"><a href="/libraries">Refusal Libraries</a> <span aria-hidden="true">·</span>  <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Right to Die</a> <span aria-hidden="true">/</span> <a href="/abortion/combined">Abortion</a> <span aria-hidden="true">/</span> <a href="/transgenderism/combined">Transgenderism</a> <span aria-hidden="true">/</span> <a href="/anthropocentrism/combined">Anthropocentrism</a> <span aria-hidden="true">/</span> <span aria-current="page">Veganism</span></nav>
+    <h1>Veganism <span class="badge" id="skel-badge"></span></h1>
+    <div class="sub" id="site-sub">Flagship-adjacent module</div>
     <div class="mode-toggle" role="group" aria-label="reading mode">
       <button id="mode-standard" class="active" type="button" onclick="setMode('standard')">standard</button>
       <button id="mode-legible" type="button" onclick="setMode('legible')">legible</button>
@@ -199,7 +205,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 
   <div class="notice" id="file-notice">
     <strong>Serve over HTTP to load the corpus.</strong> This page fetches
-    <code>transgenderism_corpus_v0_1.json</code> at runtime; browsers block that on a
+    <code>veganism_module_v0_1.json</code> at runtime; browsers block that on a
     <code>file://</code> URL. From this folder run
     <code>python&nbsp;-m&nbsp;http.server</code> and open
     <code>http://localhost:8000/combined.html</code>.
@@ -232,7 +238,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
       </div>
       <div class="ctl-group search">
         <span class="ctl-label">Keyword</span>
-        <input id="kw-input" type="search" placeholder="filter by keyword or objection…" autocomplete="off">
+        <input id="kw-input" type="search" placeholder="filter by keyword or trigger…" autocomplete="off">
       </div>
     </div>
     <div class="count" id="count"></div>
@@ -240,7 +246,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
   </section>
 
   <section id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
-    <p class="sub">This library defends the right to self-determine one's own gender presentation and embodiment, against objections raised to it. It is not a claim that anyone <em>should</em> transition; it is a defense of the option, grounded in anti-conscription — no one is bound by a sex or gender assignment made without their assent. Answers run across three strands — sovereignty (the spine), consent, and harm to the chooser — in an optionality-only register that never argues from dysphoria-relief. Complete (v0.1.11): the sovereignty spine, the metaphysical-denial foundation, the gift / preservation-duty defeat, the limiting-principle defeat, the compelled-participation defeat, the bystander-harm defeat, the informed-consent defeat, the voluntariness defeat, the capacity defeat, the regret defeat, the irreversibility defeat, and the firewall-integrity defeat are authored; the wing is complete.</p>
+    <p class="sub">This module makes the positive case for veganism — that eating animals wrongs beings who can be wronged — against the objections raised to it. It is <em>flagship-adjacent</em>: it consumes the flagship's harm-and-consent register, rubric, and band law, and it is <em>not</em> a wing of the Refusal Suite (K179 — a harm-dominant, other-regarding position sits outside the suite's optionality frame). The objections are sorted by the work they do: <em>standing</em> (is there a victim at all?), <em>harm-accounting</em> (does the practice net out as a wrong to it?), and <em>license-and-inference</em> (is it licensed anyway?). Each card carries its Rebuttal Strength Index grade, read live from the module's grading ledger.</p>
     <p class="sub" id="about-meta"></p>
   </section>
 
@@ -261,7 +267,7 @@ function depthKey(toggle){
 function matchKeyword(node, q){
   q = (q||"").trim().toLowerCase();
   if(!q) return true;
-  var hay = [node.objection||node.trigger||"", node.diagnosis||"", node.strand||"", node.mechanism||""]
+  var hay = [node.trigger||"", node.diagnosis||"", node.mechanism||"", node.category||""]
     .concat(node.keywords||[], node.move_tags||[]).join(" ").toLowerCase();
   return hay.indexOf(q) !== -1;
 }
@@ -306,8 +312,8 @@ function rsiLabel(letter){
 /* ===PURE-LOGIC-END=== */
 
 (function(){
-  var CORPUS_URL = "transgenderism_corpus_v0_1.json";
-  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}, gradeIndex:{}, bands:{A:0.88,B:0.82,C:0.76,D:0}};
+  var CORPUS_URL = "veganism_module_v0_1.json";
+  var state = {nodes:[], tier:null, depth:"punch", q:"", rweIndex:{}, gradeIndex:{}, bands:{A:0.88,B:0.82,C:0.76,D:0}, tierNames:{}, mechGloss:{}};
 
   function esc(s){
     return String(s==null?"":s).replace(/[&<>"']/g, function(c){
@@ -387,25 +393,29 @@ function rsiLabel(letter){
   }
   function card(n){
     var dk = depthKey(state.depth);
-    var src = n.rebuttal || n.responses;
-    var resp = (src && src[dk]) ? String(src[dk]).trim() : "";
+    var resp = (n.responses && n.responses[dk]) ? String(n.responses[dk]).trim() : "";
     var respHtml = resp
       ? resp.split(/\n\n+/).map(function(para){ return '<p>'+mdEmph(esc(para))+'</p>'; }).join("")
       : '<p class="empty">— awaiting authoring —</p>';
-    var mech = (n.move_tags && n.move_tags.length)
-      ? '<div class="mech">moves · '+n.move_tags.map(esc).join(" · ")+'</div>' : "";
+    var mech = n.mechanism
+      ? '<div class="mech">mechanism · '+esc(n.mechanism)+(state.mechGloss[n.mechanism]?' — '+esc(state.mechGloss[n.mechanism]):"")+'</div>' : "";
+    var psych = n.psychMechanism ? '<div class="psych">'+esc(n.psychMechanism)+'</div>' : "";
+    var srcs = (n.sources && n.sources.length)
+      ? '<div class="sources"><span class="lbl">sources</span><ul>'+n.sources.map(function(s){return '<li>'+esc(s)+'</li>';}).join("")+'</ul></div>' : "";
     var kws = (n.keywords && n.keywords.length)
       ? '<div class="kw">'+n.keywords.map(function(k){return '<span>'+esc(k)+'</span>';}).join("")+'</div>' : "";
     var stubTag = n._stub ? ' · <span class="obj-stubtag">stub</span>' : "";
     var accessTag = n.access_basis ? ' · <span class="obj-access">access: '+esc(n.access_basis)+'</span>' : "";
     return ''
       + '<article class="obj'+(n._stub?' stub':'')+'" id="obj-'+esc(n.id)+'">'
-      +   '<div class="obj-meta">tier '+esc(n.tier)+' · '+esc(n.strand||n.category||"")+(n.role?' · '+esc(n.role):'')+stubTag+accessTag+'</div>'
-      +   '<h2>'+esc(n.objection||n.trigger)+'</h2>'
+      +   '<div class="obj-meta">tier '+esc(n.tier)+(state.tierNames[n.tier]?' · '+esc(state.tierNames[n.tier].name):"")+'</div>'
+      +   '<h2>'+esc(n.trigger)+'</h2>'
       +   kws + mech
-      +   (n.diagnosis?'<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis)+'</div>':'')
+      +   '<div class="diag"><span class="lbl">diagnosis</span>'+esc(n.diagnosis||"")+'</div>'
+      +   psych
       +   '<details class="resp-d" data-for="'+esc(n.id)+'"><summary>response · '+esc(state.depth)+rsiBadge(n)+'</summary>'
       +   '<div class="resp">'+respHtml+'</div>'
+      +   srcs
       +   rweBlock(n)
       +   rsiBlock(n)
       +   '</details>'
@@ -489,20 +499,20 @@ function rsiLabel(letter){
   }
 
   function meta(c){
-    var m = "v"+esc(c.version||"?")+" · generated "+esc(c.generated||"?")
-      +" · "+esc(c.objections.length)+" entry(ies) · source: "+esc(CORPUS_URL);
+    var m = "v"+esc(c.version||"?")
+      +" · "+esc(c.nodes.length)+" entry(ies) · source: "+esc(CORPUS_URL);
     $("footer").innerHTML = m + ' · <span class="sub">RSI grades rendered per card from the ledger; '
       + 'no graph subsystem at launch.</span>';
     $("about-meta").textContent = m;
     var mk = c["wing"+c.wing+"_objection_set_marker"];
     $("site-sub").textContent = $("site-sub").textContent
-      + " · " + c.objections.length + " objections · v" + (c.version||"?")
+      + " · " + c.nodes.length + " objections · v" + (c.version||"?")
       + (mk ? " · provisional-complete" : "");
     var bdg = $("skel-badge");
     if(bdg){ if(mk){ bdg.textContent = "provisional-complete"; } else { bdg.style.display = "none"; } }
   }
 
-  var LEDGER_URL = CORPUS_URL.replace(/_corpus.*\.json$/, "_grading_ledger.json");
+  var LEDGER_URL = CORPUS_URL.replace(/_module_v0_1\.json$/, "_grading_ledger.json");
   function loadLedger(){
     return fetch(LEDGER_URL, {cache:"no-cache"})
       .then(function(r){ return r.ok ? r.json() : null; })
@@ -512,7 +522,9 @@ function rsiLabel(letter){
   fetch(CORPUS_URL, {cache:"no-cache"})
     .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
     .then(function(c){
-      state.nodes = c.objections || [];
+      state.nodes = c.nodes || [];
+      state.tierNames = (c.vocabulary && c.vocabulary.tiers) || {};
+      state.mechGloss = (c.vocabulary && c.vocabulary.mechanisms) || {};
       state.rweIndex = {};
       (c.realWorldExamples || []).forEach(function(r){ if(r && r.instance_id) state.rweIndex[r.instance_id] = r; });
       return loadLedger().then(function(){ meta(c); renderTierChips(); wire(); renderList(); flashTarget(); });
