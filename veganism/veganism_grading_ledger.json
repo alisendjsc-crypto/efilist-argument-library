@@ -1,9 +1,9 @@
 {
   "artifact": "veganism_grading_ledger",
   "module": "veganism",
-  "version": "0.1.6",
-  "generated": "2026-07-02",
-  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule. v0.1.2 (K182, 2026-07-01) -- 3 grades: nature-needs-no-defense short 87.7/B, medium 89.9/A, long 91.5/A, headline A. Short is the module's third live band-true short: displays 87.7, bands B off the unrounded geomean 0.877028 (< 0.88). Tier 3 (license-and-inference) admitted under the growth rule. v0.1.3 (K183, 2026-07-01) -- node 4 hands-arent-clean short 87.1/B medium 89.3/A long 90.9/A, headline A; tier-2 widen (comparative-net-harm). v0.1.4 (K184) -- we-rank-above short 87.5/B medium 89.7/A long 91.3/A, headline A; tier-1 widen (authority-based-status-denial). v0.1.5 (K186) -- no-suffering-no-wrong short 84.3/B medium 86.4/B long 88.1/A, headline A (A-band floor; most contested win); tier-2 widen (welfare-as-harm-nullification).",
+  "version": "0.1.7",
+  "generated": "2026-07-03",
+  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule. v0.1.2 (K182, 2026-07-01) -- 3 grades: nature-needs-no-defense short 87.7/B, medium 89.9/A, long 91.5/A, headline A. Short is the module's third live band-true short: displays 87.7, bands B off the unrounded geomean 0.877028 (< 0.88). Tier 3 (license-and-inference) admitted under the growth rule. v0.1.3 (K183, 2026-07-01) -- node 4 hands-arent-clean short 87.1/B medium 89.3/A long 90.9/A, headline A; tier-2 widen (comparative-net-harm). v0.1.4 (K184) -- we-rank-above short 87.5/B medium 89.7/A long 91.3/A, headline A; tier-1 widen (authority-based-status-denial). v0.1.5 (K186) -- no-suffering-no-wrong short 84.3/B medium 86.4/B long 88.1/A, headline A (A-band floor; most contested win); tier-2 widen (welfare-as-harm-nullification). v0.1.6 (K187, 2026-07-02) -- node 7 makes-no-difference short 83.2/B medium 85.4/B long 87.1/B, headline B (module's first sub-A / B-headline node; tier-4 duty-transmission, causal-inefficacy; conjoint Budolfson-buffering and strict-consequentialist backstop priced into r=0.80/s=0.85). v0.1.7 (K188, 2026-07-03) -- node 8 plants-feel-pain short 86.6/B medium 88.7/A long 90.4/A, headline A; tier-2 widen (sentience-parity).",
   "method": "RSI = (v*s*c*r*a)^(1/5), 0-1 scale. Band the UNROUNDED geomean: A>=0.88 / B>=0.82 / C>=0.76 / D<0.76. Band letters DERIVED at regen time, never copied forward. rsi_pct = round(geomean*100, 1dp), storage/display only — NEVER band the rounded value.",
   "depth_modifiers": "medium: c-0.05, r-0.03; short: c-0.12, r-0.06 (applied to the staked long-axes tuple; clamp at 0). VERIFIED K180 against live flagship row 'life-gift': all three depths recompute exactly (79.2/C, 81.4/C, 83.0/B).",
   "prose_md5_convention": "md5 hex over the UTF-8 DECODED prose string per depth (post-JSON-decode, no surrounding whitespace added), not the escaped literal",
@@ -219,6 +219,35 @@
         "short": "8b44b60d00adef172d22fbe561cce5c5",
         "medium": "748e8b919942784dd123391ccf659283",
         "long": "20467126f658a6f05c1c320f294dce2b"
+      }
+    },
+    "plants-feel-pain": {
+      "graded": true,
+      "axes": {
+        "v": 0.93,
+        "s": 0.9,
+        "c": 0.9,
+        "r": 0.86,
+        "a": 0.93
+      },
+      "short": {
+        "rsi_pct": 86.6,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 88.7,
+        "grade": "A"
+      },
+      "long": {
+        "rsi_pct": 90.4,
+        "grade": "A"
+      },
+      "headline_grade_long": "A",
+      "note": "K188 node; cold-graded (axes staked on the long's merits pre-computation, md5 triple committed at build, no reference calibration — template sibling seen for schema only); scope = sentience-parity / plants-feel-pain tu-quoque; sentience-criterion defence (substrate + evolutionary-function-of-pain: valence is a behaviour-guidance adaptation, void in sessile organisms) + Gagliano-contested empirical antecedent + reversal (trophic accounting from the crop-death node: the meat-routed diet destroys more plant life, the tu-quoque runs backwards) + sincerity tell; irreducible inductive residual on the negative existence claim priced in r=0.86; asymmetry import NO",
+      "prose_md5": {
+        "short": "5cc08253bc67fea6fa842c1ba6af356f",
+        "medium": "f6e3866803115556ff71441c7d7b4c27",
+        "long": "03a89ec95b08a6763d1733b62d9438ee"
       }
     }
   }
