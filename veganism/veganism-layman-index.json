@@ -1,0 +1,95 @@
+{
+  "schema_version": "layman_index_v0_2",
+  "wing": "veganism",
+  "source_index_pin": "cd443609ec6d046be3a954609f10cb6e",
+  "generated": "2026-07-04",
+  "nodes": [
+    {
+      "id": "better-off-existing",
+      "layman_handle": "Better bred than never born",
+      "layman_trigger": "These pigs only exist because we breed them for bacon — no demand, no pig at all. So the practice gave her everything she has. Give her a decent life and a quick death she never sees coming, and a life worth living still beats never existing. Abolition wouldn't free a single animal; it would only make sure none is ever born again.",
+      "layman_gloss": "Runs on booking existence as a gift, then spending that credit against everything done to her afterward. The hinge: a gift needs a recipient, and at the moment of conferral there is none.",
+      "layman_win_line": "You can't credit a life to the one who wasn't there yet to receive it.",
+      "layman_diagnosis": "Existence booked as a favour, then spent to cover the killing. Three faults. First, the favour has no one to land on: before the animal exists there is no her for whose sake anything is done, and never-existing holds no harm she was spared. Second, grant the comparison and the package fails the objector's own test — a life engineered for extraction is not the net gain being sold. Third, even a life worth living would not buy the killing: making a creature depend on you grounds duties, it does not prepay their violation — no one accepts the same logic run on a child. And abolition wrongs no one alive; a wrong needs a bearer."
+    },
+    {
+      "id": "hands-arent-clean",
+      "layman_handle": "Your plate has a body count too",
+      "layman_trigger": "Spare me the clean-hands routine — your plate isn't bloodless either. The combine that harvests soy and wheat minces field mice and ground-nesting birds by the million; pesticide kills more. A grass-fed steer lives on rough pasture that grows no crop, then feeds a family. Count the bodies per plate, like Steven Davis did, and the vegan's hands come out dirtier than the rancher's.",
+      "layman_gloss": "Runs on tallying the vegan's incidental crop deaths as an offset that licenses the slaughter. The hinge: run the count honestly and it inverts — meat claims several times the acreage, and the mice.",
+      "layman_win_line": "Route a calorie through an animal and it costs more land, and more dead mice.",
+      "layman_diagnosis": "A body count offered as a permit — and it is truncated. Three faults. First, the arithmetic runs the other way: a calorie routed through an animal claims several times the cropland, and field deaths, of one eaten directly; Davis's least-harm case for beef was reversed by Matheny on deaths per person, whatever the per-acre toll. Second, a death foreseen in feeding people is a different act from a death that is the practice's whole point. Third, 'your hands aren't clean' charges inconsistency, not a permit. The bar was least harm one can reach, which the plant diet meets; grass-fed beef off non-crop land is a sliver, not the meat here."
+    },
+    {
+      "id": "makes-no-difference",
+      "layman_handle": "My abstaining changes nothing",
+      "layman_trigger": "Grant all of it. The animals count fully, the factory is a horror, 'humane' is a fig leaf — and yes, my own plate kills things in the fields too. I concede every inch but one: walking past the meat case changes nothing for any animal. The chain moves in truckloads, never single packs, with slack enough that missing buyers never reach the order desk. A duty to do what changes nothing is no duty.",
+      "layman_gloss": "Runs on conceding the whole wrong, then staking all on one line: your abstaining moves no number. The hinge: grant the number is untouched — whether the moral fact is too is a separate question.",
+      "layman_win_line": "The count may hold. You are not untouched.",
+      "layman_diagnosis": "It grants everything — victim, wrong, 'humane,' the vegan's own footprint — and stakes all on one line: abstaining moves no number. Grant it; two holds stand. Discrete jumps give not 'zero effect' but 'zero unless mine tips a jump': the expected animals spared work out near one, not zero. Real chains may buffer that ripple — granted, so the case never rested on efficacy. Buying the product of a wrong because your share is small is complicity: the ninety-ninth rifle in the squad still fired. 'Inert act, so no duty' assumes the charge was suffering alone — but it was harm and consent. The number may not move; the wrong in taking part stands."
+    },
+    {
+      "id": "nature-needs-no-defense",
+      "layman_handle": "It's natural — lions do it",
+      "layman_trigger": "Lions eat gazelles. Predation is the oldest fact of nature, and the food chain is not a moral failing. Humans are animals doing what animals do — eating meat is natural, and what is natural needs no defence. You don't apologise to your dinner out in the wild, and there is no reason to start at the table.",
+      "layman_gloss": "Runs on reading a fact of nature — predation, meat-eating — as a permission. The hinge: nature describes and licenses nothing, and the objector already agrees wherever it would cost him.",
+      "layman_win_line": "Between the lion killing and your being allowed to, nature says nothing at all.",
+      "layman_diagnosis": "A fact of nature read as a permission slip. Three faults. First, the objector does not hold it: he reads no licence into the infanticide and parasitism nature also contains, so it runs only at the plate. Second, its strongest form pleads necessity, which he lacks: the carnivore has no option, he has a supermarket. Third, the lion is no moral agent, so what it does is data, not a precedent for agents; the objection needs it both inside the agency circle to grant permission and outside it to bear no guilt. 'Police the wild' confuses not harming with preventing all harm; whether to intervene in the wild stays open, apart from not eating meat."
+    },
+    {
+      "id": "no-one-to-wrong",
+      "layman_handle": "Animals can't be wronged",
+      "layman_trigger": "Animals aren't the kind of being that can be wronged. Right and wrong hold between persons — rational, self-aware agents who can bear duties and answer for them. Whatever eating meat is, it wrongs no one, because there is simply no one there to wrong. A cow has no standing in the moral court; the question of a wrong to her never even arises.",
+      "layman_gloss": "Runs on a trait every human has and every animal lacks that would strip the animal of standing. The hinge: no such trait exists, and being wronged is not the same power as being able to wrong.",
+      "layman_win_line": "A creature with a stake in what happens to it can be wronged, reason or no reason.",
+      "layman_diagnosis": "Standing denied by naming a trait — and the trait will not hold the line. Strict enough to keep every animal out (reason, contract) and it puts infants and the severely disabled out too; loose enough to let every human in (sentience, interests) and the vertebrates walk in; 'a kind whose typical members reason' is a gerrymander that does no moral work elsewhere. What is left is a confusion of being able to wrong with being able to be wronged — an infant can be wronged without wronging anyone. Standing tracks sentience: a creature with a welfare has a stake in what is done to it, and the one move that could block the case has failed."
+    },
+    {
+      "id": "no-suffering-no-wrong",
+      "layman_handle": "It didn't suffer, so no wrong",
+      "layman_trigger": "Don't lump me in with the factory — I'm against that as much as you are. But raise the animal properly: pasture, sun, a herd, the run of a full life, then one clean stroke it never sees coming. It didn't suffer. A good life and a painless death — a better deal than the wild would ever have cut it. Cruelty is the crime, and I've taken the cruelty out. So name the wrong that's left.",
+      "layman_gloss": "Runs on treating the whole wrong as the pain, so subtract the pain and the ledger clears. The hinge: the charge was harm and consent, and good welfare buys off only the first of the two.",
+      "layman_win_line": "Painless killing still asks no leave, and still takes the future it was leaning toward.",
+      "layman_diagnosis": "The whole wrong treated as the suffering, so subtract it and the ledger clears — but only if that identity holds, and it does not. The charge was harm and consent, and 'humane' is an adjective on the pain alone. Two things survive the best welfare. One: the killing takes leave from no one — a creature with a stake in its life, ended without assent, for taste. Two: the death forecloses a future worth having. The sharpest reply is Epicurean — no subject left to be harmed — met with no asymmetry premise: death takes the future the animal had. The honest edge: for the least future-connected creatures the loss is arguable, firmest for mammals."
+    },
+    {
+      "id": "plants-feel-pain",
+      "layman_handle": "Plants feel pain too",
+      "layman_trigger": "Plants are alive too, and don't tell me they feel nothing. Cut one and it floods the wound with chemicals; wound another and it warns its neighbours to arm up; Gagliano's peas even learned to expect a fan like Pavlov's dog. So how are you so sure the wheat feels nothing while the pig feels everything? Draw the line honestly and you can't — every plate is a killing floor.",
+      "layman_gloss": "Runs on levelling plants with animals to make the suffering line look arbitrary, or to convict the salad too. The hinge: the line tracks felt experience, which a rooted organism cannot use.",
+      "layman_win_line": "Count plants and the tally lands harder on meat: a steer eats its weight over many times.",
+      "layman_diagnosis": "Two prongs, and the second is fatal. First, the line was never 'animals because they resemble us' — it is felt experience, which needs a nervous system the plant lacks and a use it cannot have: pain guides escape, and what cannot flee has no use for it. Plant signalling is a response, not a sufferer; it would even admit a sentient plant and exclude a non-sentient animal — a property, not resemblance. Second, decisive: grant that plants feel anyway. A steer eats many times its weight in plants, so meat costs far more plant life; the charge runs backwards, convicting the omnivore harder. The tell: no one who says this weeds with a heavy heart."
+    },
+    {
+      "id": "we-rank-above",
+      "layman_handle": "We outrank the animals",
+      "layman_trigger": "We aren't the animals' equals — we're their superiors. Scripture gives humankind dominion over the beasts, and even without it we sit at the top: more rational, more powerful, the apex of the food chain. The lion doesn't apologise to the gazelle, and neither should we. Rank is real, and an inferior's interests were never a claim on a superior; the lesser party was never owed a seat at the table.",
+      "layman_gloss": "Runs on reading rank — smarter, stronger, apex, divinely appointed — as a permission over the animal. The hinge: no step runs from 'higher' to 'may,' and the reversal test breaks the whole move.",
+      "layman_win_line": "'I stand higher' never reaches 'I may' — and you reject it the moment it points at you.",
+      "layman_diagnosis": "Rank read as a permission: we stand higher, so the animal's interests do not bind. But no valid step runs from 'stronger, smarter, higher' to 'I may' — that is might-makes-right, and no one accepts it when a stronger power turns it on him. The food chain is a fact about digestion, not a grant of rights. The scriptural grant fares no better: it answers 'who authorised this?', not 'why is it no wrong to the animal?' Contractarianism, its best dress, proves too much: reciprocity exiles the infant and the severely impaired, readmitted only on grounds that readmit animals. What is left of dominion is position mistaken for permission."
+    }
+  ],
+  "field_bands": {
+    "layman_handle": [
+      1,
+      40
+    ],
+    "layman_trigger": [
+      200,
+      400
+    ],
+    "layman_gloss": [
+      100,
+      200
+    ],
+    "layman_win_line": [
+      1,
+      90
+    ],
+    "layman_diagnosis": [
+      250,
+      650
+    ]
+  },
+  "layman_diagnosis_note": "v0_2: plain-register mirror of the scholar `diagnosis` (the objection's error anatomy). Analytic/appraisal register, flagship-adjacent — the rebuttal lands the module's conclusion (the wrong to the animal), never exhortation (Firewall-A: no marching order to change diet). The T4 node (makes-no-difference) keeps dissolve-defang — the causal-inefficacy primitive is granted and left standing. First residence at v0_2; schema mirrors the anthropocentrism precedent."
+}
