@@ -1,9 +1,9 @@
 {
   "artifact": "veganism_grading_ledger",
   "module": "veganism",
-  "version": "0.1.7",
+  "version": "0.2.1",
   "generated": "2026-07-03",
-  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule. v0.1.2 (K182, 2026-07-01) -- 3 grades: nature-needs-no-defense short 87.7/B, medium 89.9/A, long 91.5/A, headline A. Short is the module's third live band-true short: displays 87.7, bands B off the unrounded geomean 0.877028 (< 0.88). Tier 3 (license-and-inference) admitted under the growth rule. v0.1.3 (K183, 2026-07-01) -- node 4 hands-arent-clean short 87.1/B medium 89.3/A long 90.9/A, headline A; tier-2 widen (comparative-net-harm). v0.1.4 (K184) -- we-rank-above short 87.5/B medium 89.7/A long 91.3/A, headline A; tier-1 widen (authority-based-status-denial). v0.1.5 (K186) -- no-suffering-no-wrong short 84.3/B medium 86.4/B long 88.1/A, headline A (A-band floor; most contested win); tier-2 widen (welfare-as-harm-nullification). v0.1.6 (K187, 2026-07-02) -- node 7 makes-no-difference short 83.2/B medium 85.4/B long 87.1/B, headline B (module's first sub-A / B-headline node; tier-4 duty-transmission, causal-inefficacy; conjoint Budolfson-buffering and strict-consequentialist backstop priced into r=0.80/s=0.85). v0.1.7 (K188, 2026-07-03) -- node 8 plants-feel-pain short 86.6/B medium 88.7/A long 90.4/A, headline A; tier-2 widen (sentience-parity).",
+  "status": "v0.1.0 (K180, 2026-07-01) -- 1 grade: no-one-to-wrong short 87.4/B, medium 89.5/A, long 91.2/A, headline A. Short is a live band-true case: displays 87.4, bands B off the unrounded geomean 0.873537 (< 0.88). Band letters derive from the staked axes at regen; never copied forward. v0.1.1 (K181, 2026-07-01) -- 2 grades: better-off-existing short 87.8/B, medium 89.9/A, long 91.6/A, headline A. Short is the module's second live band-true case: displays 87.8, bands B off the unrounded geomean 0.877994 (< 0.88). Tier 2 (harm-accounting) admitted under the growth rule. v0.1.2 (K182, 2026-07-01) -- 3 grades: nature-needs-no-defense short 87.7/B, medium 89.9/A, long 91.5/A, headline A. Short is the module's third live band-true short: displays 87.7, bands B off the unrounded geomean 0.877028 (< 0.88). Tier 3 (license-and-inference) admitted under the growth rule. v0.1.3 (K183, 2026-07-01) -- node 4 hands-arent-clean short 87.1/B medium 89.3/A long 90.9/A, headline A; tier-2 widen (comparative-net-harm). v0.1.4 (K184) -- we-rank-above short 87.5/B medium 89.7/A long 91.3/A, headline A; tier-1 widen (authority-based-status-denial). v0.1.5 (K186) -- no-suffering-no-wrong short 84.3/B medium 86.4/B long 88.1/A, headline A (A-band floor; most contested win); tier-2 widen (welfare-as-harm-nullification). v0.1.6 (K187, 2026-07-02) -- node 7 makes-no-difference short 83.2/B medium 85.4/B long 87.1/B, headline B (module's first sub-A / B-headline node; tier-4 duty-transmission, causal-inefficacy; conjoint Budolfson-buffering and strict-consequentialist backstop priced into r=0.80/s=0.85). v0.1.7 (K188, 2026-07-03) -- node 8 plants-feel-pain short 86.6/B medium 88.7/A long 90.4/A, headline A; tier-2 widen (sentience-parity). v0.2.0 (K189, 2026-07-03) -- module saturation/terminus marker (8-node close); NO ledger grade change (recorded for log completeness). v0.2.1 (K190a, 2026-07-03) -- we-rank-above theological limb enriched (immanent Gen 1:28/1:29/9:3 dietary-arc engine); re-graded axes c 0.90->0.91 (added distinct theological defeat-move), v/s/r/a HELD; short 87.5->87.7/B (prose BYTE-UNCHANGED, rsi ticks off the node-axis tuple via depth modifiers), medium 89.7->89.9/A, long 91.3->91.5/A, headline A. 8-node terminus intact; export-invariant.",
   "method": "RSI = (v*s*c*r*a)^(1/5), 0-1 scale. Band the UNROUNDED geomean: A>=0.88 / B>=0.82 / C>=0.76 / D<0.76. Band letters DERIVED at regen time, never copied forward. rsi_pct = round(geomean*100, 1dp), storage/display only — NEVER band the rounded value.",
   "depth_modifiers": "medium: c-0.05, r-0.03; short: c-0.12, r-0.06 (applied to the staked long-axes tuple; clamp at 0). VERIFIED K180 against live flagship row 'life-gift': all three depths recompute exactly (79.2/C, 81.4/C, 83.0/B).",
   "prose_md5_convention": "md5 hex over the UTF-8 DECODED prose string per depth (post-JSON-decode, no surrounding whitespace added), not the escaped literal",
@@ -139,28 +139,28 @@
       "axes": {
         "v": 0.95,
         "s": 0.91,
-        "c": 0.9,
+        "c": 0.91,
         "r": 0.86,
         "a": 0.95
       },
       "short": {
-        "rsi_pct": 87.5,
+        "rsi_pct": 87.7,
         "grade": "B"
       },
       "medium": {
-        "rsi_pct": 89.7,
+        "rsi_pct": 89.9,
         "grade": "A"
       },
       "long": {
-        "rsi_pct": 91.3,
+        "rsi_pct": 91.5,
         "grade": "A"
       },
       "headline_grade_long": "A",
-      "note": "K184 dominion node; cold-graded on the merits -- axes staked from the rebuttal's own properties and prose_md5 triple committed before any sibling/flagship axis comparison; sibling axes tuples were necessarily in view (single-file ledger read at session open for band-law/row-shape/fold verification), so this is a merits-grade with disclosure, not a node-1-style blind cold-grade; no score-targeting, band letters derived at regen. Scope = authority-based standing denial (the second standing-denial family; authority not property). tier-1 WIDEN; tier-1-vs-tier-3 falsifier returned deny-not-license. G1 vs no-one-to-wrong PASS (authority vs property) and vs nature-needs-no-defense PASS (standing-relation vs act-token). Defeat: is/ought + reversal test (might-makes-right disguised) + theological two-cut (authority-is-not-a-reason decisive) + consistency/marginal-case vice; contractarian dressing met by proves-too-much + property-collapse. r=0.86 prices the honest residual: a consistent contractarian who accepts the marginal-case exclusion is unrefuted from within -- the standing-tier analogue of the module's marginal-land/wild-suffering remainders, contained not knocked out. Short band-true (87.5 display, B off unrounded). asymmetry import: NO.",
+      "note": "K190a immanent-Genesis enrichment of the theological limb (relay A1). Distinct machinery: NOT the existing internal stewardship cut and NOT the external 'authority-is-not-a-reason' cut, but an immanent/textual engine — Gen 1:28 dominion is issued alongside the herbivorous mandate of Gen 1:29, and flesh-permission is a post-Flood concession (Gen 9:3), structural kin to the hardness-of-heart concessions the tradition flags as departures 'from the beginning'. Forecloses the literalist 'plain grant' believer rejoinder the stewardship-reinterpretation cut was softest against. COLD-GRADE: axes staked on the new prose before any comparison to old grade/siblings; no score-targeting. Only movement is c 0.90->0.91 for the added distinct theological defeat-move (deployed-defeat-set breadth, per this ledger's own completeness accounting); it does not chase a band — medium and long are A on either side. r=0.86 HELD: the binding residual is the marginal-case-accepting contractarian (secular), untouched by a theological addition. v/s/a HELD: form intact, Gen 1:29/9:3 textually accurate, register unchanged. ARTIFACT: short prose is BYTE-UNCHANGED (prose_md5 short = 42ac4046..., verbatim); its rsi ticks 87.5->87.7/B only because rsi is derived from the node-level axis tuple via depth modifiers (short c-eff 0.78->0.79), not from a short-prose edit — band-stable B, band-true off unrounded. medium 89.7->89.9/A, long 91.3->91.5/A, both band-true. long: single theological paragraph split into two (three-cut structure), '+1 paragraph', all other paragraphs byte-exact. Module stays 8 nodes / structure unchanged; export-invariant (no keyword change). asymmetry import: NO.",
       "prose_md5": {
         "short": "42ac4046ac8cff44a0b8a7905353a9f4",
-        "medium": "9731bcbf80e1d0a5151f2dfcaea46177",
-        "long": "0d4255f5b8a856adfd3b193bcbb44bb4"
+        "medium": "200056b7d5134661a028b8db078c9ef2",
+        "long": "ef3f9e73c52b62ea4895ca7805e9278a"
       }
     },
     "no-suffering-no-wrong": {
