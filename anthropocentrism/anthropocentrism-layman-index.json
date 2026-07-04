@@ -1,0 +1,79 @@
+{
+  "schema_version": "layman_index_v0_2",
+  "wing": "anthropocentrism",
+  "source_index_pin": "f1f6a465b91647d4843e466d8bc873e6",
+  "generated": "2026-07-02",
+  "nodes": [
+    {
+      "id": "dissent-is-misanthropy",
+      "layman_handle": "You just hate humans",
+      "layman_trigger": "Forget the arguments — what really drives you is contempt for your own kind. A stance powered by hatred of humanity disqualifies itself; even if every argument for human specialness failed, your dissent stands convicted by its motive. Or, gentler: you don't really lack the human-first instinct everyone shares. You're posturing. Either way, your refusal is not in good standing.",
+      "layman_gloss": "Runs on reading the dissenter's motive as a verdict on the position. The answer: permission to withhold comes from the unproven claim itself, not from anyone's heart.",
+      "layman_win_line": "Call the motive whatever you like — an unproven claim binds no one, however I feel.",
+      "layman_diagnosis": "An attack on the person, not the ground — the flank reached for once the arguments run out. Two errors. First, motive taken as verdict: if hatred drives the refusal, the refusal must be bad. But permission to withhold came from the claim being unproven, not from anyone's goodwill — so it stands whatever the feeling behind it. Second, *not favouring* misread as *animus*: declining to rank humans above is not ranking them below, and non-preference is no wish for harm. One caution, both ways: refusing to rank is never a licence to hate, and the reply cannot prove no dissenter feels the animus — it shows only that the feeling decides nothing."
+    },
+    {
+      "id": "graded-privilege-tracks-capacity",
+      "layman_handle": "No line, just a slope",
+      "layman_trigger": "Fine — no capacity falls at the species line, so I draw no line there. I never needed one. Standing isn't a bar you clear; it's an amount, and the amount tracks capacity. Humans on average have more of what matters, so on average more standing. The impaired human has less, the clever animal more — I accept that without flinching. No line for you to break. Only a slope, and humans sit highest.",
+      "layman_gloss": "Runs on making standing a sliding scale of more-and-less. The answer forks it: apply the scale honestly and it grades humans against humans too — or admit it was never the real ground.",
+      "layman_win_line": "Hold the slope and it grades humans too; flinch, and the slope was never your ground.",
+      "layman_diagnosis": "Stronger than it looks. It abandons the species line and every earlier prop, keeping one bare intuition — standing is not yes/no but an *amount* that tracks capacity. Since it no longer withholds standing from animals *as a class*, the usual objections find nothing to grip, so the flaw sits in the scale's own terms. Taken at its word, a pure magnitude tracking capacity must grade *within* humanity too — the abler adult outranking the impaired one by degree. Hold the scale honestly and it no longer favours humans over animals; flinch from grading humans, and it was a stand-in for a ranking already wanted, not the first principle it claimed."
+    },
+    {
+      "id": "human-centrism-is-the-default",
+      "layman_handle": "Everyone knows humans come first",
+      "layman_trigger": "Human-first is the default — built into our language, laws, habits, and gut. Something that settled needs no defending; it IS the starting point. You make the extraordinary claim: that humanity's special standing should be revoked. Extraordinary claims carry the burden of proof. Until you meet it, your dissent is arbitrary — perverse, even — a walkout from the settled with nothing to show.",
+      "layman_gloss": "Runs on treating a head start as a credential — the side everyone starts on supposedly owes no proof. The answer: declining an unproven claim is not a rival claim, so no burden lands.",
+      "layman_win_line": "A head start is not a proof. I claim nothing — I decline what was never shown.",
+      "layman_diagnosis": "Two moves, stacked. First it reads where a belief *starts* as proof the belief is *owed* — being the default gets mistaken for being justified, though 'everyone begins here' and 'this was shown' are different facts. Second it splits the burden crooked: the newcomer must prove everything, the incumbent pays nothing, excused by sheer familiarity. But declining an unproven claim is not a rival claim — so no burden lands on the one who withholds, and the head start owes its proof like anything else."
+    },
+    {
+      "id": "privilege-tracks-a-capacity",
+      "layman_handle": "Humans matter because we reason",
+      "layman_trigger": "I won't lean on the default — here's the ground. Humans have a real, weighty capacity: reasoning, holding ourselves answerable, trading justifications. The hard cases don't embarrass it — a kind is judged by its mature, typical form, not its damaged exceptions. So the privilege isn't arbitrary habit: it tracks that capacity, and humans are its bearers. That is all anthropocentrism is.",
+      "layman_gloss": "Runs on naming a trait — reason — to justify the privilege, then quietly stretching it to cover the whole species. The answer catches the switch: trait and species don't line up.",
+      "layman_win_line": "The trait did the justifying; the species did the reaching. I decline the switch.",
+      "layman_diagnosis": "The switch happens mid-argument. Reason does the justifying — a real capacity, worth weight. Then the privilege is quietly handed to *the species*, as if 'things that reason' and 'members of humankind' were one set. They aren't: some humans lack the capacity, some animals have it. For the ordinary adult the two coincide, so the seam stays hidden — until an impaired human or a clever animal pulls it open. Keep the trait as the ground and it stops reaching the whole species; reach the whole species and the trait was never the thing doing the work."
+    },
+    {
+      "id": "species-membership-is-the-ground",
+      "layman_handle": "Human, like us, is reason enough",
+      "layman_trigger": "Concede it: no capacity carves at the species line; I rest on none. Being human is itself the morally relevant fact — no trait needed; the impaired human is one of us. Demanding a species-neutral justification is confused: from nowhere, mattering loses grip. 'Human, like us' is a complete reason. Calling it prejudice assumes what's in dispute. Nothing to refute; no neutral court can summon me.",
+      "layman_gloss": "Runs on a reason that refuses outside inspection: 'human, like us' needs no defense. The answer turns the shield: what can't be argued against can't convict anyone who doesn't share it.",
+      "layman_win_line": "Your 'like us' stays yours — it convicts no one. You may favour; I may decline to rank.",
+      "layman_diagnosis": "At the bottom sits a bedrock intuition — 'human, like us, just matters' — placed past argument on purpose; nothing here dislodges it. But a wall you can't argue *against* is one you can't argue *into* someone who doesn't stand on it — so it convicts no dissenter of error. Two riders don't survive. From 'my intuition needs no defense' it slides to 'your refusal is irrational' — yet the scrutiny-refusal that shields the intuition shields the one who doesn't share it. And 'I may put the human first' reaches for 'the animal counts for less' — favouring is not ranking. The bedrock stands; verdict and ranking are declined."
+    },
+    {
+      "id": "substrate-is-the-ground",
+      "layman_handle": "Only living things can matter",
+      "layman_trigger": "Set traits aside, set kind aside. I rest standing on what a thing is made of: a living organism. A point of view, interests, the capacity to be wronged — those can only exist in that kind of stuff. A silicon system, however fluent, is the wrong sort of thing. I'm not denying the machine standing — standing-talk doesn't even reach it. Extending it there isn't generosity; it's a category mistake.",
+      "layman_gloss": "Runs on locking mind and mattering to living matter: only biology can host them. The answer: the lock is a claim, and it was never shown — the machine case can't be shut by decree.",
+      "layman_win_line": "Keep your 'only biology' instinct — the 'cannot' was never shown, so it can't bind me.",
+      "layman_diagnosis": "Underneath is a bedrock instinct — 'standing is for the living, full stop' — set past argument; it stays put and convicts no one who doesn't hold it. The failure is the stronger claim stacked on top: not 'I feel life is where mind lives' but 'mind and interests *cannot* arise in anything else' — a hard modal 'cannot,' a claim about what minds require, slipped in as if it merely reported the instinct. That 'cannot' is the load-bearing premise, and it was never established. Assent is withheld — not because a machine *has* a point of view, but because the impossibility was asserted, not shown. The instinct stands; the 'cannot' is declined."
+    }
+  ],
+  "field_bands": {
+    "layman_handle": [
+      1,
+      40
+    ],
+    "layman_trigger": [
+      200,
+      400
+    ],
+    "layman_gloss": [
+      100,
+      200
+    ],
+    "layman_win_line": [
+      1,
+      90
+    ],
+    "layman_diagnosis": [
+      250,
+      650
+    ]
+  },
+  "layman_diagnosis_note": "v0_2: plain-register mirror of the scholar `diagnosis` (the objection's error anatomy). Analytic/appraisal register; Firewall-A permission-frame; T4 nodes keep dissolve-defang (primitive left standing). Source pin and the four v0_1 fields unchanged (append-only)."
+}
