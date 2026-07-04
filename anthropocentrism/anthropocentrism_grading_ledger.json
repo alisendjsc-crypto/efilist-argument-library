@@ -1,8 +1,8 @@
 {
   "artifact": "anthropocentrism_grading_ledger.json",
   "library": "anthropocentrism",
-  "version": "0.1.6",
-  "generated": "2026-07-02",
+  "version": "0.1.7",
+  "generated": "2026-07-03",
   "status": "v0.1.5: +dissent-is-misanthropy (the misanthropy / motive-contamination fence-guard, T4, brute-ground-terminus-from-the-side) cold-graded 85.6/87.7/89.4 B/B/A (long unrounded geomean 0.893765 >= 0.88 A-line; banded from unrounded; band-true, no score-targeting; third long-A, a clean-dissolve fence-guard with no primitive-concession ceiling, clear of the brute-ground band; discharges brute-kind's named bad-faith-charge-residual via the general motive-orthogonality principle). 6 grades, ungraded: []. || v0.1.6: +per-cell `boundary` flag (band-fragility, unrounded-geomean within epsilon=0.010 of a band line) on all 18 cells + `boundary_policy` block; append-only (all axes/rsi_pct/grade letters byte-identical; band-true cross-check re-derived every stored letter and PASSED). 7/18 cells flagged. Grade-contestedness metadata only (act-neutral; Firewall-A/-B untouched). For the game grade-the-argument drill (relay_library_boundary_cell reply).",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
@@ -38,7 +38,17 @@
       "grade": "D",
       "boundary": false
     },
-    "headline_grade_long": "D"
+    "headline_grade_long": "D",
+    "routes_to": [
+      {
+        "horn": "<retreat-horn label>",
+        "via": "<move_tag(s) the horn derives from>",
+        "to": "<sibling node id> | null",
+        "terminus_kind": "contested | clean_dissolve | firebreak_out_of_scope  (present iff to==null)"
+      }
+    ],
+    "terminus_contested": false,
+    "_routing_note": "routes_to / terminus_contested (v0.1.7): canonical retreat-lattice edges, derived from corpus move_tags @ d9304ac2; node-level, materialized on the ledger for export-invariance (builder is corpus-read, not ledger-read) + game-join. Each edge {horn, via, to(node_id|null), terminus_kind?(iff to==null)}. terminus_contested == any(edge.terminus_kind=='contested'); validator-gated (v0.2). NOT redundant with cell-level `boundary` (grading-proximity to the 0.88 seam): the sets do not coincide -- privilege-tracks-a-capacity is a boundary node yet not a contested terminus -- so the two fields are stored independently and answer to different mutations (regrade vs re-author)."
   },
   "ungraded": [],
   "grades": {
@@ -66,7 +76,15 @@
         "grade": "B",
         "boundary": true
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "B",
+      "routes_to": [
+        {
+          "horn": "name a ground -- capacity C",
+          "via": "grounded-privilege-handoff",
+          "to": "privilege-tracks-a-capacity"
+        }
+      ],
+      "terminus_contested": false
     },
     "privilege-tracks-a-capacity": {
       "graded": true,
@@ -92,7 +110,20 @@
         "grade": "A",
         "boundary": false
       },
-      "headline_grade_long": "A"
+      "headline_grade_long": "A",
+      "routes_to": [
+        {
+          "horn": "the ground is kind-membership itself, not capacity",
+          "via": "species-as-ground-handoff",
+          "to": "species-membership-is-the-ground"
+        },
+        {
+          "horn": "drop the line -- standing is a gradient, not a threshold",
+          "via": "graded-privilege-residual",
+          "to": "graded-privilege-tracks-capacity"
+        }
+      ],
+      "terminus_contested": false
     },
     "species-membership-is-the-ground": {
       "graded": true,
@@ -118,7 +149,26 @@
         "grade": "B",
         "boundary": true
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "B",
+      "routes_to": [
+        {
+          "horn": "the ground is substrate -- biological matter, not abstract kind",
+          "via": "substrate-ground-handoff",
+          "to": "substrate-is-the-ground"
+        },
+        {
+          "horn": "your motive is animus (flank off the bottomed-out floor)",
+          "via": "bad-faith-charge-residual",
+          "to": "dissent-is-misanthropy"
+        },
+        {
+          "horn": "the kind-primitive stands -- nothing to refute, no neutral tribunal",
+          "via": "primitive-ground-binds-no-dissenter+mutual-permission-terminus",
+          "to": null,
+          "terminus_kind": "contested"
+        }
+      ],
+      "terminus_contested": true
     },
     "substrate-is-the-ground": {
       "graded": true,
@@ -144,7 +194,22 @@
         "grade": "B",
         "boundary": true
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "B",
+      "routes_to": [
+        {
+          "horn": "the substrate-primitive stands -- standing is for the living, full stop",
+          "via": "primitive-ground-binds-no-dissenter+mutual-permission-terminus",
+          "to": null,
+          "terminus_kind": "contested"
+        },
+        {
+          "horn": "future silicon minds break the substrate-lock (realisability worry)",
+          "via": "future-proofing-residual",
+          "to": null,
+          "terminus_kind": "contested"
+        }
+      ],
+      "terminus_contested": true
     },
     "graded-privilege-tracks-capacity": {
       "graded": true,
@@ -170,7 +235,21 @@
         "grade": "A",
         "boundary": true
       },
-      "headline_grade_long": "A"
+      "headline_grade_long": "A",
+      "routes_to": [
+        {
+          "horn": "recoil from intra-human grading -- humans equal-and-above regardless of capacity",
+          "via": "recoil-routes-to-brute-ground",
+          "to": "species-membership-is-the-ground"
+        },
+        {
+          "horn": "bite the gradient -- accept intra-human grading",
+          "via": "bite-dissolves-into-capacity-rank",
+          "to": null,
+          "terminus_kind": "clean_dissolve"
+        }
+      ],
+      "terminus_contested": false
     },
     "dissent-is-misanthropy": {
       "graded": true,
@@ -196,7 +275,22 @@
         "grade": "A",
         "boundary": false
       },
-      "headline_grade_long": "A"
+      "headline_grade_long": "A",
+      "routes_to": [
+        {
+          "horn": "the motive-charge stands -- you cannot disprove the animus",
+          "via": "mutual-permission-terminus+animus-not-disproven-residual",
+          "to": null,
+          "terminus_kind": "contested"
+        },
+        {
+          "horn": "malignant outliers -- some misanthropy IS warranted",
+          "via": "malignant-outliers-firebreak",
+          "to": null,
+          "terminus_kind": "firebreak_out_of_scope"
+        }
+      ],
+      "terminus_contested": true
     }
   },
   "boundary_policy": {
