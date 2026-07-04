@@ -1,8 +1,8 @@
 {
   "artifact": "right_to_die_grading_ledger.json",
   "library": "right-to-die",
-  "version": "0.1.0",
-  "generated": "2026-06-25",
+  "version": "0.1.1",
+  "generated": "2026-07-03",
   "status": "v0.3.14 resource-diversion grade appended: 83.4/85.5/87.2 B/B/B (headline B; long unrounded geomean 0.871738 — band-true, no boundary cells, no score-targeting). 17 grades, ungraded:[]. Axes v0.89/s0.86/c0.87/r0.84/a0.90.",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
@@ -49,8 +49,15 @@
         "a": 0.84
       },
       "short": {
-        "rsi_pct": 81.0,
-        "grade": "C"
+        "axes": {
+          "v": 0.88,
+          "s": 0.83,
+          "c": 0.82,
+          "r": 0.8,
+          "a": 0.84
+        },
+        "rsi_pct": 83.4,
+        "grade": "B"
       },
       "medium": {
         "rsi_pct": 83.2,
@@ -72,8 +79,15 @@
         "a": 0.85
       },
       "short": {
-        "rsi_pct": 79.9,
-        "grade": "C"
+        "axes": {
+          "v": 0.89,
+          "s": 0.83,
+          "c": 0.79,
+          "r": 0.78,
+          "a": 0.85
+        },
+        "rsi_pct": 82.7,
+        "grade": "B"
       },
       "medium": {
         "rsi_pct": 82.1,
@@ -95,8 +109,15 @@
         "a": 0.88
       },
       "short": {
-        "rsi_pct": 81.7,
-        "grade": "C"
+        "axes": {
+          "v": 0.9,
+          "s": 0.83,
+          "c": 0.79,
+          "r": 0.77,
+          "a": 0.88
+        },
+        "rsi_pct": 83.2,
+        "grade": "B"
       },
       "medium": {
         "rsi_pct": 83.9,

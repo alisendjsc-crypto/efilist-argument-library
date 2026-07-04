@@ -1,9 +1,9 @@
 {
   "artifact": "anthropocentrism_grading_ledger.json",
   "library": "anthropocentrism",
-  "version": "0.1.5",
-  "generated": "2026-06-27",
-  "status": "v0.1.5: +dissent-is-misanthropy (the misanthropy / motive-contamination fence-guard, T4, brute-ground-terminus-from-the-side) cold-graded 85.6/87.7/89.4 B/B/A (long unrounded geomean 0.893765 >= 0.88 A-line; banded from unrounded; band-true, no score-targeting; third long-A, a clean-dissolve fence-guard with no primitive-concession ceiling, clear of the brute-ground band; discharges brute-kind's named bad-faith-charge-residual via the general motive-orthogonality principle). 6 grades, ungraded: [].",
+  "version": "0.1.6",
+  "generated": "2026-07-02",
+  "status": "v0.1.5: +dissent-is-misanthropy (the misanthropy / motive-contamination fence-guard, T4, brute-ground-terminus-from-the-side) cold-graded 85.6/87.7/89.4 B/B/A (long unrounded geomean 0.893765 >= 0.88 A-line; banded from unrounded; band-true, no score-targeting; third long-A, a clean-dissolve fence-guard with no primitive-concession ceiling, clear of the brute-ground band; discharges brute-kind's named bad-faith-charge-residual via the general motive-orthogonality principle). 6 grades, ungraded: []. || v0.1.6: +per-cell `boundary` flag (band-fragility, unrounded-geomean within epsilon=0.010 of a band line) on all 18 cells + `boundary_policy` block; append-only (all axes/rsi_pct/grade letters byte-identical; band-true cross-check re-derived every stored letter and PASSED). 7/18 cells flagged. Grade-contestedness metadata only (act-neutral; Firewall-A/-B untouched). For the game grade-the-argument drill (relay_library_boundary_cell reply).",
   "method": "RSI = (v*s*c*r*a)^(1/5). Band the UNROUNDED geomean (and each UNROUNDED per-depth RSI fraction): A>=0.88, B>=0.82, C>=0.76, D<0.76. rsi_pct (1 decimal place) is DISPLAY-ONLY — never band the rounded value. Depth modifiers (short/medium/long) per the inherited flagship rubric. Score-targeting prohibited.",
   "rubric_ref": "Refusal Suite Charter v0.1 — INHERIT RSI methodology from rebuttal_grading_ledger.json (flagship).",
   "band_thresholds": {
@@ -25,15 +25,18 @@
     },
     "short": {
       "rsi_pct": 0.0,
-      "grade": "D"
+      "grade": "D",
+      "boundary": false
     },
     "medium": {
       "rsi_pct": 0.0,
-      "grade": "D"
+      "grade": "D",
+      "boundary": false
     },
     "long": {
       "rsi_pct": 0.0,
-      "grade": "D"
+      "grade": "D",
+      "boundary": false
     },
     "headline_grade_long": "D"
   },
@@ -50,15 +53,18 @@
       },
       "short": {
         "rsi_pct": 83.5,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 85.7,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "long": {
         "rsi_pct": 87.4,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "headline_grade_long": "B"
     },
@@ -73,15 +79,18 @@
       },
       "short": {
         "rsi_pct": 85.8,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 87.9,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "long": {
         "rsi_pct": 89.6,
-        "grade": "A"
+        "grade": "A",
+        "boundary": false
       },
       "headline_grade_long": "A"
     },
@@ -96,15 +105,18 @@
       },
       "short": {
         "rsi_pct": 83.4,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 85.6,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "long": {
         "rsi_pct": 87.3,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "headline_grade_long": "B"
     },
@@ -119,15 +131,18 @@
       },
       "short": {
         "rsi_pct": 83.6,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 85.7,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "long": {
         "rsi_pct": 87.4,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "headline_grade_long": "B"
     },
@@ -142,15 +157,18 @@
       },
       "short": {
         "rsi_pct": 85.2,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 87.4,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "long": {
         "rsi_pct": 89.0,
-        "grade": "A"
+        "grade": "A",
+        "boundary": true
       },
       "headline_grade_long": "A"
     },
@@ -165,17 +183,99 @@
       },
       "short": {
         "rsi_pct": 85.6,
-        "grade": "B"
+        "grade": "B",
+        "boundary": false
       },
       "medium": {
         "rsi_pct": 87.7,
-        "grade": "B"
+        "grade": "B",
+        "boundary": true
       },
       "long": {
         "rsi_pct": 89.4,
-        "grade": "A"
+        "grade": "A",
+        "boundary": false
       },
       "headline_grade_long": "A"
     }
+  },
+  "boundary_policy": {
+    "field": "boundary",
+    "field_semantics": "Realizes the requested `boundary_cell` flag. Path: grades[<objection>][<depth>].boundary (bool). Also present on entry_shape_reference for schema shape.",
+    "version": 1,
+    "criterion": "A cell (objection x depth) is a boundary cell iff its UNROUNDED per-depth geomean lies within `epsilon` of any band line.",
+    "epsilon": 0.01,
+    "epsilon_basis": "0.010 = one x100 display point ~= the geomean swing produced by a defensible +-0.01 per-axis re-grade applied across the five axes in one direction (d[geomean]/d[axis] ~ geomean/(5*axis) ~ 0.2, so ~5*0.01*0.2 ~ 0.01). Within it the band LETTER is genuinely re-grade-flippable: a judge call.",
+    "epsilon_robustness": "The flagged set is stable for any epsilon in (0.0099, 0.0137]: the tightest EXCLUDED cell (dissent-is-misanthropy/long) sits 0.0138 from its line, a clear gap above the tightest INCLUDED cell's slack. The exact epsilon is not knife-edge.",
+    "band_lines": [
+      0.88,
+      0.82,
+      0.76
+    ],
+    "geomean_basis": "UNROUNDED per-depth geomean (band-true, per method{}). Depth modifiers applied before the geomean: medium c-0.05/r-0.03, short c-0.12/r-0.06; long unmodified.",
+    "register": "GRADING-contestedness only: `boundary` marks that THE GRADE of the objection's rebuttal is a close call. It is an appraisal of the appraisal — it carries no verdict on the objection's subject matter and implies nothing about any act. Firewall-A (no exhortation) and Firewall-B (appraisal-silence) are untouched.",
+    "scope_note": "Tracks band-fragility, NOT dialectical/terminus contestedness (e.g. primitive-concession ceilings, asymmetry-dependence). A cell can be philosophically live yet grade-clear, or grade-fragile yet dialectically settled. A distinct flag would be needed for terminus-contestedness; not requested here.",
+    "node_level_collapse_warning": "Do NOT collapse to a per-node bool for this wing: all 6 nodes have >=1 boundary depth, so a node-level flag is vacuous (true for every node). The signal exists only at DEPTH granularity. Consume grades[id][depth].boundary, not a node aggregate.",
+    "count_boundary_cells": 7,
+    "count_total_cells": 18,
+    "flagged_cells": [
+      {
+        "objection": "privilege-tracks-a-capacity",
+        "depth": "medium",
+        "geomean": 0.879133,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.000867
+      },
+      {
+        "objection": "dissent-is-misanthropy",
+        "depth": "medium",
+        "geomean": 0.877311,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.002689
+      },
+      {
+        "objection": "substrate-is-the-ground",
+        "depth": "long",
+        "geomean": 0.873849,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.006151
+      },
+      {
+        "objection": "human-centrism-is-the-default",
+        "depth": "long",
+        "geomean": 0.873575,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.006425
+      },
+      {
+        "objection": "graded-privilege-tracks-capacity",
+        "depth": "medium",
+        "geomean": 0.873504,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.006496
+      },
+      {
+        "objection": "species-membership-is-the-ground",
+        "depth": "long",
+        "geomean": 0.873321,
+        "band": "B",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.006679
+      },
+      {
+        "objection": "graded-privilege-tracks-capacity",
+        "depth": "long",
+        "geomean": 0.889888,
+        "band": "A",
+        "nearest_line": 0.88,
+        "dist_to_line": 0.009888
+      }
+    ],
+    "supersedes_S14": "Captures both cells S14 identified (privilege-tracks-a-capacity/medium, dissent-is-misanthropy/medium) plus 5 more A/B-seam cells S14's tighter display-proximity heuristic missed."
   }
 }
