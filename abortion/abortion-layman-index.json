@@ -1,0 +1,87 @@
+{
+  "schema_version": "layman_index_v0_2",
+  "wing": "abortion",
+  "source_index_pin": "deb3fb7366042bb6847042ff2f1b597f",
+  "generated": "2026-07-04",
+  "nodes": [
+    {
+      "id": "a-valuable-future-grounds-no-claim-on-the-body",
+      "layman_handle": "A future of value, no claim on the body",
+      "layman_trigger": "Forget whether the fetus counts as a person — that's not what makes killing wrong. What's wrong with killing is that it robs someone of their whole future: the experiences, the projects, everything they'd have had. Call it a future-like-ours, and the fetus has exactly that, person or not. So abortion does the very thing that makes any killing wrong — it takes that future away.",
+      "layman_gloss": "Runs on granting the fetus a future of value and calling its loss a wrong that overrides the body. The hinge: even a full duty to preserve that future never compels the use of your organs.",
+      "layman_win_line": "Grant the future in full — no duty to sustain a life ever conscripts your body to do it.",
+      "layman_diagnosis": "Grant the valuable future whole — it changes nothing here. It splits and loses both ways. As a right to life it is still a right to life, and no right to life is a right to be kept alive inside another's body; that belongs to the foundation. As a duty to sustain, it hits the same wall every such duty hits: no parent can be forced to give blood, marrow, or a kidney to a dying child, sole source or not. Sovereignty is no scoreboard — supreme stakes and kinship are what forced-donation already has, and it still does not compel. Gestation takes the whole body, so it sits inside that line; the choice stays the pregnant person's, wise or not."
+    },
+    {
+      "id": "gestational-self-determination-is-the-default",
+      "layman_handle": "The default sits with the body-holder",
+      "layman_trigger": "Pregnancy isn't like a haircut or switching jobs — there's a second life involved, with the highest stakes there are. So you can't just start from 'her body, her call.' The presumption should run the other way: keep the pregnancy going unless there's a strong reason not to. It's the person who wants to end it who has to justify herself, not the one who'd see it continue.",
+      "layman_gloss": "Runs on flipping the burden toward continuation because a second party has the gravest stake. The hinge: no stake, however grave, brings a standing claim to conscript another's body to sustain it.",
+      "layman_win_line": "Nobody's stake, however grave, is a standing claim on the use of your organs.",
+      "layman_diagnosis": "The burden is placed backwards. Using your body as another's life-support is yours to grant or withhold by default, so whoever would force it to continue bears the burden, not her. No party, however weighty, gets to presume a claim on another's organs to sustain itself; the presumption is general, and pregnancy does not suspend it. This fixes only where the decision starts: with her, until an objector clears the self-regarding line. It settles nothing about the fetus — even a full second party must show a claim on her body, and a right to life supplies none. That is the foundation's question; nothing here calls any abortion wise or good."
+    },
+    {
+      "id": "responsibility-does-not-ground-a-duty-to-gestate",
+      "layman_handle": "Causing a need is not owing a body",
+      "layman_trigger": "The violinist was kidnapped onto you — you did nothing. But an ordinary pregnancy comes from an act you chose, knowing full well pregnancy could result. Choose the act that creates a dependent, and you take on responsibility for it. And this dependent exists only because of you and needs your body alone — walking away isn't declining to help a stranger, it's abandoning someone you made.",
+      "layman_gloss": "Runs on voluntary causation: you made the dependent, so you owe it your body. The hinge: causing a need grounds a duty to help, never a claim on your organs — the rule we keep everywhere else.",
+      "layman_win_line": "Causing someone's need obliges you to help, not to hand over your body to do it.",
+      "layman_diagnosis": "Responsibility for a need grounds a duty to help, not a duty to supply your body — and gestation is the supply of a body. Grant she chose the act and foresaw the risk: that grounds an obligation to bear costs and not abandon callously, as a negligent driver owes his victim aid — but never a claim on his organs, even where his blood is the only save. No one is conscripted into bodily donation by having caused the need; if that grounded it, forced organ harvesting would follow across cases we all refuse. And foreseeing a risk isn't consenting to its bodily cure. Granted whole, responsibility leaves the default where it stood."
+    },
+    {
+      "id": "terminating-a-pregnancy-wrongs-no-one",
+      "layman_handle": "No one there to be wronged",
+      "layman_trigger": "Fine, grant a competent woman an absolute right to choose — you still can't call abortion good. It isn't, and you shouldn't judge the act at all. Not good, because ending a pregnancy robs the being who would have lived of a whole future of goods: a victim, a wrong. And appraising it breaks your own rule — your defence stays silent on contested acts, so judging here topples your own firewall.",
+      "layman_gloss": "Two charges — the act wrongs the one who would have lived, and appraising it at all breaks the suite's silence. The hinge: a wrong needs a subject already there to bear it, and there is none.",
+      "layman_win_line": "A future can only be lost by someone already there to lose it — and no one is yet.",
+      "layman_diagnosis": "Silence first: this claims the act's standing, not a directive to any woman, whose own reasons the suite neither supplies nor weighs. A deprivation needs a subject already there to suffer it; before one exists, absent future goods harm no one, while absent guaranteed harms is good, needing no one glad of it. So nothing is wronged; sparing whoever would bear them is a real reason — the suite's one positive claim, fenced every side: advisory, never enforced; universal, no verdict on any life; structural, not suffering versus joy; asymmetry quarantined here. The right stands beneath, asymmetry-free, in full force for a woman who rejects it all."
+    },
+    {
+      "id": "the-appraisal-selects-no-life",
+      "layman_handle": "The reason ranks no lives",
+      "layman_trigger": "Say abortion is positively fine because it spares a future person life's guaranteed harms, and you're on a slope. Harm isn't equal: a pregnancy certain to bring severe suffering gives a stronger reason than an ordinary one — so you grade lives by projected suffering, hardest against those who'd suffer most. That is eugenics, and 'universal' won't save it: the reason bites harder in some cases.",
+      "layman_gloss": "Runs on the positive reason admitting degrees — more suffering spared, stronger reason — so it grades lives toward eugenics. The hinge: the asymmetry carries no quantity term — one force for all.",
+      "layman_win_line": "The asymmetry has no dial for how much you'd suffer — one force, every life.",
+      "layman_diagnosis": "Benatar's asymmetry, the warrant, is structural, not scalar — a relation, not a magnitude. What it grounds — non-imposition — has no size: origination lays harm on one who, unborn, bore no deficit, while withholding wrongs no one, and you impose by conceiving at all, not more by conceiving a life that suffers more. So the force is identical for every conception; only its scope is universal, and no graded force is left to become a ranking. Selecting against a life for a disvalued trait is the eugenic move: a separate, forbidden claim, not a stronger dose of one that singles out none. Firewall-A holds; the defence stands or falls with it."
+    },
+    {
+      "id": "the-manner-of-removal-does-not-forfeit-the-right",
+      "layman_handle": "How it's done forfeits no right",
+      "layman_trigger": "Grant it — bodies can't be conscripted, sex creates no duty. Still, the manner. Unplug the violinist and he dies of his own illness — allowed. Abortion often isn't passive: dismembering a fetus, or ending it before removal, isn't declining to lend your body — it's killing. And killing isn't letting die — unplug him, fine; stab him, not, though he dies either way. So the method forfeits the right.",
+      "layman_gloss": "Runs on killing/letting-die: unplugging is permitted withdrawal, active ending a killing the right never covered. The hinge: previably there's nothing to withdraw from, so ending just is withdrawing.",
+      "layman_win_line": "Before viability there's no life apart to kill — ending it just is withdrawing support.",
+      "layman_diagnosis": "Give killing-versus-letting-die full weight: it grips the violinist only because there a withdrawal exists that is not the death — his own failing kidneys, merely delayed. Before viability there is no such thing. The fetus has no life apart from the body carrying it, alive only as constituted by that support. To end it is to cease constituting what exists only as constituted — so withdrawal is the death, one act under two descriptions, and the killing/letting-die sort, needing a self-standing patient, finds none. Every previable method runs that one channel, differing only in violence — at most a preference among methods, never a forfeiture."
+    },
+    {
+      "id": "the-right-does-not-turn-on-fetal-personhood",
+      "layman_handle": "The right holds either way",
+      "layman_trigger": "It comes to one thing: is the fetus a person? If it is, ending the pregnancy ends a person's life, and nothing about the woman's body turns a killing into something allowed — the right is a licence to kill. If it isn't, the right is real but empty, opposed by no one, needing no defence. Either way personhood decides it, and a defence that won't answer that skipped the step it all rests on.",
+      "layman_gloss": "Runs on making fetal personhood the whole question — a person and the right is a licence to kill, a non-person and it's empty. The hinge: the verdict comes out identical on both answers.",
+      "layman_win_line": "Same verdict whether or not the fetus is a person — so status isn't what decides it.",
+      "layman_diagnosis": "The right does not turn on whether the fetus is a person, because it holds on both answers — a claim true either way does not turn on the question. If not a person, the right is secure — no second party to override it. If a person, fully, still secure: a right to life is not a right to be sustained by an unwilling body, and no person, however imperiled, is owed the use of another. Same verdict on both horns: what settles it is not fetal status but whether a right to life reaches an unwilling body, fixed whatever the fetus is. The suite grants only that it leaves fetal status open; about the right it grants nothing, secure on either answer."
+    }
+  ],
+  "field_bands": {
+    "layman_handle": [
+      1,
+      40
+    ],
+    "layman_trigger": [
+      200,
+      400
+    ],
+    "layman_gloss": [
+      100,
+      200
+    ],
+    "layman_win_line": [
+      1,
+      90
+    ],
+    "layman_diagnosis": [
+      250,
+      650
+    ]
+  },
+  "layman_diagnosis_note": "v0_2: plain-register mirror of the scholar diagnosis spine (the objection's error anatomy). This wing carries two registers in one index. The five Layer-1 nodes (fetal-status, bodily-sovereignty, voluntariness) are optionality-only — they rebut the objection to the right, appraisal-silent and asymmetry-independent, with no positive claim that abortion is good; the personhood-independence foundation is written no-defeat bedrock, stating status-independence without ever casting the holding as defeated. The two Layer-2 nodes (antinatalist-appraisal) carry the suite's one licensed advisory-positive claim: advisory, a consideration added to the public ledger and never a directive; antinatalist-grounded; asymmetry quarantined to Layer 2; Firewall-A absolute — no exhortation, no duty on any pregnant person, the right in full force for one who rejects all of it. The three tier-4 nodes keep dissolve-defang: the granted primitive is left standing. First residence at v0_2; schema mirrors the anthropocentrism and veganism precedent."
+}
