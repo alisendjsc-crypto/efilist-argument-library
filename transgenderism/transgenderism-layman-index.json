@@ -1,0 +1,127 @@
+{
+  "schema_version": "layman_index_v0_2",
+  "wing": "transgenderism",
+  "source_index_pin": "6c0329f4db3e52252476a14e6f4d01fd",
+  "generated": "2026-07-04",
+  "nodes": [
+    {
+      "id": "distress-does-not-defeat-capacity",
+      "layman_handle": "Too distressed to choose",
+      "layman_trigger": "Dysphoria is a state of real distress — that is its own clinical description — and someone in acute distress cannot soundly weigh a decision this large. Distress narrows attention, tilts everything toward relief, and wrecks the cool weighing consent demands. So the consent the right rests on is given from a state that has already broken the capacity valid consent needs.",
+      "layman_gloss": "Runs on sliding from 'is distressed' to 'lacks capacity.' The answer: capacity was never calm — it is whether this person can understand, hold, weigh, and voice the choice.",
+      "layman_win_line": "Distress is not the measure of capacity; the ability to weigh the choice is.",
+      "layman_diagnosis": "One word doing two jobs. Capacity was never emotional calm; it is a decision-relative ability — to understand, retain, weigh, and voice a choice, for this decision now. Swap in 'is distressed' and it proves too much: no one could then consent to chemotherapy, a child's emergency surgery, or palliative care — all under distress, where medicine obtains consent by assessing the weigher, not awaiting calm. It even inverts, stripping capacity the more a decision matters — the reverse of what autonomy is for. The distress is real, conceded in full; where a consent warrants scrutiny the instrument is a capacity assessment, never a bar on the right."
+    },
+    {
+      "id": "gender-self-determination-is-the-default",
+      "layman_handle": "You must justify leaving your sex",
+      "layman_trigger": "The burden is on you to justify leaving your natal sex. Without a good reason — either that you can actually change sex, or that intervention is medically necessary — there is no right to transition. The starting point is to stay as you were assigned, and it is your job to show why that should be disturbed. Until you carry that burden, the assignment stands.",
+      "layman_gloss": "Runs on demanding you justify departing from your birth assignment. The answer inverts it: an assignment made without your assent is not the thing a dissenter has to rebut.",
+      "layman_win_line": "The burden runs the other way: what licenses holding you to an assignment you never chose?",
+      "layman_diagnosis": "The objection loses on the burden before evidence is heard. A sex-role pinned on you at birth, without your assent, cannot be what a dissenter must answer. So the demand inverts: not what licenses leaving your natal sex, but what licenses holding a person to an unchosen assignment over name, body, and bearing. Nothing does by default; authority runs to the chooser, and whoever asserts power over another's self-presentation carries the burden. And none of this needs the claim that sex really changed — the right is a permission to withhold assent, not a thesis about gender's metaphysics, so however it settles it never touches the right."
+    },
+    {
+      "id": "irreversibility-does-not-foreclose-the-right",
+      "layman_handle": "Some changes can't be undone",
+      "layman_trigger": "Set outcome aside — grant she is glad of it, never regrets it. The point is simpler: some of transition's changes cannot be undone, and that permanence is disqualifying by itself. An irreversible choice forecloses the future self's option to be otherwise, and that future person never signed off. The permanence that makes the change momentous puts it beyond the ordinary liberty to choose.",
+      "layman_gloss": "Runs on treating permanence itself, not a bad outcome, as disqualifying. The answer: every weighty choice is irreversible, and the open-future principle inverts on the adult who wields it herself.",
+      "layman_win_line": "If refusing life-saving treatment is yours to make, permanence alone forecloses nothing.",
+      "layman_diagnosis": "Grant it whole: some changes admit no reversal, and the inference still fails. Irreversibility is the structure of every consequential choice — vasectomy, the childbearing that remakes a parent, and a competent adult's refusal of life-saving treatment, itself legally protected. If that stands, permanence-as-such cannot bar a lesser choice. No future self consents in advance, staying unchanged included. And the open-future principle is Feinberg's child-protection; turned on an adult it inverts, making the state guardian of her options. Reversibility demanded is inconsequence demanded; the binding is real, handed to no one who could forbid it."
+    },
+    {
+      "id": "origin-does-not-void-voluntariness",
+      "layman_handle": "You caught the desire online",
+      "layman_trigger": "The desire to transition is increasingly socially induced, not the person's own: it spreads through peer clusters and social media in contagious patterns — rapid, imitative, clustered onset in cohorts with no prior history. A desire caught from an environment is not authentically yours, and consent rooted in it is not voluntary. So the choice is not, in these cases, freely the chooser's.",
+      "layman_gloss": "Runs on sliding from 'socially caused' to 'not voluntary.' The answer: voluntary never meant self-authored — it means free of coercion at the point of choice, and every desire has a social history.",
+      "layman_win_line": "Social origin does not void voluntariness — or it voids the desire not to transition too.",
+      "layman_diagnosis": "One word doing two jobs. In consent, voluntary means free of coercion and undue influence at the point of choice by a competent adult, not causal self-authorship, not a desire of asocial origin. Social shaping is not coercion; the pull of peers and media is not the undue influence that voids consent. Grant the contagion data whole: every preference has a social history — including the desire not to transition, shaped by religion, stigma, family. If social origin voided voluntariness it would void all choices, impeaching the objector's own as much. Where a desire may be unstable, the instrument is a searching consent process, not foreclosure."
+    },
+    {
+      "id": "regret-does-not-foreclose-the-right",
+      "layman_handle": "So many come to regret it",
+      "layman_trigger": "A choice that predictably ruins a large share of those who make it is not something to leave people free to do. Many who transition come to regret it and detransition — often after irreversible changes: sterility, altered bodies, lasting hormonal marks — so the regret falls on someone who cannot go back. That is not ordinary risk; it is grave, common harm to the people the right means to serve.",
+      "layman_gloss": "Runs on a high regret rate to strip the liberty. The answer relocates it: self-regarding harm, borne by the competent adult who chose to risk it — the paradigm of what a sovereign chooser weighs.",
+      "layman_win_line": "A self-regarding harm a competent adult consents to risk is that adult's to bear.",
+      "layman_diagnosis": "This harm is self-regarding, falling on the competent adult who chose to risk it, and the liberty to make choices that harm only oneself is self-determination's core, not an exception. 'It might harm you' is what a sovereign chooser weighs, not for others to weigh for her. Held as a standard it proves too much: people regret marriages, refuse life-saving treatment, end careers — foreclosed in no case. Concede the rates as high and as grave as claimed, and the inference still fails: a high regret rate calibrates the consent process and detransition support, not the choice's removal. The harm is real, conceded, the chooser's to bear."
+    },
+    {
+      "id": "the-bystander-harm-licenses-no-foreclosure",
+      "layman_handle": "It harms cis women and girls",
+      "layman_trigger": "This right does not stay in its lane. Exercising it puts trans women into female sport, changing rooms, shelters — costs on cis women and girls with claims of their own. A male-typical puberty leaves advantages transition does not erase, making the category unfair and, in contact sport, unsafe; and single-sex refuges can have privacy or safety touched. A permission harming others is not modest.",
+      "layman_gloss": "Runs by pointing past the permission to a real third-party cost, so the self-regarding answer is unavailable. The reply runs the harm principle and breaks the objection at proportionality.",
+      "layman_win_line": "A bounded cost licenses a bounded rule — never foreclosing a person's whole gendered life.",
+      "layman_diagnosis": "It concedes the permission and a real cost, so self-permission fails and the harm principle governs. Grant every cost: male puberty leaves advantages transition does not fully reverse, and single-sex spaces can touch privacy or safety. It breaks at proportionality: the principle licenses only the narrowest effective means; foreclosing the right is the maximal one, and the narrowest reaching the harm already exists — sport eligibility, space design, safeguarding. Aimed at the right it overreaches; aimed at the category it joins an arena fight the wing leaves open. The costs are real, routed to their adjudicators, never a warrant to foreclose."
+    },
+    {
+      "id": "the-firewall-does-not-misfire",
+      "layman_handle": "Your defense is really advocacy",
+      "layman_trigger": "Turn the suite's Firewall on it. You forbid yourselves urging transition, any suffering premise, any Benatar asymmetry — yet a defense that answers every objection cannot help but act as advocacy: the brief makes the choice look unassailable. And you must lean on the merits you disclaim, since one defends a right to act only because one judges the act worth doing. So the Firewall is a fiction.",
+      "layman_gloss": "Runs on collapsing 'the objection fails' into 'you should do it.' The answer holds them apart: they are distinct operations, and a purely negative defense recommends nothing.",
+      "layman_win_line": "Clearing away an objection to a right supplies no reason at all to exercise it.",
+      "layman_diagnosis": "Answering an objection to a right is not recommending the act — distinct operations, the suite doing only the first. Showing an objection fails to foreclose the right gives no reason to exercise it; the first-order reasons for and against transition are left untouched, the chooser's to fill. The corpus is a graveyard of failed objections, not a manifesto. The suppressed-premise charge mistakes 'this right is worth defending' for 'its exercise is good.' And 'rights-defense is advocacy' proves too much: by it, defending free speech would advocate every libel, bodily autonomy every surgery. A purely negative defense commends nothing."
+    },
+    {
+      "id": "the-limiting-principle-is-the-self-regarding-line",
+      "layman_handle": "Then why not species or race?",
+      "layman_trigger": "Once identity is cut loose from any truth-maker and grounded in self-declaration, nothing non-arbitrary separates the gender self-ID you protect from species, age, or race, which you do not. Either protect all of them — absurd, and corrosive of categories others rely on — or admit your line is special-pleading. Any line you draw smuggles back the metaphysics you gave up, or is bare stipulation.",
+      "layman_gloss": "Runs on assuming the only non-arbitrary stopping rule must be a metaphysical truth about which identity is real. The answer exhibits the line liberalism draws: self-regarding versus other-regarding.",
+      "layman_win_line": "The brake was never metaphysics — it is the self-regarding line, and here it is.",
+      "layman_diagnosis": "It assumes the only non-arbitrary brake is a metaphysical truth about which identity is real, so severing self-ID slides self-declaration to species/age. But the brake is not metaphysical: it's the self-regarding/other-regarding line liberalism draws across all liberty, and exhibiting it answers the claim none exists. A privately lived race or age self-conception harming no one is covered; the alarming cases are checked on other-regarding reach, not denial of self-ID. The line ranks neither gender nor species, so special-pleading fails; and the slope-form proves too much, voiding every self-authored liberty turned on conversion or renaming."
+    },
+    {
+      "id": "the-permission-conscripts-no-one",
+      "layman_handle": "It conscripts me into affirming it",
+      "layman_trigger": "This right does not stay in its lane — recognizing it conscripts me into upkeep. It has me speak words I hold false, affirm in my professional role an identity I reject, rewrite records and language I am responsible for. My own liberties — speech, conscience, association, judgment — are self-regarding too, and this right tramples them. A self-regarding permission cannot generate a duty in me.",
+      "layman_gloss": "Runs by charging the permission with conscripting the objector's speech. The answer takes its own last line: a self-regarding permission binds no second party — the right asks nothing of him.",
+      "layman_win_line": "The right is a permission over your own self-presentation, not a claim on anyone's tongue.",
+      "layman_diagnosis": "The objection ends on the wing's own premise: a self-regarding permission generates no duty in me. Just so. It is a liberty over one's name, body, and bearing; it binds no one else to speak, affirm, or believe, so the charged conscription is one its form cannot commit. The compulsion he feels is real but mis-aimed: pronoun mandates and codes are separate downstream demands, not entailments of it. And objector and chooser stand together: the non-domination ground that frees the trans person forbids, with equal force, conscripting the objector into affirmation. The right denies only a veto over another's self-presentation, granted to no one."
+    },
+    {
+      "id": "the-preservation-duty-is-gerrymandered",
+      "layman_handle": "Your body's a gift — don't deface it",
+      "layman_trigger": "Your body was given to you — by God, by nature, by your parents — as a gift. To alter it is ingratitude and defacement: you owe the giver its preservation, un-altered. Gender-affirming alteration breaks that debt of gratitude and disrespects the source of the gift, so you have no right to it. The giver's due is the body kept as it came.",
+      "layman_gloss": "Runs on one inference: the body is a gift, so you owe it un-altered. The answer grants the gift and breaks the inference on the objector's own consistency — the duty is dormant for every other change.",
+      "layman_win_line": "A duty that sleeps through haircuts and wakes only for transition is no gift-duty.",
+      "layman_diagnosis": "The force is one inference: the body is a gift, so you owe it un-altered; to alter is ingratitude. Grant the gift — it fails on the objector's consistency. A duty truly from giftedness binds every alteration: haircuts, fillings, life-saving surgery — none charged ingratitude. Invoked against transition alone, asleep for the rest, it is not a debt but a ban on one disfavoured choice in gift's clothing. And taken consistently — all alteration a slight, transition graver — it is a first-person attitude about one's own body, with no authority over another's self-regarding choice. No provenance makes an unchosen body a debt paid by leaving it be."
+    },
+    {
+      "id": "the-right-does-not-turn-on-the-metaphysics",
+      "layman_handle": "Gender has no real referent",
+      "layman_trigger": "There is no coherent referent for the gender you claim to self-determine. Sex is a biological fact — binary, immutable; an inner gender-as-essence is incoherent and unfalsifiable, tracking no fact of the matter. So self-determination has no object — nothing real is determined — and you assert a falsehood that others are then asked to encode in their own speech and records.",
+      "layman_gloss": "Runs on denying gender any coherent referent. The answer concedes the whole primitive and shows the right never used that referent — its objects are concrete: name, dress, body, bearing.",
+      "layman_win_line": "Grant the metaphysics entire; the right still stands, since it never leaned on it.",
+      "layman_diagnosis": "Concede the whole primitive: sex is a biological fact, and 'inner gender as essence' names nothing coherent. The right is untouched: its objects were never an inner essence — they are concrete: one's name, dress, body, and how one is addressed. Authority over these is the person's on the non-domination ground, not on gender metaphysics; the incoherence-attack hits a referent the right never uses. Self-presenting asserts no falsehood: a name makes no claim about one's sex. The primitive stands intact, and the right holds anyway, binding no dissenter to a metaphysics it never asserts. What others do with their own speech is a separate question."
+    },
+    {
+      "id": "uncertainty-does-not-void-consent",
+      "layman_handle": "The evidence is too thin to consent",
+      "layman_trigger": "Valid informed consent needs adequate information about consequences — but here the evidence is thin, long-term effects genuinely unknown: benefit durability, harm rates and reversibility, effects on fertility, bone, heart, and cognition over decades are unestablished. A competent adult cannot consent to interventions whose consequences are unknown. That is a leap in the dark dressed as autonomy.",
+      "layman_gloss": "Runs on sliding from 'outcome uncertain' to 'consent impossible.' The answer: informed never meant omniscient — it means the known risks disclosed, the limits of knowledge disclosed, and understood.",
+      "layman_win_line": "Uncertainty about the outcome is a disclosure problem, not a void in consent.",
+      "layman_diagnosis": "Informed consent never required omniscience — only disclosure of the known risks and the limits of present knowledge, understood. Read that as certainty of outcome and it proves too much: no one could then consent to childbirth, major surgery, or decades-long medication, each with uncertain long-term effects, all validly consented to by disclosing uncertainty, not dispelling it. The right comparison class already includes novel surgery, off-label use, and first-in-human trials, valid precisely because the missing data is disclosed. Thinner evidence calls for fuller disclosure and research, not foreclosure; it does not void capacity."
+    }
+  ],
+  "field_bands": {
+    "layman_handle": [
+      1,
+      40
+    ],
+    "layman_trigger": [
+      200,
+      400
+    ],
+    "layman_gloss": [
+      100,
+      200
+    ],
+    "layman_win_line": [
+      1,
+      90
+    ],
+    "layman_diagnosis": [
+      250,
+      650
+    ]
+  },
+  "layman_diagnosis_note": "v0_2: plain-register mirror of the scholar rebuttal.short (the trans corpus carries NO diagnosis field — the abortion pattern, not anthro/veganism/RTD; scholar-drift is checked against rebuttal.short per the K195 subset license). Optionality-only throughout: each diagnosis lands that the objection to the right fails, never that transition is good or should be exercised (Firewall REBUT-only). Non-domination/autonomy warrant; no dysphoria-relief or suffering premise, defensive or affirmative; asymmetry-independent (no Benatar). The sole tier-4 node (the-right-does-not-turn-on-the-metaphysics) keeps dissolve-defang — the metaphysical primitive is conceded and left standing, and win_line + diagnosis carry no defeat/route/remove/destroy language (hand-enforced: the standalone validator's T4 gate is inert against the tierless served index). Competent-adult bracket throughout; minors out of scope. First residence at v0_2; append-only."
+}
