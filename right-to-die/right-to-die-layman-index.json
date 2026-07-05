@@ -1,0 +1,167 @@
+{
+  "schema_version": "layman_index_v0_2",
+  "wing": "right-to-die",
+  "source_index_pin": "d85bfd805b0885bb09de60c149728a7b",
+  "generated": "2026-07-04",
+  "nodes": [
+    {
+      "id": "assisting-is-complicity",
+      "layman_handle": "Helping or watching should be a crime",
+      "layman_trigger": "Assisting a suicide — or just being in the room — should carry a sentence. The threat of prison deters people from a step they can't take back, and the law has no business making anyone an accomplice to a death. Refusing to criminalise it is refusing to take the act seriously.",
+      "layman_gloss": "Runs on a ban that both deters the exit and keeps hands clean of it. The hinge: the ban stops no determined exit — it only strips out the witness, driving the death alone and harder.",
+      "layman_win_line": "Outlaw the companion and you don't save the life — you empty the room.",
+      "layman_diagnosis": "A ban sold as deterrence and clean hands. It delivers neither. The determined exit is not deterred; it is only pushed into secrecy, so the death arrives alone and by rougher means — the very outcome the ban's backers mourn. And the objection puts the wrong before any tally: forcing a sovereign body to continue, and jailing the friend who stays, is an imposition in its own right, before a single life is or isn't saved. Standing beside a death is not complicity in a wrong; it is the refusal to abandon."
+    },
+    {
+      "id": "autonomy-illusion",
+      "layman_handle": "The pain is doing the choosing",
+      "layman_trigger": "You can't call it a free choice when someone's in agony. The suffering narrows the world to the pain and makes the exit look like the only door — that isn't autonomy, it's the suffering choosing for them. And autonomy is the whole ground your right stands on. Where it's absent, the right has nothing to rest on.",
+      "layman_gloss": "Runs on promoting suffering from a pressure on the choice to the author of it, so the consent is void. The hinge: a reason that moves a competent agent is not a hand that overrides one.",
+      "layman_win_line": "Grant that pain presses on the choice; pressing is not choosing in your place.",
+      "layman_diagnosis": "Suffering promoted from something that weighs on the decision to the thing that makes it — so the consent is void. Two problems, and the pressure itself is granted throughout. First, a reason that moves a competent agent is not a coercer standing over them; agony can be why someone decides and still leave them the one deciding. Second, run the rule out: if suffering that severe voids the choice to go, it equally voids the choice — made under the same suffering — to stay, and every judgment reached in pain, this objection's own among them. The pressure is real; it does not sign the request in the agent's place."
+    },
+    {
+      "id": "coercion-of-the-vulnerable",
+      "layman_handle": "The weak will be pushed through the door",
+      "layman_trigger": "Permit this and the option turns into a weapon. The elderly and the disabled will be pressured, made to feel they are a burden, eased toward a door they never wanted. Open it and you license a quiet atrocity against the people least able to resist — so it has to stay shut, for everyone.",
+      "layman_gloss": "Runs on real coercion of the weak as grounds to bar the liberty outright. The hinge: banning it neither ends the pressure nor spares the freely-decided, who are now forced to continue instead.",
+      "layman_win_line": "Closing the door on everyone to stop a few being shoved through traps the rest inside.",
+      "layman_diagnosis": "Real coercion of the weak, offered as grounds to abolish the liberty for all. The pressure is worth guarding against — but a ban does not end it; it strips out the regulated, witnessed path and leaves the abuse to run unseen. It also forces the mirror wrong: everyone who freely, settledly chose is now made to continue against their will. And no other abusable liberty — consent to surgery, to marriage, to divorce — is abolished for being coercible; we police the abuse and keep the liberty. Singling this one out needs a reason the objection never gives."
+    },
+    {
+      "id": "compensational-bridge-fork2b",
+      "layman_handle": "Bill your parents, not the state",
+      "layman_trigger": "Grant the whole imposition-debt — that being forced into existence without consent is a real grievance owed compensation. Fine. But your parents are the ones who acted; they are the debtor. Billing the state for a clean death takes a debt your procreators ran up and dumps it on a bystander who imposed nothing. Take it up with them.",
+      "layman_gloss": "Runs on granting the birth-debt, then showing the state is the wrong party to bill. The hinge: that answers who owes you the means to die, and says nothing about who may forcibly block your exit.",
+      "layman_win_line": "Grant the debt is your parents' to pay — the state still has no warrant to bar the door.",
+      "layman_diagnosis": "Two questions ride together; the objection answers the mild one. Who owes you the means to die is a question about provision, and there the point lands — grant it in full: the debt, if any, was run up by the procreators, and the state is the wrong party to bill. But who may use force to keep you from leaving is a separate question, and it needs no debt at all: obstructing a sovereign exit is a wrong the state commits now, in its own name, whether or not anyone owes anyone anything. 'Take it up with your parents' settles the bill and leaves the locked door exactly where it was."
+    },
+    {
+      "id": "expressivist",
+      "layman_handle": "The law says your life is worth less",
+      "layman_trigger": "Legalise assisted dying and the law itself announces which lives society has judged not worth sustaining — the disabled, the ill, the dependent. Just making the exit available sends a message: for people like you, leaving is the fitting response. Nobody has to be pushed. The practice says those lives count for less, and that verdict wounds.",
+      "layman_gloss": "Runs on reading an available exit as the institution's verdict that a class of lives is worth less. The hinge: making a choice available says who may decide, not which lives are worth living.",
+      "layman_win_line": "An open door says the choice is yours — not that your life was weighed and found wanting.",
+      "layman_diagnosis": "An available exit read as the institution pronouncing a class of lives worth less. Grant that the option carries meaning — it does. The question is which meaning. Making a choice available speaks to who holds it: it says this person may decide the matter for themselves. Reading it instead as a verdict on whether such lives are worth living is the same slide the individual case makes — from 'you may choose' to 'your life has been judged' — now run at the level of the law. The message an option actually sends is that the person, not the state, sits in the chair. What the objection hears is a sentence the option never passed."
+    },
+    {
+      "id": "irreversibility-precaution",
+      "layman_handle": "The one choice you can't take back",
+      "layman_trigger": "Set aside whether the suffering lifts — grant it won't, or that no one can know. Death is still the choice you cannot revise. Every other decision leaves a self who can reconsider, adapt, be surprised by a future they couldn't foresee. This one forecloses the chooser. Under uncertainty, caution favours the branch you can still walk back.",
+      "layman_gloss": "Runs on death's irreversibility as licence for others to override the choice. The hinge: forced continuation is irreversible too, and 'grave' is not the same as 'so I decide it for you.'",
+      "layman_win_line": "Death can't be undone — nor can a life prolonged against its holder's settled will.",
+      "layman_diagnosis": "Irreversibility, granted, carried across three steps it never earns. First, the asymmetry runs both ways: forcing continuation is irreversible too — suffering endured is not un-suffered, an overridden will is not handed back, the time not refunded. It counts the dead agent's foreclosed future and never the forced-to-live agent's foreclosed present. Second, 'preserve the option' assumes the continued days are a good worth keeping — the very reckoning the competent agent already made the other way. Third, granting irreversibility is grave, gravity is not standing: a weighty consideration hands no third party power over another's body."
+    },
+    {
+      "id": "kantian-duty-to-self",
+      "layman_handle": "Kant forbids using yourself as a means",
+      "layman_trigger": "Forget sacredness — Kant settles this. To end your life to escape suffering is to treat the humanity in your own person merely as a means, pressing your rational nature into service for relief. A perfect duty to self forbids exactly that. The wrong is the shape of the maxim, not the worth of the life — so it holds even if the life is worth nothing.",
+      "layman_gloss": "Runs on a Kantian duty to self as a bar on the reasoned exit. The hinge: that duty is first-personal, and the same Formula reads forcing a life against a competent will as the real using-as-means.",
+      "layman_win_line": "Grant the duty to self — it binds you, and hands no one a warrant to hold the door.",
+      "layman_diagnosis": "Two things a duty to self cannot bridge, run together. Grant the duty entirely — grant one may owe something to the rational nature in oneself. That is a first-personal matter between an agent and themselves; it does not license others to seize a sovereign body and hold it in life. And the Formula of Humanity cuts the other way just as readily: forcing continued existence on a competent, reasoning will treats that will as a means to someone else's ends — an instrumentalisation at least as clear as the one charged. The reading the objection needs is one of two the same principle allows; the verdict it wants is not carried by the law it cites."
+    },
+    {
+      "id": "medical-integrity",
+      "layman_handle": "A doctor's job is to heal, not kill",
+      "layman_trigger": "Assisted dying breaks the integrity of medicine. The physician's role is to heal; 'first, do no harm' is the spine of the oath. A doctor who helps a patient die has crossed from healer to killer, corrupts the character of the profession, and erodes the trust that medicine runs on — the patient's confidence that the person at the bedside is on the side of their life.",
+      "layman_gloss": "Runs on medicine's picture of its own role settling what a patient may do. The hinge: how the profession sees its job fixes who a doctor must be, not what a person may decide about their own death.",
+      "layman_win_line": "What a doctor won't do is one question; what you may choose is another.",
+      "layman_diagnosis": "The profession's self-image mistaken for a ruling on the patient's authority. Grant that some physicians place ending life outside their role — that a doctor may decline, and that no one may be conscripted into providing a death, is fully conceded. But that settles who a doctor must be; it does not settle what a competent person may choose about their own dying. The integrity claim answers the first question and then poses as an answer to the second. What medicine takes its purpose to be is genuinely contested; either way, it fixes the caregiver's conscience, not the patient's standing."
+    },
+    {
+      "id": "mentally-ill-cant-consent",
+      "layman_handle": "You can't consent while mentally ill",
+      "layman_trigger": "You can't give valid consent to dying when you're mentally ill. The illness is the thing making the choice — depression talking, the disorder steering — so honouring the request isn't respecting autonomy, it's abandoning a sick person to their symptoms. The condition has taken over the very faculty consent depends on.",
+      "layman_gloss": "Runs on jumping from 'this illness can impair some decisions' to 'this person can validly decide nothing.' The hinge: that leap is exactly what a capacity assessment exists to refuse, case by case.",
+      "layman_win_line": "That a diagnosis can cloud a choice is a reason to assess it, not to void it unheard.",
+      "layman_diagnosis": "A real fact — some conditions impair some decisions — stretched into 'so this person may decide nothing about their own life.' That is an overgeneralisation the tools already correct: a capacity assessment exists precisely to sort the decisions an illness distorts from the ones it does not, patient by patient, choice by choice. Bearing a diagnosis is not the same as lacking capacity, and the honest response to the hard cases is to gate the exercise on assessed competence — a demanding threshold, conservatively set — not to strike the right from everyone who carries a label."
+    },
+    {
+      "id": "palliative-care-sufficiency",
+      "layman_handle": "Good palliative care removes the need",
+      "layman_trigger": "Good palliative and hospice care can control suffering right to the end — terminal sedation reaches even the cases nothing else touches. So no one truly needs an assisted death; they're driven to it by gaps in care. Fund palliation properly and the demand dissolves. Permitting death just lets us dodge fixing what's actually broken.",
+      "layman_gloss": "Runs on treating better pain control as a stand-in for permission. The hinge: 'manageable' is not 'acceptable to this person,' and funding care and forbidding the exit pull opposite levers.",
+      "layman_win_line": "Relief you can offer is not the same as leave from the one who must accept it.",
+      "layman_diagnosis": "Palliation offered as a replacement for permission. It assumes the request is only ever a demand for pain relief, so any relief a clinician supplies makes it moot — but that is not what the request is. 'Suffering we can manage' is not 'a state this person finds acceptable to live in,' and a competent person may refuse even effective comfort. The pitch also runs two levers together: fund palliative care fully — worth doing on its own — but that is a different act from forbidding the choice, and doing the first is no ground to withhold the second. Better care widens what a person may choose; it does not make the choice for them."
+    },
+    {
+      "id": "resource-diversion",
+      "layman_handle": "It drains beds the living need",
+      "layman_trigger": "Medicine runs on scarcity — a fixed stock of hospice beds, clinician hours, end-of-life funding. An assisted-death programme draws on that same stock. Every assessment and every hour spent staffing it is capacity not spent on a patient who wanted to live and could have been helped. That's harm to others in the plainest form: a bed someone needed and didn't get.",
+      "layman_gloss": "Runs on assisted death subtracting finite care from patients who want to live — direct harm, conceded. The hinge: the untested step is proportionality, and a ban is the crudest instrument for it.",
+      "layman_win_line": "Grant the harm is real and direct — a ban is the bluntest tool for a scarcity problem.",
+      "layman_diagnosis": "The harm principle on its one truly direct case: capacity is finite, and drawing on it is harm passing through no one's intervening choice. Concede all of that. Everything rests on the precondition never tested — proportionality. Barring the exit for all is the maximal tool; the harmed channel, scarce capacity, calls for the narrow one — triage, staffing, funding. The scarcity, moreover, is the state's own provisioning failure, re-billed here as a debt the dying person owes with their continued life. And the regulated exit is often lighter than the intensive care it replaces — a fact for the defence, never a reason to die."
+    },
+    {
+      "id": "sanctity-of-life",
+      "layman_handle": "Life is sacred, so you may not end it",
+      "layman_trigger": "Life is sacred and inviolable. Ending it is wrong no matter what the person wants — the value doesn't wait on anyone's say-so. And because it's inviolable, society may step in to honour that, holding the person in life against their own wish. The sanctity binds whether or not you accept it.",
+      "layman_gloss": "Runs on the sacredness of life licensing others to keep a body alive against its owner. The hinge: that leap works only if a value you don't hold may be imposed on your own person by force.",
+      "layman_win_line": "Hold life sacred for yourself all you like — that grants no warrant over another's body.",
+      "layman_diagnosis": "A jump from 'life carries sacred value' to 'others may keep this life going against the one living it.' The first is a value one may sincerely hold; the second is a warrant to override a sovereign body, and it follows only on a hidden premise — that a value the person does not share may be pressed on their own flesh by force. State that premise plainly and it is simply the imposition of one contested view of life's worth onto someone who holds another. Sanctity can govern how you treat your own life; it does not license conscripting a stranger's into continuation on its behalf."
+    },
+    {
+      "id": "slippery-slope-headline",
+      "layman_handle": "The category won't hold once cut",
+      "layman_trigger": "Legalise it for the terminally suffering and the category will not hold — and this isn't hypothetical, it's the record. Canada's MAID went from foreseeable death to Track 2 in a few years; Belgium and the Netherlands allow it for psychiatric suffering and have moved into dementia. The gate, once cut, keeps widening. The principle won't stay where you put it.",
+      "layman_gloss": "Runs on documented expansion as proof the principle can't hold its line. The hinge: every feared endpoint is either still consent honoured, or a consent-violation the same frame already condemns.",
+      "layman_win_line": "The line was consent all along — cross it and you've left the right, not extended it.",
+      "layman_diagnosis": "Real expansion, offered as proof the principle slides. But the right defended is consent-gated exit, and every dreaded endpoint sorts into two boxes. Either it is still a competent person choosing — the right working exactly as built, and the complaint is about who qualifies, a line-drawing argument inside consent. Or it is a violation of consent — which the sovereignty frame condemns already, as imposition in the right's costume, a different wrong on another principle. The slide runs only if consent is dropped as the criterion, and the frame never drops it. Where the gate belongs is a live dispute; that the principle gives way is not."
+    },
+    {
+      "id": "social-contagion",
+      "layman_handle": "It spreads — copycats will follow",
+      "layman_trigger": "Put the eligibility line wherever you like and freeze it — the harm isn't at the gate. Legalise and normalise assisted death and you lift the baseline rate of ordinary, non-assisted suicide: the practice models the act and lowers the taboo. That's the Werther effect at the scale of the law. The dead are suggestible bystanders who'd otherwise have lived.",
+      "layman_gloss": "Runs on a contagion effect on ordinary suicide as grounds to ban the exit. The hinge: that harm runs through the copier's own choice, and the fitted remedy is careful reporting, not a ban.",
+      "layman_win_line": "Grant that visibility prompts copycats — the answer is how death is reported, not a ban.",
+      "layman_diagnosis": "The harm principle invoked while two of its conditions go unmet. Grant the contagion effect — that making the act visible can lift the ordinary suicide rate. First, that harm is mediated: it runs through the copier's own decision, so it lacks the directness the principle needs to coerce one person for a third. Second, even granting the effect, the fitted tool is the narrow one already in hand — responsible-reporting discipline — not a ban, which forecloses the dying person's liberty whole and pushes death toward the sensational, unregulated forms that are the classic vector. The effect stands; a ban is nowhere near its measure."
+    },
+    {
+      "id": "suicide-is-selfish",
+      "layman_handle": "It's selfish — it dumps grief on others",
+      "layman_trigger": "Suicide is selfish. It offloads unbearable pain onto the people left behind — parents, partners, children who never agreed to carry that grief. Whatever the person's own suffering, they don't get to purchase their release with a wound that size, handed to people who had no say in it. The cost lands on the living.",
+      "layman_gloss": "Runs on grief owed to survivors as a reason others may hold the person in life. The hinge: even a real debt to those left behind grounds a claim against the agent, never a licence to cage them.",
+      "layman_win_line": "What you owe those who love you can be owed — it can't be collected by locking you in.",
+      "layman_diagnosis": "A real cost to survivors, converted into a warrant to keep the person alive. Grant the grief in full — even grant something is owed to those left behind. It still does not follow that anyone may hold a sovereign body in existence to collect it. A debt grounds a claim against the person; it never grounds a right to imprison them until they pay. And the ledger runs both ways: a life continued only under the weight of others' grief is a burden pressed the other direction, onto the one told they may not leave. What is owed to the living is real and can weigh in a person's own deciding — it is not a set of bars others may lock from outside."
+    },
+    {
+      "id": "temporary-problem",
+      "layman_handle": "Permanent fix for a temporary problem",
+      "layman_trigger": "Suicide is a permanent solution to a temporary problem. Whatever's driving it — the grief, the despair, the crisis — will pass, and then the one choice you can't take back has been made on a feeling that would have lifted. Wait it out and the future you couldn't see arrives. The permanence is the whole objection.",
+      "layman_gloss": "Runs on a slogan that quietly assumes every such problem is temporary. The hinge: for intractable cases that's just false, and elsewhere competence to choose is not a promise the outcome will improve.",
+      "layman_win_line": "'It always passes' is a claim about every case — some cases are the standing exception.",
+      "layman_diagnosis": "A slogan carrying a smuggled universal: that all such problems are temporary. For intractable conditions that is simply false — some suffering does not lift, and the cases the right is invoked for are often exactly those. Where the future is genuinely uncertain, the slogan slides again, treating 'you might improve' as if it settled things — but authority to decide under uncertainty is not a guarantee of the outcome, and no other grave choice is voided merely because the result can't be promised in advance. That some regret and some conditions pass argues for careful gating and delay; it does not prove the problem always does."
+    },
+    {
+      "id": "welfare-substitution",
+      "layman_handle": "The state will offer death, not care",
+      "layman_trigger": "Make death a legal option and you hand the state an escape from its own obligations. Why fund housing, home care, disability support, when a lethal prescription is cheaper and final? Under real deprivation the 'choice' is a fiction — people ask to die because they can't afford to live. The right doesn't free them; it launders their abandonment as autonomy.",
+      "layman_gloss": "Runs on deprivation-driven requests as proof it launders abandonment. The hinge: funding support and barring the exit are separate levers; a ban ends the option and leaves the poverty untouched.",
+      "layman_win_line": "The fix for a choice forced by poverty is to end the poverty — not to bar the door.",
+      "layman_diagnosis": "A choice shaped by neglect, read as proof the right launders abandonment. The neglect is real and damning — but it charges the wrong target. Funding the supports that make life bearable and barring the exit are separate levers: a ban ends the option and leaves every deprivation standing, so the deprived are worse off, not helped. The remedy for a choice forced by poverty is to end the poverty — housing, care, income — not to conscript the deprived into continued existence as restitution. That a society offers its poor death before it offers them a life indicts the provision; it is no reason to bolt the one door they can still reach."
+    }
+  ],
+  "field_bands": {
+    "layman_handle": [
+      1,
+      40
+    ],
+    "layman_trigger": [
+      200,
+      400
+    ],
+    "layman_gloss": [
+      100,
+      200
+    ],
+    "layman_win_line": [
+      1,
+      90
+    ],
+    "layman_diagnosis": [
+      250,
+      650
+    ]
+  },
+  "layman_diagnosis_note": "v0_2: plain-register mirror of the scholar `diagnosis` (the objection's error anatomy) for the Refusal Suite's right-to-die wing (Wing 1, Harm & Autonomy). Optionality-only THROUGHOUT: rebut-only, appraisal-silent, asymmetry-independent — each rebuttal lands that the objection to the right fails and the sovereign exit stands, never that anyone ought to take it (Firewall-A: no exhortation; the L137 advisory exception is abortion-only). Anti-conscription is the spine: plain language may hold that no one may be conscripted into continued existence, never that anyone should leave it. No Benatar, no suffering-calculus, no 'should'; the right stands in full for a reader who rejects antinatalism entirely. The seven tier-4 nodes (autonomy-illusion, compensational-bridge-fork2b, expressivist, irreversibility-precaution, kantian-duty-to-self, social-contagion, resource-diversion) keep dissolve-defang — the granted primitive is left standing, never written as defeated/routed/removed/destroyed. Schema mirrors the anthropocentrism/veganism precedent; node order = objections-index source order."
+}
