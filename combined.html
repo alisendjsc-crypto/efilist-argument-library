@@ -1553,6 +1553,18 @@ body[data-active-view="library"].legible .dep-review-note { font-size: 12.5px; l
   box-shadow: 0 0 0 1px rgba(184, 172, 149, 0.18);
 }
 body.high-contrast .objection-header.focused { box-shadow: 0 0 0 1px rgba(107, 93, 63, 0.22); }
+
+/* K202 per-card plain-language reveal */
+.plain-toggle{background:transparent;border:1px solid #444;color:inherit;opacity:.7;font-family:inherit;font-size:10px;padding:3px 9px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;margin:0 0 14px;transition:opacity .15s ease,border-color .15s ease}
+.plain-toggle:hover{opacity:1;border-color:#777}
+.plain-toggle.active{opacity:1;border-color:#c41e3a}
+.detail-panel.show-plain > .section{display:none}
+.lay-body{margin:2px 0 6px}
+.lay-beat{margin-bottom:16px}
+.lay-tag{display:block;font-size:10px;color:#777;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.lay-beat p{margin:0;font-size:14px;line-height:1.7}
+.lay-win p{font-style:italic;opacity:.9}
+.lay-loading{color:#666;font-size:12px;letter-spacing:1px}
 </style>
 </head>
 <body data-active-view="library">
@@ -2636,6 +2648,45 @@ try {
 
 window.__arglib.applyOuterRoute();
 
+</script>
+<script>
+/* K202 per-card plain-language reveal (reads /flagship-layman-index.json; lazy, opt-in per card) */
+(function(){
+  window.__plain = window.__plain || { objs:new Set(), data:null, loading:null };
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function mdEmph(s){ return String(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>'); }
+  window.ensureLayman = function(){
+    var P = window.__plain;
+    if (P.data) return Promise.resolve(P.data);
+    if (P.loading) return P.loading;
+    P.loading = fetch('/flagship-layman-index.json',{cache:'no-cache'})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(j){ var m={}; (j.nodes||[]).forEach(function(n){ m[n.id]=n; }); P.data=m; return m; })
+      .catch(function(e){ P.loading=null; P.data=P.data||{}; return P.data; });
+    return P.loading;
+  };
+  window.__laymanBodyHTML = function(n){
+    if(!n) return '<div class="lay-body lay-loading">plain version unavailable</div>';
+    return '<div class="lay-body">'
+      + '<div class="lay-beat lay-q"><span class="lay-tag">plain · the objection</span><p>'+esc(n.layman_trigger)+'</p></div>'
+      + '<div class="lay-beat lay-a"><span class="lay-tag">plain · the answer</span><p>'+mdEmph(esc(n.layman_diagnosis))+'</p></div>'
+      + '<div class="lay-beat lay-win"><span class="lay-tag">plain · in one line</span><p>'+mdEmph(esc(n.layman_win_line))+'</p></div>'
+      + '</div>';
+  };
+  window.__plainAffordance = function(id){
+    var P = window.__plain, on = P.objs.has(id);
+    var btn = '<button class="plain-toggle'+(on?' active':'')+'" type="button" aria-pressed="'+(on?'true':'false')+'" onclick="event.stopPropagation();window.togglePlain(\''+id+'\',event)">'+(on?'[ scholar ]':'[ plain ]')+'</button>';
+    if(!on) return btn;
+    var d = P.data && P.data[id];
+    return btn + (d ? window.__laymanBodyHTML(d) : '<div class="lay-body lay-loading">translating…</div>');
+  };
+  window.togglePlain = function(id, ev){
+    if(ev && ev.stopPropagation) ev.stopPropagation();
+    var s = window.__plain.objs;
+    if(s.has(id)) s.delete(id); else s.add(id);
+    window.ensureLayman().then(function(){ if(typeof window.render==='function') window.render(); });
+  };
+})();
 </script>
 <script>
 const OBJECTIONS = [
@@ -10237,7 +10288,7 @@ function render() {
       <span class="expand-icon ${isOpen ? 'open' : ''}">+</span>
     </div>`;
 
-    html += `<div class="detail-panel ${isOpen ? 'open' : ''}" style="border-color:${isOpen ? tierInfo.color + '33' : 'transparent'}">
+    html += `<div class="detail-panel ${isOpen ? 'open' : ''}${(window.__plain&&window.__plain.objs.has(obj.id))?' show-plain':''}" style="border-color:${isOpen ? tierInfo.color + '33' : 'transparent'}">${(window.__plainAffordance?window.__plainAffordance(obj.id):'')}
       <div class="section">
         <div class="section-label">KEYWORD TRIGGERS</div>
         <div class="keywords">${obj.keywords.map(k => `<span class="keyword">${k}</span>`).join('')}</div>
