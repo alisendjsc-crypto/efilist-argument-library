@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>If the site won&rsquo;t load &mdash; SSL / connection error &middot; W.U.L.D.</title>
+<meta name="description" content="Fixing ERR_SSL_PROTOCOL_ERROR / 'invalid response' errors that appear intermittently &mdash; an Encrypted ClientHello (ECH) network conflict, and how to resolve it in about 30 seconds.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wuld.ink/troubleshooting/">
+<style>
+  :root{
+    --bg:#0a0a0a; --ink:#f0ebe5; --accent:#c41e3a; --dim:#9a938b;
+    --line:#2a2724; --panel:#141210; --panel-2:#1b1815;
+    --serif:"EB Garamond","Cormorant Garamond",Georgia,"Times New Roman",serif;
+    --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono","Consolas",monospace;
+  }
+  *{box-sizing:border-box}
+  html{font-size:112.5%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:44rem;margin:0 auto;padding:3.2rem 1.4rem 5rem}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 1.1rem}
+  h1{font-family:"IM Fell English",var(--serif);font-weight:400;font-size:2.35rem;line-height:1.12;margin:0 0 1rem;letter-spacing:.01em}
+  .mirror-note{font-family:var(--mono);font-size:.74rem;line-height:1.6;letter-spacing:.02em;color:var(--dim);border-left:3px solid var(--accent);padding:.5rem .9rem;margin:0 0 1.6rem;background:var(--panel)}
+  .mirror-note a{color:var(--accent)}
+  .lede{font-size:1.12rem;color:var(--ink);margin:0 0 1.2rem}
+  .lede code{color:var(--accent)}
+  h2{font-family:"IM Fell English",var(--serif);font-weight:400;font-size:1.4rem;margin:2.6rem 0 .7rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  h3{font-family:var(--mono);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .4rem}
+  p{margin:.5rem 0 .9rem}
+  strong{color:#fff}
+  a{color:var(--accent)}
+  code{font-family:var(--mono);font-size:.86em;background:var(--panel-2);padding:.08em .34em;border-radius:2px;color:var(--ink)}
+  .note{font-family:var(--mono);font-size:.78rem;color:var(--dim);letter-spacing:.02em;margin-top:.3rem}
+  pre{font-family:var(--mono);font-size:.8rem;line-height:1.55;background:var(--panel);border-left:3px solid var(--accent);padding:1rem 1.1rem;overflow-x:auto;margin:.7rem 0 1.1rem;color:#e7e0d8}
+  pre code{background:none;padding:0;color:inherit;font-size:inherit}
+  .card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);padding:1.1rem 1.2rem;margin:.9rem 0}
+  .kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0}
+  footer{font-family:var(--mono);font-size:.76rem;color:var(--dim);letter-spacing:.03em;line-height:1.7}
+  footer .accent{color:var(--accent)}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <p class="eyebrow">Troubleshooting &middot; connection error</p>
+  <h1>If the site won&rsquo;t load</h1>
+
+  <div class="mirror-note">Mirror hosted on library.wuld.ink &mdash; a separate host, so this page stays reachable even when wuld.ink itself won&rsquo;t load. Canonical version: <a href="https://wuld.ink/troubleshooting/">wuld.ink/troubleshooting/</a>.</div>
+
+  <p class="lede">Seeing <em>&ldquo;this connection is not secure,&rdquo;</em> <em>&ldquo;&hellip;sent an invalid response,&rdquo;</em> or <code>ERR_SSL_PROTOCOL_ERROR</code> &mdash; especially on and off, at random, on a page that loaded fine a minute ago? It is almost certainly <strong>not the site.</strong> It is a modern privacy feature in your browser (<strong>Encrypted ClientHello</strong>) colliding with something on your network. Here is the roughly 30-second fix.</p>
+
+  <div class="card">
+    <span class="kicker">First &mdash; prove it&rsquo;s local</span>
+    <p style="margin-bottom:.2rem">Open the site on your <strong>phone&rsquo;s mobile data</strong> (Wi-Fi off) or a different network. If it loads there but not on your usual Wi-Fi, the culprit is on <em>that</em> network &mdash; a security suite, VPN, or router &mdash; not the site.</p>
+  </div>
+
+  <h2>The fix, by browser</h2>
+
+  <h3>Chrome &middot; Edge &middot; Brave &mdash; quick, no admin</h3>
+  <p>Open your browser settings, search <strong>&ldquo;secure DNS,&rdquo;</strong> and turn <strong>&ldquo;Use secure DNS&rdquo; off</strong>, then restart the browser. (Address bar: <code>chrome://settings/security</code> or <code>edge://settings/privacy</code>.) This stops the browser attempting the encrypted handshake that&rsquo;s failing. Worth trying first because it needs no admin rights.</p>
+
+  <h3>Chrome &middot; Edge &mdash; permanent, needs admin</h3>
+  <p>The reliable fix disables just the fragile feature and keeps your DNS private. Run one block in an <strong>Administrator</strong> PowerShell, then fully restart the browser.</p>
+  <p class="note">Microsoft Edge:</p>
+  <pre><code>New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Force | Out-Null
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "EncryptedClientHelloEnabled" -PropertyType DWord -Value 0 -Force | Out-Null</code></pre>
+  <p class="note">Google Chrome &mdash; same, under the Chrome path:</p>
+  <pre><code>New-Item -Path "HKLM:\SOFTWARE\Policies\Google\Chrome" -Force | Out-Null
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Google\Chrome" -Name "EncryptedClientHelloEnabled" -PropertyType DWord -Value 0 -Force | Out-Null</code></pre>
+  <p>Reversible anytime: set the value to <code>1</code> or delete the key. Confirm at <code>edge://policy</code> or <code>chrome://policy</code>.</p>
+
+  <h3>Firefox &mdash; no admin</h3>
+  <p>Type <code>about:config</code> in the address bar, accept the warning, then set both of these to <strong>false</strong>:</p>
+  <pre><code>network.dns.echconfig.enabled        &rarr;  false
+network.dns.http3_echconfig.enabled  &rarr;  false</code></pre>
+
+  <h2>Why this happens</h2>
+  <p>Encrypted ClientHello (ECH) encrypts the name of the site you&rsquo;re visiting so your network can&rsquo;t see it &mdash; a genuine privacy win. But some networks can&rsquo;t cope with it: an aggressive antivirus, a VPN, a corporate or school firewall, or certain routers will mangle the encrypted handshake, and the connection fails. It&rsquo;s <strong>intermittent</strong> because your browser only attempts ECH on some connections, not every one.</p>
+  <p>The tell: if the error hits you on <strong>many different sites</strong> (not just this one), the cause is squarely that software or hardware on your side. Turning it off &mdash; or applying one of the fixes above &mdash; resolves it. The site itself is served over standard, valid HTTPS and is reachable from any clean network.</p>
+
+  <hr>
+  <footer>
+    <span class="accent">W.U.L.D.</span> &middot; Nothing on your side is broken permanently &mdash; this is a setting, not damage.<br>
+    If none of the above helps, reach out through <a href="https://wuld.ink/contact/">the contact page</a> from any device that <em>can</em> load the site.
+  </footer>
+
+</main>
+</body>
+</html>
