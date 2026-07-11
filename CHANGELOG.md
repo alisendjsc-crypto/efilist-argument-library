@@ -14,6 +14,24 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.0.0] — 2026-07-11
+
+**MINOR** by the invariants convention (invariants subtree mutated — the first corpus-topology change since the v3.8.0 cut), released as the **v4.0.0 content cut**. Invariants anchor `c18693f413066e1916eb6281a376d2db` → `f5347636b5becaf25e4759b620090118` (the v3.8.0-era anchor predates the v3.9.12 graph-invariant resync; both prior states preserved in canon history).
+
+### Added
+
+- **`self-effacing-under-universalization`** — objection #82, Tier 5 / Meta-Objection, the Kantian universalizability charge ("even if true, 'do not procreate' cannot be universal law"). Full three-depth response triple, library-authored and cold-graded (long **89.8 A**, medium 88.1 A, short 86.0 B; unrounded means banded per the ratified convention). Mechanism web: **Category Error** (primary) + **Formal Logic Attack** — adjudicated EXISTING, mechanism #36 mint rejected; `mechanism_count` holds at 35. Dependency graph: one weak `benatars-asymmetry` link (the residue routes to the asymmetry cluster). Reciprocal disambiguation folded onto `self-defeating` (keywords + diagnosis pointer; the memetic and deontic forms now fence each other off explicitly).
+- **Plain-language card** for the new objection (ROUTED register) and a per-node `register` field on all seven Tier-5 layman entries, per the ratified T5 register-dispositions sidecar — promoted this release from `v4_staging/` to the repo root as a durable canon call.
+- **`layman_index_validator_v0_4.py`** — register-keyed T5 gate (defanged inherits the T4 hard defeat-vocabulary gate; routed exempt; unclassified register-tier nodes fail). `--warn-tiers` retires.
+
+### Changed
+
+- **`contractualism-scanlon`** responses regenerated wholesale against the strongest modern ex-ante / hypothetical-consent form (Frick engine, Kumar type-standpoint, the proxy-consent analogy battery). Identity fields byte-locked; sources gain Frick, Kumar, and the Reibetanz/Otsuka ex-post critiques. Ledger row superseded under regeneration discipline: headline **B → A** (long 90.6 A / medium 88.9 A / short 86.8 B). The plain-language card is re-mirrored to the regenerated short (the K202 reveal no longer serves a stale mirror).
+- Counts across all four surfaces: corpus **81 → 82** objections (tier split 13/17/14/31/**7**, 246 responses), mechanism web **116 → 117** nodes / **140 → 142** links, dependency graph **94 → 95** nodes / **254 → 255** links (167 strong / 88 weak), grading ledger 82 rows, objections-index + flagship layman index 82 entries (layman `schema_version` → `layman_index_v0_3`, `source_index_pin` rotated).
+- `combined.html` **v3.9.16 → v4.0.0** (`6dfeb5d4`/2,955,840 → `e654eabd32fa95e5969d49e6eb15aa87`/2,963,752). Canon **v37.40 → v38.0** (MAJOR: invariant block revised). Corpus/JSX filenames minted at `_v4_0_0`, v3_8_0 pair archived.
+
+---
+
 ## [v3.8.3] — 2026-05-30
 
 **PATCH** over v3.8.0. `joy-outweighs-harms` long-form strengthen + the batched index/combined surface-parity reconciliation. Invariants subtree byte-identical (anchor `8727787c…`); corpus taxonomic content unchanged at 81 objections.

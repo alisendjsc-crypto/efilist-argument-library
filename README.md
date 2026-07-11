@@ -1,6 +1,6 @@
 # efilist argument library
 
-A structured taxonomy of objections to antinatalism. **81 objections across 5 tiers**, attached to **35 psychological mechanisms**, with **136 attested real-world deployments** mapped to four interlocutor archetypes — *sophisticate, defender, drifter, blended*.
+A structured taxonomy of objections to antinatalism. **82 objections across 5 tiers**, attached to **35 psychological mechanisms**, with **136 attested real-world deployments** mapped to four interlocutor archetypes — *sophisticate, defender, drifter, blended*.
 
 This is taxonomic work, not advocacy. The objections are catalogued as live moves in real discourse, not strawmen and not specimens. The descriptive content stands as observation regardless of whether you share the suffering-priority axiom; the closing **coda** makes that axiom visible as a stake rather than a derivation. Read both.
 
@@ -14,7 +14,7 @@ Each library is a self-contained `combined.html` that renders from its own corpu
 
 | Library | Defends | Objections | Status | Live |
 |---|---|---|---|---|
-| **efilist argument library** | the antinatalist conclusion | **81** | flagship · pinned v3.9.16 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
+| **efilist argument library** | the antinatalist conclusion | **82** | flagship · pinned v4.0.0 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
 | **Right to Die** | the right to choose one's own death | 17 | provisional-complete (v0.3.19) | [/right-to-die/combined](https://library.wuld.ink/right-to-die/combined) |
 | **Abortion** | the right to end a pregnancy | 7 | complete (v0.1.6) · two-layer: optionality + one advisory claim | [/abortion/combined](https://library.wuld.ink/abortion/combined) |
 | **Transgenderism** | the right to gender self-determination | 12 | complete (v0.1.11) | [/transgenderism/combined](https://library.wuld.ink/transgenderism/combined) |
@@ -63,19 +63,19 @@ The shippable artifact is a single file: **`combined.html`**. Library, real-worl
 | Field | Value |
 |---|---|
 | File | `combined.html` |
-| Version (pin) | `v3.9.16` |
-| md5 | `6dfeb5d4bb625fbb061b1cf0432f48ca` |
-| Size | `2,955,840` bytes |
+| Version (pin) | `v4.0.0` |
+| md5 | `e654eabd32fa95e5969d49e6eb15aa87` |
+| Size | `2,963,752` bytes |
 
 That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF). The served `/combined` is held byte-identical to the pin (**pin == live**); a deploy that moves the artifact forces a same-session re-pin.
 
-The binding integrity source is the project canon's `archive_attestation` block (current line, canon **v37.40**) together with the wuld.ink pin tooling.
+The binding integrity source is the project canon's `archive_attestation` block (current line, canon **v38.0**) together with the wuld.ink pin tooling.
 
 ---
 
 ## Status
 
-**Stable at v3.9.16** (canon v37.40 line). The corpus holds at the **v3.8.0 structural cut** — **81 objections / 5 tiers / 35 mechanisms**, the last change to the objection count. The v3.9 line is render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, and the **Refusal Suite wing-switcher** that ties the flagship to its siblings. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
+**Stable at v4.0.0** (canon v38.0 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
 
 The **deployment × grade danger quadrant remains empty**: the three highest-deployment objections — `violence-as-reductio` (27 RWE), `benatar-asymmetry-attack` (15), `ai-fear` (10) — are all B-band. Grade distribution (long, n=81): **A 36 / B 34 / C 11 / 0 ungraded**.
 
@@ -85,7 +85,7 @@ The **deployment × grade danger quadrant remains empty**: the three highest-dep
 
 `combined.html` carries three surfaces behind its top-nav router:
 
-- **library** — the 81-objection taxonomy across 5 tiers, the 35 mechanism attributions, the dependency graph (**94 nodes** = 81 objections + 13 premises; **254 links**, 167 strong / 87 weak), the mechanism web (116 nodes, 140 links), and the force-directed Map 1 across the four archetypes (2,886 transition edges across 78 source-keys).
+- **library** — the 82-objection taxonomy across 5 tiers, the 35 mechanism attributions, the dependency graph (**95 nodes** = 82 objections + 13 premises; **255 links**, 167 strong / 88 weak), the mechanism web (117 nodes, 142 links), and the force-directed Map 1 across the four archetypes (2,886 transition edges across 78 source-keys).
 - **examples** — the 136 attested real-world deployments (171 attachment edges), schema v1.7.
 - **coda** — the closing artifact on the axiom this library does not derive.
 
@@ -96,10 +96,10 @@ The regenerable sources behind the single file — the authoritative corpus JSON
 ## Repository structure
 
 - **`combined.html`** + **`_redirects`** — the served flagship and its routing (`/` → `/libraries/`; `/combined` serves the flagship). The pinned artifact.
-- **`efilist_argument_library_v3_8_0.json`** (corpus) · **`efilist_argument_library_v3_8_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** — the regenerable flagship sources + tooling.
+- **`efilist_argument_library_v4_0_0.json`** (corpus) · **`efilist_argument_library_v4_0_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** — the regenerable flagship sources + tooling.
 - **`refusal_suite_charter_v0_1.md`** — the shared charter governing every library in the suite.
 - **`right-to-die/`** · **`abortion/`** · **`transgenderism/`** · **`anthropocentrism/`** — the four suite wings, each a self-contained set (corpus · grading ledger · objection index · `combined.html` · validator · builder · plain-language layman index). **`veganism/`** — the flagship-adjacent module (same set; a positive case, not an optionality wing). **`libraries/`** — the umbrella front door served at `/libraries`; **`flagship-layman-index.json`** + **`layman_index_validator_v0_*.py`** — the flagship plain-language mirror and its validators.
-- **`screenshots/`** — README imagery. **`project_canon_v37_40.json`** — the current canon record.
+- **`screenshots/`** — README imagery. **`project_canon_v38_0.json`** — the current canon record.
 - **`archive/`** — historical session-state, canon-snapshot, variant, and audit records, retained for posterity (not part of the live build).
 
 ---
@@ -121,7 +121,7 @@ A `CITATION.cff` (CFF 1.2.0) is provided at repository root and enables GitHub's
   title   = {efilist argument library},
   author  = {Cooper, Josiah S.},
   year    = {2026},
-  version = {3.9.16},
+  version = {4.0.0},
   url     = {https://github.com/alisendjsc-crypto/efilist-argument-library},
   note    = {Stable release, v3.9 line; flagship of the Refusal Suite}
 }

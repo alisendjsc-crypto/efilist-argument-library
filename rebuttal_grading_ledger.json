@@ -1,7 +1,7 @@
 {
   "artifact": "rebuttal_grading_ledger.json",
-  "status": "REAL GRADES — supersedes the prior NULL/structural-fallback ledger",
-  "method": "Extracted REBUTTAL_STRENGTH const from combined.html via awk-slice -> node Function-eval (project pattern, hazard line 4070 avoided). Recomputed RSI = (v·s·c·r·a)^(1/5) and depth-modifiers per the in-file canonical functions. NOT fabricated — this is the project's own rubric applied to the project's own stored axis scores. Screenshot-verified (life-gift medium = 78.3% C).",
+  "status": "REAL GRADES \u2014 supersedes the prior NULL/structural-fallback ledger",
+  "method": "Extracted REBUTTAL_STRENGTH const from combined.html via awk-slice -> node Function-eval (project pattern, hazard line 4070 avoided). Recomputed RSI = (v\u00b7s\u00b7c\u00b7r\u00b7a)^(1/5) and depth-modifiers per the in-file canonical functions. NOT fabricated \u2014 this is the project's own rubric applied to the project's own stored axis scores. Screenshot-verified (life-gift medium = 78.3% C).",
   "rubric_ref": "see rebuttal_grading_coverage.json grade_system_FOUND",
   "ungraded": [],
   "grades": {
@@ -321,7 +321,7 @@
         "grade": "B"
       },
       "headline_grade_long": "B",
-      "depths_note": "long strengthened in v3.8.1 (NU-centrality seam, +2.4 RSI); short/medium prose byte-identical (md5 05fd8161 / 025950ba) and NOT re-promoted — their grades are the regrade pre-strengthen deterministic values and are AUTHORITATIVE over the live depthModifiedRSI badge.",
+      "depths_note": "long strengthened in v3.8.1 (NU-centrality seam, +2.4 RSI); short/medium prose byte-identical (md5 05fd8161 / 025950ba) and NOT re-promoted \u2014 their grades are the regrade pre-strengthen deterministic values and are AUTHORITATIVE over the live depthModifiedRSI badge.",
       "grade_source": "coldgrade_violence_as_reductio_long.json (cold=true, sealed_consulted_before_commit=false, prose_md5 0bd12459bf3a4a1b377b689c227a23f2, rsi 0.8379 -> pct 83.8 band B; pre-committed)"
     },
     "natural-reproduce": {
@@ -564,7 +564,7 @@
         "grade": "B"
       },
       "headline_grade_long": "B",
-      "depths_note": "long-only strengthen (v3.8.2); short/medium prose byte-stable so their stored grades hold; node carries per-tier stored grades (not the VAR/masochist long-only+derive posture). Long leads medium by 5.7pt — rigor divergence, not direction; down-tier propagation deferred."
+      "depths_note": "long-only strengthen (v3.8.2); short/medium prose byte-stable so their stored grades hold; node carries per-tier stored grades (not the VAR/masochist long-only+derive posture). Long leads medium by 5.7pt \u2014 rigor divergence, not direction; down-tier propagation deferred."
     },
     "wild-animal-suffering-consistency": {
       "graded": true,
@@ -1368,25 +1368,25 @@
     "contractualism-scanlon": {
       "graded": true,
       "axes": {
-        "v": 0.9,
-        "s": 0.85,
-        "c": 0.9,
-        "r": 0.82,
-        "a": 0.85
+        "v": 0.92,
+        "s": 0.9,
+        "c": 0.89,
+        "r": 0.89,
+        "a": 0.93
       },
       "short": {
-        "rsi_pct": 82.6,
+        "rsi_pct": 86.8,
         "grade": "B"
       },
       "medium": {
-        "rsi_pct": 84.7,
-        "grade": "B"
+        "rsi_pct": 88.9,
+        "grade": "A"
       },
       "long": {
-        "rsi_pct": 86.3,
-        "grade": "B"
+        "rsi_pct": 90.6,
+        "grade": "A"
       },
-      "headline_grade_long": "B"
+      "headline_grade_long": "A"
     },
     "phenomenological-existentialism": {
       "graded": true,
@@ -1858,8 +1858,8 @@
         "grade": "B"
       },
       "headline_grade_long": "B",
-      "depths_note": "v3.8.22 strengthen; VAR posture (long graded, short/medium DERIVE-AT-RENDER; per-axis depth-mod canon v37.13: medium c-0.05 r-0.03, short c-0.12 r-0.06). long 85.2/B -> 87.0/B (cold, +1.8, high-B; display 86.9). Derived tiers from new base axes: medium 85.4/B (display 85.3), short 83.2/B (display 83.1) — short C->B verified substance-driven (old axes under the same method give 81.5/C). NOT A: a-axis ceiling .84 (no empirical RWE; amplifier openly a-dependent; honest partiality vs the global skeptic — defeats-as-license, dissolves-as-metaphysics). Supersedes the committed-78 modal-modifier preview (short~81.5C medium~83.6B).",
-      "grade_source": "v3_8_22_solipsism_reciprocity_strengthen cold regrade (regrade_solipsism_v3_8_22.json); reciprocity/special-plea limb authored (enrichment flag discharged) + zombie one-way-ratchet + epistemic-retreat preempt + AMP-4 weak-dominance reframe; surface-attested tuple == index/combined strength-const, UPDATED in place in the v3_8_22 Cowork fold (directive's POPULATE label was a stale-mount inference; live map holds all 81 nodes — corrected at AQ). Contamination disclosed in regrade (baseline visible pre-freeze; axes re-scored against absolute rubric)."
+      "depths_note": "v3.8.22 strengthen; VAR posture (long graded, short/medium DERIVE-AT-RENDER; per-axis depth-mod canon v37.13: medium c-0.05 r-0.03, short c-0.12 r-0.06). long 85.2/B -> 87.0/B (cold, +1.8, high-B; display 86.9). Derived tiers from new base axes: medium 85.4/B (display 85.3), short 83.2/B (display 83.1) \u2014 short C->B verified substance-driven (old axes under the same method give 81.5/C). NOT A: a-axis ceiling .84 (no empirical RWE; amplifier openly a-dependent; honest partiality vs the global skeptic \u2014 defeats-as-license, dissolves-as-metaphysics). Supersedes the committed-78 modal-modifier preview (short~81.5C medium~83.6B).",
+      "grade_source": "v3_8_22_solipsism_reciprocity_strengthen cold regrade (regrade_solipsism_v3_8_22.json); reciprocity/special-plea limb authored (enrichment flag discharged) + zombie one-way-ratchet + epistemic-retreat preempt + AMP-4 weak-dominance reframe; surface-attested tuple == index/combined strength-const, UPDATED in place in the v3_8_22 Cowork fold (directive's POPULATE label was a stale-mount inference; live map holds all 81 nodes \u2014 corrected at AQ). Contamination disclosed in regrade (baseline visible pre-freeze; axes re-scored against absolute rubric)."
     },
     "suffering-as-meaning": {
       "graded": true,
@@ -1877,6 +1877,29 @@
       "headline_grade_long": "B",
       "depths_note": "long graded (84.8=B); short/medium prose authored in-node but depth-modified grades derived at render, NOT separately committed (VAR posture, same as violence-as-reductio/masochist/wild-animal). Modifier-derived preview for Phase-1 surface REBUTTAL_STRENGTH population (carry-forward #1): short~=81.2(C) medium~=83.2(B) [short=long*0.9571, medium=long*0.9807, modal modifiers from committed-78].",
       "grade_source": "coldgrade_suffering-as-meaning_long [v3_8_phase_0c_coldgrade_suffering_nodes_s1] (cold=true, sealed_consulted_before_commit=false, prose_md5 177c2dbbdae08a8069905eb6f0e36842, rsi 0.8478 -> pct 84.8 band B; pre-committed; STAGED for Phase-1 ledger merge -- canonical ledger UNCHANGED this session). Fresh-cold form (violence-as-reductio /grades template), NOT the wild-animal surface-attested-tuple form: these nodes carry no surface REBUTTAL_STRENGTH tuple yet (un-spliced), so there is nothing to attest against -- the tuple is populated AT Phase-1 splice from these axes."
+    },
+    "self-effacing-under-universalization": {
+      "graded": true,
+      "axes": {
+        "v": 0.92,
+        "s": 0.88,
+        "c": 0.89,
+        "r": 0.88,
+        "a": 0.92
+      },
+      "short": {
+        "rsi_pct": 86.0,
+        "grade": "B"
+      },
+      "medium": {
+        "rsi_pct": 88.1,
+        "grade": "A"
+      },
+      "long": {
+        "rsi_pct": 89.8,
+        "grade": "A"
+      },
+      "headline_grade_long": "A"
     }
   },
   "archetype_variant_grades": {

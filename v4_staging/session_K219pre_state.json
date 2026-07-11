@@ -1,0 +1,72 @@
+{
+  "session_id": "K219pre_layman_cards_and_mechanism",
+  "seat": "library-Claude, dedicated pre-K219 seat (Max-class)",
+  "date": "2026-07-10",
+  "date_note": "Relay stamped K218a 2026-07-11 (Cowork sandbox UTC); this seat's clock reads 2026-07-10 — the documented K183 dual-boot skew class, not a sequencing defect.",
+  "authorization": "Exchange 148 (library) / Exchange 149 + K219pre relay (Cowork, K218a). Fence honored: authoring only — zero corpus/ledger/objections-index/layman-index bytes moved; deliverables are PAYLOADS for Cowork fold at K219. Act 3 ELECTED (section present in the pasted relay; Josiah did not strike it).",
+  "completed_tasks": [
+    "Act 1 — 82nd flagship layman card authored: self-effacing-under-universalization (6-key shape, ROUTED disposition)",
+    "Act 2 — contractualism-scanlon card RE-MIRRORED against the staged seed-2 triple (identity locked; mirror-bearing fields re-authored)",
+    "Act 3 — seed-1 mechanism pre-adjudication verdict: EXISTING (Category Error primary + Formal Logic Attack co-web); mint #36 rejected"
+  ],
+  "deliverables": {
+    "self_effacing_under_universalization_layman_card_v0_1.json": {
+      "md5": "917ec494c5650f72779fc548f5a91ddc",
+      "bytes": 1485,
+      "field_chars": { "layman_handle": 25, "layman_trigger": 373, "layman_gloss": 178, "layman_win_line": 72, "layman_diagnosis": 650 }
+    },
+    "contractualism_scanlon_layman_card_remirror_v0_1.json": {
+      "md5": "ff967e2ef290cccef16cc17bd6f1f406",
+      "bytes": 1483,
+      "field_chars": { "layman_handle": 24, "layman_trigger": 391, "layman_gloss": 168, "layman_win_line": 87, "layman_diagnosis": 646 }
+    },
+    "seed1_mechanism_verdict_v0_1.json": { "role": "Act-3 elective verdict object; md5/bytes declared at hand-back close" }
+  },
+  "verified_facts": {
+    "flagship_layman_index": "mount == relay pin 006b9a3b4e850c25c4c1620bec4351eb; 81 nodes; 82nd id ABSENT pre-fold; node key order id/handle/trigger/gloss/win_line/diagnosis; field_bands read from the index itself and match the relay (handle[1,40] trigger[200,400] gloss[100,200] win[1,90] diagnosis[250,650])",
+    "objections_index": "mount == 82f3cd1f5392795a9824e5e966bb5a3e (== source_index_pin)",
+    "seed1_mirror_sources_mount": "short f63c9cf0 (BINDS) / medium 5ba318f9 / long 47e939f3 / node_spec ec3358d1 / grade_record 36925a30 — all == relay pins",
+    "seed2_mirror_sources_fetched": "mount lacks seed 2; fetched raw from library.wuld.ink/v4_staging/ and md5-VERIFIED: short 3f9755c220b50ad0f747ca15edba8027 (BINDS) / medium 342bfecb35da378374c44ad6146d3b3d / long 6231c803493ef5471504a5e16b17425a; filenames per the staged README",
+    "rider": "flagship_t5_register_dispositions_v0_1.json mount == f37a986e; routed semantics read in-file ('falls like T1-T3 on correct answer — clean knock-down or category error')",
+    "corpus_mount": "6ac568fc (K60-open state) — the K218/Exchange-149 byte-proven benign lag; consumed only for identity/tier reads (contractualism-scanlon tier 4 Genuine Philosophical; self-defeating psychMechanism; T5 set), all byte-identical across 6ac568fc<->9af9dd5c",
+    "old_card_and_old_short": "contractualism live card extracted from 006b9a3b; old responses.short from corpus (identical both corpus states)"
+  },
+  "g1_distinctness": {
+    "method": "set-Jaccard on lowercase [a-z0-9'] tokens over layman_gloss + ' ' + layman_diagnosis per face; gate < 0.50",
+    "act1_max_vs_81": { "max": 0.128, "nearest": "speak-for-everyone", "next": [["self-defeating", 0.123], ["cant-prove-nonexistence-better", 0.123]] },
+    "act2_max_vs_80_excl_self": { "max": 0.165, "nearest": "incommensurability", "next": [["consent-incoherent", 0.163], ["consent-both-ways", 0.163]] },
+    "act2_new_face_vs_own_old_face": 0.112,
+    "verdict": "PASS both, wide margin; the T5 sibling self-defeating sits at 0.123 — the deontic/memetic fence holds at the plain register"
+  },
+  "register_attestations": {
+    "act1_routed": "Disposition ROUTED per the seed-1 node spec + rider semantics. Defeat-vocabulary was PERMITTED and NOT NEEDED: gated tokens (defeat*/routed/remov*/destroy*) = 0 in win_line + diagnosis. Routed substance is carried by verdict language ('finds no contradiction', 'proves too much', 'has succeeded, not contradicted itself') — matching the three shipped routed T5 faces, which are themselves token-clean. Consequence: the card passes the ask2 register-keyed gate AND, vacuously, the legacy --warn-tiers 5 grep; no gate-plumbing dependency. Routed != triumphalist honored: the perfectionist-Kantian residue surfaces in the diagnosis tail as routed-not-defeated ('isn't logic but the old claim that existence is good, answered elsewhere').",
+    "act1_residue_call": "Named-terminus residue judged CARD-WORTHY and included (final sentence of the diagnosis) — the will-prong retreat exits to the axiology, per the node spec's verdict block.",
+    "act2_t4_gate": "contractualism-scanlon is tier 4 -> dissolve-defang discipline self-enforced: gated tokens = 0 in win_line + diagnosis (the corpus short's own 'defeats the natalist' NOT imported). Register matches the live card's T4 face: framework granted at full strength, permission denied on the framework's own terms."
+  },
+  "act2_fields_moved": {
+    "id": "HELD (locked identity)",
+    "layman_handle": "HELD — byte-identical to the live card ('Contractualism allows it'); still the objection",
+    "layman_trigger": "MOVED — upgraded to voice the ex-ante/hypothetical-consent steelman the regeneration engages (prospects standard + consent-currency analogy). Identity unchanged (corpus trigger 'Contractualism justifies procreation / reasonable rejection / Scanlon' still voiced); the old trigger's weak generic form would mis-mesh beat 1 against a beat-2 diagnosis that answers the strong form — the seed-2 audit's whole point",
+    "layman_gloss": "MOVED — old reply-half mirrored the superseded short's created-party-rejects move; new gloss carries the no-occupant engine",
+    "layman_win_line": "MOVED — now mirrors the new short's punch (hypothetical consent has no bearer / manufactures its own justificand)",
+    "layman_diagnosis": "MOVED — wholesale re-mirror against 3f9755c2, informed by medium/long (three internal failures compressed: no occupant; each-not-average veto laundering; the analogy generalization)"
+  },
+  "re_mirror_evidence": {
+    "metric": "set-Jaccard, same tokenizer",
+    "new_diagnosis_vs_NEW_short": 0.234,
+    "new_diagnosis_vs_OLD_short": 0.086,
+    "old_diagnosis_vs_NEW_short": 0.093,
+    "reading": "The supersession is real and the fix lands: the new face tracks the staged short at the K201-observed mirror range while the old short's vocabulary drops out; Cowork's 0.027 stale-mirror finding is answered",
+    "act1_diagnosis_vs_seed1_short": 0.129,
+    "act1_note": "seed-1 short BINDS: its spine (no-concept-only-headcount / last-generation-keeps-rule / eradication-retire) is the diagnosis's first half and the win_line is a direct plain rendering of its central clause ('has succeeded, not contradicted itself'); overgeneration + unheld/unholdable + the residue draw on medium/long per the relay's inform license"
+  },
+  "hygiene": {
+    "mojibake_U+FFFD": 0,
+    "em_dashes": "real U+2014 throughout, spaced, matching the index convention",
+    "serializer": "json.dumps(indent=2, ensure_ascii=False) + trailing newline; key order matches the live index node shape exactly (6 keys, no register field — assembly-side fold per the rider's vehicle_and_fold)"
+  },
+  "next_recommended_action": "Hand back to Josiah -> Cowork lands the pair (v4_staging micro-fold OR K219 in-session upload — either satisfies the gate; K219's pin HARD-GATES on it). Assembly-side acts riding K219, not this seat: 82-node objections-index ordering; the layman register-field fold ('routed') + schema bump; source_index_pin rotation (82f3cd1f retires when the 82-node index regenerates); mechanism-verdict ratification + MAP/DEP link arithmetic + Map-1 curation; ledger-row supersession under regeneration discipline.",
+  "open_questions": [
+    "None blocking. One assembly nicety: if the register-keyed T5 gate lands before the register field exists on all 82 nodes, the Act-1 card is safe either way (token-clean under the legacy grep too) — attested above so K219 need not sequence around it."
+  ]
+}

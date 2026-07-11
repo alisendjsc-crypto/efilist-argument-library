@@ -1,8 +1,8 @@
 {
-  "schema_version": "layman_index_v0_2",
+  "schema_version": "layman_index_v0_3",
   "wing": "flagship",
-  "source_index_pin": "82f3cd1f5392795a9824e5e966bb5a3e",
-  "generated": "2026-07-05",
+  "source_index_pin": "d034af153aafa08c6f57884a9e7426a1",
+  "generated": "2026-07-11",
   "nodes": [
     {
       "id": "ableist-objection",
@@ -143,10 +143,10 @@
     {
       "id": "contractualism-scanlon",
       "layman_handle": "Contractualism allows it",
-      "layman_trigger": "Scanlon gives a way out that skips utilitarian sums entirely: an act is wrong only if it's ruled out by principles no one could reasonably reject. Rational agents setting terms for living together wouldn't reject permitting the creation of lives worth living. So on contractualism — a serious, standalone ethics — procreation comes out permissible, and your suffering-calculus never gets a vote.",
-      "layman_gloss": "Runs on assuming the reasonable-rejection test clears procreation. The reply: grant the test — the created party could reasonably reject that very principle.",
-      "layman_win_line": "Grant Scanlon's test — the party bearing all the risk could reasonably reject it.",
-      "layman_diagnosis": "Take contractualism on its own terms. Its test is reasonable rejection — and a principle permitting the unconsented creation of beings into a system that guarantees suffering, degradation, and death is exactly the kind a rational agent could reasonably reject, above all the one bearing all the risk and none of the decision. So grant the whole framework; it is not smuggled utilitarianism, and it does get a vote. Run its own test honestly and the natalist principle is one the created party could reasonably reject. The architecture stands intact; it just doesn't deliver the permission the objection wanted from it."
+      "layman_trigger": "Scanlon's test skips your suffering sums: an act is wrong only if principles no one could reasonably reject forbid it. Judged by the prospects they offer, a principle permitting procreation in decent conditions gives the created a bet no rational agent would refuse — the same hypothetical consent that licenses surgery on the unconscious. So procreation clears a serious, standalone ethics.",
+      "layman_gloss": "Runs on justifying creation to a standpoint judged by its prospects. The reply: that standpoint has no occupant — every consent analogy pays someone who already exists.",
+      "layman_win_line": "Hypothetical consent needs a bearer — creation manufactures its subject only afterward.",
+      "layman_diagnosis": "Grant the strongest form — prospects, not outcomes; hypothetical consent as ordinary moral currency. But that currency pays someone who exists: patient before scalpel, ward before guardian, public before road. Creation manufactures its own subject — before it, no one faces the prospect; after it, only a done deal. Scanlon's point was justification to each, not the average; yet the child dealt the catastrophic life is told her complaint was priced into a standpoint she never occupied. Hypothetical consent works where refusal would also burden someone who exists; non-creation burdens no one. It keeps Scanlon's name and surrenders his point."
     },
     {
       "id": "economy-population",
@@ -242,7 +242,8 @@
       "layman_trigger": "The universe ends in heat death — in 10^100 years, entropy erases every trace, every memory, every life. On that scale nothing you do leaves a mark, so reducing suffering is as pointless as causing it. If cosmic oblivion is the final state, antinatalism's concern with harm has no special standing; ultimately, nothing matters at all.",
       "layman_gloss": "Scales the argument up to cosmic time so every stake vanishes. But the move flattens the pro-birth side identically, and the suffering it waves away is happening now, to someone it matters to.",
       "layman_win_line": "Grant the heat death — the cancer hurts now, and 'later, nothing' erases the good too.",
-      "layman_diagnosis": "Grant the heat death whole. In 10^100 years entropy wins, every trace is gone, no record survives. It does not reduce the suffering of a child dying of bone cancer today by a single degree. Cosmic scale does not cancel experiential reality: the pain is happening now, to a real being, and it matters to them regardless of the far future. And the move cuts both ways — if 'later, nothing' voids the suffering, it voids every joy the pro-birth side leans on just as completely. Granted in full, cosmic futility reaches nothing about whether to start a life that must be paid for in present harm."
+      "layman_diagnosis": "Grant the heat death whole. In 10^100 years entropy wins, every trace is gone, no record survives. It does not reduce the suffering of a child dying of bone cancer today by a single degree. Cosmic scale does not cancel experiential reality: the pain is happening now, to a real being, and it matters to them regardless of the far future. And the move cuts both ways — if 'later, nothing' voids the suffering, it voids every joy the pro-birth side leans on just as completely. Granted in full, cosmic futility reaches nothing about whether to start a life that must be paid for in present harm.",
+      "register": "defanged"
     },
     {
       "id": "hedonic-contrast",
@@ -258,7 +259,8 @@
       "layman_trigger": "Deciding on someone else's behalf that they shouldn't exist is the ultimate imposition — you're forcing your pessimism onto a life that was never yours to judge. It's coercive and arrogant to override another person's shot at existence with your own bleak values. Who are you to impose that verdict on anyone but yourself?",
       "layman_gloss": "Points the imposition the wrong way. Not creating a being lands on no one — there's no one there to coerce — while creating one lands everything on someone who never asked.",
       "layman_win_line": "Not-creating imposes on no one; creating imposes on someone who never asked — backwards.",
-      "layman_diagnosis": "The charge has the direction reversed. Refraining from creating a being imposes nothing on anyone, because there is no one there — no one deprived, no interests overridden, no one to coerce. Creating a being, by contrast, imposes an entire existence, with all its guaranteed harms, on someone who never asked for it and could not have. So if imposition is the worry, it indicts the birth, not the abstention. The hopeful someone being turned away is a fiction — there is no one behind the door. Strip the fiction out and the coercion sits entirely on the other side. You have the imposition backwards."
+      "layman_diagnosis": "The charge has the direction reversed. Refraining from creating a being imposes nothing on anyone, because there is no one there — no one deprived, no interests overridden, no one to coerce. Creating a being, by contrast, imposes an entire existence, with all its guaranteed harms, on someone who never asked for it and could not have. So if imposition is the worry, it indicts the birth, not the abstention. The hopeful someone being turned away is a fiction — there is no one behind the door. Strip the fiction out and the coercion sits entirely on the other side. You have the imposition backwards.",
+      "register": "routed"
     },
     {
       "id": "incommensurability",
@@ -354,7 +356,8 @@
       "layman_trigger": "There's no single true morality. Ethical frameworks genuinely disagree, and yours is just one more among many. Antinatalism might follow from negative utilitarianism, but a virtue ethicist or a Kantian reaches a different verdict, and nothing crowns one framework the winner. So the case can't be binding on everyone — only on people who already share your premises.",
       "layman_gloss": "Reads the spread of frameworks as a standoff over whether suffering counts. The disagreement was never that — it's over what each one will tolerate to protect its other values.",
       "layman_win_line": "Name an ethics that says suffering doesn't matter — you've named a taste, not a rival.",
-      "layman_diagnosis": "Grant the plurality whole. Now try to name a framework that says suffering doesn't matter — you can't, because a system that shrugs at suffering isn't an ethics, it's an aesthetic preference. So the real disagreement was never about whether suffering counts; every serious framework grants that. It's about what each is willing to tolerate — how much guaranteed harm it will wave through to protect other values. Negative utilitarianism simply refuses to sign off on the tolerance. Pluralism, granted in full, hands you no framework that licenses creating certain suffering; it binds no one who holds it to rejecting the case."
+      "layman_diagnosis": "Grant the plurality whole. Now try to name a framework that says suffering doesn't matter — you can't, because a system that shrugs at suffering isn't an ethics, it's an aesthetic preference. So the real disagreement was never about whether suffering counts; every serious framework grants that. It's about what each is willing to tolerate — how much guaranteed harm it will wave through to protect other values. Negative utilitarianism simply refuses to sign off on the tolerance. Pluralism, granted in full, hands you no framework that licenses creating certain suffering; it binds no one who holds it to rejecting the case.",
+      "register": "defanged"
     },
     {
       "id": "moral-particularism",
@@ -362,7 +365,8 @@
       "layman_trigger": "Moral reasons are context-dependent. There's no general principle like 'don't have children' that holds across every case — each situation carries its own reasons, and what's wrong in one context isn't wrong in another. You can't extract a blanket rule against procreation, because morality doesn't work by blanket rules; it works case by case, and every birth is its own case.",
       "layman_gloss": "Reads morality as case-by-case, then treats that as dissolving the objection. But a birth into congenital agony IS a case — the most particular one there is, not a rule awaiting generalisation.",
       "layman_win_line": "Grant there's no rule — the child's agony isn't a rule, it's the fact a rule points at.",
-      "layman_diagnosis": "Grant particularism in full: reasons live in contexts, and no rule floats above the cases. It changes nothing. A child born into congenital agony suffers whether or not any framework — systematic or context-sensitive — labels it wrong. The suffering is the datum. The theory is only the map. Burning the map, dissolving the general rule, refusing to systematise: none of it alters the territory. Particularism, granted whole, still has to look at the particular — and the particular here is a specific life of guaranteed harm that no one there consented to. The premise stands; it reaches nothing the case depends on."
+      "layman_diagnosis": "Grant particularism in full: reasons live in contexts, and no rule floats above the cases. It changes nothing. A child born into congenital agony suffers whether or not any framework — systematic or context-sensitive — labels it wrong. The suffering is the datum. The theory is only the map. Burning the map, dissolving the general rule, refusing to systematise: none of it alters the territory. Particularism, granted whole, still has to look at the particular — and the particular here is a specific life of guaranteed harm that no one there consented to. The premise stands; it reaches nothing the case depends on.",
+      "register": "defanged"
     },
     {
       "id": "moral-progress",
@@ -514,7 +518,8 @@
       "layman_trigger": "Antinatalism ends in the Red Button — a switch that wipes out all life at once. Pressing it would be the worst atrocity imaginable, genocide beyond any tyrant's, and recoiling from it is the plainest moral fact there is. Any view whose logic terminates in that button is self-evidently monstrous, and therefore has to be false.",
       "layman_gloss": "Swaps the button's stated content — instantaneous, painless, universal cessation — for a scene of mass murder, then recoils at the swap. The horror it feels is at the violence it added.",
       "layman_win_line": "The button is painless by stipulation; you pictured mass murder and recoiled at that.",
-      "layman_diagnosis": "The thought experiment stipulates its own terms: instantaneous, painless, universal cessation — no fear, no pain, no violence. The objection ignores that and pictures mass murder instead, then recoils at its own picture. But the horror attaches to the violence and terror — every feature the experiment holds constant to isolate the one question at issue: is coming into existence a harm worth not imposing? Conflating the sanitised case with atrocity doesn't test that question; it changes the subject to a scenario no antinatalist endorsed. Set the added violence aside and the button asks only about existence."
+      "layman_diagnosis": "The thought experiment stipulates its own terms: instantaneous, painless, universal cessation — no fear, no pain, no violence. The objection ignores that and pictures mass murder instead, then recoils at its own picture. But the horror attaches to the violence and terror — every feature the experiment holds constant to isolate the one question at issue: is coming into existence a harm worth not imposing? Conflating the sanitised case with atrocity doesn't test that question; it changes the subject to a scenario no antinatalist endorsed. Set the added violence aside and the button asks only about existence.",
+      "register": "routed"
     },
     {
       "id": "revealed-preference",
@@ -538,7 +543,17 @@
       "layman_trigger": "If everyone accepted antinatalism, no one would reproduce, and within a generation there'd be no antinatalists left to hold the view — it argues its own believers out of existence. A position that erases the very population carrying it undercuts itself; an idea that cancels its own adherents can't be the correct one.",
       "layman_gloss": "Confuses whether an idea can reproduce itself with whether it's true. Those are different questions — survival of adherents is a fact about demographics, not a truth-condition.",
       "layman_win_line": "Spreading and being true differ; heliocentrism nearly vanished, stayed true.",
-      "layman_diagnosis": "This confuses two separate questions: whether an idea can replicate itself, and whether it's true. A view's truth is not set by its popularity or its capacity to reproduce believers. Heliocentrism faced this for centuries — its believers were persecuted toward extinction, their numbers near zero. The Earth kept orbiting the Sun the entire time. Whether a view's adherents survive is a fact about power and reproduction; whether the view is correct is a fact about the world. The objection offers the first as a test of the second, and the two never touch. That a claim erases its own carriers is no mark against the claim."
+      "layman_diagnosis": "This confuses two separate questions: whether an idea can replicate itself, and whether it's true. A view's truth is not set by its popularity or its capacity to reproduce believers. Heliocentrism faced this for centuries — its believers were persecuted toward extinction, their numbers near zero. The Earth kept orbiting the Sun the entire time. Whether a view's adherents survive is a fact about power and reproduction; whether the view is correct is a fact about the world. The objection offers the first as a test of the second, and the two never touch. That a claim erases its own carriers is no mark against the claim.",
+      "register": "routed"
+    },
+    {
+      "id": "self-effacing-under-universalization",
+      "layman_handle": "It can't be universal law",
+      "layman_trigger": "Fine — suppose you're even right about the harm. 'Do not procreate' still can't be willed as universal law: followed by everyone, it ends the whole moral community, leaving no agents to hold, teach, or be bound by any rule at all. A maxim that abolishes the preconditions of morality itself fails Kant's test on form alone — the view is self-effacing, whatever its content.",
+      "layman_gloss": "Recasts a rule's success condition — universal keeping empties its own scope — as a logical defect. Kant's test finds no contradiction there, and 'no holders left' was never one.",
+      "layman_win_line": "A rule everyone keeps to the end has succeeded, not contradicted itself.",
+      "layman_diagnosis": "Kant's test finds no contradiction. False promising eats the practice it needs; 'no one procreates' eats nothing — no concept breaks, only a headcount; a last generation can keep the rule to the end. The structure proves too much: any morality merely permitting universal childlessness lands there too, so singling this view out needs a duty to procreate or 'an empty world is bad' — the value claim it swore off. Unheld isn't unholdable: finished rules retire, eradication protocols do, and truths outlive their last believer. What's left — 'a will must will agency onward' — isn't logic but the old claim that existence is good, answered elsewhere.",
+      "register": "routed"
     },
     {
       "id": "selfish-lazy",

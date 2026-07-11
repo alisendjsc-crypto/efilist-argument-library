@@ -1,0 +1,32 @@
+{
+  "artifact": "seed1_mechanism_verdict",
+  "version": "0.1.0",
+  "session": "K219pre",
+  "date": "2026-07-10",
+  "status": "PRE-ADJUDICATED (elective Act 3, elected by paste) — K219 assembly ratifies; MAP_GRAPH/DEP_GRAPH link deltas and Map-1 curation remain Cowork's at assembly per the relay's own terms",
+  "question": "Mechanism placement for self-effacing-under-universalization: does 'formalism displacement' fit an existing mechanism id among the 35, or does the corpus mint mechanism #36?",
+  "verdict": "EXISTING — no mint",
+  "webbing": {
+    "self-effacing-under-universalization": ["Category Error", "Formal Logic Attack"]
+  },
+  "primary": "Category Error",
+  "secondary": "Formal Logic Attack",
+  "rationale": [
+    "The objection's engine is a category mistake twice over: (i) it reads a rule's satisfaction condition — universal keeping empties the rule's own scope — as a structural defect, conflating unheld with unholdable and success with contradiction; (ii) it reads person-protecting formulas as type-preserving mandates, conflating the protection of persons with the perpetuation of a headcount. Both are the corpus's Category Error signature.",
+    "The nearest analogy-class sibling already webs there: self-defeating — the memetic form of the same charge-family — carries 'Category error — confusing memetic success with philosophical validity.' Seed 1 is the deontic dress of that family (the node spec's own fork grounds); the dress changes the vehicle, not the mechanism.",
+    "The vehicle is named formal apparatus deployed as a decision test (the CI procedure: contradiction-in-conception, contradiction-in-the-will, publicity). That is Formal Logic Attack — the tag contractualism-scanlon carries for exactly this machinery class. CE+FLA decomposes 'formalism displacement' without remainder: a formal test (FLA) misapplied across categories (CE).",
+    "Why two links rather than sibling parity at one: self-defeating's lone CE link reflects a bare conflation with no formal apparatus; seed 1 invokes and misapplies a named formal procedure, so the FLA link carries real webbing information — it clusters the node with the corpus's other formal-machinery objections, matching the contractualism precedent of paired tags.",
+    "Genuine Philosophical Challenge considered and DECLINED: GPC tracks the tier-4 Genuine-Philosophical class (contractualism's pairing); seed 1's standing is carried by tier 5 / Meta-Objection, and its serious-Kantian face is already honored by the FLA web plus the honest-residual routing. Adding GPC would blur the tier-category signal the mechanism web preserves."
+  ],
+  "mint_rejected": {
+    "candidate": "Formalism Displacement (#36)",
+    "grounds": [
+      "Single-node web: no existing objection re-webs to it without downgrading a better fit — a mechanism earning one link is manufactured coverage, the standing anti-pattern.",
+      "MAJOR-adjacent scalar cost (mechanism_count 35; MAP_GRAPH 116 nodes / 140 links canon-locked) for zero diagnostic gain.",
+      "The descriptor's content decomposes cleanly into two existing ids (CE + FLA); nothing is lost by absorption."
+    ]
+  },
+  "psychMechanism_disposition": "The node's free-text psychMechanism ('Formalism displacement — a rule's demographic success-condition recast as a logical defect') stands untouched as the per-node descriptor — the sibling pattern (self-defeating's free-text names its own conflation under the CE web). Absorbed, not promoted.",
+  "re_web_of_existing_objections": "NONE — all existing mechanism links stand.",
+  "expected_deltas_informational_only": "MAP_GRAPH 116 -> 117 nodes (the new objection node), 140 -> 142 links (+CE, +FLA); mechanism_count HELD at 35; DEP_GRAPH premise links and Map-1 inclusion (78-node curated scalar) are separate assembly calls. Arithmetic is Cowork's at assembly — stated here only so the verdict's consequences are legible."
+}

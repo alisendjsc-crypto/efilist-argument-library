@@ -20,3 +20,14 @@ Landing zone for flagship v4.0 seed payloads: authored + cold-graded by library-
 
 **Rider (library-K194, RATIFIED library canon call): `flagship_t5_register_dispositions_v0_1.json`**
 Authoritative T5 register dispositions for the six shipped flagship T5 nodes (routed: imposing-values, red-button-repugnant, self-defeating · defanged: heat-death-futility, meta-ethical-pluralism, moral-particularism). Vendors independently; referenced by seed 1's `register_disposition.semantics_ref`. Parked here to keep the reference chain closed; root-promotion + canon MINOR log + the optional layman-index register-field fold are assembly acts per the sidecar's own `vehicle_and_fold`.
+
+---
+
+## v3 — K219 landing (2026-07-11): assembly CONSUMED this directory; payloads archived here
+
+The v4.0.0 bundle assembled and pinned at K219. This directory is now the historical record:
+
+- **Pre-K219 seat payloads landed** (four files, md5-gated at fold): `self_effacing_under_universalization_layman_card_v0_1.json` (`917ec494`), `contractualism_scanlon_layman_card_remirror_v0_1.json` (`ff967e2e`), `seed1_mechanism_verdict_v0_1.json` (`4106bcda`), `session_K219pre_state.json` (`9fa3b601`). The two cards folded byte-verbatim into `flagship-layman-index.json` v0_3; the mechanism verdict was RATIFIED at assembly (EXISTING: Category Error + Formal Logic Attack, no #36).
+- **`v4_seed1_grade_record.json` superseded in place** — `axis_rationales.c` replaced per Exchange 148 (provenance-stamped; value 0.89 and band untouched; original in git history). md5 `36925a30` → `c14275cf`.
+- **`flagship_t5_register_dispositions_v0_1.json` PROMOTED to the repo root** (durable canon call; canon v38.0 logs it).
+- Directory count: 14 → **17** (+4 payloads, −1 promotion). Everything else stays byte-as-staged, permanently.

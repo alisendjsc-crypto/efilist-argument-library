@@ -47,7 +47,7 @@ Usage:
 import sys, os, json, glob, argparse
 
 SCHEMA_VERSION = 1
-EXPECTED_N = 81
+EXPECTED_N = 82
 GLOSS_MAX = 200
 OUT_NAME = "objections-index.json"
 
