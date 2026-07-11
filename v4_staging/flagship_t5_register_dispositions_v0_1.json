@@ -1,0 +1,107 @@
+{
+  "artifact": "flagship_t5_register_dispositions",
+  "version": "0.1.0",
+  "session": "K194",
+  "date": "2026-07-09",
+  "status": "RATIFIED — library canon call, per S27 vessel relay Ask 1",
+  "provenance": {
+    "corpus": {
+      "file": "efilist_argument_library_v3_8_0.json",
+      "md5": "6ac568fcd2e9ba712063ded7d239ddb0",
+      "note": "md5 as-found at K194 open; filename frozen, bytes post-maintenance-folds"
+    },
+    "flagship_layman_index": {
+      "fetched_from": "https://library.wuld.ink/flagship-layman-index.json",
+      "schema_version": "layman_index_v0_2",
+      "source_index_pin": "82f3cd1f5392795a9824e5e966bb5a3e",
+      "generated": "2026-07-05"
+    },
+    "determination_basis": "corpus responses.short+medium register cross-read against shipped layman faces (layman_win_line, layman_diagnosis); persistence criterion adjudicates: does a coherent, reflexively stable dissenter remain answered-but-unbound after the rebuttal?"
+  },
+  "semantics": {
+    "routed": "falls like T1–T3 on correct answer — clean knock-down or category error; the objection as catalogued cannot be coherently maintained once answered; leaves the residue row",
+    "defanged": "persists like T4 — genuine-meta bedrock; answered in full arguendo, the premise stands, but it binds no dissenter and does no work against the case; keeps its residue-row seat; never DESTROYED",
+    "met": "library declines to classify — UNUSED at v0.1; reserved"
+  },
+  "met_unused_rationale": "All six shipped faces speak a determinate register; declining to classify where the library has already voiced the disposition would be abdication, not caution. Permanent neutrality remains the vessel's legitimate pre-vendor fallback, not a library position.",
+  "dispositions": [
+    {
+      "id": "heat-death-futility",
+      "register": "defanged",
+      "rationale": "Grant-arguendo through and through: the face grants heat death whole and shows the premise reaches nothing — present suffering is untouched, and the symmetric cut voids the pro-birth ledger identically. The sub-specie-aeternitatis axiologist survives as coherent bedrock (quietist form is reflexively stable — they can stop caring, including about objecting) but their futility does no work against the case. Answered, unbound, neutralized. NOTE: the corpus short reads defeat-adjacent ('does not nullify' = scope error); the shipped face makes the grant explicit and the persistence criterion decides defang. Register mismatch between short and face: none — 'even given X, X does not nullify Y' is grant-arguendo in compressed form.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line is grant-voiced ('Grant the heat death —'), matches disposition; 86ch within band."
+      }
+    },
+    {
+      "id": "imposing-values",
+      "register": "routed",
+      "rationale": "Pure turnaround: the objection's own criterion (imposition is bad) acquits abstention — nothing lands on no one — and indicts procreation, which lands everything on someone who never asked. No bedrock persists: 'any advocacy is imposition' self-applies destructively (the objection would itself be an imposition). The charge cannot be coherently maintained once the direction is corrected. Clean knock-down.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line turnaround-voiced ('— backwards'), matches routed; 88ch within band."
+      }
+    },
+    {
+      "id": "meta-ethical-pluralism",
+      "register": "defanged",
+      "rationale": "Paradigm genuine-meta bedrock: pluralism cannot be non-circularly defeated, and the library does not try. The face grants the plurality whole, locates the universal premise (no live framework treats suffering as good or irrelevant — a system that shrugs at suffering is an aesthetic, not an ethics), and relocates the real dispute to tolerance-weighting. The tolerance-weighing pluralist — who ranks autonomy or perfectionist goods above suffering-minimization — persists coherent and unbound; but pluralism granted in full hands them no framework that licenses creating certain suffering. Answered, unbound, does no work.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line ('you've named a taste, not a rival') is aggressive-dissolve — it operates WITHIN the granted plurality (the challenge presupposes it) but reads defeat-leaning standalone. Cleared: the DEFANGED banner and diagnosis carry persistence semantics in render; no text change requested. Vessel may wish to ensure win_line never renders without its disposition chrome on defanged nodes."
+      }
+    },
+    {
+      "id": "moral-particularism",
+      "register": "defanged",
+      "rationale": "Same structure as pluralism: anti-theory is bedrock, not defeated. The face grants particularism in full — reasons live in contexts, no rule floats above the cases — and shows the granted premise reaches nothing: a birth into congenital agony IS a case, the most particular datum there is, and case-by-case perception condemns it without any rule. The particularist qua anti-theorist persists untouched; nothing refutes particularism itself. The premise stands; it does no work.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line grant-voiced ('Grant there's no rule —'), matches disposition; 87ch within band."
+      }
+    },
+    {
+      "id": "red-button-repugnant",
+      "register": "routed",
+      "rationale": "The objection as catalogued is the conflation: it swaps the button's stipulated content (instantaneous, painless, universal cessation) for a scene of mass murder, then recoils at the violence it added. That move is a clean category error — the horror attaches to features the experiment holds constant precisely to isolate the existence question. It falls. NODE-INDIVIDUATION NOTE: the purified Moorean retreat ('even painless cessation is bad; existence is intrinsically good, axiomatically') is a DIFFERENT objection — it exits this node and re-forms as the intrinsic-value-of-existence position, which the library handles in the asymmetry cluster and openly flags under the asymmetry-contingency honest residual. The sophisticate archetype variant exists to route that retreat in play. What is routed here is the conflation; the retreat is not defeated here and is not claimed to be.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line defeat-voiced ('you pictured mass murder and recoiled at that'), matches routed; second-person address is in-frame for an adversarial table. 85ch within band."
+      }
+    },
+    {
+      "id": "self-defeating",
+      "register": "routed",
+      "rationale": "Category error, cleanly: it offers memetic fitness (can the view reproduce its believers?) as a test of truth (is the view correct?), and the two never touch — heliocentrism nearly lost all its carriers and the Earth kept orbiting the Sun. No bedrock persists: 'replication-fitness bears on truth' is not a position anyone reflexively stakes, and pressed, it invalidates every persecuted-true idea equally. Cannot be coherently maintained once the two questions are separated.",
+      "layman_face": {
+        "clearance": "cleared",
+        "note": "win_line ('Spreading and being true differ; heliocentrism nearly vanished, stayed true') — cleanest face in the set; 76ch within band."
+      }
+    }
+  ],
+  "summary": {
+    "routed": [
+      "imposing-values",
+      "red-button-repugnant",
+      "self-defeating"
+    ],
+    "defanged": [
+      "heat-death-futility",
+      "meta-ethical-pluralism",
+      "moral-particularism"
+    ],
+    "met": []
+  },
+  "ask2_verdict": "All six T5 layman faces CLEARED for card faces as-is. Zero text changes requested; flagship and layman-index bytes do not move. One render note on meta-ethical-pluralism (see its layman_face.note). Validator context: T5 soft-gating existed because register was per-node-unknown; post-vendor of this sidecar the vessel-side gate can become register-keyed — defanged nodes inherit the T4 hard defeat-vocabulary gate, routed nodes are exempt — and --warn-tiers 5 can retire.",
+  "vehicle_and_fold": {
+    "this_sidecar": "authoritative library canon call; vendors independently; id-closed against corpus/index/layman/ledger",
+    "ledger": "NOT the vehicle — frozen at 81 graded entries and grade-scoped; register is content/render classification, wrong contract",
+    "flagship_layman_index": "OPTIONAL Cowork fold at next assembly touch: add per-node 'register' field ('routed'|'defanged') to the six T5 entries from summary above; schema_version bump; re-serve; vessel re-vendors. Until then the sidecar is the source.",
+    "canon": "MINOR bump via Cowork at handoff: log this artifact + the six dispositions as content facts (durable past v4.0 — at v4.0 terminus-reopening, register dispositions for any NEW T5 intake follow this sidecar's semantics)"
+  },
+  "carried_items_ack": {
+    "q1_s25": "STANDS — do not extend K192/K193 boundary/routing to the other five wings yet; revisit at flagship-core + post-ROUTE-play. No action this session.",
+    "q2_tail_s25": "PARKED — per-node appraisal-stance flag for abortion's two Layer-2 nodes only if that wing ever becomes a set; not needed for flagship. Noted for the record; no artifact."
+  }
+}

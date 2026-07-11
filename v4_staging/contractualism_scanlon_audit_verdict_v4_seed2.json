@@ -1,0 +1,52 @@
+{
+  "artifact": "contractualism_scanlon_audit_verdict_v4_seed2",
+  "session": "K217",
+  "date": "2026-07-10",
+  "node": { "id": "contractualism-scanlon", "tier": 4, "category": "Genuine Philosophical", "corpus_lines": { "identity_from": 1922, "responses_short": 1940, "responses_medium": 1941, "responses_long": 1942 } },
+  "audited_form": "ex-ante-from-the-created-standpoint / hypothetical-consent (Frick ex-ante engine; Kumar type-standpoint bearer; analogy battery: unconscious-patient proxy consent, parental authority, social risk imposition; anti-maximin counter per Rawls's own restrictions)",
+  "verdict": "GAP",
+  "conditions": {
+    "i_exante_standard_engaged_on_its_own_terms": {
+      "met": false,
+      "finding": "All three prongs of the existing long presuppose the ex-post / risk-averse standard rather than arguing against prospect-evaluation for creation cases.",
+      "evidence": [
+        { "line": 1942, "quote": "A rational agent occupying this position", "reading": "grants standpoint-occupancy — the exact resource the ex-ante objector needs — then fights on that ground with an asserted risk posture rather than contesting whether the standpoint has an occupant" },
+        { "line": 1942, "quote": "the logical output of any risk-averse rational evaluation under radical uncertainty", "reading": "presupposes the contested risk-averse standard; the Frickian holds that from the same position, evaluated ex ante, a favorable prospect could NOT be reasonably rejected" },
+        { "line": 1942, "quote": "the maximin logic applies even where the formal apparatus does not", "reading": "assertion of the ex-post standard, not a defense of it — the protocol's named failure mode, and the precise premise the sophisticated objector attacks via Rawls's own restriction of maximin to special conditions" },
+        { "line": 1942, "quote": "never at the table", "reading": "the participation prong is answered by the objector's prepared reply (idealized agreement, not actual participation, is all contractualism ever required); no counter to that reply exists in the prose. At most it could be READ AS gesturing at the no-bearer point — near-miss = GAP per ceiling discipline" }
+      ]
+    },
+    "ii_hypothetical_consent_analogy_battery": {
+      "met": false,
+      "finding": "Zero coverage, direct or by generalization.",
+      "evidence": "Machine term-counts across all three responses (short line 1940, medium 1941, long 1942): 'ex ante' 0, 'ex-ante' 0, 'prospect' 0, 'hypothetical consent' 0, 'unconscious' 0, 'surgery' 0, 'proxy' 0, 'parental' 0, 'vaccin' 0, 'social risk' 0, 'frick' 0, 'kumar' 0, 'expected' 0. Contrast: 'maximin' 4, 'worst' 8 — the weight sits entirely on the presupposed ex-post apparatus. No covering principle about when hypothetical justification legitimates appears anywhere in the response set."
+    }
+  },
+  "fork": {
+    "call": "STRENGTHEN",
+    "prior": "confirmed (rebuttable prior held; nothing rebutted it)",
+    "grounds": {
+      "identity_field_lock": "trigger ('Contractualism justifies procreation / What principles could no one reasonably reject? / Scanlon'), psychMechanism ('deploys an alternative ethical architecture'), and diagnosis are form-neutral; diagnosis's 'rational agents evaluating principles... would not reject a principle permitting the creation of lives worth living' already loosely describes prospect-evaluation",
+      "presupposition": "no inversion — same charge (contractualism permits procreation), same framework, same mechanism, prosecuted with a better engine; contrast seed 1's view-vs-maxim / truth-impugned-vs-granted flip, which forced NEW NODE",
+      "reader_test": "a Frickian searcher arrives via 'contractualism / Scanlon / reasonable rejection' and lands on this node; the answer must live here",
+      "grading_object_integrity": "regeneration replaces the graded object wholesale with a fresh cold tuple; no re-minting under a stale grade",
+      "individuation_precedent": "red-button-repugnant individuated on presupposition inversion; none present here"
+    }
+  },
+  "authored": {
+    "files": ["contractualism_scanlon_long_v4_seed2.md", "contractualism_scanlon_medium_v4_seed2.md", "contractualism_scanlon_short_v4_seed2.md"],
+    "words": { "long": 626, "medium": 181, "short": 49 },
+    "grade": { "long_tuple": { "v": 0.92, "s": 0.90, "c": 0.89, "r": 0.89, "a": 0.93 }, "long_unrounded_mean": 0.905855, "long_band": "A", "record": "v4_seed2_grade_record.json" },
+    "register_verdict": "Analogy battery and the aggregation move: DEFEATED on contractualism's own terms. Committed Frickian standpoint-constructivism: DISSOLVED — answered-but-unbound residue named in the terminus with the exit priced (justifiability-to-each collapses into justifiability-to-the-average). No global overclaim against ex-ante contractualism."
+  },
+  "bundle_status": "TWO-SEED — seed 1 (self-effacing-under-universalization, NEW NODE, staged K195/K216) + seed 2 (contractualism-scanlon, STRENGTHEN, staged this session). The sweep is CLOSED with this verdict; no seed 3 exists.",
+  "bundle_deltas_owned_by_assembly": [
+    "ledger-row supersession for contractualism-scanlon under regeneration discipline (band re-derived at fold)",
+    "sources-field addition recommended (Frick — Contractualism and Social Risk; Kumar — Who Can Be Wronged?; Reibetanz / Otsuka ex-post critiques) — identity metadata, not performed this session",
+    "four-surface sync of the regenerated triple (corpus JSON, JSX, combined.html, ledger)",
+    "layman-index / scholar-asset alignment check for the ex-ante form",
+    "seed-1 deltas as enumerated in its node spec (81->82, tier split ->13/17/14/31/7, graph scalars, Map 1 curation, reciprocal pointer)"
+  ],
+  "mandatory_rider": { "file": "flagship_t5_register_dispositions_v0_1.json", "md5": "f37a986e10e179ef2417f9bcbdf0b876", "bytes": 9368, "verified": "before and after copy, identical" },
+  "next_action": "Cowork v4.0 assembly scoping — both seeds staged, all deltas enumerated; ship + pin routes Cowork end-to-end. Canon and live surfaces untouched this session."
+}

@@ -1,0 +1,33 @@
+{
+  "session_id": "K217",
+  "date": "2026-07-10",
+  "numbering_note": "best-effort per K194/K195 convention; canon session log lags (latest canon-known K181); freshest kickoff-referenced session K216 (Cowork v4_staging)",
+  "class": "Max (coverage audit at form-resolution + conditional rebuttal authoring + cold-grade)",
+  "scope": "v4.0 seed 2 — contractualism-scanlon ex-ante / hypothetical-consent form: audit first, author only if live. One deliverable, conditional. Nothing live, nothing pinned, canon untouched. Sweep CLOSES with this verdict; no seed 3.",
+  "completed_tasks": [
+    "Session open verified: file tree, corpus md5 6ac568fc (drift from directive 9af9dd5c already logged K194, not re-litigated), ledger 204fcdbe intact, canon on disk v37.40, K195 state read",
+    "MANDATORY RIDER executed: flagship_t5_register_dispositions_v0_1.json byte-exact to outputs, md5 f37a986e10e179ef2417f9bcbdf0b876 / 9,368 B verified before and after copy",
+    "Audit executed at form-resolution: identity fields + all three responses read in full (fresh eyes); ledger tuple for the node NOT read at any point. VERDICT: GAP — condition (i) fails (all three prongs presuppose the ex-post/risk-averse standard; 'maximin logic applies even where the formal apparatus does not' = assertion-not-defense; participation prong at most a near-miss = GAP per ceiling discipline); condition (ii) fails outright (analogy-battery and ex-ante term counts uniformly ZERO across all registers, machine-verified)",
+    "Fork resolved: STRENGTHEN, prior confirmed — trigger/psychMechanism/diagnosis form-neutral; same charge better prosecuted; no presupposition inversion; reader test routes the Frickian here; red-button-repugnant individuation precedent inapplicable",
+    "Authored regenerated triple, one file per register: long 626w / medium 181w / short 49w (T4 long band 220–1237, median 508 — in-band). Naive-form coverage retained a fortiori; maximin surrendered arguendo up front; battery disassembled with a covering generalization; Kumar inversion named; terminus prices the Frickian exit",
+    "Cold-graded: tuple v.92/s.90/c.89/r.89/a.93 committed pre-comparison; long 0.905855 -> 90.6/A; medium (modifiers) 0.889320 -> 88.9/A; short (modifiers) 0.867794 -> 86.8/B. Graded per RATIFIED legend (Completeness/Autonomy); rubric file absent from mount, provenance noted per K195 pattern",
+    "Emitted verdict record + three response files + grade record + rider copy to /mnt/user-data/outputs/"
+  ],
+  "verified_facts": [
+    "contractualism-scanlon: tier 4, Genuine Philosophical; corpus identity from line 1922; responses short/medium/long at lines 1940/1941/1942 (single-line string values); superseded word counts 47/169/467",
+    "Term counts across existing responses: ex ante 0, ex-ante 0, prospect 0, hypothetical consent 0, unconscious 0, proxy 0, parental 0, vaccin 0, social risk 0, frick 0, kumar 0, expected 0; maximin 4, worst 8",
+    "T4 long band on live corpus: 220–1237w, median 508, n=31; top: solipsism 1237",
+    "Canon v37.40 maintenance log confirms K76 axis_legend reconcile fold (canon v37.33) — K195's Cogency/Charity discrepancy RESOLVED in favor of ratified Completeness/Autonomy",
+    "Seed-1 grade STANDS untouched per K216 (no re-grade, no re-open); its record read for schema only — tuple visibility noted as PFW-unavoidable",
+    "canon next_recommended_session = EMPTY/maintenance posture (operator-initiated work), consistent with kickoff-as-directive",
+    "Rider integrity: md5 f37a986e10e179ef2417f9bcbdf0b876, 9,368 B, identical mount-side and outputs-side"
+  ],
+  "dissolve_or_defeat": "Analogy battery (proxy consent, parental authority, social risk) and the ex-ante aggregation move: DEFEATED on contractualism's own terms (no-bearer + token's-veto-laundered + disanalogy generalization). Committed Frickian standpoint-constructivism: DISSOLVED — answered-but-unbound residue named honestly in the terminus with the exit priced. No global overclaim against ex-ante contractualism; live internal-contractualism dispute acknowledged.",
+  "v4_bundle_status": "TWO-SEED, sweep CLOSED. Seed 1 = self-effacing-under-universalization (NEW NODE, staged). Seed 2 = contractualism-scanlon (STRENGTHEN regeneration, staged this session). Ledger-row supersession, sources-field additions (Frick/Kumar/Reibetanz-Otsuka), four-surface sync, and all seed-1 deltas are BUNDLE ACTS at v4.0 assembly, Cowork-routed end-to-end. v3.8 untouched.",
+  "next_recommended_action": "Cowork v4.0 assembly scoping: both seeds staged with grade records; enumerate the combined delta set (82-node cut, tier split 13/17/14/31/7, contractualism-scanlon row supersession under regeneration discipline, graph scalars, Map 1 curation call, four-surface sync, render-time hash-recompute verification per post-terminal policy). Argue landing arc awaits Josiah's ship signal.",
+  "open_questions": [
+    "rubric_worked_example_RSI.md absent from this mount — grading proceeded per ratified legend with provenance noted; re-mount the refreshed panel file if per-axis gloss citations are wanted on the seed-2 record before fold",
+    "Sources-field delta for contractualism-scanlon (add Frick, Kumar, Reibetanz/Otsuka): recommended, assembly adjudicates",
+    "Carried from K195: mechanism placement for seed 1 ('formalism displacement'), Map 1 curation for the new node"
+  ]
+}

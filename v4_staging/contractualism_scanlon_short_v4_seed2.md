@@ -1,0 +1,1 @@
+Ex-ante justification is justification to someone who exists to face the prospect; creation manufactures its own justificand. The unconscious patient, the ward, the citizen at risk all exist before the gamble — the created child exists only after losing the chance to decline it. Hypothetical consent has no bearer here.
