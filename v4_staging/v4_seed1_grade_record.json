@@ -1,0 +1,19 @@
+{
+  "objection_id": "self-effacing-under-universalization",
+  "graded": "2026-07-10",
+  "method": "Cold grade per rubric_worked_example_RSI.md (mounted). Axes tuple committed on the long BEFORE any sibling comparison; no sibling tuple consulted (PFW worked-example values unavoidable via the rubric itself). Band derived from the UNROUNDED geomean; rsi_pct = round(mean*100, 1), display-only. Medium/short derived via canonical depth modifiers (c-0.05/r-0.03; c-0.12/r-0.06) — authored as standard compressions, not independent rewrites, so the modifier default applies. Score-targeting not performed; grades computed after prose was final.",
+  "axis_legend_caveat": "Graded per the mounted rubric's legend (v=Validity, s=Soundness, c=Cogency, r=Robustness, a=Charity; provenance-noted as pending ratification). Canon-side claim of a ratified Completeness/Autonomy legend (2026-06-05) not reflected in the mounted rubric file — discrepancy flagged for reconcile. Tuple is stable under both readings: c judged on followability (coverage lives in r's residue-routing); a strong under Charity (steelman engaged, no over-claim) and under Autonomy (zero asymmetry-dependence).",
+  "axes": { "v": 0.92, "s": 0.88, "c": 0.89, "r": 0.88, "a": 0.92 },
+  "axis_rationales": {
+    "v": "0.92 — dilemma structure (procreative duty or axiology) genuinely exhausts the objector's routes given the concession framing; disanalogy, overgeneration, unheld/unholdable, Parfit each logically clean. Not higher: 'formulas protect persons, not the headcount of a type' is an argued interpretive step, not a derivation.",
+    "s": "0.88 — load-bearing spine (conceivability of the last generation; overgeneration parity; success-condition reading; Parfit's distinction) is secure. The contested premises (means-reversal of duty-driven procreation; Kantian scope over merely possible agents) are deployed with correct modality — as pressure and as routing, not as load — so the stated verdict does not rest on winning them.",
+    "c": "0.89 — dense at house-T5 density; the dilemma is signposted and each move lands in one sentence, but 'unheld is not unholdable' and the persons/headcount line each demand a beat of unpacking.",
+    "r": "0.88 — preempts the procreative-duty retreat, the axiological retreat, the perfectionist insistence, the publicity variant, and the morality's-precondition variant; residue routed to a NAMED terminus (asymmetry / population-ethics cluster). Left standing: a Korsgaardian regress on valuing the conditions of agency pressed harder than the routing treats it.",
+    "a": "0.92 — steelman stated in the objector's strongest deontic-structural form and answered there; verdict distinguishes defeated (structural) from routed (will-prong) rather than declaring total victory."
+  },
+  "long":   { "axes": { "v": 0.92, "s": 0.88, "c": 0.89, "r": 0.88, "a": 0.92 }, "unrounded_mean": 0.897814, "rsi_pct": 89.8, "band": "A" },
+  "medium": { "axes": { "v": 0.92, "s": 0.88, "c": 0.84, "r": 0.85, "a": 0.92 }, "unrounded_mean": 0.881356, "rsi_pct": 88.1, "band": "A", "note": "boundary-adjacent; band held by the unrounded mean (0.881356 >= 0.88), not by display rounding" },
+  "short":  { "axes": { "v": 0.92, "s": 0.88, "c": 0.77, "r": 0.82, "a": 0.92 }, "unrounded_mean": 0.859949, "rsi_pct": 86.0, "band": "B" },
+  "headline_grade_long": "A",
+  "ledger_status": "NOT a ledger row — staged for bundle-time addition; regeneration discipline applies at fold (band re-derived from unrounded mean at regen, never copied forward)"
+}

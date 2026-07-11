@@ -1,0 +1,54 @@
+{
+  "seed": "v4.0-seed-1",
+  "status": "STAGED — repo-side only; not live, not pinned, no canonical surface touched",
+  "architectural_decision": {
+    "fork": "NEW NODE",
+    "rejected_branch": "STRENGTHEN self-defeating",
+    "grounds": [
+      "Schema-level: psychMechanism and diagnosis are singular per node and both are memetic-specific ('Category error — confusing memetic success with philosophical validity'). Hosting the deontic form requires rewriting the node's identity fields — that is minting under an old id, not strengthening responses.",
+      "Presupposition inversion: the memetic form impugns the VIEW via propagation-failure; the universalizability form GRANTS truth arguendo and charges the MAXIM. Different target (view vs. maxim), different criterion (memetic fitness vs. law-likeness), disjoint apparatus (heliocentrism vs. Kant/Parfit).",
+      "Reader test as posed: the memetic trigger is 'It can't propagate itself' — that reader does not expect contradiction-in-conception analysis. The universalizability searcher deserves a node whose trigger voices their charge.",
+      "Grading integrity: the ledgered grade measures the memetic rebuttal against the memetic form; bolting a second dialectic into the long muddies the graded object.",
+      "Individuation precedent: red-button-repugnant (K194) — the charge-as-stated falls at its own node; the retreat exits to a named terminus elsewhere. Same architecture here."
+    ],
+    "cross_reference_plan": "This node's diagnosis fences off the memetic form explicitly. Reciprocal pointer on self-defeating (keywords/diagnosis) is a bundle-time delta — v3.8 is frozen; no touch now."
+  },
+  "node": {
+    "id": "self-effacing-under-universalization",
+    "tier": 5,
+    "tier_status": "PROPOSED — count/tier/mechanism deltas deferred to bundle assembly, not asserted",
+    "category": "Meta-Objection",
+    "trigger": "Even if true, 'do not procreate' can't be universal law — it abolishes its own moral community",
+    "keywords": ["universalizability", "self-effacing", "categorical imperative", "Kantian", "contradiction in conception", "contradiction in the will", "publicity", "universal law", "last generation", "cannot be legislated"],
+    "psychMechanism": "Formalism displacement — a rule's demographic success-condition recast as a logical defect",
+    "diagnosis": "This objection concedes truth to attack form: granting the antinatalist claim arguendo, it alleges the maxim fails as universal legislation because compliance empties its own constituency. It mistakes a rule's satisfaction condition for a structural defect, and survives only by smuggling back the axiology it promised to do without. Distinct from the memetic form (propagation-failure as evidence against truth), which is answered at self-defeating.",
+    "sources": [
+      "Kantian universalizability — contradiction in conception vs. contradiction in the will",
+      "Parfit — self-effacing is not self-defeating (Reasons and Persons, Part One)",
+      "Publicity condition — esoteric morality, inverted",
+      "Norms that retire on success — eradication analogy"
+    ],
+    "responses": "authored in sibling files, one per register: self_effacing_under_universalization_{short,medium,long}_v4_seed1.md"
+  },
+  "register_disposition": {
+    "value": "routed",
+    "semantics_ref": "flagship_t5_register_dispositions_v0_1.json (K194 sidecar); assigned at authoring per K194 open-question-2 forward rule for v4.0 T5 intake",
+    "rationale": "Node-individuation precedent (red-button-repugnant): the structural charge — contradiction in conception, legislation/publicity failure — is defeated at this node. The perfectionist retreat (rational nature's continuation as unconditional end) exits to the asymmetry / population-ethics cluster, openly covered by the honest-residual apparatus. Charge falls here; retreat exits — routed, not defanged."
+  },
+  "verdict": {
+    "conception_form": "DEFEATED — promising-disanalogy (no parasitized concept) + overgeneration/parity (structure alone indicts every morality permitting universal childlessness; biting antinatalism specifically requires a procreative duty or axiology)",
+    "legislation_publicity_form": "DEFEATED — unheld is not unholdable; universal compliance is the rule's success condition; publicity satisfied (public avowal advances the principle); eradication analogy",
+    "will_form": "DISSOLVED into axiology — the maxim ends no existing agent; the formulas protect persons, not the headcount of a type; insisting on rational nature's perpetuation as unconditional end forfeits the objection's advertised formal independence and lands on already-bitten terrain",
+    "residue_named": "A perfectionist Kantian holding agency-perpetuation as bedrock remains answered-but-unbound — the old axiological disagreement, not a new incoherence. Honest-residual register per solipsism precedent."
+  },
+  "bundle_deltas_deferred": [
+    "objection_count 81 -> 82; tier split 13/17/14/31/6 -> 13/17/14/31/7",
+    "mechanism mapping (formalism-displacement fit vs. new mechanism id — adjudicate at assembly against the 35)",
+    "MAP_GRAPH node/link deltas; DEP_GRAPH premise links; Map 1 curation call (78-node scalar — inclusion TBD)",
+    "ledger row addition (grade record staged in v4_seed1_grade_record.json)",
+    "layman-index 82nd entry + register field 'routed' per sidecar fold spec",
+    "scholar-objections asset alignment (the S4 flag this seed answers)",
+    "reciprocal disambiguation pointer on self-defeating (keywords/diagnosis)",
+    "four-surface sync at cut: corpus JSON <-> JSX <-> combined.html <-> ledger, via Cowork end-to-end"
+  ]
+}
