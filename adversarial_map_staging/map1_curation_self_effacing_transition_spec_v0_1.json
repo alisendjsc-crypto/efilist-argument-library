@@ -1,0 +1,242 @@
+{
+  "artifact": "map1_curation_self_effacing_transition_spec",
+  "version": "0.1.0",
+  "session": "K222",
+  "date": "2026-07-11",
+  "status": "PROPOSAL — transition-spec design artifact ONLY (rider elected at K221 Q2). The combined.html splice this implies is a future, deliberate, isolated pin-move session; electing the rider authorized design, not a surface byte.",
+  "provenance": {
+    "corpus": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "6ee1f6f31e0f012db0d58cae4f912fcb"
+    },
+    "surface_sourced": {
+      "note": "Mount-first exhausted: ratified_variant_design_v1.json (variant-slot design) and v3_9_archetype_triage_PROVISIONAL.json (variant-need triage) do not carry the transition record shape. Fallback per session opener: live combined fetched to container disk, MAP1_TRANSITIONS awk-located (line 10594), node-evaled, one exemplar inspected per archetype.",
+      "live_combined_md5_at_fetch": "e654eabd32fa95e5969d49e6eb15aa87",
+      "live_combined_bytes": 2963752,
+      "map1_transitions_node_count": 78,
+      "node82_absent_verified": true,
+      "pin_note": "Fetched live md5 differs from the v3.9.4 pin (0c7d25be) recorded in the project directive block — surface has moved through post-v4.0-intake folds. Shape-sourcing is unaffected; splice session must re-anchor against the then-current pin."
+    },
+    "node82_corpus_data": {
+      "id": "self-effacing-under-universalization",
+      "tier": 5,
+      "category": "Meta-Objection",
+      "premise_dependencies": [
+        {
+          "premiseId": "benatars-asymmetry",
+          "layer": "foundational",
+          "strength": "weak"
+        }
+      ],
+      "note": "Thinnest premise row in T5. Premise-overlap scoring (the sophisticate generator's engine) is therefore structurally blind to this node's real dialectical exits, which the shipped long names explicitly. Dialectic-curated edges are required; the map cannot be generated for this node."
+    }
+  },
+  "schema_mirror": {
+    "record": "MAP1_TRANSITIONS[node_id] = { source_meta: {tier, category, disengagement_probability}, sophisticate: [...], defender: [...], drifter: [...], blended: [...] }",
+    "edge_fields": {
+      "sophisticate": [
+        "target",
+        "weight",
+        "raw_score",
+        "rationale",
+        "pivot_premises",
+        "shared_strong",
+        "shared_any"
+      ],
+      "defender": [
+        "target",
+        "weight",
+        "raw_score",
+        "rationale",
+        "shared_mechanisms",
+        "same_type_mechanisms",
+        "two_mechanism_disclosure"
+      ],
+      "drifter": [
+        "target",
+        "weight",
+        "raw_score",
+        "rationale",
+        "pattern",
+        "two_mechanism_disclosure"
+      ],
+      "blended": [
+        "target",
+        "modes",
+        "mode_weights",
+        "mode_rationales",
+        "two_mechanism_disclosure",
+        "canonical_override",
+        "convergence_tier"
+      ]
+    },
+    "rationale_registers_observed": {
+      "sophisticate": "Shares N strong premise(s) (...). Tier TX→TY. Sophisticate attacks the shared pillar to undermine <src>'s foundation.",
+      "defender": "Shares N mechanism(s). Plus N same-type mechanism(s). Tier TX→TY. Same-mechanism retreat preserves defender worldview without engaging.",
+      "drifter": "Drift pattern: same-tier same-category. TX/Cat → TY/Cat.",
+      "hand_curated_convention_proposed": "Rationale prefixed 'Dialectic-curated:' where premise/mechanism overlap cannot ground the edge; scorer fields (pivot_premises, shared_*, raw_score) filled honestly (empty lists, hand-banded scores) rather than fabricated."
+    }
+  },
+  "proposed_source_meta": {
+    "tier": 5,
+    "category": "Meta-Objection",
+    "disengagement_probability": "MEDIUM",
+    "rationale": "All six existing T5 records carry MEDIUM uniformly; no ground to deviate. The Kantian form self-selects engaged interlocutors, but so does every T5 meta-objection — uniform band respected."
+  },
+  "proposed_exit_edges": {
+    "sophisticate": [
+      {
+        "target": "benatar-asymmetry-attack",
+        "weight": "HIGH",
+        "raw_score": 9.0,
+        "rationale": "Dialectic-curated: the shipped long's own exit clause — pressing contradiction-in-the-will converts the formal charge to the axiological one ('the retreat exits to the asymmetry cluster, where it was already awaited'). Tier T5→T4. Sophisticate attacks the shared pillar to undermine self-effacing-under-universalization's foundation.",
+        "pivot_premises": [
+          "benatars-asymmetry"
+        ],
+        "shared_strong": 0,
+        "shared_any": 1
+      },
+      {
+        "target": "economy-population",
+        "weight": "MEDIUM",
+        "raw_score": 5.0,
+        "rationale": "Dialectic-curated: the last-generation practical retreat (terminal-cohort care duties), mapped as Phase-A entry class (a) with answered_by economy-population#long. Tier T5→T3.",
+        "pivot_premises": [],
+        "shared_strong": 0,
+        "shared_any": 0
+      },
+      {
+        "target": "self-defeating",
+        "weight": "LOW",
+        "raw_score": 2.5,
+        "rationale": "Dialectic-curated: form-swap across the mutual diagnosis fence (deontic/universalizability ↔ memetic); a sophisticate downgrade path that occurs in play. Tier T5→T5.",
+        "pivot_premises": [],
+        "shared_strong": 0,
+        "shared_any": 0
+      },
+      {
+        "target": "meta-ethical-pluralism",
+        "weight": "LOW",
+        "raw_score": 2.5,
+        "rationale": "Dialectic-curated: formalism-fails retreat to framework-pluralism (the objector who abandons Kant's test but keeps the anti-systematic instinct). Tier T5→T5.",
+        "pivot_premises": [],
+        "shared_strong": 0,
+        "shared_any": 0
+      }
+    ],
+    "defender": [
+      {
+        "target": "red-button-repugnant",
+        "weight": "LOW",
+        "raw_score": 2.5,
+        "rationale": "Dialectic-curated: Shares 0 mechanism(s). Plus 1 same-type mechanism(s). Tier T5→T5. Same-mechanism retreat preserves defender worldview without engaging — the empty-world recoil is the defender's affective home for this node.",
+        "shared_mechanisms": [],
+        "same_type_mechanisms": [
+          "Formalism_Displacement"
+        ],
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "imposing-values",
+        "weight": "LOW",
+        "raw_score": 2.5,
+        "rationale": "Dialectic-curated: Shares 0 mechanism(s). Plus 1 same-type mechanism(s). Tier T5→T5. Same-mechanism retreat: the universal-law charge recast as the authoritarian charge without engaging the Kantian answer.",
+        "shared_mechanisms": [],
+        "same_type_mechanisms": [
+          "Projection"
+        ],
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "violence-as-reductio",
+        "weight": "LOW",
+        "raw_score": 2.5,
+        "rationale": "Dialectic-curated: Shares 0 mechanism(s). Plus 1 same-type mechanism(s). Tier T5→T3. Catastrophe-anchor retreat ('a rule that empties the world is one step from atrocity') — the T5→T3 defender path precedented at self-defeating.",
+        "shared_mechanisms": [],
+        "same_type_mechanisms": [
+          "Guilt_by_Association"
+        ],
+        "two_mechanism_disclosure": false
+      }
+    ],
+    "drifter": [
+      {
+        "target": "imposing-values",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "red-button-repugnant",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "self-defeating",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "heat-death-futility",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "meta-ethical-pluralism",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      },
+      {
+        "target": "moral-particularism",
+        "weight": "HIGH",
+        "raw_score": 3,
+        "rationale": "Drift pattern: same-tier same-category. T5/Meta-Objection → T5/Meta-Objection.",
+        "pattern": "same-tier same-category",
+        "two_mechanism_disclosure": false
+      }
+    ],
+    "blended": {
+      "generator_owned": true,
+      "instruction": "Union of the three mode arrays above per target, with modes / mode_weights / mode_rationales assembled from the weighted edges; canonical_override false throughout; convergence_tier is generator-derived (semantics not reverse-engineered here) — recompute at splice, do not hand-set."
+    }
+  },
+  "proposed_entry_edges": {
+    "drifter_clique_closure": {
+      "mutation": "Each of the six existing T5 records (imposing-values, red-button-repugnant, self-defeating, heat-death-futility, meta-ethical-pluralism, moral-particularism) gains one drifter edge → self-effacing-under-universalization, weight HIGH, raw_score 3, pattern 'same-tier same-category', rationale in the drift register.",
+      "count": 6
+    },
+    "sophisticate_escalation": {
+      "mutation": "self-defeating.sophisticate gains one edge → self-effacing-under-universalization, weight MEDIUM, raw_score 5.0, rationale 'Dialectic-curated: form-upgrade along the mutual diagnosis fence — the sophisticate who concedes propagation≠truth escalates to the Kantian charge. Tier T5→T5.', pivot_premises [], shared_strong 0, shared_any 0.",
+      "count": 1
+    },
+    "candidates_noted_not_proposed": [
+      "performative-contradiction.sophisticate → node 82 (adjacent formal-charge family; defensible but not required for coherent curation — defer to splice-session judgment)"
+    ],
+    "blended_recompute": "The six T5 records' blended arrays recompute by generator union at splice."
+  },
+  "per_archetype_exclusions": "None. All four archetypes receive edges: the drifter clique is mechanical (same-tier same-category), sophisticate and defender exits are grounded in the shipped long's own routing and the Phase-A adversarial map, blended is union by construction.",
+  "splice_scope_and_flags": {
+    "mutations": "1 new MAP1_TRANSITIONS record (13 weighted exit edges + blended union) + 7 edge insertions into existing records + 6 blended recomputes.",
+    "canon_scalar_flag": "map1_node_count 78→79 and map1_edge_count_total 2886→2886+Δ are CANON-LOCKED INVARIANTS; the splice session revises pre-existing invariant-block entries ⇒ MAJOR canon bump per canon convention, not MINOR. Flag loudly at that session's open.",
+    "layout_review": "Force-layout position of the new node in the T5 cluster needs a render-time visual check (isolated pin-move session's checklist item).",
+    "hash_recompute": "Per post-terminal policy, any v4.0-line surface mutation makes render-time hash-recompute verification mandatory."
+  },
+  "open_questions_for_ratification": [
+    "Q1: Hand-banded raw_scores as proposed, or re-run the transition generator with a dialectic-override table (canonical_override precedent exists in the blended schema)?",
+    "Q2: Adopt the 'Dialectic-curated:' rationale-register convention corpus-wide for future thin-premise nodes, or keep it node-82-local?"
+  ]
+}

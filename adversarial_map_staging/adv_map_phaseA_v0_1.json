@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "class_counts": {
+      "a": 10,
+      "d": 6,
+      "b": 1
+    },
+    "coverage_distinct_ids": 7
+  },
+  "entries": [
+    {
+      "target_id": "imposing-values",
+      "target_locus": "short",
+      "target_anchor": "there is no one there to be imposed upon",
+      "adversarial_move": "If no subject blocks imposition by abstention, no subject equally blocks imposition by creation: at the moment of choice there is no one who 'never asked.' The turnaround's two directions quietly use two different tests, subjectless acquittal for refraining and structural indictment for creating. Pick one test and the inversion collapses.",
+      "class": "a",
+      "grounds": "The symmetry charge is the non-identity move, and the corpus meets it structurally: imposition is assessed against the guaranteed occupant of a manufactured position, no prior subject required (factory hazard, Proxy Gamble against the distribution), while abstention ensures the position is never occupied. Consent-incoherent's no-patient asymmetry closes the retroactive-endorsement door.",
+      "routing": {
+        "answered_by": [
+          "non-identity-problem#long",
+          "consent-incoherent#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "imposing-values",
+      "target_locus": "medium",
+      "target_anchor": "The antinatalist merely declines to create the situation in which imposition is possible",
+      "adversarial_move": "Grant the direction-correction for the procreative act; the trigger's second disjunct ('this is authoritarian') relocates to the doctrine: stigma on would-be parents, pressure on the ambivalent, and in efilist variants a terminal outcome no living dissenter can opt out of. 'Imposes nothing on no one' counts only the unborn.",
+      "class": "a",
+      "grounds": "Met across three seats: policy-proposal disclaims coercion in shipped prose and rebuilds the program on informed consent; red-button-repugnant engages the terminal program's override of living dissenters at full strength; violence-as-reductio severs adherent conduct from framework entailment. The residual 'persuasion itself is imposition' is not a formulation a competent opponent stakes, since it indicts its own utterance.",
+      "routing": {
+        "answered_by": [
+          "policy-proposal#long",
+          "red-button-repugnant#long",
+          "violence-as-reductio#medium"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "red-button-repugnant",
+      "target_locus": "medium",
+      "target_anchor": "That is a metaphysical commitment, not an ethical argument",
+      "adversarial_move": "Grant every experimental stipulation; the recoil survives them. Existence as terminal value is staked, not smuggled: calling the stake 'a metaphysical commitment, not an ethical argument' labels it without refuting it, and foundational commitments are where justification terminates for both sides—'suffering is categorically bad' has identical epistemic standing. Any argument concluding that universal painless cessation is preferable carries premises less credible than the intuition it violates. The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering, which is the point at issue.",
+      "class": "d",
+      "grounds": "The shipped text correctly reclassifies the recoil as an axiological stake; the staker is the coherent, reflexively stable dissenter the register sidecar's individuation note already names. He is answered arguendo in the asymmetry cluster and openly unbound there—registered bedrock, not a defect in this node's routing of the conflation.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "asymmetry-contingency (intrinsic-value-of-existence stake; purified Moorean retreat)",
+          "terminus_routing": "benatar-asymmetry-attack#medium (comparison-vs-deprivation form); flagship_t5_register_dispositions_v0_1 individuation note; sophisticate archetype variant routes the retreat in play",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "red-button-repugnant",
+      "target_locus": "long",
+      "target_anchor": "driven by biological compulsion operating below rational deliberation",
+      "adversarial_move": "The reply's engine is genealogical: pro-continuation preference is survival firmware, hence unreliable. Symmetry bites: suffering-aversion is equally installed firmware. A debunk voiding one valence while crediting the other as honest evaluation states no independent reliability criterion; strip both and the recoil stands undebunked.",
+      "class": "a",
+      "grounds": "The symmetric-debunk endgame is met at eliminativism (non-selective deflation strips both columns and leaves no reason to create over refrain; withdrawal of all defenses is not natalism), and the asymmetry's comparison-versus-deprivation form supplies the subject-independent tie-breaker genealogy cannot touch. Inside the wash the recoil is also debunked, so the objection cannot be maintained from where it retreats to.",
+      "routing": {
+        "answered_by": [
+          "eliminativism#medium",
+          "benatar-asymmetry-attack#medium"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "red-button-repugnant",
+      "target_locus": "long",
+      "target_anchor": "at what point does the perpetual manufacturing of beings",
+      "adversarial_move": "Even granting the firmware genealogy, existing beings' categorical desires are theirs; persons are separate; no aggregate of prevented future entrapment licenses overriding A's actual will for B's possible one. The dilemma's 'at what point' arithmetic presupposes the interpersonal trade a side-constraint deontology forbids outright.",
+      "class": "a",
+      "grounds": "Met at negative-util-aggregation: the constraint objection is localized (the exploder needs maximizing deontics, not the axiology; side-constraints and the doing/allowing asymmetry block it without surrendering the core), the antinatalist floor is severed from maximizing-NU, and the cornered button-affirming position is named coherent with its price stated. The separateness intuition's reductio-force against that corner is the question-begging pivot the prose dismantles.",
+      "routing": {
+        "answered_by": [
+          "negative-util-aggregation#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "self-defeating",
+      "target_locus": "diagnosis",
+      "target_anchor": "confuses evolutionary fitness with logical validity",
+      "adversarial_move": "At strength the charge is Parfitian, not memetic: a theory is indirectly self-defeating when acceptance frustrates its own aims. Efilism's acceptance-profile (despair, alienation among the only agents positioned to act) plausibly increases suffering, and demoralizes the civilization its realization path requires. Heliocentrism answers propagation-as-truth; it never touches aims-frustration.",
+      "class": "a",
+      "grounds": "Met jointly: the aims-frustration accounting is answered at pragmatist-objection (truth and utility decoupled, plus the empirical fruits ledger: prevented suffering, redirected care, intellectual liberation), and this node's own long decouples realization from mass adoption via the technological vector. The Kantian formal cousin is fenced to self-effacing-under-universalization by this node's shipped diagnosis.",
+      "routing": {
+        "answered_by": [
+          "pragmatist-objection#medium",
+          "self-defeating#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "self-defeating",
+      "target_locus": "long",
+      "target_anchor": "requires only the development of sufficient technological capacity",
+      "adversarial_move": "The practical charge, at full strength, targets your own aside: realization 'requires only sufficient technological capacity'—a capacity whose actual development rides on a continuing, resourced, motivated civilization, which rides on continuing births. The view thus depends for its terminus on the ongoing occurrence of the act it declares impermissible: it cannot will its means without willing what it forbids, and cannot disown the means without surrendering its announced path. The heliocentrism defense is silent here; this is not propagation-as-truth but means-inconsistency, internal to the position's practical architecture.",
+      "class": "b",
+      "grounds": "The shipped text's best reading cannot supply the fence, because the aside's function is reassurance about realization, which invites exactly this means-audit and concedes a dependence it never scopes. The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means (economy-population already ships the pattern for the care-labor case). Two sentences inside the node's identity meet it; the core category-error rebuttal is untouched.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "self-effacing-under-universalization",
+      "target_locus": "long",
+      "target_anchor": "Universal compliance is a norm's success condition",
+      "adversarial_move": "'Eradication protocols retire themselves'—and leave beneficiaries: the disease-free living are whom the retirement is for. Universal non-procreation's terminus leaves none. Success is teleological; a success-condition satisfied for no one is satisfaction only under an impersonal axiology on which subjectless states can rank better—precisely the asymmetry's most contested plank. The formal defense thus borrows the axiological credit it claims not to need: strip the impersonal-comparison reading and 'universal compliance is a norm's success' is bookkeeping, not vindication. The charge does not retreat to axiology; your answer already stands on it.",
+      "class": "d",
+      "grounds": "The best reading survives the smuggling charge: compliance-success in the shipped text is deontic (the rule was kept), axiology-free, while end-state value is separately and explicitly routed. What the move then demands—a beneficiary for the terminus—is the axiological retreat the long pre-routes to the asymmetry cluster, where the impersonal-comparison form answers it (the asteroid that misses a lifeless planet) and where its contestedness is the corpus's openly registered residual. Same bedrock as the red-button Moorean entry; mechanism-adjacent cross-reference.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "asymmetry-contingency (impersonal-comparison reading of terminus value)",
+          "terminus_routing": "benatar-asymmetry-attack#medium; corpus honest-residuals register (asymmetry-contingent amplifiers); shipped long's own exit clause",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "self-effacing-under-universalization",
+      "target_locus": "long",
+      "target_anchor": "can a rational agent will that rational agency not continue?",
+      "adversarial_move": "Contradiction-in-will convicts without axiology: non-beneficence universalizes conceivably yet fails in will. Parallel: a will willing any ends wills the standing capacity of willing; 'let rational nature lapse' wills that capacity's extinction. No harmed person, no imported value: the inconsistency is internal to willing, as in the beneficence precedent.",
+      "class": "a",
+      "grounds": "Met on the long's own materials: Kant's will-test precedents route through an existing willer's possible ends (non-beneficence fails because I may need aid), and 'the maxim ends no existing agent' severs that self-referential hook—no existing willer's ends require successors after all willers are gone. Closing the gap requires type-continuation as an unconditional end, which the shipped text correctly reclassifies as the axiological claim, not a formal one.",
+      "routing": {
+        "answered_by": [
+          "self-effacing-under-universalization#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "self-effacing-under-universalization",
+      "target_locus": "long",
+      "target_anchor": "a last generation keeping its rule to the end is fully conceivable",
+      "adversarial_move": "'Fully conceivable' in conception, not in will: the final cohort ages without successors; care-claims and labor-reproduction collapse mid-compliance. The universalized maxim generates duties toward the last living that its own keeping makes undischargeable: contradiction in will, and a this-world cost the empty-world routing never prices.",
+      "class": "a",
+      "grounds": "Met at economy-population: the undischargeable-duty premise is denied in shipped prose (automation, institutional reform, mutual aid, reallocation discharge terminal-cohort care without new births), and the objector's only repair—conscripting successors as care-labor—is the instrumentalization this node's own long indicts under the Humanity formula. The dilemma closes on both horns in shipped text.",
+      "routing": {
+        "answered_by": [
+          "economy-population#long",
+          "self-effacing-under-universalization#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "heat-death-futility",
+      "target_locus": "medium",
+      "target_anchor": "to make the indifference of the universe your own",
+      "adversarial_move": "Take futility whole, not halved: if nothing matters sub specie aeternitatis, the disvalue of suffering is annulled with everything else, and 'how much suffering along the way' is a question with no normative remainder. The scale-locality reply shows suffering matters to its bearer—a psychological fact, not mattering simpliciter, and the prescription needs the latter. The stable quietist presses no objection; he exits: the case has no purchase on a stance that has stopped caring, including about answering it. Nothing in the shipped text binds him. It refuses his indifference; it does not refute it.",
+      "class": "d",
+      "grounds": "Refusal is the correct terminal posture toward reflexively stable bedrock, and the shipped grant-arguendo reading (per the register sidecar) claims nothing stronger. The quietist correspondingly does no work against the case: his annulment strips the pro-birth ledger identically, and the valence-reversal shipped at nihilism-label shows the exit licenses nothing, procreation included. Answered in full, unbound, registered.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "sub-specie-aeternitatis quietism (axiological-nihilist exit at cosmic register)",
+          "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged; persistence criterion); nihilism-label#long (metaphysical/axiological split; valence reversal)",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "heat-death-futility",
+      "target_locus": "medium",
+      "target_anchor": "Suffering is experienced at the scale of the nervous system",
+      "adversarial_move": "Futility might spare person-scale ethics while disabling yours: kindness to the person present needs no cosmic ledger, but a prescription of universal, irreversible cessation is itself cosmic-scale: it needs mattering at exactly the magnitude the granted premise voids. Local morality survives heat death; an extinction imperative does not.",
+      "class": "a",
+      "grounds": "Fails the force floor as a defeat and routes as already-answered: the shipped prescription's value base is an aggregate of nervous-system-scale sufferings ('how much suffering occurs along the way'), each preserved by the objector's own person-scale concession; no mattering-at-cosmic-magnitude is deployed anywhere in the shipped text, so the selective-disabling move finds nothing to disable.",
+      "routing": {
+        "answered_by": [
+          "heat-death-futility#long",
+          "heat-death-futility#medium"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "meta-ethical-pluralism",
+      "target_locus": "medium",
+      "target_anchor": "Negative utilitarianism merely refuses the tolerance",
+      "adversarial_move": "'No framework treats suffering as good or irrelevant'—granted, and inert: the shared premise is pro-tanto badness; the conclusion needs lexical priority. 'Merely refuses the tolerance' concedes the point, because the tolerance is the substantive content of the rival frameworks, and refusing it is the framework-choice under challenge, not its neutral endpoint. The pluralist who ranks autonomy or perfectionist goods above suffering-minimization accepts the convergence datum whole and rejects the conclusion with framework intact; asked 'what value justifies the imposition?', he names his value, and the exchange ends where it began: at an undischarged priority claim.",
+      "class": "d",
+      "grounds": "The shipped long's consent-asymmetry ground presses him hardest (the deontologist forced onto weighing terrain; prudence and justice against the wager) but does not bind him: he weighs, names his price, and stays coherent—the register sidecar's own adjudication. Pluralism granted whole still hands him no framework on which certain unconsented suffering is costless; what it leaves him is a stake, and stakes are bedrock, not defeats.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "tolerance-weighting pluralism (lexical-priority stake above suffering-minimization)",
+          "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "meta-ethical-pluralism",
+      "target_locus": "long",
+      "target_anchor": "It simply is, and it is bad",
+      "adversarial_move": "The near-universality ground is descriptive; the conclusion is normative. An error theorist grants the aversion-datum whole—infants recoil, animals avoid—and denies the further fact: 'it is bad' adds a property no quantity of aversion entails. 'The one data point that least requires interpretation' is exactly wrong on this view: the datum is aversion; badness is the interpretation. Since the case's engine is categorical disvalue, a normative error theory dissolves it without ever disputing a framework-ranking—a challenge the node's ecumenism cannot reach, because the convergence argument convenes only cognitivist guests.",
+      "class": "d",
+      "grounds": "Not met at full strength anywhere in-corpus, and not a new-node candidate: the nearest shipped machinery already carries the terminal answers (eliminativism's non-selective acid—an error theory voiding harm voids the natalist's goods and every permission, licensing nothing; nihilism-label's norm-without-cosmic-endorsement and valence reversal), so a dedicated node would fail G1 distinctness on answer-machinery. What the sweep surfaces is an unregistered bedrock: the reflexively stable error theorist, distinct from the cosmic quietist (he keeps caring; he reinterprets) and from the valence-eliminativist (he grants the phenomenology). Recommend appending to the honest-residuals register at terminal assembly.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "normative error theory (categorical-bindingness denial; aversion-datum granted)",
+          "terminus_routing": "nearest shipped seats: nihilism-label#long, eliminativism#medium; RECOMMEND append to honest-residuals register at terminal assembly",
+          "novel": true
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "meta-ethical-pluralism",
+      "target_locus": "medium",
+      "target_anchor": "the minimum acceptable level of unconsented suffering imposed on a new being is zero",
+      "adversarial_move": "As a lexical rule, zero tolerance proves too much: every act (driving, policy, building) imposes unconsented suffering-risk on future persons; strict application indicts all agency, not procreation distinctly. If the rule is indexed to creating the bearer, the work is done by that distinction, not by negative utilitarianism.",
+      "class": "a",
+      "grounds": "Met: the rule is creation-indexed in its own wording ('imposed on a new being'), and the creation/affecting asymmetry is shipped—presumed-consent economics govern risk to existers (existing patient, harm of inaction), while creation uniquely manufactures its bearer (no patient, no harm in refraining). The reductio never touches an act with that structure, and the distinction is argued, not assumed, at the cited seats.",
+      "routing": {
+        "answered_by": [
+          "consent-incoherent#long",
+          "non-identity-problem#long",
+          "contractualism-scanlon#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "moral-particularism",
+      "target_locus": "long",
+      "target_anchor": "rigorous particularist analysis of procreation strengthens the antinatalist position",
+      "adversarial_move": "Grant that perception condemns the paradigm cases. The conclusion is 'always wrong,' and holism forbids precisely that jump: if consent's absence, involuntariness, and other-imposed purpose are wrong-making here, particularism denies they must be wrong-making everywhere—their valence, like any feature's, is context-hostage. Response three quietly re-installs invariant valences for exactly three features and calls the result particularist analysis. A birth into foreseeable overwhelming flourishing is a case; attentive perception may permit it; nothing in Dancy licenses closure over every possible case. The universal verdict is theory-shaped, and not available on the ground you chose to fight on.",
+      "class": "d",
+      "grounds": "At type-level best reading the sharpening claim survives: the creation context-type is individuated by the absence of every standard valence-flipper, so no invariance premise is smuggled—the type does the work. But the anti-theorist who refuses type-closure as such is unbound by construction, and his refusal is symmetrical: it voids the natalist default (shipped response one, the double-edged dissolution) and strips his own flourishing-birth counter-verdict of assertoric force. Coherent, answered arguendo, doing no work—the sidecar's registered survivor.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "radical holism / anti-theory (refusal of invariant verdicts as such)",
+          "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged; persistence criterion); moral-particularism#long response one (symmetric dissolution)",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    },
+    {
+      "target_id": "moral-particularism",
+      "target_locus": "long",
+      "target_anchor": "in emergency medicine or infant care it may be overridden",
+      "adversarial_move": "The text's own concession—consent 'may be overridden' in emergency medicine or infant care—describes contexts where consent is impossible and a guardian judges. Procreation is that context-type's limit case: consent impossible in principle, guardian deciding. The valence of consent-absence has flipped in your granted neighbors; name the difference-maker.",
+      "class": "a",
+      "grounds": "Met, doubly, in shipped prose: consent-incoherent supplies the difference-maker (presumed consent is licensed by harm-of-inaction to an existing patient with interests; creation has no patient and no harm in refraining), and contractualism-scanlon generalizes it (hypothetical consent legitimates only where refusal also imposes on an existing subject; creation is the unique case where it does not). The override-license is patient-interest-grounded and lapses without a patient.",
+      "routing": {
+        "answered_by": [
+          "consent-incoherent#long",
+          "contractualism-scanlon#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "A",
+        "date": "2026-07-11",
+        "seat": "K222 (library)"
+      }
+    }
+  ]
+}
