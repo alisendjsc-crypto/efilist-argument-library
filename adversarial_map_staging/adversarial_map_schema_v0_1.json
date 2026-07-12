@@ -1,0 +1,117 @@
+{
+  "artifact": "adversarial_map_schema",
+  "version": "0.1.0",
+  "date": "2026-07-11",
+  "authored_by": "library seat (K220) — DESIGN hand-back for adversarial_map_commission_relay_v1",
+  "id_closure": {
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "corpus_nodes": 82,
+    "tier_split": "13/17/14/31/7",
+    "rule": "entry.target_id must be a member of corpus objections[].id; validator enforces"
+  },
+  "entry_schema": {
+    "target_id": "string ∈ id set",
+    "target_locus": [
+      "short",
+      "medium",
+      "long",
+      "diagnosis"
+    ],
+    "target_anchor": "string ≤15 words, verbatim substring of the target node's shipped text at target_locus",
+    "adversarial_move": "string, 40–150 words (class a: ≤60), analytic register, one dialectical round only",
+    "class": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "grounds": "string; class-(b) entries must state why the shipped text's best reading fails",
+    "routing_by_class": {
+      "a": {
+        "answered_by": [
+          "node_id#depth"
+        ]
+      },
+      "b": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "s",
+            "c",
+            "r",
+            "a"
+          ],
+          "severity": [
+            "minor",
+            "headline"
+          ]
+        }
+      },
+      "c": {
+        "intake_candidate": {
+          "proposed_id": "str",
+          "tier_guess": "int",
+          "mechanism_guess": "str",
+          "individuation_grounds": "presupposition-inversion | reader-test | grading-object-integrity"
+        }
+      },
+      "d": {
+        "residue": {
+          "bedrock_name": "str",
+          "terminus_routing": "str",
+          "novel": "bool"
+        }
+      }
+    },
+    "status": [
+      "mapped"
+    ],
+    "provenance": {
+      "phase": [
+        "A",
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "date": "ISO",
+      "seat": "str"
+    }
+  },
+  "map_constraints": {
+    "coverage": "every id ≥1 entry; ≤3 entries/id",
+    "adjudication_order": "a → c → b/d",
+    "downstream_status_lifecycle": "mapped → queued → ratified → landed(version) | rejected(grounds) — downstream states live in canon, never in this artifact",
+    "fences": "library-internal; rebut-only register untouched; no corpus/ledger/index/combined bytes; yields are intake candidates, never authorizations"
+  },
+  "phasing": {
+    "A": {
+      "scope": "T5",
+      "n": 7,
+      "seats": "0.5–0.7",
+      "rider": "Map-1 curation of self-effacing-under-universalization (elective, pending)"
+    },
+    "B1": {
+      "scope": "T4 first half",
+      "n": 15,
+      "seats": 1
+    },
+    "B2": {
+      "scope": "T4 second half",
+      "n": 16,
+      "seats": 1
+    },
+    "C": {
+      "scope": "T3+T2",
+      "n": 31,
+      "seats": "1–1.5"
+    },
+    "D": {
+      "scope": "T1",
+      "n": 13,
+      "seats": "0.5, foldable into C"
+    }
+  },
+  "staging": "adversarial_map_staging/ at repo root (version-neutral); fragments adv_map_phase{X}_v0_1.json; terminal adversarial_map_v1_0.json"
+}
