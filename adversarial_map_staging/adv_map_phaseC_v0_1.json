@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "class_counts": {
+      "a": 7,
+      "b": 4,
+      "d": 3
+    },
+    "coverage_distinct_ids": 14
+  },
+  "entries": [
+    {
+      "target_id": "economy-population",
+      "target_locus": "long",
+      "target_anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+      "adversarial_move": "The Ponzi analogy equivocates on 'victim.' Fraud collapses because returns need deceived new entrants; intergenerational care is reciprocal, each cohort receives and provides. Calling the created victims smuggles the harm-verdict into the premise. And 'automation is itself a gamble' fails, because reallocation acts on existing beings, not manufactured new ones.",
+      "class": "a",
+      "grounds": "Strongest continuation is a question-begging charge: the Ponzi and victim and debt framing does the persuasive work only if birth is already a net harm; otherwise intergenerational reciprocity is a legitimate mutual bargain, not fraud. (a): the node's operative spine survives because it never rests on the analogy alone. It runs consent-imposition plus non-instrumentalization, and the reciprocity rejoinder relocates to whether the never-created are owed or deprived of anything, which benatar-asymmetry-attack#long answers (no deprivation for the non-existent, so the reciprocity benefits only the already-existing), while future-solve#long blocks the reverse tu-quoque (present beings bear the risk; reallocation among existing beings does not manufacture new subjects the way pronatalist deferral does). Not (b): the Ponzi frame is illustrative color, excisable without damage, no gradeable overclaim. Not (d): the residue is the already-surfaced asymmetry and consent core, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "future-solve#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "ai-fear",
+      "target_locus": "short",
+      "target_anchor": "consciousness should be evaluated by its capacity for suffering, not by its substrate",
+      "adversarial_move": "Grant substrate-neutrality; it adds nothing new. Two-substrate preservation talk implies a choice absent when the AI does not yet exist. The content splits into 'suffering biology ought not continue,' which is plain antinatalism, and 'prefer a non-suffering AI' read as create it, which the asymmetry blocks: absent pleasure is no deprivation.",
+      "class": "a",
+      "grounds": "Strongest continuation bypasses the node's censorship trap-door (policy register, actor-content, correctly deflected by the framework-vs-actor category-distinction) and attacks framework-content: does substrate-neutral suffering-minimization commit the framework to preferring, hence creating, a non-suffering successor? (a): it adds nothing the corpus lacks. The comparative-preservation framing over-implies a two-substrate choice, but the real decision decomposes into continue-biology (the antinatalist thesis throughout) and create-AI (answered by benatar-asymmetry-attack#long: no reason to create even an upside-only being, so neutrality is not a creation mandate). Not (b): the comparative framing is a soft over-implication, not load-bearing, and the conclusion is untouched. Not (d): the terminus is the already-surfaced asymmetry, not new bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "violence-as-reductio",
+      "target_locus": "long",
+      "target_anchor": "adherent-prominence is not the unit of evaluation",
+      "adversarial_move": "Grant the bomber is genetic fallacy; press the architect. The defended framework is efilism, which centrally holds NU-minimization, so the button is efilist content, not an advocate's add-on; 'prominence is not the unit' answers the census charge, not the definitional one. And cascade-math cannot touch a successful button that leaves no cascade-bearer.",
+      "class": "a",
+      "grounds": "Strongest continuation concedes the bomber (genetic fallacy, correctly diagnosed) and presses the architect: efilism, the defended framework, centrally includes NU-minimization, so the button is efilist framework-content, not added actor-content, and the node's cascade-math cannot touch a successful total-cessation button that leaves no survivor to bear the cascade. (a): the entailment-attack on the button is not this node's to win, it is red-button-repugnant's, already mapped in Phase A. The termination-of-existing-beings horn (the impersonal-axiology exploder, consent-engine or not) is met at negative-util-aggregation#long, where the exploder is shown to need maximizing deontics that side-constraints and the doing/allowing asymmetry block without surrendering the core; the successful-button recoil terminates at red-button-repugnant#medium's asymmetry-contingency stake, where the affirming position is named coherent with its price stated, and the symmetric-debunk endgame at benatar-asymmetry-attack#medium. Not (b): the antinatalism-versus-efilism scope-looseness (the word added) is rhetorical, not load-bearing; the node concedes centrality openly and locates the entailment in the NU premise correctly, and its genetic-fallacy spine carries the node's actual task against the behavioral attack. Not (d): the residue is the already-surfaced red-button cluster, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "red-button-repugnant#medium",
+          "negative-util-aggregation#long",
+          "benatar-asymmetry-attack#medium"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "future-solve",
+      "target_locus": "short",
+      "target_anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+      "adversarial_move": "'Never consented to serve as transitional sacrifices' proves too much. Every intergenerational act, curing diseases, building institutions, accumulating knowledge, imposes costs on present people for a future that cannot consent, since it does not yet exist. If bearing uncompensated transitional cost defeats a future-directed justification, it equally defeats the antinatalist's own project of authoring and disseminating philosophy for future discourse. The node's operative objection should be narrower, consent to being created, not consent to bearing cost; it conflates the two and never draws the distinction, handing the objector a self-undermining tu-quoque the text does not close.",
+      "class": "b",
+      "grounds": "Strongest continuation is a self-undermining tu-quoque: if the transitional generation's non-consent to bearing cost defeats future-improvement justifications, it condemns all intergenerational investment, including the antinatalist's own future-directed dissemination project. (a) fails as a clean route because the corpus answer, the creation-versus-cost asymmetry, is a distinction this node never makes; the node as written invites the flank rather than closing it. (c): the node omits the creation-consent versus cost-consent distinction that would defuse the tu-quoque. (r): so phrased, it is over-exposed to a rejoinder it cannot answer in its own text. Not (d): no bedrock, the remedy is a local sharpen, foreground consent-to-creation and qualify the transitional-sacrifice claim. Severity minor: excise the over-broad framing and the proxy-gamble spine carries the no-creation conclusion intact.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "extinction-culture",
+      "target_locus": "long",
+      "target_anchor": "The absence of culture is not bad for the non-existent",
+      "adversarial_move": "The objection need not claim culture is bad-for-the-nonexistent; reframe it as impersonal value. A cosmos containing Beethoven's Ninth, mathematics, and moral achievement is better simpliciter than a barren one, independent of any experiencer to register it. On that axiology, extinguishing every culture-capable being destroys agent-neutral value, and the no-deprivation move, which addresses only value-for-a-subject, never reaches it. Levels two and three do not rescue level one: the consent-instrumentalization reply answers whether to breed new culture-consumers, which the impersonal-value objector is not asking, and the already-lost point concedes prior destruction rather than defending fresh destruction. Level one simply assumes value requires a valuer, the disputed premise, not a demonstrated one.",
+      "class": "d",
+      "grounds": "Strongest continuation abandons the deprivation frame and asserts impersonal, agent-neutral value: some goods are good period, so extinction destroys value even with no one left to be deprived. (a) fails: the corpus no-deprivation answers address person-affecting value only and cannot touch an agent-neutral loss claim; routing to asymmetry begs the very axiology in dispute. Not (b): level-one is not imprecise, it is committed to person-affecting axiology, and its sibling levels (consent-instrumentalization, already-lost) answer the reproduction question, not the reframed impersonal-loss objection, so no local trim closes the gap. Not (c): this is not a missing node but a fault-line the whole corpus sits astride. (d): terminus is impersonal-vs-person-affecting axiology, K224 bedrock 1, facet value-requires-a-valuer, already surfaced by six B2 nodes; not novel.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "impersonal-vs-person-affecting axiology",
+          "terminus_routing": "already-surfaced K224 bedrock 1, facet value-requires-a-valuer / standpoint-dependence; route as registered, not a new bedrock",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "policy-proposal",
+      "target_locus": "long",
+      "target_anchor": "that would at least be an informed decision rather than an instinctive one",
+      "adversarial_move": "'At least an informed decision' quietly legitimizes informed procreation, which the framework's own consent-core forbids. Antinatalism's verdict is that procreation wrongs the created, a non-antecedent party who cannot consent; parental knowledge cannot cure a wrong done to a third party, so an informed choice to impose existence is still the imposition the framework condemns. Valorizing it as better-because-informed concedes that the wrong is really only uninformedness, collapsing the harm-thesis into a liberal-autonomy thesis the pronatalist accepts. The policy program is untouched, and the verdict-versus-coercible-policy gap (procreation stays wrong, yet non-coercion limits policy to information) is a clean fix; the node instead blurs verdict into endpoint.",
+      "class": "b",
+      "grounds": "Strongest continuation turns the node's endpoint against it: 'that would at least be an informed decision' valorizes informed procreation, but the consent-core holds that the created, not the parent, is the wronged non-consenting party, so parental information cannot legitimize the imposition. Intra-corpus tension, structurally the B2 virtue-ethics pattern (a claim false by the corpus's own lights). Not (a): the corpus answers the move, but the offending assertion sits inside this node and contradicts that answer, so the fix is local, not a cross-reference. Not (d): no bedrock, the harm-thesis versus permissible-policy distinction repairs it cleanly. (b): axis soundness (endpoint premise the framework disowns) with robustness implicated; severity minor, the concrete non-coercive program and the validity-versus-implementability category-distinction carry the node's task untouched. Recommended regen: separate the moral verdict (procreation wrongs the created, informed or not) from the non-coercion policy constraint.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "pinker-better-world",
+      "target_locus": "medium",
+      "target_anchor": "Statistics describe populations; suffering is experienced by individuals",
+      "adversarial_move": "Argument two proves too much and the node then violates it. 'Statistics describe populations; suffering is experienced by individuals' dismisses aggregate data as morally beside the point, yet argument three rests entirely on aggregates: eighty billion animals a year, epidemic adolescent anxiety rates. If population statistics cannot register suffering because suffering is individual, the node's own scale-of-harm appeals are equally disarmed. The tu-quoque is internal, not imported. The point the node actually needs is narrower: a declining rate is not absolute elimination, and per individual created the asymmetry is undiminished, so aggregate improvement licenses no particular creation. That version keeps the anti-Pinker force without the blanket dismissal argument three depends on.",
+      "class": "b",
+      "grounds": "Strongest continuation is an internal tu-quoque: argument two's blanket 'statistics describe populations, suffering is experienced by individuals' declares aggregate data morally irrelevant, but argument three (eighty billion farmed animals, epidemic anxiety rates) is pure aggregate appeal. The node disarms its own method. (a) fails: this is not answered elsewhere; the inconsistency lives in this node's text. Not (d): no bedrock, the asymmetry itself is fine, the defect is the over-broad framing of one sub-argument. (b): the fix is to narrow argument two to rate-decline-is-not-elimination plus undiminished-per-individual-asymmetry, which removes the inconsistency and keeps the anti-aggregation force; severity minor, arguments one, three, four and the narrowed two carry the conclusion. Axis soundness (the node uses a method it declares invalid) with robustness (adversarially over-exposed).",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "slippery-slope-eugenics",
+      "target_locus": "short",
+      "target_anchor": "These positions are structurally opposite",
+      "adversarial_move": "Universality answers the rule, not the outcome. Grant that antinatalism grades no lives and applies to all equally; a universal cessation is formally non-discriminatory yet substantively erases groups whose continuity is already precarious, achieving by a universal rule the eugenic outcome, elimination of specific peoples, that selective sterilization achieves by a selective one. 'Structurally opposite' conflates formal universality with substantive non-discrimination. The node's own apparatus, framework-vs-actor plus cascade-math, disposes of the coercion-slope soundly, since eugenic action is partial and leaves cascade-bearers. What it never addresses is whether a people's continuity carries value beyond its members' welfare, such that universal cessation wrongs the group as such. On person-affecting axiology it does not; assert collective value and it does.",
+      "class": "d",
+      "grounds": "Strongest surviving continuation is not the coercion-slope, which the node defeats internally: unlike VAR's total button, eugenic action is partial and leaves survivors, so the node's cascade-math genuinely bites, and framework-vs-actor plus the both-directions point plus the censorship trap-door close the standard charge. What survives is the formal-versus-substantive reframe: a universal cessation still substantively erases precarious peoples, an eugenic outcome reached by a universal rule, and 'structurally opposite' conflates formal universality with substantive non-discrimination. (a) fails: routing to non-coercion answers only the coercion-slope, and routing the erasure worry to extinction-culture#long lands on a node that begs the very impersonal-value question at issue. Not (b): the node is not locally imprecise, it is silent on collective-continuity value, and no trim supplies it. Not (c): not a missing objection but a fault-line. (d): terminus is impersonal-vs-person-affecting axiology, group-continuity facet, the same bedrock extinction-culture hit; whether a people's continuity has value beyond member-welfare. Not novel: a facet of the already-surfaced K224 bedrock 1.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "impersonal-vs-person-affecting axiology",
+          "terminus_routing": "already-surfaced K224 bedrock 1; group-continuity / collective-value facet (sibling to extinction-culture's cultural-artifact facet); route as registered",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "overpopulation-addressed",
+      "target_locus": "long",
+      "target_anchor": "incrementally better from a negative utilitarian perspective",
+      "adversarial_move": "'Fewer births, incrementally better' is not monotonic. Sub-replacement fertility imposes real suffering on existing beings: aging societies, care shortages, economic contraction. So the ledger the node calls incrementally better trades the costless non-suffering of the non-born against genuine suffering of the existing. The demographic decline is not obviously less suffering overall.",
+      "class": "a",
+      "grounds": "Strongest continuation concedes the category distinction (ethics of the act, not population numbers) and attacks the node's monotonicity assumption: it treats fewer creations as incrementally better full stop, but sub-replacement fertility imposes genuine suffering on existing beings (care shortages, economic contraction), so the aggregate ledger is not obviously improved. (a): answered without amendment. The averted creation is costless on the asymmetry (benatar-asymmetry-attack#long: the non-created lose nothing), and the existing-elderly suffering is a harm to existing beings with a non-natal solution (economy-population#long: reallocation and automation, not manufacturing care-labor). The total-utilitarian variant, that population size is ethically central because more net-positive lives is more value, is the standard net-value dispute already met arguendo at benatar-asymmetry-attack#long. Not (b): the monotonicity phrasing is defensible once the two ledgers are kept distinct, no gradeable defect. Not (d): no surviving bedrock unique to this node.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "economy-population#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "ableist-objection",
+      "target_locus": "long",
+      "target_anchor": "they are being centered by it",
+      "adversarial_move": "'Centered not targeted' does not escape the expressivist charge, which is the objection's strongest form and the one the node sidesteps. Antinatalism justified by suffering cites disabled existence, bone cancer, congenital conditions, as its paradigm reasons creation is wrong. Even granting no life is selected, positioning high-suffering lives as the clearest evidence for life-not-worth-starting expresses the very judgment, disabled life approximates suffering approximates should-not-be, that the objection names. Universality answers selection, not expression. The node's one real reply, the disvalue is imposition-into-a-punishing-world, not disability itself, opens a dilemma it never runs: in a fully accommodating world, does disability still count as a reason not to create? If no, the exemplars are misleading; if yes, some lives do carry more intrinsic disvalue, and the charge lands.",
+      "class": "b",
+      "grounds": "Strongest continuation is the expressivist argument (Asch), distinct from the selection charge the node answers well: a universal anti-creation stance justified by suffering, and citing disabled existence as its paradigm reason, expresses the devaluation disabled-life-approximates-not-worth-being even while grading no lives explicitly. The node's universality defeats selection but not expression; its 'centered not targeted' and 'enemy is the system' lines are asserted, not argued, and a disability-rights reader finds them question-begging. Not (a): the strongest form is not answered elsewhere. Not (d): no axiological bedrock, the enemy-is-the-system reply is a real seed, and the intrinsic-versus-social-disvalue dilemma is answerable, just unrun. Not (c): the objection already has this node as its home; the defect is under-coverage of its strongest form, not a missing objection. (b): axis completeness (the expressivist form is under-covered) with robustness (the asserted centering line is exposed to the question-begging rejoinder); severity minor, the universality spine carries the selection charge and the fix develops rather than corrects. Recommended regen: run the accommodating-world dilemma and separate judging-the-imposition from judging-the-lives.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "social-contract",
+      "target_locus": "long",
+      "target_anchor": "the antinatalist objection is to existence itself, not to any particular society",
+      "adversarial_move": "Recast implicit consent as fair-play: not consent to existence, which the node rightly denies, but obligations incurred by voluntarily accepting the benefits of social cooperation given that you exist. And exit is possible, from a society, by emigration or opting out. The node answers the existence version, not the given-existence-fair-play version.",
+      "class": "a",
+      "grounds": "Strongest continuation is the fair-play form of implicit consent (Hart, Rawls): not consent to existence, which the node correctly denies, but reciprocal obligations from voluntarily accepting the benefits of cooperation given existence, plus the Lockean point that a society, unlike existence, has exits. (a): defeated by the node's own severance and by answered content. The estoppel proves too much and is an ad hominem that does not touch the ethics of creation (hypocrisy is not unsoundness); the existence-critique is severed from society-obligations, since the objection to existence is not an objection to any society with an exit; and the residual claim that participation could have been refused collapses because the only exit from existence is a death blocked by compulsion and taboo, per why-not-suicide#long, so participation is coerced, not consensual. consent-incoherent#long supplies the structural consent analysis. Not (b): the kidnapping and prison analogies presuppose the harm-thesis, but they are illustrative color, and the coping-not-consent plus proves-too-much spine does not rest on them. Not (d): no surviving bedrock.",
+      "routing": {
+        "answered_by": [
+          "why-not-suicide#long",
+          "consent-incoherent#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "moral-progress",
+      "target_locus": "long",
+      "target_anchor": "the ledger is at best ambiguous",
+      "adversarial_move": "There is directional progress on the axis antinatalism itself privileges: the spread of suffering-sensitivity and consent-sensitivity, of which animal rights and this very argument are evidence. That trajectory suggests future creation, if any, grows ever more welfare-attentive, undercutting the unconsidered-imposition premise. The 'ambiguous ledger' counts factory farming but ignores that the concern about it is the progress.",
+      "class": "a",
+      "grounds": "Strongest continuation grants non-monotonicity but presses directional progress on the very axis antinatalism privileges, suffering-sensitivity and consent-sensitivity, of which this argument is itself evidence, implying future creation grows more welfare-attentive and the problem self-corrects. (a): met by the node's own structural section and the core. Progress addresses the conditions existing beings face, not the foundational imposition; even a perfect moral world leaves non-consensual aging, illness, loss, and death, per benatar-asymmetry-attack#long, and heightened parental consent-sensitivity is not the created being's consent, per consent-incoherent#long. So progress on the relevant axis hits the same wall. Not (b): unlike its Pinker sibling it carries no aggregation-fallacy overclaim, and unlike its future-solve sibling its structural section explicitly foregrounds consent-to-creation over cost-bearing, so the transitional-sacrifice phrasing does not conflate the two here; the weak 'ambiguous ledger' is a non-load-bearing empirical aside the structural section backstops. Not (d): no surviving bedrock unique to this node.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "consent-incoherent#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "marxist-materialist",
+      "target_locus": "long",
+      "target_anchor": "The EFIList critique operates at the level of ontology",
+      "adversarial_move": "The node's separation of ontology from political economy is the move a Marxist denies at the root. Historical materialism holds that the atomized individual with pre-social interests, the very consent-bearing subject the objection is built on, is not an ontological given but an ideological artifact of a specific mode of production; 'species-being' and the critique of abstract individualism cut precisely here. So 'even perfect communism leaves non-consensual death' presupposes an ahistorical individual-as-consent-locus that the Marxist treats as historically produced. Grant the suffering-mutability sub-move arguendo and the asymmetry survives it; but the deeper move does not dispute suffering's persistence, it disputes that there is a standpoint-independent individual whose non-consent the wrong attaches to. That is not a demographic or empirical claim the node can answer at its own level; it is the seat-of-standing question.",
+      "class": "d",
+      "grounds": "Two Marxist continuations. The standard one, suffering is capitalism's product not existence's, the node answers (below political economy; even communism leaves aging and death), and its abolitionist upgrade, socialist development could dissolve the biological constants, is met by asymmetry-decoupling: grant abolition arguendo and the no-reason-to-create plus consent-impossibility survive, benatar-asymmetry-attack#long. The surviving move is deeper: historical materialism historicizes the atomized consent-bearing individual itself as an artifact of a mode of production (species-being, the critique of abstract individualism), so the node's ontological-level framing presupposes a standpoint-independent individual-as-consent-locus that the Marxist denies. (a) fails: routing to care-ethics or incommensurability lands on nodes that straddle rather than answer this. Not (b): not local imprecision but a presupposed axiology. (d): terminus is impersonal-vs-person-affecting axiology, relational-holist / seat-of-standing facet, already surfaced in B2; not novel. LOGGED downstream, not authored here: the node's 'richness of experience is not genuine positive value, temporary alleviation of negative states' is a fourth instance of the additivity strong-deflation cluster (neuroscience / virtue-ethics / flow-states), which neuroscience-positive-states#long disowns, per the standing regen-triage lane.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "impersonal-vs-person-affecting axiology",
+          "terminus_routing": "already-surfaced K224 bedrock 1, relational-holist / seat-of-standing facet (consent-bearing individual as historically-contingent, not standpoint-independent); route as registered",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    },
+    {
+      "target_id": "rights-future-generations",
+      "target_locus": "long",
+      "target_anchor": "a right without a claimant is not a right but a rhetorical gesture",
+      "adversarial_move": "The no-claimant argument proves too much. If non-existent beings have no interests, then no one is wronged by being created into misery either, the potential sufferer equally lacking a pre-existence claimant. So the move voiding the right to exist also voids the interest-based duty not to create sufferers. Only an asymmetry rescues one without the other.",
+      "class": "a",
+      "grounds": "Strongest continuation is a symmetry charge: the no-claimant argument the node wields against the right to exist cuts both ways, since a non-existent potential sufferer equally lacks a pre-existence claimant, so the same move that voids the right to exist voids the interest-based duty not to create sufferers. (a): answered by the asymmetry, which is exactly what breaks the symmetry, benatar-asymmetry-attack#long: absent pleasure is no loss, so non-creation of the happy wrongs no one, while absent pain is good, so non-creation of the sufferer is better; the no-claimant point is asymmetry-dependent, and the asymmetry supplies the rescue. Not (b): the node's local task, defeating the right to exist via no-claimant plus the conditional-versus-unconditional distinction plus the infinite-obligations reductio, is done soundly; grounding the duty-not-to-create is a division of labor handled by the asymmetry elsewhere, not a gap this node must fill. Not (d): no new bedrock, the terminus is the already-adjudicated asymmetry, met arguendo.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "C",
+        "date": "2026-07-17",
+        "seat": "K230 (library)"
+      }
+    }
+  ]
+}
