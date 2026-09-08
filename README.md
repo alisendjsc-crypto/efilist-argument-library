@@ -63,9 +63,9 @@ The shippable artifact is a single file: **`combined.html`**. Library, real-worl
 | Field | Value |
 |---|---|
 | File | `combined.html` |
-| Version (pin) | `v4.0.0` |
-| md5 | `e654eabd32fa95e5969d49e6eb15aa87` |
-| Size | `2,963,752` bytes |
+| Version (pin) | `v4.0.1` |
+| md5 | `9d13359e305c6caa3ae64759f3dcc0e6` |
+| Size | `2,963,789` bytes |
 
 That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF). The served `/combined` is held byte-identical to the pin (**pin == live**); a deploy that moves the artifact forces a same-session re-pin.
 
@@ -77,7 +77,7 @@ The binding integrity source is the project canon's `archive_attestation` block 
 
 **Stable at v4.0.0** (canon v38.0 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
 
-The **deployment × grade danger quadrant remains empty**: the three highest-deployment objections — `violence-as-reductio` (27 RWE), `benatar-asymmetry-attack` (15), `ai-fear` (10) — are all B-band. Grade distribution (long, n=81): **A 36 / B 34 / C 11 / 0 ungraded**.
+The **deployment × grade danger quadrant remains empty**: the three highest-deployment objections — `violence-as-reductio` (27 RWE), `benatar-asymmetry-attack` (15), `ai-fear` (10) — are all B-band. Grade distribution (long, n=82): **A 28 / B 53 / C 1 / 0 ungraded**.
 
 ---
 

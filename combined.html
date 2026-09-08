@@ -1647,9 +1647,9 @@ body.high-contrast .objection-header.focused { box-shadow: 0 0 0 1px rgba(107, 9
   Scores shown are depth-adjusted. DISMANTLE responses carry the base score. DECONSTRUCT responses lose approximately 5 points on Completeness and 3 on Robustness. PUNCH responses lose approximately 12 on Completeness and 6 on Robustness. Validity, Soundness, and Autonomy are consistent across depths — the logical structure doesn't change, only the space available to develop and defend it.
 
   <h4>CALIBRATION NOTES</h4>
-  Scores were assigned through systematic close reading of all 81 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Robustness while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
+  Scores were assigned through systematic close reading of all 82 entries across all three depth levels. The scoring reflects structural analysis of argument quality — not agreement or disagreement with the philosophical position. Entries that honestly acknowledge contested premises (e.g., <code>flow-states-csikszentmihalyi</code> acknowledging the open question on intrinsic positive value) may score lower on Robustness while scoring higher on intellectual honesty, which is not a separately tracked axis but influences Soundness.
   <br><br>
-  The highest-scoring entries in the library include: <code>performative-contradiction</code>, <code>epistemic-humility</code>, <code>bitter-childhood</code>, and <code>slippery-slope-eugenics</code> — each scoring A-grade across all five axes. The most common drag across the library is Robustness — the lowest-mean axis, and the sole drag on 32 of 81 nodes.
+  The highest-scoring entries in the library include: <code>performative-contradiction</code>, <code>epistemic-humility</code>, <code>bitter-childhood</code>, and <code>slippery-slope-eugenics</code> — each scoring A-grade across all five axes. The most common drag across the library is Robustness — the lowest-mean axis, the sole weakest axis on 31 of 82 nodes and tying for weakest on 34 more.
 
   <div id="rsi-worked-example" class="rsi-worked-example">
     <h4>WORKED EXAMPLE — <code>privileged-first-world</code> (LONG FORM)</h4>
@@ -1724,7 +1724,7 @@ band      0.879656 &lt; 0.88              → B</pre>
   <div id="map-container">
     <svg id="map-graph"></svg>
     <div id="map-stats">
-      <span>35</span> MECHANISMS &middot; <span>81</span> OBJECTIONS &middot; <span>140</span> CONNECTIONS<br>
+      <span>35</span> MECHANISMS &middot; <span>82</span> OBJECTIONS &middot; <span>142</span> CONNECTIONS<br>
       CLICK A NODE TO EXPLORE
     </div>
     <div id="map-legend">
@@ -1780,7 +1780,7 @@ band      0.879656 &lt; 0.88              → B</pre>
     <h4>PHILOSOPHICAL DEPENDENCY GRAPH &mdash; MAP 3 METHODOLOGY</h4>
     This visualization answers the question the Mechanism Web cannot: <em>what does each response actually depend on?</em> Where Map 2 diagnoses the psychological origin of objections, Map 3 exposes the philosophical load-bearing structure of responses. It shows which foundational premises each rebuttal invokes, how strongly it depends on them, and where the library is structurally vulnerable to attack.
     <br><br>
-    The graph displays 13 premise nodes connected to 82 objection nodes via 255 dependency edges. Each edge represents an invocation of a philosophical premise within the response text. The graph was constructed through close reading of all 81 entries across all three response depths, with a systematic manual pass across the five previously undercounted premises completed in v3.5.
+    The graph displays 13 premise nodes connected to 82 objection nodes via 255 dependency edges. Each edge represents an invocation of a philosophical premise within the response text. The graph was constructed through close reading of all 82 entries across all three response depths, with a systematic manual pass across the five previously undercounted premises completed in v3.5.
 
     <h4>THE TWO-LAYER ARCHITECTURE</h4>
     Premises are divided into two functional layers:
@@ -1870,7 +1870,7 @@ band      0.879656 &lt; 0.88              → B</pre>
     These three inference methods combine to generate the full transition matrix for Map 1, turning the library from a static reference tool into a dynamic debate navigation system.
 
     <h4>CONSTRUCTION METHODOLOGY</h4>
-    Dependency edges were identified through systematic close reading of all 81 entries across all three response depths (PUNCH, DECONSTRUCT, DISMANTLE). For each response, every philosophical premise explicitly or implicitly invoked was identified and classified by strength. The initial automated pass used keyword detection. The v3.5 manual pass supplemented this with human-grade reading specifically targeting implicit invocations &mdash; cases where a response operates on a premise without naming it. Strength classification followed the structural collapse test described above. All edge additions and classifications are documented in the review notes accessible through the graph interface.
+    Dependency edges were identified through systematic close reading of all 82 entries across all three response depths (PUNCH, DECONSTRUCT, DISMANTLE). For each response, every philosophical premise explicitly or implicitly invoked was identified and classified by strength. The initial automated pass used keyword detection. The v3.5 manual pass supplemented this with human-grade reading specifically targeting implicit invocations &mdash; cases where a response operates on a premise without naming it. Strength classification followed the structural collapse test described above. All edge additions and classifications are documented in the review notes accessible through the graph interface.
   </div>
   <div id="dep-container">
     <svg id="dep-graph"></svg>
@@ -2466,7 +2466,7 @@ function initRwe() {
   <span class="subtitle">on the axiom this library does not derive</span>
   <hr class="lede" />
 
-  <p class="lead">This library catalogs 81 ways the world declines to hear the case against birth. It maps 2,886 transitions between defensive postures. It names 35 mechanisms by which the objection is metabolized into harmlessness. What it does not do — what no library can do — is prove that any of this matters.</p>
+  <p class="lead">This library catalogs 82 ways the world declines to hear the case against birth. It maps 2,886 transitions between defensive postures. It names 35 mechanisms by which the objection is metabolized into harmlessness. What it does not do — what no library can do — is prove that any of this matters.</p>
 
   <p>The whole apparatus rests on a single claim it does not derive: that suffering has priority. That the prevention of pain weighs more than the generation of pleasure. That the cries of the hurt place a demand on us that the silence of the unborn does not. This is the floor the library stands on. It is also a floor that nothing supports.</p>
 
@@ -10533,7 +10533,7 @@ var DEP_GRAPH_DATA = {"nodes":[{"id":"prem_benatars-asymmetry","type":"premise",
 
 // K92 dep-graph render-from-data: dependent-objection counts derived from the authoritative
 // links array, not the now-inert per-node strongCount/weakCount/totalCount fields baked into
-// DEP_GRAPH_DATA (those drifted: stored sum 245 vs 254 links; fields left in place, strip on
+// DEP_GRAPH_DATA (those drifted: stored sum 245 vs 255 links; fields left in place, strip on
 // next literal touch). depCount(node) is the single read path; DEP_DERIVED self-validates.
 var DEP_DERIVED = (function() {
   var m = {};

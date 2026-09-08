@@ -14,6 +14,38 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.0.1] — 2026-09-08
+
+**MINOR** by the invariants convention. **No content change.** The corpus, the grading ledger and both graph literals are byte-unchanged in substance: this release re-stamps display strings that had gone stale against the v4.0.0 cut, and corrects one methodology-provenance count. Seven display loci in `combined.html`, one stale grade line in `README.md`, one front-door badge.
+
+**Why a new version rather than a re-pinned v4.0.0.** A reader who pulled v4.0.0 and hashes it against a pin table that now reads differently could not tell *superseded* from *corrupt* — and the film tells them a mismatch means corrupt. One version maps to one hash, so the hash a reader computes has exactly one release it can belong to.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.0.0 | `e654eabd32fa95e5969d49e6eb15aa87` | 2,963,752 |
+| **current — v4.0.1** | **`9d13359e305c6caa3ae64759f3dcc0e6`** | **2,963,789** |
+
+An old copy that hashes to the superseded value is diagnosable, not suspect.
+
+### Changed
+
+- **`combined.html`** — seven display loci, executed as a line-indexed pass with a per-line anchor assertion: masthead `81 → 82` objections and `140 → 142` connections (L1727); `catalogs 81 ways → 82` (L2469); `close reading of all 81 → 82 entries` in all three methodology panels (L1650, L1783, L1873); the DEP_GRAPH_DATA drift note `245 vs 254 → 245 vs 255` (L10536).
+- **Robustness line (L1652)** — was `the sole drag on 32 of 81 nodes`, a figure that goes stale whenever a single node is regenerated, which is how it went stale. Now `the sole weakest axis on 31 of 82 nodes and tying for weakest on 34 more`. Both figures recomputed independently from `rebuttal_grading_ledger.json`.
+- **`README.md`** — pin table takes the v4.0.1 identifier, the new md5 and the new byte count; grade distribution corrected from the pre-v4.0 `n=81: A 36 / B 34 / C 11` to **`n=82: A 28 / B 53 / C 1 / 0 ungraded`**, recomputed from the ledger.
+- **`libraries/index.html`** — front-door badge `pinned v4.0.0 → v4.0.1`.
+- **`efilist_argument_library_v4_0_0.json`** — `version` field only. **Filename stays frozen**, per convention.
+
+### Held — deliberately not swept
+
+- **`combined.html` L1722** — *"The 35 mechanism clusters were derived bottom-up from the original 81 objections…"* `original` makes it historically exact; it is the sentence explaining why the mechanism count holds at 35 across v4.0, and it is an on-screen beat in the showcase film. Sweeping it to 82 would replace a true claim with a false one. **Flagged do-not-touch: a future count sweep must not "fix" it.**
+- **`<span>35</span> MECHANISMS`** — unchanged; the eighty-second objection reused existing mechanisms rather than minting a thirty-sixth.
+- **The `.jsx` provenance line** — its only `4.0.0` records that *"the v4.0.0 cut folded at K219 (2026-07-11)"*, which is true history, not a live version stamp. Re-stamping it would falsify a dated record — the same error class as L1722. Not stamped.
+- **`rebuttal_grading_ledger.json`** — carries no version field to stamp.
+
+### Open
+
+- **Invariant defect: `DEP_GRAPH_DATA` per-node stored link sums total 245 against an actual 255.** Fields left in place; strip in a post-release maintenance pass. **Do not strip during video production** — it mutates the data literal and re-opens render risk on a filmed artifact.
+
 ## [v4.0.0] — 2026-07-11
 
 **MINOR** by the invariants convention (invariants subtree mutated — the first corpus-topology change since the v3.8.0 cut), released as the **v4.0.0 content cut**. Invariants anchor `c18693f413066e1916eb6281a376d2db` → `f5347636b5becaf25e4759b620090118` (the v3.8.0-era anchor predates the v3.9.12 graph-invariant resync; both prior states preserved in canon history).
