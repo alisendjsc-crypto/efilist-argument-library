@@ -187,6 +187,64 @@
     setZoom(zoom * step, e.clientX, e.clientY);
   }
 
+  /* ---- THE STAGE BREAKS `body >` SELECTORS, SO MIRROR THEM ------------------------------------
+     The stage wrapper is what carries the camera transform, and it has to be a real element between
+     <body> and the content -- which silently stops every `body > #x` rule in the page's own
+     stylesheet from matching. On the wings nothing uses that shape. On the FLAGSHIP the three
+     top-level sections are switched with exactly that shape:
+
+         body > #combined-library, body > #combined-rwe, body > #combined-coda { display: none; }
+         body[data-active-view="rwe"] > #combined-rwe { display: block; }
+
+     so wrapping turned the whole top-level navigation off: every section rendered at once, the
+     library tour fired against a page showing five views simultaneously, and the page's own script
+     threw setting textContent on an element it no longer expected to find. Measured before and
+     after the wrap on the same page, which is the only way to tell this from a page behaviour.
+
+     The fix is mechanical rather than hand-written: walk the page's own rules, and for any selector
+     with a `body ... >` combinator, inject a copy with `.wz-stage` spliced in. Every mirrored rule
+     gains exactly one class of specificity, so their order relative to each other is preserved, and
+     the originals no longer match anything at all. Rules are mirrored, never edited. */
+  function mirrorBodyChildRules() {
+    if (!document.querySelector('.wz-stage')) return 0;
+    if (document.getElementById('wz-stage-shim')) return 0;
+    var RE = /\bbody((?:[.#\[:][^\s>,]*)*)\s*>/g, out = [], n = 0;
+    function walk(rules) {
+      for (var i = 0; i < rules.length; i++) {
+        var r = rules[i];
+        if (r.cssRules && r.conditionText !== undefined) {          // @media / @supports
+          var inner = [];
+          for (var j = 0; j < r.cssRules.length; j++) {
+            var t = one(r.cssRules[j]); if (t) inner.push(t);
+          }
+          if (inner.length) out.push('@media ' + r.conditionText + '{' + inner.join('') + '}');
+          continue;
+        }
+        var t2 = one(r); if (t2) out.push(t2);
+      }
+    }
+    function one(r) {
+      if (!r.selectorText || !r.style) return null;
+      RE.lastIndex = 0;
+      if (!RE.test(r.selectorText)) return null;
+      RE.lastIndex = 0;
+      n++;
+      return r.selectorText.replace(RE, 'body$1 .wz-stage >') + '{' + r.style.cssText + '}';
+    }
+    for (var s = 0; s < document.styleSheets.length; s++) {
+      var rules; try { rules = document.styleSheets[s].cssRules; } catch (e) { continue; }
+      if (rules) walk(rules);
+    }
+    if (!out.length) return 0;
+    var el = document.createElement('style');
+    el.id = 'wz-stage-shim';
+    el.textContent = '/* mirrored from the page\'s own `body >` rules, which the stage wrapper\n'
+                   + '   would otherwise stop matching. ' + n + ' rule(s). */\n' + out.join('\n');
+    document.head.appendChild(el);
+    return n;
+  }
+  window.wzStageShim = mirrorBodyChildRules;
+
   window.wzInit = function () {
     wrapStage();
     gradeBg();
@@ -227,6 +285,7 @@
     addEventListener('mouseleave', rest);
     window.wzRest = rest;
     i = recall();
+    mirrorBodyChildRules();
     apply(); rest(); hint();
   };
 })();
@@ -561,73 +620,137 @@
    wuld-tour.js
    ============================================================================================== */
 
-/* wuld-tour.js -- the first-visit walkthrough. One feature at a time, everything else darkened.
+/* wuld-tour.js -- per-view walkthroughs. One feature at a time, everything else darkened.
  *
- * IT OWNS THE FIRST VISIT, AND THAT IS WHY IT RUNS AT PARSE TIME. The one-line hint in wuld-vfx.js
- * says the same thing as step 1 of this tour, and a first-time reader who gets both is being told
- * twice. wzInit() fires hint() during boot, before any init function here could run, so the decision
- * has to be made earlier than boot: the block at the bottom of this file marks the hint as seen the
- * moment the script parses, if and only if the tour is actually going to run. On every later visit
- * the tour stays away and the hint resumes its normal once-per-session job.
+ * ONE TOUR PER VIEW, NOT ONE PER PAGE. The flagship is five surfaces behind one URL -- the library,
+ * the mechanism web, the dependency graph, the argument flow map and the real-world examples -- and
+ * a reader who opens the dependency graph for the first time three weeks after their first visit
+ * has had no introduction to it at all. Each view therefore carries its own short tour and its own
+ * once-ever flag, fired when that view is ACTIVATED rather than when the page loads.
  *
- * ONCE EVER, NOT ONCE PER SESSION -- unlike the hint. A walkthrough is worth sitting through once;
- * meeting it again next week is an insult. localStorage can throw (private windows, blocked site
- * data) and every touch is wrapped; a tour that cannot record itself simply never runs, which is
- * the harmless direction here, the opposite of the hint's.
+ * THREE STEPS EACH, except the library's six. A tour is a tax on the reader's attention and the
+ * only honest justification for it is that the thing genuinely is not self-evident. The last step
+ * of every view tour is its METHODOLOGY button, because that is the affordance readers most often
+ * never find and the one that most changes how the view should be read.
  *
- * THE COPY BELOW IS A DRAFT. Edit STEPS[].text freely; nothing else reads it. */
+ * ALWAYS SKIPPABLE: Skip, Escape, and clicking anywhere off the card, at every step. Never runs
+ * under prefers-reduced-motion. The chin's ? button re-opens the tour for whatever view you are
+ * looking at, seen or not.
+ *
+ * THE COPY BELOW IS A DRAFT. Edit the `text` strings freely; nothing else reads them. */
 (function () {
-  var DONE = 'wz-tour-done';
   var H = document.documentElement;
+  var PREFIX = 'wz-tour:';
 
-  var STEPS = [
-    { sel: '.wz-power',
-      text: 'Screen effects. This steps the whole layer down — full effects, then colour and type only, then nothing at all. It remembers what you chose.' },
-    { sel: '.wz-mag',
-      text: 'Magnifier. Hold Shift and scroll to zoom anywhere on the page, or press this and zoom with a plain wheel. Escape returns to 1×.' },
-    { sel: '.wz-mute',
-      text: 'Sound. A quiet mechanical room tone and small cues, only while effects are on. This switches it off and keeps it off.' },
-    { sel: '#mode-standard,#mode-legible,#mode-hc,#mode-both|union',
-      text: 'Reading modes. Legible lightens the page, High contrast strengthens it, Both does both. Your choice is remembered.' },
-    { sel: 'article.obj',
-      text: 'Every objection is a card: the claim as people actually put it, the words they use for it, a diagnosis of where it goes wrong, and the full response behind [+].' },
-    { sel: '.wz-fb',
-      text: 'Something wrong, or missing? Feedback opens a mail draft that already names the card — so you never have to describe which one you meant.' }
+  function vis(e) { return !!(e && e.getClientRects().length); }
+  function q(s) { return document.querySelector(s); }
+
+  /* Views are resolved most-specific first: `library` is the fallback, so it must be last or it
+     would answer for every page that has a card on it -- including the graph views, which sit
+     inside the same library section. */
+  var TOURS = [
+    { key: 'map', name: 'the mechanism web',
+      when: function () { return vis(q('#map-view')); },
+      steps: [
+        { sel: '#map-graph',
+          text: 'The mechanism web. Each node is a psychological mechanism an objection runs on, and each edge is a relation between two of them. Drag to move, scroll to zoom, click an edge for its full rationale.' },
+        { sel: '#map-view .map-controls button, #map-view button:not(.map-methodology-btn)|union',
+          text: 'Legend explains the shapes and the colours. Reset puts the layout back where it started, which is worth knowing before you drag anything.' },
+        { sel: '.map-methodology-btn',
+          text: 'Methodology. What question this map answers, how the edges were derived, and — as important — what it does not claim.' }
+      ] },
+    { key: 'dep', name: 'the dependency graph',
+      when: function () { return vis(q('#dep-view')); },
+      steps: [
+        { sel: '#dep-graph',
+          text: 'The dependency graph. An arrow from one claim to another means the first one’s force depends on the second holding. Cut a load-bearing claim and everything downstream of it goes with it.' },
+        { sel: '#dep-view button:not(.dep-methodology-btn)|union',
+          text: 'Toggle weak hides the low-confidence links, which is the fastest way to see the structure that is actually carrying the argument.' },
+        { sel: '.dep-methodology-btn',
+          text: 'Methodology. How a dependency was decided, what counts as weak, and where the graph is provisional.' }
+      ] },
+    { key: 'map1', name: 'the argument flow map',
+      when: function () { return vis(q('#map1-view')); },
+      steps: [
+        { sel: '#m1-graph',
+          text: 'The argument flow map. It follows a single exchange from the opening claim to wherever it terminates — concession, regress, or a refusal to continue.' },
+        { sel: '#m1btn-blended,#m1btn-sophisticate,#m1btn-defender,#m1btn-drifter|union',
+          text: 'Interlocutor modes. The same argument walked as a different opponent would walk it. The shape of the exchange changes more than the content does.' },
+        { sel: '.m1-methodology-btn',
+          text: 'Methodology. How these paths were built and what a terminal node is claiming.' }
+      ] },
+    { key: 'examples', name: 'the examples view',
+      when: function () { return vis(q('#combined-rwe')) && !vis(q('#map-view')) && !vis(q('#dep-view')) && !vis(q('#map1-view')); },
+      steps: [
+        { sel: '#view-tabs',
+          text: 'Real-world examples: things people actually said, grouped three ways — by the objection they instantiate, by who said it, or by the archetype they fit.' },
+        { sel: '.filter-bar',
+          text: 'Filters narrow by polarity, archetype and speaker type. Reset clears them all at once.' },
+        { sel: '#sidebar',
+          text: 'Pick anything on the left and it opens on the right, with the source and the reasoning attached.' }
+      ] },
+    { key: 'library', name: 'this page',
+      /* The wings and the flagship are different markup for the same idea: the wings render
+         `article.obj` cards, the flagship renders `.objection-header` rows into #results. Steps
+         below are written for both and resolve() drops whichever set is not on this page, so the
+         wings land on six and the flagship on seven without either being a special case. Visibility
+         matters here, not mere presence: on the flagship the cards stay in the DOM while a graph
+         view is showing, and this is the fallback tour checked last. */
+      when: function () { return vis(q('article.obj, .lib-card, .objection-header[id^="obj-"]')); },
+      steps: [
+        { sel: '.wz-power',
+          text: 'Screen effects. This steps the whole layer down — full effects, then colour and type only, then nothing at all. It remembers what you chose.' },
+        { sel: '.wz-mag',
+          text: 'Magnifier. Hold Shift and scroll to zoom anywhere on the page, or press this and zoom with a plain wheel. Escape returns to 1×.' },
+        { sel: '.wz-mute',
+          text: 'Sound. A quiet mechanical room tone and small cues, only while effects are on. This switches it off and keeps it off.' },
+        { sel: '#mode-standard,#mode-legible,#mode-hc,#mode-both|union',
+          text: 'Reading modes. Legible lightens the page, High contrast strengthens it, Both does both. Your choice is remembered.' },
+        { sel: '.view-switcher',
+          text: 'Four views of the same corpus \u2014 the library, the mechanism web, the dependency graph and the argument flow map. Each has its own short tour the first time you open it.' },
+        { sel: 'article.obj',
+          text: 'Every objection is a card: the claim as people actually put it, the words they use for it, a diagnosis of where it goes wrong, and the full response behind [+].' },
+        { sel: '.objection-header',
+          text: 'Every objection is a row: its tier, the register it belongs to, and the claim as people actually put it. Click one to open the response underneath it.' },
+        { sel: '.rsi-methodology-btn',
+          text: 'RSI methodology. How every response here was graded, what the five inputs are, and what a grade is not claiming.' },
+        { sel: '.wz-fb',
+          text: 'Something wrong, or missing? Feedback opens a mail draft that already names the card — so you never have to describe which one you meant.' }
+      ] }
   ];
 
-  var live = [], idx = 0, mask = [], ring, card, body, dots, prevFocus, open = false;
+  var live = [], idx = 0, mask = [], ring, card, body, dots, prevFocus, open = false, current = null;
 
   function reduced() { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
-  function seen() { try { return localStorage.getItem(DONE) === '1'; } catch (e) { return true; } }
-  function mark() { try { localStorage.setItem(DONE, '1'); } catch (e) {} }
+  function seen(k) { try { return localStorage.getItem(PREFIX + k) === '1'; } catch (e) { return true; } }
+  function mark(k) { try { localStorage.setItem(PREFIX + k, '1'); } catch (e) {} }
 
-  /* A step whose target is not on this page is not a step. /libraries/ has no objection cards and
-     /troubleshooting/ has no chin furniture worth pointing at, so the set is resolved per page
-     rather than assumed -- an empty spotlight pointing at nothing is worse than a shorter tour. */
-  function resolve() {
+  function activeTour() {
+    for (var i = 0; i < TOURS.length; i++) { if (TOURS[i].when()) return TOURS[i]; }
+    return null;
+  }
+
+  /* "a,b,c|union" spotlights the box containing all matches; a plain selector spotlights one. A step
+     whose target is not on this page is not a step -- resolving per view rather than assuming keeps
+     an empty spotlight pointing at nothing from ever being drawn. */
+  function resolve(tour) {
     var out = [];
-    for (var i = 0; i < STEPS.length; i++) {
-      /* "a,b,c|union" spotlights the box that contains all of them. The mode row has no class of
-         its own; its container is full-width, so ringing the container drew a box running far past
-         the last button into empty space. Matching the buttons by LABEL TEXT -- the first thing I
-         reached for -- would have tied the tour to editorial copy that is free to change; the ids
-         do not change, and the union of four of them is exactly the row. */
-      var sel = STEPS[i].sel, uni = false;
+    for (var i = 0; i < tour.steps.length; i++) {
+      var sel = tour.steps[i].sel, uni = false;
       if (sel.slice(-6) === '|union') { sel = sel.slice(0, -6); uni = true; }
-      var els = uni ? [].slice.call(document.querySelectorAll(sel))
-                    : [document.querySelector(sel)];
-      els = els.filter(function (e) { return e && e.getClientRects().length; });
-      if (els.length) out.push({ els: els, text: STEPS[i].text });
+      var els = uni ? [].slice.call(document.querySelectorAll(sel)) : [q(sel)];
+      els = els.filter(vis);
+      if (els.length) out.push({ els: els, text: tour.steps[i].text });
     }
     return out;
   }
 
   function build() {
-    /* FOUR PANELS AROUND THE TARGET, not one overlay with a hole. The single-element version used
-       a huge box-shadow spread and then had to raise the spotlit element above it -- which, for a
-       chin button, meant raising the whole chin, leaving the entire row undarkened and the ring
-       stranded behind it. Panels cover everything EXCEPT the target, so nothing on the page is ever
-       covered and no z-index of anyone else's has to be touched. */
+    /* FOUR PANELS AROUND THE TARGET, not one overlay with a hole. The single-element version used a
+       huge box-shadow spread and then had to raise the spotlit element above it -- which, for a chin
+       button, meant raising the whole chin, leaving the row undarkened and the ring stranded behind
+       it. Panels cover everything EXCEPT the target, so nothing is covered and no z-index of anyone
+       else's has to be touched. */
     for (var m = 0; m < 4; m++) {
       var d = document.createElement('div');
       d.className = 'wz-tour-mask'; d.setAttribute('aria-hidden', 'true');
@@ -641,20 +764,15 @@
     card.className = 'wz-tour-card';
     card.setAttribute('role', 'dialog');
     card.setAttribute('aria-modal', 'true');
-    card.setAttribute('aria-label', 'A quick tour of this page');
-
     body = document.createElement('p'); body.className = 'wz-tour-text';
     dots = document.createElement('span'); dots.className = 'wz-tour-dots';
-
     var nav = document.createElement('div'); nav.className = 'wz-tour-nav';
-    var skip = mkbtn('Skip', 'Skip the tour', function () { finish(); });
-    skip.className = 'wz-tour-skip';
+    var skip = mkbtn('Skip', 'Skip the tour', function () { finish(); }); skip.className = 'wz-tour-skip';
     var prev = mkbtn('←', 'Previous', function () { go(idx - 1); });
     var next = mkbtn('→', 'Next', function () { go(idx + 1); });
     nav.appendChild(skip); nav.appendChild(dots); nav.appendChild(prev); nav.appendChild(next);
     card.appendChild(body); card.appendChild(nav);
-    card._prev = prev; card._next = next; card._skip = skip;
-
+    card._prev = prev; card._next = next;
     document.body.appendChild(card);
   }
   function mkbtn(label, aria, fn) {
@@ -668,8 +786,8 @@
     var r = els[0].getBoundingClientRect();
     if (els.length === 1) return r;
     var t = r.top, l = r.left, bo = r.bottom, g = r.right;
-    for (var q = 1; q < els.length; q++) {
-      var z = els[q].getBoundingClientRect();
+    for (var i = 1; i < els.length; i++) {
+      var z = els[i].getBoundingClientRect();
       t = Math.min(t, z.top); l = Math.min(l, z.left);
       bo = Math.max(bo, z.bottom); g = Math.max(g, z.right);
     }
@@ -684,25 +802,24 @@
       e.style.left = Math.max(0, a) + 'px'; e.style.top = Math.max(0, b) + 'px';
       e.style.width = Math.max(0, c) + 'px'; e.style.height = Math.max(0, d) + 'px';
     }
-    set(mask[0], 0, 0, W, y);                    // above
-    set(mask[1], 0, y + h, W, Hh - (y + h));     // below
-    set(mask[2], 0, y, x, h);                    // left
-    set(mask[3], x + w, y, W - (x + w), h);      // right
+    set(mask[0], 0, 0, W, y);
+    set(mask[1], 0, y + h, W, Hh - (y + h));
+    set(mask[2], 0, y, x, h);
+    set(mask[3], x + w, y, W - (x + w), h);
     set(ring, x, y, w, h);
     return [Math.round(r.top), Math.round(r.left), Math.round(r.width), Math.round(r.height)];
   }
 
   function place(els) {
-    /* A TALL TARGET IS NOT CENTRED. An objection card can be taller than the viewport, and
-       block:'center' then puts its middle in the middle -- both ring edges off-screen, so the
-       spotlight has no visible boundary at all. Showing the top of it is what a reader needs. */
+    /* A TALL TARGET IS NOT CENTRED. A card or a graph can exceed the viewport, and block:'center'
+       then puts its middle in the middle -- both ring edges off-screen, so the spotlight has no
+       visible boundary at all. Showing the top of it is what a reader needs. */
     var tall = unionRect(els).height > innerHeight * 0.7;
     els[0].scrollIntoView({ block: tall ? 'start' : 'center', behavior: reduced() ? 'auto' : 'smooth' });
 
     /* WAIT FOR THE SCROLL TO SETTLE. Smooth scrolling runs for a few hundred milliseconds, so a
-       rect read two frames later is a rect mid-flight -- which is exactly what it drew: a box
-       spanning the bottom of one card and the top of the next, matching no element on the page.
-       This re-reads until the rect stops moving, or gives up after 800ms and draws where it is. */
+       rect read two frames later is a rect in flight -- which is exactly what it drew: a box
+       spanning the bottom of one card and the top of the next, matching no element on the page. */
     var stable = 0, last = null, t0 = performance.now();
     (function tick() {
       if (!open) return;
@@ -711,15 +828,13 @@
       else stable = 0;
       last = now;
       if (stable < 2 && performance.now() - t0 < 800) { requestAnimationFrame(tick); return; }
-
       var r = unionRect(els), cw = Math.min(340, innerWidth - 24);
       card.style.width = cw + 'px';
       var ch = card.offsetHeight || 120;
-      var below = r.bottom + 6 + 12;
+      var below = r.bottom + 18;
       var top = (below + ch < innerHeight - 12) ? below : Math.max(12, r.top - 18 - ch);
-      var left = r.left + r.width / 2 - cw / 2;
       card.style.top = Math.min(top, Math.max(12, innerHeight - ch - 12)) + 'px';
-      card.style.left = Math.max(12, Math.min(left, innerWidth - cw - 12)) + 'px';
+      card.style.left = Math.max(12, Math.min(r.left + r.width / 2 - cw / 2, innerWidth - cw - 12)) + 'px';
     })();
   }
 
@@ -737,9 +852,9 @@
 
   function onKey(e) {
     if (!open) return;
-    if (e.key === 'Escape')     { e.preventDefault(); finish(); }
+    if (e.key === 'Escape') { e.preventDefault(); finish(); }
     else if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
-    else if (e.key === 'ArrowLeft')  { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx - 1); }
     else if (e.key === 'Tab') {
       /* Focus stays inside the dialog. Without this a keyboard reader tabs straight out into a page
          that is visually blacked out, which is the worst of both. */
@@ -750,11 +865,13 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
   }
-  function onDown(e) { if (open && !card.contains(e.target)) finish(); }   // clicking off ends it
+  function onDown(e) { if (open && !card.contains(e.target)) finish(); }
 
   function finish() {
     if (!open) return;
-    open = false; mark();
+    open = false;
+    if (current) mark(current.key);
+    current = null;
     H.classList.remove('wz-touring');
     removeEventListener('keydown', onKey, true);
     removeEventListener('pointerdown', onDown, true);
@@ -767,10 +884,11 @@
   }
   function onResize() { if (open && live[idx]) place(live[idx].els); }
 
-  function start() {
-    if (open) return 0;
-    live = resolve();
+  function start(tour) {
+    if (open || !tour) return 0;
+    live = resolve(tour);
     if (live.length < 2) return 0;          // one lonely spotlight is not a walkthrough
+    current = tour;
     prevFocus = document.activeElement;
     build(); open = true;
     H.classList.add('wz-touring');
@@ -782,43 +900,52 @@
     return live.length;
   }
 
-  /* Console entry point, and the only way back in once it has been seen. A permanent "?" button
-     would be a seventh piece of chrome earning its keep two minutes a lifetime. */
-  window.wzTour = function () { return start(); };
+  /* A VIEW CHANGES ONLY WHEN SOMETHING IS CLICKED, so the check rides on clicks rather than on a
+     standing observer over the whole document. The delay lets the view actually swap first. */
+  var pending = null;
+  function maybe() {
+    if (open) return;
+    var t = activeTour();
+    if (t && !seen(t.key)) start(t);
+  }
+  function onClickCheck() { clearTimeout(pending); pending = setTimeout(maybe, 420); }
+
+  window.wzTour = function () { return start(activeTour()); };   // console entry point
 
   window.wzTourInit = function () {
-    if (seen() || reduced()) return 0;      // reduced motion: a moving spotlight is the whole idea
-    /* ONLY ON A LIBRARY SURFACE. The chin exists on every page the layer touches, so a page with
-       nothing else on it still resolves three steps and passed the "enough steps" test -- which is
-       how /troubleshooting/ came to run a tour. That page is where a reader lands when the site is
-       BROKEN; a walkthrough of screen effects is the last thing they want, and it would spend the
-       once-ever flag so the real tour never runs on a wing. The tour therefore requires an
-       objection card or a library card, not merely a chin.
-       The cards are rendered from JSON after load, so this waits for one rather than assuming. If
-       none ever arrives the tour does NOT fall back to a shorter one -- it stays away, and the
-       once-ever flag is left unspent. */
-    /* IS THIS A LIBRARY SURFACE AT ALL? The mode buttons carry stable ids and are present in the
-       STATIC html of every wing and of the index, and absent from /troubleshooting/ -- so the
-       question is answerable at parse time, before any card has been fetched. */
-    if (!document.querySelector('#mode-standard, #mode-legible')) return 0;
-    if (document.querySelector('.lib-card')) { setTimeout(start, 250); return 1; }
-    var started = false, t = null, obs = null;
-    function once() {
-      if (started) return; started = true;
-      obs && obs.disconnect(); clearTimeout(t);
-      if (document.querySelector('article.obj')) start();
+    /* The ? button is not gated on anything: it is the way back in after a tour has been seen, and
+       it runs the tour for whatever view is in front of you rather than offering a menu of five. */
+    var chin = q('.wz-chin');
+    if (chin && !q('.wz-help')) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'wz-help'; b.textContent = '?';
+      b.setAttribute('title', 'Tutorial for this view');
+      b.setAttribute('aria-label', 'Show the tutorial for this view');
+      b.addEventListener('click', function (e) { e.stopPropagation(); start(activeTour()); });
+      chin.appendChild(b);
     }
-    t = setTimeout(once, 2500);
+    if (reduced()) return 0;                 // a moving spotlight is the whole idea
+    addEventListener('click', onClickCheck, true);
+    /* Cards and graphs are built after load, so the first check waits for one rather than assuming.
+       If none ever arrives, no tour runs and no flag is spent -- /troubleshooting/ has a chin but no
+       library surface, and a walkthrough of screen effects is the last thing wanted by someone who
+       landed there because the site would not load. */
+    if (q('article.obj, .lib-card, #map-view')) { setTimeout(maybe, 300); return 1; }
     if (window.MutationObserver) {
-      obs = new MutationObserver(function () { if (document.querySelector('article.obj')) setTimeout(once, 250); });
+      var obs = new MutationObserver(function () {
+        if (q('article.obj, .lib-card')) { obs.disconnect(); setTimeout(maybe, 300); }
+      });
       obs.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function () { obs.disconnect(); }, 6000);
     }
     return 1;
   };
 
-  /* PARSE TIME, not init time -- see the header. Claiming the hint's key here is what stops the
-     reader being told about the power button twice. */
-  if (!seen() && !reduced() && document.querySelector('#mode-standard, #mode-legible')) {
+  /* PARSE TIME, not init time. The one-line hint in wuld-vfx.js says the same thing as the library
+     tour's first step, and wzInit() fires hint() during boot -- before any init function here could
+     run. Claiming the hint's key here is what stops a first-time reader being told twice, and it is
+     claimed only on a page that can actually run that tour. */
+  if (!reduced() && !seen('library') && q('#mode-standard, #mode-legible')) {
     try { sessionStorage.setItem('wz-hint-seen', '1'); } catch (e) {}
   }
 })();

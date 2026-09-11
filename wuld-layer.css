@@ -397,6 +397,18 @@ html.wz-on nav.top-nav{
  * overlaps it. That arithmetic is the same mistake the magnifier made against the power button
  * (offset 42 against a 44px target, 2px of overlap at every width); once is a bug, twice would be
  * not reading the note. */
+/* The way back into a tour once it has been seen. Fourth in the chin row rather than a top-of-page
+   label, because the tours are the layer's own artefact and the layer's controls live here -- and
+   because it runs the tour for the view in front of you rather than offering a menu of five. At
+   320px the row now reaches 194px from the right edge, which is why the wordmark hides below 420. */
+.wz-help{
+  position:absolute; right:calc(max(1.0vw,6px) + 150px); top:50%; transform:translateY(-50%);
+  width:44px; height:44px; display:flex; align-items:center; justify-content:center;
+  background:none; border:0; cursor:pointer; padding:0;
+  color:var(--wz-mark); opacity:.75; font:700 .95em/1 ui-monospace,"IBM Plex Mono",Menlo,monospace;
+}
+.wz-help:hover{ opacity:1; }
+.wz-help:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
 .wz-mute{
   position:absolute; right:calc(max(1.0vw,6px) + 100px); bottom:50%; transform:translateY(50%);
   min-width:44px; min-height:44px;
