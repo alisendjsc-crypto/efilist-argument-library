@@ -556,6 +556,273 @@
   };
 })();
 
+
+/* ==============================================================================================
+   wuld-tour.js
+   ============================================================================================== */
+
+/* wuld-tour.js -- the first-visit walkthrough. One feature at a time, everything else darkened.
+ *
+ * IT OWNS THE FIRST VISIT, AND THAT IS WHY IT RUNS AT PARSE TIME. The one-line hint in wuld-vfx.js
+ * says the same thing as step 1 of this tour, and a first-time reader who gets both is being told
+ * twice. wzInit() fires hint() during boot, before any init function here could run, so the decision
+ * has to be made earlier than boot: the block at the bottom of this file marks the hint as seen the
+ * moment the script parses, if and only if the tour is actually going to run. On every later visit
+ * the tour stays away and the hint resumes its normal once-per-session job.
+ *
+ * ONCE EVER, NOT ONCE PER SESSION -- unlike the hint. A walkthrough is worth sitting through once;
+ * meeting it again next week is an insult. localStorage can throw (private windows, blocked site
+ * data) and every touch is wrapped; a tour that cannot record itself simply never runs, which is
+ * the harmless direction here, the opposite of the hint's.
+ *
+ * THE COPY BELOW IS A DRAFT. Edit STEPS[].text freely; nothing else reads it. */
+(function () {
+  var DONE = 'wz-tour-done';
+  var H = document.documentElement;
+
+  var STEPS = [
+    { sel: '.wz-power',
+      text: 'Screen effects. This steps the whole layer down — full effects, then colour and type only, then nothing at all. It remembers what you chose.' },
+    { sel: '.wz-mag',
+      text: 'Magnifier. Hold Shift and scroll to zoom anywhere on the page, or press this and zoom with a plain wheel. Escape returns to 1×.' },
+    { sel: '.wz-mute',
+      text: 'Sound. A quiet mechanical room tone and small cues, only while effects are on. This switches it off and keeps it off.' },
+    { sel: '#mode-standard,#mode-legible,#mode-hc,#mode-both|union',
+      text: 'Reading modes. Legible lightens the page, High contrast strengthens it, Both does both. Your choice is remembered.' },
+    { sel: 'article.obj',
+      text: 'Every objection is a card: the claim as people actually put it, the words they use for it, a diagnosis of where it goes wrong, and the full response behind [+].' },
+    { sel: '.wz-fb',
+      text: 'Something wrong, or missing? Feedback opens a mail draft that already names the card — so you never have to describe which one you meant.' }
+  ];
+
+  var live = [], idx = 0, mask = [], ring, card, body, dots, prevFocus, open = false;
+
+  function reduced() { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
+  function seen() { try { return localStorage.getItem(DONE) === '1'; } catch (e) { return true; } }
+  function mark() { try { localStorage.setItem(DONE, '1'); } catch (e) {} }
+
+  /* A step whose target is not on this page is not a step. /libraries/ has no objection cards and
+     /troubleshooting/ has no chin furniture worth pointing at, so the set is resolved per page
+     rather than assumed -- an empty spotlight pointing at nothing is worse than a shorter tour. */
+  function resolve() {
+    var out = [];
+    for (var i = 0; i < STEPS.length; i++) {
+      /* "a,b,c|union" spotlights the box that contains all of them. The mode row has no class of
+         its own; its container is full-width, so ringing the container drew a box running far past
+         the last button into empty space. Matching the buttons by LABEL TEXT -- the first thing I
+         reached for -- would have tied the tour to editorial copy that is free to change; the ids
+         do not change, and the union of four of them is exactly the row. */
+      var sel = STEPS[i].sel, uni = false;
+      if (sel.slice(-6) === '|union') { sel = sel.slice(0, -6); uni = true; }
+      var els = uni ? [].slice.call(document.querySelectorAll(sel))
+                    : [document.querySelector(sel)];
+      els = els.filter(function (e) { return e && e.getClientRects().length; });
+      if (els.length) out.push({ els: els, text: STEPS[i].text });
+    }
+    return out;
+  }
+
+  function build() {
+    /* FOUR PANELS AROUND THE TARGET, not one overlay with a hole. The single-element version used
+       a huge box-shadow spread and then had to raise the spotlit element above it -- which, for a
+       chin button, meant raising the whole chin, leaving the entire row undarkened and the ring
+       stranded behind it. Panels cover everything EXCEPT the target, so nothing on the page is ever
+       covered and no z-index of anyone else's has to be touched. */
+    for (var m = 0; m < 4; m++) {
+      var d = document.createElement('div');
+      d.className = 'wz-tour-mask'; d.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(d); mask.push(d);
+    }
+    ring = document.createElement('div');
+    ring.className = 'wz-tour-ring'; ring.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(ring);
+
+    card = document.createElement('div');
+    card.className = 'wz-tour-card';
+    card.setAttribute('role', 'dialog');
+    card.setAttribute('aria-modal', 'true');
+    card.setAttribute('aria-label', 'A quick tour of this page');
+
+    body = document.createElement('p'); body.className = 'wz-tour-text';
+    dots = document.createElement('span'); dots.className = 'wz-tour-dots';
+
+    var nav = document.createElement('div'); nav.className = 'wz-tour-nav';
+    var skip = mkbtn('Skip', 'Skip the tour', function () { finish(); });
+    skip.className = 'wz-tour-skip';
+    var prev = mkbtn('←', 'Previous', function () { go(idx - 1); });
+    var next = mkbtn('→', 'Next', function () { go(idx + 1); });
+    nav.appendChild(skip); nav.appendChild(dots); nav.appendChild(prev); nav.appendChild(next);
+    card.appendChild(body); card.appendChild(nav);
+    card._prev = prev; card._next = next; card._skip = skip;
+
+    document.body.appendChild(card);
+  }
+  function mkbtn(label, aria, fn) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = label; b.setAttribute('aria-label', aria);
+    b.addEventListener('click', function (e) { e.stopPropagation(); fn(); });
+    return b;
+  }
+
+  function unionRect(els) {
+    var r = els[0].getBoundingClientRect();
+    if (els.length === 1) return r;
+    var t = r.top, l = r.left, bo = r.bottom, g = r.right;
+    for (var q = 1; q < els.length; q++) {
+      var z = els[q].getBoundingClientRect();
+      t = Math.min(t, z.top); l = Math.min(l, z.left);
+      bo = Math.max(bo, z.bottom); g = Math.max(g, z.right);
+    }
+    return { top: t, left: l, bottom: bo, right: g, width: g - l, height: bo - t };
+  }
+
+  function paint(els) {
+    var r = unionRect(els), pad = 6;
+    var x = r.left - pad, y = r.top - pad, w = r.width + pad * 2, h = r.height + pad * 2;
+    var W = innerWidth, Hh = innerHeight;
+    function set(e, a, b, c, d) {
+      e.style.left = Math.max(0, a) + 'px'; e.style.top = Math.max(0, b) + 'px';
+      e.style.width = Math.max(0, c) + 'px'; e.style.height = Math.max(0, d) + 'px';
+    }
+    set(mask[0], 0, 0, W, y);                    // above
+    set(mask[1], 0, y + h, W, Hh - (y + h));     // below
+    set(mask[2], 0, y, x, h);                    // left
+    set(mask[3], x + w, y, W - (x + w), h);      // right
+    set(ring, x, y, w, h);
+    return [Math.round(r.top), Math.round(r.left), Math.round(r.width), Math.round(r.height)];
+  }
+
+  function place(els) {
+    /* A TALL TARGET IS NOT CENTRED. An objection card can be taller than the viewport, and
+       block:'center' then puts its middle in the middle -- both ring edges off-screen, so the
+       spotlight has no visible boundary at all. Showing the top of it is what a reader needs. */
+    var tall = unionRect(els).height > innerHeight * 0.7;
+    els[0].scrollIntoView({ block: tall ? 'start' : 'center', behavior: reduced() ? 'auto' : 'smooth' });
+
+    /* WAIT FOR THE SCROLL TO SETTLE. Smooth scrolling runs for a few hundred milliseconds, so a
+       rect read two frames later is a rect mid-flight -- which is exactly what it drew: a box
+       spanning the bottom of one card and the top of the next, matching no element on the page.
+       This re-reads until the rect stops moving, or gives up after 800ms and draws where it is. */
+    var stable = 0, last = null, t0 = performance.now();
+    (function tick() {
+      if (!open) return;
+      var now = paint(els);
+      if (last && now[0] === last[0] && now[1] === last[1] && now[2] === last[2] && now[3] === last[3]) stable++;
+      else stable = 0;
+      last = now;
+      if (stable < 2 && performance.now() - t0 < 800) { requestAnimationFrame(tick); return; }
+
+      var r = unionRect(els), cw = Math.min(340, innerWidth - 24);
+      card.style.width = cw + 'px';
+      var ch = card.offsetHeight || 120;
+      var below = r.bottom + 6 + 12;
+      var top = (below + ch < innerHeight - 12) ? below : Math.max(12, r.top - 18 - ch);
+      var left = r.left + r.width / 2 - cw / 2;
+      card.style.top = Math.min(top, Math.max(12, innerHeight - ch - 12)) + 'px';
+      card.style.left = Math.max(12, Math.min(left, innerWidth - cw - 12)) + 'px';
+    })();
+  }
+
+  function go(n) {
+    if (n < 0) return;
+    if (n >= live.length) { finish(); return; }
+    idx = n;
+    body.textContent = live[idx].text;
+    dots.textContent = (idx + 1) + ' / ' + live.length;
+    card._prev.disabled = (idx === 0);
+    card._next.textContent = (idx === live.length - 1) ? 'Done' : '→';
+    card._next.setAttribute('aria-label', (idx === live.length - 1) ? 'Finish' : 'Next');
+    place(live[idx].els);
+  }
+
+  function onKey(e) {
+    if (!open) return;
+    if (e.key === 'Escape')     { e.preventDefault(); finish(); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
+    else if (e.key === 'ArrowLeft')  { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Tab') {
+      /* Focus stays inside the dialog. Without this a keyboard reader tabs straight out into a page
+         that is visually blacked out, which is the worst of both. */
+      var f = card.querySelectorAll('button:not([disabled])');
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }
+  function onDown(e) { if (open && !card.contains(e.target)) finish(); }   // clicking off ends it
+
+  function finish() {
+    if (!open) return;
+    open = false; mark();
+    H.classList.remove('wz-touring');
+    removeEventListener('keydown', onKey, true);
+    removeEventListener('pointerdown', onDown, true);
+    removeEventListener('resize', onResize);
+    mask.forEach(function (d) { if (d.parentNode) d.parentNode.removeChild(d); });
+    mask = [];
+    if (ring && ring.parentNode) ring.parentNode.removeChild(ring);
+    if (card && card.parentNode) card.parentNode.removeChild(card);
+    try { if (prevFocus && prevFocus.focus) prevFocus.focus(); } catch (e) {}
+  }
+  function onResize() { if (open && live[idx]) place(live[idx].els); }
+
+  function start() {
+    if (open) return 0;
+    live = resolve();
+    if (live.length < 2) return 0;          // one lonely spotlight is not a walkthrough
+    prevFocus = document.activeElement;
+    build(); open = true;
+    H.classList.add('wz-touring');
+    addEventListener('keydown', onKey, true);
+    addEventListener('pointerdown', onDown, true);
+    addEventListener('resize', onResize);
+    go(0);
+    card._next.focus();
+    return live.length;
+  }
+
+  /* Console entry point, and the only way back in once it has been seen. A permanent "?" button
+     would be a seventh piece of chrome earning its keep two minutes a lifetime. */
+  window.wzTour = function () { return start(); };
+
+  window.wzTourInit = function () {
+    if (seen() || reduced()) return 0;      // reduced motion: a moving spotlight is the whole idea
+    /* ONLY ON A LIBRARY SURFACE. The chin exists on every page the layer touches, so a page with
+       nothing else on it still resolves three steps and passed the "enough steps" test -- which is
+       how /troubleshooting/ came to run a tour. That page is where a reader lands when the site is
+       BROKEN; a walkthrough of screen effects is the last thing they want, and it would spend the
+       once-ever flag so the real tour never runs on a wing. The tour therefore requires an
+       objection card or a library card, not merely a chin.
+       The cards are rendered from JSON after load, so this waits for one rather than assuming. If
+       none ever arrives the tour does NOT fall back to a shorter one -- it stays away, and the
+       once-ever flag is left unspent. */
+    /* IS THIS A LIBRARY SURFACE AT ALL? The mode buttons carry stable ids and are present in the
+       STATIC html of every wing and of the index, and absent from /troubleshooting/ -- so the
+       question is answerable at parse time, before any card has been fetched. */
+    if (!document.querySelector('#mode-standard, #mode-legible')) return 0;
+    if (document.querySelector('.lib-card')) { setTimeout(start, 250); return 1; }
+    var started = false, t = null, obs = null;
+    function once() {
+      if (started) return; started = true;
+      obs && obs.disconnect(); clearTimeout(t);
+      if (document.querySelector('article.obj')) start();
+    }
+    t = setTimeout(once, 2500);
+    if (window.MutationObserver) {
+      obs = new MutationObserver(function () { if (document.querySelector('article.obj')) setTimeout(once, 250); });
+      obs.observe(document.body, { childList: true, subtree: true });
+    }
+    return 1;
+  };
+
+  /* PARSE TIME, not init time -- see the header. Claiming the hint's key here is what stops the
+     reader being told about the power button twice. */
+  if (!seen() && !reduced() && document.querySelector('#mode-standard, #mode-legible')) {
+    try { sessionStorage.setItem('wz-hint-seen', '1'); } catch (e) {}
+  }
+})();
+
 (function(){
   var FURNITURE = "<!-- append as the last children of <body>; add class wz-on to <html> -->\n<div class=\"wz-frame\" aria-hidden=\"true\"></div>\n<div class=\"wz-chin\" aria-hidden=\"true\">\n  <span class=\"wz-perf\"></span>\n  <span class=\"wz-mark\">W<i class=\"wz-led\"></i>U<i class=\"wz-led\"></i>L<i class=\"wz-led\"></i>D<i class=\"wz-led\"></i></span>\n  <span class=\"wz-perf\"></span>\n  <button class=\"wz-mag\" title=\"Magnifier\" aria-label=\"Magnifier. Shift and scroll to zoom.\">&#x2315;</button>\n  <button class=\"wz-power\" title=\"Cosmetics\" aria-label=\"Toggle cosmetics\">&#x23FB;</button>\n</div>\n";
   function boot(){
@@ -563,6 +830,7 @@
     window.wzInit();
     if (window.wzSfxInit) window.wzSfxInit();
     if (window.wzFbInit)  window.wzFbInit();
+    if (window.wzTourInit) window.wzTourInit();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

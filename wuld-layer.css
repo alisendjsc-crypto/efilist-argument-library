@@ -503,6 +503,59 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
 
 
 /* ==============================================================================================
+   FIRST-VISIT WALKTHROUGH  --  .wz-tour-*
+   The darkening is one element with an enormous box-shadow spread, not a stack of four panels and
+   not mix-blend-mode. The blend route is what cost half the frame rate when the warm wash used it;
+   a spread shadow is plain paint on a single fixed box and moves by changing four lengths.
+   Outside .wz-stage: the spotlight must not pan with the camera or glow, or it would drift off the
+   thing it is pointing at.
+   ============================================================================================== */
+.wz-tour-mask{
+  /* ABOVE THE FRAME AND THE CHIN, which sit at 2147483000/1. Under them the panels darkened the
+     page but left the whole chin at full brightness and hid the ring behind it -- a spotlight
+     pointing at a button nobody could see was being pointed at. The tour is the topmost thing on
+     the page while it runs, by definition: that is what it is for. */
+  position:fixed; z-index:2147483100; pointer-events:none;
+  background:rgba(0,0,0,.74);
+  transition:top .2s ease, left .2s ease, width .2s ease, height .2s ease;
+}
+.wz-tour-ring{
+  position:fixed; z-index:2147483110; pointer-events:none;
+  border:2px solid var(--wz-led, #FF8195); border-radius:6px;
+  transition:top .2s ease, left .2s ease, width .2s ease, height .2s ease;
+}
+.wz-tour-card{
+  position:fixed; z-index:2147483120; box-sizing:border-box;
+  padding:.85rem .95rem .7rem;
+  background:#131315; color:#ddd8d0;
+  border:1px solid #34313a; border-radius:7px;
+  box-shadow:0 10px 30px rgba(0,0,0,.6);
+  font:400 12.5px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  transition:top .22s ease, left .22s ease;
+}
+.wz-tour-text{ margin:0 0 .7rem; }
+.wz-tour-nav{ display:flex; align-items:center; gap:.5rem; }
+.wz-tour-dots{
+  margin-left:auto; font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  letter-spacing:1px; color:#8b8690;
+}
+.wz-tour-nav button{
+  min-width:30px; height:30px; padding:0 .5rem;   /* over the 24x24 floor on both axes */
+  background:#1d1d21; color:#ddd8d0; cursor:pointer;
+  border:1px solid #3a3740; border-radius:5px;
+  font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+}
+.wz-tour-nav button:hover{ background:#26262c; }
+.wz-tour-nav button:focus-visible{ outline:2px solid var(--wz-led, #FF8195); outline-offset:1px; }
+.wz-tour-nav button[disabled]{ opacity:.4; cursor:default; }
+.wz-tour-skip{ margin-right:auto; background:transparent !important; border-color:transparent !important;
+               color:#9b9690 !important; font-weight:400 !important; }
+.wz-tour-skip:hover{ color:#ddd8d0 !important; }
+@media (prefers-reduced-motion:reduce){ .wz-tour-mask, .wz-tour-ring, .wz-tour-card{ transition:none; } }
+@media print{ .wz-tour-mask, .wz-tour-ring, .wz-tour-card{ display:none !important; } }
+
+
+/* ==============================================================================================
    wuld-vfx.css
    ============================================================================================== */
 
