@@ -335,6 +335,12 @@ html.wz-vfx[data-mode="dark"]{     /* /troubleshooting/, its own palette */
   background-size:0.30vw 0.30vw;
 }
 .wz-mark{ display:flex; align-items:center; gap:.30em; color:var(--wz-mark); }
+/* THE ORNAMENT YIELDS TO THE CONTROLS. Adding the mute button moved the row 50px further from the
+   right edge, and at 320px -- the width WCAG 1.4.10 asks content to survive -- the centred wordmark
+   ran 25px under it. Measured clash threshold is 370px; hiding below 420px leaves a margin rather
+   than a coincidence. The mark is aria-hidden decoration, the buttons are the only way to reach the
+   tier, the magnifier and the sound, so the mark is what goes. */
+@media (max-width: 420px){ .wz-mark, .wz-perf{ display:none; } }
 .wz-led{                                    /* the periods ARE the status lights */
   width:.42em; height:.42em; border-radius:50%;
   background:var(--wz-led); opacity:.55;
@@ -385,6 +391,22 @@ html.wz-on nav.top-nav{
 }
 
 @media (prefers-reduced-motion:reduce){ .wz-led{ transition:none; } }
+
+/* The mute button, third in the chin's control cluster. 44px like the others, and offset to clear
+ * BOTH of them -- the magnifier sits at +50px and is itself 44px wide, so anything under +100px
+ * overlaps it. That arithmetic is the same mistake the magnifier made against the power button
+ * (offset 42 against a 44px target, 2px of overlap at every width); once is a bug, twice would be
+ * not reading the note. */
+.wz-mute{
+  position:absolute; right:calc(max(1.0vw,6px) + 100px); bottom:50%; transform:translateY(50%);
+  min-width:44px; min-height:44px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--wz-mark); opacity:.75; font-size:.80em; line-height:1;
+  pointer-events:auto; cursor:pointer; background:none; border:0; padding:0; border-radius:50%;
+}
+.wz-mute:hover{ opacity:1; }
+.wz-mute:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
+html.wz-muted .wz-mute{ opacity:.45; }
 
 /* --- THE FIRST-VISIT HINT ----------------------------------------------------------------------
  * The tier defaults to vfx, so the reader did not ask for the effect -- which is the objection that
@@ -576,9 +598,18 @@ html.wz-vfx .wz-stage{
                           var(--wz-tint)) var(--wz-glow-mix), transparent),
               0 0 2px color-mix(in srgb, currentColor 40%, transparent);
 }
-/* Bold and bright take more, per the brief: the headline reads as the emitter and the supporting
- * text still glows. `.trigger-text` is w500 rather than w700 but is the brightest text on the view
- * (colour luma 221), so brightness earns the boost here as much as weight does. */
+/* STRUCTURAL PROMINENCE TAKES MORE -- not brightness, which is what an earlier version of this
+ * comment claimed and which is measurably the wrong rule. Audited across the wings: editorial <em>
+ * renders at colour luma 160 while <strong> renders at 95, because <strong> mostly sits inside
+ * deliberately quiet blocks (.rsi-formula) and inherits their colour. So the brighter element is
+ * the one NOT on this list, and correctly so -- <em> is stress inside a sentence and appears 35
+ * times in running prose on one wing, where the loudest paint on the view has no business. What
+ * this list actually selects is text that is prominent by structure: headings, table headers,
+ * definition terms, badges, and the trigger line. `.trigger-text` is w500 rather than w700 but is
+ * a single isolated headline element, which is why it belongs here despite its weight.
+ * Also audited and deliberately left on the base glow: <code> (luma 62 on the accent red -- a glow
+ * scales with currentColor, so dark text cannot smear) and <pre> (rendered and inspected; the
+ * monospace stays crisp at 10px blur). */
 html.wz-vfx .wz-stage :is(strong,b,h1,h2,h3,h4,h5,h6,th,dt,.tier-badge,.trigger-text){
   text-shadow:0 0 var(--wz-text-blur-bold)
                 color-mix(in srgb, color-mix(in srgb, currentColor calc(100% - var(--wz-tint-glow)),

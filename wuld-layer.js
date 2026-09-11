@@ -1,4 +1,4 @@
-/* wuld-layer.js -- library.wuld.ink cosmetic layer. */
+/* wuld-layer.js -- library.wuld.ink cosmetic + sound layer. */
 /* wuld-vfx.js -- power-button cycling and the clamped pivot. Pairs with wuld-vfx.css. */
 (function () {
   /* THE LADDER DESCENDS. vfx -> cosmetic -> off -> vfx. The operator's call, and it is the better
@@ -231,11 +231,209 @@
   };
 })();
 
+
+/* ==============================================================================================
+   wuld-sfx.js
+   ============================================================================================== */
+
+/* wuld-sfx.js -- the sound layer for library.wuld.ink. Pairs with wuld-vfx.js and shares its tier.
+ *
+ * THE SOUNDS ARE SYNTHESIZED, NOT SAMPLED. See P5_SFX_SPEC.md: the reference recording was segmented
+ * into 100 events and measured, the operator's "no high-pitched" instruction turned out to be a clean
+ * filter (centroid <1200 Hz, <5% of energy above 3 kHz) keeping 76 of them, and these seven were
+ * generated from the surviving profile. Nothing here is cut from anyone's recording.
+ *
+ * THE DESIGN RULE, inherited from that profile: the longer the sound, the lower it sits. Hover near
+ * 900 Hz, mode changes near 175 Hz. That inverse relation is most of why the set coheres, so if a
+ * sound is ever added, place it on that line rather than beside it. */
+(function () {
+  var H = document.documentElement;
+  var SRC = '/sfx/';
+  /* gain per sound. Hover is the quietest by a wide margin because it is the one that fires most --
+     82 objection cards on the flagship -- and an event that common has to sit under the reading
+     rather than on top of it. */
+  var BANK = {
+    hover:        { f: 'wz-hover.ogg',        g: 0.18 },
+    click:        { f: 'wz-click.ogg',        g: 0.42 },
+    expand:       { f: 'wz-expand.ogg',       g: 0.38 },
+    collapse:     { f: 'wz-collapse.ogg',     g: 0.34 },
+    magnifier_in: { f: 'wz-magnifier_in.ogg', g: 0.40 },
+    tier_step:    { f: 'wz-tier_step.ogg',    g: 0.46 }
+  };
+  var AMB = { f: 'wz-ambience_loop.ogg', g: 0.30 };
+
+  var ctx = null, buf = {}, raw = {}, dec = {}, ambNode = null, ambGain = null, unlocked = false;
+  var HOVER_MS = 120, lastHover = 0;
+  /* A sound asked for before its buffer existed, and when. PENDING_MS is how long a late arrival
+     still reads as a response to the click that asked for it rather than as a stray noise. */
+  var pending = null, pendingAt = 0, PENDING_MS = 400;
+
+  function reduced() { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
+  function muted() { try { return localStorage.getItem('wz-muted') === '1'; } catch (e) { return false; } }
+  function setMuted(v) { try { localStorage.setItem('wz-muted', v ? '1' : '0'); } catch (e) {} paint(); }
+
+  /* Audible only at the vfx tier, on a dark ground, with motion allowed and sound not muted.
+     Same gate shape as the glow, deliberately: one power button should mean one thing. */
+  function live() {
+    return H.classList.contains('wz-vfx') && !H.classList.contains('wz-lightbg')
+           && !reduced() && !muted();
+  }
+
+  /* NETWORK EARLY, CONTEXT LATE. The ArrayBuffers are fetched on idle -- plain fetch needs no
+     AudioContext and no gesture -- while decodeAudioData and resume() wait for the first real
+     gesture, which is what the autoplay policy actually requires. Creating a context before a
+     gesture is legal but starts it suspended and earns a console warning; doing the network first
+     means the first click is audible instead of silently arming. */
+  function prefetch() {
+    var all = Object.keys(BANK).map(function (k) { return [k, BANK[k].f]; });
+    all.push(['_amb', AMB.f]);
+    all.forEach(function (p) {
+      fetch(SRC + p[1]).then(function (r) { return r.ok ? r.arrayBuffer() : null; })
+        .then(function (b) { if (b) { raw[p[0]] = b; decodeOne(p[0]); } })
+        .catch(function () {});         // a missing sound is silence, never an error the reader sees
+    });
+  }
+
+  function unlock() {
+    if (unlocked) return;
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) { unlocked = true; return; }
+    unlocked = true;
+    try { ctx = new AC(); } catch (e) { return; }
+    if (ctx.state === 'suspended') ctx.resume();
+    Object.keys(raw).forEach(decodeOne);
+  }
+
+  /* DECODE IS ARRIVAL-DRIVEN, NOT GESTURE-DRIVEN. It used to be a single pass over raw{} inside
+     unlock(), which meant any sound whose download had not landed by the first gesture was never
+     decoded at all -- silent for the rest of the session, not just for that click. Measured: with
+     the sound files arriving 3s late, a click at 1.2s left every later click silent too. So both
+     sides call this, it is idempotent, and whichever of the two happens second does the decoding. */
+  function decodeOne(k) {
+    if (!ctx || buf[k] || !raw[k] || dec[k]) return;
+    dec[k] = 1;
+    try {
+      ctx.decodeAudioData(raw[k].slice(0),
+        function (d) { buf[k] = d; onDecoded(k); },
+        function () { dec[k] = 0; });
+    } catch (e) { dec[k] = 0; }
+  }
+
+  /* The first gesture creates the context and schedules the decodes in the same tick, so the click
+     that unlocks audio asks for a buffer that is ~45ms from existing (measured) and used to get
+     silence -- the one click most likely to be a reader testing whether sound works. play() leaves
+     the name here; this fires it once, if the tier still allows it. */
+  function onDecoded(k) {
+    if (k === '_amb') { ambMaybeStart(); return; }
+    if (pending === k && performance.now() - pendingAt < PENDING_MS) { pending = null; play(k); }
+  }
+
+  /* ONE DECODED BUFFER PER SAMPLE, a fresh source node per play. BufferSourceNodes are single-use by
+     spec -- reusing one throws -- so the pooling that matters is of the decoded PCM, which is the
+     expensive part, not of the node, which is nearly free. */
+  function play(name) {
+    if (!live()) return;
+    if (!ctx || !buf[name]) {
+      if (ctx && raw[name]) { pending = name; pendingAt = performance.now(); decodeOne(name); }
+      return;
+    }
+    try {
+      var s = ctx.createBufferSource(), g = ctx.createGain();
+      s.buffer = buf[name];
+      g.gain.value = (BANK[name] || { g: 0.3 }).g;
+      s.connect(g); g.connect(ctx.destination);
+      s.start(0);
+    } catch (e) {}
+  }
+
+  function ambMaybeStart() {
+    if (!ctx || !buf._amb) return;
+    if (!live()) { ambStop(); return; }
+    if (ambNode) return;
+    try {
+      ambNode = ctx.createBufferSource(); ambGain = ctx.createGain();
+      ambNode.buffer = buf._amb; ambNode.loop = true;
+      ambGain.gain.value = 0;
+      ambNode.connect(ambGain); ambGain.connect(ctx.destination);
+      ambNode.start(0);
+      ambGain.gain.linearRampToValueAtTime(AMB.g, ctx.currentTime + 1.6);   // no sudden arrival
+    } catch (e) { ambNode = null; }
+  }
+  function ambStop() {
+    if (!ambNode) return;
+    var n = ambNode, g = ambGain; ambNode = null; ambGain = null;
+    try {
+      g.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.5);
+      setTimeout(function () { try { n.stop(); } catch (e) {} }, 700);
+    } catch (e) { try { n.stop(); } catch (e2) {} }
+  }
+
+  /* DELEGATION, not 82 listeners. The wings build their objection list from JSON after load, so
+     anything bound at init would miss every card on the page. One listener on the document survives
+     that, and survives the list being re-rendered by a filter. */
+  function hoverable(t) { return t && t.closest && t.closest('.obj, .card, .lib-card, button, summary, a'); }
+  function onOver(e) {
+    if (!live()) return;
+    var el = hoverable(e.target); if (!el) return;
+    if (e.relatedTarget && el.contains(e.relatedTarget)) return;   // moving WITHIN a card is not a new hover
+    var now = performance.now();
+    if (now - lastHover < HOVER_MS) return;                        // drop, never queue
+    lastHover = now;
+    play('hover');
+  }
+  function onClick(e) {
+    unlock();
+    if (!live()) return;
+    var d = e.target.closest && e.target.closest('details');
+    if (e.target.closest && e.target.closest('summary') && d) { play(d.open ? 'collapse' : 'expand'); return; }
+    if (e.target.closest && e.target.closest('.wz-power')) { play('tier_step'); return; }
+    if (e.target.closest && e.target.closest('.wz-mag'))   { play('magnifier_in'); return; }
+    if (e.target.closest && e.target.closest('button, a, summary')) play('click');
+  }
+
+  function paint() {
+    var b = document.querySelector('.wz-mute');
+    if (!b) return;
+    var off = muted() || reduced();
+    b.textContent = off ? '✕' : '●';
+    b.setAttribute('aria-pressed', off ? 'true' : 'false');
+    b.setAttribute('aria-label', off ? 'Sound off. Turn on.' : 'Sound on. Turn off.');
+    b.setAttribute('title', off ? 'Sound off' : 'Sound on');
+    H.classList.toggle('wz-muted', off);
+    if (off) ambStop(); else ambMaybeStart();
+  }
+
+  window.wzSfxInit = function () {
+    var chin = document.querySelector('.wz-chin');
+    if (chin && !document.querySelector('.wz-mute')) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'wz-mute';
+      chin.appendChild(b);
+      b.addEventListener('click', function (e) { e.stopPropagation(); unlock(); setMuted(!muted()); });
+    }
+    paint();
+    if ('requestIdleCallback' in window) requestIdleCallback(prefetch, { timeout: 3000 });
+    else setTimeout(prefetch, 1200);
+    ['pointerdown', 'keydown'].forEach(function (t) {
+      addEventListener(t, unlock, { once: true, passive: true });
+    });
+    addEventListener('pointerover', onOver, { passive: true });
+    addEventListener('click', onClick, true);
+    /* The tier can change under us -- the power button, or the ground flipping with a mode toggle.
+       gradeBg's observer already watches for that; this one keeps the ambience honest about it. */
+    if (window.MutationObserver) {
+      new MutationObserver(function () { if (live()) ambMaybeStart(); else ambStop(); paint(); })
+        .observe(H, { attributes: true, attributeFilter: ['class', 'data-mode'] });
+    }
+  };
+})();
+
 (function(){
   var FURNITURE = "<!-- append as the last children of <body>; add class wz-on to <html> -->\n<div class=\"wz-frame\" aria-hidden=\"true\"></div>\n<div class=\"wz-chin\" aria-hidden=\"true\">\n  <span class=\"wz-perf\"></span>\n  <span class=\"wz-mark\">W<i class=\"wz-led\"></i>U<i class=\"wz-led\"></i>L<i class=\"wz-led\"></i>D<i class=\"wz-led\"></i></span>\n  <span class=\"wz-perf\"></span>\n  <button class=\"wz-mag\" title=\"Magnifier\" aria-label=\"Magnifier. Shift and scroll to zoom.\">&#x2315;</button>\n  <button class=\"wz-power\" title=\"Cosmetics\" aria-label=\"Toggle cosmetics\">&#x23FB;</button>\n</div>\n";
   function boot(){
     if (!document.querySelector('.wz-frame')) document.body.insertAdjacentHTML('beforeend', FURNITURE);
     window.wzInit();
+    if (window.wzSfxInit) window.wzSfxInit();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
