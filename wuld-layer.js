@@ -915,8 +915,13 @@
   window.wzTourInit = function () {
     /* The ? button is not gated on anything: it is the way back in after a tour has been seen, and
        it runs the tour for whatever view is in front of you rather than offering a menu of five. */
+    /* NO BUTTON WHERE THERE IS NOTHING TO SHOW. The chin exists on every page the layer touches,
+       so /troubleshooting/ was getting a ? that returned 0 and opened nothing -- a control whose
+       only behaviour is to do nothing when pressed, which is worse than its absence. The same test
+       that gates the auto-run gates the button: a library surface, detected by the mode buttons'
+       stable ids, which are in the static HTML of every wing and the index and absent there. */
     var chin = q('.wz-chin');
-    if (chin && !q('.wz-help')) {
+    if (chin && !q('.wz-help') && q('#mode-standard, #mode-legible')) {
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'wz-help'; b.textContent = '?';
       b.setAttribute('title', 'Tutorial for this view');
