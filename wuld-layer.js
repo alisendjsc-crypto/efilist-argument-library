@@ -428,12 +428,141 @@
   };
 })();
 
+
+/* ==============================================================================================
+   wuld-fb.js
+   ============================================================================================== */
+
+/* wuld-fb.js -- per-card feedback. One mailto per objection, carrying the card's own id.
+ *
+ * WHY PER-CARD AND NOT A CORNER BUTTON. A corner button produces "something's broken somewhere";
+ * a per-card one arrives with the objection id already attached, which is the difference between a
+ * report you can act on and one you have to chase. Site-wide comments already have a route --
+ * wuld.ink/contact -- so a fourth chin button would add a channel without adding information, and
+ * at 320px the chin row is already as wide as it can be.
+ *
+ * NO BACKEND. A mailto: costs nothing, needs no form, no storage and no consent banner. A form
+ * needs all four, and that is a bigger decision than it looks.
+ *
+ * INJECTED, NOT DELEGATED, AND OBSERVED. The wings build their card list from JSON after load --
+ * measured: 0 of 5 wings have a single `class="obj"` in their static HTML -- and re-render it when
+ * a filter changes. A one-shot pass at boot would find nothing at all. */
+(function () {
+  var TO = 'contact@wuld.ink';
+  var SEL = 'article.obj[id^="obj-"]:not([data-wz-fb])';
+
+  function heading(card) {
+    var h = card.querySelector('h2, h3, h4');
+    return h ? h.textContent.replace(/\s+/g, ' ').trim() : '';
+  }
+  /* THE CARD DESCRIBES ITSELF. A report that says only "this one is wrong" costs whoever reads it
+     a hunt through five libraries to work out which card it was. So the draft arrives carrying the
+     card's own context -- the library, the headline, the colloquial names on its chips, and its
+     classification strip -- pulled from the card at the moment of the click, which means it cannot
+     drift out of date the way a hand-written note would.
+     The strip is read child by child rather than with textContent, because the control is itself a
+     DOM child of that strip and would otherwise append the word "feedback" to its own report. */
+  function strip(card) {
+    var m = card.querySelector('.obj-meta');
+    if (!m) return '';
+    var out = '';
+    for (var i = 0; i < m.childNodes.length; i++) {
+      var n = m.childNodes[i];
+      if (n.nodeType === 1 && String(n.className || '').indexOf('wz-fb') > -1) continue;
+      out += n.textContent || '';
+    }
+    return out.replace(/\s+/g, ' ').trim();
+  }
+  function chips(card) {
+    var k = card.querySelector('.kw');
+    if (!k) return [];
+    var out = [];
+    for (var i = 0; i < k.children.length && out.length < 8; i++) {
+      var t = k.children[i].textContent.replace(/\s+/g, ' ').trim();
+      if (t && t.length <= 40) out.push(t);
+    }
+    return out;
+  }
+  function clip(s, n) { return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '\u2026' : s; }
+
+  /* The writing space goes FIRST. Mail clients drop the cursor at the top of the body, so anything
+     above the prompt is something the reader has to scroll past before they can type. Everything
+     the machine contributed sits below the rule, out of the way but travelling with the message.
+     MAILTO LENGTH IS A REAL LIMIT -- Windows passes the whole URL through a shell, and clients
+     start truncating well before 2000 characters. So the body is built longest-first and the
+     optional parts are dropped, in order, until the encoded URL fits under the budget. */
+  var MAX_URL = 1800;
+  function href(card) {
+    var id   = card.id;
+    var url  = location.href.split('#')[0] + '#' + id;
+    var lib  = (document.title.split('\u2014')[0] || '').trim();
+    var head = clip(heading(card), 240);
+    var cls  = strip(card);
+    var kw   = chips(card);
+    var lead = "(what's wrong, or what's missing?)\n\n\n"
+             + "-- added automatically, so you needn't describe which card --\n";
+    function build(withKw, headLen) {
+      var b = lead;
+      if (lib)  b += 'library:        ' + lib + '\n';
+      if (head) b += 'objection:      "' + clip(head, headLen) + '"\n';
+      if (withKw && kw.length) b += 'also called:    ' + kw.join(' \u00b7 ') + '\n';
+      if (cls)  b += 'classification: ' + cls + '\n';
+      return b + 'id:             ' + id + '\nlink:           ' + url + '\n';
+    }
+    var subj = 'library feedback \u2014 ' + id;
+    var tries = [[true, 240], [true, 140], [false, 140], [false, 80]];
+    var out;
+    for (var i = 0; i < tries.length; i++) {
+      out = 'mailto:' + TO + '?subject=' + encodeURIComponent(subj)
+          + '&body=' + encodeURIComponent(build(tries[i][0], tries[i][1]));
+      if (out.length <= MAX_URL) break;
+    }
+    return out;
+  }
+
+  function pass() {
+    var cards = document.querySelectorAll(SEL), n = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i], m = c.querySelector('.obj-meta');
+      c.setAttribute('data-wz-fb', '1');            // set even when there is no meta strip, so a
+      if (!m) continue;                             // card without one is not re-examined forever
+      var a = document.createElement('a');
+      a.className = 'wz-fb';
+      a.href = href(c);
+      a.rel = 'nofollow';
+      a.textContent = 'feedback';   // uppercased by CSS, like every other micro-label on the card
+      a.title = 'Email a correction or comment about this objection';
+      a.setAttribute('aria-label', 'Email a correction or comment about this objection: ' + (heading(c) || c.id));
+      /* Appended, not prepended. While the control was floated it had to precede the meta text to
+         sit beside it; anchored, its position is set by CSS and DOM order is free to match reading
+         order instead -- so a keyboard lands on the meta text first and the utility after it. */
+      m.appendChild(a);
+      n++;
+    }
+    return n;
+  }
+
+  window.wzFbInit = function () {
+    var n = pass();
+    if (window.MutationObserver) {
+      var queued = false;
+      new MutationObserver(function () {
+        if (queued) return;                          // a filter re-render is hundreds of mutations;
+        queued = true;                               // coalesce them into one pass on the next frame
+        requestAnimationFrame(function () { queued = false; pass(); });
+      }).observe(document.body, { childList: true, subtree: true });
+    }
+    return n;
+  };
+})();
+
 (function(){
   var FURNITURE = "<!-- append as the last children of <body>; add class wz-on to <html> -->\n<div class=\"wz-frame\" aria-hidden=\"true\"></div>\n<div class=\"wz-chin\" aria-hidden=\"true\">\n  <span class=\"wz-perf\"></span>\n  <span class=\"wz-mark\">W<i class=\"wz-led\"></i>U<i class=\"wz-led\"></i>L<i class=\"wz-led\"></i>D<i class=\"wz-led\"></i></span>\n  <span class=\"wz-perf\"></span>\n  <button class=\"wz-mag\" title=\"Magnifier\" aria-label=\"Magnifier. Shift and scroll to zoom.\">&#x2315;</button>\n  <button class=\"wz-power\" title=\"Cosmetics\" aria-label=\"Toggle cosmetics\">&#x23FB;</button>\n</div>\n";
   function boot(){
     if (!document.querySelector('.wz-frame')) document.body.insertAdjacentHTML('beforeend', FURNITURE);
     window.wzInit();
     if (window.wzSfxInit) window.wzSfxInit();
+    if (window.wzFbInit)  window.wzFbInit();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();

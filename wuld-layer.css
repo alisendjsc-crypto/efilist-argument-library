@@ -460,6 +460,49 @@ html.wz-muted .wz-mute{ opacity:.45; }
 
 
 /* ==============================================================================================
+   PER-CARD FEEDBACK  --  .wz-fb
+   Lives INSIDE .wz-stage, unlike the chin and the hint, because it belongs to its card: it should
+   pan and scale with the card it reports on. What it does not do is glow -- the halo is for text
+   the page wants read, and a report control is function, not emitter.
+   Visible at every tier including `off`: cosmetics are optional, a way to report an error is not.
+   ============================================================================================== */
+/* ANCHORED, NOT FLOATED. A float is only contained by a block taller than itself, and .obj-meta is
+   a 17px strip while the control has to be 26px to clear the WCAG 2.5.8 target floor -- so 9px of
+   it hung past the strip and shortened the first line of every headline. Measured: the h2 rewrapped.
+   Absolute positioning against the card touches no line box at all. The card measured position
+   static, so making it relative changes nothing it does today; the meta strip reserves the lane by
+   padding, keyed to the attribute the injector sets, so a card without a control reserves nothing. */
+.obj{ position:relative; }
+.obj[data-wz-fb] > .obj-meta{ padding-right:5rem; }
+.wz-fb{
+  position:absolute; top:.6rem; right:.85rem;
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:26px; height:26px; padding:0 .4rem;   /* WCAG 2.5.8 AA floor is 24x24 */
+  font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  letter-spacing:1px; text-transform:uppercase; text-decoration:none; white-space:nowrap;
+  color:var(--dim);
+  border:1px solid transparent; border-radius:3px;
+  transition:color .16s ease, border-color .16s ease;
+}
+/* A WORD, NOT A GLYPH. The first build used an envelope; rendered at 12px in the card's mono stack
+   it read as a small outlined box -- closer to a close button than to mail, and an ambiguous icon
+   repeated on 82 cards is worse than a plain label. The card already speaks in tracked uppercase
+   micro-labels (DIAGNOSIS, RESPONSE - PUNCH) at 10px/700/1px, so this borrows that voice exactly
+   and reads as native rather than as something bolted on.
+   NO OPACITY. The first version dimmed to .62 and measured 3.56:1 on the dark ground but 2.58:1 on
+   the cream one -- under WCAG 1.4.11's 3:1 floor for a UI component. Opacity is the trap:
+   getComputedStyle hands back the token, the compositor draws something else, and only a pixel
+   sample can tell you which. At --dim, full strength, the worst mode measures 5.37:1.
+   Hover raises it rather than revealing it: a control that only appears on hover does not exist on
+   a touch screen. */
+.wz-fb:hover{ color:var(--fg); border-color:var(--faint); }
+.wz-fb:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+html.wz-vfx .wz-fb{ text-shadow:none !important; }
+@media print{ .wz-fb{ display:none !important; }
+              .obj[data-wz-fb] > .obj-meta{ padding-right:0 !important; } }
+
+
+/* ==============================================================================================
    wuld-vfx.css
    ============================================================================================== */
 
