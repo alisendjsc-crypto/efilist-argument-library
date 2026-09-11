@@ -478,7 +478,20 @@ html.wz-on nav.top-nav{
    * highlights and leaves black at black, which is what a phosphor does. */
   --wz-tint:       #FF9A78;   /* between the LED rose (#FF8195) and amber; see the tint strip */
   --wz-tint-glow:  34%;       /* share of the halo that is tint rather than the text's own colour */
-  --wz-dark-max:   90;        /* background luma at or under which the layer is allowed to glow */
+  --wz-dark-max:   90;
+  /* --- THE MAGNIFIER ------------------------------------------------------------------------
+   * Clamped at 1 on the low side, and that clamp is load-bearing: below 1 the stage shrinks away
+   * from the frame and the bezel stops being a frame around anything. Above 1 the content always
+   * overflows, so the camera pan can never expose an edge -- the no-void guarantee gets STRONGER
+   * as you zoom, which is the opposite of what was feared when this was written up as a risk. */
+  --wz-zoom:       1;
+  --wz-zoom-max:   4;
+  --wz-grille:     3px;   /* phosphor triad pitch at 1x, before zoom multiplies it */
+  /* THE FIRST BUILD OF THIS RAMP HIT FULL OPACITY BY 2.6x AND DROWNED THE PAGE -- at 4x the type was
+   * behind a curtain of RGB stripes rather than lit by them. Without a blend mode the grille ADDS
+   * light instead of modulating it, so its alpha has to stay low enough to read as texture. Ramp is
+   * linear across the whole zoom range and peaks here, not at 1. */
+  --wz-grille-max: .42;        /* background luma at or under which the layer is allowed to glow */
   --wz-svg-blur:  4px;
   --wz-svg-glow:  rgba(255,255,255,.45);   /* one glow for the whole graph; per-node currentColor
                                             * measured inert and cost more */
@@ -658,11 +671,23 @@ html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
  * --wz-pan, and the fixed bezel lip is wider than that, so the gap opened at one edge is always
  * underneath the frame that is painted on top of it. One number, derived from another number,
  * rather than two numbers that have to be kept in agreement by hand. */
+/* TRANSFORM-ORIGIN IS 0 0, AND THAT IS THE DIFFERENCE BETWEEN A MAGNIFIER THAT WORKS AND ONE THAT
+ * EATS THE PAGE. Measured with the origin at 50%: at zoom 2 the stage grows 720px past each side of
+ * the viewport and only the RIGHT 714px is reachable, because there is no negative scroll -- the
+ * left 726px of every line is permanently unreachable. With origin 0 0 the growth is right-and-down
+ * only, maxScrollX matches the growth exactly at every zoom tested, and nothing is lost.
+ *   The translate stays OUTSIDE the scale in the composed matrix, so the camera pan is a constant
+ * pixel amount at any zoom rather than being multiplied by it: scale(3) with --wz-px:-10px composes
+ * to matrix(3,0,0,3,-10,0). Verified on the computed style, not assumed from the spec. */
 html.wz-vfx .wz-stage{
   will-change:transform;
   transition:transform var(--wz-pan-ease) cubic-bezier(.22,.61,.36,1);
-  transform:translate3d(var(--wz-px,0px), var(--wz-py,0px), 0);
+  transform-origin:0 0;
+  transform:translate3d(var(--wz-px,0px), var(--wz-py,0px), 0) scale(var(--wz-zoom,1));
 }
+/* While zooming, the transition would fight the scroll compensation and the anchor point would
+ * visibly slide. Zoom steps are instant; the pan keeps its easing. */
+html.wz-zooming .wz-stage{ transition:none !important; }
 
 /* --- 6. PERIPHERAL BLUR, ON THE FAR SIDE FROM THE CAMERA -------------------------------------
  * RETRACTION: an earlier build cut this as "inert -- three mechanisms, max abs delta 0.000". That
@@ -692,3 +717,52 @@ html.wz-vfx .wz-soft-r{ right:0; opacity:var(--wz-sr,0);
   html.wz-vfx .wz-stage{ transform:none !important; transition:none !important; }
   html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ opacity:0 !important; }
 }
+
+
+/* --- THE PHOSPHOR --------------------------------------------------------------------------------
+ * What there is to zoom INTO. Invisible at 1x by construction -- opacity is driven from the zoom by
+ * wuld-vfx.js and is literally 0 until you magnify -- and it resolves into an aperture grille and
+ * scanlines as the triad pitch grows past what the eye can resolve.
+ *
+ * A FIXED OVERLAY, NOT ONE INSIDE THE STAGE, AND NO BLEND MODE. Both are the warm wash's lesson paid
+ * forward: a blend layer cost half the frame rate, and a texture painted across a 25,000px scaled
+ * document would be worse. Fixed means one compositor layer the size of the viewport however far in
+ * you go. It is also the better fiction -- phosphor belongs to the glass, not to the image -- and
+ * growing its pitch with zoom is what sells "getting closer to the screen" rather than "the picture
+ * got bigger". */
+html.wz-vfx .wz-grille{
+  position:fixed; inset:0; pointer-events:none; z-index:2147481250;
+  opacity:var(--wz-grille-a, 0);
+  background-image:
+    repeating-linear-gradient(90deg,
+      rgba(255,86,86,.34) 0 33.34%, rgba(86,255,130,.30) 33.34% 66.67%, rgba(110,130,255,.34) 66.67% 100%),
+    repeating-linear-gradient(0deg,
+      rgba(0,0,0,.30) 0 42%, rgba(0,0,0,0) 42% 100%);
+  background-size:
+    calc(var(--wz-grille) * var(--wz-zoom, 1)) 100%,
+    100% calc(var(--wz-grille) * var(--wz-zoom, 1));
+  transition:opacity .18s linear;
+}
+/* Zoom is part of the effect, so it dies with the effect -- with the ground and with the OS signals,
+ * exactly like the glow. */
+html.wz-vfx.wz-lightbg .wz-grille{ display:none !important; }
+@media (prefers-contrast: more), (forced-colors: active){
+  html.wz-vfx .wz-grille{ display:none !important; }
+}
+@media print{ .wz-grille{ display:none !important; } }
+@media (prefers-reduced-motion:reduce){ .wz-grille{ transition:none; } }
+
+/* The magnifier button, beside the power button in the chin. Same 44px target, same focus ring.
+ * The offset must clear the power button's FULL 44px, not most of it: at +42px the two hit areas
+ * overlapped by 2px at every width tested, and overlapping tap targets mean the thumb lands on
+ * whichever the stacking order favours rather than the one it aimed at. +50px leaves a 6px gap. */
+.wz-mag{
+  position:absolute; right:calc(max(1.0vw,6px) + 50px); bottom:50%; transform:translateY(50%);
+  min-width:44px; min-height:44px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--wz-mark); opacity:.75; font-size:1.05em; line-height:1;
+  pointer-events:auto; cursor:pointer; background:none; border:0; padding:0; border-radius:50%;
+}
+.wz-mag:hover{ opacity:1; }
+.wz-mag:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
+html.wz-mag-on .wz-mag{ opacity:1; color:var(--wz-led); }
