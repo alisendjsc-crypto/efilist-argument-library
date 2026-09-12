@@ -434,7 +434,10 @@
   /* DELEGATION, not 82 listeners. The wings build their objection list from JSON after load, so
      anything bound at init would miss every card on the page. One listener on the document survives
      that, and survives the list being re-rendered by a filter. */
-  function hoverable(t) { return t && t.closest && t.closest('.obj, .card, .lib-card, button, summary, a'); }
+  /* .objection-header is the flagship's card row (pin move, 2026-09-12): it is the expander itself, a
+     div with its own click handler rather than a <summary>, so it is named here or the flagship's 82
+     rows would hover and open in silence while every button around them clicked. */
+  function hoverable(t) { return t && t.closest && t.closest('.obj, .card, .lib-card, .objection-header, button, summary, a'); }
   function onOver(e) {
     if (!live()) return;
     var el = hoverable(e.target); if (!el) return;
@@ -449,6 +452,11 @@
     if (!live()) return;
     var d = e.target.closest && e.target.closest('details');
     if (e.target.closest && e.target.closest('summary') && d) { play(d.open ? 'collapse' : 'expand'); return; }
+    /* This listener is capture-phase, so it runs before the flagship row's own handler re-renders
+       the list: .open here is the row's state BEFORE the click, which is the state to sound. A link
+       or button inside the row (the feedback control) is a click, not an open. */
+    var h = e.target.closest && e.target.closest('.objection-header');
+    if (h && !(e.target.closest('a, button'))) { play(h.classList.contains('open') ? 'collapse' : 'expand'); return; }
     if (e.target.closest && e.target.closest('.wz-power')) { play('tier_step'); return; }
     if (e.target.closest && e.target.closest('.wz-mag'))   { play('magnifier_in'); return; }
     if (e.target.closest && e.target.closest('button, a, summary')) play('click');
@@ -522,10 +530,16 @@
  * a filter changes. A one-shot pass at boot would find nothing at all. */
 (function () {
   var TO = 'contact@wuld.ink';
-  var SEL = 'article.obj[id^="obj-"]:not([data-wz-fb])';
+  /* TWO CARD SHAPES. The wings render <article class="obj"> with an .obj-meta strip and .kw chips. The
+     flagship (library.wuld.ink/combined, pin move 2026-09-12) renders a <div class="objection-header">
+     row into #results -- the row IS the expander, its heading is the .trigger-text line, the tier and
+     register live in the row's own badge strip, and the colloquial names sit in the sibling
+     .detail-panel as .keyword chips. Same draft, read from whichever shape the card has. */
+  var SEL = 'article.obj[id^="obj-"]:not([data-wz-fb]), div.objection-header[id^="obj-"]:not([data-wz-fb])';
+  function isHeader(card) { return card.classList.contains('objection-header'); }
 
   function heading(card) {
-    var h = card.querySelector('h2, h3, h4');
+    var h = card.querySelector(isHeader(card) ? '.trigger-text' : 'h2, h3, h4');
     return h ? h.textContent.replace(/\s+/g, ' ').trim() : '';
   }
   /* THE CARD DESCRIBES ITSELF. A report that says only "this one is wrong" costs whoever reads it
@@ -536,7 +550,7 @@
      The strip is read child by child rather than with textContent, because the control is itself a
      DOM child of that strip and would otherwise append the word "feedback" to its own report. */
   function strip(card) {
-    var m = card.querySelector('.obj-meta');
+    var m = card.querySelector(isHeader(card) ? ':scope > div > div' : '.obj-meta');
     if (!m) return '';
     var out = '';
     for (var i = 0; i < m.childNodes.length; i++) {
@@ -547,11 +561,19 @@
     return out.replace(/\s+/g, ' ').trim();
   }
   function chips(card) {
-    var k = card.querySelector('.kw');
+    var k, kids;
+    if (isHeader(card)) {
+      var d = card.nextElementSibling;
+      k = d && d.classList.contains('detail-panel') ? d : null;
+      kids = k ? k.querySelectorAll('.keyword') : [];
+    } else {
+      k = card.querySelector('.kw');
+      kids = k ? k.children : [];
+    }
     if (!k) return [];
     var out = [];
-    for (var i = 0; i < k.children.length && out.length < 8; i++) {
-      var t = k.children[i].textContent.replace(/\s+/g, ' ').trim();
+    for (var i = 0; i < kids.length && out.length < 8; i++) {
+      var t = kids[i].textContent.replace(/\s+/g, ' ').trim();
       if (t && t.length <= 40) out.push(t);
     }
     return out;
@@ -596,7 +618,7 @@
   function pass() {
     var cards = document.querySelectorAll(SEL), n = 0;
     for (var i = 0; i < cards.length; i++) {
-      var c = cards[i], m = c.querySelector('.obj-meta');
+      var c = cards[i], hdr = isHeader(c), m = hdr ? c : c.querySelector('.obj-meta');
       c.setAttribute('data-wz-fb', '1');            // set even when there is no meta strip, so a
       if (!m) continue;                             // card without one is not re-examined forever
       var a = document.createElement('a');
@@ -609,6 +631,10 @@
       /* Appended, not prepended. While the control was floated it had to precede the meta text to
          sit beside it; anchored, its position is set by CSS and DOM order is free to match reading
          order instead -- so a keyboard lands on the meta text first and the utility after it. */
+      /* The flagship's row is itself the expander (onclick on the header), so a click on the link
+         must not also open the card. Stopped here and nowhere else: on the wings nothing above the
+         link is a click target, and the sound layer's delegated click should still hear it. */
+      if (hdr) a.addEventListener('click', function (e) { e.stopPropagation(); });
       m.appendChild(a);
       n++;
     }
@@ -727,7 +753,7 @@
         { sel: '.wz-mute',
           text: 'Sound. A quiet mechanical room tone and small cues, only while effects are on. This switches it off and keeps it off.' },
         { sel: '#mode-standard,#mode-legible,#mode-hc,#mode-both|union',
-          text: 'Reading modes. Legible lightens the page, High contrast strengthens it, Both does both. Your choice is remembered.' },
+          text: 'Reading modes. Legible changes the type for longer reading, High contrast changes the ground, and the two combine. Your choice is remembered.' },
         { sel: '.view-switcher',
           text: 'Four views of the same corpus \u2014 the library, the mechanism web, the dependency graph and the argument flow map. Each has its own short tour the first time you open it.' },
         { sel: 'article.obj',

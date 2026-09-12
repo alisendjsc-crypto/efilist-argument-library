@@ -26,12 +26,18 @@ body {
 }
 
 /* outer-view visibility */
-body > #combined-library,
-body > #combined-rwe,
-body > #combined-coda { display: none; }
-body[data-active-view="library"] > #combined-library { display: block; }
-body[data-active-view="rwe"] > #combined-rwe { display: block; }
-body[data-active-view="coda"] > #combined-coda { display: block; }
+/* DESCENDANT, NOT CHILD (pin move, 2026-09-12). The three sections sit inside the presentation
+   layer's .wz-stage wrapper, a real element between the body and the content that carries the
+   camera transform. A child combinator off the body stopped matching the moment that wrapper
+   existed: every section rendered at once until the layer's runtime shim mirrored these rules,
+   ~100 ms after parse on this document (CLS 0.61, and the whole stack visible with scripts off).
+   Same specificity as before; matches with or without the wrapper; nothing left for the shim. */
+body #combined-library,
+body #combined-rwe,
+body #combined-coda { display: none; }
+body[data-active-view="library"] #combined-library { display: block; }
+body[data-active-view="rwe"] #combined-rwe { display: block; }
+body[data-active-view="coda"] #combined-coda { display: block; }
 
 /* unified top nav */
 .top-nav {
@@ -129,20 +135,20 @@ body[data-active-view="library"] {
   line-height: 1.5;
 }
 .header { border-bottom: 2px solid #8b0000; padding-bottom: 16px; margin-bottom: 24px; }
-.header h1 { font-size: 14px; font-weight: 700; color: #8b0000; letter-spacing: 6px; text-transform: uppercase; }
-.header p { font-size: 11px; color: #555; margin-top: 6px; letter-spacing: 2px; text-transform: uppercase; }
+.header h1 { font-size: 14px; font-weight: 700; color: #ef3a58; letter-spacing: 6px; text-transform: uppercase; }
+.header p { font-size: 11px; color: #88847c; margin-top: 6px; letter-spacing: 2px; text-transform: uppercase; }
 .header { position: relative; }
 .coda-link {
   position: absolute; top: 0; right: 0;
   font-family: 'IBM Plex Mono', 'Courier New', monospace;
-  font-size: 10px; color: #666; text-decoration: none;
+  font-size: 10px; color: #88847c; text-decoration: none;
   letter-spacing: 2px; text-transform: lowercase;
   padding: 2px 0; border-bottom: 1px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 .coda-link:hover { color: #b8ac95; border-bottom-color: #b8ac95; }
 &.legible .coda-link { font-size: 11px; }
-&.high-contrast .coda-link { color: #777; }
+&.high-contrast .coda-link { color: #615b50; }
 &.high-contrast .coda-link:hover { color: #8b0000; border-bottom-color: #8b0000; }
 .search-box {
   width: 100%; background: #111; border: 1px solid #333; color: #c8c8c8;
@@ -160,7 +166,7 @@ body[data-active-view="library"] {
 .filter-btn:hover { border-color: #555; color: #999; }
 .filter-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
 .depth-controls { display: flex; gap: 6px; margin-bottom: 24px; align-items: center; }
-.depth-label { font-size: 10px; color: #777; letter-spacing: 2px; margin-right: 8px; }
+.depth-label { font-size: 10px; color: #88847c; letter-spacing: 2px; margin-right: 8px; }
 .depth-btn {
   background: #181818; border: 1px solid #333; color: #999;
   font-family: inherit; font-size: 11px; padding: 6px 14px;
@@ -211,7 +217,7 @@ body[data-active-view="library"] {
 &.legible .rwe-meta .rwe-pol { border-color: #9a948a; }
 &.legible .rwe-pol-against { color: #a83232; }
 &.legible .rwe-pol-for { color: #2e6b2e; }
-&.legible .rwe-pol-neutral { color: #555; }
+&.legible .rwe-pol-neutral { color: #88847c; }
 &.legible .rwe-pol-refutes { color: #7a5d12; }
 &.legible .rwe-sum { color: #3a362f; }
 &.legible .rwe-fit { color: #6b665e; }
@@ -220,8 +226,8 @@ body[data-active-view="library"] {
 &.legible .rwe-more button { background: #efe7d8; color: #4a4540; border-color: #8a8478; }
 /* v3.8 D5 archetypeVariants per-card toggle */
 .archetype-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0 0 14px; }
-.archetype-row .archetype-label { font-size: 10px; color: #777; letter-spacing: 2px; }
-.archetype-pill { background: #161616; border: 1px solid #2d2d2d; color: #777; font-family: inherit; font-size: 10px; letter-spacing: 1px; padding: 5px 12px; cursor: pointer; text-transform: uppercase; transition: all .15s; }
+.archetype-row .archetype-label { font-size: 10px; color: #88847c; letter-spacing: 2px; }
+.archetype-pill { background: #161616; border: 1px solid #2d2d2d; color: #88847c; font-family: inherit; font-size: 10px; letter-spacing: 1px; padding: 5px 12px; cursor: pointer; text-transform: uppercase; transition: all .15s; }
 .archetype-pill:hover { border-color: #555; color: #aaa; }
 .archetype-pill.active { background: #3a0f0f; border-color: #8b0000; color: #e0a0a0; }
 .archetype-pill.canonical.active { background: #242424; border-color: #666; color: #ccc; }
@@ -238,23 +244,23 @@ body[data-active-view="library"] {
   font-size: 10px; font-weight: 700; letter-spacing: 2px; padding: 2px 6px;
   display: inline-block;
 }
-.category-label { font-size: 10px; color: #777; letter-spacing: 1px; }
+.category-label { font-size: 10px; color: #88847c; letter-spacing: 1px; }
 .trigger-text { font-size: 13px; color: #ddd; font-weight: 500; margin-top: 4px; }
-.expand-icon { color: #444; font-size: 18px; transition: transform 0.2s; flex-shrink: 0; margin-left: 12px; }
+.expand-icon { color: #88847c; font-size: 18px; transition: transform 0.2s; flex-shrink: 0; margin-left: 12px; }
 .expand-icon.open { transform: rotate(45deg); }
 .detail-panel {
   background: #0f0f0f; padding: 20px 18px; margin-bottom: 2px;
   display: none; border: 1px solid transparent; border-top: none;
 }
 .detail-panel.open { display: block; }
-.section-label { font-size: 10px; color: #777; letter-spacing: 2px; margin-bottom: 6px; }
+.section-label { font-size: 10px; color: #88847c; letter-spacing: 2px; margin-bottom: 6px; }
 .section { margin-bottom: 16px; }
 .keywords { display: flex; flex-wrap: wrap; gap: 4px; }
 .keyword {
-  font-size: 10px; color: #8b0000; background: #1a0000;
+  font-size: 10px; color: #ef3a58; background: #1a0000;
   border: 1px solid #330000; padding: 2px 8px;
 }
-.psych-mechanism { font-size: 11px; color: #996633; line-height: 1.5; }
+.psych-mechanism { font-size: 11px; color: #b1763b; line-height: 1.5; }
 .diagnosis {
   font-size: 11px; color: #999; line-height: 1.7;
   border-left: 2px solid #8b0000; padding-left: 14px;
@@ -267,11 +273,11 @@ body[data-active-view="library"] {
 .sources { font-size: 10px; color: #888; line-height: 1.6; }
 .footer {
   margin-top: 40px; padding-top: 16px; border-top: 1px solid #1a1a1a;
-  font-size: 10px; color: #666; letter-spacing: 2px; text-align: center;
+  font-size: 10px; color: #88847c; letter-spacing: 2px; text-align: center;
 }
-.empty-state { color: #444; font-size: 12px; padding: 40px 0; text-align: center; letter-spacing: 2px; }
+.empty-state { color: #88847c; font-size: 12px; padding: 40px 0; text-align: center; letter-spacing: 2px; }
 .copy-btn {
-  background: #1a0000; border: 1px solid #330000; color: #8b0000;
+  background: #1a0000; border: 1px solid #330000; color: #ef3a58;
   font-family: inherit; font-size: 10px; padding: 4px 10px;
   cursor: pointer; letter-spacing: 1px; text-transform: uppercase;
   margin-top: 8px; transition: all 0.15s ease;
@@ -331,22 +337,22 @@ body[data-active-view="library"] {
 }
 &.high-contrast .header { border-bottom-color: #8b0000; }
 &.high-contrast .header h1 { color: #8b0000; }
-&.high-contrast .header p { color: #666; }
+&.high-contrast .header p { color: #615b50; }
 &.high-contrast .search-box { background: #fff; border-color: #999; color: #111; }
 &.high-contrast .search-box:focus { border-color: #8b0000; }
 &.high-contrast .filter-btn { background: #e8e0d4; border-color: #bbb; color: #555; }
 &.high-contrast .filter-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
 &.high-contrast .depth-btn { background: #e8e0d4; border-color: #bbb; color: #555; }
 &.high-contrast .depth-btn.active { background: #8b0000; border-color: #8b0000; color: #fff; }
-&.high-contrast .depth-label { color: #666; }
+&.high-contrast .depth-label { color: #615b50; }
 &.high-contrast .objection-header { background: #ede8df; border-color: #ccc; }
 &.high-contrast .objection-header:hover { background: #e5ddd2; }
 &.high-contrast .objection-header.open { background: #e5ddd2; }
 &.high-contrast .trigger-text { color: #111; }
-&.high-contrast .category-label { color: #777; }
-&.high-contrast .expand-icon { color: #999; }
+&.high-contrast .category-label { color: #615b50; }
+&.high-contrast .expand-icon { color: #615b50; }
 &.high-contrast .detail-panel { background: #f0ebe3; }
-&.high-contrast .section-label { color: #777; }
+&.high-contrast .section-label { color: #615b50; }
 &.high-contrast .keyword { color: #8b0000; background: #f5e8e8; border-color: #daa; }
 &.high-contrast .psych-mechanism { color: #885522; }
 &.high-contrast .diagnosis { color: #333; border-left-color: #8b0000; }
@@ -354,8 +360,8 @@ body[data-active-view="library"] {
 &.high-contrast .sources { color: #555; }
 &.high-contrast .copy-btn { background: #f5e8e8; border-color: #daa; color: #8b0000; }
 &.high-contrast .copy-btn:hover { background: #e8d0d0; }
-&.high-contrast .footer { border-top-color: #ccc; color: #999; }
-&.high-contrast .empty-state { color: #999; }
+&.high-contrast .footer { border-top-color: #ccc; color: #615b50; }
+&.high-contrast .empty-state { color: #615b50; }
 &.high-contrast .mode-btn { background: #e8e0d4; border-color: #bbb; color: #555; }
 &.high-contrast .mode-btn.active { background: #334; border-color: #668; color: #fff; }
 &.high-contrast ::-webkit-scrollbar-track { background: #e8e0d4; }
@@ -407,61 +413,61 @@ body[data-active-view="library"] {
 }
 .rsi-detail.visible { display: block; }
 .rsi-detail .rsi-axis { display: flex; justify-content: space-between; margin: 2px 0; }
-.rsi-detail .rsi-axis-label { color: #666; }
+.rsi-detail .rsi-axis-label { color: #88847c; }
 .rsi-detail .rsi-axis-bar { display: inline-block; height: 8px; margin-left: 8px; border-radius: 1px; vertical-align: middle; }
-.rsi-detail .rsi-formula { color: #777; font-size: 10px; margin-top: 8px; border-top: 1px solid #1a1a1a; padding-top: 8px; }
+.rsi-detail .rsi-formula { color: #88847c; font-size: 10px; margin-top: 8px; border-top: 1px solid #1a1a1a; padding-top: 8px; }
 .rsi-methodology-btn {
-  background: none; border: 1px solid #222; color: #444;
+  background: none; border: 1px solid #222; color: #88847c;
   font-family: inherit; font-size: 9px; padding: 4px 10px;
   cursor: pointer; letter-spacing: 1.5px; text-transform: uppercase;
   margin-left: 8px; transition: all 0.15s ease;
 }
-.rsi-methodology-btn:hover { border-color: #444; color: #666; }
+.rsi-methodology-btn:hover { border-color: #444; color: #a6a096; }
 #rsi-methodology-panel {
   display: none; background: #0c0c0c; border: 1px solid #222; padding: 20px;
   margin: 12px 0 20px 0; font-size: 11px; color: #888; line-height: 1.8;
 }
 #rsi-methodology-panel.visible { display: block; }
-#rsi-methodology-panel h4 { color: #8b0000; font-size: 11px; letter-spacing: 2px; margin: 16px 0 8px 0; }
+#rsi-methodology-panel h4 { color: #ef3a58; font-size: 11px; letter-spacing: 2px; margin: 16px 0 8px 0; }
 #rsi-methodology-panel h4:first-child { margin-top: 0; }
 #rsi-methodology-panel code { color: #6699cc; background: #111; padding: 1px 4px; font-size: 10px; }
 #rsi-methodology-panel pre { background: #111; color: #6699cc; padding: 8px 10px; margin: 8px 0; font-size: 10px; line-height: 1.7; overflow-x: auto; }
 &.high-contrast .rsi-detail { background: #f0ebe3; border-color: #ccc; color: #555; }
-&.high-contrast .rsi-detail .rsi-axis-label { color: #777; }
-&.high-contrast .rsi-detail .rsi-formula { color: #888; border-top-color: #ccc; }
+&.high-contrast .rsi-detail .rsi-axis-label { color: #615b50; }
+&.high-contrast .rsi-detail .rsi-formula { color: #615b50; border-top-color: #ccc; }
 &.high-contrast #rsi-methodology-panel { background: #fff; border-color: #ccc; color: #555; }
 &.high-contrast #rsi-methodology-panel pre { background: #f0ebe3; color: #555; }
-&.high-contrast .rsi-methodology-btn { border-color: #bbb; color: #777; }
+&.high-contrast .rsi-methodology-btn { border-color: #bbb; color: #615b50; }
 .map-methodology-btn, .dep-methodology-btn {
-  background: none; border: 1px solid #222; color: #444;
+  background: none; border: 1px solid #222; color: #88847c;
   font-family: inherit; font-size: 9px; padding: 4px 10px;
   cursor: pointer; letter-spacing: 1.5px; text-transform: uppercase;
   transition: all 0.15s ease;
 }
-.map-methodology-btn:hover, .dep-methodology-btn:hover { border-color: #444; color: #666; }
+.map-methodology-btn:hover, .dep-methodology-btn:hover { border-color: #444; color: #a6a096; }
 .methodology-panel {
   display: none; background: #0c0c0c; border: 1px solid #222; padding: 20px;
   margin: 0 0 16px 0; font-size: 11px; color: #888; line-height: 1.8;
   max-height: 70vh; overflow-y: auto;
 }
 .methodology-panel.visible { display: block; }
-.methodology-panel h4 { color: #8b0000; font-size: 11px; letter-spacing: 2px; margin: 16px 0 8px 0; }
+.methodology-panel h4 { color: #ef3a58; font-size: 11px; letter-spacing: 2px; margin: 16px 0 8px 0; }
 .methodology-panel h4:first-child { margin-top: 0; }
 .methodology-panel code { color: #6699cc; background: #111; padding: 1px 4px; font-size: 10px; }
-.methodology-panel .mp-note { color: #666; font-size: 10px; font-style: italic; margin-top: 6px; }
+.methodology-panel .mp-note { color: #88847c; font-size: 10px; font-style: italic; margin-top: 6px; }
 .methodology-panel .mp-premise-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 10px; }
-.methodology-panel .mp-premise-table th { text-align: left; color: #8b0000; border-bottom: 1px solid #333; padding: 4px 8px; letter-spacing: 1px; }
-.methodology-panel .mp-premise-table td { padding: 4px 8px; border-bottom: 1px solid #1a1a1a; color: #777; }
+.methodology-panel .mp-premise-table th { text-align: left; color: #ef3a58; border-bottom: 1px solid #333; padding: 4px 8px; letter-spacing: 1px; }
+.methodology-panel .mp-premise-table td { padding: 4px 8px; border-bottom: 1px solid #1a1a1a; color: #88847c; }
 .methodology-panel .mp-premise-table td:first-child { color: #aaa; }
 &.high-contrast .methodology-panel { background: #fff; border-color: #ccc; color: #555; }
-&.high-contrast .map-methodology-btn, &.high-contrast .dep-methodology-btn { border-color: #bbb; color: #777; }
+&.high-contrast .map-methodology-btn, &.high-contrast .dep-methodology-btn { border-color: #bbb; color: #615b50; }
 /* ===== VIEW SWITCHER ===== */
 .view-switcher {
   display: flex; gap: 0; margin-bottom: 16px;
 }
 .view-btn {
   background: #0a0a0a; border: 1px solid #333; border-bottom: 2px solid #333;
-  color: #555; font-family: inherit; font-size: 11px; padding: 10px 20px;
+  color: #88847c; font-family: inherit; font-size: 11px; padding: 10px 20px;
   cursor: pointer; letter-spacing: 3px; text-transform: uppercase;
   transition: all 0.2s ease; position: relative;
 }
@@ -469,10 +475,10 @@ body[data-active-view="library"] {
 .view-btn:nth-child(2) { border-right: none; }
 .view-btn:hover { color: #999; border-bottom-color: #666; }
 .view-btn.active {
-  color: #8b0000; border-bottom-color: #8b0000; background: #111;
+  color: #ef3a58; border-bottom-color: #8b0000; background: #111;
 }
 &.legible .view-btn { font-size: 14px; padding: 12px 24px; }
-&.high-contrast .view-btn { background: #f5f0e8; border-color: #bbb; color: #777; }
+&.high-contrast .view-btn { background: #f5f0e8; border-color: #bbb; color: #615b50; }
 &.high-contrast .view-btn.active { color: #8b0000; border-bottom-color: #8b0000; background: #fff; }
 #library-view { display: block; }
 #map-view { display: none; }
@@ -524,11 +530,11 @@ body[data-active-view="library"] {
 }
 #map-info-panel.open { transform: translateY(0); pointer-events: auto; }
 #map-info-panel .mp-type {
-  font-size: 9px; color: #666; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;
+  font-size: 9px; color: #88847c; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;
 }
 #map-info-panel .mp-title {
   font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
-  color: #8b0000; margin-bottom: 8px;
+  color: #ef3a58; margin-bottom: 8px;
 }
 #map-info-panel .mp-conns { font-size: 10px; color: #c8c8c8; line-height: 2; }
 &.high-contrast #map-info-panel .mp-conns { color: #333; }
@@ -544,14 +550,14 @@ body[data-active-view="library"] {
 .mp-conn-item.ct5 { border-color: #9966cc; color: #9966cc; }
 .mp-mech-badge {
   display: inline-block; padding: 2px 8px; margin: 2px 4px 2px 0;
-  font-size: 9px; border: 1px solid rgba(139,0,0,0.4); color: #8b0000;
+  font-size: 9px; border: 1px solid rgba(139,0,0,0.4); color: #ef3a58;
   cursor: pointer; transition: all 0.2s;
 }
 .mp-mech-badge:hover { border-color: #8b0000; color: #ddd; }
-.mp-raw { font-size: 9px; color: #555; margin-top: 8px; font-style: italic; line-height: 1.6; }
+.mp-raw { font-size: 9px; color: #88847c; margin-top: 8px; font-style: italic; line-height: 1.6; }
 .mp-goto-library {
   display: inline-block; margin-top: 10px; padding: 4px 12px;
-  background: #1a0000; border: 1px solid #330000; color: #8b0000;
+  background: #1a0000; border: 1px solid #330000; color: #ef3a58;
   font-family: inherit; font-size: 9px; cursor: pointer;
   letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.2s;
 }
@@ -570,16 +576,16 @@ body[data-active-view="library"] {
 }
 &.high-contrast #map-legend h3 { color: #333; border-bottom-color: #ccc; }
 .ml-section { margin-bottom: 10px; }
-.ml-section h4 { font-size: 8px; color: #666; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.ml-section h4 { font-size: 8px; color: #88847c; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
 .ml-item { display: flex; align-items: center; gap: 6px; margin: 3px 0; color: #aaa; font-size: 8.5px; }
 &.high-contrast .ml-item { color: #555; }
 .ml-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .ml-sq { width: 8px; height: 8px; flex-shrink: 0; border-radius: 2px; }
 #map-stats {
   position: absolute; top: 12px; left: 12px;
-  font-size: 9px; color: #555; z-index: 5; letter-spacing: 0.5px; line-height: 2;
+  font-size: 9px; color: #88847c; z-index: 5; letter-spacing: 0.5px; line-height: 2;
 }
-#map-stats span { color: #8b0000; font-weight: 600; }
+#map-stats span { color: #ef3a58; font-weight: 600; }
 .map-controls {
   position: absolute; bottom: 16px; right: 12px;
   display: flex; flex-direction: column; gap: 4px; z-index: 5;
@@ -605,21 +611,21 @@ body[data-active-view="library"] {
   background: #111; border: 1px solid #222; border-top: none; max-height: 200px; overflow-y: auto;
 }
 .msr-item {
-  padding: 4px 12px; font-size: 10px; cursor: pointer; color: #666; transition: all 0.15s;
+  padding: 4px 12px; font-size: 10px; cursor: pointer; color: #88847c; transition: all 0.15s;
 }
 .msr-item:hover { background: rgba(139,0,0,0.1); color: #ddd; }
 .map-toolbar {
   display: flex; gap: 6px; margin-bottom: 12px; align-items: center;
 }
 .map-toolbar button {
-  background: #181818; border: 1px solid #333; color: #666;
+  background: #181818; border: 1px solid #333; color: #88847c;
   font-family: inherit; font-size: 10px; padding: 6px 12px;
   cursor: pointer; letter-spacing: 2px; text-transform: uppercase; transition: all 0.15s;
 }
 .map-toolbar button:hover { border-color: #555; color: #999; }
 &.high-contrast .map-toolbar button { background: #e8e0d4; border-color: #bbb; color: #555; }
 .show-in-map-btn {
-  background: none; border: 1px solid rgba(139,0,0,0.3); color: #8b0000;
+  background: none; border: 1px solid rgba(139,0,0,0.3); color: #ef3a58;
   font-family: inherit; font-size: 8px; padding: 2px 8px; cursor: pointer;
   letter-spacing: 1px; text-transform: uppercase; margin-left: 8px; transition: all 0.15s;
 }
@@ -679,11 +685,11 @@ body[data-active-view="library"] {
 }
 #dep-info-panel.open { transform: translateY(0); pointer-events: auto; }
 #dep-info-panel .dp-type {
-  font-size: 9px; color: #666; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;
+  font-size: 9px; color: #88847c; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;
 }
 #dep-info-panel .dp-title {
   font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
-  color: #8b0000; margin-bottom: 6px;
+  color: #ef3a58; margin-bottom: 6px;
 }
 #dep-info-panel .dp-desc { font-size: 10px; color: #999; margin-bottom: 10px; line-height: 1.6; }
 #dep-info-panel .dp-conns { font-size: 10px; color: #c8c8c8; line-height: 2; }
@@ -700,7 +706,7 @@ body[data-active-view="library"] {
 .dp-conn-item.ct5 { color: #9966cc; }
 .dp-goto-library {
   display: inline-block; margin-top: 10px; padding: 4px 12px;
-  background: #1a0000; border: 1px solid #330000; color: #8b0000;
+  background: #1a0000; border: 1px solid #330000; color: #ef3a58;
   font-family: inherit; font-size: 9px; cursor: pointer;
   letter-spacing: 1.5px; text-transform: uppercase; transition: all 0.2s;
 }
@@ -725,16 +731,16 @@ body[data-active-view="library"] {
 }
 &.high-contrast #dep-legend h3 { color: #333; border-bottom-color: #ccc; }
 .dl-section { margin-bottom: 10px; }
-.dl-section h4 { font-size: 8px; color: #666; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.dl-section h4 { font-size: 8px; color: #88847c; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
 .dl-item { display: flex; align-items: center; gap: 6px; margin: 3px 0; color: #aaa; font-size: 8.5px; }
 &.high-contrast .dl-item { color: #555; }
 .dl-rect { width: 12px; height: 8px; flex-shrink: 0; border-radius: 2px; }
 .dl-line { width: 16px; height: 0; flex-shrink: 0; }
 #dep-stats {
   position: absolute; top: 12px; left: 12px;
-  font-size: 9px; color: #555; z-index: 5; letter-spacing: 0.5px; line-height: 2;
+  font-size: 9px; color: #88847c; z-index: 5; letter-spacing: 0.5px; line-height: 2;
 }
-#dep-stats span { color: #8b0000; font-weight: 600; }
+#dep-stats span { color: #ef3a58; font-weight: 600; }
 .dep-controls {
   position: absolute; bottom: 16px; right: 12px;
   display: flex; flex-direction: column; gap: 4px; z-index: 5;
@@ -845,7 +851,7 @@ body[data-active-view="library"] {
   padding-bottom: 6px; border-bottom: 1px solid #333;
 }
 .m1-empty-state {
-  color: #555; font-size: 11px; font-style: italic; text-align: center;
+  color: #88847c; font-size: 11px; font-style: italic; text-align: center;
   padding: 40px 20px; line-height: 1.6;
 }
 .m1-edge-card {
@@ -864,11 +870,11 @@ body[data-active-view="library"] {
 .m1-edge-badges { display: flex; gap: 4px; flex-shrink: 0; }
 .m1-weight-HIGH { color: #c55; font-size: 9px; padding: 1px 5px; border: 1px solid #c55; letter-spacing: 0.5px; }
 .m1-weight-MEDIUM { color: #cc9900; font-size: 9px; padding: 1px 5px; border: 1px solid #cc9900; letter-spacing: 0.5px; }
-.m1-weight-LOW { color: #666; font-size: 9px; padding: 1px 5px; border: 1px solid #444; letter-spacing: 0.5px; }
+.m1-weight-LOW { color: #88847c; font-size: 9px; padding: 1px 5px; border: 1px solid #444; letter-spacing: 0.5px; }
 .m1-stars { color: #cc9900; font-size: 10px; letter-spacing: 1px; }
 .m1-stars-dim { color: #333; font-size: 10px; letter-spacing: 1px; }
 .m1-edge-meta {
-  color: #777; font-size: 10px; margin-bottom: 4px;
+  color: #88847c; font-size: 10px; margin-bottom: 4px;
 }
 .m1-edge-rationale {
   color: #999; font-size: 11px; line-height: 1.5; margin-top: 6px;
@@ -879,7 +885,7 @@ body[data-active-view="library"] {
   margin: 6px 0; padding: 6px 8px; background: #0a0a0a; border-left: 2px solid #333;
 }
 .m1-mode-rationale-label {
-  color: #666; font-size: 9px; letter-spacing: 1px; margin-bottom: 3px;
+  color: #88847c; font-size: 9px; letter-spacing: 1px; margin-bottom: 3px;
 }
 .m1-mode-rationale-text { color: #aaa; font-size: 11px; line-height: 1.4; }
 .m1-disclosure {
@@ -935,31 +941,31 @@ body[data-active-view="library"] {
 &.high-contrast .m1-methodology-btn { background: #e8e0d4; color: #555; border-color: #bbb; }
 &.high-contrast .m1-methodology-btn:hover { background: #ddd3c2; color: #222; }
 &.high-contrast .m1-source-list { background: #ede8df; border-color: #ccc; }
-&.high-contrast .m1-source-list h4 { color: #666; border-bottom-color: #ccc; }
+&.high-contrast .m1-source-list h4 { color: #615b50; border-bottom-color: #ccc; }
 &.high-contrast .m1-tier-header { background: #e5ddd2; color: #555; }
 &.high-contrast .m1-source-item { color: #333; }
 &.high-contrast .m1-source-item:hover { background: #e5ddd2; color: #111; }
 &.high-contrast .m1-source-item.active { background: #f5e8e8; color: #8b0000; border-left-color: #8b0000; }
 &.high-contrast .m1-diseng-HIGH { color: #8b0000; border-color: #8b0000; }
-&.high-contrast .m1-diseng-MEDIUM { color: #666; border-color: #999; }
+&.high-contrast .m1-diseng-MEDIUM { color: #615b50; border-color: #999; }
 &.high-contrast .m1-diseng-LOW { color: #2a6040; border-color: #6a9977; }
 &.high-contrast .m1-graph-container { background: #ede8df; border-color: #ccc; }
 &.high-contrast .m1-detail-panel { background: #ede8df; border-color: #ccc; }
 &.high-contrast .m1-detail-panel h4 { color: #111; border-bottom-color: #ccc; }
-&.high-contrast .m1-empty-state { color: #888; }
+&.high-contrast .m1-empty-state { color: #615b50; }
 &.high-contrast .m1-edge-card { background: #f5f0e8; border-color: #ccc; }
 &.high-contrast .m1-edge-card:hover { background: #f5e8e8; border-color: #8b0000; }
 &.high-contrast .m1-edge-card.expanded { background: #f5e8e8; border-color: #8b0000; }
 &.high-contrast .m1-edge-target { color: #111; }
 &.high-contrast .m1-weight-HIGH { color: #8b0000; border-color: #8b0000; }
 &.high-contrast .m1-weight-MEDIUM { color: #885522; border-color: #b8860b; }
-&.high-contrast .m1-weight-LOW { color: #666; border-color: #999; }
+&.high-contrast .m1-weight-LOW { color: #615b50; border-color: #999; }
 &.high-contrast .m1-stars { color: #b8860b; }
 &.high-contrast .m1-stars-dim { color: #ccc; }
-&.high-contrast .m1-edge-meta { color: #666; }
+&.high-contrast .m1-edge-meta { color: #615b50; }
 &.high-contrast .m1-edge-rationale { color: #333; }
 &.high-contrast .m1-mode-rationale { background: #f5f0e8; border-left-color: #bbb; }
-&.high-contrast .m1-mode-rationale-label { color: #777; }
+&.high-contrast .m1-mode-rationale-label { color: #615b50; }
 &.high-contrast .m1-mode-rationale-text { color: #333; }
 &.high-contrast .m1-disclosure { background: #f5ecd4; border-left-color: #b8860b; color: #664d00; }
 &.high-contrast .m1-disclosure-label { color: #8b6508; }
@@ -1561,15 +1567,86 @@ body.high-contrast .objection-header.focused { box-shadow: 0 0 0 1px rgba(107, 9
 .detail-panel.show-plain > .section{display:none}
 .lay-body{margin:2px 0 6px}
 .lay-beat{margin-bottom:16px}
-.lay-tag{display:block;font-size:10px;color:#777;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
+.lay-tag{display:block;font-size:10px;color: #88847c;letter-spacing:2px;margin-bottom:6px;text-transform:uppercase}
 .lay-beat p{margin:0;font-size:14px;line-height:1.7}
 .lay-win p{font-style:italic;opacity:.9}
-.lay-loading{color:#666;font-size:12px;letter-spacing:1px}
+.lay-loading{color: #88847c;font-size:12px;letter-spacing:1px}
+
+/* CREAM-GROUND BADGES (pin move, 2026-09-12). The tier and RSI badges carry their colour INLINE from
+   the render templates, so the high-contrast mode inherited the dark-ground hues onto cream, where the
+   five tier colours measure 2.02-3.13:1 and the four grades 2.07-3.28:1 (82 + up to 82 elements).
+   The templates now also stamp data-tier / data-grade; these rules darken each hue with hue and
+   saturation held, computed to >=5.0:1 over the badge's own 6.7%-tint on its ground. !important is
+   required, not lazy: an inline declaration outranks any sheet rule at normal weight. */
+body.high-contrast .tier-badge[data-tier="1"] { color: #bd0000 !important; border-color: #bd000066 !important; }
+body.high-contrast .tier-badge[data-tier="2"] { color: #b02c00 !important; border-color: #b02c0066 !important; }
+body.high-contrast .tier-badge[data-tier="3"] { color: #785a00 !important; border-color: #785a0066 !important; }
+body.high-contrast .tier-badge[data-tier="4"] { color: #306191 !important; border-color: #30619166 !important; }
+body.high-contrast .tier-badge[data-tier="5"] { color: #7a3db8 !important; border-color: #7a3db866 !important; }
+body.high-contrast .rsi-badge[data-grade="A"] { color: #2b6b4b !important; border-color: #2b6b4b66 !important; }
+body.high-contrast .rsi-badge[data-grade="B"] { color: #316394 !important; border-color: #31639466 !important; }
+body.high-contrast .rsi-badge[data-grade="C"] { color: #7a5c00 !important; border-color: #7a5c0066 !important; }
+body.high-contrast .rsi-badge[data-grade="D"] { color: #ab3333 !important; border-color: #ab333366 !important; }
+body.high-contrast .show-in-dep-btn { color: #486c48; }
+/* The crimson replaces #8b0000 as TEXT on the dark grounds (1.9-2.0:1 there). Where the same rule paints
+   onto cream or white in high-contrast mode the original dark red is the readable one (8.8:1 cream,
+   9.6:1 white) and is restored. The graph views keep their dark frame in every mode, so their
+   panels are not listed. */
+body.high-contrast .show-in-map-btn, body.high-contrast #rsi-methodology-panel h4,
+body.high-contrast .methodology-panel h4, body.high-contrast .methodology-panel .mp-premise-table th { color: #8b0000; }
+/* THE LAYER'S PALETTE CONTRACT (pin move, 2026-09-12). The wings declare nine variables that the shared
+   layer reads for its per-card feedback control (--dim, --fg, --faint, --accent). The flagship declared
+   none, so on the cream ground the control would have taken the shared sheet's dark-ground values
+   (2.1:1). Declared here for the library view, per ground. */
+body[data-active-view="library"] { --fg: #ddd; --dim: #a6a096; --faint: #88847c; --accent: #ef3a58; }
+body[data-active-view="library"].high-contrast { --fg: #1a1a1a; --dim: #615b50; --faint: #615b50; --accent: #8b0000; }
+
+/* METHODOLOGY-PANEL KEYS (pin move, 2026-09-12). The panels' <strong> labels were coloured inline to
+   match the graph palettes (mechanism types, premise families, RSI grades) and a plain #ccc for
+   emphasis: 1.5-3.4:1 on the dark panel for the keyed ones, 1.61:1 for #ccc on the white
+   high-contrast panel. One class per key; each ground carries a legible value with hue held. */
+.mpk-em { color: #ccc; }
+.mpk-dim { color: #888; }
+.mpk-rhetorical { color: #88847c; }
+.mpk-structural { color: #88847c; }
+.mpk-defense { color: #ef3a58; }
+.mpk-cognitive { color: #b8860b; }
+.mpk-genuine { color: #5084ba; }
+.mpk-a { color: #44aa77; }
+.mpk-b { color: #6699cc; }
+.mpk-c { color: #cc9900; }
+.mpk-d { color: #d16666; }
+body.high-contrast .mpk-em { color: #1a1a1a; }
+body.high-contrast .mpk-dim { color: #615b50; }
+body.high-contrast .mpk-rhetorical { color: #555; }
+body.high-contrast .mpk-structural { color: #444; }
+body.high-contrast .mpk-defense { color: #8b0000; }
+body.high-contrast .mpk-cognitive { color: #8f6809; }
+body.high-contrast .mpk-genuine { color: #2a4a6b; }
+body.high-contrast .mpk-a { color: #2b6b4b; }
+body.high-contrast .mpk-b { color: #316394; }
+body.high-contrast .mpk-c { color: #7a5c00; }
+body.high-contrast .mpk-d { color: #ab3333; }
+</style>
+<link rel="stylesheet" href="/wuld-layer.css">
+<script src="/wuld-layer.js" defer></script>
+<style>
+/* START HERE blocks -- one per methodology panel, inserted after the panel's title <h4>.
+   Same voice as the panel's own section labels; the full text continues unchanged below.
+   Deliberately no id: an anchored precis becomes a citable object, and the panel stays the target. */
+.methodology-panel .precis-start, #rsi-methodology-panel .precis-start{
+  margin: 0 0 1.1em; padding: .6em .9em .5em;
+  border-left: 2px solid rgba(139,0,0,.55);
+}
+.precis-start h4{ margin: 0 0 .35em; }
+.precis-start ul{ margin: 0; padding-left: 1.1em; }
+.precis-start li{ margin: 0 0 .35em; line-height: 1.45; }
 </style>
 </head>
 <body data-active-view="library">
+<div class="wz-stage">
 <!-- Refusal Libraries wing-switcher (K123) -->
-<nav class="rl-wing" aria-label="Refusal Libraries" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;padding:7px 18px;background:#0a0a0a;border-bottom:1px solid #1f1f1f;font-family:inherit;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#888;line-height:1.4"><span style="color:#6a6a6a">Refusal Libraries</span><span aria-hidden="true" style="color:#444">·</span><span aria-current="page" style="color:#c8c8c8">Procreation &amp; Existence</span><span aria-hidden="true" style="color:#444">/</span><a href="/right-to-die/combined" style="color:#ff6633;text-decoration:none;border-bottom:1px solid rgba(255,102,51,.4);padding-bottom:1px">Harm &amp; Autonomy</a></nav>
+<nav class="rl-wing" aria-label="Refusal Libraries" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;padding:calc(7px + var(--wz-lip-y,0px)) 18px 7px;background:#0a0a0a;border-bottom:1px solid #1f1f1f;font-family:inherit;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#888;line-height:1.4"><span style="color:#88847c">Refusal Libraries</span><span aria-hidden="true" style="color:#444">·</span><span aria-current="page" style="color:#c8c8c8">Procreation &amp; Existence</span><span aria-hidden="true" style="color:#444">/</span><a href="/right-to-die/combined" style="color:#ff6633;text-decoration:none;border-bottom:1px solid rgba(255,102,51,.4);padding-bottom:1px">Harm &amp; Autonomy</a></nav>
 <nav class="top-nav" role="navigation" aria-label="primary">
   <div class="top-nav-view-group" role="group" aria-label="view">
     <button class="top-nav-view-btn active" data-view="library" type="button">library</button>
@@ -1578,10 +1655,8 @@ body.high-contrast .objection-header.focused { box-shadow: 0 0 0 1px rgba(107, 9
   </div>
   <div class="top-nav-spacer"></div>
   <div class="mode-toggle" role="group" aria-label="reading mode">
-    <button id="mode-standard" class="active" type="button" onclick="setMode('standard')">standard</button>
-    <button id="mode-legible" type="button" onclick="setMode('legible')">legible</button>
-    <button id="mode-hc" type="button" onclick="setMode('high-contrast')">high-contrast</button>
-    <button id="mode-both" type="button" onclick="setMode('both')">both</button>
+    <button id="mode-legible" type="button" aria-pressed="false" onclick="toggleModeAxis('legible')">legible</button>
+    <button id="mode-hc" type="button" aria-pressed="false" onclick="toggleModeAxis('high-contrast')">high-contrast</button>
   </div>
 </nav>
 
@@ -1614,31 +1689,42 @@ body.high-contrast .objection-header.focused { box-shadow: 0 0 0 1px rgba(107, 9
 
 <div id="rsi-methodology-panel">
   <h4>REBUTTAL STRENGTH INDEX — FORMAL METHODOLOGY</h4>
+<div class="precis-start">
+  <h4>START HERE</h4>
+  <ul>
+    <li>It grades the structure of the argument, not whether the position is right.</li>
+    <li>Five axes scored 0–1, combined as a geometric mean — so one fatal weakness sinks the whole score, and a zero anywhere is a zero overall.</li>
+    <li>Autonomy asks whether the response would convince someone who grants none of the framework — it is the axis that caps persuasive reach.</li>
+    <li>Scores are depth-adjusted: PUNCH loses roughly 12 points of Completeness and 6 of Robustness by construction, and only DISMANTLE carries the base score.</li>
+    <li>The percentage is for reading only. Grades band the unrounded mean, which is why an entry can display 88.0 and still be a B.</li>
+  </ul>
+</div>
+
   Each response in this library carries an RSI grade derived from five independent axes scored 0–1. The composite is the geometric mean:
   <br><br><code>RSI = (v × s × c × r × a)^(1/5)</code>
   <br><br>The geometric mean penalizes imbalance: a fatal weakness on any single axis drags the composite score down regardless of strength on other axes. A score of 0 on any axis yields RSI = 0.
 
   <h4>AXES</h4>
-  <strong style="color:#ccc">V — VALIDITY</strong><br>
+  <strong class="mpk-em">V — VALIDITY</strong><br>
   Does the conclusion follow from the stated premises? A response scores high on Validity if its inferential chain is tight — each step follows from the previous without logical gaps, hidden assumptions, or non-sequiturs. Scores low if the conclusion overshoots the premises or smuggles in unstated assumptions.
   <br><br>
-  <strong style="color:#ccc">S — SOUNDNESS</strong><br>
+  <strong class="mpk-em">S — SOUNDNESS</strong><br>
   Are the premises themselves defensible under scrutiny? A response can be valid (logically structured) while unsound (built on contested claims). Scores high if empirical claims are well-supported and philosophical premises are widely accepted or carefully argued. Scores low if the response relies on claims a knowledgeable interlocutor could readily dispute.
   <br><br>
-  <strong style="color:#ccc">C — COMPLETENESS</strong><br>
+  <strong class="mpk-em">C — COMPLETENESS</strong><br>
   Does the response address the full objection, or only a convenient subset of it? A complete response engages the strongest version of the objection (the steel man), not a weakened or partial version. Scores low if it addresses a strawman or ignores a significant dimension of the challenge. PUNCH responses inherently score lower on this axis than DISMANTLE responses due to length constraints.
   <br><br>
-  <strong style="color:#ccc">R — ROBUSTNESS</strong><br>
+  <strong class="mpk-em">R — ROBUSTNESS</strong><br>
   How well does the response withstand a competent counter-attack? A robust response anticipates the interlocutor's next move and preemptively addresses it. Scores low if a sharp philosopher could identify an exploitable weakness within 1–2 moves. PUNCH responses inherently score lower here due to less space for preemptive defense.
   <br><br>
-  <strong style="color:#ccc">A — AUTONOMY</strong><br>
+  <strong class="mpk-em">A — AUTONOMY</strong><br>
   Does the argument stand on widely-accepted premises, or does it require the interlocutor to pre-accept contested EFIList axioms? A fully autonomous response (A = 1.0) could convince someone who has never encountered antinatalism. A low-autonomy response depends on the zero-sum framework, Alogical Isness, or other premises the interlocutor is likely to reject, limiting its persuasive reach to those already sympathetic.
 
   <h4>GRADE THRESHOLDS</h4>
-  <strong style="color:#4a7">A ≥ 88%</strong> — Structurally airtight. Minimal vulnerability to counter-attack.<br>
-  <strong style="color:#6699cc">B ≥ 82%</strong> — Robust. Strong on most axes, minor pressure points.<br>
-  <strong style="color:#c90">C ≥ 76%</strong> — Competent. Effective but has identifiable vulnerabilities.<br>
-  <strong style="color:#c55">D &lt; 76%</strong> — Contested. Depends on premises the interlocutor is likely to reject.
+  <strong class="mpk-a">A ≥ 88%</strong> — Structurally airtight. Minimal vulnerability to counter-attack.<br>
+  <strong class="mpk-b">B ≥ 82%</strong> — Robust. Strong on most axes, minor pressure points.<br>
+  <strong class="mpk-c">C ≥ 76%</strong> — Competent. Effective but has identifiable vulnerabilities.<br>
+  <strong class="mpk-d">D &lt; 76%</strong> — Contested. Depends on premises the interlocutor is likely to reject.
 
   <h4>BANDING CONVENTION</h4>
   Grades band the <strong>unrounded</strong> geometric mean (A ≥ 0.88 / B ≥ 0.82 / C ≥ 0.76 / D &lt; 0.76). The displayed percentage is the mean × 100 <strong>rounded to one decimal</strong> — for reading only, never an input to the grade. Boundary cells legitimately read <strong>88.0/B</strong> (12 such at v3.9.4), because banding uses the exact mean while display rounds.
@@ -1679,6 +1765,17 @@ band      0.879656 &lt; 0.88              → B</pre>
   </div>
   <div id="map-methodology-panel" class="methodology-panel">
     <h4>PSYCHOLOGICAL MECHANISM WEB &mdash; MAP 2 METHODOLOGY</h4>
+<div class="precis-start">
+  <h4>START HERE</h4>
+  <ul>
+    <li>It answers why the interlocutor is saying this, not what they are saying.</li>
+    <li>35 mechanism clusters, 82 objections, 142 edges — and the clusters were derived bottom-up from the original objections, not imposed from an existing taxonomy.</li>
+    <li>Responding well starts with knowing the mechanism: a defense has to be acknowledged before what it defends can be engaged.</li>
+    <li>Genuine philosophical engagement is the class diagnosis cannot touch — those objections need a substantive answer, and they are where Tier 4 and Tier 5 live.</li>
+    <li>The practical payoff: an interlocutor who abandons one objection usually moves to another driven by the same mechanism, so the cluster predicts the next move.</li>
+  </ul>
+</div>
+
     This visualization answers the question every debater needs answered first: <em>why is my interlocutor saying this?</em> Before you can respond to an objection effectively, you need to understand whether it originates from genuine philosophical inquiry or from a psychological defense mechanism that has dressed itself in philosophical clothing. The Mechanism Web provides that diagnostic layer.
     <br><br>
     The map displays 35 canonical mechanism clusters connected to 82 objection nodes via 142 edges. Each objection is linked to the psychological, cognitive, or rhetorical mechanisms that generate it. This is not speculation &mdash; each mechanism assignment is derived from the objection's internal logic, its typical deployment context, and the pattern of reasoning it follows when stated by real interlocutors.
@@ -1689,19 +1786,19 @@ band      0.879656 &lt; 0.88              → B</pre>
     This is the primary input for Map 1 (Argument Flow Map): same-mechanism retreats produce lateral transitions; cross-mechanism pivots produce escalation. The Mechanism Web generates the psychological half of the transition matrix.
 
     <h4>THE FIVE MECHANISM TYPES</h4>
-    <strong style="color:#8b0000">Psychological Defense</strong> (TMT, Stockholm Syndrome, Illusion of Agency, Voluntarism)<br>
+    <strong class="mpk-defense">Psychological Defense</strong> (TMT, Stockholm Syndrome, Illusion of Agency, Voluntarism)<br>
     Deep-structure survival responses. These are not chosen strategies &mdash; they are automatic psychological operations triggered by perceived threats to the interlocutor's worldview or mortality salience. Objections driven by defense mechanisms are the hardest to address through logic alone because the mechanism exists specifically to resist logical intervention. The response strategy must acknowledge the defense before engaging the content.
     <br><br>
-    <strong style="color:#b8860b">Cognitive Bias</strong> (Optimism Bias, Survivorship Bias, Status Quo Bias)<br>
+    <strong class="mpk-cognitive">Cognitive Bias</strong> (Optimism Bias, Survivorship Bias, Status Quo Bias)<br>
     Systematic distortions in information processing that are hardwired into human cognition. Unlike defense mechanisms, cognitive biases are not triggered by threat &mdash; they operate constantly as the brain's default shortcuts. Objections rooted in cognitive bias are often stated with genuine confidence because the interlocutor does not experience the bias as a bias. The response strategy is exposure: make the bias visible without attacking the person.
     <br><br>
-    <strong style="color:#666">Rhetorical Fallacy</strong> (Ad Hominem, Genetic Fallacy, Conflation, Cherry-Picking, Guilt by Association, etc.)<br>
+    <strong class="mpk-rhetorical">Rhetorical Fallacy</strong> (Ad Hominem, Genetic Fallacy, Conflation, Cherry-Picking, Guilt by Association, etc.)<br>
     Identifiable logical errors deployed as argument moves. These may be intentional or unintentional, but they share a common structure: they redirect attention from the argument's validity to an irrelevant feature of the arguer, the argument's origin, or a distorted version of the claim. The response strategy is structural: name the fallacy precisely, demonstrate why it is irrelevant, and redirect to the actual claim.
     <br><br>
-    <strong style="color:#444">Structural Deflection</strong> (Political Deflection, Pragmatic Deflection, Speculative Future Deferral, etc.)<br>
+    <strong class="mpk-structural">Structural Deflection</strong> (Political Deflection, Pragmatic Deflection, Speculative Future Deferral, etc.)<br>
     Moves that substitute a different question for the one being asked. "What's your policy proposal?" substitutes implementation for validity. "The economy needs population growth" substitutes systemic maintenance for ethical evaluation. These are not necessarily irrational &mdash; they reflect a genuine concern with practical consequences &mdash; but they consistently deflect from the philosophical question to a pragmatic one. The response strategy is bifurcation: acknowledge the pragmatic concern, then return to the ethical claim.
     <br><br>
-    <strong style="color:#2a4a6b">Genuine Philosophical Engagement</strong> (Formal Logic Attack, Epistemological Challenge, Alternative Ontology, Empirical Counter-Evidence)<br>
+    <strong class="mpk-genuine">Genuine Philosophical Engagement</strong> (Formal Logic Attack, Epistemological Challenge, Alternative Ontology, Empirical Counter-Evidence)<br>
     These are the objections that actually engage the argument on its own terms. They challenge the logical structure, the empirical premises, or the philosophical framework itself. These are the most dangerous objections because they cannot be dismissed through mechanism identification &mdash; they require substantive philosophical response. The library's Tier 4 and Tier 5 entries are overwhelmingly populated by genuine engagement mechanisms.
 
     <h4>HOW TO READ THE GRAPH</h4>
@@ -1712,11 +1809,11 @@ band      0.879656 &lt; 0.88              → B</pre>
     <h4>STRATEGIC APPLICATION</h4>
     The Mechanism Web reveals three patterns invisible in the Library view alone:
     <br><br>
-    <strong style="color:#ccc">1. Lateral retreat prediction.</strong> When an interlocutor abandons one objection, they typically move to another driven by the same mechanism. If they opened with a TMT-linked objection and you addressed it effectively, their next objection will likely also be TMT-linked. The map shows you which objections share that mechanism.
+    <strong class="mpk-em">1. Lateral retreat prediction.</strong> When an interlocutor abandons one objection, they typically move to another driven by the same mechanism. If they opened with a TMT-linked objection and you addressed it effectively, their next objection will likely also be TMT-linked. The map shows you which objections share that mechanism.
     <br><br>
-    <strong style="color:#ccc">2. Escalation detection.</strong> When an interlocutor shifts from a defense/bias mechanism to a genuine engagement mechanism, the conversation has escalated in quality. This is a positive signal &mdash; it means the lower-tier defenses have been exhausted and the person is engaging authentically. Adjust your response depth accordingly.
+    <strong class="mpk-em">2. Escalation detection.</strong> When an interlocutor shifts from a defense/bias mechanism to a genuine engagement mechanism, the conversation has escalated in quality. This is a positive signal &mdash; it means the lower-tier defenses have been exhausted and the person is engaging authentically. Adjust your response depth accordingly.
     <br><br>
-    <strong style="color:#ccc">3. Dead-end identification.</strong> Some mechanism clusters (particularly TMT and Ad Hominem) produce objections that are fundamentally unreachable through logical argument because the mechanism exists specifically to resist logic. The map helps you recognize when you have entered a dead-end cluster and should redirect or disengage rather than escalate.
+    <strong class="mpk-em">3. Dead-end identification.</strong> Some mechanism clusters (particularly TMT and Ad Hominem) produce objections that are fundamentally unreachable through logical argument because the mechanism exists specifically to resist logic. The map helps you recognize when you have entered a dead-end cluster and should redirect or disengage rather than escalate.
 
     <h4>CONSTRUCTION METHODOLOGY</h4>
     Mechanism assignments were derived through systematic analysis of each objection's logical structure, its documented deployment patterns in philosophical debate and online discourse, and the psychological literature on the relevant cognitive/defense processes. Assignments were validated for consistency: if objection A and objection B deploy structurally identical reasoning patterns, they receive the same mechanism classification regardless of their surface-level topic. The 35 mechanism clusters were derived bottom-up from the original 81 objections, not imposed top-down from a pre-existing taxonomy.
@@ -1747,8 +1844,8 @@ band      0.879656 &lt; 0.88              → B</pre>
       </div>
       <div class="ml-section">
         <h4>NODE SIZE</h4>
-        <div class="ml-item" style="color:#555">Mechanisms scale by connections</div>
-        <div class="ml-item" style="color:#555">Objections scale by mechanism count</div>
+        <div class="ml-item" style="color:#88847c">Mechanisms scale by connections</div>
+        <div class="ml-item" style="color:#88847c">Objections scale by mechanism count</div>
       </div>
     </div>
     <div id="map-search-box">
@@ -1778,6 +1875,18 @@ band      0.879656 &lt; 0.88              → B</pre>
   </div>
   <div id="dep-methodology-panel" class="methodology-panel">
     <h4>PHILOSOPHICAL DEPENDENCY GRAPH &mdash; MAP 3 METHODOLOGY</h4>
+<div class="precis-start">
+  <h4>START HERE</h4>
+  <ul>
+    <li>It answers what each response actually rests on.</li>
+    <li>Thirteen premises: nine foundational, four diagnostic.</li>
+    <li>The difference is load-bearing — defeat a foundational premise and every response depending on it loses force; a diagnostic one is a tool for understanding opposition, not a structural dependency of the case.</li>
+    <li>Strong and weak edges are separated by one precise test: would the response collapse if the premise were removed entirely?</li>
+    <li>Consent Impossibility dominates — 26% of all dependencies — which the panel itself calls both a strength and a vulnerability.</li>
+    <li>PROVISIONAL badges mark assignments that still need validation; REVIEW badges mark edges that may need reclassifying.</li>
+  </ul>
+</div>
+
     This visualization answers the question the Mechanism Web cannot: <em>what does each response actually depend on?</em> Where Map 2 diagnoses the psychological origin of objections, Map 3 exposes the philosophical load-bearing structure of responses. It shows which foundational premises each rebuttal invokes, how strongly it depends on them, and where the library is structurally vulnerable to attack.
     <br><br>
     The graph displays 13 premise nodes connected to 82 objection nodes via 255 dependency edges. Each edge represents an invocation of a philosophical premise within the response text. The graph was constructed through close reading of all 82 entries across all three response depths, with a systematic manual pass across the five previously undercounted premises completed in v3.5.
@@ -1785,9 +1894,9 @@ band      0.879656 &lt; 0.88              → B</pre>
     <h4>THE TWO-LAYER ARCHITECTURE</h4>
     Premises are divided into two functional layers:
     <br><br>
-    <strong style="color:#ccc">Foundational Premises (9)</strong> &mdash; These are the philosophical claims on which the antinatalist/EFIList case structurally depends. If a foundational premise is defeated, any response that depends on it loses argumentative force. The nine foundational premises are: Benatar's Asymmetry, Proxy Gamble, Zero-Sum Framework, Consent Impossibility, Suffering as Deterrence, Alogical Isness, Contextus Claudit, Convergent Architecture, and Empirical Tail-Risk.
+    <strong class="mpk-em">Foundational Premises (9)</strong> &mdash; These are the philosophical claims on which the antinatalist/EFIList case structurally depends. If a foundational premise is defeated, any response that depends on it loses argumentative force. The nine foundational premises are: Benatar's Asymmetry, Proxy Gamble, Zero-Sum Framework, Consent Impossibility, Suffering as Deterrence, Alogical Isness, Contextus Claudit, Convergent Architecture, and Empirical Tail-Risk.
     <br><br>
-    <strong style="color:#ccc">Diagnostic Premises (4)</strong> &mdash; These are analytical frameworks used to explain <em>why</em> interlocutors resist the foundational arguments. They are not structural dependencies of the case itself &mdash; they are tools for understanding opposition. If Terror Management Theory were proven false tomorrow, the antinatalist case would be unaffected; the explanatory model for why people reject it would simply need updating. The four diagnostic premises are: Terror Management Theory, Optimism Bias / Pollyanna, Depressive Realism, and Labor Sine Fructu.
+    <strong class="mpk-em">Diagnostic Premises (4)</strong> &mdash; These are analytical frameworks used to explain <em>why</em> interlocutors resist the foundational arguments. They are not structural dependencies of the case itself &mdash; they are tools for understanding opposition. If Terror Management Theory were proven false tomorrow, the antinatalist case would be unaffected; the explanatory model for why people reject it would simply need updating. The four diagnostic premises are: Terror Management Theory, Optimism Bias / Pollyanna, Depressive Realism, and Labor Sine Fructu.
     <br><br>
     <div class="mp-note">Note: Labor Sine Fructu straddles the boundary. It functions diagnostically (characterizing existence as futile labor) but also appears in response arguments as a direct philosophical claim. It is classified as diagnostic because its removal would not collapse any response's logical structure.</div>
 
@@ -1806,11 +1915,11 @@ band      0.879656 &lt; 0.88              → B</pre>
     </table>
 
     <h4>EDGE STRENGTH CLASSIFICATION</h4>
-    Every edge is classified as <strong style="color:#8b0000">strong</strong> or <strong style="color:#666">weak</strong>:
+    Every edge is classified as <strong class="mpk-defense">strong</strong> or <strong class="mpk-rhetorical">weak</strong>:
     <br><br>
-    <strong style="color:#ccc">Strong dependency:</strong> The response structurally depends on this premise. Removing the premise would collapse or fundamentally weaken the argument. Displayed as solid lines in the graph.
+    <strong class="mpk-em">Strong dependency:</strong> The response structurally depends on this premise. Removing the premise would collapse or fundamentally weaken the argument. Displayed as solid lines in the graph.
     <br><br>
-    <strong style="color:#ccc">Weak / invoked:</strong> The response references or implicitly invokes this premise, but would survive its removal. The premise adds force or context but is not load-bearing. Displayed as dashed lines. Use the TOGGLE WEAK button to show/hide these edges for clearer structural analysis.
+    <strong class="mpk-em">Weak / invoked:</strong> The response references or implicitly invokes this premise, but would survive its removal. The premise adds force or context but is not load-bearing. Displayed as dashed lines. Use the TOGGLE WEAK button to show/hide these edges for clearer structural analysis.
     <br><br>
     The classification test is precise: <em>would this response structurally collapse if you removed this premise entirely?</em> If yes, the edge is strong. If the response would still function via other premises, the edge is weak.
 
@@ -1839,22 +1948,22 @@ band      0.879656 &lt; 0.88              → B</pre>
     <h4>STRATEGIC APPLICATION</h4>
     The Dependency Graph reveals four patterns invisible in the Library or Mechanism Web:
     <br><br>
-    <strong style="color:#ccc">1. Vulnerability mapping.</strong> Click any premise node to see every response that depends on it. If a sophisticated interlocutor attacks Benatar's Asymmetry, the graph instantly shows you which 33 responses are affected and which ones survive via independent premises. This is the primary input for Tier 4 transition prediction in Map 1.
+    <strong class="mpk-em">1. Vulnerability mapping.</strong> Click any premise node to see every response that depends on it. If a sophisticated interlocutor attacks Benatar's Asymmetry, the graph instantly shows you which 33 responses are affected and which ones survive via independent premises. This is the primary input for Tier 4 transition prediction in Map 1.
     <br><br>
-    <strong style="color:#ccc">2. Convergent Architecture visualization.</strong> The Convergent Architecture premise (13 edges after the v3.5 manual pass) identifies responses that explicitly argue "even if this specific argument fails, the conclusion holds." These are the library's most resilient entries because they do not depend on any single philosophical pillar. They are the entries to deploy when the interlocutor has successfully challenged a specific premise.
+    <strong class="mpk-em">2. Convergent Architecture visualization.</strong> The Convergent Architecture premise (13 edges after the v3.5 manual pass) identifies responses that explicitly argue "even if this specific argument fails, the conclusion holds." These are the library's most resilient entries because they do not depend on any single philosophical pillar. They are the entries to deploy when the interlocutor has successfully challenged a specific premise.
     <br><br>
-    <strong style="color:#ccc">3. RSI Autonomy correlation.</strong> The Dependency Graph makes the RSI Autonomy axis structural rather than merely numerical. Responses that depend heavily on contested premises (Zero-Sum Framework, Alogical Isness) score lower on Autonomy because they require the interlocutor to pre-accept claims they are likely to reject &mdash; so the graph shows at a glance which responses have capped persuasive reach against a skeptic who grants none of the framework.
+    <strong class="mpk-em">3. RSI Autonomy correlation.</strong> The Dependency Graph makes the RSI Autonomy axis structural rather than merely numerical. Responses that depend heavily on contested premises (Zero-Sum Framework, Alogical Isness) score lower on Autonomy because they require the interlocutor to pre-accept claims they are likely to reject &mdash; so the graph shows at a glance which responses have capped persuasive reach against a skeptic who grants none of the framework.
     <br><br>
-    <strong style="color:#ccc">4. Smart interlocutor prediction.</strong> When Response A invokes Premise P, a sophisticated interlocutor's next move targets Premise P directly. This generates the Tier 4 transition class for Map 1: after responding to "life is a gift" with a consent-based argument, predict that the next objection will be "the consent argument is incoherent." The Dependency Graph makes this prediction mechanical rather than intuitive.
+    <strong class="mpk-em">4. Smart interlocutor prediction.</strong> When Response A invokes Premise P, a sophisticated interlocutor's next move targets Premise P directly. This generates the Tier 4 transition class for Map 1: after responding to "life is a gift" with a consent-based argument, predict that the next objection will be "the consent argument is incoherent." The Dependency Graph makes this prediction mechanical rather than intuitive.
 
     <h4>REVIEW CONFIDENCE SYSTEM</h4>
     Some entries and premises carry review badges indicating confidence in their current classifications:
     <br><br>
-    <strong style="color:#c55">PROVISIONAL</strong> &mdash; Manual assignments that need validation. These edges were assigned based on best judgment but have not been confirmed through systematic review.
+    <strong class="mpk-d">PROVISIONAL</strong> &mdash; Manual assignments that need validation. These edges were assigned based on best judgment but have not been confirmed through systematic review.
     <br><br>
-    <strong style="color:#c90">REVIEW</strong> &mdash; Strength upgrades or undercount concerns. These entries may have edges that should be reclassified from weak to strong, or may be missing edges entirely.
+    <strong class="mpk-c">REVIEW</strong> &mdash; Strength upgrades or undercount concerns. These entries may have edges that should be reclassified from weak to strong, or may be missing edges entirely.
     <br><br>
-    <strong style="color:#6699cc">NOTE</strong> &mdash; Structural observations about the premise or entry. These do not indicate errors but flag important context for interpretation.
+    <strong class="mpk-b">NOTE</strong> &mdash; Structural observations about the premise or entry. These do not indicate errors but flag important context for interpretation.
     <br><br>
     The v3.5 manual pass resolved the five most severely undercounted premises (Suffering as Deterrence, Contextus Claudit, Alogical Isness, Convergent Architecture, Labor Sine Fructu), adding 38 new edges through close reading of all 74 entries' response text. The remaining review flags concern individual entry-level questions that require human judgment.
 
@@ -1906,8 +2015,8 @@ band      0.879656 &lt; 0.88              → B</pre>
       </div>
       <div class="dl-section">
         <h4>NODE SIZE</h4>
-        <div class="dl-item" style="color:#555">Premises scale by total connections</div>
-        <div class="dl-item" style="color:#555">Objections scale by dependency count</div>
+        <div class="dl-item" style="color:#88847c">Premises scale by total connections</div>
+        <div class="dl-item" style="color:#88847c">Objections scale by dependency count</div>
       </div>
     </div>
     <div id="dep-info-panel">
@@ -1941,18 +2050,29 @@ band      0.879656 &lt; 0.88              → B</pre>
 
   <div id="map1-methodology-panel" class="methodology-panel">
     <h4>ARGUMENT FLOW MAP &mdash; MAP 1 METHODOLOGY</h4>
+<div class="precis-start">
+  <h4>START HERE</h4>
+  <ul>
+    <li>It answers which objection comes next.</li>
+    <li>Three interlocutor models, each with its own matrix: the sophisticate attacks the premise your response invoked, the defender retreats to another objection driven by the same mechanism, the drifter moves one tier at a time.</li>
+    <li>The blended view is the union of all three, with every edge tagged by the modes that contributed it.</li>
+    <li>78% of edges appear in only one mode. The three models mostly disagree, and that disagreement is the whole point — a single averaged matrix would have hidden it.</li>
+    <li>Weights are categorical reasoned judgments, not measured frequencies; percentages would imply a precision that does not exist. Two things are candidates for correction: the 15 canonical sophisticate overrides were applied without independent expert validation, and the disengagement badge is a coarse, uncalibrated heuristic.</li>
+  </ul>
+</div>
+
     This visualization answers the single strategic question the Library, Mechanism Web, and Dependency Graph cannot: <em>given that an interlocutor has just deployed Objection A and received your response, which objection are they most likely to deploy next?</em> Map 1 is the debate-navigation layer. It transforms the library from a reference dictionary into a move tree.
 
     <h4>THE THREE-MODE ARCHITECTURE</h4>
     Real interlocutors are not all the same. A competent philosopher tracking logical structure makes fundamentally different next-moves than a defender psychologically invested in preserving their worldview, and both differ from a drifter whose moves follow social and rhetorical gravity. A single blended prediction matrix would average these disagreements into uselessness. Map 1 preserves them by generating three separate transition matrices and overlaying them:
     <br><br>
-    <strong style="color:#ccc">SOPHISTICATE mode</strong> &mdash; Premise-pivot-driven. Edges generated from the Dependency Graph. Logic: if your response to Objection A invokes Premise P, the sophisticate's next move attacks P directly. Successors are objections that target the same premises. Tier-elevating moves (T1&rarr;T4) are favored; sophisticates escalate rather than regress.
+    <strong class="mpk-em">SOPHISTICATE mode</strong> &mdash; Premise-pivot-driven. Edges generated from the Dependency Graph. Logic: if your response to Objection A invokes Premise P, the sophisticate's next move attacks P directly. Successors are objections that target the same premises. Tier-elevating moves (T1&rarr;T4) are favored; sophisticates escalate rather than regress.
     <br><br>
-    <strong style="color:#ccc">DEFENDER mode</strong> &mdash; Mechanism-retreat-driven. Edges generated from the Mechanism Web. Logic: when a defender loses ground on an objection driven by mechanism M, they retreat to another objection driven by M. Same-mechanism retreat is the primary signal; same-type cross-mechanism pivots are secondary. Tier-descending moves (T4&rarr;T1) are boosted for defender collapse. Successors whose primary mechanism is "genuine philosophical" are suppressed &mdash; defenders don't pivot to formal attacks.
+    <strong class="mpk-em">DEFENDER mode</strong> &mdash; Mechanism-retreat-driven. Edges generated from the Mechanism Web. Logic: when a defender loses ground on an objection driven by mechanism M, they retreat to another objection driven by M. Same-mechanism retreat is the primary signal; same-type cross-mechanism pivots are secondary. Tier-descending moves (T4&rarr;T1) are boosted for defender collapse. Successors whose primary mechanism is "genuine philosophical" are suppressed &mdash; defenders don't pivot to formal attacks.
     <br><br>
-    <strong style="color:#ccc">DRIFTER mode</strong> &mdash; Tier-gravity-driven. Logic: real debates drift one tier at a time, with two special patterns preserved: nuclear retreat (T1&rarr;T5, "you're advocating genocide") and collapse (T4&rarr;T1, losing the argument and regressing to insult). Same-tier same-category drift is the dominant signal.
+    <strong class="mpk-em">DRIFTER mode</strong> &mdash; Tier-gravity-driven. Logic: real debates drift one tier at a time, with two special patterns preserved: nuclear retreat (T1&rarr;T5, "you're advocating genocide") and collapse (T4&rarr;T1, losing the argument and regressing to insult). Same-tier same-category drift is the dominant signal.
     <br><br>
-    <strong style="color:#ccc">BLENDED mode (default)</strong> &mdash; Union of all three. Edges tagged with contributing modes. Convergence indicated by star count (&#9733;&#9733;&#9733; = all three agree). An edge appearing in only one mode is preserved but visibly marked &mdash; the disagreement is the signal.
+    <strong class="mpk-em">BLENDED mode (default)</strong> &mdash; Union of all three. Edges tagged with contributing modes. Convergence indicated by star count (&#9733;&#9733;&#9733; = all three agree). An edge appearing in only one mode is preserved but visibly marked &mdash; the disagreement is the signal.
 
     <h4>WHAT THE CONVERGENCE DISTRIBUTION REVEALS</h4>
     After generation across all 78 source nodes, the distribution of edges by convergence tier is:
@@ -1967,7 +2087,7 @@ band      0.879656 &lt; 0.88              → B</pre>
     <div class="mp-note">If the three modes were redundant, this table would show majority &#9733;&#9733;&#9733; convergence. The observed 78.0% single-mode distribution is the empirical validation of the three-mode architecture: a Sophisticate, a Defender, and a Drifter confronting the same objection select substantively different next moves. This is the central strategic payoff of Map 1. "What next?" has three answers, one per interlocutor type, and most of the time they do not overlap.</div>
 
     <h4>WEIGHT BUCKETS</h4>
-    Every edge carries a mode-local weight in one of three buckets: <strong style="color:#c55">HIGH</strong>, <strong style="color:#cc9900">MEDIUM</strong>, <strong style="color:#888">LOW</strong>. Weights are categorical reasoned judgments, not empirical frequencies; percentages would imply false precision. Convergence across modes is tracked separately via the star indicator and does not override mode-local weighting. A &#9733; edge with HIGH weight is still HIGH &mdash; it represents a fork only one interlocutor type would take. A &#9733;&#9733;&#9733; edge with MEDIUM weights is a reliable cross-type prediction even though no single mode rates it HIGH.
+    Every edge carries a mode-local weight in one of three buckets: <strong class="mpk-d">HIGH</strong>, <strong class="mpk-c">MEDIUM</strong>, <strong class="mpk-dim">LOW</strong>. Weights are categorical reasoned judgments, not empirical frequencies; percentages would imply false precision. Convergence across modes is tracked separately via the star indicator and does not override mode-local weighting. A &#9733; edge with HIGH weight is still HIGH &mdash; it represents a fork only one interlocutor type would take. A &#9733;&#9733;&#9733; edge with MEDIUM weights is a reliable cross-type prediction even though no single mode rates it HIGH.
 
     <h4>TWO-MECHANISM DISCLOSURE EDGES</h4>
     Nuclear retreat (T1&rarr;T5) and collapse (T4&rarr;T1) edges appear in both Defender and Drifter modes. The same move can be produced by two different forces: worldview-defense (Defender reading) and emotional exhaustion (Drifter reading). Each such edge carries a visible disclosure note explaining both mechanisms. In practice the two may be indistinguishable &mdash; and the counter-move is often the same regardless.
@@ -1979,13 +2099,13 @@ band      0.879656 &lt; 0.88              → B</pre>
     Each source node carries a disengagement badge indicating how often the objection dead-ends without a successor (interlocutor simply drops the debate). HIGH disengagement nodes are usually philosophical checkmates (<code>performative-contradiction</code>, <code>consent-incoherent</code>, <code>bradley-no-subject</code>). LOW disengagement nodes are T1/T2 objections driven by TMT or Optimism Bias &mdash; emotional investment keeps the interlocutor engaged. The heuristic is coarse and not empirically calibrated.
 
     <h4>STRATEGIC APPLICATION</h4>
-    <strong style="color:#ccc">1. Interlocutor diagnosis.</strong> After one or two rounds with a debate partner, their move pattern reveals their type. If their successors match Sophisticate predictions, prepare accordingly. If they match Defender predictions, prepare accordingly. The three-mode view makes the diagnostic explicit.
+    <strong class="mpk-em">1. Interlocutor diagnosis.</strong> After one or two rounds with a debate partner, their move pattern reveals their type. If their successors match Sophisticate predictions, prepare accordingly. If they match Defender predictions, prepare accordingly. The three-mode view makes the diagnostic explicit.
     <br><br>
-    <strong style="color:#ccc">2. Pre-emptive counter preparation.</strong> Selecting the HIGH-weight successors of your current node tells you where to invest preparation time before a debate even begins. For <code>life-gift</code> with a sophisticated opponent, the HIGH-weight successors are <code>boonin-critique</code>, <code>harman-benign-creation</code>, <code>population-ethics-paradoxes</code>. Read those entries first.
+    <strong class="mpk-em">2. Pre-emptive counter preparation.</strong> Selecting the HIGH-weight successors of your current node tells you where to invest preparation time before a debate even begins. For <code>life-gift</code> with a sophisticated opponent, the HIGH-weight successors are <code>boonin-critique</code>, <code>harman-benign-creation</code>, <code>population-ethics-paradoxes</code>. Read those entries first.
     <br><br>
-    <strong style="color:#ccc">3. Disengagement routing.</strong> When engaging with an interlocutor you do not wish to prolong debate with, routing toward HIGH-disengagement target nodes (<code>performative-contradiction</code>, etc.) increases the probability the conversation terminates there.
+    <strong class="mpk-em">3. Disengagement routing.</strong> When engaging with an interlocutor you do not wish to prolong debate with, routing toward HIGH-disengagement target nodes (<code>performative-contradiction</code>, etc.) increases the probability the conversation terminates there.
     <br><br>
-    <strong style="color:#ccc">4. Fork visibility.</strong> &#9733; (single-mode) edges are the forks. They tell you: "this is where the different types diverge." Being aware of the fork before it happens is the difference between following and leading the debate.
+    <strong class="mpk-em">4. Fork visibility.</strong> &#9733; (single-mode) edges are the forks. They tell you: "this is where the different types diverge." Being aware of the fork before it happens is the difference between following and leading the debate.
 
     <h4>KNOWN LIMITATIONS</h4>
     1. Weights are reasoned categorical judgments, not empirical frequencies from observed debates.<br>
@@ -2408,7 +2528,10 @@ function initRwe() {
     renderMain();
     var __k108miss = document.querySelectorAll('#main article.rwe-card:not([id^="rwe-"])').length;
     if (__k108miss) console.error('K108 anchor self-test: ' + __k108miss + ' RWE cards missing anchors');
-    document.getElementById('counts').textContent =
+    /* #counts belonged to the standalone rwe.html header and is not in the combined page; writing to
+       null threw here on every examples navigation and skipped applyHash's focus tail (pin move, 2026-09-12). */
+    var __counts = document.getElementById('counts');
+    if (__counts) __counts.textContent =
       `${RWE.length} instances · ${Object.keys(OBJ_COUNT).length} of ${DATA.objections.length} objections touched`;
   }
 
@@ -2531,13 +2654,11 @@ window.__arglib.setMode = function(mode) {
     document.body.classList.add('legible');
     document.body.classList.add('high-contrast');
   }
-  ['standard', 'legible', 'hc', 'both'].forEach(function(slug) {
-    var btn = document.getElementById('mode-' + slug);
-    if (btn) btn.classList.remove('active');
-  });
-  var activeSlug = (mode === 'high-contrast') ? 'hc' : mode;
-  var activeBtn = document.getElementById('mode-' + activeSlug);
-  if (activeBtn) activeBtn.classList.add('active');
+  /* Two toggles, not four buttons (pin move, 2026-09-12): each reports its own axis. */
+  var lOn = (mode === 'legible' || mode === 'both'), hOn = (mode === 'high-contrast' || mode === 'both');
+  var lb = document.getElementById('mode-legible'), hb = document.getElementById('mode-hc');
+  if (lb) { lb.classList.toggle('active', lOn); lb.setAttribute('aria-pressed', lOn ? 'true' : 'false'); }
+  if (hb) { hb.classList.toggle('active', hOn); hb.setAttribute('aria-pressed', hOn ? 'true' : 'false'); }
   try { localStorage.setItem('arglib-mode', mode); } catch(e) {}
   document.dispatchEvent(new CustomEvent('arglib:mode-change', { detail: { mode: mode } }));
 };
@@ -10081,7 +10202,7 @@ const TIERS = {
   2: { label: "Folk Philosophical", color: "#ff6633", desc: "Moderate frequency, surface-level logic — collapse under 1-2 precise moves" },
   3: { label: "Structural / Pragmatic", color: "#cc9900", desc: "Policy-adjacent — dodge the philosophy, carry rhetorical weight via anxiety" },
   4: { label: "Genuine Philosophical", color: "#6699cc", desc: "Low frequency, high rigor — require the sharpest responses" },
-  5: { label: "Meta-Objection", color: "#9966cc", desc: "Attack the framework's internal coherence" },
+  5: { label: "Meta-Objection", color: "#a273d0", desc: "Attack the framework's internal coherence" },
 };
 
 
@@ -10098,6 +10219,15 @@ let currentMode = 'standard';
 function setMode(mode) {
   currentMode = mode;
   window.__arglib.setMode(mode);
+}
+/* TWO TOGGLES, NOT FOUR BUTTONS (pin move, 2026-09-12). LEGIBLE is the typography axis and
+   HIGH-CONTRAST the contrast + polarity axis; the old BOTH button was the cell with both on, labelled
+   as a fourth alternative. Flip one axis, derive the mode string, and everything downstream --
+   storage, the mode-change event, the graph views' mode stash -- is untouched. */
+function toggleModeAxis(axis) {
+  var l = document.body.classList.contains('legible'), h = document.body.classList.contains('high-contrast');
+  if (axis === 'legible') l = !l; else if (axis === 'high-contrast') h = !h;
+  setMode(l && h ? 'both' : l ? 'legible' : h ? 'high-contrast' : 'standard');
 }
 
 function init() {
@@ -10149,7 +10279,7 @@ function setTier(tier) {
       } else {
         btn.style.background = '#181818';
         btn.style.borderColor = '#333';
-        btn.style.color = '#666';
+        btn.style.color = '#88847c';
       }
     } else if (btnTier === null) {
       if (tier === null) {
@@ -10315,7 +10445,7 @@ function render() {
     html += `<div id="obj-${obj.id}" class="objection-header ${isOpen ? 'open' : ''}" style="border-color:${borderColor}" onclick="toggleObjection('${obj.id}')">
       <div>
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
-          <span class="tier-badge" style="color:${tierInfo.color};border:1px solid ${tierInfo.color}44;background:${tierInfo.color}11">TIER ${obj.tier}</span>
+          <span class="tier-badge" data-tier="${obj.tier}" style="color:${tierInfo.color};border:1px solid ${tierInfo.color}44;background:${tierInfo.color}11">TIER ${obj.tier}</span>
           <span class="category-label">${obj.category.toUpperCase()}</span>
         </div>
         <div class="trigger-text">"${obj.trigger}"</div>
@@ -10350,7 +10480,7 @@ function render() {
           var rsiD = displayRSI(obj.id, _rsiLevel);
           if (rsiD) {
             var grade = rsiD.grade;
-            badges += '<span class="rsi-badge" style="color:' + grade.color + ';border:1px solid ' + grade.color + '44;background:' + grade.color + '11" onclick="event.stopPropagation(); toggleRSI(\'' + obj.id + '\')" title="' + grade.desc + '">RSI ' + grade.letter + '</span>';
+            badges += '<span class="rsi-badge" data-grade="' + grade.letter + '" style="color:' + grade.color + ';border:1px solid ' + grade.color + '44;background:' + grade.color + '11" onclick="event.stopPropagation(); toggleRSI(\'' + obj.id + '\')" title="' + grade.desc + '">RSI ' + grade.letter + '</span>';
           }
           return badges;
         })()}</div>
@@ -10562,6 +10692,11 @@ function depCount(d) { return DEP_DERIVED[d.id] || { strong: 0, weak: 0, total: 
 var DEP_FAMILY_COLORS = {
   axiological:'#8b0000', consent:'#6a4c93', metaphysical:'#1a535c',
   empirical:'#4a6741', structural:'#5c4033', psychological:'#b8860b', characterization:'#666'
+};
+// As TEXT the family colours measure 1.5-3.4:1 on the dark ground (pin move, 2026-09-12). Same hues,
+// lifted to >=5.0:1; used only where a family colour paints text. Node fills keep DEP_FAMILY_COLORS.
+var DEP_FAMILY_TEXT = {
+  axiological:'#ff0b0b', consent:'#9073b7', metaphysical:'#2c8c9c', empirical:'#638a57', structural:'#a6755e', psychological:'#b8860b', characterization:'#808080'
 };
 
 // Review confidence notes — flagged entries with known data quality concerns
@@ -11190,7 +11325,7 @@ function rsiGrade(rsi) {
   if (rsi >= 0.88) return {letter:'A', color:'#4a7', desc:'Structurally airtight — minimal vulnerability to counter-attack'};
   if (rsi >= 0.82) return {letter:'B', color:'#6699cc', desc:'Robust — strong on most axes, minor pressure points'};
   if (rsi >= 0.76) return {letter:'C', color:'#c90', desc:'Competent — effective but has identifiable vulnerabilities'};
-  return {letter:'D', color:'#c55', desc:'Contested — depends on premises the interlocutor is likely to reject'};
+  return {letter:'D', color:'#d16666', desc:'Contested — depends on premises the interlocutor is likely to reject'};
 }
 // Depth modifiers: SHORT loses on Completeness and Resilience; MEDIUM intermediate
 function depthModifiedRSI(id, depth) {
@@ -11485,7 +11620,7 @@ function depSelectPremise(d) {
   document.getElementById('dp-title').textContent = d.label;
   document.getElementById('dp-desc').textContent = d.shortDesc;
 
-  var connsHtml = '<div style="margin-bottom:6px;font-size:9px;color:#666;letter-spacing:1px">DEPENDENT OBJECTIONS (' + depCount(d).total + ')</div>';
+  var connsHtml = '<div style="margin-bottom:6px;font-size:9px;color:#88847c;letter-spacing:1px">DEPENDENT OBJECTIONS (' + depCount(d).total + ')</div>';
   var connEntries = [];
   DEP_GRAPH_DATA.links.forEach(function(l) {
     var sid = typeof l.source === 'object' ? l.source.id : l.source;
@@ -11534,7 +11669,7 @@ function depSelectObj(d) {
   document.getElementById('dp-title').textContent = d.label;
   document.getElementById('dp-desc').textContent = '';
 
-  var connsHtml = '<div style="margin-bottom:6px;font-size:9px;color:#666;letter-spacing:1px">PREMISE DEPENDENCIES (' + d.depCount + ')</div>';
+  var connsHtml = '<div style="margin-bottom:6px;font-size:9px;color:#88847c;letter-spacing:1px">PREMISE DEPENDENCIES (' + d.depCount + ')</div>';
   var connPremises = [];
   DEP_GRAPH_DATA.links.forEach(function(l) {
     var tid = typeof l.target === 'object' ? l.target.id : l.target;
@@ -11544,7 +11679,7 @@ function depSelectObj(d) {
     }
   });
   connPremises.forEach(function(e) {
-    connsHtml += '<span class="dp-conn-item ' + e.strength + '" style="border-color:'+DEP_FAMILY_COLORS[e.node.family]+';color:'+DEP_FAMILY_COLORS[e.node.family]+'" onclick="depSelectPremById(\''+e.node.id+'\')">' + e.node.label + ' [' + e.strength + ']</span>';
+    connsHtml += '<span class="dp-conn-item ' + e.strength + '" style="border-color:'+DEP_FAMILY_COLORS[e.node.family]+';color:'+DEP_FAMILY_TEXT[e.node.family]+'" onclick="depSelectPremById(\''+e.node.id+'\')">' + e.node.label + ' [' + e.strength + ']</span>';
   });
   connsHtml += '<br><span class="dp-goto-library" onclick="jumpToLibraryEntry(\'' + d.entryId + '\')">▶ OPEN IN LIBRARY</span>';
   connsHtml += '<span class="dp-goto-map" onclick="jumpToMapNode(\'' + d.entryId + '\')">▶ SHOW IN MECHANISM WEB</span>';
@@ -11762,7 +11897,7 @@ function mapSelectMech(d) {
   document.getElementById('mp-type').textContent = 'MECHANISM \u2014 ' + (d.mechType||'').toUpperCase();
   document.getElementById('mp-title').textContent = d.label;
 
-  var html = '<span style="color:#666">' + connObjs.size + ' connected objections:</span><br>';
+  var html = '<span style="color:#88847c">' + connObjs.size + ' connected objections:</span><br>';
   connObjs.forEach(function(oid) {
     var oNode = MAP_GRAPH_DATA.nodes.find(function(n){return n.id===oid;});
     if(!oNode) return;
@@ -11788,7 +11923,7 @@ function mapSelectObj(d) {
   document.getElementById('mp-type').textContent = 'OBJECTION \u2014 TIER ' + d.tier;
   document.getElementById('mp-title').textContent = d.label;
 
-  var html = '<span style="color:#666">Driven by:</span><br>';
+  var html = '<span style="color:#88847c">Driven by:</span><br>';
   connMechs.forEach(function(mid) {
     var mNode = MAP_GRAPH_DATA.nodes.find(function(n){return n.id===mid;});
     if(!mNode) return;
@@ -12093,7 +12228,7 @@ function m1RenderDetail() {
   if (edges.length === 0) {
     html += '<div class="m1-empty-state" style="padding:20px 0;">No successors in ' + m1CurrentMode.toUpperCase() + ' mode.<br><br>This is a meaningful signal: no interlocutor of this type finds a natural next-move from here.</div>';
   } else {
-    html += '<div style="color:#666; font-size:10px; letter-spacing:1px; margin-bottom:8px;">' + edges.length + ' PREDICTED SUCCESSORS</div>';
+    html += '<div style="color:#88847c; font-size:10px; letter-spacing:1px; margin-bottom:8px;">' + edges.length + ' PREDICTED SUCCESSORS</div>';
     edges.forEach(function(e, idx) {
       var tgtMeta = m1ObjMeta[e.target];
       if (!tgtMeta) return;
@@ -12208,5 +12343,6 @@ window.__arglibRouteObj = function(key) {
   }
 })();
 </script>
+</div>
 </body>
 </html>

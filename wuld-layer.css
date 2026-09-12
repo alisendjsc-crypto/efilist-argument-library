@@ -490,6 +490,14 @@ html.wz-muted .wz-mute{ opacity:.45; }
    applied to any element on any page that happens to use that class name. */
 .obj[data-wz-fb]{ position:relative; }
 .obj[data-wz-fb] > .obj-meta{ padding-right:5rem; }
+/* THE FLAGSHIP'S ROW (pin move, 2026-09-12). div.objection-header is a flex row: a block of badge
+   strip + trigger line on the left, the [+] expander glyph on the right, and it is itself the click
+   target. The control sits in the row's top-right, LEFT of the glyph (right:2.6rem clears the 18px
+   glyph and its 12px margin) and level with the badge strip, which never reaches it at any width
+   down to 320px. No lane is reserved: the trigger line starts below the control's box, so no text
+   rewraps -- measured: document and every row height identical with the control and without it. */
+.objection-header[data-wz-fb]{ position:relative; }
+.objection-header[data-wz-fb] > .wz-fb{ top:.4rem; right:2.6rem; }
 .wz-fb{
   position:absolute; top:.6rem; right:.85rem;
   display:inline-flex; align-items:center; justify-content:center;
