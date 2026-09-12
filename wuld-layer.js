@@ -217,7 +217,11 @@
           for (var j = 0; j < r.cssRules.length; j++) {
             var t = one(r.cssRules[j]); if (t) inner.push(t);
           }
-          if (inner.length) out.push('@media ' + r.conditionText + '{' + inner.join('') + '}');
+          /* Re-emit under the rule's OWN at-keyword. '@media ' + conditionText was wrong for
+             @supports, which also has conditionText -- it would have produced an @media rule with a
+             supports condition, which parses as a media query that never matches. */
+          var at = r.cssText.slice(0, r.cssText.indexOf('{')).trim();
+          if (inner.length) out.push(at + '{' + inner.join('') + '}');
           continue;
         }
         var t2 = one(r); if (t2) out.push(t2);
@@ -480,9 +484,19 @@
     addEventListener('click', onClick, true);
     /* The tier can change under us -- the power button, or the ground flipping with a mode toggle.
        gradeBg's observer already watches for that; this one keeps the ambience honest about it. */
+    /* The observer fires on EVERY class change of <html>, and the magnifier toggles wz-zooming on
+       every wheel event (added on the event, removed 90ms later) -- so a fast wheel gesture was
+       running paint()'s five DOM writes per tick for a state that had not changed. paint() now
+       runs only when the answer it paints has actually moved. */
     if (window.MutationObserver) {
-      new MutationObserver(function () { if (live()) ambMaybeStart(); else ambStop(); paint(); })
-        .observe(H, { attributes: true, attributeFilter: ['class', 'data-mode'] });
+      var lastLive = live(), lastOff = muted() || reduced();
+      new MutationObserver(function () {
+        var l = live(), off = muted() || reduced();
+        var liveChanged = (l !== lastLive), offChanged = (off !== lastOff);
+        lastLive = l; lastOff = off;
+        if (liveChanged) { if (l) ambMaybeStart(); else ambStop(); }
+        if (liveChanged || offChanged) paint();
+      }).observe(H, { attributes: true, attributeFilter: ['class', 'data-mode'] });
     }
   };
 })();
@@ -649,45 +663,53 @@
      would answer for every page that has a card on it -- including the graph views, which sit
      inside the same library section. */
   var TOURS = [
+    /* THE GRAPH-VIEW COPY BELOW IS SOURCE-GATED, LIKE THE PRECIS. It describes the operator's own
+       apparatus, and the first draft got three things wrong that no test noticed: it said to click
+       an EDGE on the mechanism web (nodes are what is clickable -- 117 with pointer cursors, 142
+       lines with none), described that web's edges as relations between mechanisms (they join an
+       objection to a mechanism), and called the dependency graph's weak edges "low-confidence"
+       (weak means the response would survive the premise's removal; confidence is what the REVIEW
+       and PROVISIONAL badges mark). tourcopy_gate.py now holds a source sentence for every claim
+       in these steps and fails on any it cannot find verbatim in the panel. */
     { key: 'map', name: 'the mechanism web',
       when: function () { return vis(q('#map-view')); },
       steps: [
         { sel: '#map-graph',
-          text: 'The mechanism web. Each node is a psychological mechanism an objection runs on, and each edge is a relation between two of them. Drag to move, scroll to zoom, click an edge for its full rationale.' },
-        { sel: '#map-view .map-controls button, #map-view button:not(.map-methodology-btn)|union',
-          text: 'Legend explains the shapes and the colours. Reset puts the layout back where it started, which is worth knowing before you drag anything.' },
+          text: 'The mechanism web. Two kinds of node \u2014 objections, and the psychological mechanisms that generate them \u2014 with an edge wherever an objection runs on a mechanism. It answers why an interlocutor says a thing, not what they said. Click a node to see everything it connects to.' },
+        { sel: '#map-view .map-toolbar button:not(.map-methodology-btn)|union',
+          text: 'Legend explains the node types; Reset puts the layout back where it started, which is worth knowing before you drag anything. Bigger mechanism nodes are more common patterns.' },
         { sel: '.map-methodology-btn',
-          text: 'Methodology. What question this map answers, how the edges were derived, and — as important — what it does not claim.' }
+          text: 'Methodology. Why this map exists, the five mechanism types and what each one wants as a response, and how the assignments were derived.' }
       ] },
     { key: 'dep', name: 'the dependency graph',
       when: function () { return vis(q('#dep-view')); },
       steps: [
         { sel: '#dep-graph',
-          text: 'The dependency graph. An arrow from one claim to another means the first one’s force depends on the second holding. Cut a load-bearing claim and everything downstream of it goes with it.' },
-        { sel: '#dep-view button:not(.dep-methodology-btn)|union',
-          text: 'Toggle weak hides the low-confidence links, which is the fastest way to see the structure that is actually carrying the argument.' },
+          text: 'The dependency graph. An edge joins a premise to an objection whose response invokes it. Solid means load-bearing \u2014 remove the premise and the response collapses; dashed means the response would survive without it.' },
+        { sel: '#dep-view .map-toolbar button:not(.dep-methodology-btn)|union',
+          text: 'Toggle weak hides the dashed edges, which is the fastest way to see the structure that is actually carrying the argument.' },
         { sel: '.dep-methodology-btn',
-          text: 'Methodology. How a dependency was decided, what counts as weak, and where the graph is provisional.' }
+          text: 'Methodology. Which premises are foundational and which are diagnostic, the test that decides strong from weak, and where the graph is still marked provisional.' }
       ] },
     { key: 'map1', name: 'the argument flow map',
       when: function () { return vis(q('#map1-view')); },
       steps: [
         { sel: '#m1-graph',
-          text: 'The argument flow map. It follows a single exchange from the opening claim to wherever it terminates — concession, regress, or a refusal to continue.' },
+          text: 'The argument flow map. Given the objection just made and your response to it, which objection is most likely to come next \u2014 the library as a move tree rather than a dictionary.' },
         { sel: '#m1btn-blended,#m1btn-sophisticate,#m1btn-defender,#m1btn-drifter|union',
-          text: 'Interlocutor modes. The same argument walked as a different opponent would walk it. The shape of the exchange changes more than the content does.' },
+          text: 'Three interlocutor models and a blend. The sophisticate attacks the premise your response invoked, the defender retreats within the same mechanism, the drifter moves one tier at a time. Most edges appear in only one of them \u2014 the disagreement is the signal.' },
         { sel: '.m1-methodology-btn',
-          text: 'Methodology. How these paths were built and what a terminal node is claiming.' }
+          text: 'Methodology. How the three matrices are generated, what the weights are and are not, and which edges were applied without independent validation.' }
       ] },
     { key: 'examples', name: 'the examples view',
       when: function () { return vis(q('#combined-rwe')) && !vis(q('#map-view')) && !vis(q('#dep-view')) && !vis(q('#map1-view')); },
       steps: [
         { sel: '#view-tabs',
-          text: 'Real-world examples: things people actually said, grouped three ways — by the objection they instantiate, by who said it, or by the archetype they fit.' },
+          text: 'Real-world examples \u2014 things people actually said \u2014 grouped three ways: by the objection they instantiate, by who said it, or by the archetype they fit.' },
         { sel: '.filter-bar',
           text: 'Filters narrow by polarity, archetype and speaker type. Reset clears them all at once.' },
         { sel: '#sidebar',
-          text: 'Pick anything on the left and it opens on the right, with the source and the reasoning attached.' }
+          text: 'The left column narrows the instances shown on the right; every instance arrives with its source.' }
       ] },
     { key: 'library', name: 'this page',
       /* The wings and the flagship are different markup for the same idea: the wings render
@@ -719,7 +741,7 @@
       ] }
   ];
 
-  var live = [], idx = 0, mask = [], ring, card, body, dots, prevFocus, open = false, current = null;
+  var live = [], idx = 0, mask = [], ring, card, body, dots, prevFocus, open = false, current = null, placeGen = 0;
 
   function reduced() { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
   function seen(k) { try { return localStorage.getItem(PREFIX + k) === '1'; } catch (e) { return true; } }
@@ -815,19 +837,35 @@
        then puts its middle in the middle -- both ring edges off-screen, so the spotlight has no
        visible boundary at all. Showing the top of it is what a reader needs. */
     var tall = unionRect(els).height > innerHeight * 0.7;
-    els[0].scrollIntoView({ block: tall ? 'start' : 'center', behavior: reduced() ? 'auto' : 'smooth' });
+    /* INSTANT SCROLL, DELIBERATELY. Smooth scrolling produced two different bugs in this function.
+       First a rect read two frames after the call was a rect in flight, drawing a box that spanned
+       two cards. The settle loop below fixed that -- and then smooth scroll's STARTUP latency
+       (about two frames before anything moves) satisfied "stable for two frames" before the scroll
+       had begun, so on the flagship the loop exited with the toolbar still at its pre-scroll
+       position and the ring eased, via its own CSS transition, onto the view switcher 130px above.
+       Frame-by-frame: loop out at 39ms, page still scrolling until 221ms. The wings passed by
+       timing luck. A reader in a tour is watching the ring, not the page scroll; the ring's own
+       0.2s transition carries the continuity, and an instant scroll has no latency to be fooled by. */
+    els[0].scrollIntoView({ block: tall ? 'start' : 'center', behavior: 'auto' });
 
-    /* WAIT FOR THE SCROLL TO SETTLE. Smooth scrolling runs for a few hundred milliseconds, so a
-       rect read two frames later is a rect in flight -- which is exactly what it drew: a box
-       spanning the bottom of one card and the top of the next, matching no element on the page. */
+    /* STILL WAIT FOR LAYOUT TO SETTLE -- pages adjust themselves after a scroll (sticky headers,
+       the flagship's own scroll handlers), so the rect is re-read until it stops moving. The
+       MINIMUM time is the part that matters: no stability observed inside the first 150ms counts,
+       because that is exactly the window in which a not-yet-started motion looks like rest. */
+    /* ONE LOOP AT A TIME. Two quick arrow presses used to start two settle loops, each closing over
+       its own target; both painted every frame and whichever happened to run last won -- so a fast
+       reader could end a step with the ring on the previous step's target. Each call now takes a
+       generation number and a loop that is no longer current stops painting. */
+    var gen = ++placeGen;
     var stable = 0, last = null, t0 = performance.now();
     (function tick() {
-      if (!open) return;
+      if (!open || gen !== placeGen) return;
       var now = paint(els);
       if (last && now[0] === last[0] && now[1] === last[1] && now[2] === last[2] && now[3] === last[3]) stable++;
       else stable = 0;
       last = now;
-      if (stable < 2 && performance.now() - t0 < 800) { requestAnimationFrame(tick); return; }
+      var age = performance.now() - t0;
+      if ((stable < 2 || age < 150) && age < 900) { requestAnimationFrame(tick); return; }
       var r = unionRect(els), cw = Math.min(340, innerWidth - 24);
       card.style.width = cw + 'px';
       var ch = card.offsetHeight || 120;
@@ -852,9 +890,13 @@
 
   function onKey(e) {
     if (!open) return;
-    if (e.key === 'Escape') { e.preventDefault(); finish(); }
-    else if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
-    else if (e.key === 'ArrowLeft') { e.preventDefault(); go(idx - 1); }
+    /* The tour is modal while it is open, so the keys it answers do not also reach the page --
+       the flagship has its own Escape and arrow handling for the graphs, and a reader closing the
+       tour should not also close a legend or nudge a graph. Capture-phase listener, so this runs
+       before any page handler; stopPropagation is what keeps it from getting there. */
+    if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); finish(); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); go(idx + 1); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); e.stopPropagation(); go(idx - 1); }
     else if (e.key === 'Tab') {
       /* Focus stays inside the dialog. Without this a keyboard reader tabs straight out into a page
          that is visually blacked out, which is the worst of both. */

@@ -335,12 +335,14 @@ html.wz-vfx[data-mode="dark"]{     /* /troubleshooting/, its own palette */
   background-size:0.30vw 0.30vw;
 }
 .wz-mark{ display:flex; align-items:center; gap:.30em; color:var(--wz-mark); }
-/* THE ORNAMENT YIELDS TO THE CONTROLS. Adding the mute button moved the row 50px further from the
-   right edge, and at 320px -- the width WCAG 1.4.10 asks content to survive -- the centred wordmark
-   ran 25px under it. Measured clash threshold is 370px; hiding below 420px leaves a margin rather
-   than a coincidence. The mark is aria-hidden decoration, the buttons are the only way to reach the
-   tier, the magnifier and the sound, so the mark is what goes. */
-@media (max-width: 420px){ .wz-mark, .wz-perf{ display:none; } }
+/* THE ORNAMENT YIELDS TO THE CONTROLS. The chin row is now four 44px buttons reaching 194px from
+   the right edge, and the centred wordmark runs under the leftmost of them below a measured 476px.
+   The first threshold here was 420px -- derived when the row had THREE buttons and never re-derived
+   when the fourth was added, so between 421 and 468px the ? button sat under the wordmark and
+   chinfit never noticed, because it sampled 1440/768/390/320 and nothing in between. 500 leaves a
+   margin over the measured clash rather than a coincidence. The mark is aria-hidden decoration; the
+   buttons are the only route to the tier, the magnifier, the sound and the tutorial. */
+@media (max-width: 500px){ .wz-mark, .wz-perf{ display:none; } }
 .wz-led{                                    /* the periods ARE the status lights */
   width:.42em; height:.42em; border-radius:50%;
   background:var(--wz-led); opacity:.55;
@@ -484,7 +486,9 @@ html.wz-muted .wz-mute{ opacity:.45; }
    Absolute positioning against the card touches no line box at all. The card measured position
    static, so making it relative changes nothing it does today; the meta strip reserves the lane by
    padding, keyed to the attribute the injector sets, so a card without a control reserves nothing. */
-.obj{ position:relative; }
+/* Scoped to cards the injector has actually marked: `.obj{position:relative}` unscoped would have
+   applied to any element on any page that happens to use that class name. */
+.obj[data-wz-fb]{ position:relative; }
 .obj[data-wz-fb] > .obj-meta{ padding-right:5rem; }
 .wz-fb{
   position:absolute; top:.6rem; right:.85rem;
