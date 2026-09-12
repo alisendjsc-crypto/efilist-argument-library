@@ -4,7 +4,91 @@ A structured taxonomy of objections to antinatalism. **82 objections across 5 ti
 
 This is taxonomic work, not advocacy. The objections are catalogued as live moves in real discourse, not strawmen and not specimens. The descriptive content stands as observation regardless of whether you share the suffering-priority axiom; the closing **coda** makes that axiom visible as a stake rather than a derivation. Read both.
 
-This repository is also home to the **Refusal Suite** — a small, growing family of single-file argument libraries that carry the same method into adjacent domains: cold-graded objection taxonomies, an *optionality-only* register for the wings (each defends a **right to** and never argues anyone **should** — the one licensed exception is abortion's single advisory claim), and one shared charter. The efilist library is the flagship and by far the largest; its four sibling wings, plus a flagship-adjacent veganism module, are below.
+This repository is also home to the **Refusal Suite** — a small, growing family of single-file argument libraries that carry the same method into adjacent domains: cold-graded objection taxonomies, an *optionality-only* register for the wings (each defends a **right to** and never argues anyone **should** — the one licensed exception is abortion's single advisory claim), and one shared charter. The efilist library is the flagship and by far the largest; its four sibling wings, plus a flagship-adjacent veganism module, are listed below.
+
+---
+
+## Open it (no download required)
+
+The flagship is one self-contained HTML file. You do not have to clone or download anything to use it:
+
+- **Live:** **[library.wuld.ink](https://library.wuld.ink)** opens the umbrella front door; the flagship single-file build is at **[library.wuld.ink/combined](https://library.wuld.ink/combined)**, with three surfaces behind its top-nav router:
+  - **library** — the taxonomy, with four views: the card list, the mechanism web, the dependency graph and the argument-flow map
+  - **examples** — the 136 attested real-world deployments
+  - **coda** — the closing artifact on the load-bearing axiom
+- **From this repo, no clone:** open `combined.html` through a raw HTML proxy — e.g. `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/combined.html`. (The file is ~2.9 MB; small-file preview proxies may choke — `raw.githack` handles it.)
+- **Offline:** download `combined.html` and open it directly in any modern browser. No build step, no server. The *content* is all in the file; the presentation layer described below is linked from the site (`/wuld-layer.css`, `/wuld-layer.js`, `/sfx/`) and does not travel with it, so offline you get the library without the frame, the sound, the tours and the feedback control.
+
+> The flagship carries per-objection deep links (a copy-link on each card; `…/combined#obj-<id>`), and each suite wing carries its own (`…/<wing>/combined#obj-<id>`).
+
+---
+
+## What it looks like
+
+**The library.** Every objection is a row: its tier, its register, the claim as people actually put it. Open one for the keyword triggers, the mechanism attribution, the clinical diagnosis and the response at the depth you chose — *punch, deconstruct, dismantle* — with its RSI grade.
+
+![The flagship's library view](screenshots/flagship-library.png)
+
+**Argument Flow — the next-move predictor.** Pick a source objection; the map renders its predicted successor moves under the selected archetype (here: *blended*), ranked, with disengagement probability and the reasoning behind each edge.
+
+![Argument Flow](screenshots/argument-flow-map1.png)
+
+**The dependency graph.** An edge joins a premise to an objection whose response invokes it — solid where the response would collapse without the premise, dashed where it would survive.
+
+![Dependency graph](screenshots/dependency-graph.png)
+
+**The mechanism web.** Objections and the psychological mechanisms that generate them, with an edge wherever an objection runs on a mechanism: why an interlocutor says a thing, not what they said.
+
+![Mechanism web](screenshots/mechanism-web.png)
+
+**Real-world examples — attested in the wild.** Every catalogued move is grounded in an observed deployment, with provenance and a bounded (<15-word) quotation.
+
+![Real-world examples surface](screenshots/real-world-examples.png)
+
+**High contrast.** The same page on a cream ground; the effects step down on their own because the glow is gated on the ground's luminance.
+
+![The flagship in high contrast](screenshots/flagship-high-contrast.png)
+
+A wing — Veganism, one of six surfaces that share the layer and the reading modes:
+
+![The Veganism wing](screenshots/wing-veganism.png)
+
+Further screens are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md). A standalone `rwe.html` packages the real-world-examples surface for direct viewing or downstream tooling.
+
+---
+
+## The presentation layer
+
+Since September 2026 every surface — the flagship, the five wings and the umbrella front door — is framed by one shared layer, linked rather than inlined so a change reaches every page at once. It is cosmetic by design: nothing in it changes a word of the content, and the whole of it can be switched off.
+
+- **The frame and the chin.** A bezel around the page with a small control row at the bottom. **⏻** steps the layer down — full effects, then colour and type only, then nothing at all — and remembers the choice. The **magnifier** zooms anywhere on the page (hold Shift and scroll, or press the button and use a plain wheel; Escape returns to 1×); the picture takes on a phosphor grille as it grows. **Sound** is a quiet room tone and small cues on hover and open, only while effects are on, with a mute that stays muted. **?** replays the tutorial for whatever view is in front of you.
+- **Tutorials.** A short walkthrough the first time you open each view — the library, the mechanism web, the dependency graph, the argument flow, the examples — one feature at a time, everything else darkened. Three steps each, except the library's.
+- **Feedback.** Every card has a FEEDBACK control. It opens a small form that already names the card — the objection, its classification, its id and a link — so a report never has to describe which one it meant. A message is all it needs; an address is optional, only so a reply can find you; and a mail draft to the same alias is one click away if you would rather write. Nothing is stored on this site.
+- **Reading modes.** Two toggles on every surface: **LEGIBLE** changes the type for longer reading, **HIGH-CONTRAST** changes the ground, and the two combine. The choice is remembered.
+- **Reduced motion and print.** Under `prefers-reduced-motion` the camera does not pan and the tours do not run; on paper, none of the layer renders.
+
+![The feedback form on a card](screenshots/feedback-panel.png)
+
+![The magnifier](screenshots/magnifier.png)
+
+---
+
+## The deliverable
+
+The shippable artifact is a single file: **`combined.html`**. Library, real-world-examples table, and coda are absorbed into it behind the top-nav router. No build step.
+
+**Verbatim-artifact provenance (the integrity contract):**
+
+| Field | Value |
+|---|---|
+| File | `combined.html` |
+| Version (pin) | `v4.0.2` |
+| md5 | `62d1e8d86056465ebcb5daced38e0a83` |
+| Size | `2,974,039` bytes |
+
+That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF). The served `/combined` is held byte-identical to the pin (**pin == live**); a deploy that moves the artifact forces a same-session re-pin. One version maps to one hash: an old copy that hashes to a superseded value in [`CHANGELOG.md`](CHANGELOG.md) is diagnosable, not suspect.
+
+The binding integrity source is the project canon's `archive_attestation` block (current line, canon **v38.1**) together with the wuld.ink pin tooling.
 
 ---
 
@@ -14,7 +98,7 @@ Each library is a self-contained `combined.html` that renders from its own corpu
 
 | Library | Defends | Objections | Status | Live |
 |---|---|---|---|---|
-| **efilist argument library** | the antinatalist conclusion | **82** | flagship · pinned v4.0.0 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
+| **efilist argument library** | the antinatalist conclusion | **82** | flagship · pinned v4.0.2 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
 | **Right to Die** | the right to choose one's own death | 17 | provisional-complete (v0.3.19) | [/right-to-die/combined](https://library.wuld.ink/right-to-die/combined) |
 | **Abortion** | the right to end a pregnancy | 7 | complete (v0.1.6) · two-layer: optionality + one advisory claim | [/abortion/combined](https://library.wuld.ink/abortion/combined) |
 | **Transgenderism** | the right to gender self-determination | 12 | complete (v0.1.11) | [/transgenderism/combined](https://library.wuld.ink/transgenderism/combined) |
@@ -25,57 +109,9 @@ The wings share the flagship's discipline but not its scale — each answers the
 
 ---
 
-## Open it (no download required)
-
-The flagship is one self-contained HTML file. You do not have to clone or download anything to use it:
-
-- **Live:** **[library.wuld.ink](https://library.wuld.ink)** now opens the umbrella front door; the flagship single-file build is at **[library.wuld.ink/combined](https://library.wuld.ink/combined)**, with three surfaces behind its top-nav router:
-  - **library** — the taxonomy + force-directed Map 1
-  - **examples** — the 136 attested real-world deployments
-  - **coda** — the closing artifact on the load-bearing axiom
-- **From this repo, no clone:** open `combined.html` through a raw HTML proxy — e.g. `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/combined.html`. (The file is ~2.9 MB; small-file preview proxies may choke — `raw.githack` handles it.)
-- **Offline:** download `combined.html` and open it directly in any modern browser. No build step, no server.
-
-> The flagship carries per-objection deep links (a copy-link on each card; `…/combined#obj-<id>`), and each suite wing carries its own (`…/<wing>/combined#obj-<id>`).
-
----
-
-## What it looks like
-
-**Argument Flow — Map 1, the next-move predictor.** Pick a source objection; the map renders predicted successor moves across the selected archetype (here: *blended*), with convergence-tier and mode annotations.
-
-![Argument Flow / Map 1](screenshots/argument-flow-map1.png)
-
-**Real-world examples — attested in the wild.** Every catalogued move is grounded in an observed deployment, with provenance and a bounded (<15-word) quotation.
-
-![Real-world examples surface](screenshots/real-world-examples.png)
-
-Further views — the dependency graph, the mechanism web, an objection-detail deconstruction with RSI, and the surface chrome — are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md). A standalone `rwe.html` packages the real-world-examples surface for direct viewing or downstream tooling.
-
----
-
-## The deliverable
-
-The shippable artifact is a single file: **`combined.html`**. Library, real-world-examples table, and coda are absorbed into it behind the top-nav router. Works offline, no build step.
-
-**Verbatim-artifact provenance (the integrity contract):**
-
-| Field | Value |
-|---|---|
-| File | `combined.html` |
-| Version (pin) | `v4.0.1` |
-| md5 | `9d13359e305c6caa3ae64759f3dcc0e6` |
-| Size | `2,963,789` bytes |
-
-That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF). The served `/combined` is held byte-identical to the pin (**pin == live**); a deploy that moves the artifact forces a same-session re-pin.
-
-The binding integrity source is the project canon's `archive_attestation` block (current line, canon **v38.0**) together with the wuld.ink pin tooling.
-
----
-
 ## Status
 
-**Stable at v4.0.0** (canon v38.0 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
+**Stable at v4.0.2** (canon v38.1 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. v4.0.1 re-stamped stale display strings; v4.0.2 integrated the presentation layer and brought every HTML text colour to WCAG AA in both grounds (the graph views' SVG labels are the remaining carry). Neither touched the corpus. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
 
 The **deployment × grade danger quadrant remains empty**: the three highest-deployment objections — `violence-as-reductio` (27 RWE), `benatar-asymmetry-attack` (15), `ai-fear` (10) — are all B-band. Grade distribution (long, n=82): **A 28 / B 53 / C 1 / 0 ungraded**.
 
@@ -85,7 +121,7 @@ The **deployment × grade danger quadrant remains empty**: the three highest-dep
 
 `combined.html` carries three surfaces behind its top-nav router:
 
-- **library** — the 82-objection taxonomy across 5 tiers, the 35 mechanism attributions, the dependency graph (**95 nodes** = 82 objections + 13 premises; **255 links**, 167 strong / 88 weak), the mechanism web (117 nodes, 142 links), and the force-directed Map 1 across the four archetypes (2,886 transition edges across 78 source-keys).
+- **library** — the 82-objection taxonomy across 5 tiers, the 35 mechanism attributions, the dependency graph (**95 nodes** = 82 objections + 13 premises; **255 links**, 167 strong / 88 weak), the mechanism web (117 nodes, 142 links), and the argument-flow map across the four archetypes (2,886 transition edges across 78 source-keys).
 - **examples** — the 136 attested real-world deployments (171 attachment edges), schema v1.7.
 - **coda** — the closing artifact on the axiom this library does not derive.
 
@@ -95,11 +131,12 @@ The regenerable sources behind the single file — the authoritative corpus JSON
 
 ## Repository structure
 
-- **`combined.html`** + **`_redirects`** — the served flagship and its routing (`/` → `/libraries/`; `/combined` serves the flagship). The pinned artifact.
+- **`combined.html`** + **`_redirects`** + **`_headers`** — the served flagship, its routing (`/` → `/libraries/`; `/combined` serves the flagship) and the cache rule that makes the layer files revalidate on every load. The pinned artifact.
+- **`wuld-layer.css`** · **`wuld-layer.js`** · **`sfx/`** — the shared presentation layer, linked by every surface.
 - **`efilist_argument_library_v4_0_0.json`** (corpus) · **`efilist_argument_library_v4_0_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** — the regenerable flagship sources + tooling.
 - **`refusal_suite_charter_v0_1.md`** — the shared charter governing every library in the suite.
 - **`right-to-die/`** · **`abortion/`** · **`transgenderism/`** · **`anthropocentrism/`** — the four suite wings, each a self-contained set (corpus · grading ledger · objection index · `combined.html` · validator · builder · plain-language layman index). **`veganism/`** — the flagship-adjacent module (same set; a positive case, not an optionality wing). **`libraries/`** — the umbrella front door served at `/libraries`; **`flagship-layman-index.json`** + **`layman_index_validator_v0_*.py`** — the flagship plain-language mirror and its validators.
-- **`screenshots/`** — README imagery. **`project_canon_v38_0.json`** — the current canon record.
+- **`screenshots/`** — README imagery, captured from the deployed bytes at 1440×900. **`project_canon_v38_1.json`** — the current canon record.
 - **`archive/`** — historical session-state, canon-snapshot, variant, and audit records, retained for posterity (not part of the live build).
 
 ---
@@ -121,9 +158,9 @@ A `CITATION.cff` (CFF 1.2.0) is provided at repository root and enables GitHub's
   title   = {efilist argument library},
   author  = {Cooper, Josiah S.},
   year    = {2026},
-  version = {4.0.0},
+  version = {4.0.2},
   url     = {https://github.com/alisendjsc-crypto/efilist-argument-library},
-  note    = {Stable release, v3.9 line; flagship of the Refusal Suite}
+  note    = {Stable release, v4.0 line; flagship of the Refusal Suite}
 }
 ```
 

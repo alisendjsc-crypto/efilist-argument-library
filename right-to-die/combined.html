@@ -169,18 +169,21 @@ html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="pla
 <script>
 /* K156 reading-mode bootstrap - pre-paint, no FOUC */
 (function(){
-  var KEY="wuld:libmode",ALLOWED=["standard","legible","high-contrast","both"],
-      IDS={standard:"mode-standard",legible:"mode-legible","high-contrast":"mode-hc",both:"mode-both"};
+  var KEY="wuld:libmode",ALLOWED=["standard","legible","high-contrast","both"];
   function resolve(){
     var s=null; try{s=localStorage.getItem(KEY);}catch(e){}
     if(s&&ALLOWED.indexOf(s)!==-1) return s;
     try{ if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches) return "legible"; }catch(e){}
     return "standard";
   }
+  /* Two toggles since 2026-09-12 (the flagship got the same at K314): LEGIBLE and HIGH-CONTRAST are
+     independent axes and the four modes are their four combinations, so each button is pressed
+     when its axis is on. The mode strings, the storage key and every [data-mode] rule are as before. */
   function sync(mode){
-    var btns=document.querySelectorAll(".mode-toggle button"),i;
-    for(i=0;i<btns.length;i++) btns[i].classList.remove("active");
-    var b=document.getElementById(IDS[mode]); if(b) b.classList.add("active");
+    var l=(mode==="legible"||mode==="both"), h=(mode==="high-contrast"||mode==="both");
+    var bl=document.getElementById("mode-legible"), bh=document.getElementById("mode-hc");
+    if(bl){ bl.classList.toggle("active",l); bl.setAttribute("aria-pressed",String(l)); }
+    if(bh){ bh.classList.toggle("active",h); bh.setAttribute("aria-pressed",String(h)); }
   }
   document.documentElement.setAttribute("data-mode", resolve());
   try{var _lr=localStorage.getItem("wuld:libregister");document.documentElement.setAttribute("data-register",(_lr==="plain")?"plain":"scholar");}catch(e){document.documentElement.setAttribute("data-register","scholar");}
@@ -189,6 +192,12 @@ html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="pla
     document.documentElement.setAttribute("data-mode", mode);
     try{ localStorage.setItem(KEY,mode); }catch(e){}
     sync(mode);
+  };
+  window.toggleModeAxis=function(axis){
+    var m=document.documentElement.getAttribute("data-mode")||"standard";
+    var l=(m==="legible"||m==="both"), h=(m==="high-contrast"||m==="both");
+    if(axis==="legible") l=!l; else if(axis==="high-contrast") h=!h;
+    window.setMode(l&&h ? "both" : l ? "legible" : h ? "high-contrast" : "standard");
   };
   document.addEventListener("DOMContentLoaded", function(){
     sync(document.documentElement.getAttribute("data-mode")||"standard");
@@ -206,10 +215,8 @@ html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="pla
     <h1>Right to Die <span class="badge" id="skel-badge"></span></h1>
     <div class="sub" id="site-sub">Wing 1 — Harm &amp; Autonomy</div>
     <div class="mode-toggle" role="group" aria-label="reading mode">
-      <button id="mode-standard" class="active" type="button" onclick="setMode('standard')">standard</button>
-      <button id="mode-legible" type="button" onclick="setMode('legible')">legible</button>
-      <button id="mode-hc" type="button" onclick="setMode('high-contrast')">high-contrast</button>
-      <button id="mode-both" type="button" onclick="setMode('both')">both</button>
+      <button id="mode-legible" type="button" aria-pressed="false" onclick="toggleModeAxis('legible')">legible</button>
+      <button id="mode-hc" type="button" aria-pressed="false" onclick="toggleModeAxis('high-contrast')">high-contrast</button>
     </div>
     <div class="register-toggle" role="group" aria-label="register">
       <button id="reg-scholar" class="active" type="button" onclick="__setRegister('scholar')">scholar</button>

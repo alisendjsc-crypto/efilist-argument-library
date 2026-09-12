@@ -529,6 +529,61 @@ html.wz-muted .wz-mute{ opacity:.45; }
 html.wz-vfx .wz-fb{ text-shadow:none !important; }
 @media print{ .wz-fb{ display:none !important; }
               .obj[data-wz-fb] > .obj-meta{ padding-right:0 !important; } }
+/* THE FEEDBACK PANEL (2026-09-12). Fixed, on <body>, anchored under the control that opened it --
+   outside the stage for the same reason as the tour card: the flagship re-renders its whole list on
+   every click, and a panel inside a row would die with the row. Same palette as the tour card, so
+   the layer's two dialogs read as one family; always dark, whatever the page's ground, like the
+   tour. Below the tour's mask (2147483100) and above the chin (2147483001). */
+.wz-fb-panel{
+  position:fixed; z-index:2147483090; box-sizing:border-box;
+  padding:.7rem .85rem .75rem;
+  background:#131315; color:#ddd8d0;
+  border:1px solid #34313a; border-radius:7px;
+  box-shadow:0 10px 30px rgba(0,0,0,.6);
+  font:400 12.5px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  text-shadow:none !important;
+}
+.wz-fb-panel[hidden]{ display:none !important; }
+.wz-fb-head{ display:flex; align-items:center; margin:0 0 .5rem; }
+.wz-fb-title{
+  font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace; letter-spacing:1px;
+  text-transform:uppercase; color:#9b9690;
+}
+.wz-fb-close{
+  margin-left:auto; width:30px; height:30px; padding:0;
+  background:transparent; color:#9b9690; border:1px solid transparent; border-radius:5px;
+  font:400 18px/1 ui-sans-serif,system-ui,sans-serif; cursor:pointer;
+}
+.wz-fb-close:hover{ color:#ddd8d0; border-color:#3a3740; }
+.wz-fb-form{ margin:0; }
+.wz-fb-text, .wz-fb-email{
+  display:block; width:100%; box-sizing:border-box; margin:0 0 .5rem;
+  padding:.45rem .55rem; background:#0f0f11; color:#ddd8d0;
+  border:1px solid #3a3740; border-radius:5px;
+  font:400 13px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+.wz-fb-text{ min-height:4.6em; resize:vertical; }
+.wz-fb-text::placeholder, .wz-fb-email::placeholder{ color:#7d7882; }
+.wz-fb-text:focus-visible, .wz-fb-email:focus-visible, .wz-fb-send:focus-visible, .wz-fb-close:focus-visible, .wz-fb-mail:focus-visible{
+  outline:2px solid var(--wz-led, #FF8195); outline-offset:1px;
+}
+.wz-fb-trap{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+.wz-fb-row{ display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
+.wz-fb-send{
+  min-width:64px; height:30px; padding:0 .8rem;
+  background:#1d1d21; color:#ddd8d0; cursor:pointer;
+  border:1px solid #3a3740; border-radius:5px;
+  font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+}
+.wz-fb-send:hover{ background:#26262c; }
+.wz-fb-send[disabled]{ opacity:.5; cursor:default; }
+.wz-fb-mail{ color:#9b9690; font-size:12px; text-decoration:underline; text-underline-offset:2px; }
+.wz-fb-mail:hover{ color:#ddd8d0; }
+.wz-fb-status{ margin-left:auto; font-size:12px; color:#9b9690; }
+.wz-fb-panel[data-state="sent"] .wz-fb-status{ color:#9fd5a8; }
+.wz-fb-panel[data-state="error"] .wz-fb-status{ color:#ff9aa8; flex-basis:100%; margin-left:0; }
+.wz-fb-note{ margin:.55rem 0 0; font-size:10.5px; line-height:1.4; color:#7d7882; }
+@media print{ .wz-fb-panel{ display:none !important; } }
 
 
 /* ==============================================================================================
@@ -847,6 +902,17 @@ html.wz-vfx .wz-stage{
 /* While zooming, the transition would fight the scroll compensation and the anchor point would
  * visibly slide. Zoom steps are instant; the pan keeps its easing. */
 html.wz-zooming .wz-stage{ transition:none !important; }
+/* THE PAN'S 6px. With the cursor at the left edge the stage slides +6px right, and the document
+ * gains 6px of scrollable width -- on Windows a horizontal scrollbar that appears and disappears with
+ * the pointer, on every surface (K314 measured it, wing and flagship alike, 0 at rest). The lip
+ * already covers the gap; the overflow is only the scroller's opinion of it. Clipped on the root,
+ * which the viewport reads as overflow-x:hidden while overflow-y stays as it was (clip does not force
+ * the other axis, unlike hidden). ONLY while unzoomed and ONLY for a fine pointer: the pan is
+ * pointer-driven, and the magnifier's growth is right-and-down and NEEDS the horizontal overflow
+ * (transform-origin 0 0, see above) -- html.wz-zoomed releases it. */
+@media (hover:hover) and (pointer:fine){
+  html.wz-vfx:not(.wz-zoomed){ overflow-x:clip; }
+}
 
 /* --- 6. PERIPHERAL BLUR, ON THE FAR SIDE FROM THE CAMERA -------------------------------------
  * RETRACTION: an earlier build cut this as "inert -- three mechanisms, max abs delta 0.000". That

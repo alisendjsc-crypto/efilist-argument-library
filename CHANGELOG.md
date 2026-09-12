@@ -14,6 +14,38 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.0.2] — 2026-09-11
+
+**PATCH** by the invariants convention at the top of this file — the invariants subtree is byte-identical and no content changed. (v4.0.1 called the same condition MINOR; this entry follows the definitions.) The flagship joined the shared presentation layer that the wings and the front door already carried, and its own colours were brought to WCAG AA in both grounds. **No content change.** The corpus, the grading ledger, both graph literals and every response are byte-unchanged; the objections index re-vendors as a no-op (`d034af15…` both sides).
+
+**Why a new version.** The same rule as v4.0.1: one version maps to one hash. The integration moved the pinned file, so the pin moved; a copy that hashes to `9d13359e…` is v4.0.1, diagnosable, not corrupt.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.0.0 | `e654eabd32fa95e5969d49e6eb15aa87` | 2,963,752 |
+| superseded — v4.0.1 | `9d13359e305c6caa3ae64759f3dcc0e6` | 2,963,789 |
+| **current — v4.0.2** | **`62d1e8d86056465ebcb5daced38e0a83`** | **2,974,039** |
+
+### Changed
+
+- **`combined.html`** (+10,250 B) — links `/wuld-layer.css` and `/wuld-layer.js` exactly as the wings do and wraps its content in the layer's `.wz-stage`; the four `body >` rules that switch the three top-level sections rewritten with the descendant combinator so they match with or without the wrapper (measured: without this the sections rendered stacked for ~100 ms, CLS 0.61); a **START HERE** précis at the head of each methodology panel (+4,024 B, every clause sourced to the panel it heads); the colour remap at source — 76 rule edits and template hooks replacing `#444`–`#777` greys with warm values that clear 4.5:1 on the dark ground, the masthead `#8b0000` becoming the library's crimson `#ef3a58` on dark and staying `#8b0000` on cream, tier and grade colours restated per ground via a small palette contract (**0 of 5,680 HTML text elements per mode below 4.5:1**, four modes × eleven states); the four reading-mode buttons collapsed to two `aria-pressed` toggles (LEGIBLE, HIGH-CONTRAST; the mode strings, storage key and event are unchanged); a null guard on the examples view's `#counts` (a reference that never came across from `rwe.html`, one console error per render); the wing-switcher inset by the bezel's top lip.
+- **Layer** (`wuld-layer.css` / `wuld-layer.js`, linked, NO-PIN) — the feedback control reads the flagship's row shape as well as the wings' cards; the sound layer sounds the rows; the library tour has a seven-step flagship variant; the `?` chin control accepts the mouse (it had not: the chin is `pointer-events:none` and the button never re-enabled it); tour flags are per surface; cues softened (hover −9 dB at a 250 ms limit, click/expand/collapse −6 dB) with a `--wz-sfx-gain` master; the feedback control opens an in-page form through the same relay as `wuld.ink/contact` (email optional, the mail draft kept as a link); a 6 px horizontal scroll under the camera pan clipped.
+- **`_headers`** (new) — `/wuld-layer.css` and `/wuld-layer.js` served `private, max-age=0, must-revalidate`, so a layer change reaches every page on the next load. The zone's Browser Cache TTL floors any lower `public` max-age to 4 h, which is how a reader ran the new page against a four-hour-old layer on release evening.
+- **`.gitattributes`** — `*.css` and `*.js` added as `text eol=lf`.
+- **Wings and the front door** — the four reading-mode buttons collapsed to the same two toggles as the flagship (`right-to-die`, `abortion`, `transgenderism`, `anthropocentrism`, `veganism`, `libraries/`); the front-door badge `pinned v4.0.1 → v4.0.2`.
+- **`README.md`** — pin table takes the v4.0.2 identifier, the new md5 and byte count; the screenshots re-captured from the deployed bytes at 1440×900; a section on the presentation layer; the offline note says what does not travel with the file.
+- **`efilist_argument_library_v4_0_0.json`** — `version` field only. **Filename stays frozen**, per convention.
+
+### Held — deliberately not swept
+
+- **`combined.html` L1722** — *"the original 81 objections…"* stays, for the reason given under v4.0.1.
+- **The graph views' SVG label fills** — 225 of 323 below 4.5:1 against the K74 legibility spec, measured and left; a change to them is a pin move of its own.
+- **The flagship's phone layout** — the view-switcher and depth buttons overflow 147/217 px at 390/320, as before the integration (+2 px for the lip); pre-existing, not touched.
+
+### Open
+
+- **Invariant defect: `DEP_GRAPH_DATA` per-node stored link sums total 245 against an actual 255** — carried from v4.0.1, unchanged.
+
 ## [v4.0.1] — 2026-09-08
 
 **MINOR** by the invariants convention. **No content change.** The corpus, the grading ledger and both graph literals are byte-unchanged in substance: this release re-stamps display strings that had gone stale against the v4.0.0 cut, and corrects one methodology-provenance count. Seven display loci in `combined.html`, one stale grade line in `README.md`, one front-door badge.
