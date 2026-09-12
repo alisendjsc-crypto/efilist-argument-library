@@ -1,0 +1,18 @@
+# library.wuld.ink -- Cloudflare Pages _headers (efilist-argument-library repo root). ASCII only.
+#
+# The presentation layer is LINKED from every page, never inlined, so a change to wuld-layer.css/js
+# must reach a reader on the next page load. Pages serves .css/.js under the zone's Browser Cache
+# TTL (4 h = max-age 14400) and the rule is "whichever is higher": a lower max-age written here is
+# overridden -- wuld.ink's /components/* rule at 300 and its K24p exact-path probe at 600 both come
+# back 14400 to this day. So on 2026-09-12 a reader who had opened a wing ran the freshly moved
+# flagship against a four-hour-old layer: no feedback controls, silent rows, tours that would not
+# start.
+#
+# `private` is the documented exception ("if origin returns private in Cache-Control then preserve
+# it"): the edge does not store the file, the browser keeps its copy and revalidates it by ETag --
+# one 304 per page load, ~60 KB only when the bytes changed. The sound files stay on the default.
+/wuld-layer.css
+  Cache-Control: private, max-age=0, must-revalidate
+
+/wuld-layer.js
+  Cache-Control: private, max-age=0, must-revalidate

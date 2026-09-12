@@ -407,6 +407,11 @@ html.wz-on nav.top-nav{
   position:absolute; right:calc(max(1.0vw,6px) + 150px); top:50%; transform:translateY(-50%);
   width:44px; height:44px; display:flex; align-items:center; justify-content:center;
   background:none; border:0; cursor:pointer; padding:0;
+  /* pointer-events:auto is what makes a chin control a control: the chin is pointer-events:none so
+     the page under it stays clickable, and each button opts back in. This one shipped at K313
+     without the line and was mouse-dead on every surface until 2026-09-12 -- keyboard reached it,
+     the tour harness clicked it synthetically, and no hit-test was ever made at its centre. */
+  pointer-events:auto;
   color:var(--wz-mark); opacity:.75; font:700 .95em/1 ui-monospace,"IBM Plex Mono",Menlo,monospace;
 }
 .wz-help:hover{ opacity:1; }
@@ -647,6 +652,9 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   --wz-pan-ease: 260ms;
   --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
   --wz-tilt-ease: 220ms;
+  --wz-sfx-gain: 1;        /* master level for every cue and the room tone (wuld-sfx.js reads it when a
+                            * sound starts; 0..2). Tune live: document.documentElement.style.setProperty(
+                            * '--wz-sfx-gain','0.5') -- then write the number here. Softened 2026-09-12. */
 }
 
 /* --- 1. VIGNETTE -- and it is load-bearing, not decoration ------------------------------------

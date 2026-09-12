@@ -4,3 +4,5 @@
 *.json text eol=lf
 *.jsx  text eol=lf
 *.py   text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf

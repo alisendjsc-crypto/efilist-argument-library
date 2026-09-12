@@ -315,18 +315,32 @@
   /* gain per sound. Hover is the quietest by a wide margin because it is the one that fires most --
      82 objection cards on the flagship -- and an event that common has to sit under the reading
      rather than on top of it. */
+  /* Softened 2026-09-12 after the first evening on the flagship ("less chirpy"): hover -9 dB and
+     fired at most every 250 ms instead of 120 (on 82 rows it was the loudest thing on the page),
+     click/expand/collapse -6 dB; the magnifier, the tier step and the room tone are as they were,
+     because they answer a deliberate press, not a passing pointer. */
   var BANK = {
-    hover:        { f: 'wz-hover.ogg',        g: 0.18 },
-    click:        { f: 'wz-click.ogg',        g: 0.42 },
-    expand:       { f: 'wz-expand.ogg',       g: 0.38 },
-    collapse:     { f: 'wz-collapse.ogg',     g: 0.34 },
+    hover:        { f: 'wz-hover.ogg',        g: 0.064 },
+    click:        { f: 'wz-click.ogg',        g: 0.21 },
+    expand:       { f: 'wz-expand.ogg',       g: 0.19 },
+    collapse:     { f: 'wz-collapse.ogg',     g: 0.17 },
     magnifier_in: { f: 'wz-magnifier_in.ogg', g: 0.40 },
     tier_step:    { f: 'wz-tier_step.ogg',    g: 0.46 }
   };
   var AMB = { f: 'wz-ambience_loop.ogg', g: 0.30 };
+  /* MASTER GAIN IS A CSS NUMBER. `--wz-sfx-gain` on <html> (default 1) scales every cue and the
+     room tone, read at the moment each sound starts, so the next adjustment is a value that can be
+     tried live in the console -- document.documentElement.style.setProperty('--wz-sfx-gain','0.5')
+     -- and then written into wuld-vfx.css's :root, not a rebuild of this file. Clamped to 0..2. */
+  function master() {
+    try {
+      var v = parseFloat(getComputedStyle(H).getPropertyValue('--wz-sfx-gain'));
+      return isNaN(v) ? 1 : Math.max(0, Math.min(2, v));
+    } catch (e) { return 1; }
+  }
 
   var ctx = null, buf = {}, raw = {}, dec = {}, ambNode = null, ambGain = null, unlocked = false;
-  var HOVER_MS = 120, lastHover = 0;
+  var HOVER_MS = 250, lastHover = 0;
   /* A sound asked for before its buffer existed, and when. PENDING_MS is how long a late arrival
      still reads as a response to the click that asked for it rather than as a stray noise. */
   var pending = null, pendingAt = 0, PENDING_MS = 400;
@@ -403,7 +417,7 @@
     try {
       var s = ctx.createBufferSource(), g = ctx.createGain();
       s.buffer = buf[name];
-      g.gain.value = (BANK[name] || { g: 0.3 }).g;
+      g.gain.value = (BANK[name] || { g: 0.3 }).g * master();
       s.connect(g); g.connect(ctx.destination);
       s.start(0);
     } catch (e) {}
@@ -419,7 +433,7 @@
       ambGain.gain.value = 0;
       ambNode.connect(ambGain); ambGain.connect(ctx.destination);
       ambNode.start(0);
-      ambGain.gain.linearRampToValueAtTime(AMB.g, ctx.currentTime + 1.6);   // no sudden arrival
+      ambGain.gain.linearRampToValueAtTime(AMB.g * master(), ctx.currentTime + 1.6);   // no sudden arrival
     } catch (e) { ambNode = null; }
   }
   function ambStop() {
@@ -773,6 +787,26 @@
   function seen(k) { try { return localStorage.getItem(PREFIX + k) === '1'; } catch (e) { return true; } }
   function mark(k) { try { localStorage.setItem(PREFIX + k, '1'); } catch (e) {} }
 
+  /* ONE FLAG PER TOUR, NOT PER TOUR NAME. The library tour is one entry above but three tours in
+     practice: the flagship's rows (seven steps), a wing's cards (six) and the index's list (four).
+     Until 2026-09-12 all three spent the same flag, so a reader who had seen a wing's tour was
+     never shown the flagship's -- the once-ever key was per origin, and the origin has eleven
+     surfaces. The surface is read from markup that is in the static HTML, so the answer is the
+     same at parse time and after the cards render: .view-switcher exists only on /combined,
+     .lib-card only on the index. The wings keep the old name; nobody who has seen a wing's tour is
+     shown it again by this change. */
+  function surface() {
+    if (q('.view-switcher')) return 'flagship';
+    if (q('.lib-card')) return 'index';
+    return 'wing';
+  }
+  function keyOf(tour) {
+    if (!tour) return '';
+    if (tour.key !== 'library') return tour.key;
+    var s = surface();
+    return s === 'wing' ? 'library' : 'library:' + s;
+  }
+
   function activeTour() {
     for (var i = 0; i < TOURS.length; i++) { if (TOURS[i].when()) return TOURS[i]; }
     return null;
@@ -938,7 +972,7 @@
   function finish() {
     if (!open) return;
     open = false;
-    if (current) mark(current.key);
+    if (current) mark(keyOf(current));
     current = null;
     H.classList.remove('wz-touring');
     removeEventListener('keydown', onKey, true);
@@ -974,7 +1008,7 @@
   function maybe() {
     if (open) return;
     var t = activeTour();
-    if (t && !seen(t.key)) start(t);
+    if (t && !seen(keyOf(t))) start(t);
   }
   function onClickCheck() { clearTimeout(pending); pending = setTimeout(maybe, 420); }
 
@@ -1018,7 +1052,7 @@
      tour's first step, and wzInit() fires hint() during boot -- before any init function here could
      run. Claiming the hint's key here is what stops a first-time reader being told twice, and it is
      claimed only on a page that can actually run that tour. */
-  if (!reduced() && !seen('library') && q('#mode-standard, #mode-legible')) {
+  if (!reduced() && !seen(keyOf({ key: 'library' })) && q('#mode-standard, #mode-legible')) {
     try { sessionStorage.setItem('wz-hint-seen', '1'); } catch (e) {}
   }
 })();
