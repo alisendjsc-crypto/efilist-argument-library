@@ -14,6 +14,53 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.0.4] — 2026-09-12
+
+**PATCH** by the invariants convention at the top of this file — the invariants subtree is byte-identical and no content changed. One `href`: the flagship's breadcrumb bar named *Refusal Libraries* and did not link it, so the umbrella front door was unreachable from the most-read surface in the suite. **No content change.** The corpus, the grading ledger, both graph literals, the argument-flow matrix, the real-world-examples data and every response are byte-unchanged; the objections index is unchanged (`d034af15…`). The unified diff of the pinned file is **one hunk, two lines**.
+
+**Why a new version.** The same rule as v4.0.1 through v4.0.3: one version maps to one hash. The splice moved the pinned file, so the pin moved; a copy that hashes to `62c733ac…` is v4.0.3, diagnosable, not corrupt.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.0.0 | `e654eabd32fa95e5969d49e6eb15aa87` | 2,963,752 |
+| superseded — v4.0.1 | `9d13359e305c6caa3ae64759f3dcc0e6` | 2,963,789 |
+| superseded — v4.0.2 | `62d1e8d86056465ebcb5daced38e0a83` | 2,974,039 |
+| superseded — v4.0.3 | `62c733ac8263e6413816cfb6d28e3b8a` | 2,982,420 |
+| **current — v4.0.4** | **`c60dcb56498debc84d2fb2860cd55167`** | **2,982,518** |
+
+### The rule, not the patch
+
+The first breadcrumb segment is a **parent** on every surface except the front door, where it is the current page. So it renders as a **link everywhere**, and as a bare `aria-current="page"` label **only when the served path is `/libraries/`** — with the trailing slash on the `href`, which is the served form and saves a 308 hop. Ratified by the library seat at K233. This release brings the one surface that violated the rule up to a convention the other six already kept, and fixes the trailing slash on the five that kept it imperfectly. The front door already modelled the exception correctly and its bar is untouched.
+
+The two bar implementations are **not** unified here. The flagship ships the inline-styled `nav.rl-wing` (K123); the wings ship the class-based `nav.eyebrow.wing-switcher`. Unifying them is a large change to the pinned file for no reader-visible gain, and it is not what was ratified.
+
+### Changed
+
+- **`combined.html`** (+98 B) — the breadcrumb's first segment becomes a link. Measured on the v4.0.3 bytes: `nav.rl-wing` carried exactly one `href` (`/right-to-die/combined`) and the string `/libraries` appeared **zero** times in the whole 2.98 MB file, so a reader on the flagship reached the front door only by leaving through *Harm & Autonomy* to the right-to-die wing and coming back in from that wing's bar. It is now `<a href="/libraries/">`, held at `#88847c` — the wings' `--faint`, 5.28:1 on the bar's `#0a0a0a`, AA — and carrying the bar's own existing link treatment (`text-decoration:none`, `border-bottom:1px solid rgba(136,132,124,.4)`, `padding-bottom:1px`), so the accent stays reserved for the cross-wing link and no other pixel on the bar moves.
+- **The five wings** (`right-to-die`, `abortion`, `transgenderism`, `anthropocentrism`, `veganism`) — `href="/libraries"` → `href="/libraries/"`, exactly once in each `combined.html`, +1 B each. No pin; these auto-deploy.
+- **`libraries/index.html`** — the front-door badge `pinned v4.0.3 → v4.0.4`; **every card gains its register** as a fourth `.lib-meta` span — *rebut-only* on the four wings, *argues a thesis* on the flagship and on veganism; and the intro now says once that **"Refusal Libraries" is a venue name, not a category claim**, and that veganism is a flagship-adjacent module arguing harm rather than a wing defending a choice. Why mark it: veganism's register makes positive appraisal native and unremarkable, where the wings' Firewall-A forbids exactly that, so a reader moving from a wing to veganism with nothing on either page marking the change reads it as the firewall failing. No rename — the venue keeps its name and the per-card registers do the categorical work.
+- **`README.md`** — pin table takes the v4.0.4 identifier, the new md5 and byte count; the status line gains the nav clause and becomes "None of the four".
+- **`efilist_argument_library_v4_0_0.json`** — `version` field only, same-length string, **byte count unchanged**. **Filename stays frozen**, per convention.
+
+### Controls
+
+- **PATCH proof, run on these bytes.** `OBJECTIONS`, `REAL_WORLD_EXAMPLES`, `MAP1_TRANSITIONS`, `DEP_GRAPH_DATA`, `MAP_GRAPH_DATA` and the `id="rwe-data"` script block extracted from the v4.0.3 and the v4.0.4 bytes by bracket-balance and compared: **byte-for-byte identical, all six**, at 612,928 / 509,888 / 1,007,943 / 52,472 / 43,811 / 494,987 bytes (measured with the enclosing delimiters included).
+- **`objections-index.json` unchanged** — `d034af153aafa08c6f57884a9e7426a1` / 41,800 B on both sides. It carries no version string, so the wuld.ink objection re-vendor is a no-op by identity — verified, not assumed.
+- **The `v4.0.3` mentions in `combined.html` are not swept.** Three occurrences, all comments recording which pin move introduced a block (the phone media block, the premise-family fills, the graph-canvas fit). They are dated records. Three before, three after.
+- **The layer is not touched.** No `wuld-layer.css` / `wuld-layer.js` bytes move, and there is no layer deploy in this release.
+
+### Held — deliberately not swept
+
+- **The front door's `.lib-meta` row runs at 2.13:1 on the default ground** (`--faint` `#4a4742` on `#0b0b0c`) — badge, count and version, all three below AA and measured here for the first time. The new register span is given its own value so it clears AA in all four grounds (`#88847c`, 5.28:1 on the default; `var(--dim)` under legible / high-contrast / both, 5.99 / 13.89 / 12.63). Bringing the other three up is a front-door contrast pass of its own and was not ratified with this move.
+- **The flagship's bar names one sibling** (*Harm & Autonomy*, linking `/right-to-die/combined`) where the wings' bar names all six, and it uses a category label where the wings use the wing's own name. The asymmetry looks like a deliberate two-pole framing; it was not ratified either way and is not touched here.
+- **The K232 flagship panel items.** The LOAD-BEARING table's arithmetic contradicts its own panel prose — Consent Impossibility's 26% resolves against ~255, not 222 (67/255 = 26.3%, 67/222 = 30.2%) — and correcting the two rows named (Convergent Architecture 13→17, Benatar 33→36) takes 222 to 229 and leaves roughly 26 edges unaccounted. Not shipped until the table sums to 255 or the panel text declares a narrower denominator, with the panels' figures bound to the release-time integrity check rather than hand-patched again.
+- **The abortion advisory instance stays, and stays singular.** Firewall-B exceptions authored inside the suite = 1; the H4 lone-exception capstone requires exactly one marked exception to exist. Remove it and the capstone loses its subject; add a second and the lone-exception argument dies.
+- **`combined.html` L1722** — *"the original 81 objections…"* stays, for the reason given under v4.0.1.
+
+### Open
+
+- **Invariant defect: `DEP_GRAPH_DATA` per-node stored link sums total 245 against an actual 255** — carried from v4.0.1, unchanged.
+
 ## [v4.0.3] — 2026-09-12
 
 **PATCH** by the invariants convention at the top of this file — the invariants subtree is byte-identical and no content changed. (v4.0.1 called the same condition MINOR; this entry, like v4.0.2's, follows the definitions.) The flagship is laid out for phones, and the graph views' SVG labels — the carry named under v4.0.2 — are brought to WCAG AA on the ground each is painted on. **No content change.** The corpus, the grading ledger, both graph literals, the argument-flow matrix, the real-world-examples data and every response are byte-unchanged (`OBJECTIONS`, `REAL_WORLD_EXAMPLES`, `MAP1_TRANSITIONS`, `DEP_GRAPH_DATA`, `MAP_GRAPH_DATA` and the `rwe-data` block compared literal for literal); the objections index is unchanged (`d034af15…`).

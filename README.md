@@ -82,9 +82,9 @@ The shippable artifact is a single file: **`combined.html`**. Library, real-worl
 | Field | Value |
 |---|---|
 | File | `combined.html` |
-| Version (pin) | `v4.0.3` |
-| md5 | `62c733ac8263e6413816cfb6d28e3b8a` |
-| Size | `2,982,420` bytes |
+| Version (pin) | `v4.0.4` |
+| md5 | `c60dcb56498debc84d2fb2860cd55167` |
+| Size | `2,982,518` bytes |
 
 That md5 is binding. The file ships **verbatim** — no regeneration, no whitespace cleanup, no key reordering. A drifted hash is a corrupted artifact (cross-platform line-ending conversion is the usual culprit; the repo's `.gitattributes` enforces LF). The served `/combined` is held byte-identical to the pin (**pin == live**); a deploy that moves the artifact forces a same-session re-pin. One version maps to one hash: an old copy that hashes to a superseded value in [`CHANGELOG.md`](CHANGELOG.md) is diagnosable, not suspect.
 
@@ -98,7 +98,7 @@ Each library is a self-contained `combined.html` that renders from its own corpu
 
 | Library | Defends | Objections | Status | Live |
 |---|---|---|---|---|
-| **efilist argument library** | the antinatalist conclusion | **82** | flagship · pinned v4.0.3 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
+| **efilist argument library** | the antinatalist conclusion | **82** | flagship · pinned v4.0.4 | [library.wuld.ink/combined](https://library.wuld.ink/combined) |
 | **Right to Die** | the right to choose one's own death | 17 | provisional-complete (v0.3.19) | [/right-to-die/combined](https://library.wuld.ink/right-to-die/combined) |
 | **Abortion** | the right to end a pregnancy | 7 | complete (v0.1.6) · two-layer: optionality + one advisory claim | [/abortion/combined](https://library.wuld.ink/abortion/combined) |
 | **Transgenderism** | the right to gender self-determination | 12 | complete (v0.1.11) | [/transgenderism/combined](https://library.wuld.ink/transgenderism/combined) |
@@ -111,7 +111,7 @@ The wings share the flagship's discipline but not its scale — each answers the
 
 ## Status
 
-**Stable at v4.0.3** (canon v38.1 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. v4.0.1 re-stamped stale display strings; v4.0.2 integrated the presentation layer and brought every HTML text colour to WCAG AA in both grounds; v4.0.3 laid the page out for phones (one media block at 600px and under: the shared nav, the library's control rows, the graph canvases, the argument flow's columns, the examples' filter bar — measured to zero overflow at 390, 360 and 430 wide in both grounds) and brought the graph views' SVG labels to AA against the ground each is painted on, so every text colour on the page now reads at AA in both grounds, the graphs' dimmed de-emphasis states excepted. None of the three touched the corpus. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
+**Stable at v4.0.4** (canon v38.1 line). The corpus advanced to the **v4.0.0 content cut** on 2026-07-11 — **82 objections / 5 tiers / 35 mechanisms**: an 82nd objection (`self-effacing-under-universalization`, the Kantian universalizability charge, Tier 5 routed) and a wholesale regeneration of the `contractualism-scanlon` response triple against its strongest modern ex-ante form. This is the first objection-count change since the v3.8.0 structural cut; the v3.9 line beneath it was render, grading-surface, and suite-integration work layered on that corpus: the dependency-graph render-from-data correction, real-world-examples surfacing, per-objection RSI deconstruction, the reader-mode + collapsible-card chrome, the **Refusal Suite wing-switcher**, and the per-card plain-language reveal that the v4.0 cards ship into. v4.0.1 re-stamped stale display strings; v4.0.2 integrated the presentation layer and brought every HTML text colour to WCAG AA in both grounds; v4.0.3 laid the page out for phones (one media block at 600px and under: the shared nav, the library's control rows, the graph canvases, the argument flow's columns, the examples' filter bar — measured to zero overflow at 390, 360 and 430 wide in both grounds) and brought the graph views' SVG labels to AA against the ground each is painted on, so every text colour on the page now reads at AA in both grounds, the graphs' dimmed de-emphasis states excepted; v4.0.4 made the breadcrumb bar's first segment a link to the umbrella front door, which the flagship had named without linking. None of the four touched the corpus. See [`CHANGELOG.md`](CHANGELOG.md) for per-release detail.
 
 The **deployment × grade danger quadrant remains empty**: the three highest-deployment objections — `violence-as-reductio` (27 RWE), `benatar-asymmetry-attack` (15), `ai-fear` (10) — are all B-band. Grade distribution (long, n=82): **A 28 / B 53 / C 1 / 0 ungraded**.
 
