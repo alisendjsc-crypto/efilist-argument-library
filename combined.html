@@ -509,10 +509,10 @@ body[data-active-view="library"] {
 .map-node-obj { cursor: pointer; }
 .map-node-obj circle { stroke-width: 1.5; transition: all 0.3s; }
 .map-node-obj text {
-  font-family: 'IBM Plex Mono', monospace; font-size: 7.5px; fill: #666;
+  font-family: 'IBM Plex Mono', monospace; font-size: 7.5px; fill: #88847c;
   pointer-events: none; font-weight: 400;
 }
-&.high-contrast .map-node-obj text { fill: #888; }
+&.high-contrast .map-node-obj text { fill: #615b50; }
 &.legible .map-node-obj text { font-size: 9px; }
 .map-node-obj.highlighted circle { filter: drop-shadow(0 0 6px currentColor); }
 .map-node-obj.highlighted text { fill: #e8e8e8; }
@@ -653,21 +653,24 @@ body[data-active-view="library"] {
   font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #e8e8e8;
   pointer-events: none; font-weight: 600; letter-spacing: 0.8px;
 }
-&.high-contrast .dep-node-premise text { fill: #222; }
+&.high-contrast .dep-node-premise text { fill: #fff; }
+/* label ON the family rect (pin move v4.0.3): white reads on six families; the mustard takes black on both grounds, characterization on cream */
+.dep-node-premise[data-family="psychological"] text { fill: #000; }
+&.high-contrast .dep-node-premise[data-family="psychological"] text, &.high-contrast .dep-node-premise[data-family="characterization"] text { fill: #000; }
 &.legible .dep-node-premise text { font-size: 11px; }
 .dep-node-premise .dep-count-label {
-  font-size: 7.5px; fill: rgba(255,255,255,0.5); font-weight: 400;
+  font-size: 7.5px; fill: #e8e8e8; font-weight: 400;
 }
-&.high-contrast .dep-node-premise .dep-count-label { fill: rgba(0,0,0,0.4); }
+&.high-contrast .dep-node-premise .dep-count-label { fill: #fff; }
 .dep-node-premise.highlighted rect { filter: drop-shadow(0 0 10px rgba(139,0,0,0.6)); }
 .dep-node-premise.dimmed { opacity: 0.12; }
 .dep-node-obj { cursor: pointer; }
 .dep-node-obj circle { stroke-width: 1.5; transition: all 0.3s; }
 .dep-node-obj text {
-  font-family: 'IBM Plex Mono', monospace; font-size: 7px; fill: #555;
+  font-family: 'IBM Plex Mono', monospace; font-size: 7px; fill: #88847c;
   pointer-events: none; font-weight: 400;
 }
-&.high-contrast .dep-node-obj text { fill: #777; }
+&.high-contrast .dep-node-obj text { fill: #615b50; }
 &.legible .dep-node-obj text { font-size: 9px; }
 .dep-node-obj.highlighted circle { filter: drop-shadow(0 0 6px currentColor); }
 .dep-node-obj.highlighted text { fill: #ddd; font-weight: 500; }
@@ -753,10 +756,10 @@ body[data-active-view="library"] {
 .dep-controls button:hover { border-color: #8b0000; color: #ddd; }
 &.high-contrast .dep-controls button { background: #e8e0d4; border-color: #bbb; color: #555; }
 .dep-layer-label {
-  font-family: 'IBM Plex Mono', monospace; font-size: 8px; fill: #333;
+  font-family: 'IBM Plex Mono', monospace; font-size: 8px; fill: #88847c;
   letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
 }
-&.high-contrast .dep-layer-label { fill: #999; }
+&.high-contrast .dep-layer-label { fill: #615b50; }
 .show-in-dep-btn {
   background: none; border: 1px solid rgba(102,153,102,0.3); color: #669966;
   font-family: inherit; font-size: 8px; padding: 2px 8px; cursor: pointer;
@@ -930,6 +933,8 @@ body[data-active-view="library"] {
 }
 .m1-node-target:hover circle { fill: #2a0000; stroke: #fff; stroke-width: 2; cursor: pointer; }
 .m1-stars-badge { fill: #cc9900; font-family: 'IBM Plex Mono', monospace; font-size: 9px; pointer-events: none; }
+.m1-empty-label { fill: #88847c; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+&.high-contrast .m1-empty-label { fill: #615b50; }
 
 /* ---- MAP 1: HIGH CONTRAST overrides ---- */
 &.high-contrast .m1-controls { background: #ede8df; border-color: #ccc; }
@@ -986,9 +991,10 @@ body[data-active-view="library"] {
 &.high-contrast .m1-node-target circle.tier-4 { stroke: #336699; }
 &.high-contrast .m1-node-target circle.tier-5 { stroke: #663399; }
 &.high-contrast .m1-node-label { fill: #333; }
-&.high-contrast .m1-node-label-source { fill: #fff; }
+&.high-contrast .m1-node-label-source { fill: #1a1a1a; }
+&.high-contrast .m1-node-source .m1-node-label-source { fill: #fff; }
 &.high-contrast .m1-node-target:hover circle { fill: #f5e8e8; stroke: #8b0000; stroke-width: 2; }
-&.high-contrast .m1-stars-badge { fill: #b8860b; }
+&.high-contrast .m1-stars-badge { fill: #7a5c00; }
 
 /* ---- MAP 1: LEGIBILITY font-size overrides ---- */
 &.legible .m1-controls { padding: 14px; }
@@ -1520,8 +1526,8 @@ body[data-active-view="library"].legible .dep-node-premise text { font-size: 11p
 body[data-active-view="library"].legible .dep-node-obj text { font-size: 9px; font-weight: 600; paint-order: stroke fill; stroke: rgba(10,10,10,0.8); stroke-width: 3px; stroke-linejoin: round; }
 body[data-active-view="library"].legible.high-contrast .dep-node-premise text, body[data-active-view="library"].legible.high-contrast .dep-node-obj text { stroke: rgba(238,232,221,0.85); }
 body[data-active-view="library"].legible .dep-node-premise .dep-count-label { font-size: 9px; font-weight: 500; }
-body[data-active-view="library"].legible .dep-layer-label { font-size: 10px; fill: #555; }
-body[data-active-view="library"].legible.high-contrast .dep-layer-label { fill: #777; }
+body[data-active-view="library"].legible .dep-layer-label { font-size: 10px; fill: #88847c; }
+body[data-active-view="library"].legible.high-contrast .dep-layer-label { fill: #615b50; }
 body[data-active-view="library"].legible .m1-node-label { font-size: 11px; font-weight: 600; paint-order: stroke fill; stroke: rgba(15,15,15,0.8); stroke-width: 3px; stroke-linejoin: round; }
 body[data-active-view="library"].legible .m1-node-label-source { font-size: 12.5px; paint-order: stroke fill; stroke: rgba(15,15,15,0.8); stroke-width: 3.5px; stroke-linejoin: round; }
 body[data-active-view="library"].legible.high-contrast .m1-node-label, body[data-active-view="library"].legible.high-contrast .m1-node-label-source { stroke: rgba(237,232,223,0.85); }
@@ -1627,6 +1633,62 @@ body.high-contrast .mpk-a { color: #2b6b4b; }
 body.high-contrast .mpk-b { color: #316394; }
 body.high-contrast .mpk-c { color: #7a5c00; }
 body.high-contrast .mpk-d { color: #ab3333; }
+
+/* ===== PHONE LAYOUT (pin move v4.0.3, 2026-09-12). One block, <=600px: the shared top nav, the library view's
+   control rows, the graph toolbars, the argument flow's three columns, the examples filter bar. Nothing here
+   reaches 601px and up; the 1440x900 captures are the control. Measured on the v4.0.2 bytes at 390/360/430 wide:
+   the library view overflowed the viewport by 149/179/110 px (the view switcher's fourth tab and the RSI
+   METHODOLOGY button off-screen and unreachable), the graph views by 145/175/104, the argument flow by 369/399/328
+   (a 320px | 1fr | 360px grid), the examples and coda by 43/73/3 (the top nav's mode toggle). Control-row buttons
+   here are at least 36px tall. */
+@media (max-width: 600px) {
+  /* the shared top nav wraps when its five buttons do not fit, and scrolls away with the page: two sticky rows
+     would hold 11% of a phone screen, and the wings' header scrolls too */
+  body .top-nav { position: static; flex-wrap: wrap; gap: 8px 12px; padding: 8px 12px; }
+  body .top-nav-view-btn, body .top-nav .mode-toggle button { min-height: 36px; }
+  /* library: the four view tabs as a 2x2 grid (all four visible at 360 wide -- a scrolling strip would hide the
+     fourth, which is the defect); the depth row wraps with its label on its own line */
+  body[data-active-view="library"] .view-switcher { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px; }
+  body[data-active-view="library"] .view-btn { padding: 10px 8px; letter-spacing: 1.5px; min-height: 40px; }
+  body[data-active-view="library"] .view-btn:first-child, body[data-active-view="library"] .view-btn:nth-child(2) { border-right: 1px solid #333; }
+  body[data-active-view="library"].high-contrast .view-btn:first-child, body[data-active-view="library"].high-contrast .view-btn:nth-child(2) { border-right-color: #bbb; }
+  body[data-active-view="library"].legible .view-btn { padding: 12px 8px; letter-spacing: 1.5px; }
+  body[data-active-view="library"] .filter-btn { min-height: 36px; }
+  body[data-active-view="library"] .depth-controls { flex-wrap: wrap; row-gap: 8px; }
+  body[data-active-view="library"] .depth-label { flex: 1 1 100%; margin-right: 0; }
+  body[data-active-view="library"] .depth-btn, body[data-active-view="library"] .rsi-methodology-btn { min-height: 36px; }
+  body[data-active-view="library"] .rsi-methodology-btn { margin-left: 0; }
+  /* graph views: toolbars wrap, the zoom buttons grow to 36px; the canvas fit itself is in initMap / initDepGraph
+     (a zoom transform to the drawing's bounding box, phone only) and the legends start closed */
+  body[data-active-view="library"] #map-container, body[data-active-view="library"] #dep-container { height: 100vw; min-height: 320px; }
+  body[data-active-view="library"] .map-toolbar { flex-wrap: wrap; }
+  body[data-active-view="library"] .map-toolbar button { min-height: 36px; }
+  body[data-active-view="library"] .map-controls button, body[data-active-view="library"] .dep-controls button { width: 36px; height: 36px; }
+  body[data-active-view="library"] #map-search-input { width: min(280px, 70vw); }
+  /* argument flow: the three columns stack, the source list keeps a short scroll, the canvas takes the height its
+     viewBox gives it (m1RenderGraph sets the viewBox to the drawing's bounding box on a phone) and collapses while empty --
+     it stays in layout, because the render measures the container's width */
+  body[data-active-view="library"] .m1-layout { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  body[data-active-view="library"] .m1-source-list { max-height: 280px; }
+  body[data-active-view="library"] .m1-mode-group { flex-wrap: wrap; }
+  body[data-active-view="library"] .m1-mode-btn, body[data-active-view="library"] .m1-methodology-btn, body[data-active-view="library"] .m1-search { min-height: 36px; }
+  body[data-active-view="library"] .m1-search { min-width: 0; flex: 1 1 100%; }
+  body[data-active-view="library"] .m1-methodology-btn { margin-left: 0; }
+  body[data-active-view="library"] .m1-graph-container { min-height: 0; }
+  body[data-active-view="library"] .m1-graph-container:has(#m1-graph:empty) { border-width: 0; }
+  body[data-active-view="library"] #m1-graph { height: auto; }
+  body[data-active-view="library"] #m1-graph:empty { height: 0; }
+  /* in-card action chips (SHOW IN MAP, COPY, the plain toggle, the examples badge and pills, the notes toggle): 28px, above
+     WCAG 2.2's 24px minimum; 36 would break the line rhythm inside a card's text */
+  body .show-in-map-btn, body .show-in-dep-btn, body .copy-btn, body .plain-toggle, body .note-toggle, body .rwe-badge, body .archetype-pill { min-height: 28px; }
+  /* examples: the filter bar as label | control rows with the reset on its own line; a field's long unbroken token wraps */
+  body[data-active-view="rwe"] .filter-bar { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; }
+  body[data-active-view="rwe"] .view-tabs { flex-wrap: wrap; }
+  body[data-active-view="rwe"] .view-tabs button { white-space: nowrap; }
+  body[data-active-view="rwe"] .filter-bar select, body[data-active-view="rwe"] .view-tabs button { min-height: 36px; }
+  body[data-active-view="rwe"] .reset-btn { grid-column: 1 / -1; justify-self: end; margin-left: 0; min-height: 36px; }
+  body[data-active-view="rwe"] .rwe-field .v { overflow-wrap: anywhere; }
+}
 </style>
 <link rel="stylesheet" href="/wuld-layer.css">
 <script src="/wuld-layer.js" defer></script>
@@ -10559,6 +10621,24 @@ let map1Initialized = false;
 var __graphModeStash = null;
 var __graphModeProgrammatic = false;
 function __isGraphView(v) { return v === 'map' || v === 'dep' || v === 'map1'; }
+
+// ===== phone (<=600px): the graph canvases fit their drawing (pin move v4.0.3) =====
+// The force layouts spread to the desktop canvas they were tuned for; at phone width the mechanism web is three
+// screens wide and the argument flow's labels leave the SVG. On a phone the simulation is settled synchronously
+// and the zoom transform set to the drawing's bounding box (pinch and drag continue from there); ZOOM FIT does the
+// same. Nothing here runs at 601px and up.
+function __wzPhone() { try { return window.matchMedia('(max-width: 600px)').matches; } catch (e) { return false; } }
+function __wzFitGraph(svgSel, gSel, zoom, container, pad) {
+  var bb; try { bb = gSel.node().getBBox(); } catch (e) { return false; }
+  if (!bb || !bb.width || !bb.height) return false;
+  var cw = container.clientWidth, ch = container.clientHeight; pad = pad || 16;
+  var ext = zoom.scaleExtent();
+  var s = Math.min((cw - 2 * pad) / bb.width, (ch - 2 * pad) / bb.height);
+  s = Math.max(ext[0], Math.min(ext[1], s));
+  svgSel.call(zoom.transform, d3.zoomIdentity.translate(cw / 2 - s * (bb.x + bb.width / 2), ch / 2 - s * (bb.y + bb.height / 2)).scale(s));
+  return true;
+}
+function __wzSettle(sim) { var n = Math.ceil(Math.log(sim.alphaMin()) / Math.log(1 - sim.alphaDecay())); sim.stop(); sim.tick(n); }
 function __currentModeFromBody() {
   var l = document.body.classList.contains('legible');
   var h = document.body.classList.contains('high-contrast');
@@ -11360,6 +11440,7 @@ var depShowWeak = true;
 function initDepGraph() {
   var container = document.getElementById('dep-container');
   var W = container.clientWidth, H = container.clientHeight;
+  if (__wzPhone()) { W = Math.max(W, 1400); H = Math.max(H, 900); }   // phone: lay out on the desktop canvas, then fit
   var svg = d3.select('#dep-graph');
   depZoom = d3.zoom().scaleExtent([0.15, 4]).on('zoom', function(e) { depSvgG.attr('transform', e.transform); });
   svg.call(depZoom);
@@ -11535,6 +11616,7 @@ function initDepGraph() {
   var allPremises = foundNodes.concat(diagNodes);
   depPremSel = depSvgG.selectAll('.dep-node-premise').data(allPremises).enter().append('g')
     .attr('class','dep-node-premise')
+    .attr('data-family', function(d) { return d.family; })
     .on('click', function(ev, d) { depSelectPremise(d); })
     .call(d3.drag().on('start',depDragStart).on('drag',depDragged).on('end',depDragEnd));
 
@@ -11580,13 +11662,17 @@ function initDepGraph() {
     });
 
   // Tick
-  depSimulation.on('tick', function() {
+  function depTick() {
     depLinkSel
       .attr('x1', function(d){return d.source.x;}).attr('y1', function(d){return d.source.y;})
       .attr('x2', function(d){return d.target.x;}).attr('y2', function(d){return d.target.y;});
     depPremSel.attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
     depObjSel.attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
-  });
+  }
+  depSimulation.on('tick', depTick);
+
+  // phone: settle now, fit the drawing, legend closed (it covers half the canvas at 390 wide)
+  if (__wzPhone()) { __wzSettle(depSimulation); depTick(); document.getElementById('dep-legend').classList.add('hidden'); depZoomFit(); return; }
 
   // Initial zoom to fit
   setTimeout(function() {
@@ -11736,6 +11822,7 @@ function depZoomOut() { d3.select('#dep-graph').transition().duration(300).call(
 function depZoomFit() {
   var c = document.getElementById('dep-container');
   var w = c.clientWidth, h = c.clientHeight;
+  if (__wzPhone() && __wzFitGraph(d3.select('#dep-graph'), depSvgG, depZoom, c, 16)) return;
   d3.select('#dep-graph').transition().duration(500).call(
     depZoom.transform, d3.zoomIdentity.translate(w*0.05, h*0.05).scale(0.9)
   );
@@ -11868,14 +11955,17 @@ function initMap() {
     .force('x', d3.forceX(w/2).strength(0.03))
     .force('y', d3.forceY(h/2).strength(0.03))
     .alphaDecay(0.015)
-    .on('tick', function() {
+    .on('tick', mapTick);
+  function mapTick() {
       mapLinkSel.attr('x1',function(d){return d.source.x;}).attr('y1',function(d){return d.source.y;})
         .attr('x2',function(d){return d.target.x;}).attr('y2',function(d){return d.target.y;});
       mapMechSel.attr('transform',function(d){return 'translate('+d.x+','+d.y+')';});
       mapObjSel.attr('transform',function(d){return 'translate('+d.x+','+d.y+')';});
-    });
+  }
 
   svg.on('click', function() { mapReset(); });
+  // phone: settle now, fit the drawing, legend closed (it covers half the canvas at 390 wide)
+  if (__wzPhone()) { __wzSettle(mapSimulation); mapTick(); document.getElementById('map-legend').classList.add('hidden'); mapZoomFit(); }
 }
 
 function mapDragS(e,d){ if(!e.active) mapSimulation.alphaTarget(0.1).restart(); d.fx=d.x; d.fy=d.y; }
@@ -11976,6 +12066,7 @@ function mapZoomOut() { d3.select('#map-graph').transition().duration(300).call(
 function mapZoomFit() {
   var c = document.getElementById('map-container');
   var w = c.clientWidth, h = c.clientHeight;
+  if (__wzPhone() && __wzFitGraph(d3.select('#map-graph'), mapSvgG, mapZoom, c, 16)) return;
   d3.select('#map-graph').transition().duration(500).call(
     mapZoom.transform, d3.zoomIdentity.translate(w/2, h/2).scale(0.55).translate(-w/2, -h/2)
   );
@@ -12108,7 +12199,7 @@ function m1RenderGraph() {
   var n = sortedEdges.length;
   if (n === 0) {
     svg.append('text').attr('x', cx).attr('y', cy).attr('text-anchor','middle')
-      .attr('fill','#555').style('font-family','IBM Plex Mono, monospace').style('font-size','12px')
+      .attr('class','m1-empty-label')
       .text('No successors in ' + m1CurrentMode.toUpperCase() + ' mode');
     return;
   }
@@ -12186,6 +12277,8 @@ function m1RenderGraph() {
         .attr('x', p.x).attr('y', p.y - 22).attr('text-anchor','middle').text(starStr);
     }
   });
+  // phone: the viewBox becomes the drawing's bounding box, so the labels around the ring stay on the canvas
+  if (__wzPhone()) { var bb = svg.node().getBBox(); if (bb && bb.width && bb.height) svg.attr('viewBox', (bb.x - 10) + ' ' + (bb.y - 10) + ' ' + (bb.width + 20) + ' ' + (bb.height + 20)); }
 }
 
 function m1HighlightEdge(idx, on) {
