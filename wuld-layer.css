@@ -884,7 +884,11 @@ html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
  * THE AMPLITUDE IS BOUNDED BY THE LIP, which is why no void can appear: the stage slides at most
  * --wz-pan, and the fixed bezel lip is wider than that, so the gap opened at one edge is always
  * underneath the frame that is painted on top of it. One number, derived from another number,
- * rather than two numbers that have to be kept in agreement by hand. */
+ * rather than two numbers that have to be kept in agreement by hand.
+ *   UNDER THE MAGNIFIER THE BOUND IS THE GEOMETRY INSTEAD (K317, wuld-vfx.js "THE CAMERA"): the
+ * pointer's place across the viewport maps onto what the scaled stage hides past that edge, so the
+ * sweep is exactly the overflow and the stage's edge never crosses the viewport's. The 6px rides on
+ * top, under the lip as before. */
 /* TRANSFORM-ORIGIN IS 0 0, AND THAT IS THE DIFFERENCE BETWEEN A MAGNIFIER THAT WORKS AND ONE THAT
  * EATS THE PAGE. Measured with the origin at 50%: at zoom 2 the stage grows 720px past each side of
  * the viewport and only the RIGHT 714px is reachable, because there is no negative scroll -- the
@@ -913,6 +917,21 @@ html.wz-zooming .wz-stage{ transition:none !important; }
 @media (hover:hover) and (pointer:fine){
   html.wz-vfx:not(.wz-zoomed){ overflow-x:clip; }
 }
+/* STICKY IS LAID OUT IN UNSCALED SPACE AND PAINTED IN SCALED SPACE. The flagship's LIBRARY | EXAMPLES
+ * | CODA bar is position:sticky; top:0, and so is the examples view's sidebar. Sticky offsets are
+ * computed by layout against the scrollport in the page's own coordinates, and the stage's scale is
+ * applied at paint: scrolled by s under zoom k, the bar is placed at layout y = s and painted at
+ * screen y = k*s - s = (k-1)*s (plus k times its own `top`) -- it drifts DOWN the viewport as the
+ * reader scrolls and floats mid-panel until that passes the viewport's height, after which it is
+ * simply below the fold, which is why it was seen in one section of the methodology text (near the
+ * top of the page) and "nowhere else". Measured at 1.97x scrolled 752: the bar 761px down the
+ * viewport, (k-1)*752 + k*14.4 to the pixel. Under the magnifier the bar stops being
+ * sticky and scrolls with the page like everything else; Escape restores the zoom and the stickiness
+ * with it. `relative` rather than `static` so its z-index and its offsets keep meaning; scoped to the
+ * stage, so the layer's own fixed furniture is untouched. (K317, TODO 22; only the flagship carries
+ * sticky elements -- the five wings and the index carry none.) */
+html.wz-zoomed .wz-stage .top-nav,
+html.wz-zoomed .wz-stage .sidebar{ position:relative !important; }
 
 /* --- 6. PERIPHERAL BLUR, ON THE FAR SIDE FROM THE CAMERA -------------------------------------
  * RETRACTION: an earlier build cut this as "inert -- three mechanisms, max abs delta 0.000". That

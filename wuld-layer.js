@@ -66,24 +66,75 @@
   var raf = null;
   function num(v, d){ var n = parseFloat(v); return isNaN(n) ? d : n; }
 
+  /* ---- THE CAMERA ----------------------------------------------------------------------------
+     Unzoomed, the pan is --wz-pan (6px) toward the pointer and no more: the pointer at an edge slides
+     the picture that far, and the bezel's lip is wider than that, so the gap it opens is under the
+     frame. Zoomed, 6px is nothing against a line three viewports wide, and there is no wheel for the
+     rest of it: Shift+wheel is the zoom, and once the magnifier is armed the plain wheel is too. So
+     under the magnifier THE POINTER IS THE CAMERA (K317). Its place across the viewport maps onto
+     what the scaled stage hides past that edge: at the centre nothing moves, at the right edge the
+     whole of what lies past the right edge has come in, at the left edge the whole of what lies past
+     the left. The sweep is exactly the overflow, no number chosen -- which is what "enough to finish
+     the paragraph, never off the page" comes to when written down: the bound is the geometry.
+     Vertically the same map, capped at (zoom-1) x half the viewport per side, because the wheel still
+     scrolls that axis and a page is tall. The 6px rides on top at every zoom so the feel is
+     continuous through 1.0. The camera's translation is composed OUTSIDE the scale (see the
+     stylesheet), so all of this is in screen pixels. */
+  var cam = { px: 0, py: 0 };                        // the applied camera, the zoomed part only
+  var ptr = { x: innerWidth / 2, y: innerHeight / 2 };
+  function stage(){ return document.querySelector('.wz-stage'); }
+  function cw(){ return document.documentElement.clientWidth  || innerWidth; }
+  function ch(){ return document.documentElement.clientHeight || innerHeight; }
+  function geom() {
+    var s = stage();
+    return s ? { l: s.offsetLeft, t: s.offsetTop, w: s.offsetWidth, h: s.offsetHeight }
+             : { l: 0, t: 0, w: cw(), h: ch() };
+  }
+  /* What the scaled stage hides past each viewport edge with the camera at rest, in screen px, from
+     LAYOUT geometry: the stage's rect is mid-transition half the time and would read the easing. The
+     origin is 0 0, so the stage's left and top stay put and only its far edges grow. */
+  function hidden(g, k) {
+    return { l: Math.max(0, scrollX - g.l), r: Math.max(0, g.l + g.w * k - scrollX - cw()),
+             t: Math.max(0, scrollY - g.t), b: Math.max(0, g.t + g.h * k - scrollY - ch()) };
+  }
+  function vcap(k){ return (k - 1) * ch() / 2; }
+  // the camera the model puts at a pointer position, at the current scroll and zoom
+  function model(x, y) {
+    var dx = (x / innerWidth - 0.5) * 2, dy = (y / innerHeight - 0.5) * 2;   // -1 .. 1
+    if (zoom <= 1.0001) return { px: 0, py: 0, dx: dx, dy: dy };
+    var hd = hidden(geom(), zoom), v = vcap(zoom);
+    return { dx: dx, dy: dy,
+             px: dx < 0 ? -dx * hd.l : -dx * hd.r,
+             py: dy < 0 ? -dy * Math.min(hd.t, v) : -dy * Math.min(hd.b, v) };
+  }
+  function applyCam(px, py, dx, dy) {
+    var base = num(getComputedStyle(H).getPropertyValue('--wz-pan'), 6);   // read, never restated: cccxvii
+    cam.px = px; cam.py = py;
+    // The camera moves TOWARD the cursor, so the picture slides the other way and you see further
+    // to that side.
+    H.style.setProperty('--wz-px', (px - dx * base).toFixed(2) + 'px');
+    H.style.setProperty('--wz-py', (py - dy * base * 0.6).toFixed(2) + 'px');
+    // Blur the end the camera is NOT at.
+    H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
+    H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
+  }
   function onMove(e) {
     if (i !== 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    ptr.x = e.clientX; ptr.y = e.clientY;
     if (raf) return;
     raf = requestAnimationFrame(function () {
       raf = null;
-      var cs  = getComputedStyle(H),
-          pan = num(cs.getPropertyValue('--wz-pan'), 6),   // read, never restated: cccxvii
-          dx  = (e.clientX / innerWidth  - 0.5) * 2,       // -1 .. 1
-          dy  = (e.clientY / innerHeight - 0.5) * 2;
-      // The camera moves TOWARD the cursor, so the picture slides the other way and you see a little
-      // further to that side. Bounded by --wz-pan, which is bounded by the lip, so the gap that opens
-      // at the trailing edge is always underneath the frame.
-      H.style.setProperty('--wz-px', (-dx * pan).toFixed(2) + 'px');
-      H.style.setProperty('--wz-py', (-dy * pan * 0.6).toFixed(2) + 'px');
-      // Blur the end the camera is NOT at.
-      H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
-      H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
+      var m = model(ptr.x, ptr.y);
+      applyCam(m.px, m.py, m.dx, m.dy);
     });
+  }
+  /* A wheel scroll with the pointer still moves the bounds, not the camera: clamp to the new bounds
+     and never re-place, so nothing moves that the reader did not move. Our own scrollTo lands here
+     too, asynchronously, and finds a camera already inside its bounds. */
+  function onScroll() {
+    if (zoom <= 1.0001) return;
+    var hd = hidden(geom(), zoom), px = clamp(cam.px, -hd.r, hd.l), py = clamp(cam.py, -hd.b, hd.t);
+    if (px !== cam.px || py !== cam.py) { var m = model(ptr.x, ptr.y); applyCam(px, py, m.dx, m.dy); }
   }
 
   /* Shown once per BROWSER SESSION, not once ever: a reader who closes the tab and comes back
@@ -137,13 +188,33 @@
   function clamp(v, lo, hi){ return v < lo ? lo : (v > hi ? hi : v); }
   function zmax(){ return num(getComputedStyle(H).getPropertyValue('--wz-zoom-max'), 4); }
 
+  /* The camera has two parts the reader cannot tell apart, the scroll and the pan, and after a zoom
+     step they have to be split so that the pan is what the model would give at that scroll -- then
+     the next pointer move changes nothing. The map scroll -> (scroll - pan) is monotone, so a
+     bisection finds the split; where the model cannot express the camera (the pointer at an edge
+     pins it to that end whatever the scroll) the remainder stays in the pan and the next move eases
+     it out. What is never traded away is the anchor: the point under the cursor stays under it. */
+  function split(u, hi, f) {
+    var a = 0, b = Math.max(0, hi);
+    if (b <= a) return a;
+    if (a - f(a) >= u) return a;
+    if (b - f(b) <= u) return b;
+    for (var n = 0; n < 24; n++) { var m = (a + b) / 2; if (m - f(m) < u) a = m; else b = m; }
+    return (a + b) / 2;
+  }
+
   function setZoom(next, cx, cy) {
     if (i !== 2) return;                       // zoom belongs to the vfx tier and nowhere else
     next = clamp(next, 1, zmax());
     if (Math.abs(next - zoom) < 0.0005) return;
-    var k0 = zoom, k1 = next;
-    // the document point under the cursor, in unscaled coordinates
-    var docX = (scrollX + cx) / k0, docY = (scrollY + cy) / k0;
+    var k0 = zoom, k1 = next, g = geom(),
+        base = num(getComputedStyle(H).getPropertyValue('--wz-pan'), 6),
+        dx = (cx / innerWidth - 0.5) * 2, dy = (cy / innerHeight - 0.5) * 2,
+        bx = dx * base, by = dy * base * 0.6;
+    // The document point under the cursor, in the stage's own unscaled coordinates. The camera's
+    // translation sits outside the scale, so it comes off before the division: with a K317 camera
+    // at 600px, dividing the raw scroll would slide the anchor 72px on every step.
+    var docX = (scrollX + cx - cam.px + bx - g.l) / k0, docY = (scrollY + cy - cam.py + by - g.t) / k0;
     H.classList.add('wz-zooming');
     H.style.setProperty('--wz-zoom', k1.toFixed(4));
     // opacity ramps from nothing at 1x, so the grille cannot show up uninvited
@@ -151,7 +222,25 @@
     H.style.setProperty('--wz-grille-a',
       (clamp((k1 - 1) / Math.max(0.001, zmax() - 1), 0, 1) * gmax).toFixed(3));
     zoom = k1;
-    scrollTo(Math.round(docX * k1 - cx), Math.round(docY * k1 - cy));
+    // The camera position that keeps the anchor (the viewport's corner on the scaled stage, base
+    // pan aside), clamped to where the stage still fills the viewport; then the split.
+    var rx = g.l + g.w * k1 - cw(), ry = g.t + g.h * k1 - ch(),
+        ux = clamp(g.l + docX * k1 - cx - bx, g.l, Math.max(g.l, rx)),
+        uy = clamp(g.t + docY * k1 - cy - by, g.t, Math.max(g.t, ry)),
+        v  = vcap(k1);
+    var fx = function (sx) { return dx < 0 ? -dx * Math.max(0, sx - g.l) : -dx * Math.max(0, rx - sx); };
+    var fy = function (sy) { return dy < 0 ? -dy * Math.min(Math.max(0, sy - g.t), v)
+                                           : -dy * Math.min(Math.max(0, ry - sy), v); };
+    if (k1 <= 1.0001) {                        // back to 1x: no camera, the scroll alone holds the anchor
+      applyCam(0, 0, dx, dy);
+      scrollTo(Math.round(g.l + docX - cx - bx), Math.round(g.t + docY - cy - by));
+    } else {
+      var sx = split(ux, rx, fx), sy = split(uy, ry, fy);
+      applyCam(sx - ux, sy - uy, dx, dy);
+      scrollTo(Math.round(sx), Math.round(sy));
+      // the browser rounds and clamps the scroll; the pan absorbs the difference so the anchor holds
+      if (Math.abs(scrollX - sx) > 0.01 || Math.abs(scrollY - sy) > 0.01) applyCam(scrollX - ux, scrollY - uy, dx, dy);
+    }
     H.classList.toggle('wz-zoomed', k1 > 1.0001);
     if (k1 <= 1.0001) H.classList.remove('wz-mag-on');
     clearTimeout(setZoom._t);
@@ -168,12 +257,13 @@
      restores the scroll position the zoom was anchored from. */
   function clearZoom(){
     if (zoom <= 1.0001) return;
-    var docX = scrollX / zoom, docY = scrollY / zoom;
-    zoom = 1;
+    var g = geom(), docX = (scrollX - cam.px - g.l) / zoom, docY = (scrollY - cam.py - g.t) / zoom;
+    zoom = 1; cam.px = 0; cam.py = 0;
     H.style.setProperty('--wz-zoom', '1');
     H.style.setProperty('--wz-grille-a', '0');
+    H.style.setProperty('--wz-px', '0px'); H.style.setProperty('--wz-py', '0px');
     H.classList.remove('wz-zoomed', 'wz-mag-on');
-    scrollTo(Math.round(docX), Math.round(docY));
+    scrollTo(Math.round(g.l + docX), Math.round(g.t + docY));
   }
 
   function onWheel(e) {
@@ -280,11 +370,16 @@
       if (e.key === 'Escape' && zoom > 1.0001) { H.classList.remove('wz-mag-on'); resetZoom(); }
     });
     addEventListener('mousemove', onMove, { passive: true });
+    addEventListener('scroll', onScroll, { passive: true });
     // Rest at a slight angle rather than snapping flat: the POV reading is what makes it stop
     // looking like a plain page, and it should not depend on the cursor still moving.
     rest = function () {
-      H.style.setProperty('--wz-px','0px'); H.style.setProperty('--wz-py','0px');
       H.style.setProperty('--wz-sl','0');   H.style.setProperty('--wz-sr','0');
+      // Zoomed, the pointer leaving the window keeps the camera where it was: a reader who overshoots
+      // the window's edge while finishing a line must not have the line pulled away (K317).
+      if (zoom > 1.0001) return;
+      cam.px = 0; cam.py = 0;
+      H.style.setProperty('--wz-px','0px'); H.style.setProperty('--wz-py','0px');
     };
     addEventListener('mouseleave', rest);
     window.wzRest = rest;
@@ -957,7 +1052,7 @@
         { sel: '.wz-power',
           text: 'Screen effects. This steps the whole layer down — full effects, then colour and type only, then nothing at all. It remembers what you chose.' },
         { sel: '.wz-mag',
-          text: 'Magnifier. Hold Shift and scroll to zoom anywhere on the page, or press this and zoom with a plain wheel. Escape returns to 1×.' },
+          text: 'Magnifier. Hold Shift and scroll to zoom anywhere on the page, or press this and zoom with a plain wheel. Zoomed in, the pointer is the camera: move it toward an edge and what lies past that edge comes in. Escape returns to 1×.' },
         { sel: '.wz-mute',
           text: 'Sound. A quiet mechanical room tone and small cues, only while effects are on. This switches it off and keeps it off.' },
         { sel: '#mode-standard,#mode-legible,#mode-hc,#mode-both|union',
