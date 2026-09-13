@@ -171,6 +171,41 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .obj.lay .lay-win{color:var(--accent);font-style:italic;margin-top:.75rem}
 .obj.lay .lay-lbl{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:.2rem}
 html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="plain"] .ctl-group:has(#toggle-all){display:none}
+/* K321 candidate — wings + front door. Two changes, both NO-PIN, both CSS/head only.
+   (1) the face: these six surfaces DECLARE 'IBM Plex Mono' and load no webfont, so they
+       render in Consolas/Menlo while the flagship, which links it, renders Plex. Same
+       declaration, different face. The fix is the <link> in the head, not a redesign.
+   (2) the expander: summary was 9.6px with its "[+]" in --faint (2.13:1 on this ground)
+       and a ~17px hit box. It becomes a real control: 38px, bordered, named. */
+
+.resp-d{margin:.45rem 0 0}
+.resp-d>summary{
+  cursor:pointer;list-style:none;
+  display:flex;align-items:center;gap:.6rem;
+  min-height:38px;padding:.4rem .7rem;
+  border:1px solid var(--line);border-left:2px solid var(--accent);
+  background:var(--panel);
+  color:var(--accent);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.resp-d>summary:hover{background:#15151a;border-color:var(--dim)}
+.resp-d>summary::after{
+  margin-left:auto;content:"read the rebuttal  +";
+  color:var(--dim);font-size:.64rem;letter-spacing:.12em;white-space:nowrap;
+}
+.resp-d[open]>summary{border-left-color:var(--stub);margin-bottom:.55rem}
+.resp-d[open]>summary::after{content:"collapse  \2212"}
+.resp-d>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:480px){ .resp-d>summary::after{content:"read  +"} .resp-d[open]>summary::after{content:"close  \2212"} }
+
+/* the same treatment for the nested real-world-examples disclosure, so one page has one affordance */
+.rwe-more>summary{
+  cursor:pointer;list-style:none;display:flex;align-items:center;gap:.6rem;
+  min-height:32px;padding:.3rem .6rem;border:1px solid var(--line);
+  color:var(--dim);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
+}
+.rwe-more>summary:hover{border-color:var(--dim);color:var(--fg)}
+.rwe-more>summary::after{margin-left:auto;content:"+";color:var(--dim)}
+.rwe-more[open]>summary::after{content:"\2212"}
 </style>
 <script>
 /* K156 reading-mode bootstrap - pre-paint, no FOUC */
@@ -212,7 +247,7 @@ html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="pla
 </script>
 <link rel="stylesheet" href="/wuld-layer.css">
 <script src="/wuld-layer.js" defer></script>
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
 <body>
 <div class="wz-stage">
 <div class="wrap">

@@ -137,6 +137,37 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .lib-badge{border:1px solid var(--line);border-radius:2px;padding:.08rem .4rem;color:var(--dim)}
 .lib-badge.live{color:var(--accent);border-color:var(--accent)}
 .lib-badge.complete{color:var(--stub);border-color:var(--stub)}
+/* K321 front door — hierarchy and real figures, in the venue's own register.
+   The flagship carries 82 of the suite's 132 objections; it stops sharing a column with a 6-node wing. */
+.suite-rail{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);margin:1rem 0 0}
+.suite-rail div{flex:1 1 8rem;padding:.55rem .8rem;border-right:1px solid var(--line)}
+.suite-rail div:last-child{border-right:none}
+.suite-rail b{display:block;font-size:1.15rem;font-weight:500;color:var(--fg);font-variant-numeric:tabular-nums;line-height:1.2}
+.suite-rail span{font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.grouplbl{grid-column:1/-1;font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);
+          border-bottom:1px solid var(--line);padding-bottom:.3rem;margin:.6rem 0 -.2rem}
+.grouplbl em{font-style:normal;color:var(--dim);letter-spacing:.04em;text-transform:none;font-size:.72rem}
+.lib-card.flagship,.lib-card.adjacent{grid-column:1/-1;border-left-width:3px}
+.lib-card.flagship h2{font-size:1.45rem}
+.lib-card.adjacent{border-left-color:var(--dim)}
+/* four wings, always 2x2 above 640 and 1 column below: nothing sits alone in a row */
+.lib-grid{grid-template-columns:1fr}
+@media (min-width:640px){ .lib-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+/* one object repeated: the meta row sits on the same baseline on every card */
+.lib-card{display:flex;flex-direction:column}
+.lib-card p{flex:1 1 auto}
+.lib-meta>span+span::before{content:" b7";color:var(--faint);margin-right:.5rem}
+.lib-meta{gap:.45rem .5rem}
+.soon{border:1px dashed var(--line);margin:1.6rem 0 0;padding:1rem 1.15rem}
+.soon>h2{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin:0 0 .2rem;font-weight:400}
+.soon>p{margin:.1rem 0 .9rem;font-size:.78rem;color:var(--faint);line-height:1.5}
+.soon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:.9rem}
+.soon-item{border-left:2px solid var(--line);padding-left:.8rem}
+.soon-item h3{font-size:.92rem;margin:0 0 .25rem;font-weight:500;color:var(--dim)}
+.soon-item p{margin:0;font-size:.76rem;color:var(--faint);line-height:1.55}
+.soon-item .tag{display:inline-block;margin-top:.45rem;font-size:.52rem;letter-spacing:.14em;
+                text-transform:uppercase;color:var(--faint);border:1px solid var(--line);padding:.1rem .4rem}
+@media (max-width:520px){ .suite-rail div{flex:1 1 45%;border-bottom:1px solid var(--line)} }
 .lib-reg{color:#88847c}
 [data-mode="legible"] .lib-reg,[data-mode="high-contrast"] .lib-reg,[data-mode="both"] .lib-reg{color:var(--dim)}
 </style>
@@ -179,7 +210,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 </script>
 <link rel="stylesheet" href="/wuld-layer.css">
 <script src="/wuld-layer.js" defer></script>
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
 <body>
 <div class="wz-stage">
   <div class="wrap">
@@ -193,6 +224,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
     </div>
     </header>
     <main>
+      <div class="suite-rail"><div><b>6</b><span>libraries</span></div><div><b>132</b><span>objections</span></div><div><b>5</b><span>tiers</span></div><div><b>35</b><span>mechanisms</span></div><div><b>136</b><span>attested deployments</span></div></div>
       <p class="lib-intro">The flagship argues that coming into existence is a harm. The four wings are rebut-only optionality defenses: each answers the objections to a contested liberty without urging anyone to exercise it. Veganism is not a wing but a flagship-adjacent module: it argues harm on the flagship&rsquo;s own register rather than defending a choice. &ldquo;Refusal Libraries&rdquo; is a venue name, not a category claim &mdash; every card below carries its own register. Pick a surface.</p>
       <div class="lib-grid">
       <a class="lib-card flagship" href="/combined">
@@ -200,6 +232,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
         <p>The flagship library: the case that coming into existence is a harm, with its objections graded across five tiers and answered.</p>
         <div class="lib-meta"><span class="lib-badge live">live</span> <span>82 objections</span> <span>pinned v4.0.4</span> <span class="lib-reg">argues a thesis</span></div>
       </a>
+      <div class="grouplbl">The wings &mdash; <em>each defends a right and never recommends the act</em></div>
       <a class="lib-card" href="/right-to-die/combined">
         <h2>Right to Die</h2>
         <p>The optionality defense of a right to choose one&#39;s own death — objections met on harm, consent, sovereignty, and compensation.</p>
@@ -220,12 +253,29 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
         <p>Whether human moral supremacy is rationally mandatory — six objections to the anthropocentric default, met on their own terms.</p>
         <div class="lib-meta"><span class="lib-badge complete">provisional-complete</span> <span>6 objections</span> <span>v0.1.7</span> <span class="lib-reg">rebut-only</span></div>
       </a>
-      <a class="lib-card" href="/veganism/combined">
+      <div class="grouplbl">Flagship-adjacent &mdash; <em>argues a thesis, on the flagship&rsquo;s own register</em></div>
+      <a class="lib-card adjacent" href="/veganism/combined">
         <h2>Veganism</h2>
         <p>Flagship-adjacent module — the positive case for veganism, on the flagship's harm-and-consent register. Outside the Refusal Suite (K179). Eight objections, sorted by standing, harm-accounting, and license.</p>
         <div class="lib-meta"><span class="lib-badge complete">complete</span> <span>8 objections</span> <span>v0.2.1</span> <span class="lib-reg">argues a thesis</span></div>
       </a>
       </div>
+      <section class="soon" aria-labelledby="soon-h">
+        <h2 id="soon-h">Being built</h2>
+        <p>Neither is announced and neither has a date. They are named here because both are built on this corpus, and a reader who finds them later should know where they came from.</p>
+        <div class="soon-grid">
+          <div class="soon-item">
+            <h3>The Adversarial Map</h3>
+            <p>A hostile pass over all eighty-two flagship nodes: for each one, the strongest continuation a maximally competent opponent would deploy against the text <em>as shipped</em>, sorted into four dispositions &mdash; already answered, needs a stronger text, is actually a new objection, or names bedrock and stops. It is a red team run against our own rebuttals, and its findings are what the next corpus version is made of.</p>
+            <span class="tag">unannounced &middot; in authoring</span>
+          </div>
+          <div class="soon-item">
+            <h3>Argue the Argument</h3>
+            <p>A card game whose deck is this taxonomy. You draw an objection and answer it; the objection comes in two registers &mdash; the way people actually say it, and the strongest academic form of the same attack &mdash; and the rebuttal that answers one has to answer the other.</p>
+            <span class="tag">unannounced &middot; in authoring</span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem"><div class="eyebrow" style="color:var(--faint)">The Refusal Libraries · an umbrella of argument libraries · <a href="/combined">library.wuld.ink</a></div></footer>
   </div>
