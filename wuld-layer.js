@@ -428,7 +428,23 @@
     expand:       { f: 'wz-expand.ogg',       g: 0.19 },
     collapse:     { f: 'wz-collapse.ogg',     g: 0.17 },
     magnifier_in: { f: 'wz-magnifier_in.ogg', g: 0.40 },
-    tier_step:    { f: 'wz-tier_step.ogg',    g: 0.46 }
+    tier_step:    { f: 'wz-tier_step.ogg',    g: 0.46 },
+    /* WI-K321b: the video seat's four VIEW cues (HANDOFF_view_cues_sfx.md, 2026-09-13). One open-
+       fifth chord, four gestures -- at rest / converging / descending / branching -- with every
+       amplitude read out of the corpus at generation time (tier counts, out-degree, strong-vs-weak
+       edge split), so the sound tracks the data and re-runs with it.
+       THE GAINS ARE THEIRS, UNCHANGED, and that is a measured decision rather than deference.
+       Checked against this bank two ways. Whole-file A-weighted RMS put the family 5.2 dB under the
+       cue bank and said "lift them" -- but that metric averages a 7.5-second settle's tail against a
+       0.2-second click, which is not a scale either is heard on. On the loudest-400ms A-weighted
+       level, which is what a listener judges a transient by, the family mean is -35.5 dB against the
+       bank's -34.9: 0.6 dB under, i.e. already level. Their own instruction was to level the four
+       against each other rather than individually, and the 3.7 dB spread inside the family is the
+       information the cues carry (flow_fan brightest, library_index quietest). Left alone. */
+    library_index:{ f: 'wz-library_index.ogg', g: 0.22 },
+    settle_swarm: { f: 'wz-settle_swarm.ogg',  g: 0.34 },
+    dep_cascade:  { f: 'wz-dep_cascade.ogg',   g: 0.30 },
+    flow_fan:     { f: 'wz-flow_fan.ogg',      g: 0.38 }
   };
   var AMB = { f: 'wz-ambience_loop.ogg', g: 0.30 };
   /* MASTER GAIN IS A CSS NUMBER. `--wz-sfx-gain` on <html> (default 1) scales every cue and the
@@ -483,14 +499,55 @@
     });
   }
 
+  /* WI-K321b 2026-09-13: SOUND ACROSS PAGES. Reported as "sfx disabling and reenabling randomly
+     when going across pages", and it was neither random nor a bug in the cues. An AudioContext is
+     unlocked PER DOCUMENT: the click that follows a link is a gesture on the page being LEFT, so
+     every arrival starts locked, and the listeners were pointerdown/keydown only -- neither hover
+     nor scroll nor a wheel is an activation. So a page where the reader clicked something early
+     had sound and a page where they only read and hovered had none, which from the outside is a
+     site that turns its own sound off at random. Three changes, in order of how much they buy:
+
+     (1) EAGER CONTEXT. The context is now created and resumed at boot instead of waiting. Under a
+         cold autoplay policy the resume is refused and we fall back to the gesture exactly as
+         before; once the browser's media-engagement score for this origin is earned -- which is
+         what repeated visits WITH playback earn -- the resume succeeds and sound is live from the
+         first hover of every later page. The old comment traded this away to avoid a console
+         warning. A warning nobody reads is not worth a reader hearing nothing.
+     (2) THE LISTENER RE-ARMS. It was {once:true}: the first pointerdown consumed it whether or not
+         the resume actually succeeded, so one refused attempt meant silence for the rest of that
+         page. It now stays armed until ctx.state is genuinely 'running'.
+     (3) CAPTURE PHASE, WIDER SET. pointerdown/pointerup/touchend/keydown/click, all captured at the
+         window, so no handler between the target and us can swallow the one gesture the reader
+         makes -- the feedback control stops propagation by design, and the tour and panels do too.
+
+     What this cannot do, and no page can: make the very FIRST hover on a first-ever visit audible.
+     That gesture requirement is the browser's, not ours. */
+  function armGesture(on) {
+    ['pointerdown', 'pointerup', 'touchend', 'keydown', 'click'].forEach(function (t) {
+      try { removeEventListener(t, unlock, true); } catch (e) {}
+      if (on) addEventListener(t, unlock, { passive: true, capture: true });
+    });
+  }
+  function settleUnlock() {
+    if (ctx && ctx.state === 'running') { unlocked = true; armGesture(false); ambMaybeStart(); }
+    else armGesture(true);
+  }
+  /* A keyboard reader never hovers; a touch reader's first tap is the gesture.  Either is presence. */
+  function gesturePresent() { markPresent(); }
   function unlock() {
     if (unlocked) return;
     var AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) { unlocked = true; return; }
-    unlocked = true;
-    try { ctx = new AC(); } catch (e) { return; }
-    if (ctx.state === 'suspended') ctx.resume();
+    if (!ctx) { try { ctx = new AC(); } catch (e) { return; } }
     Object.keys(raw).forEach(decodeOne);
+    if (ctx.state === 'suspended') {
+      var pr;
+      try { pr = ctx.resume(); } catch (e) { pr = null; }
+      if (pr && pr.then) pr.then(settleUnlock, function () { armGesture(true); });
+      else setTimeout(settleUnlock, 0);
+      return;
+    }
+    settleUnlock();
   }
 
   /* DECODE IS ARRIVAL-DRIVEN, NOT GESTURE-DRIVEN. It used to be a single pass over raw{} inside
@@ -522,6 +579,9 @@
      expensive part, not of the node, which is nearly free. */
   function play(name) {
     if (!live()) return;
+    /* An eagerly created context can sit 'suspended'.  Sources started on it QUEUE, so a page's
+       worth of dropped hovers would all arrive at once the moment it resumes.  Drop instead. */
+    if (ctx && ctx.state !== 'running') return;
     if (!ctx || !buf[name]) {
       if (ctx && raw[name]) { pending = name; pendingAt = performance.now(); decodeOne(name); }
       return;
@@ -543,9 +603,42 @@
     } catch (e) {}
   }
 
+  /* WI-K321b: PRESENCE GATES THE BED, NOT THE CUES.  With the context now resumed at boot, the
+     cues are right to be eager -- every one of them answers the reader's own pointer, so a cue
+     that fires proves someone is there.  The bed does not: it would start in a tab opened in the
+     background and never looked at, which is the case the autoplay rule exists for and is a worse
+     manner than the defect being fixed.  So the bed waits for presence -- any gesture, or one
+     hover, whichever comes first -- and the cues do not. */
+  var present = false;
+  function markPresent() { if (present) return; present = true; ambMaybeStart(); }
+  /* A VIEW CUE MUST CANCEL THE LAST ONE. play() fires and forgets, which is right for a 180ms
+     click and wrong for a 2.9-7.5s cue: four tabs pressed in two seconds would stack four
+     overlapping settles and the result is mud. The video seat flagged this as the part that would
+     bite after ship, so it is built in before ship. Keeping the node is the whole mechanism. */
+  var viewSrc = null;
+  function playView(name) {
+    if (!live()) return;
+    if (ctx && ctx.state !== 'running') return;
+    if (!ctx || !buf[name]) {
+      if (ctx && raw[name]) { pending = name; pendingAt = performance.now(); decodeOne(name); }
+      return;
+    }
+    try { if (viewSrc) { viewSrc.stop(); } } catch (e) {}
+    viewSrc = null;
+    try {
+      var s = ctx.createBufferSource(), g = ctx.createGain();
+      s.buffer = buf[name];
+      g.gain.value = (BANK[name] || { g: 0.3 }).g * master();
+      s.connect(g); g.connect(ctx.destination);
+      s.onended = function () { if (viewSrc === s) viewSrc = null; };
+      s.start(0); viewSrc = s;
+    } catch (e) {}
+  }
+
   function ambMaybeStart() {
     if (!ctx || !buf._amb) return;
-    if (!live()) { ambStop(); return; }
+    if (!live() || !present) { ambStop(); return; }
+    if (ctx.state !== 'running') return;   /* a bed built on a suspended clock is a node, not a sound */
     if (ambNode) return;
     try {
       ambNode = ctx.createBufferSource(); ambGain = ctx.createGain();
@@ -579,11 +672,17 @@
     var now = performance.now();
     if (now - lastHover < HOVER_MS) return;                        // drop, never queue
     lastHover = now;
+    markPresent();
     play('hover');
   }
+  var VIEW_CUE = { 'vbtn-library': 'library_index', 'vbtn-map':  'settle_swarm',
+                   'vbtn-dep':     'dep_cascade',   'vbtn-map1': 'flow_fan' };
   function onClick(e) {
-    unlock();
+    unlock(); markPresent();
     if (!live()) return;
+    /* Ahead of the generic button branch: a tab press is a view change, not a click. */
+    var vb = e.target.closest && e.target.closest('[id^="vbtn-"]');
+    if (vb && VIEW_CUE[vb.id]) { playView(VIEW_CUE[vb.id]); return; }
     var d = e.target.closest && e.target.closest('details');
     if (e.target.closest && e.target.closest('summary') && d) { play(d.open ? 'collapse' : 'expand'); return; }
     /* This listener is capture-phase, so it runs before the flagship row's own handler re-renders
@@ -619,9 +718,11 @@
     paint();
     if ('requestIdleCallback' in window) requestIdleCallback(prefetch, { timeout: 3000 });
     else setTimeout(prefetch, 1200);
-    ['pointerdown', 'keydown'].forEach(function (t) {
-      addEventListener(t, unlock, { once: true, passive: true });
+    armGesture(true);
+    ['pointerdown', 'touchend', 'keydown'].forEach(function (t) {
+      addEventListener(t, gesturePresent, { passive: true, capture: true });
     });
+    unlock();                      /* eager: succeeds where the origin is trusted, else re-arms */
     addEventListener('pointerover', onOver, { passive: true });
     addEventListener('click', onClick, true);
     /* The tier can change under us -- the power button, or the ground flipping with a mode toggle.

@@ -171,6 +171,12 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .obj.lay .lay-win{color:var(--accent);font-style:italic;margin-top:.75rem}
 .obj.lay .lay-lbl{display:block;font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:.2rem}
 html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="plain"] .ctl-group:has(#toggle-all){display:none}
+/* WI-K321b: <code>/<pre> declared the bare `monospace` generic, which is the platform
+   default mono (DejaVu here, Consolas on Windows) -- the one place on these pages that
+   was not the library face even after the mode default was fixed. Measured: 4 code
+   elements per wing, 0 after. */
+code,pre,kbd,samp{font-family:var(--mono)}
+
 /* K321 candidate — wings + front door. Two changes, both NO-PIN, both CSS/head only.
    (1) the face: these six surfaces DECLARE 'IBM Plex Mono' and load no webfont, so they
        render in Consolas/Menlo while the flagship, which links it, renders Plex. Same
@@ -214,7 +220,12 @@ html[data-register="plain"] .ctl-group:has(#depth-chips),html[data-register="pla
   function resolve(){
     var s=null; try{s=localStorage.getItem(KEY);}catch(e){}
     if(s&&ALLOWED.indexOf(s)!==-1) return s;
-    try{ if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches) return "legible"; }catch(e){}
+    /* WI-K321b 2026-09-13: NO prefers-color-scheme branch. It opened a wing in legible
+       -- Georgia serif on a cream ground -- for any reader whose OS is light, while the
+       flagship, which carries no such branch at all, opened in standard (Plex mono on
+       near-black) in the SAME browser. Measured that morning, one headless context, no
+       stored mode: flagship 357 elements IBM Plex Mono; this wing 45 Liberation Serif.
+       The difference was this line. Legible is still one click away and still persisted. */
     return "standard";
   }
   /* Two toggles since 2026-09-12 (the flagship got the same at K314): LEGIBLE and HIGH-CONTRAST are

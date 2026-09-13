@@ -156,7 +156,7 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 /* one object repeated: the meta row sits on the same baseline on every card */
 .lib-card{display:flex;flex-direction:column}
 .lib-card p{flex:1 1 auto}
-.lib-meta>span+span::before{content:" b7";color:var(--faint);margin-right:.5rem}
+.lib-meta>span+span::before{content:"·";color:var(--faint);margin-right:.5rem}
 .lib-meta{gap:.45rem .5rem}
 .soon{border:1px dashed var(--line);margin:1.6rem 0 0;padding:1rem 1.15rem}
 .soon>h2{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin:0 0 .2rem;font-weight:400}
@@ -178,7 +178,12 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
   function resolve(){
     var s=null; try{s=localStorage.getItem(KEY);}catch(e){}
     if(s&&ALLOWED.indexOf(s)!==-1) return s;
-    try{ if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches) return "legible"; }catch(e){}
+    /* WI-K321b 2026-09-13: NO prefers-color-scheme branch. It opened a wing in legible
+       -- Georgia serif on a cream ground -- for any reader whose OS is light, while the
+       flagship, which carries no such branch at all, opened in standard (Plex mono on
+       near-black) in the SAME browser. Measured that morning, one headless context, no
+       stored mode: flagship 357 elements IBM Plex Mono; this wing 45 Liberation Serif.
+       The difference was this line. Legible is still one click away and still persisted. */
     return "standard";
   }
   /* Two toggles since 2026-09-12 (the flagship got the same at K314): LEGIBLE and HIGH-CONTRAST are

@@ -326,7 +326,7 @@ html.wz-vfx[data-mode="dark"]{     /* /troubleshooting/, its own palette */
   pointer-events:none; z-index:2147483001;
   display:flex; align-items:center; justify-content:center; gap:4.2vw;
   background:var(--wz-body);
-  font:500 clamp(9px,1.15vh,13px)/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  font:500 clamp(9px,1.15vh,13px)/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   letter-spacing:.42em;
 }
 .wz-perf{                                   /* speaker perforation */
@@ -412,7 +412,7 @@ html.wz-on nav.top-nav{
      without the line and was mouse-dead on every surface until 2026-09-12 -- keyboard reached it,
      the tour harness clicked it synthetically, and no hit-test was ever made at its centre. */
   pointer-events:auto;
-  color:var(--wz-mark); opacity:.75; font:700 .95em/1 ui-monospace,"IBM Plex Mono",Menlo,monospace;
+  color:var(--wz-mark); opacity:.75; font:700 .95em/1 "IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 .wz-help:hover{ opacity:1; }
 .wz-help:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
@@ -441,7 +441,7 @@ html.wz-muted .wz-mute{ opacity:.45; }
   padding:.55rem .65rem .55rem .8rem;
   background:#16161a; border:1px solid var(--wz-lip);
   box-shadow:0 2px 14px rgba(0,0,0,.55);
-  color:#ddd8d0; font:400 12px/1.45 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  color:#ddd8d0; font:400 12px/1.45 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   letter-spacing:.01em;
   opacity:0; transform:translateY(6px); transition:opacity .35s ease, transform .35s ease;
 }
@@ -507,7 +507,7 @@ html.wz-muted .wz-mute{ opacity:.45; }
   position:absolute; top:.6rem; right:.85rem;
   display:inline-flex; align-items:center; justify-content:center;
   min-width:26px; height:26px; padding:0 .4rem;   /* WCAG 2.5.8 AA floor is 24x24 */
-  font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  font:700 10px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   letter-spacing:1px; text-transform:uppercase; text-decoration:none; white-space:nowrap;
   color:var(--dim);
   border:1px solid transparent; border-radius:3px;
@@ -540,19 +540,19 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   background:#131315; color:#ddd8d0;
   border:1px solid #34313a; border-radius:7px;
   box-shadow:0 10px 30px rgba(0,0,0,.6);
-  font:400 12.5px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font:400 12.5px/1.45 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   text-shadow:none !important;
 }
 .wz-fb-panel[hidden]{ display:none !important; }
 .wz-fb-head{ display:flex; align-items:center; margin:0 0 .5rem; }
 .wz-fb-title{
-  font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace; letter-spacing:1px;
+  font:700 10px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; letter-spacing:1px;
   text-transform:uppercase; color:#9b9690;
 }
 .wz-fb-close{
   margin-left:auto; width:30px; height:30px; padding:0;
   background:transparent; color:#9b9690; border:1px solid transparent; border-radius:5px;
-  font:400 18px/1 ui-sans-serif,system-ui,sans-serif; cursor:pointer;
+  font:400 18px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; cursor:pointer;
 }
 .wz-fb-close:hover{ color:#ddd8d0; border-color:#3a3740; }
 .wz-fb-form{ margin:0; }
@@ -560,7 +560,7 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   display:block; width:100%; box-sizing:border-box; margin:0 0 .5rem;
   padding:.45rem .55rem; background:#0f0f11; color:#ddd8d0;
   border:1px solid #3a3740; border-radius:5px;
-  font:400 13px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font:400 13px/1.45 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 .wz-fb-text{ min-height:4.6em; resize:vertical; }
 .wz-fb-text::placeholder, .wz-fb-email::placeholder{ color:#7d7882; }
@@ -573,7 +573,7 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   min-width:64px; height:30px; padding:0 .8rem;
   background:#1d1d21; color:#ddd8d0; cursor:pointer;
   border:1px solid #3a3740; border-radius:5px;
-  font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+  font:600 12px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 .wz-fb-send:hover{ background:#26262c; }
 .wz-fb-send[disabled]{ opacity:.5; cursor:default; }
@@ -614,20 +614,20 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   background:#131315; color:#ddd8d0;
   border:1px solid #34313a; border-radius:7px;
   box-shadow:0 10px 30px rgba(0,0,0,.6);
-  font:400 12.5px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font:400 12.5px/1.5 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   transition:top .22s ease, left .22s ease;
 }
 .wz-tour-text{ margin:0 0 .7rem; }
 .wz-tour-nav{ display:flex; align-items:center; gap:.5rem; }
 .wz-tour-dots{
-  margin-left:auto; font:700 10px/1 ui-monospace,"IBM Plex Mono",Menlo,Consolas,monospace;
+  margin-left:auto; font:700 10px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   letter-spacing:1px; color:#8b8690;
 }
 .wz-tour-nav button{
   min-width:30px; height:30px; padding:0 .5rem;   /* over the 24x24 floor on both axes */
   background:#1d1d21; color:#ddd8d0; cursor:pointer;
   border:1px solid #3a3740; border-radius:5px;
-  font:600 12px/1 ui-sans-serif,system-ui,sans-serif;
+  font:600 12px/1 "IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 .wz-tour-nav button:hover{ background:#26262c; }
 .wz-tour-nav button:focus-visible{ outline:2px solid var(--wz-led, #FF8195); outline-offset:1px; }
