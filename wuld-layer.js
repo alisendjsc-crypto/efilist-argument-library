@@ -406,7 +406,15 @@
  * sound is ever added, place it on that line rather than beside it. */
 (function () {
   var H = document.documentElement;
+  /* K322: the cue files are served `public, max-age=14400` (the sound files were deliberately left
+     on the default when the layer took its `private` rule), so a reader who has already loaded them
+     keeps the old set for up to four hours after a change -- the same shape as the K315 layer-cache
+     defect, one file type over. A `private` header on /sfx/* would fix it and cost seven conditional
+     requests on every page load, for assets that change about twice a year. The version query is the
+     cheaper half of the trade: the sounds stay long-cached, and the bump busts them exactly when they
+     move. wuld-layer.js itself is `private, max-age=0`, so this line reaches every reader at once. */
   var SRC = '/sfx/';
+  var SFXV = '?v=K322';
   /* gain per sound. Hover is the quietest by a wide margin because it is the one that fires most --
      82 objection cards on the flagship -- and an event that common has to sit under the reading
      rather than on top of it. */
@@ -430,6 +438,15 @@
   function master() {
     try {
       var v = parseFloat(getComputedStyle(H).getPropertyValue('--wz-sfx-gain'));
+      return isNaN(v) ? 1 : Math.max(0, Math.min(2, v));
+    } catch (e) { return 1; }
+  }
+
+  /* Variation depth, same contract as the master gain: a CSS number on <html>, read per play,
+     clamped 0..2. 0 is today's behaviour byte for byte -- one identical waveform per cue. */
+  function vary() {
+    try {
+      var v = parseFloat(getComputedStyle(H).getPropertyValue('--wz-sfx-vary'));
       return isNaN(v) ? 1 : Math.max(0, Math.min(2, v));
     } catch (e) { return 1; }
   }
@@ -460,7 +477,7 @@
     var all = Object.keys(BANK).map(function (k) { return [k, BANK[k].f]; });
     all.push(['_amb', AMB.f]);
     all.forEach(function (p) {
-      fetch(SRC + p[1]).then(function (r) { return r.ok ? r.arrayBuffer() : null; })
+      fetch(SRC + p[1] + SFXV).then(function (r) { return r.ok ? r.arrayBuffer() : null; })
         .then(function (b) { if (b) { raw[p[0]] = b; decodeOne(p[0]); } })
         .catch(function () {});         // a missing sound is silence, never an error the reader sees
     });
@@ -512,7 +529,15 @@
     try {
       var s = ctx.createBufferSource(), g = ctx.createGain();
       s.buffer = buf[name];
-      g.gain.value = (BANK[name] || { g: 0.3 }).g * master();
+      var gv = (BANK[name] || { g: 0.3 }).g * master();
+      /* PER-PLAY VARIATION. The room tone is excluded: it is a continuous bed, and detuning a
+         loop on every start would audibly step. Cues only, and only while --wz-sfx-vary > 0. */
+      var vy = vary();
+      if (vy > 0 && name !== '_amb') {
+        s.playbackRate.value = 1 + (Math.random() * 2 - 1) * 0.025 * vy;
+        gv *= Math.pow(10, ((Math.random() * 2 - 1) * 1.0 * vy) / 20);
+      }
+      g.gain.value = gv;
       s.connect(g); g.connect(ctx.destination);
       s.start(0);
     } catch (e) {}
