@@ -707,6 +707,49 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   --wz-pan-ease: 260ms;
   --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
   --wz-tilt-ease: 220ms;
+  /* --- THE FOCUS, 2026-09-13 -----------------------------------------------------------------
+   * Josiah: "the sharpening / focusing when hovering with the mouse ... Everything should feel more
+   * clear and enhanced when the cursor goes over it, not to the point where the bloom and vignette
+   * vanish -- just enough so that a user can see more clearly."
+   *
+   * CONTRAST IS THE OPERATOR, AND IT IS THE RIGHT ONE BY ARITHMETIC RATHER THAN BY TASTE. contrast()
+   * pivots at 0.5. On this ground the page sits at luma 0.04 and the type at ~0.85, so contrast(1.11)
+   * sends the ground to 0.0 and the type to 0.89: the ground goes blacker, the type goes brighter,
+   * and the HALO -- which lives between them -- is pushed toward the ground. The bloom therefore
+   * tightens rather than growing, which is what "sharper" has to mean here: the measured fact from
+   * K313b is that the glow PEAKS near 80% and degrades past it (+47.8% at 60%, +78.9% at 92% and
+   * visibly worse), because the same light spread wider reads as fog. Less spread, not more light.
+   *
+   * K313b ALSO RECORDED A RADIAL-MASKED backdrop-filter AS INERT -- "three mechanisms, max abs delta
+   * 0.000" -- and filed the instrument that produced it under cccviii in the same stratum. Re-measured
+   * on the live page 2026-09-13: contrast(1.18) inside a radial mask moves 97.6% of the pixels in the
+   * radius by a mean of 8.95 levels and 0.1% of the pixels outside it by 0.005. It is not inert; the
+   * test was. The first re-run of the VIGNETTE leg then read 0.0000 for the same reason -- the probe
+   * point sat at the viewport centre, inside the vignette's own transparent stop -- and read 2.41 /
+   * 88.4% once moved off-centre. Twice in one hour, the same shape. Probe where the thing paints. */
+  --wz-focus-r:    210px;  /* radius of the clearing. Under a third of the viewport's short side, so
+                            * it reads as attention rather than as a spotlight. */
+  --wz-focus-c:    1.13;   /* contrast, applied to what is behind: separates the type from the ground */
+  --wz-focus-b:    1.08;   /* brightness, same pass */
+  --wz-focus-s:    1.05;   /* saturation, so the warm cast survives the clearing rather than washing */
+  --wz-focus-lift: 0.105;  /* alpha of the warm radial painted OVER the filtered result. This is the
+                            * half that pushes the darkness back; the filter alone only darkens. */
+  --wz-focus-tint: 255,238,222;
+  --wz-focus-ease: 90ms;   /* the box lags the pointer by this much -- a lens, not a cursor */
+  /* MEASURED STOPS, on the flagship's own pixels, against the same box of body text. gnd = the ground
+   * between the strokes, peak = the strokes, ratio = the two separated, halo = peak/annulus (the
+   * bloom's brightness relative to the type it surrounds -- the number that says "tighter"):
+   *   c/b/lift            gnd      peak    ratio    halo
+   *   -- off --         17.00     20.37     1.20    1.198
+   *   1.13/1.08/0.105   +5.4%    +26.8%   +20.3%    1.261   <- shipped, "gently"
+   *   1.16/1.10/0.130  +11.1%    +32.4%   +19.1%    1.296   <- one notch up, still no clipping
+   *   1.20/1.12/0.130   +4.1%    +21.9%   +17.0%    1.275   <- contrast starts eating the lift
+   * Nothing clipped at any stop (pixels >= 250 in a box holding a tier badge and the crimson
+   * accent: 0.000% at every row, unchanged from off). To try a notch live, one line:
+   *   var s=document.documentElement.style;
+   *   s.setProperty('--wz-focus-c','1.16'); s.setProperty('--wz-focus-b','1.10');
+   *   s.setProperty('--wz-focus-lift','0.130');
+   * then write the numbers here. */
   --wz-sfx-gain: 1;        /* master level for every cue and the room tone (wuld-sfx.js reads it when a
                             * sound starts; 0..2). Tune live: document.documentElement.style.setProperty(
                             * '--wz-sfx-gain','0.5') -- then write the number here. Softened 2026-09-12. */
@@ -730,6 +773,57 @@ html.wz-vfx .wz-vig{
              rgba(0,0,0,var(--wz-vig-a1)) var(--wz-vig-mid),
              rgba(0,0,0,var(--wz-vig-a2)) 100%);
 }
+
+/* --- 1b. THE FOCUS -------------------------------------------------------------------------
+ * A FIXED-SIZE BOX TRANSLATED TO THE POINTER, not a full-viewport element with a moving mask. The
+ * two look identical and cost differently: a moving mask repaints a screen-sized filtered layer on
+ * every pointer frame, while a translate is a compositor transform over an area of
+ * (2r)^2 = 176,400 px against the viewport's 1,440,000. Measured below at the same 16.7ms budget
+ * the rest of the layer holds.
+ * Gated exactly like the glow: the vfx tier, a dark ground, a real pointer, and motion allowed.
+ * The last of those is not fussiness -- this is a thing that follows the eye, and a reader who has
+ * asked for less movement has asked for this too. */
+html.wz-vfx .wz-focus{
+  position:fixed; left:0; top:0; pointer-events:none; z-index:2147481550;
+  width:calc(var(--wz-focus-r) * 2); height:calc(var(--wz-focus-r) * 2);
+  transform:translate3d(calc(var(--wz-fx, -9999px) - var(--wz-focus-r)),
+                        calc(var(--wz-fy, -9999px) - var(--wz-focus-r)), 0);
+  transition:transform var(--wz-focus-ease) linear, opacity 300ms ease;
+  will-change:transform;
+  opacity:0;
+  /* TWO HALVES, AND THE ORDER IS THE WHOLE POINT. backdrop-filter acts on what is BEHIND the
+     element; the element's own background then paints over that result. So: contrast separates the
+     type from the ground (and sends this ground, at luma 0.04, to 0 -- contrast pivots at 0.5, so on
+     a near-black page it can only darken), and the warm radial then lifts what is left. Ground ends
+     ABOVE where it started, type ends higher still. Either half alone fails the brief: filter only
+     is a shadow following the cursor, lift only is brighter fog. */
+  -webkit-backdrop-filter:contrast(var(--wz-focus-c)) brightness(var(--wz-focus-b)) saturate(var(--wz-focus-s));
+          backdrop-filter:contrast(var(--wz-focus-c)) brightness(var(--wz-focus-b)) saturate(var(--wz-focus-s));
+  background:radial-gradient(circle at 50% 50%,
+             rgba(var(--wz-focus-tint), var(--wz-focus-lift)) 0%,
+             rgba(var(--wz-focus-tint), calc(var(--wz-focus-lift) * 0.42)) 55%,
+             transparent 100%);
+  /* The mask is what makes it a clearing and not a rectangle. Full strength at the centre, gone by
+     the edge, so there is no boundary to see -- a hard edge here would read as a bug. */
+  -webkit-mask-image:radial-gradient(circle at 50% 50%, #000 0%, rgba(0,0,0,.62) 46%,
+                                     rgba(0,0,0,.22) 74%, transparent 100%);
+          mask-image:radial-gradient(circle at 50% 50%, #000 0%, rgba(0,0,0,.62) 46%,
+                                     rgba(0,0,0,.22) 74%, transparent 100%);
+}
+html.wz-vfx.wz-focusing .wz-focus{ opacity:1; }
+/* No pointer, no clearing: a touch screen has no hover state to sharpen, and a reader who asked for
+   reduced motion is not given a thing that chases them. */
+@media (hover:none), (pointer:coarse), (prefers-reduced-motion:reduce){
+  html.wz-vfx .wz-focus{ display:none !important; }
+}
+html.wz-lightbg .wz-focus{ display:none !important; }
+/* NOT UNDER THE MAGNIFIER. Josiah, 2026-09-13: "The magnification feature is plenty clear as is, so
+   it doesn't need any sharpening with that area." He is right for a reason worth writing down: the
+   clearing is a screen-space box and the stage under it is scaled, so at 2.5x the clearing covers a
+   fifth of the text it covers at 1x and reads as a smear rather than as attention. The magnifier is
+   already the sharpening tool for that job. */
+html.wz-zoomed .wz-focus{ display:none !important; }
+@media print{ .wz-focus{ display:none !important; } }
 
 /* --- 2. BLOOM ON POINT SOURCES ---------------------------------------------------------------- */
 /* currentColor so each tier halos in its OWN hue rather than everything blooming rose. */
@@ -1010,3 +1104,13 @@ html.wz-vfx.wz-lightbg .wz-grille{ display:none !important; }
 .wz-mag:hover{ opacity:1; }
 .wz-mag:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
 html.wz-mag-on .wz-mag{ opacity:1; color:var(--wz-led); }
+
+/* The focus also thins the vignette where the reader is looking -- 34% of it survives at the centre,
+   so it is attenuated and never absent, which was the brief. Measured off-centre (the only place the
+   vignette paints): 2.41 mean levels across 88.4% of the pixels in the radius, 0.0000 outside. */
+html.wz-vfx.wz-focusing:not(.wz-zoomed) .wz-vig{
+  -webkit-mask-image:radial-gradient(circle var(--wz-focus-r) at var(--wz-fx, -9999px) var(--wz-fy, -9999px),
+                     rgba(0,0,0,.34) 0%, rgba(0,0,0,.74) 58%, #000 100%);
+          mask-image:radial-gradient(circle var(--wz-focus-r) at var(--wz-fx, -9999px) var(--wz-fy, -9999px),
+                     rgba(0,0,0,.34) 0%, rgba(0,0,0,.74) 58%, #000 100%);
+}

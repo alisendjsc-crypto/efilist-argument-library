@@ -118,6 +118,11 @@
     H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
     H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
   }
+  /* THE FOCUS RIDES THE TICK THAT ALREADY EXISTS. One rAF, already coalesced, already gated on the
+     tier and on reduced motion -- adding a second listener for the same pointer would double the
+     work to say the same thing twice. Two custom properties and one class; the box's transform and
+     the vignette's mask both read them, so the DOM writes are 2 per frame, not 2 per consumer. */
+  var focusOn = false, focusIdle = 0;
   function onMove(e) {
     if (i !== 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     ptr.x = e.clientX; ptr.y = e.clientY;
@@ -126,8 +131,29 @@
       raf = null;
       var m = model(ptr.x, ptr.y);
       applyCam(m.px, m.py, m.dx, m.dy);
+      H.style.setProperty('--wz-fx', ptr.x + 'px');
+      H.style.setProperty('--wz-fy', ptr.y + 'px');
+      if (!focusOn) { focusOn = true; H.classList.add('wz-focusing'); }
+      clearTimeout(focusIdle);
+      /* A pointer that has not moved for a while is a reader who has stopped using it -- a keyboard
+         reader, or a hand off the mouse. The clearing fades rather than sitting where it was left. */
+      focusIdle = setTimeout(function () { focusOn = false; H.classList.remove('wz-focusing'); }, 2600);
     });
   }
+  addEventListener('pointerleave', function () {
+    clearTimeout(focusIdle); focusOn = false; H.classList.remove('wz-focusing');
+  }, { passive: true });
+  /* NOT WHILE SCROLLING, and the reason is both cost and intent. Cost: measured on these bytes at
+     1440x1000, scrolling AND moving the pointer at once, focus display:none vs on --
+       median 16.70 -> 16.70   p75 16.80 -> 33.30   p90 33.40 -> 50.00   frames over 33ms 24.5% -> 26.0%
+     so the scroll owns most of it and the clearing owns the p75. Intent: a reader who is scrolling is
+     not reading the word under the cursor. It comes back on the next pointer move, which is the
+     gesture that means they have stopped and started looking. */
+  var scrollHold = 0;
+  addEventListener('scroll', function () {
+    if (focusOn) { focusOn = false; H.classList.remove('wz-focusing'); }
+    clearTimeout(scrollHold);
+  }, { passive: true });
   /* A wheel scroll with the pointer still moves the bounds, not the camera: clamp to the new bounds
      and never re-place, so nothing moves that the reader did not move. Our own scrollTo lands here
      too, asynchronously, and finds a camera already inside its bounds. */
@@ -351,7 +377,7 @@
       mo.observe(document.body, { attributes: true, attributeFilter: ['class', 'data-mode', 'style'] });
     }
     addEventListener('click', function () { setTimeout(gradeBg, 0); }, true);
-    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r'].forEach(function (c) {
+    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r','wz-focus'].forEach(function (c) {
       if (document.querySelector('.' + c)) return;
       var d = document.createElement('div'); d.className = c; d.setAttribute('aria-hidden', 'true');
       document.body.appendChild(d);
@@ -444,7 +470,26 @@
     library_index:{ f: 'wz-library_index.ogg', g: 0.22 },
     settle_swarm: { f: 'wz-settle_swarm.ogg',  g: 0.34 },
     dep_cascade:  { f: 'wz-dep_cascade.ogg',   g: 0.30 },
-    flow_fan:     { f: 'wz-flow_fan.ogg',      g: 0.38 }
+    flow_fan:     { f: 'wz-flow_fan.ogg',      g: 0.38 },
+    /* WI-K322 2026-09-13: the NODE-SELECT cues. Josiah: "I wanted SFX for when you click on what the
+       cursor is hovering over -- unique to those sections."  One per graph view, built from the SAME
+       open-fifth stack as the four view cues -- measured off their own shipped bytes rather than
+       taken from prose, since the generators the handoff names are not in the folder it names:
+       FFT peaks under 600 Hz across the four are 55.0 / 82.5 / 110.0 / 123.6 / 164.8 / 220.0 / 247.2,
+       i.e. A1 E2 A2 E3 A3 with B2/B3 as the ninth.
+       VOICED AN OCTAVE UP, deliberately, and it is not a departure. The view cues sit at centroid
+       114-148 Hz with essentially nothing above 250, and the video seat states that cost themselves:
+       "on a phone all four will be quiet ... do not make any of these the only feedback for a view
+       change." A pick IS the only sound for a selection, so it has to survive a laptop speaker. These
+       land at centroid 208-268 Hz -- beside wz-magnifier_in (251) and wz-tier_step (181), the bank's
+       own instrument cues -- with 9-70% of their energy in 250-800. Master low-pass still 1.8 kHz,
+       no partial above A4.
+       LEVELS: 2 dB under the cue bank's -34.9 dB short-term reference. Bank parity would be
+       0.365 / 0.279 / 0.336; a pick is longer than a click (0.28-0.34s against 0.20) and fires on
+       every node, so it sits just under. Generator: gen_pick_cues.py, seed 2010, deterministic. */
+    pick_web:     { f: 'wz-pick_web.ogg',      g: 0.290 },
+    pick_dep:     { f: 'wz-pick_dep.ogg',      g: 0.222 },
+    pick_flow:    { f: 'wz-pick_flow.ogg',     g: 0.267 }
   };
   var AMB = { f: 'wz-ambience_loop.ogg', g: 0.30 };
   /* MASTER GAIN IS A CSS NUMBER. `--wz-sfx-gain` on <html> (default 1) scales every cue and the
@@ -677,12 +722,27 @@
   }
   var VIEW_CUE = { 'vbtn-library': 'library_index', 'vbtn-map':  'settle_swarm',
                    'vbtn-dep':     'dep_cascade',   'vbtn-map1': 'flow_fan' };
+  var VIEW_PICK = { 'map-view': 'pick_web', 'dep-view': 'pick_dep', 'map1-view': 'pick_flow' };
   function onClick(e) {
     unlock(); markPresent();
     if (!live()) return;
     /* Ahead of the generic button branch: a tab press is a view change, not a click. */
     var vb = e.target.closest && e.target.closest('[id^="vbtn-"]');
     if (vb && VIEW_CUE[vb.id]) { playView(VIEW_CUE[vb.id]); return; }
+    /* Then a NODE SELECT, which is a click on the thing the cursor is over rather than on the
+       furniture around it. Keyed on the VIEW, not on the node's markup: the three graphs are drawn
+       by d3 and their node classes are the graph's business, not the layer's. What makes it a node
+       is measured -- a click on a node hit-tests to a <circle> or a <rect> INSIDE the svg and never
+       to the <svg> root, which is what an empty-canvas click hits. So: a drawn element inside the
+       svg, or a row in the flow map's source list, and not the toolbar or the legend. */
+    var gv = e.target.closest && e.target.closest('#map-view, #dep-view, #map1-view');
+    if (gv && VIEW_PICK[gv.id]) {
+      var t = e.target, tag = (t.tagName || '').toLowerCase();
+      var drawn = t.closest && t.closest('svg') && tag !== 'svg';
+      var row   = t.closest && t.closest('.m1-source-item, .m1-succ, [class*="succ-card"], [class*="-chip"]');
+      var furn  = t.closest && t.closest('button, [class*="methodology"], [class*="legend"], [class*="controls"], input, select, a');
+      if ((drawn || row) && !furn) { play(VIEW_PICK[gv.id]); return; }
+    }
     var d = e.target.closest && e.target.closest('details');
     if (e.target.closest && e.target.closest('summary') && d) { play(d.open ? 'collapse' : 'expand'); return; }
     /* This listener is capture-phase, so it runs before the flagship row's own handler re-renders
