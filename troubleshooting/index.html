@@ -11,20 +11,25 @@
   :root{
     --bg:#0a0a0a; --ink:#f0ebe5; --accent:#c41e3a; --dim:#9a938b;
     --line:#2a2724; --panel:#141210; --panel-2:#1b1815;
-    --serif:"EB Garamond","Cormorant Garamond",Georgia,"Times New Roman",serif;
+    /* WI-K324: this page is Plex like the rest of the origin. Josiah, twice: "I just want the
+       text to be the same as the flagship's everywhere." It was the last surface that was not,
+       and it was not even rendering what it declared: the head loads IBM Plex Mono and nothing
+       else, so the serif stack resolved only for a reader who happened to have those faces
+       installed and fell through to Georgia for everyone else. The variable is deleted rather
+       than redefined to a mono stack, which would have been a lie in the source. */
     --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono","Consolas",monospace;
   }
   *{box-sizing:border-box}
   html{font-size:112.5%}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--mono);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .wrap{max-width:44rem;margin:0 auto;padding:3.2rem 1.4rem 5rem}
   .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 1.1rem}
-  h1{font-family:"IM Fell English",var(--serif);font-weight:400;font-size:2.35rem;line-height:1.12;margin:0 0 1rem;letter-spacing:.01em}
+  h1{font-family:var(--mono);font-weight:400;font-size:2.35rem;line-height:1.12;margin:0 0 1rem;letter-spacing:.01em}
   .mirror-note{font-family:var(--mono);font-size:.74rem;line-height:1.6;letter-spacing:.02em;color:var(--dim);border-left:3px solid var(--accent);padding:.5rem .9rem;margin:0 0 1.6rem;background:var(--panel)}
   .mirror-note a{color:var(--accent)}
   .lede{font-size:1.12rem;color:var(--ink);margin:0 0 1.2rem}
   .lede code{color:var(--accent)}
-  h2{font-family:"IM Fell English",var(--serif);font-weight:400;font-size:1.4rem;margin:2.6rem 0 .7rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  h2{font-family:var(--mono);font-weight:400;font-size:1.4rem;margin:2.6rem 0 .7rem;padding-top:1.6rem;border-top:1px solid var(--line)}
   h3{font-family:var(--mono);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:1.5rem 0 .4rem}
   p{margin:.5rem 0 .9rem}
   strong{color:#fff}
