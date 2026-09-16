@@ -8,14 +8,43 @@ Home of the adversarial map program: for each of the 82 shipped v4.0.0 nodes, th
 
 - `adversarial_map_design_v0_1.md` (`49514ec9`/7,722) — the design: entry schema, class law (a→c→b/d), the four anti-inflation gates (anchor rule · force floor · (a)-brevity ≤60 · regress stop), tier-descending phasing, staging, budgets, per-fold Cowork obligations, validator spec (§6).
 - `adversarial_map_schema_v0_1.json` (`dacd818f`/3,143) — machine sibling; the ENTRY schema, id-closed against corpus `6ee1f6f3`/82.
-- `adv_map_validator_v0_1.py` (`34fefb95`) — fragment/assembly validator implementing design §6. `--self-test` 24/24 (good fixture + 23 loud-fail cases); proven against the real corpus at K221 (one-per-class seed PASS + 9 bad mutations tripped). Usage:
-  `python3 adversarial_map_staging/adv_map_validator_v0_1.py <fragment.json> [...] --corpus efilist_argument_library_v4_0_0.json [--terminal]`
+- `adv_map_validator_v0_1.py` (`34fefb95`) — fragment/assembly validator implementing design §6. `--self-test` 24/24 (good fixture + 23 loud-fail cases); proven against the real corpus at K221 (one-per-class seed PASS + 9 bad mutations tripped). **Superseded by v0_2 but never mutated** — canon pins this blob and the K228–K231 receipts cite its output. Keep it on disk, keep it byte-identical.
+- `adv_map_validator_v0_2.py` — the current validator. Every v0_1 check carried forward verbatim (the two agree ok-for-ok, fail-for-fail on all 16 shared checks against A+B1+B2+C), plus four additions. `--self-test` 36/36. Usage:
+  `python3 adversarial_map_staging/adv_map_validator_v0_2.py <fragment.json> [...] --corpus efilist_argument_library_v4_0_0.json [--terminal] [--assembly]`
+
+### What v0_2 adds
+
+1. **Phase `E`.** v0_1's phase enum stopped at `D`, so a T1 fragment could not be validated at all.
+
+2. **`objections-digest`** (hard when declared, skipped when absent). K332 root cause: four release relabels walked the corpus `version` field 4.0.0 → 4.0.4 while every objection stayed byte-identical. One content cut wore five whole-file md5s, and every fragment pinning `6ee1f6f3` failed `meta-corpus-pin` — which silently disabled **seven** downstream checks including `anchor-rule`, the program's core verbatim discipline. A whole-file md5 measures the envelope, not the text the anchors are cut from. Fragments may now also declare `source_corpus_objections_md5`, a digest over the objections array alone (`sort_keys=True`, so key reordering can't move it either). Get it from `--print-digest`. Corpus `6ee1f6f3` → objections digest **`0218f73b`**. New fragments should carry both pins: the whole-file md5 says *which file*, the digest says *which text*.
+
+3. **`b1-bradley-bar` / `b1-hedonic-crossref`** (advisory; hard under `--assembly`). Phase B1 predates both carry-forward constraints. **K224 bars routing an (a) into `bradley-no-subject#long` for a comparative-harm move** — because bradley answers such moves by asserting non-comparative wronging, which is itself unsettled bedrock (`HR-05`), so the route treats a bedrock commitment as a settled answer. K229 scopes that bar to comparative-harm moves. K230 calls the cross-ref the hedonic-contrast route leans on broken. Neither predicate is machine-decidable — *"is this a comparative-harm move"* is an editorial judgment — but **whether it was adjudicated** is. An (a)-entry routing into a constrained locus clears by naming the constraint in its `grounds` with a token, matched as a **prefix** so the suffix can name the disposition the ruling actually reached:
+
+   | routing target | token prefix | canonical suffixes |
+   |---|---|---|
+   | `bradley-no-subject#long` | `[K229-` | `[K229-comparative]` (bar bites) / `[K229-not-comparative]` (bar clears) |
+   | `transhumanist-objection#long` | `[K230-crossref` | `[K230-crossref-repaired]` / `[K230-crossref-not-load-bearing]` |
+
+   The token asserts the ruling was **made**, not that it came out clean; the prose carries the reasoning. Prefix matching exists so an author is never forced to attest a disposition the ruling did not reach — an entry adjudicated *not* comparative-harm would otherwise have to claim a repair that never happened. These fire on exactly the five B1 entries the succession brief names — `free-will-defense`, `procreative-liberty`, `consent-incoherent`, `non-identity-problem` (bradley) and `hedonic-contrast` (transhumanist). That is the point: the debt is standing and stays visible on every run until it is paid. `non-identity-problem` is the likeliest breach, since it *is* the no-worse-off-baseline problem.
+
+4. **`move-ascii`** (advisory; hard under `--assembly`). The move gate has always read *40–150 words, ASCII, no standalone dash tokens*. v0_1 mechanized the word band and neither of the others. Mechanizing ASCII now **registers a live breach rather than inventing one**: eight Phase A moves carry U+2014, and zero moves in B1, B2, C or D do. Phase A predates the discipline.
+
+### Severity model
+
+| label | meaning |
+|---|---|
+| `PASS` / `FAIL` | hard check. Any `FAIL` sets exit 1. |
+| `WARN` | advisory. Reported on every run, never sets exit 1 on its own. |
+| `--assembly` | promotes every advisory to hard and implies `--terminal`. **The assembly step into `adversarial_map_v1_0.json` must run with it.** |
+
+Advisories exist so a constraint ratified *after* an artifact shipped stays loudly visible without retroactively failing four ratified fragments. `--assembly` is the one moment the debt must be paid rather than displayed.
 
 ## Container contract (fragments emit this shape; the schema pins the ENTRY, this README + the validator pin the CONTAINER)
 
 ```json
 { "meta": { "source_corpus": "efilist_argument_library_v4_0_0.json",
             "source_corpus_md5": "<full md5 of the corpus file — 6ee1f6f3…>",
+            "source_corpus_objections_md5": "<v0_2, optional-but-preferred — 0218f73b…>",
             "class_counts": { "a": 0, "b": 0, "c": 0, "d": 0 },
             "coverage_distinct_ids": 0 },
   "entries": [ { "target_id": "…", "target_locus": "short|medium|long|diagnosis",
@@ -24,10 +53,10 @@ Home of the adversarial map program: for each of the 82 shipped v4.0.0 nodes, th
                  "class": "a|b|c|d", "grounds": "…",
                  "routing": { "<class-shaped — see the schema>" },
                  "status": "mapped",
-                 "provenance": { "phase": "A|B1|B2|C|D", "date": "YYYY-MM-DD", "seat": "…" } } ] }
+                 "provenance": { "phase": "A|B1|B2|C|D|E", "date": "YYYY-MM-DD", "seat": "…" } } ] }
 ```
 
-`class_counts` and `coverage_distinct_ids` are optional but validated against computed values when present. Canonical serialization: `json.dumps(indent=2, ensure_ascii=False)` + trailing newline (the validator's round-trip gate).
+`class_counts`, `coverage_distinct_ids` and `source_corpus_objections_md5` are optional but validated against computed values when present. Canonical serialization: `json.dumps(indent=2, ensure_ascii=False)` + trailing newline (the validator's round-trip gate).
 
 ## Expected arrivals
 
