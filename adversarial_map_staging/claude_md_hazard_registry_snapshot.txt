@@ -1,9 +1,18 @@
 # hazard registry snapshot -- headlines only, extracted from wuld-ink CLAUDE.md
 # The registry of authority is CLAUDE.md in the wuld-ink repo. This snapshot exists so
 # build_ledger.py can verify every numeral it cites without reaching across repos.
+#
+# A snapshot that does not say what it is a snapshot OF is a receipt without a referent
+# (ccclxii / C9). Extracted from wuld-ink CLAUDE.md at:
+#   commit bd63ca4ddc62a29b770298c93010c9501c2eee5f  (WI-K332)
+#   md5    7d85edf97aa390d5821ba7d561b90be0  /  202573 B
 
 **cccli IS ONE CLASS TOO WEAK AS LANDED, and the library seat named why.**
 **ccclv — A SWEEP FOR A SUPERSEDED FIGURE, IN A DOCUMENT THAT KEEPS DATED RECORDS, RETURNS MOSTLY CORRECT SENTENCES; AND THE FIGURE IT IS LOOKING FOR MAY NOT BE A STRING AT ALL.**
 **ccclvi — A FENCE IN A REPORT IS A PROMISE THAT THE CONTENTS ARE RUNNABLE.**
 **ccclvii — UNDER AN EOL POLICY IT IS NOT ONLY THE WORKING-COPY md5 THAT LIES; `git status` LIES TOO.**
 **ccclviii — MEASURE THE STATE YOU THINK YOU MEASURED.**
+**ccclix — NEVER MD5 A SHELL REDIRECT.**
+**ccclx — A VERIFICATION STEP MUST NOT MUTATE WHAT IT VERIFIES.**
+**ccclxi — THE NORM THAT WAS NEVER WRITTEN DOWN.**
+**ccclxii — THE RECEIPT THAT DESCRIBES A DIFFERENT RUN.**

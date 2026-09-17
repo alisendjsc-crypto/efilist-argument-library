@@ -13,9 +13,11 @@ import re, sys, hashlib, json, os
 CLAUDE_MD = "claude_md_hazard_registry_snapshot.txt"  # see README: the registry lives in wuld-ink
 
 # Recorded numerals this ledger cites. Verified against CLAUDE.md before writing.
-CITED = ["cccli", "ccclv", "ccclvi", "ccclvii", "ccclviii"]
-# ccclix, ccclx and ccclxi are THIS session's additions and are not yet in CLAUDE.md;
-# they are cited below as unrecorded and fold in a wuld-ink block.
+CITED = ["cccli", "ccclv", "ccclvi", "ccclvii", "ccclviii",
+         "ccclix", "ccclx", "ccclxi", "ccclxii"]
+# ccclix..ccclxii folded into wuld-ink CLAUDE.md at WI-K332 (bd63ca4). They are now
+# CITED, which means the builder REFUSES TO WRITE unless each has a bold headline in
+# the snapshot -- the citation is checked rather than asserted.
 
 CLASSES = [
  dict(id="C1", name="The instrument reports on itself",
@@ -31,7 +33,7 @@ CLASSES = [
       "falsify all 55 lastmod dates; `| head -12` turned a BrokenPipeError into a fake exit 1; "
       "`open(p,'wb')` truncated a file before its own read; a grep ran against a tree that had "
       "already been reset."),
-     ("ccclix", "THIS SESSION, unrecorded",
+     ("ccclix", "recorded",
       "`git cat-file blob X > tmp` then md5 the tmp. PowerShell's `>` re-encodes (UTF-16LE under "
       "5.1) and appends a newline, so that md5 describes the redirect. Caught in rehearsal-prep, "
       "before shipping. The fix is to never move blob bytes through the shell: a blob SHA *is* "
@@ -134,7 +136,7 @@ CLASSES = [
          "permissive, so a later author can diverge from five phases of custom without failing a "
          "single check, and no artifact-level review can see it.",
    instances=[
-     ("ccclxi", "THIS SESSION, found",
+     ("ccclxi", "recorded",
       "The Adversarial Map's anchor rule requires a verbatim anchor of 15 words or fewer at a named "
       "locus. It says NOTHING about which locus. Practice settled hard on `long`: 77 of the map's 93 "
       "entries, B1 16/16, B2 15/16, K231's D 15/17, Phase E 12/13. A wuld-ink re-derivation of Phase "
@@ -150,9 +152,61 @@ CLASSES = [
            "uniform and the rule is silent, write the rule down and gate it. The map's is now: author "
            "against the deepest locus that addresses the objection, or state in the grounds why a "
            "shallower one was chosen."),
+ dict(id="C9", name="The receipt that describes a different run",
+   gloss="A block is derived from a predecessor. Its gates MUST take the new constants or they "
+         "abort; its narration takes nothing, because nothing makes narration abort. So the commit "
+         "is correct and its account of itself is not -- and the account is all the operator sees.",
+   instances=[
+     ("ccclxii", "recorded",
+      "K339 was derived from K335. Its base gates compared canon blob `9c620ebe` and README blob "
+      "`adf05fc5` and passed. Its receipt printed `base gates OK: canon af7a1ba0, README 5eb87fd0` "
+      "-- K335's values, carried across the derivation untouched. A second line, `v38_1 removed "
+      "(rename per convention: v38_0 -> v38_1 at K221)`, was TRUE at K335 and false at K339, which "
+      "removed v38_2. The commit was correct in every respect; only the transcript was wrong, which "
+      "is the whole of the hazard, because the transcript is what a reader is offered as evidence "
+      "that the commit was correct. The split is measurable and total: every K339 narration line "
+      "that INTERPOLATED a variable was right, and exactly two HARDCODED a constant -- both drifted. "
+      "Two for two is not an error rate, it is the mechanism stated as a count."),
+     ("carry note", "THIS FILE, found",
+      "The previous revision of this ledger closed by naming `ccclix`, `ccclx` and `ccclxi` as NOT "
+      "YET FOLDED into the registry. WI-K332 folded them. Nothing in the builder would ever have "
+      "reported that the sentence had gone false, because the sentence was prose and prose is not "
+      "gated. The same revision's taxonomy paragraph said SEVEN shapes while the table beneath it "
+      "listed eight. Neither is a hash and neither is dramatic, which is the point: the shape does "
+      "not need hex to bite."),
+   ],
+   counter="Bind the constant once, gate against the binding, and print FROM the binding, so a stale "
+           "value fails at a comparison instead of printing quietly. WI-K332 applied it and proved "
+           "the application rather than claiming it: zero hex literals inside any narration line, "
+           "every printed constant shown to be gated, and a rehearsal control that plants a "
+           "predecessor's real blob in the constants block and confirms the run aborts before the "
+           "stale value can reach stdout. Extended to claims about OTHER repos: that block gates its "
+           "three efilist assertions against the efilist repo before committing the sentence that "
+           "makes them. In this file the same rule means counts are DERIVED from the data, never "
+           "written into the prose beside it."),
 ]
 
 WINS = [
+ ("The sweep was built with the defect already inside it",
+  "Rather than fix the one drifted line, twelve blocks were swept for narration quoting hex, "
+  "filenames or version tokens that no gate in the same block holds -- with the known-bad block "
+  "wired in as a POSITIVE CONTROL. A sweep that cannot find the defect it was written for is not a "
+  "clean sweep, it is a broken one, and its silence would mean nothing. The control was found, so "
+  "the eleven clean results could be believed."),
+ ("A count is not a finding",
+  "That sweep returned TEN hits, of which two were real. K335's identical sentence was true when "
+  "written, which makes it the origin of the drift rather than an instance of it; six more were "
+  "prose deliberately naming what the block discusses, one of them cleared only by decoding the "
+  "block's own base64 payload rather than assuming. Shipping the raw count would have overstated "
+  "the problem five-fold -- the same error one level up, since a detector's output is evidence and "
+  "not a verdict."),
+ ("The control that failed for the wrong reason",
+  "Two rehearsal controls for WI-K332 passed or failed on the harness instead of the block: one "
+  "aborted because the harness had not created TEMP, so a fake curl could not write and the block "
+  "reported a failed read rather than the unstable pin under test; another tampered every pin read "
+  "instead of the closing one, so all three agreed and the block honestly reported the pin unmoved. "
+  "Both were rebuilt and re-run. A control that cannot fail for its own reason is C1 wearing a lab "
+  "coat."),
  ("The block refused its own stale claim",
   "K333's self-test gate aborted with `case count is not 35` because an amendment made mid-session "
   "added a test case. The block declined to commit an artifact whose behaviour did not match the "
@@ -236,8 +290,13 @@ def main():
     w("## Why a taxonomy and not a list"); w("")
     w("The hazard registry is a log: `cccli`, `ccclv`, `ccclvi`, numbered in the order things went")
     w("wrong. A log is the right *record* and the wrong *teacher*, because the next failure never")
-    w("arrives wearing the last one's costume. What repeats is the **shape**. Seven shapes account")
-    w("for every process failure this arc, and four of them recur across unrelated surfaces — git,")
+    _n  = {1:"One",2:"Two",3:"Three",4:"Four",5:"Five",6:"Six",7:"Seven",8:"Eight",
+           9:"Nine",10:"Ten",11:"Eleven",12:"Twelve"}
+    _sh = _n.get(len(CLASSES), str(len(CLASSES)))
+    _rc = sum(1 for c in CLASSES if len(c["instances"]) > 1)
+    w("arrives wearing the last one's costume. What repeats is the **shape**. %s shapes account" % _sh)
+    w("for every process failure this arc, and %s of them recur across unrelated surfaces — git,"
+      % _n.get(_rc, str(_rc)).lower())
     w("PowerShell, JSON fragments, prose.")
     w("")
     w("| | class | recurs |")
@@ -267,10 +326,13 @@ def main():
     for n in CITED:
         w("- `%s` — %s" % (n, found[n].split("—", 1)[-1].strip() if "—" in found[n] else found[n]))
     w("")
-    w("`ccclix`, `ccclx` and `ccclxi` are this session's additions and are **not yet folded** into")
-    w("the registry: the C1 redirect instance, the C6 mutate-what-you-verify instance, and the C8 locus")
-    w("finding. The registry lives in wuld-ink's `CLAUDE.md`, a different repo from efilist canon, so")
-    w("the efilist canon bump could not carry them. They fold in a wuld-ink block.")
+    w("Every numeral above was checked against the snapshot before this file was written; a")
+    w("citation the registry does not carry makes the builder refuse. The registry lives in")
+    w("wuld-ink's `CLAUDE.md`, a different repo from efilist canon, which is why the snapshot")
+    w("exists at all. The previous revision closed with a carry — `ccclix`, `ccclx` and `ccclxi`")
+    w("*not yet folded* — which WI-K332 discharged and which nothing in this file would have")
+    w("noticed had gone stale. That is `C9` in its quietest form, and the reason the counts above")
+    w("are now derived from the data rather than written into the prose.")
     w("")
 
     out = "\n".join(L) + "\n"
