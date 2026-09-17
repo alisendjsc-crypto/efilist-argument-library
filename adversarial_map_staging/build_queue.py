@@ -38,8 +38,15 @@ LANE = [
    cut="v4.1.0"),
  dict(id="L2", title="Act/omission-default-under-total-skepticism overclaim",
    detail=("Found in eliminativism and solipsism; total skepticism voids the default "
-           "symmetrically. K230 watched for it in nihilism-label; the outcome was recorded in the "
-           "K231 state, which is unrecovered, so this item is re-open rather than closed."),
+           "symmetrically. K230's watch on nihilism-label is CLOSED, not pending: the K231 state "
+           "was recovered at K336 from its own chat's download cards, ships beside this queue as "
+           "session_K231_state.json, and records CF4_nihilism_label_watch as PASS -- the node "
+           "asserts the correct pole (antinatalism dissolves under nihilism) and exhibits no "
+           "act/omission-default overclaim. So the item is SCOPED rather than re-open, and its "
+           "extent is exactly the two T-nodes named. K231's own open_questions leaves one design "
+           "question live and this queue does not decide it: a coordinated regen note across both "
+           "nodes, or a per-node minor fix. Prior text held this item open on a document that had "
+           "already been found -- ccclxii / ledger C9."),
    cut="v4.1.0"),
 ]
 
@@ -124,8 +131,13 @@ def main():
 
     doc = dict(meta=dict(
         artifact=OUT, kind="v-cut scoping input (design doc s: terminal deliverables)",
-        status="WORKING. Phase D is the re-derivation draft; if the K231 fragment is recovered and "
-               "selected instead, re-run this builder against it.",
+        status="BUILT AGAINST THE SELECTED PHASE D. The conditional this field used to carry -- "
+               "'if the K231 fragment is recovered and selected instead, re-run this builder "
+               "against it' -- was DISCHARGED at K336: the fragment was recovered from its own "
+               "chat's download cards, landed verbatim, and this queue is built against it. Check "
+               "it rather than trust it: source_fragments.D below is K231's md5, not the "
+               "superseded re-derivation's. Scoping input; the cut it scopes is ratified "
+               "separately and is not opened by this file.",
         source_fragments=frag_md5,
         b_total=len(bs), c_total=len(cs), distinct_nodes=len(per_node),
         corpus_nodes=82, corpus_fraction_pct=round(100*len(per_node)/82, 1),

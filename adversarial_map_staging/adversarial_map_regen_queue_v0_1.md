@@ -91,5 +91,5 @@ neuroscience-positive-states#long holds valence realism, adjudicated the defensi
 
 **L2 · Act/omission-default-under-total-skepticism overclaim** — `v4.1.0`
 
-Found in eliminativism and solipsism; total skepticism voids the default symmetrically. K230 watched for it in nihilism-label; the outcome was recorded in the K231 state, which is unrecovered, so this item is re-open rather than closed.
+Found in eliminativism and solipsism; total skepticism voids the default symmetrically. K230's watch on nihilism-label is CLOSED, not pending: the K231 state was recovered at K336 from its own chat's download cards, ships beside this queue as session_K231_state.json, and records CF4_nihilism_label_watch as PASS -- the node asserts the correct pole (antinatalism dissolves under nihilism) and exhibits no act/omission-default overclaim. So the item is SCOPED rather than re-open, and its extent is exactly the two T-nodes named. K231's own open_questions leaves one design question live and this queue does not decide it: a coordinated regen note across both nodes, or a per-node minor fix. Prior text held this item open on a document that had already been found -- ccclxii / ledger C9.
 
