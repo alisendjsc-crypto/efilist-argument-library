@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "artifact": "adversarial_map_phaseD",
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "phase": "D",
+    "scope": "objections[tier==2], n=17",
+    "seat": "K231 (library)",
+    "date": "2026-07-17",
+    "adjudication_order": "a -> c -> b/d",
+    "class_counts": {
+      "a": 10,
+      "d": 4,
+      "b": 3
+    },
+    "coverage_distinct_ids": 17
+  },
+  "entries": [
+    {
+      "target_id": "consent-both-ways",
+      "target_locus": "long",
+      "target_anchor": "Presumed consent is only valid when it prevents a greater harm",
+      "adversarial_move": "Presumed consent also licenses beneficial imposition, not only harm-prevention: we vaccinate and school children unconsented because a reasonable person would endorse it. If a reasonable person endorses existence ex post, procreation is beneficial-presumed-consent, and the node's flat 'only when it prevents a greater harm' is a false restriction that hands the objector the vaccination case.",
+      "class": "a",
+      "grounds": "The objection is the consent-symmetry stalemate; the node's spine (harm-imposition on a real post-creation subject versus non-deprivation of a non-subject, plus the default-to-restraint clause for unconsentable serious harm) answers it. The one surviving extension is beneficial-presumed-consent, exploiting the over-narrow 'only when it prevents a greater harm.' (a): that extension is met in-corpus. benatar-asymmetry-attack#long shows beneficial-presumed-consent needs a beneficiary, and the never-created is deprived of nothing, so no beneficiary awaits the benefit of existence; most-people-happy#long adds the proxy-gamble, that net-benefit-for-most cannot consent-away the catastrophic minority. The conclusion is carried by the asymmetry plus the every-other-domain clause independently of the over-narrow phrasing, so that phrasing is excisable color. Not (b): no stronger in-node text is required; the position holds one route away. Not (d): the residue is the already-surfaced asymmetry and consent core, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "most-people-happy#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "nihilism-label",
+      "target_locus": "long",
+      "target_anchor": "for the norm to bind the agents who actually exist inside it",
+      "adversarial_move": "Grant the node its distinction: metaphysical nihilism affirmed, axiological nihilism denied. The residue is what grounds the denied thesis. The conclusion needs an agent-neutral, other-binding disvalue of suffering, a reason binding the procreator who is simply indifferent to the future subject. But affirming that the cosmos has no telos and no agent-neutral values is exactly what strips such reasons of a source. 'The norm binds the agents who exist inside it, no cosmic endorsement required' relocates rather than answers: why must an agent occupy the moral standpoint rather than a prudential one? A subjectivist grants suffering is bad-for-the-sufferer and denies this yields an agent-neutral duty not to create. The node asserts the relation binds; that it binds an indifferent agent under its own anti-realism is the disputed premise, not a demonstrated one.",
+      "class": "d",
+      "grounds": "The node dissolves the nihilism charge correctly, it is value-committed, not value-nihilist, and it reads the valence right: axiological nihilism would dissolve antinatalism, not vindicate it. This confirms the WATCH's default-under-skepticism overclaim is ABSENT here, the node asserts the correct pole (antinatalism dissolves under nihilism) rather than the wins-by-default error, so no regen-lane item is generated. What survives is the grounding question. (a) fails: nothing in-corpus grounds agent-neutral moral realism against a subjectivist who accepts metaphysical nihilism; routing to the asymmetry presupposes the very other-binding disvalue in dispute. Not (b): the node is not locally imprecise, it is already maximally sharpened, surrendering two overclaims and conceding affect; there is no stronger in-identity text, the residue is pure metaethical grounding. Not (c): not a missing objection but a fault-line the conclusion sits astride. (d): terminus is the realism / is-ought grounding of agent-neutral moral reasons, the standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage). Novel: first map registration of this bedrock as a (d) terminus, distinct from impersonal-vs-person-affecting; it feeds the N1 triage rather than resolving it.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "realism / is-ought grounding of agent-neutral moral reasons",
+          "terminus_routing": "standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage); first map (d)-registration, distinct from impersonal-vs-person-affecting; feeds the triage, does not resolve it",
+          "novel": true
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "gods-plan",
+      "target_locus": "long",
+      "target_anchor": "No theodicy has resolved this trilemma",
+      "adversarial_move": "Two gaps. First, 'no theodicy has resolved' targets theodicies, but skeptical theism is a defense, not a theodicy: it grants we cannot explain the suffering and argues that, given the cognitive gap to an omniscient being, suffering that appears gratuitous need not be gratuitous-in-fact. The node's confident 'logically impossible under omnibenevolence' presupposes we can certify gratuitousness, which skeptical theism denies, and the node never engages it. Second, the decisive point, that the theist has outsourced the ethical question, begs the question against divine-command theory. On modified DCT the Good is constituted by God's necessary nature; 'God wills procreation' would then answer, not outsource, the ethical question, and the node's indictment of the biosphere as sadistic presupposes a God-independent standard DCT rejects.",
+      "class": "b",
+      "grounds": "The strongest continuation a maximally competent theist deploys is not the free-will defense (which the node rightly sinks on animal and involuntary suffering) but skeptical theism plus divine-command theory. (a) fails: the node engages neither, it asserts gratuitousness as certifiable and treats the divine-authority point as self-evidently non-answering, both of which the moves contest. Not (d) as the class: the node has genuine room to strengthen before bedrock. A stronger in-identity text concedes skeptical theism's in-principle move and pivots to the Euthyphro fork, pressing that a good nature authoring predation and child-cancer is either good by no recognizable sense of the word or good by a standard independent of fiat that the antinatalist then applies; that closes the practical gap. (b), axis c/r: completeness, missing skeptical-theism and Euthyphro engagement; robustness, the 'logically impossible' and 'no theodicy resolved' overclaims over-expose a defensible core. Severity minor. The irreducible residue (modified DCT: God's necessary nature as the source of normativity) routes to the metaethical-grounding bedrock registered at nihilism-label, a theological-voluntarism facet, flagged not authored.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "most-people-happy",
+      "target_locus": "long",
+      "target_anchor": "procreation is a proxy gamble",
+      "adversarial_move": "The proxy-gamble frame proves too much. Expected-value reasoning over populations governs every risk we accept, vaccinating cohorts, building cities on fault lines, where some fraction suffers catastrophically and never consented. If the uncompensated catastrophic minority defeats procreation, it defeats all population-level risk-imposition. The objection singles out procreation without a principled difference.",
+      "class": "a",
+      "grounds": "Prong I (survey unreliability) contains a self-undermining overclaim, that consciousness cannot assess its own wellbeing impugns the antinatalist's own suffering-tally, but the node marks prong I dispensable ('even if 90% genuinely net-positive, the position holds'), so it is excisable color, not the operative content. The spine is the proxy-gamble, and its strongest counter is the proves-too-much move. (a): met in-corpus. benatar-asymmetry-attack#long shows creating a new subject of risk differs categorically from imposing risk on an existing one, the never-created being deprived of nothing; future-solve#long shows present beings bear risk in schemes among the already-existing, whereas procreation manufactures the risk-bearer. Not (b): the spine survives without a stronger in-node text. Not (d): the residue is the registered asymmetry, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "future-solve#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "masochist-counterexample",
+      "target_locus": "long",
+      "target_anchor": "rare atypical neurology never cross-wires nociception and reward",
+      "adversarial_move": "The node concedes rare atypical neurology can cross-wire pain and reward. Refuting the asymmetry needs no generalization: one being for whom pain qua pain is positively valenced shows pain's disvalue is contingent on wiring, not necessary. And if disvalue is engineerable-away, one could engineer suffering-free beings for whom existence is pure good.",
+      "class": "a",
+      "grounds": "The node defeats the surface move mechanistically, pain as toll not goal, regulation not positive-substance across the studied figures, and answers the unfalsifiability charge with three discriminating, confirmed predictions; it also declines to overclaim universal pain-aversion, limiting itself to the counterexample failing. The surviving wedge is the atypical-neurology concession, pressed into a contingency-of-disvalue claim and thence the suffering-abolition move. (a): met via asymmetry-decoupling. benatar-asymmetry-attack#long grants suffering-mutability arguendo, whereupon the no-reason-to-create and consent-impossibility spines survive intact; per the carry-forward this is routed there, not through transhumanist-objection's broken cross-reference. Not (b): the node's hedge (claims only that the counterexample fails to do its job) forecloses the universality overclaim that would ground one. Not (d): the residue is the registered asymmetry-contingency, reached by decoupling, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "speak-for-everyone",
+      "target_locus": "long",
+      "target_anchor": "The existence of lottery winners does not justify forced participation in the lottery",
+      "adversarial_move": "'Forced participation' imports the verdict. Forcing presupposes a pre-existing participant conscripted into the lottery; creation has no prior subject to force, it makes the participant. The analogy models imposing risk on someone already there, which is exactly what is absent, so it does the persuasive work only if birth is already assumed a harm.",
+      "class": "a",
+      "grounds": "The node's three prongs are structural-not-personal, anecdote-versus-probabilistic, and self-assessment-bias; prong III repeats the self-undermining wellbeing-skepticism, but prongs I and II render it dispensable. The strongest continuation is the question-begging charge against the lottery analogy: 'forced participation' presupposes the very prior subject creation lacks. (a): met in-corpus. benatar-asymmetry-attack#long shows the created is not a pre-existing subject conscripted into a gamble, the never-created being deprived of nothing, so no one is 'forced.' Not (b): the structural and probabilistic spine survives without the analogy, which is excisable color. Not (d): the residue is the registered asymmetry, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "evolution-purpose",
+      "target_locus": "short",
+      "target_anchor": "Evolution has no purpose. It has no direction",
+      "adversarial_move": "Retreat from cosmic to naturalized teleology: grant evolution is blind, but we carry evolved functions and drives, and living in accordance with one's nature is a form of flourishing (neo-Aristotelian). Reproduction is part of that nature, so it is a natural good, no designed purpose required.",
+      "class": "a",
+      "grounds": "Prong I (evolution is a blind algorithm) refutes designed teleology; the strongest continuation sidesteps it by retreating to naturalized teleology, evolved function and flourishing-per-nature grounding a reason to reproduce. (a): met by the node's own prong II, evolution-purpose#long already answers that even a granted purpose does not equal ethical justification (the appeal-to-nature fallacy: that we evolved to reproduce yields no ought to reproduce). The move is met on the shipped text's best reading. Not (b): no strengthening is required; the is-ought point is stated. Not (d): the deepest residual, a neo-Aristotelian denial of the is-ought gap for whom facts about a living thing's nature are already evaluative, routes to the metaethical-grounding bedrock registered at nihilism-label, but it is a distant sophisticated position, not the strongest move, which the node already meets.",
+      "routing": {
+        "answered_by": [
+          "evolution-purpose#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "playing-god",
+      "target_locus": "long",
+      "target_anchor": "the default state of the universe is non-existence",
+      "adversarial_move": "The burden-shift is grounded in a cosmological claim that begs the normative question. That the universe's default state is non-existence is a fact about the cosmos, not a normative baseline; installing it as the point from which deviation requires justification is itself the disputed move. For any actual agent the operative status quo is a world of ongoing reproduction, and choosing the cosmic baseline over the social one to locate the burden is a value-laden selection, the very status-quo bias the node charges the objector with, run in reverse. The node accuses the natalist of treating procreation as the neutral default while treating non-existence as its own neutral default; symmetric baseline-selection cannot convict one side only.",
+      "class": "b",
+      "grounds": "The inversion is sound, the creator exercises unilateral power over a subject's parameters while the abstainer imposes nothing, and its strongest counter (that universal antinatalism is itself a sweeping cosmic judgment) is met by the asymmetry, since a universal refrain deprives no one. But the burden-shift rests solely on 'the default state of the universe is non-existence,' with no in-node backstop, and that cosmic-to-normative inference is invalid. (a) fails: the node's stated support for the burden-shift is the cosmological claim, not the asymmetry, so the flaw is in the shipped reasoning, not merely met elsewhere. Not (d): re-grounding is a local in-identity fix, a stronger text grounds the burden-shift in the asymmetry (harm-imposition requires justification; harm-avoidance does not), which is the real reason non-existence is the ethical default. (b), axis s/c: soundness, the cosmic-baseline inference; completeness, the missing asymmetry grounding. Severity minor.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "c"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "suffering-makes-human",
+      "target_locus": "long",
+      "target_anchor": "evaluate the component (suffering) on its own terms",
+      "adversarial_move": "The strong form is not the Constitutive Fallacy the node refutes but instrumental necessity: suffering is the causal precondition of goods, depth, compassion, resilience, meaning, and those goods outweigh. 'Evaluate suffering on its own terms' answers only the intrinsic-value version; the instrumental version locates suffering's value in its fruits, which the isolation test does not reach.",
+      "class": "a",
+      "grounds": "The Constitutive-Fallacy diagnosis is correct against the crude form, and the disease/exploitation/violence counterexamples sink it. The surviving form is the soul-making claim: suffering is instrumentally necessary for redeeming goods. (a): met in-corpus. joy-outweighs-harms#long and love-beauty-art#long establish that goods, however real, cannot be cashed as a reason to conscript a non-consenting newcomer into the harms that produce them, because there is no antecedent subject who needed the depth, and the catastrophic tail gains no redeeming fruit (the child tortured to death acquires no character). Not (b): the isolation test is not the load-bearing answer; the goods-cannot-redeem apparatus is, and it lives elsewhere by design. Not (d): the residue is the registered asymmetry and goods-outweigh treatment, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "love-beauty-art#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "adoption-instead",
+      "target_locus": "long",
+      "target_anchor": "Adoption satisfies the desire to parent completely",
+      "adversarial_move": "Adoption does not satisfy the parental impulse completely. Raising one's own biological child carries goods, the gestational bond, the specific lineage relation, that adoption cannot supply. 'Just adopt' leaves a remainder, and dismissing the desire-to-reproduce as merely the targeted imposition ignores the bundled goods that motivate it. The objector is naming a good adoption forecloses, not changing the subject.",
+      "class": "a",
+      "grounds": "The node correctly shows 'adopt instead' carries no independent refutational force, it either concedes the antinatalist program or takes the procreate-rather-than-adopt horn, which the node routes to the asymmetry and consent nodes. The strongest surviving move disputes 'completely': biological parenthood has distinctive goods adoption lacks. (a): met by the node's own second-horn routing plus the goods-cannot-redeem apparatus. joy-outweighs-harms#long and benatar-asymmetry-attack#long establish that distinctive goods of biological parenthood, real as they are, do not license imposing existence on a non-consenting newcomer to obtain them. Not (b): 'completely' is a minor overreach, and the operative content (the emptiness-as-deployed dilemma) is untouched. Not (d): the residue is the registered asymmetry, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "cherry-picking-worst",
+      "target_locus": "short",
+      "target_anchor": "does not justify forcing someone to play",
+      "adversarial_move": "The risk-ethics analogies smuggle in a prior subject. Pharma regulators and safety boards weigh tail outcomes for people who already exist and would exist regardless; refusing the drug leaves an existing patient. Refusing procreation leaves no one, so the tail risk has no bearer absent the act, and counting it as harm-to-someone borrows the imposing-on-the-existing framing that creation lacks.",
+      "class": "a",
+      "grounds": "The node's tail-inclusion point is sound, risk ethics considers the full distribution, but the analogies (pharma, workplace safety) model risk borne by antecedently-existing subjects, and the strongest continuation presses that disanalogy: no prior subject bears the procreative tail. (a): met in-corpus. benatar-asymmetry-attack#long turns the disanalogy into a feature, not a rescue: once created, the tail falls on a real subject, while non-creation's leaving-no-bearer means no one is deprived, which is the asymmetry itself. Not (b): the analogies illustrate rather than carry, the node's independent point that even the guaranteed baseline suffices survives. Not (d): the residue is the registered asymmetry, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "luxury-belief",
+      "target_locus": "long",
+      "target_anchor": "consequences for economic systems, not for sentient beings",
+      "adversarial_move": "The feature-three rebuttal overclaims. The critic's downstream-harm worry is not confined to abstract economic systems: demographic contraction imposes concrete suffering on real sentient beings, the elderly without caregivers, the young in a collapsing economy. Recasting these as costs to an economic model, not to people, is a redescription: those systems are how existing beings are cared for.",
+      "class": "a",
+      "grounds": "The node's genetic-fallacy spine is decisive, a belief's truth is independent of its holders' social profile, and it alone defeats the luxury-belief dismissal; the feature-by-feature rebuttal is supplementary. The surviving move exploits the feature-three overclaim that demographic costs fall only on economic systems, not sentient beings. (a): met in-corpus. economy-population#long conducts the transition-cost and demographic-collapse debate directly, and the asymmetry weighs prevented suffering (the never-born) against transitional costs to the existing; the move relocates to that node rather than defeating luxury-belief's operative content. Not (b): the overclaim is a dispensable supplementary error; the genetic-fallacy spine carries regardless. Not (d): the residue is the demographic-collapse objection, already sited, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "economy-population#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "survivor-testimony",
+      "target_locus": "long",
+      "target_anchor": "evidence about the preferences of already-existing beings",
+      "adversarial_move": "The category-error dismissal moves too fast. Survivor testimony bears on the antinatalist's premise that existence contains suffering grave enough to defeat consent. If people who reached self-destruction come to endorse continuing, that bears on how bad the suffering is, and the case needs it very bad. Ruling the testimony about existing preferences concedes it is not irrelevant.",
+      "class": "a",
+      "grounds": "The node's three prongs are survivorship bias, neurochemical confounding, and the category error; prongs I and II repeat the self-undermining wellbeing-skepticism (dismissing all life-endorsement as machinery impugns the antinatalist's own assessment), but prong III renders them dispensable. The strongest surviving move presses that the category error is too quick, the testimony is evidence about suffering's bearability, which the case needs high. (a): met in-corpus. The asymmetry does not depend on suffering being unbearable; joy-outweighs-harms#long and benatar-asymmetry-attack#long establish that even for bearable, net-positive lives the goods cannot redeem imposing existence on a non-consenting newcomer, so survivors' endorsement leaves the asymmetry standing. Not (b): prong III is stated as independent; no strengthening is required. Not (d): the residue is the registered asymmetry, not fresh bedrock.",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "love-beauty-art",
+      "target_locus": "long",
+      "target_anchor": "The goods of existence raise no claim on behalf of the merely possible",
+      "adversarial_move": "The node rests entire on person-affecting axiology: the goods raise no claim on behalf of the merely possible because no subject stands outside existence to be deprived. Deny that axiology. Love, beauty, and art may carry impersonal, agent-neutral value: a cosmos containing them is better simpliciter than a barren one, independent of any experiencer to register it. On that axiology the goods do raise a claim, not on behalf of a deprived possible person, but on behalf of value itself, so that creating a being who realizes them adds agent-neutral value the world would otherwise lack. The no-deprivation move addresses only value-for-a-subject and never reaches an agent-neutral reason to create. Level one simply assumes value requires a valuer, the disputed premise, not a demonstrated one.",
+      "class": "d",
+      "grounds": "The asymmetry disposes of the person-affecting reading completely, no possible person waits in the dark, so declining to create wrongs no one. The only route past it denies person-affecting axiology and asserts impersonal value. (a) fails: the corpus no-deprivation answers address value-for-a-subject and cannot touch an agent-neutral loss-or-gain claim; routing to the asymmetry begs the axiology in dispute. Not (b): the node is not imprecise, it is committed to person-affecting axiology, and no local trim supplies the impersonal-value engagement. Not (c): not a missing node but a fault-line the corpus sits astride. (d): terminus is impersonal-vs-person-affecting axiology, K224 bedrock 1, value-requires-a-valuer facet, the same bedrock extinction-culture and slippery-slope-eugenics hit. Not novel, but in a distinct direction: impersonal-value-as-creation-reason (the pro-natal direction) rather than impersonal-disvalue-of-destruction (the anti-extinction direction); flagged for the pending facet-consolidation-versus-registration decision, routed as registered.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "impersonal-vs-person-affecting axiology",
+          "terminus_routing": "K224 bedrock 1, value-requires-a-valuer facet; impersonal-value-as-creation-reason (pro-natal direction) sibling to extinction-culture's anti-extinction direction; route as registered, flag facet for the pending consolidation-vs-registration decision",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "joy-outweighs-harms",
+      "target_locus": "long",
+      "target_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "adversarial_move": "Take the node's own concession and stand on it. Its dilemma is decisive against the naive aggregator, own the utility monster or accept the side-constraint that also forbids the cradle, and it closes the survivorship and ordinary-risk retreats. But it grants that an opponent who denies the asymmetry can occupy the intrapersonal horn: hold that a merely possible person can be a genuine beneficiary of being brought into a net-positive existence, decline the monster (the goods and harms fall on one person, not interpersonally), and the argument does not finish the job by itself. That opponent is not refuted; the dispute is relocated to the asymmetry. So the slogan's defeat is complete only downstream of the one contested premise it was meant to avoid.",
+      "class": "d",
+      "grounds": "The node is maximally sharpened and states its own honest remainder: everything turns on the asymmetry. The utility-monster fork sinks naive aggregation; the expected-value horn is shown interpersonal (monster-structured); the actual-balance horn is shown to presuppose the subject whose creation is in question. What survives is precisely the asymmetry-denier on the intrapersonal horn, that a merely possible person can be a beneficiary of being created. (a) fails: this is the open premise, not met anywhere in-corpus; routing to the asymmetry is routing to the disputed thing. Not (b): there is no stronger in-identity text, the node concedes it relocates to the asymmetry and cannot finish independently. Not (c): not a missing objection but the corpus-wide fault-line. (d): terminus is Benatar's asymmetry, specifically the merely-possible-beneficiary question, the registered asymmetry-contingent residue; not novel, the same bedrock the honest-residuals register already carries, reached here via the hedonic-aggregation route. Note: the node explicitly REFUSES the additivity strong-deflation ('does not require the false claim that all pleasure is relief; grant genuine consummatory delight in full'), aligning with neuroscience-positive-states#long, so it is NOT a new instance of that cluster and generates no regen-lane item.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+          "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "suffering-as-meaning",
+      "target_locus": "long",
+      "target_anchor": "the asymmetry, where the objection meets the antinatalist core",
+      "adversarial_move": "The node's first three lines defeat the strong claim, suffering only occasions meaning, does not confer it, and its fourth line concedes it then rests on the asymmetry. Stand where it rests. Grant lines one through three: suffering is not constitutively meaning-conferring, and revealed preference and survivorship confirm it. The natalist retreats to the weak claim plus a denial of the asymmetry: a merely possible person can be the beneficiary of a net-positive, meaning-bearing existence, so creating them into a life where they will wrest meaning from their suffering benefits them, and 'contingent, agent-relative, unguaranteed' is just the ordinary uncertainty of any good life. The node answers only by asserting the meaning-payoff has no antecedent beneficiary while the suffering-cost has a certain bearer, which is the asymmetry itself, the disputed premise.",
+      "class": "d",
+      "grounds": "Like joy-outweighs-harms, this node is sharpened to bedrock and names the asymmetry as its closer. Lines one through three independently sink the strong (constitutive) claim; the toll-versus-goal, revealed-preference, and survivorship arguments are decisive there. What survives is the weak claim conjoined with asymmetry-denial: the intrapersonal-horn opponent who holds the created person is the beneficiary of their own meaningful existence. (a) fails: this is the open premise, not met in-corpus; the node's line-four answer is the asymmetry, i.e. the disputed thing. Not (b): a minor completeness addition is available, importing the ordinary-risk disanalogy that distinguishes gambling a subject-to-be's stake from ordinary self-affecting risk, but the node's consent-and-stake framing (theirs to spend, not the procreator's to promise) substantially carries it, and the strongest move is the intrapersonal-horn asymmetry-denial, which no in-identity text closes. Not (c): the corpus-wide fault-line, not a missing node. (d): terminus is Benatar's asymmetry, the merely-possible-beneficiary question, the registered asymmetry-contingent residue, reached here via the meaning-conferral route (facet-sibling to joy-outweighs-harms's hedonic-aggregation route). Not novel.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+          "terminus_routing": "registered asymmetry-contingent residue; reached via the meaning-conferral route (facet-sibling to joy-outweighs-harms's hedonic-aggregation route); route as registered",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    },
+    {
+      "target_id": "western-philosophy",
+      "target_locus": "long",
+      "target_anchor": "The Pythagorean theorem originated in a specific cultural context; it applies universally",
+      "adversarial_move": "The Pythagorean analogy equivocates the objection away. Mathematical truths are agent-neutrally objective; whether moral claims are is the contested question the objection raises. If metaethical relativism holds, a moral claim's cultural origin does bear on its authority across frameworks, and the genetic-fallacy charge misfires: the objector is not inferring falsity from origin but denying culture-transcendent moral truth. Treating antinatalism like the Pythagorean theorem simply assumes moral realism. Separately, the empirical prong overstates: Buddhism, Jainism, and Hindu samsara seek liberation through or from the rebirth-cycle by spiritual means; none prescribes reproductive non-creation. 'Functionally analogous to the antinatalist prescription' conflates soteriological pessimism with reproductive antinatalism.",
+      "class": "b",
+      "grounds": "The genetic-fallacy spine is sound for descriptive claims, origin does not determine truth, and it defuses the naive 'it is Western therefore wrong.' But the objection's strongest form is metaethical relativism, which the node never engages: the Pythagorean analogy begs it, and the Eastern-tradition analogies overstate (these are liberation traditions, not antinatalisms). (a) fails: the node asserts origin-irrelevance and a global-pessimism catalogue, neither of which meets the relativism-qua-metaethics move or the conflation charge. Not (d): a stronger in-identity text distinguishes descriptive origin-irrelevance from the metaethical question, notes relativism's self-undermining and that antinatalism is offered as an argument for evaluation regardless of provenance, and drops or qualifies the Buddhism-equals-antinatalism claim. (b), axis c/s: completeness, no engagement with the metaethical question the objection turns on; soundness, the overstated cross-tradition analogy. Severity minor. The irreducible residue (sophisticated, non-self-undermining relativism versus realism) routes to the metaethical-grounding bedrock registered at nihilism-label.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "s"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-07-17",
+        "seat": "K231 (library)"
+      }
+    }
+  ]
+}

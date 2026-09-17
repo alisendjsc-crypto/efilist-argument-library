@@ -39,6 +39,7 @@ Home of the adversarial map program: for each of the 82 shipped v4.0.0 nodes, th
 
 Advisories exist so a constraint ratified *after* an artifact shipped stays loudly visible without retroactively failing four ratified fragments. `--assembly` is the one moment the debt must be paid rather than displayed.
 
+- `adv_map_phaseD_v0_1.json` — Phase D, T2, n=17, 10a / 3b / 0c / 4d, K231's fragment verbatim. `session_K231_state.json` is its authoring receipt: it carries the per-entry routing, the four carry-forward checks (all PASS — notably CF4, the `nihilism-label` watch on the act/omission-default-under-skepticism overclaim, cleared at origin) and six open questions.
 - `adv_map_phaseE_v0_1.json` — **Phase E, T1, n=13. The tier-descending sweep is complete: every one of the 82 nodes now carries at least one entry.** 5a / 5b / 1c / 2d. Built by `build_phaseE.py`, which verifies every anchor verbatim at its named locus, every word band, the entry cap, id×anchor uniqueness, ASCII purity and the absence of standalone dash tokens *before* writing, and refuses to write on any failure. First fragment to carry `source_corpus_objections_md5`.
 
   **It carries the program's first (c).** Zero (c) across the previous 69 nodes had two readings — the corpus is individuation-complete, or the bar is too high. It was the bar, and the cause is procedural: every phase adjudicated node-against-node, which leaves a *corpus-level* objection nowhere to land. `diagnosis-not-refutation` (tier guess 5, presupposition-inversion) is the objection that the rebuttals commit the genetic fallacy they convict the objector of. Measured before it was ruled: 26 of 82 nodes deploy diagnostic vocabulary inside their responses; the rule forbidding it appears in exactly 2 (`just-depressed#long`, `life-gift#long`); T5 holds nothing method-level.
@@ -47,7 +48,7 @@ Advisories exist so a constraint ratified *after* an artifact shipped stays loud
 
   Two audits. The **birth-certificate** check refuses to write when a bedrock carries more than one `novel: true` — under-individuation. The **adjacency** check derives candidate pairs from two signals (a `terminus_routing` naming another bedrock; a corpus node feeding two bedrocks), cutting 66 possible pairs to 4, and refuses to write while any detected pair goes undeclared — so an empty `relations` list is an assertion of independence, never a default. The signals are a **floor on what must be adjudicated, never a ceiling**: `HR-04`+`HR-07` is a real dependency neither fires on, found by hand.
 
-- `build_register.py` / `render_register.py` — run from this directory: `python3 build_register.py [--with-draft-d] [--with-e]` then `python3 render_register.py`. Everything is derived except `BEDROCK_MAP` and `RELATIONS`, which are the editorial acts, and both are audited against the fragments before writing.
+- `build_register.py` / `render_register.py` — run from this directory: `python3 build_register.py [--with-d] [--with-e]` then `python3 render_register.py`. Everything is derived except `BEDROCK_MAP` and `RELATIONS`, which are the editorial acts, and both are audited against the fragments before writing.
 
 ## Container contract (fragments emit this shape; the schema pins the ENTRY, this README + the validator pin the CONTAINER)
 
@@ -70,7 +71,19 @@ Advisories exist so a constraint ratified *after* an artifact shipped stays loud
 
 ## Expected arrivals
 
-**Phases A, B1, B2, C and E have landed; D is outstanding.** The K231 Phase D fragment is unrecovered (disk, repo `archive/` and the `authoring-archive-2026-06-29` Release are all exhausted — the Release predates K231 by three weeks and cannot contain it), and a re-derivation exists as a draft pending comparison. With either D folded the map reaches 82/82. Note the re-plan recorded in K230's receipt but never propagated here: C delivered T3 only against a plan of T3+T2, so D = T2 (n=17) and E = T1 (n=13).
+**ALL SIX PHASES HAVE LANDED. The map is mapped-complete: 82/82 nodes, 93 entries, validator v0_2 terminal run 0 violations.**
+
+Phase D is **K231's fragment, landed verbatim** (md5 `8d41db905561c4e32df33d41b4874bd5`, 36,701 B, authored 2026-07-17, 10a/3b/0c/4d) together with its authoring receipt `session_K231_state.json`. It was recovered on 2026-09-17 from the K231 chat's download cards, where it had been sitting undownloaded the whole time — which is why every disk, `archive/` and Release search came back empty.
+
+**The calibration control paid for itself.** A wuld-ink re-derivation of the same 17 T2 nodes existed (4a/12b/0c/1d) and was within an hour of being folded. Diffing the pair against each other, rather than either against the corpus, found a defect no gate in this program can see:
+
+- **Class agreement 5/17. Anchor agreement 0/17.** The two never engaged the same text.
+- K231 targeted `long` 15 times; the re-derivation targeted `medium` 11 times. The long response is the corpus's most defended prose and `medium` is a condensation, so attacking `medium` finds gaps far more easily — which is the whole of 12b against 3b.
+- **Eight of the re-derivation's twelve (b) entries never consider the long form at all.** The force floor says an entry is (a) if the *best reading of the shipped text* survives, and for a node shipping three depths that reading includes `long`.
+
+**Locus discipline is now a program norm with numbers behind it: 77 of the map's 93 entries target `long`** (B1 16/16, B2 15/16, D 15/17, E 12/13; Phase A's 6 `medium` predate the norm). **Author against the deepest locus that addresses the objection, or state in the grounds why a shallower one was chosen.** The anchor rule permits any locus and says nothing about depth, so a phase can drift shallow without tripping a single check while its class distribution moves sharply. That is invisible to the validator and was invisible to five phases of review.
+
+Note the re-plan recorded in K230's receipt but never propagated until canon v38.2: C delivered T3 only against a plan of T3+T2, so D = T2 (n=17) and E = T1 (n=13).
 
 `adv_map_phase{A|B1|B2|C|D|E}_v0_1.json` fragments — Phase A = T5 (n=7), carrying the ELECTED Map-1 curation rider for `self-effacing-under-universalization` (**transition-spec artifact ONLY**; the `combined.html` splice it implies is a separate, deliberate pin-move session — electing the rider authorized design, not a surface byte) → terminal `adversarial_map_v1_0.json` = the **mapped-complete (pre-triage)** state (Q3). Coverage law (Q1): every node ≥1 entry, ≤3 entries/node.
 

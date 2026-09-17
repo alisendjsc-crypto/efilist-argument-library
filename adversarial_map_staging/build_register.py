@@ -41,6 +41,10 @@ BEDROCK_MAP = {
    ("HR-03", "relational-holist-seat-of-standing"),
  "impersonal-vs-person-affecting axiology (relational-holist / seat-of-standing facet: standing borne by the whole, a node's suffering a constitutive non-vetoing part of a good)":
    ("HR-03", "relational-holist-seat-of-standing"),
+ "realism / is-ought grounding of agent-neutral moral reasons":
+   ("HR-13", "binding-an-indifferent-agent"),
+ "Benatar's asymmetry (merely-possible-beneficiary)":
+   ("HR-02", "merely-possible-beneficiary"),
  "moral-realism / is-ought: stance-independence of suffering's disvalue":
    ("HR-04", "stance-independence-of-disvalue"),
  "moral-realism / is-ought: whether the property conserved under redescription is intrinsically disvaluable or merely reliably avoided":
@@ -82,6 +86,8 @@ RELATIONS = {
  "HR-07": [("depends_on", "HR-04", "D3 finding: error theory is a stance WITHIN the HR-04 dispute that additionally denies categorical bindingness, a further question surviving either answer to HR-04. NOT detected by the adjacency signals; found by hand")],
  "HR-08": [("sibling_of", "HR-01", "verdict dissolution at the cosmic register rather than by voiding warrant")],
  "HR-10": [("sibling_of", "HR-01", "verdict dissolution by refusing invariant verdicts rather than by voiding warrant")],
+ "HR-13": [("depends_on", "HR-04", "presupposes the HR-04 question: only once suffering's disvalue is stance-independent does it become askable whether that disvalue generates reasons binding an agent who is simply indifferent. A realist about value can deny agent-neutral reasons (the Humean position), so HR-13 survives either answer to HR-04"),
+           ("independent_of", "HR-07", "adjacent but distinct: HR-07 denies that anything binds categorically, HR-13 asks whether what binds is agent-NEUTRAL. Agent-relative categorical reasons satisfy HR-07 and fail HR-13")],
  "HR-09": [("independent_of", "HR-07", "co-located at meta-ethical-pluralism, which is why the shared-node signal fires, but the claims are distinct and near-opposed: HR-07 denies that anything binds categorically, HR-09 asserts a competing value with lexical priority. Sharing a tributary node is a fact about where they surfaced, not about what they claim")],
  "HR-01": [], "HR-03": [], "HR-11": [], "HR-12": [],
 }
@@ -125,6 +131,9 @@ BEDROCKS = {
  "HR-11": dict(name="Epistemic authority of the anti-extinction intuition",
    gloss="Moorean datum versus its evolutionary debunking. The node registers the dispute rather than settling it.",
    registered_in="node:negative-util-aggregation(evolved-attachment-not-truth-tracking)", alias=None),
+ "HR-13": dict(name="Agent-neutral reasons grounding",
+   gloss="Whether suffering's disvalue generates a reason binding a procreator who is simply indifferent to the future subject. Affirming that the cosmos has no telos and no agent-neutral values is what strips such reasons of a source; the corpus asserts the relation binds rather than showing it does.",
+   registered_in="this-program", alias="N1-reasons"),
  "HR-12": dict(name="Ex ante vs ex post locus of contractualist justification",
    gloss="Prospects or outcomes as the justificand, type-standpoints as bearers. A live internal dispute the node registers.",
    registered_in="node:contractualism-scanlon(live-internal-dispute)", alias=None),
@@ -311,7 +320,7 @@ def main(extra_frags, outpath):
 
 if __name__ == "__main__":
     extra = []
-    if "--with-draft-d" in sys.argv:
+    if "--with-d" in sys.argv:
         extra.append(("D", "adv_map_phaseD_v0_1.json"))
     if "--with-e" in sys.argv:
         extra.append(("E", "adv_map_phaseE_v0_1.json"))

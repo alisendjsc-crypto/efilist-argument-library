@@ -1,6 +1,6 @@
 # Honest-Residuals Register v0.1
 
-**Status: WORKING.** Derived from 26 honest-residue (d) entries across phases A, B1, B2, C, E.
+**Status: WORKING.** Derived from 30 honest-residue (d) entries across phases A, B1, B2, C, D, E.
 Source corpus `6ee1f6f3` / 82 nodes. Rebuild: `python3 build_register.py [--with-draft-d] [--with-e]`.
 
 **Library-internal.** No corpus, ledger, index or `/combined` byte moves from this artifact.
@@ -31,21 +31,21 @@ certificate — which is what the register is for.
 
 ## What the free text was hiding
 
-**22 distinct `bedrock_name` strings collapse to 12 actual bedrocks.** Nothing was wrong with
+**24 distinct `bedrock_name` strings collapse to 13 actual bedrocks.** Nothing was wrong with
 any individual entry; the fragmentation is what happens when a shared namespace is authored
 one phase at a time with no shared list to write against.
 
 | | |
 |---|---|
-| Residue entries | 26 |
-| Distinct shipped `bedrock_name` strings | 22 |
-| Actual bedrocks | 12 |
+| Residue entries | 30 |
+| Distinct shipped `bedrock_name` strings | 24 |
+| Actual bedrocks | 13 |
 | Registered before this program | 8 |
-| Registered **by** this program | 4 |
+| Registered **by** this program | 5 |
 
 ## Audit
 
-**`dangling-registration-pointer` — HR-03.** HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 10 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked.
+**`dangling-registration-pointer` — HR-03.** HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 11 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked.
 
 ## Adjacency (F1 remedy)
 
@@ -56,9 +56,9 @@ check cannot see. Two mechanical signals now narrow which pairs must be adjudica
 | | |
 |---|---|
 | Possible pairs | 66 |
-| Candidates derived by signal | 4 |
-| Relations declared | 9 |
-| **Declared but undetected by any signal** | **5** |
+| Candidates derived by signal | 5 |
+| Relations declared | 11 |
+| **Declared but undetected by any signal** | **6** |
 
 The last row is the honest part. `HR-04+HR-07` is a real dependency neither signal fires on:
 their terminus routings never name each other and they share no tributary node. It surfaced
@@ -71,8 +71,8 @@ a default: the audit refuses to write while any detected pair goes undeclared.
 | id | bedrock | trib | facets | registered in |
 |---|---|---|---|---|
 | `HR-01` | Global normative / epistemic skepticism | 1 | 1 | canon |
-| `HR-02` | Asymmetry-contingency of the positive-states cluster | 2 | 2 | canon |
-| `HR-03` | Impersonal vs person-affecting axiology *(K224 bedrock 1)* | 10 | 6 | K224 |
+| `HR-02` | Asymmetry-contingency of the positive-states cluster | 4 | 3 | canon |
+| `HR-03` | Impersonal vs person-affecting axiology *(K224 bedrock 1)* | 11 | 6 | K224 |
 | `HR-04` | Moral realism / is-ought *(N1)* | 3 | 2 | **this program** |
 | `HR-05` | Comparative vs non-comparative harm *(N2)* | 3 | 1 | **this program** |
 | `HR-06` | Imposition wrong independent of harm *(N4 / bedrock-III)* | 1 | 1 | **this program** |
@@ -82,6 +82,7 @@ a default: the audit refuses to write while any detected pair goes undeclared.
 | `HR-10` | Radical holism / anti-theory | 1 | 1 | flagship_t5_register_dispositions_v0_1 |
 | `HR-11` | Epistemic authority of the anti-extinction intuition | 1 | 1 | node |
 | `HR-12` | Ex ante vs ex post locus of contractualist justification | 1 | 1 | node |
+| `HR-13` | Agent-neutral reasons grounding *(N1-reasons)* | 1 | 1 | **this program** |
 
 ### `HR-01` Global normative / epistemic skepticism
 
@@ -103,10 +104,11 @@ The positive-states rebuttals run Benatar's asymmetry as the load-bearing spine 
 
 - `depends_on` → `HR-03` — lives on HR-03's IMPERSONAL horn: the asymmetry is an impersonal-value claim, so the amplifier cluster is contingent on that horn being taken
 
-**Tributaries (2 across 2 facets):**
+**Tributaries (4 across 3 facets):**
 
 - **impersonal-comparison-reading** — `self-effacing-under-universalization` (A)
 - **intrinsic-value-of-existence** — `red-button-repugnant` (A)
+- **merely-possible-beneficiary** — `joy-outweighs-harms` (D), `suffering-as-meaning` (D)
 
 ### `HR-03` Impersonal vs person-affecting axiology — *K224 bedrock 1*
 
@@ -114,13 +116,13 @@ Whether value and standing are seated in a standpoint-bearing individual or asse
 
 **Registered before this program:** `K224:bedrock-1`.
 
-**Tributaries (10 across 6 facets):**
+**Tributaries (11 across 6 facets):**
 
 - **absence-asymmetry** — `epistemic-humility` (B2)
 - **aggregation-vs-iteration** — `population-ethics-paradoxes` (B2)
 - **metaethical-locus** — `benatar-asymmetry-attack` (B1)
 - **relational-holist-seat-of-standing** — `care-ethics` (B2), `indigenous-philosophy` (B2)
-- **unfacetted** — `extinction-culture` (C), `slippery-slope-eugenics` (C), `marxist-materialist` (C)
+- **unfacetted** — `extinction-culture` (C), `slippery-slope-eugenics` (C), `marxist-materialist` (C), `love-beauty-art` (D)
 - **value-requires-a-valuer** — `performative-contradiction` (B2), `pragmatist-objection` (B2)
 
 ### `HR-04` Moral realism / is-ought — *N1*
@@ -242,4 +244,19 @@ Prospects or outcomes as the justificand, type-standpoints as bearers. A live in
 **Tributaries (1 across 1 facet):**
 
 - **ex-ante-vs-ex-post-justificand** — `contractualism-scanlon` (B1)
+
+### `HR-13` Agent-neutral reasons grounding — *N1-reasons*
+
+Whether suffering's disvalue generates a reason binding a procreator who is simply indifferent to the future subject. Affirming that the cosmos has no telos and no agent-neutral values is what strips such reasons of a source; the corpus asserts the relation binds rather than showing it does.
+
+**Birth certificate:** phase D, `nihilism-label#long`.
+
+**Relations:**
+
+- `depends_on` → `HR-04` — presupposes the HR-04 question: only once suffering's disvalue is stance-independent does it become askable whether that disvalue generates reasons binding an agent who is simply indifferent. A realist about value can deny agent-neutral reasons (the Humean position), so HR-13 survives either answer to HR-04
+- `independent_of` → `HR-07` — adjacent but distinct: HR-07 denies that anything binds categorically, HR-13 asks whether what binds is agent-NEUTRAL. Agent-relative categorical reasons satisfy HR-07 and fail HR-13
+
+**Tributaries (1 across 1 facet):**
+
+- **binding-an-indifferent-agent** — `nihilism-label` (D)
 

@@ -1,0 +1,301 @@
+{
+  "session_id": "K231",
+  "session_id_note": "PROVISIONAL — reconcile true library-seat id lineage on relay (K228/K229/K230 also flagged provisional; resolve via commit sha at Cowork handoff).",
+  "seat": "library (Claude.ai)",
+  "class": "Max (cold adversarial adjudication + move authoring)",
+  "phase": "D",
+  "scope_declared": "Adversarial Map Phase D = tier-2 descent, n=17 objection nodes. Cold-adjudicate each into disposition class (a/b/c/d) on the strongest surviving move against SHIPPED rebuttal text; author move+grounds+routing; build+validate JSON fragment. Library-internal (NO pin, NO fold, NO push).",
+  "gate_receipts": {
+    "corpus": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+      "bytes": 1333912,
+      "objection_count": 82,
+      "tier_split": "13/17/14/31/7",
+      "t2_count": 17,
+      "status": "VERIFIED live at open"
+    },
+    "validator": {
+      "file": "adv_map_validator_v0_1.py",
+      "md5": "34fefb95cf04e7c90e8deee7120225d3",
+      "self_test": "24/24 PASS (0 FAIL)",
+      "phases_supported": [
+        "A",
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "status": "VERIFIED"
+    },
+    "phaseC_reference": {
+      "file": "adv_map_phaseC_v0_1.json",
+      "md5": "40b501f7fcbbf28c3e40f65e3d01e63d",
+      "use": "cross-check / register + em-dash-free ASCII precedent only",
+      "status": "VERIFIED"
+    },
+    "cowork_pin_note": "Phase-C push-confirm/pin is Cowork-side (K230 C-fold); NOT re-derived library-side. Phase D is library-internal so authoring proceeded independently. Flag C-fold push-confirm as relay-dependent if reconciliation needed."
+  },
+  "deliverable": {
+    "file": "adv_map_phaseD_v0_1.json",
+    "path": "/mnt/user-data/outputs/adv_map_phaseD_v0_1.json",
+    "md5": "8d41db905561c4e32df33d41b4874bd5",
+    "bytes": 36701,
+    "entries": 17,
+    "coverage_distinct_ids": 17,
+    "class_counts": {
+      "a": 10,
+      "d": 4,
+      "b": 3
+    }
+  },
+  "final_validation": {
+    "validator": "adv_map_validator_v0_1.py (no --terminal; Phase D is not terminal)",
+    "checks_passed": 16,
+    "violation_count": 0,
+    "coverage": "17/82 corpus ids; per-phase {D:17}",
+    "terminal": false,
+    "verdict": "PASS",
+    "builder_self_check": "NONE (in-script gate: id-in-corpus, anchor-substring, anchor<=15w, move-band a:40-60 / b-d:40-150, ASCII on move+grounds+anchor, no double-dash, keyset==9, status==mapped, phase==D, id-anchor uniqueness, routing-shape)"
+  },
+  "class_tally": {
+    "a": 10,
+    "b": 3,
+    "c": 0,
+    "d": 4,
+    "note": "order-of-adjudication a->c->b/d on strongest SURVIVING move; force-floor + anchor-rule + (a)-brevity(<=60w) + regress-stop(one round) enforced."
+  },
+  "per_entry_receipts": [
+    {
+      "id": "consent-both-ways",
+      "class": "a",
+      "locus": "long",
+      "anchor": "Presumed consent is only valid when it prevents a greater harm",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "most-people-happy#long"
+        ]
+      }
+    },
+    {
+      "id": "nihilism-label",
+      "class": "d",
+      "locus": "long",
+      "anchor": "for the norm to bind the agents who actually exist inside it",
+      "routing": {
+        "bedrock": "realism / is-ought grounding of agent-neutral moral reasons",
+        "terminus": "standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage); first map (d)-registration, distinct from impersonal-vs-person-affecting; feeds the triage, does not resolve it",
+        "novel": true
+      }
+    },
+    {
+      "id": "gods-plan",
+      "class": "b",
+      "locus": "long",
+      "anchor": "No theodicy has resolved this trilemma",
+      "routing": {
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "minor"
+      }
+    },
+    {
+      "id": "most-people-happy",
+      "class": "a",
+      "locus": "long",
+      "anchor": "procreation is a proxy gamble",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "future-solve#long"
+        ]
+      }
+    },
+    {
+      "id": "masochist-counterexample",
+      "class": "a",
+      "locus": "long",
+      "anchor": "rare atypical neurology never cross-wires nociception and reward",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      }
+    },
+    {
+      "id": "speak-for-everyone",
+      "class": "a",
+      "locus": "long",
+      "anchor": "The existence of lottery winners does not justify forced participation in the lottery",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      }
+    },
+    {
+      "id": "evolution-purpose",
+      "class": "a",
+      "locus": "short",
+      "anchor": "Evolution has no purpose. It has no direction",
+      "routing": {
+        "answered_by": [
+          "evolution-purpose#long"
+        ]
+      }
+    },
+    {
+      "id": "playing-god",
+      "class": "b",
+      "locus": "long",
+      "anchor": "the default state of the universe is non-existence",
+      "routing": {
+        "axis_hit": [
+          "s",
+          "c"
+        ],
+        "severity": "minor"
+      }
+    },
+    {
+      "id": "suffering-makes-human",
+      "class": "a",
+      "locus": "long",
+      "anchor": "evaluate the component (suffering) on its own terms",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "love-beauty-art#long"
+        ]
+      }
+    },
+    {
+      "id": "adoption-instead",
+      "class": "a",
+      "locus": "long",
+      "anchor": "Adoption satisfies the desire to parent completely",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "benatar-asymmetry-attack#long"
+        ]
+      }
+    },
+    {
+      "id": "cherry-picking-worst",
+      "class": "a",
+      "locus": "short",
+      "anchor": "does not justify forcing someone to play",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      }
+    },
+    {
+      "id": "luxury-belief",
+      "class": "a",
+      "locus": "long",
+      "anchor": "consequences for economic systems, not for sentient beings",
+      "routing": {
+        "answered_by": [
+          "economy-population#long"
+        ]
+      }
+    },
+    {
+      "id": "survivor-testimony",
+      "class": "a",
+      "locus": "long",
+      "anchor": "evidence about the preferences of already-existing beings",
+      "routing": {
+        "answered_by": [
+          "joy-outweighs-harms#long",
+          "benatar-asymmetry-attack#long"
+        ]
+      }
+    },
+    {
+      "id": "love-beauty-art",
+      "class": "d",
+      "locus": "long",
+      "anchor": "The goods of existence raise no claim on behalf of the merely possible",
+      "routing": {
+        "bedrock": "impersonal-vs-person-affecting axiology",
+        "terminus": "K224 bedrock 1, value-requires-a-valuer facet; impersonal-value-as-creation-reason (pro-natal direction) sibling to extinction-culture's anti-extinction direction; route as registered, flag facet for the pending consolidation-vs-registration decision",
+        "novel": false
+      }
+    },
+    {
+      "id": "joy-outweighs-harms",
+      "class": "d",
+      "locus": "long",
+      "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "routing": {
+        "bedrock": "Benatar's asymmetry (merely-possible-beneficiary)",
+        "terminus": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+        "novel": false
+      }
+    },
+    {
+      "id": "suffering-as-meaning",
+      "class": "d",
+      "locus": "long",
+      "anchor": "the asymmetry, where the objection meets the antinatalist core",
+      "routing": {
+        "bedrock": "Benatar's asymmetry (merely-possible-beneficiary)",
+        "terminus": "registered asymmetry-contingent residue; reached via the meaning-conferral route (facet-sibling to joy-outweighs-harms's hedonic-aggregation route); route as registered",
+        "novel": false
+      }
+    },
+    {
+      "id": "western-philosophy",
+      "class": "b",
+      "locus": "long",
+      "anchor": "The Pythagorean theorem originated in a specific cultural context; it applies universally",
+      "routing": {
+        "axis_hit": [
+          "c",
+          "s"
+        ],
+        "severity": "minor"
+      }
+    }
+  ],
+  "cross_cutting_findings": [
+    "METAETHICAL-GROUNDING BEDROCK surfaced in T2. nihilism-label(d) registers the is-ought / agent-neutral-moral-reasons realism bedrock with novel=TRUE (FIRST map registration of this bedrock; feeds N1 intake-triage). gods-plan(b), western-philosophy(b), and evolution-purpose(a, prong-II) all route residuals here. Parallel in status to impersonal-vs-person-affecting. Flagged, NOT resolved.",
+    "ASYMMETRY-CONTINGENCY is the T2 (d)-attractor. joy-outweighs-harms(d) and suffering-as-meaning(d) both bottom out at Benatar's asymmetry (merely-possible-beneficiary), as facet-siblings: hedonic-aggregation route vs meaning-conferral route. novel=FALSE (K224 register bedrock).",
+    "impersonal-vs-person-affecting (K224 bedrock 1) recurs at love-beauty-art(d) via the creation-reason / value-requires-a-valuer facet (pro-natal direction of the same axiology; the extinction-culture hit inverted). Flag for facet-consolidation-vs-registration decision alongside #16/#17."
+  ],
+  "carry_forward_checks": {
+    "CF1_no_bradley_a_route": "PASS — zero (a) routes into bradley-no-subject (missing third branch). Comparative/symmetry pressure routed to benatar-asymmetry-attack.",
+    "CF2_no_transhumanist_a_route": "PASS — masochist-counterexample suffering-mutability pressure routed to benatar-asymmetry-attack via asymmetry-decoupling, NOT through transhumanist-objection (broken cross-ref).",
+    "CF3_joy_outweighs_additivity": "PASS — joy-outweighs-harms REFUSES the additivity strong-deflation; classed (d) bedrock, NO regen-lane item manufactured.",
+    "CF4_nihilism_label_watch": "PASS — nihilism-label WATCH cleared at origin: node asserts the CORRECT pole (antinatalism dissolves under nihilism), no act/omission-default-under-skepticism overclaim; (d) with novel=true."
+  },
+  "verified_facts": [
+    "All 17 anchors are exact ASCII substrings at their declared locus, each <=15 words (validator anchor-rule 17/0).",
+    "All 7 (a)-move answered_by target ids exist in corpus with #long depth: benatar-asymmetry-attack, most-people-happy, future-solve, evolution-purpose, joy-outweighs-harms, love-beauty-art, economy-population.",
+    "All 7 (a) moves trimmed to the 40-60w class-a band (was 7 over-cap at first builder run); all b/d moves within 40-150w.",
+    "Fragment serialized json.dumps(indent=2, ensure_ascii=False)+trailing newline; round-trip parse clean; real-ASCII (em-dash-free) per C precedent.",
+    "class_counts in meta == computed Counter {a:10,d:4,b:3}; zero classes (c) omitted per schema."
+  ],
+  "open_questions": [
+    "session_id K231 provisional — reconcile library id lineage on relay (K228/K229/K230 chain all provisional).",
+    "N1 realism/is-ought: nihilism-label(d) now registers this bedrock as novel=TRUE in the map. Does meta-ethical-pluralism#long (T5) already concede axiom-not-fact, collapsing N1 to already-registered? Tributaries now: eliminativism, phenomenological-existentialism (K229) + gods-plan/western-philosophy/evolution-purpose residuals (K231). T5 out of scope this session; triage pending.",
+    "N2/N4 consolidation (carried from K229): is comparative-vs-non-comparative-harm distinct from bedrock-III, or one bedrock? incommensurability + care-ethics both straddle. Intake-triage decision pending.",
+    "Additivity coherence fix scope (carried from K229): 3-node cluster (neuroscience headline + virtue-ethics + flow minor) realign to neuroscience#long realism — coordinated regen or per-node? T2's joy-outweighs-harms(d) is asymmetry-terminus, distinct from that hedonic-additivity regen lane.",
+    "act/omission-default-under-total-skepticism overclaim (carried from K229) in eliminativism + solipsism — coordinated regen note vs per-node minor fix? nihilism-label(d) here did NOT exhibit it (WATCH cleared), so the overclaim is localized to those T-nodes.",
+    "FACET-CONSOLIDATION (new, T2): love-beauty-art / joy-outweighs-harms / suffering-as-meaning register two bedrocks across three facets (impersonal-vs-person-affecting creation-reason; asymmetry hedonic-aggregation; asymmetry meaning-conferral). Consolidate facets under parent bedrocks or register each facet separately at map-assembly?"
+  ],
+  "next_recommended_action": "Cowork Phase-D micro-fold: stage adv_map_phaseD_v0_1.json (md5 8d41db905561c4e32df33d41b4874bd5) into adversarial_map_staging/, HEAD-bump, NO pin. Then Phase E = T1 (n=13) gated on that fold landing.",
+  "deferred_non_blocking": [
+    "Validator PHASES tuple needs an 'E' element added BEFORE Phase E can validate (currently (A,B1,B2,C,D)). Mechanical Cowork edit at Phase-E open.",
+    "docs/library-claude-coordination.md Exchange-mirror debt accumulating (one-committer constraint): K221/223/224/226/228/229/230 + this K231 unmirrored.",
+    "CLAUDE.md adversarial-map pointer refresh (points to earlier phase).",
+    "Stale canon next_recommended_session still points to 'Phase A pilot' — out-of-scope canon-bump deferred (pin-move seat)."
+  ]
+}

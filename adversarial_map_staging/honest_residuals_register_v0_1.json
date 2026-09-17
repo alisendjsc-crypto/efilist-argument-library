@@ -27,22 +27,28 @@
         "md5": "40b501f7fcbbf28c3e40f65e3d01e63d"
       },
       {
+        "phase": "D",
+        "file": "adv_map_phaseD_v0_1.json",
+        "md5": "8d41db905561c4e32df33d41b4874bd5"
+      },
+      {
         "phase": "E",
         "file": "adv_map_phaseE_v0_1.json",
         "md5": "6b57e78b1fa36bb14e384b7260aa0fec"
       }
     ],
-    "residue_entries": 26,
-    "bedrocks": 12,
-    "distinct_shipped_bedrock_names": 22,
+    "residue_entries": 30,
+    "bedrocks": 13,
+    "distinct_shipped_bedrock_names": 24,
     "pre_map_registrations": 8,
-    "this_program_registrations": 4,
+    "this_program_registrations": 5,
     "adjacency": {
-      "candidates_derived": 4,
-      "declared_relations": 9,
+      "candidates_derived": 5,
+      "declared_relations": 11,
       "detected_and_declared": [
         "HR-03+HR-05",
         "HR-03+HR-06",
+        "HR-04+HR-13",
         "HR-05+HR-06",
         "HR-07+HR-09"
       ],
@@ -51,7 +57,8 @@
         "HR-01+HR-08",
         "HR-01+HR-10",
         "HR-02+HR-03",
-        "HR-04+HR-07"
+        "HR-04+HR-07",
+        "HR-07+HR-13"
       ],
       "note": "Adjacency candidates are derived from two signals: a terminus_routing naming another bedrock, and a corpus node feeding two bedrocks. The signals cut 66 possible pairs to a handful, but they are NOT complete: HR-04+HR-07 is a real dependency that neither signal fires on, found by hand during the D3 triage. So the signals are a floor on what must be adjudicated, never a ceiling, and an empty relations list is an assertion of independence rather than a default."
     },
@@ -61,7 +68,7 @@
     {
       "severity": "dangling-registration-pointer",
       "bedrock_id": "HR-03",
-      "detail": "HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 10 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked."
+      "detail": "HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 11 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked."
     }
   ],
   "bedrocks": [
@@ -98,8 +105,8 @@
       "gloss": "The positive-states rebuttals run Benatar's asymmetry as the load-bearing spine and grant the hedonic premise arguendo. Reject the asymmetry and the spine goes with it. Ceiling: high-B by design.",
       "registered_in": "canon:terminal_stability_marker.honest_residuals.asymmetry_dependent_amplifiers",
       "birth_certificate": null,
-      "tributary_count": 2,
-      "facet_count": 2,
+      "tributary_count": 4,
+      "facet_count": 3,
       "relations": [
         {
           "kind": "depends_on",
@@ -133,6 +140,27 @@
               "terminus_routing": "benatar-asymmetry-attack#medium (comparison-vs-deprivation form); flagship_t5_register_dispositions_v0_1 individuation note; sophisticate archetype variant routes the retreat in play"
             }
           ]
+        },
+        {
+          "facet_id": "merely-possible-beneficiary",
+          "tributaries": [
+            {
+              "phase": "D",
+              "node": "joy-outweighs-harms",
+              "locus": "long",
+              "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+              "novel": false,
+              "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered"
+            },
+            {
+              "phase": "D",
+              "node": "suffering-as-meaning",
+              "locus": "long",
+              "anchor": "the asymmetry, where the objection meets the antinatalist core",
+              "novel": false,
+              "terminus_routing": "registered asymmetry-contingent residue; reached via the meaning-conferral route (facet-sibling to joy-outweighs-harms's hedonic-aggregation route); route as registered"
+            }
+          ]
         }
       ]
     },
@@ -143,7 +171,7 @@
       "gloss": "Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus's universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.",
       "registered_in": "K224:bedrock-1",
       "birth_certificate": null,
-      "tributary_count": 10,
+      "tributary_count": 11,
       "facet_count": 6,
       "relations": [],
       "facets": [
@@ -233,6 +261,14 @@
               "anchor": "The EFIList critique operates at the level of ontology",
               "novel": false,
               "terminus_routing": "already-surfaced K224 bedrock 1, relational-holist / seat-of-standing facet (consent-bearing individual as historically-contingent, not standpoint-independent); route as registered"
+            },
+            {
+              "phase": "D",
+              "node": "love-beauty-art",
+              "locus": "long",
+              "anchor": "The goods of existence raise no claim on behalf of the merely possible",
+              "novel": false,
+              "terminus_routing": "K224 bedrock 1, value-requires-a-valuer facet; impersonal-value-as-creation-reason (pro-natal direction) sibling to extinction-culture's anti-extinction direction; route as registered, flag facet for the pending consolidation-vs-registration decision"
             }
           ]
         },
@@ -588,6 +624,47 @@
               "anchor": "ex-ante versus ex-post rejection is a live internal dispute",
               "novel": false,
               "terminus_routing": "node-registered live-internal-dispute; cross-ref consent-incoherent, harman-benign-creation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-13",
+      "name": "Agent-neutral reasons grounding",
+      "alias": "N1-reasons",
+      "gloss": "Whether suffering's disvalue generates a reason binding a procreator who is simply indifferent to the future subject. Affirming that the cosmos has no telos and no agent-neutral values is what strips such reasons of a source; the corpus asserts the relation binds rather than showing it does.",
+      "registered_in": "this-program",
+      "birth_certificate": {
+        "phase": "D",
+        "node": "nihilism-label",
+        "locus": "long"
+      },
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "depends_on",
+          "to": "HR-04",
+          "note": "presupposes the HR-04 question: only once suffering's disvalue is stance-independent does it become askable whether that disvalue generates reasons binding an agent who is simply indifferent. A realist about value can deny agent-neutral reasons (the Humean position), so HR-13 survives either answer to HR-04"
+        },
+        {
+          "kind": "independent_of",
+          "to": "HR-07",
+          "note": "adjacent but distinct: HR-07 denies that anything binds categorically, HR-13 asks whether what binds is agent-NEUTRAL. Agent-relative categorical reasons satisfy HR-07 and fail HR-13"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "binding-an-indifferent-agent",
+          "tributaries": [
+            {
+              "phase": "D",
+              "node": "nihilism-label",
+              "locus": "long",
+              "anchor": "for the norm to bind the agents who actually exist inside it",
+              "novel": true,
+              "terminus_routing": "standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage); first map (d)-registration, distinct from impersonal-vs-person-affecting; feeds the triage, does not resolve it"
             }
           ]
         }
