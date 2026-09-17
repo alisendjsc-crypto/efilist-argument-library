@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "source_corpus_note": "Pinned to 6ee1f6f31e0f012db0d58cae4f912fcb, the canonical cut, reached from efilist HEAD by restoring the single top-level version field 4.0.4 -> 4.0.0 per the succession brief section 1.1; the revert reproduces the pinned md5 byte-exact at 1,333,912 B and matches the a0437d9 blob. All 17 anchors re-verified verbatim against the restored bytes.",
+    "class_counts": {
+      "a": 4,
+      "b": 12,
+      "d": 1
+    },
+    "coverage_distinct_ids": 17,
+    "phase_scope": "T2, n=17 (the half Phase C left after delivering T3 only); T1 n=13 remains for Phase E, which needs the validator PHASES tuple to gain its E",
+    "artifact_class": "SUPERSEDED AS A SELECTION, RETAINED AS EVIDENCE. This is the wuld-ink re-derivation of Phase D (T2, n=17, 4a/12b/0c/1d, authored 2026-09-16). K231's fragment (8d41db905561, 10a/3b/0c/4d) was recovered 2026-09-17 and SELECTED; it is the Phase D of record at adv_map_phaseD_v0_1.json. This file is NOT a map fragment and is deliberately named so it cannot be globbed as one. It is kept because the finding below has no evidence without it.",
+    "calibration_finding": "Diffing the two derivations against EACH OTHER returned class agreement 5/17 and ANCHOR agreement 0/17. The second number is the finding: a shared-zero anchor count means the two never engaged the same text. K231 targeted `long` 15/17; this fragment targeted `medium` 11/17. `long` is the corpus's most defended prose and `medium` is a condensation, so attacking `medium` finds gaps far more easily -- which is the whole of 12b against 3b, and eight of those twelve never consider the long form at all, though the force floor makes an entry (a) when the BEST READING of the shipped text survives. Program norm, measured: 77 of the map's 93 entries target `long`. Had this fragment landed it would have produced NINE fabricated regen candidates, taking the v4.1.0 cut from 21 (b) to 30 and its corpus footprint from 26% to 37%.",
+    "rule_that_follows": "Author against the deepest locus that addresses the objection, or state in the grounds why a shallower one was chosen. The anchor rule permits any locus and is silent on depth, so a phase can drift shallow without tripping a single check while its class distribution moves sharply. Registered as process-ledger class C8 and hazard ccclxi."
+  },
+  "entries": [
+    {
+      "target_id": "consent-both-ways",
+      "target_locus": "long",
+      "target_anchor": "In every other domain of modern ethics, imposing significant, life-altering conditions",
+      "adversarial_move": "Paediatrics refutes the universal claim. Guardians impose vaccination, surgery, schooling and relocation on subjects who cannot consent, and the licence is best-interests, not harm-prevention. So the text's own exception, presumed consent valid only where it prevents a greater harm, is drawn narrower than the practice it appeals to. Widen the exception to match real practice and the procreation case no longer turns on a consent violation at all: it turns on whether the manufactured position serves its occupant's interests, which is the disputed question the consent frame was imported to settle. The frame stops doing work exactly where the argument needs it.",
+      "class": "b",
+      "grounds": "The charitable reading restricts the consent claim to impositions on beings who exist independently of the imposer's choice, and that reading is available in the medium locus. It is not what the long locus says. The long states the claim universally, then supplies a presumed-consent exception keyed solely to harm-prevention, which is narrower than the standard the appeal to 'every other domain' actually relies on. Both the overstatement and the too-narrow exception are on the page; the structural asymmetry that would carry the argument without either is asserted here, not derived. The position survives intact; this passage does not. Severity raised from minor to headline on review: the defective sentence is the long locus's pivot, the one that makes procreation the sole exception, so the repair is a re-argument rather than a qualifying clause.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "headline"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "nihilism-label",
+      "target_locus": "long",
+      "target_anchor": "the goods cannot be cashed as a reason to conscript a non-consenting newcomer",
+      "adversarial_move": "Concede values obtain and goods are real for the existing, as this text does, and the charge simply reforms: the asymmetry that stops goods counting as reasons in the creation decision is imported here, never argued. The valence-reversal shows one value is presupposed. It does not show the conceded goods may be discounted.",
+      "class": "a",
+      "grounds": "Met, not merely addressable. The asymmetry's grounding is shipped at benatar-asymmetry-attack and the goods-weighing question is the entire subject of joy-outweighs-harms, both at long depth. This node's assignment is the equivocation between metaphysical and axiological nihilism, and it discharges that assignment completely, including the omnicidal slide, which why-not-suicide carries in full. Importing a result argued elsewhere in the corpus is division of labour, not a gap.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long",
+          "joy-outweighs-harms#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "gods-plan",
+      "target_locus": "long",
+      "target_anchor": "It constitutes a demonstration of the psychological machinery the argument identifies",
+      "adversarial_move": "The closing move converts a reply into a symptom. Whatever Terror Management Theory explains about why a believer reaches for providence, it leaves untouched whether providence, if it obtained, would license procreation, and the node has just spent a page on the Problem of Evil, which is an argument rather than a diagnosis. Ending on the diagnosis invites an answer in kind, since the antinatalist's conclusion is equally explicable by disposition, and nothing is settled either way. Worse, a theist may concede the trilemma entire and still hold procreation licit on secular grounds, a route the node never closes.",
+      "class": "b",
+      "grounds": "The charitable reading takes the Terror Management paragraph as an aside arriving after the argument has done its work. The node does not permit that reading: it gives the paragraph terminal position and the word 'constitutes', which asserts diagnosis as the reply. The corpus now states the governing rule against itself in the mechanism panel's limit text, that naming the mechanism behind an objection does not refute the objection. Independently, on its strongest reading the Problem of Evil reaches only the cited authority's benevolence, never the procreative conclusion a theist could hold on secular grounds. Both defects are on the page.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "most-people-happy",
+      "target_locus": "long",
+      "target_anchor": "that instrument has been calibrated by natural selection to produce positive reports",
+      "adversarial_move": "Run the calibration argument to its end. If the brain's positive valence-reports are unreliable because selection tuned them, then the same instrument, under the same selection, issues the negative reports this corpus rests on: that suffering's disvalue is real, grave and non-compensable. A debunking of introspective valence cannot be applied to one sign only. The node needs an exemption it never states. And its own fifth point makes the first four dispensable, since if the conclusion holds even when the surveys are perfectly accurate, the debunking is unforced weight an opponent can pick up and swing back.",
+      "class": "b",
+      "grounds": "The charitable reading confines the debunking to comparative life-satisfaction scales rather than to introspective valence generally. The long locus refuses that confinement: it impeaches the instrument itself, 'the same instrument that generates the experience being assessed'. The corpus already knows this surrender is owed and has made it once, at nihilism-label#long, which drops the claim that logic is merely an evolutionary coping mechanism precisely because it is a gift to the accuser. The identical gift is still on the table here and again at survivor-testimony#long. Shared-structure defect across two T2 nodes, cross-referenced per the design's clause; the fifth point survives it untouched.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "r"
+          ],
+          "severity": "headline"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "love-beauty-art",
+      "target_locus": "long",
+      "target_anchor": "you are fabricating a subject and the price of admission in a single act",
+      "adversarial_move": "Accept the concession in full and the person made becomes the only party with standing to price the bundle they were enrolled in. Then ask why their own endorsement of it is inadmissible. The node fabricates the sole competent witness and does not say, here, why the testimony is refused.",
+      "class": "a",
+      "grounds": "Met, not merely addressable. survivor-testimony#long answers it as a category error: the preferences of an already-existing being, survival drive included, are evidence about that being and not about the ethics of creating new ones. The asymmetry this node leans on is separately derived at benatar-asymmetry-attack#long, against the sharper charge that it is stipulated rather than argued, by decomposing the good-absence claim into a negative existential plus an impersonal comparative. This node's assignment is the concession strategy toward the goods and it discharges it completely; the standing question is shipped next door.",
+      "routing": {
+        "answered_by": [
+          "survivor-testimony#long",
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "survivor-testimony",
+      "target_locus": "long",
+      "target_anchor": "the biological machinery that prevents honest evaluation of the conditions of existence",
+      "adversarial_move": "If the machinery prevents honest evaluation of existence, it prevented yours. The claim is unrestricted: a cognitive system engineered to endorse its own continuation under any conditions cannot be trusted about existence's value. But the antinatalist verdict is also a verdict about existence's value, reached by that system, under that engineering. Either the impeachment is global, in which case it takes the corpus's own foundational assessment with it, or it is restricted by a principle the node owes and does not supply. Note that the third point needs none of this: the category error stands alone and is the node's real work.",
+      "class": "b",
+      "grounds": "The charitable reading scopes the impeachment to post-crisis retrospection under neurochemical load. The node refuses that scope in its own closing sentence, which generalises to the conditions of existence as such, and in the preceding claim that optimism bias reasserts itself as the acute crisis recedes, which describes a standing condition rather than an acute one. The repair has an in-corpus precedent: nihilism-label#long surrenders the parallel claim about reason for exactly this reason. Shared with most-people-happy#long, one flawed move reused across two nodes. The category-error point is untouched and carries the node without it.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "r"
+          ],
+          "severity": "headline"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "joy-outweighs-harms",
+      "target_locus": "medium",
+      "target_anchor": "that constraint, applied consistently, equally forbids conscripting a non-consenting newcomer",
+      "adversarial_move": "The side-constraint that kills the monster is that no one's welfare may be raw material for another's surplus. The natalist does not claim the child is raw material for anyone's surplus; on their account the child is the beneficiary of its own life. So the constraint that blocks the monster does not reach procreation without a further premise, and the node supplies none. It writes 'for the sake of an aggregate' into the procreation case, which is precisely the framing the opponent denies. The step is asserted where it needs deriving.",
+      "class": "b",
+      "grounds": "The best reading is the one the node's own final sentence offers, that against an asymmetry-denier the argument relocates rather than ends the dispute. That reading rescues the section but not this sentence, which claims the constraint equally forbids procreation as a consequence of consistency alone. Consistency does not deliver it, because the natalist's framing is not aggregative: the child is cast as beneficiary, not as raw material. The unstated premise doing the work is the asymmetry, derived at benatar-asymmetry-attack#long and absent here. Severity is minor rather than headline for one stated reason: the closing sentence in the same locus already discloses the relocation, so the repair is naming a premise rather than rebuilding the argument.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "c"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "masochist-counterexample",
+      "target_locus": "medium",
+      "target_anchor": "The sophisticate's real objection is that this is unfalsifiable. It is not",
+      "adversarial_move": "The falsifiability claim does not survive the node's own escape route. Its three predictions all quantify over subjects with an antecedent aversive state; the threatening case is a subject without one who reports pain as appetitive, and the node meets that case by redescribing the goal as arousal with pain as toll. That redescription is available for every instance, which is what unfalsifiability means. Either the account forbids some possible report, and the node should say which, or the thrill-seeker concession is a general solvent that dissolves any counterexample and the predictions are decoration.",
+      "class": "b",
+      "grounds": "The best reading treats the three predictions as a genuine risk the account runs, and for clinical populations they are exactly that. They do not reach the case that would refute it. The node itself supplies the neutralising move one sentence earlier, conceding the thrill-seeker as genuinely appetitive and then relocating the goal to arousal, so a disconfirming instance is re-described rather than counted. A falsifiable version owes a report it forbids, and none is given. The mechanistic core of the account stands untouched; the claim to falsifiability, as stated, does not.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "western-philosophy",
+      "target_locus": "medium",
+      "target_anchor": "These are not fringe positions within these traditions—they are central doctrines",
+      "adversarial_move": "The corpus refutes this node next door. buddhist-objection ships the careful version: Buddhism shares the diagnosis of dukkha but prescribes liberation for the already-existing, and the tradition continues to permit and in many schools encourage the creation of new beings. This node recruits the same tradition as evidence of doctrinal alignment and calls it a central doctrine practiced by billions. A hostile reader holding both surfaces gets the contradiction for free. Jain lay ethics, which sanctions householder life, and moksha, which liberates an existing atman, are open to the same correction.",
+      "class": "b",
+      "grounds": "Not a matter of interpretation: two shipped surfaces disagree. buddhist-objection#medium states that the Buddhist tradition focuses on individual escape while continuing to permit, and in many traditions encourage, the creation of new beings. That is incompatible with this node's use of the same tradition as evidence that the conclusion is cross-cultural rather than parochial. The genetic-fallacy rebuttal does not need the overclaim and is stronger without it, since a shared diagnosis of existence-as-suffering already defeats the charge of parochial origin without asserting a shared prescription these traditions do not hold. Verified against the shipped text of both nodes rather than inferred.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "headline"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "speak-for-everyone",
+      "target_locus": "medium",
+      "target_anchor": "because the created being is guaranteed to experience some degree of suffering",
+      "adversarial_move": "Take the stated premise literally and any nonzero suffering plus mortality suffices, which condemns every possible life, including one its occupant unreservedly endorses. Ask what makes the guaranteed harm sufficient rather than merely present, and the answer has to be a magnitude, which reopens the aggregation the corpus refuses everywhere else.",
+      "class": "a",
+      "grounds": "Met, not merely addressable. The sufficiency question is answered at benatar-asymmetry-attack#long without any appeal to magnitude: absent goods deprive no subject, so no threshold or ratio is required and the demand for one never arises. Recorded as (a) rather than (b) under the force floor, since the charitable reading takes 'guaranteed to experience some degree of suffering' as shorthand for that ground. Rider for any future regeneration, recorded without inflating the class: this locus states the premise more weakly than the ground it rests on, and the weaker statement is what invites the magnitude reply.",
+      "routing": {
+        "answered_by": [
+          "benatar-asymmetry-attack#long"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "evolution-purpose",
+      "target_locus": "medium",
+      "target_anchor": "this would not constitute an ethical justification for continuing the process",
+      "adversarial_move": "Grant the whole demolition. Evolution is blind, purpose is animism, and no fact about selection yields an ought about procreation. Then the node's own ought needs a source, and the factory analogy supplies none: it assumes that unconsented toxic output cannot be licensed by useful output, which is the conclusion. Press the question and the argument terminates on the stance-independence of suffering's disvalue, an unargued realism. A natalist who declines that realism is untouched by anything in the node. This is not a defect to repair; it is where the floor is.",
+      "class": "d",
+      "grounds": "Not (b), because no repair internal to the node closes it. The gap is not in the reasoning from the premise but in the premise's own standing: the node correctly refuses to derive an ought from evolutionary fact, then requires an ought it does not derive either. The bedrock is already registered by this program at phenomenological-existentialism, whose residue names moral-realism and the is-ought gap over the stance-independence of suffering's disvalue. Recorded here as a second surface resting on the same floor, which is itself the routing datum: two nodes, one terminus.",
+      "routing": {
+        "residue": {
+          "bedrock_name": "moral-realism / is-ought: stance-independence of suffering's disvalue",
+          "terminus_routing": "phenomenological-existentialism (Phase B2 registration); second surface on the same floor",
+          "novel": false
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "playing-god",
+      "target_locus": "medium",
+      "target_anchor": "The person who does not create life makes a decision that affects no one",
+      "adversarial_move": "False as written, and the corpus knows it. Declining to procreate affects existing people: the would-be parents, their kin, and at scale the species, whose ending the corpus treats elsewhere as a weighty prospect rather than a nullity. The claim the argument actually needs is narrower, that the decision affects no new subject, because none is brought into being. As written it hands a competent critic a false sentence in the punchline position, and the power-inversion the node builds does not require it.",
+      "class": "b",
+      "grounds": "The charitable reading silently supplies the qualifier and hears 'affects no one' as 'affects no one who is thereby created'. The node does not supply it, and the sentence carries the node's conclusion. The corpus contradicts the unqualified form on its own surfaces, where the prospect of no further births is treated as consequential rather than as affecting nobody. Severity minor rather than headline for a stated reason: the repair is one qualifying clause, and the power-inversion argument, which is the node's real work, survives it unchanged.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "s",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "suffering-makes-human",
+      "target_locus": "medium",
+      "target_anchor": "But the second premise—that being human is inherently valuable—is precisely what",
+      "adversarial_move": "The reconstruction is of the folk form. The strong version is not circular: it holds that certain goods are internally related to adversity rather than caused by it, so a life does not decompose into goods minus suffering. It never asserts that being human is valuable; it denies the separability the ledger presupposes.",
+      "class": "a",
+      "grounds": "Met, not merely addressable, and this entry is a CORRECTION of its own first draft. It was written as a (b) asserting that neither this node nor meaning-through-suffering engages the constitutive claim. That assertion was false and was made without checking the node whose entire subject it is: suffering-as-meaning states the constitutive thesis explicitly, separates it from the occasion-for-meaning thesis, and refutes it across four arms. meaning-through-suffering#medium separately covers the post-hoc narrativization form. The circularity charge here is aimed at the folk version, which is what this node is assigned; the sophisticated version is shipped next door. The defect the first draft alleged is real but belongs on suffering-as-meaning, where it is filed.",
+      "routing": {
+        "answered_by": [
+          "suffering-as-meaning#medium",
+          "meaning-through-suffering#medium"
+        ]
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "adoption-instead",
+      "target_locus": "medium",
+      "target_anchor": "The question then becomes: why create new life when existing children need care?",
+      "adversarial_move": "The closing question is a different argument wearing the first one's clothes. Consent-impossibility says creation cannot be licensed; unmet need says resources should go where need already is. The second is a beneficence claim, it does not follow from the first, and taken seriously it proves far too much, condemning any expenditure not directed at existing need. It also concedes ground the node does not want to concede: if the objection is opportunity cost, then a world with no waiting children would remove it, which the antinatalist denies. Raising adoption need not concede the premise either; it can test whether the objection is to suffering or to creation as such.",
+      "class": "b",
+      "grounds": "The charitable reading treats the last line as rhetorical flourish rather than argument. The node does not mark it that way: it presents the question as what the dispute becomes once adoption is on the table, which makes it the section's terminus. The two arguments have different premises and different scopes, and the corpus's own position is the first, not the second, since no quantity of unmet existing need is what makes creation impermissible on the consent account. Minor rather than headline because the preceding paragraph is sound and self-sufficient, and the repair is to delete or re-mark one sentence.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "c"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "cherry-picking-worst",
+      "target_locus": "medium",
+      "target_anchor": "Risk ethics demands that the worst-case scenario be weighed in any decision",
+      "adversarial_move": "The chosen analogy cuts the other way. Insurers do not decline to write policies because tail risks exist; they price them and proceed. Weighing a worst case is not vetoing a decision, and risk ethics as invoked here delivers only the weaker duty. To get prohibition the node needs the non-consent, which it has one sentence earlier and then does not rely on. As written the argument substitutes a risk-analytic claim that permits the very act it means to forbid, and hands the objector an analogy that models procreation as insurable rather than impermissible.",
+      "class": "b",
+      "grounds": "The charitable reading merges the two sentences and hears 'weighed' as 'weighed by someone who never agreed to bear it', which would be sound. The node separates them, closing on the risk-ethics claim as the standalone principle after the consent point has already been made. Weighing is compatible with proceeding, which is why insurers exist, so the stated principle underdetermines the conclusion. Minor rather than headline because the non-consent premise is present in the same locus and carries the argument once the analogy is dropped; the repair is removing a self-undermining illustration.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "v",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "luxury-belief",
+      "target_locus": "medium",
+      "target_anchor": "the claim that antinatalism costs its holders nothing is empirically false",
+      "adversarial_move": "Henderson's concept does not claim the belief is cheap to voice. It claims the costs fall on others while the status accrues to the holder, and those are compatible with ostracism. So the empirical rebuttal refutes a thesis the objector need not hold, and the ostracism evidence is beside the point rather than against it. The objector's real version survives: that the position is affordable to those insulated from the consequences of a falling birth rate, whoever pays for voicing it.",
+      "class": "b",
+      "grounds": "The charitable reading takes the ostracism passage as an aside supplementing the epistemic argument, which is sound and independent. The node does not present it as an aside; it introduces it with 'furthermore' as a second, freestanding refutation, and it is the note the section ends on. Henderson's criterion is cost-externalisation, not cost-to-the-holder, so the arm targets a weakened form. Minor rather than headline for a stated reason: the first arm, that truth is independent of the sociology of adoption, defeats the objection's epistemic version on its own, so the defect is contained to surplus material.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "minor"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    },
+    {
+      "target_id": "suffering-as-meaning",
+      "target_locus": "medium",
+      "target_anchor": "suffering itself confers meaning, so the suffering is the value",
+      "adversarial_move": "The target is defined monotonically and the sophisticated view is not monotonic. The constitutive claim is that some adversity is a precondition of some goods, not that more suffering yields more meaning. A holder of the precondition view prescribes suffering to no one, exactly as one may hold that failure is a precondition of skill without wishing failure on a student. So the performative-inconsistency arm, which convicts by showing you would not withhold the anesthetic, convicts only the quantity thesis. Defining thesis two as 'such that more of it is more meaning' builds the straw into the definition, and three of the four arms then aim at it.",
+      "class": "b",
+      "grounds": "The charitable reading is that the monotonic formulation is a fair regimentation of what the trigger phrases assert, and for several of them it is. It does not reach the precondition version, which concedes suffering is bad, prescribes none, and still denies that a life decomposes into goods minus suffering. The node's own toll-versus-goal line is aimed at extraction-despite rather than at internal relation. Headline rather than minor, against my pattern in this phase and stated so it can be checked: the defect is in the definition of the target, and it propagates through the performative-inconsistency, survivorship and toll-versus-goal arms. The asymmetry arm survives it, since contingency of the payoff bites the precondition version too.",
+      "routing": {
+        "regen_candidate": {
+          "axis_hit": [
+            "c",
+            "r"
+          ],
+          "severity": "headline"
+        }
+      },
+      "status": "mapped",
+      "provenance": {
+        "phase": "D",
+        "date": "2026-09-16",
+        "seat": "K332 (wuld.ink Cowork, drafting seat)"
+      }
+    }
+  ]
+}

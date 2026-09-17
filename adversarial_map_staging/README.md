@@ -50,6 +50,16 @@ Advisories exist so a constraint ratified *after* an artifact shipped stays loud
 
 - `build_register.py` / `render_register.py` — run from this directory: `python3 build_register.py [--with-d] [--with-e]` then `python3 render_register.py`. Everything is derived except `BEDROCK_MAP` and `RELATIONS`, which are the editorial acts, and both are audited against the fragments before writing.
 
+### Decision artifacts and evidence
+
+- `adversarial_map_assembly_rulings_v0_1.json` / `.md` — all five assembly decisions of the succession brief §2.5, ruled. **The K224 bar reads as a PROHIBITION, not a licence**: routing an (a) into `bradley-no-subject#long` for a comparative-harm move is barred, because bradley answers such moves by *asserting* non-comparative wronging, which is unsettled bedrock (`HR-05`). Adjudicating B1's five carry-forward entries against it gives **2 breaches** (`procreative-liberty`, `non-identity-problem` — proposed to reclassify (a)→(d)) and 3 clears. Proposed, never applied: those fragments are ratified and are not rewritten without a ruling.
+
+- `adversarial_map_regen_queue_v0_1.json` / `.md` — the v-cut scoping input. **21 (b) + 1 (c) across 21 nodes, 26% of the corpus.** Version class ruled as a split: **v4.1.0** for the 19 enrichment regens (v3.9 was opened as the enrichment line), **v5.0.0** for the node intake (v4.0.0 was MAJOR *because* it was intake, 81→82 renumbered). Split rather than bundled so nineteen prose corrections are not hostage to the single most contestable item in the program; the ordering was measured, not assumed, by scanning every (b)'s grounds for intake-coupling.
+
+- `process_ledger_v0_1.md` — the discrete-notes surface: **eight failure shapes, not a list of incidents.** The hazard registry in wuld-ink's `CLAUDE.md` is the record of authority and numbers things in the order they went wrong, which is the right record and the wrong teacher — the next failure never arrives wearing the last one's costume. `claude_md_hazard_registry_snapshot.txt` carries the cited headlines so `build_ledger.py` can verify every numeral without reaching across repos.
+
+- `calibration_phaseD_rederivation_v0_1.json` — **superseded as a selection, retained as evidence.** The wuld-ink re-derivation of Phase D (4a/12b/0c/1d). Deliberately named so it cannot be globbed as a phase fragment. Kept because the locus finding above has no evidence without it: had it landed it would have produced **nine fabricated regen candidates**, taking the v4.1.0 cut from 21 (b) to 30 and its corpus footprint from 26% to 37%.
+
 ## Container contract (fragments emit this shape; the schema pins the ENTRY, this README + the validator pin the CONTAINER)
 
 ```json

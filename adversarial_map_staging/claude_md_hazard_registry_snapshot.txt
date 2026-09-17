@@ -1,0 +1,9 @@
+# hazard registry snapshot -- headlines only, extracted from wuld-ink CLAUDE.md
+# The registry of authority is CLAUDE.md in the wuld-ink repo. This snapshot exists so
+# build_ledger.py can verify every numeral it cites without reaching across repos.
+
+**cccli IS ONE CLASS TOO WEAK AS LANDED, and the library seat named why.**
+**ccclv — A SWEEP FOR A SUPERSEDED FIGURE, IN A DOCUMENT THAT KEEPS DATED RECORDS, RETURNS MOSTLY CORRECT SENTENCES; AND THE FIGURE IT IS LOOKING FOR MAY NOT BE A STRING AT ALL.**
+**ccclvi — A FENCE IN A REPORT IS A PROMISE THAT THE CONTENTS ARE RUNNABLE.**
+**ccclvii — UNDER AN EOL POLICY IT IS NOT ONLY THE WORKING-COPY md5 THAT LIES; `git status` LIES TOO.**
+**ccclviii — MEASURE THE STATE YOU THINK YOU MEASURED.**

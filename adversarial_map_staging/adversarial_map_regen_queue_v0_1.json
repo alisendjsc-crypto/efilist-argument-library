@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "artifact": "adversarial_map_regen_queue_v0_1.json",
+    "kind": "v-cut scoping input (design doc s: terminal deliverables)",
+    "status": "WORKING. Phase D is the re-derivation draft; if the K231 fragment is recovered and selected instead, re-run this builder against it.",
+    "source_fragments": {
+      "A": "1c4c2f1c5bfc4247e47304b1fb5f5689",
+      "B1": "04a6069fb982492cc7c5603558973366",
+      "B2": "b55e2ea8e76f18c5efa5eb084a58076b",
+      "C": "40b501f7fcbbf28c3e40f65e3d01e63d",
+      "D": "8d41db905561c4e32df33d41b4874bd5",
+      "E": "6b57e78b1fa36bb14e384b7260aa0fec"
+    },
+    "b_total": 21,
+    "c_total": 1,
+    "distinct_nodes": 21,
+    "corpus_nodes": 82,
+    "corpus_fraction_pct": 25.6,
+    "severity": {
+      "minor": 16,
+      "headline": 5
+    },
+    "repair_shape": {
+      "additive": 8,
+      "subtractive": 5,
+      "structural": 8
+    },
+    "per_phase": {
+      "A": 1,
+      "B1": 5,
+      "B2": 3,
+      "C": 4,
+      "D": 3,
+      "E": 5
+    },
+    "axes": {
+      "cr": 7,
+      "c": 1,
+      "rs": 7,
+      "cs": 2,
+      "s": 3,
+      "as": 1
+    },
+    "fences": "Yields are intake candidates, never authorizations. No byte moves from this artifact."
+  },
+  "version_class_ruling": {
+    "question": "Canon does not classify a v4.x regen cut. Decide its version class explicitly rather than letting it default into a patch.",
+    "ruling": "SPLIT THE CUT: v4.1.0 enrichment, then v5.0.0 intake.",
+    "precedent": [
+      "v3.9.0 was opened as the ENRICHMENT line: post_terminal_policy reads 'v3.8 frozen / v3.9 enrichment / v4.0 intake renumbered-GATED'. Enrichment of existing nodes is MINOR.",
+      "v4.0.0 (K219) was MAJOR because it was INTAKE: objection_count 81 -> 82, with the node and link counts renumbered across map_graph_data and dep_graph_data.",
+      "A single response recut took a PATCH (the masochist coda, responses.long -> v3.7.5)."
+    ],
+    "reasoning": "21 (b) entries across 21 distinct nodes is 26% of the corpus carrying a correction. That is far past a patch, and it is exactly the operation v3.9 was opened to perform, so the enrichment cut is MINOR: v4.1.0. The single (c) proposes an 82 -> 83 intake, which is the operation that made v4.0.0 MAJOR, so it is v5.0.0. They are split rather than bundled for three reasons. The precedent already separates them and gated intake behind enrichment. Bundling makes 19 prose corrections hostage to the single most contestable item in the queue, an objection to the corpus's own method that Josiah may reject or reshape. And each regen must cold-grade: 19 regens is one grading job, a node intake across four surfaces plus dependency-graph renumbering is another.",
+    "coupling_check": "The ordering was measured, not assumed. If many (b) repairs would be rewritten once the (c) node exists, the intake should lead. Scanning all 21 grounds for diagnosis-for-argument language returns 1, and on inspection only 2 genuinely couple: gods-plan and western-philosophy, whose repairs become a route to the licensing node rather than a local disclaimer. Those two are HELD for v5.0.0. The other 19 are independent of the intake.",
+    "caveat": "This ruling is proposed, not applied. Version class is Josiah's call and canon records it; the ruling session emits, the execute session lands."
+  },
+  "v4_1_0_enrichment": {
+    "count": 19,
+    "headline": [
+      {
+        "phase": "B1",
+        "node": "transhumanist-objection",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "headline",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "carried where the terminus is defended",
+        "grounds": "The node makes two claims in tension: that abolition removes the rationale for extinction, and that the terminus is defended elsewhere at bradley-no-subject. Bradley disclaims pro-mortalism, so the cross-reference misdirects. A charitable reading cannot make bradley supply what it explicitly declines. Repair: excise the defended-elsewhere clause and state plainly that under successful abolition EFILism reduces to antinatalism-without-extinction, or install an actual defense. Headline because the defect falls on the defining terminus under the granted-arguendo scenario.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B1",
+        "node": "bradley-no-subject",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "headline",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "There is no third branch",
+        "grounds": "Defeats the central structural boast, not necessarily the position. No-third-branch presupposes non-comparative harm, which the node asserts via analogy rather than argues against the committed comparativist. A charitable reading cannot close the branch, because closing it needs an argument the node does not supply, that the comparativist's own commitments generate non-comparative harm in wrongful-life and future-generations cases, or that non-identity is itself a reductio of pure comparativism. Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock. Headline: this is the node's load-bearing fork. If the non-comparative-harm defense proves unavailable, this escalates to a (d) residue at that primitive.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B2",
+        "node": "neuroscience-positive-states",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "headline",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "a joy never instantiated is withheld from no one",
+        "grounds": "Adjudicated cold per the additivity carry-forward. The node's headline move (survives-total-surrender via no-deprivation) is not the neutral concession it claims: 'a joy never instantiated is withheld from no one' is Benatar's absence-asymmetry, which (i) sits in tension with the valence-symmetry the node explicitly adopts (symmetric valence-realism plus a subject-requirement yields symmetric deprivation-structure, hence non-creation-as-neutral, not asymmetrically-better), and (ii) inherits the Boonin evaluative-status dent (N4) and is never independently defended here. Not (a): nothing reconciles the tension. Not (d) outright: the conclusion can re-ground on the node's own risk-imposition line, but that presupposes bedrock-III (imposition-wrong-independent-of-harm, cross-ref N4), so the honest repair-chain routes there. Headline severity: the defect is in the node's strongest, most-cited move. SEPARATE live item: the node's valence-realism contradicts bradley#medium and virtue-ethics-flourishing#long move #4 (N7); on cold adjudication neuroscience#long's realism is the defensible pole, so the additivity fix runs toward it, not away.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "E",
+        "node": "antinatalism-misanthropic",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "headline",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "structural criticism of a species is not the same as hatred of individuals",
+        "grounds": "The node answers the weak form. Its entire architecture is motivational, hyper-empathy against contempt, and the strong form concedes motive at the outset and presses on extensional equivalence of the action-guiding output. Nothing in short, medium or long engages that. The repair is available inside the node: the antinatalist verdict is conditional on suffering-imposition and would lapse if suffering lapsed, which no contempt-driven verdict would, and that is a content-level discriminator the node currently leaves unstated.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "E",
+        "node": "happiness-is-choice",
+        "locus": "long",
+        "axis_hit": [
+          "s"
+        ],
+        "severity": "headline",
+        "repair_shape": "subtractive",
+        "diagnosis_coupled": false,
+        "anchor": "roughly half of your capacity for happiness was determined at conception",
+        "grounds": "Straightforward misstatement of what a heritability coefficient measures, load-bearing and stated twice, in the node's designated empirical paragraph. It is also the node most exposed to a competent objector, since the h-squared misreading is the standard undergraduate correction. Repair is subtractive and costs no ground: drop the conception-fraction inference, keep the finding that wellbeing has substantial unchosen determinants.",
+        "cut": "v4.1.0"
+      }
+    ],
+    "minor": [
+      {
+        "phase": "A",
+        "node": "self-defeating",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "minor",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "requires only the development of sufficient technological capacity",
+        "grounds": "The shipped text's best reading cannot supply the fence, because the aside's function is reassurance about realization, which invites exactly this means-audit and concedes a dependence it never scopes. The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means (economy-population already ships the pattern for the care-labor case). Two sentences inside the node's identity meet it; the core category-error rebuttal is untouched.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B1",
+        "node": "benatar-asymmetry-attack",
+        "locus": "long",
+        "axis_hit": [
+          "c"
+        ],
+        "severity": "minor",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "how much suffering typical human lives actually contain",
+        "grounds": "Defeats the prose without touching the position: the conditional is true, but its empirical antecedent is undischarged in-corpus, so the person-affecting-branch conclusion is incomplete as written. A charitable reading cannot supply that typical lives exceed the threshold; that is an empirical claim the node asserts but never argues or cross-references. Repair: substantiate or cross-reference the suffering-load premise on the fallback branch.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B1",
+        "node": "cant-prove-nonexistence-better",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "subtractive",
+        "diagnosis_coupled": false,
+        "anchor": "the precautionary principle favors restraint",
+        "grounds": "Defeats the fallback paragraph, not the position, which the structural asymmetry carries independently. The node equivocates between epistemic incomparability and decision-under-quantifiable-risk; the precautionary tiebreaker only functions under the latter and smuggles a substantive disvalue-ranking under the former. A charitable reading cannot rescue precaution-favors-restraint as a neutral move under strict incomparability. Repair: drop the fallback or reframe it as decision-under-risk with an explicit suffering-disvalue premise, which just is the asymmetry.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B1",
+        "node": "revealed-preference",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "genuine revealed preference requires informed agents",
+        "grounds": "Defeats the prose via inconsistent standard-application, not the position. The defensible claim, that survival is a confounded proxy for endorsement, survives; the asymmetric use of the informed-deliberation standard, disqualifying survival while crediting the suicide datum, does not. A charitable reading cannot rescue the asymmetry, because the node explicitly leans on the discriminating standard. Repair: recast survival as a noisy, confounded signal that makes the revealed-preference inference unreliable, rather than crediting the opposite datum under a standard it also fails.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B2",
+        "node": "virtue-ethics-flourishing",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "Flourishing is not the addition of positive value to a neutral baseline",
+        "grounds": "Strongest continuation is a coherence attack: move #4's strong deflation (flourishing is 'the least bad life,' 'not the addition of positive value') is the exact illusory-as-to-value reading that neuroscience-positive-states#long argues is self-refuting and disowns, conceding instead that positive states are real and genuinely valued. Intra-corpus contradiction, part of the K224-flagged additivity non-univocality (paired with N8). Not (a): no node reconciles the two. Not (d): the defect is local and repairable, not bedrock. The node survives excision (moves #1-3 + no-deprivation carry the conclusion on genuine-but-deficit-occasioned positives), so severity minor; axis soundness (a premise false by the corpus's own lights) with robustness implicated. Recommended regen: align move #4 with neuroscience#long's modest deflation.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "B2",
+        "node": "flow-states-csikszentmihalyi",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "it is the most damning confirmation of the deficit grammar",
+        "grounds": "Additivity adjudicated cold. Phase one asserts strong-deflation (flow is 'the most damning confirmation of the deficit grammar,' not value generated independently of deficit), the exact illusory-as-to-value reading neuroscience-positive-states#long argues is self-refuting and disowns. Intra-corpus non-univocality, same family as virtue-ethics-flourishing#long move #4 and the N7 additivity cluster. Not (a): the continuation defeats the shipped phase-one prose rather than merely being answered by it, and no node reconciles the deflation with the realism. Not (d): the defect is local and repairable. The node survives excision, phase two grants flow full genuine value and rests on the asymmetry, so severity minor, axes s (premise false by the corpus's own lights) and r. Recommended regen: align phase one with neuroscience#long's realism. NON-BLOCKING flag: phase two's no-deprivation asymmetry is the same undefended absence-asymmetry as neuroscience#long's headline item, so the fix runs toward neuroscience#long's realism (the A+B-verified defensible pole), not away.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "C",
+        "node": "future-solve",
+        "locus": "short",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+        "grounds": "Strongest continuation is a self-undermining tu-quoque: if the transitional generation's non-consent to bearing cost defeats future-improvement justifications, it condemns all intergenerational investment, including the antinatalist's own future-directed dissemination project. (a) fails as a clean route because the corpus answer, the creation-versus-cost asymmetry, is a distinction this node never makes; the node as written invites the flank rather than closing it. (c): the node omits the creation-consent versus cost-consent distinction that would defuse the tu-quoque. (r): so phrased, it is over-exposed to a rejoinder it cannot answer in its own text. Not (d): no bedrock, the remedy is a local sharpen, foreground consent-to-creation and qualify the transitional-sacrifice claim. Severity minor: excise the over-broad framing and the proxy-gamble spine carries the no-creation conclusion intact.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "C",
+        "node": "policy-proposal",
+        "locus": "long",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "that would at least be an informed decision rather than an instinctive one",
+        "grounds": "Strongest continuation turns the node's endpoint against it: 'that would at least be an informed decision' valorizes informed procreation, but the consent-core holds that the created, not the parent, is the wronged non-consenting party, so parental information cannot legitimize the imposition. Intra-corpus tension, structurally the B2 virtue-ethics pattern (a claim false by the corpus's own lights). Not (a): the corpus answers the move, but the offending assertion sits inside this node and contradicts that answer, so the fix is local, not a cross-reference. Not (d): no bedrock, the harm-thesis versus permissible-policy distinction repairs it cleanly. (b): axis soundness (endpoint premise the framework disowns) with robustness implicated; severity minor, the concrete non-coercive program and the validity-versus-implementability category-distinction carry the node's task untouched. Recommended regen: separate the moral verdict (procreation wrongs the created, informed or not) from the non-coercion policy constraint.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "C",
+        "node": "pinker-better-world",
+        "locus": "medium",
+        "axis_hit": [
+          "r",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "additive",
+        "diagnosis_coupled": false,
+        "anchor": "Statistics describe populations; suffering is experienced by individuals",
+        "grounds": "Strongest continuation is an internal tu-quoque: argument two's blanket 'statistics describe populations, suffering is experienced by individuals' declares aggregate data morally irrelevant, but argument three (eighty billion farmed animals, epidemic anxiety rates) is pure aggregate appeal. The node disarms its own method. (a) fails: this is not answered elsewhere; the inconsistency lives in this node's text. Not (d): no bedrock, the asymmetry itself is fine, the defect is the over-broad framing of one sub-argument. (b): the fix is to narrow argument two to rate-decline-is-not-elimination plus undiminished-per-individual-asymmetry, which removes the inconsistency and keeps the anti-aggregation force; severity minor, arguments one, three, four and the narrowed two carry the conclusion. Axis soundness (the node uses a method it declares invalid) with robustness (adversarially over-exposed).",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "C",
+        "node": "ableist-objection",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "they are being centered by it",
+        "grounds": "Strongest continuation is the expressivist argument (Asch), distinct from the selection charge the node answers well: a universal anti-creation stance justified by suffering, and citing disabled existence as its paradigm reason, expresses the devaluation disabled-life-approximates-not-worth-being even while grading no lives explicitly. The node's universality defeats selection but not expression; its 'centered not targeted' and 'enemy is the system' lines are asserted, not argued, and a disability-rights reader finds them question-begging. Not (a): the strongest form is not answered elsewhere. Not (d): no axiological bedrock, the enemy-is-the-system reply is a real seed, and the intrinsic-versus-social-disvalue dilemma is answerable, just unrun. Not (c): the objection already has this node as its home; the defect is under-coverage of its strongest form, not a missing objection. (b): axis completeness (the expressivist form is under-covered) with robustness (the asserted centering line is exposed to the question-begging rejoinder); severity minor, the universality spine carries the selection charge and the fix develops rather than corrects. Recommended regen: run the accommodating-world dilemma and separate judging-the-imposition from judging-the-lives.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "D",
+        "node": "playing-god",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "the default state of the universe is non-existence",
+        "grounds": "The inversion is sound, the creator exercises unilateral power over a subject's parameters while the abstainer imposes nothing, and its strongest counter (that universal antinatalism is itself a sweeping cosmic judgment) is met by the asymmetry, since a universal refrain deprives no one. But the burden-shift rests solely on 'the default state of the universe is non-existence,' with no in-node backstop, and that cosmic-to-normative inference is invalid. (a) fails: the node's stated support for the burden-shift is the cosmological claim, not the asymmetry, so the flaw is in the shipped reasoning, not merely met elsewhere. Not (d): re-grounding is a local in-identity fix, a stronger text grounds the burden-shift in the asymmetry (harm-imposition requires justification; harm-avoidance does not), which is the real reason non-existence is the ethical default. (b), axis s/c: soundness, the cosmic-baseline inference; completeness, the missing asymmetry grounding. Severity minor.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "E",
+        "node": "just-depressed",
+        "locus": "long",
+        "axis_hit": [
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "subtractive",
+        "diagnosis_coupled": false,
+        "anchor": "Roughly one deployment in a hundred is a person actually worried about you",
+        "grounds": "An unsourced quantitative premise doing architectural work in the corpus's most epistemically self-aware node, which elsewhere refuses exactly this move. Minor rather than headline because the logical core is fully separable and survives deletion intact. Repair is subtractive: state the distribution qualitatively, keep the one-in-a-hundred reader named and met.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "E",
+        "node": "just-edgy",
+        "locus": "long",
+        "axis_hit": [
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "subtractive",
+        "diagnosis_coupled": false,
+        "anchor": "has never been substantively refuted",
+        "grounds": "The lineage material is legitimate and survives on the best reading, since the objection makes an empirical claim about who holds the view and the lineage refutes it directly. The unrefutedness clause is separable and not so rescuable: no charitable reading turns absence of published refutation into evidential support. Repair is subtractive and the node's force is unaffected.",
+        "cut": "v4.1.0"
+      },
+      {
+        "phase": "E",
+        "node": "selfish-lazy",
+        "locus": "long",
+        "axis_hit": [
+          "a",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "subtractive",
+        "diagnosis_coupled": true,
+        "anchor": "the most radical form of altruism available to a biological organism",
+        "grounds": "A one-word overclaim at the node's closing position, and the only point at which the node contradicts the asymmetry it depends on. The diagnosis field already has the correct formulation, restraint of self-interest rather than its expression, so the repair is to carry the diagnosis's wording into the long response. Minor: subtractive, local, and the projection-inversion argument is untouched.",
+        "cut": "v4.1.0"
+      }
+    ]
+  },
+  "v5_0_0_intake": {
+    "intake_candidate": {
+      "phase": "E",
+      "host_node": "change-your-mind",
+      "intake": {
+        "proposed_id": "diagnosis-not-refutation",
+        "tier_guess": 5,
+        "mechanism_guess": "Method-level tu quoque: the rebuttal's psychological diagnosis of the objector, deployed where an argument-level refutation is owed",
+        "individuation_grounds": "presupposition-inversion"
+      },
+      "grounds": "Not (a): no shipped node has the corpus's own diagnostic method as its subject. T5 holds self-defeat, value-imposition, red-button, pluralism, futility, particularism and universalization, all objections to the position rather than to the manner of rebuttal. Not (b): the register is architectural, carried by the psychMechanism and diagnosis fields on all 82 nodes and deployed inside responses at 26 of them, so no rewrite of this node answers it. The licensing condition is stated in exactly two places, life-gift#long and just-depressed#long, both of which forbid diagnosing the opponent as a substitute for refutation; the remaining 24 breach a rule the corpus has already written down. An objection whose scope is the corpus and whose answer must be a statement of when diagnosis is legitimate is a node, not a patch. FIRST (c) IN THE PROGRAM: the previous zero across 69 nodes is an artefact of adjudicating node-against-node, which gives a corpus-level objection nowhere to land."
+    },
+    "held_regens": [
+      {
+        "phase": "D",
+        "node": "gods-plan",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "No theodicy has resolved this trilemma",
+        "grounds": "The strongest continuation a maximally competent theist deploys is not the free-will defense (which the node rightly sinks on animal and involuntary suffering) but skeptical theism plus divine-command theory. (a) fails: the node engages neither, it asserts gratuitousness as certifiable and treats the divine-authority point as self-evidently non-answering, both of which the moves contest. Not (d) as the class: the node has genuine room to strengthen before bedrock. A stronger in-identity text concedes skeptical theism's in-principle move and pivots to the Euthyphro fork, pressing that a good nature authoring predation and child-cancer is either good by no recognizable sense of the word or good by a standard independent of fiat that the antinatalist then applies; that closes the practical gap. (b), axis c/r: completeness, missing skeptical-theism and Euthyphro engagement; robustness, the 'logically impossible' and 'no theodicy resolved' overclaims over-expose a defensible core. Severity minor. The irreducible residue (modified DCT: God's necessary nature as the source of normativity) routes to the metaethical-grounding bedrock registered at nihilism-label, a theological-voluntarism facet, flagged not authored.",
+        "cut": "v5.0.0",
+        "hold_reason": "The defect is a Terror Management paragraph doing argument-work. With diagnosis-not-refutation shipped, the repair is a route to the licensing node rather than a local disclaimer written into this node."
+      },
+      {
+        "phase": "D",
+        "node": "western-philosophy",
+        "locus": "long",
+        "axis_hit": [
+          "c",
+          "s"
+        ],
+        "severity": "minor",
+        "repair_shape": "structural",
+        "diagnosis_coupled": false,
+        "anchor": "The Pythagorean theorem originated in a specific cultural context; it applies universally",
+        "grounds": "The genetic-fallacy spine is sound for descriptive claims, origin does not determine truth, and it defuses the naive 'it is Western therefore wrong.' But the objection's strongest form is metaethical relativism, which the node never engages: the Pythagorean analogy begs it, and the Eastern-tradition analogies overstate (these are liberation traditions, not antinatalisms). (a) fails: the node asserts origin-irrelevance and a global-pessimism catalogue, neither of which meets the relativism-qua-metaethics move or the conflation charge. Not (d): a stronger in-identity text distinguishes descriptive origin-irrelevance from the metaethical question, notes relativism's self-undermining and that antinatalism is offered as an argument for evaluation regardless of provenance, and drops or qualifies the Buddhism-equals-antinatalism claim. (b), axis c/s: completeness, no engagement with the metaethical question the objection turns on; soundness, the overstated cross-tradition analogy. Severity minor. The irreducible residue (sophisticated, non-self-undermining relativism versus realism) routes to the metaethical-grounding bedrock registered at nihilism-label.",
+        "cut": "v5.0.0",
+        "hold_reason": "Same shape: a genetic-fallacy overclaim that the licensing node would absorb. Repairing it locally now means rewriting it after intake."
+      }
+    ]
+  },
+  "regen_lane": [
+    {
+      "id": "L1",
+      "title": "Additivity / strong-deflation non-univocity",
+      "detail": "neuroscience-positive-states#long holds valence realism, adjudicated the defensible pole. It conflicts with bradley#medium, virtue-ethics-flourishing#long move 4, flow-states and marxist-materialist#long. The corpus does not affirm 'absence of pleasure is not bad' univocally, which B2's boonin-critique entry relies on.",
+      "cut": "v4.1.0"
+    },
+    {
+      "id": "L2",
+      "title": "Act/omission-default-under-total-skepticism overclaim",
+      "detail": "Found in eliminativism and solipsism; total skepticism voids the default symmetrically. K230 watched for it in nihilism-label; the outcome was recorded in the K231 state, which is unrecovered, so this item is re-open rather than closed.",
+      "cut": "v4.1.0"
+    }
+  ]
+}
