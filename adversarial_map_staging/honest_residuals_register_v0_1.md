@@ -1,6 +1,6 @@
 # Honest-Residuals Register v0.1
 
-**Status: WORKING.** Derived from 30 honest-residue (d) entries across phases A, B1, B2, C, D, E.
+**Status: WORKING.** Derived from 32 honest-residue (d) entries across phases A, B1, B2, C, D, E.
 Source corpus `6ee1f6f3` / 82 nodes. Rebuild: `python3 build_register.py [--with-draft-d] [--with-e]`.
 
 **Library-internal.** No corpus, ledger, index or `/combined` byte moves from this artifact.
@@ -37,15 +37,17 @@ one phase at a time with no shared list to write against.
 
 | | |
 |---|---|
-| Residue entries | 30 |
+| Residue entries | 32 |
 | Distinct shipped `bedrock_name` strings | 24 |
 | Actual bedrocks | 13 |
-| Registered before this program | 8 |
-| Registered **by** this program | 5 |
+| Registered before this program | 9 |
+| Registered **by** this program | 4 |
 
 ## Audit
 
-**`dangling-registration-pointer` — HR-03.** HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 11 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked.
+**`novel-flag-collision` — HR-05.** HR-05 was registered before this program (K224:carry-forward-bar) but 1 fragment entry/ies flag it novel=true: [('B2', 'harman-benign-creation')]. A bedrock has one birth certificate.
+
+**`dangling-registration-pointer` — HR-05.** HR-05 cites N2, which is not present in canon's terminal_stability_marker.honest_residuals. 5 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked.
 
 ## Adjacency (F1 remedy)
 
@@ -72,9 +74,9 @@ a default: the audit refuses to write while any detected pair goes undeclared.
 |---|---|---|---|---|
 | `HR-01` | Global normative / epistemic skepticism | 1 | 1 | canon |
 | `HR-02` | Asymmetry-contingency of the positive-states cluster | 4 | 3 | canon |
-| `HR-03` | Impersonal vs person-affecting axiology *(K224 bedrock 1)* | 11 | 6 | K224 |
+| `HR-03` | Impersonal vs person-affecting axiology *(K224 bedrock 1)* | 11 | 6 | canon |
 | `HR-04` | Moral realism / is-ought *(N1)* | 3 | 2 | **this program** |
-| `HR-05` | Comparative vs non-comparative harm *(N2)* | 3 | 1 | **this program** |
+| `HR-05` | Comparative vs non-comparative harm *(N2)* | 5 | 1 | K224 |
 | `HR-06` | Imposition wrong independent of harm *(N4 / bedrock-III)* | 1 | 1 | **this program** |
 | `HR-07` | Normative error theory | 1 | 1 | **this program** |
 | `HR-08` | Sub specie aeternitatis quietism | 1 | 1 | flagship_t5_register_dispositions_v0_1 |
@@ -114,7 +116,7 @@ The positive-states rebuttals run Benatar's asymmetry as the load-bearing spine 
 
 Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus's universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.
 
-**Registered before this program:** `K224:bedrock-1`.
+**Registered before this program:** `canon:terminal_stability_marker.honest_residuals.impersonal_vs_person_affecting`.
 
 **Tributaries (11 across 6 facets):**
 
@@ -150,9 +152,9 @@ Whether creation can wrong a being for whom no worse-off baseline exists.
 
 - `depends_on` → `HR-03` — lives on HR-03's PERSON-AFFECTING horn: go impersonal and the worse-off-baseline question does not arise, because no person needs a baseline
 
-**Tributaries (3 across 1 facet):**
+**Tributaries (5 across 1 facet):**
 
-- **no-worse-off-baseline** — `harman-benign-creation` (B2), `incommensurability` (B2), `life-gift` (E)
+- **no-worse-off-baseline** — `procreative-liberty` (B1), `non-identity-problem` (B1), `harman-benign-creation` (B2), `incommensurability` (B2), `life-gift` (E)
 
 ### `HR-06` Imposition wrong independent of harm — *N4 / bedrock-III*
 

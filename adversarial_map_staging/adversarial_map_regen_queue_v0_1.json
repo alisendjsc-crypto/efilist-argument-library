@@ -4,8 +4,8 @@
     "kind": "v-cut scoping input (design doc s: terminal deliverables)",
     "status": "WORKING. Phase D is the re-derivation draft; if the K231 fragment is recovered and selected instead, re-run this builder against it.",
     "source_fragments": {
-      "A": "1c4c2f1c5bfc4247e47304b1fb5f5689",
-      "B1": "04a6069fb982492cc7c5603558973366",
+      "A": "dadcd3758efa12c7cb40c168235413e7",
+      "B1": "34a12748fb5300f580d44698a3000f16",
       "B2": "b55e2ea8e76f18c5efa5eb084a58076b",
       "C": "40b501f7fcbbf28c3e40f65e3d01e63d",
       "D": "8d41db905561c4e32df33d41b4874bd5",

@@ -106,13 +106,14 @@ BEDROCKS = {
    alias=None),
  "HR-03": dict(name="Impersonal vs person-affecting axiology",
    gloss="Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus's universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.",
-   registered_in="K224:bedrock-1", alias="K224 bedrock 1"),
+   registered_in="canon:terminal_stability_marker.honest_residuals.impersonal_vs_person_affecting",
+   alias="K224 bedrock 1"),
  "HR-04": dict(name="Moral realism / is-ought",
    gloss="Whether suffering's disvalue is stance-independent. The corpus refuses to derive an ought from a fact, then requires an ought it does not derive either.",
    registered_in="this-program", alias="N1"),
  "HR-05": dict(name="Comparative vs non-comparative harm",
    gloss="Whether creation can wrong a being for whom no worse-off baseline exists.",
-   registered_in="this-program", alias="N2"),
+   registered_in="K224:carry-forward-bar", alias="N2"),
  "HR-06": dict(name="Imposition wrong independent of harm",
    gloss="Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says.",
    registered_in="this-program", alias="N4 / bedrock-III"),
@@ -240,7 +241,7 @@ def main(extra_frags, outpath):
                             "flag it novel=true: %s. A bedrock has one birth certificate.")
                            % (bid, meta["registered_in"], len(births),
                               [(r["phase"], r["node"]) for r in births])))
-        if meta["registered_in"].startswith("K224:") :
+        if meta["registered_in"].startswith("K224:"):
             audit.append(dict(severity="dangling-registration-pointer", bedrock_id=bid,
                 detail=("%s cites %s, which is not present in canon's "
                         "terminal_stability_marker.honest_residuals. %d tributaries route to a "

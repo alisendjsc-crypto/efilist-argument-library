@@ -50,6 +50,14 @@ Advisories exist so a constraint ratified *after* an artifact shipped stays loud
 
 - `build_register.py` / `render_register.py` — run from this directory: `python3 build_register.py [--with-d] [--with-e]` then `python3 render_register.py`. Everything is derived except `BEDROCK_MAP` and `RELATIONS`, which are the editorial acts, and both are audited against the fragments before writing.
 
+### The terminal artifact
+
+- `adversarial_map_v1_0.json` — **the assembly. 82/82 nodes, 93 entries, 39a / 21b / 1c / 32d.** Built by `build_assembly.py`, which refuses to write unless the fragments genuinely *partition* the 82 (no id claimed by two phases), id×anchor is unique, the cap holds, every entry is `status: mapped`, and no id is uncovered or foreign. Q3's ratification stands: v1_0 is the **mapped-complete, pre-triage** state; the lifecycle `mapped → queued → ratified → landed | rejected` lives in canon, never here.
+
+  **Validated under `--assembly`: 21 checks, 0 violations, 0 advisories.** That flag promotes every advisory to hard, which is why the thirteen standing advisories had to be *discharged* before this file could exist rather than displayed alongside it. Phase A's twelve em-dashes and B1's five carry-forward routes were amended at K338 on Josiah's ratification; both fragments carry an `amended` meta block recording exactly what moved and under which ruling.
+
+  Class distribution by tier is worth reading: T4 alone carries 17 of the 32 (d) entries. The bedrock is not evenly spread — it concentrates where the corpus argues hardest.
+
 ### Decision artifacts and evidence
 
 - `adversarial_map_assembly_rulings_v0_1.json` / `.md` — all five assembly decisions of the succession brief §2.5, ruled. **The K224 bar reads as a PROHIBITION, not a licence**: routing an (a) into `bradley-no-subject#long` for a comparative-harm move is barred, because bradley answers such moves by *asserting* non-comparative wronging, which is unsettled bedrock (`HR-05`). Adjudicating B1's five carry-forward entries against it gives **2 breaches** (`procreative-liberty`, `non-identity-problem` — proposed to reclassify (a)→(d)) and 3 clears. Proposed, never applied: those fragments are ratified and are not rewritten without a ruling.

@@ -7,7 +7,24 @@
       "d": 6,
       "b": 1
     },
-    "coverage_distinct_ids": 7
+    "coverage_distinct_ids": 7,
+    "amended": {
+      "at": "K338 (2026-09-17)",
+      "ratified_by": "Josiah",
+      "what": "Twelve em-dashes (U+2014) removed from eight adversarial_move fields, satisfying the move gate's long-standing ASCII clause which validator v0_2 mechanized as `move-ascii`. Phase A predates that discipline.",
+      "how": "Each dash took the punctuation its own sentence wanted: colon, comma or semicolon for the appositives, and a comma or parenthesis PAIR for the two parentheticals, replaced as whole spans so a pair could not be half-fixed. ` - ` was NOT available: the same gate forbids standalone dash tokens. The dashes were UNSPACED, so each sat inside a whitespace-token rather than being one, and every affected move GAINED a word; all bands re-checked and hold.",
+      "not_touched": "grounds fields, which also carry U+2014 in eight entries. The move gate covers moves only, and a ratified artifact is amended to the width of the ruling, no wider.",
+      "word_deltas": {
+        "[2] red-button-repugnant": "93 -> 94",
+        "[6] self-defeating": "87 -> 88",
+        "[7] self-effacing-under-universalization": "89 -> 91",
+        "[10] heat-death-futility": "94 -> 95",
+        "[12] meta-ethical-pluralism": "95 -> 96",
+        "[13] meta-ethical-pluralism": "88 -> 91",
+        "[15] moral-particularism": "96 -> 97",
+        "[16] moral-particularism": "47 -> 49"
+      }
+    }
   },
   "entries": [
     {
@@ -55,7 +72,7 @@
       "target_id": "red-button-repugnant",
       "target_locus": "medium",
       "target_anchor": "That is a metaphysical commitment, not an ethical argument",
-      "adversarial_move": "Grant every experimental stipulation; the recoil survives them. Existence as terminal value is staked, not smuggled: calling the stake 'a metaphysical commitment, not an ethical argument' labels it without refuting it, and foundational commitments are where justification terminates for both sides—'suffering is categorically bad' has identical epistemic standing. Any argument concluding that universal painless cessation is preferable carries premises less credible than the intuition it violates. The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering, which is the point at issue.",
+      "adversarial_move": "Grant every experimental stipulation; the recoil survives them. Existence as terminal value is staked, not smuggled: calling the stake 'a metaphysical commitment, not an ethical argument' labels it without refuting it, and foundational commitments are where justification terminates for both sides: 'suffering is categorically bad' has identical epistemic standing. Any argument concluding that universal painless cessation is preferable carries premises less credible than the intuition it violates. The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering, which is the point at issue.",
       "class": "d",
       "grounds": "The shipped text correctly reclassifies the recoil as an axiological stake; the staker is the coherent, reflexively stable dissenter the register sidecar's individuation note already names. He is answered arguendo in the asymmetry cluster and openly unbound there—registered bedrock, not a defect in this node's routing of the conflation.",
       "routing": {
@@ -135,7 +152,7 @@
       "target_id": "self-defeating",
       "target_locus": "long",
       "target_anchor": "requires only the development of sufficient technological capacity",
-      "adversarial_move": "The practical charge, at full strength, targets your own aside: realization 'requires only sufficient technological capacity'—a capacity whose actual development rides on a continuing, resourced, motivated civilization, which rides on continuing births. The view thus depends for its terminus on the ongoing occurrence of the act it declares impermissible: it cannot will its means without willing what it forbids, and cannot disown the means without surrendering its announced path. The heliocentrism defense is silent here; this is not propagation-as-truth but means-inconsistency, internal to the position's practical architecture.",
+      "adversarial_move": "The practical charge, at full strength, targets your own aside: realization 'requires only sufficient technological capacity', a capacity whose actual development rides on a continuing, resourced, motivated civilization, which rides on continuing births. The view thus depends for its terminus on the ongoing occurrence of the act it declares impermissible: it cannot will its means without willing what it forbids, and cannot disown the means without surrendering its announced path. The heliocentrism defense is silent here; this is not propagation-as-truth but means-inconsistency, internal to the position's practical architecture.",
       "class": "b",
       "grounds": "The shipped text's best reading cannot supply the fence, because the aside's function is reassurance about realization, which invites exactly this means-audit and concedes a dependence it never scopes. The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means (economy-population already ships the pattern for the care-labor case). Two sentences inside the node's identity meet it; the core category-error rebuttal is untouched.",
       "routing": {
@@ -158,7 +175,7 @@
       "target_id": "self-effacing-under-universalization",
       "target_locus": "long",
       "target_anchor": "Universal compliance is a norm's success condition",
-      "adversarial_move": "'Eradication protocols retire themselves'—and leave beneficiaries: the disease-free living are whom the retirement is for. Universal non-procreation's terminus leaves none. Success is teleological; a success-condition satisfied for no one is satisfaction only under an impersonal axiology on which subjectless states can rank better—precisely the asymmetry's most contested plank. The formal defense thus borrows the axiological credit it claims not to need: strip the impersonal-comparison reading and 'universal compliance is a norm's success' is bookkeeping, not vindication. The charge does not retreat to axiology; your answer already stands on it.",
+      "adversarial_move": "'Eradication protocols retire themselves', and leave beneficiaries: the disease-free living are whom the retirement is for. Universal non-procreation's terminus leaves none. Success is teleological; a success-condition satisfied for no one is satisfaction only under an impersonal axiology on which subjectless states can rank better, precisely the asymmetry's most contested plank. The formal defense thus borrows the axiological credit it claims not to need: strip the impersonal-comparison reading and 'universal compliance is a norm's success' is bookkeeping, not vindication. The charge does not retreat to axiology; your answer already stands on it.",
       "class": "d",
       "grounds": "The best reading survives the smuggling charge: compliance-success in the shipped text is deontic (the rule was kept), axiology-free, while end-state value is separately and explicitly routed. What the move then demands—a beneficiary for the terminus—is the axiological retreat the long pre-routes to the asymmetry cluster, where the impersonal-comparison form answers it (the asteroid that misses a lifeless planet) and where its contestedness is the corpus's openly registered residual. Same bedrock as the red-button Moorean entry; mechanism-adjacent cross-reference.",
       "routing": {
@@ -218,7 +235,7 @@
       "target_id": "heat-death-futility",
       "target_locus": "medium",
       "target_anchor": "to make the indifference of the universe your own",
-      "adversarial_move": "Take futility whole, not halved: if nothing matters sub specie aeternitatis, the disvalue of suffering is annulled with everything else, and 'how much suffering along the way' is a question with no normative remainder. The scale-locality reply shows suffering matters to its bearer—a psychological fact, not mattering simpliciter, and the prescription needs the latter. The stable quietist presses no objection; he exits: the case has no purchase on a stance that has stopped caring, including about answering it. Nothing in the shipped text binds him. It refuses his indifference; it does not refute it.",
+      "adversarial_move": "Take futility whole, not halved: if nothing matters sub specie aeternitatis, the disvalue of suffering is annulled with everything else, and 'how much suffering along the way' is a question with no normative remainder. The scale-locality reply shows suffering matters to its bearer: a psychological fact, not mattering simpliciter, and the prescription needs the latter. The stable quietist presses no objection; he exits: the case has no purchase on a stance that has stopped caring, including about answering it. Nothing in the shipped text binds him. It refuses his indifference; it does not refute it.",
       "class": "d",
       "grounds": "Refusal is the correct terminal posture toward reflexively stable bedrock, and the shipped grant-arguendo reading (per the register sidecar) claims nothing stronger. The quietist correspondingly does no work against the case: his annulment strips the pro-birth ledger identically, and the valence-reversal shipped at nihilism-label shows the exit licenses nothing, procreation included. Answered in full, unbound, registered.",
       "routing": {
@@ -259,7 +276,7 @@
       "target_id": "meta-ethical-pluralism",
       "target_locus": "medium",
       "target_anchor": "Negative utilitarianism merely refuses the tolerance",
-      "adversarial_move": "'No framework treats suffering as good or irrelevant'—granted, and inert: the shared premise is pro-tanto badness; the conclusion needs lexical priority. 'Merely refuses the tolerance' concedes the point, because the tolerance is the substantive content of the rival frameworks, and refusing it is the framework-choice under challenge, not its neutral endpoint. The pluralist who ranks autonomy or perfectionist goods above suffering-minimization accepts the convergence datum whole and rejects the conclusion with framework intact; asked 'what value justifies the imposition?', he names his value, and the exchange ends where it began: at an undischarged priority claim.",
+      "adversarial_move": "'No framework treats suffering as good or irrelevant'; granted, and inert: the shared premise is pro-tanto badness; the conclusion needs lexical priority. 'Merely refuses the tolerance' concedes the point, because the tolerance is the substantive content of the rival frameworks, and refusing it is the framework-choice under challenge, not its neutral endpoint. The pluralist who ranks autonomy or perfectionist goods above suffering-minimization accepts the convergence datum whole and rejects the conclusion with framework intact; asked 'what value justifies the imposition?', he names his value, and the exchange ends where it began: at an undischarged priority claim.",
       "class": "d",
       "grounds": "The shipped long's consent-asymmetry ground presses him hardest (the deontologist forced onto weighing terrain; prudence and justice against the wager) but does not bind him: he weighs, names his price, and stays coherent—the register sidecar's own adjudication. Pluralism granted whole still hands him no framework on which certain unconsented suffering is costless; what it leaves him is a stake, and stakes are bedrock, not defeats.",
       "routing": {
@@ -280,7 +297,7 @@
       "target_id": "meta-ethical-pluralism",
       "target_locus": "long",
       "target_anchor": "It simply is, and it is bad",
-      "adversarial_move": "The near-universality ground is descriptive; the conclusion is normative. An error theorist grants the aversion-datum whole—infants recoil, animals avoid—and denies the further fact: 'it is bad' adds a property no quantity of aversion entails. 'The one data point that least requires interpretation' is exactly wrong on this view: the datum is aversion; badness is the interpretation. Since the case's engine is categorical disvalue, a normative error theory dissolves it without ever disputing a framework-ranking—a challenge the node's ecumenism cannot reach, because the convergence argument convenes only cognitivist guests.",
+      "adversarial_move": "The near-universality ground is descriptive; the conclusion is normative. An error theorist grants the aversion-datum whole (infants recoil, animals avoid) and denies the further fact: 'it is bad' adds a property no quantity of aversion entails. 'The one data point that least requires interpretation' is exactly wrong on this view: the datum is aversion; badness is the interpretation. Since the case's engine is categorical disvalue, a normative error theory dissolves it without ever disputing a framework-ranking, a challenge the node's ecumenism cannot reach, because the convergence argument convenes only cognitivist guests.",
       "class": "d",
       "grounds": "Not met at full strength anywhere in-corpus, and not a new-node candidate: the nearest shipped machinery already carries the terminal answers (eliminativism's non-selective acid—an error theory voiding harm voids the natalist's goods and every permission, licensing nothing; nihilism-label's norm-without-cosmic-endorsement and valence reversal), so a dedicated node would fail G1 distinctness on answer-machinery. What the sweep surfaces is an unregistered bedrock: the reflexively stable error theorist, distinct from the cosmic quietist (he keeps caring; he reinterprets) and from the valence-eliminativist (he grants the phenomenology). Recommend appending to the honest-residuals register at terminal assembly.",
       "routing": {
@@ -322,7 +339,7 @@
       "target_id": "moral-particularism",
       "target_locus": "long",
       "target_anchor": "rigorous particularist analysis of procreation strengthens the antinatalist position",
-      "adversarial_move": "Grant that perception condemns the paradigm cases. The conclusion is 'always wrong,' and holism forbids precisely that jump: if consent's absence, involuntariness, and other-imposed purpose are wrong-making here, particularism denies they must be wrong-making everywhere—their valence, like any feature's, is context-hostage. Response three quietly re-installs invariant valences for exactly three features and calls the result particularist analysis. A birth into foreseeable overwhelming flourishing is a case; attentive perception may permit it; nothing in Dancy licenses closure over every possible case. The universal verdict is theory-shaped, and not available on the ground you chose to fight on.",
+      "adversarial_move": "Grant that perception condemns the paradigm cases. The conclusion is 'always wrong,' and holism forbids precisely that jump: if consent's absence, involuntariness, and other-imposed purpose are wrong-making here, particularism denies they must be wrong-making everywhere; their valence, like any feature's, is context-hostage. Response three quietly re-installs invariant valences for exactly three features and calls the result particularist analysis. A birth into foreseeable overwhelming flourishing is a case; attentive perception may permit it; nothing in Dancy licenses closure over every possible case. The universal verdict is theory-shaped, and not available on the ground you chose to fight on.",
       "class": "d",
       "grounds": "At type-level best reading the sharpening claim survives: the creation context-type is individuated by the absence of every standard valence-flipper, so no invariance premise is smuggled—the type does the work. But the anti-theorist who refuses type-closure as such is unbound by construction, and his refusal is symmetrical: it voids the natalist default (shipped response one, the double-edged dissolution) and strips his own flourishing-birth counter-verdict of assertoric force. Coherent, answered arguendo, doing no work—the sidecar's registered survivor.",
       "routing": {
@@ -343,7 +360,7 @@
       "target_id": "moral-particularism",
       "target_locus": "long",
       "target_anchor": "in emergency medicine or infant care it may be overridden",
-      "adversarial_move": "The text's own concession—consent 'may be overridden' in emergency medicine or infant care—describes contexts where consent is impossible and a guardian judges. Procreation is that context-type's limit case: consent impossible in principle, guardian deciding. The valence of consent-absence has flipped in your granted neighbors; name the difference-maker.",
+      "adversarial_move": "The text's own concession, consent 'may be overridden' in emergency medicine or infant care, describes contexts where consent is impossible and a guardian judges. Procreation is that context-type's limit case: consent impossible in principle, guardian deciding. The valence of consent-absence has flipped in your granted neighbors; name the difference-maker.",
       "class": "a",
       "grounds": "Met, doubly, in shipped prose: consent-incoherent supplies the difference-maker (presumed consent is licensed by harm-of-inaction to an existing patient with interests; creation has no patient and no harm in refraining), and contractualism-scanlon generalizes it (hypothetical consent legitimates only where refusal also imposes on an existing subject; creation is the unique case where it does not). The override-license is patient-interest-grounded and lapses without a patient.",
       "routing": {

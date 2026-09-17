@@ -3,11 +3,34 @@
     "source_corpus": "efilist_argument_library_v4_0_0.json",
     "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
     "class_counts": {
-      "d": 3,
+      "d": 5,
       "b": 5,
-      "a": 8
+      "a": 6
     },
-    "coverage_distinct_ids": 15
+    "coverage_distinct_ids": 15,
+    "amended": {
+      "at": "K338 (2026-09-17)",
+      "ratified_by": "Josiah",
+      "ruling": "adversarial_map_assembly_rulings_v0_1.json, decision D5",
+      "the_bar": "K224 BARS routing an (a) into bradley-no-subject#long FOR A COMPARATIVE-HARM MOVE. It is a prohibition, not a licence: bradley answers such moves by ASSERTING non-comparative wronging, which is unsettled bedrock (HR-05), so the route treats a bedrock commitment as a settled result. K229 scopes the prohibition to comparative-harm moves. B2 applies it explicitly in its own grounds text; B1 predates it.",
+      "reclassified": {
+        "procreative-liberty": "(a) -> (d) at HR-05",
+        "non-identity-problem": "(a) -> (d) at HR-05"
+      },
+      "attested": {
+        "consent-incoherent": "[K229-not-comparative]",
+        "hedonic-contrast": "[K230-crossref-not-load-bearing]"
+      },
+      "route_hygiene": {
+        "free-will-defense": "inert bradley leg dropped; stands as (a) on consent-incoherent#long alone"
+      },
+      "class_counts_before": {
+        "a": 8,
+        "b": 5,
+        "d": 3
+      },
+      "internal_inconsistency_this_resolves": "B1 carries a (b) at bradley-no-subject#long whose grounds read 'presupposes non-comparative harm, which the node asserts via analogy rather than argues', and the same fragment then used that node as an (a) destination four times. Registering a node's defect and spending the node as an answer are different entries, and nothing cross-checked them."
+    }
   },
   "entries": [
     {
@@ -102,11 +125,10 @@
       "target_anchor": "Free will does not mitigate the proxy gamble",
       "adversarial_move": "You lean on Libet to deny libertarian freedom, then condemn the parent as a gambler who could have refrained. But if determinism dissolves the child's authorship, it dissolves the parent's too; the procreative act was as unchosen as the existence it imposes. You cannot spend hard determinism to strip the child's agency while banking robust responsibility for the parent.",
       "class": "a",
-      "grounds": "Met in-corpus. The antinatalist wrong is act-structural, not agent-libertarian: it is constituted by the conditions of a creation that foreseeably imposes unconsented harm, and this holds whether or not the parent could have done otherwise in the libertarian sense. Bradley's wronging-by-creation locates the wrong in the act's conditions; consent-incoherent grounds restraint on the act-structure, not the imposer's metaphysical freedom. The tu-quoque leaves the consent spine untouched.",
+      "grounds": "The bradley leg is dropped at K338: the move is a determinism tu quoque about the parent's authorship, not a worse-off comparison, so the K224 bar does not bite, but the leg did no work either. The grounds rest on consent-incoherent#long for act-structure, and the entry stands as (a) on that single destination.",
       "routing": {
         "answered_by": [
-          "consent-incoherent#long",
-          "bradley-no-subject#long"
+          "consent-incoherent#long"
         ]
       },
       "status": "mapped",
@@ -121,12 +143,14 @@
       "target_locus": "long",
       "target_anchor": "it does not cause harm to others",
       "adversarial_move": "Your bound is Mill: liberty ends where it harms others. But harm to others needs an identifiable party made worse-off, and non-identity denies one; the child had no better counterfactual. So either you keep Mill and non-identity bites, or you go impersonal to escape non-identity and forfeit Mill's person-affecting Harm Principle, which then supplies no bound at all.",
-      "class": "a",
-      "grounds": "Met in-corpus. Bradley supplies the third option the dilemma omits: a person-affecting bearer, the actual future person who will exist and bear the harm, whose wronging is constituted by the creation itself, not by a worse-off comparison. That bearer satisfies Mill's other and is immune to non-identity, since the argument never relies on a would-have-been baseline. The Harm Principle keeps its relatum without going impersonal.",
+      "class": "d",
+      "grounds": "The move is a comparative-harm move in its own words: harm to others needs an identifiable party made worse-off, and the child had no better counterfactual. K224 BARS routing such a move into bradley-no-subject#long, because bradley's answer is that the actual future person is wronged by the creation that constitutes them, a harm requiring no worse-off comparison, which is the exact proposition the move disputes. Bradley asserts non-comparative wronging via the poisoning analogy; he does not establish it, and B1's own (b) at that node says so. So the dilemma is not escaped by a third option, it is relocated to bedrock. (a) withdrawn at K338 on Josiah's ratification of the K337 rulings. (d): terminus is comparative-vs-non-comparative harm, already registered at harman-benign-creation in Phase B2, not novel.",
       "routing": {
-        "answered_by": [
-          "bradley-no-subject#long"
-        ]
+        "residue": {
+          "bedrock_name": "comparative-vs-non-comparative-harm: can creation wrong a person with no worse-off baseline",
+          "terminus_routing": "harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar",
+          "novel": false
+        }
       },
       "status": "mapped",
       "provenance": {
@@ -181,7 +205,7 @@
       "target_anchor": "presumed consent is valid only when inaction would cause greater harm",
       "adversarial_move": "Your medical analogy is that when consent is impossible the default is restraint. But medical restraint is grounded in the existing patient's interests, which restraint protects. For the never-existent there is no interest-bearer whom restraint serves; the non-existent have no needs and no welfare. Strip the subject and the consent norm yields not prohibition but silence.",
       "class": "a",
-      "grounds": "Met in-corpus. Bradley answers the no-subject worry directly: the relatum the consent argument needs is not a non-existent interest-bearer before creation but the actual future person who will exist and bear the harm, wronged by the very creation that constitutes them. Restraint is grounded not in pre-creation interests but in foreseeable post-creation harm to that bearer, so the norm delivers prohibition, not silence.",
+      "grounds": "[K229-not-comparative] The move is the no-relatum move (there is no interest-bearer whom restraint serves), not a worse-off comparison, so the K224 bar does not bite and the bradley route stands. Noted: bradley's answer turns on subject-existence rather than on a baseline, though it is carried by the poisoning parallel, which B1's own (b) at bradley-no-subject#long and B2's at incommensurability both find comparative-smuggling. This (a) survives the bar and inherits that separately-registered (b).",
       "routing": {
         "answered_by": [
           "bradley-no-subject#long"
@@ -223,7 +247,7 @@
       "target_anchor": "it would still experience positive states",
       "adversarial_move": "Push past the metaphysical-impossibility strawman to valence-structuralism: pleasure just is a positive departure from a baseline, so a being with no capacity for negative valence has no baseline to depart from, and its positive states may be a flat tone, not pleasure. Your claim that the engineered being would still experience positive states is exactly what is in doubt.",
       "class": "a",
-      "grounds": "Met in-corpus. The phenomenology of the engineered being is moot for the conclusion: transhumanist establishes that even a guaranteed-blissful being generates no benefit-side reason to create, and benatar establishes the never-created are deprived of nothing. Whether the positive-only being is blissful or experientially null, the asymmetry is untouched and no reason-to-create is generated. The structuralist worry bites the node's incidental empirical assertion, not the antinatalist conclusion.",
+      "grounds": "[K230-crossref-not-load-bearing] The broken cross-ref is real and already registered as B1's (b) at transhumanist-objection#long: that node says the terminus pressure is carried at bradley-no-subject, and bradley disclaims pro-mortalism, so the destination declines the delivery. But the defect sits in the node's extinction-terminus paragraph, and this (a) leans on the asymmetry paragraph, which is sound and self-contained. Adjudicated, not load-bearing.",
       "routing": {
         "answered_by": [
           "transhumanist-objection#long",
@@ -285,12 +309,14 @@
       "target_locus": "long",
       "target_anchor": "You do not need to name the victim to condemn the system",
       "adversarial_move": "Going impersonal does not refute the non-identity problem; it concedes its point, that no specific child is harmed, and rebuilds the case on contested impersonal axiology that breeds its own population paradoxes. You did not solve the equation, you switched textbooks to one where the equation does not appear, forfeiting the person-affecting harm-intuitions that made procreation feel wrong.",
-      "class": "a",
-      "grounds": "Met in-corpus. Bradley supplies a person-affecting route that survives non-identity without going impersonal: the actual future person is wronged by the creation that constitutes them, a harm requiring no worse-off comparison. So the corpus is not forced onto impersonal axiology to answer non-identity; the person-affecting spine dodges it directly. The changed-textbooks charge lands on this node's impersonal presentation, not on the position, which bradley secures on person-affecting ground.",
+      "class": "d",
+      "grounds": "The likeliest breach, as the succession brief predicted, and for the reason it gave: this node IS the no-worse-off-baseline problem, so the move is comparative-harm by construction. The former grounds answered it with a harm requiring no worse-off comparison, which is what the move disputes; routing there is circular. Nothing in-corpus establishes non-comparative wronging, and the changed-textbooks charge therefore lands on the position, not merely on this node's impersonal presentation. (a) withdrawn at K338 on Josiah's ratification of the K337 rulings. (d): terminus is comparative-vs-non-comparative harm, already registered at harman-benign-creation in Phase B2, not novel.",
       "routing": {
-        "answered_by": [
-          "bradley-no-subject#long"
-        ]
+        "residue": {
+          "bedrock_name": "comparative-vs-non-comparative-harm: can creation wrong a person with no worse-off baseline",
+          "terminus_routing": "harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar",
+          "novel": false
+        }
       },
       "status": "mapped",
       "provenance": {

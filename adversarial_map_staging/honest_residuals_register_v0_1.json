@@ -9,12 +9,12 @@
       {
         "phase": "A",
         "file": "adv_map_phaseA_v0_1.json",
-        "md5": "1c4c2f1c5bfc4247e47304b1fb5f5689"
+        "md5": "dadcd3758efa12c7cb40c168235413e7"
       },
       {
         "phase": "B1",
         "file": "adv_map_phaseB1_v0_1.json",
-        "md5": "04a6069fb982492cc7c5603558973366"
+        "md5": "34a12748fb5300f580d44698a3000f16"
       },
       {
         "phase": "B2",
@@ -37,11 +37,11 @@
         "md5": "6b57e78b1fa36bb14e384b7260aa0fec"
       }
     ],
-    "residue_entries": 30,
+    "residue_entries": 32,
     "bedrocks": 13,
     "distinct_shipped_bedrock_names": 24,
-    "pre_map_registrations": 8,
-    "this_program_registrations": 5,
+    "pre_map_registrations": 9,
+    "this_program_registrations": 4,
     "adjacency": {
       "candidates_derived": 5,
       "declared_relations": 11,
@@ -66,9 +66,14 @@
   },
   "audit": [
     {
+      "severity": "novel-flag-collision",
+      "bedrock_id": "HR-05",
+      "detail": "HR-05 was registered before this program (K224:carry-forward-bar) but 1 fragment entry/ies flag it novel=true: [('B2', 'harman-benign-creation')]. A bedrock has one birth certificate."
+    },
+    {
       "severity": "dangling-registration-pointer",
-      "bedrock_id": "HR-03",
-      "detail": "HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 11 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked."
+      "bedrock_id": "HR-05",
+      "detail": "HR-05 cites N2, which is not present in canon's terminal_stability_marker.honest_residuals. 5 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked."
     }
   ],
   "bedrocks": [
@@ -169,7 +174,7 @@
       "name": "Impersonal vs person-affecting axiology",
       "alias": "K224 bedrock 1",
       "gloss": "Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus's universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.",
-      "registered_in": "K224:bedrock-1",
+      "registered_in": "canon:terminal_stability_marker.honest_residuals.impersonal_vs_person_affecting",
       "birth_certificate": null,
       "tributary_count": 11,
       "facet_count": 6,
@@ -357,13 +362,13 @@
       "name": "Comparative vs non-comparative harm",
       "alias": "N2",
       "gloss": "Whether creation can wrong a being for whom no worse-off baseline exists.",
-      "registered_in": "this-program",
+      "registered_in": "K224:carry-forward-bar",
       "birth_certificate": {
         "phase": "B2",
         "node": "harman-benign-creation",
         "locus": "long"
       },
-      "tributary_count": 3,
+      "tributary_count": 5,
       "facet_count": 1,
       "relations": [
         {
@@ -376,6 +381,22 @@
         {
           "facet_id": "no-worse-off-baseline",
           "tributaries": [
+            {
+              "phase": "B1",
+              "node": "procreative-liberty",
+              "locus": "long",
+              "anchor": "it does not cause harm to others",
+              "novel": false,
+              "terminus_routing": "harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar"
+            },
+            {
+              "phase": "B1",
+              "node": "non-identity-problem",
+              "locus": "long",
+              "anchor": "You do not need to name the victim to condemn the system",
+              "novel": false,
+              "terminus_routing": "harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar"
+            },
             {
               "phase": "B2",
               "node": "harman-benign-creation",
