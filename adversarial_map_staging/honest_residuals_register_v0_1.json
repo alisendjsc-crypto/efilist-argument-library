@@ -1,0 +1,597 @@
+{
+  "meta": {
+    "artifact": "honest_residuals_register_v0_1.json",
+    "status": "WORKING -- not terminal. Phase E (T1, n=13) has not been authored; this register is an INPUT to that authoring, not only an output of the terminal fold.",
+    "purpose": "Consolidate every (d) honest-residue the Adversarial Map has produced into a bedrock namespace, so that a phase author can decide novel: true|false against a list instead of against memory of three phases back.",
+    "source_corpus": "efilist_argument_library_v4_0_0.json",
+    "source_corpus_md5": "6ee1f6f31e0f012db0d58cae4f912fcb",
+    "source_fragments": [
+      {
+        "phase": "A",
+        "file": "adv_map_phaseA_v0_1.json",
+        "md5": "1c4c2f1c5bfc4247e47304b1fb5f5689"
+      },
+      {
+        "phase": "B1",
+        "file": "adv_map_phaseB1_v0_1.json",
+        "md5": "04a6069fb982492cc7c5603558973366"
+      },
+      {
+        "phase": "B2",
+        "file": "adv_map_phaseB2_v0_1.json",
+        "md5": "b55e2ea8e76f18c5efa5eb084a58076b"
+      },
+      {
+        "phase": "C",
+        "file": "adv_map_phaseC_v0_1.json",
+        "md5": "40b501f7fcbbf28c3e40f65e3d01e63d"
+      },
+      {
+        "phase": "E",
+        "file": "adv_map_phaseE_v0_1.json",
+        "md5": "6b57e78b1fa36bb14e384b7260aa0fec"
+      }
+    ],
+    "residue_entries": 26,
+    "bedrocks": 12,
+    "distinct_shipped_bedrock_names": 22,
+    "pre_map_registrations": 8,
+    "this_program_registrations": 4,
+    "adjacency": {
+      "candidates_derived": 4,
+      "declared_relations": 9,
+      "detected_and_declared": [
+        "HR-03+HR-05",
+        "HR-03+HR-06",
+        "HR-05+HR-06",
+        "HR-07+HR-09"
+      ],
+      "declared_but_undetected": [
+        "HR-01+HR-04",
+        "HR-01+HR-08",
+        "HR-01+HR-10",
+        "HR-02+HR-03",
+        "HR-04+HR-07"
+      ],
+      "note": "Adjacency candidates are derived from two signals: a terminus_routing naming another bedrock, and a corpus node feeding two bedrocks. The signals cut 66 possible pairs to a handful, but they are NOT complete: HR-04+HR-07 is a real dependency that neither signal fires on, found by hand during the D3 triage. So the signals are a floor on what must be adjudicated, never a ceiling, and an empty relations list is an assertion of independence rather than a default."
+    },
+    "fences": "LIBRARY-INTERNAL. No corpus, ledger, index or combined byte moves from this artifact. Do not publish until the map is terminal."
+  },
+  "audit": [
+    {
+      "severity": "dangling-registration-pointer",
+      "bedrock_id": "HR-03",
+      "detail": "HR-03 cites K224 bedrock 1, which is not present in canon's terminal_stability_marker.honest_residuals. 10 tributaries route to a registration that exists only in a session receipt. Fold it into canon or the pointer cannot be checked."
+    }
+  ],
+  "bedrocks": [
+    {
+      "bedrock_id": "HR-01",
+      "name": "Global normative / epistemic skepticism",
+      "alias": null,
+      "gloss": "Skepticism deep enough to dissolve all warrant dissolves the harm premise and the procreative license alike. The corpus defeats solipsism only as a LICENSE, never as metaphysics.",
+      "registered_in": "canon:terminal_stability_marker.honest_residuals.solipsism_global_skeptic",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [],
+      "facets": [
+        {
+          "facet_id": "dissolution-of-all-warrant",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "solipsism",
+              "locus": "long",
+              "anchor": "the dialectic does not resolve in his favor",
+              "novel": false,
+              "terminus_routing": "already-acknowledged project residual (solipsism dissolves-not-defeats the global skeptic); the selective skeptic, the node's actual target, is decisively defeated; SECONDARY regen-triage item (not this map class): 'creation loses by default to the refraining that needs none' overclaims under global skepticism (act/omission default is itself voided), harmonize to the node's own 'mutual silence' verdict (axis s, minor); CONVERGENT with eliminativism movement-two overclaim, cross-node act/omission-default-under-total-skepticism pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "alias": null,
+      "gloss": "The positive-states rebuttals run Benatar's asymmetry as the load-bearing spine and grant the hedonic premise arguendo. Reject the asymmetry and the spine goes with it. Ceiling: high-B by design.",
+      "registered_in": "canon:terminal_stability_marker.honest_residuals.asymmetry_dependent_amplifiers",
+      "birth_certificate": null,
+      "tributary_count": 2,
+      "facet_count": 2,
+      "relations": [
+        {
+          "kind": "depends_on",
+          "to": "HR-03",
+          "note": "lives on HR-03's IMPERSONAL horn: the asymmetry is an impersonal-value claim, so the amplifier cluster is contingent on that horn being taken"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "impersonal-comparison-reading",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "self-effacing-under-universalization",
+              "locus": "long",
+              "anchor": "Universal compliance is a norm's success condition",
+              "novel": false,
+              "terminus_routing": "benatar-asymmetry-attack#medium; corpus honest-residuals register (asymmetry-contingent amplifiers); shipped long's own exit clause"
+            }
+          ]
+        },
+        {
+          "facet_id": "intrinsic-value-of-existence",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "red-button-repugnant",
+              "locus": "medium",
+              "anchor": "That is a metaphysical commitment, not an ethical argument",
+              "novel": false,
+              "terminus_routing": "benatar-asymmetry-attack#medium (comparison-vs-deprivation form); flagship_t5_register_dispositions_v0_1 individuation note; sophisticate archetype variant routes the retreat in play"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-03",
+      "name": "Impersonal vs person-affecting axiology",
+      "alias": "K224 bedrock 1",
+      "gloss": "Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus's universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.",
+      "registered_in": "K224:bedrock-1",
+      "birth_certificate": null,
+      "tributary_count": 10,
+      "facet_count": 6,
+      "relations": [],
+      "facets": [
+        {
+          "facet_id": "absence-asymmetry",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "epistemic-humility",
+              "locus": "long",
+              "anchor": "The worst case of not creating is nothing",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1); secondary leg (precautionary analogies smuggle a pre-existing baseline) touches comparative-vs-non-comparative-harm (N2)"
+            }
+          ]
+        },
+        {
+          "facet_id": "aggregation-vs-iteration",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "population-ethics-paradoxes",
+              "locus": "long",
+              "anchor": "This is iteration, not aggregation",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1)"
+            }
+          ]
+        },
+        {
+          "facet_id": "metaethical-locus",
+          "tributaries": [
+            {
+              "phase": "B1",
+              "node": "benatar-asymmetry-attack",
+              "locus": "long",
+              "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+              "novel": false,
+              "terminus_routing": "node-registered contraction to the threshold-conditional; cross-refs bradley-no-subject (person-affecting route) and non-identity-problem"
+            }
+          ]
+        },
+        {
+          "facet_id": "relational-holist-seat-of-standing",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "care-ethics",
+              "locus": "long",
+              "anchor": "Care ethics evaluates the relationship after instantiation",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1); consolidation pairing with indigenous-philosophy on this facet; secondary legs, manufactured dependency routes to bedrock-III (N4), infection parallel smuggles a comparative-harm baseline (N2)"
+            },
+            {
+              "phase": "B2",
+              "node": "indigenous-philosophy",
+              "locus": "long",
+              "anchor": "a node's suffering a constitutive, non-vetoing part of a good",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1); node self-identifies this residual as a tie, corpus hygiene confirmed; consolidation pairing with care-ethics"
+            }
+          ]
+        },
+        {
+          "facet_id": "unfacetted",
+          "tributaries": [
+            {
+              "phase": "C",
+              "node": "extinction-culture",
+              "locus": "long",
+              "anchor": "The absence of culture is not bad for the non-existent",
+              "novel": false,
+              "terminus_routing": "already-surfaced K224 bedrock 1, facet value-requires-a-valuer / standpoint-dependence; route as registered, not a new bedrock"
+            },
+            {
+              "phase": "C",
+              "node": "slippery-slope-eugenics",
+              "locus": "short",
+              "anchor": "These positions are structurally opposite",
+              "novel": false,
+              "terminus_routing": "already-surfaced K224 bedrock 1; group-continuity / collective-value facet (sibling to extinction-culture's cultural-artifact facet); route as registered"
+            },
+            {
+              "phase": "C",
+              "node": "marxist-materialist",
+              "locus": "long",
+              "anchor": "The EFIList critique operates at the level of ontology",
+              "novel": false,
+              "terminus_routing": "already-surfaced K224 bedrock 1, relational-holist / seat-of-standing facet (consent-bearing individual as historically-contingent, not standpoint-independent); route as registered"
+            }
+          ]
+        },
+        {
+          "facet_id": "value-requires-a-valuer",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "performative-contradiction",
+              "locus": "long",
+              "anchor": "The argument proves too much",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1); same family as the N3 aggregation facet"
+            },
+            {
+              "phase": "B2",
+              "node": "pragmatist-objection",
+              "locus": "long",
+              "anchor": "for each being not created, is a concrete practical outcome",
+              "novel": false,
+              "terminus_routing": "already-registered (K224 bedrock 1); same facet as performative-contradiction (A+B); secondary/logged: level-one placebo dilemma strawmans sophisticated pragmatism, minor quality point"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-04",
+      "name": "Moral realism / is-ought",
+      "alias": "N1",
+      "gloss": "Whether suffering's disvalue is stance-independent. The corpus refuses to derive an ought from a fact, then requires an ought it does not derive either.",
+      "registered_in": "this-program",
+      "birth_certificate": {
+        "phase": "B2",
+        "node": "phenomenological-existentialism",
+        "locus": "long"
+      },
+      "tributary_count": 3,
+      "facet_count": 2,
+      "relations": [
+        {
+          "kind": "sibling_of",
+          "to": "HR-01",
+          "note": "both dissolve verdicts, HR-01 by voiding all warrant and HR-04 by denying the ought is derivable; neither entails the other"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "conserved-property-under-redescription",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "eliminativism",
+              "locus": "long",
+              "anchor": "The property is conserved under redescription; only the label moves",
+              "novel": false,
+              "terminus_routing": "already-surfaced (N1), convergent with phenomenological-existentialism (A+B entry 1); N1 triage-vs-meta-ethical-pluralism#long carries over; SECONDARY regen-triage item (not this map class): movement-two closing 'barren ledger hands the antinatalist everything' overclaims, global nihilism is symmetric and neutralizes the pro-natal use without delivering the antinatalist conclusion (axis s, minor)"
+            }
+          ]
+        },
+        {
+          "facet_id": "stance-independence-of-disvalue",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "phenomenological-existentialism",
+              "locus": "long",
+              "anchor": "this is precisely the question at issue, not its answer",
+              "novel": true,
+              "terminus_routing": "TRIAGE vs meta-ethical-pluralism#long for possible collapse to already-registered; T5 not in B2 scope, unverified"
+            },
+            {
+              "phase": "E",
+              "node": "natural-reproduce",
+              "locus": "diagnosis",
+              "anchor": "'Natural' has zero moral content.",
+              "novel": false,
+              "terminus_routing": "phenomenological-existentialism (Phase B2 registration, N1); honest-residuals register HR-04, facet stance-independence-of-disvalue; third surface on the same floor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-05",
+      "name": "Comparative vs non-comparative harm",
+      "alias": "N2",
+      "gloss": "Whether creation can wrong a being for whom no worse-off baseline exists.",
+      "registered_in": "this-program",
+      "birth_certificate": {
+        "phase": "B2",
+        "node": "harman-benign-creation",
+        "locus": "long"
+      },
+      "tributary_count": 3,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "depends_on",
+          "to": "HR-03",
+          "note": "lives on HR-03's PERSON-AFFECTING horn: go impersonal and the worse-off-baseline question does not arise, because no person needs a baseline"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "no-worse-off-baseline",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "harman-benign-creation",
+              "locus": "long",
+              "anchor": "was subjected to that outcome by another person's probabilistic optimism",
+              "novel": true,
+              "terminus_routing": "cross-ref pending K224 bradley-no-subject#long comparative-branch regen; triage novel-status vs impersonal-vs-person-affecting"
+            },
+            {
+              "phase": "B2",
+              "node": "incommensurability",
+              "locus": "long",
+              "anchor": "The ethical evaluation is act-directed, not state-comparative",
+              "novel": false,
+              "terminus_routing": "already-surfaced (N2); do NOT route (a) into bradley-no-subject per K224 carry-forward; this node hits both N2 and the consent/bedrock-III facet (N4), reconfirming the N2 + N4 consolidation candidate"
+            },
+            {
+              "phase": "E",
+              "node": "life-gift",
+              "locus": "long",
+              "anchor": "legitimate unsolicited benefit requires an antecedent recipient with a stake",
+              "novel": false,
+              "terminus_routing": "harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; first T1 surface on this floor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-06",
+      "name": "Imposition wrong independent of harm",
+      "alias": "N4 / bedrock-III",
+      "gloss": "Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says.",
+      "registered_in": "this-program",
+      "birth_certificate": {
+        "phase": "B2",
+        "node": "boonin-critique",
+        "locus": "short"
+      },
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "depends_on",
+          "to": "HR-03",
+          "note": "same person-affecting horn as HR-05: wronging without harm still requires a subject to be wronged"
+        },
+        {
+          "kind": "stronger_than",
+          "to": "HR-05",
+          "note": "D4 ruling: HR-06 survives HR-05's resolution in either direction, since a wrong independent of harm needs no comparison to establish"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "unrefusable-condition-on-non-antecedent-subject",
+          "tributaries": [
+            {
+              "phase": "B2",
+              "node": "boonin-critique",
+              "locus": "short",
+              "anchor": "Defeating one column does not collapse a building with four foundations",
+              "novel": true,
+              "terminus_routing": "cross-ref B1 bedrock-III intake; adjacent to comparative-vs-non-comparative-harm, candidate for consolidation on triage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-07",
+      "name": "Normative error theory",
+      "alias": null,
+      "gloss": "Categorical bindingness denied while the aversion datum is granted. Nothing in the corpus compels an error theorist who concedes that suffering is aversive.",
+      "registered_in": "this-program",
+      "birth_certificate": {
+        "phase": "A",
+        "node": "meta-ethical-pluralism",
+        "locus": "long"
+      },
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "depends_on",
+          "to": "HR-04",
+          "note": "D3 finding: error theory is a stance WITHIN the HR-04 dispute that additionally denies categorical bindingness, a further question surviving either answer to HR-04. NOT detected by the adjacency signals; found by hand"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "categorical-bindingness-denial",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "meta-ethical-pluralism",
+              "locus": "long",
+              "anchor": "It simply is, and it is bad",
+              "novel": true,
+              "terminus_routing": "nearest shipped seats: nihilism-label#long, eliminativism#medium; RECOMMEND append to honest-residuals register at terminal assembly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-08",
+      "name": "Sub specie aeternitatis quietism",
+      "alias": null,
+      "gloss": "The axiological-nihilist exit taken at the cosmic register: no verdict survives the view from nowhere, the corpus's included.",
+      "registered_in": "flagship_t5_register_dispositions_v0_1:heat-death-futility(defanged)",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "sibling_of",
+          "to": "HR-01",
+          "note": "verdict dissolution at the cosmic register rather than by voiding warrant"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "cosmic-register-exit",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "heat-death-futility",
+              "locus": "medium",
+              "anchor": "to make the indifference of the universe your own",
+              "novel": false,
+              "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged; persistence criterion); nihilism-label#long (metaphysical/axiological split; valence reversal)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-09",
+      "name": "Tolerance-weighting pluralism",
+      "alias": null,
+      "gloss": "A lexical priority placed above suffering-minimization. The corpus asserts the priority rather than deriving it.",
+      "registered_in": "flagship_t5_register_dispositions_v0_1:meta-ethical-pluralism(defanged)",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "independent_of",
+          "to": "HR-07",
+          "note": "co-located at meta-ethical-pluralism, which is why the shared-node signal fires, but the claims are distinct and near-opposed: HR-07 denies that anything binds categorically, HR-09 asserts a competing value with lexical priority. Sharing a tributary node is a fact about where they surfaced, not about what they claim"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "lexical-priority-above-suffering-minimization",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "meta-ethical-pluralism",
+              "locus": "medium",
+              "anchor": "Negative utilitarianism merely refuses the tolerance",
+              "novel": false,
+              "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-10",
+      "name": "Radical holism / anti-theory",
+      "alias": null,
+      "gloss": "Refusal of invariant verdicts as such. Dissolves the corpus's universal conclusion and the objector's counter-verdict symmetrically.",
+      "registered_in": "flagship_t5_register_dispositions_v0_1:moral-particularism(defanged)",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [
+        {
+          "kind": "sibling_of",
+          "to": "HR-01",
+          "note": "verdict dissolution by refusing invariant verdicts rather than by voiding warrant"
+        }
+      ],
+      "facets": [
+        {
+          "facet_id": "refusal-of-invariant-verdicts",
+          "tributaries": [
+            {
+              "phase": "A",
+              "node": "moral-particularism",
+              "locus": "long",
+              "anchor": "rigorous particularist analysis of procreation strengthens the antinatalist position",
+              "novel": false,
+              "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged; persistence criterion); moral-particularism#long response one (symmetric dissolution)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-11",
+      "name": "Epistemic authority of the anti-extinction intuition",
+      "alias": null,
+      "gloss": "Moorean datum versus its evolutionary debunking. The node registers the dispute rather than settling it.",
+      "registered_in": "node:negative-util-aggregation(evolved-attachment-not-truth-tracking)",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [],
+      "facets": [
+        {
+          "facet_id": "moorean-datum-vs-debunking",
+          "tributaries": [
+            {
+              "phase": "B1",
+              "node": "negative-util-aggregation",
+              "locus": "long",
+              "anchor": "a cost is not a contradiction",
+              "novel": false,
+              "terminus_routing": "node-registered evolved-attachment-not-truth-tracking; cross-ref red-button-repugnant Moorean retreat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bedrock_id": "HR-12",
+      "name": "Ex ante vs ex post locus of contractualist justification",
+      "alias": null,
+      "gloss": "Prospects or outcomes as the justificand, type-standpoints as bearers. A live internal dispute the node registers.",
+      "registered_in": "node:contractualism-scanlon(live-internal-dispute)",
+      "birth_certificate": null,
+      "tributary_count": 1,
+      "facet_count": 1,
+      "relations": [],
+      "facets": [
+        {
+          "facet_id": "ex-ante-vs-ex-post-justificand",
+          "tributaries": [
+            {
+              "phase": "B1",
+              "node": "contractualism-scanlon",
+              "locus": "long",
+              "anchor": "ex-ante versus ex-post rejection is a live internal dispute",
+              "novel": false,
+              "terminus_routing": "node-registered live-internal-dispute; cross-ref consent-incoherent, harman-benign-creation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

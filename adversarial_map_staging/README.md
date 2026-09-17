@@ -39,6 +39,16 @@ Home of the adversarial map program: for each of the 82 shipped v4.0.0 nodes, th
 
 Advisories exist so a constraint ratified *after* an artifact shipped stays loudly visible without retroactively failing four ratified fragments. `--assembly` is the one moment the debt must be paid rather than displayed.
 
+- `adv_map_phaseE_v0_1.json` — **Phase E, T1, n=13. The tier-descending sweep is complete: every one of the 82 nodes now carries at least one entry.** 5a / 5b / 1c / 2d. Built by `build_phaseE.py`, which verifies every anchor verbatim at its named locus, every word band, the entry cap, id×anchor uniqueness, ASCII purity and the absence of standalone dash tokens *before* writing, and refuses to write on any failure. First fragment to carry `source_corpus_objections_md5`.
+
+  **It carries the program's first (c).** Zero (c) across the previous 69 nodes had two readings — the corpus is individuation-complete, or the bar is too high. It was the bar, and the cause is procedural: every phase adjudicated node-against-node, which leaves a *corpus-level* objection nowhere to land. `diagnosis-not-refutation` (tier guess 5, presupposition-inversion) is the objection that the rebuttals commit the genetic fallacy they convict the objector of. Measured before it was ruled: 26 of 82 nodes deploy diagnostic vocabulary inside their responses; the rule forbidding it appears in exactly 2 (`just-depressed#long`, `life-gift#long`); T5 holds nothing method-level.
+
+- `honest_residuals_register_v0_1.json` / `.md` — the (d) consolidation the design doc schedules for terminal assembly. **It is an INPUT to phase authoring, not only an output.** Every (d) carries a `novel` boolean; with no register a phase author decides it from memory of preceding phases, which is a recall test rather than a discipline, and it has been failed once (the succession brief records N1 as first registered in Phase D; the shipped B2 fragment carries its birth certificate at `phenomenological-existentialism` with `novel: true`, and B2 precedes D). 26 (d) entries, **22 distinct free-text bedrock names collapsing to 12 actual bedrocks**. Phase E was authored against it and both its (d) entries were decided by lookup, introducing no new birth certificate.
+
+  Two audits. The **birth-certificate** check refuses to write when a bedrock carries more than one `novel: true` — under-individuation. The **adjacency** check derives candidate pairs from two signals (a `terminus_routing` naming another bedrock; a corpus node feeding two bedrocks), cutting 66 possible pairs to 4, and refuses to write while any detected pair goes undeclared — so an empty `relations` list is an assertion of independence, never a default. The signals are a **floor on what must be adjudicated, never a ceiling**: `HR-04`+`HR-07` is a real dependency neither fires on, found by hand.
+
+- `build_register.py` / `render_register.py` — run from this directory: `python3 build_register.py [--with-draft-d] [--with-e]` then `python3 render_register.py`. Everything is derived except `BEDROCK_MAP` and `RELATIONS`, which are the editorial acts, and both are audited against the fragments before writing.
+
 ## Container contract (fragments emit this shape; the schema pins the ENTRY, this README + the validator pin the CONTAINER)
 
 ```json
@@ -60,7 +70,9 @@ Advisories exist so a constraint ratified *after* an artifact shipped stays loud
 
 ## Expected arrivals
 
-`adv_map_phase{A|B1|B2|C|D}_v0_1.json` fragments — Phase A = T5 (n=7), carrying the ELECTED Map-1 curation rider for `self-effacing-under-universalization` (**transition-spec artifact ONLY**; the `combined.html` splice it implies is a separate, deliberate pin-move session — electing the rider authorized design, not a surface byte) → terminal `adversarial_map_v1_0.json` = the **mapped-complete (pre-triage)** state (Q3). Coverage law (Q1): every node ≥1 entry, ≤3 entries/node.
+**Phases A, B1, B2, C and E have landed; D is outstanding.** The K231 Phase D fragment is unrecovered (disk, repo `archive/` and the `authoring-archive-2026-06-29` Release are all exhausted — the Release predates K231 by three weeks and cannot contain it), and a re-derivation exists as a draft pending comparison. With either D folded the map reaches 82/82. Note the re-plan recorded in K230's receipt but never propagated here: C delivered T3 only against a plan of T3+T2, so D = T2 (n=17) and E = T1 (n=13).
+
+`adv_map_phase{A|B1|B2|C|D|E}_v0_1.json` fragments — Phase A = T5 (n=7), carrying the ELECTED Map-1 curation rider for `self-effacing-under-universalization` (**transition-spec artifact ONLY**; the `combined.html` splice it implies is a separate, deliberate pin-move session — electing the rider authorized design, not a surface byte) → terminal `adversarial_map_v1_0.json` = the **mapped-complete (pre-triage)** state (Q3). Coverage law (Q1): every node ≥1 entry, ≤3 entries/node.
 
 **Status lifecycle** (`mapped → queued → ratified → landed(version) | rejected(grounds)`) lives in `project_canon` (`adversarial_map` block), never in these artifacts — entries carry `status: "mapped"` only.
 
