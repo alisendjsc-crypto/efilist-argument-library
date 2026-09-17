@@ -136,7 +136,7 @@ The regenerable sources behind the single file — the authoritative corpus JSON
 - **`efilist_argument_library_v4_0_0.json`** (corpus) · **`efilist_argument_library_v4_0_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** — the regenerable flagship sources + tooling.
 - **`refusal_suite_charter_v0_1.md`** — the shared charter governing every library in the suite.
 - **`right-to-die/`** · **`abortion/`** · **`transgenderism/`** · **`anthropocentrism/`** — the four suite wings, each a self-contained set (corpus · grading ledger · objection index · `combined.html` · validator · builder · plain-language layman index). **`veganism/`** — the flagship-adjacent module (same set; a positive case, not an optionality wing). **`libraries/`** — the umbrella front door served at `/libraries`; **`flagship-layman-index.json`** + **`layman_index_validator_v0_*.py`** — the flagship plain-language mirror and its validators.
-- **`screenshots/`** — README imagery, captured from the deployed bytes at 1440×900. **`project_canon_v38_1.json`** — the current canon record.
+- **`screenshots/`** — README imagery, captured from the deployed bytes at 1440×900. **`project_canon_v38_2.json`** — the current canon record.
 - **`archive/`** — historical session-state, canon-snapshot, variant, and audit records, retained for posterity (not part of the live build).
 
 ---
