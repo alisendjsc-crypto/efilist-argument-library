@@ -1,0 +1,120 @@
+{
+ "artifact": "assembly_control_v0_1.json",
+ "of": "adversarial_map_v1_1.json",
+ "session": "K348",
+ "date": "2026-09-17",
+ "validator": "adv_map_validator_v0_5.py",
+ "controls": 15,
+ "controls_total": 15,
+ "all_pass": true,
+ "results": [
+  {
+   "name": "v1_0-still-passes-against-its-own-pinned-corpus",
+   "pass": true,
+   "expects": "-"
+  },
+  {
+   "name": "v1_0-fails-post-cut-on-exactly-the-repaired-checks",
+   "pass": true,
+   "expects": "-"
+  },
+  {
+   "name": "v1_1-unmutated-passes-assembly-0-violations-0-advisories",
+   "pass": true,
+   "expects": "-"
+  },
+  {
+   "name": "remove-an-entry-breaks-COVERAGE",
+   "pass": true,
+   "expects": "coverage"
+  },
+  {
+   "name": "remove-a-variant-entry-breaks-VARIANT-COVERAGE",
+   "pass": true,
+   "expects": "variant-coverage"
+  },
+  {
+   "name": "restoring-a-superseded-entry-breaks-ANCHOR-RULE",
+   "pass": true,
+   "expects": "anchor-rule"
+  },
+  {
+   "name": "fourth-entry-at-one-locus-breaks-ENTRY-CAP",
+   "pass": true,
+   "expects": "entry-cap"
+  },
+  {
+   "name": "no-variant-node-still-capped-at-3-breaks-ENTRY-CAP-NODE",
+   "pass": true,
+   "expects": "entry-cap-node"
+  },
+  {
+   "name": "wrong-corpus-pin-breaks-META-CORPUS-PIN",
+   "pass": true,
+   "expects": "meta-corpus-pin"
+  },
+  {
+   "name": "wrong-objections-digest-breaks-OBJECTIONS-DIGEST",
+   "pass": true,
+   "expects": "objections-digest"
+  },
+  {
+   "name": "wrong-class-counts-breaks-META-SUMMARIES",
+   "pass": true,
+   "expects": "meta-summaries"
+  },
+  {
+   "name": "wrong-variant-coverage-declaration-breaks-VARIANT-COVERAGE",
+   "pass": true,
+   "expects": "variant-coverage"
+  },
+  {
+   "name": "builder-refuses-when-the-supersede-set-is-emptied",
+   "pass": true,
+   "expects": "-"
+  },
+  {
+   "name": "class-mix-consistent-with-prior-both-framings",
+   "pass": true,
+   "expects": "-"
+  },
+  {
+   "name": "partition-holds-at-the-locus-and-fails-at-the-node-as-declared",
+   "pass": true,
+   "expects": "-"
+  }
+ ],
+ "class_mix": {
+  "base_a_or_d": "71/93",
+  "base_rate": 0.7634,
+  "union_a_or_d": "105/133",
+  "union_two_sided_p": 0.540817,
+  "new_only_a_or_d": "34/43",
+  "new_only_two_sided_p": 0.857543,
+  "independence_note": "the union contains the base, so only the disjoint R+F figure is an independent test of the prior"
+ },
+ "partition": {
+  "locus_level_clashes": 0,
+  "node_level_clashes": 16,
+  "nodes": [
+   "ai-fear",
+   "antinatalism-misanthropic",
+   "benatar-asymmetry-attack",
+   "bitter-childhood",
+   "cherry-picking-worst",
+   "future-solve",
+   "just-depressed",
+   "most-people-happy",
+   "next-person-cure-cancer",
+   "privileged-first-world",
+   "red-button-repugnant",
+   "selfish-lazy",
+   "slippery-slope-eugenics",
+   "violence-as-reductio",
+   "why-not-suicide",
+   "wild-animal-suffering-consistency"
+  ]
+ },
+ "single_entry_node_removed_in_the_coverage_control": "life-gift",
+ "no_variant_node_used_for_the_bound_control": "meta-ethical-pluralism"
+}

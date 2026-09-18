@@ -1,0 +1,127 @@
+{
+ "artifact": "measure_k348_v0_1.json",
+ "session": "K348",
+ "date": "2026-09-17",
+ "corpus_md5": "04bf6482aa0374ee92a81c1d55ec41f8",
+ "assembly_md5": "e9e5abf820e3f7a687e2b84443883ade",
+ "inheritance": {
+  "phaseF_class_counts": {
+   "a": 26,
+   "d": 7,
+   "b": 6
+  },
+  "phaseF_b_total": 6,
+  "aggravated_count": 2,
+  "aggravated_loci": [
+   "just-depressed#archetypeVariants.sophisticate",
+   "violence-as-reductio#archetypeVariants.drifter"
+  ],
+  "cured_count": 20,
+  "cured_loci": [
+   "antinatalism-misanthropic#archetypeVariants.blended",
+   "antinatalism-misanthropic#archetypeVariants.defender",
+   "antinatalism-misanthropic#archetypeVariants.drifter",
+   "benatar-asymmetry-attack#archetypeVariants.blended",
+   "benatar-asymmetry-attack#archetypeVariants.defender",
+   "benatar-asymmetry-attack#archetypeVariants.drifter",
+   "next-person-cure-cancer#archetypeVariants.sophisticate",
+   "privileged-first-world#archetypeVariants.defender",
+   "red-button-repugnant#archetypeVariants.defender",
+   "red-button-repugnant#archetypeVariants.sophisticate",
+   "selfish-lazy#archetypeVariants.defender",
+   "slippery-slope-eugenics#archetypeVariants.defender",
+   "violence-as-reductio#archetypeVariants.blended",
+   "violence-as-reductio#archetypeVariants.defender",
+   "why-not-suicide#archetypeVariants.blended",
+   "why-not-suicide#archetypeVariants.drifter",
+   "wild-animal-suffering-consistency#archetypeVariants.blended",
+   "wild-animal-suffering-consistency#archetypeVariants.defender",
+   "wild-animal-suffering-consistency#archetypeVariants.drifter",
+   "wild-animal-suffering-consistency#archetypeVariants.sophisticate"
+  ],
+  "cure_criterion": "class (a) whose routing.answered_by names a locus of the SAME node",
+  "aggravation_criterion": "class (b) whose grounds name inheritance AND mark the converse (aggravates / creates the defect / converse)"
+ },
+ "gate5": {
+  "assembly_multi_entry_loci": 7,
+  "assembly_same_clause_pairs": 0,
+  "validator_v0_5_self_test": 62,
+  "validator_v0_4_self_test": 60,
+  "parity_runs": 72,
+  "parity_divergences": 0
+ },
+ "entry_cap": {
+  "per_locus_cap": 3,
+  "max_entries_at_any_locus": 3,
+  "red_button_repugnant": {
+   "entries": 6,
+   "variant_loci": 2,
+   "bound_k345": 5,
+   "bound_k348": 9
+  },
+  "violations_under_k345_bound": [
+   "red-button-repugnant"
+  ],
+  "violations_under_k348_bound": [],
+  "nodes_at_the_k348_bound": [
+   "meta-ethical-pluralism",
+   "self-effacing-under-universalization"
+  ],
+  "nodes_within_one_of_the_k348_bound": [
+   "heat-death-futility",
+   "imposing-values",
+   "meta-ethical-pluralism",
+   "moral-particularism",
+   "self-defeating",
+   "self-effacing-under-universalization"
+  ],
+  "nodes_total": 82,
+  "max_entries_at_any_node": 6
+ },
+ "assembly": {
+  "entries": 133,
+  "nodes": 82,
+  "nodes_total": 82,
+  "variant_coverage": "39/39",
+  "variant_loci_hit": 39,
+  "variant_loci_total": 39,
+  "class_counts": {
+   "a": 66,
+   "b": 27,
+   "c": 1,
+   "d": 39
+  },
+  "inherited_from_v1_0": 90,
+  "superseded": 3,
+  "base_a_or_d": "71/93",
+  "base_rate": 0.7634,
+  "union_a_or_d": "105/133",
+  "union_share": 0.7895,
+  "union_two_sided_p": 0.5408,
+  "new_a_or_d": "34/43",
+  "new_share": 0.7907,
+  "new_two_sided_p": 0.8575
+ },
+ "partition": {
+  "locus_level_clashes": 0,
+  "node_level_clashes": 16,
+  "nodes": [
+   "ai-fear",
+   "antinatalism-misanthropic",
+   "benatar-asymmetry-attack",
+   "bitter-childhood",
+   "cherry-picking-worst",
+   "future-solve",
+   "just-depressed",
+   "most-people-happy",
+   "next-person-cure-cancer",
+   "privileged-first-world",
+   "red-button-repugnant",
+   "selfish-lazy",
+   "slippery-slope-eugenics",
+   "violence-as-reductio",
+   "why-not-suicide",
+   "wild-animal-suffering-consistency"
+  ]
+ }
+}
