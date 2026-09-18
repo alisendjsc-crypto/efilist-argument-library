@@ -1,0 +1,1002 @@
+#!/usr/bin/env python3
+"""
+build_phaseF_register.py -- emits adv_map_phaseF_defect_register_v0_1.json.
+
+THIS IS NOT THE PHASE F ADJUDICATION. It is a DEFECT REGISTER over the 39 archetypeVariants loci.
+Every entry records a verified internal defect in shipped variant text. The `class` column is NOT a
+class-law verdict: the authoring seat operationalised design section 0's "strongest continuation" as
+"strongest continuation against what this SLOT uniquely says", which filters out (a) by construction
+because what a variant uniquely says is exactly the part its primary ladder does not already answer.
+All 39 entries returned (b). controls_phaseF.py measures the departure and re-adjudicates a seeded
+sample; 3 of 4 flip to (a). See hazard ccclxviii. Phase F proper remains OWED.
+
+No variant_coverage is declared. Declaring it would make a coverage claim this artifact has not earned,
+which is the 82/82 error in a new file.
+
+Repo-relative by construction; run from anywhere. Reproduces its artifact byte-for-byte.
+"""
+import json, os, hashlib, importlib.util, sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(_HERE)
+OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else _HERE
+spec = importlib.util.spec_from_file_location("v", os.path.join(_HERE, "adv_map_validator_v0_3.py"))
+v = importlib.util.module_from_spec(spec); spec.loader.exec_module(v)
+CORPUS = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+craw = open(CORPUS, "rb").read(); corpus = json.loads(craw.decode("utf-8"))
+CMD5 = hashlib.md5(craw).hexdigest(); ODIG = v.objections_digest(corpus)
+assert CMD5 == "04bf6482aa0374ee92a81c1d55ec41f8", CMD5
+assert ODIG.startswith("2c5a083a"), ODIG
+N = {n["id"]: n for n in corpus["objections"]}
+
+ENTRIES = [
+ {
+  "target_id": "privileged-first-world",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "your comfort disqualifies your testimony",
+  "adversarial_move": "You upgraded the charge into the wrong epistemology. The serious standpoint objection is not about testimony or validity; it is about authority to PRESCRIBE. Antinatalism is a claim about whether other people, in conditions the arguer does not share, may have children, and the question of who has standing to issue universal moral prescriptions over the reproductive lives of populations they do not belong to is a different question from who is a reliable witness. You answered the epistemic version because it reduces cleanly to the genetic fallacy. The prescriptive version does not reduce, and you did not reach it.",
+  "class": "b",
+  "grounds": "Not (a): no locus in the corpus addresses standing to prescribe for others; slippery-slope-eugenics answers coercion, which is the enforcement question, not the standing question, and the two come apart -- one can disclaim all coercion and still be asked what licenses the universal prescription. Not (c): the slot itself elects to upgrade the objection, so the strongest version of it is squarely this slot's business. Not (d): answerable in-node without strain -- the claim is about the permissibility of an act, which anyone may assess, and antinatalism prescribes no enforcement against anyone. Best reading: the slot's quoted upgrade ends 'so your standpoint is illegitimate and the argument doesn't reach', and 'doesn't reach' could gesture at prescriptive failure. It does not survive the paragraph that follows, which answers entirely in the register of validity and witness-reliability. Headline: the slot's stated purpose is to meet the committed version rather than the insult, and the version it constructs is the one with a ready answer. Considered and rejected under the force floor: that the weapon-turns finisher borrows the standpoint principle it rejected. On the best reading that is an ordinary tu quoque about the objector's consistency and needs no endorsement of the principle, so it is met on charitable reading.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c",
+     "a"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "selfish-lazy",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "Laziness that produces no victim and fulfillment purchased with someone else's guaranteed suffering",
+  "adversarial_move": "'Produces no victim' is the conclusion, used as a premise, in the slot least entitled to it. Whether declining to procreate leaves a victim is the entire dispute: a natalist who holds that a good life is a benefit thinks the uncreated person is precisely a victim of omission. You have settled that in a subordinate clause and then invited me to compare moral categories on the strength of it. Your corpus spends a tier-four node establishing no-victim; this is a tier-one slot addressed to somebody who has not read it and has not granted it.",
+  "class": "b",
+  "grounds": "Not (a): benatar-asymmetry-attack defends the no-victim premise at length, so the claim is supported in-corpus; what is unmet is its use here as though uncontested before a reader the node characterises as arguing from motive rather than from the asymmetry. Not (c): it is the selfishness charge pressed at the slot's closing comparison. Not (d): the repair is a routing clause. Best reading: the slot is not asserting no-victim but contrasting a case with an uncontroversial third-party bearer against one without, so 'no victim' is shorthand for 'no one on whom a burden is discharged'. That is the strongest parse and it narrows the claim without rescuing the comparison, because the comparison's force depends on the two cases being in different moral categories, which is exactly what a natalist denies. Minor, on the axis it actually fails: autonomy. The slot leans on a contested framework premise in the tier whose readers have not accepted it, and the fix costs a sentence. Considered and rejected under the force floor: that the reversal abandons the motive-validity orthogonality the slot had just established. Motive is irrelevant to the truth of a claim and relevant to the moral evaluation of an act, and procreation is an act, so the slot is entitled to both.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "a",
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "antinatalism-misanthropic",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+  "adversarial_move": "The impersonal grounding is what makes the charge stick. On an impersonal axiology a life carries disvalue in proportion to the suffering it contains, and your framework holds that every human life contains guaranteed, constitutive suffering: pain, decline and death as load-bearing design, on your own account. Then every human life carries negative impersonal value, which is a verdict on the kind, arrived at without reference to anyone's motives. That is my charge, and you have restated it as your defence. A harm cannot be separated from the kind when you have spent the corpus arguing the harm is what the kind is made of.",
+  "class": "b",
+  "grounds": "Not (a): the corpus grounds itself in impersonal evaluation at benatar-asymmetry-attack#long and nowhere asks whether impersonal disvalue of constitutive suffering amounts to disvaluing the kind; the slot's own routing sends the create-versus-destroy residue elsewhere, which is a different question from the axiological verdict itself. Not (c): the slot names axiological misanthropy as the attack to meet, so this is that attack. Not (d): the repair exists and is stronger -- concede the axiology does return a negative verdict on the CREATION of lives while denying it returns one on the worth of existing persons, which is the create-versus-destroy cut the corpus already owns and which this slot reaches for one paragraph later. Best reading: 'placed on a kind' means a verdict on persons rather than on states of affairs, and impersonal disvalue attaches to suffering-states, not to people. That is the intended parse and the sophisticate's charge was explicitly about the value theory rather than about persons, so answering at the level of persons does not reach it. Headline: this is the node's designated hard version and the cut offered against it restates it.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "antinatalism-misanthropic",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "fine, the philosophy in the abstract may not be hatred",
+  "adversarial_move": "I conceded that in the sentence you quoted, and you spent the slot defending it anyway. My claim was about the community, not the proposition (these people hate people), and you granted it outright: wall-to-wall contempt, sneering, slur-laced, not kind, and pretending otherwise would be a lie. So the objection is established by your own concession, and the actor-to-claim collapse you accuse me of is a collapse I explicitly declined to make. You have answered the half I gave you and called it the road I cannot dodge.",
+  "class": "b",
+  "grounds": "Not (a): #long and #medium defend the framework's motivational architecture, which is the abstract question the objection brackets; no locus addresses what follows from a conceded community observation. Not (c): the slot writes the objection itself, and this is that objection read literally. Not (d): repairable, and the repair is the interesting one -- say what a conceded community fact does and does not license, rather than re-answering the abstract charge. Best reading: the defender's concession is rhetorical throat-clearing and the real charge remains that the position is contempt, so the actor-to-claim cut is on target. That is available and the slot forecloses it: it puts the concession in the objector's mouth in direct speech, then treats the relocation as a slide from argument to arguers, when the objector went the other way and stayed there. Headline because the cut is the slot's load-bearing move and it is aimed at a step the slot's own script has the objector decline.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c",
+     "v"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "antinatalism-misanthropic",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "A parent who won't take their kid somewhere dangerous isn't hating the kid",
+  "adversarial_move": "That parent has a kid. The whole warmth of your analogy comes from a relationship to someone who exists and whose interests are being protected, and the position you are defending is that the child should not exist, where by your own corpus there is no subject, no relatum, nobody whose interests anything is being done for. You have borrowed the moral feeling of protecting a person from the very case your framework insists contains no person. It is the most affecting sentence in the slot and it runs on exactly what the argument denies.",
+  "class": "b",
+  "grounds": "Not (a): the no-subject premise is established at benatar-asymmetry-attack and consent-both-ways, which is what makes the analogy fail rather than what answers the objection; no locus reconciles the protective framing with it. Not (c): the analogy is this slot's central device. Not (d): repairable in the register -- the honest version is refusing to start something you cannot make safe, which keeps the warmth without importing a protected party. Best reading: the analogy illustrates the MOTIVE, which is the slot's actual subject, and a motive can be protective without a determinate beneficiary. That is the strongest parse and it concedes the point at the level that matters for a drifter, since what the sentence transmits is a felt relationship, and the felt relationship is the persuasive payload. Headline: for a register slot the device is the argument, and this device imports the premise the corpus spends a tier-four node removing.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "a",
+     "v"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "antinatalism-misanthropic",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "the slide from \"you're cold\" to \"you should be silenced\" is the through-line",
+  "adversarial_move": "Your rule has two branches and your node has three roads, one of which you name and then exclude in the same paragraph. You tell the deployer not to escalate to the axiology argument because that is for someone pressing the value theory, and then declare there is no third argument. There is: yours. And the branch you actually omit is the defender's: the relocation from the philosophy to the people who hold it, which is neither a feeling nor a demand for suppression, and is the single most common form this objection takes online. Your through-line does not run through it.",
+  "class": "b",
+  "grounds": "Not (a): the routing rule is unique to this slot and nothing adjudicates it. Not (c): the rule is this slot's only independent content. Not (d): adding the branch repairs it. Best reading: 'no third argument' scopes to the two registers this slot itself deploys, not to the node's whole repertoire, and the axiology exclusion is precisely that scoping done explicitly. That is the correct parse of the author's intent and the sentence overshoots it -- the clause says the slide is the through-line that tells you which slot the moment calls for, which is a claim about slot selection across the node, not about this slot's two moves. Minor: the two branches are well drawn and the reversal they escalate to is the node's sharpest material. Fifth blended slot in this phase to ship an exhaustive-sounding triage rule that omits a strand its own node supplies; recorded as a pattern and not re-argued from scratch at each locus.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "just-depressed",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "exhibit a specific load-bearing premise and show that despair, not reason, produced it",
+  "adversarial_move": "You demand a specificity you do not supply. My claim is that affective state SYSTEMATICALLY distorts the judgments these arguments rest on, and a systematic-bias claim is not rebutted by asking which particular premise, any more than optimism bias is rebutted by demanding which particular wellbeing estimate. You establish your own half of this with Taylor and Brown, a population-level finding, and never identify a single optimist premise. So the burden you shift onto me is one your own argument declines. And your closing move defends validity, which I never attacked; your own framing has me attacking the judgments the arguments rest on, and the one sentence that touches those concedes affect shifts which premises feel salient.",
+  "class": "b",
+  "grounds": "Not (a): #long runs the same premise-level demand and the same mood-independent-validity close, so the corpus repeats rather than meets it. Not (c): this is the epistemic version of the objection the slot itself elects to answer. Not (d): repairable and the repair is available in-node -- answer the systematic claim symmetrically, by noting that a general upward bias and a general downward one would both have to be shown to bear on THESE inferences, which neither side has done. Best reading: the demand for a specific premise is the legitimate form of the worry rather than a burden-shift, and the slot says so. That is the strongest parse and it does not survive the asymmetry, because the slot advances its own bias claim at population level and grants it standing without exhibiting any premise. Headline: this slot is the corpus's most careful treatment of the mood-defeater and its closing two moves are a burden it does not meet and a defence of a claim not in dispute.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c",
+     "r"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "why-not-suicide",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "a positive act against the living always has one",
+  "adversarial_move": "Deprived by whose reckoning? This node's own long form holds that the survival drive is firmware which prevents honest evaluation of existence, and that treating its output as the honest evaluation completes a circle. The deprivation you invoke, the existing being's stake in their future goods, is assessed by that same instrument. You cannot debunk the preference to go on living when it is offered as consent, and then rely on the value that preference reports when you need something to block layer two. Either the instrument reads true, in which case continued survival is evidence after all, or it does not, and your deprived party is deprived only according to a witness you have already impeached.",
+  "class": "b",
+  "grounds": "Not (a): both halves are asserted inside this one node -- the firmware argument at #long, the deprivation block here -- and no locus reconciles them. Not (c): it is the sophisticate's layer-1-to-layer-2 move pressed at the exact point the slot blocks it. Not (d): repairable, and the repair is the one the corpus uses elsewhere -- ground the block in the non-comparative badness of imposing death rather than in the deprivation of goods the impeached instrument reports. Best reading: the firmware argument impeaches the preference as CONSENT while the deprivation point concerns welfare, and a compromised endorsement can still track a real good. That is the right distinction and the slot does not draw it; it says the positive act always has a deprived party, full stop, which is the welfare claim leaning on the endorsement. Headline. Fifth appearance of the origin-debunking split and the first where both sides of it sit inside a single node.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "why-not-suicide",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+  "adversarial_move": "The eliminationist content is not an adherent's; it is yours, and it has a node. red-button-repugnant is tier-five, authored, graded and shipped in this library, and it asks the reader whether instantaneous painless universal cessation is preferable, treating a refusal as a metaphysical commitment to be dissolved. That is not a forum sneer or a wishlist someone brought with them. Your framework-versus-actor cut can quarantine an enthusiast; it cannot quarantine your own corpus. The Unabomber did not have a chapter in the environmentalist canon.",
+  "class": "b",
+  "grounds": "Not (a): #long draws the layer distinction and cites the same environmentalism analogy without confronting the fact that the corpus itself ships layer-two material; no locus addresses it. Not (c): it is the retreat-to-adherents the slot constructs, upgraded to the strongest available referent. Not (d): answerable in-node -- red-button is a valuation thought experiment that licenses no action, which the corpus can say and which is a narrower and defensible claim than the actor cut. Best reading: red-button evaluates rather than advocates, so it is framework-content about valuation and not about action, leaving the cut intact for action. That distinction is correct and it is not what the slot says; the slot's dilemma asks the objector to derive layer two from layer one, when the objector need only point at a node. Headline because the cut is the slot's load-bearing move and the counterexample is inside the same library.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "why-not-suicide",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "that the position is 'life is bad, so end it.' It never was.",
+  "adversarial_move": "It was, and your own node says so four hundred words away. The long response describes the position as two-layered and names the second layer as an eliminationist superstructure that licenses urgency, duty and red-button-style advocacy. That is 'life is bad, so end it', in the corpus's own words, presented as part of what the position is. The drifter is told it never was, with no mention that a layer exists which the node elsewhere spends paragraphs distinguishing rather than denying. Distinguishing a layer and denying it exists are not the same reassurance, and only one of them is true.",
+  "class": "b",
+  "grounds": "Not (a): #long is the locus that contradicts it, and the sophisticate slot likewise treats layer two as real and merely underived. Nothing reconciles the registers. Not (c): it attacks this slot's closing reassurance. Not (d): repairable without losing the register -- say the jab targets a layer the argument does not need and the speaker may not hold, rather than that the layer is a fabrication. Best reading: 'the position' means the antinatalist argument the drifter is being introduced to, not the whole efilist edifice, and on that referent the sentence is true. That is the charitable parse and the slot removes it, since the reassurance is offered about what the gotcha assumes rather than about a scoped subject, and the gotcha is aimed at the edifice. Headline. Sixth instance of the register-retraction pattern, and the plainest: the contradiction is a single locus away and in the corpus's own vocabulary.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "why-not-suicide",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "the independent positive-program question routes to red-button-repugnant",
+  "adversarial_move": "Two branches, and your node's long form invites a third it has no branch for. It tells the interlocutor explicitly: if the actual objection is to the NU layer, name it. Someone who does that is neither throwing a reflexive jab nor worrying that layer one entails layer two: they have accepted your distinction and are objecting to the layer you concede exists. Your rule reads the lean as jab or entailment-worry and has nowhere to put them, which means the one interlocutor your node explicitly solicits is the one your triage cannot route.",
+  "class": "b",
+  "grounds": "Not (a): the routing rule is unique to this slot; #long issues the invitation and says nothing about register. Not (c): the rule is this slot's only independent content. Not (d): adding the branch repairs it, and the destination already exists -- red-button carries the positive-program attack. Best reading: an objection to the NU layer is out of scope for a node about the suicide demand, so the rule is right to omit it. That is defensible in the abstract and this node forfeits it by issuing the invitation itself at #long. Minor: the two branches are correct and the omitted interlocutor is rare in the wild. Sixth blended slot in this phase to ship an exhaustive-sounding triage rule that omits a strand its own node supplies -- six of the seven blended slots in the corpus, which is why it is carried as a pattern finding rather than argued fresh at each locus.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "cherry-picking-worst",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "A regulator does not wave through a fatal adverse effect because most patients",
+  "adversarial_move": "Regulators approve drugs with fatal adverse effects constantly; that is what a risk-benefit assessment is for. Your analogy establishes that tails must be INCLUDED in the analysis, which nobody disputes, and you are using it to establish that tails are DISPOSITIVE, which is a different claim and the one in dispute. Run the analogy honestly and it delivers the optimist's conclusion: enumerate the tail, weigh it against the mass, approve if the balance is favourable. Inclusion is not veto. Every institution you cite as your model weighs and proceeds, and you have borrowed their authority for a rule none of them follow.",
+  "class": "b",
+  "grounds": "Not (a): #medium and #long deploy the same analogies to the same end, so the corpus repeats the inference rather than meeting it; no locus distinguishes inclusion from veto. Not (c): risk-ethics methodology is this node's own subject. Not (d): the repair is available and is the framework's real ground -- the disanalogy is consent, since a patient consents to the risk-benefit trade and a created child cannot, which makes weighing illegitimate here rather than making tails dispositive everywhere. Best reading: the slot's target is the claim that tails may be EXCLUDED as unrepresentative, which is what the cherry-picking charge alleges, so inclusion is all it needs. That is the strongest parse and the slot overshoots it in the next sentence, telling the optimist he is the one sampling because he prices the wager off the modal outcome -- which is not sampling, it is weighting, and weighting is what the regulator does. Headline because the methodological answer is what the slot promises to a methodological charge, and the analogy carrying it points the other way.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "a"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "most-people-happy",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "more accurate appraisal tracks depression",
+  "adversarial_move": "You have reached for depressive realism, in the node next door to cherry-picking, and your own corpus says a sophisticate who does that is cherry-picking. just-depressed's long response calls the finding narrow and contested and states that nothing there leans on it; its sophisticate variant says explicitly that reaching for it would be cherry-picking. This slot leans on it as the defeater that disqualifies the optimist first and hardest. Either the finding is load-bearing, and the node built to refuse motive-attribution should stop disowning it, or it is contested, and the argument that the cheerful baseline is the documented distortion has lost its evidence.",
+  "class": "b",
+  "grounds": "Not (a): the corpus supplies both positions and adjudicates neither. Not (c): the reliability of self-report is this node's subject. Not (d): repairable without loss -- the instrument argument stands on adaptation, social desirability and survivorship alone, all three of which the slot already has, and the positive-illusions leg can be dropped entirely. Best reading: Taylor and Brown is a claim about inflated SELF-assessment being normal, which is weaker than depressive realism's claim that depressed appraisal is more ACCURATE. The slot does not take the weaker one: it says more accurate appraisal tracks depression, which is the contested claim verbatim. Headline. This extends the depressive-realism contradiction logged at K345, which was recorded as internal to just-depressed across its own loci; it reaches a second node, so the extent in the log understates it.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "r"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "bitter-childhood",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "the wounded arguer is not seeing falsely, he is seeing without the anaesthetic",
+  "adversarial_move": "You named the fallacy and then ran it in reverse. If how a person reached a belief is not evidence against it, it is not evidence for it either, and you have just argued that the wounded arguer sees BETTER because his biography stripped a filter. That is an inference from origin to epistemic credit. Either origin bears on reliability, in which case my move is legitimate and we are arguing about which direction it cuts, or it does not, in which case your anaesthetic line goes out with mine. You cannot bar the inference in one paragraph and spend it in the next.",
+  "class": "b",
+  "grounds": "Not (a): #long and #medium make the genetic-fallacy point cleanly and contain no reverse inference, so the defect is slot-local and unmet. Not (c): it is the biographical objection, returned along the slot's own reasoning. Not (d): repairable by dropping the credit claim -- the dilemma that follows does all the work the slot needs and does not depend on it. Best reading: the anaesthetic line is defensive rather than probative, rebutting the hidden premise that trauma distorts toward falsehood rather than asserting it distorts toward truth. That reading is available for 'not seeing falsely' and fails for what follows -- the burned child is called the MORE reliable witness, which is a positive epistemic claim from biography. Headline because the genetic fallacy is this node's entire content and the slot commits it. Third appearance of the origin-debunking split, and the first inside a single slot rather than across nodes.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "next-person-cure-cancer",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "uncreated, there is no one deprived of the cure",
+  "adversarial_move": "Wrong party. The people deprived of the cure are the cancer patients, who exist, in their millions, and will go on existing and dying whether or not the researcher is born. Your no-subject argument covers the uncreated person's own welfare (nobody is deprived of the life they never had), and says nothing whatever about third parties who are already here. You have applied the deprivation asymmetry to the PRODUCER of a good instead of to its recipients, and the recipients are the only ones anybody was talking about. The spine you say holds even if I grant the jackpot does not survive granting it.",
+  "class": "b",
+  "grounds": "Not (a): #long and #medium answer the jackpot with statistics, symmetry and instrumentalization, none of which is the no-subject move; the no-subject move appears only in this slot, and nothing addresses the misidentified beneficiary. Not (c): it is this node's own objection at its strongest. Not (d): the repair is available and already half-present in the slot -- concede that third-party benefits are real and answer with the instrumentalization point, that a certain harm may not be imposed on a non-consenting person to secure benefits for others. Best reading: 'the cure' is shorthand for the uncreated person's whole potential contribution, assessed from the standpoint of the choice to create, where no beneficiary is yet determinate. That parse is available and the sentence blocks it, since a cure for cancer has determinate beneficiaries and the slot names the disease. Headline because the slot advertises this as the move that holds even if the jackpot is granted, which makes it the strongest thing the locus claims.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "ai-fear",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "the framework-content is substrate-neutral suffering-DETERRENCE given consent-impossibility",
+  "adversarial_move": "The firewall is disowned only here, where it costs you something. If the framework holds deterrence and not minimization, then wild-animal-suffering-consistency cannot call gigatons of wild pain a moral catastrophe of first magnitude, because nobody is installing it and no consent is at stake; red-button cannot ask whether ending all experience to end all suffering is preferable; and benatar's long form cannot ground itself in impersonal evaluation and say avoiding pain has impersonal value. Those are minimization claims, load-bearing, in three other nodes. You hold the layer everywhere it is free and disclaim it at the one node where it points at us.",
+  "class": "b",
+  "grounds": "Not (a): the slot routes the axiological residue to red-button, and red-button answers a different question -- whether the framework licenses acting against existing beings -- never whether the framework holds the minimization layer at all. The route exists; it does not meet this. Not (c): it attacks the slot's central distinction. Not (d): a stronger text owns the layer and answers the successor question with the create-versus-destroy cut the corpus already has, which is identity-preserving and stronger than the disavowal. Best reading: 'framework-content' means the minimal premise set needed for antinatalism specifically, not everything the corpus asserts. That reading is available and it defeats the slot rather than saving it, because the slot uses the narrow reading to deny a ranking and the wide reading everywhere else, and the objection is precisely that the two cannot both be the framework. Headline: substrate-ranking is the sophisticate's actual charge, the slot names it correctly, and then answers it by narrowing the framework to a version the rest of the corpus does not use.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "v"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "ai-fear",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "A philosophy does not become evidence against itself when an adherent wants a policy",
+  "adversarial_move": "Then apply your own cut to me. You protect the framework from its adherents by separating what premises require from what enthusiasts recommend, and one paragraph later you convict me of outcome-justifies-means reasoning because someone wants these views contained. Containment is actor-content on my side. My position is that unaligned AI is dangerous; it entails no censorship policy, and I may hold none. You have used the distinction as a shield and then suspended it to use the recommendation as a sword, inside a single slot. Either the cut is general, in which case your reversal has no target, or it is not, in which case it does not protect you either.",
+  "class": "b",
+  "grounds": "Not (a): nothing in the corpus applies the framework-versus-actor cut to the objector's side; #long deploys the censorship-reversal at the same anchor with the same asymmetry, so the parent repeats the defect rather than curing it. Not (c): the target is the slot's own architecture. Not (d): the repair is to fire the reversal only at a speaker who has actually made the recommendation, which costs nothing and is what the trap-door was designed for. Best reading: the reversal is conditional -- 'if the indictment converts into a demand to contain them' -- so it fires only against speakers who make the demand. That is the strongest reading and it is close, but the slot's closing sentence removes the condition, offering the interlocutor a two-horn choice in which conceding the premises are clean is the only alternative to owning the containment logic. A conditional whose consequent is then presented as exhaustive is not conditional. Headline because the cut is the slot's load-bearing structure and the inconsistency is visible within the slot itself, with no other locus required.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "r"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "ai-fear",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "One refuses a free pass; the other roots for the exit.",
+  "adversarial_move": "Your framework is not in the first camp and your own node says so. Refusing a free pass is neutrality; but this node holds at every other locus that biological consciousness suffers STRUCTURALLY, that pain and death are load-bearing elements of the design rather than bugs, and that a substrate without the pain-architecture would leave the case for preserving ours needing an argument nobody can supply. That is not declining to rank. That is a standing verdict against the substrate the reader is made of, delivered elsewhere and withheld here. The drifter is told the view merely will not assume we win. The view holds we lose.",
+  "class": "b",
+  "grounds": "Not (a): no locus reconciles the two registers; the sophisticate slot states the ranking openly, which corroborates rather than cures. Not (c): it attacks this slot's central reassurance. Not (d): repairable by saying the true thing -- the view does rank substrates, and ranking is not licensing harm to anyone existing, which is a cut the corpus already owns. Best reading: 'roots for the exit' means welcoming human extinction as a goal, which the framework genuinely does not, so the disjunction is about advocacy rather than valuation. That reading survives for the word 'roots' and fails for the word 'refuses', because the slot's own contrast makes neutrality the framework's whole position. Headline: the reassurance is the slot's opening and closing move. Logged beside it as a corpus-level finding, second instance: drifter-register slots make reassurances the sophisticate slots and primary ladders retract -- benatar's drifter promises the argument does not ask you to give up gladness while red-button debunks it, and this slot promises non-ranking while its own node ranks. A per-locus map cannot see this; it is visible only across registers within a node.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "ai-fear",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "the interlocutor presses there, escalate to the sophisticate backbone",
+  "adversarial_move": "The escalation terminates in an open question dressed as a destination. Follow your own rule: the interlocutor presses the displacement worry, you escalate, and the sophisticate backbone concedes the residue and routes it to red-button-repugnant. Red-button's own sophisticate slot then declines to close it, calling it a real question and this node's terminus to hold open rather than pretend closed. So the deployer who follows the rule hands someone who found the actual seam a referral to a node that agrees the seam is real and unresolved. That is not an escalation ladder, it is a corridor, and your rule does not tell the deployer it ends in one.",
+  "class": "b",
+  "grounds": "Not (a): nothing adjudicates the routing table; both endpoints are consistent with each other and neither says what the deployer should do on arrival. Not (c): the target is this slot's only independent content. Not (d): the repair is to say what the terminus is -- an acknowledged open question the framework holds rather than answers -- which is honest and is what the corpus does elsewhere with bedrock. Best reading: routing to a node that holds a question open IS the correct outcome, and the map's own honest-residue class exists for exactly this. Granted, and it is why this is minor rather than headline: the routing is correct and the defect is that the slot advertises it as a backbone to escalate to rather than as a terminus to arrive at, which sets the deployer up to promise more than the corridor delivers.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "r"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "future-solve",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "You cannot net a benefit owed to hypothetical descendants against a harm imposed",
+  "adversarial_move": "You granted the trajectory and then took it back in the adjective. On the trajectory you conceded arguendo, those descendants are not hypothetical; they are exactly as actual as the children whose suffering you are counting, and both groups are people who do not yet exist. Your own project requires weighing harms to the not-yet-existing: that is what antinatalism is about. If non-existence makes future goods weightless, it makes future harms weightless by the same stroke, and you have no premises left. The deprivation asymmetry cannot be the tool that empties one column and fills the other.",
+  "class": "b",
+  "grounds": "Not (a): benatar-asymmetry-attack#long establishes the deprivation asymmetry for the create-versus-not-create choice, which is a different question from whether an already-granted future population counts; no locus addresses the inversion. Not (c): it is this slot's own discounting argument pressed back. Not (d): the repair is available and makes the slot stronger -- run the argument from consent and imposition, which is the ground the slot already has, and drop the actuality framing entirely. Best reading: 'hypothetical' modifies the trajectory rather than the descendants, so the slot is flagging that the premise was granted arguendo, not asserting they are unreal. That is the charitable parse and the sentence defeats it: the contrast drawn is explicitly between hypothetical descendants and 'actual people', which is an actuality claim doing the netting work. Headline because the netting refusal is the slot's decisive step -- it is what makes the case 'still fail' after the concession -- and because the same sentence supplies the objector's strongest reply.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "slippery-slope-eugenics",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "route it to violence-as-reductio, which carries the general outcome-licensing attack",
+  "adversarial_move": "It does not carry it; it sends it back here. violence-as-reductio's own sophisticate slot says the anchor-specific entailment claims do not live at that node and are not refused by it, and routes the eugenic-coercion route to slippery-slope-eugenics by name. So the one residue you concede is real, whether a negative-utilitarian framework can ground a coercion-floor, is disclaimed by both nodes and adjudicated by neither. Two slots, each deferring to the other, is not a routing table. It is a way of conceding a hard question in a form where no reader can ever find the answer, and the concession reads as rigour while functioning as disposal.",
+  "class": "b",
+  "grounds": "Not (a): the route terminates in a node that explicitly declines the question, which is the defect rather than its cure; no third locus picks it up. Verified by reading both slots rather than inferred from one. Not (c): the target is this slot's own closing move. Not (d): repairable by one node claiming it, or by naming it an open residue held by the framework -- the map's honest-residue class exists for exactly this and the corpus uses it elsewhere. Best reading: each node is correctly disclaiming what it does not own, and the reader is expected to conclude the question is open. That is the most charitable parse and it fails on the words used: both slots say route, which asserts a destination, and neither says held or unresolved. Headline because the concede-and-route gesture is what lets both slots claim to have met the strongest version, and the circularity means neither has.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "r",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "slippery-slope-eugenics",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "exceed the suffering the intervention claims to prevent",
+  "adversarial_move": "Every cascade you list is a backlash term. Generational trauma, terrorism designation, ideological inoculation, discourse closure, adherents publicly marked: these are the costs of coercion being detected and resisted. So the safeguard is indexed to how unpopular the program is, and in the world where the coercion is popular, invisible, or successful, the cascade term falls toward zero and your own math returns the opposite verdict. You call this the calculation itself rather than a rule bolted on from outside. A bar that holds only while the public would object is not structural; it is a prediction about the public, and it is weakest exactly where a coercion-floor is most needed.",
+  "class": "b",
+  "grounds": "Second entry at this locus under the amended per-locus cap, and it is a materially different exposure from the first: fix the circular route and this survives untouched, because it concerns the modal status of the safeguard rather than where the residue is sent. Not (a): #long asserts the safeguard is the calculation rather than an external rule and never addresses its contingency. Not (c): it is this node's own outcome-licensing subject. Not (d): the repair is available and stronger -- ground the bar in the consent premise, since coercing existing non-consenting people is the imposition the framework already forbids directly, which holds in every world regardless of backlash. Best reading: some listed cascades are agent-relative rather than backlash-driven, notably generational trauma. Granted for one item, and it does not rescue the set: the slot's stated ground is that the cascades exceed the prevented suffering, which is a quantitative claim that the backlash-dependent majority of the list has to carry. Headline: the safeguard is what the slot offers in place of a principled bar.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "a"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "slippery-slope-eugenics",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "either show the premises themselves require the slide, or concede the framework is not",
+  "adversarial_move": "A false dilemma, and it omits the position actually held. I do not claim your premises entail coercive sterilization. I claim they under-determine action and that the vacuum fills predictably: a framework that says existence is a catastrophe and procreation is wrong, while offering no positive account of what a person may then do, leaves adherents to improvise, and the improvisations are not random. Foreseeable misuse is a standard we apply to institutions, statutes and technologies without alleging entailment. Your dilemma offers me entailment or acquittal and no third option, which is precisely where the objection lives.",
+  "class": "b",
+  "grounds": "Not (a): the corpus answers entailment-denial thoroughly at #long and #medium and nowhere addresses under-determination; the framework-versus-actor cut presupposes the dilemma rather than defending it. Not (c): it is the defender's own retreat-to-adherents, stated at its strongest instead of at the strength the slot assigns it. Not (d): answerable inside the node -- the framework does have a positive action account (do not create; oppose discretionary suffering) and saying so closes the vacuum rather than denying it exists. Best reading: 'require' is loose enough to cover invites-predictably, so the first horn already contains the objection. It does not survive the slot's gloss, which makes the horn 'the premises themselves require the slide' and treats anything short of that as actor-content and therefore acquittal. Headline because this is the hinge the slot says it springs, and a hinge with a missing third option is the one thing a committed interlocutor will find.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "slippery-slope-eugenics",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "What makes eugenics monstrous is the sorting, the ranking.",
+  "adversarial_move": "Your own sophisticate slot says otherwise, one slot over: non-discrimination does not launder coercion. Universal forced sterilization would sort nobody and would be monstrous, which means the sorting is not what the monstrousness consists in, and the reader least equipped to check is the one being told it is. The drifter came with an alarm about controlling who gets born. You have relocated the alarm onto ranking, declared it misaimed, and left the coercion component, the part that actually fired it, unaddressed. That is not correcting a confusion. It is answering the half of the objection you have a clean reply to.",
+  "class": "b",
+  "grounds": "Not (a): the sophisticate slot states the opposite and the two are never reconciled; no locus tells a reader which holds. Not (c): it attacks this slot's central claim. Not (d): repairable without losing the register -- say that eugenics is both sorting and coercion, that this shares neither, and that nobody is proposing to make anyone do anything. Best reading: 'monstrous' is being used comparatively, to mark what distinguishes eugenics from this view rather than to analyse eugenics exhaustively. That is available and the sentence refuses it: it is declarative, general, and offered as the thing the reader does not need philosophy to see. Headline. Third instance of the register-retraction pattern and the sharpest, because here the retraction is one slot away inside the same node rather than across nodes.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "slippery-slope-eugenics",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content",
+  "adversarial_move": "Two branches for a node your own long form says has three entry points. The eugenics-reductio, on your account, characteristically completes with a policy recommendation: proscribe the ideology, teach it as historical pathology, contain it where its influence can be monitored, and that is where the censorship-reversal trap-door is sprung. An interlocutor who arrives there has made neither a gut recoil nor the claim that universal still means coercive. Your rule has no branch for them, and the trap-door your node builds for exactly that terminus is never reached by the slot that decides which argument gets deployed.",
+  "class": "b",
+  "grounds": "Not (a): the routing rule exists only here and #long describes the terminus without saying which register meets it. Not (c): this slot's only independent content is the rule. Not (d): adding the branch repairs it. Best reading: the policy recommendation arrives after an exchange has already been routed, so the triage rule is about openings rather than termini. That is a real distinction and it is not what the slot claims -- it tells the deployer to read which way they lean and pitch the register there, with no later re-read. Minor: the two branches are correct and the omitted one has an answer waiting in the node; the failure is coverage of the table. Third of four blended slots so far to ship an exhaustive-sounding triage rule that omits a strand its own node names, which is being logged as a pattern rather than re-argued at each locus.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "violence-as-reductio",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "works equally well whatever catastrophe you slot in, the argument is about the template",
+  "adversarial_move": "That inference is invalid and it is your named diagnostic. Anchor-independence is what a STRUCTURAL objection looks like: the charge is that your framework's form licenses catastrophic action, so of course it instantiates across unrelated catastrophes: producing five anchors is the signature of a general claim being true, not of a template being empty. Your own universality argument has exactly this property and you count it a virtue: antinatalism applies to every act of creation regardless of race, genetics or class, and no one treats that substitutability as evidence the argument is decorative. Generality cuts both ways or neither.",
+  "class": "b",
+  "grounds": "Not (a): #medium runs the identical inference at greater length ('a move that works equally well with five different empirical anchors is not an empirical objection'), so the corpus repeats it rather than meeting it. Not (c): the interchangeability observation is this slot's own centre. Not (d): repairable and the repair is already half-present -- the slot's better argument is the bridging-premise point, that reaching an existing person requires a premise the framework cannot hold, which defeats the structural charge on its merits and does not need the interchangeability inference at all. Best reading: the claim is about a move being substrate-independent in a way sound consequentialist objections are not, which the slot says explicitly. That is the strongest form and it begs the question, because whether this objection is consequentialist-empirical or structural is the thing in dispute, and the inference assumes the first. Headline: the slot calls interchangeability the diagnostic, and a diagnostic that misfires on the structural reading misfires on the only reading a sophisticate is offering.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "r"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "violence-as-reductio",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "the framework is not specially indicted for reaching for the structurally identical one",
+  "adversarial_move": "I take the first horn and keep the concession you just made. Yes: suppression on projected-harm grounds is sometimes a legitimate tool. And you have now said in your own words that your framework reaches for the structurally identical one. That is the allegation, conceded at the close of a slot that spent its length arguing the reasoning was never framework-content but something grabbers brought with them. You cannot quarantine outcome-justifies-means as actor-content in paragraph three and claim structural identity with it in paragraph six. One of those is the framework's and the dilemma tells me which.",
+  "class": "b",
+  "grounds": "Not (a): the identical two-horn close appears at #long and #medium with the same wording, so the corpus reproduces the concession rather than answering it. Not (c): it attacks the slot's closing dilemma. Not (d): repairable by rewording the horn to say the objector's tool is structurally identical to the one the objector IMPUTES to the framework, which is what the trap-door actually establishes and costs nothing. Best reading: 'the structurally identical one' refers to the tool the objector attributes to the framework, not one the framework owns, so no concession is made. That is the intended reading and the sentence will not bear it -- the phrase is 'reaching for', which takes the framework as its subject, and the horn's force depends on the framework actually being in the same position as the objector. Headline because the dilemma is the slot's terminal move against its hardest interlocutor, and the first horn is the one a committed defender takes.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "violence-as-reductio",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "the gap between 'don't begin a life' and 'end one that's already here.'",
+  "adversarial_move": "Your flagship thought experiment crosses that gap on purpose. red-button-repugnant is a whole node built on ending every life already here, instantaneously and painlessly, and it does not treat the recoil as tracking a real distinction; it treats the recoil as the thing to be dissolved, and asks the reader to say why non-existence would not be preferable. So the gap you tell the drifter needs no philosophy to see is one the corpus spends a tier-five node arguing across. The reassurance holds only for a reader who stops at this slot.",
+  "class": "b",
+  "grounds": "Not (a): red-button states the opposite valuation openly and no locus reconciles the registers. Not (c): it attacks this slot's closing reassurance. Not (d): repairable in a clause -- the honest form is that the framework does not license anyone acting against the living, which is true, rather than that the two moves are obviously unrelated, which the corpus denies. Best reading, and it is a strong one: red-button evaluates a stipulated hypothetical while this slot is denying action-licensing, so valuation and licensing come apart. That distinction is real and it is not the one the slot draws -- the slot says the two MOVES are not the same move and that one being wrong tells you nothing about the other, which is a claim about valuation, not licensing. Headline. Fourth instance of the register-retraction pattern, which is what makes it a corpus finding rather than four node defects.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "violence-as-reductio",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "take the structural one first and the other two resolve under it",
+  "adversarial_move": "Your own defender slot forbids that. Where the defensive mode is load-bearing (the catastrophe is morally live and they need it taken seriously), the sibling slot's first instruction is to start where they are standing, concede the weight, and refuse to minimize, because denial forfeits the only ground worth keeping. Leading with the structural answer, that their standard would gut every tradition with a loud follower, is exactly the minimization it warns against. Two slots in one node give opposite sequencing instructions for the same interlocutor, and the one that decides deployment order is the one that gets it backwards.",
+  "class": "b",
+  "grounds": "Not (a): the two slots contradict rather than reconcile, and nothing adjudicates order. Not (c): sequencing is this slot's own content. Not (d): repairable by scoping the precedence rule to cases where the structural mode is itself load-bearing, which is what the slot means and not what it says. Best reading: 'resolve under it' means the structural answer makes the others tractable rather than that it is delivered first, so the rule is about logical priority. That is available and the verb defeats it -- 'take the structural one first' is temporal, and the sentence is an instruction to a deployer in a live exchange. Headline rather than minor despite being procedural: this slot exists to sequence, the node's hardest interlocutor is the defensive one, and the rule mis-sequences precisely that case.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "r",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "wild-animal-suffering-consistency",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "factory farming, captive breeding, sport hunting, wildlife trade, invasive introduction",
+  "adversarial_move": "Then take the discretion criterion where it actually goes. Discretion is a matter of degree and cost, not a bright line, and humans hold cheap, scalable, present-tense discretion over the size of wild populations: habitat restoration, rewilding, reintroduction and conservation are all elective programs that multiply the number of beings who will be eaten alive, starve, and die of parasitism. On your own criterion those are creation of new unconsented suffering at a scale dwarfing factory farming. Your list of discretionary wrongs is five practices your audience already condemns, and it omits the one your principle most directly implies and they do not. The stopping point is not discretion after all; it is palatability.",
+  "class": "b",
+  "grounds": "Not (a): conservation appears once in the node, at #long, as a far-future remedy ('compassionate conservation'), which is the opposite polarity; no locus anywhere treats habitat or rewilding as suffering-creation under the discretion criterion, so the move is unmet rather than merely unstated. Not (c): it is the consistency charge the slot names as its own attack, pressed at the point the slot stops. Not (d): the bullet is bitable and the node's own cited authority bites it -- Tomasik's published position is that habitat loss may reduce wild suffering -- so a stronger text inside this node's identity exists. Best reading: the five-item list is illustrative, not exhaustive. That is the repair, and it is not what the slot does; the list is offered as the demonstration that the extension holds 'without remainder', and an illustrative list cannot discharge a completeness claim. Headline: the discretion cut is the slot's entire answer to the anthropocentrism charge, and the omission converts a principled distinction into a selection effect that the objector can name in one sentence.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "s",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "wild-animal-suffering-consistency",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "those two concessions, held together, are the antinatalist's structure, not a refutation of it",
+  "adversarial_move": "They are not, and common-sense natalism is the counterexample. The two things conceded (wild suffering is real and vast, and we must not destroy existing life to address it) are held by almost everyone, including the people you are arguing against, and almost none of them are antinatalists. What converts those premises into your conclusion is a third claim the slot never states: that declining to create is relevantly unlike declining to intervene. That is the contested premise, it is what the defender is denying when they call the view inconsistent, and you have announced their agreement with your structure while omitting the only part they dispute.",
+  "class": "b",
+  "grounds": "Not (a): the corpus carries the distinction as the creation-versus-intervention cut at #long, #medium and #diagnosis, but always as a dissolution of the dilemma -- never defended as the contested asymmetry it is, and nowhere against the objection that the two concessions underdetermine the conclusion. Stated carefully, because a keyword sweep for the standard label returns nothing and absence from a partial search is not absence: the concept is present under other words, the defence of it is what is missing. Not (c): it attacks this slot's hinge. Not (d): naming the third premise repairs it without conceding anything. Best reading: 'structure' means the shape of the framework rather than a sufficient premise set, so the slot is claiming resemblance, not entailment. It does not survive the surrounding sentences, which say the concessions are the structure 'not a refutation of it' and then press the defender for refusing a bullet the concession is said already to imply. Headline because the whole slot is built to land that hinge on a committed interlocutor, and a committed interlocutor is exactly the reader who will notice the missing premise.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "wild-animal-suffering-consistency",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "you can't fix any of that, so what's the point?",
+  "adversarial_move": "You quoted the ambiguous form and answered only one reading of it. 'You can't fix any of that, so what's the point' is as naturally the consistency charge in vernacular dress (your principle would oblige you to fix it and you won't, so it is not your real principle) as it is a gesture at futility. The slot hears futility, answers futility, and closes. Your own blended slot concedes the ambiguity exists and makes resolving it the deciding question; this slot resolves it silently, in the deployer's head, against a speaker who was never asked. Answer the wrong reading of a vernacular objection and the interlocutor does not hear a rebuttal, they hear you change the subject.",
+  "class": "b",
+  "grounds": "Not (a): nothing meets it; the blended slot names the same ambiguity and treats it as a live fork, which corroborates the defect rather than curing it. Not (c): the target is this slot's opening move. Not (d): a single disambiguating question repairs it, which is standard practice in every other drifter slot in the corpus. Best reading: the register itself does the disambiguating, since a speaker pressing the consistency charge would sound different. That is the deployer's inference from tone, not the objector's statement, and the slot supplies the quotation rather than the tone -- the words on the page are the ambiguous ones. Minor rather than headline: the substantive point the slot makes is sound and lands cleanly on the futility reading; what fails is its closure on a fork it does not acknowledge, and the fix is one clause.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c",
+     "r"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "wild-animal-suffering-consistency",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "which of 'it's hopeless' versus 'it's inconsistent' they actually mean is the through-line",
+  "adversarial_move": "Your node names three strands and your triage rule carries two. The long response identifies demandingness (Williams, Wolf) as a distinct objection that 'often piggybacks' on the consistency move, the claim that suffering-focused ethics demands moral sainthood and is therefore wrong, and answers it separately, because it is neither a futility gesture nor a consistency charge. An interlocutor who says 'nobody could actually live like that' is routed by your rule to the you-don't-control-the-wild point, which does not touch it. The rule forbids a third argument in a node whose own long form supplies one.",
+  "class": "b",
+  "grounds": "Not (a): the triage rule exists only here and nothing adjudicates it; #long answers demandingness but says nothing about slot selection. Not (c): this is the slot's only independent content. Not (d): widening the rule to three branches, or scoping it to the two it handles, repairs it. Best reading: demandingness is a species of the consistency charge and so is already covered by the escalation branch. It does not survive the node's own treatment, which separates them explicitly and gives demandingness a different answer -- that demanding conclusions are not thereby false -- which the sophisticate backbone does not contain. Minor: the rule is serviceable on the two branches it names, and the node does hold the missing answer, so the failure is coverage of the routing table rather than of the argument. Recorded rather than inflated -- a procedural slot has a thin attack surface by construction, and saying so is part of the entry.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "red-button-repugnant",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "a preference manufactured by the very drive whose reliability is in question cannot be",
+  "adversarial_move": "Your own corpus rules this move a fallacy. life-gift holds that inferring a belief is mistaken from its evolutionary cause is a genetic fallacy; indigenous-philosophy refuses to answer by debunking for the same reason; love-beauty-art says origin is not worth; nihilism-label calls the coping-mechanism gambit a gift to the accuser. Here the identical inference is load-bearing: the preference to keep living is discounted because of the drive that produced it. Either origin-debunking is legitimate, and four nodes surrender their central reply to the natalist, or it is not, and this slot's answer to the consent charge collapses. You cannot ration it by which side it favours.",
+  "class": "b",
+  "grounds": "Class law run in order. Not (a): nothing in the corpus meets this, because the corpus supplies both halves of it -- the defect is the split itself, and no locus adjudicates between them. Not (c): it is a continuation against this text, not a fresh objection. Not (d): a repair is available inside the node's identity and costs no ground. Best reading, which the force floor requires me to state and to defeat: the slot is not debunking the preference's TRUTH but denying its standing as CONSENT, and consent does turn on how a preference was formed, so the two are distinguishable. Granted -- and that is exactly the repair, which the shipped text does not make. It says the preference cannot settle the question because of the drive that produced it, which is the truth-directed form; the consent-directed form would say a preference is not the free formation consent requires. One clause apart, and the clause is not there. Headline because the consent answer is this slot's designated hard case, the internal-inconsistency charge is the first move a competent hostile reader makes, and the repair is one sentence. Logged beside it as a corpus-level finding, not authored as a map entry: the origin-debunking split runs across at least six nodes and is the same shape as the just-depressed depressive-realism contradiction logged at K345 -- invisible to a per-locus map by construction, findable only by comparing loci.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "s"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "red-button-repugnant",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "It is defending existence as such, the fact of life independent of its content",
+  "adversarial_move": "The dichotomy is false and the slot's whole inference rests on it. Strip the violence and what remains need not be either suffering-tracking or a metaphysical attachment to bare existence: it can be the ordinary value of the actual contents the button destroys: projects underway, relationships mid-course, goods a person is in the middle of having. That is a defence of content, which is the third option your disjunction does not offer. Your stipulation that no survivor is left to grieve does not make the loss nonexistent; it makes it unwitnessed, and unwitnessed loss is still loss. So the recoil that survives the painless conditions is not the tell you say it is, and the bone-cancer bullet is aimed at a position nobody is standing in.",
+  "class": "b",
+  "grounds": "Not (a): the parent #long runs the same two-way disjunction rather than answering it, so the corpus repeats the move at greater length instead of meeting it; love-beauty-art concedes the goods are real but never applies that concession to the button. Not (c): squarely a continuation against this text. Not (d): the node can hold its ground by arguing that destroyed-content loss is exhaustively a loss to bearers and so cannot weigh against a state with no bearers -- available, and not said here. Best reading: content-value is quietly folded into 'quality of life', which the slot does name. It does not survive, because the slot uses quality-of-life only as the option it says the objector is NOT taking; the disjunction is stated twice and closed both times. Headline because the tell is the defender slot's entire payload -- remove the inference and nothing else in the slot does work -- and because the slot explicitly declines to route this to the sophisticate, asserting that the horror has no object.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "c"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "benatar-asymmetry-attack",
+  "target_locus": "archetypeVariants.sophisticate",
+  "target_anchor": "neither conjunct needs a value-bearing subject, the way it is good that an asteroid",
+  "adversarial_move": "The decomposition defeats itself one line later. You make 'absence of pain is good' subject-free by reading it as an impersonal comparative ranking scenarios, the asteroid gloss. But impersonal scenario-ranking is valence-neutral machinery: a scenario containing pleasure ranks above an empty one on exactly that comparative, with no deprivation and no relatum needed. You block parity only by insisting the pleasure side must be read as deprivation, when the very instrument you just used for pain is available to it. So the asymmetry is not derived from logical form; it is produced by applying the impersonal comparative to disvalue and withholding it from value. That is the special pleading, relocated one level down, and the relocation is the whole of the defence.",
+  "class": "b",
+  "grounds": "Not (a): #long answers the deprivation form of the parity charge at length and never addresses the comparative form, which is the stronger one -- it needs no subject on either side and so cannot be blocked by the two-place argument. Not (c): it is the parity objection, this node's own subject, pressed at its strongest. Not (d): the repair is available and is arguably more honest than the text it replaces -- ground the asymmetry in the negative-utilitarian axiology the framework already holds, on which impersonal comparatives track disvalue only, and stop claiming it falls out of logical form. Best reading: 'the scenario with pleasure ranks better' is not a datum the framework must accept. Correct, and that is precisely the point -- refusing it is an axiological commitment, not a semantic one, and the slot advertises the opposite ('logical form, not preference'). Headline: it is the node's central claim, the slot names special pleading as the attack to meet, and what it meets is the weaker version.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "v",
+     "a"
+    ],
+    "severity": "headline"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "benatar-asymmetry-attack",
+  "target_locus": "archetypeVariants.defender",
+  "target_anchor": "my life is plainly net-positive, most lives are worth living",
+  "adversarial_move": "You quoted a two-part objection and answered one part. 'Most lives are worth living' is not a report about the speaker's ledger; it is a population claim, and your own long response makes the conclusion hostage to it, conceding that on a person-affecting outcome antinatalism contracts to a threshold claim whose force depends on how much suffering typical lives actually contain. The relocation you perform answers 'is my life good' and declares the road undodgeable. It is dodgeable precisely where you stopped: grant the whole create-level argument and the threshold version still turns on a distribution you have not touched here.",
+  "class": "b",
+  "grounds": "Not (a): most-people-happy answers the population claim, but that cures the question, not this slot's assertion of closure -- an overreach is not repaired by another node being correct elsewhere. Not (c): the words are in the objection this slot quotes. Not (d): the fix is to route rather than to close, which costs nothing. Best reading: 'most lives are worth living' is scene-setting for the personal claim that follows and not separately asserted. It does not survive the slot's own closing sentence, which names the road the interlocutor cannot dodge and identifies it solely with the within-life ledger. Minor rather than headline: the create-level argument is sound as given and the slot's substantive work stands; what fails is its scope claim, and one routing clause repairs it. Considered and rejected as the stronger move: that the level boundary is policed in one direction, since if a within-life ledger cannot bear on the create-choice then neither can the harm it contains. On the slot's best reading 'ledger' means the summing operation rather than any within-life fact, and the harm claim is not a sum, so that move is met on charitable reading and is (a) by the force floor.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c",
+     "r"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "benatar-asymmetry-attack",
+  "target_locus": "archetypeVariants.drifter",
+  "target_anchor": "That pull is real, and the argument does not ask you to give it up",
+  "adversarial_move": "That is a promise the framework withdraws two nodes over. red-button's sophisticate slot holds that the preference to go on existing is survival firmware and cannot count as endorsement; why-not-suicide says the firmware that prevents honest evaluation is being treated as the honest evaluation. Gladness to exist is that preference wearing its friendliest face. So the framework does ask the drifter to give it up (or at least to stop treating it as evidence of anything), and the reassurance that opens this slot is available only to a reader who does not read further. Comfort offered at the door and repossessed inside is worse than no comfort, because the drifter is the reader least equipped to notice.",
+  "class": "b",
+  "grounds": "Not (a): the corpus is split rather than settled -- life-gift protects exactly this gladness from origin-debunking while red-button and why-not-suicide debunk it, and no locus adjudicates. Not (c): it attacks this slot's opening concession, which is the slot. Not (d): repairable in one clause. Best reading: 'the argument does not ask you to give it up' means only that the create-level argument is logically compatible with being glad. True, and insufficient, because the slot goes on to use the gladness as the thing that answers a different question, which presupposes it retains evidential standing the other nodes deny it. Minor: the slot's substantive point stands untouched and the fix is to promise less -- say the gladness is real and is not evidence about the create-choice, rather than that nothing is being asked of it. Same origin-debunking split logged at the red-button sophisticate entry; this is its second appearance and the reason it is a corpus-level finding rather than a node defect.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "r",
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ },
+ {
+  "target_id": "benatar-asymmetry-attack",
+  "target_locus": "archetypeVariants.blended",
+  "target_anchor": "the symmetry intuition is the through-line that tells you which of the two existing slots",
+  "adversarial_move": "A single-axis triage rule over a multi-axis space, asserted as exhaustive. An interlocutor can press the population premise, or over-generation to pro-mortalism, or the create-versus-destroy worry, without ever voicing a symmetry intuition, and your rule sends every one of them to the no-prior-subject point and stops. Worse, the slot forbids a third argument by fiat, so the deployer who meets an unlisted escalation has been instructed that no further move exists. The escalation ladder is real; the claim that symmetry is its only rung is not.",
+  "class": "b",
+  "grounds": "Not (a): nothing adjudicates the triage rule, which exists only here. Not (c): the target is this slot's own and only independent content. Not (d): scoping the claim repairs it. Best reading, and the honest one: the slot is procedural, its substantive material is inherited from the two slots it routes between, and both are adjudicated elsewhere -- so the available attack surface is thin by construction. That is why this is minor and is recorded as such rather than inflated: the rule is useful and its only defect is a scope claim it did not need to make. Noted for the record because the alternative attack was considered and rejected under the force floor: that instructing a deployer to withhold the formalization from a pure drifter is epistemic paternalism sitting badly beside the framework's insistence on honest evaluation. On the best reading that is register-matching rather than withholding, and register-matching is the whole point of the archetype feature, so the move is met on charitable reading.",
+  "routing": {
+   "regen_candidate": {
+    "axis_hit": [
+     "c"
+    ],
+    "severity": "minor"
+   }
+  },
+  "status": "mapped",
+  "provenance": {
+   "phase": "F",
+   "date": "2026-09-18",
+   "seat": "wuld.ink Cowork, K346"
+  }
+ }
+]
+
+# ---- gates the builder runs on itself before it writes ----
+for e in ENTRIES:
+    node = N[e["target_id"]]
+    assert v.locus_valid(node, e["target_locus"]), e["target_locus"]
+    t = v.locus_text(node, e["target_locus"])
+    assert e["target_anchor"] in t, e["target_id"]
+    assert v.wc(e["target_anchor"]) <= 15
+    assert 40 <= v.wc(e["adversarial_move"]) <= 150
+    assert not v.non_ascii_chars(e["adversarial_move"] + e["grounds"] + e["target_anchor"])
+
+VARIANT_LOCI = sorted({(n["id"], v.VARIANT_PREFIX + s)
+                       for n in corpus["objections"] for s in v.node_variant_slots(n)})
+covered = sorted({(e["target_id"], e["target_locus"]) for e in ENTRIES})
+assert len(VARIANT_LOCI) == 39, len(VARIANT_LOCI)
+assert len(covered) == 38, len(covered)
+assert set(covered) < set(VARIANT_LOCI)
+CLASS_COUNTS = {}
+for e in ENTRIES:
+    CLASS_COUNTS[e["class"]] = CLASS_COUNTS.get(e["class"], 0) + 1
+
+doc = {
+ "meta": {
+  "artifact": "adv_map_phaseF_defect_register_v0_1.json",
+  "phase": "F",
+  "state": "DEFECT REGISTER, NOT AN ADJUDICATION. Lifecycle lives in project_canon, never here.",
+  "authored": "2026-09-18, wuld.ink Cowork, K346",
+  "source_corpus": "efilist_argument_library_v4_0_0.json",
+  "source_corpus_md5": CMD5,
+  "source_corpus_objections_md5": ODIG,
+  "what_this_is": (
+   "39 verified internal defects across 38 of the 39 archetypeVariants loci. Each entry names a "
+   "clause the shipped variant text cannot hold together with another locus, with the repair stated "
+   "in grounds. The 39th locus, just-depressed#archetypeVariants.defender, was adjudicated at Phase R "
+   "and is not re-opened."),
+  "what_this_is_NOT": (
+   "It is not the Phase F class-law adjudication and no coverage claim is made from it. The class "
+   "column is uniformly (b) because the authoring seat operationalised the design's strongest-"
+   "continuation contract as strongest-against-the-slot's-distinctive-content, which cannot return "
+   "(a) for a register variant. See hazard ccclxviii and controls_phaseF.py."),
+  "variant_coverage_DELIBERATELY_NOT_DECLARED": (
+   "38 of 39 variant loci carry an entry here, but declaring variant_coverage would assert "
+   "adjudication the artifact has not performed. A map that cannot state what it has not done is how "
+   "82/82 became misleading; this states it."),
+  "class_counts_OBSERVED_NOT_CLAIMED": CLASS_COUNTS,
+  "control": "controls_phaseF.py / phaseF_class_control_v0_1.json",
+  "findings_independent_of_class": [
+   "ORIGIN-DEBUNKING SPLIT: life-gift#long, indigenous-philosophy#long, love-beauty-art#long and "
+   "nihilism-label#long each rule that inferring a belief's falsity from its evolutionary or "
+   "psychological cause is a genetic fallacy. red-button#archetypeVariants.sophisticate, "
+   "why-not-suicide#long and bitter-childhood#archetypeVariants.defender deploy that inference as a "
+   "load-bearing move. No locus adjudicates between them. Same shape as the just-depressed "
+   "depressive-realism contradiction logged at K345, and that contradiction also reaches a second "
+   "node, most-people-happy#archetypeVariants.sophisticate, which the K345 record does not cover.",
+   "REGISTER RETRACTION, 6 instances: drifter-register slots open with a reassurance that a "
+   "higher-register locus in the same corpus withdraws (benatar, ai-fear, slippery-slope-eugenics, "
+   "violence-as-reductio, why-not-suicide, and antinatalism-misanthropic's protective analogy). The "
+   "archetype feature creates a surface on which the corpus can tell two readers different things and "
+   "nothing checks across registers.",
+   "BLENDED TRIAGE UNDER-ENUMERATION, 6 of the 7 blended slots: each ships an exhaustive-sounding "
+   "two-branch routing rule that omits at least one strand its own node names.",
+   "CIRCULAR ROUTE: slippery-slope-eugenics#archetypeVariants.sophisticate routes its conceded "
+   "coercion-floor residue to violence-as-reductio, whose own sophisticate slot disclaims "
+   "anchor-specific entailment and routes it back by name. Neither node adjudicates it.",
+   "ACT/OMISSION: the corpus carries the creation-versus-intervention cut as a dissolution and never "
+   "defends it as the contested asymmetry it is. Stated from reading, not from a keyword sweep, "
+   "because a sweep for the standard label returns nothing and absence from a partial search is not "
+   "absence."],
+  "validator": "adv_map_validator_v0_3.py"
+ },
+ "entries": ENTRIES
+}
+
+b = (json.dumps(doc, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
+p = os.path.join(OUT, "adv_map_phaseF_defect_register_v0_1.json")
+open(p, "wb").write(b)
+print("%s  %s  %d bytes  %d entries  %d loci" % (
+    os.path.basename(p), hashlib.md5(b).hexdigest(), len(b), len(ENTRIES), len(covered)))

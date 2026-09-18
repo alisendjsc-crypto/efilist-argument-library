@@ -1,0 +1,78 @@
+{
+  "artifact": "phaseF_class_control_v0_1.json",
+  "authored": "2026-09-18, wuld.ink Cowork, K346",
+  "register_under_test": "adv_map_phaseF_defect_register_v0_1.json",
+  "register_md5": "5c9da93b0217013ac898449e20cbfe24",
+  "mutation_controls": {
+    "run": 11,
+    "behaved": 11,
+    "detail": {
+      "positive-control-as-shipped": true,
+      "anchor-one-char-corrupted": true,
+      "anchor-extended-past-text": true,
+      "variant-slot-absent-on-node": true,
+      "class-flipped-routing-stale": true,
+      "variant-coverage-declared-wrong": true,
+      "class-counts-misdeclared": true,
+      "phase-outside-enum": true,
+      "move-under-band": true,
+      "per-locus-cap-breached": true,
+      "standalone-dash-token-reintroduced": true
+    }
+  },
+  "class_distribution": {
+    "observed": {
+      "b": 39
+    },
+    "loci": 38,
+    "phases_A_to_E_base_rate": {
+      "a": 39,
+      "b": 21,
+      "c": 1,
+      "d": 32
+    },
+    "P_a_or_d_base_rate": 0.7634,
+    "P_zero_of_n_in_a_or_d_given_base_rate": 1.6207268470650871e-24,
+    "reading": "A 1.7e-24 departure is an instrument reading, not a yield surprise."
+  },
+  "readjudication_sample": {
+    "draw": "random.Random(20260918).sample(sorted_pool, 4); sorted pool per ccclxvii",
+    "sample": [
+      "red-button-repugnant#archetypeVariants.defender",
+      "benatar-asymmetry-attack#archetypeVariants.defender",
+      "ai-fear#archetypeVariants.sophisticate",
+      "violence-as-reductio#archetypeVariants.defender"
+    ],
+    "verdicts": {
+      "red-button-repugnant#archetypeVariants.defender": {
+        "strongest_continuation_plain_reading": "The button overrides the preference of every existing being who wants to go on living, which is a consent violation in the framework's own terms.",
+        "verdict": "a",
+        "answered_by": "red-button-repugnant#long",
+        "evidence": "The strongest version of this objection bypasses the violence conflation entirely and targets preference violation"
+      },
+      "benatar-asymmetry-attack#archetypeVariants.defender": {
+        "strongest_continuation_plain_reading": "The parity charge: if absence of pain is good with no subject, absence of pleasure must be bad with no subject.",
+        "verdict": "a",
+        "answered_by": "benatar-asymmetry-attack#long",
+        "evidence": "deprivation is an irreducibly two-place relation"
+      },
+      "violence-as-reductio#archetypeVariants.defender": {
+        "strongest_continuation_plain_reading": "The framework's adherents committed violence, so the framework is dangerous and stands convicted by their conduct.",
+        "verdict": "a",
+        "answered_by": "violence-as-reductio#medium",
+        "evidence": "The framework-versus-actor distinction is foundational"
+      },
+      "ai-fear#archetypeVariants.sophisticate": {
+        "strongest_continuation_plain_reading": "Substrate-neutral scoring by suffering-capacity ranks a pain-free successor above us, so the framework prefers our replacement.",
+        "verdict": "b",
+        "answered_by": null,
+        "evidence": null,
+        "note": "The slot itself concedes this residue is unmet and routes it to red-button-repugnant."
+      }
+    },
+    "flips_to_a": 3,
+    "of": 4
+  },
+  "mechanism": "The authoring seat ruled ccclxv as strongest-not-repairable and then operationalised strongest as strongest-against-what-this-slot-uniquely-says. For a register variant that filter selects against (a) by construction, because what a variant uniquely says is precisely the part its primary ladder does not already answer. Every internal inconsistency so found is repairable, hence (b). The error is ccclxv's substitution one level out, committed by the session that ruled on ccclxv.",
+  "disposition": "The 39 entries stand as verified defects and ship as a register. No coverage claim is made. Phase F proper -- the class-law adjudication of the 39 variant loci -- remains OWED and re-opens from the plain reading."
+}

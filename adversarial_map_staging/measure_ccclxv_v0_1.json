@@ -1,0 +1,146 @@
+{
+ "A1_per_phase_class": {
+  "A": {
+   "a": 10,
+   "b": 1,
+   "d": 6
+  },
+  "B1": {
+   "d": 5,
+   "b": 5,
+   "a": 6
+  },
+  "B2": {
+   "d": 12,
+   "a": 1,
+   "b": 3
+  },
+  "C": {
+   "a": 7,
+   "b": 4,
+   "d": 3
+  },
+  "D": {
+   "a": 10,
+   "d": 4,
+   "b": 3
+  },
+  "E": {
+   "d": 2,
+   "b": 5,
+   "a": 5,
+   "c": 1
+  },
+  "R": {
+   "b": 3,
+   "a": 1
+  }
+ },
+ "A1_v1_0_class_total": {
+  "d": 32,
+  "b": 21,
+  "a": 39,
+  "c": 1
+ },
+ "A1_v1_0_b_share": 0.2258,
+ "A1_R_b_share": 0.75,
+ "A2_entries_per_node_dist": {
+  "1": 74,
+  "2": 5,
+  "3": 3
+ },
+ "A2_entries_per_node_mean": 1.1341,
+ "A2_class_in_single_entry_nodes": {
+  "d": 25,
+  "b": 19,
+  "a": 29,
+  "c": 1
+ },
+ "A2_class_in_multi_entry_nodes": {
+  "d": 7,
+  "b": 2,
+  "a": 10
+ },
+ "A2_b_share_single": 0.2568,
+ "A2_b_share_multi": 0.1053,
+ "A2_perm_null_p_b_enriched_in_multi": 0.9657,
+ "A2_perm_N": 20000,
+ "A3_move_words_median_by_class": {
+  "a": 51,
+  "b": 103,
+  "c": 96,
+  "d": 119
+ },
+ "A3_move_words_n_by_class": {
+  "a": 39,
+  "b": 21,
+  "c": 1,
+  "d": 32
+ },
+ "A4_locus_dist": {
+  "long": 77,
+  "diagnosis": 2,
+  "medium": 7,
+  "short": 7
+ },
+ "A5_changed_loci": {
+  "just-depressed#long": {
+   "pre_words": 979,
+   "post_words": 978,
+   "unchanged_words": 963,
+   "changed_words_post": 15
+  },
+  "just-depressed#archetypeVariants.defender": {
+   "pre_words": 347,
+   "post_words": 344,
+   "unchanged_words": 339,
+   "changed_words_post": 5
+  },
+  "just-edgy#long": {
+   "pre_words": 220,
+   "post_words": 220,
+   "unchanged_words": 207,
+   "changed_words_post": 13
+  },
+  "happiness-is-choice#long": {
+   "pre_words": 555,
+   "post_words": 589,
+   "unchanged_words": 508,
+   "changed_words_post": 81
+  }
+ },
+ "A5_changed_loci_count": 4,
+ "A5_phaseR_entries": [
+  {
+   "locus": "happiness-is-choice#long",
+   "locus_words": 589,
+   "changed_words": 81,
+   "changed_fraction": 0.1375,
+   "anchor_in_changed_text": true
+  },
+  {
+   "locus": "just-edgy#long",
+   "locus_words": 220,
+   "changed_words": 13,
+   "changed_fraction": 0.0591,
+   "anchor_in_changed_text": false
+  },
+  {
+   "locus": "just-depressed#long",
+   "locus_words": 978,
+   "changed_words": 15,
+   "changed_fraction": 0.0153,
+   "anchor_in_changed_text": false
+  },
+  {
+   "locus": "just-depressed#archetypeVariants.defender",
+   "locus_words": 344,
+   "changed_words": 5,
+   "changed_fraction": 0.0145,
+   "anchor_in_changed_text": false
+  }
+ ],
+ "A5_expected_anchors_in_changed_text_under_uniform": 0.2264,
+ "A5_observed_anchors_in_changed_text": 1,
+ "A5_n_phaseR_entries": 4
+}

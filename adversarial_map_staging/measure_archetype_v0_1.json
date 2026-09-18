@@ -1,0 +1,496 @@
+{
+ "n_instances": 136,
+ "raw_signal_counter": {
+  "sophisticate": 72,
+  "not-applicable": 38,
+  "defender": 15,
+  "drifter": 6,
+  "blended": 5
+ },
+ "n_applicable": 98,
+ "applicable_mix": {
+  "sophisticate": 72,
+  "defender": 15,
+  "drifter": 6,
+  "blended": 5
+ },
+ "canon_claim": {
+  "sophisticate": 72,
+  "defender": 15,
+  "drifter": 6,
+  "blended": 5,
+  "n": 98
+ },
+ "reproduces_canon": true,
+ "xtab_source_register": {
+  "private_exchange / sophisticated_interlocutor": {
+   "n": 7,
+   "soph_share": 1.0,
+   "sophisticate": 7
+  },
+  "academic-adjacent_youtube_dialogue / communication-studies_professor_long-form": {
+   "n": 6,
+   "soph_share": 1.0,
+   "sophisticate": 6
+  },
+  "high_reach_intellectual_podcast / public-intellectual_long-form_interview": {
+   "n": 5,
+   "soph_share": 1.0,
+   "sophisticate": 5
+  },
+  "popular-philosophy_youtube_podcast / atheist-public_intellectual_interview": {
+   "n": 4,
+   "soph_share": 1.0,
+   "sophisticate": 4
+  },
+  "popular-philosophy_youtube_podcast / vegan-advocate_cross-channel_conversation": {
+   "n": 4,
+   "soph_share": 0.0,
+   "blended": 4
+  },
+  "high_reach_intellectual_podcast_debate / South_African_independent_media": {
+   "n": 3,
+   "soph_share": 1.0,
+   "sophisticate": 3
+  },
+  "high_reach_intellectual_lecture_excerpt / Biblical-philosophical": {
+   "n": 3,
+   "soph_share": 1.0,
+   "sophisticate": 3
+  },
+  "peer_reviewed_philosophy_journal / academic_register": {
+   "n": 3,
+   "soph_share": 0.667,
+   "defender": 1,
+   "sophisticate": 2
+  },
+  "peer_reviewed_bioethics / academic_philosophy": {
+   "n": 2,
+   "soph_share": 1.0,
+   "sophisticate": 2
+  },
+  "long_form_youtube_debate_two_named_individuals": {
+   "n": 2,
+   "soph_share": 1.0,
+   "sophisticate": 2
+  },
+  "long_form_intellectual_podcast_named_specialists": {
+   "n": 2,
+   "soph_share": 1.0,
+   "sophisticate": 2
+  },
+  "social_network_forum / hobbyist_philosophy_discussion": {
+   "n": 2,
+   "soph_share": 0.0,
+   "defender": 1,
+   "drifter": 1
+  },
+  "podcast_show_notes / substack_essay": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "national_security_journalism / policy_blog": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "medium_essay / autodidact_philosophy": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_blog / atheist_secular_humanist": {
+   "n": 1,
+   "soph_share": 0.0,
+   "drifter": 1
+  },
+  "marxist_organizing / political_essay": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_forum / open_discussion": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "catholic_pro_life_ngo_essay / theological_pastoral": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "catholic_pro_life_ngo_explainer / culture_war_journalism": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "philosophy_curation_blog / cioran_studies / lusophone_antinatalism": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "skeptics_forum / freethought_community": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "atheist_skeptic_blog / public_intellectual_polemic": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "peer_reviewed_philosophy / population_ethics": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_forum / amateur_and_credentialed_discussion": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "transhumanist_manifesto / self_hosted_philosophy": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_forum / live_qa_thread": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "popular_philosophy_magazine": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "popular_philosophy_explainer / online_magazine": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "talk_show / high-prestige_celebrity_podcast": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "secular_intellectual_blog / atheist_movement_voice": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "religious_advocacy / pro-life_organization": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "independent_blog / philosophy-curious_amateur": {
+   "n": 1,
+   "soph_share": 0.0,
+   "blended": 1
+  },
+  "academic_philosophy_blog": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "peer_reviewed_academic_philosophy": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "academic_substack / public_intellectual": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "high_reach_intellectual_podcast / wellness_self_help_adjacent": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "high_reach_intellectual_podcast / atheist_secular_philosophy": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "conservative_national_newspaper / mainstream_news_attribution": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "medium_essay / autodidact_philosophy / atheist_naturalist": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "academic-public_philosophy_podcast / two-philosopher_long-form_interview": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "youtube_monologue_response_to_published_book": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "live_audio_debate_podcast_two_named_specialists": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "academic_critical_notice_in_peer_reviewed_journal": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "economist_blog_post_short_form_dismissive": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "peer_reviewed_journal_article_open_access_cc_by": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "writer_blog_essay_philosophy_long_form": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "peer_reviewed_journal_article_paywalled_abstract_via_philpapers": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "reproductive_justice_activism / nonprofit_publication / liberation_discourse": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "named_secular_activist_blog / popular_philosophy_polemic": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "popular_press_opinion / quoted_academic_voice": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "religious_practice_blog / soteriological_register": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "peer_reviewed_philosophy_of_religion_journal / academic_register": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "celebrity_intellectual_microblog / mass_platform_tweet": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "subreddit_thread_comment / disability_rights_community": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "leftist_intellectual_longform / political_magazine_essay": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "libertarian_economics_academic_blog / econlog_post": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_discussion_forum / OP_thread_opener": {
+   "n": 1,
+   "soph_share": 0.0,
+   "drifter": 1
+  },
+  "philosophy_discussion_forum / aphoristic_provocation": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "tech_forum / pseudonymous_commenter / climate_subthread": {
+   "n": 1,
+   "soph_share": 0.0,
+   "drifter": 1
+  },
+  "philosophy_substack / EA_adjacent / ethics_essay": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "general_audience_review / philosophy_book_review / mainstream_intellectual": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "philosophy_blog / cosmic_pessimism / antinatalist_aligned": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "personal_substack_essay / cultural-writer_general-audience": {
+   "n": 1,
+   "soph_share": 0.0,
+   "drifter": 1
+  },
+  "personal_substack_essay / reader_comment / cultural-other-as-rhetorical-resource": {
+   "n": 1,
+   "soph_share": 0.0,
+   "drifter": 1
+  },
+  "philosophy_discussion_forum / pseudonymous_sophisticate_reply": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  },
+  "personal_blog / jungian-trained_philosophical-essayist / pop-psychology-meets-philosophy": {
+   "n": 1,
+   "soph_share": 1.0,
+   "sophisticate": 1
+  }
+ },
+ "xtab_speaker_type": {
+  "named_individual": {
+   "n": 64,
+   "soph_share": 0.844,
+   "sophisticate": 54,
+   "defender": 4,
+   "drifter": 2,
+   "blended": 4
+  },
+  "pseudonymous_individual": {
+   "n": 21,
+   "soph_share": 0.667,
+   "sophisticate": 14,
+   "defender": 2,
+   "blended": 1,
+   "drifter": 4
+  },
+  "organization": {
+   "n": 4,
+   "soph_share": 0.25,
+   "sophisticate": 1,
+   "defender": 3
+  },
+  "academic_philosopher": {
+   "n": 4,
+   "soph_share": 0.5,
+   "defender": 2,
+   "sophisticate": 2
+  },
+  "collective_byline": {
+   "n": 3,
+   "soph_share": 0.333,
+   "sophisticate": 1,
+   "defender": 2
+  },
+  "academic_psychologist_quoted_in_journalism": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  },
+  "religious_practitioner_blogger": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  }
+ },
+ "xtab_public_reach": {
+  "None": {
+   "n": 47,
+   "soph_share": 0.702,
+   "sophisticate": 33,
+   "defender": 8,
+   "drifter": 1,
+   "blended": 5
+  },
+  "high_reach_intellectual": {
+   "n": 28,
+   "soph_share": 0.929,
+   "sophisticate": 26,
+   "defender": 1,
+   "drifter": 1
+  },
+  "niche_or_pseudonymous": {
+   "n": 12,
+   "soph_share": 0.417,
+   "defender": 3,
+   "drifter": 4,
+   "sophisticate": 5
+  },
+  "named_specialist": {
+   "n": 6,
+   "soph_share": 1.0,
+   "sophisticate": 6
+  },
+  "academic_specialist_audience": {
+   "n": 4,
+   "soph_share": 0.5,
+   "defender": 2,
+   "sophisticate": 2
+  },
+  "broad_general_audience": {
+   "n": 1,
+   "soph_share": 0.0,
+   "defender": 1
+  }
+ },
+ "xtab_instance_polarity": {
+  "deploys-against": {
+   "n": 89,
+   "soph_share": 0.742,
+   "sophisticate": 66,
+   "defender": 15,
+   "blended": 3,
+   "drifter": 5
+  },
+  "refutation-of-deployment": {
+   "n": 5,
+   "soph_share": 0.8,
+   "drifter": 1,
+   "sophisticate": 4
+  },
+  "neutral-attestation": {
+   "n": 2,
+   "soph_share": 0.0,
+   "blended": 2
+  },
+  "deploys-for": {
+   "n": 2,
+   "soph_share": 1.0,
+   "sophisticate": 2
+  }
+ },
+ "n_distinct_publications": 62,
+ "top_publications": {
+  "Private 3-message exchange (sibling project)": 7,
+  "The Philosophy Forum": 6,
+  "YouTube (Corey Anton's channel; original Anton-Inmendham exchange circa August 2011)": 6,
+  "Making Sense Podcast (formerly Waking Up Podcast)": 5,
+  "Cosmic Skeptic Podcast (YouTube)": 4,
+  "Cosmic Skeptic Channel (YouTube)": 4,
+  "The Renegade Report (formerly Cliff Central)": 3,
+  "YouTube (Peterson's channel); standalone excerpt from Biblical Series Lecture XIII 'Jacob's Ladder'": 3,
+  "Human Life International": 2,
+  "Richard Carrier Blogs": 2
+ },
+ "soph_in_top5_pubs": 26,
+ "n_in_top5_pubs": 28,
+ "soph_outside_top5": 46,
+ "n_outside_top5": 70,
+ "register_heterogeneity_obs_chi": 94.5798,
+ "register_heterogeneity_perm_p": 0.0,
+ "overall_soph_share": 0.7347
+}
