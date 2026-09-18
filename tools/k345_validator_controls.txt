@@ -1,0 +1,71 @@
+    # ---------------- K345 control battery: the NEW behaviour, both directions ----
+    # A suite written before a change proves nothing about the change. Each control
+    # below fails loudly if v0_3's locus grammar or cap arithmetic is wrong.
+    SOPH = "sophisticate variant for node y carrying its own distinct commitment epsilon zeta"
+    DEFE = "defender variant for node y naming the bad faith eta theta iota"
+    for _n in mc["objections"]:
+        if _n["id"] == "node-y":
+            _n["responses"]["archetypeVariants"] = {"sophisticate": SOPH, "defender": DEFE}
+    open(cpath, "wb").write((json.dumps(mc, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
+    cmd5 = md5_bytes(open(cpath, "rb").read())
+    odig = objections_digest(mc)
+
+    def vent(slot, anchor, **kw):
+        d = dict(target_id="node-y", target_locus=VARIANT_PREFIX + slot, target_anchor=anchor)
+        d.update(kw)
+        return _entry(**d)
+
+    def clean(name, entries, meta_extra=None, terminal=False, assembly=False):
+        pth = write_map("k345_%s.json" % re.sub(r"[^a-z0-9]+", "_", name), entries, meta_extra=meta_extra)
+        ok, viol, adv = validate([pth], cpath, terminal=terminal, assembly=assembly, out=lambda s: None)
+        good = ok and not adv
+        results.append((name, good, "-"))
+        print("%s . self-test [%s] expects PASS -> %s" % ("PASS" if good else "FAIL", name, (viol + adv)[:3]))
+
+    # 1. a well-formed variant entry validates
+    clean("k345-variant-locus-valid", [vent("sophisticate", "carrying its own distinct commitment")])
+    # 2. slot that does not exist on THIS node
+    case("k345-variant-slot-absent", [vent("drifter", "carrying its own distinct commitment")], "target-locus")
+    # 3. slot outside the declared set
+    case("k345-variant-slot-bogus", [vent("apologist", "carrying its own distinct commitment")], "target-locus")
+    # 4. anchor absent from the named variant
+    case("k345-variant-anchor-absent", [vent("defender", "carrying its own distinct commitment")], "anchor-rule")
+    # 5. ROUTING PROOF, both directions: locus_text must read the named variant ALONE,
+    #    never a concatenation with the node's primary loci, and vice versa.
+    case("k345-long-anchor-not-in-variant", [vent("defender", "quick brown fox jumps")], "anchor-rule")
+    case("k345-variant-anchor-not-in-long",
+         [_entry(target_id="node-y", target_locus="long", target_anchor="naming the bad faith")], "anchor-rule")
+    # 6. per-locus cap: 4 distinct anchors at one locus
+    four = [_entry(target_id="node-y", target_anchor=a) for a in
+            ("the quick brown fox", "quick brown fox jumps", "brown fox jumps over", "fox jumps over the")]
+    case("k345-entry-cap-per-locus", four, "entry-cap")
+    # 7. the node bound on a node with NO variants stays exactly 3, the ratified value
+    nov = [_entry(target_id="node-z", target_locus=L, target_anchor=a) for L, a in
+           (("long", "the quick brown fox"), ("long", "quick brown fox jumps"),
+            ("long", "brown fox jumps over"), ("medium", "medium text z"))]
+    case("k345-entry-cap-node-unchanged-at-3", nov, "entry-cap-node")
+    # 8. the node bound SCALES: node-y carries 2 variant slots, so 5 is clean and 6 trips
+    five = [_entry(target_id="node-y", target_anchor=a) for a in
+            ("the quick brown fox", "quick brown fox jumps", "brown fox jumps over")] + [
+           vent("sophisticate", "carrying its own distinct commitment"),
+           vent("defender", "naming the bad faith")]
+    clean("k345-entry-cap-node-scales-to-5", five)
+    case("k345-entry-cap-node-trips-at-6",
+         five + [_entry(target_id="node-y", target_locus="medium", target_anchor="medium text y")],
+         "entry-cap-node")
+    # 8b. an (a) may route TO a variant locus, and a bogus one still trips
+    clean("k345-answered-by-variant-ok",
+          [_entry(target_id="node-z", target_anchor="the quick brown fox",
+                  routing={"answered_by": ["node-y#archetypeVariants.defender"]})])
+    case("k345-answered-by-variant-absent",
+         [_entry(target_id="node-z", target_anchor="the quick brown fox",
+                 routing={"answered_by": ["node-y#archetypeVariants.drifter"]})], "routing-shape")
+
+    # 9. a DECLARED variant_coverage is gated; an undeclared one is only reported
+    clean("k345-variant-coverage-declared-true",
+          [vent("sophisticate", "carrying its own distinct commitment")],
+          meta_extra={"variant_coverage": "1/2"})
+    case("k345-variant-coverage-declared-false",
+         [vent("sophisticate", "carrying its own distinct commitment")], "variant-coverage",
+         meta_extra={"variant_coverage": "2/2"})
+
