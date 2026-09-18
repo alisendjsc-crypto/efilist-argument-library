@@ -1,0 +1,62 @@
+{
+  "artifact": "flowstates_correction_measurement_v0_1.json",
+  "session": "K349a",
+  "date_operator_local": "2026-09-17",
+  "loci": [
+    {
+      "surface": "efilist_argument_library_v4_0_0.json",
+      "locus": "objections[flow-states].note",
+      "line": 2423,
+      "occurrences": 1,
+      "kind": "corpus"
+    },
+    {
+      "surface": "efilist_argument_library_v4_0_0.jsx",
+      "locus": "objections[flow-states].note",
+      "line": 2411,
+      "occurrences": 1,
+      "kind": "corpus"
+    },
+    {
+      "surface": "combined.html",
+      "locus": "objections[flow-states].note",
+      "line": 5262,
+      "occurrences": 1,
+      "kind": "corpus"
+    },
+    {
+      "surface": "combined.html",
+      "locus": "RSI CALIBRATION NOTES (apparatus prose)",
+      "line": 1799,
+      "occurrences": 1,
+      "kind": "flagship-only"
+    }
+  ],
+  "constants": {
+    "n_loci": 4,
+    "n_corpus_surfaces": 3,
+    "n_flagship_only": 1,
+    "fs_r": 0.82,
+    "ip_r": 0.81,
+    "median_r": 0.85,
+    "below": 20,
+    "equal": 9,
+    "pct": 29.9,
+    "n_nodes": 82,
+    "note_words_before": 42,
+    "note_words_after": 52,
+    "corpus_md5": "04bf6482aa0374ee92a81c1d55ec41f8",
+    "jsx_md5": "b196548b6eb39065842d62292acca89f",
+    "flagship_md5": "72187f6cf0fccdf8e9f4ec6ca5ce009c",
+    "word_delta": 10
+  },
+  "robustness": {
+    "median": 0.85,
+    "n": 82,
+    "flow_states": 0.82,
+    "indigenous_philosophy": 0.81,
+    "below": 20,
+    "equal": 9,
+    "percentile": 29.9
+  }
+}
