@@ -1,0 +1,188 @@
+{
+  "a_entries": 26,
+  "a_evidence": {
+    "ai-fear#archetypeVariants.blended": {
+      "answered_by": "violence-as-reductio#long",
+      "snippet": "the bridge is held, and held by founders"
+    },
+    "ai-fear#archetypeVariants.drifter": {
+      "answered_by": "why-not-suicide#long",
+      "snippet": "only the negative action of not procreating is authorized"
+    },
+    "antinatalism-misanthropic#archetypeVariants.blended": {
+      "answered_by": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "snippet": "The prevention-ground is impersonal"
+    },
+    "antinatalism-misanthropic#archetypeVariants.defender": {
+      "answered_by": "antinatalism-misanthropic#long",
+      "snippet": "structural criticism of a species is not the same as hatred of individuals"
+    },
+    "antinatalism-misanthropic#archetypeVariants.drifter": {
+      "answered_by": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "snippet": "empathy aimed at a harm"
+    },
+    "benatar-asymmetry-attack#archetypeVariants.blended": {
+      "answered_by": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "snippet": "deprivation is irreducibly two-place"
+    },
+    "benatar-asymmetry-attack#archetypeVariants.defender": {
+      "answered_by": "benatar-asymmetry-attack#long",
+      "snippet": "inference to the best explanation, not stipulation"
+    },
+    "benatar-asymmetry-attack#archetypeVariants.drifter": {
+      "answered_by": "benatar-asymmetry-attack#long",
+      "snippet": "the un-instantiated pleasure generates no reason"
+    },
+    "future-solve#archetypeVariants.sophisticate": {
+      "answered_by": "most-people-happy#long",
+      "snippet": "You do not get to gamble with someone else's welfare"
+    },
+    "most-people-happy#archetypeVariants.sophisticate": {
+      "answered_by": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "snippet": "Strip the distribution to its guaranteed baseline"
+    },
+    "next-person-cure-cancer#archetypeVariants.sophisticate": {
+      "answered_by": "next-person-cure-cancer#long",
+      "snippet": "did they consent to the conditions under which they must achieve it"
+    },
+    "privileged-first-world#archetypeVariants.defender": {
+      "answered_by": "privileged-first-world#long",
+      "snippet": "emerged from conditions of extreme suffering"
+    },
+    "red-button-repugnant#archetypeVariants.defender": {
+      "answered_by": "red-button-repugnant#long",
+      "snippet": "its continuation must be justified by its content"
+    },
+    "red-button-repugnant#archetypeVariants.sophisticate": {
+      "answered_by": "red-button-repugnant#long",
+      "snippet": "not by a philosophically reliable endorsement of existence"
+    },
+    "selfish-lazy#archetypeVariants.defender": {
+      "answered_by": "selfish-lazy#long",
+      "snippet": "identifies the natalist as the selfish party"
+    },
+    "slippery-slope-eugenics#archetypeVariants.defender": {
+      "answered_by": "slippery-slope-eugenics#long",
+      "snippet": "they are nodding at a slogan"
+    },
+    "violence-as-reductio#archetypeVariants.blended": {
+      "answered_by": "violence-as-reductio#archetypeVariants.sophisticate",
+      "snippet": "route it to the node that owns the anchor"
+    },
+    "violence-as-reductio#archetypeVariants.defender": {
+      "answered_by": "violence-as-reductio#long",
+      "snippet": "Centrality is sociology; entailment is logic"
+    },
+    "violence-as-reductio#archetypeVariants.sophisticate": {
+      "answered_by": "why-not-suicide#archetypeVariants.sophisticate",
+      "snippet": "indexed to the non-existence case"
+    },
+    "why-not-suicide#archetypeVariants.blended": {
+      "answered_by": "why-not-suicide#long",
+      "snippet": "biology has installed exit barriers"
+    },
+    "why-not-suicide#archetypeVariants.defender": {
+      "answered_by": "violence-as-reductio#long",
+      "snippet": "Centrality is sociology; entailment is logic"
+    },
+    "why-not-suicide#archetypeVariants.drifter": {
+      "answered_by": "why-not-suicide#long",
+      "snippet": "the structural layer does not entail the NU layer"
+    },
+    "wild-animal-suffering-consistency#archetypeVariants.blended": {
+      "answered_by": "wild-animal-suffering-consistency#long",
+      "snippet": "not anti-intervention in principle"
+    },
+    "wild-animal-suffering-consistency#archetypeVariants.defender": {
+      "answered_by": "wild-animal-suffering-consistency#long",
+      "snippet": "confuses ethical salience with intervention obligation"
+    },
+    "wild-animal-suffering-consistency#archetypeVariants.drifter": {
+      "answered_by": "wild-animal-suffering-consistency#long",
+      "snippet": "is itself a contribution to the case for antinatalism"
+    },
+    "wild-animal-suffering-consistency#archetypeVariants.sophisticate": {
+      "answered_by": "wild-animal-suffering-consistency#long",
+      "snippet": "who will suffer and was not consulted"
+    }
+  },
+  "a_evidence_verified": 26,
+  "all_pass": true,
+  "artifact": "phaseF_proper_control_v0_1.json",
+  "authored": "2026-09-17, wuld.ink Cowork, K347",
+  "class_mix": {
+    "base_a_or_d_share": 0.763441,
+    "base_phases_A_to_E": {
+      "a": 39,
+      "b": 21,
+      "c": 1,
+      "d": 32
+    },
+    "exact_two_sided_binomial_p": 0.262425,
+    "expected_a_or_d": 29.7742,
+    "k346_register_for_contrast": {
+      "a_or_d": 0,
+      "n": 39,
+      "p_at_this_prior": 3.8339774876808513e-25
+    },
+    "n": 39,
+    "observed": {
+      "a": 26,
+      "b": 6,
+      "d": 7
+    },
+    "observed_a_or_d": 33,
+    "observed_a_or_d_share": 0.846154,
+    "reading": "The gate is two-sided by design (ccclxviii): knowing K346 drew zero (a) is not a licence to rubber-stamp (a). a+d lands inside the prior, so the phase's receipt is not written over an instrument reading. Within that total the split moves toward (a) and away from (d), which is what design section 10.4 predicts for loci that re-present an argument their primary ladder already answers.",
+    "sd": 2.6539,
+    "verdict": "CONSISTENT",
+    "z": 1.2155
+  },
+  "controls": {
+    "a-evidence-battery-26-of-26": true,
+    "anchor-extended-past-text": true,
+    "anchor-one-char-corrupted": true,
+    "ccclxx-defect-reproduced-on-v0_3": true,
+    "ccclxx-verdict-invocation-independent": true,
+    "class-a-move-over-60": true,
+    "class-counts-misdeclared": true,
+    "class-flipped-routing-stale": true,
+    "class-mix-consistent-with-prior": true,
+    "closure-declares-an-unauthored-locus": true,
+    "closure-misses-an-authored-locus": true,
+    "closure-value-outside-enum": true,
+    "move-under-band": true,
+    "objections-digest-wrong": true,
+    "open-declared-with-one-entry": true,
+    "open-locus-misdeclared-closed": true,
+    "phase-outside-enum": true,
+    "positive-control-as-shipped": true,
+    "standalone-dash-token": true,
+    "two-entries-same-clause": true,
+    "undeclared-closure-is-not-gated": true,
+    "variant-coverage-overstated": true,
+    "variant-slot-absent-on-node": true
+  },
+  "controls_passed": 23,
+  "controls_total": 23,
+  "per_slot_b_counts": {
+    "blended": {
+      "b": 1,
+      "n": 7
+    },
+    "defender": {
+      "b": 2,
+      "n": 11
+    },
+    "drifter": {
+      "b": 2,
+      "n": 7
+    },
+    "sophisticate": {
+      "b": 1,
+      "n": 14
+    }
+  },
+  "subject": "adv_map_phaseF_v0_1.json",
+  "validator": "adv_map_validator_v0_4.py"
+}

@@ -1,0 +1,19 @@
+{
+ "a_or_d": 33,
+ "a_or_d_share": "0.8462",
+ "binomial_p": "0.2624",
+ "class_counts": {
+  "a": 26,
+  "b": 6,
+  "d": 7
+ },
+ "control_bytes": 7399,
+ "control_md5": "61390fa4ba180f67b3644fc41552da71",
+ "entries": 39,
+ "phaseF_bytes": 64896,
+ "phaseF_md5": "1dfe418cd27bbbe5d402b3a41456324a",
+ "v0_3_md5": "eb254a091a94b860a95f0b06b2074563",
+ "v0_4_bytes": 48302,
+ "v0_4_md5": "d7a049ee1161d3bc5de0d3fbff96bbf9",
+ "xsurface": "6cd132ee5b8c7ca78ad0e095806f1c93"
+}
