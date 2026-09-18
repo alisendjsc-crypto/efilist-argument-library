@@ -395,6 +395,25 @@ body[data-active-view="library"] {
   margin-left: 6px; transition: all 0.15s ease;
 }
 .note-toggle:hover { border-color: #996; color: #cc9; }
+
+/* K352 -- the level-independent affordance. Rendered at EVERY responseLevel on purpose: a
+   control gated by the depth it exists to change cannot be found by the reader who needs it.
+   Sibling of .note-toggle in the response label, and styled off it. Hex literals here are
+   3- or 6-digit DELIBERATELY: the eight 5-digit values above (#4a733, #c9033, #c5511, #33200
+   and their high-contrast twins) are invalid CSS and are dropped by the parser, which is why
+   the confidence badges render as bare coloured text. Measured at K352, logged, not repaired. */
+.depth-jump {
+  background: none; border: 1px solid #442222; color: #aa7777;
+  font-family: inherit; font-size: 8px; padding: 2px 6px;
+  cursor: pointer; letter-spacing: 1px; text-transform: uppercase;
+  margin-left: 6px; vertical-align: middle; transition: all 0.15s ease;
+}
+.depth-jump:hover { border-color: #8b0000; color: #e0a0a0; }
+.depth-jump[data-at="1"] { border-color: #8b0000; color: #e0a0a0; background: #2a0d0d; cursor: default; }
+&.legible .depth-jump { font-size: 10px; padding: 4px 9px; }
+&.high-contrast .depth-jump { background: #f5e8e8; border-color: #ddaaaa; color: #8b0000; }
+&.high-contrast .depth-jump:hover { background: #e8d0d0; }
+&.high-contrast .depth-jump[data-at="1"] { background: #8b0000; border-color: #8b0000; color: #ffffff; }
 &.legible .confidence-note { font-size: 13px; padding: 14px 18px; }
 &.legible .confidence-badge { font-size: 10px; }
 &.high-contrast .confidence-note { background: #ede8df; border-color: #cca; color: #665; }
@@ -2783,9 +2802,12 @@ window.__arglib.applyOuterRoute = function() {
       // (e.g. #instance:foo, #speaker:foo, #archetype:foo, #<obj-id>)
       // Promote to /rwe/ scope.
       var raw = location.hash.replace(/^#/, '');
-      /* K108 card anchors: #obj-<key> / #rwe-<instance_id> -- carve out BEFORE the legacy promote (append-only covenant, canon v37.39) */
-      var cardm = /^(obj|rwe)-([A-Za-z0-9_-]+)$/.exec(raw);
-      if (cardm && cardm[1] === 'rwe') {
+      /* K108 card anchors: #obj-<key> / #rwe-<instance_id> -- carve out BEFORE the legacy promote (append-only covenant, canon v37.39)
+         K352 extends the OBJ form only, append-only: #obj-<key>@<short|medium|long> forces the depth. `@` is outside the id vocabulary
+         [A-Za-z0-9_-] so it cannot collide with any id; a bare #obj-<key> is byte-identical in behaviour; #rwe-<id>@... is NOT claimed
+         and still falls through to the legacy promote exactly as before. */
+      var cardm = /^(obj|rwe)-([A-Za-z0-9_-]+)(?:@(short|medium|long))?$/.exec(raw);
+      if (cardm && cardm[1] === 'rwe' && !cardm[3]) {
         history.replaceState(null, '', '#/rwe/instance:' + cardm[2]);
         var nudge = window.__rweHashNudge || null; /* pre-init: initRwe consumes the hash itself */
         window.__arglib.setActiveView('rwe');
@@ -2794,8 +2816,8 @@ window.__arglib.applyOuterRoute = function() {
       }
       if (cardm && cardm[1] === 'obj') {
         window.__arglib.setActiveView('library');
-        if (typeof window.__arglibRouteObj === 'function') window.__arglibRouteObj(cardm[2]);
-        else window.__arglib.pendingObjAnchor = cardm[2];
+        if (typeof window.__arglibRouteObj === 'function') window.__arglibRouteObj(cardm[2], cardm[3]);
+        else { window.__arglib.pendingObjAnchor = cardm[2]; window.__arglib.pendingObjDepth = cardm[3] || null; }
         return;
       }
       if (raw.startsWith('instance:') || raw.startsWith('speaker:') || raw.startsWith('archetype:') || raw.length > 0) {
@@ -10548,6 +10570,14 @@ function render() {
             var grade = rsiD.grade;
             badges += '<span class="rsi-badge" data-grade="' + grade.letter + '" style="color:' + grade.color + ';border:1px solid ' + grade.color + '44;background:' + grade.color + '11" onclick="event.stopPropagation(); toggleRSI(\'' + obj.id + '\')" title="' + grade.desc + '">RSI ' + grade.letter + '</span>';
           }
+          /* K352: the level-independent affordance. Rendered at EVERY responseLevel -- a
+             control gated by the depth it exists to change cannot be found by the reader who
+             needs it. Routes through the single card-anchor router, which reaches setDepth();
+             there is no parallel render path here, and archetypeSel is never touched (D7). */
+          var _atLong = responseLevel === 'long';
+          var _djLabel = _atLong ? 'Already at full dismantlement' : 'Open this objection at full dismantlement';
+          badges += '<button class="depth-jump" data-at="' + (_atLong ? '1' : '0') + '" aria-label="' + _djLabel +
+            '" title="' + _djLabel + '" onclick="event.stopPropagation(); __arglibRouteObj(\'' + obj.id + '\', \'long\')">[DISMANTLE]</button>';
           return badges;
         })()}</div>
         ${archetypePills(obj)}${rweBlock(obj)}<div class="response-box ${(obj.confidence === 'provisional' && responseLevel === 'long') ? 'provisional-response' : ''}">${_bodyText}</div>
@@ -10573,7 +10603,7 @@ function render() {
             '<div class="rsi-formula">RSI = (V × S × C × R × A)<sup>1/5</sup> = <strong>' + rsiD.pct.toFixed(1) + '%</strong> → Grade ' + grade.letter +
             '<br>' + grade.desc + '</div></div>';
         })()}
-        <button class="copy-btn" id="copy-${obj.id}" onclick="event.stopPropagation(); copyResponse('${obj.id}')">COPY RESPONSE</button><button class="copy-btn copy-link-btn" onclick="event.stopPropagation(); copyCardLink('obj-${obj.id}', this)">COPY LINK</button>
+        <button class="copy-btn" id="copy-${obj.id}" onclick="event.stopPropagation(); copyResponse('${obj.id}')">COPY RESPONSE</button><button class="copy-btn copy-link-btn" onclick="event.stopPropagation(); copyCardLink('obj-${obj.id}${responseLevel === 'medium' ? '' : '@' + responseLevel}', this)">COPY LINK</button>
       </div>
       <div class="section">
         <div class="section-label">SOURCES & FRAMEWORKS</div>
@@ -12409,10 +12439,15 @@ document.addEventListener('arglib:mode-change', function() {
   try { if (typeof selectedTier !== "undefined" && selectedTier !== null && typeof setTier === "function") setTier(selectedTier); } catch(e) {}
 });
 /* -- K108: card-anchor routing (objection side) + anchor self-test (append-only covenant, canon v37.39) -- */
-window.__arglibRouteObj = function(key) {
+window.__arglibRouteObj = function(key, depth) {
   if (!OBJECTIONS.some(function(o){ return o.id === key; })) return; /* silent degrade: unknown/stale anchor */
   selectedObjection = key;
-  render();
+  /* K352: the level-independent affordance. This router never touched responseLevel, so a
+     #obj-<id> deep link landed every reader on the medium default while 80 of the map's 98
+     answer targets sit at long. setDepth() is the ONLY path -- it syncs the .depth-btn active
+     class and calls render() itself, so exactly one render happens here either way. */
+  if ((depth === 'short' || depth === 'medium' || depth === 'long') && typeof setDepth === 'function') setDepth(depth);
+  else render();
   var el = document.getElementById('obj-' + key);
   if (!el) { /* filtered out: reset filters via native paths, retry once */
     var sb = document.getElementById('searchBox'); if (sb) sb.value = '';
@@ -12436,8 +12471,9 @@ window.__arglibRouteObj = function(key) {
     if (n && typeof getFiltered === 'function' && n !== getFiltered().length) console.error('K108 anchor self-test: rendered ' + n + ' != filtered ' + getFiltered().length);
   }, 250);
   if (window.__arglib && window.__arglib.pendingObjAnchor) {
-    var pk = window.__arglib.pendingObjAnchor; window.__arglib.pendingObjAnchor = null;
-    window.__arglibRouteObj(pk);
+    var pk = window.__arglib.pendingObjAnchor, pd = window.__arglib.pendingObjDepth || null;
+    window.__arglib.pendingObjAnchor = null; window.__arglib.pendingObjDepth = null;
+    window.__arglibRouteObj(pk, pd);
   }
 })();
 </script>
