@@ -1,0 +1,186 @@
+{
+  "artifact": "k349_verification.json",
+  "session": "K349",
+  "date_operator_local": "2026-09-17",
+  "reproducibility": [
+    {
+      "artifact": "measure_k349_v0_1.json",
+      "seed": "0",
+      "ok": true,
+      "want": "25d59b5ae9f49849a3ed8d814d39d453",
+      "got": "25d59b5ae9f49849a3ed8d814d39d453",
+      "err": []
+    },
+    {
+      "artifact": "adv_map_phaseG_v0_1.json",
+      "seed": "0",
+      "ok": true,
+      "want": "d7cd18eb0467f38d8ecd4694776dd885",
+      "got": "d7cd18eb0467f38d8ecd4694776dd885",
+      "err": []
+    },
+    {
+      "artifact": "adversarial_map_design_v0_5.md",
+      "seed": "0",
+      "ok": true,
+      "want": "ab9569122de23de82db2ab5600d86d9e",
+      "got": "ab9569122de23de82db2ab5600d86d9e",
+      "err": []
+    },
+    {
+      "artifact": "adversarial_map_v1_2.json",
+      "seed": "0",
+      "ok": true,
+      "want": "e4bef3cac882aa079951ba7ec1a9d11e",
+      "got": "e4bef3cac882aa079951ba7ec1a9d11e",
+      "err": []
+    },
+    {
+      "artifact": "honest_residuals_register_v0_3.json",
+      "seed": "0",
+      "ok": true,
+      "want": "56a86d36e0354f00051a84ca02993fab",
+      "got": "56a86d36e0354f00051a84ca02993fab",
+      "err": []
+    },
+    {
+      "artifact": "project_canon_v38_11.json",
+      "seed": "0",
+      "ok": true,
+      "want": "00029452ebcb68ade65da9d3fe10f07d",
+      "got": "00029452ebcb68ade65da9d3fe10f07d",
+      "err": []
+    },
+    {
+      "artifact": "measure_k349_v0_1.json",
+      "seed": "12345",
+      "ok": true,
+      "want": "25d59b5ae9f49849a3ed8d814d39d453",
+      "got": "25d59b5ae9f49849a3ed8d814d39d453",
+      "err": []
+    },
+    {
+      "artifact": "adv_map_phaseG_v0_1.json",
+      "seed": "12345",
+      "ok": true,
+      "want": "d7cd18eb0467f38d8ecd4694776dd885",
+      "got": "d7cd18eb0467f38d8ecd4694776dd885",
+      "err": []
+    },
+    {
+      "artifact": "adversarial_map_design_v0_5.md",
+      "seed": "12345",
+      "ok": true,
+      "want": "ab9569122de23de82db2ab5600d86d9e",
+      "got": "ab9569122de23de82db2ab5600d86d9e",
+      "err": []
+    },
+    {
+      "artifact": "adversarial_map_v1_2.json",
+      "seed": "12345",
+      "ok": true,
+      "want": "e4bef3cac882aa079951ba7ec1a9d11e",
+      "got": "e4bef3cac882aa079951ba7ec1a9d11e",
+      "err": []
+    },
+    {
+      "artifact": "honest_residuals_register_v0_3.json",
+      "seed": "12345",
+      "ok": true,
+      "want": "56a86d36e0354f00051a84ca02993fab",
+      "got": "56a86d36e0354f00051a84ca02993fab",
+      "err": []
+    },
+    {
+      "artifact": "project_canon_v38_11.json",
+      "seed": "12345",
+      "ok": true,
+      "want": "00029452ebcb68ade65da9d3fe10f07d",
+      "got": "00029452ebcb68ade65da9d3fe10f07d",
+      "err": []
+    }
+  ],
+  "canon_top_level_moved": [
+    "adversarial_map",
+    "canon_version",
+    "canon_version_marker",
+    "keyset_delta_ledger",
+    "last_updated_by_session",
+    "next_recommended_session",
+    "session_log_recent"
+  ],
+  "adversarial_map_added": [
+    "ccclxxii_hazard_K349",
+    "confidence_ruling_K349",
+    "coverage_ruling_K349",
+    "design_pin_v0_5",
+    "honest_residuals_register_pin_v0_3",
+    "note_reachability_finding_K349",
+    "note_ruling_K349",
+    "relation_vocabulary_K349",
+    "terminal_assembly_v1_2_K349",
+    "validator_pin_v0_6"
+  ],
+  "results": [
+    {
+      "name": "held-surfaces-unmoved",
+      "pass": true,
+      "detail": "12 checked, 0 moved []"
+    },
+    {
+      "name": "every-builder-reproduces-its-artifact-under-two-hash-seeds",
+      "pass": true,
+      "detail": "12 runs, 0 failures []"
+    },
+    {
+      "name": "patcher-reproduces-adv_map_validator_v0_6.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "patcher-reproduces-build_assembly_v1_2.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-keyset-41-unchanged",
+      "pass": true,
+      "detail": "41 keys"
+    },
+    {
+      "name": "canon-top-level-changes-are-contained",
+      "pass": true,
+      "detail": "moved ['adversarial_map', 'canon_version', 'canon_version_marker', 'keyset_delta_ledger', 'last_updated_by_session', 'next_recommended_session', 'session_log_recent']; unmoved-but-allowed ['last_updated']"
+    },
+    {
+      "name": "canon-date-is-operator-local-today",
+      "pass": true,
+      "detail": "2026-09-17"
+    },
+    {
+      "name": "adversarial_map-changes-are-exactly-10-adds-plus-next",
+      "pass": true,
+      "detail": "10 added, 11 moved"
+    },
+    {
+      "name": "canon-invariants-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-schemas-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-hazard_map-byte-identical",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "checks": 11,
+    "passed": 11,
+    "all_pass": true
+  }
+}

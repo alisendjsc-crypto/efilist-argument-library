@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.10",
+  "canon_version": "38.11",
   "last_updated": "2026-09-17",
-  "last_updated_by_session": "K348_terminal_successor_assembly_v1_1",
+  "last_updated_by_session": "K349_phase_G_note_layer",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,10 +1668,10 @@
     ]
   },
   "next_recommended_session": {
-    "title": "PHASE G (`note`) -- ruling first, or the v4.1.0 enrichment items",
-    "why": "The successor assembly is the terminal artifact the programme was building toward and it is landed at 82/82 primary and 39/39 variant. Nothing structural is owed. `note` is the only rendered text class the map has never covered, and it is blocked on a RULING rather than on a build: the anchor rule assumes a response and a note is not one.",
-    "read_first": "adversarial_map_design_v0_4.md sections 9, 10 and 11 -- 11.1's three-way inheritance rule changes how a variant or a note is classed, and 11.3's bound is the arithmetic any further authoring runs against. Then loci_enum_ruling_K345.note_IN_SCOPE_unadjudicated, which states the shape problem.",
-    "fences": "NO PIN unless the session's declared subject is a pin move. The frozen v1_0's bytes do not move, and neither do v0_2/v0_3/v0_4 of the design or v0_1..v0_4 of the validator."
+    "session": "UPSTREAM AUTHORING IN THE ARGUMENT LIBRARY SEAT, not another map phase.",
+    "why": "The map is complete over every rendered text class and has produced 29 (b) regen items against three sentences repaired since the programme began. Cowork cannot close that: a repair changes the corpus, which makes it a PIN MOVE, and stance-bearing content is ratified by Josiah with the library seat rather than authored by a build seat.",
+    "scope": "The sixteen v4.1.0 enrichment items, happiness-is-choice#medium, the just-depressed depressive-realism contradiction (AGGRAVATION -- repair at the node), and the two K349 headline items. When that comes back ratified, Cowork folds it in a declared pin-move session.",
+    "if_a_build_session_is_wanted_instead": "Extend the regen queue past the A-E fragments -- it has never read Phase F, R or G, so 11 adjudicated (b) entries are unqueued."
   },
   "open_questions": {
     "active": {
@@ -1802,7 +1802,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.10",
+  "canon_version_marker": "v38.11",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2463,7 +2463,8 @@
     "v38_7_note": "v38.6 -> v38.7 MINOR (K345b_rwe_map1_calibration, 2026-09-17): keyset UNCHANGED at 41; one addition INSIDE adversarial_map (rwe_layer_purpose_and_map1_calibration_K345b) and one appended pointer sentence on open_questions.active.CORPUS_IS_REACTIVE_ONLY_K345. invariants, schemas and hazard_map asserted byte-identical, and the calibration's independent parse of MAP1 was asserted equal to invariants' stored map1_node_count and map1_edge_count_total. NO PIN; no corpus, JSX, flagship or map byte touched.",
     "v38_8_note": "v38.7 -> v38.8 MINOR (K346_phaseF_defect_register_and_ccclxv_ruling, 2026-09-18): keyset UNCHANGED at 41. Seven additions INSIDE adversarial_map (ccclxv_ruling_K346, stopping_rule_gate5_K346, operationalisation_hazard_ccclxviii_K346, phaseF_defect_register_K346, design_pin_v0_3, archetype_weighting_ruling_K346, rwe_two_lane_collection_K346) and a replacement of next_recommended_session. invariants, schemas and hazard_map asserted byte-identical by the builder, and the SOURCE was round-tripped at the emitted serialization before anything was derived (ccclxiv). NO PIN; no corpus, JSX, flagship or frozen-map byte moved.",
     "v38_9_note": "v38.8 -> v38.9 MINOR (K347_phase_F_proper_and_validator_v0_4, 2026-09-17): keyset UNCHANGED at 41. Four additions INSIDE adversarial_map (phaseF_proper_K347, validator_pin_v0_4, ccclxx_hazard_K347) plus a replacement of adversarial_map.next; one addition inside terminal_stability_marker.honest_residuals (create_vs_destroy_positive_case = HR-14, the first new bedrock since HR-13); a replacement of next_recommended_session; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR.",
-    "v38_10_note": "v38.9 -> v38.10 MINOR (K348_terminal_successor_assembly_v1_1, 2026-09-17): keyset UNCHANGED at 41. Six additions INSIDE adversarial_map (entry_cap_ruling_K348, terminal_assembly_K348, ccclxxi_hazard_K348, validator_pin_v0_5, design_pin_v0_4, honest_residuals_register_pin_v0_2), a replacement of adversarial_map.next, and two CORRECTIONS to existing records: honest_residuals_register_pin gains SUPERSEDED_K348 naming three stale facts in itself, and terminal_artifact_pin gains successor_K348. Inside terminal_stability_marker.honest_residuals: create_vs_destroy_positive_case.owed discharged and register_pointer rewritten for 14 bedrocks. A replacement of next_recommended_session; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR."
+    "v38_10_note": "v38.9 -> v38.10 MINOR (K348_terminal_successor_assembly_v1_1, 2026-09-17): keyset UNCHANGED at 41. Six additions INSIDE adversarial_map (entry_cap_ruling_K348, terminal_assembly_K348, ccclxxi_hazard_K348, validator_pin_v0_5, design_pin_v0_4, honest_residuals_register_pin_v0_2), a replacement of adversarial_map.next, and two CORRECTIONS to existing records: honest_residuals_register_pin gains SUPERSEDED_K348 naming three stale facts in itself, and terminal_artifact_pin gains successor_K348. Inside terminal_stability_marker.honest_residuals: create_vs_destroy_positive_case.owed discharged and register_pointer rewritten for 14 bedrocks. A replacement of next_recommended_session; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR.",
+    "v38_11_note": "v38.10 -> v38.11 MINOR (K349_phase_G_note_layer, 2026-09-17): keyset UNCHANGED at 41. Nine additions INSIDE adversarial_map (note_ruling_K349, note_reachability_finding_K349, confidence_ruling_K349, coverage_ruling_K349, relation_vocabulary_K349, validator_pin_v0_6, terminal_assembly_v1_2_K349, design_pin_v0_5, honest_residuals_register_pin_v0_3, ccclxxii_hazard_K349) and a replacement of adversarial_map.next. A replacement of next_recommended_session; one session_log_recent append. NO PIN: the flagship, the corpus and the jsx are untouched and the cross-surface gate is GREEN at open and close. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2683,7 +2684,8 @@
     "K345a_open_question_correction (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.5->v38.6]: A CORRECTION TO K345'S OWN OPEN QUESTION, LANDED BEFORE ANYTHING COULD BE BUILT ON IT. K345 recorded Josiah's observation that the library is objection-first and split it into two gaps. He corrected the scope the same session -- the cataloguing of positive arguments is a scholarly endeavour, and mining every Twitter, Reddit, YouTube and Facebook instance is explicitly not wanted -- and a sweep of the corpus then falsified K345's second gap outright: realWorldExamples already holds 136 scholarly-schema instances across 78 of 82 nodes. THE CLAIM HAD BEEN MADE WITHOUT GREPPING FOR THE THING IT DENIED, with realWorldExamples sitting in the corpus's top-level key list the whole time. The gap restated and measured instead: MAP1_TRANSITIONS scores all 2,886 of its edges from premise overlap and tier distance, carries no observed field anywhere, and has never been joined to the 136 observations -- while 11 numbered threads already yield 53 distinct ordered node-to-node pairs, 23 of them edges the map contains under the most generous test. Also surfaced: observed archetype deployment runs ~73% sophisticate against a near-even authored variant distribution, which is a live input to Phase F's effort allocation, and the four nodes missing from the real-world layer are exactly the four missing from MAP1.",
     "K345b_rwe_map1_calibration (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.6->v38.7]: THE CONTROL K345a OWED, AND IT TOOK THE CLAIM BACK. '23 of 53 observed transitions are MAP1 edges' was published without a chance baseline; MAP1 is dense at 21.6% pooled edge density, so against a shuffled-target null the observed 45.5% sits on a chance mean of 33.7%. Worse for the claim, the apparent significance lives entirely in the many-to-many cross-product, whose units are not independent because co-attached nodes are often premise-siblings and MAP1 is built from premise overlap: the clean single-attachment test is n=17 at p=0.37. NO DEFENSIBLE SIGNAL, stated plainly. What shipped instead is an instrument and a target -- power says ~n=200 clean units, today's clean count is 17, and the binding constraint is not instance COUNT but how many instances are threaded, sequentially numbered and single-attachment. Josiah's stated purposes for the RWE panel are recorded alongside it precisely because those purposes and the prediction aim pull on different properties of the same panel. A determinism control caught the permutation test drawing from a set comprehension under PYTHONHASHSEED, making a seeded test irreproducible; fixed and verified under two forced seeds.",
     "K347_phase_F_proper_and_validator_v0_4 (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.8->v38.9]: PHASE F PROPER, and the archetypeVariants surface is adjudicated. 38 loci over 16 nodes, 39 entries, validator v0_4 PASS 22 checks 0 violations 0 advisories; with Phase R the set reports variant_coverage 39/39. Class mix a26/b6/d7, a+d = 0.8462 against the A-E base rate of 0.7634, exact two-sided binomial p = 0.2624 -- CONSISTENT, so the receipt is not written over an instrument reading, and the gate was stated in both directions because knowing K346 drew zero (a) is not a licence to rubber-stamp (a). All 26 (a) entries carry a verbatim snippet from their answering locus, asserted against the corpus. NEW BEDROCK HR-14, and it is an artifact of the ROUTING GRAPH rather than of any one text: four nodes route the positive-eliminationist charge to red-button-repugnant, whose sophisticate slot holds it open by ruling, so the charge is answered in no locus. SECOND FINDING: inheritance cuts BOTH ways -- design 10.4 says the whole-node reading cures a locus-local defect, and it does, but it also AGGRAVATES, and two of the six (b) entries exist only because of what the locus inherits. VALIDATOR v0_4: gate 5 made checkable with open <-> >=2 entries as a biconditional, and ccclxx, a per-file declaration gated against a global figure -- Phase R and the K346 register, both shipped, fail together under v0_3 today. 23/23 controls; everything reproduces byte-identically under two forced PYTHONHASHSEEDs.",
-    "K348_terminal_successor_assembly_v1_1 (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.9->v38.10]: THE TERMINAL SUCCESSOR ASSEMBLY. adversarial_map_v1_1.json, 133 entries over 82/82 nodes at the primary ladder AND variant_coverage 39/39 -- the first artifact in the programme to declare both -- classes a66/b27/c1/d39, pinned to the post-cut corpus, validator v0_5 --assembly 23 checks 0 violations 0 ADVISORIES, 15 controls all passing. 90 entries inherit from the frozen v1_0 unchanged and 3 are superseded by Phase R; all 133 anchors are asserted verbatim against the post-cut corpus rather than assumed. RULING (Josiah): the node entry bound becomes 3 + 3*(variant loci), because the K345 form reserved one slot per variant locus while the per-locus cap allows three, so the bound and gate 5 contradicted each other wherever a variant locus legitimately opened. ccclxxi: when a ruling moves a gate's unit, every other invariant over the old unit is a candidate for the same move and none of them fails until a fragment set crosses it -- v1_0's node-level PARTITION invariant fails 16 ways by construction at this fragment set while the property it protects is intact at 0 locus-level clashes. Register v0_2 derived from the assembly, which settles the two-corpus span by earning a single pin. Design v0_4 section 11. AND CANON'S OWN RECORD OF THE v0_1 REGISTER WAS STALE IN THREE PLACES, found by rebuilding the artifact: wrong md5, wrong basis, and a pre-cut corpus pin."
+    "K348_terminal_successor_assembly_v1_1 (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.9->v38.10]: THE TERMINAL SUCCESSOR ASSEMBLY. adversarial_map_v1_1.json, 133 entries over 82/82 nodes at the primary ladder AND variant_coverage 39/39 -- the first artifact in the programme to declare both -- classes a66/b27/c1/d39, pinned to the post-cut corpus, validator v0_5 --assembly 23 checks 0 violations 0 ADVISORIES, 15 controls all passing. 90 entries inherit from the frozen v1_0 unchanged and 3 are superseded by Phase R; all 133 anchors are asserted verbatim against the post-cut corpus rather than assumed. RULING (Josiah): the node entry bound becomes 3 + 3*(variant loci), because the K345 form reserved one slot per variant locus while the per-locus cap allows three, so the bound and gate 5 contradicted each other wherever a variant locus legitimately opened. ccclxxi: when a ruling moves a gate's unit, every other invariant over the old unit is a candidate for the same move and none of them fails until a fragment set crosses it -- v1_0's node-level PARTITION invariant fails 16 ways by construction at this fragment set while the property it protects is intact at 0 locus-level clashes. Register v0_2 derived from the assembly, which settles the two-corpus span by earning a single pin. Design v0_4 section 11. AND CANON'S OWN RECORD OF THE v0_1 REGISTER WAS STALE IN THREE PLACES, found by rebuilding the artifact: wrong md5, wrong basis, and a pre-cut corpus pin.",
+    "K349_phase_G_note_layer (2026-09-17): PHASE G -- the `note` layer, authored NARROWLY. NO PIN; combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c, corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f untouched, cross-surface gate GREEN at open and close. Two rulings taken before a line was authored: `note` is a map target narrowly (Josiah, delegated to the build seat), and `confidence` is out as a target and in as a regen candidate (Josiah). THE HANDOFF'S PREMISE FOR THE SECOND WAS FALSE -- confidence emits visible STRONG/PROVISIONAL text for 7 nodes -- and the audit turned up something larger: `note` is a DEPENDENT of `confidence`, because the [NOTE] button sits inside `if (conf !== 'full')` and toggleNote has exactly one caller, so 2 of 9 notes (35.8% of the layer's words) are structurally unreachable by any reader. Registered as ccclxxii. Phase G authored 5 entries, 5/9, class {\"a\": 3, \"b\": 2}; v1_2 carries 138 entries at 82/82 primary, 39/39 variant, 5/9 note and passes --assembly at 0/0. Validator v0_6 self-test 78/78 and reproduces every v0_5 verdict across 66 runs with 0 divergences. Register v0_3 adds the ratified fifth relation kind `conditions` (HR-14 conditions HR-11) and makes the vocabulary an enforced allowlist; it also found that build_register.py's claim to refuse on an undeclared adjacency was never a gate, and made it one. 46 controls across three batteries, all green."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -3179,7 +3181,7 @@
       "vendor_notice": "argue_relay_scholar_v1_1_revendor_v1.md issued at the game root (coevolution protocol 3.4 trigger; coverage 81/82 -> 82/82 in v4 terms; nothing urgent -- the game seat acts at its own set boundary; v1.1 keys to the v4 corpus, so full consumption implies their deliberate v4 re-vendor bundle while v1.0 stays valid at their v3.8 pin)"
     },
     "exchange_151": "commission (wuld.ink Cowork/game seat, 2026-07-11) -> design + scholar v1.1 (library K220 seat, Max; ratify-by-transmission) -> K221 fold (2026-07-11: staging opened, validator implemented + proven, v1.1 vendored game-side with gate battery 20/20, canon v38.0 -> v38.1, receipt K221_fold_receipt_v1.md). PRIMARY record = this block + session_log_recent. The wuld docs/library-claude-coordination.md mirror entry is OWED at the next wuld-committing session (K221 fenced the wuld repo under the concurrent-session law)",
-    "next": "THE TERMINAL SUCCESSOR ASSEMBLY IS LANDED, so the map's next move is a CHOICE rather than a debt. The cheapest real item is `note`: 9 nodes, 544 words, RENDERED behind a toggle at responseLevel==='long', IN SCOPE since K345 and still unadjudicated. It is the last unadjudicated rendered text class and the natural PHASE G, and it needs a ruling first, because its shape is not a response and the anchor rule assumes one -- at least one instance (care-ethics) is a published concession that the node's own response is underpowered, which is an attack surface of an unusual kind. After that, or instead of it: the sixteen v4.1.0 enrichment items plus happiness-is-choice#medium and the depressive-realism contradiction, which K347 adjudicated at just-depressed#archetypeVariants.sophisticate as a headline (b) and did NOT repair -- and which design v0_4 section 11.1 now classes as an AGGRAVATION, meaning the repair belongs at the node rather than at the locus. Then the v5.0.0 intake cut and its single (c). NOT owed: a register rebuild (v0_2 landed), a design section (v0_4 landed), or any re-run of the frozen v1_0.",
+    "next": "PHASE G IS LANDED AND THE MAP HAS NO FURTHER TEXT CLASS. Every rendered field the corpus ships is now either adjudicated or ruled out with its grounds recorded. What remains is not mapping. THE HONEST NEXT MOVE IS UPSTREAM AUTHORING, NOT ANOTHER MAP: the sixteen v4.1.0 enrichment items plus happiness-is-choice#medium plus the just-depressed depressive-realism contradiction (classed an AGGRAVATION at K348, so its repair belongs at the NODE) plus the two new headline (b) items this session produced -- care-ethics#note, where the corpus published an unclosed implication for its own consent framework and named the text that would close it, and flow-states-csikszentmihalyi#note, where the note reports a concession the response never made and the flagship's RSI CALIBRATION NOTES repeat it as their worked example of honest acknowledgment. That last one spans a corpus locus and a FLAGSHIP-ONLY locus, so its repair is a pin move. The map has produced 29 (b) items and the programme has repaired three sentences since it began; that gap closes with ratified authoring in the Argument Library seat, not with another phase. Also queued: the regen queue derives from the A-E fragments ONLY, so Phase F's 6, Phase R's 3 and Phase G's 2 (b) entries are adjudicated and UNQUEUED -- 11 in total, a pre-existing gap this session measured rather than introduced.",
     "validator_pin_v0_2": {
       "file": "adversarial_map_staging/adv_map_validator_v0_2.py",
       "md5": "d775fbea1cd726690a49acf0914270c2",
@@ -3617,6 +3619,115 @@
       "HR_05_pointer_now_resolves": "v0_1's audit records HR-05 as registered at 'K224:carry-forward-bar', a session receipt rather than canon, and fires a dangling-registration-pointer finding on it. K345 folded HR-05 into terminal_stability_marker.honest_residuals.comparative_vs_non_comparative_harm, so the pointer HAS a canon home and the finding is STALE. registered_in is repointed and the finding is dropped as a CORRECTION. HR-05's NOVEL-FLAG COLLISION is untouched and stands: it is a real defect.",
       "adjacency": "Two new pairs fire on the shared-tributary-node signal, HR-14+HR-02 at red-button-repugnant and HR-14+HR-03 at slippery-slope-eugenics, and both are adjudicated independent_of with grounds. A third, HR-14+HR-11, fires on neither signal and is recorded in the AUDIT rather than declared, because the ratified four-kind vocabulary cannot state it: HR-11's resolution neither creates nor dissolves HR-14's question, it changes HR-14's FORCE. A fifth kind -- conditions -- would say it, and extending a ratified vocabulary is Josiah's, not a build call.",
       "parity_gate": "Restricted to the phases v0_1 read, every bedrock's name, alias, gloss, registered_in, relations and facet tributaries must equal v0_1's or the build refuses. The one deliberate exception is HR-05.registered_in. Tributaries inside a facet are compared as a sorted multiset because their ORDER moved from fragment-internal to corpus order when the source became the corpus-ordered assembly; that re-sequencing is recorded, not hidden."
+    },
+    "note_ruling_K349": {
+      "ruling": "`note` IS a map target, NARROWLY: authored only where a note makes or concedes a claim the corpus would have to defend. Josiah, K349 (2026-09-17), DELEGATED to the build seat, which took the narrow form. Recorded as a delegation rather than as a ruling, because the difference matters to whoever reads this next.",
+      "what_K345_left_open": "K345 named `note` IN SCOPE and never discharged its own reservation -- the shape is not a response and the anchor rule assumes one. The reservation was real. The anchor rule turns out to transfer unchanged; the CLASS LAW does not.",
+      "the_classification_measured_before_the_disposition_was_put": "9 notes, 544 words. 3 are authoring apparatus (sibling taxonomy, build-pass provenance, a ratification-delta line, a TIER NOTE addressed to a future editor), 1 is a legitimate scope qualifier checked against its own #long, and 5 carry a claim or concession. ccclxviii applied to a scope question rather than to a class distribution: decide what the population looks like before deciding what to do with it.",
+      "why_narrow_and_not_all_nine": "'The strongest continuation a maximally competent hostile interlocutor deploys against our text' is MALFORMED against a build-accounting line. Authoring against all 9 would have produced 9 entries, four of them inflation -- the 82/82 problem in a new artifact, which the kickoff named as the risk in advance.",
+      "note_coverage": "5/9, declared and DELIBERATELY PARTIAL. A phase that cannot say what it has not done is how a coverage claim becomes misleading.",
+      "fragment": {
+        "artifact": "adv_map_phaseG_v0_1.json",
+        "md5": "d7cd18eb0467f38d8ecd4694776dd885",
+        "bytes": 12295,
+        "entries": 5,
+        "class_counts": {
+          "a": 3,
+          "b": 2
+        }
+      },
+      "class_mix_gate": "a+d 3/5 = 0.6 against the A-E prior of 0.7634 computed from the FROZEN v1_0's 93 entries, exact two-sided p = 0.3389; zero (d) against a prior of 0.3441, p = 0.1722. BOTH ARE STATED WITH THEIR POWER: at n=5 the gate is nearly unfalsifiable, and reporting a pass without saying so would be the flattery version of a control. The STRUCTURAL reason for zero (d) is measured instead: 6 of the 5 authored nodes already carry a (d) at a primary locus on the very bedrock a note entry would route to, against 35 of 82 corpus-wide, so a second one would restate a registered residue rather than route a new one.",
+      "entry_cap_not_extended": "Ruled EXPLICITLY rather than carried by silence (ccclxxi). The node bound stays 3 + 3*(variant loci) with NO note term. Minimum headroom across the 9 note-bearing nodes was measured at 2 BEFORE authoring, so no node is in reach and no ruling was owed. If a future phase authors a second note entry at a node already at its bound, that becomes Josiah's in the same shape K348's was."
+    },
+    "note_reachability_finding_K349": {
+      "finding": "`note` is NOT an independent field. It is a DEPENDENT of `confidence`. combined.html emits the [NOTE] button INSIDE `if (conf !== 'full')`, where `conf = obj.confidence || 'full'`, and toggleNote has exactly one caller -- that button. A note on a node graded full, or ungraded, has its div emitted at display:none with nothing in the artifact able to reveal it.",
+      "measured": "2 of the 9 notes are STRUCTURALLY UNREACHABLE by any reader: solipsism, violence-as-reductio. 195 of 544 words, 35.8% of the layer, and they are the two longest.",
+      "the_sharpest_case": "solipsism's note is the text that EXPLAINS its confidence:full -- and that value is exactly what suppresses the button that would let anyone read the explanation.",
+      "consequence_for_naming": "The CSS class name `confidence-note` was never the misnomer. The FIELD name `note` is. The layer is architecturally a confidence disclosure, which is also why 6 of the 9 note-bearing nodes already carry a (d) in the successor assembly against 35 of 82 corpus-wide: the corpus puts a note where it knows it is on hard ground.",
+      "status": "LOGGED, not repaired. Repairing it moves a flagship byte, which is a pin move."
+    },
+    "confidence_ruling_K349": {
+      "ruling": "`confidence` is OUT as a map target and IN as a regen candidate. Josiah, K349. Out because it carries no corpus text and the anchor rule has nothing to bite on; ruled EXPLICITLY rather than by silence, and on different grounds from objectionSubforms, which K345 ruled out for having no render site at all.",
+      "the_handoff_premise_was_false": "The K349 handoff stated that no text reaches the reader. The badge emits the literal strings STRONG and PROVISIONAL for 7 nodes. Corrected here rather than carried.",
+      "regen_candidate_three_legs": [
+        "`full` renders IDENTICALLY to absent: 11 nodes were affirmatively graded full and 64 were never graded, and a reader cannot tell them apart.",
+        "`provisional` renders as a 70%% opacity band on the long response with NO label, which a reader cannot interpret and a screen reader cannot convey at all. One node is affected.",
+        "The grade silently controls whether a node's note is reachable at all. A field documented nowhere as a visibility control is one."
+      ],
+      "distribution": {
+        "full": 11,
+        "provisional": 1,
+        "strong": 6
+      }
+    },
+    "coverage_ruling_K349": {
+      "ruling": "`coverage` counts a node as covered only if it carries an entry at a PRIMARY locus. A note is apparatus attached to a node, not the node's argument, so apparatus cannot satisfy 82/82.",
+      "why_it_had_to_be_ruled": "`coverage` keyed on target_id alone, and the v1_1 assembly builder computed primary coverage as 'not a variant locus' -- which a new locus kind walks straight into, because variant_slot('note') is None. That is ccclxxi a SECOND time in three sessions, and it was found by READING the builder rather than trusting that the K348 migration had covered it. Stated POSITIVELY now, in both the validator and the builder: the four primary loci, and nothing else.",
+      "blast_radius_measured": "ZERO. No shipped artifact carries a note entry, so no verdict moves; v0_6 reproduces every v0_5 verdict across 66 runs with 0 divergences. What changes is what the NEXT phase can claim.",
+      "coverage_is_three_claims_now": "coverage 82/82 is the primary ladder; variant_coverage 39/39 is the archetypeVariants surface; note_coverage 5/9 is the third and is deliberately partial. They are NOT commensurable and are never summed."
+    },
+    "relation_vocabulary_K349": {
+      "ratification": "A FIFTH relation kind, `conditions`, joins the register's adjacency vocabulary. Josiah, K349.",
+      "definition": "A conditions B: A's resolution changes the FORCE of B's open question without creating or dissolving it. B stays askable either way; what moves is how much turns on the answer.",
+      "first_instance": "HR-14 conditions HR-11, and it is the reason the kind was ratified: K348 recorded that pair in the register's AUDIT rather than declaring it, because none of depends_on / stronger_than / sibling_of / independent_of states it.",
+      "vocabulary_is_now_enforced": "It had been a five-line comment above RELATIONS with nothing checking it. It is an allowlist checked before the write, so a mistyped or invented kind refuses the build.",
+      "and_a_gate_that_never_existed": "build_register.py's own comment claims 'the audit below refuses to write if any mechanically-derived adjacency candidate is undeclared.' It did not -- it appended an audit line and wrote anyway. The claim was true by luck, the undeclared set having always been empty. It is a gate at v0_3. cccli in its purest form, and one more instance discharged; blast radius measured at 0 undeclared pairs before promoting it."
+    },
+    "validator_pin_v0_6": {
+      "artifact": "adversarial_map_staging/adv_map_validator_v0_6.py",
+      "md5": "c002e93877b09d523daf786036af7a57",
+      "bytes": 59398,
+      "self_test": "78/78, against v0_5's 62",
+      "derived_by": "tools/patch_validator_v0_6.py, 10 anchored single-occurrence patches",
+      "changes": "`note` reaches the TOP-LEVEL key, EXISTENCE-GATED rather than added to LOCI -- only 9 of 82 nodes carry one, so an unconditional enum entry would let a target_locus of 'note' validate on a node that has none and hand the anchor rule an empty string, the exact routing defect the K345 both-ways proof was written to catch. Plus note_coverage (per-file per ccclxx), the coverage restriction, PHASES += G, and coverage_ids_touched so the two quantities that had shared one name are both named.",
+      "v0_5_held": "713da227ec4457eaf644996ef352ff20, byte-identical. Canon pins it and the v1_1 receipt names it.",
+      "parity": "v0_6 reproduces EVERY v0_5 verdict across 66 runs over the shipped artifacts, both corpora and all three modes: 0 divergences."
+    },
+    "terminal_assembly_v1_2_K349": {
+      "artifact": "adversarial_map_staging/adversarial_map_v1_2.json",
+      "md5": "e4bef3cac882aa079951ba7ec1a9d11e",
+      "bytes": 265046,
+      "entries": 138,
+      "coverage": "82/82",
+      "variant_coverage": "39/39",
+      "note_coverage": "5/9",
+      "verdict": "--assembly PASS, 0 violations, 0 advisories, against the post-cut corpus",
+      "why_v1_2_and_not_v2_0": "Every one of v1_1's 133 entries is inherited BYTE-FOR-BYTE -- asserted, not claimed: 0 missing, 0 changed, exactly 5 added and all at the note locus. Nothing is superseded or re-classed and the schema is unchanged.",
+      "predecessors_untouched": "v1_1 e9e5abf820e3f7a687e2b84443883ade and the FROZEN v1_0 c4989e98b042e2f787a82df3f11ecdad are byte-identical, and v1_1 was REPRODUCED from its own builder byte-for-byte before this one wrote anything (ccclxiv applied to an artifact rather than to a serialization).",
+      "builder": {
+        "file": "adversarial_map_staging/build_assembly_v1_2.py",
+        "md5": "45e711f47aad877741950dae43db929c",
+        "note": "derived by tools/patch_assembly_v1_2.py; build_assembly_v1_1.py held at 915593ab85de872f142f41f66431fe72"
+      }
+    },
+    "design_pin_v0_5": {
+      "artifact": "adversarial_map_staging/adversarial_map_design_v0_5.md",
+      "md5": "ab9569122de23de82db2ab5600d86d9e",
+      "bytes": 38352,
+      "section": "12: the note ruling and why narrow (12.1), the reachability finding (12.2), the confidence ruling (12.3), the coverage ruling (12.4), the fifth relation kind (12.5), ccclxxii (12.6), and what was run (12.7).",
+      "v0_4_held": "4315ff24d3c40e0234586fce87fb8cfd, byte-identical",
+      "constant_gate": "Every numeric token in the emitted section is either a bound constant traceable to a measurement file or an explicitly allowed literal WITH ITS REASON -- section numbers, the session date asserted against the measurement's own date field, session ids, and digits inside verbatim corpus quotations. The gate fired twice during authoring and both were real."
+    },
+    "honest_residuals_register_pin_v0_3": {
+      "artifact": "adversarial_map_staging/honest_residuals_register_v0_3.json",
+      "md5": "56a86d36e0354f00051a84ca02993fab",
+      "bytes": 41576,
+      "md": {
+        "file": "honest_residuals_register_v0_3.md",
+        "md5": "bb33d7892dc41b5e964a64b4e866452b"
+      },
+      "bedrocks": 14,
+      "content_unchanged_from_v0_2": "Phase G yields NO (d), so the bedrock set, every gloss and all 39 tributaries come back identical -- ASSERTED by control, not claimed. The only content delta is HR-14 gaining exactly the `conditions` relation to HR-11.",
+      "source": "adversarial_map_v1_2.json",
+      "v0_2_held": "70357de7f508f8b5500442ffdf37900a, byte-identical; canon pins it"
+    },
+    "ccclxxii_hazard_K349": {
+      "numeral": "ccclxxii",
+      "headline": "A RENDER SITE IS NOT REACHABILITY, AND THE DIFFERENCE IS DATA-DEPENDENT.",
+      "detail": "Two scope audits have now asked 'does this field have a render site?' and treated the answer as settling whether readers meet the text. K345 ruled objectionSubforms OUT because it has none. K349 came within one ruling of treating `note` as uniformly rendered because it has one. A render site can be nested inside a condition on a DIFFERENT field, so whether shipped text reaches a reader is a fact about the DATA, not about the code. The predicate was being evaluated statically when it is data-dependent, and the error is silent in both directions: it over-counts a field whose gate is usually closed and under-counts one whose gate is usually open.",
+      "counter_discipline": "To establish that shipped text reaches a reader: find the render site, ENUMERATE EVERY CONDITION GATING IT, and evaluate those conditions over the actual corpus -- then report the COUNT, never the existence.",
+      "family": "ccclviii (measure the state you think you measured), narrowed to the specific case where the instrument is a static read of a dynamic predicate.",
+      "first_instance": "2 of 9 notes unreachable; 35.8% of the layer's words."
     }
   }
 }

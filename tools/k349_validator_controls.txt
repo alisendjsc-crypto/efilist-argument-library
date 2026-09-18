@@ -1,0 +1,96 @@
+===K349-OLD===
+    # 14. the value enum
+    case("k347-closure-bad-value", [soph, defe], "stopping-rule",
+         meta_extra={"locus_closure": {soph_key: "sealed", defe_key: "closed"}})
+
+    passed = sum(1 for _n, g, _c in results if g)
+===K349-NEW===
+    # 14. the value enum
+    case("k347-closure-bad-value", [soph, defe], "stopping-rule",
+         meta_extra={"locus_closure": {soph_key: "sealed", defe_key: "closed"}})
+
+    # ---------------- K349 control battery: the `note` locus, both directions ----
+    # A suite written before a change proves nothing about the change. The two ROUTING
+    # controls run BOTH ways -- that is the K345 proof, and it caught a real defect the
+    # last time the locus enum moved.
+    NOTE_Y = "methodological note for node y conceding kappa lambda mu the gap is real"
+    for _n in mc["objections"]:
+        if _n["id"] == "node-y":
+            _n[NOTE_LOCUS] = NOTE_Y
+    open(cpath, "wb").write((json.dumps(mc, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
+    cmd5 = md5_bytes(open(cpath, "rb").read())
+    odig = objections_digest(mc)
+
+    def nent(anchor, tid="node-y", **kw):
+        d = dict(target_id=tid, target_locus=NOTE_LOCUS, target_anchor=anchor)
+        d.update(kw)
+        return _entry(**d)
+
+    nkey = "node-y#note"
+    # 16. a well-formed note entry validates
+    clean("k349-note-entry-validates", [nent("conceding kappa lambda mu")])
+    # 17. EXISTENCE GATE: node-z carries no note, so a note locus there is not a locus
+    case("k349-note-on-node-without-a-note",
+         [nent("conceding kappa lambda mu", tid="node-z")], "target-locus")
+    # 18+19. THE ROUTING PROOF, BOTH WAYS. This establishes that locus_text reads the
+    #        note ALONE and never a concatenation with the response ladder.
+    case("k349-long-anchor-does-not-validate-against-note",
+         [nent("the quick brown fox")], "anchor-rule")
+    case("k349-note-anchor-does-not-validate-against-long",
+         [_entry(target_id="node-y", target_locus="long",
+                 target_anchor="conceding kappa lambda mu")], "anchor-rule")
+    # 20. an (a) may route TO a note locus; a bogus one still trips
+    clean("k349-answered-by-note-ok",
+          [_entry(target_id="node-z", target_anchor="the quick brown fox",
+                  routing={"answered_by": ["node-y#note"]})])
+    case("k349-answered-by-note-absent",
+         [_entry(target_id="node-x", target_anchor="the quick brown fox",
+                 routing={"answered_by": ["node-z#note"]})], "routing-shape")
+    # 21. a DECLARED note_coverage is gated, both ways
+    clean("k349-note-coverage-declared-true",
+          [nent("conceding kappa lambda mu")], meta_extra={"note_coverage": "1/1"})
+    case("k349-note-coverage-declared-false",
+         [nent("conceding kappa lambda mu")], "note-coverage",
+         meta_extra={"note_coverage": "0/1"})
+    # 22. note loci NEVER fold into variant_coverage: a file carrying only a note entry
+    #     declares 0/2 variants, and declaring 1/2 on the strength of it trips.
+    clean("k349-note-does-not-count-as-a-variant",
+          [nent("conceding kappa lambda mu")], meta_extra={"variant_coverage": "0/2"})
+    case("k349-note-counted-as-a-variant-trips",
+         [nent("conceding kappa lambda mu")], "variant-coverage",
+         meta_extra={"variant_coverage": "1/2"})
+    # 23. THE COVERAGE RULING: apparatus cannot satisfy 82/82. A terminal map covering
+    #     two nodes at a primary locus and the third ONLY at its note is NOT complete.
+    _covx = _entry(target_id="node-x", target_anchor="the quick brown fox")
+    _covz = _entry(target_id="node-z", target_anchor="the quick brown fox")
+    case("k349-note-only-node-is-not-covered",
+         [_covx, _covz, nent("conceding kappa lambda mu")], "coverage", terminal=True)
+    clean("k349-primary-plus-note-is-covered",
+          [_covx, _covz,
+           _entry(target_id="node-y", target_anchor="the quick brown fox"),
+           nent("conceding kappa lambda mu")], terminal=True)
+    # 24. gate 5 reaches a note locus like any other
+    case("k349-note-open-with-one-entry", [nent("conceding kappa lambda mu")],
+         "stopping-rule", meta_extra={"locus_closure": {nkey: "open"}})
+    clean("k349-note-closed-with-one-entry", [nent("conceding kappa lambda mu")],
+          meta_extra={"locus_closure": {nkey: "closed"}})
+    # 25. the per-locus cap binds at a note locus
+    case("k349-note-per-locus-cap",
+         [nent(a) for a in ("conceding kappa lambda mu", "kappa lambda mu the",
+                            "lambda mu the gap", "mu the gap is")], "entry-cap")
+    # 26. ccclxx again: a note_coverage declaration is gated against ITS OWN file, so the
+    #     verdict cannot move with how many sibling files the run happens to load.
+    _nA = write_map("k349_two_file_a.json", [nent("conceding kappa lambda mu")],
+                    meta_extra={"note_coverage": "1/1"})
+    _nB = write_map("k349_two_file_b.json",
+                    [_entry(target_id="node-x", target_anchor="the quick brown fox")],
+                    meta_extra={"note_coverage": "0/1"})
+    _okA, _vA, _aA = validate([_nA], cpath, out=lambda s: None)
+    _okJ, _vJ, _aJ = validate([_nA, _nB], cpath, out=lambda s: None)
+    _gi = _okA and _okJ
+    results.append(("k349-note-declaration-invocation-independent", _gi, "note-coverage"))
+    print("%s . self-test [k349-note-declaration-invocation-independent] expects PASS solo AND joint -> %s"
+          % ("PASS" if _gi else "FAIL", (_vA + _vJ)[:2]))
+
+    passed = sum(1 for _n, g, _c in results if g)
+===K349-END===

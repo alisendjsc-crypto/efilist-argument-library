@@ -1,0 +1,52 @@
+{
+  "artifact": "register_control_v0_1.json",
+  "generated_by": "adversarial_map_staging/controls_register_v0_3.py",
+  "session": "K349",
+  "date_operator_local": "2026-09-17",
+  "pins": {
+    "v0_2": "70357de7f508f8b5500442ffdf37900a",
+    "v0_3": "56a86d36e0354f00051a84ca02993fab"
+  },
+  "results": [
+    {
+      "name": "bedrock-count-unchanged",
+      "pass": true,
+      "detail": "14 -> 14"
+    },
+    {
+      "name": "every-bedrock-identical-apart-from-relations",
+      "pass": true,
+      "detail": "14 of 14"
+    },
+    {
+      "name": "HR-14-gains-exactly-the-conditions-relation",
+      "pass": true,
+      "detail": "added ['conditions>HR-11']"
+    },
+    {
+      "name": "no-other-bedrock-changed-relations",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "tributaries-identical",
+      "pass": true,
+      "detail": "39 tributaries"
+    },
+    {
+      "name": "a-kind-outside-the-ratified-vocabulary-refuses",
+      "pass": true,
+      "detail": "rc=1 |   HR-14 declares relation kind 'modulates', which is not in the ratified vocabulary ['depends_on', 'stronger_than', 'sib"
+    },
+    {
+      "name": "an-undeclared-adjacency-still-refuses",
+      "pass": true,
+      "detail": "rc=1 |   UNDECLARED ADJACENCY: HR-03 and HR-14 are adjacent by evidence (shared tributary node slippery-slope-eugenics) but nei"
+    }
+  ],
+  "summary": {
+    "controls": 7,
+    "passed": 7,
+    "all_pass": true
+  }
+}

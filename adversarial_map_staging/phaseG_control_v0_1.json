@@ -1,0 +1,203 @@
+{
+  "artifact": "phaseG_control_v0_1.json",
+  "generated_by": "adversarial_map_staging/controls_phaseG.py",
+  "session": "K349",
+  "date_operator_local": "2026-09-17",
+  "validator_v0_5_md5": "713da227ec4457eaf644996ef352ff20",
+  "validator_v0_6_md5": "c002e93877b09d523daf786036af7a57",
+  "phaseG_md5": "d7cd18eb0467f38d8ecd4694776dd885",
+  "parity_runs": 66,
+  "parity_artifacts": [
+    "adv_map_phaseA_v0_1.json",
+    "adv_map_phaseB1_v0_1.json",
+    "adv_map_phaseB2_v0_1.json",
+    "adv_map_phaseC_v0_1.json",
+    "adv_map_phaseD_v0_1.json",
+    "adv_map_phaseE_v0_1.json",
+    "adv_map_phaseF_defect_register_v0_1.json",
+    "adv_map_phaseF_v0_1.json",
+    "adv_map_phaseR_v0_1.json",
+    "adversarial_map_v1_0.json",
+    "adversarial_map_v1_1.json"
+  ],
+  "class_mix": {
+    "counts": {
+      "b": 2,
+      "a": 3
+    },
+    "n": 5,
+    "a_or_d": 3,
+    "prior_A_to_E": 0.7634,
+    "p_two_sided": 0.3389,
+    "d_prior": 0.3441,
+    "d_p": 0.1722,
+    "prior_basis": "the 93 A-E entries of the FROZEN v1_0, which is the established prior"
+  },
+  "anchor_provenance": [
+    {
+      "id": "care-ethics",
+      "anchor_present_pre_cut": true
+    },
+    {
+      "id": "boonin-critique",
+      "anchor_present_pre_cut": true
+    },
+    {
+      "id": "indigenous-philosophy",
+      "anchor_present_pre_cut": true
+    },
+    {
+      "id": "flow-states-csikszentmihalyi",
+      "anchor_present_pre_cut": true
+    },
+    {
+      "id": "eliminativism",
+      "anchor_present_pre_cut": true
+    }
+  ],
+  "results": [
+    {
+      "family": "PARITY",
+      "name": "pre-cut-corpus-recovered",
+      "pass": true,
+      "detail": "6ee1f6f31e0f012db0d58cae4f912fcb"
+    },
+    {
+      "family": "PARITY",
+      "name": "v0_6-reproduces-every-v0_5-verdict",
+      "pass": true,
+      "detail": "66 runs over 11 artifacts x 2 corpora x 3 modes, 0 divergences"
+    },
+    {
+      "family": "PARITY",
+      "name": "no-shipped-artifact-carries-a-note-entry",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "family": "PARITY",
+      "name": "v0_5-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "family": "PARITY",
+      "name": "frozen-v1_0-still-assembly-green-on-its-own-corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "family": "CLASSMIX",
+      "name": "a-or-d-consistent-with-A-to-E-prior",
+      "pass": true,
+      "detail": "3/5 = 0.6000 vs prior 0.7634, exact two-sided p = 0.3389"
+    },
+    {
+      "family": "CLASSMIX",
+      "name": "zero-d-consistent-with-prior",
+      "pass": true,
+      "detail": "0/5 d vs prior 0.3441, p = 0.1722"
+    },
+    {
+      "family": "CLASSMIX",
+      "name": "authored-nodes-already-carry-bedrock",
+      "pass": true,
+      "detail": "4 of 5 authored nodes already carry a (d) in v1_1: ['boonin-critique', 'care-ethics', 'eliminativism', 'indigenous-philosophy']"
+    },
+    {
+      "family": "MUTATION",
+      "name": "anchor-not-verbatim",
+      "pass": true,
+      "detail": "expect anchor-rule -> ['anchor-rule: mut_anchor_not_verbatim.json[0]: anchor not a verbatim substring of care-ethics#note']"
+    },
+    {
+      "family": "MUTATION",
+      "name": "anchor-from-the-wrong-locus",
+      "pass": true,
+      "detail": "expect anchor-rule -> ['anchor-rule: mut_anchor_from_the_wrong_locus.json[0]: anchor not a verbatim substring of care-ethics#note']"
+    },
+    {
+      "family": "MUTATION",
+      "name": "note-locus-on-a-node-without-one",
+      "pass": true,
+      "detail": "expect target-locus -> [\"target-locus: mut_note_locus_on_a_node_without_one.json[0]: 'note'\"] [+2 collateral]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "declared-note-coverage-wrong",
+      "pass": true,
+      "detail": "expect note-coverage -> [\"note-coverage: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349ctl_im9m_tqm/mut_declared_note_coverage_wrong.json: declared '9/9' vs this file's '5/9' (all loaded files: 5/9)\"]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "class-counts-wrong",
+      "pass": true,
+      "detail": "expect meta-summaries -> [\"meta-summaries: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349ctl_im9m_tqm/mut_class_counts_wrong.json: declared class_counts != computed {'b': 2, 'a': 3}\"]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "closure-declares-an-unauthored-locus",
+      "pass": true,
+      "detail": "expect stopping-rule -> [\"stopping-rule: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349ctl_im9m_tqm/mut_closure_declares_an_unauthored_locus.json: declared-not-authored ['solipsism#note'] / authored-not-declared []\"]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "an-a-routes-to-a-locus-that-does-not-exist",
+      "pass": true,
+      "detail": "expect routing-shape -> [\"routing-shape: mut_an_a_routes_to_a_locus_that_does_not_exist.json[1]: routing not class-shaped for 'a'\"]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "corpus-pin-stale",
+      "pass": true,
+      "detail": "expect meta-corpus-pin -> [\"meta-corpus-pin: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349ctl_im9m_tqm/mut_corpus_pin_stale.json: meta pin '6ee1f6f31e0f' vs corpus 04bf6482aa03\"]"
+    },
+    {
+      "family": "MUTATION",
+      "name": "move-over-the-a-brevity-cap",
+      "pass": true,
+      "detail": "expect move-band -> ['move-band: mut_move_over_the_a_brevity_cap.json[1]: 75 words (class a)']"
+    },
+    {
+      "family": "PROVENANCE",
+      "name": "anchors-predating-the-v4_1_0-cut",
+      "pass": true,
+      "detail": "5 of 5 anchors are present in the PRE-cut corpus -- the note layer was untouched by the cut"
+    },
+    {
+      "family": "RENDER",
+      "name": "note-button-is-nested-inside-the-confidence-gate",
+      "pass": true,
+      "detail": "gate and button both occur once, button inside the conf!=full block"
+    },
+    {
+      "family": "RENDER",
+      "name": "toggleNote-has-exactly-one-caller",
+      "pass": true,
+      "detail": "2 occurrences = 1 definition + 1 call"
+    },
+    {
+      "family": "RENDER",
+      "name": "note-div-is-display-none-by-default",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "family": "RENDER",
+      "name": "confidence-emits-visible-text",
+      "pass": true,
+      "detail": "the STRONG / PROVISIONAL badge is text, so 'no text reaches the reader' is false"
+    },
+    {
+      "family": "RENDER",
+      "name": "rsi-calibration-cites-flow-states-once",
+      "pass": true,
+      "detail": "flagship-only: 1 in combined.html, 0 in corpus JSON, 0 in JSX"
+    }
+  ],
+  "summary": {
+    "controls": 23,
+    "passed": 23,
+    "all_pass": true
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "artifact": "measure_k349_v0_1.json",
+  "generated_by": "adversarial_map_staging/measure_k349.py",
+  "session": "K349",
+  "date_operator_local": "2026-09-17",
+  "inputs": {
+    "corpus_md5": "04bf6482aa0374ee92a81c1d55ec41f8",
+    "objections_digest": "2c5a083a31448dec0f1ce41e08ba5b04",
+    "assembly_v1_1_md5": "e9e5abf820e3f7a687e2b84443883ade",
+    "validator_v0_5_md5": "713da227ec4457eaf644996ef352ff20"
+  },
+  "out_of_enum_fields": {
+    "note": 9,
+    "objectionSubforms": 1,
+    "confidence": 18
+  },
+  "note_layer": {
+    "nodes": 9,
+    "words_total": 544,
+    "per_node_words": {
+      "boonin-critique": 39,
+      "care-ethics": 40,
+      "eliminativism": 52,
+      "flow-states-csikszentmihalyi": 42,
+      "indigenous-philosophy": 65,
+      "neuroscience-positive-states": 48,
+      "solipsism": 89,
+      "suffering-as-meaning": 63,
+      "violence-as-reductio": 106
+    },
+    "reachable": [
+      {
+        "id": "boonin-critique",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 39
+      },
+      {
+        "id": "care-ethics",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 40
+      },
+      {
+        "id": "eliminativism",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 52
+      },
+      {
+        "id": "flow-states-csikszentmihalyi",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 42
+      },
+      {
+        "id": "indigenous-philosophy",
+        "confidence": "provisional",
+        "effective": "provisional",
+        "words": 65
+      },
+      {
+        "id": "neuroscience-positive-states",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 48
+      },
+      {
+        "id": "suffering-as-meaning",
+        "confidence": "strong",
+        "effective": "strong",
+        "words": 63
+      }
+    ],
+    "unreachable": [
+      {
+        "id": "solipsism",
+        "confidence": "full",
+        "effective": "full",
+        "words": 89
+      },
+      {
+        "id": "violence-as-reductio",
+        "confidence": null,
+        "effective": "full",
+        "words": 106
+      }
+    ],
+    "reachable_n": 7,
+    "unreachable_n": 2,
+    "words_reachable": 349,
+    "words_unreachable": 195,
+    "pct_words_unreachable": 35.8
+  },
+  "confidence_layer": {
+    "nodes_with_key": 18,
+    "distribution": {
+      "strong": 6,
+      "full": 11,
+      "provisional": 1
+    },
+    "badge_emitting_nodes": [
+      "boonin-critique",
+      "care-ethics",
+      "eliminativism",
+      "flow-states-csikszentmihalyi",
+      "indigenous-philosophy",
+      "neuroscience-positive-states",
+      "suffering-as-meaning"
+    ],
+    "badge_emitting_n": 7,
+    "graded_full_n": 11,
+    "ungraded_n": 64,
+    "full_indistinguishable_from_ungraded": true
+  },
+  "bedrock_enrichment": {
+    "note_nodes_with_a_d_entry": [
+      "boonin-critique",
+      "care-ethics",
+      "eliminativism",
+      "indigenous-philosophy",
+      "solipsism",
+      "suffering-as-meaning"
+    ],
+    "note_nodes_with_d_n": 6,
+    "note_nodes_n": 9,
+    "corpus_nodes_with_d_n": 35,
+    "corpus_nodes_n": 82,
+    "p_note": 0.6667,
+    "p_corpus": 0.4268
+  },
+  "entry_cap_headroom": {
+    "per_node": [
+      {
+        "id": "boonin-critique",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "care-ethics",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "eliminativism",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "flow-states-csikszentmihalyi",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "indigenous-philosophy",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "neuroscience-positive-states",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "solipsism",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "suffering-as-meaning",
+        "entries": 1,
+        "variant_loci": 0,
+        "bound": 3,
+        "headroom": 2
+      },
+      {
+        "id": "violence-as-reductio",
+        "entries": 5,
+        "variant_loci": 4,
+        "bound": 15,
+        "headroom": 10
+      }
+    ],
+    "min_headroom": 2
+  },
+  "class_base_rate_A_to_E": {
+    "counts": {
+      "d": 32,
+      "a": 39,
+      "b": 18,
+      "c": 1
+    },
+    "n": 90,
+    "a_or_d": 71,
+    "rate": 0.7889,
+    "d_rate": 0.3556
+  }
+}

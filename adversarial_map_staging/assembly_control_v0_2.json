@@ -1,0 +1,106 @@
+{
+  "artifact": "assembly_control_v0_2.json",
+  "generated_by": "adversarial_map_staging/controls_assembly_v1_2.py",
+  "session": "K349",
+  "date_operator_local": "2026-09-17",
+  "pins": {
+    "v1_0": "c4989e98b042e2f787a82df3f11ecdad",
+    "v1_1": "e9e5abf820e3f7a687e2b84443883ade",
+    "v1_2": "e4bef3cac882aa079951ba7ec1a9d11e",
+    "validator_v0_6": "c002e93877b09d523daf786036af7a57",
+    "phaseG": "d7cd18eb0467f38d8ecd4694776dd885"
+  },
+  "superset_check": {
+    "inherited": 133,
+    "missing": 0,
+    "changed": 0,
+    "added": 5
+  },
+  "results": [
+    {
+      "name": "v1_1-reproduces-byte-identically-from-its-own-builder",
+      "pass": true,
+      "detail": "e9e5abf820e3f7a687e2b84443883ade vs e9e5abf820e3f7a687e2b84443883ade"
+    },
+    {
+      "name": "v1_1-unmoved",
+      "pass": true,
+      "detail": "e9e5abf820e3f7a687e2b84443883ade"
+    },
+    {
+      "name": "v1_0-frozen-unmoved",
+      "pass": true,
+      "detail": "c4989e98b042e2f787a82df3f11ecdad"
+    },
+    {
+      "name": "every-v1_1-entry-inherited-byte-for-byte",
+      "pass": true,
+      "detail": "0 missing, 0 changed, 5 added"
+    },
+    {
+      "name": "exactly-the-phase-G-entries-are-added",
+      "pass": true,
+      "detail": "5 added, all at the note locus"
+    },
+    {
+      "name": "v1_2-assembly-green",
+      "pass": true,
+      "detail": "0 violations, 0 advisories"
+    },
+    {
+      "name": "note-only-node-is-not-covered",
+      "pass": true,
+      "detail": "expect coverage -> [\"coverage: terminal map missing 1 ids: ['care-ethics']\"]"
+    },
+    {
+      "name": "declared-note-coverage-wrong",
+      "pass": true,
+      "detail": "expect note-coverage -> [\"note-coverage: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349asm_mzjhice1/m_declared_note_coverage_wrong.json: declared '9/9' vs this file's '5/9' (all loaded files: 5/9)\"]"
+    },
+    {
+      "name": "declared-variant-coverage-wrong",
+      "pass": true,
+      "detail": "expect variant-coverage -> [\"variant-coverage: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349asm_mzjhice1/m_declared_variant_coverage_wrong.json: declared '38/39' vs this file's '39/39' (all loaded files: 39/39)\"]"
+    },
+    {
+      "name": "a-note-anchor-is-not-verbatim",
+      "pass": true,
+      "detail": "expect anchor-rule -> ['anchor-rule: m_a_note_anchor_is_not_verbatim.json[111]: anchor not a verbatim substring of boonin-critique#note']"
+    },
+    {
+      "name": "corpus-pin-advanced-to-the-pre-cut-corpus",
+      "pass": true,
+      "detail": "expect meta-corpus-pin -> [\"meta-corpus-pin: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349asm_mzjhice1/m_corpus_pin_advanced_to_the_pre_cut_corpus.json: meta pin '6ee1f6f31e0f' vs corpus 04bf6482aa03\"]"
+    },
+    {
+      "name": "class-counts-wrong",
+      "pass": true,
+      "detail": "expect meta-summaries -> [\"meta-summaries: /sessions/rcw-01gjwbcnppsxigisgcc59uah/tmp/k349asm_mzjhice1/m_class_counts_wrong.json: declared class_counts != computed {'d': 39, 'a': 69, 'b': 29, 'c': 1}\"]"
+    },
+    {
+      "name": "an-entry-carries-a-non-mapped-status",
+      "pass": true,
+      "detail": "expect status-enum -> [\"status-enum: m_an_entry_carries_a_non_mapped_status.json[111]: 'queued'\"]"
+    },
+    {
+      "name": "a-node-is-pushed-over-its-bound",
+      "pass": true,
+      "detail": "expect entry-cap -> [\"entry-cap: 'boonin-critique'#note has 4 entries (cap 3 per locus)\"]"
+    },
+    {
+      "name": "a-phase-G-entry-is-stamped-with-another-phase",
+      "pass": true,
+      "detail": "expect provenance -> [\"provenance: m_a_phase_entry_is_stamped_with_another_phase.json[111]: {'phase': 'Z', 'date': '2026-09-17', 'seat': 'wuld.ink Cowork, K349'}\"]"
+    },
+    {
+      "name": "builder-refuses-a-locus-claimed-by-two-phases",
+      "pass": true,
+      "detail": "  care-ethics#long claimed by ['B2', 'G'] - fragments must PARTITION THE LOCUS"
+    }
+  ],
+  "summary": {
+    "controls": 16,
+    "passed": 16,
+    "all_pass": true
+  }
+}
