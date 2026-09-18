@@ -14,6 +14,25 @@ FR = [("A", "adv_map_phaseA_v0_1.json"), ("B1", "adv_map_phaseB1_v0_1.json"),
       ("E", "adv_map_phaseE_v0_1.json")]
 OUT = "adversarial_map_regen_queue_v0_1.json"
 
+# --- items that have LANDED ------------------------------------------------------------
+# The queue is DERIVED from the phase fragments, and those are frozen by design, so a regen
+# can never learn from its own inputs that a repair shipped -- it has to be stated here. The
+# opposite failure is on the record: WI-K333 found a work item held open by a sentence
+# nobody had re-read. Landed items STAY in the queue and stay counted; dropping them would
+# falsify the record of what the cut contained and trip the count gate besides.
+LANDED = {
+  "happiness-is-choice#long":
+    "v4.1.0 (K344, 2026-09-17) -- R1. The INTERPRETED form, ratified by Josiah over R1-alt: "
+    "`subtractive` classifies the claim, not the word count (+34 words).",
+  "just-edgy#long":
+    "v4.1.0 (K344, 2026-09-17) -- R2. Reception now described rather than adjudicated; +0 words.",
+  "just-depressed#long":
+    "v4.1.0 (K344, 2026-09-17) -- R3, in FOUR spans, not the spec's three. The fourth stands at "
+    "responses.archetypeVariants.defender, which carries the same unsourced ratio and which the "
+    "spec's search over responses.long could not see. Found and ratified the same session; leaving "
+    "it would have shipped the self-contradiction the spec's own scope note forbids.",
+}
+
 SUBTRACTIVE = re.compile(r"\b(subtractive|delete|drop the|remove the|without it|deleti\w+)\b", re.I)
 ADDITIVE = re.compile(r"\b(supply|add a|state the|carry the|name the|unstated|left unstated)\b", re.I)
 DIAG = re.compile(r"\bdiagnos|pathologi|genetic fallacy|terror management\b", re.I)
@@ -73,6 +92,14 @@ def main():
             elif e["class"] == "c":
                 cs.append(dict(phase=ph, host_node=e["target_id"],
                                intake=e["routing"]["intake_candidate"], grounds=e["grounds"]))
+
+    for key, rec in LANDED.items():
+        node, locus = key.split("#")
+        hit = [b for b in bs if b["node"] == node and b["locus"] == locus]
+        if len(hit) != 1:
+            fail.append("LANDED names %r, which matches %d queue entries, expected 1" % (key, len(hit)))
+        else:
+            hit[0]["landed"] = rec
 
     per_node = collections.Counter(b["node"] for b in bs)
     dupes = {k: v for k, v in per_node.items() if v > 1}
@@ -145,6 +172,14 @@ def main():
         repair_shape=dict(collections.Counter(b["repair_shape"] for b in bs)),
         per_phase=dict(collections.Counter(b["phase"] for b in bs)),
         axes=dict(collections.Counter("".join(b["axis_hit"]) for b in bs)),
+        landed=dict(cut="v4.1.0", session="K344", date="2026-09-17", count=len(LANDED),
+                    items=LANDED,
+                    note="Three of the nineteen v4.1.0 enrichment items have SHIPPED. They remain "
+                         "listed and counted; `landed` on an entry is what marks it spent. The cut "
+                         "moved the pin v4.0.5 -> v4.1.0 and the adversarial map was FROZEN at its "
+                         "own corpus pin rather than advanced -- so this queue's source_fragments "
+                         "and the map they assemble into still describe the PRE-CUT corpus, which is "
+                         "correct and is why a successor map is owed."),
         fences="Yields are intake candidates, never authorizations. No byte moves from this artifact."),
         version_class_ruling=ruling,
         v4_1_0_enrichment=dict(count=len(enrich),

@@ -14,6 +14,69 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.1.0] — 2026-09-17
+
+**PATCH by the invariants convention at the top of this file; MINOR by the canon version-class ruling that set the number.** The two conventions are keyed on different things and this is the first release where they disagree, because it is the first release to advance corpus **content** without moving a single count. The invariants subtree is byte-identical, so the rule at the top of this file reads PATCH. Canon's `post_terminal_policy` keys the number on enrichment-versus-intake, and enrichment of existing nodes is MINOR, which is why the queue's `version_class_ruling` set `v4.1.0` rather than `v4.0.6`. Recorded here rather than resolved: both rules are doing their own job correctly.
+
+**The first corpus change since the v4.0.0 content cut of 2026-07-11.** Three pure-subtraction repairs from the nineteen-item v4.1.0 enrichment queue, each removing a claim that is false or unsupported, none adding an argument. They went first because their correctness is judgeable without re-litigating any philosophy: the question is whether the sentence is true, not whether the move is good.
+
+| | node | locus | what went | words |
+|---|---|---|---|---|
+| **R1** | `happiness-is-choice` | `long` | a heritability coefficient read as the fraction of **one person's** happiness fixed at conception — the coefficient partitions variance *between* people. The slice-of-the-pie carve-up built on it goes with it. | 555 → 589 (+34) |
+| **R2** | `just-edgy` | `long` | *"has never been substantively refuted"* — an argument from silence offered as a credential, inside a rebuttal against arguments from authority. Reception is now **described** (more often categorized than answered) rather than **adjudicated**. | 220 → 220 |
+| **R3** | `just-depressed` | `long` + `archetypeVariants.defender` | an unsourced one-in-a-hundred ratio organising the node's opening and its close, inside the corpus's most epistemically self-aware rebuttal. Stated qualitatively instead; nothing depended on 1:99 rather than 1:20. | 979 → 978, 347 → 344 |
+
+`subtractive` classifies the **claim**, not the word count. R1 is +34 words because saying why a statistic fails to license an inference takes more room than making the inference took. The bare-deletion variant shipped beside it in the spec as `R1-alt` and was **not** taken.
+
+### R3 had four spans, not three
+
+The spec named three, all in `responses.long`, and its own scope note says a repair that fixes the opening and leaves the close still counting to ninety-nine produces a node that contradicts itself. The same unsourced ratio also stood at `responses.archetypeVariants.defender` — live shipped text, once per surface. It was found by sweeping the **defect** across every locus of every node rather than the five named strings, ratified the same session, and repaired with the other three.
+
+That sweep turned up something larger, which is **not** fixed here and is recorded in canon: `archetypeVariants` is not in the map validator's `LOCI` enum at all, so `target_locus` cannot name it and `anchor-rule` cannot reach it. **16 of 82 nodes carry archetype variants — 10,072 words of live shipped corpus text the Adversarial Map is structurally unable to adjudicate.**
+
+### Three surfaces, no build step
+
+`combined.html` is a hand-assembled superset carrying `REBUTTAL_STRENGTH`, which the JSX does not, and nothing regenerates any surface from any other. The same six spans live in all three, byte-identically, so one replacement pair served all three — 18 span-replacements across 12 line-loci, each line-indexed with a per-line anchor assertion, each surface verified against its **git blob** for a changed set of exactly the named lines.
+
+**A corpus-vs-flagship gate did not exist and now does** (`tools/xsurface_v4_1_0.py`): string-aware bracket-balance extraction of the `const OBJECTIONS` literal from the flagship and the JSX, compared against the corpus file by canonical-serialization md5. All three agree at `a597fb18cac0b12434d63c4cfd23cfff` before and `6cd132ee5b8c7ca78ad0e095806f1c93` after, and the same four leaves moved on every surface.
+
+### The Adversarial Map is frozen, not advanced
+
+Each repaired node carried one Phase E entry classed `(b)` whose verbatim anchor is cut from the sentence being repaired, and `status-enum` pins `status` to `mapped` as a hard check — so after the cut no status value can say an anchor is historical. `coverage: 82/82` is a claim about a **(map, corpus) pair**, bound by `meta-corpus-pin`; advancing the pin under entries authored against the old text would change a receipt's referent while keeping its claim. So `adversarial_map_v1_0.json` stays byte-identical at `c4989e98…` and stays pinned to corpus `6ee1f6f3…`, against which it still validates under `--assembly` at **21 checks, 0 violations, 0 advisories**. Measured both ways: against the post-cut corpus it is FAIL with 5 violations, while `coverage` passes in **both**, which is the proof it only breaks if the entries are *removed*. A successor map is owed: 79 nodes inherit, three re-adjudicate.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.0.0 | `e654eabd32fa95e5969d49e6eb15aa87` | 2,963,752 |
+| superseded — v4.0.1 | `9d13359e305c6caa3ae64759f3dcc0e6` | 2,963,789 |
+| superseded — v4.0.2 | `62d1e8d86056465ebcb5daced38e0a83` | 2,974,039 |
+| superseded — v4.0.3 | `62c733ac8263e6413816cfb6d28e3b8a` | 2,982,420 |
+| superseded — v4.0.4 | `c60dcb56498debc84d2fb2860cd55167` | 2,982,518 |
+| superseded — v4.0.5 | `cee25a00b68ba036138d064c383d9a8b` | 2,982,658 |
+| **current — v4.1.0** | **`72187f6cf0fccdf8e9f4ec6ca5ce009c`** | **2,982,770** |
+
+**v4.0.5 has no entry of its own in this file.** It shipped on 2026-09-13 — the load-bearing hierarchy table regenerated from `DEP_GRAPH_DATA.links` and a third era of inert baked node counters stripped — and the release surfaces were never revisited. Its prose is in `release_v4_0_5.json` in the wuld.ink repo. Its hash is added to the ladder above rather than reconstructed as a retrospective entry, which would be inventing a record for a session that is over.
+
+### Changed
+
+- **`combined.html`** (+112 B) — four lines, six span-replacements. **The pin.**
+- **`efilist_argument_library_v4_0_0.json`** (+112 B, `04bf6482aa0374ee92a81c1d55ec41f8`) — the same four lines' worth of text, plus the `version` field `4.0.0` → `4.1.0`. **The field names the content cut, not the release**: commit `e922e6c` restored it to `4.0.0` after the v4.0.1-v4.0.4 relabels walked it to `4.0.4` while the content stayed byte-identical, which made one content version wear five hashes and broke validation for every artifact pinning `6ee1f6f3`. v4.1.0 is the first genuine content cut since K219, so it is the first bump that rule licenses. **Filename stays frozen**, per convention. `generated` is untouched: it dates an authoring run, and no run happened.
+- **`efilist_argument_library_v4_0_0.jsx`** (+112 B, `b196548b6eb39065842d62292acca89f`) — the same six spans.
+- **`project_canon_v38_4.json`** — MINOR; keyset held at 41; `invariants`, `schemas` and `hazard_map` asserted byte-identical by the builder, which is what would have made it MAJOR. v38_3 archived. `canon_version_marker` corrected from a drifted `v38.1`.
+- **`adversarial_map_staging/`** — the regen queue records the three as landed; the map artifact itself is **untouched**.
+- **`README.md`, `libraries/index.html`** — pin table, front-door badge, status prose, canon filename. Three of these were correcting v4.0.5, not stamping v4.1.0.
+- **`tools/`** — `sweep_v4_1_0.py`, `verify_v4_1_0.py`, `xsurface_v4_1_0.py`, `build_canon_v38_4.py`, `restamp_v4_1_0.py`.
+
+### Controls
+
+- **13 of 13 behaved.** A positive control on each tool, then base-md5, base-CR, line-anchor, changed-set, HELD-lost, GONE-survives, word-count, collateral-anchor and json-leaf-set against the sweep, and surface-disagreement against the cross-surface gate. The first collateral-anchor control aborted at the *line* gate and so proved section 1 rather than section 7; it was kept and a second built beside it that applies cleanly and is caught only by the anchor sweep. A control that cannot fail for its own reason proves nothing.
+- **Anchor destruction is the receipt.** 90 of the map's 93 anchors hold against the post-cut corpus and exactly the three intended break. An anchor still matching after a subtractive regen would be proof the defect was still in the text.
+- **Word counts stated in advance** and asserted on both sides: hashes cannot see a change in meaning that is internally consistent.
+- **`objections-index.json` unchanged** — `d034af153aafa08c6f57884a9e7426a1` / 41,800 B. The index projects `id`/`trigger`/`diagnosis`/`keywords` and this cut moved only `responses`, so the wuld.ink objection re-vendor is a no-op **by identity** — proven by regenerating from the post-cut corpus, with the generator first reproducing the committed artifact as a positive control.
+- **The objections digest moved** `0218f73b7bfac7c9bcf7d352a5eab5cc` → `2c5a083a31448dec0f1ce41e08ba5b04`. It is computed over `objections` and is independent of the `version` field — the validator's own label-churn self-test sets `version` to `4.0.4` to prove that — so the digest moved because the responses moved.
+- **Line counts frozen.** All three surfaces keep their line count; every changed set is exactly the named loci, checked against `git show HEAD:<file>` and not against a copy on disk.
+
+---
+
 ## [v4.0.4] — 2026-09-12
 
 **PATCH** by the invariants convention at the top of this file — the invariants subtree is byte-identical and no content changed. One `href`: the flagship's breadcrumb bar named *Refusal Libraries* and did not link it, so the umbrella front door was unreachable from the most-read surface in the suite. **No content change.** The corpus, the grading ledger, both graph literals, the argument-flow matrix, the real-world-examples data and every response are byte-unchanged; the objections index is unchanged (`d034af15…`). The unified diff of the pinned file is **one hunk, two lines**.

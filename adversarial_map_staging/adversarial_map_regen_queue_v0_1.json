@@ -41,6 +41,18 @@
       "s": 3,
       "as": 1
     },
+    "landed": {
+      "cut": "v4.1.0",
+      "session": "K344",
+      "date": "2026-09-17",
+      "count": 3,
+      "items": {
+        "happiness-is-choice#long": "v4.1.0 (K344, 2026-09-17) -- R1. The INTERPRETED form, ratified by Josiah over R1-alt: `subtractive` classifies the claim, not the word count (+34 words).",
+        "just-edgy#long": "v4.1.0 (K344, 2026-09-17) -- R2. Reception now described rather than adjudicated; +0 words.",
+        "just-depressed#long": "v4.1.0 (K344, 2026-09-17) -- R3, in FOUR spans, not the spec's three. The fourth stands at responses.archetypeVariants.defender, which carries the same unsourced ratio and which the spec's search over responses.long could not see. Found and ratified the same session; leaving it would have shipped the self-contradiction the spec's own scope note forbids."
+      },
+      "note": "Three of the nineteen v4.1.0 enrichment items have SHIPPED. They remain listed and counted; `landed` on an entry is what marks it spent. The cut moved the pin v4.0.5 -> v4.1.0 and the adversarial map was FROZEN at its own corpus pin rather than advanced -- so this queue's source_fragments and the map they assemble into still describe the PRE-CUT corpus, which is correct and is why a successor map is owed."
+    },
     "fences": "Yields are intake candidates, never authorizations. No byte moves from this artifact."
   },
   "version_class_ruling": {
@@ -130,6 +142,7 @@
         "diagnosis_coupled": false,
         "anchor": "roughly half of your capacity for happiness was determined at conception",
         "grounds": "Straightforward misstatement of what a heritability coefficient measures, load-bearing and stated twice, in the node's designated empirical paragraph. It is also the node most exposed to a competent objector, since the h-squared misreading is the standard undergraduate correction. Repair is subtractive and costs no ground: drop the conception-fraction inference, keep the finding that wellbeing has substantial unchosen determinants.",
+        "landed": "v4.1.0 (K344, 2026-09-17) -- R1. The INTERPRETED form, ratified by Josiah over R1-alt: `subtractive` classifies the claim, not the word count (+34 words).",
         "cut": "v4.1.0"
       }
     ],
@@ -310,6 +323,7 @@
         "diagnosis_coupled": false,
         "anchor": "Roughly one deployment in a hundred is a person actually worried about you",
         "grounds": "An unsourced quantitative premise doing architectural work in the corpus's most epistemically self-aware node, which elsewhere refuses exactly this move. Minor rather than headline because the logical core is fully separable and survives deletion intact. Repair is subtractive: state the distribution qualitatively, keep the one-in-a-hundred reader named and met.",
+        "landed": "v4.1.0 (K344, 2026-09-17) -- R3, in FOUR spans, not the spec's three. The fourth stands at responses.archetypeVariants.defender, which carries the same unsourced ratio and which the spec's search over responses.long could not see. Found and ratified the same session; leaving it would have shipped the self-contradiction the spec's own scope note forbids.",
         "cut": "v4.1.0"
       },
       {
@@ -324,6 +338,7 @@
         "diagnosis_coupled": false,
         "anchor": "has never been substantively refuted",
         "grounds": "The lineage material is legitimate and survives on the best reading, since the objection makes an empirical claim about who holds the view and the lineage refutes it directly. The unrefutedness clause is separable and not so rescuable: no charitable reading turns absence of published refutation into evidential support. Repair is subtractive and the node's force is unaffected.",
+        "landed": "v4.1.0 (K344, 2026-09-17) -- R2. Reception now described rather than adjudicated; +0 words.",
         "cut": "v4.1.0"
       },
       {
