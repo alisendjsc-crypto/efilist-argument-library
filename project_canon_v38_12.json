@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.11",
-  "last_updated": "2026-09-17",
-  "last_updated_by_session": "K349_phase_G_note_layer",
+  "canon_version": "38.12",
+  "last_updated": "2026-09-18",
+  "last_updated_by_session": "K350_interconnection_and_HR15_ratification",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,10 +1668,10 @@
     ]
   },
   "next_recommended_session": {
-    "session": "UPSTREAM AUTHORING IN THE ARGUMENT LIBRARY SEAT, not another map phase.",
-    "why": "The map is complete over every rendered text class and has produced 29 (b) regen items against three sentences repaired since the programme began. Cowork cannot close that: a repair changes the corpus, which makes it a PIN MOVE, and stance-bearing content is ratified by Josiah with the library seat rather than authored by a build seat.",
-    "scope": "The sixteen v4.1.0 enrichment items, happiness-is-choice#medium, the just-depressed depressive-realism contradiction (AGGRAVATION -- repair at the node), and the two K349 headline items. When that comes back ratified, Cowork folds it in a declared pin-move session.",
-    "if_a_build_session_is_wanted_instead": "Extend the regen queue past the A-E fragments -- it has never read Phase F, R or G, so 11 adjudicated (b) entries are unqueued."
+    "session": "BUILD THE FOLD. It is mechanical and the ratification is already in canon.",
+    "why": "HR-15 is ratified and queued; nothing else in the programme moves until the artifact carries it. The build is a fragment amendment plus two existing builders run one version forward.",
+    "scope": "adv_map_phaseG_v0_1.json amended in place (K338 precedent, `amended` meta block, care-ethics#note b -> d routed HR-15 novel true) -> build_assembly_v1_3.py -> build_register_v0_4.py with HR-15 in BEDROCK_MAP/BEDROCKS/RELATIONS (HR-06 depends_on HR-15; HR-15 sibling_of HR-03) -> render_register_v0_4.py -> controls. Validator stays v0_6: no new phase letter is minted, which is why the amendment route was chosen over a new fragment.",
+    "then": "The level-independent affordance, in its own declared isolated pin-move session, before any reader-facing content ships."
   },
   "open_questions": {
     "active": {
@@ -1802,7 +1802,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.11",
+  "canon_version_marker": "v38.12",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2464,7 +2464,8 @@
     "v38_8_note": "v38.7 -> v38.8 MINOR (K346_phaseF_defect_register_and_ccclxv_ruling, 2026-09-18): keyset UNCHANGED at 41. Seven additions INSIDE adversarial_map (ccclxv_ruling_K346, stopping_rule_gate5_K346, operationalisation_hazard_ccclxviii_K346, phaseF_defect_register_K346, design_pin_v0_3, archetype_weighting_ruling_K346, rwe_two_lane_collection_K346) and a replacement of next_recommended_session. invariants, schemas and hazard_map asserted byte-identical by the builder, and the SOURCE was round-tripped at the emitted serialization before anything was derived (ccclxiv). NO PIN; no corpus, JSX, flagship or frozen-map byte moved.",
     "v38_9_note": "v38.8 -> v38.9 MINOR (K347_phase_F_proper_and_validator_v0_4, 2026-09-17): keyset UNCHANGED at 41. Four additions INSIDE adversarial_map (phaseF_proper_K347, validator_pin_v0_4, ccclxx_hazard_K347) plus a replacement of adversarial_map.next; one addition inside terminal_stability_marker.honest_residuals (create_vs_destroy_positive_case = HR-14, the first new bedrock since HR-13); a replacement of next_recommended_session; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR.",
     "v38_10_note": "v38.9 -> v38.10 MINOR (K348_terminal_successor_assembly_v1_1, 2026-09-17): keyset UNCHANGED at 41. Six additions INSIDE adversarial_map (entry_cap_ruling_K348, terminal_assembly_K348, ccclxxi_hazard_K348, validator_pin_v0_5, design_pin_v0_4, honest_residuals_register_pin_v0_2), a replacement of adversarial_map.next, and two CORRECTIONS to existing records: honest_residuals_register_pin gains SUPERSEDED_K348 naming three stale facts in itself, and terminal_artifact_pin gains successor_K348. Inside terminal_stability_marker.honest_residuals: create_vs_destroy_positive_case.owed discharged and register_pointer rewritten for 14 bedrocks. A replacement of next_recommended_session; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR.",
-    "v38_11_note": "v38.10 -> v38.11 MINOR (K349_phase_G_note_layer, 2026-09-17): keyset UNCHANGED at 41. Nine additions INSIDE adversarial_map (note_ruling_K349, note_reachability_finding_K349, confidence_ruling_K349, coverage_ruling_K349, relation_vocabulary_K349, validator_pin_v0_6, terminal_assembly_v1_2_K349, design_pin_v0_5, honest_residuals_register_pin_v0_3, ccclxxii_hazard_K349) and a replacement of adversarial_map.next. A replacement of next_recommended_session; one session_log_recent append. NO PIN: the flagship, the corpus and the jsx are untouched and the cross-surface gate is GREEN at open and close. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR."
+    "v38_11_note": "v38.10 -> v38.11 MINOR (K349_phase_G_note_layer, 2026-09-17): keyset UNCHANGED at 41. Nine additions INSIDE adversarial_map (note_ruling_K349, note_reachability_finding_K349, confidence_ruling_K349, coverage_ruling_K349, relation_vocabulary_K349, validator_pin_v0_6, terminal_assembly_v1_2_K349, design_pin_v0_5, honest_residuals_register_pin_v0_3, ccclxxii_hazard_K349) and a replacement of adversarial_map.next. A replacement of next_recommended_session; one session_log_recent append. NO PIN: the flagship, the corpus and the jsx are untouched and the cross-surface gate is GREEN at open and close. invariants, schemas and hazard_map asserted byte-identical, which is what would have forced MAJOR.",
+    "v38_12_note": "v38.11 -> v38.12 MINOR (K350_interconnection_and_HR15_ratification, 2026-09-18): keyset UNCHANGED at 41. Fourteen additions INSIDE adversarial_map (ccclxxiv_hazard_K350, ccclxxv_hazard_K350, render_reach_by_gate_tier_K350, class_asymmetry_ruling_K350, level_independent_affordance_K350, HR_15_ratification_K350, care_ethics_supersession_RATIFIED_K350, figure_reconciliations_K350, strongest_vs_repairable_escalation_K350, routing_constraint_consent_incoherent_K350, non_univocality_consent_independence_K350, care_ethics_note_grounds_correction_K350, interconnection_design_K350, interconnection_ratification_state_K350, interconnection_design_pin_v0_2) and a replacement of adversarial_map.next. One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. NO PIN. NO MAP OR REGISTER ARTIFACT WRITTEN: HR-15 is RATIFIED and QUEUED, which is exactly the status_lifecycle shape -- the artifact records `mapped` only and ratified lives in this block. invariants, schemas and hazard_map asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2685,7 +2686,8 @@
     "K345b_rwe_map1_calibration (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.6->v38.7]: THE CONTROL K345a OWED, AND IT TOOK THE CLAIM BACK. '23 of 53 observed transitions are MAP1 edges' was published without a chance baseline; MAP1 is dense at 21.6% pooled edge density, so against a shuffled-target null the observed 45.5% sits on a chance mean of 33.7%. Worse for the claim, the apparent significance lives entirely in the many-to-many cross-product, whose units are not independent because co-attached nodes are often premise-siblings and MAP1 is built from premise overlap: the clean single-attachment test is n=17 at p=0.37. NO DEFENSIBLE SIGNAL, stated plainly. What shipped instead is an instrument and a target -- power says ~n=200 clean units, today's clean count is 17, and the binding constraint is not instance COUNT but how many instances are threaded, sequentially numbered and single-attachment. Josiah's stated purposes for the RWE panel are recorded alongside it precisely because those purposes and the prediction aim pull on different properties of the same panel. A determinism control caught the permutation test drawing from a set comprehension under PYTHONHASHSEED, making a seeded test irreproducible; fixed and verified under two forced seeds.",
     "K347_phase_F_proper_and_validator_v0_4 (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.8->v38.9]: PHASE F PROPER, and the archetypeVariants surface is adjudicated. 38 loci over 16 nodes, 39 entries, validator v0_4 PASS 22 checks 0 violations 0 advisories; with Phase R the set reports variant_coverage 39/39. Class mix a26/b6/d7, a+d = 0.8462 against the A-E base rate of 0.7634, exact two-sided binomial p = 0.2624 -- CONSISTENT, so the receipt is not written over an instrument reading, and the gate was stated in both directions because knowing K346 drew zero (a) is not a licence to rubber-stamp (a). All 26 (a) entries carry a verbatim snippet from their answering locus, asserted against the corpus. NEW BEDROCK HR-14, and it is an artifact of the ROUTING GRAPH rather than of any one text: four nodes route the positive-eliminationist charge to red-button-repugnant, whose sophisticate slot holds it open by ruling, so the charge is answered in no locus. SECOND FINDING: inheritance cuts BOTH ways -- design 10.4 says the whole-node reading cures a locus-local defect, and it does, but it also AGGRAVATES, and two of the six (b) entries exist only because of what the locus inherits. VALIDATOR v0_4: gate 5 made checkable with open <-> >=2 entries as a biconditional, and ccclxx, a per-file declaration gated against a global figure -- Phase R and the K346 register, both shipped, fail together under v0_3 today. 23/23 controls; everything reproduces byte-identically under two forced PYTHONHASHSEEDs.",
     "K348_terminal_successor_assembly_v1_1 (2026-09-17, wuld.ink Cowork; NO PIN) [MINOR v38.9->v38.10]: THE TERMINAL SUCCESSOR ASSEMBLY. adversarial_map_v1_1.json, 133 entries over 82/82 nodes at the primary ladder AND variant_coverage 39/39 -- the first artifact in the programme to declare both -- classes a66/b27/c1/d39, pinned to the post-cut corpus, validator v0_5 --assembly 23 checks 0 violations 0 ADVISORIES, 15 controls all passing. 90 entries inherit from the frozen v1_0 unchanged and 3 are superseded by Phase R; all 133 anchors are asserted verbatim against the post-cut corpus rather than assumed. RULING (Josiah): the node entry bound becomes 3 + 3*(variant loci), because the K345 form reserved one slot per variant locus while the per-locus cap allows three, so the bound and gate 5 contradicted each other wherever a variant locus legitimately opened. ccclxxi: when a ruling moves a gate's unit, every other invariant over the old unit is a candidate for the same move and none of them fails until a fragment set crosses it -- v1_0's node-level PARTITION invariant fails 16 ways by construction at this fragment set while the property it protects is intact at 0 locus-level clashes. Register v0_2 derived from the assembly, which settles the two-corpus span by earning a single pin. Design v0_4 section 11. AND CANON'S OWN RECORD OF THE v0_1 REGISTER WAS STALE IN THREE PLACES, found by rebuilding the artifact: wrong md5, wrong basis, and a pre-cut corpus pin.",
-    "K349_phase_G_note_layer (2026-09-17): PHASE G -- the `note` layer, authored NARROWLY. NO PIN; combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c, corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f untouched, cross-surface gate GREEN at open and close. Two rulings taken before a line was authored: `note` is a map target narrowly (Josiah, delegated to the build seat), and `confidence` is out as a target and in as a regen candidate (Josiah). THE HANDOFF'S PREMISE FOR THE SECOND WAS FALSE -- confidence emits visible STRONG/PROVISIONAL text for 7 nodes -- and the audit turned up something larger: `note` is a DEPENDENT of `confidence`, because the [NOTE] button sits inside `if (conf !== 'full')` and toggleNote has exactly one caller, so 2 of 9 notes (35.8% of the layer's words) are structurally unreachable by any reader. Registered as ccclxxii. Phase G authored 5 entries, 5/9, class {\"a\": 3, \"b\": 2}; v1_2 carries 138 entries at 82/82 primary, 39/39 variant, 5/9 note and passes --assembly at 0/0. Validator v0_6 self-test 78/78 and reproduces every v0_5 verdict across 66 runs with 0 divergences. Register v0_3 adds the ratified fifth relation kind `conditions` (HR-14 conditions HR-11) and makes the vocabulary an enforced allowlist; it also found that build_register.py's claim to refuse on an undeclared adjacency was never a gate, and made it one. 46 controls across three batteries, all green."
+    "K349_phase_G_note_layer (2026-09-17): PHASE G -- the `note` layer, authored NARROWLY. NO PIN; combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c, corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f untouched, cross-surface gate GREEN at open and close. Two rulings taken before a line was authored: `note` is a map target narrowly (Josiah, delegated to the build seat), and `confidence` is out as a target and in as a regen candidate (Josiah). THE HANDOFF'S PREMISE FOR THE SECOND WAS FALSE -- confidence emits visible STRONG/PROVISIONAL text for 7 nodes -- and the audit turned up something larger: `note` is a DEPENDENT of `confidence`, because the [NOTE] button sits inside `if (conf !== 'full')` and toggleNote has exactly one caller, so 2 of 9 notes (35.8% of the layer's words) are structurally unreachable by any reader. Registered as ccclxxii. Phase G authored 5 entries, 5/9, class {\"a\": 3, \"b\": 2}; v1_2 carries 138 entries at 82/82 primary, 39/39 variant, 5/9 note and passes --assembly at 0/0. Validator v0_6 self-test 78/78 and reproduces every v0_5 verdict across 66 runs with 0 divergences. Register v0_3 adds the ratified fifth relation kind `conditions` (HR-14 conditions HR-11) and makes the vocabulary an enforced allowlist; it also found that build_register.py's claim to refuse on an undeclared adjacency was never a gate, and made it one. 46 controls across three batteries, all green.",
+    "K350_interconnection_and_HR15_ratification (2026-09-18): THE COMMISSION ANSWERED, RELAYED TO THE LIBRARY SEAT, AND CORRECTED BY IT IN ONE PLACE WORTH 20 CARDS. NO PIN; combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c, corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f untouched, cross-surface gate 6cd132ee5b8c7ca78ad0e095806f1c93 GREEN at open and close. ccclxxiv REGISTERED AND CONFIRMED BY BOTH SEATS: the gate you cannot see by reading the corpus is the one with a DEFAULT. ccclxxii's discipline evaluates conditions over the data and cannot reach `let responseLevel = \"medium\"` at L10278; the seat that registered ccclxxii calls this its own miss and says the discipline it wrote is the reason it missed this, because the rule pointed at the data and away from the default. At medium the map is 7 entries on 5 cards; at long, 77 on 72. It is the MASTER CONSTRAINT and it reorders the whole programme: mechanism first, content second. THE SEAT OVERTURNED THIS SEAT'S CENTRAL BLOCK. Strongest-vs-repairable bites (a) and cannot touch (d), because a (d) claims TERMINUS rather than exhaustiveness and is by construction the class where the repairable search FAILED -- a repairable-hunting author lands on (b). 20 pure-(d) cards ship with zero new reader-facing text. This seat accepts it and adds the refinement it did not state: the licence holds only under a TERMINUS label; under `the strongest objection` heading a (d) overreaches exactly as an (a) does, so the label is part of the ruling. The two-option depth split is WITHDRAWN for the seat's level-independent affordance -- a badge that renders at any responseLevel and forces `long` on activation, serving both directions; flipping the default is rejected because the depth ladder is a deliberate reading register. HR-15 RATIFIED by Josiah on the structural ground: routing the rival-occupant content into HR-06 would give HR-06 a tributary that dissolves HR-06's own question. Both seats reached new-root independently. Three figures reconciled, and the third says something: (d) routings naming three bedrocks is 1, 2 or 10 depending on the normalizer, so this seat's `unique in 39` was true only under a judgment call it made silently -- the ruling rests on the structural argument, which is definition-free. cccli again, and the seat names it the session's best finding: an escalation is not a queue. Also recorded: a near-miss of the same family, this seat searching build_register.py's HISTORY rather than its SUCCESSOR and nearly reporting the fold blocked on a missing instrument that is tracked twice over. AND ccclxxv, REGISTERED AFTER THE HANDOFF FAILED IN THE OPERATOR'S TERMINAL: a runnable block that does not survive a paste is not a runnable block, and the failure is SILENT. BLOCK 1 carried a 2,874-character single-quoted commit message on one line; the paste truncated it mid-string and PowerShell sat at a continuation prompt printing nothing, swallowing BLOCK 2 into the same open string. Nothing executed only because `& { }` parses before it runs -- a property of the syntax, not of the design. Long text now goes in an md5-gated file through commit -F, the longest line in an emitted block is measured against a 500-character bound before it ships, and a block prints early so a hung paste is distinguishable from a working one."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -3181,7 +3183,13 @@
       "vendor_notice": "argue_relay_scholar_v1_1_revendor_v1.md issued at the game root (coevolution protocol 3.4 trigger; coverage 81/82 -> 82/82 in v4 terms; nothing urgent -- the game seat acts at its own set boundary; v1.1 keys to the v4 corpus, so full consumption implies their deliberate v4 re-vendor bundle while v1.0 stays valid at their v3.8 pin)"
     },
     "exchange_151": "commission (wuld.ink Cowork/game seat, 2026-07-11) -> design + scholar v1.1 (library K220 seat, Max; ratify-by-transmission) -> K221 fold (2026-07-11: staging opened, validator implemented + proven, v1.1 vendored game-side with gate battery 20/20, canon v38.0 -> v38.1, receipt K221_fold_receipt_v1.md). PRIMARY record = this block + session_log_recent. The wuld docs/library-claude-coordination.md mirror entry is OWED at the next wuld-committing session (K221 fenced the wuld repo under the concurrent-session law)",
-    "next": "PHASE G IS LANDED AND THE MAP HAS NO FURTHER TEXT CLASS. Every rendered field the corpus ships is now either adjudicated or ruled out with its grounds recorded. What remains is not mapping. THE HONEST NEXT MOVE IS UPSTREAM AUTHORING, NOT ANOTHER MAP: the sixteen v4.1.0 enrichment items plus happiness-is-choice#medium plus the just-depressed depressive-realism contradiction (classed an AGGRAVATION at K348, so its repair belongs at the NODE) plus the two new headline (b) items this session produced -- care-ethics#note, where the corpus published an unclosed implication for its own consent framework and named the text that would close it, and flow-states-csikszentmihalyi#note, where the note reports a concession the response never made and the flagship's RSI CALIBRATION NOTES repeat it as their worked example of honest acknowledgment. That last one spans a corpus locus and a FLAGSHIP-ONLY locus, so its repair is a pin move. The map has produced 29 (b) items and the programme has repaired three sentences since it began; that gap closes with ratified authoring in the Argument Library seat, not with another phase. Also queued: the regen queue derives from the A-E fragments ONLY, so Phase F's 6, Phase R's 3 and Phase G's 2 (b) entries are adjudicated and UNQUEUED -- 11 in total, a pre-existing gap this session measured rather than introduced.",
+    "next": {
+      "first": "BUILD THE FOLD. Amend adv_map_phaseG_v0_1.json in place on the K338 precedent (care-ethics#note b -> d, HR-15, novel true, with an `amended` meta block citing Josiah K350), then build_assembly_v1_3.py -> adversarial_map_v1_3.json, then build_register_v0_4.py -> honest_residuals_register_v0_4.json with HR-15 in BEDROCK_MAP, BEDROCKS and RELATIONS, then render and control. Mechanical; the ratification is already recorded here.",
+      "second": "THE LEVEL-INDEPENDENT AFFORDANCE, its own declared isolated PIN-MOVE session. It gates everything and it is not a stance-layer change. Forces a same-session search-index regen and objection re-vendor.",
+      "third": "Ship direction two and the 20 pure-(d) cards on that affordance, under a TERMINUS label, not a strength label.",
+      "fourth": "Answer R1 with the library seat -- it releases the (a) surface. Then R2 for the (b) surface.",
+      "explicitly_NOT_recommended": "Flipping responseLevel's default to `long`. The depth ladder is a deliberate reading register and the change hits every visitor's first impression; the affordance forces the level only for the reader who asked."
+    },
     "validator_pin_v0_2": {
       "file": "adversarial_map_staging/adv_map_validator_v0_2.py",
       "md5": "d775fbea1cd726690a49acf0914270c2",
@@ -3728,6 +3736,187 @@
       "counter_discipline": "To establish that shipped text reaches a reader: find the render site, ENUMERATE EVERY CONDITION GATING IT, and evaluate those conditions over the actual corpus -- then report the COUNT, never the existence.",
       "family": "ccclviii (measure the state you think you measured), narrowed to the specific case where the instrument is a static read of a dynamic predicate.",
       "first_instance": "2 of 9 notes unreachable; 35.8% of the layer's words."
+    },
+    "ccclxxiv_hazard_K350": {
+      "numeral": "ccclxxiv",
+      "headline": "THE GATE YOU CANNOT SEE BY READING THE CORPUS IS THE ONE WITH A DEFAULT.",
+      "detail": "ccclxxii set the counter-discipline for reachability: find the render site, enumerate every condition gating it, and evaluate those conditions over the actual corpus. K349 followed it exactly on `note` and got the right answer. Followed literally it CANNOT find this one. combined.html initialises `let responseLevel = \"medium\"` at L10278 and `archetypeSel = {}` at L10279. Those are not per-node conditions -- there is nothing in the corpus to evaluate them over -- and they decide the reachable surface of all 82 cards at once. A condition over UI STATE has a DEFAULT, not a distribution, and a corpus-wide sweep cannot see it.",
+      "confirmed_by": "The library seat, K350, who registered ccclxxii and calls this its own miss and the sharpest of the arc, in their words: `the discipline I wrote is the reason I missed this -- it pointed me at the data and away from the default.` A counter-discipline that redirects attention is also a counter-discipline that blinds; both seats now hold that.",
+      "first_instance": "Measured two ways, both correct and neither redundant. COWORK: 7 of 82 cards carry any map content at the default view (medium UNION the always-on diagnosis section). LIBRARY SEAT, sharper: at `medium` the map is 7 entries on 5 cards; at `long` it is 77 entries on 72. Either way 91% of the proposed reader-facing feature is invisible until the reader moves a control nothing prompts them to move.",
+      "family": "ccclxxii (a render site is not reachability), narrowed to the case where the gating predicate is over UI state rather than over the data.",
+      "counter_discipline": "After enumerating a render site's conditions, PARTITION them. Conditions over DATA get a count over the corpus. Conditions over UI STATE get their INITIALIZER READ, and the reach is reported at that initializer -- never at the union of what a determined reader could reach. Report both numbers and say which is which.",
+      "status": "MASTER CONSTRAINT on the interconnection programme. Every phasing decision downstream of it is a decision about what the reader is looking at, not about what loci exist."
+    },
+    "render_reach_by_gate_tier_K350": {
+      "measured": "2026-09-18, K350, read out of combined.html L10495-10600, computed over adversarial_map_v1_2.json, and independently re-measured by the library seat.",
+      "gates": {
+        "diagnosis": "unconditional section on any open card",
+        "medium": "responseLevel === 'medium'; DEFAULT (L10278)",
+        "short_long": "reader moves the depth control",
+        "archetypeVariants": "reader clicks an ARCHETYPE pill; archetypeSel = {} (L10279)",
+        "note": "obj.note AND responseLevel === 'long'; the [NOTE] button additionally requires (obj.confidence || 'full') !== 'full'"
+      },
+      "entries_and_cards_per_locus": {
+        "medium": "7 entries on 5 cards",
+        "diagnosis": "2 entries on 2 cards",
+        "short": "7 entries on 7 cards",
+        "long": "77 entries on 72 cards",
+        "note": "5 entries on 5 cards",
+        "variant": "40 entries"
+      },
+      "nodes_with_any_map_content_by_tier": {
+        "default_view_medium_plus_diagnosis": 7,
+        "plus_depth_control": 82,
+        "plus_archetype_pill": 82,
+        "plus_note": 82
+      },
+      "class_split_at_full_reach": {
+        "only_a_or_d": 55,
+        "at_least_one_b": 26,
+        "b_is_the_only_class": 15,
+        "only_b_and_headline": 5,
+        "has_c": 1
+      },
+      "a_claim_computed_and_REFUSED": "(b) is NOT hidden at deep loci. (b) sits at #long in 65.5% of cases against 53.2% for non-(b); Fisher exact two-sided p = 0.2946. The convenient story that the defects cluster where readers do not go is unsupported and is not used in the design. ccclxvi, honoured by computing the null before quoting the overlap."
+    },
+    "class_asymmetry_ruling_K350": {
+      "ruling": "The strongest-vs-repairable question (R1) bites (a) and CANNOT touch (d). Library seat, K350; accepted by this seat with one refinement it did not state.",
+      "the_argument": "An (a) claims WE ANSWER THIS. If the mapped move was not the strongest, a stronger unmapped move might be unanswered, so the claim overreaches. A (d) claims THIS LINE TERMINATES AT BEDROCK WE HAVE NAMED AND HOLD OUR POSITION ACROSS. A stronger unmapped move reaches the same or deeper bedrock; it does not falsify the card, which never claimed exhaustiveness.",
+      "and_the_structural_leg_is_the_strongest": "(d) is BY CONSTRUCTION the class where the repairable search FAILED. The class law adjudicates a -> c -> b/d, and a repairable-hunting author lands on (b), which is the regen-candidate class. Reaching (d) required finding no fixable clause. So a (d) is evidence AGAINST the bias having operated on that entry, not evidence neutral to it. A repairable-hunting author cannot have manufactured a false (d).",
+      "THE REFINEMENT_THIS_SEAT_ADDS": "The argument licenses shipping (d) ONLY under a label that claims TERMINUS, not STRENGTH. Under a heading like `the strongest objection to this answer`, a (d) card makes exactly the overreaching claim the (a) card makes and R1 bites it just as hard. Under `where this line terminates` it does not. THE LABEL IS LOAD-BEARING and it is part of the ruling, not presentation.",
+      "the_ship_set": "20 pure-(d) nodes, 20 entries, 19 at #long and 1 at #diagnosis, ALL 20 authored pre-F -- which is precisely why the asymmetry matters: the R1 blocker would otherwise have killed every one of them. Zero new reader-facing text required; the register's 14 glosses already read.",
+      "what_still_waits": "(a) waits on R1. (b) waits on the repairs, under R2. (c) never ships on a card."
+    },
+    "level_independent_affordance_K350": {
+      "ruling": "The interconnection is gated on ONE mechanism, and it is not a content decision. Library seat, K350; this seat agrees and withdraws its own two-option split.",
+      "what": "A badge that renders at ANY responseLevel and, on activation, FORCES the level -- switching to `long` and scrolling to the locus. The same mechanism serves direction two's inbound deep link and the (d) layer's outbound one.",
+      "what_it_replaces": "This seat proposed v1 = state the depth in the wing's prose, v2 = a depth-aware hash router as separate pin-move work. That split was wrong: v1 ships a link that lands the reader four times in five on a card opening at medium, where the answer is not. The seat is right that this is not a cost, it is a BROKEN LINK.",
+      "and_the_obvious_fix_is_REJECTED_on_register_grounds": "Do not flip the default to `long`. The depth ladder is a deliberate reading register and that change hits every visitor's first impression. The affordance forces the level for the reader who asked; the default keeps serving the reader who did not.",
+      "its_disposition": "It renders no map content, so it is NOT a stance-layer change -- but it moves a flagship byte, so it IS A PIN MOVE and takes a deliberate, isolated pin-move session, which forces a same-session search-index regen and objection re-vendor. It gates everything downstream of it and should be built FIRST.",
+      "why_the_covenant_does_not_already_cover_it": "anchor_stability_covenant (v37.39) is append-only and self-tested, and it covers the CARD: #obj-<id>. It says nothing about the LOCUS, and 82% of all answer targets -- 89% within the ship-now subset -- live at #long."
+    },
+    "HR_15_ratification_K350": {
+      "ratified": "HR-15 -- currency of obligation: consent versus constitutive relation. Josiah, K350 (2026-09-18).",
+      "both_seats_reached_it_independently": "The library seat's K349 return declined a new root on map-hygiene grounds and disclosed the ground as procedural; this seat found the hygiene ground void (HR-06 already carries stronger_than -> HR-05 on the D4 ruling) and argued the root structurally. Josiah ratified on the structural ground, in his words BETTER than the seat's own: routing it into HR-06 would give HR-06 a tributary that dissolves HR-06's own question, which is a reductio rather than a preference.",
+      "gloss": "Whether obligation is denominated in authorization by the obligated party, or constituted by the relation the parties stand in. The corpus's consent architecture presupposes the first; a developed relational ethics denies it, and nothing in-corpus derives either.",
+      "alias": "rival-occupant",
+      "birth_certificate": {
+        "phase": "G",
+        "node": "care-ethics",
+        "locus": "note"
+      },
+      "relations_to_declare": [
+        [
+          "HR-06",
+          "depends_on",
+          "HR-15: HR-06 asks whether unauthorized imposition wrongs absent harm, which presupposes that authorization is the currency. Resolve HR-15 in care ethics' favour and HR-06's question does not arise; resolve it against and HR-06 is untouched. Same declared shape as HR-05 depends_on HR-03."
+        ],
+        [
+          "HR-15",
+          "sibling_of",
+          "HR-03: both concern where the moral primitive is seated, neither derives the other. HR-03 is the seat of STANDING (what bears value); HR-15 is the currency of OBLIGATION (what makes a demand binding). They come apart both ways -- a relational holist can hold consent is the currency for impositions on individuals, and a natural-duties theorist denies consent-as-currency with no relational axiology at all."
+        ]
+      ],
+      "facet": "unchosen-relations-bind-without-authorization",
+      "lifecycle_status": "RATIFIED, NOT YET LANDED. Per status_lifecycle the artifact records `mapped` only and ratified lives here. The fragment amendment, assembly v1_3 and register v0_4 are a build and are QUEUED -- see next_recommended_session."
+    },
+    "care_ethics_supersession_RATIFIED_K350": {
+      "status": "RATIFIED by Josiah at K350; QUEUED for the build session. No artifact written this session.",
+      "what": "care-ethics#note (b headline, Phase G, K349) -> (d), routed to HR-15, novel: true.",
+      "the_build_path_measured_rather_than_guessed": "Phase R's supersessions were IN-PLACE REPLACEMENTS at the locus in the successor assembly -- v1_1 carries exactly one entry at just-depressed#long -- so v1_3 carries one entry at care-ethics#note and v1_2 keeps the superseded (b) in its frozen bytes. The fragment route is the K338 precedent: amend adv_map_phaseG_v0_1.json in place with an `amended` meta block, rather than mint a phase letter the validator's PHASES enum does not carry. Toolchain confirmed present: build_assembly_v1_2.py and build_register_v0_3.py are both tracked and current.",
+      "b_remainder_three_in_node_defects": [
+        "retire the doctor/infection analogy at #long -- infecting wrongs an EXISTING person made WORSE OFF, a comparative baseline creation lacks; the map's own terminus_routing already records that the parallel smuggles it. Axis s, minor.",
+        "cut 'the deepest possible unchosen moral obligation' (#long) and 'the deepest possible unchosen obligation' (#medium) -- the obligation is the PARENT's and unchosen by the parent, the grievance is the CHILD's and unchosen by the child. An EQUIVOCATION at the node's pivotal move, not a tonal misfire, on the exact term of art the node's own note concedes it has not engaged. Axes v and c, headline.",
+        "rebuild move one as the ABSTENTION finding -- care ethics has no pre-relational evaluative standpoint, therefore renders no verdict on instantiation, therefore is an abstention, and an abstention cannot object. STRONGER than the temporal inversion the node currently runs, which concedes a tie. Axes c and r, headline."
+      ],
+      "what_the_repairs_do_NOT_do": "The care ethicist's reply is available and the next seat must not over-claim: the absence of a verdict at your chosen moment is not silence, it is the denial that your moment is the evaluative one. That RELOCATES the bedrock; it does not remove it. The (d) survives all three repairs."
+    },
+    "figure_reconciliations_K350": {
+      "why_recorded": "Three figures differed between the seats. All three reconcile, none was an error of arithmetic, and one of them says something the record needs.",
+      "default_view_reach": "COWORK 7 of 82 cards = medium UNION the always-on diagnosis section. LIBRARY SEAT 7 entries on 5 cards = medium ONLY. Re-measured: medium is 7 entries on 5 cards, diagnosis 2 entries on 2 cards, union 9 entries on 7 cards. Both figures true of what each measured.",
+      "share_of_answer_targets_at_long": "LIBRARY SEAT 82% = 80 of all 98 answered_by refs. COWORK 89% = 66 of the 74 refs on the ship-now subset. Both true, different populations. Quote 82% for the mechanism and 89% for the ship set.",
+      "d_routings_naming_three_bedrocks": {
+        "cowork_said": 1,
+        "library_seat_said": 3,
+        "re_measured": "NEITHER, AND THE NUMBER IS DEFINITION-SENSITIVE ACROSS AN ORDER OF MAGNITUDE. Raw distinct TOKENS >= 3: 10 of 39. Alias-normalised distinct BEDROCKS >= 3, counting `K224 carry-forward` as an HR-03 reference: 2 (care-ethics, incommensurability). Alias-normalised with `K224 carry-forward` correctly excluded -- it names the carry-forward BAR, a routing prohibition, not a bedrock: 1 (care-ethics).",
+        "the_finding": "terminus_routing is a FREE-TEXT field. A count over it is a count of a normalizer, not of a fact, and the normalizer choice here moves the answer from 1 to 10. This seat's `unique in 39 adjudications` was true only under a judgment call it made silently. The library seat is right that its staked ground survives more weakly than it was credited.",
+        "consequence": "NONE for the ruling. HR-15 rests on the structural argument -- the register's own vocabulary can state the adjacency -- which is definition-free. The scatter ground is corroborative at best and the record says so."
+      }
+    },
+    "strongest_vs_repairable_escalation_K350": {
+      "instance_of": "cccli -- an instruction is not a gate; here, AN ESCALATION IS NOT A QUEUE.",
+      "what_happened": "K345 recorded FINDING_strongest_vs_repairable and escalated it to Josiah + the library seat with the words 'NOT ruled here'. K346, K347, K348 and K349 never surfaced it. The K350 kickoff, written by a seat with canon open, built its central recommendation on the negation of it.",
+      "the_seat_s_verdict": "The library seat calls this the session's best finding, above ccclxxiv, and names it the fourth time in this arc that a rule turned out to be true only by luck.",
+      "scope_corrected_same_session": "It blocks (a) and cannot touch (d) -- see class_asymmetry_ruling_K350. The escalation is still owed an answer; what changed is that it no longer blocks 20 of the cards it appeared to.",
+      "why_not_a_new_numeral": "The register's anti-inflation ethic applies to the register. This is cccli's shape in a new place, not a new shape.",
+      "the_mechanical_fix_it_asks_for": "A canon escalation naming a party and a question needs a surfacing mechanism, the way the regen queue does. Today it has none, which is also why 11 adjudicated (b) entries from Phases F, R and G are unqueued."
+    },
+    "routing_constraint_consent_incoherent_K350": {
+      "constraint": "NO (a)-route through `consent-incoherent` for NORMATIVE consent-scepticism.",
+      "supplied_by": "the library seat, K349 relay return; VERIFIED VERBATIM against the pinned corpus at K350.",
+      "grounds": "consent-incoherent#long grounds the wrong in CONTINGENT consent-impossibility -- 'not because the experimenters could theoretically obtain consent and chose not to, but because the conditions of the experiments made genuine consent impossible' -- conditions imposed on beings who could otherwise have authorized. It then transports that to CONSTITUTIVE impossibility with no argument, closing on the bare assertion 'the impossibility of meeting the standard is precisely what makes the action impermissible'. The node answers the metaphysical sceptic, not the normative one.",
+      "joins": "the standing bans on bradley-no-subject (K224 carry-forward bar) and transhumanist-objection. Three now."
+    },
+    "non_univocality_consent_independence_K350": {
+      "finding": "Two live records disagree about whether the consent pillar is INDEPENDENT of the asymmetry.",
+      "record_1": "the neuroscience-positive-states regen holds asymmetry and consent as independent load-bearing supports.",
+      "record_2": "boonin-critique#short's (d) grounds rule the convergence ILLUSORY: 'Proxy Gamble, consent-impossibility, and empirical tail each presuppose existence can net-harm or wrong the created subject'.",
+      "status": "REGISTERED, UNRESOLVED. boonin-critique#short is HR-06's birth certificate, so resolving it moves a bedrock.",
+      "sharpened_by_HR_15": "With HR-15 ratified the disagreement has a home: record_2 is the claim that the consent pillar is not independent, which is HR-15's question asked from inside the corpus rather than by an objector."
+    },
+    "care_ethics_note_grounds_correction_K350": {
+      "correction": "care-ethics#note's grounds, as committed at 7eb039a, state 'The registered (d) at care-ethics#long is on a different question, the seat of standing, so it does not cover this.' TRUE of the primary terminus, FALSE of the recorded legs.",
+      "evidence": "care-ethics#long is a tributary of HR-03, facet relational-holist-seat-of-standing, and its terminus_routing reads 'secondary legs, manufactured dependency routes to bedrock-III (N4), infection parallel smuggles a comparative-harm baseline (N2)'. The register's HR-06 alias field is literally 'N4 / bedrock-III'.",
+      "the_error": "bedrock_name was read; terminus_routing was not, on an artifact the seat had open. The programme's recurring shape -- checking the field that NAMES the thing rather than the field that ROUTES it.",
+      "a_near_miss_of_the_same_family_caught_at_K350": "This seat searched the git history of build_register.py, found it unchanged since the v0_1 era, and was one step from reporting the fold BLOCKED on a missing instrument. build_register_v0_2.py and build_register_v0_3.py are both tracked, under the same versioned-filename convention the validators and assemblies use and that this seat had already read. Searching for a file's HISTORY rather than for its SUCCESSOR is the naming-versus-routing error in the filesystem. Caught before it was asserted; recorded because it nearly was not.",
+      "disposition": "RECORDED, NOT REPAIRED. The landed entry is not edited."
+    },
+    "interconnection_design_K350": {
+      "commission": "Josiah, K349a close, verbatim: 'I want both the flagship and adversarial libraries to have interconnectedness -- but they are both their own thing to some extent. For example, on the flagship library, you can also open the counter-rebuttal to the antinatalist objection on that same card -- and vice versa.'",
+      "artifact": "adversarial_map_staging/interconnection_design_v0_2.md",
+      "the_answer_after_the_relay": "ccclxxiv is the master constraint, so the sequence is a MECHANISM first and content second. The affordance gates both directions. Then 20 pure-(d) cards ship with zero new text. (a) waits on R1; (b) waits on the repairs.",
+      "direction_two_adversarial_to_flagship": {
+        "verdict": "SHIP, on the affordance. No stance ratification: the map as its own surface is an ordinary no-pin aux-wing fold under shipping_fork_disposition_verbatim. Its inbound link, however, needs the flagship-side affordance to land anywhere useful.",
+        "data_already_exists": "All 69 (a) entries carry routing.answered_by, 98 refs, 0 unresolvable against the pinned corpus under the validator's own locus_valid. 65% point at a DIFFERENT node."
+      },
+      "direction_one_flagship_to_adversarial": {
+        "verdict": "SPLIT BY CLASS, per class_asymmetry_ruling_K350. 20 pure-(d) cards ship on the affordance under a TERMINUS label. (a) is blocked on R1: 45 of the 55 nodes this seat originally proposed shipping have EVERY entry authored pre-F.",
+        "this_seat_s_error_corrected": "The original design blocked ALL of direction one on R1. That was right for (a) and wrong for (d), and it cost 20 cards."
+      },
+      "editorial_cost_measured_over_the_82_ship_now_entries": {
+        "adversarial_move_words": "median 57, mean 74, max 149; (a) mean 51 against a 60-word cap, (d) mean 110 with no cap",
+        "already_second_person_addressing_the_corpus": "38/82 = 46%",
+        "move_carrying_internal_vocabulary": "20/82 = 24%",
+        "grounds_carrying_internal_vocabulary": "74/82 = 90% -- grounds NEVER ships, for any class",
+        "the_d_layer_costs_nothing": "A (d) needs its bedrock named for a reader and the register's glosses already read. 20 pure-(d) cards, 0 new glosses."
+      },
+      "b_class_reader_facing_OPEN_R2": "Recommended: reader-facing behind an explicit OPEN label, carrying adversarial_move and nothing else; or the narrower line, gate only the 5 headline-only-(b) cards and publish the other 21. The case against is the register discipline -- rebut-only, and a published (b) is a non-rebutted objection on a rebuttal surface. JOSIAH + LIBRARY SEAT.",
+      "c_class": "NOT publishable, on the class law. The single (c), change-your-mind, is not a continuation of its node's dialectic, so a card-attached layer would display it on a card it does not belong to."
+    },
+    "interconnection_ratification_state_K350": {
+      "R1": "OPEN -- Josiah + library seat. Strongest-vs-repairable. SCOPE CORRECTED at K350: blocks (a) only.",
+      "R2": "OPEN -- Josiah + library seat. May a (b) be reader-facing, and under what label.",
+      "R3": "CLOSED -- Josiah ratified HR-15 at K350. See HR_15_ratification_K350.",
+      "R4": "OPEN -- Josiah + library seat, then a deliberate isolated pin-move session. The /combined graft. The level-independent affordance is a PIN MOVE but not a stance-layer change and does not wait on R4.",
+      "the_disposition_is_NOT_discharged_by_the_commission": "shipping_fork_disposition_verbatim requires Josiah AND library-Claude. Both have now spoken on HR-15 and on the class asymmetry; neither has ruled R1, R2 or the graft itself."
+    },
+    "interconnection_design_pin_v0_2": {
+      "artifact": "adversarial_map_staging/interconnection_design_v0_2.md",
+      "state": "DESIGN + RATIFICATION REQUEST, amended at K350 after the library seat's return. Supersedes v0_1, which was never committed.",
+      "authored": "K350, 2026-09-18 operator-local"
+    },
+    "ccclxxv_hazard_K350": {
+      "numeral": "ccclxxv",
+      "headline": "A RUNNABLE BLOCK THAT DOES NOT SURVIVE A PASTE IS NOT A RUNNABLE BLOCK, AND THE FAILURE IS SILENT.",
+      "detail": "K350's BLOCK 1 carried a 2,874-character single-quoted commit message on ONE LINE. The paste truncated it mid-string. PowerShell, sitting inside an unterminated single-quoted string inside an unclosed `& { }` scriptblock, went to the `>>` continuation prompt and printed NOTHING -- no error, no output -- so the operator's reasonable reading was that it was taking a while. BLOCK 2, pasted next, was absorbed whole into the same open string.",
+      "the_only_good_part_was_luck": "Nothing executed, because `& { }` parses the entire scriptblock before running any of it. That is a property of the syntax, not a property of the design. A bare sequence of statements would have run the git rm, the three Move-Items and the result gates, then died mid-commit with the drop consumed and the repo half-applied.",
+      "family": "report_fences_are_runnable_blocks -- in this project a triple-backtick fence is a PROMISE the contents are paste-runnable. The promise was made and nothing checked it. Also cccli: a rule that asks a writer to comply at write time is violated the first time someone does not.",
+      "counter_discipline": [
+        "Long text goes in a FILE, gated by md5, and reaches git through `commit -F`. NEVER inline in the block.",
+        "Before emitting an operator block, MEASURE the longest line in it programmatically and refuse above a bound. Bound set at 500 characters, which every legitimate line in four sessions of handoffs is well under.",
+        "A block whose first steps print nothing is indistinguishable from a hung paste. Emit a Write-Host inside the first few statements so the operator sees life immediately."
+      ],
+      "first_instance": "K350, twice in one paste: the efilist commit message at 2,874 characters, and the wuld block silently swallowed by it."
     }
   }
 }
