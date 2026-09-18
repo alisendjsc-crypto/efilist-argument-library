@@ -1,0 +1,279 @@
+{
+ "artifact": "wing_control_v0_1.json",
+ "checks": 54,
+ "failed": 0,
+ "failures": [],
+ "results": [
+  {
+   "check": "ship set == pure-(d) nodes, both directions",
+   "detail": "missing [] extra []",
+   "ok": true
+  },
+  {
+   "check": "every rendered entry is class (d)",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "every pure-(d) ENTRY is rendered, not just every node",
+   "detail": "22 rendered vs 22 in the pure set",
+   "ok": true
+  },
+  {
+   "check": "CONTROL a mixed-class node exists to be excluded",
+   "detail": "14",
+   "ok": true
+  },
+  {
+   "check": "CONTROL no mixed-class node reached the page",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "the flagship's card-anchor regex was EXTRACTED, not retyped",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "one open-link per rendered entry",
+   "detail": "22 vs 22",
+   "ok": true
+  },
+  {
+   "check": "every open-link carries a fragment",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "every fragment matches the flagship's own grammar",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "CONTROL grammar rejects @diagnosis",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL grammar rejects @note",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL grammar rejects an empty suffix",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL grammar accepts the bare form",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "no @diagnosis or @note is emitted anywhere on the page",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "every linked id is a real objection",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "only 'long' or no depth is ever forced",
+   "detail": "['None', 'long']",
+   "ok": true
+  },
+  {
+   "check": "the diagnosis locus takes the BARE form",
+   "detail": "/combined#obj-natural-reproduce",
+   "ok": true
+  },
+  {
+   "check": "the note locus is linked at @long, not at @note",
+   "detail": "/combined#obj-care-ethics@long",
+   "ok": true
+  },
+  {
+   "check": "every shipped string appears ESCAPED and verbatim on the page",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "escaping round-trips for every shipped string",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "CONTROL a string not in the corpus is absent",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "anchor rule: every AGAINST quote is verbatim at its own locus",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the same quote is NOT found at a different locus",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "no strength claim in the page's OWN text (verbatim spans excluded)",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the scoping is not vacuous: verbatim spans really were removed",
+   "detail": "38530 of 87259 chars remain",
+   "ok": true
+  },
+  {
+   "check": "the terminus label is present",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "the page says what it does NOT claim",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "'this line terminates here' is stated",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the strength scan fires on a planted word",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "the register join is TOTAL over the ship set",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "the normalizer choice is not vacuous: free text and register disagree",
+   "detail": "free 15 vs register 9",
+   "ok": true
+  },
+  {
+   "check": "the register namespace is the smaller one, as claimed",
+   "detail": "free 15 vs register 9",
+   "ok": true
+  },
+  {
+   "check": "floors named on the page are a strict subset of the register",
+   "detail": "9 of 15",
+   "ok": true
+  },
+  {
+   "check": "the 'two floors' figure on the page is the MEASURED one",
+   "detail": "expected '13 of these 22'",
+   "ok": true
+  },
+  {
+   "check": "CONTROL that figure is not the trivial one",
+   "detail": "13",
+   "ok": true
+  },
+  {
+   "check": "every card names its FACET rather than repeating the floor's name",
+   "detail": "22/22",
+   "ok": true
+  },
+  {
+   "check": "CONTROL that distinction is not idle: the largest floor spans several facets",
+   "detail": "['absence-asymmetry', 'aggregation-vs-iteration', 'relational-holist-seat-of-standing', 'unfacetted', 'value-requires-a-valuer']",
+   "ok": true
+  },
+  {
+   "check": "care-ethics is on the page twice, at two different floors",
+   "detail": "[('long', 'HR-03'), ('note', 'HR-15')]",
+   "ok": true
+  },
+  {
+   "check": "the one-click-short caveat is stated rather than papered over",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "the caveat is true: care-ethics is confidence!=full and has a note, so [NOTE] renders",
+   "detail": "strong / note=True",
+   "ok": true
+  },
+  {
+   "check": "not one shipped node carries archetypeVariants, so no card sits behind an archetype pill",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "CONTROL archetypeVariants exist elsewhere in the corpus, so this is a fact not an absence",
+   "detail": "16",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the slot lookup is the validator's, not a local re-read of a top-level key",
+   "detail": "top-level 0 / validator 16",
+   "ok": true
+  },
+  {
+   "check": "reproduces byte-identically under two forced PYTHONHASHSEED values",
+   "detail": "[(0, '616fc4ae49177f46e8d1a8558b0c6cba'), (0, '616fc4ae49177f46e8d1a8558b0c6cba')]",
+   "ok": true
+  },
+  {
+   "check": "and reproduces the COMMITTED page",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "reproduces when run from its COMMITTED location, not only from the repo root",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "no flagship / corpus / jsx / map / register byte moved",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "page is valid UTF-8 and ends with exactly one newline",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "page is CR-free",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "no unresolved template placeholder",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "the shared presentation layer is linked, never inlined",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "no prefers-color-scheme BRANCH (WI-K321b) -- rule/matchMedia, not the word",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL that scan fires on a real rule",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "CONTROL and it does NOT fire on prose naming the feature",
+   "detail": "",
+   "ok": true
+  }
+ ],
+ "subject": "adversarial/index.html -- the Adversarial Map's own reader-facing surface"
+}

@@ -1,0 +1,137 @@
+{
+ "checks": 26,
+ "failed": 0,
+ "failures": [],
+ "results": [
+  {
+   "check": "render_wing_v0_1.py                        seed=0 cwd=staging  ",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "render_wing_v0_1.py                        seed=1 cwd=staging  ",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "render_wing_v0_1.py                        seed=0 cwd=root     ",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "render_wing_v0_1.py                        seed=1 cwd=root     ",
+   "detail": "616fc4ae49177f46e8d1a8558b0c6cba",
+   "ok": true
+  },
+  {
+   "check": "frontdoor_K353.py                          seed=0 cwd=tools    ",
+   "detail": "6be6283b72de248400d99bb99e319cfa",
+   "ok": true
+  },
+  {
+   "check": "frontdoor_K353.py                          seed=1 cwd=tools    ",
+   "detail": "6be6283b72de248400d99bb99e319cfa",
+   "ok": true
+  },
+  {
+   "check": "frontdoor_K353.py                          seed=0 cwd=root     ",
+   "detail": "6be6283b72de248400d99bb99e319cfa",
+   "ok": true
+  },
+  {
+   "check": "frontdoor_K353.py                          seed=1 cwd=root     ",
+   "detail": "6be6283b72de248400d99bb99e319cfa",
+   "ok": true
+  },
+  {
+   "check": "build_canon_v38_15.py                      seed=0 cwd=tools    ",
+   "detail": "878bca22bbdeb14bfba28163d9d7456c",
+   "ok": true
+  },
+  {
+   "check": "build_canon_v38_15.py                      seed=1 cwd=tools    ",
+   "detail": "878bca22bbdeb14bfba28163d9d7456c",
+   "ok": true
+  },
+  {
+   "check": "every generator reproduced, 10 runs",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adv_map_phaseG_v0_1.json          ",
+   "detail": "blob 571cd47305612068651f13ca049557c2 worktree 571cd47305612068651f13ca049557c2",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adv_map_validator_v0_6.py         ",
+   "detail": "blob c002e93877b09d523daf786036af7a57 worktree c002e93877b09d523daf786036af7a57",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adversarial_map_design_v0_5.md    ",
+   "detail": "blob ab9569122de23de82db2ab5600d86d9e worktree ab9569122de23de82db2ab5600d86d9e",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adversarial_map_v1_0.json         ",
+   "detail": "blob c4989e98b042e2f787a82df3f11ecdad worktree c4989e98b042e2f787a82df3f11ecdad",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adversarial_map_v1_1.json         ",
+   "detail": "blob e9e5abf820e3f7a687e2b84443883ade worktree e9e5abf820e3f7a687e2b84443883ade",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adversarial_map_v1_2.json         ",
+   "detail": "blob e4bef3cac882aa079951ba7ec1a9d11e worktree e4bef3cac882aa079951ba7ec1a9d11e",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/adversarial_map_v1_3.json         ",
+   "detail": "blob 681827419df72a16a7c6fe70df8fe77f worktree 681827419df72a16a7c6fe70df8fe77f",
+   "ok": true
+  },
+  {
+   "check": "HELD adversarial_map_staging/honest_residuals_register_v0_4.json",
+   "detail": "blob d067729fafb51926bc9e845209417886 worktree d067729fafb51926bc9e845209417886",
+   "ok": true
+  },
+  {
+   "check": "HELD combined.html                                             ",
+   "detail": "blob f095c0ce0e5a1d796d57fa5a5dd62f7d worktree f095c0ce0e5a1d796d57fa5a5dd62f7d",
+   "ok": true
+  },
+  {
+   "check": "HELD efilist_argument_library_v4_0_0.json                      ",
+   "detail": "blob 04bf6482aa0374ee92a81c1d55ec41f8 worktree 04bf6482aa0374ee92a81c1d55ec41f8",
+   "ok": true
+  },
+  {
+   "check": "HELD efilist_argument_library_v4_0_0.jsx                       ",
+   "detail": "blob b196548b6eb39065842d62292acca89f worktree b196548b6eb39065842d62292acca89f",
+   "ok": true
+  },
+  {
+   "check": "HELD project_canon_v38_14.json                                 ",
+   "detail": "blob 0eb13633ab88087d5f882f94bb6edfc9 worktree 0eb13633ab88087d5f882f94bb6edfc9",
+   "ok": true
+  },
+  {
+   "check": "cross-surface gate GREEN at 6cd132ee5b8c7ca78ad0e095806f1c93",
+   "detail": "a78ad0e095806f1c93\n  ok   all three surfaces carry 82 objections\n  ok   all three surfaces AGREE, byte-for-byte after canonicalization\n  ok   id order identical across surfaces\n\nX-SURFACE GATE: GREEN\n",
+   "ok": true
+  },
+  {
+   "check": "wing control battery, zero failures",
+   "detail": "  CONTROL and it does NOT fire on prose naming the feature\n\n  54 checks, 0 failed -> /sessions/rcw-01pn7rlp6hxw7vvvghmduxb8/mnt/efilist-argument-library/adversarial_map_staging/wing_control_v0_1.json\n",
+   "ok": true
+  },
+  {
+   "check": "control artifact records its own result",
+   "detail": "54 checks / 0 failed",
+   "ok": true
+  }
+ ]
+}

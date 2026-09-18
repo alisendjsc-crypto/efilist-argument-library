@@ -1,0 +1,84 @@
+{
+ "head_at_measure": "2a69f3fd922f4be70e27468da845df9dae6ed37d",
+ "held": {
+  "adversarial_map_staging/adv_map_phaseG_v0_1.json": "571cd47305612068651f13ca049557c2",
+  "adversarial_map_staging/adv_map_validator_v0_6.py": "c002e93877b09d523daf786036af7a57",
+  "adversarial_map_staging/adversarial_map_design_v0_5.md": "ab9569122de23de82db2ab5600d86d9e",
+  "adversarial_map_staging/adversarial_map_v1_0.json": "c4989e98b042e2f787a82df3f11ecdad",
+  "adversarial_map_staging/adversarial_map_v1_1.json": "e9e5abf820e3f7a687e2b84443883ade",
+  "adversarial_map_staging/adversarial_map_v1_2.json": "e4bef3cac882aa079951ba7ec1a9d11e",
+  "adversarial_map_staging/adversarial_map_v1_3.json": "681827419df72a16a7c6fe70df8fe77f",
+  "adversarial_map_staging/honest_residuals_register_v0_4.json": "d067729fafb51926bc9e845209417886",
+  "combined.html": "f095c0ce0e5a1d796d57fa5a5dd62f7d",
+  "efilist_argument_library_v4_0_0.json": "04bf6482aa0374ee92a81c1d55ec41f8",
+  "efilist_argument_library_v4_0_0.jsx": "b196548b6eb39065842d62292acca89f",
+  "project_canon_v38_14.json": "0eb13633ab88087d5f882f94bb6edfc9"
+ },
+ "modified": {
+  "libraries/index.html": {
+   "base_bytes": null,
+   "base_md5": "6aa326f71bfe496ba727a2cf5281a179",
+   "bytes": 21304,
+   "md5": "6be6283b72de248400d99bb99e319cfa"
+  }
+ },
+ "new": {
+  "adversarial/index.html": {
+   "bytes": 87259,
+   "md5": "616fc4ae49177f46e8d1a8558b0c6cba"
+  },
+  "adversarial_map_staging/controls_wing_v0_1.py": {
+   "bytes": 16860,
+   "md5": "760e85c31a803eb640c7e9cb6c959304"
+  },
+  "adversarial_map_staging/render_wing_v0_1.py": {
+   "bytes": 29234,
+   "md5": "1d1d85064660723c8a3fe21e06f03317"
+  },
+  "adversarial_map_staging/wing_control_v0_1.json": {
+   "bytes": 6621,
+   "md5": "13cfd5449b1a839110fb73072eb9bcff"
+  },
+  "project_canon_v38_15.json": {
+   "bytes": 457021,
+   "md5": "878bca22bbdeb14bfba28163d9d7456c"
+  },
+  "tools/build_canon_v38_15.py": {
+   "bytes": 21016,
+   "md5": "1524af1498a27962f08675d72fe17ea8"
+  },
+  "tools/frontdoor_K353.py": {
+   "bytes": 8487,
+   "md5": "c2ac18c7c5339dcb94215dcd61b2d4ee"
+  },
+  "tools/k353_wing_functional_control_v0_1.json": {
+   "bytes": 2233,
+   "md5": "b3cdf5d0773c0fe18c40d24299279aaa"
+  },
+  "tools/k353_wing_functional_gate.py": {
+   "bytes": 10634,
+   "md5": "2628f870286489796e94386bf006511a"
+  },
+  "tools/verify_K353.py": {
+   "bytes": 8524,
+   "md5": "818ff22c276c7340952c52b50d5f37cf"
+  }
+ },
+ "removed": [
+  "project_canon_v38_14.json"
+ ],
+ "staged_expected": [
+  "adversarial/index.html",
+  "adversarial_map_staging/controls_wing_v0_1.py",
+  "adversarial_map_staging/render_wing_v0_1.py",
+  "adversarial_map_staging/wing_control_v0_1.json",
+  "libraries/index.html",
+  "project_canon_v38_14.json",
+  "project_canon_v38_15.json",
+  "tools/build_canon_v38_15.py",
+  "tools/frontdoor_K353.py",
+  "tools/k353_wing_functional_control_v0_1.json",
+  "tools/k353_wing_functional_gate.py",
+  "tools/verify_K353.py"
+ ]
+}

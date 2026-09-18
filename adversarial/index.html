@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where the lines terminate &middot; The Adversarial Map</title>
+<meta name="description" content="The 22 continuations of the argument library's own objections that no rewrite of its text closes, and the 9 commitments they close against.">
+<link rel="icon" href="/icon-libraries.svg">
+<style>
+:root{
+  --bg:#0b0b0c; --panel:#101012; --fg:#d8d4cc; --dim:#7a766e; --faint:#4a4742;
+  --accent:#c41e3a; --line:#23211f; --stub:#b8902a;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{font-size:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--mono);
+  line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:60rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+header.site{border-bottom:1px solid var(--line);padding-bottom:1rem;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+h1{font-size:1.6rem;margin:.3rem 0 .15rem;letter-spacing:.02em}
+.sub{color:var(--dim);font-size:.85rem;max-width:46rem}
+.wing-switcher a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+.wing-switcher a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.wing-switcher [aria-current="page"]{color:var(--fg)}
+.mode-toggle{display:flex;gap:.25rem;margin:.6rem 0 0;flex-wrap:wrap}
+.mode-toggle button{background:none;border:1px solid var(--line);color:var(--dim);font:inherit;
+  font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .5rem;cursor:pointer;
+  border-radius:2px}
+.mode-toggle button.active{color:var(--fg);border-color:var(--accent)}
+.mode-toggle button:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.suite-rail{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);margin:1rem 0 0}
+.suite-rail div{flex:1 1 8rem;padding:.55rem .8rem;border-right:1px solid var(--line)}
+.suite-rail div:last-child{border-right:none}
+.suite-rail b{display:block;font-size:1.15rem;font-weight:500;color:var(--fg);
+  font-variant-numeric:tabular-nums;line-height:1.2}
+.suite-rail span{font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+@media (max-width:520px){ .suite-rail div{flex:1 1 45%;border-bottom:1px solid var(--line)} }
+.frame{max-width:46rem;margin:1.3rem 0 1.6rem}
+.frame p{font-size:.86rem;color:var(--dim);line-height:1.65;margin:.7rem 0}
+.frame strong{color:var(--fg);font-weight:500}
+.frame em{font-style:normal;color:var(--fg)}
+.frame .frame-not{border-left:2px solid var(--line);padding-left:.8rem;color:var(--faint);
+  font-size:.8rem}
+.floorjump{display:flex;flex-wrap:wrap;gap:.3rem;margin:0 0 2rem;padding:.7rem;
+  border:1px solid var(--line);background:var(--panel);border-radius:3px}
+.floorjump a{font-size:.64rem;letter-spacing:.1em;color:var(--dim);border:1px solid var(--line);
+  padding:.2rem .5rem;border-radius:2px}
+.floorjump a:hover{color:var(--fg);border-color:var(--accent);text-decoration:none}
+.floorjump a span{color:var(--faint)}
+.floor{margin:0 0 2.6rem;scroll-margin-top:1rem}
+.floor-head{border-top:1px solid var(--accent);padding-top:.7rem;margin-bottom:1rem}
+.floor-id{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.floor-id .floor-n{color:var(--faint);margin-left:.4rem}
+.floor-head h2{font-size:1.18rem;margin:.25rem 0 .3rem;font-weight:600;line-height:1.35}
+.floor-alias{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.floor-gloss{font-size:.82rem;color:var(--dim);line-height:1.6;margin:.45rem 0 0;max-width:46rem}
+.term{border:1px solid var(--line);border-left:2px solid var(--faint);background:var(--panel);
+  padding:1rem 1.1rem;margin:0 0 1rem;border-radius:3px;scroll-margin-top:1rem}
+.term-meta{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center;font-size:.58rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.term-meta>span+span::before{content:"\00b7";color:var(--faint);margin-right:.45rem}
+.term-meta .tier{color:var(--dim)}
+.term-meta .node{color:var(--dim)}
+.term h3{font-size:1rem;margin:.35rem 0 .6rem;font-weight:600;line-height:1.4;color:var(--fg)}
+.blk{margin:.55rem 0}
+.blk .lbl{display:block;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--faint);margin-bottom:.2rem}
+.blk p{margin:0;font-size:.84rem;line-height:1.6}
+.blk.anchor{padding-left:.7rem;border-left:1px solid var(--line)}
+.blk.anchor p{color:var(--dim);font-style:italic}
+.blk.move{background:#000;border:1px solid var(--line);border-radius:2px;padding:.6rem .75rem}
+.blk.move .lbl{color:var(--accent)}
+.blk.term-floor{padding-left:.7rem;border-left:2px solid var(--stub)}
+.blk.term-floor .lbl{color:var(--stub)}
+.blk.term-floor p{color:var(--fg);font-size:.8rem}
+.blk.term-floor .hr{color:var(--stub);letter-spacing:.06em}
+.adj .routing{color:var(--faint);font-size:.72rem;margin-top:.45rem}
+.adj .routing .rlbl{color:var(--faint);letter-spacing:.14em;text-transform:uppercase;font-size:.58rem;display:block;margin-bottom:.15rem}
+.adj{margin:.6rem 0 0}
+.adj>summary{cursor:pointer;list-style:none;color:var(--dim);font-size:.58rem;letter-spacing:.15em;
+  text-transform:uppercase;padding:.15rem 0;display:inline-block}
+.adj>summary::-webkit-details-marker{display:none}
+.adj>summary::after{content:" [+]";color:var(--faint)}
+.adj[open]>summary::after{content:" [-]"}
+.adj>summary:focus-visible{outline:1px solid var(--accent);outline-offset:2px}
+.adj p{margin:.35rem 0 0;font-size:.78rem;color:var(--dim);line-height:1.6;padding-left:.7rem;
+  border-left:1px solid var(--line)}
+.open{display:inline-block;margin-top:.7rem;font-size:.66rem;letter-spacing:.1em;
+  text-transform:uppercase;border:1px solid var(--line);padding:.3rem .6rem;border-radius:2px;
+  color:var(--dim)}
+.open:hover{color:var(--fg);border-color:var(--accent);text-decoration:none}
+.colophon{border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1.1rem;max-width:46rem}
+.colophon h2{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);
+  margin:0 0 .5rem;font-weight:400}
+.colophon p{font-size:.78rem;color:var(--faint);line-height:1.6;margin:.5rem 0}
+.colophon code{color:var(--dim);font-size:.74rem}
+.colophon .colophon-note{border-left:2px solid var(--stub);padding-left:.8rem}
+[data-mode="legible"]{
+  --bg:#f5efe6;--panel:#ebe3d4;--fg:#1a1816;--dim:#5f5a50;--faint:#8a8275;
+  --accent:#a91930;--line:#d7ccb9;--stub:#876820;font-size:17px;
+}
+[data-mode="high-contrast"]{
+  --bg:#000;--panel:#000;--fg:#fff;--dim:#d2d2d2;--faint:#a6a6a6;
+  --accent:#ff4060;--line:#fff;--stub:#ffd400;
+}
+[data-mode="both"]{
+  --bg:#fff;--panel:#fff;--fg:#000;--dim:#333;--faint:#555;
+  --accent:#c00028;--line:#000;--stub:#7a5b00;font-size:17px;
+}
+[data-mode="high-contrast"] :focus-visible,[data-mode="both"] :focus-visible{
+  outline:2px solid #ffeb3b;outline-offset:2px}
+[data-mode="legible"] .blk.move{background:#fffdf9}
+[data-mode="both"] .blk.move{background:#fff}
+[data-mode="legible"] body,[data-mode="both"] body{font-family:'Georgia','Times New Roman',serif}
+[data-mode="legible"] .eyebrow,[data-mode="both"] .eyebrow,
+[data-mode="legible"] .mode-toggle button,[data-mode="both"] .mode-toggle button,
+[data-mode="legible"] .lbl,[data-mode="both"] .lbl,
+[data-mode="legible"] .term-meta,[data-mode="both"] .term-meta,
+[data-mode="legible"] .floor-id,[data-mode="both"] .floor-id,
+[data-mode="legible"] .open,[data-mode="both"] .open,
+[data-mode="legible"] .floorjump a,[data-mode="both"] .floorjump a,
+[data-mode="legible"] .adj>summary,[data-mode="both"] .adj>summary,
+[data-mode="legible"] .suite-rail span,[data-mode="both"] .suite-rail span,
+[data-mode="legible"] .colophon h2,[data-mode="both"] .colophon h2{font-family:var(--mono)}
+</style>
+<script>
+/* Reading-mode bootstrap, pre-paint, no FOUC. Ported byte-for-byte in behaviour from
+   libraries/index.html: same storage key, same four modes, same two independent axes, and
+   deliberately NO prefers-color-scheme branch (WI-K321b: it opened a wing in serif-on-cream
+   for any reader whose OS is light while the flagship opened in mono-on-black beside it). */
+(function(){
+  var KEY="wuld:libmode",ALLOWED=["standard","legible","high-contrast","both"];
+  function resolve(){
+    var s=null; try{s=localStorage.getItem(KEY);}catch(e){}
+    if(s&&ALLOWED.indexOf(s)!==-1) return s;
+    return "standard";
+  }
+  function sync(mode){
+    var l=(mode==="legible"||mode==="both"), h=(mode==="high-contrast"||mode==="both");
+    var bl=document.getElementById("mode-legible"), bh=document.getElementById("mode-hc");
+    if(bl){ bl.classList.toggle("active",l); bl.setAttribute("aria-pressed",String(l)); }
+    if(bh){ bh.classList.toggle("active",h); bh.setAttribute("aria-pressed",String(h)); }
+  }
+  document.documentElement.setAttribute("data-mode", resolve());
+  window.setMode=function(mode){
+    if(ALLOWED.indexOf(mode)===-1) mode="standard";
+    document.documentElement.setAttribute("data-mode", mode);
+    try{ localStorage.setItem(KEY,mode); }catch(e){}
+    sync(mode);
+  };
+  window.toggleModeAxis=function(axis){
+    var m=document.documentElement.getAttribute("data-mode")||"standard";
+    var l=(m==="legible"||m==="both"), h=(m==="high-contrast"||m==="both");
+    if(axis==="legible") l=!l; else if(axis==="high-contrast") h=!h;
+    window.setMode(l&&h ? "both" : l ? "legible" : h ? "high-contrast" : "standard");
+  };
+  document.addEventListener("DOMContentLoaded", function(){
+    sync(document.documentElement.getAttribute("data-mode")||"standard");
+  });
+})();
+</script>
+<link rel="stylesheet" href="/wuld-layer.css">
+<script src="/wuld-layer.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet"></head>
+<body>
+<div class="wz-stage">
+  <div class="wrap">
+    <header class="site">
+    <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries"><a href="/libraries/">Refusal Libraries</a> <span aria-hidden="true">&middot;</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Right to Die</a> <span aria-hidden="true">/</span> <a href="/abortion/combined">Abortion</a> <span aria-hidden="true">/</span> <a href="/transgenderism/combined">Transgenderism</a> <span aria-hidden="true">/</span> <a href="/anthropocentrism/combined">Anthropocentrism</a> <span aria-hidden="true">/</span> <a href="/veganism/combined">Veganism</a> <span aria-hidden="true">&middot;</span> <span aria-current="page">Adversarial Map</span></nav>
+    <h1>Where the lines terminate</h1>
+    <div class="sub">22 continuations of this library's own objections that no rewrite of its text closes &mdash; and the 9 commitments they close against instead.</div>
+<div class="mode-toggle" role="group" aria-label="reading mode">
+      <button id="mode-legible" type="button" aria-pressed="false" onclick="toggleModeAxis('legible')">legible</button>
+      <button id="mode-hc" type="button" aria-pressed="false" onclick="toggleModeAxis('high-contrast')">high-contrast</button>
+    </div>
+    </header>
+    <main>
+      <div class="suite-rail"><div><b>82</b><span>objections mapped</span></div><div><b>21</b><span>terminate here</span></div><div><b>22</b><span>continuations</span></div><div><b>9</b><span>floors named</span></div><div><b>15</b><span>floors in the register</span></div></div>
+      <section class="frame">
+        <p>The Adversarial Map is a hostile pass over this library&rsquo;s own text. For each of the flagship&rsquo;s 82 objections it authors a <em>continuation</em> &mdash; the next move an opponent makes <em>after</em> reading our rebuttal &mdash; and sorts it into one of four dispositions: the corpus already answers it, the corpus needs a stronger text, it is really a new objection, or it reaches bedrock and stops.</p>
+        <p>Only the last disposition is on this page, and the reason is a question the map has not settled: whether a continuation was authored at full force or merely at the most <em>repairable</em> reading of our text. Until that is ruled, a card saying <em>we answer this</em> would claim more than the map has established. A card saying <em>this line terminates here</em> would not &mdash; a harder continuation reaches the same floor or a deeper one, and neither falsifies the claim. That asymmetry is the whole licence for this page, and it is why nothing else from the map is on it.</p>
+        <p><strong>This is not a concession list.</strong> A disagreement that descends to a first commitment has not been won by whoever descended last; it has been <em>located</em>. What each card names is the floor both sides are standing on at the point the argument stops moving &mdash; and 13 of these 22 continuations come to rest on just two of them.</p>
+        <p class="frame-not">Not here: the continuations the corpus answers, and the ones that show our text needs repair. Both wait on rulings of their own. Every quotation below is verbatim &mdash; from the objection card it attacks, or from the map entry that adjudicated it.</p>
+      </section>
+      <nav class="floorjump" aria-label="floors">
+        <a href="#HR-03">HR-03 <span>&times;8</span></a>
+        <a href="#HR-05">HR-05 <span>&times;5</span></a>
+        <a href="#HR-02">HR-02 <span>&times;2</span></a>
+        <a href="#HR-04">HR-04 <span>&times;2</span></a>
+        <a href="#HR-01">HR-01 <span>&times;1</span></a>
+        <a href="#HR-11">HR-11 <span>&times;1</span></a>
+        <a href="#HR-12">HR-12 <span>&times;1</span></a>
+        <a href="#HR-13">HR-13 <span>&times;1</span></a>
+        <a href="#HR-15">HR-15 <span>&times;1</span></a>
+      </nav>
+      <section class="floor" id="HR-03">
+        <div class="floor-head">
+          <div class="floor-id">HR-03 <span class="floor-n">&times;8</span></div>
+          <h2>Impersonal vs person-affecting axiology</h2>
+          <div class="floor-alias">also: K224 bedrock 1</div>
+          <p class="floor-gloss">Whether value and standing are seated in a standpoint-bearing individual or assessable impersonally. The corpus&#x27;s universal conclusion needs the impersonal reading; the objector needs the person-affecting one. Neither side derives the other.</p>
+        </div>
+        <article class="term" id="t-love-beauty-art-long">
+          <div class="term-meta"><span class="tier">TIER 2</span><span class="node">love-beauty-art</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;What about love? / Art? / Music? / The beauty of human experience?&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The goods of existence raise no claim on behalf of the merely possible&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The node rests entire on person-affecting axiology: the goods raise no claim on behalf of the merely possible because no subject stands outside existence to be deprived. Deny that axiology. Love, beauty, and art may carry impersonal, agent-neutral value: a cosmos containing them is better simpliciter than a barren one, independent of any experiencer to register it. On that axiology the goods do raise a claim, not on behalf of a deprived possible person, but on behalf of value itself, so that creating a being who realizes them adds agent-neutral value the world would otherwise lack. The no-deprivation move addresses only value-for-a-subject and never reaches an agent-neutral reason to create. Level one simply assumes value requires a valuer, the disputed premise, not a demonstrated one.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> unfacetted</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The asymmetry disposes of the person-affecting reading completely, no possible person waits in the dark, so declining to create wrongs no one. The only route past it denies person-affecting axiology and asserts impersonal value. (a) fails: the corpus no-deprivation answers address value-for-a-subject and cannot touch an agent-neutral loss-or-gain claim; routing to the asymmetry begs the axiology in dispute. Not (b): the node is not imprecise, it is committed to person-affecting axiology, and no local trim supplies the impersonal-value engagement. Not (c): not a missing node but a fault-line the corpus sits astride. (d): terminus is impersonal-vs-person-affecting axiology, K224 bedrock 1, value-requires-a-valuer facet, the same bedrock extinction-culture and slippery-slope-eugenics hit. Not novel, but in a distinct direction: impersonal-value-as-creation-reason (the pro-natal direction) rather than impersonal-disvalue-of-destruction (the anti-extinction direction); flagged for the pending facet-consolidation-versus-registration decision, routed as registered.</p><p class="routing"><span class="rlbl">first registered</span> K224 bedrock 1, value-requires-a-valuer facet; impersonal-value-as-creation-reason (pro-natal direction) sibling to extinction-culture&#x27;s anti-extinction direction; route as registered, flag facet for the pending consolidation-vs-registration decision</p></details>
+          <a class="open" href="/combined#obj-love-beauty-art@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-extinction-culture-long">
+          <div class="term-meta"><span class="tier">TIER 3</span><span class="node">extinction-culture</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Antinatalism leads to extinction of culture / knowledge / art / civilization&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The absence of culture is not bad for the non-existent&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The objection need not claim culture is bad-for-the-nonexistent; reframe it as impersonal value. A cosmos containing Beethoven&#x27;s Ninth, mathematics, and moral achievement is better simpliciter than a barren one, independent of any experiencer to register it. On that axiology, extinguishing every culture-capable being destroys agent-neutral value, and the no-deprivation move, which addresses only value-for-a-subject, never reaches it. Levels two and three do not rescue level one: the consent-instrumentalization reply answers whether to breed new culture-consumers, which the impersonal-value objector is not asking, and the already-lost point concedes prior destruction rather than defending fresh destruction. Level one simply assumes value requires a valuer, the disputed premise, not a demonstrated one.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> unfacetted</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Strongest continuation abandons the deprivation frame and asserts impersonal, agent-neutral value: some goods are good period, so extinction destroys value even with no one left to be deprived. (a) fails: the corpus no-deprivation answers address person-affecting value only and cannot touch an agent-neutral loss claim; routing to asymmetry begs the very axiology in dispute. Not (b): level-one is not imprecise, it is committed to person-affecting axiology, and its sibling levels (consent-instrumentalization, already-lost) answer the reproduction question, not the reframed impersonal-loss objection, so no local trim closes the gap. Not (c): this is not a missing node but a fault-line the whole corpus sits astride. (d): terminus is impersonal-vs-person-affecting axiology, K224 bedrock 1, facet value-requires-a-valuer, already surfaced by six B2 nodes; not novel.</p><p class="routing"><span class="rlbl">first registered</span> already-surfaced K224 bedrock 1, facet value-requires-a-valuer / standpoint-dependence; route as registered, not a new bedrock</p></details>
+          <a class="open" href="/combined#obj-extinction-culture@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-population-ethics-paradoxes-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">population-ethics-paradoxes</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Population ethics paradoxes undermine antinatalism / Mere Addition Paradox / Total vs. Average utilitarianism / The best world has no sentient life is absurd&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;This is iteration, not aggregation&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The immunity claim is that iteration escapes the transitivity chains. It does not, because the node also insists the empty world is best, and ranking world-states by suffering is aggregation across persons. To say a populated world is worse than an empty one is to sum suffering-instances and compare totals; that is exactly the operation &#x27;iteration, not aggregation&#x27; disclaims. Once suffering aggregates, Parfit&#x27;s machinery reattaches on the negative axis: a vast population each suffering a little can be ranked worse than a few suffering greatly, a negative mere-addition paradox with the same continuity and transitivity structure. Escaping it means going purely per-instance and person-affecting, which forfeits the impersonal verdict that the empty world is best. The node cannot keep both.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> aggregation-vs-iteration</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The shipped immunity is &#x27;iteration, not aggregation&#x27;, which the node needs to dodge Parfit. But it also asserts the impersonal verdict that the empty world is best, and ranking world-states by suffering IS cross-person aggregation; once suffering aggregates a negative repugnant / mere-addition structure reattaches. Not (a): no corpus node defends an empty-world-best verdict without aggregation. Not (b): the dominance-ordering repair either ignores severity (absurd) or reintroduces cardinal aggregation (paradoxes), and the person-affecting retreat forfeits the impersonal extinctionist verdict the node asserts. Terminus is impersonal-vs-person-affecting, already-registered; the flagged comparative-harm angle is subsumed.</p><p class="routing"><span class="rlbl">first registered</span> already-registered (K224 bedrock 1)</p></details>
+          <a class="open" href="/combined#obj-population-ethics-paradoxes@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-performative-contradiction-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">performative-contradiction</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;You&#x27;re using existence to argue against existence / Performative contradiction / Your argument is parasitic on what it condemns&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The argument proves too much&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The universal-solvent reply elides the asymmetry that makes this objection bite. Critiquing capitalism, or language, leaves the critic&#x27;s evaluative standpoint intact after the critique succeeds, so the verdict can be vindicated from within a post-capitalist standpoint. Antinatalism&#x27;s conclusion abolishes the standpoint itself: after success there is no sentience, hence no evaluator from which &#x27;preventing suffering was good&#x27; is ever true or vindicated. A judgment whose own success erases every possible judge is self-undermining in a way ordinary systemic critique is not; the rebuttal treats total negation of the value-ground as if it were one more critique-within-value. The disanalogy is the objection. Whether goodness can obtain with no standpoint to whom it is good is the question the reply skips.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> value-requires-a-valuer</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The sharpened objection rebuts move #3 (proves-too-much / universal-solvent) via an asymmetry it elides: ordinary critiques leave a post-critique evaluative standpoint that can vindicate the verdict, whereas antinatalism&#x27;s conclusion abolishes all sentience and hence any vindicating standpoint. Native to the dialectic (targets the exact analogy). Not (a): the corpus&#x27;s &#x27;we do not deny value, we affirm it on both sides&#x27; reply addresses present valuing, not the post-success vindication-standpoint. Not (b): the only repair is to adopt stance-independent goodness of world-states, the contested bedrock. Terminus is impersonal-vs-person-affecting (value-requires-a-valuer facet), already-registered.</p><p class="routing"><span class="rlbl">first registered</span> already-registered (K224 bedrock 1); same family as the N3 aggregation facet</p></details>
+          <a class="open" href="/combined#obj-performative-contradiction@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-marxist-materialist-long">
+          <div class="term-meta"><span class="tier">TIER 3</span><span class="node">marxist-materialist</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Suffering is caused by capitalism / Fix the system, not the species / Material conditions are the problem / Marxist objection&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The EFIList critique operates at the level of ontology&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The node&#x27;s separation of ontology from political economy is the move a Marxist denies at the root. Historical materialism holds that the atomized individual with pre-social interests, the very consent-bearing subject the objection is built on, is not an ontological given but an ideological artifact of a specific mode of production; &#x27;species-being&#x27; and the critique of abstract individualism cut precisely here. So &#x27;even perfect communism leaves non-consensual death&#x27; presupposes an ahistorical individual-as-consent-locus that the Marxist treats as historically produced. Grant the suffering-mutability sub-move arguendo and the asymmetry survives it; but the deeper move does not dispute suffering&#x27;s persistence, it disputes that there is a standpoint-independent individual whose non-consent the wrong attaches to. That is not a demographic or empirical claim the node can answer at its own level; it is the seat-of-standing question.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> unfacetted</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Two Marxist continuations. The standard one, suffering is capitalism&#x27;s product not existence&#x27;s, the node answers (below political economy; even communism leaves aging and death), and its abolitionist upgrade, socialist development could dissolve the biological constants, is met by asymmetry-decoupling: grant abolition arguendo and the no-reason-to-create plus consent-impossibility survive, benatar-asymmetry-attack#long. The surviving move is deeper: historical materialism historicizes the atomized consent-bearing individual itself as an artifact of a mode of production (species-being, the critique of abstract individualism), so the node&#x27;s ontological-level framing presupposes a standpoint-independent individual-as-consent-locus that the Marxist denies. (a) fails: routing to care-ethics or incommensurability lands on nodes that straddle rather than answer this. Not (b): not local imprecision but a presupposed axiology. (d): terminus is impersonal-vs-person-affecting axiology, relational-holist / seat-of-standing facet, already surfaced in B2; not novel. LOGGED downstream, not authored here: the node&#x27;s &#x27;richness of experience is not genuine positive value, temporary alleviation of negative states&#x27; is a fourth instance of the additivity strong-deflation cluster (neuroscience / virtue-ethics / flow-states), which neuroscience-positive-states#long disowns, per the standing regen-triage lane.</p><p class="routing"><span class="rlbl">first registered</span> already-surfaced K224 bedrock 1, relational-holist / seat-of-standing facet (consent-bearing individual as historically-contingent, not standpoint-independent); route as registered</p></details>
+          <a class="open" href="/combined#obj-marxist-materialist@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-epistemic-humility-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">epistemic-humility</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;You can&#x27;t be certain enough to make absolute claims / Epistemic humility / The uncertainty should make you agnostic / How can you be so sure?&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The worst case of not creating is nothing&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The decisive move is the error-cost asymmetry: minimize the worst case, and the worst case of not creating is nothing. But that valuation is not epistemically forced, it is the absence-asymmetry, and genuine humility must suspend it too. If we are uncertain enough to withhold the verdict that existence is net-negative, we are equally uncertain whether the foregone goods of a possible person cost nothing or count as a real loss on par with the avoided harm. Under symmetric valence-realism the error costs are a wash, and honest humility yields the agnosticism the objection demanded, not restraint. The precautionary analogies, doctor, researcher, engineer, smuggle the same result by another route: each has a pre-existing subject with a baseline, and creation has none. The humility filter is applied to the net-negative verdict but never to the axiology that generates restraint.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> absence-asymmetry</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Strongest continuation is a self-application of humility: the node derives restraint from uncertainty only by importing the absence-asymmetry (worst case of not creating is nothing) into its error-cost computation, but that costlessness-of-foregone-goods is precisely what genuine humility should also suspend. Under symmetric valence-realism the error costs are not radically asymmetric and honest agnosticism follows, the objection&#x27;s own conclusion. Not (a): routing to neuroscience-positive-states#long&#x27;s no-deprivation move fails, that move IS the attacked premise and the A+B adjudication found it an undefended absence-asymmetry (N7). Not (b): the second leg, the precautionary analogies, does not repair the gap, each analogy has a pre-existing subject and a baseline that creation lacks, relocating to comparative-harm. Terminus is impersonal-vs-person-affecting (does a possible person&#x27;s foregone good count), already-registered K224 bedrock 1; secondary leg touches comparative-vs-non-comparative-harm.</p><p class="routing"><span class="rlbl">first registered</span> already-registered (K224 bedrock 1); secondary leg (precautionary analogies smuggle a pre-existing baseline) touches comparative-vs-non-comparative-harm (N2)</p></details>
+          <a class="open" href="/combined#obj-epistemic-humility@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-pragmatist-objection-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">pragmatist-objection</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Pragmatism / A belief&#x27;s value is its practical consequences / Antinatalism produces nothing useful / Dewey / James&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;for each being not created, is a concrete practical outcome&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Level two claims antinatalism&#x27;s consequences are not sterile, chief among them prevented suffering, which for each being not created, is a concrete practical outcome. But a pragmatist, of all theorists, cannot bank a prevented being&#x27;s non-suffering as cash value, because it registers in no one&#x27;s experience. There is no subject for whom the prevention is a lived consequence; calling it a concrete outcome presupposes that merely possible welfare counts, an experience-transcendent good pragmatism is built to refuse. The deeper charge is worse: a belief whose successful uptake ends every future community of inquiry and valuation fails the pragmatic test of sustaining a form of life. Whether a valuerless world can be pragmatically better when no experience remains to register the improvement is the question the reply skips. Its other consequences, care redirected to the living, honest engagement, are real but thin, and do not carry the core no-new-suffering verdict.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> value-requires-a-valuer</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Attacked on its own shipped prose (Phase-A routing conclusions not imported). The decisive anti-pragmatist move is level two&#x27;s factual correction, headed by prevented suffering as &#x27;a concrete practical outcome with real moral significance.&#x27; A pragmatist cannot count a non-actual being&#x27;s non-suffering as cash value, it registers in no experience, so the concrete-outcome framing presupposes that merely-possible welfare counts, the impersonal axiology pragmatism is distinctively built to refuse. The sharpened continuation, antinatalism as a self-terminating form of life whose success ends all inquiry and valuation, converges on the same fault-line as performative-contradiction (A+B): whether a valuerless world is assessable as better. Not (a): routing to the corpus asymmetry means routing to the undefended absence-asymmetry, and pragmatism is its natural opponent. Not (b): the node&#x27;s non-impersonal consequences (care redirection, honest engagement) survive regen but do not carry the core no-new-suffering verdict, and supplying value-without-a-valuer is the bedrock itself. Terminus is impersonal-vs-person-affecting (value-requires-a-valuer facet), already-registered K224 bedrock 1. Secondary/logged: level one&#x27;s placebo dilemma strawmans sophisticated pragmatism (warranted assertibility, ethics of belief), a minor quality point, not the primary finding.</p><p class="routing"><span class="rlbl">first registered</span> already-registered (K224 bedrock 1); same facet as performative-contradiction (A+B); secondary/logged: level-one placebo dilemma strawmans sophisticated pragmatism, minor quality point</p></details>
+          <a class="open" href="/combined#obj-pragmatist-objection@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-care-ethics-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">care-ethics</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Care ethics / The parent-child bond has moral significance / Relational ethics / Noddings / Feminist ethics of care&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;Care ethics evaluates the relationship after instantiation&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The lead move is the temporal inversion: care ethics evaluates the relationship after instantiation, while antinatalism judges the prior act. But sequencing the act before the relation presupposes the atomistic, evaluate-from-nowhere standpoint care ethics rejects. On the relational view there is no standpoint-independent act to judge apart from the web that constitutes value and standing; the caring relation bears moral significance, and a new node&#x27;s suffering is a constitutive, non-vetoing part of a relational good, not a standalone debit awaiting consent. The dependency move inherits this: being placed in a relation of care is, to the care ethicist, a mode of flourishing, not a manufactured obligation to minimize. The infection parallel smuggles a baseline, wronging an existing person made worse off, which creation lacks. Whether the fundamental unit of value is the individual with a standpoint or the relational whole is what the inversion settles by fiat.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-03</span> relational-holist-seat-of-standing</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The response&#x27;s spine is the temporal inversion (evaluate the act, not the after-the-fact relation) plus the dependency-cuts-against and infection parallels. The care ethicist&#x27;s strongest continuation is axiology-level: sequencing act-before-relation and judging the act from nowhere presupposes the atomistic, principle-from-nowhere standpoint care ethics denies is fundamental. On the strong reading care ethics is a relational-holist axiology, value and standing borne by the caring web, a node&#x27;s suffering a constitutive non-vetoing part of a relational good. The corpus&#x27;s own best treatment of that rival axiology, indigenous-philosophy#long, concedes it ties (&#x27;against that reading it ties rather than wins&#x27;). Not (a): no node defeats the relational-holist reading, the nearest concedes a tie. Not (b): supplying a defeater in-place is the bedrock. Terminus is impersonal-vs-person-affecting (relational-holist / unit-of-value facet), already-registered K224 bedrock 1; care-ethics + indigenous-philosophy are a consolidation pairing on this facet. Secondary legs: manufactured-dependency routes to bedrock-III (N4), the infection parallel smuggles a comparative-harm baseline (N2).</p><p class="routing"><span class="rlbl">first registered</span> already-registered (K224 bedrock 1); consolidation pairing with indigenous-philosophy on this facet; secondary legs, manufactured dependency routes to bedrock-III (N4), infection parallel smuggles a comparative-harm baseline (N2)</p></details>
+          <a class="open" href="/combined#obj-care-ethics@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-05">
+        <div class="floor-head">
+          <div class="floor-id">HR-05 <span class="floor-n">&times;5</span></div>
+          <h2>Comparative vs non-comparative harm</h2>
+          <div class="floor-alias">also: N2</div>
+          <p class="floor-gloss">Whether creation can wrong a being for whom no worse-off baseline exists.</p>
+        </div>
+        <article class="term" id="t-life-gift-long">
+          <div class="term-meta"><span class="tier">TIER 1</span><span class="node">life-gift</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Life is a gift / Life is beautiful / Be grateful&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;legitimate unsolicited benefit requires an antecedent recipient with a stake&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Apply that evenhandedly and it takes your side down with the natalist&#x27;s. If no antecedent subject exists to hold a stake in the good, none exists to hold a stake in being spared the harm. You have denied the gift a beneficiary by a principle that equally denies the imposition a victim. The wrong you allege must be borne by someone who exists only because the act occurred, which is exactly the standing your condition refuses the benefit. Either a subject can be wronged without an antecedent stake, in which case a subject can be benefited without one, or neither can, and the transaction has no moral party at all.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-05</span> no-worse-off-baseline</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Not (b): the antecedent-need condition is the node&#x27;s load-bearing defeater and the objection attacks it at full strength rather than at a repairable margin. No rewrite internal to life-gift closes it, because closing it requires an argument that non-comparative wronging is possible where non-comparative benefiting is not, which is a bedrock commitment and not prose. Already registered: honest-residuals HR-05, birth certificate at harman-benign-creation in Phase B2 (N2). Registered by lookup, not recall.</p><p class="routing"><span class="rlbl">first registered</span> harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; first T1 surface on this floor</p></details>
+          <a class="open" href="/combined#obj-life-gift@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-procreative-liberty-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">procreative-liberty</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Reproductive freedom is a human right / Procreative liberty&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;it does not cause harm to others&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Your bound is Mill: liberty ends where it harms others. But harm to others needs an identifiable party made worse-off, and non-identity denies one; the child had no better counterfactual. So either you keep Mill and non-identity bites, or you go impersonal to escape non-identity and forfeit Mill&#x27;s person-affecting Harm Principle, which then supplies no bound at all.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-05</span> no-worse-off-baseline</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The move is a comparative-harm move in its own words: harm to others needs an identifiable party made worse-off, and the child had no better counterfactual. K224 BARS routing such a move into bradley-no-subject#long, because bradley&#x27;s answer is that the actual future person is wronged by the creation that constitutes them, a harm requiring no worse-off comparison, which is the exact proposition the move disputes. Bradley asserts non-comparative wronging via the poisoning analogy; he does not establish it, and B1&#x27;s own (b) at that node says so. So the dilemma is not escaped by a third option, it is relocated to bedrock. (a) withdrawn at K338 on Josiah&#x27;s ratification of the K337 rulings. (d): terminus is comparative-vs-non-comparative harm, already registered at harman-benign-creation in Phase B2, not novel.</p><p class="routing"><span class="rlbl">first registered</span> harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar</p></details>
+          <a class="open" href="/combined#obj-procreative-liberty@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-non-identity-problem-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">non-identity-problem</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;The Non-Identity Problem / You can&#x27;t harm someone who wouldn&#x27;t otherwise exist / Parfit&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;You do not need to name the victim to condemn the system&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Going impersonal does not refute the non-identity problem; it concedes its point, that no specific child is harmed, and rebuilds the case on contested impersonal axiology that breeds its own population paradoxes. You did not solve the equation, you switched textbooks to one where the equation does not appear, forfeiting the person-affecting harm-intuitions that made procreation feel wrong.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-05</span> no-worse-off-baseline</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The likeliest breach, as the succession brief predicted, and for the reason it gave: this node IS the no-worse-off-baseline problem, so the move is comparative-harm by construction. The former grounds answered it with a harm requiring no worse-off comparison, which is what the move disputes; routing there is circular. Nothing in-corpus establishes non-comparative wronging, and the changed-textbooks charge therefore lands on the position, not merely on this node&#x27;s impersonal presentation. (a) withdrawn at K338 on Josiah&#x27;s ratification of the K337 rulings. (d): terminus is comparative-vs-non-comparative harm, already registered at harman-benign-creation in Phase B2, not novel.</p><p class="routing"><span class="rlbl">first registered</span> harman-benign-creation (Phase B2 registration, N2); honest-residuals register HR-05, facet no-worse-off-baseline; reclassified from (a) at K338 under the K224 bar</p></details>
+          <a class="open" href="/combined#obj-non-identity-problem@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-harman-benign-creation-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">harman-benign-creation</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Creating a life worth living is permissible / Harman&#x27;s benign creation / A good life justifies creation&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;was subjected to that outcome by another person&#x27;s probabilistic optimism&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The rebuttal fights a goodness-justification Harman never offers. Benign creation is a purely negative claim: creation cannot harm the created person, because harm is being-made-worse-off and non-existence is no baseline against which the person is worse off. The firmware and optimism-bias objections target the &#x27;worth living&#x27; verdict as evidence, but Harman needs it as no evidence; her point is that with no comparative baseline there is no harm to justify against. The distributional tail fails the same way: the tail-child &#x27;was subjected to that outcome&#x27; only if existing left them worse off than otherwise, and there is no otherwise. To defeat benign creation the rebuttal must establish that creation can wrong a person non-comparatively, with no worse-off baseline. It never reaches that question.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-05</span> no-worse-off-baseline</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Harman&#x27;s benign creation is a non-comparative no-harm claim: no harm because harm requires a worse-off baseline and non-existence supplies none. The shipped prose attacks a goodness-justification and a distributional tail, both of which presuppose the tail-child is harmed by existing, i.e. the comparative-harm question the view denies. Per K224 carry-forward this is the same open hole bradley-no-subject#long&#x27;s &#x27;no third branch&#x27; leaves unhandled; do NOT route (a). Not (b): supplying the repair requires establishing non-comparative wronging, which is the bedrock itself. Terminus is comparative-vs-non-comparative-harm.</p><p class="routing"><span class="rlbl">first registered</span> cross-ref pending K224 bradley-no-subject#long comparative-branch regen; triage novel-status vs impersonal-vs-person-affecting</p></details>
+          <a class="open" href="/combined#obj-harman-benign-creation@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-incommensurability-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">incommensurability</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Existence and non-existence are incommensurable / You can&#x27;t compare being with non-being / Category error&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;The ethical evaluation is act-directed, not state-comparative&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The thesis is that creation is judged act-directed, not state-comparative, so incommensurability never bites. But the poisoning parallel that carries it smuggles the comparison back. Poisoning wrongs because it leaves an existing victim worse off than their available unpoisoned baseline, a comparative fact about a subject who already is. Creation has no pre-existing subject and no baseline, which is the incommensurability point restated, not answered. So creating a being who will suffer is problematic needs either a comparative worse-off claim, blocked here for want of a baseline, or a non-comparative wronging, which is not a refutation of incommensurability but a different and unsettled thesis. The consent fallback runs the same way: unconsented imposition wrongs only if imposing an unrefusable condition on a non-antecedent subject can wrong. Act-directed evaluation relocates the incommensurability, it does not dissolve it.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-05</span> no-worse-off-baseline</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The load-bearing move is the act-vs-state reframe carried by the poisoning parallel. The parallel smuggles a comparison: poisoning wrongs by a worse-off-than-baseline fact about an existing victim, and creation supplies neither subject nor baseline, so act-directed evaluation of creation either covertly reasserts a comparative worse-off (blocked by the no-subject point the objection itself makes) or asserts non-comparative wronging (the open question). Per K224 carry-forward, do NOT route (a) into bradley-no-subject for comparative-harm; no corpus node establishes non-comparative wronging. Not (b): the only repair is to supply the non-comparative-harm account in-place, which is the bedrock itself. The consent fallback terminates at bedrock-III. Terminus is comparative-vs-non-comparative-harm, already-surfaced (N2); the node hits both the N2 facet and the N4 consent facet, reconfirming the N2 + N4 consolidation candidate.</p><p class="routing"><span class="rlbl">first registered</span> already-surfaced (N2); do NOT route (a) into bradley-no-subject per K224 carry-forward; this node hits both N2 and the consent/bedrock-III facet (N4), reconfirming the N2 + N4 consolidation candidate</p></details>
+          <a class="open" href="/combined#obj-incommensurability@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-02">
+        <div class="floor-head">
+          <div class="floor-id">HR-02 <span class="floor-n">&times;2</span></div>
+          <h2>Asymmetry-contingency of the positive-states cluster</h2>
+          <p class="floor-gloss">The positive-states rebuttals run Benatar&#x27;s asymmetry as the load-bearing spine and grant the hedonic premise arguendo. Reject the asymmetry and the spine goes with it. Ceiling: high-B by design.</p>
+        </div>
+        <article class="term" id="t-joy-outweighs-harms-long">
+          <div class="term-meta"><span class="tier">TIER 2</span><span class="node">joy-outweighs-harms</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Joy outweighs the harms / The good outweighs the bad / Life has more good than bad / I&#x27;m happy so life is worth it / Net positive / The pleasure outweighs the suffering&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;a merely possible person can be a genuine beneficiary of being brought into&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Take the node&#x27;s own concession and stand on it. Its dilemma is decisive against the naive aggregator, own the utility monster or accept the side-constraint that also forbids the cradle, and it closes the survivorship and ordinary-risk retreats. But it grants that an opponent who denies the asymmetry can occupy the intrapersonal horn: hold that a merely possible person can be a genuine beneficiary of being brought into a net-positive existence, decline the monster (the goods and harms fall on one person, not interpersonally), and the argument does not finish the job by itself. That opponent is not refuted; the dispute is relocated to the asymmetry. So the slogan&#x27;s defeat is complete only downstream of the one contested premise it was meant to avoid.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-02</span> merely-possible-beneficiary</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The node is maximally sharpened and states its own honest remainder: everything turns on the asymmetry. The utility-monster fork sinks naive aggregation; the expected-value horn is shown interpersonal (monster-structured); the actual-balance horn is shown to presuppose the subject whose creation is in question. What survives is precisely the asymmetry-denier on the intrapersonal horn, that a merely possible person can be a beneficiary of being created. (a) fails: this is the open premise, not met anywhere in-corpus; routing to the asymmetry is routing to the disputed thing. Not (b): there is no stronger in-identity text, the node concedes it relocates to the asymmetry and cannot finish independently. Not (c): not a missing objection but the corpus-wide fault-line. (d): terminus is Benatar&#x27;s asymmetry, specifically the merely-possible-beneficiary question, the registered asymmetry-contingent residue; not novel, the same bedrock the honest-residuals register already carries, reached here via the hedonic-aggregation route. Note: the node explicitly REFUSES the additivity strong-deflation (&#x27;does not require the false claim that all pleasure is relief; grant genuine consummatory delight in full&#x27;), aligning with neuroscience-positive-states#long, so it is NOT a new instance of that cluster and generates no regen-lane item.</p><p class="routing"><span class="rlbl">first registered</span> registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered</p></details>
+          <a class="open" href="/combined#obj-joy-outweighs-harms@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-suffering-as-meaning-long">
+          <div class="term-meta"><span class="tier">TIER 2</span><span class="node">suffering-as-meaning</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Suffering gives life meaning / No growth without struggle / What doesn&#x27;t kill you makes you stronger / Pain builds character / You need the lows to appreciate the highs / Hardship is what makes us who we are / Suffering is necessary for depth&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;the asymmetry, where the objection meets the antinatalist core&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The node&#x27;s first three lines defeat the strong claim, suffering only occasions meaning, does not confer it, and its fourth line concedes it then rests on the asymmetry. Stand where it rests. Grant lines one through three: suffering is not constitutively meaning-conferring, and revealed preference and survivorship confirm it. The natalist retreats to the weak claim plus a denial of the asymmetry: a merely possible person can be the beneficiary of a net-positive, meaning-bearing existence, so creating them into a life where they will wrest meaning from their suffering benefits them, and &#x27;contingent, agent-relative, unguaranteed&#x27; is just the ordinary uncertainty of any good life. The node answers only by asserting the meaning-payoff has no antecedent beneficiary while the suffering-cost has a certain bearer, which is the asymmetry itself, the disputed premise.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-02</span> merely-possible-beneficiary</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Like joy-outweighs-harms, this node is sharpened to bedrock and names the asymmetry as its closer. Lines one through three independently sink the strong (constitutive) claim; the toll-versus-goal, revealed-preference, and survivorship arguments are decisive there. What survives is the weak claim conjoined with asymmetry-denial: the intrapersonal-horn opponent who holds the created person is the beneficiary of their own meaningful existence. (a) fails: this is the open premise, not met in-corpus; the node&#x27;s line-four answer is the asymmetry, i.e. the disputed thing. Not (b): a minor completeness addition is available, importing the ordinary-risk disanalogy that distinguishes gambling a subject-to-be&#x27;s stake from ordinary self-affecting risk, but the node&#x27;s consent-and-stake framing (theirs to spend, not the procreator&#x27;s to promise) substantially carries it, and the strongest move is the intrapersonal-horn asymmetry-denial, which no in-identity text closes. Not (c): the corpus-wide fault-line, not a missing node. (d): terminus is Benatar&#x27;s asymmetry, the merely-possible-beneficiary question, the registered asymmetry-contingent residue, reached here via the meaning-conferral route (facet-sibling to joy-outweighs-harms&#x27;s hedonic-aggregation route). Not novel.</p><p class="routing"><span class="rlbl">first registered</span> registered asymmetry-contingent residue; reached via the meaning-conferral route (facet-sibling to joy-outweighs-harms&#x27;s hedonic-aggregation route); route as registered</p></details>
+          <a class="open" href="/combined#obj-suffering-as-meaning@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-04">
+        <div class="floor-head">
+          <div class="floor-id">HR-04 <span class="floor-n">&times;2</span></div>
+          <h2>Moral realism / is-ought</h2>
+          <div class="floor-alias">also: N1</div>
+          <p class="floor-gloss">Whether suffering&#x27;s disvalue is stance-independent. The corpus refuses to derive an ought from a fact, then requires an ought it does not derive either.</p>
+        </div>
+        <article class="term" id="t-natural-reproduce-diagnosis">
+          <div class="term-meta"><span class="tier">TIER 1</span><span class="node">natural-reproduce</span><span class="site">the CLINICAL DIAGNOSIS</span></div>
+          <h3>&ldquo;It&#x27;s natural to reproduce / It&#x27;s our biological purpose&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;&#x27;Natural&#x27; has zero moral content.&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Then neither does suffering. Your indictment runs on natural facts carrying moral weight: that pain is bad, that sentience generates claims, that predation is a catastrophe rather than a process. Strip value out of the natural order and the green slaughterhouse becomes weather, vividly described. The naturalistic fallacy cuts the appeal to nature and the appeal to suffering with one stroke, and the corpus needs the second to survive. What you require is not that nature has zero moral content but that it has exactly one kind, disvalue, and the argument for that restriction is the one you have not given.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-04</span> stance-independence-of-disvalue</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Not (b): the overreach is in the diagnosis field&#x27;s slogan, but contracting it to something defensible requires stating why disvalue survives a razor that dissolves value, which is the is-ought floor itself and not a wording fix. Already registered: honest-residuals HR-04, birth certificate at phenomenological-existentialism in Phase B2 (N1), with a second surface at evolution-purpose. Registered by lookup. The brief records N1 as first registered in Phase D; the B2 fragment carries the novel flag and B2 precedes D.</p><p class="routing"><span class="rlbl">first registered</span> phenomenological-existentialism (Phase B2 registration, N1); honest-residuals register HR-04, facet stance-independence-of-disvalue; third surface on the same floor</p></details>
+          <a class="open" href="/combined#obj-natural-reproduce">Open this objection on the flagship <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="term" id="t-phenomenological-existentialism-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">phenomenological-existentialism</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Existentialism refutes antinatalism / We create our own meaning / Heidegger / Sartre / Thrownness is the point&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;this is precisely the question at issue, not its answer&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The rebuttal convicts the existentialist of begging the question by assuming owning-existence is authentic. The same charge boomerangs. &#x27;Existence is a harm inflicted on a subject&#x27; presupposes that suffering is disvaluable stance-independently, which existence-precedes-essence denies: value is posited by freedom, not discovered in the world. The structural-features reply, that pain is tissue damage and neurological alarm, a condition and not a feeling, establishes a physical fact, not a disvalue; deriving &#x27;ought not be inflicted&#x27; from &#x27;is tissue damage&#x27; crosses the is-ought gap the rebuttal never bridges. So the antinatalist&#x27;s disvalue premise is itself a valuation, no more privileged than the affirmer&#x27;s. Whose posit governs is the question at issue, not the rebuttal&#x27;s answer.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-04</span> stance-independence-of-disvalue</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Strongest continuation is Sartrean value-anti-realism, native to existence-precedes-essence, and it survives the answer-engines: the no-subject reduction is answered by bradley-no-subject#long, but the disvalue-is-a-posit move is not. Not (a): the structural-features reply establishes mind-independent negative valence, not mind-independent disvalue, and deriving the ought crosses is-ought. Not (b): the only available trim, avowing suffering&#x27;s badness as an unprivileged axiom, concedes the anti-realist&#x27;s parity and relocates the dispute rather than repairing it. Terminus is the moral-realism / is-ought bedrock.</p><p class="routing"><span class="rlbl">first registered</span> TRIAGE vs meta-ethical-pluralism#long for possible collapse to already-registered; T5 not in B2 scope, unverified</p></details>
+          <a class="open" href="/combined#obj-phenomenological-existentialism@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-01">
+        <div class="floor-head">
+          <div class="floor-id">HR-01 <span class="floor-n">&times;1</span></div>
+          <h2>Global normative / epistemic skepticism</h2>
+          <p class="floor-gloss">Skepticism deep enough to dissolve all warrant dissolves the harm premise and the procreative license alike. The corpus defeats solipsism only as a LICENSE, never as metaphysics.</p>
+        </div>
+        <article class="term" id="t-solipsism-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">solipsism</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;You can&#x27;t know anyone else really suffers / Other minds are unprovable / Maybe everyone else is a philosophical zombie / I only have access to my own experience / The child&#x27;s suffering is an unverifiable inference / How do you know there&#x27;s anyone there to harm / Other-minds skepticism&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;the dialectic does not resolve in his favor&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>The node&#x27;s own verdict is that against the global skeptic the dialectic does not resolve in his favor, it dissolves, and that is right: he who doubts every mind, his own included, forfeits every warrant a birth would need. But the node then says creation loses by default to the refraining that needs none, and that overreaches on its own terms. Global skepticism voids every warrant symmetrically, including the warrant for the act-omission default that lets refraining need no reason; the same solvent that dissolves the harm premise dissolves the burden-on-the-creator. So the honest terminus is mutual silence, which the node&#x27;s next clause already concedes, not a default win. The selective skeptic, the only one who ever shows up, is decisively beaten by the reciprocity and decision-theoretic moves. What survives is the global skeptic as genuine dissolution, plus one internal overclaim to harmonize.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-01</span> dissolution-of-all-warrant</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The node handles its residual well: it defeats the selective skeptic on the asymmetry-free reciprocity/indexicality, special-pleading, performative-inconsistency, and decision-theoretic-inversion moves (moves that do not need the antinatalist asymmetry), and it honestly names the global skeptic as the only survivor, concluding &#x27;the dialectic does not resolve in his favor, it dissolves.&#x27; Strongest continuation is exactly that global-skeptic terminus, and it is genuine bedrock: under total skepticism every warrant, harm premise and license alike, is voided. Not (a): the node concedes it cannot defeat the global skeptic (dissolution, not defeat), so nothing answers it. Not (b) at the terminus: the dissolution is a correctly-named limit, not a repairable prose defect. Terminus is the acknowledged solipsism honest residual (dissolves-not-defeats the global skeptic), already-acknowledged, novel false. SECONDARY logged (b, axis s, minor, regen-triage lane, not the map class): the penultimate &#x27;creation loses by default to the refraining that needs none&#x27; overclaims under the very global skepticism invoked, since that skepticism voids the act/omission default too; harmonize to the node&#x27;s own correct &#x27;mutual silence&#x27; verdict. CONVERGENT with eliminativism&#x27;s movement-two overclaim, flagging a cross-node act/omission-default-under-total-skepticism pattern.</p><p class="routing"><span class="rlbl">first registered</span> already-acknowledged project residual (solipsism dissolves-not-defeats the global skeptic); the selective skeptic, the node&#x27;s actual target, is decisively defeated; SECONDARY regen-triage item (not this map class): &#x27;creation loses by default to the refraining that needs none&#x27; overclaims under global skepticism (act/omission default is itself voided), harmonize to the node&#x27;s own &#x27;mutual silence&#x27; verdict (axis s, minor); CONVERGENT with eliminativism movement-two overclaim, cross-node act/omission-default-under-total-skepticism pattern</p></details>
+          <a class="open" href="/combined#obj-solipsism@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-11">
+        <div class="floor-head">
+          <div class="floor-id">HR-11 <span class="floor-n">&times;1</span></div>
+          <h2>Epistemic authority of the anti-extinction intuition</h2>
+          <p class="floor-gloss">Moorean datum versus its evolutionary debunking. The node registers the dispute rather than settling it.</p>
+        </div>
+        <article class="term" id="t-negative-util-aggregation-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">negative-util-aggregation</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Negative utilitarianism leads to absurd conclusions / The repugnant conclusion&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;a cost is not a contradiction&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>You say the world-exploder shows a cost, not a contradiction, because its only weapon is the disputed life-is-worth-living intuition. The reductio-defender presses back: not all intuitions are on a par with the theory they would overturn. The conviction that painlessly annihilating billions of contented beings to forestall a pinprick is monstrous is more certain than any premise in the negative-utilitarian derivation, so a Moorean shift rejects a premise rather than swallowing the conclusion. Calling that shift question-begging is itself the move that begs the question for the theory. Your only reply is to debunk the intuition as evolved attachment, and debunking-versus-datum is exactly the bedrock.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-11</span> moorean-datum-vs-debunking</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Not defeated and not a new objection; it terminates at bedrock the node already registers. The node&#x27;s escape from the reductio is that the horror is not truth-tracking but an evolved attachment to existence. Whether an intuition&#x27;s evolutionary etiology defeats its evidential authority, against a Moorean shift, is the terminus; the node itself names it. Already-registered; cross-refs red-button-repugnant&#x27;s Moorean retreat. Not novel.</p><p class="routing"><span class="rlbl">first registered</span> node-registered evolved-attachment-not-truth-tracking; cross-ref red-button-repugnant Moorean retreat</p></details>
+          <a class="open" href="/combined#obj-negative-util-aggregation@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-12">
+        <div class="floor-head">
+          <div class="floor-id">HR-12 <span class="floor-n">&times;1</span></div>
+          <h2>Ex ante vs ex post locus of contractualist justification</h2>
+          <p class="floor-gloss">Prospects or outcomes as the justificand, type-standpoints as bearers. A live internal dispute the node registers.</p>
+        </div>
+        <article class="term" id="t-contractualism-scanlon-long">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">contractualism-scanlon</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Contractualism justifies procreation / What principles could no one reasonably reject? / Scanlon&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;ex-ante versus ex-post rejection is a live internal dispute&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>You grant the committed Frickian can bite every bullet coherently, then rest on naming the price: justifiability-to-each becomes justifiability-to-the-average, the parties become constructions. But the Frickian denies these are costs. On his view ex-ante prospects are the correct justificand, which is exactly Kumar&#x27;s purpose, so type-standpoints are not a laundering of the veto but the thesis about what we owe possible people. Your three failures all presuppose ex-post complaint-scoring as the neutral baseline, and you concede the ex-ante-versus-ex-post choice is a live dispute. So contractualist natalism is not refuted; it survives for anyone who scores justification ex-ante.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-12</span> ex-ante-vs-ex-post-justificand</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Not defeated and not a new objection; it bottoms out at bedrock the node registers. The node concedes the ex-ante package is coherent and that ex-ante-versus-ex-post is a live internal dispute, then rests on the unattractiveness of the price rather than a refutation. Which time-index and which justificands are correct is the terminus; the committed Frickian is charged, not defeated. Already-registered; cross-refs consent-incoherent and harman-benign-creation. Not novel.</p><p class="routing"><span class="rlbl">first registered</span> node-registered live-internal-dispute; cross-ref consent-incoherent, harman-benign-creation</p></details>
+          <a class="open" href="/combined#obj-contractualism-scanlon@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-13">
+        <div class="floor-head">
+          <div class="floor-id">HR-13 <span class="floor-n">&times;1</span></div>
+          <h2>Agent-neutral reasons grounding</h2>
+          <div class="floor-alias">also: N1-reasons</div>
+          <p class="floor-gloss">Whether suffering&#x27;s disvalue generates a reason binding a procreator who is simply indifferent to the future subject. Affirming that the cosmos has no telos and no agent-neutral values is what strips such reasons of a source; the corpus asserts the relation binds rather than showing it does.</p>
+        </div>
+        <article class="term" id="t-nihilism-label-long">
+          <div class="term-meta"><span class="tier">TIER 2</span><span class="node">nihilism-label</span><span class="site">the FULL DISMANTLEMENT response</span></div>
+          <h3>&ldquo;Isn&#x27;t this just nihilism? / Nothing matters so why care?&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;for the norm to bind the agents who actually exist inside it&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Grant the node its distinction: metaphysical nihilism affirmed, axiological nihilism denied. The residue is what grounds the denied thesis. The conclusion needs an agent-neutral, other-binding disvalue of suffering, a reason binding the procreator who is simply indifferent to the future subject. But affirming that the cosmos has no telos and no agent-neutral values is exactly what strips such reasons of a source. &#x27;The norm binds the agents who exist inside it, no cosmic endorsement required&#x27; relocates rather than answers: why must an agent occupy the moral standpoint rather than a prudential one? A subjectivist grants suffering is bad-for-the-sufferer and denies this yields an agent-neutral duty not to create. The node asserts the relation binds; that it binds an indifferent agent under its own anti-realism is the disputed premise, not a demonstrated one.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-13</span> binding-an-indifferent-agent</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>The node dissolves the nihilism charge correctly, it is value-committed, not value-nihilist, and it reads the valence right: axiological nihilism would dissolve antinatalism, not vindicate it. This confirms the WATCH&#x27;s default-under-skepticism overclaim is ABSENT here, the node asserts the correct pole (antinatalism dissolves under nihilism) rather than the wins-by-default error, so no regen-lane item is generated. What survives is the grounding question. (a) fails: nothing in-corpus grounds agent-neutral moral realism against a subjectivist who accepts metaphysical nihilism; routing to the asymmetry presupposes the very other-binding disvalue in dispute. Not (b): the node is not locally imprecise, it is already maximally sharpened, surrendering two overclaims and conceding affect; there is no stronger in-identity text, the residue is pure metaethical grounding. Not (c): not a missing objection but a fault-line the conclusion sits astride. (d): terminus is the realism / is-ought grounding of agent-neutral moral reasons, the standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage). Novel: first map registration of this bedrock as a (d) terminus, distinct from impersonal-vs-person-affecting; it feeds the N1 triage rather than resolving it.</p><p class="routing"><span class="rlbl">first registered</span> standing N1 open question (realism/is-ought vs meta-ethical-pluralism#long triage); first map (d)-registration, distinct from impersonal-vs-person-affecting; feeds the triage, does not resolve it</p></details>
+          <a class="open" href="/combined#obj-nihilism-label@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="floor" id="HR-15">
+        <div class="floor-head">
+          <div class="floor-id">HR-15 <span class="floor-n">&times;1</span></div>
+          <h2>Currency of obligation: consent versus constitutive relation</h2>
+          <div class="floor-alias">also: rival-occupant</div>
+          <p class="floor-gloss">Whether obligation is denominated in authorization by the obligated party, or constituted by the relation the parties stand in. The corpus&#x27;s consent architecture presupposes the first; a developed relational ethics denies it, and nothing in-corpus derives either.</p>
+        </div>
+        <article class="term" id="t-care-ethics-note">
+          <div class="term-meta"><span class="tier">TIER 4</span><span class="node">care-ethics</span><span class="site">the confidence note</span></div>
+          <h3>&ldquo;Care ethics / The parent-child bond has moral significance / Relational ethics / Noddings / Feminist ethics of care&rdquo;</h3>
+          <div class="blk anchor"><span class="lbl">AGAINST</span><p>&hellip;would benefit from deeper engagement with Held&#x27;s distinction between &#x27;chosen&#x27; and &#x27;unchosen&#x27; caring relationships&hellip;</p></div>
+          <div class="blk move"><span class="lbl">THE CONTINUATION</span><p>Your own apparatus concedes that engaging Held&#x27;s chosen and unchosen distinction has direct implications for the consent framework, and then does not engage it. That distinction is the claim that unchosen caring relations generate binding obligation without anyone having consented to them. If it holds, consent is not the currency in which relational obligation is denominated, and the structural impossibility of consent from a non-existent subject stops being decisive and becomes merely true. Your response answers when the caring relation is evaluated. It never answers whether consent is the right test. You published the gap, named the text that closes it, and left it open.</p></div>
+          <div class="blk term-floor"><span class="lbl">TERMINUS</span><p><span class="hr">HR-15</span> unchosen-relations-bind-without-authorization</p></div>
+          <details class="adj"><summary>WHY NO REWRITE CLOSES IT</summary><p>Reclassified (b) -&gt; (d) by Josiah&#x27;s ruling at K350; the move and the anchor are unchanged. The terminus is not a defect in this node but a question the corpus nowhere derives: whether obligation is denominated in AUTHORIZATION by the obligated party, or CONSTITUTED by the relation the parties stand in. The consent architecture presupposes the first and a developed relational ethics denies it, and no node argues for either. Registered as HR-15, novel, birth certificate here. THE ALTERNATIVE ROUTING IS A REDUCTIO, WHICH IS WHY THIS IS A ROOT AND NOT A TRIBUTARY. HR-06 asks whether unauthorized imposition wrongs absent harm, which PRESUPPOSES that authorization is the currency; routing this into HR-06 would give HR-06 a tributary that dissolves HR-06&#x27;s own question. HR-15 is a sibling of HR-03 rather than a facet of it -- HR-03 is the seat of STANDING, what bears value; HR-15 is the currency of OBLIGATION, what makes a demand binding -- and they come apart both ways: a relational holist can hold consent is the currency for impositions on individuals, and a natural-duties theorist denies consent-as-currency with no relational axiology at all. The registered (d) at care-ethics#long is on HR-03 and does not cover this. THE (b) REMAINDER, AND WHAT IT DOES NOT DO. Three in-node defects survive the reclassification and are repairable without touching the bedrock, specified verbatim in canon&#x27;s care_ethics_supersession_RATIFIED_K350: the doctor/infection analogy at #long, which needs an existing person made worse off and so smuggles the comparative baseline creation lacks; the phrase &#x27;the deepest possible unchosen moral obligation&#x27; at #long and its shorter form at #medium, an EQUIVOCATION at the node&#x27;s pivotal move -- the obligation is the PARENT&#x27;s and unchosen by the parent, the grievance is the CHILD&#x27;s and unchosen by the child -- on the exact term of art this note concedes the node has not engaged; and move one, which should be rebuilt as the ABSTENTION finding, care ethics having no pre-relational evaluative standpoint and so rendering no verdict on instantiation at all. They are repair work, not a second adjudication of this locus, and they have no home in this artifact: see b_remainder_disposition in the amended block. NONE OF THEM REMOVES THE (d). The care ethicist&#x27;s reply is available and must not be over-claimed away: the absence of a verdict at your chosen moment is not silence, it is the denial that your moment is the evaluative one. That RELOCATES the bedrock; it does not dissolve it.</p><p class="routing"><span class="rlbl">first registered</span> new root, ratified by Josiah at K350. HR-06 depends_on HR-15; HR-15 sibling_of HR-03. Birth certificate is this entry.</p></details>
+          <a class="open" href="/combined#obj-care-ethics@long">Open this objection at full dismantlement <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </section>
+      <section class="colophon">
+        <h2>What this page is made of</h2>
+        <p>Every card is generated from three committed artifacts and nothing else: the terminal assembly <code>adversarial_map_v1_3.json</code>, the residue register <code>honest_residuals_register_v0_4.json</code>, and the corpus <code>efilist_argument_library_v4_0_0.json</code>. The objection wording, the sentence each continuation attacks, the continuation itself and the adjudication are all verbatim; the floor a card is filed under is the register&rsquo;s identifier for it, not the free text in the entry.</p>
+        <p>The map covers all 82 flagship objections. 21 of them terminate: every continuation the map authored against them reaches a floor rather than a repair. The other 61 carry at least one continuation of another disposition and are not on this page.</p>
+        <p class="colophon-note">One link on this page lands a reader one step short. <code>care-ethics</code>&rsquo;s confidence note is reachable only through the card&rsquo;s own <code>[NOTE]</code> control, which no link form reaches; the card opens at full dismantlement and the note is one further click. Said here rather than papered over.</p>
+      </section>
+    </main>
+    <footer style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem"><div class="eyebrow" style="color:var(--faint)">The Adversarial Map &middot; one disposition of four &middot; <a href="/libraries/">The Refusal Libraries</a></div></footer>
+  </div>
+</div>
+</body>
+</html>
