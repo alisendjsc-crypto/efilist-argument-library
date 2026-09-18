@@ -15,8 +15,9 @@
       "neuroscience-positive-states": "(ii) scope qualifier, and a legitimate one. It says the philosophical interpretation of neural reward remains open; #long grants the positive interpretation in full and argues it does not reach across the threshold, so the note concedes nothing the response denies. Checked against #long rather than assumed."
     },
     "class_counts": {
-      "b": 2,
-      "a": 3
+      "a": 3,
+      "b": 1,
+      "d": 1
     },
     "coverage_distinct_ids": 5,
     "note_coverage": "5/9",
@@ -29,7 +30,15 @@
     },
     "coverage_note": "This fragment adds NO primary-ladder coverage. Per the K349 coverage ruling a note locus does not make a node covered, so `coverage` is unchanged at 82/82 from the primary entries.",
     "not_in_scope": "`confidence` (ruled OUT as a map target by Josiah, K349: no corpus text to anchor; filed as a regen candidate instead), `objectionSubforms` (ruled OUT at K345, no render site), and the four notes listed in not_authored.",
-    "validator": "adv_map_validator_v0_6.py"
+    "validator": "adv_map_validator_v0_6.py",
+    "amended": {
+      "at": "K351 (2026-09-18)",
+      "ratified_by": "Josiah, K350",
+      "what": "care-ethics#note reclassified (b) -> (d). `routing.regen_candidate` dropped, `routing.residue` added on HR-15 with novel: true. `grounds` rewritten to justify a terminus rather than a repair. `meta.class_counts` b 2 -> 1, d 0 -> 1.",
+      "how": "Built by tools/amend_phaseG_K351.py, which reads the base from the git blob at 649fdbc28861 rather than from disk -- this file is the file the builder replaces, so a disk-based base guard would be true exactly once. The class change forces the routing change: the validator's routing-shape check binds routing to class and requires EXACTLY one class-shaped key, so a (d) carries `residue` and can carry nothing else.",
+      "not_touched": "`adversarial_move` and `target_anchor`, asserted byte-identical to the base, and the other four entries, asserted byte-identical as a set. The ruling changed the CLASS and the ROUTING; it did not change the move. A ratified artifact is amended to the width of the ruling and no wider -- the K338 rule, applied here. `locus_closure`, `coverage_distinct_ids`, `note_coverage` and `ruling_0a` are unchanged: one entry changed class, none was added or removed.",
+      "b_remainder_disposition": "THE THREE IN-NODE DEFECTS ARE NOT AUTHORED AS A MAP ENTRY, AND THE GROUND IS MECHANICAL RATHER THAN EDITORIAL. The deepest locus that addresses them is care-ethics#long, which Phase B2 already holds; the assembly builder's PARTITION invariant refuses any locus claimed by two phases, and K349's own control battery proves it on this exact pair -- controls_assembly_v1_2.py, `builder-refuses-a-locus-claimed-by-two-phases`, mutates this very entry to #long and requires the refusal. They cannot ride on this entry either: routing-shape admits exactly one class-shaped key, so a (d) cannot carry a regen_candidate, and all 138 entries of v1_2 carry exactly one routing key. Authoring at #medium instead would be locus-shopping against locus_discipline (ccclxi). They live in canon, verbatim, and the queue's reach is the standing carry it already was: adversarial_map_regen_queue_v0_1.json derives from the A-E fragments only."
+    }
   },
   "entries": [
     {
@@ -37,15 +46,13 @@
       "target_locus": "note",
       "target_anchor": "would benefit from deeper engagement with Held's distinction between 'chosen' and 'unchosen' caring relationships",
       "adversarial_move": "Your own apparatus concedes that engaging Held's chosen and unchosen distinction has direct implications for the consent framework, and then does not engage it. That distinction is the claim that unchosen caring relations generate binding obligation without anyone having consented to them. If it holds, consent is not the currency in which relational obligation is denominated, and the structural impossibility of consent from a non-existent subject stops being decisive and becomes merely true. Your response answers when the caring relation is evaluated. It never answers whether consent is the right test. You published the gap, named the text that closes it, and left it open.",
-      "class": "b",
-      "grounds": "Read whole-node per design v0_4 section 11.1: the node FAILS TO CURE. Held appears once, in the opening roster, and the chosen/unchosen distinction appears nowhere in #long. The node's three moves are the temporal inversion, the dependency argument and an honest acknowledgment; the temporal inversion answers WHEN the caring relation is assessed, not whether consent is the right currency for relational obligation. The node does deploy the word at its pivotal move, 'the deepest possible unchosen moral obligation', but applies it to the PARENT's obligation, helping itself to one half of a distinction the note concedes it has not engaged. The registered (d) at care-ethics#long is on a different question, the seat of standing, so it does not cover this. Repair is authoring work at #long; deleting the note is the cheap repair and the wrong one, because the exposure exists whether or not it is published.",
+      "class": "d",
+      "grounds": "Reclassified (b) -> (d) by Josiah's ruling at K350; the move and the anchor are unchanged. The terminus is not a defect in this node but a question the corpus nowhere derives: whether obligation is denominated in AUTHORIZATION by the obligated party, or CONSTITUTED by the relation the parties stand in. The consent architecture presupposes the first and a developed relational ethics denies it, and no node argues for either. Registered as HR-15, novel, birth certificate here. THE ALTERNATIVE ROUTING IS A REDUCTIO, WHICH IS WHY THIS IS A ROOT AND NOT A TRIBUTARY. HR-06 asks whether unauthorized imposition wrongs absent harm, which PRESUPPOSES that authorization is the currency; routing this into HR-06 would give HR-06 a tributary that dissolves HR-06's own question. HR-15 is a sibling of HR-03 rather than a facet of it -- HR-03 is the seat of STANDING, what bears value; HR-15 is the currency of OBLIGATION, what makes a demand binding -- and they come apart both ways: a relational holist can hold consent is the currency for impositions on individuals, and a natural-duties theorist denies consent-as-currency with no relational axiology at all. The registered (d) at care-ethics#long is on HR-03 and does not cover this. THE (b) REMAINDER, AND WHAT IT DOES NOT DO. Three in-node defects survive the reclassification and are repairable without touching the bedrock, specified verbatim in canon's care_ethics_supersession_RATIFIED_K350: the doctor/infection analogy at #long, which needs an existing person made worse off and so smuggles the comparative baseline creation lacks; the phrase 'the deepest possible unchosen moral obligation' at #long and its shorter form at #medium, an EQUIVOCATION at the node's pivotal move -- the obligation is the PARENT's and unchosen by the parent, the grievance is the CHILD's and unchosen by the child -- on the exact term of art this note concedes the node has not engaged; and move one, which should be rebuilt as the ABSTENTION finding, care ethics having no pre-relational evaluative standpoint and so rendering no verdict on instantiation at all. They are repair work, not a second adjudication of this locus, and they have no home in this artifact: see b_remainder_disposition in the amended block. NONE OF THEM REMOVES THE (d). The care ethicist's reply is available and must not be over-claimed away: the absence of a verdict at your chosen moment is not silence, it is the denial that your moment is the evaluative one. That RELOCATES the bedrock; it does not dissolve it.",
       "routing": {
-        "regen_candidate": {
-          "axis_hit": [
-            "c",
-            "r"
-          ],
-          "severity": "headline"
+        "residue": {
+          "bedrock_name": "HR-15 -- currency of obligation: consent versus constitutive relation",
+          "terminus_routing": "new root, ratified by Josiah at K350. HR-06 depends_on HR-15; HR-15 sibling_of HR-03. Birth certificate is this entry.",
+          "novel": true
         }
       },
       "status": "mapped",

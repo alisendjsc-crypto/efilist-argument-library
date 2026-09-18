@@ -1,0 +1,127 @@
+{
+  "artifact": "register_control_v0_2.json",
+  "generated_by": "adversarial_map_staging/controls_register_v0_4.py",
+  "session": "K351",
+  "date_operator_local": "2026-09-18",
+  "pins": {
+    "v0_3": "56a86d36e0354f00051a84ca02993fab",
+    "v0_4": "d067729fafb51926bc9e845209417886",
+    "assembly_v1_3": "681827419df72a16a7c6fe70df8fe77f"
+  },
+  "delta": {
+    "bedrocks": [
+      14,
+      15
+    ],
+    "residue_entries": [
+      39,
+      40
+    ],
+    "new": [
+      "HR-15"
+    ],
+    "relations_added": [
+      [
+        "depends_on",
+        "HR-15"
+      ]
+    ]
+  },
+  "results": [
+    {
+      "name": "v0_3-reproduces-byte-identically-from-its-own-builder",
+      "pass": true,
+      "detail": "56a86d36e0354f00051a84ca02993fab vs 56a86d36e0354f00051a84ca02993fab"
+    },
+    {
+      "name": "v0_3-unmoved",
+      "pass": true,
+      "detail": "56a86d36e0354f00051a84ca02993fab"
+    },
+    {
+      "name": "bedrock-count-14-to-15",
+      "pass": true,
+      "detail": "14 -> 15"
+    },
+    {
+      "name": "exactly-HR-15-is-new",
+      "pass": true,
+      "detail": "added ['HR-15'], lost []"
+    },
+    {
+      "name": "every-other-bedrock-byte-identical-to-v0_3",
+      "pass": true,
+      "detail": "drifted: []"
+    },
+    {
+      "name": "HR-06-gains-exactly-depends_on-HR-15",
+      "pass": true,
+      "detail": "+1/-0"
+    },
+    {
+      "name": "HR-06-changed-nothing-but-its-relations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no-bedrock-changed-tributary-count",
+      "pass": true,
+      "detail": "{}"
+    },
+    {
+      "name": "HR-15-birth-certificate-is-care-ethics-note-phase-G",
+      "pass": true,
+      "detail": "{\"phase\": \"G\", \"node\": \"care-ethics\", \"locus\": \"note\"}"
+    },
+    {
+      "name": "HR-15-facet-is-the-one-canon-names",
+      "pass": true,
+      "detail": "['unchosen-relations-bind-without-authorization']"
+    },
+    {
+      "name": "HR-15-declares-sibling_of-HR-03",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "residue-entry-count-39-to-40",
+      "pass": true,
+      "detail": "39 -> 40"
+    },
+    {
+      "name": "no-undeclared-adjacency",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "an-undeclared-adjacency-refuses",
+      "pass": true,
+      "detail": "rc=1 |   UNDECLARED ADJACENCY: HR-03 and HR-15 are adjacent by evidence (shared tributary node care-ethics; terminus at G/care-"
+    },
+    {
+      "name": "a-kind-outside-the-ratified-vocabulary-refuses",
+      "pass": true,
+      "detail": "rc=1 |   HR-15 declares relation kind 'resembles', which is not in the ratified vocabulary ['depends_on', 'stronger_than', 'sib"
+    },
+    {
+      "name": "a-shipped-bedrock_name-the-map-does-not-recognise-refuses",
+      "pass": true,
+      "detail": "rc=1 |   UNMAPPED bedrock_name at G/care-ethics: 'HR-15 -- currency of obligation: consent versus constitutive relation'"
+    },
+    {
+      "name": "a-second-birth-certificate-refuses",
+      "pass": true,
+      "detail": "rc=1 |   HR-15 claims this-program registration but has 2 novel=true entries"
+    },
+    {
+      "name": "a-bedrock-that-drifts-from-v0_3-refuses",
+      "pass": true,
+      "detail": "rc=1 | REFUSING TO WRITE -- parity with v0_3 broke in 1 place(s):"
+    }
+  ],
+  "summary": {
+    "controls": 18,
+    "passed": 18,
+    "all_pass": true
+  }
+}

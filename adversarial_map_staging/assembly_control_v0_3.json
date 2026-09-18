@@ -1,0 +1,173 @@
+{
+  "artifact": "assembly_control_v0_3.json",
+  "generated_by": "adversarial_map_staging/controls_assembly_v1_3.py",
+  "session": "K351",
+  "date_operator_local": "2026-09-18",
+  "pins": {
+    "v1_0": "c4989e98b042e2f787a82df3f11ecdad",
+    "v1_1": "e9e5abf820e3f7a687e2b84443883ade",
+    "v1_2": "e4bef3cac882aa079951ba7ec1a9d11e",
+    "v1_3": "681827419df72a16a7c6fe70df8fe77f",
+    "validator_v0_6": "c002e93877b09d523daf786036af7a57",
+    "phaseG_amended": "571cd47305612068651f13ca049557c2",
+    "phaseG_base_blob_ref": "649fdbc288611fa6ea420e95055d810264301a06"
+  },
+  "reclassification": {
+    "inherited": 138,
+    "missing": 0,
+    "added": 0,
+    "changed": 1,
+    "changed_loci": [
+      "care-ethics#note"
+    ]
+  },
+  "cap_measured": {
+    "node": "care-ethics",
+    "entries": 2,
+    "variant_loci": 0,
+    "node_bound": 3,
+    "note": "the kickoff predicted 3 AT THE BOUND after a (b)-remainder entry at #long; the partition invariant refuses that entry, so the node stays at 2 and the cap was never the constraint"
+  },
+  "results": [
+    {
+      "name": "v1_2-reproduces-byte-identically-from-its-own-builder-on-its-own-inputs",
+      "pass": true,
+      "detail": "e4bef3cac882aa079951ba7ec1a9d11e vs e4bef3cac882aa079951ba7ec1a9d11e"
+    },
+    {
+      "name": "v1_2-unmoved",
+      "pass": true,
+      "detail": "e4bef3cac882aa079951ba7ec1a9d11e"
+    },
+    {
+      "name": "v1_1-unmoved",
+      "pass": true,
+      "detail": "e9e5abf820e3f7a687e2b84443883ade"
+    },
+    {
+      "name": "v1_0-frozen-unmoved",
+      "pass": true,
+      "detail": "c4989e98b042e2f787a82df3f11ecdad"
+    },
+    {
+      "name": "nothing-added-and-nothing-removed",
+      "pass": true,
+      "detail": "0 missing, 0 added"
+    },
+    {
+      "name": "exactly-one-entry-changed-and-it-is-care-ethics-note",
+      "pass": true,
+      "detail": "1 changed: [('care-ethics', 'note')]"
+    },
+    {
+      "name": "the-move-and-the-anchor-are-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "class-b-to-d-and-routing-follows-it",
+      "pass": true,
+      "detail": "['regen_candidate'] -> ['residue']"
+    },
+    {
+      "name": "class-counts-move-by-exactly-one-b-to-d",
+      "pass": true,
+      "detail": "{'a': 69, 'b': 29, 'c': 1, 'd': 39} -> {'a': 69, 'b': 28, 'c': 1, 'd': 40}"
+    },
+    {
+      "name": "all-three-coverage-claims-unmoved",
+      "pass": true,
+      "detail": "82/82 primary, 39/39 variant, 5/9 note"
+    },
+    {
+      "name": "care-ethics-sits-at-2-of-a-bound-of-3",
+      "pass": true,
+      "detail": "2 entries, 0 variant loci, bound 3"
+    },
+    {
+      "name": "every-entry-carries-exactly-one-routing-key",
+      "pass": true,
+      "detail": "138 entries"
+    },
+    {
+      "name": "v1_3-assembly-green",
+      "pass": true,
+      "detail": "0 violations, 0 advisories"
+    },
+    {
+      "name": "the-folded-entry-keeps-its-old-b-routing",
+      "pass": true,
+      "detail": "expect routing-shape -> [\"routing-shape: m_the_folded_entry_keeps_its_old_b_routing.json[127]: routing not class-shaped for 'd'\"]"
+    },
+    {
+      "name": "a-d-entry-carrying-both-routings",
+      "pass": true,
+      "detail": "expect routing-shape -> [\"routing-shape: m_a_d_entry_carrying_both_routings.json[127]: routing not class-shaped for 'd'\"]"
+    },
+    {
+      "name": "the-bedrock-name-is-emptied",
+      "pass": true,
+      "detail": "expect routing-shape -> [\"routing-shape: m_the_bedrock_name_is_emptied.json[127]: routing not class-shaped for 'd'\"]"
+    },
+    {
+      "name": "novel-is-not-a-bool",
+      "pass": true,
+      "detail": "expect routing-shape -> [\"routing-shape: m_novel_is_not_a_bool.json[127]: routing not class-shaped for 'd'\"]"
+    },
+    {
+      "name": "class-counts-still-say-b",
+      "pass": true,
+      "detail": "expect meta-summaries -> [\"meta-summaries: m_class_counts_still_say_b.json: declared class_counts != computed {'d': 40, 'a': 69, 'b': 28, 'c': 1}\"]"
+    },
+    {
+      "name": "the-folded-anchor-is-not-verbatim",
+      "pass": true,
+      "detail": "expect anchor-rule -> ['anchor-rule: m_the_folded_anchor_is_not_verbatim.json[127]: anchor not a verbatim substring of care-ethics#note']"
+    },
+    {
+      "name": "corpus-pin-advanced-to-the-pre-cut-corpus",
+      "pass": true,
+      "detail": "expect meta-corpus-pin -> [\"meta-corpus-pin: m_corpus_pin_advanced_to_the_pre_cut_corpus.json: meta pin '6ee1f6f31e0f' vs corpus 04bf6482aa03\"]"
+    },
+    {
+      "name": "declared-note-coverage-wrong",
+      "pass": true,
+      "detail": "expect note-coverage -> [\"note-coverage: m_declared_note_coverage_wrong.json: declared '9/9' vs this file's '5/9' (all loaded files: 5/9)\"]"
+    },
+    {
+      "name": "a-b-remainder-entry-at-care-ethics-long-is-refused-by-the-partition",
+      "pass": true,
+      "detail": "rc=1 |   care-ethics#long claimed by ['B2', 'G'] - fragments must PARTITION THE LOCUS"
+    },
+    {
+      "name": "the-assembly-builder-refuses-an-unamended-phase-G",
+      "pass": true,
+      "detail": "rc=1 | AssertionError: BASE GUARD: the amended Phase G fragment is d7cd18eb0467f38d8ecd4694776dd885 -- run tools/amend_phaseG_K"
+    },
+    {
+      "name": "the-amended-fragment-reproduces-byte-identically-from-the-git-blob",
+      "pass": true,
+      "detail": "571cd47305612068651f13ca049557c2 vs 571cd47305612068651f13ca049557c2"
+    },
+    {
+      "name": "a-moved-base-blob-refuses",
+      "pass": true,
+      "detail": "rc=1 | AssertionError: BASE GUARD: blob md5 d7cd18eb0467f38d8ecd4694776dd885"
+    },
+    {
+      "name": "touching-the-move-refuses",
+      "pass": true,
+      "detail": "rc=1 | AssertionError: the adversarial_move MOVED"
+    },
+    {
+      "name": "touching-another-entry-refuses",
+      "pass": true,
+      "detail": "rc=1 | AssertionError: an entry other than care-ethics#note moved"
+    }
+  ],
+  "summary": {
+    "controls": 27,
+    "passed": 27,
+    "all_pass": true
+  }
+}

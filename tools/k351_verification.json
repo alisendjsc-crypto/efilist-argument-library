@@ -1,0 +1,203 @@
+{
+  "artifact": "k351_verification.json",
+  "generated_by": "tools/verify_k351.py",
+  "session": "K351",
+  "date_operator_local": "2026-09-18",
+  "reproducibility_runs": 14,
+  "pins": {
+    "adv_map_phaseG_v0_1.json": "571cd47305612068651f13ca049557c2",
+    "build_assembly_v1_3.py": "48b495f4e8921065bd43b43ebb45e552",
+    "build_register_v0_4.py": "705d8a437d921993d94c72a85b455379",
+    "adversarial_map_v1_3.json": "681827419df72a16a7c6fe70df8fe77f",
+    "honest_residuals_register_v0_4.json": "d067729fafb51926bc9e845209417886",
+    "honest_residuals_register_v0_4.md": "009a72793afdf08c8ed6829857193d49",
+    "project_canon_v38_13.json": "e516008afa35ed401d303ee5faada543"
+  },
+  "checks": [
+    {
+      "name": "surface-unmoved:combined.html",
+      "pass": true,
+      "detail": "72187f6cf0fccdf8e9f4ec6ca5ce009c"
+    },
+    {
+      "name": "surface-unmoved:efilist_argument_library_v4_0_0.json",
+      "pass": true,
+      "detail": "04bf6482aa0374ee92a81c1d55ec41f8"
+    },
+    {
+      "name": "surface-unmoved:efilist_argument_library_v4_0_0.jsx",
+      "pass": true,
+      "detail": "b196548b6eb39065842d62292acca89f"
+    },
+    {
+      "name": "predecessor-unmoved:adv_map_validator_v0_6.py",
+      "pass": true,
+      "detail": "c002e93877b09d523daf786036af7a57"
+    },
+    {
+      "name": "predecessor-unmoved:adversarial_map_v1_0.json",
+      "pass": true,
+      "detail": "c4989e98b042e2f787a82df3f11ecdad"
+    },
+    {
+      "name": "predecessor-unmoved:adversarial_map_v1_1.json",
+      "pass": true,
+      "detail": "e9e5abf820e3f7a687e2b84443883ade"
+    },
+    {
+      "name": "predecessor-unmoved:adversarial_map_v1_2.json",
+      "pass": true,
+      "detail": "e4bef3cac882aa079951ba7ec1a9d11e"
+    },
+    {
+      "name": "predecessor-unmoved:build_assembly_v1_2.py",
+      "pass": true,
+      "detail": "45e711f47aad877741950dae43db929c"
+    },
+    {
+      "name": "predecessor-unmoved:build_register_v0_3.py",
+      "pass": true,
+      "detail": "98a63164315a33f63a59894e550182db"
+    },
+    {
+      "name": "predecessor-unmoved:honest_residuals_register_v0_3.json",
+      "pass": true,
+      "detail": "56a86d36e0354f00051a84ca02993fab"
+    },
+    {
+      "name": "cross-surface-gate-green",
+      "pass": true,
+      "detail": "X-SURFACE GATE: GREEN"
+    },
+    {
+      "name": "reproduces[seed=0]:amend_phaseG_K351.py",
+      "pass": true,
+      "detail": "571cd47305612068651f13ca049557c2"
+    },
+    {
+      "name": "reproduces[seed=0]:patch_assembly_v1_3.py",
+      "pass": true,
+      "detail": "48b495f4e8921065bd43b43ebb45e552"
+    },
+    {
+      "name": "reproduces[seed=0]:patch_register_v0_4.py",
+      "pass": true,
+      "detail": "705d8a437d921993d94c72a85b455379"
+    },
+    {
+      "name": "reproduces[seed=0]:build_assembly_v1_3.py",
+      "pass": true,
+      "detail": "681827419df72a16a7c6fe70df8fe77f"
+    },
+    {
+      "name": "reproduces[seed=0]:build_register_v0_4.py",
+      "pass": true,
+      "detail": "d067729fafb51926bc9e845209417886"
+    },
+    {
+      "name": "reproduces[seed=0]:render_register_v0_4.py",
+      "pass": true,
+      "detail": "009a72793afdf08c8ed6829857193d49"
+    },
+    {
+      "name": "reproduces[seed=0]:build_canon_v38_13.py",
+      "pass": true,
+      "detail": "e516008afa35ed401d303ee5faada543"
+    },
+    {
+      "name": "reproduces[seed=12345]:amend_phaseG_K351.py",
+      "pass": true,
+      "detail": "571cd47305612068651f13ca049557c2"
+    },
+    {
+      "name": "reproduces[seed=12345]:patch_assembly_v1_3.py",
+      "pass": true,
+      "detail": "48b495f4e8921065bd43b43ebb45e552"
+    },
+    {
+      "name": "reproduces[seed=12345]:patch_register_v0_4.py",
+      "pass": true,
+      "detail": "705d8a437d921993d94c72a85b455379"
+    },
+    {
+      "name": "reproduces[seed=12345]:build_assembly_v1_3.py",
+      "pass": true,
+      "detail": "681827419df72a16a7c6fe70df8fe77f"
+    },
+    {
+      "name": "reproduces[seed=12345]:build_register_v0_4.py",
+      "pass": true,
+      "detail": "d067729fafb51926bc9e845209417886"
+    },
+    {
+      "name": "reproduces[seed=12345]:render_register_v0_4.py",
+      "pass": true,
+      "detail": "009a72793afdf08c8ed6829857193d49"
+    },
+    {
+      "name": "reproduces[seed=12345]:build_canon_v38_13.py",
+      "pass": true,
+      "detail": "e516008afa35ed401d303ee5faada543"
+    },
+    {
+      "name": "control-artifact-reproduces:assembly_control_v0_3.json",
+      "pass": true,
+      "detail": "750d621599c1f44ba14bbaf9e776ab79"
+    },
+    {
+      "name": "control-artifact-reproduces:register_control_v0_2.json",
+      "pass": true,
+      "detail": "0648639f3e4fdd75f37233b516c0eb8c"
+    },
+    {
+      "name": "canon-keyset-held-at-41",
+      "pass": true,
+      "detail": "41"
+    },
+    {
+      "name": "canon-only-the-allowed-top-level-values-moved",
+      "pass": true,
+      "detail": "['adversarial_map', 'canon_version', 'canon_version_marker', 'keyset_delta_ledger', 'last_updated_by_session', 'next_recommended_session', 'session_log_recent', 'terminal_stability_marker']"
+    },
+    {
+      "name": "canon-invariants-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-schemas-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-hazard_map-byte-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "canon-adversarial_map-gains-exactly-five-subkeys",
+      "pass": true,
+      "detail": "['b_remainder_disposition_K351', 'ccclxxvi_hazard_K351', 'honest_residuals_register_pin_v0_4', 'phaseG_amendment_K351', 'terminal_assembly_v1_3_K351']"
+    },
+    {
+      "name": "canon-adversarial_map-changes-exactly-three-existing",
+      "pass": true,
+      "detail": "['HR_15_ratification_K350', 'care_ethics_supersession_RATIFIED_K350', 'next']"
+    },
+    {
+      "name": "canon-honest_residuals-gains-exactly-HR-15",
+      "pass": true,
+      "detail": "['currency_of_obligation'] / ['honest_residuals']"
+    },
+    {
+      "name": "canon-session-log-gains-exactly-one-entry",
+      "pass": true,
+      "detail": "55 -> 56"
+    }
+  ],
+  "summary": {
+    "checks": 36,
+    "passed": 36,
+    "all_pass": true
+  }
+}
