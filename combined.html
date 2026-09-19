@@ -375,9 +375,9 @@ body[data-active-view="library"] {
   padding: 2px 6px; display: inline-block; margin-left: 8px; vertical-align: middle;
   cursor: default;
 }
-.confidence-full { color: #4a7; border: 1px solid #4a733; background: #4a711; }
-.confidence-strong { color: #c90; border: 1px solid #c9033; background: #c9011; }
-.confidence-provisional { color: #c55; border: 1px solid #c5533; background: #c5511; }
+.confidence-full { color: #4a7; border: 1px solid #44aa7733; background: #44aa7711; }
+.confidence-strong { color: #c90; border: 1px solid #cc990033; background: #cc990011; }
+.confidence-provisional { color: #c55; border: 1px solid #cc555533; background: #cc555511; }
 .confidence-note {
   display: none; font-size: 10px; color: #886; line-height: 1.6;
   background: #141410; border: 1px solid #332; padding: 10px 14px;
@@ -389,7 +389,7 @@ body[data-active-view="library"] {
   color: #996; letter-spacing: 1px; font-size: 9px;
 }
 .note-toggle {
-  background: none; border: 1px solid #33200; color: #996;
+  background: none; border: 1px solid #332; color: #996;
   font-family: inherit; font-size: 8px; padding: 2px 6px;
   cursor: pointer; letter-spacing: 1px; text-transform: uppercase;
   margin-left: 6px; transition: all 0.15s ease;
@@ -399,9 +399,9 @@ body[data-active-view="library"] {
 /* K352 -- the level-independent affordance. Rendered at EVERY responseLevel on purpose: a
    control gated by the depth it exists to change cannot be found by the reader who needs it.
    Sibling of .note-toggle in the response label, and styled off it. Hex literals here are
-   3- or 6-digit DELIBERATELY: the eight 5-digit values above (#4a733, #c9033, #c5511, #33200
-   and their high-contrast twins) are invalid CSS and are dropped by the parser, which is why
-   the confidence badges render as bare coloured text. Measured at K352, logged, not repaired. */
+   3- or 6-digit DELIBERATELY. The 5-digit values that stood above were REPAIRED at K354 to
+   the 8-digit form their author intended: eleven literals over SIX declarations, not the
+   eight K352 counted -- .confidence-full and .note-toggle were the two it missed. */
 .depth-jump {
   background: none; border: 1px solid #442222; color: #aa7777;
   font-family: inherit; font-size: 8px; padding: 2px 6px;
@@ -417,9 +417,14 @@ body[data-active-view="library"] {
 &.legible .confidence-note { font-size: 13px; padding: 14px 18px; }
 &.legible .confidence-badge { font-size: 10px; }
 &.high-contrast .confidence-note { background: #ede8df; border-color: #cca; color: #665; }
-&.high-contrast .confidence-badge.confidence-strong { color: #960; border-color: #96044; background: #96011; }
-&.high-contrast .confidence-badge.confidence-provisional { color: #a33; border-color: #a3344; background: #a3311; }
-.provisional-response { opacity: 0.7; }
+&.high-contrast .confidence-badge.confidence-full { color: #174; border-color: #11774444; background: none; }
+&.high-contrast .note-toggle { background: #f5f3e8; border-color: #ccc8a8; color: #5c5520; }
+&.high-contrast .confidence-badge.confidence-strong { color: #960; border-color: #99660044; background: none; }
+&.high-contrast .confidence-badge.confidence-provisional { color: #a33; border-color: #aa333344; background: none; }
+/* K354 -- the provisional opacity band is GONE, the rule and the class emission both. It was a
+   70% dim on the one provisional node's long response: unlabelled, conveying nothing to a
+   screen reader, costing contrast, and restating the PROVISIONAL badge that renders in the
+   section label directly above the same box. Subtraction, not redesign; nothing dangles. */
 /* ===== REBUTTAL STRENGTH INDEX ===== */
 .rsi-badge {
   font-size: 9px; font-weight: 700; letter-spacing: 1.5px;
@@ -10556,13 +10561,25 @@ function render() {
       </div>
       <div class="section">
         <div class="section-label">RESPONSE — ${_respLabel}${(() => {
-          const conf = obj.confidence || 'full';
+          /* K354 -- the badge reads obj.confidence DIRECTLY. What stood here defaulted a
+             missing grade to the top one, so the 64 NEVER-GRADED objections were silently
+             upgraded and the 11 affirmatively graded ones hidden among them; absence of a
+             badge now means UNGRADED, which is true. An unknown value still renders nothing. */
+          const _confLabel = obj.confidence === 'full' ? 'FULL'
+            : obj.confidence === 'strong' ? 'STRONG'
+            : obj.confidence === 'provisional' ? 'PROVISIONAL' : '';
           let badges = '';
-          if (conf !== 'full') {
-            const label = conf === 'strong' ? 'STRONG' : 'PROVISIONAL';
-            const hasNote = obj.note && responseLevel === 'long';
-            badges += '<span class="confidence-badge confidence-' + conf + '">' + label + '</span>' +
-              (hasNote ? '<button class="note-toggle" onclick="event.stopPropagation(); toggleNote(\'' + obj.id + '\')">[NOTE]</button>' : '');
+          if (_confLabel) {
+            badges += '<span class="confidence-badge confidence-' + obj.confidence + '">' + _confLabel + '</span>';
+          }
+          /* K354 -- the [NOTE] control is LIFTED OUT of the confidence branch so its condition
+             equals the note container's below: 9 containers, 9 controls. It was gated on a
+             field its own container ignores, and toggleNote has exactly one caller, so
+             solipsism's note -- the text that explains its own confidence grade -- was
+             suppressed by the very value it explains. The button's markup below is the base's
+             own, carried over unchanged: this repairs the CONDITION, not the control. */
+          if (obj.note && responseLevel === 'long') {
+            badges += '<button class="note-toggle" onclick="event.stopPropagation(); toggleNote(\'' + obj.id + '\')">[NOTE]</button>';
           }
           // RSI badge
           var rsiD = displayRSI(obj.id, _rsiLevel);
@@ -10580,7 +10597,7 @@ function render() {
             '" title="' + _djLabel + '" onclick="event.stopPropagation(); __arglibRouteObj(\'' + obj.id + '\', \'long\')">[DISMANTLE]</button>';
           return badges;
         })()}</div>
-        ${archetypePills(obj)}${rweBlock(obj)}<div class="response-box ${(obj.confidence === 'provisional' && responseLevel === 'long') ? 'provisional-response' : ''}">${_bodyText}</div>
+        ${archetypePills(obj)}${rweBlock(obj)}<div class="response-box">${_bodyText}</div>
         ${obj.note && responseLevel === 'long' ? '<div class="confidence-note" id="note-' + obj.id + '">' + obj.note + '</div>' : ''}
         ${(() => {
           var rsiD = displayRSI(obj.id, _rsiLevel);

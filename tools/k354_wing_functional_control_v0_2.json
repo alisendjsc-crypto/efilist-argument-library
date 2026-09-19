@@ -1,0 +1,88 @@
+{
+ "artifact": "k354_wing_functional_control_v0_2.json",
+ "checks": 16,
+ "failed": 0,
+ "failures": [],
+ "results": [
+  {
+   "check": "the wing loads with no page error",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "22 termination cards render",
+   "detail": "22",
+   "ok": true
+  },
+  {
+   "check": "9 floor sections render",
+   "detail": "9",
+   "ok": true
+  },
+  {
+   "check": "22 open-links in the live DOM",
+   "detail": "22",
+   "ok": true
+  },
+  {
+   "check": "every floor-jump anchor resolves to a section on the page",
+   "detail": "['#HR-03', '#HR-05', '#HR-02', '#HR-04', '#HR-01', '#HR-11', '#HR-12', '#HR-13', '#HR-15']",
+   "ok": true
+  },
+  {
+   "check": "every @long link lands the reader at FULL DISMANTLEMENT with the card open",
+   "detail": "21/21 -- []",
+   "ok": true
+  },
+  {
+   "check": "the one bare link (the diagnosis locus) opens its card",
+   "detail": "1/1",
+   "ok": true
+  },
+  {
+   "check": "no page error on any of the 22 landings",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "NULL: the same links WITHOUT the suffix leave the reader at the boot default",
+   "detail": "['medium', 'medium', 'medium', 'medium']",
+   "ok": true
+  },
+  {
+   "check": "CONTROL so the suffix is what does the work, measured rather than asserted",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "care-ethics: the [NOTE] control IS present after landing, so 'one further click' is true",
+   "detail": "True",
+   "ok": true
+  },
+  {
+   "check": "care-ethics: and the note is still closed until that click, so the caveat is not idle",
+   "detail": "True",
+   "ok": true
+  },
+  {
+   "check": "solipsism: its [NOTE] control is PRESENT -- the K349 finding, repaired at K354",
+   "detail": "True",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the binding-scoped query is not vacuous: all 9 note-bearing cards carry one",
+   "detail": "9",
+   "ok": true
+  },
+  {
+   "check": "and the gap K349 measured is CLOSED: 9 notes rendered at `long`, 9 reachable",
+   "detail": "9 notes / 9 controls",
+   "ok": true
+  },
+  {
+   "check": "CONTROL the boot witness CAN fire: without the reset it survives a hash-only nav",
+   "detail": "True",
+   "ok": true
+  }
+ ]
+}

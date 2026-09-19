@@ -1,0 +1,346 @@
+{
+ "_blobsha": {
+  "adversarial/index.html": "e42a00bd9b8069e1211abc5a087bf08ef4706044",
+  "combined.html": "0c97cd70a7e37f37fbdd52aa78243fd4cfc476c9",
+  "efilist_argument_library_v4_0_0.json": "e6944b05e9dcae4598c079dfcad43939369d6732",
+  "efilist_argument_library_v4_0_0.jsx": "270e0ecbfa44fa8818a77436bb5a2a106d88cb1e",
+  "project_canon_v38_15.json": "4853303ce3262a4eb2272c05cc86713f831097e7",
+  "tools/k353_wing_functional_gate.py": "ef7cb063537cf94cf12fe8b1e59e6347476bfd51"
+ },
+ "_self": {
+  "build_k354_pins.py": {
+   "bytes": 7313,
+   "md5": "7d7330ed107ea338b10f4df8525eea38"
+  }
+ },
+ "_wuldblobsha": {
+  "CLAUDE.md": "203810224577ae622349fdba46224b5faa262669",
+  "src/argument-library/index.html": "6e02c70fbf01c523a9eed286ea2d2cd2bffc1f41",
+  "src/chat/index.html": "5646186235656f5d503a37a8291418106d51cf91",
+  "src/components/mobile-nav.js": "54a42222dc8dff3da097d650c9377b5014f98cfd",
+  "src/console/index.html": "9b5047e2ef8b1a671266093f8d6378f074cf681d",
+  "src/contact/index.html": "a40d81fcfbbb5852632b3c856882e54ab7055d73",
+  "src/donations/index.html": "16a5d85596ad9c296615e0d58e1521904738744d",
+  "src/feed.xml": "355308aae25e0e7c74c482a39a18ae4f13b03531",
+  "src/frame/index.html": "208dfd7afb58d3d628bb07933eb2cb85a5d7f611",
+  "src/index.html": "26a3ee2fa3f9d9e3b4fa4bcb9547bc8cbf496293",
+  "src/library-about/index.html": "0485f1a31b282cbd090e1dacf03844f713422d43",
+  "src/notes/index.html": "ac915797d01b980534be490c1fa3f7b72c03e92d",
+  "src/recommendations/index.html": "f230b287d944328ca99ff3052bef00a69ed7a9a0",
+  "src/releases.json": "700bdd2a5f91940bca104715f06bf6d8c839658f",
+  "src/search-index.json": "9d8889fa997a6394f5be9de37488567e2a44478b",
+  "src/troubleshooting/index.html": "1502954801e48e5e5455e8910373eeb36cee7afb",
+  "tools/library-pin-state.json": "0eddd597a98359af8f2c0ada4d8d149275162d8c"
+ },
+ "canon": {
+  "new": {
+   "bytes": 472118,
+   "md5": "d514a6a8e0ebaabe8441fe275b2ab6a2"
+  },
+  "old": {
+   "bytes": 457021,
+   "md5": "878bca22bbdeb14bfba28163d9d7456c"
+  }
+ },
+ "date_operator_local": "2026-09-18",
+ "efilist_drop": {
+  "k354_drop/combined.html": {
+   "bytes": 2987411,
+   "md5": "006aa9833f7a8b103ad27a289ab22fa9"
+  },
+  "k354_drop/k353_wing_functional_gate.py": {
+   "bytes": 11430,
+   "md5": "d8e2d69299f4fba055f0d2afd28881b1"
+  }
+ },
+ "efilist_remove": {
+  "project_canon_v38_15.json": {
+   "bytes": 457021,
+   "md5": "878bca22bbdeb14bfba28163d9d7456c"
+  }
+ },
+ "efilist_stage": {
+  "combined.html": {
+   "bytes": 2987411,
+   "md5": "006aa9833f7a8b103ad27a289ab22fa9"
+  },
+  "project_canon_v38_16.json": {
+   "bytes": 472118,
+   "md5": "d514a6a8e0ebaabe8441fe275b2ab6a2"
+  },
+  "tools/build_canon_v38_16.py": {
+   "bytes": 24095,
+   "md5": "33b7d4d03a2f2788a7b4a5cae4d99f37"
+  },
+  "tools/k353_wing_functional_gate.py": {
+   "bytes": 11430,
+   "md5": "d8e2d69299f4fba055f0d2afd28881b1"
+  },
+  "tools/k354_cut_pins.json": {
+   "bytes": 455,
+   "md5": "d3a6290fce7a7fa47cb05cb143f6cfcf"
+  },
+  "tools/k354_functional_control_v0_1.json": {
+   "bytes": 10810,
+   "md5": "93e19f16303e2f4b9b37602720623c07"
+  },
+  "tools/k354_functional_gate.py": {
+   "bytes": 24364,
+   "md5": "743db1d19d3af45d9ff26486e25ecf34"
+  },
+  "tools/k354_prior_gate_inversion_v0_1.json": {
+   "bytes": 2537,
+   "md5": "3651fea8f0fb59728429d7746a147c51"
+  },
+  "tools/k354_wing_functional_control_v0_2.json": {
+   "bytes": 2183,
+   "md5": "b4f5d8390289bb717c8333919d9079d3"
+  },
+  "tools/note_confidence_K354.py": {
+   "bytes": 18386,
+   "md5": "45a324b792e626ef0e74887ad8b35a05"
+  },
+  "tools/patch_k353_gate_K354.py": {
+   "bytes": 6655,
+   "md5": "ab69039bbf5eb36f7943e17189d9f49e"
+  },
+  "tools/verify_K354.py": {
+   "bytes": 12621,
+   "md5": "5d5451b14eccd0cb2e9b866f2b8ad9b0"
+  }
+ },
+ "heads_at_open": {
+  "efilist": "37125ef37da7a49310fb0e3a4e511b593e8925df",
+  "wuld": "5c5b6734aa10a3f1a5d21cc1a77f97e05dc5a021"
+ },
+ "held_no_corpus_byte": {
+  "adversarial_map_v1_3": {
+   "bytes": 269352,
+   "md5": "681827419df72a16a7c6fe70df8fe77f"
+  },
+  "corpus_json": {
+   "bytes": 1334024,
+   "md5": "04bf6482aa0374ee92a81c1d55ec41f8"
+  },
+  "honest_residuals_register_v0_4": {
+   "bytes": 44915,
+   "md5": "d067729fafb51926bc9e845209417886"
+  },
+  "jsx": {
+   "bytes": 1273483,
+   "md5": "b196548b6eb39065842d62292acca89f"
+  },
+  "wing": {
+   "bytes": 87259,
+   "md5": "616fc4ae49177f46e8d1a8558b0c6cba"
+  },
+  "xsurface_identity": "6cd132ee5b8c7ca78ad0e095806f1c93"
+ },
+ "k353_gate": {
+  "amended": {
+   "bytes": 11430,
+   "md5": "d8e2d69299f4fba055f0d2afd28881b1"
+  },
+  "base": {
+   "bytes": 10634,
+   "md5": "2628f870286489796e94386bf006511a"
+  }
+ },
+ "pin": {
+  "new": {
+   "bytes": 2987411,
+   "md5": "006aa9833f7a8b103ad27a289ab22fa9"
+  },
+  "new_label": "v4.1.2",
+  "old": {
+   "bytes": 2985989,
+   "md5": "f095c0ce0e5a1d796d57fa5a5dd62f7d"
+  },
+  "old_label": "v4.1.1"
+ },
+ "search_index": {
+  "after": {
+   "bytes": 258276,
+   "md5": "8c086529e8a9ae98d30e9d4dc2d0e82b"
+  },
+  "before": {
+   "bytes": 258276,
+   "md5": "cdc7a14ec736f0b3ef1eca5497e27e37"
+  },
+  "entries": "1013 held; exactly 2 changed, both the v4.1.1 -> v4.1.2 string",
+  "invariance_pre": "rebuilt from the PRE-relabel src, build_index.py reproduces the committed src/search-index.json byte-for-byte"
+ },
+ "session": "K354 / WI-K345",
+ "timezone": "America/Phoenix",
+ "vendor_identity_no_op": {
+  "note": "Both generators were RUN this session and reproduce their committed exports byte-for-byte, and each export equals the wuld-side vendored snapshot. The re-vendor is therefore a no-op BY IDENTITY, positively controlled rather than assumed.",
+  "objections_index_efilist_blob": {
+   "bytes": 41800,
+   "md5": "d034af153aafa08c6f57884a9e7426a1"
+  },
+  "rtd_index_efilist_blob": {
+   "bytes": 16117,
+   "md5": "d85bfd805b0885bb09de60c149728a7b"
+  },
+  "src_library_objections_wuld_blob": {
+   "bytes": 41800,
+   "md5": "d034af153aafa08c6f57884a9e7426a1"
+  },
+  "src_rtd_objections_wuld_blob": {
+   "bytes": 16117,
+   "md5": "d85bfd805b0885bb09de60c149728a7b"
+  }
+ },
+ "wuld_base_blobs": {
+  "CLAUDE.md": {
+   "bytes": 213369,
+   "md5": "c1fcaec2e68461fbd614d1a6764afc14"
+  },
+  "src/argument-library/index.html": {
+   "bytes": 12919,
+   "md5": "8099931e901466da12f6e0d9eda84eba"
+  },
+  "src/chat/index.html": {
+   "bytes": 17924,
+   "md5": "a95308c69cb554ec0824b9587ad17e93"
+  },
+  "src/components/mobile-nav.js": {
+   "bytes": 6712,
+   "md5": "c18593e64e9d09c2158a406f53e14905"
+  },
+  "src/console/index.html": {
+   "bytes": 12712,
+   "md5": "f706f7a38cc486d9a22408f12f260550"
+  },
+  "src/contact/index.html": {
+   "bytes": 14822,
+   "md5": "be1f236ac5e3fd1f769181b1acd43071"
+  },
+  "src/donations/index.html": {
+   "bytes": 19017,
+   "md5": "6f30b7f88e99c4b402f6a17328051b5d"
+  },
+  "src/feed.xml": {
+   "bytes": 108718,
+   "md5": "7494e79ed6e855c7417d504bfd7c8c26"
+  },
+  "src/frame/index.html": {
+   "bytes": 22966,
+   "md5": "f2e0892f67489bbd18c2af8f83268054"
+  },
+  "src/index.html": {
+   "bytes": 27690,
+   "md5": "891ec78964f24840527633b866fed816"
+  },
+  "src/library-about/index.html": {
+   "bytes": 15292,
+   "md5": "c89f813e4e6baa40d447a249bce89fad"
+  },
+  "src/notes/index.html": {
+   "bytes": 22423,
+   "md5": "661160be355e312fa79ad2a3dab0cbbf"
+  },
+  "src/recommendations/index.html": {
+   "bytes": 47955,
+   "md5": "86f0ba2d074b05542491ae0a7dac1c7a"
+  },
+  "src/releases.json": {
+   "bytes": 52806,
+   "md5": "f61d3ac1f9df2e41c066a7fd0605a3c2"
+  },
+  "src/search-index.json": {
+   "bytes": 258276,
+   "md5": "cdc7a14ec736f0b3ef1eca5497e27e37"
+  },
+  "src/troubleshooting/index.html": {
+   "bytes": 14403,
+   "md5": "20d877cbfc24e5ca3da6368105f332ce"
+  },
+  "tools/library-pin-state.json": {
+   "bytes": 266,
+   "md5": "d34a21e845cd195111e910deb7252134"
+  }
+ },
+ "wuld_stage": {
+  "CLAUDE.md": {
+   "bytes": 241989,
+   "md5": "c83d9eb9ee3034e1adde20b9f6887687"
+  },
+  "docs/relays/RELAY_code_seat_to_all_seats_v1.md": {
+   "bytes": 21025,
+   "md5": "145b3bacb1efefa5846c7bcc521ab4bd"
+  },
+  "release_v4_1_2.json": {
+   "bytes": 8463,
+   "md5": "6273369798efeaf51a0c94985dcc5fd1"
+  },
+  "src/argument-library/index.html": {
+   "bytes": 12919,
+   "md5": "3b208445843f5fd52009312887b35415"
+  },
+  "src/chat/index.html": {
+   "bytes": 17924,
+   "md5": "c89c36b22aba6a3db222f1434ff5f467"
+  },
+  "src/components/mobile-nav.js": {
+   "bytes": 6712,
+   "md5": "d8e54d998dd1d50bcdc7d8914617b9f5"
+  },
+  "src/console/index.html": {
+   "bytes": 12712,
+   "md5": "942bd43df0a89cb30d60302643b87572"
+  },
+  "src/contact/index.html": {
+   "bytes": 14822,
+   "md5": "c52fe38cb34fcb652b81f9a08dd8e6d7"
+  },
+  "src/donations/index.html": {
+   "bytes": 19017,
+   "md5": "33e2a1bf7a9be2e8c367e6325aec7e5a"
+  },
+  "src/feed.xml": {
+   "bytes": 112467,
+   "md5": "ba703f42e5c254cee6a5786d8dbe8e03"
+  },
+  "src/frame/index.html": {
+   "bytes": 22966,
+   "md5": "9dbed2583df25600d0374b340fe0435c"
+  },
+  "src/index.html": {
+   "bytes": 27690,
+   "md5": "81da7208e6dce44bafaaa2a55861375b"
+  },
+  "src/library-about/index.html": {
+   "bytes": 15292,
+   "md5": "a52efb7a8ebc59eedcb9d86592583ed6"
+  },
+  "src/notes/index.html": {
+   "bytes": 22423,
+   "md5": "95b9bccd6df28ab72521e76e1abb66ef"
+  },
+  "src/recommendations/index.html": {
+   "bytes": 47955,
+   "md5": "92109e4075bc3c8f43d9f19acd68f759"
+  },
+  "src/releases.json": {
+   "bytes": 54690,
+   "md5": "6bd40cf7fea89ee8d12c5029880e4b3e"
+  },
+  "src/search-index.json": {
+   "bytes": 258276,
+   "md5": "8c086529e8a9ae98d30e9d4dc2d0e82b"
+  },
+  "src/troubleshooting/index.html": {
+   "bytes": 14403,
+   "md5": "4597d8688cb506071d2b3a09a040cefd"
+  },
+  "tools/apply_release_summary.py": {
+   "bytes": 3318,
+   "md5": "4a85cbb64717e0b2345bf7824173fddb"
+  },
+  "tools/library-pin-state.json": {
+   "bytes": 266,
+   "md5": "c8fc977a8b2f3a9f944dbe17a9354880"
+  }
+ }
+}

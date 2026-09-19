@@ -1,0 +1,31 @@
+{
+ "base": {
+  "bytes": 2985989,
+  "lines": 12482,
+  "md5": "f095c0ce0e5a1d796d57fa5a5dd62f7d"
+ },
+ "candidate": {
+  "bytes": 2987411,
+  "lines": 12478,
+  "md5": "006aa9833f7a8b103ad27a289ab22fa9"
+ },
+ "delta": {
+  "bytes": 1422,
+  "lines": -4
+ },
+ "hex5": {
+  "base": 15,
+  "candidate": 0
+ },
+ "hex8_introduced": [
+  "#11774444",
+  "#44aa7711",
+  "#44aa7733",
+  "#99660044",
+  "#aa333344",
+  "#cc555511",
+  "#cc555533",
+  "#cc990011",
+  "#cc990033"
+ ]
+}

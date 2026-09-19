@@ -1,0 +1,92 @@
+{
+ "artifact": "k354_prior_gate_inversion_v0_1.json",
+ "checks": 16,
+ "failed": 3,
+ "failures": [
+  "solipsism: confidence:full suppresses its [NOTE] control, so its note is unreachable (K349, logged not repaired -- pin-move work)",
+  "CONTROL the binding-scoped query is not vacuous: 7 cards DO carry a [NOTE] control",
+  "and the gap is K349's exact figure: 9 notes rendered at `long`, 7 reachable"
+ ],
+ "results": [
+  {
+   "check": "the wing loads with no page error",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "22 termination cards render",
+   "detail": "22",
+   "ok": true
+  },
+  {
+   "check": "9 floor sections render",
+   "detail": "9",
+   "ok": true
+  },
+  {
+   "check": "22 open-links in the live DOM",
+   "detail": "22",
+   "ok": true
+  },
+  {
+   "check": "every floor-jump anchor resolves to a section on the page",
+   "detail": "['#HR-03', '#HR-05', '#HR-02', '#HR-04', '#HR-01', '#HR-11', '#HR-12', '#HR-13', '#HR-15']",
+   "ok": true
+  },
+  {
+   "check": "every @long link lands the reader at FULL DISMANTLEMENT with the card open",
+   "detail": "21/21 -- []",
+   "ok": true
+  },
+  {
+   "check": "the one bare link (the diagnosis locus) opens its card",
+   "detail": "1/1",
+   "ok": true
+  },
+  {
+   "check": "no page error on any of the 22 landings",
+   "detail": "[]",
+   "ok": true
+  },
+  {
+   "check": "NULL: the same links WITHOUT the suffix leave the reader at the boot default",
+   "detail": "['medium', 'medium', 'medium', 'medium']",
+   "ok": true
+  },
+  {
+   "check": "CONTROL so the suffix is what does the work, measured rather than asserted",
+   "detail": "",
+   "ok": true
+  },
+  {
+   "check": "care-ethics: the [NOTE] control IS present after landing, so 'one further click' is true",
+   "detail": "True",
+   "ok": true
+  },
+  {
+   "check": "care-ethics: and the note is still closed until that click, so the caveat is not idle",
+   "detail": "True",
+   "ok": true
+  },
+  {
+   "check": "solipsism: confidence:full suppresses its [NOTE] control, so its note is unreachable (K349, logged not repaired -- pin-move work)",
+   "detail": "True",
+   "ok": false
+  },
+  {
+   "check": "CONTROL the binding-scoped query is not vacuous: 7 cards DO carry a [NOTE] control",
+   "detail": "9",
+   "ok": false
+  },
+  {
+   "check": "and the gap is K349's exact figure: 9 notes rendered at `long`, 7 reachable",
+   "detail": "9 notes / 9 controls",
+   "ok": false
+  },
+  {
+   "check": "CONTROL the boot witness CAN fire: without the reset it survives a hash-only nav",
+   "detail": "True",
+   "ok": true
+  }
+ ]
+}

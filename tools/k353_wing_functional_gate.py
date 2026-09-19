@@ -18,13 +18,21 @@ probes is what makes each one a real boot, and a failing control proves the witn
 WHERE IT RUNS. The Cowork container, which carries Chromium and Playwright; the operator's local
 VM does not. So this is the one tool in this cut that does not reproduce from its committed
 location, exactly as k352_functional_gate.py said of itself.
+
+AMENDED AT K354. Three checks here asserted the DEFECT rather than a property: that solipsism's
+[NOTE] control is absent, that seven cards carry one, and that the layer stands at 9 notes / 7
+reachable. K354 lifted the control out of `if (conf !== 'full')` so its condition equals its
+container's, and all three inverted -- and nothing else in this file did. The pre-amendment run
+against the repaired flagship is kept as k354_prior_gate_inversion_v0_1.json, 16 checks / 3
+failed, and it is the cleanest evidence of the repair that exists. The three now assert the
+repaired state, and this file's own control artifact moves to v0_2 so the K353 record stands.
 """
 import json, re, sys, threading, http.server, socketserver, functools, os, argparse
 from playwright.sync_api import sync_playwright
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--root", default="/mnt/user-data/uploads/efilist-argument-library")
-ap.add_argument("--out", default="k353_wing_functional_control_v0_1.json")
+ap.add_argument("--out", default="k354_wing_functional_control_v0_2.json")
 ap.add_argument("--shots", default="/home/claude/k353/shots")
 A = ap.parse_args()
 ROOT = A.root
@@ -158,18 +166,20 @@ with sync_playwright() as p:
         note_hidden is True, note_hidden)
     pg.screenshot(path=os.path.join(A.shots, "flagship_care_ethics_long.png"))
 
-    # solipsism: the ship-set card whose own note NO link and NO click can reach
+    # solipsism: the ship-set card whose note K349 measured as unreachable by any reader and
+    # K354 repaired. It is in the wing's 21-node ship set, which is what made the repair this
+    # session's business rather than a carry: the wing points readers at that card.
     probe(pg, BASE + "/combined#obj-solipsism@long")
     sol_btn = note_btn("solipsism")
     any_btn = pg.evaluate("() => document.querySelectorAll('.note-toggle').length")
     n_notes = pg.evaluate("() => Object.keys(window).length && "
                           "document.querySelectorAll('.confidence-note').length")
-    chk("solipsism: confidence:full suppresses its [NOTE] control, so its note is unreachable "
-        "(K349, logged not repaired -- pin-move work)", sol_btn is False, sol_btn)
-    chk("CONTROL the binding-scoped query is not vacuous: 7 cards DO carry a [NOTE] control",
-        any_btn == 7, any_btn)
-    chk("and the gap is K349's exact figure: 9 notes rendered at `long`, 7 reachable",
-        n_notes == 9 and any_btn == 7, "%s notes / %s controls" % (n_notes, any_btn))
+    chk("solipsism: its [NOTE] control is PRESENT -- the K349 finding, repaired at K354",
+        sol_btn is True, sol_btn)
+    chk("CONTROL the binding-scoped query is not vacuous: all 9 note-bearing cards carry one",
+        any_btn == 9, any_btn)
+    chk("and the gap K349 measured is CLOSED: 9 notes rendered at `long`, 9 reachable",
+        n_notes == 9 and any_btn == 9, "%s notes / %s controls" % (n_notes, any_btn))
 
     # ---------------------------------------------------------------- the witness's own control
     pg.goto(BASE + "/combined", wait_until="load"); pg.wait_for_timeout(700)

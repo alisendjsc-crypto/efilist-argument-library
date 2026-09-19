@@ -1,0 +1,571 @@
+{
+ "artifact": "k354_functional_control_v0_1.json",
+ "checks": 39,
+ "contrast_high_contrast": {
+  "full": [
+   null,
+   4.72
+  ],
+  "note": [
+   2.49,
+   6.8
+  ],
+  "provisional": [
+   5.48,
+   5.48
+  ],
+  "strong": [
+   4.16,
+   4.16
+  ]
+ },
+ "failed": 0,
+ "failures": [],
+ "invariants": 20,
+ "repairs": 19,
+ "results": [
+  {
+   "base_got": 9,
+   "base_want": 9,
+   "cand_got": 9,
+   "cand_want": 9,
+   "check": "9 notes render at full dismantlement",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": 7,
+   "base_want": 7,
+   "cand_got": 9,
+   "cand_want": 9,
+   "check": "the [NOTE] control's count EQUALS the container's -- the whole ruling",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: boonin-critique",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: care-ethics",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: eliminativism",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: flow-states-csikszentmihalyi",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: indigenous-philosophy",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: neuroscience-positive-states",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": false,
+   "base_want": false,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: solipsism",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: suffering-as-meaning",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": false,
+   "base_want": false,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "[NOTE] control present: violence-as-reductio",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": false,
+   "base_want": false,
+   "cand_got": false,
+   "cand_want": false,
+   "check": "solipsism's note starts CLOSED on both -- the repair opens nothing by itself",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": "no-control",
+   "base_want": "no-control",
+   "cand_got": "clicked",
+   "cand_want": "clicked",
+   "check": "solipsism: the control can be clicked at all",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": false,
+   "base_want": false,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "solipsism's note becomes VISIBLE -- reachable, not merely controlled",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": 7,
+   "base_want": 7,
+   "cand_got": 18,
+   "cand_want": 18,
+   "check": "badge count: 7 graded-and-shown -> all 18 affirmative grades",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": {
+    "PROVISIONAL": 1,
+    "STRONG": 6
+   },
+   "base_want": {
+    "PROVISIONAL": 1,
+    "STRONG": 6
+   },
+   "cand_got": {
+    "FULL": 11,
+    "PROVISIONAL": 1,
+    "STRONG": 6
+   },
+   "cand_want": {
+    "FULL": 11,
+    "PROVISIONAL": 1,
+    "STRONG": 6
+   },
+   "check": "badge labels by grade",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": {
+    "boonin-critique": "STRONG",
+    "care-ethics": "STRONG",
+    "eliminativism": "STRONG",
+    "flow-states-csikszentmihalyi": "STRONG",
+    "indigenous-philosophy": "PROVISIONAL",
+    "neuroscience-positive-states": "STRONG",
+    "suffering-as-meaning": "STRONG"
+   },
+   "base_want": {
+    "boonin-critique": "STRONG",
+    "care-ethics": "STRONG",
+    "eliminativism": "STRONG",
+    "flow-states-csikszentmihalyi": "STRONG",
+    "indigenous-philosophy": "PROVISIONAL",
+    "neuroscience-positive-states": "STRONG",
+    "suffering-as-meaning": "STRONG"
+   },
+   "cand_got": {
+    "boonin-critique": "STRONG",
+    "care-ethics": "STRONG",
+    "eliminativism": "STRONG",
+    "flow-states-csikszentmihalyi": "STRONG",
+    "indigenous-philosophy": "PROVISIONAL",
+    "neuroscience-positive-states": "STRONG",
+    "solipsism": "FULL",
+    "suffering-as-meaning": "STRONG"
+   },
+   "cand_want": {
+    "boonin-critique": "STRONG",
+    "care-ethics": "STRONG",
+    "eliminativism": "STRONG",
+    "flow-states-csikszentmihalyi": "STRONG",
+    "indigenous-philosophy": "PROVISIONAL",
+    "neuroscience-positive-states": "STRONG",
+    "solipsism": "FULL",
+    "suffering-as-meaning": "STRONG"
+   },
+   "check": "every badge found on a note-bearing card names that node's own corpus grade",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": [
+    "0px",
+    "none"
+   ],
+   "base_want": [
+    "0px",
+    "none"
+   ],
+   "cand_got": [
+    "1px",
+    "solid"
+   ],
+   "cand_want": [
+    "1px",
+    "solid"
+   ],
+   "check": "STRONG badge: invalid CSS dropped the border -> repaired to 1px solid",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": [
+    0,
+    0,
+    0,
+    0.0
+   ],
+   "base_want": [
+    0,
+    0,
+    0,
+    0.0
+   ],
+   "cand_got": [
+    204,
+    153,
+    0,
+    0.067
+   ],
+   "cand_want": [
+    204,
+    153,
+    0,
+    0.067
+   ],
+   "check": "STRONG badge fill: transparent -> the declared #cc990011",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": [
+    "0px",
+    [
+     0,
+     0,
+     0,
+     0.0
+    ]
+   ],
+   "base_want": [
+    "0px",
+    [
+     0,
+     0,
+     0,
+     0.0
+    ]
+   ],
+   "cand_got": [
+    "1px",
+    [
+     204,
+     85,
+     85,
+     0.067
+    ]
+   ],
+   "cand_want": [
+    "1px",
+    [
+     204,
+     85,
+     85,
+     0.067
+    ]
+   ],
+   "check": "PROVISIONAL badge: 0px -> 1px, and transparent -> the declared #cc555511",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": null,
+   "base_want": null,
+   "cand_got": [
+    "1px",
+    [
+     68,
+     170,
+     119,
+     0.067
+    ]
+   ],
+   "cand_want": [
+    "1px",
+    [
+     68,
+     170,
+     119,
+     0.067
+    ]
+   ],
+   "check": "FULL badge: it does not exist on the base at all, and is styled on the candidate",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": [
+    "2px",
+    "outset"
+   ],
+   "base_want": [
+    "2px",
+    "outset"
+   ],
+   "cand_got": [
+    "1px",
+    "solid"
+   ],
+   "cand_want": [
+    "1px",
+    "solid"
+   ],
+   "check": "[NOTE] button: browser-default 2px outset chrome -> the 1px dim border [DISMANTLE] is styled off",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": null,
+   "base_want": null,
+   "cand_got": [
+    51,
+    51,
+    34,
+    1.0
+   ],
+   "cand_want": [
+    51,
+    51,
+    34,
+    1.0
+   ],
+   "check": "[NOTE] button border colour is the declared #332",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": null,
+   "base_want": null,
+   "cand_got": [
+    [
+     17,
+     119,
+     68
+    ],
+    "1px"
+   ],
+   "cand_want": [
+    [
+     17,
+     119,
+     68
+    ],
+    "1px"
+   ],
+   "check": "high-contrast FULL badge is dark on the light ground (the rule this ruling required)",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": [
+    [
+     153,
+     102,
+     0
+    ],
+    "0px"
+   ],
+   "base_want": [
+    [
+     153,
+     102,
+     0
+    ],
+    "0px"
+   ],
+   "cand_got": [
+    [
+     153,
+     102,
+     0
+    ],
+    "1px"
+   ],
+   "cand_want": [
+    [
+     153,
+     102,
+     0
+    ],
+    "1px"
+   ],
+   "check": "high-contrast STRONG badge gains its border too",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": 1,
+   "base_want": 1,
+   "cand_got": 0,
+   "cand_want": 0,
+   "check": "the unlabelled opacity band is gone from the DOM",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": "0.7",
+   "base_want": "0.7",
+   "cand_got": "1",
+   "cand_want": "1",
+   "check": "and the provisional node's response body is at full opacity",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": "medium",
+   "base_want": "medium",
+   "cand_got": "medium",
+   "cand_want": "medium",
+   "check": "the boot default is still medium -- NOT flipped",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": 82,
+   "base_want": 82,
+   "cand_got": 82,
+   "cand_want": 82,
+   "check": "K352's [DISMANTLE] still renders on every card at the boot level",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": "long",
+   "base_want": "long",
+   "cand_got": "long",
+   "cand_want": "long",
+   "check": "K352's anchor grammar still forces long",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": "long",
+   "base_want": "long",
+   "cand_got": "long",
+   "cand_want": "long",
+   "check": "setDepth('long') reached long",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": [],
+   "base_want": [],
+   "cand_got": [],
+   "cand_want": [],
+   "check": "no page error on either surface",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "CONTROL the boot witness CAN fire: without the reset it survives a hash-only nav",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "CONTROL the screenshots are OF the subject: the two roots' images must DIFFER",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "high-contrast [NOTE]: under the 3:1 UI floor -> over the 4.5:1 text floor  (2.49 -> 6.8)",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": null,
+   "base_want": null,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "high-contrast [FULL] clears 4.5:1, which is why #174 rather than #4a7  (4.72)",
+   "kind": "REPAIR",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "NO high-contrast regression: STRONG  (4.16 -> 4.16)",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": true,
+   "base_want": true,
+   "cand_got": true,
+   "cand_want": true,
+   "check": "NO high-contrast regression: PROVISIONAL  (5.48 -> 5.48)",
+   "kind": "INVARIANT",
+   "ok": true
+  },
+  {
+   "base_got": 4.16,
+   "base_want": 4.16,
+   "cand_got": 4.16,
+   "cand_want": 4.16,
+   "check": "LOGGED not repaired: the high-contrast STRONG badge measures 4.16:1, under 4.5 for 8px text. Pre-existing, UNCHANGED by this cut, an authored colour, and a register call rather than a build one.",
+   "kind": "LOGGED",
+   "ok": true
+  }
+ ]
+}
