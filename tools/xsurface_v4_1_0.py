@@ -66,11 +66,17 @@ def canon(objs):
     return hashlib.md5(json.dumps(objs, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
 
 
+def html_path(d):
+    """combined.html is served from site/ since WI-K360 (2026-09-20); an older baseline (--against) has it at the root."""
+    p = os.path.join(d, "site", HTMLF)
+    return p if os.path.isfile(p) else os.path.join(d, HTMLF)
+
+
 def surfaces(d):
     return {
         JSONF: json.load(io.open(os.path.join(d, JSONF), encoding="utf-8"))["objections"],
         JSXF:  extract(os.path.join(d, JSXF)),
-        HTMLF: extract(os.path.join(d, HTMLF)),
+        HTMLF: extract(html_path(d)),
     }
 
 

@@ -41,7 +41,7 @@ VALIDATOR (gates the build; exits non-zero on any failure):
   - deterministic across two serializations
 
 Usage:
-  python3 build_right_to_die_index.py [REPO_ROOT=.] [--out right-to-die-objections-index.json]
+  python3 build_right_to_die_index.py [WING_DIR=../site/right-to-die] [--out right-to-die-objections-index.json]
   python3 build_right_to_die_index.py --check   # validate only, write nothing
 """
 import sys, os, json, glob, argparse
@@ -51,6 +51,9 @@ LIBRARY = "right-to-die"
 SURFACE_ROUTE = "right-to-die/combined"
 GLOSS_MAX = 200
 OUT_NAME = "right-to-die-objections-index.json"
+HERE = os.path.dirname(os.path.abspath(__file__))
+# the served wing (WI-K360, 2026-09-20): the corpus the page fetches lives there; the index stays beside this script
+SITE = os.path.normpath(os.path.join(HERE, "..", "site", "right-to-die"))
 
 
 def fail(msg):
@@ -148,7 +151,7 @@ def serialize(payload):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("root", nargs="?", default=".")
+    ap.add_argument("root", nargs="?", default=SITE)
     ap.add_argument("--out", default=None)
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
@@ -163,7 +166,7 @@ def main():
         sys.stderr.write("OK check: %d objections, %d bytes, deterministic\n"
                          % (len(payload["objections"]), len(blob.encode())))
         return
-    out = a.out or os.path.join(a.root, OUT_NAME)
+    out = a.out or os.path.join(HERE, OUT_NAME)
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         f.write(blob)
     sys.stderr.write("wrote %s  objections=%d  bytes=%d  schema_version=%d\n"

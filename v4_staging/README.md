@@ -1,5 +1,7 @@
 # v4_staging — flagship v4.0 intake (STAGED, not live)
 
+**Unruled, unserved, not canon (WI-K360, 2026-09-20).** Nothing in this folder has been ruled on by the operator; it is working material. Since WI-K360 the Pages output directory is `site/`, so nothing here is served at `library.wuld.ink` -- it is readable only in the repository. The canon is the `project_canon_v38_*.json` at the repo root and the served flagship is `site/combined.html`; a file here binds neither.
+
 Landing zone for flagship v4.0 seed payloads: authored + cold-graded by library-Claude (in-chat Max), folded repo-side by Cowork, pending bundle assembly.
 
 **Contract.** Nothing in this directory is live, pinned, rendered, or canonical. The flagship v3.8 corpus and every deployed surface are FROZEN with respect to these files. Bundle assembly — a future deliberate pin-move session, Cowork end-to-end — consumes this directory and executes the deferred delta sets in the node spec and audit verdict; until then these files are inert. GitHub Pages serves them raw at `library.wuld.ink/v4_staging/*` — unlinked and unindexed (the same class as pre-surface wing exports). Seed files land byte-exact as authored; Cowork never edits payload content. Grades regenerate from the stored tuples at fold time, never copied forward.

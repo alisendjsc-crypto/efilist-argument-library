@@ -8,7 +8,7 @@ construction. Precedent: abortion_validator_v0_1.py.
 
 Usage:
     python3 veganism_validator_v0_1.py [module.json] [ledger.json]
-        (defaults: veganism_module_v0_1.json + veganism_grading_ledger.json, co-located)
+        (defaults: veganism_module_v0_1.json + veganism_grading_ledger.json in ../site/veganism, the served wing)
     python3 veganism_validator_v0_1.py --self-test
 
 Output: JSON verdict on stdout; exit 0 on PASS, 1 on FAIL.
@@ -18,6 +18,9 @@ import hashlib
 import json
 import os
 import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SITE = os.path.normpath(os.path.join(HERE, "..", "site", "veganism"))  # the served wing (WI-K360, 2026-09-20)
 
 BAND_THRESHOLDS = [("A", 0.88), ("B", 0.82), ("C", 0.76), ("D", 0.0)]
 DEPTH_MODIFIERS = {"medium": {"c": -0.05, "r": -0.03}, "short": {"c": -0.12, "r": -0.06}}
@@ -265,8 +268,8 @@ def main(argv):
         print(json.dumps(out, indent=2))
         return 0 if out["_overall_pass"] else 1
     args = [a for a in argv if not a.startswith("--")]
-    mod_path = args[0] if len(args) > 0 else "veganism_module_v0_1.json"
-    led_path = args[1] if len(args) > 1 else "veganism_grading_ledger.json"
+    mod_path = args[0] if len(args) > 0 else os.path.join(SITE, "veganism_module_v0_1.json")
+    led_path = args[1] if len(args) > 1 else os.path.join(SITE, "veganism_grading_ledger.json")
     if not (os.path.exists(mod_path) and os.path.exists(led_path)):
         print("ERROR: module/ledger not found (%s / %s); pass paths or run co-located, or --self-test."
               % (mod_path, led_path), file=sys.stderr)

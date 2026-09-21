@@ -34,7 +34,7 @@ mutations (regrade vs re-author).
 Usage:  python3 anthropocentrism_ledger_validator_v0_2.py [path-to-ledger.json]
 Exit 0 = PASS, non-zero = FAIL.
 """
-import json, sys
+import json, os, sys
 
 MODS = {"long": (0.0, 0.0), "medium": (-0.05, -0.03), "short": (-0.12, -0.06)}
 DEPTHS = ("short", "medium", "long")
@@ -61,7 +61,8 @@ def band(gm):
 
 
 def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else "anthropocentrism_grading_ledger.json"
+    path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", "site", "anthropocentrism", "anthropocentrism_grading_ledger.json")  # the served wing (WI-K360)
     d = json.load(open(path))
     fails = []
 

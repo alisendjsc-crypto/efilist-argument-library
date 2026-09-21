@@ -45,6 +45,7 @@ Usage:
 import sys, os, json, re, importlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+SITE = os.path.normpath(os.path.join(HERE, "..", "site", "transgenderism"))  # the served wing (WI-K360, 2026-09-20)
 CANON_THRESHOLDS = {"A": 0.88, "B": 0.82, "C": 0.76, "D": 0.0}
 RWE_POLARITY_VALUES = {"response-supporting", "objector-weaponized", "neutral-illustration", "contested"}
 RWE_SUBJECT_TYPES = {"real-person", "structural", "category"}
@@ -476,11 +477,11 @@ def run_synthetic_tests():
 def run_live_test():
     out = {"_overall_pass": True}
     try:
-        corpus = json.load(open(os.path.join(HERE, "transgenderism_corpus_v0_1.json"), encoding="utf-8"))
+        corpus = json.load(open(os.path.join(SITE, "transgenderism_corpus_v0_1.json"), encoding="utf-8"))
     except Exception as e:
         return {"_overall_pass": False, "error": "cannot load seed corpus: %r" % e}
     ledger = {}
-    lp = os.path.join(HERE, "transgenderism_grading_ledger.json")
+    lp = os.path.join(SITE, "transgenderism_grading_ledger.json")
     if os.path.exists(lp):
         try:
             ledger = json.load(open(lp, encoding="utf-8"))
