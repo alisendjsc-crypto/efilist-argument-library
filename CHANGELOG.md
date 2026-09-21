@@ -20,6 +20,31 @@ The served tree moved into **`site/`** (wuld-ink WI-K360). The flagship, the win
 
 ---
 
+## [v4.1.2] — 2026-09-18
+
+**PATCH** by the invariants convention; **no corpus byte on any surface** — the cross-surface gate (`tools/xsurface_v4_1_0.py`) reads `6cd132ee5b8c7ca78ad0e095806f1c93` before and after, and the corpus `version` stays `4.1.0`. Flagship-only repairs to the note and confidence layer (K354): the `[NOTE]` control lifted out of `if (conf !== 'full')` so its condition equals its container's — nine containers, nine controls — making 195 words readable that no reader could open, on a card the Adversarial Map's reader surface had just started pointing readers at; `full` renders as full and the silent `|| 'full'` upgrade of 64 never-graded objections is deleted, so absence now means ungraded; the unlabelled 70 % provisional-opacity band removed, rule and class; eleven 5-digit hex literals over six declarations repaired. The canon records it at `session_log_recent` (`K354_note_and_confidence`) and `keyset_delta_ledger.v38_16_K354`.
+
+**This entry and v4.1.1's were written on 2026-09-20, two days after the moves.** Neither pin move touched this file, the README's pin table or the front door's badge; the canon carried the record alone. Same class as v4.0.5's gap above, recorded rather than hidden.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.1.0 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` | 2,982,770 |
+| superseded — v4.1.1 | `f095c0ce0e5a1d796d57fa5a5dd62f7d` | 2,985,989 |
+| **current — v4.1.2** | **`006aa9833f7a8b103ad27a289ab22fa9`** | **2,987,411** |
+
+---
+
+## [v4.1.1] — 2026-09-18
+
+**PATCH** by the invariants convention; **no corpus byte** — corpus `04bf6482aa0374ee92a81c1d55ec41f8` and JSX `b196548b6eb39065842d62292acca89f` unmoved git-to-git, the cross-surface gate identical at `6cd132ee5b8c7ca78ad0e095806f1c93` before and after. The level-independent affordance (K352): a per-card `[DISMANTLE]` control rendered at every response level, the anchor grammar extended to `#obj-<id>@<depth>` (append-only; `@` is outside the id vocabulary), and COPY LINK emitting that suffix so the grammar ships with a producer. Twelve line-indexed edits, reconstructed against the git base byte for byte; 28 functional checks in real Chromium with the pinned base run as a null. The canon records it at `session_log_recent` (`K352_the_affordance`).
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.1.0 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` | 2,982,770 |
+| **current — v4.1.1** | **`f095c0ce0e5a1d796d57fa5a5dd62f7d`** | **2,985,989** |
+
+---
+
 ## [v4.1.0] — 2026-09-17
 
 **PATCH by the invariants convention at the top of this file; MINOR by the canon version-class ruling that set the number.** The two conventions are keyed on different things and this is the first release where they disagree, because it is the first release to advance corpus **content** without moving a single count. The invariants subtree is byte-identical, so the rule at the top of this file reads PATCH. Canon's `post_terminal_policy` keys the number on enrichment-versus-intake, and enrichment of existing nodes is MINOR, which is why the queue's `version_class_ruling` set `v4.1.0` rather than `v4.0.6`. Recorded here rather than resolved: both rules are doing their own job correctly.
