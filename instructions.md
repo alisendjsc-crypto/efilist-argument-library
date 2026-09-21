@@ -9,8 +9,8 @@ A short utility guide. The README is the door; this file is the room. **Current 
 The whole library is one file: **`combined.html`**. You can use it three ways without cloning the repo:
 
 - **Live:** [`library.wuld.ink`](https://library.wuld.ink) — the deployed single-file build.
-- **Raw proxy (repo, no clone):** `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/combined.html`.
-- **Offline:** download `combined.html`, open it in any modern browser — no server, no build step.
+- **Raw proxy (repo, no clone):** `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/site/combined.html`.
+- **Offline:** download `site/combined.html`, open it in any modern browser — no server, no build step.
 
 Three surfaces live behind an outer hash router:
 

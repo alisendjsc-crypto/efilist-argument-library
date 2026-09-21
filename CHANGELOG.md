@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## Repository structure — 2026-09-20 (no release; the pin stands)
+
+The served tree moved into **`site/`** (wuld-ink WI-K360). The flagship, the wings' pages and what they fetch at runtime, the umbrella front door, the presentation layer, `_headers` and `_redirects` — 52 files by `git mv`, every blob sha identical — and Cloudflare Pages now builds from `site/`, so the canon, the tooling, the staging folders and the records at the repository root are no longer served at `library.wuld.ink`. **No served byte changed:** `/combined` read `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B before and after. The flagship's path in this repository is `site/combined.html` from here on; a pin move edits it there.
+
+---
+
 ## [v4.1.0] — 2026-09-17
 
 **PATCH by the invariants convention at the top of this file; MINOR by the canon version-class ruling that set the number.** The two conventions are keyed on different things and this is the first release where they disagree, because it is the first release to advance corpus **content** without moving a single count. The invariants subtree is byte-identical, so the rule at the top of this file reads PATCH. Canon's `post_terminal_policy` keys the number on enrichment-versus-intake, and enrichment of existing nodes is MINOR, which is why the queue's `version_class_ruling` set `v4.1.0` rather than `v4.0.6`. Recorded here rather than resolved: both rules are doing their own job correctly.

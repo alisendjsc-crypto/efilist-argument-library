@@ -16,8 +16,8 @@ The flagship is one self-contained HTML file. You do not have to clone or downlo
   - **library** — the taxonomy, with four views: the card list, the mechanism web, the dependency graph and the argument-flow map
   - **examples** — the 136 attested real-world deployments
   - **coda** — the closing artifact on the load-bearing axiom
-- **From this repo, no clone:** open `combined.html` through a raw HTML proxy — e.g. `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/combined.html`. (The file is ~2.9 MB; small-file preview proxies may choke — `raw.githack` handles it.)
-- **Offline:** download `combined.html` and open it directly in any modern browser. No build step, no server. The *content* is all in the file; the presentation layer described below is linked from the site (`/wuld-layer.css`, `/wuld-layer.js`, `/sfx/`) and does not travel with it, so offline you get the library without the frame, the sound, the tours and the feedback control.
+- **From this repo, no clone:** open `site/combined.html` through a raw HTML proxy — e.g. `https://raw.githack.com/alisendjsc-crypto/efilist-argument-library/main/site/combined.html`. (The file is ~2.9 MB; small-file preview proxies may choke — `raw.githack` handles it.)
+- **Offline:** download `site/combined.html` and open it directly in any modern browser. No build step, no server. The *content* is all in the file; the presentation layer described below is linked from the site (`/wuld-layer.css`, `/wuld-layer.js`, `/sfx/`) and does not travel with it, so offline you get the library without the frame, the sound, the tours and the feedback control.
 
 > The flagship carries per-objection deep links (a copy-link on each card; `…/combined#obj-<id>`), and each suite wing carries its own (`…/<wing>/combined#obj-<id>`).
 
@@ -53,7 +53,7 @@ A wing — Veganism, one of six surfaces that share the layer and the reading mo
 
 ![The Veganism wing](screenshots/wing-veganism.png)
 
-Further screens are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md). A standalone `rwe.html` packages the real-world-examples surface for direct viewing or downstream tooling.
+Further screens are in [`screenshots/`](screenshots/) and walked through in [`instructions.md`](instructions.md). A standalone `site/rwe.html` packages the real-world-examples surface for direct viewing or downstream tooling.
 
 ---
 
@@ -75,13 +75,13 @@ Since September 2026 every surface — the flagship, the five wings and the umbr
 
 ## The deliverable
 
-The shippable artifact is a single file: **`combined.html`**. Library, real-world-examples table, and coda are absorbed into it behind the top-nav router. No build step.
+The shippable artifact is a single file: **`site/combined.html`**. Library, real-world-examples table, and coda are absorbed into it behind the top-nav router. No build step.
 
 **Verbatim-artifact provenance (the integrity contract):**
 
 | Field | Value |
 |---|---|
-| File | `combined.html` |
+| File | `site/combined.html` |
 | Version (pin) | `v4.1.0` |
 | md5 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` |
 | Size | `2,982,770` bytes |
@@ -131,12 +131,13 @@ The regenerable sources behind the single file — the authoritative corpus JSON
 
 ## Repository structure
 
-- **`combined.html`** + **`_redirects`** + **`_headers`** — the served flagship, its routing (`/` → `/libraries/`; `/combined` serves the flagship) and the cache rule that makes the layer files revalidate on every load. The pinned artifact.
-- **`wuld-layer.css`** · **`wuld-layer.js`** · **`sfx/`** — the shared presentation layer, linked by every surface.
-- **`efilist_argument_library_v4_0_0.json`** (corpus) · **`efilist_argument_library_v4_0_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** — the regenerable flagship sources + tooling.
+Since 2026-09-20 the served tree and the working tree are separate: Cloudflare Pages builds from **`site/`**, and nothing outside it is served. No served byte moved with the split — `/combined` read the same md5 before and after.
+
+- **`site/`** — the Pages output. **`site/combined.html`** (the pinned flagship) + **`_redirects`** + **`_headers`** (the routing — `/` → `/libraries/`, `/combined` serves the flagship — and the cache rule that makes the layer files revalidate on every load); **`wuld-layer.css`** · **`wuld-layer.js`** · **`site/sfx/`** (the shared presentation layer, linked by every surface); **`site/libraries/`** (the umbrella front door served at `/libraries`); **`flagship-layman-index.json`** (the flagship's plain-language mirror, fetched by the page); **`site/adversarial/`**, **`site/troubleshooting/`**, **`rwe.html`** and the icons. Each wing's served set sits under **`site/<wing>/`** — its `combined.html` and the corpus, grading ledger and layman index the page fetches at runtime.
+- **`efilist_argument_library_v4_0_0.json`** (corpus) · **`efilist_argument_library_v4_0_0.jsx`** (denormalized sibling) · **`rebuttal_grading_ledger.json`** · **`objections-index.json`** (generated export) · **`real_world_examples_schema_v1_7.json`** · **`build_objections_index.py`** · **`layman_index_validator_v0_*.py`** — the regenerable flagship sources, tooling and validators, at the root and no longer served.
 - **`refusal_suite_charter_v0_1.md`** — the shared charter governing every library in the suite.
-- **`right-to-die/`** · **`abortion/`** · **`transgenderism/`** · **`anthropocentrism/`** — the four suite wings, each a self-contained set (corpus · grading ledger · objection index · `combined.html` · validator · builder · plain-language layman index). **`veganism/`** — the flagship-adjacent module (same set; a positive case, not an optionality wing). **`libraries/`** — the umbrella front door served at `/libraries`; **`flagship-layman-index.json`** + **`layman_index_validator_v0_*.py`** — the flagship plain-language mirror and its validators.
-- **`screenshots/`** — README imagery, captured from the deployed bytes at 1440×900. **`project_canon_v38_12.json`** — the current canon record.
+- **`right-to-die/`** · **`abortion/`** · **`transgenderism/`** · **`anthropocentrism/`** — the four suite wings' working sets (objection index · RWE schema · validator · builder); **`veganism/`** — the flagship-adjacent module's (a positive case, not an optionality wing). The pages they build live under `site/`.
+- **`project_canon_v38_16.json`** — the current canon record. **`tools/`** — the gates and builders, one set per session. **`adversarial_map_staging/`** · **`v4_staging/`** — staging: unruled, unserved, not canon. **`screenshots/`** — README imagery, captured from the deployed bytes at 1440×900.
 - **`archive/`** — historical session-state, canon-snapshot, variant, and audit records, retained for posterity (not part of the live build).
 
 ---
