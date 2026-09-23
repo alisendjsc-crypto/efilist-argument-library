@@ -6,8 +6,8 @@ type: software
 authors:
   - family-names: "Cooper"
     given-names: "Josiah S."
-version: "3.8.3"
-date-released: "2026-05-30"
+version: "4.1.2"
+date-released: "2026-09-18"
 repository-code: "https://github.com/alisendjsc-crypto/efilist-argument-library"
 url: "https://library.wuld.ink"
 license: CC-BY-4.0

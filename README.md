@@ -159,9 +159,9 @@ A `CITATION.cff` (CFF 1.2.0) is provided at repository root and enables GitHub's
   title   = {efilist argument library},
   author  = {Cooper, Josiah S.},
   year    = {2026},
-  version = {4.0.2},
+  version = {4.1.2},
   url     = {https://github.com/alisendjsc-crypto/efilist-argument-library},
-  note    = {Stable release, v4.0 line; flagship of the Refusal Suite}
+  note    = {Stable release, v4.1 line; flagship of the Refusal Suite}
 }
 ```
 
