@@ -29,6 +29,12 @@ def scratch():
     for f in os.listdir(REPO):
         if f == "efilist_argument_library_v4_0_0.json" or re.match(r"project_canon_v38_\d+\.json$", f):
             shutil.copy2(os.path.join(REPO, f), os.path.join(d, f))
+    # L4c: R1_rulings.json is append-only, and the builders pin it at 3f1dfad5; stage those bytes, so a
+    # later row cannot turn an unmutated control RED. pinned.py reads them from git if the file grew.
+    sys.path.insert(0, os.path.join(REPO, STAGE, "r1"))
+    import pinned
+    open(os.path.join(d, STAGE, "r1", "R1_rulings.json"), "wb").write(
+        pinned.bytes_at(REPO, STAGE + "/r1/R1_rulings.json", "3f1dfad54021d7920576c7bd4840b62f"))
     return d
 
 
