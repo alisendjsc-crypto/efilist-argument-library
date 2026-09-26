@@ -1,0 +1,178 @@
+{
+ "artifact": "r1_v1_5_judgments_gate_control_v0_2.json",
+ "gate": "adversarial_map_staging/r1/r1_v1_5_judgments_gate.py",
+ "gate_md5": "f5a732f4b87cb5910d549eaa7fd59ae4",
+ "judgments_md5": "291e80fd27b4a8928129daca52929bd8",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its own failure line; C12, a proper correction row, must stay GREEN; C13 and C15, an append-only record grown by an appended row, must stay GREEN, and C14, a committed rulings row edited in place, must go RED.",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "a redraft goes unjudged",
+   "expected_rc": 1,
+   "expected_message": "redrafts not judged",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "coverage: redrafts not judged: redraft #14"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "a knocked-on HOLDS goes unread",
+   "expected_rc": 1,
+   "expected_message": "knocked-on HOLDS not judged",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "coverage: knocked-on HOLDS not judged: knock-on #3"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "a redraft judged twice, no supersedes",
+   "expected_rc": 1,
+   "expected_message": "judged twice without superseding",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-025: redraft #14 judged twice without superseding V-001"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "a knock-on verdict reads MAYBE",
+   "expected_rc": 1,
+   "expected_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-011: verdict 'MAYBE' is not one of STANDS/REOPENS"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "a REOPENS carries no lean",
+   "expected_rc": 1,
+   "expected_message": "REOPENS without its lean",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-011: REOPENS without its lean"
+   ]
+  },
+  {
+   "control": "C6",
+   "mutation": "an AMEND owes nothing",
+   "expected_rc": 1,
+   "expected_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-001: AMEND without saying what is owed"
+   ]
+  },
+  {
+   "control": "C7",
+   "mutation": "a register row misquotes its delta",
+   "expected_rc": 1,
+   "expected_message": "declared delta",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-007: delta 'J-052: the K349 pair re-declared as HR-11 conditio' is not register v0_6's declared delta 0"
+   ]
+  },
+  {
+   "control": "C8",
+   "mutation": "a quoted span is not declared",
+   "expected_rc": 1,
+   "expected_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-001: undeclared quotation 'an undeclared span'"
+   ]
+  },
+  {
+   "control": "C9",
+   "mutation": "a declared quote is one character off",
+   "expected_rc": 1,
+   "expected_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "V-001: undeclared quotation 'A suffering-first view does not just decline to create the s'",
+    "V-001: quote 1 NOT VERBATIM at v1_5:ai-fear#short: 'A suffering-first view does not just decline to create the successor; it prefers'"
+   ]
+  },
+  {
+   "control": "C10",
+   "mutation": "map v1_5 moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "pin map_v1_5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin map_v1_5: adversarial_map_staging/adversarial_map_v1_5.json is a64305452f43b301ba36cdaa15c2a4a8, header names 0df413ed655a5373468c218832854bbe"
+   ]
+  },
+  {
+   "control": "C11",
+   "mutation": "a committed row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "append-only: committed row V-001 was edited or removed"
+   ]
+  },
+  {
+   "control": "C12",
+   "mutation": "a correction row supersedes properly",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C13",
+   "mutation": "the rulings file grows by one appended row",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C14",
+   "mutation": "a committed rulings row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "not merely grown by appended rows",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin rulings: adversarial_map_staging/r1/R1_rulings.json is 29289a926c573114260d81a5427c48e2, header names 3f1dfad54021d7920576c7bd4840b62f, and it has not merely grown by appended rows"
+   ]
+  },
+  {
+   "control": "C15",
+   "mutation": "the first judgment record grows by one row",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "artifact": "R1_v1_6_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's third judgment: #46's (d) in v1_6, register v0_7's delta, the knock-on measure, PQ-17 and the pin session's declaration. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's 'quotes' and is verbatim at its source, each source read at the md5 this header pins. Gate: r1_v1_6_judgments_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the redraft, delta or queue row does what its ruled basis asks, and may ship in that form once he gives his word and its carries are met",
+  "AMEND": "the disposition stands, but a named defect is owed a correction, made by a drafting seat and judged by one that did not make it",
+  "REJECT": "the disposition is wrong; it returns to a drafting seat",
+  "CONFIRM": "the measure or record is right as made",
+  "CORRECT": "the measure or record is wrong, and what is owed is named"
+ },
+ "his_word": [
+  {
+   "verbatim": "Proceed with all of your recommendations.",
+   "to": "the L4 session, in chat",
+   "answered": "the lean to re-rule #46 FAILS, then draft a (d) at HR-14 (R0142, V-017)",
+   "recorded": "R1-070 in R1_rulings.json; efilist 46b6f65"
+  },
+  {
+   "verbatim": "Go with your recommendation on the pin session.",
+   "to": "gate2, in chat",
+   "answered": "gate2's recommendation to declare the pin session once PQ-17 is queued, so one session makes all 17 fixes",
+   "recorded": "R0150; canon adversarial_map.pin_move_queue_v1_6.declared"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0151",
+  "md5": "45459ed3787b4c5c0d656bd09fce9a9a"
+ },
+ "judged": {
+  "map_v1_6": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "map_v1_5": {
+   "file": "adversarial_map_staging/adversarial_map_v1_5.json",
+   "md5": "0df413ed655a5373468c218832854bbe"
+  },
+  "redrafts": {
+   "file": "adversarial_map_staging/r1/R1_redrafts_v1_6.json",
+   "md5": "611f0f00631119938f98c03e82a10d2d"
+  },
+  "register_v0_7": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_7.json",
+   "md5": "bcbff23113f3fb0135d5fd5b3e2630d5"
+  },
+  "register_v0_6": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_6.json",
+   "md5": "0689f46f18a4dbe8d40c9982a2ad06f9"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "judgments_v1_5": {
+   "file": "adversarial_map_staging/r1/R1_v1_5_judgments.json",
+   "md5": "291e80fd27b4a8928129daca52929bd8"
+  },
+  "knock_on": {
+   "file": "adversarial_map_staging/r1/l4c_knock_on_v0_1.json",
+   "md5": "32a475c31292a7d4cfe77757ec7d2178"
+  },
+  "canon": {
+   "file": "project_canon_v38_28.json",
+   "md5": "d9d0c23a9e47bd1cc38f69a378c2198f"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/r1_v1_6_reading.py",
+  "record": "adversarial_map_staging/r1/r1_v1_6_reading_v0_1.json",
+  "md5": "1f3f3a85c7def4f2e2b18982dbe0a8f8",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "W-001",
+   "kind": "redraft",
+   "n": 46,
+   "answers": "V-017",
+   "disposition": "a_to_d",
+   "verdict": "ACCEPT",
+   "reason": "Only the class, grounds and routing moved: entry 75's move, anchor and status are v1_5's (measured). The move still presses what R1-070 found unanswered, \"The recoil still has an object you have not removed\", and its last clause opens the third horn, \"where existence carries real weight without overriding content\". Ending those lives then needs a positive case against beings who exist, and that is what the node's sophisticate slot holds open: \"whether an independent positive case for the cessation of some existing being stands is held open\". So the card's own continuation reaches the bedrock it names, which is the first judgment's law for a (d). HR-02, the alternative V-017 named, was tested and fails on the register's own text. HR-02 is the \"Asymmetry-contingency of the positive-states cluster\", and its three tributaries on this node end at the tie the medium slot registers, where existence is staked as a terminal value (\"Existence as terminal value is staked, not smuggled\"); that is the horn this move declines. The asymmetry does not reach the lives the button ends, as #45's own grounds say (\"does not reach the existing beings the button ends\"), and HR-14's gloss names them (\"a positive case against beings who already exist\"). The bedrock name is the sophisticate (d)'s, character for character, and the grounds' three quotes are verbatim.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "v1_6:red-button-repugnant#archetypeVariants.defender",
+     "quote": "The recoil still has an object you have not removed"
+    },
+    {
+     "src": "v1_6:red-button-repugnant#archetypeVariants.defender",
+     "quote": "where existence carries real weight without overriding content"
+    },
+    {
+     "src": "v1_6:red-button-repugnant#archetypeVariants.sophisticate",
+     "quote": "whether an independent positive case for the cessation of some existing being stands is held open"
+    },
+    {
+     "src": "register_v0_7:HR-02",
+     "quote": "Asymmetry-contingency of the positive-states cluster"
+    },
+    {
+     "src": "v1_6:red-button-repugnant#medium",
+     "quote": "Existence as terminal value is staked, not smuggled"
+    },
+    {
+     "src": "v1_6:red-button-repugnant#long",
+     "quote": "does not reach the existing beings the button ends"
+    },
+    {
+     "src": "register_v0_7:HR-14",
+     "quote": "a positive case against beings who already exist"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-002",
+   "kind": "register",
+   "delta_index": 0,
+   "delta": "#46 (red-button-repugnant, defender slot), re-ruled FAILS on Josiah's word (R1-070, on gate2's V-017), joins HR-14 on the terminus-held-open facet, beside the node's own sophisticate slot",
+   "verdict": "ACCEPT",
+   "reason": "Measured: v0_7 is v0_6 plus exactly one tributary, #46 on HR-14's terminus-held-open facet, with HR-14's count moved from 11 to 12 and the audit unchanged. The tributary carries v1_6's terminus_routing and novel flag. No relation is owed: HR-14 already shares this node with HR-02 and is declared independent of it.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-003",
+   "kind": "measure",
+   "measure": "knock_on",
+   "claim": {
+    "holds_newly_collided": [],
+    "a_entries_left_in_v1_6": 29
+   },
+   "verdict": "CONFIRM",
+   "reason": "Reproduced without the instrument: none of v1_6's 29 (a) entries sits on red-button-repugnant or routes an answer to it, so #46's new (d) meets no (a). The 29 carry 23 HOLDS and 6 FAILS, the six waiting on corpus repairs. The instrument's positive control passes: a probe (a) routed to red-button-repugnant#long gains exactly #46's (d).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-004",
+   "kind": "queue_row",
+   "row_id": "PQ-17",
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "AMEND",
+   "reason": "The row names the right slot and serves the right entry. The drafter's disclosed correction, from #5 to #4 with no (b) at the slot, is right, because #4's R1-024 made the concession. But the row names one sentence, and R1-024's concession is about the next one: \"The move shows the slot's lone-actor analogy misfits the founders.\" The analogy is the sentence that follows the named one in the slot: \"Just as one violent actor does not represent environmentalism, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license.\" A pin session keyed on the named sentence alone would repair the framing and leave the conceded analogy standing. Measured: both sentences occur once on each of the three surfaces.",
+   "owed": [
+    "The pin session, a drafting seat, names both sentences in the queue in its first canon bump: the 'grabbed, not produced' sentence and the lone-actor analogy after it. v38.28's block stays as written.",
+    "The analogy sentence carries #4's own map anchor (\"an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license\"), which V-012 read as limiting the HOLDS to layer one. The repair keeps that clause's claim, or #4 is re-judged against the repaired text; either way #4 goes on the pin session's knock-on list."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "rulings:R1-024",
+     "quote": "The move shows the slot's lone-actor analogy misfits the founders."
+    },
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.defender",
+     "quote": "Just as one violent actor does not represent environmentalism, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license."
+    },
+    {
+     "src": "v1_6:why-not-suicide#archetypeVariants.defender",
+     "quote": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-005",
+   "kind": "declaration",
+   "at": "adversarial_map.pin_move_queue_v1_6.declared",
+   "verdict": "CONFIRM",
+   "reason": "His words to gate2 are recorded verbatim, \"Go with your recommendation on the pin session.\", beside gate2's recommendation as R0150 quotes it, and the block names R0150 by id and full md5. His words to the L4 session, \"open it when the window is clear\", are recorded as that session reports them; gate2 cannot check a chat it was not in. The block's plan is R0150's: one session for all 17 rows, launched by gate2 once this judgment lands, and no second launch by the L4 session.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.pin_move_queue_v1_6.declared",
+     "quote": "Go with your recommendation on the pin session."
+    },
+    {
+     "src": "canon:adversarial_map.pin_move_queue_v1_6.declared",
+     "quote": "open it when the window is clear"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-006",
+   "kind": "finding",
+   "title": "the disposition judged was gate2's own lean",
+   "finding": "#46's (d) at HR-14 is the lean gate2 gave at V-017, so this judgment tested gate2's own recommendation, and the pull toward accepting it was real. W-001 answers the pull by testing, not by lean: HR-02, the alternative V-017 itself named, fails on the register's own text. One residual is structural. The move's third horn gives existence a pro tanto weight, which is itself an axiological stake. HR-02 has an intrinsic-value-of-existence facet, but its gloss scopes the bedrock to the positive-states rebuttals' reliance on the asymmetry, and every tributary of that facet on this node ends at the terminal-value stake. So a pro tanto stake about lives that exist has no bedrock of its own, and HR-14 is where the weighing it forces lands.",
+   "recommendation": "No change now. If a later pass finds that pro tanto stake doing work at other nodes, register it then rather than stretch HR-02 to hold it.",
+   "whose": "gate2, for the record; Josiah if the residual ever needs a ruling",
+   "entries": [
+    46
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-007",
+   "kind": "finding",
+   "title": "a repair moves every anchor inside its sentence",
+   "finding": "R0150 asks the pin session to list every HOLDS whose answer routes to a repaired locus. A repair also removes every map anchor that lies inside the repaired sentence, whatever the entry's class, and #4's anchor lies inside the analogy sentence W-004 adds. After the pin such an entry's target_anchor no longer occurs in the corpus. Once the instruments read the pinned corpus (R0150's phase 1) nothing goes RED, because the maps stay pinned to corpus 04bf6482 under the frozen-map law, but a successor map must re-anchor them.",
+   "recommendation": "The pin session's knock-on list also carries every entry, of any class, whose target_anchor lies inside a repaired sentence, with the anchor beside the replacement; the successor map re-anchors them.",
+   "whose": "seat l (the pin session)",
+   "entries": [
+    4
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "W-008",
+   "kind": "finding",
+   "title": "the drafter's two disclosures, checked",
+   "finding": "PQ-17's correction before the commit is right: #4's R1-024 made the concession, and the slot has no (b), so the row can neither serve #5 nor name a (b); #5's (b) is at the drifter slot, PQ-08. The re-aimed control R1 is sound: #46's tributary is derived from the map by design, so a mutation there cannot open a gap between map and register. A moved inherited (d) can, and that gap is what the register's cross-check exists to catch; the control now expects that failure and gets it.",
+   "recommendation": "None.",
+   "whose": "the L4 session",
+   "entries": [
+    4,
+    46
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in v1_6, the redrafts file, register v0_7 or the queue",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}

@@ -14,6 +14,24 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## #46's new card judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the drafting seat's new card for the red-button defender entry (#46). The card now says the argument ends at an open question, whether any positive case for ending lives that already exist can be made, and the judgment accepts it: the objection's own last step leads there, and the other candidate, the creation asymmetry, does not reach lives that already exist. The register change and the check that no other answered entry is affected are confirmed. One correction is owed on the pin queue: its 17th row names one sentence of the why-not-suicide defender slot, but the concession was about the next one, the lone-actor analogy, so the pin session repairs both. Before any page changes, the three gates that check the judgments now read the corpus as it was when each judgment was made, tested against an edited copy of the corpus. The record is `adversarial_map_staging/r1/R1_v1_6_judgments.json`. Canon `project_canon_v38_29.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## #46 given its new class — 2026-09-26 (no release; the pin stands)
+
+The red-button defender entry (#46), re-ruled on Josiah's word, is drafted as a "where this line terminates" entry. Its line ends at registered bedrock HR-14, where the same node's sophisticate slot already holds open whether a positive case against existing beings stands. The draft is a new map, `adversarial_map_staging/adversarial_map_v1_6.json` (the previous map stays byte-identical), and register `honest_residuals_register_v0_7.json` adds the entry to HR-14. No other entry moved, and no entry that still holds meets anything new, because every entry on that node is now a terminus entry. Josiah's list of corpus sentences to repair gains one, the "grabbed, not produced" sentence on the why-not-suicide defender page, for 17 in all. He has declared the session that repairs them, to open once this draft is judged. His notes on the adversarial page (a favicon, a plain mode with short definitions, a methodology panel, a tutorial) and on a "for your agent" file are recorded in canon with their order. A seat that did not draft #46's entry judges it next. Canon `project_canon_v38_28.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## #46 re-ruled — 2026-09-26 (no release; the pin stands)
+
+On Josiah's word, *"Proceed with all of your recommendations."*, the red-button defender entry (#46) no longer holds. Its answer needed the long to show that the worth of the lives the button ends is outweighed, and the map now records at that very spot (#45's "where this line terminates" entry) that the long's case ends in a tie. The ruling is a new row, **R1-070**, in `adversarial_map_staging/r1/R1_rulings.json`; it replaces R1-011 without editing it, and R1 now stands at 23 holds and 46 fails over the same 69 entries. The two gates that check the judgments now read the rulings as they were when each judgment was made, so a row appended later cannot turn them red, or make a judgment look wrong for something that happened after it. The drafting seat gives #46 its new class next, and a seat that did not draft it judges that. Canon `project_canon_v38_27.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The fixes judged, and the entries they touched re-read — 2026-09-26 (no release; the pin stands)
 
 A session that wrote none of them has judged the six fixes Josiah's word called for. All six are accepted. #14's objection now reaches the bedrock its card names. #58 becomes a repair candidate, and the repair it needs rests on no disputed premise. Three cards' routing notes and one card's grounds say what they mean. The register's three changes are accepted too, including the corrected direction of the relation he ratified at K349, and so is the four-line change the drafting session made to the first judgment's gate. The eleven entries that held in R1, but now sit next to the new drafts, were read again. Ten still hold. One, #46, does not: a new record at the place its answer points to shows that the objection it had to empty still stands, so it goes back to Josiah with a recommendation to re-rule it. The record is **`adversarial_map_staging/r1/R1_v1_5_judgments.json`**, append-only, with every quotation checked and its own gate. **Judged is not ruled.** Canon `project_canon_v38_26.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
