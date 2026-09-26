@@ -14,6 +14,24 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The judgment ruled, and its fixes drafted — 2026-09-26 (no release; the pin stands)
+
+Josiah gave his word on the judgment of the 45 drafts: *"Go with the recommendations on all of the above and for Gate 2's seat. Continue with my word."* The fixes the judgment owed are a new file, **`adversarial_map_staging/adversarial_map_v1_5.json`**: #14's objection is finished so that it reaches the bedrock its card names; #58 becomes a repair candidate (the library has no answer yet to the fair-play form of the social-contract objection, and one is available without new premises); three cards' routing notes name the path their argument takes; one card's grounds name the passage they mean. The bedrock register follows as **`honest_residuals_register_v0_6`**, which also turns one ratified relation the right way round (HR-11 conditions HR-14). The list of site sentences to repair grows to 16, and it stays his to open. **The fixes are not judged yet:** a session that did not write them judges them next. Canon `project_canon_v38_25.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## The drafts judged — 2026-09-25 (no release; the pin stands)
+
+A session that wrote none of them has judged all 45 drafts. 43 are accepted as drafted. One is sent back for a fix: #14, whose shortened objection no longer reaches the bedrock its card names. One is rejected: #58, whose new answer meets only a weaker form of the objection, with the rest of the answer argued in the notes rather than in the library's text. The three new links between bedrocks are accepted, and nine findings go to whoever owns each, with a recommendation. The record is **`adversarial_map_staging/r1/R1_drafts_judgments.json`**. It is append-only and checked by `r1_judgments_gate.py`, whose controls go red on every tampering they test. Every quotation in it is checked against its source. **Judged is not ruled:** Josiah's word comes next, then a drafting seat builds the successor map. Canon `project_canon_v38_24.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## The drafting pass over R1's failures — 2026-09-25 (no release; the pin stands)
+
+All 45 of the Adversarial Map entries R1 failed now have a draft, under the standard Josiah adopted at L2. 35 become "where this line terminates" entries on bedrock the map already registers, 3 become repair candidates, 1 is sent to a locus that actually answers it, and 6 wait on corpus repairs that only a pin move can make; the 13 corpus sentences those repairs touch are listed for him in canon (`pin_move_queue_L4`). The drafts are a new file, **`adversarial_map_staging/adversarial_map_v1_4.json`**, built from the ruled map by `build_assembly_v1_4.py` and checked by 11 controls; the map R1 ruled, v1_3, is unchanged. The register of bedrocks follows as **`honest_residuals_register_v0_5`**: 35 new tributaries, no new bedrock. **The drafts are not judged:** a session that did not write them judges them next, and 11 entries that held can only ship after they are read against the drafts. Canon `project_canon_v38_23.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The collision list, widened — 2026-09-25 (no release; the pin stands)
 
 On Josiah's word the collision check now also looks at the other slots of the node an answer routes to, where L2 found contradictions hiding. **`r1_collision_list_v0_2.md`** (and `.json`) replaces v0_1 as the drafting pass's worklist; v0_1 is kept as it was committed. The widened check flags 41 of the 45 failed entries; the four it cannot reach (#22, #35, #40, #63) were found only by reading. Canon `project_canon_v38_22.json`, which also records a design lane (the argue game's sigils, for the library) running in parallel with the drafting pass. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.

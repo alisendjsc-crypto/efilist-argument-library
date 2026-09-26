@@ -1,0 +1,148 @@
+{
+  "artifact": "R1_redrafts_v1_5.json",
+  "state": "DRAFTED, NOT JUDGED. The fixes gate2's judgment owed, applied on Josiah's word to v1_4. A seat that did not draft them judges them (K258).",
+  "law": "Authored content, read by build_assembly_v1_5.py, which applies it to adversarial_map_v1_4.json and refuses on any entry the judgment does not name. v1_4 and the judgment record stay byte-identical.",
+  "his_word": {
+    "verbatim": "Go with the recommendations on all of the above and for Gate 2's seat. Continue with my word.",
+    "date": "2026-09-26 (America/Phoenix)",
+    "session": "L4, in chat",
+    "answered": "gate2's six asks in R0129 (canon adversarial_map.R1_drafts_judgment_gate2.for_his_word) and the leans in L4's close (R0123)"
+  },
+  "seat": "L4 (library seat, Code), continuing as the drafter under K258; judges nothing",
+  "redrafts": [
+    {
+      "n": 14,
+      "judgment_row": "J-012",
+      "kind": "amend_move",
+      "move_edit": {
+        "kind": "complete",
+        "completion": "A suffering-first view does not just decline to create the successor; it prefers the painless successor world, since ending sentience ends suffering.",
+        "completion_source": "R1-049's stronger continuation (R1-008's line), verbatim but for the capital A",
+        "why": "J-012: the trimmed move read prefer only as create and never reached the HR-14 facet its card names. The create-reading clause is kept, so the card shows the reading the asymmetry blocks and then the one it does not."
+      },
+      "grounds": "(d) on registered bedrock. Read as a mandate to create, the preference is blocked by the asymmetry; the move then presses the outcome reading, that a suffering-first view prefers the painless successor world, and the (d) at ai-fear's sophisticate slot records that \"the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-049). Terminus HR-14, successor-preference facet; not novel.",
+      "quotes": [
+        {
+          "src": "map:ai-fear#archetypeVariants.sophisticate",
+          "quote": "the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates"
+        }
+      ]
+    },
+    {
+      "n": 58,
+      "judgment_row": "J-037",
+      "kind": "reclass_to_b",
+      "move": "Recast implicit consent as fair-play: not consent to existence, which the node rightly denies, but obligations incurred by voluntarily accepting the benefits of social cooperation given that you exist. And exit is possible, from a society, by emigration or opting out. You draw on pensions, care and infrastructure that others' children will fund, in a scheme you could leave, so declining to supply its next members while drawing on them is free-riding.",
+      "move_source": "the first two sentences of the v1_3 move, then R1-052's cashing verbatim but for the capital Y; the v1_3 move's closing verdict sentence is dropped, since the grounds now carry it",
+      "regen_candidate": {
+        "axis_hit": [
+          "c",
+          "r"
+        ],
+        "severity": "headline"
+      },
+      "grounds": "(b), headline. No locus answers the move. The corpus nowhere discusses fair play or free-riding: the v1_3 route (why-not-suicide#long, consent-incoherent#long) answers the existence version the move sets aside (R1-052), and the L4 re-route to economy-population#long refuses only creating people \"whose primary justification for existence is to serve as care-labor\", which the free-rider charge does not ask for (J-037). Not (c): the move continues this node's own implicit-consent dialectic. Not (d): no bedrock premise is needed, because the charge is answerable in the node's own terms: a fair share is a share of the scheme's burdens, and the non-reproducer can bear it through taxes, care, reallocation and mutual aid without supplying members. The node never draws that line. Its best reading answers only consent to existence: \"the antinatalist objection is to existence itself, not to any particular society\" sets the society-level question aside and leaves it there. The repair is inside the node: after the exit point, grant fair-play obligations given existence and say they are paid in burdens, not in members. (a) withdrawn: R1-052 failed the v1_3 route and gate2 rejected the L4 re-route (J-037).",
+      "quotes": [
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "whose primary justification for existence is to serve as care-labor"
+        },
+        {
+          "src": "corpus:social-contract#long",
+          "quote": "the antinatalist objection is to existence itself, not to any particular society"
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "judgment_row": "J-020",
+      "kind": "terminus_routing",
+      "terminus_routing": "already-registered HR-06, birth certificate boonin-critique#short (Phase B2); reached through the creation leg of transhumanist-objection#long, where creation \"remains a non-consensual imposition of existence on someone who cannot be consulted\" once the engineering leaves no harm on the ledger; unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-057)",
+      "quotes": [
+        {
+          "src": "corpus:transhumanist-objection#long",
+          "quote": "remains a non-consensual imposition of existence on someone who cannot be consulted"
+        }
+      ]
+    },
+    {
+      "n": 59,
+      "judgment_row": "J-038",
+      "kind": "terminus_routing",
+      "terminus_routing": "already-registered HR-06, birth certificate boonin-critique#short (Phase B2); reached through the target's own reply, that \"the imposition of existence without consent is ethically impermissible regardless of the conditions\"; unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-053)",
+      "quotes": [
+        {
+          "src": "corpus:moral-progress#long",
+          "quote": "the imposition of existence without consent is ethically impermissible regardless of the conditions"
+        }
+      ]
+    },
+    {
+      "n": 62,
+      "judgment_row": "J-041",
+      "kind": "terminus_routing",
+      "terminus_routing": "already-registered HR-06, birth certificate boonin-critique#short (Phase B2); reached through the repair chain of the (b) at neuroscience-positive-states#long, whose honest re-grounding on risk-imposition \"presupposes bedrock-III\"; unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-047)",
+      "quotes": [
+        {
+          "src": "map:neuroscience-positive-states#long",
+          "quote": "presupposes bedrock-III"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "judgment_row": "J-014",
+      "kind": "grounds_wording",
+      "grounds": "(d) on registered bedrock. The action-level answer at why-not-suicide#long covers only the structural layer, while that long says the NU layer licenses red-button-style advocacy. The (d) at ai-fear's sophisticate slot registers the successor charge: \"the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-008). Terminus HR-14, successor-preference facet; not novel.",
+      "quotes": [
+        {
+          "src": "map:ai-fear#archetypeVariants.sophisticate",
+          "quote": "the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates"
+        }
+      ]
+    }
+  ],
+  "pin_move_queue_additions": [
+    {
+      "id": "PQ-14",
+      "serves": [
+        6
+      ],
+      "section": "passed_over_by_a_new_d",
+      "locus": "consent-both-ways#long",
+      "anchor": "Presumed consent is only valid when it prevents a greater harm",
+      "b_at": "consent-both-ways#long",
+      "b_anchor": "Presumed consent is only valid when it prevents a greater harm",
+      "repair_src": null,
+      "repair": "narrow the over-narrow restriction: presumed consent also licenses beneficial impositions, as the move says; the v1_3 (a) called the phrase excisable colour",
+      "note": "conceded by the map (J-004 carry; J-053), never filed as a (b); the new (d) at #6 does not wait on it"
+    },
+    {
+      "id": "PQ-15",
+      "serves": [
+        20
+      ],
+      "section": "passed_over_by_a_new_d",
+      "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+      "anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition",
+      "b_at": "violence-as-reductio#archetypeVariants.sophisticate",
+      "b_anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition",
+      "repair_src": null,
+      "repair": "the slot's consent sentence is conceded as defeated by the map (J-016 carry; J-053): the consent-asymmetry is creation-specific, so the sentence reads a creation principle as a general anti-imposition principle the corpus never defends",
+      "note": "the new (d) at #20 does not wait on it"
+    },
+    {
+      "id": "PQ-16",
+      "serves": [
+        58
+      ],
+      "section": "new_b_drafted_here",
+      "locus": "social-contract#long",
+      "anchor": "the antinatalist objection is to existence itself, not to any particular society",
+      "b_at": "social-contract#long",
+      "b_anchor": "the antinatalist objection is to existence itself, not to any particular society",
+      "repair_src": null,
+      "repair": "the (b) redrafted for #58: after the exit point, grant fair-play obligations given existence and say they are paid in burdens, not in members"
+    }
+  ]
+}

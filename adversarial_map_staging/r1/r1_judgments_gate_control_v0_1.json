@@ -1,0 +1,139 @@
+{
+ "artifact": "r1_judgments_gate_control_v0_1.json",
+ "gate": "adversarial_map_staging/r1/r1_judgments_gate.py",
+ "gate_md5": "a2a20f22d55b8474dd92bbb5b7e81182",
+ "judgments_md5": "fcfe31c7252b9cc49265214aaff09161",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its own failure line; C11, a proper correction row, must stay GREEN.",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "a draft goes unjudged",
+   "expected_rc": 1,
+   "expected_message": "drafts not judged",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "coverage: drafts not judged: #1"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "a draft judged twice, no supersedes",
+   "expected_rc": 1,
+   "expected_message": "judged twice without superseding",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-058: draft #1 judged twice without superseding J-001"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "a verdict reads MAYBE",
+   "expected_rc": 1,
+   "expected_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-001: verdict 'MAYBE' is not one of ACCEPT/AMEND/REJECT"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "an AMEND owes nothing",
+   "expected_rc": 1,
+   "expected_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-012: AMEND without saying what is owed"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "a draft row names the wrong R1 row",
+   "expected_rc": 1,
+   "expected_message": "r1_row",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-001: r1_row R1-999 != the draft's R1-004"
+   ]
+  },
+  {
+   "control": "C6",
+   "mutation": "a quoted span is not declared",
+   "expected_rc": 1,
+   "expected_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-001: undeclared quotation 'an undeclared span'"
+   ]
+  },
+  {
+   "control": "C7",
+   "mutation": "a declared quote is one character off",
+   "expected_rc": 1,
+   "expected_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-001: undeclared quotation 'produce evidence the motive was hostile from the start'",
+    "J-001: quote 1 NOT VERBATIM at map:just-depressed#long: 'produce evidence the motive was hostile from the star#'"
+   ]
+  },
+  {
+   "control": "C8",
+   "mutation": "the drafts file moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "pin drafts",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin drafts: adversarial_map_staging/r1/R1_drafts_L4.json is 226151d8b828caab56aeec356fca0be7, header names 57c890257c82fb641cd8c49c376d0fba"
+   ]
+  },
+  {
+   "control": "C9",
+   "mutation": "a relation names one the register lacks",
+   "expected_rc": 1,
+   "expected_message": "not stored in register",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "J-046: relation 'HR-01 conditions HR-02' is not stored in register v0_5",
+    "coverage: relations judged ['HR-01 conditions HR-02', 'HR-12 independent_of HR-10', 'HR-14 independent_of HR-05'], register v0_5's drafted relations ['HR-11 conditions HR-02', 'HR-12 independent_of HR-10', 'HR-14 independent_of HR-05']"
+   ]
+  },
+  {
+   "control": "C10",
+   "mutation": "a committed row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "append-only: committed row J-001 was edited or removed"
+   ]
+  },
+  {
+   "control": "C11",
+   "mutation": "a correction row supersedes properly",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  }
+ ]
+}

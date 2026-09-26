@@ -1,0 +1,68 @@
+{
+  "artifact": "assembly_control_v0_4.json",
+  "instrument": "adversarial_map_staging/controls_assembly_v1_4.py",
+  "builder": "adversarial_map_staging/build_assembly_v1_4.py",
+  "map": {
+    "file": "adversarial_map_staging/adversarial_map_v1_4.json",
+    "md5": "cb61db5cdade98234d69d222b372f515",
+    "bytes": 333184
+  },
+  "result": "11 of 11 controls as expected, the unmutated control first",
+  "controls": [
+    {
+      "control": "C0 unmutated",
+      "expect": "writes the committed bytes",
+      "as_expected": true
+    },
+    {
+      "control": "C1 a draft for a HOLDS row (#3)",
+      "expect": "refuses, naming 'drafts cover'",
+      "as_expected": true
+    },
+    {
+      "control": "C2 a FAILS row left without a draft (#65)",
+      "expect": "refuses, naming 'drafts cover'",
+      "as_expected": true
+    },
+    {
+      "control": "C3 one character changed in a declared quotation (#8)",
+      "expect": "refuses, naming 'NOT VERBATIM'",
+      "as_expected": true
+    },
+    {
+      "control": "C4 an undeclared quotation in grounds (#9)",
+      "expect": "refuses, naming 'undeclared quotation'",
+      "as_expected": true
+    },
+    {
+      "control": "C5 a (d) draft claims the wrong bedrock (#10 -> HR-04)",
+      "expect": "refuses, naming 'the register files'",
+      "as_expected": true
+    },
+    {
+      "control": "C6 a cut that is not in the move (#14)",
+      "expect": "refuses, naming 'does not occur exactly once'",
+      "as_expected": true
+    },
+    {
+      "control": "C7 a completion that leaves a move under the 40-word floor (#62)",
+      "expect": "refuses, naming 'move-band'",
+      "as_expected": true
+    },
+    {
+      "control": "C8 bedrock_from names a locus with no (d) (#21)",
+      "expect": "refuses, naming '(d) entries in v1_3'",
+      "as_expected": true
+    },
+    {
+      "control": "C9 a waiting entry carries an edit field (#11)",
+      "expect": "refuses, naming 'a waiting entry carries edit fields'",
+      "as_expected": true
+    },
+    {
+      "control": "C10 the base map moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    }
+  ]
+}

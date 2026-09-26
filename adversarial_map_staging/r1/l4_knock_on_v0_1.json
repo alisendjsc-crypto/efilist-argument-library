@@ -1,0 +1,158 @@
+{
+  "artifact": "l4_knock_on_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l4_knock_on.py",
+  "rule": "collision rule v0_2, re-applied to adversarial_map_v1_4.json; agreement with the committed v0_2 list on v1_3 asserted first (58 collided, same set)",
+  "what_it_means": "An entry listed here met a (b) or (d) in v1_4 that did not exist when R1 ruled it on v1_3. Its R1 verdict stands; the collision rule says it is read again before its card ships.",
+  "a_entries_left_in_v1_4": 31,
+  "holds_newly_collided": [
+    3,
+    4,
+    18,
+    19,
+    24,
+    36,
+    46,
+    49,
+    52,
+    53,
+    55
+  ],
+  "rows": [
+    {
+      "n": 3,
+      "target": "why-not-suicide#archetypeVariants.blended",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-023",
+      "new_collisions": [
+        "why-not-suicide#archetypeVariants.drifter (b, from #5)",
+        "why-not-suicide#long (d, from #2)"
+      ]
+    },
+    {
+      "n": 4,
+      "target": "why-not-suicide#archetypeVariants.defender",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-024",
+      "new_collisions": [
+        "violence-as-reductio#archetypeVariants.sophisticate (d, from #20)",
+        "violence-as-reductio#long (d, from #17)",
+        "why-not-suicide#archetypeVariants.drifter (b, from #5)",
+        "why-not-suicide#long (d, from #2)"
+      ]
+    },
+    {
+      "n": 7,
+      "target": "economy-population#long",
+      "r1_verdict": "FAILS",
+      "r1_row": "R1-048",
+      "new_collisions": [
+        "benatar-asymmetry-attack#archetypeVariants.blended (d, from #8)",
+        "benatar-asymmetry-attack#archetypeVariants.defender (d, from #9)",
+        "benatar-asymmetry-attack#archetypeVariants.drifter (d, from #10)"
+      ]
+    },
+    {
+      "n": 18,
+      "target": "violence-as-reductio#archetypeVariants.blended",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-030",
+      "new_collisions": [
+        "violence-as-reductio#archetypeVariants.sophisticate (d, from #20)",
+        "violence-as-reductio#long (d, from #17)"
+      ]
+    },
+    {
+      "n": 19,
+      "target": "violence-as-reductio#archetypeVariants.defender",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-031",
+      "new_collisions": [
+        "violence-as-reductio#archetypeVariants.sophisticate (d, from #20)",
+        "violence-as-reductio#long (d, from #17)"
+      ]
+    },
+    {
+      "n": 24,
+      "target": "most-people-happy#archetypeVariants.sophisticate",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-010",
+      "new_collisions": [
+        "cherry-picking-worst#short (d, from #57)",
+        "most-people-happy#long (d, from #23)"
+      ]
+    },
+    {
+      "n": 32,
+      "target": "antinatalism-misanthropic#archetypeVariants.defender",
+      "r1_verdict": "FAILS",
+      "r1_row": "R1-036",
+      "new_collisions": [
+        "antinatalism-misanthropic#archetypeVariants.blended (d, from #31)",
+        "antinatalism-misanthropic#archetypeVariants.drifter (d, from #33)"
+      ]
+    },
+    {
+      "n": 36,
+      "target": "future-solve#archetypeVariants.sophisticate",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-038",
+      "new_collisions": [
+        "cherry-picking-worst#short (d, from #57)",
+        "most-people-happy#long (d, from #23)"
+      ]
+    },
+    {
+      "n": 46,
+      "target": "red-button-repugnant#archetypeVariants.defender",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-011",
+      "new_collisions": [
+        "red-button-repugnant#archetypeVariants.sophisticate (d, from #47)",
+        "red-button-repugnant#long (d, from #44)",
+        "red-button-repugnant#long (d, from #45)"
+      ]
+    },
+    {
+      "n": 49,
+      "target": "adoption-instead#long",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-061",
+      "new_collisions": [
+        "benatar-asymmetry-attack#archetypeVariants.blended (d, from #8)",
+        "benatar-asymmetry-attack#archetypeVariants.defender (d, from #9)",
+        "benatar-asymmetry-attack#archetypeVariants.drifter (d, from #10)"
+      ]
+    },
+    {
+      "n": 52,
+      "target": "overpopulation-addressed#long",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-051",
+      "new_collisions": [
+        "benatar-asymmetry-attack#archetypeVariants.blended (d, from #8)",
+        "benatar-asymmetry-attack#archetypeVariants.defender (d, from #9)",
+        "benatar-asymmetry-attack#archetypeVariants.drifter (d, from #10)"
+      ]
+    },
+    {
+      "n": 53,
+      "target": "hedonic-contrast#long",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-045",
+      "new_collisions": [
+        "benatar-asymmetry-attack#archetypeVariants.blended (d, from #8)",
+        "benatar-asymmetry-attack#archetypeVariants.defender (d, from #9)",
+        "benatar-asymmetry-attack#archetypeVariants.drifter (d, from #10)"
+      ]
+    },
+    {
+      "n": 55,
+      "target": "meta-ethical-pluralism#medium",
+      "r1_verdict": "HOLDS",
+      "r1_row": "R1-018",
+      "new_collisions": [
+        "consent-incoherent#long (d, from #42)"
+      ]
+    }
+  ]
+}
