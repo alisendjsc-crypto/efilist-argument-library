@@ -48,6 +48,13 @@ ICONS = {
  'veganism': ("Veganism — a boundary enclosing more than one", [
     R(1,3,14,2), R(1,11,14,2), R(1,5,2,6), R(13,5,2,6),
     R(4,7,3,3), R(9,7,3,3, ACC)]),
+ # the flagship's ladder, halved, and its reflection, with the mirror lit between them (LD2, 2026-09-26). His
+ # words for the page: "a mirror library to object to even my OWN beliefs". His TO DO: "Adversarial part of
+ # library has no unique favicon icon (fix)". On the drawing: "I'm liking it. Approved as is."
+ 'adversarial': ("The Adversarial Map — the flagship's ladder faces its own reflection across a mirror", [
+    R(1,1,5,2), R(1,4,4,2), R(1,7,3,2), R(1,10,2,2), R(1,13,1,2),
+    R(10,1,5,2), R(11,4,4,2), R(12,7,3,2), R(13,10,2,2), R(14,13,1,2),
+    R(7,1,2,14, ACC)]),
 }
 
 HEAD = ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -111,13 +118,20 @@ shapes = {('favicon', n): cells(r) for n, (_, r) in ICONS.items()}
 shapes.update({('tier', t): cells(s['rects']) for t, s in TIERS.items()})
 assert len(set(shapes.values())) == len(shapes), 'two marks share a silhouette'
 
-def glyph(rects, px, moves=()):
-    """One mark as inline SVG from [x, y, w, h, 'lit'|'chrome'] rects; the rects in `moves` carry sg-m."""
-    body = ''.join('<rect class="%s" x="%d" y="%d" width="%d" height="%d"/>' % (
-        ('sg-lit' if role == 'lit' else 'sg-c') + (' sg-m' if i in moves else ''), x, y, w, h)
-        for i, (x, y, w, h, role) in enumerate(rects))
+def glyph(rects, px, moves=(), motion=None):
+    """One mark as inline SVG from [x, y, w, h, 'lit'|'chrome'] rects. The rects in `moves` carry sg-m (a tier's
+    one-shot); `motion`, {rect index: (verb, delay s)}, gives a library mark's one-shot as m-<verb> and --d."""
+    motion = motion or {}
+    out = []
+    for i, (x, y, w, h, role) in enumerate(rects):
+        c = ('sg-lit' if role == 'lit' else 'sg-c') + (' sg-m' if i in moves else '')
+        st = ''
+        if i in motion:
+            c += ' m-' + motion[i][0]
+            st = ' style="--d:%gs"' % motion[i][1] if motion[i][1] else ''
+        out.append('<rect class="%s"%s x="%d" y="%d" width="%d" height="%d"/>' % (c, st, x, y, w, h))
     return ('<svg class="sg" viewBox="0 0 16 16" width="%d" height="%d" aria-hidden="true">%s</svg>'
-            % (px, px, body))
+            % (px, px, ''.join(out)))
 
 def mark(t, px, moving):
     return glyph(TIERS[t]['rects'], px, TIERS[t]['moves'] if moving else ())
@@ -160,16 +174,186 @@ plate = ('<svg class="mk-plate-svg" viewBox="0 0 %d %d" width="%d" height="%d" r
 #    what its shape says -- the words after the dash in its own description. A library's mark names it.
 TITLE = {'libraries': 'The Refusal Libraries', 'combined': 'Procreation & Existence',
          'right-to-die': 'Right to Die', 'abortion': 'Abortion', 'transgenderism': 'Transgenderism',
-         'anthropocentrism': 'Anthropocentrism', 'veganism': 'Veganism'}   # the names the page shows
+         'anthropocentrism': 'Anthropocentrism', 'veganism': 'Veganism',
+         'adversarial': 'The Adversarial Map'}   # the names the page shows
 assert set(TITLE) == set(ICONS) and all(d.count(' — ') == 1 for d, _ in ICONS.values())
 def lib(n): return [[x, y, w, h, 'lit' if c == ACC else 'chrome'] for x, y, w, h, c in ICONS[n][1]]
 libs = ''.join(
     '<li class="mk-row lib"><span class="mk-tile">%s</span><span class="mk-txt">'
     '<span class="mk-name">%s</span><span class="mk-says">%s</span></span></li>\n'
     % (glyph(lib(n), 32), html.escape(TITLE[n]), html.escape(d.split(' — ')[1])) for n, (d, _) in ICONS.items())
-named = [('lib-' + n, '<span class="mk-tile lib-mark">%s</span>\n' % glyph(lib(n), 32)) for n in ICONS]
 
-for region, text in [('mini', mini), ('rows', rows), ('plate', plate), ('libs', libs)] + named:
-    assert text.isascii() and '<!--' not in text, region
+# 4b. THE LIBRARY MARKS SPEAK ONCE (LD2, 2026-09-26; relay R0144; Josiah: "Go with your recommendations on
+#     all of the above."). A motion earns its place only if it says its mark's own sentence, once. So each
+#     one-shot below is written as the sentence first and the rects second, and a verb the sentence does not
+#     contain is not used. Opacity and transform only; nothing loops; the page decides whether anything moves
+#     (the house gate: the vfx tier, a dark ground, motion allowed). Verbs:
+#       fill   a block appears              dx   an edge draws from its left end    dxm  from its middle, both ways
+#       dy     an edge draws down from its top                                      dym  from its middle, both ways
+#       stack  a rung is set down from above         n s e w  a part arrives from outside: above, below, right, left
+#     Two readings are the seat's, not the kickoff's: Abortion's branches appear TOGETHER (the lit one last would
+#     stage a choice, and the mark says "both branches present"), and Right to Die's step appears in place and
+#     never moves toward or through the doorway (nothing depicts an act).
+LIB_MOTION = {
+    'libraries': ('its six cells fill in reading order, the lit one in its place',
+                  [(0, 'fill', 0), (1, 'fill', .08), (2, 'fill', .16), (3, 'fill', .24), (4, 'fill', .32), (5, 'fill', .40)]),
+    'combined': ('the ladder stacks rung by rung from the shortest; the top rung, lit, is set last',
+                 [(4, 'stack', 0), (3, 'stack', .1), (2, 'stack', .2), (1, 'stack', .3), (0, 'stack', .4)]),
+    'right-to-die': ('the doorway draws, lintel then jambs; the lit step appears in the opening and does not move',
+                     [(0, 'dx', 0), (1, 'dy', .25), (2, 'dy', .25), (3, 'fill', .6)]),
+    'abortion': ('the stem grows and forks; both branches appear together',
+                 [(0, 'dx', 0), (1, 'dym', .25), (2, 'fill', .5), (3, 'fill', .5)]),
+    'transgenderism': ('both nodes appear together; the edge draws from its middle, outward both ways at once',
+                       [(0, 'fill', 0), (2, 'fill', 0), (1, 'dxm', .25)]),
+    'anthropocentrism': ('the four peers arrive together, each from outside; the centre stays empty',
+                         [(0, 'n', 0), (1, 'w', 0), (2, 'e', 0), (3, 's', 0)]),
+    'veganism': ('both nodes appear together; the boundary closes around them from all four sides at once',
+                 [(4, 'fill', 0), (5, 'fill', 0), (0, 'n', .3), (1, 's', .3), (2, 'w', .3), (3, 'e', .3)]),
+    'adversarial': ('the ladder appears, the mirror draws down between, and the reflection appears across it',
+                    [(i, 'fill', 0) for i in range(5)] + [(10, 'dy', .2)] + [(i, 'fill', .55) for i in range(5, 10)]),
+}
+LIB_DUR = {'fill': .3, 'dx': .3, 'dxm': .35, 'dy': .3, 'dym': .3, 'stack': .3, 'n': .45, 's': .45, 'e': .45, 'w': .45}
+LIB_KF = {'fill': 'lm-fill', 'dx': 'lm-dx', 'dxm': 'lm-dx', 'dy': 'lm-dy', 'dym': 'lm-dy', 'stack': 'lm-stack',
+          'n': 'lm-n', 's': 'lm-s', 'e': 'lm-e', 'w': 'lm-w'}
+assert set(LIB_MOTION) == set(ICONS)
+for n, (sentence, steps) in LIB_MOTION.items():
+    assert sorted(i for i, _, _ in steps) == list(range(len(ICONS[n][1]))), (n, 'every rect moves exactly once')
+    assert all(v in LIB_DUR for _, v, _ in steps), (n, 'an unknown verb')
+LIB_SPAN = max(d + LIB_DUR[v] for _, steps in LIB_MOTION.values() for _, v, d in steps)
+PLAY_WINDOW = round(LIB_SPAN + .4, 1)     # how long a page leaves .play on: the longest one-shot, and a margin
+def moving(n): return {i: (v, d) for i, v, d in LIB_MOTION[n][1]}
+# each library's mark beside its name: its card on the front door, the front door's own title, and (5) each
+# wing's title. Same drawing everywhere, carrying its one-shot; the key's rows (libs, above) stay still.
+named = [('lib-' + n, '<span class="mk-tile lib-mark">%s</span>\n' % glyph(lib(n), 32, motion=moving(n)))
+         for n in ICONS]
+
+lm_css = ('<style>\n/* THE LIBRARY MARKS SPEAK ONCE (LD2, 2026-09-26). Generated by icons/gen_icons.py: edit it there,\n'
+          '   never here. A page puts .play on an element for --lm-span; each library mark inside builds itself\n'
+          '   once, the way its sentence says. The house gate decides whether anything moves: the vfx tier, a\n'
+          '   dark ground, motion allowed. Opacity and transform only; nothing loops. */\n'
+          ':root{--lm-span:%gs}\n'
+          '@keyframes lm-fill{from{opacity:0}to{opacity:1}}\n'
+          '@keyframes lm-dx{from{transform:scaleX(0)}to{transform:scaleX(1)}}\n'
+          '@keyframes lm-dy{from{transform:scaleY(0)}to{transform:scaleY(1)}}\n'
+          '@keyframes lm-stack{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}\n'
+          '@keyframes lm-n{from{opacity:0;transform:translateY(-2px)}to{opacity:1;transform:translateY(0)}}\n'
+          '@keyframes lm-s{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}\n'
+          '@keyframes lm-w{from{opacity:0;transform:translateX(-2px)}to{opacity:1;transform:translateX(0)}}\n'
+          '@keyframes lm-e{from{opacity:0;transform:translateX(2px)}to{opacity:1;transform:translateX(0)}}\n'
+          '.m-dx,.m-dxm,.m-dy,.m-dym{transform-box:fill-box}\n'
+          '.m-dx{transform-origin:0 50%%}.m-dy{transform-origin:50%% 0}.m-dxm,.m-dym{transform-origin:50%% 50%%}\n'
+          '@media (prefers-reduced-motion:no-preference){\n'
+          '%s{animation-timing-function:ease-out;animation-fill-mode:both;animation-delay:var(--d,0s)}\n'
+          '%s}\n</style>\n') % (
+    PLAY_WINDOW,
+    ','.join('html.wz-vfx:not(.wz-lightbg) .play .m-' + v for v in LIB_DUR),
+    ''.join('html.wz-vfx:not(.wz-lightbg) .play .m-%s{animation-name:%s;animation-duration:%gs}\n' % (v, LIB_KF[v], d)
+            for v, d in LIB_DUR.items()))
+
+# 5. THE WING PAGES (LD2). Each wing carries its own mark beside its title (lib-<wing>, above), and drawn large
+#    on its About tab (plate-<wing>): the mark on its pixel grid, each part named in the grammar's words and in
+#    its own sentence's. (label, side, cell x, cell y): a leader runs from that point of the drawing to the
+#    L/R/T/B gutter, drawn under the parts; 'in' writes the label inside the mark, on the point. The labels are
+#    placed for THESE grids, so a changed grid stops the build rather than mislabel a drawing.
+WINGS = ['right-to-die', 'abortion', 'transgenderism', 'anthropocentrism', 'veganism']
+PLATES = {
+    'right-to-die': [('edge &#183; the lintel', 'R', 14, 3), ('edge &#183; a jamb', 'L', 2, 8),
+                     ('the opening', 'R', 10, 8), ('lit &#183; the step', 'R', 9, 13.5)],
+    'abortion': [('edge &#183; the stem', 'L', 1, 8), ('edge &#183; the fork', 'L', 8, 4),
+                 ('node &#183; a branch', 'R', 14, 4), ('lit &#183; a branch', 'R', 14, 13)],
+    'transgenderism': [('node', 'L', 1, 8), ('lit &#183; node', 'R', 15, 8),
+                       ('edge &#183; no arrowhead either way', 'B', 8, 9)],
+    'anthropocentrism': [('node &#183; a peer', 'T', 8, 1), ('node &#183; a peer', 'L', 1, 8),
+                         ('lit &#183; a peer', 'R', 15, 8), ('node &#183; a peer', 'B', 8, 15), ('empty', 'in', 8, 8)],
+    'veganism': [('edge &#183; the boundary', 'R', 15, 4), ('node', 'L', 4, 8.5), ('lit &#183; node', 'R', 12, 8.5)],
+}
+assert {w: lib(w) for w in WINGS} == {
+    'right-to-die': [[2, 2, 12, 2, 'chrome'], [2, 4, 2, 11, 'chrome'], [12, 4, 2, 11, 'chrome'], [7, 12, 2, 3, 'lit']],
+    'abortion': [[1, 7, 7, 2, 'chrome'], [8, 3, 2, 10, 'chrome'], [10, 2, 4, 4, 'chrome'], [10, 11, 4, 4, 'lit']],
+    'transgenderism': [[1, 6, 4, 4, 'chrome'], [5, 7, 6, 2, 'chrome'], [11, 6, 4, 4, 'lit']],
+    'anthropocentrism': [[6, 1, 4, 4, 'chrome'], [1, 6, 4, 4, 'chrome'], [11, 6, 4, 4, 'lit'], [6, 11, 4, 4, 'chrome']],
+    'veganism': [[1, 3, 14, 2, 'chrome'], [1, 11, 14, 2, 'chrome'], [1, 5, 2, 6, 'chrome'], [13, 5, 2, 6, 'chrome'],
+                 [4, 7, 3, 3, 'chrome'], [9, 7, 3, 3, 'lit']]}, 'plate labels: a wing grid changed under its labels'
+assert set(PLATES) == set(WINGS) and set(WINGS) < set(ICONS)
+PC, GUT, TB = 18, 170, 36           # pixels per cell (a 288 px square), the side gutters, the top and bottom ones
+
+def wing_plate(w):
+    N = 16 * PC; W, H = N + 2 * GUT, N + 2 * TB; ox, oy = GUT, TB
+    grid = ''.join('M%d.5 %dV%dM%d %d.5H%d' % (ox + k * PC, oy, oy + N, ox, oy + k * PC, ox + N) for k in range(1, 16))
+    parts = ''.join('<rect class="%s" x="%d" y="%d" width="%d" height="%d"/>' % (
+        'sg-lit' if r == 'lit' else 'sg-c', ox + x * PC, oy + y * PC, w_ * PC, h * PC) for x, y, w_, h, r in lib(w))
+    leads, names = [], []
+    for text, side, ax, ay in PLATES[w]:
+        px, py = ox + round(ax * PC), oy + round(ay * PC)
+        if side == 'R':
+            leads.append((px, py, ox + N + 8 - px, 1)); names.append((ox + N + 12, py + 5, 'start', text))
+        elif side == 'L':
+            leads.append((ox - 8, py, px - ox + 8, 1)); names.append((ox - 12, py + 5, 'end', text))
+        elif side == 'T':
+            leads.append((px, oy - 8, 1, py - oy + 8)); names.append((px, oy - 14, 'middle', text))
+        elif side == 'B':
+            leads.append((px, py, 1, oy + N + 8 - py)); names.append((px, oy + N + 24, 'middle', text))
+        else:
+            assert side == 'in', (w, side); names.append((px, py + 5, 'middle', text))
+        assert all(0 <= v <= lim for v, lim in ((px, W), (py, H))), (w, text)
+    return ('<figure class="mk-plate"><span class="pl"><svg class="mk-plate-svg" viewBox="0 0 %d %d" width="%d" '
+            'height="%d" role="img" aria-label="%s&#8217;s mark, enlarged: %s.">'
+            '<rect class="pl-ground" x="%d" y="%d" width="%d" height="%d"/><path class="pl-grid" d="%s"/>%s%s%s</svg>'
+            '</span><figcaption>%s&#8217;s mark, enlarged: %s. Each square is one pixel of the mark in this '
+            'page&#8217;s tab.</figcaption></figure>\n') % (
+        W, H, W, H, html.escape(TITLE[w]), html.escape(ICONS[w][0].split(' — ')[1]), ox, oy, N, N, grid,
+        ''.join('<rect class="pl-lead" x="%d" y="%d" width="%d" height="%d"/>' % r for r in leads), parts,
+        ''.join('<text class="pl-name" x="%d" y="%d" text-anchor="%s">%s</text>' % r for r in names),
+        html.escape(TITLE[w]), html.escape(ICONS[w][0].split(' — ')[1]))
+plates = [('plate-' + w, wing_plate(w)) for w in WINGS]
+
+# the tier marks for the wings' cards and filters, as a <template> the page's own render code clones: every
+# wing corpus tiers its objections (measured 2026-09-26, correcting LD1's law 8), and each wing card and tier
+# filter already says "tier N" in words. The mark goes beside those words, never instead of them.
+tier_marks = ('<template id="tier-marks">'
+              + ''.join('<span class="mk-tile t%d">%s</span>' % (t, mark(t, 16, True)) for t in TIERS)
+              + '</template>\n')
+TIER_ANIM = {1: 'lib-sig-return .7s ease-in-out', 2: 'lib-sig-handed .7s ease-out', 3: 'lib-sig-rest .6s ease-out',
+             4: 'lib-sig-descend .7s ease-out', 5: 'lib-sig-close .7s ease-out'}   # the front door's, argue S43's
+wing_css = ('<style>\n/* THE WINGS\' MARKS (LD2, 2026-09-26). Generated by icons/gen_icons.py: edit it there, never here.\n'
+            '   A mark keeps the favicons\' own #0a0a0a ground in every reading mode (law 10). A tier mark sits beside\n'
+            '   the tier\'s words; a link straight to one objection plays that tier\'s one-shot once, as it arrives. */\n'
+            '.mk-tile{display:inline-block;line-height:0;background:#0a0a0a;-webkit-print-color-adjust:exact;print-color-adjust:exact}\n'
+            '.sg,.mk-plate-svg{display:block;shape-rendering:crispEdges}\n'
+            '.sg-c{fill:#e8e4dd}.sg-lit{fill:#ef3a58}\n'
+            'header.site h1 .lib-mark{vertical-align:middle;margin:0 .45rem 0 0;position:relative;top:-.1em}\n'
+            '.obj-meta .mk-tile{vertical-align:-4px;margin-right:.55rem}\n'
+            '.chip .mk-tile{margin-right:.4rem;vertical-align:-3px}\n'
+            '.mk-plate{margin:1.6rem 0 .4rem}\n'
+            '.mk-plate .pl{display:block;line-height:0}\n'
+            '.mk-plate-svg{max-width:100%%;height:auto}\n'
+            '.pl-ground{fill:#0a0a0a}.pl-grid{fill:none;stroke:#1f1f1f;stroke-width:1}.pl-lead{fill:#77726a}\n'
+            '.pl-name{font:13px var(--mono);fill:var(--dim)}\n'
+            '.mk-plate figcaption{font-size:.8rem;color:var(--dim);margin:.55rem 0 0;max-width:40rem;line-height:1.5}\n'
+            '@keyframes lib-sig-return{0%%{transform:translateX(0)}45%%{transform:translateX(3px)}100%%{transform:translateX(0)}}\n'
+            '@keyframes lib-sig-handed{from{opacity:0;transform:translate(-5px,-5px)}to{opacity:1;transform:translate(0,0)}}\n'
+            '@keyframes lib-sig-rest{from{opacity:.35;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}\n'
+            '@keyframes lib-sig-descend{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}\n'
+            '@keyframes lib-sig-close{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}\n'
+            '.t5 .sg-m{transform-box:view-box;transform-origin:8px 8px}\n'
+            '@media (prefers-reduced-motion:no-preference){\n%s}\n</style>\n') % ''.join(
+    'html.wz-vfx:not(.wz-lightbg) .obj.flash .t%d .sg-m{animation:%s .2s both}\n' % (t, a) for t, a in TIER_ANIM.items())
+
+# WHICH PAGE CARRIES WHICH REGION. tools/icons_regen_check.py reads this and requires every page to carry
+# exactly its regions, byte for byte; a marker a page should not carry is a difference too.
+PAGES = {'site/libraries/index.html': ['mini', 'rows', 'plate', 'libs'] + ['lib-' + n for n in ICONS] + ['lm-css']}
+# 'lib-adversarial' sits on the front door's Adversarial Map card. Its own page, /adversarial/, is rendered by the
+# library seat's render_wing_v0_1.py, which wires its tab icon (site/icon-adversarial.svg) in its own session.
+for w in WINGS:
+    PAGES['site/%s/combined.html' % w] = ['lib-' + w, 'plate-' + w, 'lm-css', 'wing-css', 'tier-marks']
+
+regions = dict([('mini', mini), ('rows', rows), ('plate', plate), ('libs', libs)] + named + plates
+               + [('lm-css', lm_css), ('wing-css', wing_css), ('tier-marks', tier_marks)])
+assert all(r in regions for rs in PAGES.values() for r in rs), 'a page names a region that is not drawn'
+for region, text in regions.items():
+    assert text.isascii() and '<!--' not in text and text.endswith('\n'), region
     open('marks-%s.html' % region, 'w', encoding='utf-8', newline='\n').write(text)
-    print(f'marks-{region:22s} {len(text.encode()):5d} B  front-door region')
+    on = [p.split('/')[1] for p, rs in PAGES.items() if region in rs]
+    print(f'marks-{region:22s} {len(text.encode()):5d} B  on {", ".join(on)}')
+open('marks-pages.json', 'w', encoding='utf-8', newline='\n').write(json.dumps(PAGES, indent=1) + '\n')
+print(f'marks-pages.json: {sum(map(len, PAGES.values()))} regions on {len(PAGES)} pages; one-shots {LIB_SPAN:g} s at most')
