@@ -77,10 +77,10 @@ for name, (desc, rects) in ICONS.items():
 # never a copy: sigils.json beside this file is byte for byte the argue repo's
 # design/tier_sigils_v0/sigils.json at ed9286f, and nothing is drawn from any other bytes. The
 # library draws them in its own crimson, as it draws the favicons.
-# They are served INLINE on the front door (site/libraries/index.html), never as files. This writes
-# the page's three generated regions into the working directory, as marks-<region>.html, and
-# tools/icons_regen_check.py requires the served page to carry each one byte for byte
-# (--write-marks splices them in). Edit the grids at their source, never in the page.
+# They are served INLINE on the front door (site/libraries/index.html), never as files, and so are the
+# favicons' inline copies (section 4). This writes each of the page's generated regions into the working
+# directory as marks-<region>.html, and tools/icons_regen_check.py requires the served page to carry
+# each one byte for byte (--write-marks splices them in). Edit the grids at their source, never in the page.
 import hashlib, json, html
 SIGILS_SOURCE = 'argue ed9286f:design/tier_sigils_v0/sigils.json'
 SIGILS_MD5 = '1e7e99bd628e65bb10d246f859eefe64'
@@ -111,13 +111,16 @@ shapes = {('favicon', n): cells(r) for n, (_, r) in ICONS.items()}
 shapes.update({('tier', t): cells(s['rects']) for t, s in TIERS.items()})
 assert len(set(shapes.values())) == len(shapes), 'two marks share a silhouette'
 
-def mark(t, px, moving):
-    s = TIERS[t]
+def glyph(rects, px, moves=()):
+    """One mark as inline SVG from [x, y, w, h, 'lit'|'chrome'] rects; the rects in `moves` carry sg-m."""
     body = ''.join('<rect class="%s" x="%d" y="%d" width="%d" height="%d"/>' % (
-        ('sg-lit' if role == 'lit' else 'sg-c') + (' sg-m' if moving and i in s['moves'] else ''),
-        x, y, w, h) for i, (x, y, w, h, role) in enumerate(s['rects']))
+        ('sg-lit' if role == 'lit' else 'sg-c') + (' sg-m' if i in moves else ''), x, y, w, h)
+        for i, (x, y, w, h, role) in enumerate(rects))
     return ('<svg class="sg" viewBox="0 0 16 16" width="%d" height="%d" aria-hidden="true">%s</svg>'
             % (px, px, body))
+
+def mark(t, px, moving):
+    return glyph(TIERS[t]['rects'], px, TIERS[t]['moves'] if moving else ())
 
 # 1. mini: the five at actual size, in the suite rail's "5 tiers" cell. Still, always.
 mini = ''.join('<span class="mk-tile">%s</span>\n' % mark(t, 16, False) for t in TIERS)
@@ -151,7 +154,22 @@ plate = ('<svg class="mk-plate-svg" viewBox="0 0 %d %d" width="%d" height="%d" r
          'nodes.">\n<path class="pl-grid" d="%s"/>\n%s\n%s\n%s\n</svg>\n'
          % (N, N, N, N, PT, grid, parts, leaders, labels))
 
-for region, text in (('mini', mini), ('rows', rows), ('plate', plate)):
+# 4. the library marks. Josiah, 2026-09-26: "Something missing are each wing's individual favicon icon.
+#    They all have one." The favicons above, drawn inline and still: each beside its name on the page
+#    (the six on their cards, the index's own beside the page title), and all seven in the key, each with
+#    what its shape says -- the words after the dash in its own description. A library's mark names it.
+TITLE = {'libraries': 'The Refusal Libraries', 'combined': 'Procreation & Existence',
+         'right-to-die': 'Right to Die', 'abortion': 'Abortion', 'transgenderism': 'Transgenderism',
+         'anthropocentrism': 'Anthropocentrism', 'veganism': 'Veganism'}   # the names the page shows
+assert set(TITLE) == set(ICONS) and all(d.count(' — ') == 1 for d, _ in ICONS.values())
+def lib(n): return [[x, y, w, h, 'lit' if c == ACC else 'chrome'] for x, y, w, h, c in ICONS[n][1]]
+libs = ''.join(
+    '<li class="mk-row lib"><span class="mk-tile">%s</span><span class="mk-txt">'
+    '<span class="mk-name">%s</span><span class="mk-says">%s</span></span></li>\n'
+    % (glyph(lib(n), 32), html.escape(TITLE[n]), html.escape(d.split(' — ')[1])) for n, (d, _) in ICONS.items())
+named = [('lib-' + n, '<span class="mk-tile lib-mark">%s</span>\n' % glyph(lib(n), 32)) for n in ICONS]
+
+for region, text in [('mini', mini), ('rows', rows), ('plate', plate), ('libs', libs)] + named:
     assert text.isascii() and '<!--' not in text, region
     open('marks-%s.html' % region, 'w', encoding='utf-8', newline='\n').write(text)
-    print(f'marks-{region:14s} {len(text.encode()):5d} B  front-door region, from {SIGILS_SOURCE}')
+    print(f'marks-{region:22s} {len(text.encode()):5d} B  front-door region')

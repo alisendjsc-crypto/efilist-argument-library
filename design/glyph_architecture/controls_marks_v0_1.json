@@ -8,7 +8,7 @@
    "rc": 0,
    "want": [
     "ICONS: 7 of 7",
-    "MARKS: 3 of 3"
+    "MARKS: 11 of 11"
    ],
    "want_rc": 0
   },
@@ -109,14 +109,36 @@
    "rc": 0,
    "want": [
     "wrote  site/libraries/index.html",
-    "MARKS: 3 of 3"
+    "MARKS: 11 of 11"
    ],
    "want_rc": 0
+  },
+  {
+   "as_expected": true,
+   "control": "C10 a library's mark on its card changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-lib-abortion",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C11 the page carries a region the generator does not draw",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-ghost",
+    "not drawn by gen_icons.py"
+   ],
+   "want_rc": 1
   }
  ],
  "gate": "tools/icons_regen_check.py",
  "inputs": {
-  "icons/gen_icons.py": "6c601f6fd7d28c6fa37d25995ebe9aa8",
+  "icons/gen_icons.py": "ae22c4c41f6498ca9c79faf2f3795806",
   "icons/sigils.json": "1e7e99bd628e65bb10d246f859eefe64",
   "site/icon-abortion.svg": "fc6f8e8eb4898933f04e1a37085dc94b",
   "site/icon-anthropocentrism.svg": "7667b76b8c4ca22c6ecbb6b91ccf1d17",
@@ -125,9 +147,9 @@
   "site/icon-right-to-die.svg": "96976c7d06407b7822affd7f327c7b28",
   "site/icon-transgenderism.svg": "3f40782478eb4dc366185bf491f3bcd9",
   "site/icon-veganism.svg": "c91a0554d6dfed665878e252144c0f3f",
-  "site/libraries/index.html": "f80a4f5a42a53c531b4596fb682ee6f4",
-  "tools/icons_regen_check.py": "4016b6a5deed4738cdac7fec5194b3fa"
+  "site/libraries/index.html": "8a7f4160de202bffec400118e25465a6",
+  "tools/icons_regen_check.py": "a3b5ef5101c6eb4939321d1e0fa41488"
  },
- "summary": "10 of 10 controls as expected",
+ "summary": "12 of 12 controls as expected",
  "version": "0.1"
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """controls_marks.py -- mutation controls for the front-door marks gate (design lane, 2026-09-25).
 
-tools/icons_regen_check.py now also requires the three generated regions of site/libraries/index.html to
+tools/icons_regen_check.py now also requires the generated regions of site/libraries/index.html to
 be byte for byte what icons/gen_icons.py draws from the pinned icons/sigils.json. A gate that has never
 been seen to fail proves nothing, so each control below copies the inputs into a scratch root, applies ONE
 mutation, runs the check against that root, and requires its exit code AND its own failure message. The
@@ -32,7 +32,7 @@ def after_tiers(line):   # patch the scratch generator right after it loads the 
                b"assert sorted(TIERS) == [1, 2, 3, 4, 5], sorted(TIERS)\n" + line.encode() + b"\n")
 
 CONTROLS = [
-    ("C0 unmutated", None, [], 0, ["ICONS: 7 of 7", "MARKS: 3 of 3"]),
+    ("C0 unmutated", None, [], 0, ["ICONS: 7 of 7", "MARKS: 11 of 11"]),
     ("C1 a pixel in the plate region changes role", sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
      [], 1, ["DIFF  marks-plate", "MARKS: RED -- 1 difference(s)"]),
     ("C2 a says-line in the rows region is edited", sub(PAGE, b"which stays standing", b"which stands"),
@@ -52,7 +52,12 @@ CONTROLS = [
      [], 1, ["DIFF  veganism", "ICONS: RED -- 1 difference(s)"]),
     ("C9 --write-marks restores C1's page byte for byte",
      sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
-     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 3 of 3"]),
+     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 11 of 11"]),
+    ("C10 a library's mark on its card changes", sub(PAGE, b'<rect class="sg-lit" x="10" y="11"', b'<rect class="sg-c" x="10" y="11"'),
+     [], 1, ["DIFF  marks-lib-abortion", "MARKS: RED -- 1 difference(s)"]),
+    ("C11 the page carries a region the generator does not draw",
+     sub(PAGE, b"    </aside>\n", b"<!-- gen_icons.py:ghost -->\n<!-- /gen_icons.py:ghost -->\n    </aside>\n"),
+     [], 1, ["DIFF  marks-ghost", "not drawn by gen_icons.py"]),
 ]
 
 record = {"artifact": "controls_marks", "version": "0.1", "gate": "tools/icons_regen_check.py",

@@ -23,12 +23,12 @@ const PROBE = () => {
     if (c.length < 4 || c[3] > .5) return c; } return [255, 255, 255]; };
   const ratio = (a, b) => { const x = lum(...a.slice(0, 3)), y = lum(...b.slice(0, 3)); return (Math.max(x, y) + .05) / (Math.min(x, y) + .05); };
   const k = document.getElementById('marks'), m = document.querySelector('main');
-  const items = [...k.querySelectorAll('h2,p,figcaption,.mk-name,.mk-says,.mk-name b,a'), ...document.querySelectorAll('.rail-tiers b,.rail-tiers>span')]
+  const items = [...k.querySelectorAll('h2,h3,p,figcaption,.mk-name,.mk-says,.mk-name b,a'), ...document.querySelectorAll('.rail-tiers b,.rail-tiers>span')]
     .filter(e => e.textContent.trim()).map(e => ratio(rgb(getComputedStyle(e).color), bg(e)));
   for (const t of document.querySelectorAll('.mk-plate-svg text')) items.push(ratio(rgb(getComputedStyle(t).fill), bg(t.closest('.pl'))));
   return { overflow: document.documentElement.scrollWidth - innerWidth, aaMin: Math.min(...items), aaN: items.length,
            aaBelow: items.filter(r => r < 4.5).length, beside: k.getBoundingClientRect().left > m.getBoundingClientRect().right - 1,
-           keyHeight: k.offsetHeight };
+           keyHeight: k.offsetHeight, namedMarks: document.querySelectorAll('.lib-card h2 .lib-mark, header.site h1 .lib-mark').length };
 };
 const anims = p => p.evaluate(() => [...document.querySelectorAll('.sg-m')].reduce((n, e) => n + e.getAnimations().length, 0));
 async function open(b, url, { w, h, mode = 'standard', tier = '', reduced = 'no-preference' }) {
@@ -37,7 +37,7 @@ async function open(b, url, { w, h, mode = 'standard', tier = '', reduced = 'no-
   p.on('pageerror', e => errs.push(String(e))); p.on('console', c => { if (c.type() === 'error') errs.push(c.text()); });
   await p.goto(url, { waitUntil: 'networkidle' }); return { ctx, p, errs };
 }
-const rec = { url: URL, engines: {}, layout: { runs: 0, overflowRuns: 0, aaMin: 99, aaBelow: 0, errors: 0, besideFromPx: null },
+const rec = { url: URL, engines: {}, layout: { runs: 0, overflowRuns: 0, aaMin: 99, aaBelow: 0, errors: 0, besideFromPx: null, namedMarksMin: 99 },
               motion: [], sticky: [], layerPan: null };
 for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   const b = await eng.launch(); rec.engines[en] = b.version();
@@ -46,19 +46,22 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
     const { ctx, p, errs } = await open(b, URL, { w, h: w <= 600 ? 844 : 900, mode, tier: '1' });
     await p.waitForTimeout(300); const r = await p.evaluate(PROBE); await ctx.close();
     const L = rec.layout; L.runs++; L.overflowRuns += r.overflow > 0; L.aaMin = Math.min(L.aaMin, +r.aaMin.toFixed(2));
-    L.aaBelow += r.aaBelow; L.errors += errs.length; L.aaItems = r.aaN;
+    L.aaBelow += r.aaBelow; L.errors += errs.length; L.aaItems = r.aaN; L.namedMarksMin = Math.min(L.namedMarksMin, r.namedMarks);
     if (r.beside && (L.besideFromPx === null || w < L.besideFromPx)) L.besideFromPx = w;
   }
   // 2. the motion gate: [case, options, animations wanted while playing]
   for (const [name, o, want] of [['vfx, dark, motion allowed', { w: 1440, h: 900 }, 12], ['reduced motion', { w: 1440, h: 900, reduced: 'reduce' }, 0],
       ['legible (light ground)', { w: 1440, h: 900, mode: 'legible' }, 0], ['display: cosmetic', { w: 1440, h: 900, tier: '1' }, 0],
       ['display: off', { w: 1440, h: 900, tier: '0' }, 0], ['phone, key below the fold', { w: 390, h: 844 }, 'scroll']]) {
-    const { ctx, p } = await open(b, URL, o); let early = null;
-    if (want === 'scroll') { await p.waitForTimeout(600); early = await anims(p); await p.locator('#mk-rows').scrollIntoViewIfNeeded(); }
+    // every case scrolls the tier rows into view: they play the first time they are seen, wherever they sit
+    const { ctx, p } = await open(b, URL, o); await p.waitForTimeout(600); const early = await anims(p);
+    await p.locator('#mk-rows').scrollIntoViewIfNeeded();
     await p.waitForTimeout(350); const during = await anims(p); await p.waitForTimeout(2800); const after = await anims(p);
     let hover = null; if (want === 12) { await p.locator('.mk-row.t4').hover(); await p.waitForTimeout(150); hover = await anims(p); }
     await ctx.close();
-    const ok = want === 'scroll' ? early === 0 && during === 12 && after === 0 : during === want && after === 0 && (hover === null || hover === 1);
+    const ok = want === 'scroll' ? early === 0 && during === 12 && after === 0
+             : want === 12 ? during === 12 && after === 0 && hover === 1
+             : early === 0 && during === 0 && after === 0;
     rec.motion.push({ engine: en, case: name, during, after, hover, beforeScroll: early, ok });
   }
   // 3. sticky only while the key fits the window
@@ -82,6 +85,6 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   }
   await b.close();
 }
-rec.summary = { layoutOk: rec.layout.overflowRuns === 0 && rec.layout.aaBelow === 0 && rec.layout.errors === 0,
+rec.summary = { layoutOk: rec.layout.overflowRuns === 0 && rec.layout.aaBelow === 0 && rec.layout.errors === 0 && rec.layout.namedMarksMin === 7,
                 motionOk: rec.motion.filter(m => m.ok).length + ' of ' + rec.motion.length };
 console.log(JSON.stringify(rec, null, 1));

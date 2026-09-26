@@ -7,20 +7,21 @@ until L1 no repo tracked that script. This runs it in a scratch directory (it wr
 draws to be, name for name and byte for byte, the site/icon-<name>.svg files. The PNGs are not served
 and are discarded. Never run gen_icons.py from the repo root: it would drop its outputs there.
 
-THE TIER MARKS (design lane, 2026-09-25). gen_icons.py also draws the five tier marks from the pinned
-icons/sigils.json (copied into the scratch directory beside it) and writes the front door's three
-generated regions as marks-<region>.html. Each region sits in site/libraries/index.html between
-<!-- gen_icons.py:<region> --> and <!-- /gen_icons.py:<region> -->, and must be byte for byte what was
-drawn. --write-marks first splices the drawn regions into the page, then checks as usual.
+THE FRONT DOOR'S MARKS (design lane, 2026-09-25/26). gen_icons.py also draws the five tier marks from the
+pinned icons/sigils.json (copied into the scratch directory beside it) and the favicons' inline copies, and
+writes each of the front door's generated regions as marks-<region>.html. Each region sits in
+site/libraries/index.html between <!-- gen_icons.py:<region> --> and <!-- /gen_icons.py:<region> -->, and
+must be byte for byte what was drawn. The region list is whatever the generator draws, and a marker in the
+page that it does not draw is a difference too. --write-marks first splices the drawn regions into the
+page, then checks as usual.
 
   python3 tools/icons_regen_check.py [ROOT] [--write-marks]    # exit 1 on any difference
 """
-import glob, hashlib, os, shutil, subprocess, sys, tempfile
+import glob, hashlib, os, re, shutil, subprocess, sys, tempfile
 
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 WRITE = "--write-marks" in sys.argv[1:]
 REPO = os.path.abspath(ARGS[0]) if ARGS else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REGIONS = ("mini", "rows", "plate")
 PAGE = os.path.join(REPO, "site", "libraries", "index.html")
 d = tempfile.mkdtemp(prefix="icons_regen_")
 try:
@@ -31,7 +32,7 @@ try:
         print("ICONS: RED -- gen_icons.py refused to draw: " + (run.stderr.strip().splitlines() or ["?"])[-1])
         sys.exit(1)
     drawn = {os.path.basename(p)[:-4]: open(p, "rb").read() for p in glob.glob(os.path.join(d, "*.svg"))}
-    marks = {r: open(os.path.join(d, "marks-%s.html" % r), "rb").read() for r in REGIONS}
+    marks = {os.path.basename(p)[6:-5]: open(p, "rb").read() for p in glob.glob(os.path.join(d, "marks-*.html"))}
 finally:
     shutil.rmtree(d)
 served = {os.path.basename(p)[5:-4]: open(p, "rb").read()
@@ -59,18 +60,21 @@ def span(page, r):
 page = open(PAGE, "rb").read()
 if WRITE:
     before = hashlib.md5(page).hexdigest()
-    for r in REGIONS:
+    for r in sorted(marks):
         s = span(page, r)
         if s: page = page[:s[0]] + marks[r] + page[s[1]:]
     open(PAGE, "wb").write(page)
     print("  wrote  site/libraries/index.html  %s -> %s" % (before, hashlib.md5(page).hexdigest()))
+in_page = {m.decode() for m in re.findall(rb"<!-- /?gen_icons\.py:([a-z0-9-]+) -->", page)}
+regions = sorted(set(marks) | in_page)
 mbad = 0
-for r in REGIONS:
-    s = span(page, r)
+for r in regions:
+    s = span(page, r) if r in marks else None
     ok = bool(s) and page[s[0]:s[1]] == marks[r]
     mbad += not ok
-    print("  %s  %-18s %s" % ("SAME" if ok else "DIFF", "marks-" + r,
+    print("  %s  %-27s %s" % ("SAME" if ok else "DIFF", "marks-" + r,
+          "not drawn by gen_icons.py" if r not in marks else
           "markers not found in the page" if not s else hashlib.md5(marks[r]).hexdigest()))
-print("MARKS: %d of %d front-door regions are what gen_icons.py draws" % (len(REGIONS) - mbad, len(REGIONS))
+print("MARKS: %d of %d front-door regions are what gen_icons.py draws" % (len(regions) - mbad, len(regions))
       if not mbad else "MARKS: RED -- %d difference(s)" % mbad)
 sys.exit(1 if bad or mbad else 0)

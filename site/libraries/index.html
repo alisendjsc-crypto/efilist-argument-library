@@ -201,12 +201,15 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 .mk-name{display:block;font-family:var(--mono);font-size:.76rem;color:var(--fg);line-height:1.35}
 .mk-name b{font-weight:700;margin-right:.3rem}
 .mk-says{display:block;font-size:.74rem;color:var(--dim);line-height:1.45;margin-top:.15rem}
-.mk-fam{font-size:.72rem;color:var(--dim);line-height:1.5;margin:.2rem 0 .55rem}
+.mk-sub{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:500;margin:1.3rem 0 .45rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.mk-intro{font-size:.74rem;color:var(--dim);line-height:1.5;margin:0 0 .8rem}
+.lib-card h2,header.site h1{display:flex;align-items:center;gap:.75rem}
+.lib-mark{flex:none}
 .mk-go{font-family:var(--mono);font-size:.72rem;margin:0}
 .mk-go a::after{content:" \2192"}
-[data-mode="legible"] .marks h2,[data-mode="both"] .marks h2{font-family:var(--mono)}
+[data-mode="legible"] .marks h2,[data-mode="both"] .marks h2,[data-mode="legible"] .mk-sub,[data-mode="both"] .mk-sub{font-family:var(--mono)}
 @media (min-width:40rem) and (max-width:71.99rem){
-  .mk-cols{display:grid;grid-template-columns:240px minmax(0,1fr);column-gap:2rem;align-items:start}
+  .mk-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem;align-items:start}
 }
 @media (min-width:72rem){
   .wrap{max-width:80rem;display:grid;grid-template-columns:minmax(0,1fr) 19rem;column-gap:2.5rem;align-items:start}
@@ -287,7 +290,11 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
   <div class="wrap">
     <header class="site">
     <nav class="eyebrow wing-switcher" aria-label="Refusal Libraries"><span aria-current="page">Refusal Libraries</span> <span aria-hidden="true">·</span> <a href="/combined">Procreation &amp; Existence</a> <span aria-hidden="true">/</span> <a href="/right-to-die/combined">Right to Die</a> <span aria-hidden="true">/</span> <a href="/abortion/combined">Abortion</a> <span aria-hidden="true">/</span> <a href="/transgenderism/combined">Transgenderism</a> <span aria-hidden="true">/</span> <a href="/anthropocentrism/combined">Anthropocentrism</a> <span aria-hidden="true">/</span> <a href="/veganism/combined">Veganism</a> <span aria-hidden="true">&middot;</span> <a href="/adversarial/">Adversarial Map</a></nav>
-    <h1>The Refusal Libraries</h1>
+    <h1>
+<!-- gen_icons.py:lib-libraries -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="3" y="1" width="4" height="4"/><rect class="sg-lit" x="9" y="1" width="4" height="4"/><rect class="sg-c" x="3" y="6" width="4" height="4"/><rect class="sg-c" x="9" y="6" width="4" height="4"/><rect class="sg-c" x="3" y="11" width="4" height="4"/><rect class="sg-c" x="9" y="11" width="4" height="4"/></svg></span>
+<!-- /gen_icons.py:lib-libraries -->
+The Refusal Libraries</h1>
     <div class="sub">Five argument libraries and a flagship-adjacent module, under one roof &mdash; and a hostile map of the flagship&rsquo;s own text.</div>
 <div class="mode-toggle" role="group" aria-label="reading mode">
       <button id="mode-legible" type="button" aria-pressed="false" onclick="toggleModeAxis('legible')">legible</button>
@@ -307,34 +314,58 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
       <p class="lib-intro">The flagship argues that coming into existence is a harm. The four wings are rebut-only optionality defenses: each answers the objections to a contested liberty without urging anyone to exercise it. Veganism is not a wing but a flagship-adjacent module: it argues harm on the flagship&rsquo;s own register rather than defending a choice. &ldquo;Refusal Libraries&rdquo; is a venue name, not a category claim &mdash; every card below carries its own register. Pick a surface.</p>
       <div class="lib-grid">
       <a class="lib-card flagship" href="/combined">
-        <h2>Procreation &amp; Existence</h2>
+        <h2>
+<!-- gen_icons.py:lib-combined -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-lit" x="2" y="1" width="12" height="2"/><rect class="sg-c" x="2" y="4" width="10" height="2"/><rect class="sg-c" x="2" y="7" width="8" height="2"/><rect class="sg-c" x="2" y="10" width="6" height="2"/><rect class="sg-c" x="2" y="13" width="4" height="2"/></svg></span>
+<!-- /gen_icons.py:lib-combined -->
+Procreation &amp; Existence</h2>
         <p>The flagship library: the case that coming into existence is a harm, with its objections graded across five tiers and answered.</p>
         <div class="lib-meta"><span class="lib-badge live">live</span> <span>82 objections</span> <span>pinned v4.1.2</span> <span class="lib-reg">argues a thesis</span></div>
       </a>
       <div class="grouplbl">The wings &mdash; <em>each defends a right and never recommends the act</em></div>
       <a class="lib-card" href="/right-to-die/combined">
-        <h2>Right to Die</h2>
+        <h2>
+<!-- gen_icons.py:lib-right-to-die -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="2" y="2" width="12" height="2"/><rect class="sg-c" x="2" y="4" width="2" height="11"/><rect class="sg-c" x="12" y="4" width="2" height="11"/><rect class="sg-lit" x="7" y="12" width="2" height="3"/></svg></span>
+<!-- /gen_icons.py:lib-right-to-die -->
+Right to Die</h2>
         <p>The optionality defense of a right to choose one&#39;s own death — objections met on harm, consent, sovereignty, and compensation.</p>
         <div class="lib-meta"><span class="lib-badge complete">provisional-complete</span> <span>17 objections</span> <span>v0.3.19</span> <span class="lib-reg">rebut-only</span></div>
       </a>
       <a class="lib-card" href="/abortion/combined">
-        <h2>Abortion</h2>
+        <h2>
+<!-- gen_icons.py:lib-abortion -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="7" width="7" height="2"/><rect class="sg-c" x="8" y="3" width="2" height="10"/><rect class="sg-c" x="10" y="2" width="4" height="4"/><rect class="sg-lit" x="10" y="11" width="4" height="4"/></svg></span>
+<!-- /gen_icons.py:lib-abortion -->
+Abortion</h2>
         <p>The abortion right in two layers — a rebut-only optionality core, plus the suite&#39;s lone licensed advisory-positive claim (antinatalist-grounded, zero-force).</p>
         <div class="lib-meta"><span class="lib-badge complete">complete</span> <span>7 objections</span> <span>v0.1.6</span> <span class="lib-reg">rebut-only</span></div>
       </a>
       <a class="lib-card" href="/transgenderism/combined">
-        <h2>Transgenderism</h2>
+        <h2>
+<!-- gen_icons.py:lib-transgenderism -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="6" width="4" height="4"/><rect class="sg-c" x="5" y="7" width="6" height="2"/><rect class="sg-lit" x="11" y="6" width="4" height="4"/></svg></span>
+<!-- /gen_icons.py:lib-transgenderism -->
+Transgenderism</h2>
         <p>Gender self-determination as an optionality right — objections across sovereignty, consent, and harm, each answered.</p>
         <div class="lib-meta"><span class="lib-badge complete">complete</span> <span>12 objections</span> <span>v0.1.11</span> <span class="lib-reg">rebut-only</span></div>
       </a>
       <a class="lib-card" href="/anthropocentrism/combined">
-        <h2>Anthropocentrism</h2>
+        <h2>
+<!-- gen_icons.py:lib-anthropocentrism -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="6" y="1" width="4" height="4"/><rect class="sg-c" x="1" y="6" width="4" height="4"/><rect class="sg-lit" x="11" y="6" width="4" height="4"/><rect class="sg-c" x="6" y="11" width="4" height="4"/></svg></span>
+<!-- /gen_icons.py:lib-anthropocentrism -->
+Anthropocentrism</h2>
         <p>Whether human moral supremacy is rationally mandatory — six objections to the anthropocentric default, met on their own terms.</p>
         <div class="lib-meta"><span class="lib-badge complete">provisional-complete</span> <span>6 objections</span> <span>v0.1.7</span> <span class="lib-reg">rebut-only</span></div>
       </a>
       <div class="grouplbl">Flagship-adjacent &mdash; <em>argues a thesis, on the flagship&rsquo;s own register</em></div>
       <a class="lib-card adjacent" href="/veganism/combined">
-        <h2>Veganism</h2>
+        <h2>
+<!-- gen_icons.py:lib-veganism -->
+<span class="mk-tile lib-mark"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="3" width="14" height="2"/><rect class="sg-c" x="1" y="11" width="14" height="2"/><rect class="sg-c" x="1" y="5" width="2" height="6"/><rect class="sg-c" x="13" y="5" width="2" height="6"/><rect class="sg-c" x="4" y="7" width="3" height="3"/><rect class="sg-lit" x="9" y="7" width="3" height="3"/></svg></span>
+<!-- /gen_icons.py:lib-veganism -->
+Veganism</h2>
         <p>Flagship-adjacent module — the positive case for veganism, on the flagship's harm-and-consent register. Outside the Refusal Suite (K179). Eight objections, sorted by standing, harm-accounting, and license.</p>
         <div class="lib-meta"><span class="lib-badge complete">complete</span> <span>8 objections</span> <span>v0.2.1</span> <span class="lib-reg">argues a thesis</span></div>
       </a>
@@ -359,9 +390,26 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
     </main>
     <aside class="marks" id="marks" aria-labelledby="marks-h">
       <h2 id="marks-h">Reading the marks</h2>
-      <p class="mk-lead">The flagship sorts its objections into five tiers. Each tier has a mark: a small diagram of how an objection of that tier is built. It never pictures a topic.</p>
+      <p class="mk-lead">Two kinds of mark share one grammar, and neither pictures a topic.</p>
       <div class="mk-cols">
         <div class="mk-a">
+          <h3 class="mk-sub">The libraries</h3>
+          <p class="mk-intro">Every library has its own mark, and so does this index: the icon in its browser tab, and the one beside its name on this page. A library&rsquo;s mark names it.</p>
+          <ul class="mk-rows mk-libs">
+<!-- gen_icons.py:libs -->
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="3" y="1" width="4" height="4"/><rect class="sg-lit" x="9" y="1" width="4" height="4"/><rect class="sg-c" x="3" y="6" width="4" height="4"/><rect class="sg-c" x="9" y="6" width="4" height="4"/><rect class="sg-c" x="3" y="11" width="4" height="4"/><rect class="sg-c" x="9" y="11" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name">The Refusal Libraries</span><span class="mk-says">six cells, an index</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-lit" x="2" y="1" width="12" height="2"/><rect class="sg-c" x="2" y="4" width="10" height="2"/><rect class="sg-c" x="2" y="7" width="8" height="2"/><rect class="sg-c" x="2" y="10" width="6" height="2"/><rect class="sg-c" x="2" y="13" width="4" height="2"/></svg></span><span class="mk-txt"><span class="mk-name">Procreation &amp; Existence</span><span class="mk-says">the five-tier ladder</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="2" y="2" width="12" height="2"/><rect class="sg-c" x="2" y="4" width="2" height="11"/><rect class="sg-c" x="12" y="4" width="2" height="11"/><rect class="sg-lit" x="7" y="12" width="2" height="3"/></svg></span><span class="mk-txt"><span class="mk-name">Right to Die</span><span class="mk-says">a doorway standing open</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="7" width="7" height="2"/><rect class="sg-c" x="8" y="3" width="2" height="10"/><rect class="sg-c" x="10" y="2" width="4" height="4"/><rect class="sg-lit" x="10" y="11" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name">Abortion</span><span class="mk-says">a stem that forks; both branches present</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="6" width="4" height="4"/><rect class="sg-c" x="5" y="7" width="6" height="2"/><rect class="sg-lit" x="11" y="6" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name">Transgenderism</span><span class="mk-says">two nodes, one edge, no arrowhead either way</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="6" y="1" width="4" height="4"/><rect class="sg-c" x="1" y="6" width="4" height="4"/><rect class="sg-lit" x="11" y="6" width="4" height="4"/><rect class="sg-c" x="6" y="11" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name">Anthropocentrism</span><span class="mk-says">four peers around an empty centre</span></span></li>
+<li class="mk-row lib"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="3" width="14" height="2"/><rect class="sg-c" x="1" y="11" width="14" height="2"/><rect class="sg-c" x="1" y="5" width="2" height="6"/><rect class="sg-c" x="13" y="5" width="2" height="6"/><rect class="sg-c" x="4" y="7" width="3" height="3"/><rect class="sg-lit" x="9" y="7" width="3" height="3"/></svg></span><span class="mk-txt"><span class="mk-name">Veganism</span><span class="mk-says">a boundary enclosing more than one</span></span></li>
+<!-- /gen_icons.py:libs -->
+          </ul>
+        </div>
+        <div class="mk-b">
+          <h3 class="mk-sub">The five tiers</h3>
+          <p class="mk-intro">The flagship sorts its objections into five tiers. A tier&rsquo;s mark shows how an objection of that tier is built.</p>
           <figure class="mk-plate"><span class="pl">
 <!-- gen_icons.py:plate -->
 <svg class="mk-plate-svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Tier 3&#8217;s mark, enlarged: a lit node on a stem over a bar, held up by two nodes.">
@@ -373,8 +421,6 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 <!-- /gen_icons.py:plate -->
 </span><figcaption>T3, enlarged. Each square is one pixel of the mark.</figcaption></figure>
           <p class="mk-key">Blocks are nodes. Thin lines are edges. A long bar underneath is a ground; corner pieces are brackets. One element is lit: look there first.</p>
-        </div>
-        <div class="mk-b">
           <ol class="mk-rows" id="mk-rows">
 <!-- gen_icons.py:rows -->
 <li class="mk-row t1"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-lit sg-m" x="1" y="2" width="4" height="4"/><rect class="sg-c" x="5" y="3" width="9" height="2"/><rect class="sg-c" x="12" y="5" width="2" height="7"/><rect class="sg-c" x="6" y="10" width="6" height="2"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T1</b> Emotional / Reflexive</span><span class="mk-says">a reflex: the line goes out, turns, and comes back short of where it began</span></span></li>
@@ -384,7 +430,6 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 <li class="mk-row t5"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c sg-m" x="1" y="1" width="4" height="2"/><rect class="sg-c sg-m" x="1" y="3" width="2" height="2"/><rect class="sg-c sg-m" x="11" y="1" width="4" height="2"/><rect class="sg-c sg-m" x="13" y="3" width="2" height="2"/><rect class="sg-c sg-m" x="1" y="13" width="4" height="2"/><rect class="sg-c sg-m" x="1" y="11" width="2" height="2"/><rect class="sg-c sg-m" x="11" y="13" width="4" height="2"/><rect class="sg-c sg-m" x="13" y="11" width="2" height="2"/><rect class="sg-lit" x="6" y="6" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T5</b> Meta-Objection</span><span class="mk-says">about the objections: a node held inside brackets</span></span></li>
 <!-- /gen_icons.py:rows -->
           </ol>
-          <p class="mk-fam">The library icons in your browser tab share this grammar: they name a library, where these five describe an objection.</p>
           <p class="mk-go"><a href="/combined">See the tiers in the flagship</a></p>
         </div>
       </div>

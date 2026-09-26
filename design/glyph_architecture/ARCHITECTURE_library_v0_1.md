@@ -1,7 +1,8 @@
 # Glyph and sigil architecture — library edition, v0.1
 
-*Design lane (seat `l`), 2026-09-25, America/Phoenix. Branch `design/sigils`, built, **not merged**.
-Answers relay R0111 (the kickoff) and R0108 (argue's architecture v1, md5 `ee1f57f6`), with R0107.*
+*Design lane (seat `l`), 2026-09-25/26, America/Phoenix. Branch `design/sigils`. The front door was shown to
+Josiah, revised on his notes of 2026-09-26 (§1), and approved: *"I like it."* Answers relay R0111 (the kickoff)
+and R0108 (argue's architecture v1, md5 `ee1f57f6`), with R0107.*
 
 **Status key.** **RULED** = Josiah's words, quoted. **BUILT** = on this branch, measured, waiting for his look.
 **THEORY** = proposed, not drawn, not started. **PIN** = touches `site/combined.html`, so it is a declared
@@ -11,9 +12,9 @@ pin-move session he opens and ratifies. Anything marked *the seat's reading* is 
 
 ## 0. Recommendation first
 
-1. **Merge the front-door key as built.** It moves served bytes on `/libraries` only, no pin, no canon.
-2. **Next on the front door (no pin):** put each library's own mark on its card, beside the title (§7.1). It
-   makes the key's "two families" line visible instead of pointing at a browser tab.
+1. **The front door as built goes live.** It moves served bytes on `/libraries` only, no pin, no canon.
+2. **Done on his note:** each library's own mark beside its name on the page, and the libraries first in the
+   side panel (§4).
 3. **First flagship use, when a pin move is declared:** the tier mark on each tier filter button and each
    objection's tier badge, in the game's badge form (§7.2).
 4. **First new family:** outcome glyphs (routed / defanged / met). **Not** move glyphs yet: the move-tag
@@ -34,8 +35,13 @@ pin-move session he opens and ratifies. Anything marked *the seat's reading* is 
 - Tier sigils in `icons/gen_icons.py`, in principle: L1a recorded it (canon v38.18); his words there were
   *"Going with your recommendations on all of the above."*
 - Pedagogy, standing: the audience must *"crawl and scramble to develop its own rational understanding"*.
+- **On the preview, 2026-09-26:** *"Show me  a quick preview image, so I can look at it before it goes live."*
+  Then: *"Thank you. It looks good. Something missing are each wing's individual favicon icon. They all have
+  one. Feel free to place a marker for each of them and an explanation somewhere in the side panel if you
+  deem."* Then: *"Do you think the order should be reversed, so it shows the wing's icons on top first?"* (the
+  seat's answer: yes). Then, on the result: *"It's looking good, less plain, more intriguing. I like it."*
 
-**Not yet ruled:** everything BUILT on this branch, and every THEORY item.
+**Ruled:** the front door as built (§4), by his "I like it" on the preview. **Not yet ruled:** every THEORY item.
 
 ---
 
@@ -64,18 +70,22 @@ Two families on the site:
   identical to R0107's `6fb26e1` copy (`b97acd2b`); `ed9286f` only adds the game's HUD grids, unused here.
 - **Generator.** `icons/gen_icons.py` still draws the seven favicons, byte-identical (7 of 7). It now also
   refuses any `sigils.json` but the pinned bytes, re-asserts the grids (in bounds, no overlap, one lit), and
-  writes the front door's three regions: `mini` (the five at 1×), `rows` (each at 2× with its label and the
-  sentence of what its shape says, both from `sigils.json`) and `plate` (T3 drawn large, three parts named).
+  writes the front door's eleven regions: `mini` (the five at 1×), `rows` (each at 2× with its label and the
+  sentence of what its shape says, both from `sigils.json`), `plate` (T3 drawn large, three parts named),
+  `libs` (the seven library marks with what each shape says: the words after the dash in each favicon's own
+  description) and `lib-<name>` ×7 (each library's mark beside its name on the page).
 - **Collision law, mechanised.** L1a warned that a ladder with its top rung lit *is* the flagship's favicon.
   The generator now refuses to draw if any two marks, across both families, share a silhouette. Measured on
   the drawn set: no collision; the closest tier-to-favicon pair is T1 and Veganism at IoU 0.36; the closest
   pair of tiers is T2 and T5 at 0.54.
-- **Gate.** `tools/icons_regen_check.py` (L1's check, extended) requires the favicons **and** the three
-  regions of `site/libraries/index.html` to be byte for byte what the generator draws. `--write-marks`
-  splices them in. A refused draw prints its own reason as a RED.
-- **Controls.** `controls_marks.py` → `controls_marks_v0_1.json` (md5 `ca23b06d`): **10 of 10 as expected**,
-  the unmutated control first; each mutation RED with its own message. C6 draws a tier as the flagship's
-  ladder and is refused; C9 proves the splice restores the original page byte for byte. The record
+- **Gate.** `tools/icons_regen_check.py` (L1's check, extended) requires the favicons **and** every
+  generated region of `site/libraries/index.html` to be byte for byte what the generator draws. The region
+  list is whatever the generator draws, and a marker in the page it does not draw is a difference too.
+  `--write-marks` splices them in. A refused draw prints its own reason as a RED.
+- **Controls.** `controls_marks.py` → `controls_marks_v0_1.json`: **12 of 12 as expected**, the unmutated
+  control first; each mutation RED with its own message. C6 draws a tier as the flagship's ladder and is
+  refused; C9 proves the splice restores the original page byte for byte; C10 changes a card's mark; C11
+  plants a region the generator does not draw. The record
   reproduces byte-identically under two forced hash seeds. It pins the page's md5, so regenerate it after
   any change to the page.
 
@@ -84,33 +94,41 @@ Two families on the site:
 ## 4. The front-door key (BUILT)
 
 **What a reader sees.**
-- **The rail.** The "5 tiers" figure carries the five marks at actual size. They link to the key.
-- **The key, "Reading the marks."** One sentence on what a mark is; the plate (T3 at 15×, its pixel grid
-  showing, `lit` / `edge` / `node` labelled); one caption; one sentence that names all five parts and says
-  where to look; the five rows; one line on the two families; a link into the flagship.
+- **Beside every name.** The page title carries the index's own mark; each library's card carries its mark
+  beside the title, the same drawing as the icon in its browser tab. The Adversarial Map has no mark of its
+  own (its tab borrows the front door's), so its card has none.
+- **The rail.** The "5 tiers" figure carries the five tier marks at actual size. They link to the key.
+- **The side panel, "Reading the marks."** One line: two kinds of mark share one grammar, and neither pictures a
+  topic. Then **the libraries first** (his note): the seven library marks, each with what its shape says. Then
+  **the five tiers**: one line on tiers, the plate (T3 at 15×, its pixel grid showing, `lit` / `edge` / `node`
+  labelled) and its caption, the sentence that names all five parts and says where to look, the five rows, and a
+  link into the flagship.
 - **Where.** At 72rem and wider, a 19rem column beside the libraries. It stays in view while you scroll, but
-  **only when it fits the window whole**. Narrower, it sits after the libraries, in two columns on tablets.
+  **only when it fits the window whole**; at 1,506 px it now fits none of the windows tested. Narrower, it sits
+  after the libraries, the two sections side by side on tablets.
 - **Motion.** The game's five one-shots, copied: opacity and transform only, no loop. They play once, in
-  order (T1 → T5, a quarter-second apart), the first time the rows are seen. Hovering a row plays its mark
-  again. The rail's marks never move. The gate is the house layer's own: **the vfx display tier, a dark
+  order (T1 → T5, a quarter-second apart), the first time the tier rows are seen. Hovering a row plays its mark
+  again. The rail's marks and the library marks never move. The gate is the house layer's own: **the vfx display tier, a dark
   ground, and motion allowed**. The layer gates its glow and its sound the same way; its comment says why:
   *"one power button should mean one thing."* Reduced motion, a light reading mode, and the cosmetic or off
   tiers are all still.
 
-**Measured (Playwright, Chromium 153 and Firefox 155; `measure_front_door.mjs`, record `measure_front_door_v0_1.json`).**
+**Measured (Playwright, Chromium 153 and Firefox 155; `measure_front_door.mjs`, record `measure_front_door_v0_2.json`
+for this page; `v0_1` is the record of the first build, shown on 2026-09-25).**
 
 | check | result |
 |---|---|
 | horizontal overflow, 10 widths (360–1920) × 4 reading modes × 2 engines | **0 of 80** (display tier cosmetic; see §9 for the vfx pan) |
-| WCAG AA, all 27 text items in the key and rail, every run | **min 5.06:1** |
+| WCAG AA, all 44 text items in the side panel and rail, every run | **min 5.06:1** |
+| the seven marks beside names (title + six cards), every run | **7 of 7** |
 | page errors or console errors | **0** |
-| motion gate, 6 cases × 2 engines | **12 of 12**: moves only at vfx + dark + motion allowed; stops after; hover replays; on a phone it waits until the rows are seen |
-| sticky | sticks at 1440×1100 and 1920×1080 (key 990 px); stays put at 1440×900 |
-| favicons / regions / controls | 7 of 7 · 3 of 3 · 10 of 10 |
+| motion gate, 6 cases × 2 engines | **12 of 12**: moves only at vfx + dark + motion allowed, the first time the tier rows are seen; stops after; hover replays |
+| sticky | the panel is 1,506 px and fits none of 1440×900, 1440×1100, 1920×1080, so it stays put |
+| favicons / regions / controls | 7 of 7 · 11 of 11 · 12 of 12 |
 | xsurface | GREEN, flagship `006aa983` / 2,987,411 untouched |
 
-**Cost.** `site/libraries/index.html` 21,304 → 35,885 B raw; gzip 6,404 → 9,760 B (+3.4 KB over the wire).
-Inline SVG is 6.7 KB raw of that (6,688 B), against R0108's "under 4 KB" estimate. No new files are served.
+**Cost.** `site/libraries/index.html` 21,304 → 43,308 B raw; gzip 6,404 → 10,383 B (+4.0 KB over the wire).
+Inline marks are 12,928 B raw of that. No new files are served.
 
 ---
 
@@ -130,6 +148,10 @@ Inline SVG is 6.7 KB raw of that (6,688 B), against R0108's "under 4 KB" estimat
    so on a cream page a mark is still the same object as the icon in the tab.
 7. **The rows play in sequence**, so the marks assemble one after another rather than all at once.
 8. **The T-numbers are not crimson.** One lit element per row: the eye should land on the mark.
+9. **Both families in one panel, libraries first** (his note, 2026-09-26). The reader meets the library cards
+   first, so the panel explains those marks first; the tier marks are one level deeper, inside the flagship.
+   The plate stays with the tiers it belongs to: a wing's mark drawn large would put one topic above the others
+   on the front door.
 
 ---
 
@@ -155,10 +177,8 @@ Added by this lane:
 
 ## 7. THEORY: further use across the site (ordered by value to a reader against cost)
 
-1. **Library marks on the front-door cards.** *No pin.* Each card's title gets its library's mark at 2×, from
-   the same generator. The Adversarial Map has no mark of its own (its tab borrows the front door's), so its
-   card keeps none.
-   **Lean: the next step.**
+1. **Library marks on the front-door cards.** *No pin.* **BUILT 2026-09-26 on his note** (§4). If the
+   Adversarial Map is to carry a mark, it needs one drawn: a new mark, his to approve.
 2. **Tier marks in the flagship.** *PIN.* On the five tier filter buttons and on every objection's tier
    badge, in the game's form: mark plus "T#", never instead of it. **A ruling it needs:** the lit element in
    the flagship's existing tier colours, or in crimson. **Lean: tier colour in the flagship**, whose tiers are
@@ -209,18 +229,19 @@ Added by this lane:
 
 ---
 
-## 10. Where everything is (branch `design/sigils`)
+## 10. Where everything is
 
 | file | md5 | what |
 |---|---|---|
 | `icons/sigils.json` | `1e7e99bd` | the argue grids, vendored byte for byte (`ed9286f`) |
-| `icons/gen_icons.py` | `6c601f6f` | draws both families; refuses unpinned data and shared silhouettes |
-| `tools/icons_regen_check.py` | `4016b6a5` | the gate: 7 favicons + 3 front-door regions; `--write-marks` |
-| `site/libraries/index.html` | `f80a4f5a` | the front door, with the key and the rail marks |
-| `design/glyph_architecture/controls_marks.py` | `c1fa0d0e` | the 10 mutation controls |
-| `design/glyph_architecture/controls_marks_v0_1.json` | `ca23b06d` | their record |
-| `design/glyph_architecture/measure_front_door.mjs` | see git | the browser measurement, both engines |
-| `design/glyph_architecture/measure_front_door_v0_1.json` | see git | its record (the numbers in §4 and §9) |
+| `icons/gen_icons.py` | `ae22c4c4` | draws both families and the page's 11 regions; refuses unpinned data and shared silhouettes |
+| `tools/icons_regen_check.py` | `a3b5ef51` | the gate: 7 favicons + every front-door region; `--write-marks` |
+| `site/libraries/index.html` | `8a7f4160` | the front door, with the marks beside every name and the side panel |
+| `design/glyph_architecture/controls_marks.py` | `f1e07284` | the 12 mutation controls |
+| `design/glyph_architecture/controls_marks_v0_1.json` | `d076176e` | their record (it pins the page md5) |
+| `design/glyph_architecture/measure_front_door.mjs` | `7e88e381` | the browser measurement, both engines |
+| `design/glyph_architecture/measure_front_door_v0_2.json` | `43d443df` | its record for this page (§4) |
+| `design/glyph_architecture/measure_front_door_v0_1.json` | `4eb0b483` | its record for the first build, and §9's pan count |
 | this file | — | the architecture, ruled vs THEORY |
 
 Sources outside this repo: argue `ed9286f` `design/tier_sigils_v0/` (`ARCHITECTURE.md` `fa9a1f19`, byte-identical
