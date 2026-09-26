@@ -7,7 +7,7 @@ been seen to fail proves nothing, so each control below copies the inputs into a
 mutation, runs the check against that root, and requires its exit code AND its own failure message. The
 unmutated control runs first. Nothing in the repo is touched.
 
-  python3 design/glyph_architecture/controls_marks.py    # writes controls_marks_v0_2.json beside itself
+  python3 design/glyph_architecture/controls_marks.py    # writes controls_marks_v0_3.json beside itself (v0_2 on main)
 
 v0_2 (LD2, 2026-09-26): the gate now checks six pages against the manifest gen_icons.py writes (the front
 door and the five wings). C10 is retargeted at the abortion card's mark as it is now drawn (it carries its
@@ -15,6 +15,9 @@ one-shot), and C12-C19 prove each new way a page can drift: a wing's title mark,
 page's copy of the shared stylesheet, a region planted on the wrong page, a missing template, a wing grid
 changed under its plate's labels, a one-shot that moves a rect twice, and a missing page. A want item that
 starts with "re:" is a regular expression. v0_1 is LD1's record and stays as it was.
+
+v0_3 (the flagship package, branch design/marks-flagship; lands only with a declared pin move): the flagship is
+the seventh page, and C20 proves its own stylesheet cannot drift. v0_2 stays main's record.
 """
 import hashlib, json, os, re, shutil, subprocess, sys, tempfile
 
@@ -22,7 +25,7 @@ REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 HERE = os.path.dirname(os.path.abspath(__file__))
 WINGS = ["right-to-die", "abortion", "transgenderism", "anthropocentrism", "veganism"]
 FILES = ["icons/gen_icons.py", "icons/sigils.json", "tools/icons_regen_check.py", "site/libraries/index.html"] + \
-        ["site/%s/combined.html" % w for w in WINGS] + \
+        ["site/%s/combined.html" % w for w in WINGS] + ["site/combined.html"] + \
         sorted("site/" + f for f in os.listdir(os.path.join(REPO, "site")) if f.startswith("icon-") and f.endswith(".svg"))
 PAGE = "site/libraries/index.html"
 LADDER = "[[2, 1, 12, 2, 'lit'], [2, 4, 10, 2, 'chrome'], [2, 7, 8, 2, 'chrome'], [2, 10, 6, 2, 'chrome'], [2, 13, 4, 2, 'chrome']]"
@@ -47,7 +50,7 @@ def gone(path):
 def W(w): return "site/%s/combined.html" % w
 
 CONTROLS = [
-    ("C0 unmutated", None, [], 0, ["ICONS: 7 of 7", "MARKS: 37 of 37 regions on 6 pages"]),
+    ("C0 unmutated", None, [], 0, ["ICONS: 7 of 7", "MARKS: 41 of 41 regions on 7 pages"]),
     ("C1 a pixel in the plate region changes role", sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
      [], 1, ["re:DIFF  libraries +marks-plate ", "MARKS: RED -- 1 difference(s)"]),
     ("C2 a says-line in the rows region is edited", sub(PAGE, b"which stays standing", b"which stands"),
@@ -67,7 +70,7 @@ CONTROLS = [
      [], 1, ["DIFF  veganism", "ICONS: RED -- 1 difference(s)"]),
     ("C9 --write-marks restores C1's page byte for byte",
      sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
-     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 37 of 37"]),
+     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 41 of 41"]),
     ("C10 a library's mark on its card changes",
      sub(PAGE, b'<rect class="sg-lit m-fill" style="--d:0.5s" x="10" y="11"', b'<rect class="sg-c m-fill" style="--d:0.5s" x="10" y="11"'),
      [], 1, ["re:DIFF  libraries +marks-lib-abortion ", "MARKS: RED -- 1 difference(s)"]),
@@ -96,9 +99,12 @@ CONTROLS = [
      [], 1, ["ICONS: RED -- gen_icons.py refused to draw", "every rect moves exactly once"]),
     ("C19 a wing page is missing", gone(W("abortion")),
      [], 1, ["re:DIFF  site/abortion/combined.html +the page is missing", "MARKS: RED -- 1 difference(s)"]),
+    ("C20 the flagship's copy of its marks stylesheet drifts (every tier lit in crimson)",
+     sub("site/combined.html", b".sg-c{fill:#e8e4dd}.sg-lit{fill:var(--lit,#ef3a58)}", b".sg-c{fill:#e8e4dd}.sg-lit{fill:#ef3a58}"),
+     [], 1, ["re:DIFF  combined.html +marks-flag-css ", "MARKS: RED -- 1 difference(s)"]),
 ]
 
-record = {"artifact": "controls_marks", "version": "0.2", "gate": "tools/icons_regen_check.py",
+record = {"artifact": "controls_marks", "version": "0.3", "gate": "tools/icons_regen_check.py",
           "inputs": {f: md5(open(os.path.join(REPO, f), "rb").read()) for f in FILES}, "controls": []}
 fails = 0
 for name, mutate, flags, want_rc, want in CONTROLS:
@@ -122,7 +128,7 @@ for name, mutate, flags, want_rc, want in CONTROLS:
     print("  %s  %s  (rc %d)" % ("ok  " if ok else "FAIL", name, run.returncode))
     if not ok: print(text)
 record["summary"] = "%d of %d controls as expected" % (len(CONTROLS) - fails, len(CONTROLS))
-open(os.path.join(HERE, "controls_marks_v0_2.json"), "w", encoding="utf-8", newline="\n").write(
+open(os.path.join(HERE, "controls_marks_v0_3.json"), "w", encoding="utf-8", newline="\n").write(
     json.dumps(record, indent=1, sort_keys=True) + "\n")
 print("CONTROLS: " + record["summary"])
 sys.exit(1 if fails else 0)
