@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.28",
+  "canon_version": "38.29",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L4c",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "gate2: judge v1_6 (adversarial_map.terminal_assembly_v1_6_L4c; adversarial_map_staging/adversarial_map_v1_6.json, 7a69bc9f), #46's (d) at HR-14, as a seat that did not draft it (K258); the knock-on found 0 HOLDS newly collided. Then the pin session Josiah declared (adversarial_map.pin_move_queue_v1_6, 17 rows; kickoff R0150), which gate2 launches once that judgment lands. Then adversarial wing v2 and the /llms.txt session (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
+    "session": "The declared pin session (seat l, kickoff R0150 fbafd18c), launched by gate2 once this judgment lands: phase 1 pins the corpus in the L-lane instruments; phase 2 drafts all 17 queue rows' repairs, with PQ-17 naming both sentences (adversarial_map.R1_v1_6_judgment_gate2, W-004) and a knock-on list that includes every entry anchored inside a repaired sentence (W-007); gate2 judges; his word; then the pin move. After it, a successor map re-anchors and the six waiting (a)s are re-judged. Then adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1793,7 +1793,8 @@
         "adversarial_map.reader_aid_backlog_L4c",
         "adversarial_map.pin_move_queue_v1_6"
       ]
-    }
+    },
+    "judged_v1_6_gate2": "gate2 judged v1_6: declaration CONFIRM 1; measure CONFIRM 1; queue_row AMEND 1; redraft ACCEPT 1; register ACCEPT 1. Judged is not ruled."
   },
   "open_questions": {
     "active": {
@@ -1924,7 +1925,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.28",
+  "canon_version_marker": "v38.29",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2612,7 +2613,8 @@
     "v38_25_L4b": "MINOR. keyset UNCHANGED at 42. Eight adversarial_map subkey additions (R1_drafts_judgment_ruled_L4b, terminal_assembly_v1_5_L4b, honest_residuals_register_pin_v0_6, pin_move_queue_v1_5, relation_direction_corrected_J052, new_prose_reading_ruled_J049, aggravation_repair_rule_J051, knock_on_collisions_v1_5); next_recommended_session re-pointed (session rewritten; ruled_L4b added); canon-meta; this note; one session_log_recent append. NO PIN.",
     "v38_26_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (R1_v1_5_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_v1_5_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_27_gate2": "MINOR. keyset UNCHANGED at 42. Two adversarial_map subkey additions (R1_070_rerule_gate2, R1_progress_L3_after_R1_070); next_recommended_session re-pointed (session rewritten; rerule_R1_070_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
-    "v38_28_L4c": "MINOR. keyset UNCHANGED at 42. Six adversarial_map subkey additions (terminal_assembly_v1_6_L4c, honest_residuals_register_pin_v0_7, knock_on_collisions_v1_6, pin_move_queue_v1_6, reader_aid_backlog_L4c, instruments_append_proofed_L4c); next_recommended_session re-pointed (session rewritten; ruled_L4c added); canon-meta; this note; one session_log_recent append. NO PIN."
+    "v38_28_L4c": "MINOR. keyset UNCHANGED at 42. Six adversarial_map subkey additions (terminal_assembly_v1_6_L4c, honest_residuals_register_pin_v0_7, knock_on_collisions_v1_6, pin_move_queue_v1_6, reader_aid_backlog_L4c, instruments_append_proofed_L4c); next_recommended_session re-pointed (session rewritten; ruled_L4c added); canon-meta; this note; one session_log_recent append. NO PIN.",
+    "v38_29_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (R1_v1_6_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_v1_6_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2850,7 +2852,8 @@
     "L4b (2026-09-26; NO PIN): his word on gate2's judgment, verbatim 'Go with the recommendations on all of the above and for Gate 2's seat. Continue with my word.'. The six fixes it owed are built as adversarial_map_v1_5.json 0df413ed: #14's move completed from R1-049, #58 redrafted as a (b) at social-contract#long, #25/#59/#62's terminus_routing names the path, #16's grounds name why-not-suicide#long. Class counts a30 b32 c1 d75. Register v0_6 0689f46f re-declares the K349 pair as HR-11 conditions HR-14 (J-052). Pin-move queue 16 rows. Drafted, not judged: gate2 next.",
     "gate2 (2026-09-26; NO PIN): v1_5 judged (R0136), under 'Go with the recommendations on all of the above and for Gate 2's seat. Continue with my word.'. Record 291e80fd: six redrafts ACCEPT, register v0_6's three deltas ACCEPT, the first gate's change CONFIRM (its docstring brought into line). Knock-on: 10 HOLDS stand; #46 REOPENS (the new (d) at its answering locus records the recoil its answer had to empty as standing; lean re-rule FAILS, then (d) HR-14). Judged, not ruled.",
     "gate2 (2026-09-26; NO PIN): R1-070 appended to R1_rulings.json (d829437e), superseding R1-011: #46 FAILS, on 'Proceed with all of your recommendations.' (relayed by the L4 session, recorded at 46b6f65). R1 69 of 69: HOLDS 23, FAILS 46. Both judgment gates read an append-only record at its pinned bytes (first gate 0e1cbc42, second f5a732f4); four control records regenerated.",
-    "L4c (2026-09-26; NO PIN): #46, re-ruled FAILS at R1-070 on 'Proceed with all of your recommendations.', drafted as a (d) at HR-14 terminus-held-open in adversarial_map_v1_6.json 7a69bc9f (a29 b32 c1 d76); register v0_7 bcbff231 adds its tributary to HR-14. Knock-on: 0 HOLDS newly collided. Pin-move queue 17 rows (PQ-17 queued as gate2's lean), declared by him to the L4 session ('open it when the window is clear') and to gate2 ('Go with your recommendation on the pin session.'). His TO DO lines on /adversarial/ and 'For your agent' recorded with the adopted priority. Drafted, not judged: gate2 next."
+    "L4c (2026-09-26; NO PIN): #46, re-ruled FAILS at R1-070 on 'Proceed with all of your recommendations.', drafted as a (d) at HR-14 terminus-held-open in adversarial_map_v1_6.json 7a69bc9f (a29 b32 c1 d76); register v0_7 bcbff231 adds its tributary to HR-14. Knock-on: 0 HOLDS newly collided. Pin-move queue 17 rows (PQ-17 queued as gate2's lean), declared by him to the L4 session ('open it when the window is clear') and to gate2 ('Go with your recommendation on the pin session.'). His TO DO lines on /adversarial/ and 'For your agent' recorded with the adopted priority. Drafted, not judged: gate2 next.",
+    "gate2 (2026-09-26; NO PIN): v1_6 judged (R0151). Record fa89adc9: #46's (d) at HR-14 ACCEPT; register v0_7 ACCEPT; knock-on 0 CONFIRM; PQ-17 AMEND (name the lone-actor analogy too; it carries #4's anchor); declaration CONFIRM. The three judgment gates read the corpus at the md5 their judged map pins, rehearsed against a changed corpus. Judged, not ruled. Next: gate2 launches the declared pin session (R0150)."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -7183,6 +7186,143 @@
       ],
       "judge_side": "gate2 wrote its own inline lookup in its two judgment gates rather than import pinned.py, so a drafting seat's helper cannot move the judge's gates (adversarial_map.R1_070_rerule_gate2).",
       "law": "An instrument that pins an append-only record reads it at the pinned bytes, never at the working file."
+    },
+    "R1_v1_6_judgment_gate2": {
+      "status": "JUDGED, NOT RULED. gate2's third judgment; Josiah's word decides.",
+      "judge": "gate2, a Code session that drafted none of v1_6, the redrafts file, register v0_7 or the queue (K258). #46's disposition was gate2's own lean (V-017); W-006 records the pull and how W-001 answers it.",
+      "his_words_it_follows": [
+        "Proceed with all of your recommendations.",
+        "Go with your recommendation on the pin session."
+      ],
+      "kickoff": {
+        "relay": "R0151",
+        "md5": "45459ed3787b4c5c0d656bd09fce9a9a"
+      },
+      "record": {
+        "md5": "fa89adc9dcc8bef39795bc830efdc427",
+        "bytes": 14481,
+        "file": "adversarial_map_staging/r1/R1_v1_6_judgments.json",
+        "gate": {
+          "md5": "8631bdf248ca779edeb747fd02b9f870",
+          "bytes": 31270,
+          "file": "adversarial_map_staging/r1/r1_v1_6_judgments_gate.py"
+        },
+        "control": {
+          "md5": "fb59282e6649b4c7517e6e72c4fdfa0f",
+          "bytes": 5708,
+          "file": "adversarial_map_staging/r1/r1_v1_6_judgments_gate_control_v0_1.json",
+          "result": "18 of 18 as expected, the unmutated control first"
+        },
+        "instrument": {
+          "md5": "9bf898939eeed04474c2154fdfde15b0",
+          "bytes": 9468,
+          "file": "adversarial_map_staging/r1/r1_v1_6_reading.py",
+          "record": {
+            "md5": "1f3f3a85c7def4f2e2b18982dbe0a8f8",
+            "bytes": 3982,
+            "file": "adversarial_map_staging/r1/r1_v1_6_reading_v0_1.json"
+          }
+        }
+      },
+      "judged": {
+        "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+        "map_v1_5": "0df413ed655a5373468c218832854bbe",
+        "redrafts": "611f0f00631119938f98c03e82a10d2d",
+        "register_v0_7": "bcbff23113f3fb0135d5fd5b3e2630d5",
+        "register_v0_6": "0689f46f18a4dbe8d40c9982a2ad06f9",
+        "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+        "judgments_v1_5": "291e80fd27b4a8928129daca52929bd8",
+        "knock_on": "32a475c31292a7d4cfe77757ec7d2178",
+        "canon": "d9d0c23a9e47bd1cc38f69a378c2198f"
+      },
+      "verdicts": {
+        "declaration": {
+          "CONFIRM": 1
+        },
+        "measure": {
+          "CONFIRM": 1
+        },
+        "queue_row": {
+          "AMEND": 1
+        },
+        "redraft": {
+          "ACCEPT": 1
+        },
+        "register": {
+          "ACCEPT": 1
+        }
+      },
+      "n46": "ACCEPT. The move, anchor and status are v1_5's; the card's own continuation (a third horn, existence carrying weight without overriding content) needs a positive case against beings who exist, which is what HR-14 holds open. HR-02 was tested and fails on the register's own text: its gloss scopes it to the asymmetry, which does not reach the lives the button ends.",
+      "register_v0_7": "ACCEPT: exactly one tributary added (#46, HR-14 terminus-held-open); nothing else moved.",
+      "knock_on": "CONFIRM: 0 HOLDS newly collided, reproduced without the instrument (no (a) on or routed to red-button-repugnant among v1_6's 29).",
+      "pq17": {
+        "verdict": "AMEND",
+        "owed": [
+          "The pin session, a drafting seat, names both sentences in the queue in its first canon bump: the 'grabbed, not produced' sentence and the lone-actor analogy after it. v38.28's block stays as written.",
+          "The analogy sentence carries #4's own map anchor (\"an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license\"), which V-012 read as limiting the HOLDS to layer one. The repair keeps that clause's claim, or #4 is re-judged against the repaired text; either way #4 goes on the pin session's knock-on list."
+        ],
+        "why": "R1-024 conceded the lone-actor analogy by name, and the analogy is the sentence after the one PQ-17 names; it carries #4's own map anchor."
+      },
+      "declaration": "CONFIRM: his words to gate2 verbatim, R0150 named by id and md5; his words to the L4 session recorded as that session reports them.",
+      "findings": [
+        {
+          "row": "W-006",
+          "title": "the disposition judged was gate2's own lean",
+          "whose": "gate2, for the record; Josiah if the residual ever needs a ruling"
+        },
+        {
+          "row": "W-007",
+          "title": "a repair moves every anchor inside its sentence",
+          "whose": "seat l (the pin session)"
+        },
+        {
+          "row": "W-008",
+          "title": "the drafter's two disclosures, checked",
+          "whose": "the L4 session"
+        }
+      ],
+      "judgment_gates_read_pinned_corpus": {
+        "law": "Every judgment gate reads corpus: at the md5 its judged map pins (meta.source_corpus_md5), from git history once the working corpus moves. If those bytes cannot be recovered, a corpus quote fails; it never floats with the working corpus.",
+        "why": "R0150's phase 1: the declared pin session changes the corpus, and the first two judgment records quote it 12 and 8 times. Any quote of a repaired sentence would otherwise go RED.",
+        "rehearsed": "In a scratch clone, one quoted corpus span per record was replaced in the working corpus. The committed gates went RED (NOT VERBATIM at J-003 and at V-002); the new gates stayed GREEN. Measured before this commit, and recorded as controls in each gate's self-test (a simulated pin GREEN; the same with git history withheld RED).",
+        "first_gate": {
+          "md5": "5837a2686b1762bca363dae9955a7880",
+          "bytes": 27337,
+          "file": "adversarial_map_staging/r1/r1_judgments_gate.py",
+          "was": "0e1cbc42118625f7a6bac0065018b326",
+          "control": {
+            "md5": "f3fedd49fcdb458b9e767bdbab587c7e",
+            "bytes": 5565,
+            "file": "adversarial_map_staging/r1/r1_judgments_gate_control_v0_5.json",
+            "result": "16 of 16 as expected, the unmutated control first"
+          }
+        },
+        "second_gate": {
+          "md5": "6fabef3b520c93c7e4a0b25e8865b78f",
+          "bytes": 29349,
+          "file": "adversarial_map_staging/r1/r1_v1_5_judgments_gate.py",
+          "was": "f5a732f4b87cb5910d549eaa7fd59ae4",
+          "control": {
+            "md5": "5120e70680aeae49ce26488323f2c08f",
+            "bytes": 5886,
+            "file": "adversarial_map_staging/r1/r1_v1_5_judgments_gate_control_v0_3.json",
+            "result": "18 of 18 as expected, the unmutated control first"
+          }
+        },
+        "third_gate": "written with it: corpus: from map_v1_6's pin, canon: from the pinned v38.28, which the rename convention removes at this bump and git history keeps",
+        "not_done_here": "The L-lane instruments (the assembly builders and controls, the dossier instruments, r1_quote_check's corpus: source) are the pin session's phase 1."
+      },
+      "for_his_word": [
+        {
+          "ask": "Adopt this judgment: #46's (d) at HR-14, register v0_7's delta and the knock-on measure accepted or confirmed, and the declaration confirmed.",
+          "recommendation": "yes; each verdict carries its reason, the gate checks every quotation at the bytes judged, and the reading instrument reproduces every figure"
+        },
+        {
+          "ask": "PQ-17 names both sentences of the why-not-suicide defender slot: the 'grabbed, not produced' sentence and the lone-actor analogy after it (W-004).",
+          "recommendation": "yes; R1-024 conceded the analogy by name, so repairing the other sentence alone would leave the conceded text standing. The pin session, a drafting seat, makes the correction in its first canon bump."
+        }
+      ],
+      "next": "gate2 launches the declared pin session (R0150) now that this judgment has landed, so the window his words name is clear. The session carries W-004's AMEND and W-007's recommendation as defaults. His word on this judgment can come at any time, and the pin session records it in its next canon bump."
     }
   },
   "flagship_sidecars": {

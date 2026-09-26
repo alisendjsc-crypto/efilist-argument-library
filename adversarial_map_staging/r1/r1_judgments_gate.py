@@ -14,7 +14,9 @@ names the row it replaces. This gate checks, and exits 1 on any failure:
   4. every relation row names a relation the register stores; every finding names its owner
      and only real draft numbers;
   5. every double-quoted span in a row's text is declared in that row's quotes, and every
-     declared quote is verbatim at its source (r1_quote_check.py's corpus:, map: and canon:, plus
+     declared quote is verbatim at its source (r1_quote_check.py's map: and canon:; corpus: by its rule
+     but against the corpus the judged map pins, meta.source_corpus_md5, from git history once the
+     working corpus moves (gate2, 2026-09-26, before the declared pin session); plus
      v1_4:, drafts:, rulings:, design: and render:; register: resolves against the register this
      record judged, judged.register_v0_5, since L4b; canon: still reads the one canon on disk,
      which stays true while canon blocks are never edited in place);
@@ -98,6 +100,29 @@ def rows_grown(base_bytes, path):
     return len(cur["rows"]) - len(base["rows"])
 
 
+def corpus_at(repo_dir, rel, want, history=None):
+    """The corpus a judged map was built against, at the md5 its meta names, as {id: objection}; or None."""
+    b = pinned_bytes(repo_dir, rel, want, history)
+    return None if b is None else {o["id"]: o for o in json.loads(b.decode("utf-8"))["objections"]}
+
+
+def corpus_text(corpus, rest):
+    """r1_quote_check's corpus: rule, read against a pinned corpus."""
+    node, _, locus = rest.partition("#")
+    if node not in corpus:
+        raise KeyError("no corpus node %s" % node)
+    o = corpus[node]
+    if locus in ("short", "medium", "long"):
+        t = o["responses"].get(locus)
+    elif locus.startswith("archetypeVariants."):
+        t = o["responses"].get("archetypeVariants", {}).get(locus.split(".", 1)[1])
+    else:
+        t = o.get(locus)
+    if not isinstance(t, str):
+        raise KeyError("no corpus text at %s" % rest)
+    return [t]
+
+
 def strings(o):
     if isinstance(o, dict):
         for v in o.values():
@@ -125,7 +150,13 @@ class Sources:
                 b = open(os.path.join(repo_dir, j[key]["file"]), "rb").read()
             return json.loads(b.decode("utf-8"))
 
-        self.v14 = at("map_v1_4")["entries"]
+        m14 = at("map_v1_4")
+        self.v14 = m14["entries"]
+        # gate2, 2026-09-26, before the declared pin session: corpus: resolves against the corpus the
+        # judged map was built against (its meta.source_corpus_md5), read back from git history once the
+        # working corpus moves. If it cannot be recovered, a corpus quote fails; it never floats.
+        self.corpus_pin = (m14["meta"]["source_corpus"], m14["meta"]["source_corpus_md5"])
+        self.corpus = corpus_at(repo_dir, self.corpus_pin[0], self.corpus_pin[1], history)
         self.drafts = at("drafts")
         self.rulings = at("rulings")["rows"]
         # L4b, 2026-09-26: register quotes resolve against the register this record judged
@@ -163,6 +194,10 @@ class Sources:
             if rest not in self.reg:
                 raise KeyError("no bedrock %s in the judged register" % rest)
             return list(strings(self.reg[rest]))
+        if kind == "corpus":
+            if self.corpus is None:
+                raise KeyError("the corpus the judged map pins (%s) is not recoverable" % self.corpus_pin[1][:8])
+            return corpus_text(self.corpus, rest)
         return self.q.resolve(src)
 
 
@@ -330,7 +365,7 @@ def self_test(emit=None):
     tmp = tempfile.mkdtemp(prefix="r1jgate_")
     results = []
     try:
-        def stage(mut_doc=None, mut_pin=None, base=None, rulings=None):
+        def stage(mut_doc=None, mut_pin=None, base=None, rulings=None, corpus_edit=False):
             # every judged artifact is staged at its pinned bytes; `rulings` rewrites the staged rulings
             # file from its pinned document (grow it, or edit it) to test the append-only exception
             d = os.path.join(tmp, "c%d" % len(results))
@@ -344,6 +379,24 @@ def self_test(emit=None):
                 open(dst, "wb").write(b)
                 if mut_pin and pin["file"].endswith(mut_pin):
                     open(dst, "wb").write(b[:-1] + (b"\n" if b[-1:] != b"\n" else b" "))
+            if corpus_edit:
+                # a simulated pin move: the working corpus no longer carries the record's first corpus quote
+                pm = doc0["judged"]["map_v1_4"]
+                m = json.loads(pinned_bytes(REPO, pm["file"], pm["md5"]).decode("utf-8"))["meta"]
+                cd = json.loads(pinned_bytes(REPO, m["source_corpus"], m["source_corpus_md5"]).decode("utf-8"))
+                src, quote = next((q["src"], q["quote"]) for r in doc0["rows"] for q in r["quotes"]
+                                  if q["src"].startswith("corpus:"))
+                node, _, locus = src.split(":", 1)[1].partition("#")
+                o = next(x for x in cd["objections"] if x["id"] == node)
+                if locus in ("short", "medium", "long"):
+                    cont, key = o["responses"], locus
+                elif locus.startswith("archetypeVariants."):
+                    cont, key = o["responses"]["archetypeVariants"], locus.split(".", 1)[1]
+                else:
+                    cont, key = o, locus
+                assert quote in cont[key], "the control's corpus quote is not in the pinned corpus"
+                cont[key] = cont[key].replace(quote, "[the declared pin session's repair]")
+                open(os.path.join(d, m["source_corpus"]), "w", encoding="utf-8").write(json.dumps(cd, ensure_ascii=False))
             for name in os.listdir(os.path.join(REPO, STG)):
                 if re.fullmatch(r"adversarial_map_design_v0_\d+\.md|render_[a-z0-9_]+\.py", name):
                     shutil.copyfile(os.path.join(REPO, STG, name), os.path.join(d, STG, name))
@@ -379,13 +432,16 @@ def self_test(emit=None):
             ("C11", "a correction row supersedes properly", dict(mut_doc=mut(lambda d: d["rows"].append(dict(extra, supersedes=d["rows"][first("draft")]["id"]))), base=doc0), 0, None),
             ("C12", "the rulings file grows by one appended row", dict(rulings=lambda rd: rd["rows"].append(dict(rd["rows"][-1], row="R1-%03d" % (len(rd["rows"]) + 1)))), 0, None),
             ("C13", "a committed rulings row is edited in place", dict(rulings=lambda rd: rd["rows"][0].update(reason=rd["rows"][0]["reason"] + " (edited)")), 1, "not merely grown by appended rows"),
+            ("C14", "a simulated pin: a quoted corpus span is gone", dict(corpus_edit=True), 0, None),
+            ("C15", "the same, with git history withheld", dict(corpus_edit=True, _history=lambda rel, want: None), 1, "is not recoverable"),
         ]
         # the staged tree has no git; history resolves against this repo's own, as the real run does
         history = lambda rel, want: pinned_bytes(REPO, rel, want)
         ok_all = True
         for cid, what, kw, want_rc, want_msg in controls:
+            kw = dict(kw); hist = kw.pop("_history", history)
             p, d, base = stage(**kw)
-            fails, _ = check(p, d, base, history)
+            fails, _ = check(p, d, base, hist)
             rc = 1 if fails else 0
             matched = (want_msg is None and not fails) or (want_msg is not None and any(want_msg in f for f in fails))
             good = rc == want_rc and matched
@@ -406,7 +462,8 @@ def self_test(emit=None):
                "gate_md5": md5(os.path.abspath(__file__)), "judgments_md5": md5(real),
                "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its "
                        "own failure line; C11, a proper correction row, must stay GREEN; C12, the rulings file grown by an "
-                       "appended row, must stay GREEN, and C13, a committed rulings row edited in place, must go RED.",
+                       "appended row, must stay GREEN, and C13, a committed rulings row edited in place, must go RED; C14, a "
+                       "simulated pin move, must stay GREEN, and C15, the same with git history withheld, must go RED.",
                "controls": results}
         open(emit, "w", encoding="utf-8").write(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
     return 0 if ok_all else 1

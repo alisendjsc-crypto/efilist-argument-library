@@ -1,39 +1,39 @@
 #!/usr/bin/env python3
-"""r1_v1_5_judgments_gate.py -- the gate beside R1_v1_5_judgments.json (gate2, 2026-09-26).
+"""r1_v1_6_judgments_gate.py -- the gate beside R1_v1_6_judgments.json (gate2, 2026-09-26).
 
-R1_v1_5_judgments.json records gate2's second judgment: v1_5's redrafts (R1_redrafts_v1_5.json),
-register v0_6's deltas, the change L4b made to r1_judgments_gate.py, and the reading of the HOLDS
-that L4's drafts knocked on (l4_knock_on_v0_1.json). It is APPEND-ONLY: a row is never edited or
-removed, and a correction is a new row whose `supersedes` names the row it replaces. This gate
-checks, and exits 1 on any failure:
+R1_v1_6_judgments.json records gate2's third judgment: #46's (d) in v1_6 (R1_redrafts_v1_6.json),
+register v0_7's delta, the knock-on measure (l4c_knock_on_v0_1.json), PQ-17 and the pin session's
+declaration (canon v38.28, pin_move_queue_v1_6). It is APPEND-ONLY: a row is never edited or removed,
+and a correction is a new row whose `supersedes` names the row it replaces. This gate checks, and
+exits 1 on any failure:
 
-  1. rows run V-001, V-002, ... in file order, each with exactly its kind's keys, a seat and a date;
-  2. every redraft row names a real redraft (n, the judgment row it answers, its kind) with a
-     verdict of ACCEPT, AMEND or REJECT; every register row names one of register v0_6's declared
-     deltas by index and word for word; every knock-on row names a HOLDS the knock-on record lists,
-     with its current R1 row, and a verdict of STANDS or REOPENS; the gate row is CONFIRM or
-     CORRECT;
-  3. an AMEND, REJECT or CORRECT says what is owed; a REOPENS carries its lean;
-  4. coverage: every redraft, every register delta and every knocked-on HOLDS has exactly one
-     current judgment, and the gate change has one (a later row supersedes the one before it for
-     the same subject, and nothing else);
+  1. rows run W-001, W-002, ... in file order, each with exactly its kind's keys, a seat and a date;
+  2. every redraft row names a real redraft, the knock-on row it answers and its disposition; every
+     register row names one of register v0_7's declared deltas by index and word for word; the
+     measure row's claim is the knock-on record's; every queue row names a row the redrafts file adds
+     and the pinned canon's queue holds at the same locus; the declaration row names a path the pinned
+     canon holds; findings name an owner and real R1 entries;
+  3. verdicts are ACCEPT, AMEND or REJECT (redraft, register, queue row) or CONFIRM or CORRECT
+     (measure, declaration); an AMEND, REJECT or CORRECT says what is owed;
+  4. coverage: every redraft, every register delta and every queue addition has exactly one current
+     judgment, and so do the knock-on measure and the declaration;
   5. every double-quoted span in a row's text is declared in that row's quotes, and every declared
-     quote is verbatim at its source. Sources: r1_quote_check.py's map: (v1_3) and canon:; corpus: by
-     its rule but against the corpus map_v1_5 pins (meta.source_corpus_md5), from git history once
-     the working corpus moves (gate2, 2026-09-26, before the declared pin session);
-     and, each resolved against the file this record's header pins, v1_4:, v1_5:, redrafts:#n,
-     rulings:R1-nnn, judgments:J-nnn, register_v0_5:HR-nn and register_v0_6:HR-nn; plus design:
-     and render: files in adversarial_map_staging/;
-  6. the judged artifacts are still at the md5s the header names, except an append-only record
-     (R1_rulings.json, R1_drafts_judgments.json), which may have grown by appended rows since the
-     judgment: its pinned bytes must then be recoverable from git history, with their header
-     unchanged and their rows a prefix of the current file's. Every judged artifact is read at its
-     pinned bytes, never at a later state (gate2, 2026-09-26, when R1-070 was appended);
-  7. append-only: the committed base (git HEAD's copy, or --base) is intact: header unchanged,
-     every committed row still present, unchanged and in order.
+     quote is verbatim at its source, each source read at the bytes this header pins: v1_5:, v1_6:,
+     redrafts:#n or redrafts:PQ-nn, rulings:R1-nnn, judgments:V-nnn, register_v0_6:HR-nn,
+     register_v0_7:HR-nn, knock_on:record and canon:<dotted.path> (the pinned canon); corpus: by
+     r1_quote_check's rule, against the corpus map_v1_6 pins (meta.source_corpus_md5); map: (v1_3) as
+     r1_quote_check reads it; design: and render: files in adversarial_map_staging/;
+  6. the judged artifacts are at the md5s the header names, with two exceptions. An append-only record
+     (R1_rulings.json, R1_v1_5_judgments.json) may have grown by appended rows, its pinned bytes
+     recoverable from git history, header unchanged and rows a prefix. A canon file may be gone from
+     the working tree, since the rename convention removes it at the next bump, if its pinned bytes are
+     in git history. Every judged artifact is read at its pinned bytes; the instrument's record is at
+     the md5 the header names;
+  7. append-only: the committed base (git HEAD's copy, or --base) is intact: header unchanged, every
+     committed row still present, unchanged and in order.
 
-  python3 r1_v1_5_judgments_gate.py                             # base = git HEAD's copy
-  python3 r1_v1_5_judgments_gate.py --self-test [--emit <path>]   # controls; unmutated first
+  python3 r1_v1_6_judgments_gate.py                             # base = git HEAD's copy
+  python3 r1_v1_6_judgments_gate.py --self-test [--emit <path>]   # controls; unmutated first
 
 Repo-relative. Writes nothing unless --emit is given.
 """
@@ -41,28 +41,31 @@ import copy, hashlib, importlib.util, json, os, re, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
-REL = "adversarial_map_staging/r1/R1_v1_5_judgments.json"
+REL = "adversarial_map_staging/r1/R1_v1_6_judgments.json"
 STG = "adversarial_map_staging"
 
 HEADER_KEYS = ["artifact", "state", "law", "what_a_verdict_means", "his_word", "kickoff", "judged", "instrument",
                "rows"]
-PINS = ["map_v1_5", "redrafts", "register_v0_6", "register_v0_5", "map_v1_4", "rulings", "judgments_v1_4",
-        "knock_on"]
+PINS = ["map_v1_6", "map_v1_5", "redrafts", "register_v0_7", "register_v0_6", "rulings", "judgments_v1_5",
+        "knock_on", "canon"]
 COMMON = {"id", "kind", "quotes", "seat", "date", "supersedes"}
 KEYS = {
-    "redraft": COMMON | {"n", "answers", "redraft_kind", "verdict", "reason", "owed", "carries"},
+    "redraft": COMMON | {"n", "answers", "disposition", "verdict", "reason", "owed", "carries"},
     "register": COMMON | {"delta_index", "delta", "verdict", "reason", "owed", "carries"},
-    "gate": COMMON | {"gate", "from_md5", "to_md5", "verdict", "reason", "owed", "carries"},
-    "knock_on": COMMON | {"n", "r1_row", "target", "verdict", "reason", "lean", "carries"},
+    "measure": COMMON | {"measure", "claim", "verdict", "reason", "owed", "carries"},
+    "queue_row": COMMON | {"row_id", "locus", "verdict", "reason", "owed", "carries"},
+    "declaration": COMMON | {"at", "verdict", "reason", "owed", "carries"},
     "finding": COMMON | {"title", "finding", "recommendation", "whose", "entries"},
 }
 VERDICTS = {"redraft": ("ACCEPT", "AMEND", "REJECT"), "register": ("ACCEPT", "AMEND", "REJECT"),
-            "gate": ("CONFIRM", "CORRECT"), "knock_on": ("STANDS", "REOPENS")}
+            "queue_row": ("ACCEPT", "AMEND", "REJECT"), "measure": ("CONFIRM", "CORRECT"),
+            "declaration": ("CONFIRM", "CORRECT")}
 OWES = {"AMEND", "REJECT", "CORRECT"}
-TEXT_FIELDS = {"redraft": ("reason", "owed", "carries"), "register": ("reason", "owed", "carries"),
-               "gate": ("reason", "owed", "carries"), "knock_on": ("reason", "lean", "carries"),
-               "finding": ("finding", "recommendation")}
+TEXT_FIELDS = {k: ("reason", "owed", "carries") for k in VERDICTS}
+TEXT_FIELDS["finding"] = ("finding", "recommendation")
 SPAN = re.compile(r'"([^"]+)"')
+APPEND_ONLY = {"adversarial_map_staging/r1/R1_rulings.json", "adversarial_map_staging/r1/R1_v1_5_judgments.json"}
+RENAMED = re.compile(r"project_canon_v38_\d+\.json")
 
 _spec = importlib.util.spec_from_file_location("r1qc", os.path.join(HERE, "r1_quote_check.py"))
 Q = importlib.util.module_from_spec(_spec)
@@ -71,9 +74,6 @@ _spec.loader.exec_module(Q)
 
 def md5(path):
     return hashlib.md5(open(path, "rb").read()).hexdigest()
-
-
-APPEND_ONLY = {"adversarial_map_staging/r1/R1_rulings.json", "adversarial_map_staging/r1/R1_drafts_judgments.json"}
 
 
 def git_bytes_at(repo_dir, rel, want):
@@ -109,12 +109,6 @@ def rows_grown(base_bytes, path):
     return len(cur["rows"]) - len(base["rows"])
 
 
-def corpus_at(repo_dir, rel, want, history=None):
-    """The corpus a judged map was built against, at the md5 its meta names, as {id: objection}; or None."""
-    b = pinned_bytes(repo_dir, rel, want, history)
-    return None if b is None else {o["id"]: o for o in json.loads(b.decode("utf-8"))["objections"]}
-
-
 def corpus_text(corpus, rest):
     """r1_quote_check's corpus: rule, read against a pinned corpus."""
     node, _, locus = rest.partition("#")
@@ -143,13 +137,14 @@ def strings(o):
         yield o
 
 
-def jload(repo_dir, rel):
-    return json.load(open(os.path.join(repo_dir, rel), encoding="utf-8"))
+def walk(o, dotted):
+    for part in dotted.split("."):
+        o = o[part]
+    return o
 
 
 class Sources:
-    """Every source resolves against a file the header pins, at the bytes it pins, except
-    r1_quote_check's own three."""
+    """Every source resolves against the bytes the header pins, except map: (v1_3, never edited)."""
 
     def __init__(self, repo_dir, doc, history=None):
         self.repo = repo_dir
@@ -158,22 +153,25 @@ class Sources:
 
         def at(key):
             b = pinned_bytes(repo_dir, j[key]["file"], j[key]["md5"], history)
-            return json.loads(b.decode("utf-8")) if b is not None else jload(repo_dir, j[key]["file"])
+            if b is None:  # rule 6 reports it; read what is there so the other checks still run
+                p = os.path.join(repo_dir, j[key]["file"])
+                b = open(p, "rb").read() if os.path.exists(p) else b"{}"
+            return json.loads(b.decode("utf-8"))
 
-        m15 = at("map_v1_5")
-        self.maps = {"v1_4": at("map_v1_4")["entries"], "v1_5": m15["entries"]}
-        # gate2, 2026-09-26, before the declared pin session: corpus: resolves against the corpus the
-        # judged map was built against (its meta.source_corpus_md5), read back from git history once the
-        # working corpus moves. If it cannot be recovered, a corpus quote fails; it never floats.
-        self.corpus_pin = (m15["meta"]["source_corpus"], m15["meta"]["source_corpus_md5"])
-        self.corpus = corpus_at(repo_dir, self.corpus_pin[0], self.corpus_pin[1], history)
+        m16 = at("map_v1_6")
+        self.maps = {"v1_5": at("map_v1_5").get("entries", []), "v1_6": m16.get("entries", [])}
         self.redrafts = at("redrafts")
-        self.rulings = at("rulings")["rows"]
-        self.judgments = at("judgments_v1_4")["rows"]
-        reg = {k: at(k) for k in ("register_v0_5", "register_v0_6")}
-        self.regs = {k: {b["bedrock_id"]: b for b in v["bedrocks"]} for k, v in reg.items()}
-        self.deltas = reg["register_v0_6"]["meta"]["changes_from_v0_5"]
+        self.rulings = at("rulings").get("rows", [])
+        self.judgments = at("judgments_v1_5").get("rows", [])
+        reg = {k: at(k) for k in ("register_v0_6", "register_v0_7")}
+        self.regs = {k: {b["bedrock_id"]: b for b in v.get("bedrocks", [])} for k, v in reg.items()}
+        self.deltas = reg["register_v0_7"].get("meta", {}).get("changes_from_v0_6", [])
         self.knock = at("knock_on")
+        self.canon = at("canon")
+        meta = m16.get("meta", {})
+        self.corpus_pin = (meta.get("source_corpus", ""), meta.get("source_corpus_md5", ""))
+        cb = pinned_bytes(repo_dir, self.corpus_pin[0], self.corpus_pin[1], history) if self.corpus_pin[1] else None
+        self.corpus = None if cb is None else {o["id"]: o for o in json.loads(cb.decode("utf-8"))["objections"]}
 
     def resolve(self, src):
         kind, _, rest = src.partition(":")
@@ -184,7 +182,10 @@ class Sources:
                 raise KeyError("no %s entry at %s" % (kind, rest))
             return [s for x in xs for s in strings(x)]
         if kind == "redrafts":
-            xs = [x for x in self.redrafts["redrafts"] if "#%d" % x["n"] == rest]
+            if rest.startswith("PQ-"):
+                xs = [x for x in self.redrafts.get("pin_move_queue_additions", []) if x["id"] == rest]
+            else:
+                xs = [x for x in self.redrafts.get("redrafts", []) if "#%d" % x["n"] == rest]
             if not xs:
                 raise KeyError("no redraft %s" % rest)
             return list(strings(xs[0]))
@@ -198,6 +199,17 @@ class Sources:
             if rest not in self.regs[kind]:
                 raise KeyError("no bedrock %s in %s" % (rest, kind))
             return list(strings(self.regs[kind][rest]))
+        if kind == "knock_on":
+            return list(strings(self.knock))
+        if kind == "canon":
+            try:
+                return list(strings(walk(self.canon, rest)))
+            except (KeyError, TypeError):
+                raise KeyError("no path %s in the pinned canon" % rest)
+        if kind == "corpus":
+            if self.corpus is None:
+                raise KeyError("the corpus the judged map pins (%s) is not recoverable" % self.corpus_pin[1][:8])
+            return corpus_text(self.corpus, rest)
         if kind in ("design", "render"):
             pat = r"adversarial_map_design_v0_\d+\.md" if kind == "design" else r"render_[a-z0-9_]+\.py"
             if not re.fullmatch(pat, rest):
@@ -206,28 +218,16 @@ class Sources:
             if not os.path.exists(p):
                 raise KeyError("no file %s" % rest)
             return [open(p, encoding="utf-8").read()]
-        if kind == "corpus":
-            if self.corpus is None:
-                raise KeyError("the corpus the judged map pins (%s) is not recoverable" % self.corpus_pin[1][:8])
-            return corpus_text(self.corpus, rest)
-        if kind in ("map", "canon"):
+        if kind == "map":
             return self.q.resolve(src)
         raise KeyError("unknown source kind %r" % kind)
 
 
 def subject(r):
     k = r.get("kind")
-    if k == "redraft":
-        return "redraft #%s" % r.get("n")
-    if k == "register":
-        return "register delta %s" % r.get("delta_index")
-    if k == "gate":
-        return "gate %s" % r.get("gate")
-    if k == "knock_on":
-        return "knock-on #%s" % r.get("n")
-    if k == "finding":
-        return "finding %s" % r.get("title")
-    return "?"
+    return {"redraft": "redraft #%s" % r.get("n"), "register": "register delta %s" % r.get("delta_index"),
+            "measure": "measure %s" % r.get("measure"), "queue_row": "queue row %s" % r.get("row_id"),
+            "declaration": "declaration", "finding": "finding %s" % r.get("title")}.get(k, "?")
 
 
 def texts_of(r):
@@ -249,16 +249,23 @@ def check(path, repo_dir, base_text, history=None):
     if not isinstance(rows, list) or not rows:
         return ["structure: no rows"], info
 
-    # 6 -- the referents have not moved, or an append-only one has only grown
+    # 6 -- the referents have not moved; an append-only one may have grown; a renamed canon may be gone
     for name, pin in doc["judged"].items():
         p = os.path.join(repo_dir, pin["file"])
         got = md5(p) if os.path.exists(p) else "MISSING"
         if got == pin["md5"]:
             continue
+        base = pinned_bytes(repo_dir, pin["file"], pin["md5"], history)
+        if got == "MISSING" and RENAMED.fullmatch(os.path.basename(pin["file"])):
+            if base is None:
+                fails.append("pin %s: %s is gone and its pinned bytes are not in git history" % (name, pin["file"]))
+            else:
+                info.append("pin %s: %s is gone from the tree (the rename convention); read from history at %s"
+                            % (name, pin["file"], pin["md5"][:8]))
+            continue
         if pin["file"] not in APPEND_ONLY:
             fails.append("pin %s: %s is %s, header names %s" % (name, pin["file"], got, pin["md5"]))
             continue
-        base = pinned_bytes(repo_dir, pin["file"], pin["md5"], history)
         grown = rows_grown(base, p) if base is not None and got != "MISSING" else None
         if grown is None:
             fails.append("pin %s: %s is %s, header names %s, and it has not merely grown by appended rows"
@@ -266,12 +273,21 @@ def check(path, repo_dir, base_text, history=None):
         else:
             info.append("pin %s: %s has grown by %d appended row(s) since the judgment; read at %s"
                         % (name, pin["file"], grown, pin["md5"][:8]))
+    ins = doc["instrument"]
+    ip = os.path.join(repo_dir, ins["record"])
+    if not os.path.exists(os.path.join(repo_dir, ins["file"])):
+        fails.append("instrument: %s is missing" % ins["file"])
+    if not os.path.exists(ip) or md5(ip) != ins["md5"]:
+        fails.append("instrument: %s is not at %s" % (ins["record"], ins["md5"]))
+
     src = Sources(repo_dir, doc, history)
-    redrafts = {x["n"]: x for x in src.redrafts["redrafts"]}
-    deltas = src.deltas
-    holds = list(src.knock["holds_newly_collided"])
-    superseded = {r["supersedes"] for r in src.rulings if r.get("supersedes")}
-    current_r1 = {r["n"]: r for r in src.rulings if r["row"] not in superseded}
+    redrafts = {x["n"]: x for x in src.redrafts.get("redrafts", [])}
+    additions = {x["id"]: x for x in src.redrafts.get("pin_move_queue_additions", [])}
+    try:
+        queue = {r["id"]: r for r in walk(src.canon, "adversarial_map.pin_move_queue_v1_6")["rows"]}
+    except (KeyError, TypeError):
+        queue = {}
+    ruled_ns = {r["n"] for r in src.rulings}
 
     chains, current = {}, {}
     for i, r in enumerate(rows, 1):
@@ -284,8 +300,8 @@ def check(path, repo_dir, base_text, history=None):
             fails.append("%s: keys differ from the %s schema (%s)" % (rid, kind, sorted(set(r) ^ KEYS[kind])))
             continue
         # 1
-        if rid != "V-%03d" % i:
-            fails.append("%s: ids must run V-001, V-002, ... in file order (expected V-%03d)" % (rid, i))
+        if rid != "W-%03d" % i:
+            fails.append("%s: ids must run W-001, W-002, ... in file order (expected W-%03d)" % (rid, i))
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r["date"])):
             fails.append("%s: date %r is not YYYY-MM-DD" % (rid, r["date"]))
         if not str(r["seat"]).strip():
@@ -295,21 +311,29 @@ def check(path, repo_dir, base_text, history=None):
             x = redrafts.get(r["n"])
             if x is None:
                 fails.append("%s: n=%s names no redraft" % (rid, r["n"]))
-            elif (r["answers"], r["redraft_kind"]) != (x["judgment_row"], x["kind"]):
-                fails.append("%s: answers/redraft_kind %s/%s != the redraft's %s/%s"
-                             % (rid, r["answers"], r["redraft_kind"], x["judgment_row"], x["kind"]))
+            elif (r["answers"], r["disposition"]) != (x.get("knock_on_row"), x.get("disposition")):
+                fails.append("%s: answers/disposition %s/%s != the redraft's %s/%s"
+                             % (rid, r["answers"], r["disposition"], x.get("knock_on_row"), x.get("disposition")))
         if kind == "register":
             k = r["delta_index"]
-            if not (isinstance(k, int) and 0 <= k < len(deltas)) or r["delta"] != deltas[k]:
-                fails.append("%s: delta %r is not register v0_6's declared delta %r" % (rid, r["delta"][:50], k))
-        if kind == "knock_on":
-            cr = current_r1.get(r["n"])
-            if r["n"] not in holds:
-                fails.append("%s: #%s is not a HOLDS the knock-on record lists" % (rid, r["n"]))
-            elif cr is None or cr["verdict"] != "HOLDS" or (r["r1_row"], r["target"]) != (cr["row"], cr["target"]):
-                fails.append("%s: r1_row/target %s/%s != the current HOLDS row" % (rid, r["r1_row"], r["target"]))
-            if r["verdict"] == "REOPENS" and not str(r["lean"] or "").strip():
-                fails.append("%s: REOPENS without its lean" % rid)
+            if not (isinstance(k, int) and 0 <= k < len(src.deltas)) or r["delta"] != src.deltas[k]:
+                fails.append("%s: delta %r is not register v0_7's declared delta %r" % (rid, str(r["delta"])[:50], k))
+        if kind == "measure":
+            want = {"holds_newly_collided": src.knock.get("holds_newly_collided"),
+                    "a_entries_left_in_v1_6": src.knock.get("a_entries_left_in_v1_6")}
+            if r["measure"] != "knock_on" or r["claim"] != want:
+                fails.append("%s: the claim is not the knock-on record's %s" % (rid, json.dumps(want)))
+        if kind == "queue_row":
+            if r["row_id"] not in additions:
+                fails.append("%s: %s is not a row the redrafts file adds to the queue" % (rid, r["row_id"]))
+            elif r["row_id"] not in queue or queue[r["row_id"]].get("locus") != r["locus"] \
+                    or additions[r["row_id"]].get("locus") != r["locus"]:
+                fails.append("%s: %s at %s is not in the pinned canon's queue at that locus" % (rid, r["row_id"], r["locus"]))
+        if kind == "declaration":
+            try:
+                walk(src.canon, r["at"])
+            except (KeyError, TypeError):
+                fails.append("%s: %s is not a path in the pinned canon" % (rid, r["at"]))
         if kind in VERDICTS:
             if r["verdict"] not in VERDICTS[kind]:
                 fails.append("%s: verdict %r is not one of %s" % (rid, r["verdict"], "/".join(VERDICTS[kind])))
@@ -320,6 +344,9 @@ def check(path, repo_dir, base_text, history=None):
         if kind == "finding":
             if not str(r["whose"]).strip():
                 fails.append("%s: a finding with no owner" % rid)
+            bad = [n for n in r["entries"] if n not in ruled_ns]
+            if bad:
+                fails.append("%s: entries %s are not R1 entries" % (rid, bad))
         # 5 -- declared, and verbatim
         declared = [q.get("quote") for q in r["quotes"]]
         for t in texts_of(r):
@@ -345,14 +372,13 @@ def check(path, repo_dir, base_text, history=None):
         chains[subj] = rid
         current[subj] = r
 
-    for want, label in ((["redraft #%d" % n for n in redrafts], "redrafts"),
-                        (["register delta %d" % k for k in range(len(deltas))], "register deltas"),
-                        (["knock-on #%d" % n for n in holds], "knocked-on HOLDS")):
+    for want, label in ((["redraft #%d" % n for n in sorted(redrafts)], "redrafts"),
+                        (["register delta %d" % k for k in range(len(src.deltas))], "register deltas"),
+                        (["queue row %s" % x for x in sorted(additions)], "queue additions"),
+                        (["measure knock_on"], "the knock-on measure"), (["declaration"], "the declaration")):
         missing = [s for s in want if s not in current]
         if missing:
             fails.append("coverage: %s not judged: %s" % (label, ", ".join(missing)))
-    if sum(1 for s in current if s.startswith("gate ")) != 1:
-        fails.append("coverage: the gate change needs exactly one current judgment")
 
     # 7 -- append-only against the committed base
     if base_text is None:
@@ -391,16 +417,18 @@ def self_test(emit=None):
     import shutil, tempfile
     real = os.path.join(REPO, REL)
     doc0 = json.load(open(real, encoding="utf-8"))
-    tmp = tempfile.mkdtemp(prefix="r1v15gate_")
+    tmp = tempfile.mkdtemp(prefix="r1v16gate_")
     results = []
     try:
-        def stage(mut_doc=None, mut_pin=None, base=None, grow=None, corpus_edit=False):
-            # every judged artifact is staged at its pinned bytes; `grow` = (file suffix, fn) rewrites
-            # that append-only record from its pinned document, to test the append-only exception
+        def stage(mut_doc=None, mut_pin=None, base=None, grow=None, drop=None, corpus_edit=False):
+            # every judged artifact is staged at its pinned bytes; `grow` = (file suffix, fn) rewrites an
+            # append-only record from its pinned document; `drop` leaves a file out of the staged tree
             d = os.path.join(tmp, "c%d" % len(results))
             for pin in doc0["judged"].values():
+                if drop and pin["file"].endswith(drop):
+                    continue
                 dst = os.path.join(d, pin["file"])
-                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                os.makedirs(os.path.dirname(dst) or d, exist_ok=True)
                 b = pinned_bytes(REPO, pin["file"], pin["md5"])
                 if grow and pin["file"].endswith(grow[0]):
                     rd = json.loads(b.decode("utf-8")); grow[1](rd)
@@ -408,9 +436,12 @@ def self_test(emit=None):
                 open(dst, "wb").write(b)
                 if mut_pin and pin["file"].endswith(mut_pin):
                     open(dst, "wb").write(b[:-1] + (b"\n" if b[-1:] != b"\n" else b" "))
+            for rel in (doc0["instrument"]["file"], doc0["instrument"]["record"]):
+                os.makedirs(os.path.dirname(os.path.join(d, rel)), exist_ok=True)
+                shutil.copyfile(os.path.join(REPO, rel), os.path.join(d, rel))
             if corpus_edit:
                 # a simulated pin move: the working corpus no longer carries the record's first corpus quote
-                pm = doc0["judged"]["map_v1_5"]
+                pm = doc0["judged"]["map_v1_6"]
                 m = json.loads(pinned_bytes(REPO, pm["file"], pm["md5"]).decode("utf-8"))["meta"]
                 cd = json.loads(pinned_bytes(REPO, m["source_corpus"], m["source_corpus_md5"]).decode("utf-8"))
                 src, quote = next((q["src"], q["quote"]) for r in doc0["rows"] for q in r["quotes"]
@@ -444,41 +475,39 @@ def self_test(emit=None):
 
         def renumber(d):
             for k, r in enumerate(d["rows"], 1):
-                r["id"] = "V-%03d" % k
+                r["id"] = "W-%03d" % k
 
         iq = next(i for i, r in enumerate(doc0["rows"]) if r["quotes"])
-        extra = dict(copy.deepcopy(doc0["rows"][first("redraft")]), id="V-%03d" % (len(doc0["rows"]) + 1))
+        extra = dict(copy.deepcopy(doc0["rows"][first("redraft")]), id="W-%03d" % (len(doc0["rows"]) + 1))
         controls = [
             ("C0", "unmutated", {}, 0, None),
-            ("C1", "a redraft goes unjudged",
+            ("C1", "the redraft goes unjudged",
              dict(mut_doc=mut(lambda d: (d["rows"].pop(first("redraft")), renumber(d)))), 1, "redrafts not judged"),
-            ("C2", "a knocked-on HOLDS goes unread",
-             dict(mut_doc=mut(lambda d: (d["rows"].pop(first("knock_on")), renumber(d)))), 1, "knocked-on HOLDS not judged"),
-            ("C3", "a redraft judged twice, no supersedes",
-             dict(mut_doc=mut(lambda d: d["rows"].append(dict(extra, supersedes=None))), base=doc0), 1, "judged twice without superseding"),
-            ("C4", "a knock-on verdict reads MAYBE",
-             dict(mut_doc=mut(lambda d: d["rows"][first("knock_on")].update(verdict="MAYBE"))), 1, "is not one of"),
-            ("C5", "a REOPENS carries no lean",
-             dict(mut_doc=mut(lambda d: d["rows"][first("knock_on")].update(verdict="REOPENS", lean=""))), 1, "REOPENS without its lean"),
-            ("C6", "an AMEND owes nothing",
-             dict(mut_doc=mut(lambda d: d["rows"][first("redraft")].update(verdict="AMEND", owed=[]))), 1, "without saying what is owed"),
-            ("C7", "a register row misquotes its delta",
+            ("C2", "the queue row reads MAYBE",
+             dict(mut_doc=mut(lambda d: d["rows"][first("queue_row")].update(verdict="MAYBE"))), 1, "is not one of"),
+            ("C3", "an AMEND owes nothing",
+             dict(mut_doc=mut(lambda d: d["rows"][first("queue_row")].update(verdict="AMEND", owed=[]))), 1, "without saying what is owed"),
+            ("C4", "a register row misquotes its delta",
              dict(mut_doc=mut(lambda d: d["rows"][first("register")].update(delta=d["rows"][first("register")]["delta"] + "x"))), 1, "declared delta"),
-            ("C8", "a quoted span is not declared",
+            ("C5", "the measure's claim is not the record's",
+             dict(mut_doc=mut(lambda d: d["rows"][first("measure")]["claim"].update(a_entries_left_in_v1_6=30))), 1, "knock-on record"),
+            ("C6", "a queue row names a row the queue lacks",
+             dict(mut_doc=mut(lambda d: d["rows"][first("queue_row")].update(row_id="PQ-99"))), 1, "not a row the redrafts file adds"),
+            ("C7", "a quoted span is not declared",
              dict(mut_doc=mut(lambda d: d["rows"][first("redraft")].update(reason=d["rows"][first("redraft")]["reason"] + ' "an undeclared span"'))), 1, "undeclared quotation"),
-            ("C9", "a declared quote is one character off",
+            ("C8", "a declared quote is one character off",
              dict(mut_doc=mut(lambda d: d["rows"][iq]["quotes"][0].update(quote=d["rows"][iq]["quotes"][0]["quote"][:-1] + "#"))), 1, "NOT VERBATIM"),
-            ("C10", "map v1_5 moves by one byte", dict(mut_pin="adversarial_map_v1_5.json"), 1, "pin map_v1_5"),
-            ("C11", "a committed row is edited in place",
+            ("C9", "map v1_6 moves by one byte", dict(mut_pin="adversarial_map_v1_6.json"), 1, "pin map_v1_6"),
+            ("C10", "a committed row is edited in place",
              dict(mut_doc=mut(lambda d: d["rows"][0].update(reason=d["rows"][0]["reason"] + " (edited)")), base=doc0), 1, "was edited or removed"),
-            ("C12", "a correction row supersedes properly",
+            ("C11", "a correction row supersedes properly",
              dict(mut_doc=mut(lambda d: d["rows"].append(dict(extra, supersedes=d["rows"][first("redraft")]["id"]))), base=doc0), 0, None),
-            ("C13", "the rulings file grows by one appended row",
+            ("C12", "the rulings file grows by one appended row",
              dict(grow=("R1_rulings.json", lambda rd: rd["rows"].append(dict(rd["rows"][-1], row="R1-%03d" % (len(rd["rows"]) + 1))))), 0, None),
-            ("C14", "a committed rulings row is edited in place",
+            ("C13", "a committed rulings row is edited in place",
              dict(grow=("R1_rulings.json", lambda rd: rd["rows"][0].update(reason=rd["rows"][0]["reason"] + " (edited)"))), 1, "not merely grown by appended rows"),
-            ("C15", "the first judgment record grows by one row",
-             dict(grow=("R1_drafts_judgments.json", lambda rd: rd["rows"].append(dict(rd["rows"][-1], id="J-%03d" % (len(rd["rows"]) + 1))))), 0, None),
+            ("C14", "the canon is gone (the rename convention)", dict(drop="project_canon_v38_28.json"), 0, None),
+            ("C15", "the canon is edited in place", dict(mut_pin="project_canon_v38_28.json"), 1, "pin canon"),
             ("C16", "a simulated pin: a quoted corpus span is gone", dict(corpus_edit=True), 0, None),
             ("C17", "the same, with git history withheld", dict(corpus_edit=True, _history=lambda rel, want: None), 1, "is not recoverable"),
         ]
@@ -505,13 +534,11 @@ def self_test(emit=None):
         shutil.rmtree(tmp, ignore_errors=True)
     print("SELF-TEST: %d of %d controls as expected" % (sum(r["as_expected"] for r in results), len(results)))
     if emit:
-        rec = {"artifact": os.path.basename(emit), "gate": "adversarial_map_staging/r1/r1_v1_5_judgments_gate.py",
+        rec = {"artifact": os.path.basename(emit), "gate": "adversarial_map_staging/r1/r1_v1_6_judgments_gate.py",
                "gate_md5": md5(os.path.abspath(__file__)), "judgments_md5": md5(real),
                "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its "
-                       "own failure line; C12, a proper correction row, must stay GREEN; C13 and C15, an append-only "
-                       "record grown by an appended row, must stay GREEN, and C14, a committed rulings row edited in "
-                       "place, must go RED; C16, a simulated pin move, must stay GREEN, and C17, the same with git "
-                       "history withheld, must go RED.",
+                       "own failure line; C11 (a proper correction row), C12 (the rulings grown by an appended row), "
+                       "C14 (the canon gone by the rename convention) and C16 (a simulated pin move) must stay GREEN.",
                "controls": results}
         open(emit, "w", encoding="utf-8").write(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
     return 0 if ok_all else 1
@@ -529,7 +556,7 @@ def main():
         print("  " + line)
     for line in fails:
         print("  FAIL " + line)
-    print("R1 v1_5 JUDGMENTS GATE: %s" % ("GREEN" if not fails else "RED"))
+    print("R1 v1_6 JUDGMENTS GATE: %s" % ("GREEN" if not fails else "RED"))
     sys.exit(1 if fails else 0)
 
 

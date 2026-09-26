@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## #46's new card judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the drafting seat's new card for the red-button defender entry (#46). The card now says the argument ends at an open question, whether any positive case for ending lives that already exist can be made, and the judgment accepts it: the objection's own last step leads there, and the other candidate, the creation asymmetry, does not reach lives that already exist. The register change and the check that no other answered entry is affected are confirmed. One correction is owed on the pin queue: its 17th row names one sentence of the why-not-suicide defender slot, but the concession was about the next one, the lone-actor analogy, so the pin session repairs both. Before any page changes, the three gates that check the judgments now read the corpus as it was when each judgment was made, tested against an edited copy of the corpus. The record is `adversarial_map_staging/r1/R1_v1_6_judgments.json`. Canon `project_canon_v38_29.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## #46 given its new class — 2026-09-26 (no release; the pin stands)
 
 The red-button defender entry (#46), re-ruled on Josiah's word, is drafted as a "where this line terminates" entry. Its line ends at registered bedrock HR-14, where the same node's sophisticate slot already holds open whether a positive case against existing beings stands. The draft is a new map, `adversarial_map_staging/adversarial_map_v1_6.json` (the previous map stays byte-identical), and register `honest_residuals_register_v0_7.json` adds the entry to HR-14. No other entry moved, and no entry that still holds meets anything new, because every entry on that node is now a terminus entry. Josiah's list of corpus sentences to repair gains one, the "grabbed, not produced" sentence on the why-not-suicide defender page, for 17 in all. He has declared the session that repairs them, to open once this draft is judged. His notes on the adversarial page (a favicon, a plain mode with short definitions, a methodology panel, a tutorial) and on a "for your agent" file are recorded in canon with their order. A seat that did not draft #46's entry judges it next. Canon `project_canon_v38_28.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
