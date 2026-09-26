@@ -16,7 +16,11 @@ OUT = os.path.join(OUT_DIR, "adversarial_map_staging", "measure_k348_v0_1.json")
 sys.path.insert(0, STAGE)
 import adv_map_validator_v0_5 as V
 
-corpus = json.loads(open(os.path.join(REPO, "efilist_argument_library_v4_0_0.json"), "rb").read().decode("utf-8"))
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+sys.path.insert(0, os.path.join(_HERE, "r1"))
+import pinned  # noqa: E402
+CORPUS_RAW = pinned.bytes_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8")
+corpus = json.loads(CORPUS_RAW.decode("utf-8"))
 nodes = {o["id"]: o for o in corpus["objections"]}
 F = json.loads(open(os.path.join(STAGE, "adv_map_phaseF_v0_1.json"), "rb").read().decode("utf-8"))
 A = json.loads(open(os.path.join(MAP_DIR, "adversarial_map_v1_1.json"), "rb").read().decode("utf-8"))
@@ -85,7 +89,7 @@ for e in A["entries"]:
 doc = {
  "artifact": "measure_k348_v0_1.json",
  "session": "K348", "date": "2026-09-17",
- "corpus_md5": V.md5_bytes(open(os.path.join(REPO, "efilist_argument_library_v4_0_0.json"), "rb").read()),
+ "corpus_md5": V.md5_bytes(CORPUS_RAW),
  "assembly_md5": V.md5_bytes(open(os.path.join(MAP_DIR, "adversarial_map_v1_1.json"), "rb").read()),
  "inheritance": {
    "phaseF_class_counts": f_class,

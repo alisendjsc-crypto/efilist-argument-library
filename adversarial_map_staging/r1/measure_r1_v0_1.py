@@ -113,7 +113,11 @@ def med(xs):
 
 def main():
     map_raw = open(MAP, "rb").read()
-    corpus_raw = open(CORPUS, "rb").read()
+    # L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+    import sys
+    sys.path.insert(0, HERE)
+    import pinned
+    corpus_raw = pinned.bytes_at(ROOT, os.path.basename(CORPUS), json.loads(map_raw.decode("utf-8"))["meta"]["source_corpus_md5"])
     m = json.loads(map_raw.decode("utf-8"))
     c = json.loads(corpus_raw.decode("utf-8"))
     assert m["meta"]["source_corpus_md5"] == md5_bytes(corpus_raw), "corpus md5 != map.meta.source_corpus_md5"

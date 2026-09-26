@@ -79,10 +79,18 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
+def corpus_path():
+    """L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it. The served page is a render of THAT
+    corpus, so it re-renders byte for byte after the pin; a render of the repaired text is a successor."""
+    sys.path.insert(0, os.path.join(STG, "r1"))
+    import pinned
+    return pinned.path_at(ROOT, CORPUS, PINS[CORPUS][0])
+
+
 def gate_inputs(out=print):
     bad = []
     for name, (m5, nb) in sorted(PINS.items()):
-        p = os.path.join(STG, name) if name != CORPUS else os.path.join(ROOT, name)
+        p = os.path.join(STG, name) if name != CORPUS else corpus_path()
         raw = io.open(p, "rb").read()
         got = (V.md5_bytes(raw), len(raw))
         ok = got == (m5, nb)
@@ -95,7 +103,7 @@ def gate_inputs(out=print):
 def load():
     asm = json.load(io.open(os.path.join(STG, ASSEMBLY), encoding="utf-8"))
     reg = json.load(io.open(os.path.join(STG, REGISTER), encoding="utf-8"))
-    cor = json.load(io.open(os.path.join(ROOT, CORPUS), encoding="utf-8"))
+    cor = json.load(io.open(corpus_path(), encoding="utf-8"))
     return asm, reg, cor
 
 

@@ -43,13 +43,19 @@ def strings(o):
 
 
 class Texts:
-    def __init__(self):
+    def __init__(self, corpus_md5=None):
+        """L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+        corpus: resolves at the md5 the R1 evidence pins unless a caller names another."""
         ev = load(EVID)
         mp = ev["inputs"]["map"]
         if not os.path.exists(os.path.join(REPO, mp)):
             mp = os.path.join("adversarial_map_staging", os.path.basename(mp))
         self.map = load(mp)["entries"]
-        self.corpus = {o["id"]: o for o in load(ev["inputs"]["corpus"])["objections"]}
+        sys.path.insert(0, HERE)
+        import pinned
+        self.corpus_md5 = corpus_md5 or ev["inputs"]["corpus_md5"]
+        raw = pinned.bytes_at(REPO, ev["inputs"]["corpus"], self.corpus_md5)
+        self.corpus = {o["id"]: o for o in json.loads(raw.decode("utf-8"))["objections"]}
         canons = sorted(glob.glob(os.path.join(REPO, "project_canon_v38_*.json")))
         if len(canons) != 1:
             sys.exit("REFUSED: expected exactly one project_canon_v38_*.json, found %d" % len(canons))

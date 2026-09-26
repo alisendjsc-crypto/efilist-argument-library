@@ -21,7 +21,10 @@ VAL = os.environ.get("K347_VALIDATOR") or os.path.join(REPO, "adversarial_map_st
 FRAG = os.environ.get("K347_FRAGMENT") or os.path.join(REPO, "adversarial_map_staging", "adv_map_phaseF_v0_1.json")
 spec = importlib.util.spec_from_file_location("v", VAL)
 V = importlib.util.module_from_spec(spec); spec.loader.exec_module(V)
-POST = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+sys.path.insert(0, os.path.join(_HERE, "r1"))
+import pinned  # noqa: E402
+POST = pinned.path_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8")
 corpus = json.loads(open(POST, "rb").read().decode("utf-8"))
 N = {n["id"]: n for n in corpus["objections"]}
 base = json.loads(open(FRAG, "rb").read().decode("utf-8"))

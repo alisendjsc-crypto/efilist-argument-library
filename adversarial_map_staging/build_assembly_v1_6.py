@@ -41,7 +41,10 @@ REGISTER = os.path.join(STAGE, "honest_residuals_register_v0_6.json")
 REGISTER_MD5 = "0689f46f18a4dbe8d40c9982a2ad06f9"
 REDRAFTS = os.path.join(STAGE, "r1", "R1_redrafts_v1_6.json")
 EVIDENCE = os.path.join(STAGE, "r1", "R1_evidence_2026-09-19.json")
-CORPUS = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+import pinned  # noqa: E402
+CORPUS_PIN = "04bf6482aa0374ee92a81c1d55ec41f8"
+CORPUS = pinned.path_at(REPO, "efilist_argument_library_v4_0_0.json", CORPUS_PIN)
 PHASES = ("A", "B1", "B2", "C", "D", "E", "R", "F", "G")
 BY = "library seat, Code (L4c, on Josiah's word); drafter under K258, judges nothing"
 DATE = "2026-09-26"

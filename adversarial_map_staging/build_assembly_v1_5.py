@@ -38,7 +38,10 @@ JUDGMENTS_MD5 = "fcfe31c7252b9cc49265214aaff09161"
 RULINGS = os.path.join(STAGE, "r1", "R1_rulings.json")
 RULINGS_MD5 = "3f1dfad54021d7920576c7bd4840b62f"
 REDRAFTS = os.path.join(STAGE, "r1", "R1_redrafts_v1_5.json")
-CORPUS = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+import pinned  # noqa: E402
+CORPUS_PIN = "04bf6482aa0374ee92a81c1d55ec41f8"
+CORPUS = pinned.path_at(REPO, "efilist_argument_library_v4_0_0.json", CORPUS_PIN)
 PHASES = ("A", "B1", "B2", "C", "D", "E", "R", "F", "G")
 KINDS = ("amend_move", "reclass_to_b", "terminus_routing", "grounds_wording")
 BY = "library seat, Code (L4, continuing on Josiah's word); drafter under K258, judges nothing"

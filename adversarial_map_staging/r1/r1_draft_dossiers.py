@@ -71,7 +71,11 @@ def main():
         canon_rows = {x["n"]: x for x in c["adversarial_map"].get("R1_drafting_pass_L4", {}).get("rows", [])}
     hr = {b["bedrock_id"]: b for b in load(REGISTER)["bedrocks"]}
     queue = {p["id"]: p for p in drafts_doc["pin_move_queue"]}
-    nodes = {o["id"]: o for o in load(CORPUS)["objections"]}
+    # L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+    import sys
+    sys.path.insert(0, HERE)
+    import pinned
+    nodes = {o["id"]: o for o in json.loads(pinned.bytes_at(REPO, CORPUS, "04bf6482aa0374ee92a81c1d55ec41f8").decode("utf-8"))["objections"]}
 
     def at(m, node, locus=None, klass=None):
         return [e for e in m["entries"] if e["target_id"] == node and (locus is None or e["target_locus"] == locus)

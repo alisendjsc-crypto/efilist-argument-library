@@ -8,7 +8,10 @@ S=REPO
 spec=importlib.util.spec_from_file_location("v3", os.path.join(_HERE,"adv_map_validator_v0_3.py"))
 v3=importlib.util.module_from_spec(spec); spec.loader.exec_module(v3)
 
-post=json.load(open(S+"/efilist_argument_library_v4_0_0.json",encoding="utf-8"))
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+sys.path.insert(0, os.path.join(_HERE, "r1"))
+import pinned  # noqa: E402
+post=json.loads(pinned.bytes_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8").decode("utf-8"))
 _pd=tempfile.mkdtemp(prefix="k346_precut_")
 PRE=os.path.join(_pd,"corpus_precut.json")
 _b=subprocess.run(["git","-C",REPO,"show","3e71546316285ef4fe3bd6d2da4ef1b5e4d6b50f:efilist_argument_library_v4_0_0.json"],capture_output=True)
