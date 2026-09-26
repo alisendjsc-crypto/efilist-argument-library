@@ -19,8 +19,17 @@ agree".
   python3 tools/xsurface_v4_1_0.py                # gate the tracked surfaces
   python3 tools/xsurface_v4_1_0.py --dir k344_drop  # gate a candidate set
   python3 tools/xsurface_v4_1_0.py --dir k344_drop --against .   # and diff the two
+
+EXTENDED AT L1 (2026-09-25) under standing ruling 1 (2026-09-18): the mega-literals with no second
+copy get sidecar data files as the reference, md5-pinned in canon, and this gate checks them too.
+Two so far, MAP_GRAPH_DATA and MAP1_TRANSITIONS, in sidecars/. Each must (1) carry `data` equal to
+the flagship's literal under the same canonical md5, (2) describe its own data truly, (3) be byte
+for byte what tools/build_map_sidecars.py emits from the flagship under test, and (4) match the pin
+in the one project_canon_v*.json. A sidecar or canon absent from --dir resolves to the repo's own
+copy, so a candidate flagship dropped alone is still gated against the committed sidecars; the
+resolved path is printed either way. --against compares OBJECTIONS only, as before.
 """
-import argparse, hashlib, io, json, os, re, sys
+import argparse, glob, hashlib, io, json, os, re, sys
 
 JSONF = "efilist_argument_library_v4_0_0.json"
 JSXF  = "efilist_argument_library_v4_0_0.jsx"
@@ -111,6 +120,66 @@ chk("all three surfaces AGREE, byte-for-byte after canonicalization", len(set(H.
     repr(H))
 ids = [tuple(o["id"] for o in v) for v in S.values()]
 chk("id order identical across surfaces", len(set(ids)) == 1)
+
+# ---------------------------------------------------------------- the mega-literal sidecars (L1)
+SIDECARS = (("MAP_GRAPH_DATA", "sidecars/map_graph_data.json"),
+            ("MAP1_TRANSITIONS", "sidecars/map1_transitions.json"))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def extract_var(path, name):
+    """The one `var NAME = {..}` literal, bracket-balanced as above."""
+    s = io.open(path, encoding="utf-8", newline="").read()
+    if s.count("var %s =" % name) != 1:
+        raise SystemExit("ABORT: `var %s =` occurs %d times in %s, expected 1"
+                         % (name, s.count("var %s =" % name), path))
+    m = re.search(r"var\s+%s\s*=\s*" % name, s)
+    lit = balance(s, m.end()) if s[m.end()] in "[{" else None
+    if lit is None:
+        raise SystemExit("ABORT: %s literal in %s is not a closed [..] or {..}" % (name, path))
+    return json.loads(lit)
+
+
+def resolve(d, rel):
+    p = os.path.join(d, rel)
+    return p if os.path.exists(p) else os.path.join(REPO, rel)
+
+
+def canon_file(d):
+    for root in (d, REPO):
+        found = glob.glob(os.path.join(root, "project_canon_v*.json"))
+        if found:
+            return found
+    return []
+
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_map_sidecars
+
+print("\n  --- sidecars (standing ruling 1) ---")
+HP = html_path(a.dir)
+emitted = build_map_sidecars.build(io.open(HP, encoding="utf-8", newline="").read())
+cf = canon_file(a.dir)
+chk("exactly one project_canon_v*.json", len(cf) == 1, repr(cf))
+pins = json.load(io.open(cf[0], encoding="utf-8")).get("flagship_sidecars", {}).get("pins", {}) if len(cf) == 1 else {}
+print("  canon    %s" % (cf[0] if len(cf) == 1 else "?"))
+for name, rel in SIDECARS:
+    p = resolve(a.dir, rel)
+    print("  sidecar  %s" % p)
+    if not os.path.isfile(p):
+        chk("%s exists" % rel, False, p)
+        continue
+    raw = open(p, "rb").read()
+    sc = json.loads(raw.decode("utf-8"))
+    hl, hs = canon(extract_var(HP, name)), canon(sc.get("data"))
+    print("  %-38s %-17s canon %s" % (rel, name, hs))
+    chk("%s data == the flagship's %s" % (rel, name), hs == hl, "flagship %s" % hl)
+    chk("%s data_md5 describes its own data" % rel, sc.get("data_md5") == hs, repr(sc.get("data_md5")))
+    chk("%s is byte for byte what build_map_sidecars.py emits from this flagship" % rel,
+        raw == emitted[rel], "file %d B, emitted %d B" % (len(raw), len(emitted[rel])))
+    pin, md5 = pins.get(rel, {}), hashlib.md5(raw).hexdigest()
+    chk("%s == its canon pin" % rel, (md5, len(raw)) == (pin.get("md5"), pin.get("bytes")),
+        "file %s / %d, pin %s / %s" % (md5, len(raw), pin.get("md5"), pin.get("bytes")))
 
 if a.against:
     print("\n  --- against %s ---" % os.path.abspath(a.against))

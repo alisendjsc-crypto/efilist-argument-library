@@ -1,0 +1,140 @@
+{
+  "artifact": "l1_sidecar_control_v0_1",
+  "gate": {
+    "path": "tools/xsurface_v4_1_0.py",
+    "md5": "3e70315f24f3d817a9e00ed7258f5895"
+  },
+  "method": "Each control copies the three surfaces and both sidecars into a fresh scratch tree, writes a stand-in canon holding only flagship_sidecars.pins, applies one mutation, runs the gate with --dir, and requires the exit code, the exact set of FAIL lines and the resolved paths. C0 runs first.",
+  "controls": [
+    {
+      "control": "C0 unmutated",
+      "expected_rc": 0,
+      "rc": 0,
+      "expected_fails": [],
+      "observed_fails": [],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C1 one link dropped from the MAP_GRAPH_DATA sidecar",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map_graph_data.json data == the flagship's MAP_GRAPH_DATA",
+        "sidecars/map_graph_data.json data_md5 describes its own data",
+        "sidecars/map_graph_data.json is byte for byte what",
+        "sidecars/map_graph_data.json == its canon pin"
+      ],
+      "observed_fails": [
+        "sidecars/map_graph_data.json data == the flagship's MAP_GRAPH_DATA",
+        "sidecars/map_graph_data.json data_md5 describes its own data",
+        "sidecars/map_graph_data.json is byte for byte what build_map_sidecars.py emits from this flagship",
+        "sidecars/map_graph_data.json == its canon pin"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C2 one Map 1 weight flipped in the sidecar",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map1_transitions.json data == the flagship's MAP1_TRANSITIONS",
+        "sidecars/map1_transitions.json data_md5 describes its own data",
+        "sidecars/map1_transitions.json is byte for byte what",
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "observed_fails": [
+        "sidecars/map1_transitions.json data == the flagship's MAP1_TRANSITIONS",
+        "sidecars/map1_transitions.json data_md5 describes its own data",
+        "sidecars/map1_transitions.json is byte for byte what build_map_sidecars.py emits from this flagship",
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C3 whitespace only: one space before the sidecar's final newline (same JSON)",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map_graph_data.json is byte for byte what",
+        "sidecars/map_graph_data.json == its canon pin"
+      ],
+      "observed_fails": [
+        "sidecars/map_graph_data.json is byte for byte what build_map_sidecars.py emits from this flagship",
+        "sidecars/map_graph_data.json == its canon pin"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C4 one character of a mechanism label changed inside the flagship's MAP_GRAPH_DATA",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map_graph_data.json data == the flagship's MAP_GRAPH_DATA",
+        "sidecars/map_graph_data.json is byte for byte what"
+      ],
+      "observed_fails": [
+        "sidecars/map_graph_data.json data == the flagship's MAP_GRAPH_DATA",
+        "sidecars/map_graph_data.json is byte for byte what build_map_sidecars.py emits from this flagship"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C5 one word of Map 1's served caveat changed in the flagship",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map1_transitions.json is byte for byte what"
+      ],
+      "observed_fails": [
+        "sidecars/map1_transitions.json is byte for byte what build_map_sidecars.py emits from this flagship"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C6 one hex digit of the Map 1 canon pin changed",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "observed_fails": [
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C7 a second canon file beside the first",
+      "expected_rc": 1,
+      "rc": 1,
+      "expected_fails": [
+        "exactly one project_canon_v*.json",
+        "sidecars/map_graph_data.json == its canon pin",
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "observed_fails": [
+        "exactly one project_canon_v*.json",
+        "sidecars/map_graph_data.json == its canon pin",
+        "sidecars/map1_transitions.json == its canon pin"
+      ],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    },
+    {
+      "control": "C8 the MAP_GRAPH_DATA sidecar absent from --dir resolves to the repo's own copy",
+      "expected_rc": 0,
+      "rc": 0,
+      "expected_fails": [],
+      "observed_fails": [],
+      "paths_resolved_as_intended": true,
+      "verdict": "AS EXPECTED"
+    }
+  ],
+  "summary": "9 of 9 as expected"
+}

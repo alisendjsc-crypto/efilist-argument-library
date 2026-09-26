@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## Sidecars — 2026-09-25 (no release; the pin stands)
+
+Two of the flagship's embedded data sets now exist as files beside it: **`sidecars/map_graph_data.json`** (the Mechanism Web — 35 mechanisms, 82 objections, 142 links) and **`sidecars/map1_transitions.json`** (Map 1, the Argument Flow Map — 78 source objections, 2,886 next-objection edges over four interlocutor modes, with Map 1's own caveats). `tools/build_map_sidecars.py` writes both from `site/combined.html`'s literals rather than from a second hand-kept copy; their md5s are pinned in canon (`project_canon_v38_17.json`, block `flagship_sidecars`), and `tools/xsurface_v4_1_0.py` now fails if either disagrees with the flagship. Neither file carries a "primary" mechanism, because the flagship marks none. Also tracked for the first time: **`icons/gen_icons.py`**, the generator every served favicon names; `tools/icons_regen_check.py` shows it redraws all seven byte for byte. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## Repository structure — 2026-09-20 (no release; the pin stands)
 
 The served tree moved into **`site/`** (wuld-ink WI-K360). The flagship, the wings' pages and what they fetch at runtime, the umbrella front door, the presentation layer, `_headers` and `_redirects` — 52 files by `git mv`, every blob sha identical — and Cloudflare Pages now builds from `site/`, so the canon, the tooling, the staging folders and the records at the repository root are no longer served at `library.wuld.ink`. **No served byte changed:** `/combined` read `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B before and after. The flagship's path in this repository is `site/combined.html` from here on; a pin move edits it there.

@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.15",
-  "last_updated": "2026-09-18",
-  "last_updated_by_session": "K353_direction_two",
+  "canon_version": "38.17",
+  "last_updated": "2026-09-25",
+  "last_updated_by_session": "L1_map_sidecars",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1671,7 +1671,8 @@
     "session": "R1 with the library seat, then R2.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
-    "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders."
+    "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
+    "precondition_L1": "Before any R1 work: Josiah's answer on the Adversarial Map's audience status, asked at L1. His words, as the umbrella memory records them: the Map 'was meant as a transparent stance to the actual legitimacy of the philosophy of antinatalism itself ... a mirror library to object to even my OWN beliefs'. /adversarial/ is live, and R1 decides what it shows, so what he meant comes first."
   },
   "open_questions": {
     "active": {
@@ -1802,7 +1803,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.15",
+  "canon_version_marker": "v38.17",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2478,7 +2479,8 @@
     "v38_13_note": "v38.12 -> v38.13 MINOR (K351_build_the_fold, 2026-09-18): keyset UNCHANGED at 41. Five additions INSIDE adversarial_map (phaseG_amendment_K351, b_remainder_disposition_K351, ccclxxvi_hazard_K351, terminal_assembly_v1_3_K351, honest_residuals_register_pin_v0_4), a replacement of adversarial_map.next, and two in-place pointer corrections (HR_15_ratification_K350.lifecycle_status and care_ethics_supersession_RATIFIED_K350.status, both RATIFIED -> LANDED per status_lifecycle). One addition inside terminal_stability_marker.honest_residuals (currency_of_obligation / HR-15). One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. NO PIN. invariants, schemas and hazard_map asserted byte-identical.",
     "v38_14_K352": "MINOR. Four adversarial_map subkey additions (level_independent_affordance_LANDED_K352, surface_parity_ruling_K352, note_confidence_coupling_QUEUED_K352, ccclxxvii_hazard_K352), a replacement of adversarial_map.next, and one in-place pointer correction (level_independent_affordance_K350.lifecycle_status, ruled -> LANDED). One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. THIS IS A PIN MOVE: combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c -> f095c0ce0e5a1d796d57fa5a5dd62f7d, v4.1.0 -> v4.1.1. The corpus and the JSX do NOT move and the corpus `version` field stays 4.1.0. invariants, schemas and hazard_map asserted byte-identical.",
     "v38_15_K353": "MINOR. Six adversarial_map subkey additions (wing_LANDED_K353, front_door_strength_language_removed_K353, terminus_label_pin_K353, bedrock_normalizer_correction_K353, note_locus_link_form_instance_of_ccclxxii_K353, ccclxxix_hazard_K353) and a replacement of adversarial_map.next. One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. NO PIN: combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2,985,989 (v4.1.1) HELD, corpus and jsx HELD, no map or register artifact touched. Two site surfaces move and both are NO-PIN auto-deploying: adversarial/index.html (new) and libraries/index.html. invariants, schemas and hazard_map asserted byte-identical.",
-    "v38_16_K354": "MINOR. Six adversarial_map subkey additions (note_confidence_repair_LANDED_K354, confidence_render_ruling_K354, hex_repair_K354, ccclxxx_hazard_K354, prior_gate_inversion_K354, high_contrast_legibility_K354), three lifecycle_status additions inside existing subkeys (note_confidence_coupling_QUEUED_K352, note_reachability_finding_K349, confidence_ruling_K349) and a replacement of adversarial_map.next. One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. PIN MOVE: combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2), and NO CORPUS BYTE on any surface -- xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, corpus and jsx asserted unmoved git-to-git, corpus `version` held at 4.1.0. No map or register artifact touched. invariants, schemas and hazard_map asserted byte-identical."
+    "v38_16_K354": "MINOR. Six adversarial_map subkey additions (note_confidence_repair_LANDED_K354, confidence_render_ruling_K354, hex_repair_K354, ccclxxx_hazard_K354, prior_gate_inversion_K354, high_contrast_legibility_K354), three lifecycle_status additions inside existing subkeys (note_confidence_coupling_QUEUED_K352, note_reachability_finding_K349, confidence_ruling_K349) and a replacement of adversarial_map.next. One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. PIN MOVE: combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2), and NO CORPUS BYTE on any surface -- xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, corpus and jsx asserted unmoved git-to-git, corpus `version` held at 4.1.0. No map or register artifact touched. invariants, schemas and hazard_map asserted byte-identical.",
+    "v38_17_L1": "MINOR. One top-level addition, flagship_sidecars (keyset 41 -> 42, on the v38_1 precedent and the ledger's own convention: keyset moves by design, proved by this note, the invariants guard and a subtree-unchanged assertion over every other top-level key). Canon-meta version fields; one addition inside next_recommended_session (precondition_L1); this note; one session_log_recent append. NO PIN: combined.html 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2) HELD, corpus and jsx HELD, xsurface's objection canon unchanged. invariants, schemas and hazard_map asserted byte-identical. CORRECTED FORWARD: v38_16 left canon_version at 38.15 and canon_version_marker at v38.15 -- K354's builder dropped the lines K351-K353 carried -- and both read 38.17 here. v38_16's own bytes are not edited."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2704,7 +2706,8 @@
     "K351_build_the_fold (2026-09-18): THE HR-15 FOLD LANDED, AND THE (b) REMAINDER TURNED OUT TO HAVE NOWHERE TO GO. NO PIN; combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c, corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f untouched, cross-surface gate 6cd132ee5b8c7ca78ad0e095806f1c93 GREEN at open and close. Phase G amended in place on the K338 precedent (care-ethics#note b -> d, HR-15, novel true; move and anchor byte-identical, asserted); assembly v1_3 681827419df72a16a7c6fe70df8fe77f -- 138 entries, a69/b28/c1/d40, --assembly 0 violations 0 advisories; register v0_4 d067729fafb51926bc9e845209417886 -- 15 bedrocks, 40 residue entries, 0 undeclared adjacencies, parity held against BOTH v0_1 and v0_3. THE KICKOFF'S CAP WARNING WAS THE WRONG CONSTRAINT: care-ethics#long is held by Phase B2, so the PARTITION invariant refuses a (b)-remainder entry there, and K349's own control battery already proved it on this exact pair. The node sits at 2 of a bound of 3. ccclxxvi registered: a class reclassification discards the routing of the class it left, and nothing can notice the loss. 45 controls, 45 green, two of them repaired first because they aborted at an earlier gate than the one they named.",
     "K352_the_affordance (2026-09-18): THE LEVEL-INDEPENDENT AFFORDANCE LANDED. PIN MOVE, combined.html 72187f6cf0fccdf8e9f4ec6ca5ce009c / 2,982,770 -> f095c0ce0e5a1d796d57fa5a5dd62f7d / 2,985,989 (+3,219), v4.1.0 -> v4.1.1. Corpus 04bf6482aa0374ee92a81c1d55ec41f8 and jsx b196548b6eb39065842d62292acca89f UNMOVED git-to-git; the cross-surface gate reads IDENTICALLY before and after at 6cd132ee5b8c7ca78ad0e095806f1c93, which is the mechanical proof the cut touched no data; the corpus `version` field stays 4.1.0 because it names the content cut. Twelve line-indexed edits: a per-card [DISMANTLE] control rendered at EVERY responseLevel, the anchor grammar extended to `#obj-<id>@<depth>` (append-only; `@` is outside the id vocabulary), and COPY LINK emitting that suffix so the grammar ships with a producer. THE INBOUND HALF WAS NOT IN THE K350 SPEC AND IS THE LOAD-BEARING ONE -- a badge serves a reader already on the card, and the broken link is inbound. Gates: reconstruction against the GIT BASE (base + exactly the 12 declared edits == candidate, byte for byte), the cross-surface identity, and 28 functional checks in real Chromium including the PINNED BASE run as a null. ccclxxvii registered against this session's own test harness: a fragment-only navigation does not re-boot, so a hash-varying test reads the previous case's state -- now mechanised as a boot witness with a failing control. Also ruled: the JSX is a DATA-parity surface only, the surfaces having already diverged in three UI places; and the flagship's [NOTE] confidence coupling is the wrong one of the two, QUEUED not repaired. Corrected by measurement: the pure-(d) set is 21, not 20, and #long is 80 of 98 answer targets = 81.6%.",
     "K353_direction_two (2026-09-18): DIRECTION TWO LANDED -- the Adversarial Map's own reader-facing surface at library.wuld.ink/adversarial/ , the first reader-facing map content in the programme's history. NO PIN: combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d HELD, corpus, jsx and every map and register artifact untouched. THE FORK: the aux wing, per shipping_fork_disposition_verbatim -- runnable any session, no R4 -- and it is the first CONSUMER of the inbound anchor grammar K352 built. 21 pure-(d) nodes / 22 entries, grouped by REGISTERED bedrock rather than by node, under a TERMINUS label pinned in canon. Zero new philosophical text: objection wording, attacked sentence, continuation, adjudication and routing all verbatim. Gates: 54 static controls, 16 functional checks in real Chromium with the suffix-stripped links run as the NULL and a boot witness on every probe, and byte reproduction under two forced PYTHONHASHSEED values from the generator's committed location. FOUR GATES FAILED AND ONLY ONE WAS THE ARTIFACT: the `note` locus was linked bare, which renders no note at all (ccclxxii); the other three were gates locating their subject by layout rather than by a declared binding, registered as ccclxxix. Corrected by measurement: the ship set lands on 9 REGISTERED bedrocks, not the 15 free-text strings the handoff counted, and HR-03 + HR-05 take 13 of 22. Also removed: the front door's own pre-ruling STRENGTH description of the map, which would have become the label on the surface the moment it was linked.",
-    "K354_note_and_confidence (2026-09-18): THE NOTE AND THE CONFIDENCE LAYER, landed as the v4.1.2 PIN MOVE -- combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2) -- with NO CORPUS BYTE on any surface: xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, which is the mechanical proof, and the corpus `version` stays 4.1.0. THE REPAIR: the [NOTE] control lifted out of `if (conf !== 'full')` so its condition equals its container's -- 9 containers, 9 controls -- making 195 words readable that no reader could open, on a card K353 had just started pointing readers at. THE RENDER RULINGS, delegated by Josiah with the recommendations on the record: `full` renders FULL and the silent `|| 'full'` upgrade of 64 never-graded objections is deleted, so absence now means ungraded; the unlabelled 70% provisional opacity band is removed, rule and class both. THE HEX: eleven 5-digit literals over six declarations repaired -- not the eight WI-K343 counted, and the three it missed include the [NOTE] button's own border. THE SESSION'S BEST EVIDENCE IS NOT ITS OWN: K353's wing gate, run UNCHANGED, fails exactly the three checks that assert the defect and nothing else, and the amended gate fails the same three on the base. ccclxxx registered -- repairing an invalid declaration is an ADDITION to the cascade, and the restored fills made the high-contrast STRONG badge LESS legible repaired (4.16 -> 3.84) than broken, visible only in a contrast ratio computed on the rendered composite; fixed with `background: none` in high contrast, and both ratios gated against regression."
+    "K354_note_and_confidence (2026-09-18): THE NOTE AND THE CONFIDENCE LAYER, landed as the v4.1.2 PIN MOVE -- combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2) -- with NO CORPUS BYTE on any surface: xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, which is the mechanical proof, and the corpus `version` stays 4.1.0. THE REPAIR: the [NOTE] control lifted out of `if (conf !== 'full')` so its condition equals its container's -- 9 containers, 9 controls -- making 195 words readable that no reader could open, on a card K353 had just started pointing readers at. THE RENDER RULINGS, delegated by Josiah with the recommendations on the record: `full` renders FULL and the silent `|| 'full'` upgrade of 64 never-graded objections is deleted, so absence now means ungraded; the unlabelled 70% provisional opacity band is removed, rule and class both. THE HEX: eleven 5-digit literals over six declarations repaired -- not the eight WI-K343 counted, and the three it missed include the [NOTE] button's own border. THE SESSION'S BEST EVIDENCE IS NOT ITS OWN: K353's wing gate, run UNCHANGED, fails exactly the three checks that assert the defect and nothing else, and the amended gate fails the same three on the base. ccclxxx registered -- repairing an invalid declaration is an ADDITION to the cascade, and the restored fills made the high-contrast STRONG badge LESS legible repaired (4.16 -> 3.84) than broken, visible only in a contrast ratio computed on the rendered composite; fixed with `background: none` in high contrast, and both ratios gated against regression.",
+    "L1_map_sidecars (2026-09-25, the library seat's first Code session; answers relay R0057 from argue S38 under standing ruling 1; NO PIN): THE FIRST TWO MEGA-LITERAL SIDECARS. tools/build_map_sidecars.py writes sidecars/map_graph_data.json (d295911140a08bd6de227e108b1106e5 data; 82 objections, 35 mechanisms, 142 links) and sidecars/map1_transitions.json (47bfdd5c8b4660aa0d213d199bcdd49c data; 78 sources, 2886 edges over sophisticate, defender, drifter, blended) from the flagship's own literals, never retyped, with Map 1's caveats lifted from its methodology panel. No primary mechanism is emitted: none is marked, and 51 objections carry several. tools/xsurface_v4_1_0.py extended in place to gate both, and tools/l1_sidecar_controls.py proves it: 9 of 9 as expected, the unmutated control first. Both file md5s pinned in the new flagship_sidecars block. Also landed by bytes: icons/gen_icons.py, which all seven served favicons name and no repo had tracked; it regenerates all seven byte for byte."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -4163,6 +4166,71 @@
       },
       "two_rules_this_cut_REQUIRED_rather_than_chose": "`.confidence-full` never rendered, so it never needed a high-contrast rule; #4a7 measures about 2.5:1 on the high-contrast ground and #174 measures 4.72:1. `.note-toggle` never had one either: #996 measures 2.49:1 there, UNDER even the 3:1 floor for a UI component, while its [DISMANTLE] sibling has had one since K352. Making a control legible on two more cards while leaving it illegible in the accessibility mode is not a repair.",
       "LOGGED_not_repaired": "The high-contrast STRONG badge measures 4.16:1, under 4.5 for 8px text. PRE-EXISTING and UNCHANGED by this cut. #960 is an authored colour and moving it is a register call rather than a build one -- Josiah's, with the library seat."
+    }
+  },
+  "flagship_sidecars": {
+    "block_kind": "flagship_sidecars",
+    "registered_by_session": "L1_map_sidecars (2026-09-25), the library seat's first Code session",
+    "ruling": "Standing ruling 1 of 2026-09-18, in the umbrella memory's words: 'No assembler for combined.html. Extend the cross-surface gate to every mega-literal without a second copy; create sidecar data files as the reference and pin their md5 in canon.'",
+    "requested_by": "Relay R0057 (argue S38, 2026-09-24): a Map 1 export the card game can vendor, with stable ids matching the corpus, a version field and a file md5 to pin.",
+    "what_a_sidecar_is": "A pure function of site/combined.html, written by tools/build_map_sidecars.py. `data` is the literal as the flagship carries it; every other field is derived from the flagship, the Map 1 caveats included. A pin move that leaves the literal and Map 1's methodology panel alone leaves the sidecar byte-identical; one that touches them turns the gate RED until the generator is re-run and this pin moves with it.",
+    "pins": {
+      "sidecars/map_graph_data.json": {
+        "md5": "fbf8a08772fb4bbe37bee7a342af0cc3",
+        "bytes": 86176,
+        "literal": "MAP_GRAPH_DATA",
+        "data_md5": "d295911140a08bd6de227e108b1106e5",
+        "version": "1.0.0"
+      },
+      "sidecars/map1_transitions.json": {
+        "md5": "1b059c498321cc2bbb960a3f8dac3c52",
+        "bytes": 1455633,
+        "literal": "MAP1_TRANSITIONS",
+        "data_md5": "47bfdd5c8b4660aa0d213d199bcdd49c",
+        "version": "1.0.0"
+      }
+    },
+    "extracted_from": {
+      "file": "site/combined.html",
+      "pin": "v4.1.2",
+      "md5": "006aa9833f7a8b103ad27a289ab22fa9",
+      "bytes": 2987411
+    },
+    "generator": {
+      "path": "tools/build_map_sidecars.py",
+      "md5": "b65b5cc1830f585e04e8ea7d06cc0193",
+      "bytes": 13743
+    },
+    "gate": {
+      "path": "tools/xsurface_v4_1_0.py",
+      "md5": "3e70315f24f3d817a9e00ed7258f5895",
+      "bytes": 8911,
+      "checks": "Per sidecar: data equals the flagship's literal under the gate's own canonical md5; data_md5 describes its own data; the file is byte for byte what the generator emits from the flagship under test; the file matches this pin. Extended in place: its first three checks and their output are unchanged."
+    },
+    "controls": {
+      "path": "tools/l1_sidecar_controls.py",
+      "artifact": "tools/l1_sidecar_control_v0_1.json",
+      "md5": "33228a875731feca1dc55d1c162ae81d",
+      "bytes": 5312,
+      "summary": "9 of 9 as expected"
+    },
+    "primary_mechanism": "UNRULED. No link in MAP_GRAPH_DATA is marked primary and 51 of the 82 objections link to more than one mechanism, so the sidecar emits the links as they stand and no primary. A rule for choosing one is Josiah's, asked at L1.",
+    "map1_coverage": "78 of 82 objections are Map 1 sources. Absent: eliminativism, solipsism, suffering-as-meaning, self-effacing-under-universalization. Never a target: wild-animal-suffering-consistency, eliminativism, solipsism, suffering-as-meaning, self-effacing-under-universalization. Reported, not authored.",
+    "findings_logged_not_repaired": {
+      "mechanism_raw_diverges": "The Mechanism Web's objection nodes carry a `mechanism_raw` text that differs from the corpus's psychMechanism on 5 of 82 nodes: ai-fear, violence-as-reductio, eliminativism, solipsism, suffering-as-meaning. 3 of them are among Map 1's 4 absent sources, which bears on K345a's shared-generation-boundary hypothesis. Repairing served text is a pin move.",
+      "overrides_15_and_10": "Map 1's START HERE caveat speaks of '15 canonical sophisticate overrides'; the data marks 10 sophisticate edges canonical_override true. The panel's own KNOWN LIMITATIONS, item 2, reconciles the two, and the sidecar carries both texts. A reader of the first alone is misled; rewording it is a pin move."
+    },
+    "ruling_1_scope_remaining": {
+      "method": "Every top-level literal of 5,000 B or more in the flagship, measured by this builder.",
+      "covered": "OBJECTIONS by the corpus JSON and the JSX (the gate's first three checks); MAP_GRAPH_DATA and MAP1_TRANSITIONS by these sidecars.",
+      "not_yet": {
+        "REAL_WORLD_EXAMPLES": "509888 B, JSON",
+        "DEP_GRAPH_DATA": "51870 B, JSON",
+        "DEP_TUNE": "36188 B, JavaScript, not JSON",
+        "REBUTTAL_STRENGTH": "8514 B, JSON",
+        "DEP_REVIEW_NOTES": "6232 B, JavaScript, not JSON"
+      },
+      "second_copies_already_present": "REAL_WORLD_EXAMPLES EQUALS the corpus's realWorldExamples under the canonical md5, so it needs a gate check rather than a sidecar. DEP_GRAPH_DATA does NOT equal the corpus's dependencyGraph (same 95 nodes and 255 links, but the corpus's nodes carry more fields), so it needs a declared projection or a sidecar."
     }
   }
 }
