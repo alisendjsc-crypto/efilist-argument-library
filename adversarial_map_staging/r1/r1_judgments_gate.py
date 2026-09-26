@@ -14,8 +14,10 @@ names the row it replaces. This gate checks, and exits 1 on any failure:
   4. every relation row names a relation the register stores; every finding names its owner
      and only real draft numbers;
   5. every double-quoted span in a row's text is declared in that row's quotes, and every
-     declared quote is verbatim at its source (r1_quote_check.py's sources, plus v1_4:, drafts:,
-     rulings:, design: and render:);
+     declared quote is verbatim at its source (r1_quote_check.py's corpus:, map: and canon:, plus
+     v1_4:, drafts:, rulings:, design: and render:; register: resolves against the register this
+     record judged, judged.register_v0_5, since L4b; canon: still reads the one canon on disk,
+     which stays true while canon blocks are never edited in place);
   6. the judged artifacts are still at the md5s the header names;
   7. append-only: the committed base (git HEAD's copy, or --base) is intact: header unchanged,
      every committed row still present, unchanged and in order.
