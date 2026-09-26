@@ -1,0 +1,272 @@
+{
+ "base": "http://127.0.0.1:8783",
+ "engines": {
+  "chromium": "153.0.8010.12",
+  "firefox": "155.0"
+ },
+ "layout": {
+  "runs": 240,
+  "overflowRuns": 0,
+  "aboutOverflowRuns": 0,
+  "aaMin": 5.37,
+  "aaBelow": 0,
+  "errors": 0,
+  "marksWrong": 0,
+  "aaItems": 12
+ },
+ "motion": [
+  {
+   "engine": "chromium",
+   "wing": "right-to-die",
+   "case": "vfx, dark, motion allowed",
+   "early": 1,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "right-to-die",
+   "case": "reduced motion",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "right-to-die",
+   "case": "legible (light ground)",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "right-to-die",
+   "case": "display: cosmetic",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "right-to-die",
+   "case": "display: off",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "veganism",
+   "case": "vfx, dark, motion allowed",
+   "early": 4,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "veganism",
+   "case": "reduced motion",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "veganism",
+   "case": "legible (light ground)",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "veganism",
+   "case": "display: cosmetic",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "wing": "veganism",
+   "case": "display: off",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "right-to-die",
+   "case": "vfx, dark, motion allowed",
+   "early": 1,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "right-to-die",
+   "case": "reduced motion",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "right-to-die",
+   "case": "legible (light ground)",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "right-to-die",
+   "case": "display: cosmetic",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "right-to-die",
+   "case": "display: off",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "veganism",
+   "case": "vfx, dark, motion allowed",
+   "early": 4,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "veganism",
+   "case": "reduced motion",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "veganism",
+   "case": "legible (light ground)",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "veganism",
+   "case": "display: cosmetic",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "wing": "veganism",
+   "case": "display: off",
+   "early": 0,
+   "after": 0,
+   "ok": true
+  }
+ ],
+ "arrival": [
+  {
+   "engine": "chromium",
+   "case": "vfx, dark, motion allowed",
+   "target": 1,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "legible",
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, dark, motion allowed",
+   "target": 1,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "legible",
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  }
+ ],
+ "spine": [
+  {
+   "engine": "chromium",
+   "nodes": 17,
+   "cards": 17,
+   "shownAt1440": true,
+   "litAtTop": 0,
+   "litAtSixth": 5,
+   "litAtEnd": 16,
+   "filteredNodes": 5,
+   "filteredCards": 5,
+   "shownOnAbout": false,
+   "shownBack": true,
+   "shownAt390": false,
+   "lightGround": "rgba(0, 0, 0, 0)",
+   "lightLit": "rgb(169, 25, 48)",
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "nodes": 17,
+   "cards": 17,
+   "shownAt1440": true,
+   "litAtTop": 0,
+   "litAtSixth": 5,
+   "litAtEnd": 16,
+   "filteredNodes": 5,
+   "filteredCards": 5,
+   "shownOnAbout": false,
+   "shownBack": true,
+   "shownAt390": false,
+   "lightGround": "rgba(0, 0, 0, 0)",
+   "lightLit": "rgb(169, 25, 48)",
+   "ok": true
+  }
+ ],
+ "summary": {
+  "layoutOk": true,
+  "layout": "240 runs: overflow 0 (About 0), AA min 5.37, below AA 0, errors 0, marks wrong 0",
+  "motion": "20 of 20",
+  "arrival": "6 of 6",
+  "spine": "2 of 2"
+ }
+}
