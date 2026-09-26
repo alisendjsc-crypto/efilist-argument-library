@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.23",
+  "canon_version": "38.24",
   "last_updated": "2026-09-25",
-  "last_updated_by_session": "L4",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "gate2: judge L4's drafts of R1's 45 FAILS (adversarial_map.R1_drafting_pass_L4; adversarial_map_staging/adversarial_map_v1_4.json, cb61db5c) as a seat that did not draft them (K258), including #58's new (a) and register v0_5's three relations. Then the 11 knock-on HOLDS are read against the drafts that survive. The pin-move queue (adversarial_map.pin_move_queue_L4, 13 rows) is Josiah's to open. Then R2, then the interconnection design.",
+    "session": "Josiah's word on gate2's judgment (adversarial_map.R1_drafts_judgment_gate2; adversarial_map_staging/r1/R1_drafts_judgments.json, fcfe31c7). Then a drafting seat (l) builds the successor map v1_5 from v1_4: #14 amended, #58 redrafted under the class law, the terminus_routing wording at #25, #59 and #62, #16's wording. A seat that did not draft it judges it (K258). Then the 11 knock-on HOLDS are read against what survives. The pin-move queue (adversarial_map.pin_move_queue_L4) stays Josiah's to open. Then R2, then the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1773,7 +1773,8 @@
       "acted_on": "his standing default that the seat's recommendations proceed unless he says otherwise, and 'Proceed with your recommendations on all front's.'",
       "inputs": "R0108 (argue to l, glyph_sigil_architecture_v1) and R0107; the grids in argue's design/tier_sigils_v0/sigils.json at argue 6fb26e1 (md5 b97acd2b), copied from the file, never from a render; L1a's note that a full ladder with its top rung lit is pixel-identical to the flagship favicon."
     },
-    "drafted_L4": "L4 drafted all 45 FAILS: a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4. Nothing reached /adversarial/ or /combined; drafted is not ruled."
+    "drafted_L4": "L4 drafted all 45 FAILS: a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4. Nothing reached /adversarial/ or /combined; drafted is not ruled.",
+    "judged_gate2": "gate2 judged the 45 drafts: ACCEPT 43, AMEND 1, REJECT 1. Relations: HR-11 conditions HR-02 ACCEPT, HR-12 independent_of HR-10 ACCEPT, HR-14 independent_of HR-05 ACCEPT. Judged is not ruled."
   },
   "open_questions": {
     "active": {
@@ -1904,7 +1905,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.23",
+  "canon_version_marker": "v38.24",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2587,7 +2588,8 @@
     "v38_20_L3": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L3, R1_rules_L3, R1_findings_L3); next_recommended_session re-pointed (session rewritten; method_L3, carried_L3, after_R1_L3 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_21_L3_build": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_BUILT_L3); next_recommended_session re-pointed (session rewritten; build_done_L3, carried_L3_build added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file, the rulings and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_22_L3_widen": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_WIDENED_L3); next_recommended_session re-pointed (session rewritten; ruled_L3_close and parallel_lane_design_L3 added; carried_L3_build updated); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
-    "v38_23_L4": "MINOR. keyset UNCHANGED at 42. Five adversarial_map subkey additions (R1_drafting_pass_L4, terminal_assembly_v1_4_L4, honest_residuals_register_pin_v0_5, pin_move_queue_L4, knock_on_collisions_L4); next_recommended_session re-pointed (session rewritten; drafted_L4 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
+    "v38_23_L4": "MINOR. keyset UNCHANGED at 42. Five adversarial_map subkey additions (R1_drafting_pass_L4, terminal_assembly_v1_4_L4, honest_residuals_register_pin_v0_5, pin_move_queue_L4, knock_on_collisions_L4); next_recommended_session re-pointed (session rewritten; drafted_L4 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
+    "v38_24_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (R1_drafts_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2820,7 +2822,8 @@
     "L3_R1 (2026-09-25; NO PIN): R1 COMPLETE, 69 OF 69 (a) ENTRIES RULED: HOLDS 24, FAILS 45. L3 ruled the 29 L2 carried (B1-E) in his words 'Go with your recommendations on all of the above. Proceed as you wish.' -- HOLDS 6 (#26, #37, #49, #51, #52, #53), FAILS 23 -- under three reading rules he adopted with them (the hub rule, the K350 rule, the joy-outweighs reading). 20 of L3's FAILS rest on map records; #63 on the corpus's own text; #22 and #58 on the seat's reading alone. Two new failure shapes: routed answer silent (#22, #25, #58) and cross-node aggravation (#63). Reading instruments committed: adversarial_map_staging/r1/r1_dossiers.py and adversarial_map_staging/r1/r1_quote_check.py. Rulings adversarial_map_staging/r1/R1_rulings.json (gate adversarial_map_staging/r1/r1_rulings_gate.py, controls v0_2 11 of 11). Next: the validator-rule build, then the drafting pass over the 45 FAILS, judged by a seat that did not draft.",
     "L3_build (2026-09-25; NO PIN): THE COLLISION RULE ADOPTED AT L2 IS BUILT, on his words 'Go with your recommendations on all of the above. Proceed as you wish.' and 'The relays can be deferred for later since it's mostly aesthetic work or prioritized on your reecommendations. Focus on the substance for now.'. adversarial_map_staging/r1/r1_collision_list.py lists all 69 (a) entries: 56 collided (HOLDS 17, FAILS 39), 13 not; 24 ship-eligible on R1 HOLDS, 45 blocked for the drafting pass by shape. It catches 39 of the 45 FAILS; 6 were found only by reading (#22, #35, #39, #40, #58, #63). Controls 5 of 5. The drafting pass starts from adversarial_map_staging/r1/r1_collision_list_v0_1.md.",
     "L3_widen (2026-09-25; NO PIN): on his words 'Proceed with your recommendations on all front's.' the collision rule is WIDENED to an answering node's other slots (v0_2): 58 collided (HOLDS 17, FAILS 41), adding #39 and #58; it now catches 41 of the 45 FAILS, and #22, #35, #40, #63 were found only by reading. v0_1 kept. His question, verbatim: 'DO you think a sigil  / design architecture session would be warranted in its own isolated session while the meat of the library presses on?' The seat's answer: yes, an isolated parallel design lane (worktree, no canon bump, no pin, merge on his word). L4, the drafting pass, starts from adversarial_map_staging/r1/r1_collision_list_v0_2.md.",
-    "L4 (2026-09-25; NO PIN): the drafting pass over R1's 45 FAILS, on 'Proceed with your recommendations on all front's.' (R0110). adversarial_map_v1_4.json cb61db5c: 41 entries change (a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4) and 4 wait unchanged on their (b) repairs; class counts a31 b31 c1 d75. Register v0_5 0c29e3bd: 35 tributaries reclassified onto registered bedrock, no bedrock added, three relations drafted. Pin-move queue 13 rows, Josiah's. 11 HOLDS newly collided by the drafts, read after judgment. Drafted, not judged: gate2 next."
+    "L4 (2026-09-25; NO PIN): the drafting pass over R1's 45 FAILS, on 'Proceed with your recommendations on all front's.' (R0110). adversarial_map_v1_4.json cb61db5c: 41 entries change (a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4) and 4 wait unchanged on their (b) repairs; class counts a31 b31 c1 d75. Register v0_5 0c29e3bd: 35 tributaries reclassified onto registered bedrock, no bedrock added, three relations drafted. Pin-move queue 13 rows, Josiah's. 11 HOLDS newly collided by the drafts, read after judgment. Drafted, not judged: gate2 next.",
+    "gate2 (2026-09-25; NO PIN): L4's drafts of R1's 45 FAILS judged (R0122), under 'Proceed with your recommendations on all front's.'. fcfe31c7: ACCEPT 43, AMEND 1, REJECT 1; relations ACCEPT, ACCEPT, ACCEPT; 9 findings, six asks for his word with the seat's leans. #14 AMEND (its trimmed move never reaches HR-14); #58 REJECT (the new route answers only the instrumental form, and its fair-play answer lives in the grounds). #45's departure to HR-02 accepted. Judged, not ruled."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -5844,6 +5847,173 @@
         55
       ],
       "the_new_a": "#58 is an (a) in a new form (re-routed); no (b) or (d) sits on its new answering node, and it needs a ruling like any other."
+    },
+    "R1_drafts_judgment_gate2": {
+      "status": "JUDGED, NOT RULED. gate2 judged L4's drafts; Josiah's word decides. Nothing ships on a judgment, and v1_4 is not edited: a drafting seat applies the AMEND and the REJECT in a successor map, and a seat that did not draft it judges it (K258).",
+      "judge": "gate2, a Code session that drafted none of L4's drafts, the drafts file or register v0_5 (K258)",
+      "his_words_verbatim": "Proceed with your recommendations on all front's.",
+      "the_recommendation_he_adopted": "The drafting pass (L4). Lean: a fresh session, starting from the worklist, with a different session judging the drafts.",
+      "kickoff": {
+        "relay": "R0122",
+        "md5": "f8be5b73e33f39192990d08c9d6dd987"
+      },
+      "standard": "adversarial_map.R1_standard_ruling_L2; the record's header carries his words and the recommendation he adopted, verbatim",
+      "record": {
+        "md5": "fcfe31c7252b9cc49265214aaff09161",
+        "bytes": 56065,
+        "file": "adversarial_map_staging/r1/R1_drafts_judgments.json",
+        "gate": {
+          "md5": "a2a20f22d55b8474dd92bbb5b7e81182",
+          "bytes": 18842,
+          "file": "adversarial_map_staging/r1/r1_judgments_gate.py"
+        },
+        "control": {
+          "md5": "459ca28c21200754d00fa9c0b367c61b",
+          "bytes": 3892,
+          "file": "adversarial_map_staging/r1/r1_judgments_gate_control_v0_1.json",
+          "result": "12 of 12 as expected, the unmutated control first"
+        },
+        "instrument": {
+          "md5": "8015989d7030ec97f5378a3b32662b32",
+          "bytes": 6097,
+          "file": "adversarial_map_staging/r1/r1_draft_dossiers.py"
+        }
+      },
+      "judged": {
+        "drafts": "57c890257c82fb641cd8c49c376d0fba",
+        "map_v1_4": "cb61db5cdade98234d69d222b372f515",
+        "map_v1_3": "681827419df72a16a7c6fe70df8fe77f",
+        "register_v0_5": "0c29e3bd286ef9f5e6ddead7019f7ed3",
+        "rulings": "3f1dfad54021d7920576c7bd4840b62f"
+      },
+      "verdicts": {
+        "ACCEPT": 43,
+        "AMEND": 1,
+        "REJECT": 1
+      },
+      "by_disposition": {
+        "a_to_b": {
+          "ACCEPT": 3
+        },
+        "a_to_d": {
+          "ACCEPT": 34,
+          "AMEND": 1
+        },
+        "reroute_a": {
+          "REJECT": 1
+        },
+        "trim_waits": {
+          "ACCEPT": 2
+        },
+        "waits": {
+          "ACCEPT": 4
+        }
+      },
+      "not_accepted": [
+        {
+          "n": 14,
+          "row": "J-012",
+          "r1_row": "R1-049",
+          "target": "ai-fear#short",
+          "drafted": "a_to_d",
+          "verdict": "AMEND",
+          "owed": [
+            "Complete the move from R1-049's stronger continuation (the outcome-preference reading), declared as the completions at #1, #7 and #62 are, so that the continuation reaches HR-14. Bring the grounds' first clause into line with the completed move. Whether the create-reading clause stays is the drafter's call."
+          ]
+        },
+        {
+          "n": 58,
+          "row": "J-037",
+          "r1_row": "R1-052",
+          "target": "social-contract#long",
+          "drafted": "reroute_a",
+          "verdict": "REJECT",
+          "owed": [
+            "The entry returns to a drafting seat. A seat that did not draft the redraft judges it. The v1_3 route stays failed (R1-052), and the successor map does not ship #58 as (a).",
+            "Lean for the class-law run: (b) at social-contract#long. The node answers only the existence version, and a local fair-play distinction would close the free-rider version with no bedrock premise: a fair share is a share of burdens, payable through reallocation and mutual aid without supplying members. Choose (d) at HR-06 only if that distinction fails. The redraft carries the cashed form in the move."
+          ]
+        }
+      ],
+      "relations": {
+        "HR-11 conditions HR-02": "ACCEPT",
+        "HR-12 independent_of HR-10": "ACCEPT",
+        "HR-14 independent_of HR-05": "ACCEPT"
+      },
+      "the_departure": "#45 goes to HR-02 intrinsic-value-of-existence rather than R1-017's HR-03, and the judge accepts it: R1-017's own reason shows the tie-breaker does not reach existing beings, so the line ends at the bare tie the node's own #medium (d) registers, with #47.",
+      "findings": [
+        {
+          "row": "J-049",
+          "title": "new prose (kickoff items 2 and 3)",
+          "whose": "Josiah"
+        },
+        {
+          "row": "J-050",
+          "title": "terminus_routing wording",
+          "whose": "the drafting seat"
+        },
+        {
+          "row": "J-051",
+          "title": "design section 11.1 on aggravation",
+          "whose": "the drafting seat"
+        },
+        {
+          "row": "J-052",
+          "title": "conditions direction",
+          "whose": "Josiah"
+        },
+        {
+          "row": "J-053",
+          "title": "queue completeness",
+          "whose": "Josiah"
+        },
+        {
+          "row": "J-054",
+          "title": "register",
+          "whose": "a register session"
+        },
+        {
+          "row": "J-055",
+          "title": "render keys",
+          "whose": "a build session"
+        },
+        {
+          "row": "J-056",
+          "title": "grounds under the card's heading",
+          "whose": "none"
+        },
+        {
+          "row": "J-057",
+          "title": "sequence after this judgment",
+          "whose": "Josiah"
+        }
+      ],
+      "for_his_word": [
+        {
+          "ask": "Adopt the judgment: 43 drafts accepted, #14 amended, #58 rejected, the three relations accepted.",
+          "recommendation": "yes; every verdict carries its reason and quotes, and the gate checks every quote against its source"
+        },
+        {
+          "ask": "#45's departure from R1-017 (HR-02, not HR-03).",
+          "recommendation": "accept; a line cannot end at the bedrock of a premise its own ruling shows inapplicable"
+        },
+        {
+          "ask": "The new-prose reading (J-049): a move completion from the entry's own R1 row, forced by a mandated trim and a ratified gate, is ruled record and not new prose.",
+          "recommendation": "adopt; it keeps L2's 'no new prose' to what it guarded"
+        },
+        {
+          "ask": "#58's redraft: the class-law run by a drafting seat.",
+          "recommendation": "lean (b) at social-contract#long; (d) at HR-06 only if the burden-share distinction fails"
+        },
+        {
+          "ask": "The conditions direction (J-052): re-declare the K349 pair as HR-11 conditions HR-14.",
+          "recommendation": "yes; the definition and the pair's own note already say so, and nothing substantive moves"
+        },
+        {
+          "ask": "Two conceded defects the new (d)s pass over (#6's phrase, #20's sentence) join pin_move_queue_L4.",
+          "recommendation": "yes, when the queue next moves; it stays his to open"
+        }
+      ],
+      "next": "His word. Then a drafting seat builds the successor map (v1_5) with the #14 amendment, the #58 redraft and the terminus_routing fixes at #25, #59 and #62, and #16's wording. A seat that did not draft it judges it. Then the 11 knock-on HOLDS are read against what survives. Then R2."
     }
   },
   "flagship_sidecars": {

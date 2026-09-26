@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The drafts judged — 2026-09-25 (no release; the pin stands)
+
+A session that wrote none of them has judged all 45 drafts. 43 are accepted as drafted. One is sent back for a fix: #14, whose shortened objection no longer reaches the bedrock its card names. One is rejected: #58, whose new answer meets only a weaker form of the objection, with the rest of the answer argued in the notes rather than in the library's text. The three new links between bedrocks are accepted, and nine findings go to whoever owns each, with a recommendation. The record is **`adversarial_map_staging/r1/R1_drafts_judgments.json`**. It is append-only and checked by `r1_judgments_gate.py`, whose controls go red on every tampering they test. Every quotation in it is checked against its source. **Judged is not ruled:** Josiah's word comes next, then a drafting seat builds the successor map. Canon `project_canon_v38_24.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The drafting pass over R1's failures — 2026-09-25 (no release; the pin stands)
 
 All 45 of the Adversarial Map entries R1 failed now have a draft, under the standard Josiah adopted at L2. 35 become "where this line terminates" entries on bedrock the map already registers, 3 become repair candidates, 1 is sent to a locus that actually answers it, and 6 wait on corpus repairs that only a pin move can make; the 13 corpus sentences those repairs touch are listed for him in canon (`pin_move_queue_L4`). The drafts are a new file, **`adversarial_map_staging/adversarial_map_v1_4.json`**, built from the ruled map by `build_assembly_v1_4.py` and checked by 11 controls; the map R1 ruled, v1_3, is unchanged. The register of bedrocks follows as **`honest_residuals_register_v0_5`**: 35 new tributaries, no new bedrock. **The drafts are not judged:** a session that did not write them judges them next, and 11 entries that held can only ship after they are read against the drafts. Canon `project_canon_v38_23.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
