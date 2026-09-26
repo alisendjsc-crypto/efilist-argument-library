@@ -1,0 +1,654 @@
+{
+ "artifact": "PQ_knock_on_L5_v0_1.json",
+ "record": {
+  "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+  "md5": "0819125d28c58561bcda42570181e105"
+ },
+ "queue_block": "pin_move_queue_L5",
+ "map": {
+  "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+  "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+ },
+ "corpus_md5": "04bf6482aa0374ee92a81c1d55ec41f8",
+ "rows": [
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-01",
+   "locus": "just-depressed#long",
+   "sentences": [
+    "PQ-01"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "two utterances incompatible with a single motive of care",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-01",
+     "status": "declared",
+     "old": "The reliable tell is that the same interlocutor who counsels \"get help\" will, minutes later in the same thread, offer \"so why don't you kill yourself\" — two utterances incompatible with a single motive of care, fully compatible with a single motive of hostility.",
+     "new": "The reliable tell is in what the remark does: it arrives in place of a reply, names no premise, and asks nothing about the person it is aimed at — the shape of a conversation-ender, whatever the mood of the person who says it."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-01",
+   "locus": "just-depressed#long",
+   "n": 1,
+   "target": "just-depressed#archetypeVariants.defender",
+   "anchor": "pointing at the second sentence and asking which one was sincere",
+   "verdict": "FAILS",
+   "ruling_row": "R1-004",
+   "repair": [
+    {
+     "row": "PD-01",
+     "status": "declared",
+     "old": "The reliable tell is that the same interlocutor who counsels \"get help\" will, minutes later in the same thread, offer \"so why don't you kill yourself\" — two utterances incompatible with a single motive of care, fully compatible with a single motive of hostility.",
+     "new": "The reliable tell is in what the remark does: it arrives in place of a reply, names no premise, and asks nothing about the person it is aimed at — the shape of a conversation-ender, whatever the mood of the person who says it."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-01",
+   "locus": "just-depressed#long",
+   "n": 24,
+   "target": "most-people-happy#archetypeVariants.sophisticate",
+   "anchor": "the instrument doing the rating is the same nervous system",
+   "verdict": "HOLDS",
+   "ruling_row": "R1-010",
+   "repair": [
+    {
+     "row": "PD-01",
+     "status": "declared",
+     "old": "The reliable tell is that the same interlocutor who counsels \"get help\" will, minutes later in the same thread, offer \"so why don't you kill yourself\" — two utterances incompatible with a single motive of care, fully compatible with a single motive of hostility.",
+     "new": "The reliable tell is in what the remark does: it arrives in place of a reply, names no premise, and asks nothing about the person it is aimed at — the shape of a conversation-ender, whatever the mood of the person who says it."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-02",
+   "locus": "benatar-asymmetry-attack#long",
+   "n": 7,
+   "target": "economy-population#long",
+   "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+   "verdict": "FAILS",
+   "ruling_row": "R1-048",
+   "repair": [
+    {
+     "row": "PD-02",
+     "status": "declared",
+     "old": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+     "new": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits: the guaranteed floor every life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent, while whether typical lives fall below a life worth having is an empirical question this node does not settle."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-02",
+   "locus": "benatar-asymmetry-attack#long",
+   "n": 49,
+   "target": "adoption-instead#long",
+   "anchor": "Adoption satisfies the desire to parent completely",
+   "verdict": "HOLDS",
+   "ruling_row": "R1-061",
+   "repair": [
+    {
+     "row": "PD-02",
+     "status": "declared",
+     "old": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+     "new": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits: the guaranteed floor every life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent, while whether typical lives fall below a life worth having is an empirical question this node does not settle."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-02",
+   "locus": "benatar-asymmetry-attack#long",
+   "n": 52,
+   "target": "overpopulation-addressed#long",
+   "anchor": "incrementally better from a negative utilitarian perspective",
+   "verdict": "HOLDS",
+   "ruling_row": "R1-051",
+   "repair": [
+    {
+     "row": "PD-02",
+     "status": "declared",
+     "old": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+     "new": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits: the guaranteed floor every life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent, while whether typical lives fall below a life worth having is an empirical question this node does not settle."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-02",
+   "locus": "benatar-asymmetry-attack#long",
+   "n": 53,
+   "target": "hedonic-contrast#long",
+   "anchor": "it would still experience positive states",
+   "verdict": "HOLDS",
+   "ruling_row": "R1-045",
+   "repair": [
+    {
+     "row": "PD-02",
+     "status": "declared",
+     "old": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+     "new": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits: the guaranteed floor every life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent, while whether typical lives fall below a life worth having is an empirical question this node does not settle."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-03",
+   "locus": "self-defeating#long",
+   "sentences": [
+    "PQ-03"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "requires only the development of sufficient technological capacity",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-03",
+     "status": "declared",
+     "old": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+     "new": "It requires only that whoever exists, however they came to exist, develop the capacity—potentially through artificial intelligence—to address sentient suffering at a structural level; that others will go on having children is a prediction about them, not a means the view wills, so its realization does not depend on the act it forbids."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-03",
+   "locus": "self-defeating#long",
+   "n": 11,
+   "target": "self-defeating#diagnosis",
+   "anchor": "confuses evolutionary fitness with logical validity",
+   "verdict": "FAILS",
+   "ruling_row": "R1-013",
+   "repair": [
+    {
+     "row": "PD-03",
+     "status": "declared",
+     "old": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+     "new": "It requires only that whoever exists, however they came to exist, develop the capacity—potentially through artificial intelligence—to address sentient suffering at a structural level; that others will go on having children is a prediction about them, not a means the view wills, so its realization does not depend on the act it forbids."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-04",
+   "locus": "antinatalism-misanthropic#long",
+   "sentences": [
+    "PQ-04"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "structural criticism of a species is not the same as hatred of individuals",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-04",
+     "status": "declared",
+     "old": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants.",
+     "new": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants—and the difference lies in the verdict itself, not only in the warmth of whoever delivers it: 'create no more' is conditional on the suffering creation imposes and would lapse if that suffering lapsed, which no verdict grounded in contempt would do."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-04",
+   "locus": "antinatalism-misanthropic#long",
+   "n": 32,
+   "target": "antinatalism-misanthropic#archetypeVariants.defender",
+   "anchor": "its truth-value is not a function of the speaker's warmth",
+   "verdict": "FAILS",
+   "ruling_row": "R1-036",
+   "repair": [
+    {
+     "row": "PD-04",
+     "status": "declared",
+     "old": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants.",
+     "new": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants—and the difference lies in the verdict itself, not only in the warmth of whoever delivers it: 'create no more' is conditional on the suffering creation imposes and would lapse if that suffering lapsed, which no verdict grounded in contempt would do."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-04",
+   "sentence": "PQ-04",
+   "n": 32,
+   "target": "antinatalism-misanthropic#archetypeVariants.defender",
+   "class": "a",
+   "field": "grounds",
+   "shingle": "a species is not the same",
+   "repair": [
+    {
+     "row": "PD-04",
+     "status": "declared",
+     "old": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants.",
+     "new": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants—and the difference lies in the verdict itself, not only in the warmth of whoever delivers it: 'create no more' is conditional on the suffering creation imposes and would lapse if that suffering lapsed, which no verdict grounded in contempt would do."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-05",
+   "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+   "sentences": [
+    "PQ-05"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "cascade-math voids it on the framework's own calculus",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-05",
+     "status": "declared",
+     "old": "If the interlocutor presses the structure — 'universal still means coercive' — escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content, cascade-math voids it on the framework's own calculus, and the residual coercion-floor question routes to violence-as-reductio.",
+     "new": "If the interlocutor presses the structure — 'universal still means coercive' — escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content; the asymmetry authorizes only the negative act of refraining and gives no warrant for anything done to people who already exist, which is why what antinatalism asks for is refusal, not enforcement; cascade-math is a second, weaker witness, because a calculation's verdict moves with circumstances; and the residual coercion-floor question routes to violence-as-reductio."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-06",
+   "locus": "ai-fear#archetypeVariants.defender",
+   "sentences": [
+    "PQ-06"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "Either show the premises themselves entail the recklessness",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-06",
+     "status": "declared",
+     "old": "Either show the premises themselves entail the recklessness — which means deriving a positive displacement-program out of substrate-neutral deterrence, and that derivation is exactly what fails — or concede the premises are clean and the indictment was always aimed at actors.",
+     "new": "Entailment is the right test here, not a convenient one: a charge that the view merely makes displacement easier to reach needs a base rate showing its holders act on it more often than holders of other views, which no one has supplied, and a standard that convicts a view by what some of its holders might do would convict every substantive ethics with a radical fringe, animal and environmental ethics included. So either show the premises themselves entail the recklessness — which means deriving a positive displacement-program out of substrate-neutral deterrence, and that derivation is exactly what fails — or concede the premises are clean and the indictment was always aimed at actors."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-08",
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "sentences": [
+    "PQ-08"
+   ],
+   "n": 5,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "Nothing in that tells the living to stop",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-08",
+     "status": "declared",
+     "old": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+     "new": "Its core was 'do not start a life that cannot agree to it,' and nothing in that core tells the living to stop. Some efilists go further and hold that it would be better if all feeling life ended, painlessly and all at once — the 'red button' — but that is a separate claim with its own burden, and not starting a life settles nothing about it either way."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-08",
+   "sentence": "PQ-08",
+   "n": 5,
+   "target": "why-not-suicide#archetypeVariants.drifter",
+   "class": "b",
+   "field": "grounds",
+   "shingle": "Nothing in that tells the living",
+   "repair": [
+    {
+     "row": "PD-08",
+     "status": "declared",
+     "old": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+     "new": "Its core was 'do not start a life that cannot agree to it,' and nothing in that core tells the living to stop. Some efilists go further and hold that it would be better if all feeling life ended, painlessly and all at once — the 'red button' — but that is a separate claim with its own burden, and not starting a life settles nothing about it either way."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-09",
+   "locus": "luxury-belief#long",
+   "sentences": [
+    "PQ-09"
+   ],
+   "n": 63,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "consequences for economic systems, not for sentient beings",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-09",
+     "status": "declared",
+     "old": "The demographic consequences the critic fears are consequences for economic systems, not for sentient beings.",
+     "new": "The demographic consequences the critic fears are real costs to real people — the old who need care, the young in a contracting economy — and they have to be weighed, not waved away; economy-population weighs them and meets them through automation, institutional reform, mutual aid, and resource reallocation, not with new people made to carry them."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-10",
+   "sentence": "PQ-10",
+   "n": 22,
+   "target": "free-will-defense#long",
+   "class": "b",
+   "field": "grounds",
+   "shingle": "'acting in accordance with one's desires",
+   "repair": [
+    {
+     "row": "PD-10",
+     "status": "declared",
+     "old": "Compatibilism attempts to salvage free will by redefining it as 'acting in accordance with one's desires without external coercion'—but this merely relocates the problem, since the desires themselves are products of unchosen biological and environmental factors.",
+     "new": "Compatibilism salvages a real freedom—acting on one's own desires without external coercion—but not the one the theodicy needs, since a God who designed those desires still stands behind what they produce; it is, though, exactly the freedom a prospective parent exercises, and it is all the ethical level below needs to hold that choice to account."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-11",
+   "sentence": "PQ-11",
+   "n": null,
+   "target": "eliminativism#long",
+   "class": "d",
+   "field": "grounds",
+   "shingle": "a barren ledger hands the antinatalist",
+   "repair": [
+    {
+     "row": "PD-11",
+     "status": "declared",
+     "old": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger hands the antinatalist everything — for where nothing is good, there is no good reason to set a new sufferer running, illusion or not.",
+     "new": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger leaves no good reason to set a new sufferer running — but none to refrain either, so the objection wins nothing for creation; it empties every column, illusion or not."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-11",
+   "sentence": "PQ-11",
+   "n": 67,
+   "target": "eliminativism#note",
+   "class": "d",
+   "field": "grounds",
+   "shingle": "a barren ledger hands the antinatalist",
+   "repair": [
+    {
+     "row": "PD-11",
+     "status": "declared",
+     "old": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger hands the antinatalist everything — for where nothing is good, there is no good reason to set a new sufferer running, illusion or not.",
+     "new": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger leaves no good reason to set a new sufferer running — but none to refrain either, so the objection wins nothing for creation; it empties every column, illusion or not."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-12",
+   "locus": "neuroscience-positive-states#long",
+   "sentences": [
+    "PQ-12"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "a joy never instantiated is withheld from no one",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-12",
+     "status": "declared",
+     "old": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+     "new": "Nor does the joy's absence cheat anyone — before creation there is no one in the void to be cheated — but on the realism about both signs granted above, the pain's absence spares no one either, so the move that survives total surrender cannot rest on what the unborn would miss; it rests on what creation does to the one it creates."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-12",
+   "sentence": "PQ-12",
+   "n": 62,
+   "target": "buddhist-objection#long",
+   "class": "d",
+   "field": "grounds",
+   "shingle": "a joy never instantiated is withheld",
+   "repair": [
+    {
+     "row": "PD-12",
+     "status": "declared",
+     "old": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+     "new": "Nor does the joy's absence cheat anyone — before creation there is no one in the void to be cheated — but on the realism about both signs granted above, the pain's absence spares no one either, so the move that survives total surrender cannot rest on what the unborn would miss; it rests on what creation does to the one it creates."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-12",
+   "sentence": "PQ-12",
+   "n": null,
+   "target": "neuroscience-positive-states#long",
+   "class": "b",
+   "field": "adversarial_move",
+   "shingle": "a joy never instantiated is withheld",
+   "repair": [
+    {
+     "row": "PD-12",
+     "status": "declared",
+     "old": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+     "new": "Nor does the joy's absence cheat anyone — before creation there is no one in the void to be cheated — but on the realism about both signs granted above, the pain's absence spares no one either, so the move that survives total surrender cannot rest on what the unborn would miss; it rests on what creation does to the one it creates."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-12",
+   "sentence": "PQ-12",
+   "n": null,
+   "target": "neuroscience-positive-states#long",
+   "class": "b",
+   "field": "grounds",
+   "shingle": "a joy never instantiated is withheld",
+   "repair": [
+    {
+     "row": "PD-12",
+     "status": "declared",
+     "old": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+     "new": "Nor does the joy's absence cheat anyone — before creation there is no one in the void to be cheated — but on the realism about both signs granted above, the pain's absence spares no one either, so the move that survives total surrender cannot rest on what the unborn would miss; it rests on what creation does to the one it creates."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-13",
+   "locus": "bradley-no-subject#long",
+   "sentences": [
+    "PQ-13"
+   ],
+   "n": null,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "There is no third branch",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-13",
+     "status": "declared",
+     "old": "There is no third branch on which Bradley both defeats the asymmetry and rescues procreation, because the only materials with which he defeats it are themselves a charge against it.",
+     "new": "There is a third branch, and it should be named: a comparativist, for whom a harm is always a matter of being made worse off than some baseline, can defeat the asymmetry and clear procreation together, so the fork holds only as far as creation can wrong a person with no worse-off baseline — the question the poisoned-well and wrongful-life cases below press, and that a committed comparativist will not concede."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-14",
+   "locus": "consent-both-ways#long",
+   "sentences": [
+    "PQ-14"
+   ],
+   "n": 6,
+   "class": "d",
+   "status": "mapped",
+   "anchor": "Presumed consent is only valid when it prevents a greater harm",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-14",
+     "status": "declared",
+     "old": "Presumed consent is only valid when it prevents a greater harm.",
+     "new": "Presumed consent licenses an imposition that spares a person a greater harm or serves an interest they already have—which is how a child comes to be vaccinated or schooled before they can agree—and before conception there is no one with interests for an imposition to serve."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-15",
+   "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+   "sentences": [
+    "PQ-15"
+   ],
+   "n": 20,
+   "class": "d",
+   "status": "mapped",
+   "anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-15",
+     "status": "declared",
+     "old": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework neither supplies nor can consistently hold, since terminating a preference-bearer is itself the maximally non-consensual imposition the consent-asymmetry forbids — the maximizer has not run the framework further than its cautious holders, he has swapped the premise that does the work for its negation the moment a subject exists.",
+     "new": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework does not supply — that continuing to exist is worse for that person than ceasing to — so the maximizer has not run the framework further than its cautious holders; he has added a premise of his own, which the consent and asymmetry arguments neither contain nor imply."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PQ-15",
+   "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+   "n": 18,
+   "target": "violence-as-reductio#archetypeVariants.blended",
+   "anchor": "take the structural one first and the other two resolve under it",
+   "verdict": "HOLDS",
+   "ruling_row": "R1-030",
+   "repair": [
+    {
+     "row": "PD-15",
+     "status": "declared",
+     "old": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework neither supplies nor can consistently hold, since terminating a preference-bearer is itself the maximally non-consensual imposition the consent-asymmetry forbids — the maximizer has not run the framework further than its cautious holders, he has swapped the premise that does the work for its negation the moment a subject exists.",
+     "new": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework does not supply — that continuing to exist is worse for that person than ceasing to — so the maximizer has not run the framework further than its cautious holders; he has added a premise of his own, which the consent and asymmetry arguments neither contain nor imply."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-16",
+   "locus": "social-contract#long",
+   "sentences": [
+    "PQ-16"
+   ],
+   "n": 58,
+   "class": "b",
+   "status": "mapped",
+   "anchor": "the antinatalist objection is to existence itself, not to any particular society",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-16",
+     "status": "declared",
+     "old": "But the antinatalist objection is to existence itself, not to any particular society.",
+     "new": "But the antinatalist objection is to existence itself, not to any particular society. A society, which one can leave, may fairly ask its members for a share of its burdens—taxes, care, mutual aid—but not for new members, since no one pays their own dues by conscripting someone who was never asked; existence, the thing actually objected to, offers no such exit."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PQ-16",
+   "sentence": "PQ-16",
+   "n": 58,
+   "target": "social-contract#long",
+   "class": "b",
+   "field": "grounds",
+   "shingle": "antinatalist objection is to existence itself,",
+   "repair": [
+    {
+     "row": "PD-16",
+     "status": "declared",
+     "old": "But the antinatalist objection is to existence itself, not to any particular society.",
+     "new": "But the antinatalist objection is to existence itself, not to any particular society. A society, which one can leave, may fairly ask its members for a share of its burdens—taxes, care, mutual aid—but not for new members, since no one pays their own dues by conscripting someone who was never asked; existence, the thing actually objected to, offers no such exit."
+    }
+   ]
+  },
+  {
+   "kind": "anchor_inside",
+   "pq": "PQ-17",
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "sentences": [
+    "PQ-17.2"
+   ],
+   "n": 4,
+   "class": "a",
+   "status": "mapped",
+   "anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+   "anchor_wholly_inside": true,
+   "repair": [
+    {
+     "row": "PD-17",
+     "status": "declared",
+     "old": "The structural layer does not produce the NU layer — the two are derivationally distinct — so the adherent who reaches for the red button is running a separate commitment the premises did not hand him: grabbed, not produced.",
+     "new": "The structural layer does not produce the NU layer — the two are derivationally distinct — so whoever reaches for the red button, the view's own founders included, is running a second commitment the consent and asymmetry premises do not supply."
+    },
+    {
+     "row": "PD-18",
+     "status": "declared",
+     "old": "Just as one violent actor does not represent environmentalism, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license.",
+     "new": "Who holds that commitment is a fact about the movement, not about the argument: however central to efilism its authors make it, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license."
+    }
+   ]
+  },
+  {
+   "kind": "answer_routes_here",
+   "pq": "PC-01",
+   "locus": "bitter-childhood#medium",
+   "n": 50,
+   "target": "bitter-childhood#long",
+   "anchor": "even if my childhood WAS the catalyst for this philosophy",
+   "verdict": "FAILS",
+   "ruling_row": "R1-068",
+   "repair": [
+    {
+     "row": "PC-01",
+     "status": "proposed: needs his word to enter the queue",
+     "old": "If the suffering was severe enough to generate an entire philosophical framework of opposition, perhaps the interlocutor should consider whether that suffering validates the framework rather than invalidates it.",
+     "new": "If the suffering was severe enough to generate an entire philosophical framework of opposition, the interlocutor has conceded it was real and formative, which strains claim (b); but it validates the framework no more than it invalidates it, because the path to a belief bears on its truth in neither direction."
+    }
+   ]
+  },
+  {
+   "kind": "quoted_in_map",
+   "pq": "PC-04",
+   "sentence": "PC-04",
+   "n": 63,
+   "target": "luxury-belief#long",
+   "class": "b",
+   "field": "grounds",
+   "shingle": "The cost is borne by an",
+   "repair": [
+    {
+     "row": "PC-04",
+     "status": "proposed: needs his word to enter the queue",
+     "old": "The cost is borne by an economic model that requires a perpetual supply of new laborers and consumers — not by individual people.",
+     "new": "Those costs would fall on everyone the transition reaches, the belief's holders among them, so they are not the costs pushed onto others that the model's third feature requires; what the belief would retire is an economic model that needs a perpetual supply of new laborers and consumers."
+    }
+   ]
+  }
+ ]
+}

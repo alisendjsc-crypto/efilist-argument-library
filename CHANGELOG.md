@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The queued repairs drafted — 2026-09-26 (no release; the pin stands)
+
+The pin session has written replacement text for all seventeen queued repairs to the flagship's corpus, eighteen sentences in all. Each replacement follows the repair the adversarial map asked for: a motive guess becomes something a reader can check, an overclaim is scoped to what the argument actually shows, a cross-reference points to where the argument is made, and an open question is named as open. Together they add about five hundred words. A patch built from them on a scratch copy leaves the three copies of the corpus agreeing, and the two map data files unchanged.
+
+Five more sentences are proposed alongside, because repairing only the queued sentence would leave its paragraph contradicting itself or leave an answer the map is waiting on untouched. Those five need Josiah's word to join. Seven findings go with the drafts, among them three waiting entries that this queue cannot fix on its own. A session that wrote none of this judges it next; nothing served changes before his word. Canon v38.31.
+
+---
+
 ## The pin session opens: the checking tools read the text they checked — 2026-09-26 (no release; the pin stands)
 
 The session that will make the queued corpus repairs has opened. Before touching a sentence it made sure the adversarial map's tools cannot be fooled by the repairs. Every map, register and measurement was built against the corpus as it stands today; the tools that check them used to read whatever the corpus file currently says. A rehearsal on a scratch copy, with every queued sentence replaced, showed five checks going red and four records quietly changing with no error. The tools now read the corpus exactly as each record saw it, recovered from the repository's history, so the repairs cannot make an old record look wrong or right. Three older map builders are kept byte for byte, because their successors check them; a new helper runs them against the old corpus instead. The same rehearsal now comes back clean.
