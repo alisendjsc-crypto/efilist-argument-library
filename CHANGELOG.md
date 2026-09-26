@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The marks on the front door — 2026-09-26 (no release; the pin stands)
+
+The front door, `/libraries`, now shows the library's marks. Each library's own mark, the icon in its browser tab, sits beside its name, and the index's beside the page title. A side panel, *Reading the marks*, explains them: first the library marks, each with what its shape says, then the five tier marks the Argue the Argument game uses for the flagship's tiers, with one drawn large on its pixel grid and its parts named. The tier marks were drawn by the game's seat in the library's own grammar; Josiah approved them there (*"I like them."*) and approved this page on its preview (*"It's looking good, less plain, more intriguing. I like it."*). The five marks also sit beside the "5 tiers" figure. On the dark page with full effects each tier mark plays a short one-time animation the first time it is seen; nothing loops, and reduced motion or a light reading mode keeps them still. Every mark is drawn by `icons/gen_icons.py`, and `tools/icons_regen_check.py` requires the page to carry exactly what it draws. The architecture and the proposals for wider use are in `design/glyph_architecture/`. **The flagship is untouched:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The judgment ruled, and its fixes drafted — 2026-09-26 (no release; the pin stands)
 
 Josiah gave his word on the judgment of the 45 drafts: *"Go with the recommendations on all of the above and for Gate 2's seat. Continue with my word."* The fixes the judgment owed are a new file, **`adversarial_map_staging/adversarial_map_v1_5.json`**: #14's objection is finished so that it reaches the bedrock its card names; #58 becomes a repair candidate (the library has no answer yet to the fair-play form of the social-contract objection, and one is available without new premises); three cards' routing notes name the path their argument takes; one card's grounds name the passage they mean. The bedrock register follows as **`honest_residuals_register_v0_6`**, which also turns one ratified relation the right way round (HR-11 conditions HR-14). The list of site sentences to repair grows to 16, and it stays his to open. **The fixes are not judged yet:** a session that did not write them judges them next. Canon `project_canon_v38_25.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
