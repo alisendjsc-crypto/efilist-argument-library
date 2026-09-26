@@ -18,6 +18,8 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 Two of the flagship's embedded data sets now exist as files beside it: **`sidecars/map_graph_data.json`** (the Mechanism Web — 35 mechanisms, 82 objections, 142 links) and **`sidecars/map1_transitions.json`** (Map 1, the Argument Flow Map — 78 source objections, 2,886 next-objection edges over four interlocutor modes, with Map 1's own caveats). `tools/build_map_sidecars.py` writes both from `site/combined.html`'s literals rather than from a second hand-kept copy; their md5s are pinned in canon (`project_canon_v38_17.json`, block `flagship_sidecars`), and `tools/xsurface_v4_1_0.py` now fails if either disagrees with the flagship. Neither file carries a "primary" mechanism, because the flagship marks none. Also tracked for the first time: **`icons/gen_icons.py`**, the generator every served favicon names; `tools/icons_regen_check.py` shows it redraws all seven byte for byte. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
 
+Later the same day Josiah ruled that no primary mechanism is defined, and the Mechanism Web file's `primary_mechanism.rule` now says so (its data unchanged; canon `project_canon_v38_18.json`). `CITATION.cff`'s abstract now counts 82 objections and names the maps as they are: an argument-flow map (Map 1) and force-directed mechanism and dependency graphs.
+
 ---
 
 ## Repository structure — 2026-09-20 (no release; the pin stands)

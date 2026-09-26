@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this library, please cite it as below."
 title: "efilist argument library"
-abstract: "A structured taxonomy of objections to antinatalism: 81 objections across 5 tiers, attached to 35 psychological mechanisms, with 136 attested real-world deployments mapped to four interlocutor archetypes (sophisticate, defender, drifter, blended) and rendered as a force-directed Map 1, distributed as a single offline HTML file."
+abstract: "A structured taxonomy of objections to antinatalism: 82 objections across 5 tiers, attached to 35 psychological mechanisms, with 136 attested real-world deployments mapped to four interlocutor archetypes (sophisticate, defender, drifter, blended), an argument-flow map (Map 1), and force-directed mechanism and dependency graphs, distributed as a single offline HTML file."
 type: software
 authors:
   - family-names: "Cooper"

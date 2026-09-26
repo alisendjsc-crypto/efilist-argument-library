@@ -142,8 +142,8 @@ def build(s):
             "measured": ("No link in MAP_GRAPH_DATA marks a primary mechanism, and %d of the %d objections "
                          "link to more than one." % (several, len(objs))),
             "order": "Each objection's mechanisms are listed in the literal's link order. That order is not a rank.",
-            "rule": ("UNRULED. Choosing one mechanism per objection is a ruling for Josiah, asked at L1 "
-                     "(2026-09-25). Until he rules, do not read the first-listed mechanism as primary."),
+            "rule": ("Ruled by Josiah 2026-09-25: no primary mechanism is defined. Pair or group objections "
+                     "by the mechanisms they share, and do not read the first-listed mechanism as primary."),
         },
         "by_objection": by_objection,
         "data": g,
