@@ -1,0 +1,70 @@
+{
+  "artifact": "controls_v1_6_v0_1.json",
+  "instrument": "adversarial_map_staging/controls_v1_6.py",
+  "map": {
+    "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+    "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "register": {
+    "file": "adversarial_map_staging/honest_residuals_register_v0_7.json",
+    "md5": "bcbff23113f3fb0135d5fd5b3e2630d5"
+  },
+  "result": "11 of 11 controls as expected, each builder's unmutated control first",
+  "controls": [
+    {
+      "control": "A0 map builder, unmutated",
+      "expect": "writes the committed adversarial_map_v1_6.json",
+      "as_expected": true
+    },
+    {
+      "control": "A1 the knock-on row does not reopen #46 (V-001)",
+      "expect": "refuses, naming 'does not reopen this entry'",
+      "as_expected": true
+    },
+    {
+      "control": "A2 bedrock_from's anchor names no (d)",
+      "expect": "refuses, naming 'bedrock_from names 0'",
+      "as_expected": true
+    },
+    {
+      "control": "A3 the draft claims HR-02",
+      "expect": "refuses, naming 'the register does not file bedrock_from'",
+      "as_expected": true
+    },
+    {
+      "control": "A4 a declared quotation altered",
+      "expect": "refuses, naming 'NOT VERBATIM'",
+      "as_expected": true
+    },
+    {
+      "control": "A5 a draft for an entry R1 still holds (#3)",
+      "expect": "refuses, naming 'not a FAILS superseding a HOLDS'",
+      "as_expected": true
+    },
+    {
+      "control": "A6 v1_5 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    },
+    {
+      "control": "A7 canon's newest R1_progress block gives #46 no shape",
+      "expect": "refuses, naming 'gives it no failure shape'",
+      "as_expected": true
+    },
+    {
+      "control": "R0 register builder, unmutated",
+      "expect": "writes the committed honest_residuals_register_v0_7.json",
+      "as_expected": true
+    },
+    {
+      "control": "R1 an inherited (d)'s routing moved in the map",
+      "expect": "refuses, naming 'register and map disagree'",
+      "as_expected": true
+    },
+    {
+      "control": "R2 register v0_6 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    }
+  ]
+}

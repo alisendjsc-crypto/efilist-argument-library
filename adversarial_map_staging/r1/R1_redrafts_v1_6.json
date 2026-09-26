@@ -1,0 +1,59 @@
+{
+  "artifact": "R1_redrafts_v1_6.json",
+  "state": "DRAFTED, NOT JUDGED. #46, re-ruled FAILS on Josiah's word (R1-070, gate2's V-017), reclassified under the class law. A seat that did not draft it judges it (K258).",
+  "law": "Authored content, read by build_assembly_v1_6.py, which applies it to adversarial_map_v1_5.json and refuses unless the entry's current R1 row is FAILS and supersedes a HOLDS.",
+  "his_word": {
+    "verbatim": "Proceed with all of your recommendations.",
+    "date": "2026-09-26 (America/Phoenix)",
+    "session": "L4, in chat",
+    "answered": "L4's recommendation to adopt gate2's #46 lean (R0142 item 2): re-rule R1-011 FAILS, then (d) at HR-14"
+  },
+  "seat": "L4c (library seat, Code), drafter under K258; judges nothing",
+  "redrafts": [
+    {
+      "n": 46,
+      "knock_on_row": "V-017",
+      "disposition": "a_to_d",
+      "class_law": "Not (a): the answer needs the recoil's object removed, and the map records at the answering locus that it is not. Not (c): it continues the node's own dialectic. Not (b): a rewrite of the slot could only concede that the recoil keeps an object for lives that exist, which relocates the dispute to the question the node's sophisticate slot holds open. So (d).",
+      "hr": "HR-14",
+      "facet": "terminus-held-open",
+      "bedrock_from": "red-button-repugnant#archetypeVariants.sophisticate",
+      "bedrock_from_anchor": "this node's terminus to hold open rather than pretend closed",
+      "why_not_HR_02": "The move declines the first horn, existence as a terminal value overriding content (HR-02's intrinsic-value-of-existence facet, where #45 and #47 sit), and claims a pro tanto weight for lives that already exist. Weighing that against what those lives contain is the positive case against existing beings, HR-14.",
+      "grounds": "(d) on registered bedrock. The move keeps an object for the recoil, \"the pro tanto worth of the lives the button ends\", and the answer needs that object removed. The map records that it is not: this node's (d) at #long, \"strip both and the recoil stands undebunked\", and its sophisticate slot, \"whether an independent positive case for the cessation of some existing being stands is held open\". Weighing the worth of lives that already exist against what they contain is the question that slot holds open. (a) withdrawn: R1-011 re-ruled FAILS on Josiah's word (R1-070, on gate2's V-017). Terminus HR-14, terminus-held-open facet, birth certificate at red-button-repugnant#archetypeVariants.sophisticate; not novel.",
+      "terminus_routing": "already-registered HR-14, birth certificate red-button-repugnant#archetypeVariants.sophisticate (Phase F); reached through this node's #long, where the recoil is recorded as standing, to the slot that holds the positive case against existing beings open; terminus-held-open facet; reclassified from (a) at L4c under the R1 standard (R1-070, superseding R1-011)",
+      "quotes": [
+        {
+          "src": "map:red-button-repugnant#archetypeVariants.defender",
+          "quote": "the pro tanto worth of the lives the button ends"
+        },
+        {
+          "src": "map:red-button-repugnant#long",
+          "quote": "strip both and the recoil stands undebunked"
+        },
+        {
+          "src": "map:red-button-repugnant#archetypeVariants.sophisticate",
+          "quote": "whether an independent positive case for the cessation of some existing being stands is held open"
+        }
+      ]
+    }
+  ],
+  "pin_move_queue_additions": [
+    {
+      "id": "PQ-17",
+      "serves": [
+        4
+      ],
+      "section": "conceded_not_filed",
+      "locus": "why-not-suicide#archetypeVariants.defender",
+      "anchor": "grabbed, not produced",
+      "conceded_by": "R1-024 (#4, HOLDS; knock-on V-012 STANDS)",
+      "finding": "V-023 (R1_v1_5_judgments.json)",
+      "b_at": null,
+      "b_anchor": null,
+      "repair_src": null,
+      "repair": "gate2's lean (R0142 item 3, finding V-023): the defender slot's 'grabbed, not produced' framing and its lone-actor analogy are a misfit that R1-024 conceded and the map never filed as a (b), the same shape as #5's (b) at the drifter slot; repair it beside #5's (PQ-08)",
+      "note": "Queued as gate2's lean. The L4 session reported it to Josiah in chat when it queued it (the 17-sentence list), marked as gate2's recommendation; his next words were 'Go with your recommendations on all of the above.' The queue stays his to open."
+    }
+  ]
+}

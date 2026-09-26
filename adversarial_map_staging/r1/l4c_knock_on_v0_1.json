@@ -1,0 +1,20 @@
+{
+  "artifact": "l4c_knock_on_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l4c_knock_on.py",
+  "rule": "collision rule v0_2, l4_knock_on.collisions imported; l4_knock_on.measure() reproduced its committed record first",
+  "maps": {
+    "before": {
+      "file": "adversarial_map_staging/adversarial_map_v1_5.json",
+      "md5": "0df413ed655a5373468c218832854bbe"
+    },
+    "after": {
+      "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+      "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+    }
+  },
+  "rulings_md5": "d829437e938a8b9dded5cb8cbaa26b74",
+  "what_it_means": "An entry listed here met a (b) or (d) in v1_6 that v1_5 did not have. Its R1 verdict stands; the collision rule says it is read again before its card ships.",
+  "a_entries_left_in_v1_6": 29,
+  "holds_newly_collided": [],
+  "rows": []
+}
