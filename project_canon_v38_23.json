@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.22",
+  "canon_version": "38.23",
   "last_updated": "2026-09-25",
-  "last_updated_by_session": "L3_widen",
+  "last_updated_by_session": "L4",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "L4: the drafting pass over the 45 FAILS, starting from adversarial_map_staging/r1/r1_collision_list_v0_2.md (grouped by failure shape; method_L3 says what each shape gets), judged by a seat that did not draft it (the gate2 role, K258). In parallel and isolated: the design lane (parallel_lane_design_L3). Then R2, then the interconnection design.",
+    "session": "gate2: judge L4's drafts of R1's 45 FAILS (adversarial_map.R1_drafting_pass_L4; adversarial_map_staging/adversarial_map_v1_4.json, cb61db5c) as a seat that did not draft them (K258), including #58's new (a) and register v0_5's three relations. Then the 11 knock-on HOLDS are read against the drafts that survive. The pin-move queue (adversarial_map.pin_move_queue_L4, 13 rows) is Josiah's to open. Then R2, then the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1772,7 +1772,8 @@
       "the_seat_s_answer": "Yes: its own session, now, in parallel with L4, isolated in its own git worktree on its own branch. It shares nothing with the drafting pass but the repository, the canon file and the served tree; so it bumps no canon, touches nothing under adversarial_map_staging/ and never touches site/combined.html (any flagship use is a declared pin move); /libraries deploys on push to main, so it shows him a preview and merges on his word.",
       "acted_on": "his standing default that the seat's recommendations proceed unless he says otherwise, and 'Proceed with your recommendations on all front's.'",
       "inputs": "R0108 (argue to l, glyph_sigil_architecture_v1) and R0107; the grids in argue's design/tier_sigils_v0/sigils.json at argue 6fb26e1 (md5 b97acd2b), copied from the file, never from a render; L1a's note that a full ladder with its top rung lit is pixel-identical to the flagship favicon."
-    }
+    },
+    "drafted_L4": "L4 drafted all 45 FAILS: a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4. Nothing reached /adversarial/ or /combined; drafted is not ruled."
   },
   "open_questions": {
     "active": {
@@ -1903,7 +1904,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.22",
+  "canon_version_marker": "v38.23",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2585,7 +2586,8 @@
     "v38_19_L2": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L2, R1_standard_ruling_L2, a_vs_own_record_collision_finding_L2); next_recommended_session re-pointed (session rewritten; method_L2, carried_L2, after_R1_L2 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_20_L3": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L3, R1_rules_L3, R1_findings_L3); next_recommended_session re-pointed (session rewritten; method_L3, carried_L3, after_R1_L3 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_21_L3_build": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_BUILT_L3); next_recommended_session re-pointed (session rewritten; build_done_L3, carried_L3_build added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file, the rulings and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
-    "v38_22_L3_widen": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_WIDENED_L3); next_recommended_session re-pointed (session rewritten; ruled_L3_close and parallel_lane_design_L3 added; carried_L3_build updated); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
+    "v38_22_L3_widen": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_WIDENED_L3); next_recommended_session re-pointed (session rewritten; ruled_L3_close and parallel_lane_design_L3 added; carried_L3_build updated); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
+    "v38_23_L4": "MINOR. keyset UNCHANGED at 42. Five adversarial_map subkey additions (R1_drafting_pass_L4, terminal_assembly_v1_4_L4, honest_residuals_register_pin_v0_5, pin_move_queue_L4, knock_on_collisions_L4); next_recommended_session re-pointed (session rewritten; drafted_L4 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2817,7 +2819,8 @@
     "L2_R1 (2026-09-25; NO PIN): R1 RULED FOR 40 OF 69 (a) ENTRIES, in his words 'Go with your recommendations on all of the above and proceed as you wish.' (the Block 1 sample) and 'Go with your recommendations on all of the above.' (Phase A, the other 18 of F, and the standard). Block 1 fully read, 30: HOLDS 14, FAILS 16. Block 2 Phase A, 10: HOLDS 4, FAILS 6. Carried: 29 (B1-E). 21 of the 22 FAILS are contradicted by the map's own records; #40 rests on the seat's reading alone. STANDARD RULED: an (a) may not say WE ANSWER THIS where the map records its answer as ending at bedrock or as flawed; such entries become (d)s under the terminus label or wait on their (b) repair. Rulings in adversarial_map_staging/r1/R1_rulings.json (append-only; gate adversarial_map_staging/r1/r1_rulings_gate.py, controls 11 of 11). L1's struck A-E premise corrected forward in L2's first message.",
     "L3_R1 (2026-09-25; NO PIN): R1 COMPLETE, 69 OF 69 (a) ENTRIES RULED: HOLDS 24, FAILS 45. L3 ruled the 29 L2 carried (B1-E) in his words 'Go with your recommendations on all of the above. Proceed as you wish.' -- HOLDS 6 (#26, #37, #49, #51, #52, #53), FAILS 23 -- under three reading rules he adopted with them (the hub rule, the K350 rule, the joy-outweighs reading). 20 of L3's FAILS rest on map records; #63 on the corpus's own text; #22 and #58 on the seat's reading alone. Two new failure shapes: routed answer silent (#22, #25, #58) and cross-node aggravation (#63). Reading instruments committed: adversarial_map_staging/r1/r1_dossiers.py and adversarial_map_staging/r1/r1_quote_check.py. Rulings adversarial_map_staging/r1/R1_rulings.json (gate adversarial_map_staging/r1/r1_rulings_gate.py, controls v0_2 11 of 11). Next: the validator-rule build, then the drafting pass over the 45 FAILS, judged by a seat that did not draft.",
     "L3_build (2026-09-25; NO PIN): THE COLLISION RULE ADOPTED AT L2 IS BUILT, on his words 'Go with your recommendations on all of the above. Proceed as you wish.' and 'The relays can be deferred for later since it's mostly aesthetic work or prioritized on your reecommendations. Focus on the substance for now.'. adversarial_map_staging/r1/r1_collision_list.py lists all 69 (a) entries: 56 collided (HOLDS 17, FAILS 39), 13 not; 24 ship-eligible on R1 HOLDS, 45 blocked for the drafting pass by shape. It catches 39 of the 45 FAILS; 6 were found only by reading (#22, #35, #39, #40, #58, #63). Controls 5 of 5. The drafting pass starts from adversarial_map_staging/r1/r1_collision_list_v0_1.md.",
-    "L3_widen (2026-09-25; NO PIN): on his words 'Proceed with your recommendations on all front's.' the collision rule is WIDENED to an answering node's other slots (v0_2): 58 collided (HOLDS 17, FAILS 41), adding #39 and #58; it now catches 41 of the 45 FAILS, and #22, #35, #40, #63 were found only by reading. v0_1 kept. His question, verbatim: 'DO you think a sigil  / design architecture session would be warranted in its own isolated session while the meat of the library presses on?' The seat's answer: yes, an isolated parallel design lane (worktree, no canon bump, no pin, merge on his word). L4, the drafting pass, starts from adversarial_map_staging/r1/r1_collision_list_v0_2.md."
+    "L3_widen (2026-09-25; NO PIN): on his words 'Proceed with your recommendations on all front's.' the collision rule is WIDENED to an answering node's other slots (v0_2): 58 collided (HOLDS 17, FAILS 41), adding #39 and #58; it now catches 41 of the 45 FAILS, and #22, #35, #40, #63 were found only by reading. v0_1 kept. His question, verbatim: 'DO you think a sigil  / design architecture session would be warranted in its own isolated session while the meat of the library presses on?' The seat's answer: yes, an isolated parallel design lane (worktree, no canon bump, no pin, merge on his word). L4, the drafting pass, starts from adversarial_map_staging/r1/r1_collision_list_v0_2.md.",
+    "L4 (2026-09-25; NO PIN): the drafting pass over R1's 45 FAILS, on 'Proceed with your recommendations on all front's.' (R0110). adversarial_map_v1_4.json cb61db5c: 41 entries change (a_to_b 3, a_to_d 35, reroute_a 1, trim_waits 2, waits 4) and 4 wait unchanged on their (b) repairs; class counts a31 b31 c1 d75. Register v0_5 0c29e3bd: 35 tributaries reclassified onto registered bedrock, no bedrock added, three relations drafted. Pin-move queue 13 rows, Josiah's. 11 HOLDS newly collided by the drafts, read after judgment. Drafted, not judged: gate2 next."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -5004,6 +5007,843 @@
       },
       "what_the_widening_added": "#39 and #58, both FAILS; no HOLDS were added to the reading list.",
       "found_only_by_reading": "4 of the 45 FAILS: #22, #35, #40, #63. A mechanical rule cannot reach a silent route (#22), a record on a third node (#35), a stopped-short move (#40) or a concession in plain corpus text (#63); reading stays mandatory."
+    },
+    "R1_drafting_pass_L4": {
+      "status": "DRAFTED, NOT JUDGED. A seat that did not draft judges these drafts (K258, the gate2 role); nothing ships before that judgment and Josiah's word. Ruled is not shipped, and drafted is not ruled.",
+      "his_words_verbatim": "Proceed with your recommendations on all front's.",
+      "the_recommendation_he_adopted": "The drafting pass (L4). Lean: a fresh session, starting from the worklist, with a different session judging the drafts.",
+      "the_standard_it_executes": {
+        "canon": "adversarial_map.R1_standard_ruling_L2",
+        "his_words_verbatim": "Go with your recommendations on all of the above.",
+        "the_recommendation_he_adopted": "No. Reclassify those entries as (d), routed to the registered bedrock. They then ship under \"where this line terminates\" (already approved at K350), with no new prose. Entries whose answer carries a (b) wait for that repair."
+      },
+      "kickoff": {
+        "relay": "R0110",
+        "md5": "206380b85ac2d5da071b8b72888995f2"
+      },
+      "drafts": {
+        "md5": "57c890257c82fb641cd8c49c376d0fba",
+        "bytes": 71676,
+        "file": "adversarial_map_staging/r1/R1_drafts_L4.json",
+        "law": "Authored content, read by build_assembly_v1_4.py, which applies it to adversarial_map_v1_3.json and refuses on any row it cannot account for. A correction is a new file or a new draft superseding this one, never an edit to a judged draft."
+      },
+      "outcome": {
+        "fails_rows": 45,
+        "entries_changed": 41,
+        "entries_waiting_unchanged": 4,
+        "by_disposition": {
+          "a_to_b": 3,
+          "a_to_d": 35,
+          "reroute_a": 1,
+          "trim_waits": 2,
+          "waits": 4
+        },
+        "new_d_by_bedrock": {
+          "HR-02": 5,
+          "HR-03": 9,
+          "HR-04": 2,
+          "HR-05": 6,
+          "HR-06": 4,
+          "HR-11": 1,
+          "HR-12": 1,
+          "HR-14": 7
+        },
+        "class_counts_v1_3": {
+          "a": 69,
+          "b": 28,
+          "c": 1,
+          "d": 40
+        },
+        "class_counts_v1_4": {
+          "d": 75,
+          "a": 31,
+          "b": 31,
+          "c": 1
+        }
+      },
+      "how_each_shape_was_disposed": {
+        "route_to_bedrock": "all 30 to (d), each on the registered (d) its R1 row cites, bedrock_name copied from that entry and its facet asserted against the register; moves kept, except #14's embedded rebuttal cut (42 words remain, so nothing was added)",
+        "answer_flagged_b": "6 wait on the (b) at their answering locus, since that (b)'s own repair is local (#1, #7, #11, #32, #48, #50); 3 go to (d) because the (b)'s own grounds route the repair to bedrock (#42 HR-05, #62 HR-06; #67 HR-04, whose record is a (d) with a logged overclaim rather than a (b))",
+        "aggravation": "#5 and #63 to (b) at the target, each a regen candidate with its corpus sentence queued",
+        "routed_answer_silent": "#22 to (b), since no locus in the corpus speaks to determinism or ought-implies-can; #25 to (d) HR-06 through transhumanist-objection#long, the locus that takes the payload; #58 re-routed as a NEW (a) to economy-population#long",
+        "under_strength_move": "#40 re-authored at full strength from R1-006's line, then the class law: (d) HR-02"
+      },
+      "move_edits": {
+        "#1": "trim and complete from R1-004",
+        "#7": "trim and complete from R1-048",
+        "#14": "trim only",
+        "#62": "trim and complete from R1-047, adapted by four words",
+        "#40": "re-authored from R1-006",
+        "why_completed": "the move floor is 40 words (the ratified move gate); the cuts left #1 at 19, #7 at 33 and #62 at 21. The completions are the R1 rows' own stronger continuations, so no argument was added that the ruled record does not hold; #62 is the one (d) whose move gained words, flagged for the judge"
+      },
+      "for_the_judge": {
+        "#1": "Class, routing and grounds untouched: the entry waits on the (b) at just-depressed#long (L2's standard). Only the move moves, and the completion is R1-004's own words.",
+        "#5": "Design section 11.1 says an aggravated locus is repaired at the NODE. Here the node's text is accurate and the slot overclaims, so the repair is placed at the slot, as the violence-as-reductio drifter (b) placed its own.",
+        "#7": "Waits on the (b) at benatar-asymmetry-attack#long (the suffering-load antecedent). That (b)'s own repair is empirical, not bedrock, so this stays (a) and waits. Its universal leg is HR-03 regardless; after the repair the judge should read it under the L3 hub rule.",
+        "#11": "No bytes move. The (b) at self-defeating#long names a two-sentence fence inside the node, not bedrock.",
+        "#14": "Move trimmed, not completed: the cut is exactly the rebuttal R1-049's note names, and the remainder is 42 words, above the 40-word floor, so the kickoff's 'add nothing' could be kept literally. The trimmed move still reads prefer as create; that does not falsify a (d) card, which claims only termination (class_asymmetry_ruling_K350), but the judge may prefer completing it from R1-049's stronger line.",
+        "#22": "No re-route exists: a corpus-wide search found no locus on determinism, compatibilism, ought-implies-can or desert outside this node. R1-042 is the seat's reading alone; so is this (b).",
+        "#25": "routed_answer_silent, class law run: re-routing to transhumanist-objection#long (the locus that engages the payload, as R1-057's note suggested) would make an (a) whose load-bearing answer is HR-06, so the entry is a (d). The transhumanist node's own (b) concerns its extinction-terminus cross-reference, not this creation leg.",
+        "#32": "No bytes move. The (b) at antinatalism-misanthropic#long names a content-level discriminator inside the node, not bedrock.",
+        "#39": "The register files the slippery-slope-eugenics#short (d) under HR-03's facet id 'unfacetted', though its terminus_routing names a group-continuity facet; this draft inherits the registered facet by lookup rather than minting one.",
+        "#40": "Under-strength move, re-authored: the original 48 words are kept and the payload is added from R1-006. The former grounds cited 'Benatar in South Africa', which is in #short and #medium, not the routed #long (R1-006); the new grounds do not lean on it.",
+        "#42": "answer_flagged_b, reclassified to (d) because the (b)'s own grounds route the repair to bedrock. The former [K229-not-comparative] attestation no longer applies: the bradley bar governs (a)-routes only.",
+        "#45": "DEPARTS FROM THE R1 ROW'S BEDROCK. R1-017 names HR-03, the bedrock of the tie-breaker the answer falls back on, and adds that the tie-breaker does not cover existing beings. R1-012 (#47) says this is the same symmetric-debunk move at the sophisticate slot and names the (d) at red-button-repugnant#medium, which registers the tie itself. One move on one node is drafted to one terminus, HR-02 intrinsic-value-of-existence, for both #45 and #47. If the judge prefers R1-017's HR-03, change hr, facet and bedrock_from to benatar-asymmetry-attack#archetypeVariants.sophisticate; nothing else moves.",
+        "#47": "The locus red-button-repugnant#archetypeVariants.sophisticate then carries two (d)s on two bedrocks (HR-14, the birth certificate, and this one on HR-02). The per-locus cap is 3, and the stopping rule is not declared at the assembly.",
+        "#48": "No bytes move. Both (b)s name repairs inside their nodes. R1-040 adds that the coercion floor itself is HR-14; if the repaired anti-coercion ground (consent-asymmetry plus voluntariness) turns out to need that floor, the entry becomes a (d) at HR-14 coercion-floor at re-judging.",
+        "#50": "No bytes move. R1-068's note: keep the evidential point, drop 'proves' and 'validates', and the entry may hold. Applying the defender slot's (b) to the long's closing move is the seat's reading (R1-068).",
+        "#54": "R1-046 marks the consent-route leg as the seat's reading; it is kept as one sentence here and carries no quotation.",
+        "#58": "A NEW (a), so it needs a ruling like any other. Where it is weakest: the feasibility of meeting the obligations without new members is asserted in the text ('must be solved'), not shown; and 'primary justification' leaves room for a fair-play theorist who asks for members without asking that they be created for the scheme. If either sinks it, the class law gives (d) at HR-06 (the conscription of a non-participant) or (b) at social-contract#long.",
+        "#61": "moral-particularism#long then carries two (d)s on two bedrocks (the Phase A one on HR-10, this one on HR-12). The register gains an HR-10+HR-12 co-location, declared independent_of in register v0_5.",
+        "#62": "answer_flagged_b, reclassified to (d) because the (b)'s own grounds route the repair to bedrock-III (HR-06). THE ONE (d) MOVE THAT GAINED WORDS: the cut left 21, under the floor, so it is completed from R1-047's stronger line with one adaptation ('as the answering node does' becomes 'as your neuroscience node does'). Whether that counts as new prose under L2's standard is the judge's call; the alternative is to keep the rebuttal in the move, which R1_findings_L3 rules out.",
+        "#63": "Basis is the corpus's own text, not a map entry (R1-063).",
+        "#67": "answer_flagged_b in L3's list, but the record at the answering locus is a (d) with a logged secondary overclaim, not a (b) entry; the overclaim's repair leaves the node at the (d)'s own bedrock, so this is reclassified rather than held."
+      },
+      "departure_from_an_R1_row": "#45: R1-017 names HR-03 (the bedrock of the tie-breaker the answer falls back on); the draft puts #45 on HR-02 intrinsic-value-of-existence with #47, because R1-012 says they are one move and names the (d) at red-button-repugnant#medium that registers the tie itself.",
+      "where_the_records_live": "provenance.amended on every changed entry of adversarial_map_v1_4.json; the drafts file; this block.",
+      "rows": [
+        {
+          "n": 1,
+          "r1_row": "R1-004",
+          "target": "just-depressed#archetypeVariants.defender",
+          "shape": "answer_flagged_b",
+          "disposition": "trim_waits",
+          "class_after": "a",
+          "entry_changed": true,
+          "move_edit": "trim_and_complete",
+          "waits_on": [
+            "PQ-01"
+          ]
+        },
+        {
+          "n": 2,
+          "r1_row": "R1-065",
+          "target": "why-not-suicide#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 positive-case-for-cessation"
+        },
+        {
+          "n": 5,
+          "r1_row": "R1-025",
+          "target": "why-not-suicide#archetypeVariants.drifter",
+          "shape": "aggravation_s11_1",
+          "disposition": "a_to_b",
+          "class_after": "b",
+          "entry_changed": true,
+          "regen": "sc headline"
+        },
+        {
+          "n": 6,
+          "r1_row": "R1-055",
+          "target": "consent-both-ways#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 7,
+          "r1_row": "R1-048",
+          "target": "economy-population#long",
+          "shape": "answer_flagged_b",
+          "disposition": "trim_waits",
+          "class_after": "a",
+          "entry_changed": true,
+          "move_edit": "trim_and_complete",
+          "waits_on": [
+            "PQ-02"
+          ]
+        },
+        {
+          "n": 8,
+          "r1_row": "R1-026",
+          "target": "benatar-asymmetry-attack#archetypeVariants.blended",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 9,
+          "r1_row": "R1-027",
+          "target": "benatar-asymmetry-attack#archetypeVariants.defender",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 metaethical-locus"
+        },
+        {
+          "n": 10,
+          "r1_row": "R1-028",
+          "target": "benatar-asymmetry-attack#archetypeVariants.drifter",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 11,
+          "r1_row": "R1-013",
+          "target": "self-defeating#diagnosis",
+          "shape": "answer_flagged_b",
+          "disposition": "waits",
+          "class_after": "a",
+          "entry_changed": false,
+          "waits_on": [
+            "PQ-03"
+          ]
+        },
+        {
+          "n": 12,
+          "r1_row": "R1-014",
+          "target": "imposing-values#medium",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 terminus-held-open"
+        },
+        {
+          "n": 13,
+          "r1_row": "R1-015",
+          "target": "imposing-values#short",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 14,
+          "r1_row": "R1-049",
+          "target": "ai-fear#short",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 successor-preference",
+          "move_edit": "trim"
+        },
+        {
+          "n": 15,
+          "r1_row": "R1-029",
+          "target": "ai-fear#archetypeVariants.blended",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 successor-preference"
+        },
+        {
+          "n": 16,
+          "r1_row": "R1-008",
+          "target": "ai-fear#archetypeVariants.drifter",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 successor-preference"
+        },
+        {
+          "n": 17,
+          "r1_row": "R1-050",
+          "target": "violence-as-reductio#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 terminus-held-open"
+        },
+        {
+          "n": 20,
+          "r1_row": "R1-007",
+          "target": "violence-as-reductio#archetypeVariants.sophisticate",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-14 positive-case-for-cessation"
+        },
+        {
+          "n": 21,
+          "r1_row": "R1-041",
+          "target": "meaning-through-suffering#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 22,
+          "r1_row": "R1-042",
+          "target": "free-will-defense#long",
+          "shape": "routed_answer_silent",
+          "disposition": "a_to_b",
+          "class_after": "b",
+          "entry_changed": true,
+          "regen": "sr minor"
+        },
+        {
+          "n": 23,
+          "r1_row": "R1-056",
+          "target": "most-people-happy#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 25,
+          "r1_row": "R1-057",
+          "target": "masochist-counterexample#long",
+          "shape": "routed_answer_silent",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-06 unrefusable-condition-on-non-antecedent-subject"
+        },
+        {
+          "n": 31,
+          "r1_row": "R1-035",
+          "target": "antinatalism-misanthropic#archetypeVariants.blended",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 32,
+          "r1_row": "R1-036",
+          "target": "antinatalism-misanthropic#archetypeVariants.defender",
+          "shape": "answer_flagged_b",
+          "disposition": "waits",
+          "class_after": "a",
+          "entry_changed": false,
+          "waits_on": [
+            "PQ-04"
+          ]
+        },
+        {
+          "n": 33,
+          "r1_row": "R1-037",
+          "target": "antinatalism-misanthropic#archetypeVariants.drifter",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 34,
+          "r1_row": "R1-058",
+          "target": "speak-for-everyone#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 35,
+          "r1_row": "R1-059",
+          "target": "evolution-purpose#short",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-04 stance-independence-of-disvalue"
+        },
+        {
+          "n": 39,
+          "r1_row": "R1-067",
+          "target": "privileged-first-world#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 unfacetted"
+        },
+        {
+          "n": 40,
+          "r1_row": "R1-006",
+          "target": "privileged-first-world#archetypeVariants.defender",
+          "shape": "under_strength_move",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-02 merely-possible-beneficiary",
+          "move_edit": "reauthor"
+        },
+        {
+          "n": 42,
+          "r1_row": "R1-044",
+          "target": "consent-incoherent#long",
+          "shape": "answer_flagged_b",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 43,
+          "r1_row": "R1-060",
+          "target": "suffering-makes-human#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-02 merely-possible-beneficiary"
+        },
+        {
+          "n": 44,
+          "r1_row": "R1-016",
+          "target": "red-button-repugnant#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-11 moorean-datum-vs-debunking"
+        },
+        {
+          "n": 45,
+          "r1_row": "R1-017",
+          "target": "red-button-repugnant#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-02 intrinsic-value-of-existence"
+        },
+        {
+          "n": 47,
+          "r1_row": "R1-012",
+          "target": "red-button-repugnant#archetypeVariants.sophisticate",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-02 intrinsic-value-of-existence"
+        },
+        {
+          "n": 48,
+          "r1_row": "R1-040",
+          "target": "slippery-slope-eugenics#archetypeVariants.defender",
+          "shape": "answer_flagged_b",
+          "disposition": "waits",
+          "class_after": "a",
+          "entry_changed": false,
+          "waits_on": [
+            "PQ-05",
+            "PQ-06"
+          ]
+        },
+        {
+          "n": 50,
+          "r1_row": "R1-068",
+          "target": "bitter-childhood#long",
+          "shape": "answer_flagged_b",
+          "disposition": "waits",
+          "class_after": "a",
+          "entry_changed": false,
+          "waits_on": [
+            "PQ-07"
+          ]
+        },
+        {
+          "n": 54,
+          "r1_row": "R1-046",
+          "target": "anthropic-principle#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 57,
+          "r1_row": "R1-062",
+          "target": "cherry-picking-worst#short",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-05 no-worse-off-baseline"
+        },
+        {
+          "n": 58,
+          "r1_row": "R1-052",
+          "target": "social-contract#long",
+          "shape": "routed_answer_silent",
+          "disposition": "reroute_a",
+          "class_after": "a",
+          "entry_changed": true,
+          "answered_by": [
+            "economy-population#long"
+          ]
+        },
+        {
+          "n": 59,
+          "r1_row": "R1-053",
+          "target": "moral-progress#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-06 unrefusable-condition-on-non-antecedent-subject"
+        },
+        {
+          "n": 60,
+          "r1_row": "R1-001",
+          "target": "boonin-critique#note",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-06 unrefusable-condition-on-non-antecedent-subject"
+        },
+        {
+          "n": 61,
+          "r1_row": "R1-020",
+          "target": "moral-particularism#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-12 ex-ante-vs-ex-post-justificand"
+        },
+        {
+          "n": 62,
+          "r1_row": "R1-047",
+          "target": "buddhist-objection#long",
+          "shape": "answer_flagged_b",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-06 unrefusable-condition-on-non-antecedent-subject",
+          "move_edit": "trim_and_complete"
+        },
+        {
+          "n": 63,
+          "r1_row": "R1-063",
+          "target": "luxury-belief#long",
+          "shape": "aggravation_cross_node",
+          "disposition": "a_to_b",
+          "class_after": "b",
+          "entry_changed": true,
+          "regen": "sr minor"
+        },
+        {
+          "n": 64,
+          "r1_row": "R1-064",
+          "target": "survivor-testimony#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-02 merely-possible-beneficiary"
+        },
+        {
+          "n": 65,
+          "r1_row": "R1-054",
+          "target": "rights-future-generations#long",
+          "shape": "route_to_bedrock",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-03 value-requires-a-valuer"
+        },
+        {
+          "n": 67,
+          "r1_row": "R1-003",
+          "target": "eliminativism#note",
+          "shape": "answer_flagged_b",
+          "disposition": "a_to_d",
+          "class_after": "d",
+          "entry_changed": true,
+          "terminus": "HR-04 conserved-property-under-redescription"
+        }
+      ]
+    },
+    "terminal_assembly_v1_4_L4": {
+      "artifact": "adversarial_map_v1_4.json",
+      "md5": "cb61db5cdade98234d69d222b372f515",
+      "bytes": 333184,
+      "entries": 138,
+      "class_counts": {
+        "d": 75,
+        "a": 31,
+        "b": 31,
+        "c": 1
+      },
+      "coverage": "82/82 primary, 39/39 variant, 5/9 note (unchanged)",
+      "validation": "validator v0_6 under --assembly, in-process at build: 23 checks, 0 violations, 0 ADVISORIES. v0_6 is unchanged: the amendment record rides in provenance, which its key check reads by field.",
+      "builder": {
+        "md5": "4875010ee35c3ecbac06d056c6258191",
+        "bytes": 19644,
+        "file": "adversarial_map_staging/build_assembly_v1_4.py",
+        "reproducible": "byte-identical under two forced PYTHONHASHSEED values and re-run by this canon builder into scratch"
+      },
+      "controls": {
+        "md5": "6a38d72c084cfbbab36e6476fdbcc333",
+        "bytes": 2143,
+        "file": "adversarial_map_staging/assembly_control_v0_4.json",
+        "instrument": "adversarial_map_staging/controls_assembly_v1_4.py",
+        "result": "11 of 11 controls as expected, the unmutated control first"
+      },
+      "successor_to": "adversarial_map_v1_3.json 681827419df72a16a7c6fe70df8fe77f, byte-identical on disk; the R1 rulings, the R1 evidence file and every R1 gate pin it",
+      "not_served": "Nothing reaches /adversarial/, which is still rendered from v1_3 and register v0_4."
+    },
+    "honest_residuals_register_pin_v0_5": {
+      "artifact": "honest_residuals_register_v0_5.json",
+      "md5": "0c29e3bd286ef9f5e6ddead7019f7ed3",
+      "bytes": 69747,
+      "bedrocks": 15,
+      "residue_entries": 75,
+      "reclassified_at_L4": 35,
+      "by_bedrock": {
+        "HR-02": 5,
+        "HR-03": 9,
+        "HR-04": 2,
+        "HR-05": 6,
+        "HR-06": 4,
+        "HR-11": 1,
+        "HR-12": 1,
+        "HR-14": 7
+      },
+      "new_bedrocks": 0,
+      "relations_added": [
+        "HR-02+HR-11",
+        "HR-05+HR-14",
+        "HR-10+HR-12"
+      ],
+      "relations_note": "HR-11 conditions HR-02, HR-12 independent_of HR-10, HR-14 independent_of HR-05: drafted because the new tributaries made each pair share a node and the adjacency gate refuses an undeclared pair; judged with the drafts",
+      "source": {
+        "artifact": "adversarial_map_v1_4.json",
+        "md5": "cb61db5cdade98234d69d222b372f515",
+        "entries": 138
+      },
+      "render": {
+        "md5": "8a670556726768803e0bab9953ffa189",
+        "bytes": 23592,
+        "file": "adversarial_map_staging/honest_residuals_register_v0_5.md"
+      },
+      "builder": {
+        "md5": "86fc14af7421670983439ced56327379",
+        "bytes": 22319,
+        "file": "adversarial_map_staging/build_register_v0_5.py"
+      },
+      "renderer": {
+        "md5": "06d45bd7db1aa32375dd6282aa7cafef",
+        "bytes": 4540,
+        "file": "adversarial_map_staging/render_register_v0_5.py"
+      },
+      "controls": {
+        "md5": "0c4738393271d043aa89a91001ad6c5f",
+        "bytes": 1558,
+        "file": "adversarial_map_staging/register_control_v0_3.json",
+        "instrument": "adversarial_map_staging/controls_register_v0_5.py",
+        "result": "7 of 7 controls as expected, the unmutated control first"
+      },
+      "predecessor": "honest_residuals_register_v0_4.json d067729fafb51926bc9e845209417886, byte-identical on disk; the served /adversarial/ page reads it"
+    },
+    "pin_move_queue_L4": {
+      "whose": "Josiah's to open. Every row is corpus text served in /combined, so every repair is pin-move work (a declared session he opens and ratifies); L4 lists them and drafts none.",
+      "sections": {
+        "needed_before_rejudging": "the repairs the six waiting (a)s wait on",
+        "new_b_drafted_here": "the repairs the three (b)s L4 drafted name",
+        "passed_over_by_a_new_d": "defects already on record under records three new (d)s stand on; no (d) waits on them"
+      },
+      "counts": {
+        "needed_before_rejudging": 7,
+        "new_b_drafted_here": 3,
+        "passed_over_by_a_new_d": 3
+      },
+      "rows": [
+        {
+          "id": "PQ-01",
+          "serves": [
+            "#1"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "just-depressed#long",
+          "sentence": "The reliable tell is that the same interlocutor who counsels \"get help\" will, minutes later in the same thread, offer \"so why don't you kill yourself\" — two utterances incompatible with a single motive of care, fully compatible with a single motive of hostility.",
+          "answers": "the (b) at just-depressed#long, anchored on 'two utterances incompatible with a single motive of care'",
+          "repair": "The node has to either produce evidence the motive was hostile from the start or drop the motive claim and rest on the argument-level case, which it can afford to do.",
+          "also": "the defender slot's own reply rests on the same tell: just-depressed#archetypeVariants.defender, 'pointing at the second sentence and asking which one was sincere'"
+        },
+        {
+          "id": "PQ-02",
+          "serves": [
+            "#7"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "benatar-asymmetry-attack#long",
+          "sentence": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+          "answers": "the (b) at benatar-asymmetry-attack#long, anchored on 'how much suffering typical human lives actually contain'",
+          "repair": "Repair: substantiate or cross-reference the suffering-load premise on the fallback branch."
+        },
+        {
+          "id": "PQ-03",
+          "serves": [
+            "#11"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "self-defeating#long",
+          "sentence": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+          "answers": "the (b) at self-defeating#long, anchored on 'requires only the development of sufficient technological capacity'",
+          "repair": "The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means"
+        },
+        {
+          "id": "PQ-04",
+          "serves": [
+            "#32"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "antinatalism-misanthropic#long",
+          "sentence": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants.",
+          "answers": "the (b) at antinatalism-misanthropic#long, anchored on 'structural criticism of a species is not the same as hatred of individuals'",
+          "repair": "The repair is available inside the node: the antinatalist verdict is conditional on suffering-imposition and would lapse if suffering lapsed, which no contempt-driven verdict would, and that is a content-level discriminator the node currently leaves unstated."
+        },
+        {
+          "id": "PQ-05",
+          "serves": [
+            "#48"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+          "sentence": "If the interlocutor presses the structure — 'universal still means coercive' — escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content, cascade-math voids it on the framework's own calculus, and the residual coercion-floor question routes to violence-as-reductio.",
+          "answers": "the (b) at slippery-slope-eugenics#archetypeVariants.blended, anchored on \"cascade-math voids it on the framework's own calculus\"",
+          "repair": "ground the anti-coercion verdict in the consent-asymmetry and in the voluntariness the node elsewhere attributes to antinatalism, and let cascade-math be the second, weaker witness it is at violence-as-reductio.",
+          "also": "the node's long names the calculation as the safeguard (slippery-slope-eugenics#long, 'cascade-math-safeguard')"
+        },
+        {
+          "id": "PQ-06",
+          "serves": [
+            "#48"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "ai-fear#archetypeVariants.defender",
+          "sentence": "Either show the premises themselves entail the recklessness — which means deriving a positive displacement-program out of substrate-neutral deterrence, and that derivation is exactly what fails — or concede the premises are clean and the indictment was always aimed at actors.",
+          "answers": "the (b) at ai-fear#archetypeVariants.defender, anchored on 'Either show the premises themselves entail the recklessness'",
+          "repair": "argue the test, either by showing a facilitation claim needs a base rate nobody has supplied, or by showing a facilitation standard indicts every substantive ethical framework."
+        },
+        {
+          "id": "PQ-07",
+          "serves": [
+            "#50"
+          ],
+          "section": "needed_before_rejudging",
+          "locus": "bitter-childhood#long",
+          "sentence": "The biographical objection inadvertently proves the antinatalist point: the suffering that supposedly 'caused' my philosophy is itself evidence of the proxy gamble's consequences.",
+          "answers": "the (b) at bitter-childhood#archetypeVariants.defender, anchored on 'not seeing falsely, he is seeing without the anaesthetic'",
+          "repair": "run the etiology principle to its self-refutation and stop, without claiming the wounded arguer sees more clearly.",
+          "also": "the medium closes the same way: bitter-childhood#medium, 'perhaps the interlocutor should consider whether that suffering validates the framework rather than invalidates it'. Applying the defender slot's (b) to the long and medium is the seat's reading (R1-068)."
+        },
+        {
+          "id": "PQ-08",
+          "serves": [
+            "#5"
+          ],
+          "section": "new_b_drafted_here",
+          "locus": "why-not-suicide#archetypeVariants.drifter",
+          "sentence": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+          "answers": "the (b) at why-not-suicide#archetypeVariants.drifter, anchored on 'Nothing in that tells the living to stop'",
+          "repair": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant."
+        },
+        {
+          "id": "PQ-09",
+          "serves": [
+            "#63"
+          ],
+          "section": "new_b_drafted_here",
+          "locus": "luxury-belief#long",
+          "sentence": "The demographic consequences the critic fears are consequences for economic systems, not for sentient beings.",
+          "answers": "the (b) at luxury-belief#long, anchored on 'consequences for economic systems, not for sentient beings'",
+          "repair": "the (b) drafted for #63: grant that contraction costs real people and send the weighing of those costs to economy-population#long.",
+          "also": "the sentence the move attacks is two sentences on: 'The cost is borne by an economic model ... not by individual people.'"
+        },
+        {
+          "id": "PQ-10",
+          "serves": [
+            "#22"
+          ],
+          "section": "new_b_drafted_here",
+          "locus": "free-will-defense#long",
+          "sentence": "Compatibilism attempts to salvage free will by redefining it as 'acting in accordance with one's desires without external coercion'—but this merely relocates the problem, since the desires themselves are products of unchosen biological and environmental factors.",
+          "answers": "the (b) at free-will-defense#long, anchored on 'Free will does not mitigate the proxy gamble'",
+          "repair": "the (b) drafted for #22: confine the second level to the theodicy and let the third level's verdict fall on the act."
+        },
+        {
+          "id": "PQ-11",
+          "serves": [
+            "#67"
+          ],
+          "section": "passed_over_by_a_new_d",
+          "locus": "eliminativism#long",
+          "sentence": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger hands the antinatalist everything — for where nothing is good, there is no good reason to set a new sufferer running, illusion or not.",
+          "answers": "the (d) at eliminativism#long, anchored on 'The property is conserved under redescription; only the label moves'",
+          "repair": "the second movement's closing 'a barren ledger hands the antinatalist everything' overclaims",
+          "note": "logged by the B2 (d) as a secondary item, axis s, minor; the new (d) at eliminativism#note does not wait on it"
+        },
+        {
+          "id": "PQ-12",
+          "serves": [
+            "#62"
+          ],
+          "section": "passed_over_by_a_new_d",
+          "locus": "neuroscience-positive-states#long",
+          "sentence": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+          "answers": "the (b) at neuroscience-positive-states#long, anchored on 'a joy never instantiated is withheld from no one'",
+          "repair": "the honest repair-chain routes there",
+          "note": "headline (b), B2; its repair chain ends at bedrock-III, which is why #62 is a (d) and does not wait on it"
+        },
+        {
+          "id": "PQ-13",
+          "serves": [
+            "#42"
+          ],
+          "section": "passed_over_by_a_new_d",
+          "locus": "bradley-no-subject#long",
+          "sentence": "There is no third branch on which Bradley both defeats the asymmetry and rescues procreation, because the only materials with which he defeats it are themselves a charge against it.",
+          "answers": "the (b) at bradley-no-subject#long, anchored on 'There is no third branch'",
+          "repair": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+          "note": "headline (b), B1; #42 is a (d) at the bedrock this repair routes to and does not wait on it"
+        }
+      ]
+    },
+    "knock_on_collisions_L4": {
+      "finding": "L4's drafts put new (b)s and (d)s on nodes that answer entries R1 held. 11 HOLDS now meet a (b) or (d) that did not exist when R1 ruled them on v1_3: #3, #4, #18, #19, #24, #36, #46, #49, #52, #53, #55. Their verdicts stand; the collision rule says each is read again before its card ships, and that reading waits on the judgment of the drafts, since a rejected draft removes its collision.",
+      "record": {
+        "md5": "1182169c71265b3f057122451af8048a",
+        "bytes": 4980,
+        "file": "adversarial_map_staging/r1/l4_knock_on_v0_1.json",
+        "instrument": "adversarial_map_staging/r1/l4_knock_on.py"
+      },
+      "method": "collision rule v0_2, re-applied to adversarial_map_v1_4.json; agreement with the committed v0_2 list on v1_3 asserted first (58 collided, same set)",
+      "holds_newly_collided": [
+        3,
+        4,
+        18,
+        19,
+        24,
+        36,
+        46,
+        49,
+        52,
+        53,
+        55
+      ],
+      "the_new_a": "#58 is an (a) in a new form (re-routed); no (b) or (d) sits on its new answering node, and it needs a ruling like any other."
     }
   },
   "flagship_sidecars": {

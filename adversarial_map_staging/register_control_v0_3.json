@@ -1,0 +1,48 @@
+{
+  "artifact": "register_control_v0_3.json",
+  "instrument": "adversarial_map_staging/controls_register_v0_5.py",
+  "builder": "adversarial_map_staging/build_register_v0_5.py",
+  "register": {
+    "file": "adversarial_map_staging/honest_residuals_register_v0_5.json",
+    "md5": "0c29e3bd286ef9f5e6ddead7019f7ed3",
+    "bytes": 69747
+  },
+  "result": "7 of 7 controls as expected, the unmutated control first",
+  "controls": [
+    {
+      "control": "C0 unmutated",
+      "expect": "writes the committed bytes",
+      "as_expected": true
+    },
+    {
+      "control": "C1 one added relation removed (HR-12 independent_of HR-10)",
+      "expect": "refuses, naming 'UNDECLARED ADJACENCY'",
+      "as_expected": true
+    },
+    {
+      "control": "C2 an amended (d)'s bedrock_from points at another bedrock (#10)",
+      "expect": "refuses, naming 'resolves to'",
+      "as_expected": true
+    },
+    {
+      "control": "C3 a reclassified tributary claims novel=true (#44)",
+      "expect": "refuses, naming 'claims novel=true'",
+      "as_expected": true
+    },
+    {
+      "control": "C4 a v0_4 tributary's text moves in the source map",
+      "expect": "refuses, naming 'its v0_4 tributaries moved'",
+      "as_expected": true
+    },
+    {
+      "control": "C5 a shipped name resolves to an unregistered bedrock",
+      "expect": "refuses, naming 'not registered'",
+      "as_expected": true
+    },
+    {
+      "control": "C6 the predecessor register moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    }
+  ]
+}

@@ -1,0 +1,1018 @@
+{
+  "artifact": "R1_drafts_L4.json",
+  "state": "DRAFTED, NOT JUDGED. L4 drafts; a session that did not draft judges (K258, the gate2 role). Nothing here reaches /adversarial/ or /combined, and nothing ships before that judgment and Josiah's word.",
+  "law": "Authored content, read by build_assembly_v1_4.py, which applies it to adversarial_map_v1_3.json and refuses on any row it cannot account for. A correction is a new file or a new draft superseding this one, never an edit to a judged draft.",
+  "standard": {
+    "canon": "adversarial_map.R1_standard_ruling_L2",
+    "his_words_verbatim": "Go with your recommendations on all of the above.",
+    "the_recommendation_he_adopted": "No. Reclassify those entries as (d), routed to the registered bedrock. They then ship under \"where this line terminates\" (already approved at K350), with no new prose. Entries whose answer carries a (b) wait for that repair."
+  },
+  "kickoff": {
+    "relay": "R0110",
+    "md5": "206380b85ac2d5da071b8b72888995f2"
+  },
+  "seat": "L4 (library seat, Code), 2026-09-25; drafter under K258",
+  "drafts": [
+    {
+      "n": 1,
+      "row": "R1-004",
+      "disposition": "trim_waits",
+      "move_edit": {
+        "kind": "trim_and_complete",
+        "cut": " Met rather than merely addressable: the long response holds that naming a bad-faith ad hominem is not itself one and does not become one when deployed in self-defence, and that is exactly the charge.",
+        "completion": "Exasperation is one motive and produces both sentences, so the tell shows no hostility and the slot's motive verdict is unsupported.",
+        "completion_source": "R1-004 stronger_continuation, first clause, verbatim but for the capital E",
+        "why": "the cut is the adjudication the move carried (R1-004); the remainder is 19 words, under the 40-word move floor"
+      },
+      "waits_on": [
+        "PQ-01"
+      ],
+      "for_the_judge": "Class, routing and grounds untouched: the entry waits on the (b) at just-depressed#long (L2's standard). Only the move moves, and the completion is R1-004's own words."
+    },
+    {
+      "n": 2,
+      "row": "R1-065",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "positive-case-for-cessation",
+      "bedrock_from": "why-not-suicide#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move asks what the second layer licenses, and the answer offered is a route. The node sends the licence question to red-button-repugnant, whose sophisticate slot records that the charge \"is relocated until it reaches the one node whose ruling is to leave it standing\", and this node's own sophisticate slot records that \"the layer that would ground a positive case is defended nowhere\". Routing answers where, not what, as the move says, so no rewrite of this text closes it. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-065). Terminus HR-14, positive-case-for-cessation facet; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at why-not-suicide#archetypeVariants.sophisticate (Phase F); positive-case-for-cessation facet; reclassified from (a) at L4 under the R1 standard (R1-065)",
+      "quotes": [
+        {
+          "src": "map:red-button-repugnant#archetypeVariants.sophisticate",
+          "quote": "is relocated until it reaches the one node whose ruling is to leave it standing"
+        },
+        {
+          "src": "map:why-not-suicide#archetypeVariants.sophisticate",
+          "quote": "the layer that would ground a positive case is defended nowhere"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 5,
+      "row": "R1-025",
+      "disposition": "a_to_b",
+      "regen_candidate": {
+        "axis_hit": [
+          "s",
+          "c"
+        ],
+        "severity": "headline"
+      },
+      "grounds": "(b), headline: aggravation under design section 11.1. Standing alone the slot is right about antinatalism, since not starting a life is not ending one. It is made false in context by its own node, whose long says the efilist position is two-layered and that \"the NU layer is the downstream eliminationist superstructure that licenses urgency, duty, and red-button-style advocacy.\" So \"It never was\" and \"Nothing in that tells the living to stop\" hand the drifter the layer that acquits, as the move says, and no reading rescues them, because the corpus this slot speaks for is the conjunction. The repair belongs at this slot rather than at the node, because the long is accurate: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant. Same shape as the headline (b) at violence-as-reductio's drifter slot. (a) withdrawn at L4 (row R1-025).",
+      "quotes": [
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "the NU layer is the downstream eliminationist superstructure that licenses urgency, duty, and red-button-style advocacy."
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+          "quote": "It never was"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+          "quote": "Nothing in that tells the living to stop"
+        }
+      ],
+      "queue": [
+        "PQ-08"
+      ],
+      "for_the_judge": "Design section 11.1 says an aggravated locus is repaired at the NODE. Here the node's text is accurate and the slot overclaims, so the repair is placed at the slot, as the violence-as-reductio drifter (b) placed its own."
+    },
+    {
+      "n": 6,
+      "row": "R1-055",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "life-gift#long",
+      "grounds": "(d) on registered bedrock. The answer denies the ex-post endorser a beneficiary while the node counts the same ex-post subject as the victim of the imposition. The (d) at life-gift#long registers that stake symmetry: \"Either a subject can be wronged without an antecedent stake, in which case a subject can be benefited without one, or neither can\". No rewrite of this text keeps the harm half and drops the benefit half without the non-comparative wronging the register holds open. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-055). Terminus HR-05, no-worse-off-baseline facet, birth certificate at harman-benign-creation#long; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at life-gift#long (Phase E); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-055)",
+      "quotes": [
+        {
+          "src": "map:life-gift#long",
+          "quote": "Either a subject can be wronged without an antecedent stake, in which case a subject can be benefited without one, or neither can"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 7,
+      "row": "R1-048",
+      "disposition": "trim_waits",
+      "move_edit": {
+        "kind": "trim_and_complete",
+        "cut": " And 'automation is itself a gamble' fails, because reallocation acts on existing beings, not manufactured new ones.",
+        "completion": "Your own fallback makes creation a harm only once suffering crosses a threshold you never show typical lives cross.",
+        "completion_source": "R1-048 stronger_continuation, its first clause after the colon, verbatim but for the capital Y; its tail ('so victim is the premise') is left off because the move's own third sentence already says it",
+        "why": "the cut sentence states the corpus's block on the reverse tu quoque (the former grounds' future-solve leg), not the objector's line; the remainder is 33 words, under the floor"
+      },
+      "waits_on": [
+        "PQ-02"
+      ],
+      "for_the_judge": "Waits on the (b) at benatar-asymmetry-attack#long (the suffering-load antecedent). That (b)'s own repair is empirical, not bedrock, so this stays (a) and waits. Its universal leg is HR-03 regardless; after the repair the judge should read it under the L3 hub rule."
+    },
+    {
+      "n": 8,
+      "row": "R1-026",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The answer meets the parity charge with the decomposition, and the (d) at the sophisticate slot it routes to records: \"The decomposition does not refuse parity on logical form; it relocates the dispute.\" Parity at full strength asks for impersonal ranking of absent pleasure as well as absent pain, and whether impersonal ranking is available at all is the registered question, so no rewrite of this opener closes it. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-026). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-026)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+          "quote": "The decomposition does not refuse parity on logical form; it relocates the dispute."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 9,
+      "row": "R1-027",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "metaethical-locus",
+      "bedrock_from": "benatar-asymmetry-attack#long",
+      "grounds": "(d) on registered bedrock. The long argues the no-reason premise rather than restating it, which meets the refusal charge. The move's core is that the premise is disputed, and the (d) at benatar-asymmetry-attack#long records where that dispute ends: \"Best-explanation with contested tie-breakers licenses one defensible candidate, not a universal ought.\" No rewrite of this slot closes a choice the node itself calls metaethical. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-027). Terminus HR-03, metaethical-locus facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#long (Phase B1); metaethical-locus facet; reclassified from (a) at L4 under the R1 standard (R1-027)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#long",
+          "quote": "Best-explanation with contested tie-breakers licenses one defensible candidate, not a universal ought."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 10,
+      "row": "R1-028",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move's claim is impersonal, that an unrealized real value is a real absence of value, and the answer is deprivation, which needs a relatum and so meets only the person-affecting reading. The (d) at the sophisticate slot records that \"the gap between a comparative and a relational predicate is real only if impersonal ranking is available, and its availability is the thing in dispute\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-028). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-028)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+          "quote": "the gap between a comparative and a relational predicate is real only if impersonal ranking is available, and its availability is the thing in dispute"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 11,
+      "row": "R1-013",
+      "disposition": "waits",
+      "waits_on": [
+        "PQ-03"
+      ],
+      "for_the_judge": "No bytes move. The (b) at self-defeating#long names a two-sentence fence inside the node, not bedrock."
+    },
+    {
+      "n": 12,
+      "row": "R1-014",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "terminus-held-open",
+      "bedrock_from": "red-button-repugnant#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move's heaviest clause, a terminal outcome no living dissenter can opt out of, is the positive-eliminationist charge. The red-button long this entry routes to defends the override as the lesser violation rather than denying it, and the (d) at red-button-repugnant's sophisticate slot records: \"The charge is therefore answered nowhere in the corpus.\" The violence-as-reductio leg rests on the entailment standard the headline (b) at ai-fear's defender slot flags. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-014). Terminus HR-14, terminus-held-open facet, birth certificate at red-button-repugnant#archetypeVariants.sophisticate; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at red-button-repugnant#archetypeVariants.sophisticate (Phase F); terminus-held-open facet; reclassified from (a) at L4 under the R1 standard (R1-014)",
+      "quotes": [
+        {
+          "src": "map:red-button-repugnant#archetypeVariants.sophisticate",
+          "quote": "The charge is therefore answered nowhere in the corpus."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 13,
+      "row": "R1-015",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "non-identity-problem#long",
+      "grounds": "(d) on registered bedrock. The symmetry charge is the non-identity move, and the answer's structural reply is the one the (d) at non-identity-problem#long records as conceding the point: \"routing there is circular\". The consent route is closed to normative consent-scepticism by the K350 constraint, and an (a) routed to non-identity was already withdrawn at K338. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-015). Terminus HR-05, no-worse-off-baseline facet; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at non-identity-problem#long (Phase B1); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-015)",
+      "quotes": [
+        {
+          "src": "map:non-identity-problem#long",
+          "quote": "routing there is circular"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 14,
+      "row": "R1-049",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "successor-preference",
+      "bedrock_from": "ai-fear#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move reads prefer as create, which the asymmetry blocks; read as a preference over outcomes, the question is whether a suffering-first view prefers the painless successor, and the (d) at ai-fear's sophisticate slot records that \"the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-049). Terminus HR-14, successor-preference facet; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at ai-fear#archetypeVariants.sophisticate (Phase F); successor-preference facet; reclassified from (a) at L4 under the R1 standard (R1-049)",
+      "quotes": [
+        {
+          "src": "map:ai-fear#archetypeVariants.sophisticate",
+          "quote": "the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates"
+        }
+      ],
+      "move_edit": {
+        "kind": "trim",
+        "cut": ", which the asymmetry blocks: absent pleasure is no deprivation",
+        "why": "R1_findings_L3.moves_that_carry_their_own_answer; R1-049 note_not_ruled names this clause"
+      },
+      "for_the_judge": "Move trimmed, not completed: the cut is exactly the rebuttal R1-049's note names, and the remainder is 42 words, above the 40-word floor, so the kickoff's 'add nothing' could be kept literally. The trimmed move still reads prefer as create; that does not falsify a (d) card, which claims only termination (class_asymmetry_ruling_K350), but the judge may prefer completing it from R1-049's stronger line."
+    },
+    {
+      "n": 15,
+      "row": "R1-029",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "successor-preference",
+      "bedrock_from": "ai-fear#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The entailment answer defends the structural layer, not the reading the charge targets, and the (d) at ai-fear's sophisticate slot says so in terms: \"The deterrence reading is the safe one and the minimization reading is what the charge is about\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-029). Terminus HR-14, successor-preference facet; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at ai-fear#archetypeVariants.sophisticate (Phase F); successor-preference facet; reclassified from (a) at L4 under the R1 standard (R1-029)",
+      "quotes": [
+        {
+          "src": "map:ai-fear#archetypeVariants.sophisticate",
+          "quote": "The deterrence reading is the safe one and the minimization reading is what the charge is about"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 16,
+      "row": "R1-008",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "successor-preference",
+      "bedrock_from": "ai-fear#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The action-level answer covers only the structural layer, while the same long says the NU layer licenses red-button-style advocacy. The (d) at ai-fear's sophisticate slot registers the successor charge: \"the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-008). Terminus HR-14, successor-preference facet; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at ai-fear#archetypeVariants.sophisticate (Phase F); successor-preference facet; reclassified from (a) at L4 under the R1 standard (R1-008)",
+      "quotes": [
+        {
+          "src": "map:ai-fear#archetypeVariants.sophisticate",
+          "quote": "the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 17,
+      "row": "R1-050",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "terminus-held-open",
+      "bedrock_from": "red-button-repugnant#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. Every route ends at registered bedrock. negative-util-aggregation#long rests on a debunking its own (d) calls \"exactly the bedrock\"; red-button-repugnant#medium carries a (d) on the staked recoil; and the positive case behind a successful button is the charge the (d) at red-button-repugnant's sophisticate slot records as \"answered nowhere in the corpus\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-050). Terminus HR-14, terminus-held-open facet, birth certificate at red-button-repugnant#archetypeVariants.sophisticate; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at red-button-repugnant#archetypeVariants.sophisticate (Phase F); terminus-held-open facet; reclassified from (a) at L4 under the R1 standard (R1-050)",
+      "quotes": [
+        {
+          "src": "map:negative-util-aggregation#long",
+          "quote": "exactly the bedrock"
+        },
+        {
+          "src": "map:red-button-repugnant#archetypeVariants.sophisticate",
+          "quote": "answered nowhere in the corpus"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 20,
+      "row": "R1-007",
+      "disposition": "a_to_d",
+      "hr": "HR-14",
+      "facet": "positive-case-for-cessation",
+      "bedrock_from": "why-not-suicide#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The former grounds conceded that the move defeats one route, this slot's consent sentence, and answered with another, the indexing at why-not-suicide's sophisticate slot. That slot's own (d) records \"Indexing settles entailment and nothing else\" and leaves the positive case \"defended nowhere\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-007). Terminus HR-14, positive-case-for-cessation facet; not novel.",
+      "terminus_routing": "already-registered HR-14; reached through the (d) at why-not-suicide#archetypeVariants.sophisticate (Phase F); positive-case-for-cessation facet; reclassified from (a) at L4 under the R1 standard (R1-007)",
+      "quotes": [
+        {
+          "src": "map:why-not-suicide#archetypeVariants.sophisticate",
+          "quote": "Indexing settles entailment and nothing else"
+        },
+        {
+          "src": "map:why-not-suicide#archetypeVariants.sophisticate",
+          "quote": "defended nowhere"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 21,
+      "row": "R1-041",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move's real loss can bite against not creating only on an impersonal reading, a world without the goods adversity makes possible ranking lower, and the answer is deprivation, which meets only the person-affecting reading. The (d) at benatar-asymmetry-attack's sophisticate slot records the impersonal reading as the live dispute: \"its availability is the thing in dispute\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-041). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-041)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+          "quote": "its availability is the thing in dispute"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 22,
+      "row": "R1-042",
+      "disposition": "a_to_b",
+      "regen_candidate": {
+        "axis_hit": [
+          "s",
+          "r"
+        ],
+        "severity": "minor"
+      },
+      "grounds": "(b), minor. No locus answers the move: nothing in the corpus discusses ought-implies-can or responsibility under determinism, and consent-incoherent#long, the former route, states a default of restraint, which is itself an ought addressed to the parent. Not (c): the move turns this node's own determinism on it. Not (d): no bedrock is reached, because the node's conclusion does not need determinism, as its third level says, \"even granting free will for the sake of argument\". The defect is the second level's unscoped dismissal: \"Compatibilism attempts to salvage free will by redefining it as 'acting in accordance with one's desires without external coercion'—but this merely relocates the problem, since the desires themselves are products of unchosen biological and environmental factors.\" Its reason applies to the parent's desires as fully as to anyone's, so no reading scopes it, and it removes the agency the third level addresses as the gambler. The repair is inside the node: confine the second level to the theodicy, where compatibilist freedom does not move responsibility off the designer, and let the third level's verdict fall on the act. (a) withdrawn at L4 (row R1-042).",
+      "quotes": [
+        {
+          "src": "corpus:free-will-defense#long",
+          "quote": "even granting free will for the sake of argument"
+        },
+        {
+          "src": "corpus:free-will-defense#long",
+          "quote": "Compatibilism attempts to salvage free will by redefining it as 'acting in accordance with one's desires without external coercion'—but this merely relocates the problem, since the desires themselves are products of unchosen biological and environmental factors."
+        }
+      ],
+      "queue": [
+        "PQ-10"
+      ],
+      "for_the_judge": "No re-route exists: a corpus-wide search found no locus on determinism, compatibilism, ought-implies-can or desert outside this node. R1-042 is the seat's reading alone; so is this (b)."
+    },
+    {
+      "n": 23,
+      "row": "R1-056",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The principled difference offered, that procreation manufactures the risk-bearer, is the fact the (d) at cherry-picking-worst's sophisticate slot says defeats the gamble frame rather than rescuing it: \"you cannot place a person at risk before there is a person whose prospects the risk degrades\". The future-solve leg cites a distinction the (b) at future-solve#short says that node never makes. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-056). Terminus HR-05, no-worse-off-baseline facet; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at cherry-picking-worst#archetypeVariants.sophisticate (Phase F); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-056)",
+      "quotes": [
+        {
+          "src": "map:cherry-picking-worst#archetypeVariants.sophisticate",
+          "quote": "you cannot place a person at risk before there is a person whose prospects the risk degrades"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 25,
+      "row": "R1-057",
+      "disposition": "a_to_d",
+      "hr": "HR-06",
+      "facet": "unrefusable-condition-on-non-antecedent-subject",
+      "bedrock_from": "boonin-critique#short",
+      "grounds": "(d) on registered bedrock. The routed hub never discusses mutability. The locus that takes the move's payload at full strength is transhumanist-objection#long, which grants it outright: \"suppose the engineering succeeds and we can instantiate beings with no capacity to suffer and lives of positive value.\" Its load-bearing answer is then that creation \"remains a non-consensual imposition of existence on someone who cannot be consulted\", which, against a ledger holding no harm, is the register's HR-06: \"Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-057). Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel.",
+      "terminus_routing": "already-registered HR-06; reached through the (d) at boonin-critique#short (Phase B2); unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-057)",
+      "quotes": [
+        {
+          "src": "corpus:transhumanist-objection#long",
+          "quote": "suppose the engineering succeeds and we can instantiate beings with no capacity to suffer and lives of positive value."
+        },
+        {
+          "src": "corpus:transhumanist-objection#long",
+          "quote": "remains a non-consensual imposition of existence on someone who cannot be consulted"
+        },
+        {
+          "src": "register:HR-06",
+          "quote": "Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says."
+        }
+      ],
+      "for_the_judge": "routed_answer_silent, class law run: re-routing to transhumanist-objection#long (the locus that engages the payload, as R1-057's note suggested) would make an (a) whose load-bearing answer is HR-06, so the entry is a (d). The transhumanist node's own (b) concerns its extinction-terminus cross-reference, not this creation leg."
+    },
+    {
+      "n": 31,
+      "row": "R1-035",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The slot routes the axiological claim to the sophisticate slot, whose own (d) records that the impersonal-grounding cut fails at the conclusion: \"The distinction does not survive the conclusion.\" A routed answer that is registered bedrock is not an answer. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-035). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at antinatalism-misanthropic#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-035)",
+      "quotes": [
+        {
+          "src": "map:antinatalism-misanthropic#archetypeVariants.sophisticate",
+          "quote": "The distinction does not survive the conclusion."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 32,
+      "row": "R1-036",
+      "disposition": "waits",
+      "waits_on": [
+        "PQ-04"
+      ],
+      "for_the_judge": "No bytes move. The (b) at antinatalism-misanthropic#long names a content-level discriminator inside the node, not bedrock."
+    },
+    {
+      "n": 33,
+      "row": "R1-037",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move is the value-requires-a-valuer point stated plainly, and the answer is the sophisticate slot's impersonal grounding, whose own (d) records that \"A theory that disvalues suffering impersonally and concludes that no further bearers should exist has ranked bearerless worlds above inhabited ones\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-037). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at antinatalism-misanthropic#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-037)",
+      "quotes": [
+        {
+          "src": "map:antinatalism-misanthropic#archetypeVariants.sophisticate",
+          "quote": "A theory that disvalues suffering impersonally and concludes that no further bearers should exist has ranked bearerless worlds above inhabited ones"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 34,
+      "row": "R1-058",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The answer concedes that no pre-existing subject is forced and then leans on the risk spine, which the (d) at cherry-picking-worst's sophisticate slot says does not transfer: \"Either the wager has a bearer, in which case name the baseline it worsens, or it has none, in which case the regulatory analogy has been doing the argument's work.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-058). Terminus HR-05, no-worse-off-baseline facet; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at cherry-picking-worst#archetypeVariants.sophisticate (Phase F); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-058)",
+      "quotes": [
+        {
+          "src": "map:cherry-picking-worst#archetypeVariants.sophisticate",
+          "quote": "Either the wager has a bearer, in which case name the baseline it worsens, or it has none, in which case the regulatory analogy has been doing the argument's work."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 35,
+      "row": "R1-059",
+      "disposition": "a_to_d",
+      "hr": "HR-04",
+      "facet": "stance-independence-of-disvalue",
+      "bedrock_from": "natural-reproduce#diagnosis",
+      "grounds": "(d) on registered bedrock. The move is neo-Aristotelian, facts about a living thing's nature already evaluative, and the answer is the is-ought reply that position denies. The (d) at natural-reproduce#diagnosis registers that floor \"with a second surface at evolution-purpose\", and states the boomerang: \"The naturalistic fallacy cuts the appeal to nature and the appeal to suffering with one stroke, and the corpus needs the second to survive.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-059). Terminus HR-04, stance-independence-of-disvalue facet, birth certificate at phenomenological-existentialism#long; not novel.",
+      "terminus_routing": "already-registered HR-04; reached through the (d) at natural-reproduce#diagnosis (Phase E); stance-independence-of-disvalue facet; reclassified from (a) at L4 under the R1 standard (R1-059)",
+      "quotes": [
+        {
+          "src": "map:natural-reproduce#diagnosis",
+          "quote": "with a second surface at evolution-purpose"
+        },
+        {
+          "src": "map:natural-reproduce#diagnosis",
+          "quote": "The naturalistic fallacy cuts the appeal to nature and the appeal to suffering with one stroke, and the corpus needs the second to survive."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 39,
+      "row": "R1-067",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "unfacetted",
+      "bedrock_from": "slippery-slope-eugenics#short",
+      "grounds": "(d) on registered bedrock. The answer is formal universality, and the (d) at slippery-slope-eugenics#short, on the node this entry routes to, records why that does not reach the charge: \"Universality answers the rule, not the outcome.\" A prohibition that condemns procreation most where deprivation is worst bears hardest on the precarious, which is the group-continuity question that (d) leaves at bedrock. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-067). Terminus HR-03, unfacetted facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at slippery-slope-eugenics#short (Phase C); unfacetted facet; reclassified from (a) at L4 under the R1 standard (R1-067)",
+      "quotes": [
+        {
+          "src": "map:slippery-slope-eugenics#short",
+          "quote": "Universality answers the rule, not the outcome."
+        }
+      ],
+      "for_the_judge": "The register files the slippery-slope-eugenics#short (d) under HR-03's facet id 'unfacetted', though its terminus_routing names a group-continuity facet; this draft inherits the registered facet by lookup rather than minting one."
+    },
+    {
+      "n": 40,
+      "row": "R1-006",
+      "disposition": "a_to_d",
+      "hr": "HR-02",
+      "facet": "merely-possible-beneficiary",
+      "bedrock_from": "joy-outweighs-harms#long",
+      "grounds": "(d) on registered bedrock. Not (a): the routed long meets testimony-priority with a canon of pessimist authors rather than the affected population, and every locus that speaks to lives their bearers affirm ends at registered bedrock. Not (c): it continues this node's own standpoint dialectic. Not (b): a rewrite of this slot could only say that the verdict does not need lives to be net-bad, which relocates the dispute rather than closing it. The affirming witness is her own beneficiary, so the goods and harms fall on one person, and the (d) at joy-outweighs-harms#long records where that ends: \"That opponent is not refuted; the dispute is relocated to the asymmetry.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-006). Terminus HR-02, merely-possible-beneficiary facet; not novel.",
+      "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-006)",
+      "quotes": [
+        {
+          "src": "map:joy-outweighs-harms#long",
+          "quote": "That opponent is not refuted; the dispute is relocated to the asymmetry."
+        }
+      ],
+      "move_edit": {
+        "kind": "reauthor",
+        "move": "Only against the caricature. Standpoint epistemology claims defeasible priority for testimony from the affected, not that none but sufferers may speak, so your reversal needs the strong version you conceded was not the real one. On the defeasible version nothing is disqualified, and the priority, cashed, cuts against you: the most affected, taken as a population, largely affirm their lives and have children, so the better-placed witnesses contradict the comfortable antinatalist's evaluative premise. A canon of pessimist authors does not meet that.",
+        "source": "the original move, with its last sentence completed by R1-006's stronger continuation",
+        "why": "under_strength_move (R1-006): the move stopped before its payload"
+      },
+      "for_the_judge": "Under-strength move, re-authored: the original 48 words are kept and the payload is added from R1-006. The former grounds cited 'Benatar in South Africa', which is in #short and #medium, not the routed #long (R1-006); the new grounds do not lean on it."
+    },
+    {
+      "n": 42,
+      "row": "R1-044",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "procreative-liberty#long",
+      "grounds": "(d) on registered bedrock. The answer is bradley's: the relatum is the actual future person who will bear the harm. The (b) at bradley-no-subject#long records that its analogies assert that harm without establishing it, \"Your poisoned-well and wrongful-life analogies assert non-comparative harm; they do not establish it\", and names its own escalation: \"If the non-comparative-harm defense proves unavailable, this escalates to a (d) residue at that primitive.\" The K338 withdrawals at procreative-liberty and non-identity-problem found it unavailable in-corpus. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-044). Terminus HR-05, no-worse-off-baseline facet; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at procreative-liberty#long (Phase B1); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-044)",
+      "quotes": [
+        {
+          "src": "map:bradley-no-subject#long",
+          "quote": "Your poisoned-well and wrongful-life analogies assert non-comparative harm; they do not establish it"
+        },
+        {
+          "src": "map:bradley-no-subject#long",
+          "quote": "If the non-comparative-harm defense proves unavailable, this escalates to a (d) residue at that primitive."
+        }
+      ],
+      "for_the_judge": "answer_flagged_b, reclassified to (d) because the (b)'s own grounds route the repair to bedrock. The former [K229-not-comparative] attestation no longer applies: the bradley bar governs (a)-routes only."
+    },
+    {
+      "n": 43,
+      "row": "R1-060",
+      "disposition": "a_to_d",
+      "hr": "HR-02",
+      "facet": "merely-possible-beneficiary",
+      "bedrock_from": "joy-outweighs-harms#long",
+      "grounds": "(d) on registered bedrock. Both routed loci carry (d)s recording where the goods-outweigh answer ends. On the intrapersonal horn, where the person who suffers is the person who gains the depth, the (d) at joy-outweighs-harms#long records: \"That opponent is not refuted; the dispute is relocated to the asymmetry.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-060). Terminus HR-02, merely-possible-beneficiary facet; not novel.",
+      "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-060)",
+      "quotes": [
+        {
+          "src": "map:joy-outweighs-harms#long",
+          "quote": "That opponent is not refuted; the dispute is relocated to the asymmetry."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 44,
+      "row": "R1-016",
+      "disposition": "a_to_d",
+      "hr": "HR-11",
+      "facet": "moorean-datum-vs-debunking",
+      "bedrock_from": "negative-util-aggregation#long",
+      "grounds": "(d) on registered bedrock. The answer concedes the move to anyone who holds side-constraints and keeps the button's arithmetic only for the maximizer, whose defence is to debunk the separateness intuition. The (d) at negative-util-aggregation#long, the locus routed to, records that \"debunking-versus-datum is exactly the bedrock\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-016). Terminus HR-11, moorean-datum-vs-debunking facet; not novel.",
+      "terminus_routing": "already-registered HR-11; reached through the (d) at negative-util-aggregation#long (Phase B1); moorean-datum-vs-debunking facet; reclassified from (a) at L4 under the R1 standard (R1-016)",
+      "quotes": [
+        {
+          "src": "map:negative-util-aggregation#long",
+          "quote": "debunking-versus-datum is exactly the bedrock"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 45,
+      "row": "R1-017",
+      "disposition": "a_to_d",
+      "hr": "HR-02",
+      "facet": "intrinsic-value-of-existence",
+      "bedrock_from": "red-button-repugnant#medium",
+      "grounds": "(d) on registered bedrock. The symmetric debunk strips both valences, and the tie-breaker the answer then needs, the creation asymmetry, is registered bedrock and does not reach the existing beings the button ends. What remains is the tie this node's own (d) at #medium registers: \"The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-017). Terminus HR-02, intrinsic-value-of-existence facet; not novel.",
+      "terminus_routing": "already-registered HR-02; reached through the (d) at red-button-repugnant#medium (Phase A); intrinsic-value-of-existence facet; reclassified from (a) at L4 under the R1 standard (R1-017)",
+      "quotes": [
+        {
+          "src": "map:red-button-repugnant#medium",
+          "quote": "The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering"
+        }
+      ],
+      "for_the_judge": "DEPARTS FROM THE R1 ROW'S BEDROCK. R1-017 names HR-03, the bedrock of the tie-breaker the answer falls back on, and adds that the tie-breaker does not cover existing beings. R1-012 (#47) says this is the same symmetric-debunk move at the sophisticate slot and names the (d) at red-button-repugnant#medium, which registers the tie itself. One move on one node is drafted to one terminus, HR-02 intrinsic-value-of-existence, for both #45 and #47. If the judge prefers R1-017's HR-03, change hr, facet and bedrock_from to benatar-asymmetry-attack#archetypeVariants.sophisticate; nothing else moves."
+    },
+    {
+      "n": 47,
+      "row": "R1-012",
+      "disposition": "a_to_d",
+      "hr": "HR-02",
+      "facet": "intrinsic-value-of-existence",
+      "bedrock_from": "red-button-repugnant#medium",
+      "grounds": "(d) on registered bedrock. The routed long restates the firmware claim without saying why suffering-aversion escapes it, and this node's own (d) at #medium makes the charge and registers where it ends: \"The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-012). Terminus HR-02, intrinsic-value-of-existence facet; not novel.",
+      "terminus_routing": "already-registered HR-02; reached through the (d) at red-button-repugnant#medium (Phase A); intrinsic-value-of-existence facet; reclassified from (a) at L4 under the R1 standard (R1-012)",
+      "quotes": [
+        {
+          "src": "map:red-button-repugnant#medium",
+          "quote": "The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering"
+        }
+      ],
+      "for_the_judge": "The locus red-button-repugnant#archetypeVariants.sophisticate then carries two (d)s on two bedrocks (HR-14, the birth certificate, and this one on HR-02). The per-locus cap is 3, and the stopping rule is not declared at the assembly."
+    },
+    {
+      "n": 48,
+      "row": "R1-040",
+      "disposition": "waits",
+      "waits_on": [
+        "PQ-05",
+        "PQ-06"
+      ],
+      "for_the_judge": "No bytes move. Both (b)s name repairs inside their nodes. R1-040 adds that the coercion floor itself is HR-14; if the repaired anti-coercion ground (consent-asymmetry plus voluntariness) turns out to need that floor, the entry becomes a (d) at HR-14 coercion-floor at re-judging."
+    },
+    {
+      "n": 50,
+      "row": "R1-068",
+      "disposition": "waits",
+      "waits_on": [
+        "PQ-07"
+      ],
+      "for_the_judge": "No bytes move. R1-068's note: keep the evidential point, drop 'proves' and 'validates', and the entry may hold. Applying the defender slot's (b) to the long's closing move is the seat's reading (R1-068)."
+    },
+    {
+      "n": 54,
+      "row": "R1-046",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move's core is an impersonal value claim, that observers constitute an intrinsic good of the cosmos. The hub answers with deprivation, which meets only the person-affecting reading, and the (d) at its sophisticate slot records the impersonal reading as the live dispute: \"its availability is the thing in dispute\". The consent route states a default of restraint but not why an impersonal good cannot override it. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-046). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-046)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+          "quote": "its availability is the thing in dispute"
+        }
+      ],
+      "for_the_judge": "R1-046 marks the consent-route leg as the seat's reading; it is kept as one sentence here and carries no quotation."
+    },
+    {
+      "n": 57,
+      "row": "R1-062",
+      "disposition": "a_to_d",
+      "hr": "HR-05",
+      "facet": "no-worse-off-baseline",
+      "bedrock_from": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The move is the charge the (d) on this node's sophisticate slot registers, that the risk-ethics analogies smuggle in a prior subject: \"Every domain you name has an antecedent subject.\" One node cannot hold the same move both answered and at bedrock. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-062). Terminus HR-05, no-worse-off-baseline facet; not novel.",
+      "terminus_routing": "already-registered HR-05; reached through the (d) at cherry-picking-worst#archetypeVariants.sophisticate (Phase F); no-worse-off-baseline facet; reclassified from (a) at L4 under the R1 standard (R1-062)",
+      "quotes": [
+        {
+          "src": "map:cherry-picking-worst#archetypeVariants.sophisticate",
+          "quote": "Every domain you name has an antecedent subject."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 58,
+      "row": "R1-052",
+      "disposition": "reroute_a",
+      "answered_by": [
+        "economy-population#long"
+      ],
+      "grounds": "(a), re-routed at L4 after R1-052 failed the former route. The move concedes there was no consent to existence and relocates to fair-play obligations incurred given existence. economy-population#long speaks to exactly those obligations. It grants them, \"The problem of caring for an aging population is real and must be solved\", names how they are to be met, \"through automation, institutional reform, mutual aid, and resource reallocation\", and refuses the one means the charge demands, \"the creation of new sentient beings whose primary justification for existence is to serve as care-labor for those who preceded them.\" So the non-reproducer owes a share of the scheme's burdens, not new members, and a fair-play claim cannot be discharged by conscripting a third party who is not yet a participant. The answer does not use the Ponzi victim framing R1-048 failed at the same locus. The K350 constraint does not apply: fair play is not consent-scepticism.",
+      "quotes": [
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "The problem of caring for an aging population is real and must be solved"
+        },
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "through automation, institutional reform, mutual aid, and resource reallocation"
+        },
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "the creation of new sentient beings whose primary justification for existence is to serve as care-labor for those who preceded them."
+        }
+      ],
+      "for_the_judge": "A NEW (a), so it needs a ruling like any other. Where it is weakest: the feasibility of meeting the obligations without new members is asserted in the text ('must be solved'), not shown; and 'primary justification' leaves room for a fair-play theorist who asks for members without asking that they be created for the scheme. If either sinks it, the class law gives (d) at HR-06 (the conscription of a non-participant) or (b) at social-contract#long."
+    },
+    {
+      "n": 59,
+      "row": "R1-053",
+      "disposition": "a_to_d",
+      "hr": "HR-06",
+      "facet": "unrefusable-condition-on-non-antecedent-subject",
+      "bedrock_from": "boonin-critique#short",
+      "grounds": "(d) on registered bedrock. At its core the move is normative consent-scepticism, so the consent-incoherent route is barred (K350). The hub meets it only through the universal asymmetry or a suffering threshold its own (b) says is established nowhere, and the move's claim is that the suffering load keeps falling. The target's own reply, impermissible regardless of the conditions, is the register's HR-06: \"Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-053). Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel.",
+      "terminus_routing": "already-registered HR-06; reached through the (d) at boonin-critique#short (Phase B2); unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-053)",
+      "quotes": [
+        {
+          "src": "register:HR-06",
+          "quote": "Whether imposing an unrefusable condition on a non-antecedent subject is wrong whatever the harm ledger says."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 60,
+      "row": "R1-001",
+      "disposition": "a_to_d",
+      "hr": "HR-06",
+      "facet": "unrefusable-condition-on-non-antecedent-subject",
+      "bedrock_from": "boonin-critique#short",
+      "grounds": "(d) on registered bedrock. The answer rests on the four grounds being independent of the asymmetry, and the (d) at this node's #short says they are not: \"The four foundations are one foundation wearing four hats\". Canon holds that dispute open (non_univocality_consent_independence_K350), and that (d) ends at the imposition-wrong primitive. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-001). Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel.",
+      "terminus_routing": "already-registered HR-06; reached through the (d) at boonin-critique#short (Phase B2); unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-001)",
+      "quotes": [
+        {
+          "src": "map:boonin-critique#short",
+          "quote": "The four foundations are one foundation wearing four hats"
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 61,
+      "row": "R1-020",
+      "disposition": "a_to_d",
+      "hr": "HR-12",
+      "facet": "ex-ante-vs-ex-post-justificand",
+      "bedrock_from": "contractualism-scanlon#long",
+      "grounds": "(d) on registered bedrock. The move is normative consent-scepticism, a guardian deciding where consent is impossible, so the consent-incoherent route is barred (K350). The contractualist route rests on the no-occupant argument, which the (d) at contractualism-scanlon#long says presupposes ex-post scoring: \"Your three failures all presuppose ex-post complaint-scoring as the neutral baseline\". Pressed from the ex-ante standpoint, the guardian analogy stands at that bedrock. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-020). Terminus HR-12, ex-ante-vs-ex-post-justificand facet; not novel.",
+      "terminus_routing": "already-registered HR-12; reached through the (d) at contractualism-scanlon#long (Phase B1); ex-ante-vs-ex-post-justificand facet; reclassified from (a) at L4 under the R1 standard (R1-020)",
+      "quotes": [
+        {
+          "src": "map:contractualism-scanlon#long",
+          "quote": "Your three failures all presuppose ex-post complaint-scoring as the neutral baseline"
+        }
+      ],
+      "for_the_judge": "moral-particularism#long then carries two (d)s on two bedrocks (the Phase A one on HR-10, this one on HR-12). The register gains an HR-10+HR-12 co-location, declared independent_of in register v0_5."
+    },
+    {
+      "n": 62,
+      "row": "R1-047",
+      "disposition": "a_to_d",
+      "hr": "HR-06",
+      "facet": "unrefusable-condition-on-non-antecedent-subject",
+      "bedrock_from": "boonin-critique#short",
+      "grounds": "(d) on registered bedrock. The answer rests on the sentence \"a joy never instantiated is withheld from no one\", which the headline (b) at neuroscience-positive-states#long is anchored on and calls the absence-asymmetry smuggled back in. That (b)'s own grounds say the honest repair re-grounds on risk-imposition, \"but that presupposes bedrock-III\". On a symmetric ledger the supreme goods stand against the risk-bundle, and what remains is the imposition itself. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-047). Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel.",
+      "terminus_routing": "already-registered HR-06; reached through the (d) at boonin-critique#short (Phase B2); unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-047)",
+      "quotes": [
+        {
+          "src": "map:neuroscience-positive-states#long",
+          "quote": "a joy never instantiated is withheld from no one"
+        },
+        {
+          "src": "map:neuroscience-positive-states#long",
+          "quote": "but that presupposes bedrock-III"
+        }
+      ],
+      "move_edit": {
+        "kind": "trim_and_complete",
+        "cut": " But the never-created are deprived of no good, however supreme, since no one in the void awaits awakening; and however high the ceiling, creation still installs a non-consenting being into the full risk-bundle, most of whom never awaken.",
+        "completion": "Grant valence-realism in both signs, as your neuroscience node does, and absent awakening is as neutral as absent dukkha. Non-creation is then not better, and the supreme goods stand against the risk-bundle on a symmetric ledger.",
+        "completion_source": "R1-047 stronger_continuation after its colon; 'as the answering node does' adapted to 'as your neuroscience node does'",
+        "why": "the cut is the rebuttal R1-047's note names; the remainder is 21 words, under the floor"
+      },
+      "for_the_judge": "answer_flagged_b, reclassified to (d) because the (b)'s own grounds route the repair to bedrock-III (HR-06). THE ONE (d) MOVE THAT GAINED WORDS: the cut left 21, under the floor, so it is completed from R1-047's stronger line with one adaptation ('as the answering node does' becomes 'as your neuroscience node does'). Whether that counts as new prose under L2's standard is the judge's call; the alternative is to keep the rebuttal in the move, which R1_findings_L3 rules out."
+    },
+    {
+      "n": 63,
+      "row": "R1-063",
+      "disposition": "a_to_b",
+      "regen_candidate": {
+        "axis_hit": [
+          "s",
+          "r"
+        ],
+        "severity": "minor"
+      },
+      "grounds": "(b), minor: a cross-node aggravation (L3). The move is right about the sentence it attacks: \"The cost is borne by an economic model that requires a perpetual supply of new laborers and consumers — not by individual people.\" The corpus's own economy node concedes what that sentence denies: \"The problem of caring for an aging population is real and must be solved\". No reading of the sentence survives that, so the relocation the former grounds offered concedes the move rather than meeting it. The repair is local: grant that contraction costs real people and send the weighing of those costs to economy-population#long. The genetic-fallacy spine is untouched, which is why the severity is minor. (a) withdrawn at L4 (row R1-063).",
+      "quotes": [
+        {
+          "src": "corpus:luxury-belief#long",
+          "quote": "The cost is borne by an economic model that requires a perpetual supply of new laborers and consumers — not by individual people."
+        },
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "The problem of caring for an aging population is real and must be solved"
+        }
+      ],
+      "queue": [
+        "PQ-09"
+      ],
+      "for_the_judge": "Basis is the corpus's own text, not a map entry (R1-063)."
+    },
+    {
+      "n": 64,
+      "row": "R1-064",
+      "disposition": "a_to_d",
+      "hr": "HR-02",
+      "facet": "merely-possible-beneficiary",
+      "bedrock_from": "joy-outweighs-harms#long",
+      "grounds": "(d) on registered bedrock. A survivor who endorses her own life is on the intrapersonal horn, where the (d) at joy-outweighs-harms#long records: \"That opponent is not refuted; the dispute is relocated to the asymmetry.\" The hub's fallback makes the harm depend on a suffering load its own (b) says is never established, and survivor testimony is evidence on exactly that load. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-064). Terminus HR-02, merely-possible-beneficiary facet; not novel.",
+      "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-064)",
+      "quotes": [
+        {
+          "src": "map:joy-outweighs-harms#long",
+          "quote": "That opponent is not refuted; the dispute is relocated to the asymmetry."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 65,
+      "row": "R1-054",
+      "disposition": "a_to_d",
+      "hr": "HR-03",
+      "facet": "value-requires-a-valuer",
+      "bedrock_from": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "grounds": "(d) on registered bedrock. The node's own no-claimant premise is person-affecting, so the rescue the answer needs is an impersonal comparative the premise disallows. The (d) at benatar-asymmetry-attack's sophisticate slot records: \"The decomposition does not refuse parity on logical form; it relocates the dispute.\" (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-054). Terminus HR-03, value-requires-a-valuer facet; not novel.",
+      "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-054)",
+      "quotes": [
+        {
+          "src": "map:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+          "quote": "The decomposition does not refuse parity on logical form; it relocates the dispute."
+        }
+      ],
+      "for_the_judge": null
+    },
+    {
+      "n": 67,
+      "row": "R1-003",
+      "disposition": "a_to_d",
+      "hr": "HR-04",
+      "facet": "conserved-property-under-redescription",
+      "bedrock_from": "eliminativism#long",
+      "grounds": "(d) on registered bedrock. The former grounds met the honest illusionist with the barren-ledger sentence, which the (d) at eliminativism#long logs as an overclaim: \"the second movement's closing 'a barren ledger hands the antinatalist everything' overclaims\". Global nihilism is symmetric, so the illusionist who holds the view non-selectively is untouched, as the move says, and what the node holds across him is the is-ought question that (d) registers. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-003). Terminus HR-04, conserved-property-under-redescription facet; not novel.",
+      "terminus_routing": "already-registered HR-04; reached through the (d) at eliminativism#long (Phase B2); conserved-property-under-redescription facet; reclassified from (a) at L4 under the R1 standard (R1-003)",
+      "quotes": [
+        {
+          "src": "map:eliminativism#long",
+          "quote": "the second movement's closing 'a barren ledger hands the antinatalist everything' overclaims"
+        }
+      ],
+      "for_the_judge": "answer_flagged_b in L3's list, but the record at the answering locus is a (d) with a logged secondary overclaim, not a (b) entry; the overclaim's repair leaves the node at the (d)'s own bedrock, so this is reclassified rather than held."
+    }
+  ],
+  "pin_move_queue": [
+    {
+      "id": "PQ-01",
+      "serves": [
+        1
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "just-depressed#long",
+      "anchor": "two utterances incompatible with a single motive of care",
+      "b_at": "just-depressed#long",
+      "b_anchor": "two utterances incompatible with a single motive of care",
+      "repair_src": "map:just-depressed#long",
+      "repair": "The node has to either produce evidence the motive was hostile from the start or drop the motive claim and rest on the argument-level case, which it can afford to do.",
+      "also": "the defender slot's own reply rests on the same tell: just-depressed#archetypeVariants.defender, 'pointing at the second sentence and asking which one was sincere'"
+    },
+    {
+      "id": "PQ-02",
+      "serves": [
+        7
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "benatar-asymmetry-attack#long",
+      "anchor": "how much suffering typical human lives actually contain",
+      "b_at": "benatar-asymmetry-attack#long",
+      "b_anchor": "how much suffering typical human lives actually contain",
+      "repair_src": "map:benatar-asymmetry-attack#long",
+      "repair": "Repair: substantiate or cross-reference the suffering-load premise on the fallback branch."
+    },
+    {
+      "id": "PQ-03",
+      "serves": [
+        11
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "self-defeating#long",
+      "anchor": "requires only the development of sufficient technological capacity",
+      "b_at": "self-defeating#long",
+      "b_anchor": "requires only the development of sufficient technological capacity",
+      "repair_src": "map:self-defeating#long",
+      "repair": "The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means"
+    },
+    {
+      "id": "PQ-04",
+      "serves": [
+        32
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "antinatalism-misanthropic#long",
+      "anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "b_at": "antinatalism-misanthropic#long",
+      "b_anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "repair_src": "map:antinatalism-misanthropic#long",
+      "repair": "The repair is available inside the node: the antinatalist verdict is conditional on suffering-imposition and would lapse if suffering lapsed, which no contempt-driven verdict would, and that is a content-level discriminator the node currently leaves unstated."
+    },
+    {
+      "id": "PQ-05",
+      "serves": [
+        48
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+      "anchor": "cascade-math voids it on the framework's own calculus",
+      "b_at": "slippery-slope-eugenics#archetypeVariants.blended",
+      "b_anchor": "cascade-math voids it on the framework's own calculus",
+      "repair_src": "map:slippery-slope-eugenics#archetypeVariants.blended",
+      "repair": "ground the anti-coercion verdict in the consent-asymmetry and in the voluntariness the node elsewhere attributes to antinatalism, and let cascade-math be the second, weaker witness it is at violence-as-reductio.",
+      "also": "the node's long names the calculation as the safeguard (slippery-slope-eugenics#long, 'cascade-math-safeguard')"
+    },
+    {
+      "id": "PQ-06",
+      "serves": [
+        48
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "ai-fear#archetypeVariants.defender",
+      "anchor": "Either show the premises themselves entail the recklessness",
+      "b_at": "ai-fear#archetypeVariants.defender",
+      "b_anchor": "Either show the premises themselves entail the recklessness",
+      "repair_src": "map:ai-fear#archetypeVariants.defender",
+      "repair": "argue the test, either by showing a facilitation claim needs a base rate nobody has supplied, or by showing a facilitation standard indicts every substantive ethical framework."
+    },
+    {
+      "id": "PQ-07",
+      "serves": [
+        50
+      ],
+      "section": "needed_before_rejudging",
+      "locus": "bitter-childhood#long",
+      "anchor": "The biographical objection inadvertently proves the antinatalist point",
+      "b_at": "bitter-childhood#archetypeVariants.defender",
+      "b_anchor": "not seeing falsely, he is seeing without the anaesthetic",
+      "repair_src": "map:bitter-childhood#archetypeVariants.defender",
+      "repair": "run the etiology principle to its self-refutation and stop, without claiming the wounded arguer sees more clearly.",
+      "also": "the medium closes the same way: bitter-childhood#medium, 'perhaps the interlocutor should consider whether that suffering validates the framework rather than invalidates it'. Applying the defender slot's (b) to the long and medium is the seat's reading (R1-068)."
+    },
+    {
+      "id": "PQ-08",
+      "serves": [
+        5
+      ],
+      "section": "new_b_drafted_here",
+      "locus": "why-not-suicide#archetypeVariants.drifter",
+      "anchor": "Nothing in that tells the living to stop",
+      "b_at": "why-not-suicide#archetypeVariants.drifter",
+      "b_anchor": "Nothing in that tells the living to stop",
+      "repair_src": null,
+      "repair": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant."
+    },
+    {
+      "id": "PQ-09",
+      "serves": [
+        63
+      ],
+      "section": "new_b_drafted_here",
+      "locus": "luxury-belief#long",
+      "anchor": "consequences for economic systems, not for sentient beings",
+      "b_at": "luxury-belief#long",
+      "b_anchor": "consequences for economic systems, not for sentient beings",
+      "repair_src": null,
+      "repair": "the (b) drafted for #63: grant that contraction costs real people and send the weighing of those costs to economy-population#long.",
+      "also": "the sentence the move attacks is two sentences on: 'The cost is borne by an economic model ... not by individual people.'"
+    },
+    {
+      "id": "PQ-10",
+      "serves": [
+        22
+      ],
+      "section": "new_b_drafted_here",
+      "locus": "free-will-defense#long",
+      "anchor": "but this merely relocates the problem",
+      "b_at": "free-will-defense#long",
+      "b_anchor": "Free will does not mitigate the proxy gamble",
+      "repair_src": null,
+      "repair": "the (b) drafted for #22: confine the second level to the theodicy and let the third level's verdict fall on the act."
+    },
+    {
+      "id": "PQ-11",
+      "serves": [
+        67
+      ],
+      "section": "passed_over_by_a_new_d",
+      "locus": "eliminativism#long",
+      "anchor": "a barren ledger hands the antinatalist everything",
+      "b_at": "eliminativism#long",
+      "b_anchor": "The property is conserved under redescription; only the label moves",
+      "repair_src": "map:eliminativism#long",
+      "repair": "the second movement's closing 'a barren ledger hands the antinatalist everything' overclaims",
+      "note": "logged by the B2 (d) as a secondary item, axis s, minor; the new (d) at eliminativism#note does not wait on it"
+    },
+    {
+      "id": "PQ-12",
+      "serves": [
+        62
+      ],
+      "section": "passed_over_by_a_new_d",
+      "locus": "neuroscience-positive-states#long",
+      "anchor": "a joy never instantiated is withheld from no one",
+      "b_at": "neuroscience-positive-states#long",
+      "b_anchor": "a joy never instantiated is withheld from no one",
+      "repair_src": "map:neuroscience-positive-states#long",
+      "repair": "the honest repair-chain routes there",
+      "note": "headline (b), B2; its repair chain ends at bedrock-III, which is why #62 is a (d) and does not wait on it"
+    },
+    {
+      "id": "PQ-13",
+      "serves": [
+        42
+      ],
+      "section": "passed_over_by_a_new_d",
+      "locus": "bradley-no-subject#long",
+      "anchor": "There is no third branch",
+      "b_at": "bradley-no-subject#long",
+      "b_anchor": "There is no third branch",
+      "repair_src": "map:bradley-no-subject#long",
+      "repair": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+      "note": "headline (b), B1; #42 is a (d) at the bedrock this repair routes to and does not wait on it"
+    }
+  ]
+}
