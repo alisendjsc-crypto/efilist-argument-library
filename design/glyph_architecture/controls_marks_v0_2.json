@@ -7,8 +7,8 @@
    "flags": [],
    "rc": 0,
    "want": [
-    "ICONS: 7 of 7",
-    "MARKS: 37 of 37 regions on 6 pages"
+    "ICONS: 8 of 8",
+    "MARKS: 38 of 38 regions on 6 pages"
    ],
    "want_rc": 0
   },
@@ -107,7 +107,7 @@
    "rc": 0,
    "want": [
     "wrote  site/libraries/index.html",
-    "MARKS: 37 of 37"
+    "MARKS: 38 of 38"
    ],
    "want_rc": 0
   },
@@ -220,27 +220,39 @@
     "MARKS: RED -- 1 difference(s)"
    ],
    "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C20 the Adversarial Map's served icon is missing (F)",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  adversarial +not served",
+    "ICONS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
   }
  ],
  "gate": "tools/icons_regen_check.py",
  "inputs": {
-  "icons/gen_icons.py": "f7b1e83b552ec54077aef68fcad16cc1",
+  "icons/gen_icons.py": "b69a4f467762c4942ccb726946b2685e",
   "icons/sigils.json": "1e7e99bd628e65bb10d246f859eefe64",
   "site/abortion/combined.html": "d5a551d83e1cc425ab59c8e81c456b9d",
   "site/anthropocentrism/combined.html": "7b39591d36924bf03947631665d59ed8",
   "site/icon-abortion.svg": "fc6f8e8eb4898933f04e1a37085dc94b",
+  "site/icon-adversarial.svg": "afa3a69f79d6aec862d4a75d82419205",
   "site/icon-anthropocentrism.svg": "7667b76b8c4ca22c6ecbb6b91ccf1d17",
   "site/icon-combined.svg": "2b9f6e6faba2641fb241be9e645dd209",
   "site/icon-libraries.svg": "51bd7a9e9f5586fc09de0ea66e799f38",
   "site/icon-right-to-die.svg": "96976c7d06407b7822affd7f327c7b28",
   "site/icon-transgenderism.svg": "3f40782478eb4dc366185bf491f3bcd9",
   "site/icon-veganism.svg": "c91a0554d6dfed665878e252144c0f3f",
-  "site/libraries/index.html": "5a08146863995ff49f3eafec841223b0",
+  "site/libraries/index.html": "f57480e0f9fa7dcff75cb9764f21924f",
   "site/right-to-die/combined.html": "41b2a071608cf4dfcaa1b9a7f0dfb14f",
   "site/transgenderism/combined.html": "51b48ccc0da485a0ad7ddbb8deff9fa4",
   "site/veganism/combined.html": "e0a89fa0e0501f04f82252688a1b6074",
   "tools/icons_regen_check.py": "4a073a4f169c3a86e2ff8a23b97713a4"
  },
- "summary": "20 of 20 controls as expected",
+ "summary": "21 of 21 controls as expected",
  "version": "0.2"
 }

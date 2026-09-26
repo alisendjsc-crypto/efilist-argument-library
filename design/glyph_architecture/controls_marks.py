@@ -14,7 +14,8 @@ door and the five wings). C10 is retargeted at the abortion card's mark as it is
 one-shot), and C12-C19 prove each new way a page can drift: a wing's title mark, a plate's part name, one
 page's copy of the shared stylesheet, a region planted on the wrong page, a missing template, a wing grid
 changed under its plate's labels, a one-shot that moves a rect twice, and a missing page. A want item that
-starts with "re:" is a regular expression. v0_1 is LD1's record and stays as it was.
+starts with "re:" is a regular expression. v0_1 is LD1's record and stays as it was. F (the Adversarial Map's
+mark, approved 2026-09-26) adds the eighth favicon and C20.
 """
 import hashlib, json, os, re, shutil, subprocess, sys, tempfile
 
@@ -47,7 +48,7 @@ def gone(path):
 def W(w): return "site/%s/combined.html" % w
 
 CONTROLS = [
-    ("C0 unmutated", None, [], 0, ["ICONS: 7 of 7", "MARKS: 37 of 37 regions on 6 pages"]),
+    ("C0 unmutated", None, [], 0, ["ICONS: 8 of 8", "MARKS: 38 of 38 regions on 6 pages"]),
     ("C1 a pixel in the plate region changes role", sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
      [], 1, ["re:DIFF  libraries +marks-plate ", "MARKS: RED -- 1 difference(s)"]),
     ("C2 a says-line in the rows region is edited", sub(PAGE, b"which stays standing", b"which stands"),
@@ -67,7 +68,7 @@ CONTROLS = [
      [], 1, ["DIFF  veganism", "ICONS: RED -- 1 difference(s)"]),
     ("C9 --write-marks restores C1's page byte for byte",
      sub(PAGE, b'<rect class="sg-lit" x="90"', b'<rect class="sg-c" x="90"'),
-     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 37 of 37"]),
+     ["--write-marks"], 0, ["wrote  site/libraries/index.html", "MARKS: 38 of 38"]),
     ("C10 a library's mark on its card changes",
      sub(PAGE, b'<rect class="sg-lit m-fill" style="--d:0.5s" x="10" y="11"', b'<rect class="sg-c m-fill" style="--d:0.5s" x="10" y="11"'),
      [], 1, ["re:DIFF  libraries +marks-lib-abortion ", "MARKS: RED -- 1 difference(s)"]),
@@ -96,6 +97,8 @@ CONTROLS = [
      [], 1, ["ICONS: RED -- gen_icons.py refused to draw", "every rect moves exactly once"]),
     ("C19 a wing page is missing", gone(W("abortion")),
      [], 1, ["re:DIFF  site/abortion/combined.html +the page is missing", "MARKS: RED -- 1 difference(s)"]),
+    ("C20 the Adversarial Map's served icon is missing (F)", gone("site/icon-adversarial.svg"),
+     [], 1, ["re:DIFF  adversarial +not served", "ICONS: RED -- 1 difference(s)"]),
 ]
 
 record = {"artifact": "controls_marks", "version": "0.2", "gate": "tools/icons_regen_check.py",

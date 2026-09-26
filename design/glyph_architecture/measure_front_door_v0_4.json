@@ -1,0 +1,333 @@
+{
+ "url": "http://127.0.0.1:8783/libraries/",
+ "engines": {
+  "chromium": "153.0.8010.12",
+  "firefox": "155.0"
+ },
+ "layout": {
+  "runs": 80,
+  "overflowRuns": 0,
+  "aaMin": 5.06,
+  "aaBelow": 0,
+  "errors": 0,
+  "besideFromPx": 1152,
+  "namedMarksMin": 8,
+  "aaItems": 46
+ },
+ "motion": [
+  {
+   "engine": "chromium",
+   "case": "vfx, dark, motion allowed",
+   "during": 12,
+   "after": 0,
+   "hover": 1,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "legible (light ground)",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: cosmetic",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: off",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "phone, key below the fold",
+   "during": 12,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, dark, motion allowed",
+   "during": 12,
+   "after": 0,
+   "hover": 1,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "legible (light ground)",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: cosmetic",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: off",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "phone, key below the fold",
+   "during": 12,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  }
+ ],
+ "libraryMotion": [
+  {
+   "engine": "chromium",
+   "case": "vfx, dark, motion allowed",
+   "title": 1,
+   "titleStarts": 6,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 6,
+   "lastAfter": 0,
+   "hover": 6,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "legible (light ground)",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: cosmetic",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: off",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "phone",
+   "title": 0,
+   "titleStarts": 6,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 6,
+   "lastAfter": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, dark, motion allowed",
+   "title": 1,
+   "titleStarts": 6,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 6,
+   "lastAfter": 0,
+   "hover": 6,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "legible (light ground)",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: cosmetic",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: off",
+   "title": 0,
+   "titleStarts": 0,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 0,
+   "lastAfter": 0,
+   "hover": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "phone",
+   "title": 0,
+   "titleStarts": 6,
+   "keyRows": 0,
+   "lastBeforeSeen": 0,
+   "titleAfter": 0,
+   "lastWhenSeen": 6,
+   "lastAfter": 0,
+   "ok": true
+  }
+ ],
+ "sticky": [
+  {
+   "engine": "chromium",
+   "viewport": "1440x1100",
+   "stick": false,
+   "top": -527,
+   "h": 1643
+  },
+  {
+   "engine": "chromium",
+   "viewport": "1440x900",
+   "stick": false,
+   "top": -527,
+   "h": 1643
+  },
+  {
+   "engine": "chromium",
+   "viewport": "1920x1080",
+   "stick": false,
+   "top": -527,
+   "h": 1643
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1440x1100",
+   "stick": false,
+   "top": -527,
+   "h": 1659
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1440x900",
+   "stick": false,
+   "top": -527,
+   "h": 1659
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1920x1080",
+   "stick": false,
+   "top": -527,
+   "h": 1659
+  }
+ ],
+ "layerPan": null,
+ "summary": {
+  "layoutOk": true,
+  "motionOk": "12 of 12",
+  "libraryMotionOk": "12 of 12"
+ }
+}

@@ -22,6 +22,8 @@ as it was; this file supersedes it where they differ, and says so.*
    sessions, who own that page).
 4. **His POV/blur line goes to the wuld-ink lane** (relay R0160). It starts from a finding: the live
    peripheral blur renders nothing (§9).
+5. **F, the Adversarial Map's own mark, is RULED and built** on the front door (§7b). Its page's tab icon is the
+   content lane's to wire, in the adversarial wing v2 session.
 
 ---
 
@@ -41,6 +43,10 @@ as it was; this file supersedes it where they differ, and says so.*
   above."* That adopted: build A, B and D on the wings now; stage D on the flagship as a pin package, lit in
   the flagship's own tier colours; build C on Right to Die first; keep E as drawings, offered to the content
   sessions; send his POV/blur line to its own session in the wuld-ink lane.
+- **On F, the Adversarial Map's mark (added by relay R0153 from the L4 session):** *"I'm liking it. Approved as
+  is."* The seat read that reply as a yes to both questions it answered: F as drawn, and the built work going
+  live. His TO DO line it answers, verbatim (canon `adversarial_map.reader_aid_backlog_L4c`, priority 1 of the
+  order he adopted): *"Adversarial part of library has no unique favicon icon (fix)"*.
 - Everything v0.1 §1 records stands.
 
 ---
@@ -131,11 +137,11 @@ key's still copy instead.
 | wings: the motion gate (title), 5 cases × 2 wings × 2 engines | **20 of 20**: moves only at vfx + dark + motion allowed, once |
 | wings: anchor arrival | **6 of 6**: the linked card's tier mark plays once; no other card's moves; none under reduced motion or on a light ground |
 | Right to Die's spine | **2 of 2**: 17 nodes for 17 cards; lit 0 at the top, 5 at the sixth card, 16 at the end; follows the keyword filter; hidden on About and at 390 px; page ink on a light ground |
-| front door | **80 of 80** layouts without overflow, AA min 5.06, LD1's tier motion 12 of 12, **A 12 of 12** (cards below the fold wait until seen; hover replays; the key's rows never move) |
+| front door (with F) | **80 of 80** layouts without overflow, AA min 5.06, all 8 named marks, LD1's tier motion 12 of 12, **A 12 of 12** (cards below the fold wait until seen; hover replays; the key's rows never move) |
 | errors | **0** page or console errors |
 | xsurface | GREEN; the flagship untouched (`006aa983` / 2,987,411) |
 
-**Cost, over the wire (gzip -9):** front door +1.1 KB (10.1 → 11.3 KB); Right to Die +3.4 KB (with the spine);
+**Cost, over the wire (gzip -9):** front door +1.3 KB with F (10.1 → 11.4 KB); Right to Die +3.4 KB (with the spine);
 Abortion, Transgenderism, Anthropocentrism, Veganism +2.4–2.5 KB each. Raw: +4.7 KB and +10.3–13.5 KB.
 
 ---
@@ -196,6 +202,28 @@ are already on the page, and nowhere else. Added:
 
 ---
 
+## 7b. F: the Adversarial Map's own mark (RULED; BUILT on the front door)
+
+- **Its sentence, from his words for the page** (*"a mirror library to object to even my OWN beliefs"*, canon
+  `audience_and_purpose_ruling_L1a`): **the flagship's ladder faces its own reflection across a mirror.** The
+  flagship's five rungs, halved, on the left; their reflection on the right; the mirror between them is the lit
+  element, because the mirror is what the page is. It supersedes v0.1 §7.1's "if the Adversarial Map is to carry
+  a mark, it needs one drawn" and LD1a's lean to leave it bare.
+- **Its one-shot:** the ladder appears, the mirror draws down between, and the reflection appears across it
+  (`fill`, `dy`, `fill`; 0.85 s).
+- **Checks:** no silhouette shared with any of the 16 other marks (7 library, 5 tier, 4 v0 dispositions); its
+  nearest is the flagship's own ladder at IoU 0.35. It reads at 16 px in a tab (shown to him).
+- **Built:** `icons/gen_icons.py` draws it as the eighth favicon, `site/icon-adversarial.svg`
+  (`afa3a69f79d6aec862d4a75d82419205`, 1,176 B), and as `lib-adversarial` on the front door's Adversarial Map
+  card; the key lists it under "The libraries, and the map". 8 of 8 favicons, 38 of 38 regions;
+  `controls_marks.py` 21 of 21 (C20: the icon cannot go missing unnoticed); front door re-measured, v0_4.
+- **Not built, and not this lane's:** its page's tab. `/adversarial/` is rendered by the content lane's
+  `render_wing_v0_1.py`; it changes the page's `<link rel="icon">` to `/icon-adversarial.svg` (and may put
+  `lib-adversarial` beside its title) in the adversarial wing v2 session, after the pin session. Relayed with
+  the md5.
+
+---
+
 ## 8. E: outcome glyphs, v0 (drawings; offered to the content sessions in R0159)
 
 The Adversarial Map sorts every continuation four ways. One layout for all four: the continuation is the node on
@@ -237,6 +265,10 @@ family teaches a distinction only when two of its members are in view. Grids: `l
   layout run here was at the cosmetic tier for that reason.
 - A wing plate's part names render at about 6.5 px on a 360 px phone (§5.5). A second, narrow drawing would fix it at
   about 1.6 KB per wing; not done.
+- An instrument flake, fixed: sampling the front door's title after page load missed its one-shot once in
+  Firefox (it had already ended). `measure_front_door.mjs` now counts animation starts from before the page runs.
+  `measure_wings.mjs` samples the same way and passed 20 of 20 twice; it was not changed, so its record still
+  matches its code.
 - The flagship's high-contrast axis is its light ground; the house gate reads the ground itself
   (`wz-lightbg`), so the package needed no special case. Measured in all four modes.
 
@@ -246,21 +278,22 @@ family teaches a distinction only when two of its members are in view. Grids: `l
 
 | file | md5 | what |
 |---|---|---|
-| `icons/gen_icons.py` | `f7b1e83b` | every mark, the one-shots, the plates, the stylesheets, the manifest |
+| `icons/gen_icons.py` | `b69a4f46` | every mark, the one-shots, the plates, the stylesheets, the manifest |
+| `site/icon-adversarial.svg` | `afa3a69f` | F, the Adversarial Map's favicon (its page wires it later) |
 | `icons/sigils.json` | `1e7e99bd` | argue's tier grids, vendored (unchanged) |
 | `tools/icons_regen_check.py` | `4a073a4f` | the gate: 7 favicons + every page in the manifest; `--write-marks` |
-| `site/libraries/index.html` | `5a081468` | the front door |
+| `site/libraries/index.html` | `f57480e0` | the front door (with F on the map's card) |
 | `site/right-to-die/combined.html` | `41b2a071` | with the spine |
 | `site/abortion/combined.html` | `d5a551d8` | |
 | `site/transgenderism/combined.html` | `51b48ccc` | |
 | `site/anthropocentrism/combined.html` | `7b39591d` | |
 | `site/veganism/combined.html` | `e0a89fa0` | |
-| `design/glyph_architecture/controls_marks.py` | `66c14f50` | 20 controls |
-| `design/glyph_architecture/controls_marks_v0_2.json` | `c58ce5e7` | their record (pins the six pages' md5s; regenerate after any page change) |
+| `design/glyph_architecture/controls_marks.py` | `9367d60e` | 21 controls |
+| `design/glyph_architecture/controls_marks_v0_2.json` | `c17709f8` | their record (pins the six pages' md5s; regenerate after any page change) |
 | `design/glyph_architecture/measure_wings.mjs` | `8d2dc91d` | the wings, both engines |
 | `design/glyph_architecture/measure_wings_v0_1.json` | `de5bd013` | its record |
-| `design/glyph_architecture/measure_front_door.mjs` | `4c98546e` | the front door, both engines (§2b is A) |
-| `design/glyph_architecture/measure_front_door_v0_3.json` | `22fc4639` | its record |
+| `design/glyph_architecture/measure_front_door.mjs` | `25b790a3` | the front door, both engines (§2b is A; it counts the title's animation starts from before the page runs) |
+| `design/glyph_architecture/measure_front_door_v0_4.json` | `a4508cef` | its record for the front door with F (v0_3: the build before F) |
 | `design/glyph_architecture/ld2/` | | the design sheet and preview instruments: `ld2_marks.py` (E's grids; reads the generator for the rest), `build_ld2.py` (prototypes on scratch copies, costs, the sheet, the preview), `shoot_ld2.mjs`, `gif_ld2.mjs`, `preview_ld2.mjs` |
 | `design/marks-flagship` | `7bf5b35` | the package: flagship `acff9d81`, generator `2c7de4cb`, controls v0_3 `6cad40ba`, `measure_flagship_v0_1.json` `ce8f34c9` |
-| relays | | R0144 (the kickoff), R0159 (E, to the content sessions), R0160 (the layer's depth, to the wuld-ink lane) |
+| relays | | R0144 (the kickoff), R0153 (F, from L4c), R0159 (E, to the content sessions), R0160 (the layer's depth, to the wuld-ink lane), R0161 (the flagship package, FYI for R0150) |
