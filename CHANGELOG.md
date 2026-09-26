@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The collision list — 2026-09-25 (no release; the pin stands)
+
+The rule Josiah adopted at L2 is now a tool: **`adversarial_map_staging/r1/r1_collision_list.py`** lists every "already answered" entry whose answer, or whose own node, carries a flag in the map, and fails if any such entry is unruled. Its output, **`r1_collision_list_v0_1.md`** (and `.json`), is the worklist for the drafting pass: the 45 failed entries grouped by what each needs, then the 24 that hold. The rule flags 39 of the 45 failures; the other six were found only by reading, so the list is where reading starts, not where it stops. Canon `project_canon_v38_21.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## R1 complete — 2026-09-25 (no release; the pin stands)
 
 Josiah ruled the last 29 of the Adversarial Map's 69 "already answered" entries, phases B1–E: **6 hold, 23 fail**. R1 is complete at **24 hold, 45 fail**. The rows are appended to `adversarial_map_staging/r1/R1_rulings.json`; its gate is unchanged, and a new control record, `r1_rulings_gate_control_v0_2.json`, re-runs the gate's controls against the longer file. Two reading instruments are now committed beside them: `r1_dossiers.py`, which assembles each entry's full evidence, and `r1_quote_check.py`, which checks that every quotation a ruling leans on is verbatim. He also adopted the three reading rules the rulings were made under (canon `R1_rules_L3`). No failed entry has been changed yet. A drafting session will re-author or reclassify each one, and a session that did not draft it will judge the result. Canon `project_canon_v38_20.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
