@@ -75,6 +75,11 @@ class Sources:
         self.v14 = json.load(open(os.path.join(repo_dir, j["map_v1_4"]["file"]), encoding="utf-8"))["entries"]
         self.drafts = json.load(open(os.path.join(repo_dir, j["drafts"]["file"]), encoding="utf-8"))
         self.rulings = json.load(open(os.path.join(repo_dir, j["rulings"]["file"]), encoding="utf-8"))["rows"]
+        # L4b, 2026-09-26: register quotes resolve against the register this record judged
+        # (judged.register_v0_5, md5-pinned), not the one the current canon pins. The judgment's own
+        # asks (J-046, J-052) moved the later register, so a floating referent turned this gate RED.
+        self.reg = {b["bedrock_id"]: b for b in json.load(
+            open(os.path.join(repo_dir, j["register_v0_5"]["file"]), encoding="utf-8"))["bedrocks"]}
 
     def resolve(self, src):
         kind, _, rest = src.partition(":")
@@ -102,6 +107,10 @@ class Sources:
             if not os.path.exists(p):
                 raise KeyError("no file %s" % rest)
             return [open(p, encoding="utf-8").read()]
+        if kind == "register":
+            if rest not in self.reg:
+                raise KeyError("no bedrock %s in the judged register" % rest)
+            return list(strings(self.reg[rest]))
         return self.q.resolve(src)
 
 
