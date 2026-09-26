@@ -1,5 +1,5 @@
 // measure_front_door.mjs -- the front-door key ("Reading the marks"), measured in a real browser, both engines.
-// Design lane, 2026-09-25. Serve site/ first, then run:
+// Design lane, 2026-09-25; LD2 (2026-09-26) adds 2b, the library marks speaking once. Serve site/ first, then run:
 //   (cd site && python3 -m http.server 8765 --bind 127.0.0.1) &
 //   PLAYWRIGHT=<.../node_modules/playwright/index.mjs> node design/glyph_architecture/measure_front_door.mjs > out.json
 // Optional: BASELINE_URL=<the same page before the change> adds the vfx-tier overflow comparison (the house
@@ -37,8 +37,12 @@ async function open(b, url, { w, h, mode = 'standard', tier = '', reduced = 'no-
   p.on('pageerror', e => errs.push(String(e))); p.on('console', c => { if (c.type() === 'error') errs.push(c.text()); });
   await p.goto(url, { waitUntil: 'networkidle' }); return { ctx, p, errs };
 }
+// LD2 (2026-09-26): the library marks speak once. RUNNING animations on the library marks' rects (a mark carries
+// m-<verb> classes); a finished, filled one-shot is not counted.
+const lm = (p, sel) => p.evaluate(s => [...document.querySelectorAll(s)]
+  .reduce((n, e) => n + e.getAnimations().filter(a => a.playState === 'running').length, 0), sel);
 const rec = { url: URL, engines: {}, layout: { runs: 0, overflowRuns: 0, aaMin: 99, aaBelow: 0, errors: 0, besideFromPx: null, namedMarksMin: 99 },
-              motion: [], sticky: [], layerPan: null };
+              motion: [], libraryMotion: [], sticky: [], layerPan: null };
 for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   const b = await eng.launch(); rec.engines[en] = b.version();
   // 1. layout and AA at the cosmetic display tier (the vfx tier pans the stage; that is the layer's, see 4.)
@@ -64,6 +68,26 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
              : early === 0 && during === 0 && after === 0;
     rec.motion.push({ engine: en, case: name, during, after, hover, beforeScroll: early, ok });
   }
+  // 2b. A: the title's mark on arrival, each card's the first time it is seen, again on hover; nothing else moves
+  for (const [name, o, want] of [['vfx, dark, motion allowed', { w: 1440, h: 900 }, true], ['reduced motion', { w: 1440, h: 900, reduced: 'reduce' }, false],
+      ['legible (light ground)', { w: 1440, h: 900, mode: 'legible' }, false], ['display: cosmetic', { w: 1440, h: 900, tier: '1' }, false],
+      ['display: off', { w: 1440, h: 900, tier: '0' }, false], ['phone', { w: 390, h: 844 }, true]]) {
+    const { ctx, p } = await open(b, URL, o);
+    const r = { engine: en, case: name };
+    r.title = await lm(p, 'header.site h1 .lib-mark rect');
+    r.keyRows = await lm(p, '.mk-libs rect');
+    const last = '.lib-card[href="/veganism/combined"]';
+    r.lastBeforeSeen = await lm(p, last + ' .lib-mark rect');   // below the fold at both sizes: waits to be seen
+    await p.waitForTimeout(1600); r.titleAfter = await lm(p, 'header.site h1 .lib-mark rect');
+    await p.locator(last).scrollIntoViewIfNeeded(); await p.waitForTimeout(250); r.lastWhenSeen = await lm(p, last + ' .lib-mark rect');
+    await p.waitForTimeout(1600); r.lastAfter = await lm(p, last + ' .lib-mark rect');
+    if (o.w > 600) { await p.locator(last).hover(); await p.waitForTimeout(120); r.hover = await lm(p, last + ' .lib-mark rect'); }
+    await ctx.close();
+    r.ok = want ? r.title > 0 && r.titleAfter === 0 && r.lastBeforeSeen === 0 && r.lastWhenSeen > 0 && r.lastAfter === 0 && r.keyRows === 0
+                  && (o.w <= 600 || r.hover > 0)
+                : r.title === 0 && r.lastWhenSeen === 0 && r.keyRows === 0 && (r.hover || 0) === 0;
+    rec.libraryMotion.push(r);
+  }
   // 3. sticky only while the key fits the window
   for (const [w, h] of [[1440, 1100], [1440, 900], [1920, 1080]]) {
     const { ctx, p } = await open(b, URL, { w, h }); await p.waitForTimeout(600);
@@ -86,5 +110,6 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   await b.close();
 }
 rec.summary = { layoutOk: rec.layout.overflowRuns === 0 && rec.layout.aaBelow === 0 && rec.layout.errors === 0 && rec.layout.namedMarksMin === 7,
-                motionOk: rec.motion.filter(m => m.ok).length + ' of ' + rec.motion.length };
+                motionOk: rec.motion.filter(m => m.ok).length + ' of ' + rec.motion.length,
+                libraryMotionOk: rec.libraryMotion.filter(m => m.ok).length + ' of ' + rec.libraryMotion.length };
 console.log(JSON.stringify(rec, null, 1));

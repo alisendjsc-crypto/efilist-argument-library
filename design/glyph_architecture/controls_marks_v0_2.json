@@ -1,0 +1,246 @@
+{
+ "artifact": "controls_marks",
+ "controls": [
+  {
+   "as_expected": true,
+   "control": "C0 unmutated",
+   "flags": [],
+   "rc": 0,
+   "want": [
+    "ICONS: 7 of 7",
+    "MARKS: 37 of 37 regions on 6 pages"
+   ],
+   "want_rc": 0
+  },
+  {
+   "as_expected": true,
+   "control": "C1 a pixel in the plate region changes role",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-plate ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C2 a says-line in the rows region is edited",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-rows ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C3 the mini region's opening marker is gone",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-mini +markers not found in the page"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C4 the rows region's opening marker appears twice",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-rows +markers not found in the page"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C5 one byte of the vendored sigils.json changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "not the pinned copy"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C6 a tier drawn as the flagship's ladder, top rung lit (L1a)",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "two marks share a silhouette"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C7 the plate's mark changes under its labels",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "plate labels"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C8 a served favicon changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  veganism",
+    "ICONS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C9 --write-marks restores C1's page byte for byte",
+   "flags": [
+    "--write-marks"
+   ],
+   "rc": 0,
+   "want": [
+    "wrote  site/libraries/index.html",
+    "MARKS: 37 of 37"
+   ],
+   "want_rc": 0
+  },
+  {
+   "as_expected": true,
+   "control": "C10 a library's mark on its card changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-lib-abortion ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C11 the page carries a region the generator does not draw",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  libraries +marks-ghost +not drawn by gen_icons.py",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C12 a wing's title mark changes (the step goes dark)",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  right-to-die +marks-lib-right-to-die ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C13 a plate's part name is edited on its page",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  abortion +marks-plate-abortion ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C14 one page's copy of the shared motion stylesheet drifts",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  transgenderism +marks-lm-css ",
+    "re:SAME  veganism +marks-lm-css ",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C15 a region drawn for another page is planted on a wing",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  anthropocentrism +marks-plate-veganism +drawn, but not for this page",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C16 a wing page loses its tier-mark template's markers",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  veganism +marks-tier-marks +markers not found in the page"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C17 a wing's grid changes under its plate's labels",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "plate labels"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C18 a one-shot moves one rect twice and leaves one still",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "every rect moves exactly once"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C19 a wing page is missing",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "re:DIFF  site/abortion/combined.html +the page is missing",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  }
+ ],
+ "gate": "tools/icons_regen_check.py",
+ "inputs": {
+  "icons/gen_icons.py": "f7b1e83b552ec54077aef68fcad16cc1",
+  "icons/sigils.json": "1e7e99bd628e65bb10d246f859eefe64",
+  "site/abortion/combined.html": "d5a551d83e1cc425ab59c8e81c456b9d",
+  "site/anthropocentrism/combined.html": "7b39591d36924bf03947631665d59ed8",
+  "site/icon-abortion.svg": "fc6f8e8eb4898933f04e1a37085dc94b",
+  "site/icon-anthropocentrism.svg": "7667b76b8c4ca22c6ecbb6b91ccf1d17",
+  "site/icon-combined.svg": "2b9f6e6faba2641fb241be9e645dd209",
+  "site/icon-libraries.svg": "51bd7a9e9f5586fc09de0ea66e799f38",
+  "site/icon-right-to-die.svg": "96976c7d06407b7822affd7f327c7b28",
+  "site/icon-transgenderism.svg": "3f40782478eb4dc366185bf491f3bcd9",
+  "site/icon-veganism.svg": "c91a0554d6dfed665878e252144c0f3f",
+  "site/libraries/index.html": "5a08146863995ff49f3eafec841223b0",
+  "site/right-to-die/combined.html": "41b2a071608cf4dfcaa1b9a7f0dfb14f",
+  "site/transgenderism/combined.html": "51b48ccc0da485a0ad7ddbb8deff9fa4",
+  "site/veganism/combined.html": "e0a89fa0e0501f04f82252688a1b6074",
+  "tools/icons_regen_check.py": "4a073a4f169c3a86e2ff8a23b97713a4"
+ },
+ "summary": "20 of 20 controls as expected",
+ "version": "0.2"
+}
