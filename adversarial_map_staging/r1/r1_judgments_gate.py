@@ -18,7 +18,11 @@ names the row it replaces. This gate checks, and exits 1 on any failure:
      v1_4:, drafts:, rulings:, design: and render:; register: resolves against the register this
      record judged, judged.register_v0_5, since L4b; canon: still reads the one canon on disk,
      which stays true while canon blocks are never edited in place);
-  6. the judged artifacts are still at the md5s the header names;
+  6. the judged artifacts are still at the md5s the header names, except an append-only record
+     (R1_rulings.json), which may have grown by appended rows since the judgment: its pinned bytes
+     must then be recoverable from git history, with their header unchanged and their rows a prefix
+     of the current file's. Every judged artifact is read at its pinned bytes, never at a later
+     state (gate2, 2026-09-26, when R1-070 was appended);
   7. append-only: the committed base (git HEAD's copy, or --base) is intact: header unchanged,
      every committed row still present, unchanged and in order.
 
@@ -56,6 +60,44 @@ def md5(path):
     return hashlib.md5(open(path, "rb").read()).hexdigest()
 
 
+# A record this judgment pins that may grow by appended rows after it. The judgment is read at the
+# pinned bytes, recovered from git history once the file has grown.
+APPEND_ONLY = {"adversarial_map_staging/r1/R1_rulings.json"}
+
+
+def git_bytes_at(repo_dir, rel, want):
+    """The newest committed blob of rel whose md5 is want, or None."""
+    log = subprocess.run(["git", "-C", repo_dir, "log", "--format=%H", "--", rel], capture_output=True, text=True)
+    for sha in log.stdout.split() if log.returncode == 0 else []:
+        r = subprocess.run(["git", "-C", repo_dir, "show", "%s:%s" % (sha, rel)], capture_output=True)
+        if r.returncode == 0 and hashlib.md5(r.stdout).hexdigest() == want:
+            return r.stdout
+    return None
+
+
+def pinned_bytes(repo_dir, rel, want, history=None):
+    """The bytes a pin names: the working copy if it still matches, else from history, else None."""
+    p = os.path.join(repo_dir, rel)
+    if os.path.exists(p):
+        b = open(p, "rb").read()
+        if hashlib.md5(b).hexdigest() == want:
+            return b
+    return (history or (lambda r_, w_: git_bytes_at(repo_dir, r_, w_)))(rel, want)
+
+
+def rows_grown(base_bytes, path):
+    """How many rows a record gained by appending since base_bytes, or None if it changed otherwise."""
+    try:
+        base, cur = json.loads(base_bytes.decode("utf-8")), json.load(open(path, encoding="utf-8"))
+    except (ValueError, OSError):
+        return None
+    if {k: v for k, v in base.items() if k != "rows"} != {k: v for k, v in cur.items() if k != "rows"}:
+        return None
+    if cur.get("rows", [])[:len(base.get("rows", []))] != base.get("rows", []):
+        return None
+    return len(cur["rows"]) - len(base["rows"])
+
+
 def strings(o):
     if isinstance(o, dict):
         for v in o.values():
@@ -70,18 +112,26 @@ def strings(o):
 class Sources:
     """r1_quote_check's sources, plus the ones a judgment of drafts needs."""
 
-    def __init__(self, repo_dir, doc):
+    def __init__(self, repo_dir, doc, history=None):
         self.repo = repo_dir
         self.q = Q.Texts()
         j = doc["judged"]
-        self.v14 = json.load(open(os.path.join(repo_dir, j["map_v1_4"]["file"]), encoding="utf-8"))["entries"]
-        self.drafts = json.load(open(os.path.join(repo_dir, j["drafts"]["file"]), encoding="utf-8"))
-        self.rulings = json.load(open(os.path.join(repo_dir, j["rulings"]["file"]), encoding="utf-8"))["rows"]
+
+        def at(key):
+            # gate2, 2026-09-26: every judged artifact is read at its pinned bytes. If those are gone,
+            # rule 6 reports it and the working copy is read so the other checks still run.
+            b = pinned_bytes(repo_dir, j[key]["file"], j[key]["md5"], history)
+            if b is None:
+                b = open(os.path.join(repo_dir, j[key]["file"]), "rb").read()
+            return json.loads(b.decode("utf-8"))
+
+        self.v14 = at("map_v1_4")["entries"]
+        self.drafts = at("drafts")
+        self.rulings = at("rulings")["rows"]
         # L4b, 2026-09-26: register quotes resolve against the register this record judged
         # (judged.register_v0_5, md5-pinned), not the one the current canon pins. The judgment's own
         # asks (J-046, J-052) moved the later register, so a floating referent turned this gate RED.
-        self.reg = {b["bedrock_id"]: b for b in json.load(
-            open(os.path.join(repo_dir, j["register_v0_5"]["file"]), encoding="utf-8"))["bedrocks"]}
+        self.reg = {b["bedrock_id"]: b for b in at("register_v0_5")["bedrocks"]}
 
     def resolve(self, src):
         kind, _, rest = src.partition(":")
@@ -129,7 +179,7 @@ def texts_of(r):
     return [t for t in out if isinstance(t, str)]
 
 
-def check(path, repo_dir, base_text):
+def check(path, repo_dir, base_text, history=None):
     fails, info = [], []
     doc = json.load(open(path, encoding="utf-8"))
     if list(doc) != HEADER_KEYS:
@@ -138,20 +188,30 @@ def check(path, repo_dir, base_text):
     if not isinstance(rows, list) or not rows:
         return ["structure: no rows"], info
 
-    # 6 -- the referents have not moved
+    # 6 -- the referents have not moved, or an append-only one has only grown
     for name, pin in doc["judged"].items():
         p = os.path.join(repo_dir, pin["file"])
         got = md5(p) if os.path.exists(p) else "MISSING"
-        if got != pin["md5"]:
+        if got == pin["md5"]:
+            continue
+        if pin["file"] not in APPEND_ONLY:
             fails.append("pin %s: %s is %s, header names %s" % (name, pin["file"], got, pin["md5"]))
-    src = Sources(repo_dir, doc)
+            continue
+        base = pinned_bytes(repo_dir, pin["file"], pin["md5"], history)
+        grown = rows_grown(base, p) if base is not None and got != "MISSING" else None
+        if grown is None:
+            fails.append("pin %s: %s is %s, header names %s, and it has not merely grown by appended rows"
+                         % (name, pin["file"], got, pin["md5"]))
+        else:
+            info.append("pin %s: %s has grown by %d appended row(s) since the judgment; read at %s"
+                        % (name, pin["file"], grown, pin["md5"][:8]))
+    src = Sources(repo_dir, doc, history)
     drafts = {x["n"]: x for x in src.drafts["drafts"]}
     targets = {}
     for r in src.rulings:
         targets[r["n"]] = r["target"]
-    reg = json.load(open(os.path.join(repo_dir, doc["judged"]["register_v0_5"]["file"]), encoding="utf-8"))
     stored = {"%s %s %s" % (b["bedrock_id"], rel["kind"], rel["to"]): rel
-              for b in reg["bedrocks"] for rel in b["relations"]}
+              for b in src.reg.values() for rel in b["relations"]}
     drafted_rels = {k for k, rel in stored.items() if str(rel.get("note", "")).startswith("L4, drafted")}
 
     chains, current = {}, {}
@@ -270,14 +330,19 @@ def self_test(emit=None):
     tmp = tempfile.mkdtemp(prefix="r1jgate_")
     results = []
     try:
-        def stage(mut_doc=None, mut_pin=None, base=None):
+        def stage(mut_doc=None, mut_pin=None, base=None, rulings=None):
+            # every judged artifact is staged at its pinned bytes; `rulings` rewrites the staged rulings
+            # file from its pinned document (grow it, or edit it) to test the append-only exception
             d = os.path.join(tmp, "c%d" % len(results))
             for pin in doc0["judged"].values():
                 dst = os.path.join(d, pin["file"])
                 os.makedirs(os.path.dirname(dst), exist_ok=True)
-                shutil.copyfile(os.path.join(REPO, pin["file"]), dst)
+                b = pinned_bytes(REPO, pin["file"], pin["md5"])
+                if rulings and pin["file"] in APPEND_ONLY:
+                    rd = json.loads(b.decode("utf-8")); rulings(rd)
+                    b = json.dumps(rd, ensure_ascii=False).encode("utf-8")
+                open(dst, "wb").write(b)
                 if mut_pin and pin["file"].endswith(mut_pin):
-                    b = open(dst, "rb").read()
                     open(dst, "wb").write(b[:-1] + (b"\n" if b[-1:] != b"\n" else b" "))
             for name in os.listdir(os.path.join(REPO, STG)):
                 if re.fullmatch(r"adversarial_map_design_v0_\d+\.md|render_[a-z0-9_]+\.py", name):
@@ -312,11 +377,15 @@ def self_test(emit=None):
             ("C9", "a relation names one the register lacks", dict(mut_doc=mut(lambda d: d["rows"][first("relation")].update(relation="HR-01 conditions HR-02"))), 1, "not stored in register"),
             ("C10", "a committed row is edited in place", dict(mut_doc=mut(lambda d: d["rows"][0].update(reason=d["rows"][0]["reason"] + " (edited)")), base=doc0), 1, "was edited or removed"),
             ("C11", "a correction row supersedes properly", dict(mut_doc=mut(lambda d: d["rows"].append(dict(extra, supersedes=d["rows"][first("draft")]["id"]))), base=doc0), 0, None),
+            ("C12", "the rulings file grows by one appended row", dict(rulings=lambda rd: rd["rows"].append(dict(rd["rows"][-1], row="R1-%03d" % (len(rd["rows"]) + 1)))), 0, None),
+            ("C13", "a committed rulings row is edited in place", dict(rulings=lambda rd: rd["rows"][0].update(reason=rd["rows"][0]["reason"] + " (edited)")), 1, "not merely grown by appended rows"),
         ]
+        # the staged tree has no git; history resolves against this repo's own, as the real run does
+        history = lambda rel, want: pinned_bytes(REPO, rel, want)
         ok_all = True
         for cid, what, kw, want_rc, want_msg in controls:
             p, d, base = stage(**kw)
-            fails, _ = check(p, d, base)
+            fails, _ = check(p, d, base, history)
             rc = 1 if fails else 0
             matched = (want_msg is None and not fails) or (want_msg is not None and any(want_msg in f for f in fails))
             good = rc == want_rc and matched
@@ -336,7 +405,8 @@ def self_test(emit=None):
         rec = {"artifact": os.path.basename(emit), "gate": "adversarial_map_staging/r1/r1_judgments_gate.py",
                "gate_md5": md5(os.path.abspath(__file__)), "judgments_md5": md5(real),
                "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its "
-                       "own failure line; C11, a proper correction row, must stay GREEN.",
+                       "own failure line; C11, a proper correction row, must stay GREEN; C12, the rulings file grown by an "
+                       "appended row, must stay GREEN, and C13, a committed rulings row edited in place, must go RED.",
                "controls": results}
         open(emit, "w", encoding="utf-8").write(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
     return 0 if ok_all else 1

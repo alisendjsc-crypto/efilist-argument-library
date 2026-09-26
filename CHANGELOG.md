@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## #46 re-ruled — 2026-09-26 (no release; the pin stands)
+
+On Josiah's word, *"Proceed with all of your recommendations."*, the red-button defender entry (#46) no longer holds. Its answer needed the long to show that the worth of the lives the button ends is outweighed, and the map now records at that very spot (#45's "where this line terminates" entry) that the long's case ends in a tie. The ruling is a new row, **R1-070**, in `adversarial_map_staging/r1/R1_rulings.json`; it replaces R1-011 without editing it, and R1 now stands at 23 holds and 46 fails over the same 69 entries. The two gates that check the judgments now read the rulings as they were when each judgment was made, so a row appended later cannot turn them red, or make a judgment look wrong for something that happened after it. The drafting seat gives #46 its new class next, and a seat that did not draft it judges that. Canon `project_canon_v38_27.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The fixes judged, and the entries they touched re-read — 2026-09-26 (no release; the pin stands)
 
 A session that wrote none of them has judged the six fixes Josiah's word called for. All six are accepted. #14's objection now reaches the bedrock its card names. #58 becomes a repair candidate, and the repair it needs rests on no disputed premise. Three cards' routing notes and one card's grounds say what they mean. The register's three changes are accepted too, including the corrected direction of the relation he ratified at K349, and so is the four-line change the drafting session made to the first judgment's gate. The eleven entries that held in R1, but now sit next to the new drafts, were read again. Ten still hold. One, #46, does not: a new record at the place its answer points to shows that the objection it had to empty still stands, so it goes back to Josiah with a recommendation to re-rule it. The record is **`adversarial_map_staging/r1/R1_v1_5_judgments.json`**, append-only, with every quotation checked and its own gate. **Judged is not ruled.** Canon `project_canon_v38_26.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
