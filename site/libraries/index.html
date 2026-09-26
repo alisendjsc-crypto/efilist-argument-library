@@ -171,6 +171,71 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
 @media (max-width:520px){ .suite-rail div{flex:1 1 45%;border-bottom:1px solid var(--line)} }
 .lib-reg{color:#88847c}
 [data-mode="legible"] .lib-reg,[data-mode="high-contrast"] .lib-reg,[data-mode="both"] .lib-reg{color:var(--dim)}
+/* === Design lane, 2026-09-25: READING THE MARKS. The five tier marks, drawn by the argue seat in the
+   favicons' grammar and ruled at argue S43 ("I like them."), explained beside the libraries. Every mark
+   and the plate come from icons/gen_icons.py (data: icons/sigils.json); the regions between its markers
+   are generated, never edited here (tools/icons_regen_check.py gates them). A mark keeps the favicon's
+   own #0a0a0a ground in every reading mode: it is the same object as the icon in the tab. */
+.mk-tile{display:inline-block;line-height:0;background:#0a0a0a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sg,.mk-plate-svg{display:block;shape-rendering:crispEdges}
+.sg-c{fill:#e8e4dd}
+.sg-lit{fill:#ef3a58}
+.t5 .sg-m{transform-box:view-box;transform-origin:8px 8px}
+.suite-rail .rail-tiers{display:grid;grid-template-columns:auto 1fr;column-gap:.65rem;align-items:center}
+.rail-tiers>span{grid-column:1/-1}
+.mk-mini{display:flex;gap:3px;width:max-content}
+.mk-mini:focus-visible{outline:1px solid var(--accent);outline-offset:3px}
+.marks{margin:2.2rem 0 0;padding-top:1.1rem;border-top:1px solid var(--line)}
+.marks h2{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:500;margin:0 0 .45rem}
+.mk-lead{font-size:.8rem;color:var(--dim);line-height:1.55;margin:0 0 1rem;max-width:40rem}
+.mk-plate{margin:0 0 .6rem}
+.mk-plate .pl{display:inline-block;line-height:0;background:#0a0a0a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pl-grid{fill:none;stroke:#1f1f1f;stroke-width:1}
+.pl-lead{fill:#77726a}
+.pl-lbl{font:12px var(--mono);fill:#b3aea6}
+.mk-plate figcaption{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin:.45rem 0 0}
+.mk-key{font-size:.78rem;color:var(--fg);line-height:1.55;margin:0 0 1.1rem;max-width:40rem}
+.mk-rows{list-style:none;margin:0;padding:0}
+.mk-row{display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:.75rem;align-items:start;margin:0 0 .85rem}
+.mk-txt{display:block;min-width:0}
+.mk-name{display:block;font-family:var(--mono);font-size:.76rem;color:var(--fg);line-height:1.35}
+.mk-name b{font-weight:700;margin-right:.3rem}
+.mk-says{display:block;font-size:.74rem;color:var(--dim);line-height:1.45;margin-top:.15rem}
+.mk-fam{font-size:.72rem;color:var(--dim);line-height:1.5;margin:.2rem 0 .55rem}
+.mk-go{font-family:var(--mono);font-size:.72rem;margin:0}
+.mk-go a::after{content:" \2192"}
+[data-mode="legible"] .marks h2,[data-mode="both"] .marks h2{font-family:var(--mono)}
+@media (min-width:40rem) and (max-width:71.99rem){
+  .mk-cols{display:grid;grid-template-columns:240px minmax(0,1fr);column-gap:2rem;align-items:start}
+}
+@media (min-width:72rem){
+  .wrap{max-width:80rem;display:grid;grid-template-columns:minmax(0,1fr) 19rem;column-gap:2.5rem;align-items:start}
+  .wrap>header.site,.wrap>footer{grid-column:1/-1}
+  .wrap>main{grid-column:1}
+  .marks{grid-column:2;grid-row:2;margin:0;padding:0 0 0 1.25rem;border-top:0;border-left:1px solid var(--line)}
+  .marks.stick{position:sticky;top:1.5rem}
+}
+/* MOTION: the game's five one-shots (argue S43, ag-sig-*), copied; opacity and transform only, no loop.
+   Gated as the house layer gates its glow and its sound -- the vfx tier, a dark ground, motion allowed --
+   because one power button should mean one thing. The marks play once, in order, the first time the key
+   is seen; hovering a row plays its mark again. The rail's five never move. */
+@keyframes lib-sig-return{0%{transform:translateX(0)}45%{transform:translateX(3px)}100%{transform:translateX(0)}}
+@keyframes lib-sig-handed{from{opacity:0;transform:translate(-5px,-5px)}to{opacity:1;transform:translate(0,0)}}
+@keyframes lib-sig-rest{from{opacity:.35;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes lib-sig-descend{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes lib-sig-close{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}
+@media (prefers-reduced-motion:no-preference){
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t1 .sg-m,html.wz-vfx:not(.wz-lightbg) .marks:not(.play) .t1:hover .sg-m{animation:lib-sig-return .7s ease-in-out both}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t2 .sg-m,html.wz-vfx:not(.wz-lightbg) .marks:not(.play) .t2:hover .sg-m{animation:lib-sig-handed .7s ease-out both}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t3 .sg-m,html.wz-vfx:not(.wz-lightbg) .marks:not(.play) .t3:hover .sg-m{animation:lib-sig-rest .6s ease-out both}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t4 .sg-m,html.wz-vfx:not(.wz-lightbg) .marks:not(.play) .t4:hover .sg-m{animation:lib-sig-descend .7s ease-out both}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t5 .sg-m,html.wz-vfx:not(.wz-lightbg) .marks:not(.play) .t5:hover .sg-m{animation:lib-sig-close .7s ease-out both}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t1 .sg-m{animation-delay:.2s}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t2 .sg-m{animation-delay:.45s}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t3 .sg-m{animation-delay:.7s}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t4 .sg-m{animation-delay:.95s}
+  html.wz-vfx:not(.wz-lightbg) .marks.play .t5 .sg-m{animation-delay:1.2s}
+}
 </style>
 <script>
 /* K156 reading-mode bootstrap - pre-paint, no FOUC */
@@ -230,7 +295,15 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
     </div>
     </header>
     <main>
-      <div class="suite-rail"><div><b>6</b><span>libraries</span></div><div><b>132</b><span>objections</span></div><div><b>5</b><span>tiers</span></div><div><b>35</b><span>mechanisms</span></div><div><b>136</b><span>attested deployments</span></div></div>
+      <div class="suite-rail"><div><b>6</b><span>libraries</span></div><div><b>132</b><span>objections</span></div><div class="rail-tiers"><b>5</b><a class="mk-mini" href="#marks" aria-label="Reading the marks: the five tier marks">
+<!-- gen_icons.py:mini -->
+<span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><rect class="sg-lit" x="1" y="2" width="4" height="4"/><rect class="sg-c" x="5" y="3" width="9" height="2"/><rect class="sg-c" x="12" y="5" width="2" height="7"/><rect class="sg-c" x="6" y="10" width="6" height="2"/></svg></span>
+<span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><rect class="sg-c" x="1" y="1" width="4" height="4"/><rect class="sg-c" x="5" y="5" width="1" height="1"/><rect class="sg-c" x="6" y="6" width="4" height="4"/><rect class="sg-c" x="10" y="10" width="1" height="1"/><rect class="sg-lit" x="11" y="11" width="4" height="4"/></svg></span>
+<span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><rect class="sg-lit" x="6" y="1" width="4" height="4"/><rect class="sg-c" x="7" y="5" width="2" height="2"/><rect class="sg-c" x="2" y="7" width="12" height="2"/><rect class="sg-c" x="2" y="9" width="2" height="2"/><rect class="sg-c" x="12" y="9" width="2" height="2"/><rect class="sg-c" x="1" y="11" width="4" height="4"/><rect class="sg-c" x="11" y="11" width="4" height="4"/></svg></span>
+<span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><rect class="sg-c" x="7" y="1" width="2" height="4"/><rect class="sg-lit" x="5" y="5" width="6" height="6"/><rect class="sg-c" x="1" y="11" width="14" height="2"/></svg></span>
+<span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><rect class="sg-c" x="1" y="1" width="4" height="2"/><rect class="sg-c" x="1" y="3" width="2" height="2"/><rect class="sg-c" x="11" y="1" width="4" height="2"/><rect class="sg-c" x="13" y="3" width="2" height="2"/><rect class="sg-c" x="1" y="13" width="4" height="2"/><rect class="sg-c" x="1" y="11" width="2" height="2"/><rect class="sg-c" x="11" y="13" width="4" height="2"/><rect class="sg-c" x="13" y="11" width="2" height="2"/><rect class="sg-lit" x="6" y="6" width="4" height="4"/></svg></span>
+<!-- /gen_icons.py:mini -->
+</a><span>tiers</span></div><div><b>35</b><span>mechanisms</span></div><div><b>136</b><span>attested deployments</span></div></div>
       <p class="lib-intro">The flagship argues that coming into existence is a harm. The four wings are rebut-only optionality defenses: each answers the objections to a contested liberty without urging anyone to exercise it. Veganism is not a wing but a flagship-adjacent module: it argues harm on the flagship&rsquo;s own register rather than defending a choice. &ldquo;Refusal Libraries&rdquo; is a venue name, not a category claim &mdash; every card below carries its own register. Pick a surface.</p>
       <div class="lib-grid">
       <a class="lib-card flagship" href="/combined">
@@ -284,6 +357,61 @@ footer.site{border-top:1px solid var(--line);margin-top:2rem;padding-top:1rem;
         </div>
       </section>
     </main>
+    <aside class="marks" id="marks" aria-labelledby="marks-h">
+      <h2 id="marks-h">Reading the marks</h2>
+      <p class="mk-lead">The flagship sorts its objections into five tiers. Each tier has a mark: a small diagram of how an objection of that tier is built. It never pictures a topic.</p>
+      <div class="mk-cols">
+        <div class="mk-a">
+          <figure class="mk-plate"><span class="pl">
+<!-- gen_icons.py:plate -->
+<svg class="mk-plate-svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Tier 3&#8217;s mark, enlarged: a lit node on a stem over a bar, held up by two nodes.">
+<path class="pl-grid" d="M15.5 0V240M0 15.5H240M30.5 0V240M0 30.5H240M45.5 0V240M0 45.5H240M60.5 0V240M0 60.5H240M75.5 0V240M0 75.5H240M90.5 0V240M0 90.5H240M105.5 0V240M0 105.5H240M120.5 0V240M0 120.5H240M135.5 0V240M0 135.5H240M150.5 0V240M0 150.5H240M165.5 0V240M0 165.5H240M180.5 0V240M0 180.5H240M195.5 0V240M0 195.5H240M210.5 0V240M0 210.5H240M225.5 0V240M0 225.5H240"/>
+<rect class="sg-lit" x="90" y="15" width="60" height="60"/><rect class="sg-c" x="105" y="75" width="30" height="30"/><rect class="sg-c" x="30" y="105" width="180" height="30"/><rect class="sg-c" x="30" y="135" width="30" height="30"/><rect class="sg-c" x="180" y="135" width="30" height="30"/><rect class="sg-c" x="15" y="165" width="60" height="60"/><rect class="sg-c" x="165" y="165" width="60" height="60"/>
+<rect class="pl-lead" x="76" y="45" width="14" height="1"/><rect class="pl-lead" x="135" y="90" width="20" height="1"/><rect class="pl-lead" x="75" y="195" width="25" height="1"/><rect class="pl-lead" x="140" y="195" width="25" height="1"/>
+<text class="pl-lbl" x="72" y="49" text-anchor="end">lit</text><text class="pl-lbl" x="159" y="94" text-anchor="start">edge</text><text class="pl-lbl" x="120" y="199" text-anchor="middle">node</text>
+</svg>
+<!-- /gen_icons.py:plate -->
+</span><figcaption>T3, enlarged. Each square is one pixel of the mark.</figcaption></figure>
+          <p class="mk-key">Blocks are nodes. Thin lines are edges. A long bar underneath is a ground; corner pieces are brackets. One element is lit: look there first.</p>
+        </div>
+        <div class="mk-b">
+          <ol class="mk-rows" id="mk-rows">
+<!-- gen_icons.py:rows -->
+<li class="mk-row t1"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-lit sg-m" x="1" y="2" width="4" height="4"/><rect class="sg-c" x="5" y="3" width="9" height="2"/><rect class="sg-c" x="12" y="5" width="2" height="7"/><rect class="sg-c" x="6" y="10" width="6" height="2"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T1</b> Emotional / Reflexive</span><span class="mk-says">a reflex: the line goes out, turns, and comes back short of where it began</span></span></li>
+<li class="mk-row t2"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c" x="1" y="1" width="4" height="4"/><rect class="sg-c" x="5" y="5" width="1" height="1"/><rect class="sg-c" x="6" y="6" width="4" height="4"/><rect class="sg-c" x="10" y="10" width="1" height="1"/><rect class="sg-lit sg-m" x="11" y="11" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T2</b> Folk Philosophical</span><span class="mk-says">handed down: three nodes, each taken from the one above</span></span></li>
+<li class="mk-row t3"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-lit sg-m" x="6" y="1" width="4" height="4"/><rect class="sg-c" x="7" y="5" width="2" height="2"/><rect class="sg-c" x="2" y="7" width="12" height="2"/><rect class="sg-c" x="2" y="9" width="2" height="2"/><rect class="sg-c" x="12" y="9" width="2" height="2"/><rect class="sg-c" x="1" y="11" width="4" height="4"/><rect class="sg-c" x="11" y="11" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T3</b> Structural / Pragmatic</span><span class="mk-says">a structure: one node held up by two below it; take one away and it falls</span></span></li>
+<li class="mk-row t4"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c sg-m" x="7" y="1" width="2" height="4"/><rect class="sg-lit" x="5" y="5" width="6" height="6"/><rect class="sg-c" x="1" y="11" width="14" height="2"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T4</b> Genuine Philosophical</span><span class="mk-says">bedrock: the reasons come down and stop on a primitive, which stays standing</span></span></li>
+<li class="mk-row t5"><span class="mk-tile"><svg class="sg" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true"><rect class="sg-c sg-m" x="1" y="1" width="4" height="2"/><rect class="sg-c sg-m" x="1" y="3" width="2" height="2"/><rect class="sg-c sg-m" x="11" y="1" width="4" height="2"/><rect class="sg-c sg-m" x="13" y="3" width="2" height="2"/><rect class="sg-c sg-m" x="1" y="13" width="4" height="2"/><rect class="sg-c sg-m" x="1" y="11" width="2" height="2"/><rect class="sg-c sg-m" x="11" y="13" width="4" height="2"/><rect class="sg-c sg-m" x="13" y="11" width="2" height="2"/><rect class="sg-lit" x="6" y="6" width="4" height="4"/></svg></span><span class="mk-txt"><span class="mk-name"><b>T5</b> Meta-Objection</span><span class="mk-says">about the objections: a node held inside brackets</span></span></li>
+<!-- /gen_icons.py:rows -->
+          </ol>
+          <p class="mk-fam">The library icons in your browser tab share this grammar: they name a library, where these five describe an objection.</p>
+          <p class="mk-go"><a href="/combined">See the tiers in the flagship</a></p>
+        </div>
+      </div>
+    </aside>
+    <script>
+    /* READING THE MARKS. (1) The key stays in view beside the libraries only while it fits whole: a sticky
+       column taller than the window would hide its own foot (72 px = its top offset plus the layer's chin).
+       (2) Say "now" once, the first time the rows are seen. Whether anything moves is the stylesheet's call
+       (the house gate); this adds .play, then takes it away so hovering a row can replay its mark. */
+    (function(){
+      var k=document.getElementById("marks"), rows=document.getElementById("mk-rows");
+      if(!k||!rows) return;
+      function fit(){ k.classList.toggle("stick", matchMedia("(min-width:72rem)").matches && k.offsetHeight+72<=innerHeight); }
+      fit(); addEventListener("resize", fit);
+      if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+      if("MutationObserver" in window) new MutationObserver(fit).observe(document.documentElement,{attributes:true,attributeFilter:["data-mode"]});
+      if(!("IntersectionObserver" in window)) return;
+      var io=new IntersectionObserver(function(es){
+        for(var i=0;i<es.length;i++) if(es[i].isIntersecting){
+          io.disconnect(); k.classList.add("play");
+          setTimeout(function(){ k.classList.remove("play"); },2600);
+          return;
+        }
+      },{threshold:.5});
+      io.observe(rows);
+    })();
+    </script>
     <footer style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1rem"><div class="eyebrow" style="color:var(--faint)">The Refusal Libraries · an umbrella of argument libraries · <a href="/combined">library.wuld.ink</a></div></footer>
   </div>
 </div>

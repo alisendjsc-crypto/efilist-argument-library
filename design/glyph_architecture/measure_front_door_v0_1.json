@@ -1,0 +1,186 @@
+{
+ "url": "http://127.0.0.1:8765/libraries/",
+ "engines": {
+  "chromium": "153.0.8010.12",
+  "firefox": "155.0"
+ },
+ "layout": {
+  "runs": 80,
+  "overflowRuns": 0,
+  "aaMin": 5.06,
+  "aaBelow": 0,
+  "errors": 0,
+  "besideFromPx": 1152,
+  "aaItems": 27
+ },
+ "motion": [
+  {
+   "engine": "chromium",
+   "case": "vfx, dark, motion allowed",
+   "during": 12,
+   "after": 0,
+   "hover": 1,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "legible (light ground)",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: cosmetic",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: off",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "phone, key below the fold",
+   "during": 12,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, dark, motion allowed",
+   "during": 12,
+   "after": 0,
+   "hover": 1,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "legible (light ground)",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: cosmetic",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: off",
+   "during": 0,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": null,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "phone, key below the fold",
+   "during": 12,
+   "after": 0,
+   "hover": null,
+   "beforeScroll": 0,
+   "ok": true
+  }
+ ],
+ "sticky": [
+  {
+   "engine": "chromium",
+   "viewport": "1440x1100",
+   "stick": true,
+   "top": 24,
+   "h": 990
+  },
+  {
+   "engine": "chromium",
+   "viewport": "1440x900",
+   "stick": false,
+   "top": -527,
+   "h": 990
+  },
+  {
+   "engine": "chromium",
+   "viewport": "1920x1080",
+   "stick": true,
+   "top": 24,
+   "h": 990
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1440x1100",
+   "stick": true,
+   "top": 24,
+   "h": 990
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1440x900",
+   "stick": false,
+   "top": -527,
+   "h": 990
+  },
+  {
+   "engine": "firefox",
+   "viewport": "1920x1080",
+   "stick": true,
+   "top": 24,
+   "h": 990
+  }
+ ],
+ "layerPan": {
+  "chromium": {
+   "page": 0,
+   "baseline": 23,
+   "runs": 24
+  },
+  "firefox": {
+   "page": 0,
+   "baseline": 0,
+   "runs": 24
+  }
+ },
+ "summary": {
+  "layoutOk": true,
+  "motionOk": "12 of 12"
+ }
+}

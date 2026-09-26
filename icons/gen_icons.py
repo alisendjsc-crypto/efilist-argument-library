@@ -10,6 +10,11 @@ VOCABULARY. Each mark is a fragment of the diagram language the pages already co
 edges, as in the mechanism web and the dependency graph -- not a picture of the wing's subject.
 An argument library is not an advocacy poster, and a 16px pictograph of any of these topics would
 be a claim the corpus does not make.
+
+SECOND FAMILY (2026-09-25). The five tier marks, drawn by the argue seat in this grammar and ruled at
+argue S43, are read from sigils.json beside this file and drawn inline on the front door; see the
+section at the foot. Run it in a scratch directory (tools/icons_regen_check.py does): it writes
+every output into its working directory.
 """
 import subprocess, sys, os
 print('$ ' + ' '.join([sys.executable] + sys.argv) + '\n')
@@ -65,3 +70,88 @@ for name, (desc, rects) in ICONS.items():
         subprocess.run(['rsvg-convert', '-w', str(px), '-h', str(px), '-o',
                         f'{name}.{px}.png', name + '.svg'], check=True)
     print(f'{name:20s} {len(rects)} rects  {desc}')
+
+# ---------------------------------------------------------------------------------------------
+# THE TIER MARKS (design lane, 2026-09-25). Five 16x16 marks, one per flagship tier, drawn by the
+# argue seat in THIS grammar and ruled by Josiah at argue S43: "I like them." Their grids are DATA,
+# never a copy: sigils.json beside this file is byte for byte the argue repo's
+# design/tier_sigils_v0/sigils.json at ed9286f, and nothing is drawn from any other bytes. The
+# library draws them in its own crimson, as it draws the favicons.
+# They are served INLINE on the front door (site/libraries/index.html), never as files. This writes
+# the page's three generated regions into the working directory, as marks-<region>.html, and
+# tools/icons_regen_check.py requires the served page to carry each one byte for byte
+# (--write-marks splices them in). Edit the grids at their source, never in the page.
+import hashlib, json, html
+SIGILS_SOURCE = 'argue ed9286f:design/tier_sigils_v0/sigils.json'
+SIGILS_MD5 = '1e7e99bd628e65bb10d246f859eefe64'
+raw = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sigils.json'), 'rb').read()
+assert hashlib.md5(raw).hexdigest() == SIGILS_MD5, ('sigils.json is not the pinned copy', SIGILS_SOURCE)
+TIERS = {int(k): v for k, v in json.loads(raw)['tiers'].items()}
+assert sorted(TIERS) == [1, 2, 3, 4, 5], sorted(TIERS)
+
+def cells(rects, n=16):
+    """The set of lit and chrome cells a mark covers; asserts in-bounds and no overlap."""
+    seen = set()
+    for x, y, w, h, _ in rects:
+        assert 0 <= x and x + w <= n and 0 <= y and y + h <= n, (x, y, w, h)
+        box = {(i, j) for i in range(x, x + w) for j in range(y, y + h)}
+        assert not box & seen, ('overlap', (x, y, w, h))
+        seen |= box
+    return frozenset(seen)
+
+for t, s in TIERS.items():
+    cells(s['rects'])
+    assert [r[4] for r in s['rects']].count('lit') == 1, ('exactly one lit element', t)
+    assert all(0 <= i < len(s['rects']) for i in s['moves']), ('moves index', t)
+
+# NO TWO MARKS SHARE A SILHOUETTE. L1a's note: a ladder with its top rung lit IS the flagship's
+# favicon, so a tier drawn that way would be the flagship's mark. Tested on shape alone, colour
+# ignored, across both families -- the check a new mark must pass before it is drawn anywhere.
+shapes = {('favicon', n): cells(r) for n, (_, r) in ICONS.items()}
+shapes.update({('tier', t): cells(s['rects']) for t, s in TIERS.items()})
+assert len(set(shapes.values())) == len(shapes), 'two marks share a silhouette'
+
+def mark(t, px, moving):
+    s = TIERS[t]
+    body = ''.join('<rect class="%s" x="%d" y="%d" width="%d" height="%d"/>' % (
+        ('sg-lit' if role == 'lit' else 'sg-c') + (' sg-m' if moving and i in s['moves'] else ''),
+        x, y, w, h) for i, (x, y, w, h, role) in enumerate(s['rects']))
+    return ('<svg class="sg" viewBox="0 0 16 16" width="%d" height="%d" aria-hidden="true">%s</svg>'
+            % (px, px, body))
+
+# 1. mini: the five at actual size, in the suite rail's "5 tiers" cell. Still, always.
+mini = ''.join('<span class="mk-tile">%s</span>\n' % mark(t, 16, False) for t in TIERS)
+
+# 2. rows: each mark at 2x beside its corpus label and what its shape says (both from sigils.json).
+#    The rect that moves carries sg-m; the page decides whether anything moves.
+rows = ''.join(
+    '<li class="mk-row t%d"><span class="mk-tile">%s</span><span class="mk-txt">'
+    '<span class="mk-name"><b>T%d</b> %s</span><span class="mk-says">%s</span></span></li>\n'
+    % (t, mark(t, 32, True), t, html.escape(s['label']), html.escape(s['says']))
+    for t, s in TIERS.items())
+
+# 3. plate: one mark drawn large on its pixel grid, three of its parts named. The labels are placed
+#    for THIS grid, so a changed grid stops the build rather than mislabel the drawing.
+PT, C = 3, 15                                   # the mark, and the pixels per cell (240 px square)
+assert TIERS[PT]['rects'] == [[6, 1, 4, 4, 'lit'], [7, 5, 2, 2, 'chrome'], [2, 7, 12, 2, 'chrome'],
+                              [2, 9, 2, 2, 'chrome'], [12, 9, 2, 2, 'chrome'],
+                              [1, 11, 4, 4, 'chrome'], [11, 11, 4, 4, 'chrome']], 'plate labels'
+N = 16 * C
+grid = ''.join('M%d.5 0V%dM0 %d.5H%d' % (k * C, N, k * C, N) for k in range(1, 16))
+parts = ''.join('<rect class="%s" x="%d" y="%d" width="%d" height="%d"/>' % (
+    'sg-lit' if role == 'lit' else 'sg-c', x * C, y * C, w * C, h * C)
+    for x, y, w, h, role in TIERS[PT]['rects'])
+leaders = ''.join('<rect class="pl-lead" x="%d" y="%d" width="%d" height="1"/>' % r
+                  for r in ((76, 45, 14), (135, 90, 20), (75, 195, 25), (140, 195, 25)))
+labels = ''.join('<text class="%s" x="%d" y="%d" text-anchor="%s">%s</text>' % r for r in (
+    ('pl-lbl', 72, 49, 'end', 'lit'), ('pl-lbl', 159, 94, 'start', 'edge'),
+    ('pl-lbl', 120, 199, 'middle', 'node')))
+plate = ('<svg class="mk-plate-svg" viewBox="0 0 %d %d" width="%d" height="%d" role="img" '
+         'aria-label="Tier %d&#8217;s mark, enlarged: a lit node on a stem over a bar, held up by two '
+         'nodes.">\n<path class="pl-grid" d="%s"/>\n%s\n%s\n%s\n</svg>\n'
+         % (N, N, N, N, PT, grid, parts, leaders, labels))
+
+for region, text in (('mini', mini), ('rows', rows), ('plate', plate)):
+    assert text.isascii() and '<!--' not in text, region
+    open('marks-%s.html' % region, 'w', encoding='utf-8', newline='\n').write(text)
+    print(f'marks-{region:14s} {len(text.encode()):5d} B  front-door region, from {SIGILS_SOURCE}')

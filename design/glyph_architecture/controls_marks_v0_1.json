@@ -1,0 +1,133 @@
+{
+ "artifact": "controls_marks",
+ "controls": [
+  {
+   "as_expected": true,
+   "control": "C0 unmutated",
+   "flags": [],
+   "rc": 0,
+   "want": [
+    "ICONS: 7 of 7",
+    "MARKS: 3 of 3"
+   ],
+   "want_rc": 0
+  },
+  {
+   "as_expected": true,
+   "control": "C1 a pixel in the plate region changes role",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-plate",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C2 a says-line in the rows region is edited",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-rows",
+    "MARKS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C3 the mini region's opening marker is gone",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-mini",
+    "markers not found in the page"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C4 the rows region's opening marker appears twice",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  marks-rows",
+    "markers not found in the page"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C5 one byte of the vendored sigils.json changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "not the pinned copy"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C6 a tier drawn as the flagship's ladder, top rung lit (L1a)",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "two marks share a silhouette"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C7 the plate's mark changes under its labels",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "ICONS: RED -- gen_icons.py refused to draw",
+    "plate labels"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C8 a served favicon changes",
+   "flags": [],
+   "rc": 1,
+   "want": [
+    "DIFF  veganism",
+    "ICONS: RED -- 1 difference(s)"
+   ],
+   "want_rc": 1
+  },
+  {
+   "as_expected": true,
+   "control": "C9 --write-marks restores C1's page byte for byte",
+   "flags": [
+    "--write-marks"
+   ],
+   "rc": 0,
+   "want": [
+    "wrote  site/libraries/index.html",
+    "MARKS: 3 of 3"
+   ],
+   "want_rc": 0
+  }
+ ],
+ "gate": "tools/icons_regen_check.py",
+ "inputs": {
+  "icons/gen_icons.py": "6c601f6fd7d28c6fa37d25995ebe9aa8",
+  "icons/sigils.json": "1e7e99bd628e65bb10d246f859eefe64",
+  "site/icon-abortion.svg": "fc6f8e8eb4898933f04e1a37085dc94b",
+  "site/icon-anthropocentrism.svg": "7667b76b8c4ca22c6ecbb6b91ccf1d17",
+  "site/icon-combined.svg": "2b9f6e6faba2641fb241be9e645dd209",
+  "site/icon-libraries.svg": "51bd7a9e9f5586fc09de0ea66e799f38",
+  "site/icon-right-to-die.svg": "96976c7d06407b7822affd7f327c7b28",
+  "site/icon-transgenderism.svg": "3f40782478eb4dc366185bf491f3bcd9",
+  "site/icon-veganism.svg": "c91a0554d6dfed665878e252144c0f3f",
+  "site/libraries/index.html": "f80a4f5a42a53c531b4596fb682ee6f4",
+  "tools/icons_regen_check.py": "4016b6a5deed4738cdac7fec5194b3fa"
+ },
+ "summary": "10 of 10 controls as expected",
+ "version": "0.1"
+}

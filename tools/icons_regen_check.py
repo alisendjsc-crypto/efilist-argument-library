@@ -7,16 +7,31 @@ until L1 no repo tracked that script. This runs it in a scratch directory (it wr
 draws to be, name for name and byte for byte, the site/icon-<name>.svg files. The PNGs are not served
 and are discarded. Never run gen_icons.py from the repo root: it would drop its outputs there.
 
-  python3 tools/icons_regen_check.py [ROOT]    # exit 1 on any difference; ROOT defaults to this repo
+THE TIER MARKS (design lane, 2026-09-25). gen_icons.py also draws the five tier marks from the pinned
+icons/sigils.json (copied into the scratch directory beside it) and writes the front door's three
+generated regions as marks-<region>.html. Each region sits in site/libraries/index.html between
+<!-- gen_icons.py:<region> --> and <!-- /gen_icons.py:<region> -->, and must be byte for byte what was
+drawn. --write-marks first splices the drawn regions into the page, then checks as usual.
+
+  python3 tools/icons_regen_check.py [ROOT] [--write-marks]    # exit 1 on any difference
 """
 import glob, hashlib, os, shutil, subprocess, sys, tempfile
 
-REPO = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+WRITE = "--write-marks" in sys.argv[1:]
+REPO = os.path.abspath(ARGS[0]) if ARGS else os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REGIONS = ("mini", "rows", "plate")
+PAGE = os.path.join(REPO, "site", "libraries", "index.html")
 d = tempfile.mkdtemp(prefix="icons_regen_")
 try:
-    shutil.copyfile(os.path.join(REPO, "icons", "gen_icons.py"), os.path.join(d, "gen_icons.py"))
-    subprocess.run([sys.executable, "gen_icons.py"], cwd=d, check=True, capture_output=True)
+    for f in ("gen_icons.py", "sigils.json"):
+        shutil.copyfile(os.path.join(REPO, "icons", f), os.path.join(d, f))
+    run = subprocess.run([sys.executable, "gen_icons.py"], cwd=d, capture_output=True, text=True)
+    if run.returncode:   # a refused draw (pin, grid, silhouette) is a RED, said in its own words
+        print("ICONS: RED -- gen_icons.py refused to draw: " + (run.stderr.strip().splitlines() or ["?"])[-1])
+        sys.exit(1)
     drawn = {os.path.basename(p)[:-4]: open(p, "rb").read() for p in glob.glob(os.path.join(d, "*.svg"))}
+    marks = {r: open(os.path.join(d, "marks-%s.html" % r), "rb").read() for r in REGIONS}
 finally:
     shutil.rmtree(d)
 served = {os.path.basename(p)[5:-4]: open(p, "rb").read()
@@ -31,4 +46,31 @@ for name in sorted(set(drawn) | set(served)):
     print("  %s  %-18s %s" % ("SAME" if ok else "DIFF", name, detail))
 print("ICONS: %d of %d served favicons regenerate byte for byte" % (len(served) - bad, len(served))
       if not bad else "ICONS: RED -- %d difference(s)" % bad)
-sys.exit(1 if bad else 0)
+
+# a region: from after its opening marker's line to the start of its closing marker's line. Each marker
+# must occur exactly once.
+def span(page, r):
+    o, c = b"<!-- gen_icons.py:%s -->\n" % r.encode(), b"<!-- /gen_icons.py:%s -->" % r.encode()
+    if page.count(o) != 1 or page.count(c) != 1:
+        return None
+    i, j = page.find(o) + len(o), page.find(c)
+    j = page.rfind(b"\n", 0, j) + 1
+    return (i, j) if i <= j else None
+page = open(PAGE, "rb").read()
+if WRITE:
+    before = hashlib.md5(page).hexdigest()
+    for r in REGIONS:
+        s = span(page, r)
+        if s: page = page[:s[0]] + marks[r] + page[s[1]:]
+    open(PAGE, "wb").write(page)
+    print("  wrote  site/libraries/index.html  %s -> %s" % (before, hashlib.md5(page).hexdigest()))
+mbad = 0
+for r in REGIONS:
+    s = span(page, r)
+    ok = bool(s) and page[s[0]:s[1]] == marks[r]
+    mbad += not ok
+    print("  %s  %-18s %s" % ("SAME" if ok else "DIFF", "marks-" + r,
+          "markers not found in the page" if not s else hashlib.md5(marks[r]).hexdigest()))
+print("MARKS: %d of %d front-door regions are what gen_icons.py draws" % (len(REGIONS) - mbad, len(REGIONS))
+      if not mbad else "MARKS: RED -- %d difference(s)" % mbad)
+sys.exit(1 if bad or mbad else 0)
