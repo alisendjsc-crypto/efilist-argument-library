@@ -1,0 +1,130 @@
+{
+ "artifact": "r1_rulings_gate_control_v0_2.json",
+ "gate": "adversarial_map_staging/r1/r1_rulings_gate.py",
+ "gate_md5": "79ce8735683be56f9a036dd3763f42f5",
+ "rulings_md5": "3f1dfad54021d7920576c7bd4840b62f",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its own failure line; C10, a proper correction row, must stay GREEN.",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "a row names n=999",
+   "expected_rc": 1,
+   "expected_message": "names no evidence entry",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: n=999 names no evidence entry"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "a row's target names the wrong locus",
+   "expected_rc": 1,
+   "expected_message": "!= evidence",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: target boonin-critique#short != evidence #60 boonin-critique#note"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "a verdict reads MAYBE",
+   "expected_rc": 1,
+   "expected_message": "is not HOLDS or FAILS",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: verdict 'MAYBE' is not HOLDS or FAILS"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "a FAILS row loses its stronger line",
+   "expected_rc": 1,
+   "expected_message": "FAILS without its stronger-continuation line",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: FAILS without its stronger-continuation line"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "an entry ruled twice, no supersedes",
+   "expected_rc": 1,
+   "expected_message": "ruled twice without superseding",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-070: #60 ruled twice without superseding R1-001"
+   ]
+  },
+  {
+   "control": "C6",
+   "mutation": "the evidence file moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "evidence md5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "evidence md5: file is 2567510cbca299e47e602543252473fb, header names 719b5ddb27680f32181a8a953c84b6c2",
+    "R1-001: names evidence md5 719b5ddb27680f32181a8a953c84b6c2, file is 2567510cbca299e47e602543252473fb",
+    "R1-002: names evidence md5 719b5ddb27680f32181a8a953c84b6c2, file is 2567510cbca299e47e602543252473fb"
+   ]
+  },
+  {
+   "control": "C7",
+   "mutation": "the map file moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "map md5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "map md5: file is 55a44e3139cd38df9a05dd338424d107, header names 681827419df72a16a7c6fe70df8fe77f, evidence records 681827419df72a16a7c6fe70df8fe77f"
+   ]
+  },
+  {
+   "control": "C8",
+   "mutation": "a committed row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "append-only: committed row R1-001 was edited or removed"
+   ]
+  },
+  {
+   "control": "C9",
+   "mutation": "a committed row is removed",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-002: row ids must run R1-001, R1-002, ... in file order (expected R1-001)",
+    "R1-003: row ids must run R1-001, R1-002, ... in file order (expected R1-002)",
+    "R1-004: row ids must run R1-001, R1-002, ... in file order (expected R1-003)"
+   ]
+  },
+  {
+   "control": "C10",
+   "mutation": "a correction row supersedes properly",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.19",
+  "canon_version": "38.20",
   "last_updated": "2026-09-25",
-  "last_updated_by_session": "L2_R1",
+  "last_updated_by_session": "L3_R1",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "L3: R1 Block 2, phases B1-E (29 entries), read one by one with the L2 collision check in every dossier; then the drafting-seat pass on the 22 FAILS under R1_standard_ruling_L2, judged by a seat that did not draft it; then R2.",
+    "session": "A short build session first, then L4. BUILD (no pin): the validator rule adopted at L2 (a_vs_own_record_collision_finding_L2) -- list every (a) whose answered_by locus or same-node sibling carries a (b) or (d), plus the R1 verdict beside each, so the drafting pass starts from a machine-made list. L4: the drafting pass over the 45 FAILS by shape (method_L3), judged by a seat that did not draft it (the gate2 role, K258). Then R2.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1676,7 +1676,86 @@
     "method_L1a": "Rule the 30 entries written under the K346 'strongest' ruling (Phases F, G and R) as one block, after reading a sample. Hold back the 39 written before it (Phases A-E) until each is re-read. After R1 comes R2; R4, the /combined graft, is a pin move he declares.",
     "method_L2": "Phase A failed entries, so by R1_method_ruling_L1a's decision rule the rest of Block 2 is read entry by entry. Before judging each, list every (b) or (d) on its answering loci and on its own node's other slots, and every canon record on those loci (HR-14, K338, K350). An (a) whose answer the map itself records as ending at bedrock, or as flawed, does not hold (R1_standard_ruling_L2).",
     "carried_L2": "B1 #21 #22 #26 #42 #53 #54 · B2 #62 · C #7 #14 #17 #52 #58 #59 #65 · D #6 #23 #25 #34 #35 #43 #49 #57 #63 #64 · E #2 #37 #39 #50 #51",
-    "after_R1_L2": "Re-authoring for the FAILS (a drafting session, then a non-drafting judge); the validator rule in a_vs_own_record_collision_finding_L2 (a build session); R2, may a (b) be reader-facing and under what label, with a recommendation already at interconnection_design_K350.b_class_reader_facing_OPEN_R2; then the interconnection build, a design Josiah ratifies before a byte ships -- in his words, as R0091 quotes them: 'I do want the adversarial's continuations and responses to be inter-connected eventually, but we want to do it well and right.'"
+    "after_R1_L2": "Re-authoring for the FAILS (a drafting session, then a non-drafting judge); the validator rule in a_vs_own_record_collision_finding_L2 (a build session); R2, may a (b) be reader-facing and under what label, with a recommendation already at interconnection_design_K350.b_class_reader_facing_OPEN_R2; then the interconnection build, a design Josiah ratifies before a byte ships -- in his words, as R0091 quotes them: 'I do want the adversarial's continuations and responses to be inter-connected eventually, but we want to do it well and right.'",
+    "method_L3": {
+      "route_to_bedrock": {
+        "entries": [
+          60,
+          20,
+          16,
+          15,
+          8,
+          9,
+          10,
+          31,
+          33,
+          12,
+          13,
+          44,
+          45,
+          61,
+          47,
+          21,
+          54,
+          14,
+          17,
+          59,
+          65,
+          6,
+          23,
+          34,
+          35,
+          43,
+          57,
+          64,
+          2,
+          39
+        ],
+        "does": "The answer routed to is one the map itself records as ending at registered bedrock (HR-02, HR-03, HR-04, HR-05, HR-06, HR-11, HR-14, or a (d) at the answering locus or a sibling slot). Under the standard: reclassify to (d), routed to that bedrock; ships under the terminus label with no new prose."
+      },
+      "answer_flagged_b": {
+        "entries": [
+          67,
+          1,
+          11,
+          32,
+          48,
+          42,
+          62,
+          7,
+          50
+        ],
+        "does": "The answer's load-bearing sentence carries a (b) the map already holds (at the answering locus, or a sibling slot's (b) whose rule convicts it). Under the standard: waits on that repair; a (d) instead if the repair itself ends at bedrock."
+      },
+      "aggravation_s11_1": {
+        "entries": [
+          5
+        ],
+        "does": "The node's own text concedes the move's premise (design section 11.1, aggravation): a (b) repair at the slot."
+      },
+      "aggravation_cross_node": {
+        "entries": [
+          63
+        ],
+        "does": "NEW at L3. The node the entry routes to concedes the move's premise in its own words (#63: economy-population#long calls the aging-care problem real, against the target's 'not by individual people'). A (b) repair at the target sentence."
+      },
+      "under_strength_move": {
+        "entries": [
+          40
+        ],
+        "does": "The move stops short of its own payload; re-author it at full strength, then re-judge."
+      },
+      "routed_answer_silent": {
+        "entries": [
+          22,
+          58,
+          25
+        ],
+        "does": "NEW at L3. The routed locus does not engage the move: the answer the grounds describe is argued in the grounds, or lives elsewhere, not in the routed text (L2's #47 basis). The drafting seat re-routes to a locus that answers, repairs the target, or re-authors; then a non-drafting seat judges."
+      }
+    },
+    "carried_L3": "R1 carries nothing: 69 of 69 ruled. Carried beside it: the gate-5 second clauses (R1_findings_L3; L2's #27 and #3); the moves that carry their own answer (#1, #7, #14, #62); L1a's carries (ruling 1's rest, the two served-text repairs, readme_paths_gate.py's curl.exe, instructions.md's stale counts); the unverified Boonin lead (a 2012 article or a book; check a source before any repair).",
+    "after_R1_L3": "R2, may a (b) be reader-facing and under what label, with a recommendation already at interconnection_design_K350.b_class_reader_facing_OPEN_R2; then the interconnection build, a design Josiah ratifies before a byte ships -- in his words, as R0091 quotes them: 'I do want the adversarial's continuations and responses to be inter-connected eventually, but we want to do it well and right.'"
   },
   "open_questions": {
     "active": {
@@ -1807,7 +1886,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.19",
+  "canon_version_marker": "v38.20",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2486,7 +2565,8 @@
     "v38_16_K354": "MINOR. Six adversarial_map subkey additions (note_confidence_repair_LANDED_K354, confidence_render_ruling_K354, hex_repair_K354, ccclxxx_hazard_K354, prior_gate_inversion_K354, high_contrast_legibility_K354), three lifecycle_status additions inside existing subkeys (note_confidence_coupling_QUEUED_K352, note_reachability_finding_K349, confidence_ruling_K349) and a replacement of adversarial_map.next. One keyset_delta_ledger addition; a replacement of next_recommended_session; one session_log_recent append. PIN MOVE: combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2), and NO CORPUS BYTE on any surface -- xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, corpus and jsx asserted unmoved git-to-git, corpus `version` held at 4.1.0. No map or register artifact touched. invariants, schemas and hazard_map asserted byte-identical.",
     "v38_17_L1": "MINOR. One top-level addition, flagship_sidecars (keyset 41 -> 42, on the v38_1 precedent and the ledger's own convention: keyset moves by design, proved by this note, the invariants guard and a subtree-unchanged assertion over every other top-level key). Canon-meta version fields; one addition inside next_recommended_session (precondition_L1); this note; one session_log_recent append. NO PIN: combined.html 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2) HELD, corpus and jsx HELD, xsurface's objection canon unchanged. invariants, schemas and hazard_map asserted byte-identical. CORRECTED FORWARD: v38_16 left canon_version at 38.15 and canon_version_marker at v38.15 -- K354's builder dropped the lines K351-K353 carried -- and both read 38.17 here. v38_16's own bytes are not edited.",
     "v38_18_L1a": "MINOR. keyset UNCHANGED at 42. Two adversarial_map subkey additions (audience_and_purpose_ruling_L1a, R1_method_ruling_L1a); in flagship_sidecars, primary_mechanism rewritten to the ruling, the map_graph_data.json pin and the generator's md5 moved, and pin_moves added; next_recommended_session re-pointed (session, precondition_L1 answered, method_L1a added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus and jsx untouched. invariants, schemas and hazard_map asserted byte-identical, and every other top-level key too.",
-    "v38_19_L2": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L2, R1_standard_ruling_L2, a_vs_own_record_collision_finding_L2); next_recommended_session re-pointed (session rewritten; method_L2, carried_L2, after_R1_L2 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
+    "v38_19_L2": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L2, R1_standard_ruling_L2, a_vs_own_record_collision_finding_L2); next_recommended_session re-pointed (session rewritten; method_L2, carried_L2, after_R1_L2 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
+    "v38_20_L3": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L3, R1_rules_L3, R1_findings_L3); next_recommended_session re-pointed (session rewritten; method_L3, carried_L3, after_R1_L3 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2715,7 +2795,8 @@
     "K354_note_and_confidence (2026-09-18): THE NOTE AND THE CONFIDENCE LAYER, landed as the v4.1.2 PIN MOVE -- combined.html f095c0ce0e5a1d796d57fa5a5dd62f7d / 2985989 (v4.1.1) -> 006aa9833f7a8b103ad27a289ab22fa9 / 2987411 (v4.1.2) -- with NO CORPUS BYTE on any surface: xsurface_v4_1_0.py reads identically at 6cd132ee5b8c7ca78ad0e095806f1c93 before and after, which is the mechanical proof, and the corpus `version` stays 4.1.0. THE REPAIR: the [NOTE] control lifted out of `if (conf !== 'full')` so its condition equals its container's -- 9 containers, 9 controls -- making 195 words readable that no reader could open, on a card K353 had just started pointing readers at. THE RENDER RULINGS, delegated by Josiah with the recommendations on the record: `full` renders FULL and the silent `|| 'full'` upgrade of 64 never-graded objections is deleted, so absence now means ungraded; the unlabelled 70% provisional opacity band is removed, rule and class both. THE HEX: eleven 5-digit literals over six declarations repaired -- not the eight WI-K343 counted, and the three it missed include the [NOTE] button's own border. THE SESSION'S BEST EVIDENCE IS NOT ITS OWN: K353's wing gate, run UNCHANGED, fails exactly the three checks that assert the defect and nothing else, and the amended gate fails the same three on the base. ccclxxx registered -- repairing an invalid declaration is an ADDITION to the cascade, and the restored fills made the high-contrast STRONG badge LESS legible repaired (4.16 -> 3.84) than broken, visible only in a contrast ratio computed on the rendered composite; fixed with `background: none` in high contrast, and both ratios gated against regression.",
     "L1_map_sidecars (2026-09-25, the library seat's first Code session; answers relay R0057 from argue S38 under standing ruling 1; NO PIN): THE FIRST TWO MEGA-LITERAL SIDECARS. tools/build_map_sidecars.py writes sidecars/map_graph_data.json (d295911140a08bd6de227e108b1106e5 data; 82 objections, 35 mechanisms, 142 links) and sidecars/map1_transitions.json (47bfdd5c8b4660aa0d213d199bcdd49c data; 78 sources, 2886 edges over sophisticate, defender, drifter, blended) from the flagship's own literals, never retyped, with Map 1's caveats lifted from its methodology panel. No primary mechanism is emitted: none is marked, and 51 objections carry several. tools/xsurface_v4_1_0.py extended in place to gate both, and tools/l1_sidecar_controls.py proves it: 9 of 9 as expected, the unmutated control first. Both file md5s pinned in the new flagship_sidecars block. Also landed by bytes: icons/gen_icons.py, which all seven served favicons name and no repo had tracked; it regenerates all seven byte for byte.",
     "L1a_rulings (2026-09-25, same seat, same day; NO PIN): JOSIAH RULED THE FIVE L1 QUESTIONS, in his words 'Going with your recommendations on all of the above.', and added a note on the Map's purpose, carried verbatim in adversarial_map.audience_and_purpose_ruling_L1a. (1) The Adversarial Map is public to read, never promoted. (2) R1 by the two-block method (30 under the K346 ruling as a block after a sample read; 39 pre-K346 held until re-read). (3) CITATION.cff's abstract corrected: 82 objections, and the maps named as they are (an argument-flow map, Map 1, and force-directed mechanism and dependency graphs). (4) No primary mechanism, ruled twice the same evening (here, and via the argue seat's R0089): sidecars/map_graph_data.json's rule now says so, fbf8a08772fb4bbe37bee7a342af0cc3 -> 9d71766dfdb456e298b866f27f3b60c4; status UNDEFINED and the data unchanged. (5) Tier sigils: yes, in icons/gen_icons.py, in principle; per the argue lean he adopted (R0089), the game keeps tier colour until he has seen a design, and nothing is drawn until he asks to see one.",
-    "L2_R1 (2026-09-25; NO PIN): R1 RULED FOR 40 OF 69 (a) ENTRIES, in his words 'Go with your recommendations on all of the above and proceed as you wish.' (the Block 1 sample) and 'Go with your recommendations on all of the above.' (Phase A, the other 18 of F, and the standard). Block 1 fully read, 30: HOLDS 14, FAILS 16. Block 2 Phase A, 10: HOLDS 4, FAILS 6. Carried: 29 (B1-E). 21 of the 22 FAILS are contradicted by the map's own records; #40 rests on the seat's reading alone. STANDARD RULED: an (a) may not say WE ANSWER THIS where the map records its answer as ending at bedrock or as flawed; such entries become (d)s under the terminus label or wait on their (b) repair. Rulings in adversarial_map_staging/r1/R1_rulings.json (append-only; gate adversarial_map_staging/r1/r1_rulings_gate.py, controls 11 of 11). L1's struck A-E premise corrected forward in L2's first message."
+    "L2_R1 (2026-09-25; NO PIN): R1 RULED FOR 40 OF 69 (a) ENTRIES, in his words 'Go with your recommendations on all of the above and proceed as you wish.' (the Block 1 sample) and 'Go with your recommendations on all of the above.' (Phase A, the other 18 of F, and the standard). Block 1 fully read, 30: HOLDS 14, FAILS 16. Block 2 Phase A, 10: HOLDS 4, FAILS 6. Carried: 29 (B1-E). 21 of the 22 FAILS are contradicted by the map's own records; #40 rests on the seat's reading alone. STANDARD RULED: an (a) may not say WE ANSWER THIS where the map records its answer as ending at bedrock or as flawed; such entries become (d)s under the terminus label or wait on their (b) repair. Rulings in adversarial_map_staging/r1/R1_rulings.json (append-only; gate adversarial_map_staging/r1/r1_rulings_gate.py, controls 11 of 11). L1's struck A-E premise corrected forward in L2's first message.",
+    "L3_R1 (2026-09-25; NO PIN): R1 COMPLETE, 69 OF 69 (a) ENTRIES RULED: HOLDS 24, FAILS 45. L3 ruled the 29 L2 carried (B1-E) in his words 'Go with your recommendations on all of the above. Proceed as you wish.' -- HOLDS 6 (#26, #37, #49, #51, #52, #53), FAILS 23 -- under three reading rules he adopted with them (the hub rule, the K350 rule, the joy-outweighs reading). 20 of L3's FAILS rest on map records; #63 on the corpus's own text; #22 and #58 on the seat's reading alone. Two new failure shapes: routed answer silent (#22, #25, #58) and cross-node aggravation (#63). Reading instruments committed: adversarial_map_staging/r1/r1_dossiers.py and adversarial_map_staging/r1/r1_quote_check.py. Rulings adversarial_map_staging/r1/R1_rulings.json (gate adversarial_map_staging/r1/r1_rulings_gate.py, controls v0_2 11 of 11). Next: the validator-rule build, then the drafting pass over the 45 FAILS, judged by a seat that did not draft."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -4399,6 +4480,408 @@
       "mechanical_screen": "(a) entries with a (b) or (d) at an answering locus or at their own locus: 14 of 30 in Block 1, 29 of 39 in Block 2; 19 of the 69 route through benatar-asymmetry-attack#long. It over-flags a hub and misses sibling-slot conflicts (#60, #16 were found at siblings). A reading list, not a verdict.",
       "recommendation_adopted": "A build session adds a validator rule: every (a) whose answered_by locus or same-node sibling carries a (b) or (d) is listed for reading, and the list must be empty or ruled before any (a) card ships. A build item, not a ruling session's.",
       "his_words_verbatim": "Go with your recommendations on all of the above."
+    },
+    "R1_progress_L3": {
+      "status": "R1 COMPLETE: 69 of 69 ruled (HOLDS 24, FAILS 45). L3 ruled the 29 L2 carried (HOLDS 6, FAILS 23).",
+      "his_words_verbatim": "Go with your recommendations on all of the above. Proceed as you wish.",
+      "on": "both L3 batches as presented (Batch 1: B1, B2, C, 14 entries; Batch 2: D, E, 15 entries) and the three reading rules stated with them (R1_rules_L3), in chat, 2026-09-25",
+      "kickoff": {
+        "relay": "R0104",
+        "md5": "f1284749f1cd782a724c0ff88c59386d"
+      },
+      "rulings": {
+        "md5": "3f1dfad54021d7920576c7bd4840b62f",
+        "bytes": 96630,
+        "file": "adversarial_map_staging/r1/R1_rulings.json",
+        "rows": 69,
+        "rows_L3": "R1-041..R1-069",
+        "law": "Append-only; a correction is a new row that supersedes. The evidence file's ruling slots stay null on purpose: its builder rewrites them on every run (K351)."
+      },
+      "gate": {
+        "md5": "79ce8735683be56f9a036dd3763f42f5",
+        "bytes": 12401,
+        "file": "adversarial_map_staging/r1/r1_rulings_gate.py",
+        "unchanged_since_L2": true,
+        "controls": "11 of 11 as expected, the unmutated control first",
+        "control_record_v0_2": {
+          "md5": "82cf095096effb05b1c27dec1a295730",
+          "bytes": 3735,
+          "file": "adversarial_map_staging/r1/r1_rulings_gate_control_v0_2.json",
+          "reproducible_under_forced_hash_seeds": true
+        },
+        "control_record_v0_1": "unchanged, 93871579c41ed7c8d3e93b6cace1f0e8, as L2 left it"
+      },
+      "instruments": {
+        "dossiers": {
+          "md5": "6d01449027a6440bed1f7bc347ab34b1",
+          "bytes": 16788,
+          "file": "adversarial_map_staging/r1/r1_dossiers.py",
+          "does": "One markdown dossier per entry: node frame, anchor, move, grounds, the target locus and every answering locus in full, every map entry on the target node and each answering node (each (a) with its R1 ruling), every other (a) spending the same answer, the register bedrocks and canon records on the route (K224/K338, K350, the transhumanist ban, HR-14), and the mechanical screen. Judges nothing.",
+          "reproducible_under_forced_hash_seeds": true
+        },
+        "quote_check": {
+          "md5": "40d3db1718e63e0409461d354191cd5d",
+          "bytes": 8063,
+          "file": "adversarial_map_staging/r1/r1_quote_check.py",
+          "does": "Asserts every quoted sentence is an exact substring of the corpus locus, map entry, canon path or register bedrock it names; --rulings checks every map_record quote in R1_rulings.json; --self-test runs 8 controls, the unmutated control first.",
+          "rulings_quotes_verbatim": "71 of 71"
+        },
+        "why": "L2's dossier builder and quote checker lived in scratch, so its method could not be reproduced from the repo (R0104, step 1).",
+        "sheets": "Two reading sheets presented, not committed; every quotation on them checked verbatim with the committed checker: 83 of 83 (Batch 1) and 96 of 96 (Batch 2)."
+      },
+      "by_block": {
+        "block_1_F_G_R": {
+          "F": {
+            "entries": 26,
+            "HOLDS": 13,
+            "FAILS": 13
+          },
+          "G": {
+            "entries": 3,
+            "HOLDS": 1,
+            "FAILS": 2
+          },
+          "R": {
+            "entries": 1,
+            "HOLDS": 0,
+            "FAILS": 1
+          },
+          "total": {
+            "entries": 30,
+            "HOLDS": 14,
+            "FAILS": 16
+          }
+        },
+        "block_2_A_to_E": {
+          "A": {
+            "entries": 10,
+            "HOLDS": 4,
+            "FAILS": 6
+          },
+          "B1": {
+            "entries": 6,
+            "HOLDS": 2,
+            "FAILS": 4
+          },
+          "B2": {
+            "entries": 1,
+            "HOLDS": 0,
+            "FAILS": 1
+          },
+          "C": {
+            "entries": 7,
+            "HOLDS": 1,
+            "FAILS": 6
+          },
+          "D": {
+            "entries": 10,
+            "HOLDS": 1,
+            "FAILS": 9
+          },
+          "E": {
+            "entries": 5,
+            "HOLDS": 2,
+            "FAILS": 3
+          },
+          "total": {
+            "entries": 39,
+            "HOLDS": 10,
+            "FAILS": 29
+          }
+        },
+        "all_69": {
+          "entries": 69,
+          "HOLDS": 24,
+          "FAILS": 45
+        }
+      },
+      "ruled_at_L3": {
+        "B1": {
+          "entries": 6,
+          "HOLDS": 2,
+          "FAILS": 4
+        },
+        "B2": {
+          "entries": 1,
+          "HOLDS": 0,
+          "FAILS": 1
+        },
+        "C": {
+          "entries": 7,
+          "HOLDS": 1,
+          "FAILS": 6
+        },
+        "D": {
+          "entries": 10,
+          "HOLDS": 1,
+          "FAILS": 9
+        },
+        "E": {
+          "entries": 5,
+          "HOLDS": 2,
+          "FAILS": 3
+        },
+        "total": {
+          "entries": 29,
+          "HOLDS": 6,
+          "FAILS": 23
+        }
+      },
+      "held": [
+        3,
+        4,
+        18,
+        19,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        36,
+        37,
+        38,
+        41,
+        46,
+        49,
+        51,
+        52,
+        53,
+        55,
+        56,
+        66,
+        68,
+        69
+      ],
+      "failed": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23,
+        25,
+        31,
+        32,
+        33,
+        34,
+        35,
+        39,
+        40,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        50,
+        54,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        67
+      ],
+      "held_L3": [
+        26,
+        37,
+        49,
+        51,
+        52,
+        53
+      ],
+      "failed_L3": [
+        2,
+        6,
+        7,
+        14,
+        17,
+        21,
+        22,
+        23,
+        25,
+        34,
+        35,
+        39,
+        42,
+        43,
+        50,
+        54,
+        57,
+        58,
+        59,
+        62,
+        63,
+        64,
+        65
+      ],
+      "failed_resting_on_the_seat_s_reading_alone": [
+        22,
+        40,
+        58
+      ],
+      "failed_resting_partly_on_the_seat_s_reading": [
+        25,
+        50,
+        54
+      ],
+      "failed_resting_on_the_corpus_s_own_text_not_a_map_entry": [
+        63
+      ],
+      "failure_shapes_seat_s_reading": {
+        "route_to_bedrock": {
+          "entries": [
+            60,
+            20,
+            16,
+            15,
+            8,
+            9,
+            10,
+            31,
+            33,
+            12,
+            13,
+            44,
+            45,
+            61,
+            47,
+            21,
+            54,
+            14,
+            17,
+            59,
+            65,
+            6,
+            23,
+            34,
+            35,
+            43,
+            57,
+            64,
+            2,
+            39
+          ],
+          "means": "The answer routed to is one the map itself records as ending at registered bedrock (HR-02, HR-03, HR-04, HR-05, HR-06, HR-11, HR-14, or a (d) at the answering locus or a sibling slot). Under the standard: reclassify to (d), routed to that bedrock; ships under the terminus label with no new prose."
+        },
+        "answer_flagged_b": {
+          "entries": [
+            67,
+            1,
+            11,
+            32,
+            48,
+            42,
+            62,
+            7,
+            50
+          ],
+          "means": "The answer's load-bearing sentence carries a (b) the map already holds (at the answering locus, or a sibling slot's (b) whose rule convicts it). Under the standard: waits on that repair; a (d) instead if the repair itself ends at bedrock."
+        },
+        "aggravation_s11_1": {
+          "entries": [
+            5
+          ],
+          "means": "The node's own text concedes the move's premise (design section 11.1, aggravation): a (b) repair at the slot."
+        },
+        "aggravation_cross_node": {
+          "entries": [
+            63
+          ],
+          "means": "NEW at L3. The node the entry routes to concedes the move's premise in its own words (#63: economy-population#long calls the aging-care problem real, against the target's 'not by individual people'). A (b) repair at the target sentence."
+        },
+        "under_strength_move": {
+          "entries": [
+            40
+          ],
+          "means": "The move stops short of its own payload; re-author it at full strength, then re-judge."
+        },
+        "routed_answer_silent": {
+          "entries": [
+            22,
+            58,
+            25
+          ],
+          "means": "NEW at L3. The routed locus does not engage the move: the answer the grounds describe is argued in the grounds, or lives elsewhere, not in the routed text (L2's #47 basis). The drafting seat re-routes to a locus that answers, repairs the target, or re-authors; then a non-drafting seat judges."
+        }
+      },
+      "hub_rule_applied": {
+        "routed_to": "benatar-asymmetry-attack#long",
+        "entries_L3": 16,
+        "FAILS": [
+          6,
+          7,
+          14,
+          21,
+          23,
+          25,
+          34,
+          54,
+          57,
+          59,
+          62,
+          64,
+          65
+        ],
+        "HOLDS": [
+          49,
+          52,
+          53
+        ]
+      },
+      "k350_rule_applied": {
+        "barred": [
+          59
+        ],
+        "not_barred_read_on_merits": [
+          22,
+          54,
+          58
+        ]
+      },
+      "detection_rule_ccclxviii_applied": "L3 failed 23 of 29 against L2's 22 of 40, so the rate was read as an instrument first. 20 of L3's 23 FAILS rest on map records (3 of them partly on the seat's reading: #25, #50, #54), #63 on the corpus's own text, and #22 and #58 on the seat's reading alone. Phases B1-E were written before the F, G, K338, K347 and K350 records that now flag their answers, and L2's own screen had marked 20 of these 29 entries as collisions before any was read (16 of those failed). Where the flagged point was only the objector's next move, the seat held, as L2 did at #30 and #36: #26, #49, #52.",
+      "ruled_is_not_shipped": "Nothing reached /adversarial/ or /combined. The evidence file, the map, the corpus and the pin are untouched."
+    },
+    "R1_rules_L3": {
+      "his_words_verbatim": "Go with your recommendations on all of the above. Proceed as you wish.",
+      "hub_rule": {
+        "the_recommendation_he_adopted": "Sixteen entries route to benatar-asymmetry-attack#long. One of those is FAILS only when its move presses what the hub's own flags record. Those flags are the contested impersonal core (HR-03) and the suffering-load premise the hub never establishes. If the hub meets the move without resting on either, it holds. Routing to a flagged hub is not by itself a fail.",
+        "why": "Sixteen of the 29 route to one flagged hub; without a stated rule the sixteen verdicts swing on mood (R0104)."
+      },
+      "k350_rule": {
+        "the_recommendation_he_adopted": "Where a move is normative consent-scepticism, the route through consent-incoherent is barred, and the entry then holds only if its other route meets the move. #59 is barred. #22, #54 and #58 are not, so their route is read on its merits.",
+        "rests_on": "routing_constraint_consent_incoherent_K350; L2's #13 and #61 set the precedent."
+      },
+      "joy_outweighs_reading": {
+        "the_recommendation_he_adopted": "It covers routes into joy-outweighs-harms#long. That locus's own (d) concedes one case: when the person bearing the harms also gets the goods, the argument falls back on the asymmetry (HR-02). So a move about others' goods is met there, and a move about the created person's own goods ends at HR-02. On that reading #49 holds, and #43 and #64 fail.",
+        "rests_on": "the Phase D (d) at joy-outweighs-harms#long, which calls the dilemma decisive against the naive aggregator and concedes the intrapersonal horn relocates to the asymmetry (HR-02)."
+      },
+      "source": "the L3 chat messages that presented Batch 1 and Batch 2, 2026-09-25 (markdown stripped)"
+    },
+    "R1_findings_L3": {
+      "hr05_risk_frame": "HR-05's risk-without-an-antecedent-subject facet, registered by the (d) at cherry-picking-worst#archetypeVariants.sophisticate, ended #23, #34 and #57: the proxy-gamble frame the corpus leans on is the thing that (d) records as contested. #6 met HR-05's other face, the stake symmetry registered at life-gift#long.",
+      "moves_that_carry_their_own_answer": "The move field of #7, #14 and #62 contains a rebuttal as well as the objection, so a card would print the answer inside the objection (L2 found the same at #1). A drafting item whatever the verdict.",
+      "grounds_describe_text_the_route_lacks": "#25 (the grounds say the hub grants suffering-mutability; the hub never discusses it), #22 (act-structure is claimed of a locus silent on determinism), #58 (the fair-play answer lives in the grounds, not the routed loci). L2's #47 is the same shape.",
+      "gate5_second_clauses_logged_not_ruled": "#53 (the long's own third point, pressed impersonally, is L2's #10), #51 (the naturalistic-fallacy clause, open to the boomerang registered at natural-reproduce#diagnosis), #52 (the grounds call the total-utilitarian variant 'met arguendo' at the hub, which the hub's own (d)s contradict). L2's #27 and #3 stand beside them.",
+      "his_words_verbatim": "Go with your recommendations on all of the above. Proceed as you wish."
     }
   },
   "flagship_sidecars": {

@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## R1 complete — 2026-09-25 (no release; the pin stands)
+
+Josiah ruled the last 29 of the Adversarial Map's 69 "already answered" entries, phases B1–E: **6 hold, 23 fail**. R1 is complete at **24 hold, 45 fail**. The rows are appended to `adversarial_map_staging/r1/R1_rulings.json`; its gate is unchanged, and a new control record, `r1_rulings_gate_control_v0_2.json`, re-runs the gate's controls against the longer file. Two reading instruments are now committed beside them: `r1_dossiers.py`, which assembles each entry's full evidence, and `r1_quote_check.py`, which checks that every quotation a ruling leans on is verbatim. He also adopted the three reading rules the rulings were made under (canon `R1_rules_L3`). No failed entry has been changed yet. A drafting session will re-author or reclassify each one, and a session that did not draft it will judge the result. Canon `project_canon_v38_20.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## R1 rulings — 2026-09-25 (no release; the pin stands)
 
 Josiah ruled 40 of the Adversarial Map's 69 "already answered" entries (R1): **18 hold, 22 fail**. The rulings are an append-only file, **`adversarial_map_staging/r1/R1_rulings.json`**, checked by `r1_rulings_gate.py` beside it; the 29 entries of phases B1–E are carried to the next session. He also ruled what a failed entry becomes: no entry may claim "we answer this" where the map itself records the answer as ending at bedrock or as flawed. Such entries become "where this line terminates" entries, or wait on their repair. Canon `project_canon_v38_19.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
