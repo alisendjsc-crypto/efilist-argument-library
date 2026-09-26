@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## R1 rulings — 2026-09-25 (no release; the pin stands)
+
+Josiah ruled 40 of the Adversarial Map's 69 "already answered" entries (R1): **18 hold, 22 fail**. The rulings are an append-only file, **`adversarial_map_staging/r1/R1_rulings.json`**, checked by `r1_rulings_gate.py` beside it; the 29 entries of phases B1–E are carried to the next session. He also ruled what a failed entry becomes: no entry may claim "we answer this" where the map itself records the answer as ending at bedrock or as flawed. Such entries become "where this line terminates" entries, or wait on their repair. Canon `project_canon_v38_19.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## Sidecars — 2026-09-25 (no release; the pin stands)
 
 Two of the flagship's embedded data sets now exist as files beside it: **`sidecars/map_graph_data.json`** (the Mechanism Web — 35 mechanisms, 82 objections, 142 links) and **`sidecars/map1_transitions.json`** (Map 1, the Argument Flow Map — 78 source objections, 2,886 next-objection edges over four interlocutor modes, with Map 1's own caveats). `tools/build_map_sidecars.py` writes both from `site/combined.html`'s literals rather than from a second hand-kept copy; their md5s are pinned in canon (`project_canon_v38_17.json`, block `flagship_sidecars`), and `tools/xsurface_v4_1_0.py` now fails if either disagrees with the flagship. Neither file carries a "primary" mechanism, because the flagship marks none. Also tracked for the first time: **`icons/gen_icons.py`**, the generator every served favicon names; `tools/icons_regen_check.py` shows it redraws all seven byte for byte. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
