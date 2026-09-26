@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.21",
+  "canon_version": "38.22",
   "last_updated": "2026-09-25",
-  "last_updated_by_session": "L3_build",
+  "last_updated_by_session": "L3_widen",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "L4: the drafting pass over the 45 FAILS, starting from adversarial_map_staging/r1/r1_collision_list_v0_1.md (grouped by failure shape; method_L3 says what each shape gets), judged by a seat that did not draft it (the gate2 role, K258). Then R2.",
+    "session": "L4: the drafting pass over the 45 FAILS, starting from adversarial_map_staging/r1/r1_collision_list_v0_2.md (grouped by failure shape; method_L3 says what each shape gets), judged by a seat that did not draft it (the gate2 role, K258). In parallel and isolated: the design lane (parallel_lane_design_L3). Then R2, then the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1757,7 +1757,22 @@
     "carried_L3": "R1 carries nothing: 69 of 69 ruled. Carried beside it: the gate-5 second clauses (R1_findings_L3; L2's #27 and #3); the moves that carry their own answer (#1, #7, #14, #62); L1a's carries (ruling 1's rest, the two served-text repairs, readme_paths_gate.py's curl.exe, instructions.md's stale counts); the unverified Boonin lead (a 2012 article or a book; check a source before any repair).",
     "after_R1_L3": "R2, may a (b) be reader-facing and under what label, with a recommendation already at interconnection_design_K350.b_class_reader_facing_OPEN_R2; then the interconnection build, a design Josiah ratifies before a byte ships -- in his words, as R0091 quotes them: 'I do want the adversarial's continuations and responses to be inter-connected eventually, but we want to do it well and right.'",
     "build_done_L3": "The validator-rule build recommended at L2 and L3 is done: adversarial_map.collision_rule_BUILT_L3.",
-    "carried_L3_build": "Relays deferred on his word ('The relays can be deferred for later since it's mostly aesthetic work or prioritized on your reecommendations. Focus on the substance for now.'): R0104 and R0107 un-acked, no close relay, no desk snapshot of the efilist CLAUDE.md for L3 yet. Waiting in seat l's queue, unread: R0108 (argue to l, 'glyph_sigil_architecture_v1'), which the argue seat says carries his request that the game's tier sigils and HUD marks come to the library."
+    "carried_L3_build": "Cleared at L3's close: R0104 and R0107 acked; the close relay and the desk snapshot follow this commit. R0108 goes to the design lane unread by L3.",
+    "ruled_L3_close": {
+      "his_words_verbatim": "Proceed with your recommendations on all front's.",
+      "adopted": {
+        "widen_the_check": "Widen the automatic check to cover the other slots of the node an answer routes to. Lean: yes. It would have caught #39 and #58 as well, both failures, at the cost of two more entries to read.",
+        "drafting_pass": "The drafting pass (L4). Lean: a fresh session, starting from the worklist, with a different session judging the drafts.",
+        "r2": "R2, then the interconnection design. Lean: after L4.",
+        "deferred_bookkeeping": "Lean: clear all of it in about a minute at the start of the next library session, or now if you give the word."
+      }
+    },
+    "parallel_lane_design_L3": {
+      "his_question_verbatim": "DO you think a sigil  / design architecture session would be warranted in its own isolated session while the meat of the library presses on?",
+      "the_seat_s_answer": "Yes: its own session, now, in parallel with L4, isolated in its own git worktree on its own branch. It shares nothing with the drafting pass but the repository, the canon file and the served tree; so it bumps no canon, touches nothing under adversarial_map_staging/ and never touches site/combined.html (any flagship use is a declared pin move); /libraries deploys on push to main, so it shows him a preview and merges on his word.",
+      "acted_on": "his standing default that the seat's recommendations proceed unless he says otherwise, and 'Proceed with your recommendations on all front's.'",
+      "inputs": "R0108 (argue to l, glyph_sigil_architecture_v1) and R0107; the grids in argue's design/tier_sigils_v0/sigils.json at argue 6fb26e1 (md5 b97acd2b), copied from the file, never from a render; L1a's note that a full ladder with its top rung lit is pixel-identical to the flagship favicon."
+    }
   },
   "open_questions": {
     "active": {
@@ -1888,7 +1903,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.21",
+  "canon_version_marker": "v38.22",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2569,7 +2584,8 @@
     "v38_18_L1a": "MINOR. keyset UNCHANGED at 42. Two adversarial_map subkey additions (audience_and_purpose_ruling_L1a, R1_method_ruling_L1a); in flagship_sidecars, primary_mechanism rewritten to the ruling, the map_graph_data.json pin and the generator's md5 moved, and pin_moves added; next_recommended_session re-pointed (session, precondition_L1 answered, method_L1a added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus and jsx untouched. invariants, schemas and hazard_map asserted byte-identical, and every other top-level key too.",
     "v38_19_L2": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L2, R1_standard_ruling_L2, a_vs_own_record_collision_finding_L2); next_recommended_session re-pointed (session rewritten; method_L2, carried_L2, after_R1_L2 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_20_L3": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (R1_progress_L3, R1_rules_L3, R1_findings_L3); next_recommended_session re-pointed (session rewritten; method_L3, carried_L3, after_R1_L3 added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
-    "v38_21_L3_build": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_BUILT_L3); next_recommended_session re-pointed (session rewritten; build_done_L3, carried_L3_build added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file, the rulings and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
+    "v38_21_L3_build": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_BUILT_L3); next_recommended_session re-pointed (session rewritten; build_done_L3, carried_L3_build added); canon-meta; this note; one session_log_recent append. NO PIN: combined.html, corpus, jsx, the R1 evidence file, the rulings and the map untouched. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
+    "v38_22_L3_widen": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (collision_rule_WIDENED_L3); next_recommended_session re-pointed (session rewritten; ruled_L3_close and parallel_lane_design_L3 added; carried_L3_build updated); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2800,7 +2816,8 @@
     "L1a_rulings (2026-09-25, same seat, same day; NO PIN): JOSIAH RULED THE FIVE L1 QUESTIONS, in his words 'Going with your recommendations on all of the above.', and added a note on the Map's purpose, carried verbatim in adversarial_map.audience_and_purpose_ruling_L1a. (1) The Adversarial Map is public to read, never promoted. (2) R1 by the two-block method (30 under the K346 ruling as a block after a sample read; 39 pre-K346 held until re-read). (3) CITATION.cff's abstract corrected: 82 objections, and the maps named as they are (an argument-flow map, Map 1, and force-directed mechanism and dependency graphs). (4) No primary mechanism, ruled twice the same evening (here, and via the argue seat's R0089): sidecars/map_graph_data.json's rule now says so, fbf8a08772fb4bbe37bee7a342af0cc3 -> 9d71766dfdb456e298b866f27f3b60c4; status UNDEFINED and the data unchanged. (5) Tier sigils: yes, in icons/gen_icons.py, in principle; per the argue lean he adopted (R0089), the game keeps tier colour until he has seen a design, and nothing is drawn until he asks to see one.",
     "L2_R1 (2026-09-25; NO PIN): R1 RULED FOR 40 OF 69 (a) ENTRIES, in his words 'Go with your recommendations on all of the above and proceed as you wish.' (the Block 1 sample) and 'Go with your recommendations on all of the above.' (Phase A, the other 18 of F, and the standard). Block 1 fully read, 30: HOLDS 14, FAILS 16. Block 2 Phase A, 10: HOLDS 4, FAILS 6. Carried: 29 (B1-E). 21 of the 22 FAILS are contradicted by the map's own records; #40 rests on the seat's reading alone. STANDARD RULED: an (a) may not say WE ANSWER THIS where the map records its answer as ending at bedrock or as flawed; such entries become (d)s under the terminus label or wait on their (b) repair. Rulings in adversarial_map_staging/r1/R1_rulings.json (append-only; gate adversarial_map_staging/r1/r1_rulings_gate.py, controls 11 of 11). L1's struck A-E premise corrected forward in L2's first message.",
     "L3_R1 (2026-09-25; NO PIN): R1 COMPLETE, 69 OF 69 (a) ENTRIES RULED: HOLDS 24, FAILS 45. L3 ruled the 29 L2 carried (B1-E) in his words 'Go with your recommendations on all of the above. Proceed as you wish.' -- HOLDS 6 (#26, #37, #49, #51, #52, #53), FAILS 23 -- under three reading rules he adopted with them (the hub rule, the K350 rule, the joy-outweighs reading). 20 of L3's FAILS rest on map records; #63 on the corpus's own text; #22 and #58 on the seat's reading alone. Two new failure shapes: routed answer silent (#22, #25, #58) and cross-node aggravation (#63). Reading instruments committed: adversarial_map_staging/r1/r1_dossiers.py and adversarial_map_staging/r1/r1_quote_check.py. Rulings adversarial_map_staging/r1/R1_rulings.json (gate adversarial_map_staging/r1/r1_rulings_gate.py, controls v0_2 11 of 11). Next: the validator-rule build, then the drafting pass over the 45 FAILS, judged by a seat that did not draft.",
-    "L3_build (2026-09-25; NO PIN): THE COLLISION RULE ADOPTED AT L2 IS BUILT, on his words 'Go with your recommendations on all of the above. Proceed as you wish.' and 'The relays can be deferred for later since it's mostly aesthetic work or prioritized on your reecommendations. Focus on the substance for now.'. adversarial_map_staging/r1/r1_collision_list.py lists all 69 (a) entries: 56 collided (HOLDS 17, FAILS 39), 13 not; 24 ship-eligible on R1 HOLDS, 45 blocked for the drafting pass by shape. It catches 39 of the 45 FAILS; 6 were found only by reading (#22, #35, #39, #40, #58, #63). Controls 5 of 5. The drafting pass starts from adversarial_map_staging/r1/r1_collision_list_v0_1.md."
+    "L3_build (2026-09-25; NO PIN): THE COLLISION RULE ADOPTED AT L2 IS BUILT, on his words 'Go with your recommendations on all of the above. Proceed as you wish.' and 'The relays can be deferred for later since it's mostly aesthetic work or prioritized on your reecommendations. Focus on the substance for now.'. adversarial_map_staging/r1/r1_collision_list.py lists all 69 (a) entries: 56 collided (HOLDS 17, FAILS 39), 13 not; 24 ship-eligible on R1 HOLDS, 45 blocked for the drafting pass by shape. It catches 39 of the 45 FAILS; 6 were found only by reading (#22, #35, #39, #40, #58, #63). Controls 5 of 5. The drafting pass starts from adversarial_map_staging/r1/r1_collision_list_v0_1.md.",
+    "L3_widen (2026-09-25; NO PIN): on his words 'Proceed with your recommendations on all front's.' the collision rule is WIDENED to an answering node's other slots (v0_2): 58 collided (HOLDS 17, FAILS 41), adding #39 and #58; it now catches 41 of the 45 FAILS, and #22, #35, #40, #63 were found only by reading. v0_1 kept. His question, verbatim: 'DO you think a sigil  / design architecture session would be warranted in its own isolated session while the meat of the library presses on?' The seat's answer: yes, an isolated parallel design lane (worktree, no canon bump, no pin, merge on his word). L4, the drafting pass, starts from adversarial_map_staging/r1/r1_collision_list_v0_2.md."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -4942,6 +4959,51 @@
       "finding_necessary_not_sufficient": "The rule catches 39 of the 45 FAILS. The other 6 were found only by reading: #22 (the seat's reading alone: the routed locus is silent on determinism); #35 (the entry's own grounds, and a (d) on a third node, natural-reproduce#diagnosis); #39 (a (d) on the answering node's other slot, slippery-slope-eugenics#short); #40 (the seat's reading alone: the move stops short of its payload); #58 (the seat's reading alone: the routed loci answer the version the move set aside); #63 (the corpus's own text: the routed long concedes the move's premise). 17 collided entries held: the collision was read and found not to bear on the move. So the list is where reading starts, never where it stops.",
       "lean_unruled": "Widen the collision set to (b)/(d) on an answering node's other slots, L2's law made mechanical: it would add 2 entries to the reading list (#39, #58), 2 of which failed (#39, #58). The seat's lean, not a ruling; the adopted rule is built as adopted.",
       "validator_untouched": "adv_map_validator_v0_6.py is unchanged. The rule lives beside R1 because it reads R1's rulings, which the map validator does not."
+    },
+    "collision_rule_WIDENED_L3": {
+      "his_words_verbatim": "Proceed with your recommendations on all front's.",
+      "the_recommendation_he_adopted": "Widen the automatic check to cover the other slots of the node an answer routes to. Lean: yes. It would have caught #39 and #58 as well, both failures, at the cost of two more entries to read.",
+      "rule_v0_2": "Every (a) whose answered_by locus, same-node sibling, or any other slot of an answering node carries a (b) or (d) is listed for reading, and the list must be empty or ruled before any (a) card ships (the L2 rule, widened at L3 on Josiah's word; canon adversarial_map.collision_rule_WIDENED_L3).",
+      "tool": {
+        "md5": "cb3cd460a6f72a47ac31232eb4287240",
+        "bytes": 17162,
+        "file": "adversarial_map_staging/r1/r1_collision_list.py",
+        "default_rule": "v0_2",
+        "v0_1_still_reproduces": "--rule v0_1 re-renders the committed v0_1 list byte for byte except the canon filename it names (v38_20 then, the current canon now), whose failure shapes are unchanged"
+      },
+      "list_v0_2": {
+        "json": {
+          "md5": "f73b1fc6e1dd5ed77268ec5ec1894bf3",
+          "bytes": 109419,
+          "file": "adversarial_map_staging/r1/r1_collision_list_v0_2.json"
+        },
+        "md": {
+          "md5": "937995e8cdb9383f45af1851d9f51d47",
+          "bytes": 64379,
+          "file": "adversarial_map_staging/r1/r1_collision_list_v0_2.md"
+        },
+        "reproducible_under_forced_hash_seeds": true
+      },
+      "list_v0_1": "kept as committed, 4ca417f1 / 0f849e41; not superseded in place",
+      "controls": {
+        "md5": "967da539b37694957fed7e94b339a861",
+        "bytes": 1796,
+        "file": "adversarial_map_staging/r1/r1_collision_list_control_v0_2.json",
+        "result": "6 of 6 as expected, the unmutated control first; C5 proves the widening reaches an entry v0_1 does not"
+      },
+      "counts_v0_2": {
+        "collided": 58,
+        "collided_HOLDS": 17,
+        "collided_FAILS": 41,
+        "not_collided_HOLDS": 7,
+        "not_collided_FAILS": 4
+      },
+      "counts_v0_1": {
+        "collided": 56,
+        "collided_FAILS": 39
+      },
+      "what_the_widening_added": "#39 and #58, both FAILS; no HOLDS were added to the reading list.",
+      "found_only_by_reading": "4 of the 45 FAILS: #22, #35, #40, #63. A mechanical rule cannot reach a silent route (#22), a record on a third node (#35), a stopped-short move (#40) or a concession in plain corpus text (#63); reading stays mandatory."
     }
   },
   "flagship_sidecars": {

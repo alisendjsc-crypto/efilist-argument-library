@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The collision list, widened — 2026-09-25 (no release; the pin stands)
+
+On Josiah's word the collision check now also looks at the other slots of the node an answer routes to, where L2 found contradictions hiding. **`r1_collision_list_v0_2.md`** (and `.json`) replaces v0_1 as the drafting pass's worklist; v0_1 is kept as it was committed. The widened check flags 41 of the 45 failed entries; the four it cannot reach (#22, #35, #40, #63) were found only by reading. Canon `project_canon_v38_22.json`, which also records a design lane (the argue game's sigils, for the library) running in parallel with the drafting pass. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The collision list — 2026-09-25 (no release; the pin stands)
 
 The rule Josiah adopted at L2 is now a tool: **`adversarial_map_staging/r1/r1_collision_list.py`** lists every "already answered" entry whose answer, or whose own node, carries a flag in the map, and fails if any such entry is unruled. Its output, **`r1_collision_list_v0_1.md`** (and `.json`), is the worklist for the drafting pass: the 45 failed entries grouped by what each needs, then the 24 that hold. The rule flags 39 of the 45 failures; the other six were found only by reading, so the list is where reading starts, not where it stops. Canon `project_canon_v38_21.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.

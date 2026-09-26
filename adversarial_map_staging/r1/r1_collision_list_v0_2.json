@@ -1,0 +1,2871 @@
+{
+ "artifact": "r1_collision_list_v0_2.json",
+ "rule": "Every (a) whose answered_by locus, same-node sibling, or any other slot of an answering node carries a (b) or (d) is listed for reading, and the list must be empty or ruled before any (a) card ships (the L2 rule, widened at L3 on Josiah's word; canon adversarial_map.collision_rule_WIDENED_L3).",
+ "inputs": {
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "3f1dfad54021d7920576c7bd4840b62f"
+  },
+  "evidence": {
+   "file": "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+   "md5": "719b5ddb27680f32181a8a953c84b6c2"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_3.json",
+   "md5": "681827419df72a16a7c6fe70df8fe77f"
+  },
+  "canon": "project_canon_v38_21.json"
+ },
+ "summary": {
+  "a_entries": 69,
+  "ruled": 69,
+  "collided": 58,
+  "collided_ruled": 58,
+  "collided_HOLDS": 17,
+  "collided_FAILS": 41,
+  "uncollided_HOLDS": 7,
+  "uncollided_FAILS": 4,
+  "ship_eligible": [
+   3,
+   4,
+   18,
+   19,
+   24,
+   26,
+   27,
+   28,
+   29,
+   30,
+   36,
+   37,
+   38,
+   41,
+   46,
+   49,
+   51,
+   52,
+   53,
+   55,
+   56,
+   66,
+   68,
+   69
+  ],
+  "blocked_by_shape": {
+   "aggravation_cross_node": [
+    63
+   ],
+   "aggravation_s11_1": [
+    5
+   ],
+   "answer_flagged_b": [
+    1,
+    7,
+    11,
+    32,
+    42,
+    48,
+    50,
+    62,
+    67
+   ],
+   "route_to_bedrock": [
+    2,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    23,
+    31,
+    33,
+    34,
+    35,
+    39,
+    43,
+    44,
+    45,
+    47,
+    54,
+    57,
+    59,
+    60,
+    61,
+    64,
+    65
+   ],
+   "routed_answer_silent": [
+    22,
+    25,
+    58
+   ],
+   "under_strength_move": [
+    40
+   ]
+  },
+  "unruled": [],
+  "rule_broken": false
+ },
+ "shape_means": {
+  "route_to_bedrock": "The answer routed to is one the map itself records as ending at registered bedrock (HR-02, HR-03, HR-04, HR-05, HR-06, HR-11, HR-14, or a (d) at the answering locus or a sibling slot). Under the standard: reclassify to (d), routed to that bedrock; ships under the terminus label with no new prose.",
+  "answer_flagged_b": "The answer's load-bearing sentence carries a (b) the map already holds (at the answering locus, or a sibling slot's (b) whose rule convicts it). Under the standard: waits on that repair; a (d) instead if the repair itself ends at bedrock.",
+  "aggravation_s11_1": "The node's own text concedes the move's premise (design section 11.1, aggravation): a (b) repair at the slot.",
+  "aggravation_cross_node": "NEW at L3. The node the entry routes to concedes the move's premise in its own words (#63: economy-population#long calls the aging-care problem real, against the target's 'not by individual people'). A (b) repair at the target sentence.",
+  "under_strength_move": "The move stops short of its own payload; re-author it at full strength, then re-judge.",
+  "routed_answer_silent": "NEW at L3. The routed locus does not engage the move: the answer the grounds describe is argued in the grounds, or lives elsewhere, not in the routed text (L2's #47 basis). The drafting seat re-routes to a locus that answers, repairs the target, or re-authors; then a non-drafting seat judges."
+ },
+ "items": [
+  {
+   "n": 1,
+   "target": "just-depressed#archetypeVariants.defender",
+   "phase": "R",
+   "tier": "T1",
+   "answered_by": [
+    "just-depressed#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "It does not lean on depressive realism",
+      "at": "just-depressed#archetypeVariants.sophisticate",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "two utterances incompatible with a single motive of care",
+      "at": "just-depressed#long",
+      "class": "b",
+      "phase": "R"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-004",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "That sentence answers the charge only if the bad faith has been shown. The map's own Phase R entry at the same #long (a headline b, same session K345) says the only evidence offered, the two-utterance tell, \"infers hostility from a sequence of utterances, which is that inference in the same direction\". That is this move, conceded one locus over.",
+    "stronger_continuation": "The (b)'s own: exasperation is one motive and produces both sentences, so the tell shows no hostility and the slot's motive verdict is unsupported. Also: this entry's move field carries its own adjudication (\"Met rather than merely addressable: ...\"), so a card would print the answer inside the objection."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 2,
+   "target": "why-not-suicide#long",
+   "phase": "E",
+   "tier": "T1",
+   "answered_by": [
+    "red-button-repugnant#long",
+    "why-not-suicide#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-065",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move is HR-14's own charge: the second layer licenses a button against every existing being, and routing the question elsewhere answers where, not what. The grounds answer 'met by routing'. The map's own (d)s say that routing is the defect. The sibling (d) on this node says the positive case is defended nowhere. The (d) at red-button-repugnant's sophisticate slot says the charge is relocated until it reaches a node that leaves it standing, and the routed red-button long argues for the button rather than against it.",
+    "stronger_continuation": "None needed: the move is at full strength and the map registers it as bedrock."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 3,
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "why-not-suicide#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-023",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The sincerity challenge reads continued life as testimony against the belief. The long answers both halves: the position never prescribed ending one's life, and continued survival is the survival drive's work rather than a considered endorsement, so it testifies to nothing about the belief.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 4,
+   "target": "why-not-suicide#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "violence-as-reductio#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-024",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move shows the slot's lone-actor analogy misfits the founders. The answer concedes that fact in full and shows the cut never rested on peripherality: it measures what the core entails, and the core does not entail the button.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 5,
+   "target": "why-not-suicide#archetypeVariants.drifter",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "why-not-suicide#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-025",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says the slot hands the drifter only the layer that acquits, while the view defended is the efilist conjunction. The node's own long confirms that premise: the efilist position is two-layered, and its NU layer licenses red-button-style advocacy. So the answer concedes the move instead of meeting it. By design §11.1 this is aggravation: the slot's \"It never was\" is made false in context by its own node, the same shape the map registers as a headline (b) at violence-as-reductio's drifter slot.",
+    "stronger_continuation": "None needed: the move stands as written, and the node's own long concedes its premise."
+   },
+   "shape": "aggravation_s11_1",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (aggravation_s11_1)"
+  },
+  {
+   "n": 6,
+   "target": "consent-both-ways#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "most-people-happy#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-055",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says presumed consent also covers beneficial impositions (vaccination, schooling), so an existence the created person endorses ex post is beneficial presumed consent. The answer denies a beneficiary: the never-created is deprived of nothing. But the node counts the same ex-post subject as a victim of the imposition. The map's own (d) at life-gift#long registers exactly that stake symmetry as HR-05 bedrock, and the proxy-gamble route leans on the risk frame the (d) at cherry-picking-worst's sophisticate slot also registers at HR-05.",
+    "stronger_continuation": "The life-gift (d)'s own: either a subject can be wronged without an antecedent stake, in which case it can be benefited without one, or neither can. The node needs the first half for the harm and denies it for the benefit. That is HR-05."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 7,
+   "target": "economy-population#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "future-solve#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+      "at": "future-solve#short",
+      "class": "b",
+      "phase": "C"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-048",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says calling the created 'victims' smuggles in the verdict that birth is a harm. The routed hub supplies that verdict two ways, and the map flags both. Universally, it rests on a metaethical choice the hub's B1 (d) records as undecided (HR-03). On its person-affecting fallback, it rests on a suffering threshold the hub's B1 (b) says is established nowhere. Unlike L2's #36, no routed text grants net-positive lives and holds anyway.",
+    "stronger_continuation": "The move's core, pressed at the hub: your own fallback makes creation a harm only once suffering crosses a threshold you never show typical lives cross, so 'victim' is the premise, not the conclusion."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 8,
+   "target": "benatar-asymmetry-attack#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-026",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer meets the parity charge only in its weaker special-pleading form, by supplying a principle. The map's own (d) at the sophisticate slot this entry routes to says the decomposition relocates the dispute: its impersonal comparative is exactly what the person-affecting critic denies (HR-03). The answer's own locus records that parity at full strength ends at bedrock.",
+    "stronger_continuation": "Parity at full strength: decompose absent pleasure the same way, as no pleasure here plus a scenario ranked worse than one with it. The asymmetry then needs impersonal ranking for pain while denying it for pleasure. That is HR-03."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 9,
+   "target": "benatar-asymmetry-attack#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-027",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The long meets the move's weaker half: the no-reason premise is argued (inference to the best explanation), not merely restated. It does not meet the core, that the premise is disputed. The map's own B1 (d) at benatar-asymmetry-attack#long records that the inference licenses one defensible candidate and no universal ought, with the verdict waiting on an undecided metaethical choice.",
+    "stronger_continuation": "Drop the refusal charge and keep the core: the person-affecting rival explains the same procreative-reason asymmetry without the deprivation account, so the premise stays disputed. That is the bedrock the (d) records."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 10,
+   "target": "benatar-asymmetry-attack#archetypeVariants.drifter",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-028",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move's claim is impersonal: an unrealized real value is a real absence of value. The answer replies with deprivation (no relatum, no reason), which meets only a deprivation reading. The map's own (d) at the sophisticate slot records the impersonal reading as the live dispute (HR-03), so the move at its own strength is not met.",
+    "stronger_continuation": "The move's own impersonal reading, pressed: a world containing that value ranks above one without it, by the same asteroid logic the asymmetry uses for pain. That is HR-03."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 11,
+   "target": "self-defeating#diagnosis",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "pragmatist-objection#medium",
+    "self-defeating#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "requires only the development of sufficient technological capacity",
+      "at": "self-defeating#long",
+      "class": "b",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "for each being not created, is a concrete practical outcome",
+      "at": "pragmatist-objection#long",
+      "class": "d",
+      "phase": "B2"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-013",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer leans on two things. One is the truth/utility split, the propagation-as-truth reply the move explicitly steps past (\"never touches aims-frustration\"). The other is the long's technological aside, which the map's own Phase A entry at self-defeating#long (same session, K222, class b) flags: it concedes a dependence on the civilization this move says the view's acceptance demoralizes.",
+    "stronger_continuation": "The move at full strength, joined to the (b)'s means-audit: the realization path needs the motivated, reproducing civilization that the view's acceptance demoralizes and its principle forbids."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 12,
+   "target": "imposing-values#medium",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "policy-proposal#long",
+    "red-button-repugnant#long",
+    "violence-as-reductio#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "that would at least be an informed decision rather than an instinctive one",
+      "at": "policy-proposal#long",
+      "class": "b",
+      "phase": "C"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-014",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move's heaviest clause, a terminal outcome no living dissenter can opt out of, is the positive-eliminationist charge. The red-button long this entry routes to defends the override as the lesser violation instead of denying it, and canon's HR-14 (K347) records that charge as answered nowhere. The violence-as-reductio route rests on the entailment standard the map flags as this cluster's headline (b).",
+    "stronger_continuation": "The terminal-outcome clause pressed alone: efilism's endorsed endpoint overrides every living dissenter, and the only reply on offer defends the override as the lesser violation."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 13,
+   "target": "imposing-values#short",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "non-identity-problem#long",
+    "consent-incoherent#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "You do not need to name the victim to condemn the system",
+      "at": "non-identity-problem#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-015",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The entry answers the symmetry charge with the non-identity long's impersonal \"structural\" reply. The map's own (d) at non-identity-problem#long says that reply concedes the point and that routing there is circular; an (a) routed there was already withdrawn at K338 on your ratification. The other route, consent-incoherent, is barred for normative consent-scepticism by canon's K350 constraint.",
+    "stronger_continuation": "None needed: the move is the non-identity symmetry at full strength, and nothing in the corpus establishes the non-comparative wronging the answer needs (HR-05)."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 14,
+   "target": "ai-fear#short",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "Either show the premises themselves entail the recklessness",
+      "at": "ai-fear#archetypeVariants.defender",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "whether the minimization layer can be independently motivated",
+      "at": "ai-fear#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-049",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The entry's own grounds name the hostile core: does suffering-first neutrality commit the view to preferring a non-suffering successor? The move then reads 'prefer' only as 'create it', which the asymmetry blocks. The map's own (d) on a sibling slot of this node records the preference itself as adjudicated nowhere (HR-14), and L2 failed #15 and #16 on that (d).",
+    "stronger_continuation": "R1-008's: a suffering-first view does not just decline to create the successor; it prefers the painless successor world, since ending sentience ends suffering. The short's own burden-shift leans that way."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 15,
+   "target": "ai-fear#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "violence-as-reductio#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "Either show the premises themselves entail the recklessness",
+      "at": "ai-fear#archetypeVariants.defender",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "whether the minimization layer can be independently motivated",
+      "at": "ai-fear#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-029",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says the slot saves the framework by narrowing it to the safe deterrence reading. The map's own (d) at ai-fear's sophisticate slot says exactly that: the deterrence reading is the safe one, the minimization reading is what the charge is about, and that reading is adjudicated nowhere (HR-14). The entailment answer defends the structural layer, not the reading the charge targets.",
+    "stronger_continuation": "The (d)'s own: the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates, and every inbound route ends in a concession."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 16,
+   "target": "ai-fear#archetypeVariants.drifter",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "why-not-suicide#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "Either show the premises themselves entail the recklessness",
+      "at": "ai-fear#archetypeVariants.defender",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "whether the minimization layer can be independently motivated",
+      "at": "ai-fear#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-008",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The action-level answer covers only the structural layer, and the same long says the NU layer licenses red-button-style advocacy. The map's own (d) at ai-fear's sophisticate slot registers this successor charge as HR-14: \"the framework that would prefer a non-suffering successor is the one nobody in the corpus adjudicates\".",
+    "stronger_continuation": "A suffering-first view does not merely stay neutral about a painless successor. It prefers one, since ending sentience ends suffering: the successor-preference facet of HR-14."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 17,
+   "target": "violence-as-reductio#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "red-button-repugnant#medium",
+    "negative-util-aggregation#long",
+    "benatar-asymmetry-attack#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "a cost is not a contradiction",
+      "at": "negative-util-aggregation#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-050",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move grants the bomber and presses the architect: for efilism the button is framework content, and a successful button leaves no one to bear the cascade. Every route ends at registered bedrock. negative-util-aggregation#long concedes the costless button to the maximizer and rests on a debunking its own (d) calls bedrock (HR-11). red-button-repugnant#medium carries a (d): the recoil survives as a staked commitment. The benatar#medium route is the one L2 found cannot reach existing beings (#45). The positive case behind the button is HR-14, answered in no locus.",
+    "stronger_continuation": "None needed: the move is at full strength as written."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 18,
+   "target": "violence-as-reductio#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "violence-as-reductio#archetypeVariants.sophisticate"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-030",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move says structural-first dismisses a load-bearing anchor by taxonomy. The sibling slot concedes exactly that limit and routes each anchor's entailment claim to the node that owns it, and those nodes answer the entailment question the move poses.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 19,
+   "target": "violence-as-reductio#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "violence-as-reductio#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-031",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move merges the architect who holds the button with the grabbers who act. The long separates them: the act is condemned on the objector's own standard, and the architect's thesis is located in the added negative-utilitarian premise, which the core does not entail. The slot's \"disowned grabbers\" are the actors, and they are disowned.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 20,
+   "target": "violence-as-reductio#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "why-not-suicide#archetypeVariants.sophisticate"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "at": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-007",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The entry's own grounds concede that the move \"defeats one route\", the slot's consent sentence, and then answer with a different route. The map's own (d) at that very answering locus says \"Indexing settles entailment and nothing else\", and leaves the positive case \"defended nowhere\" (HR-14).",
+    "stronger_continuation": "The maximizer swaps no premise: he runs the NU layer, which needs only that continued existence is net-bad for the subject. That is HR-14, which canon records as answered in no locus."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 21,
+   "target": "meaning-through-suffering#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "hedonic-contrast#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-041",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move's 'real loss' can bite against not creating only if it is impersonal: a world without courage, depth and love under loss ranks lower. The answer replies with deprivation (the never-created are deprived of nothing), which meets only the person-affecting reading. The map's own (d) at the hub's sophisticate slot records the impersonal reading as the live dispute (HR-03). This is L2's #10 in new words.",
+    "stronger_continuation": "The move's own impersonal reading, pressed: a world holding the goods that only adversity makes possible ranks above one without them, by the same asteroid logic the asymmetry uses for pain. That is HR-03."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 22,
+   "target": "free-will-defense#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "consent-incoherent#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-042",
+    "verdict": "FAILS",
+    "basis": "seat-reading",
+    "reason": "K350: Not engaged. The move is a determinism tu quoque, not consent-scepticism, so the consent-incoherent route is open and is read on its merits. The move turns the long's own determinism on the parent: the long rejects libertarian freedom and dismisses compatibilism as relocating the problem, which leaves no sense in which the parent could have refrained. consent-incoherent#long says nothing about determinism, responsibility or ought-implies-can; it states a default of restraint, which is itself an ought addressed to the parent. This FAILS on the seat's reading alone: no map entry backs it.",
+    "stronger_continuation": "None needed on strength: the move is at full strength. What is missing is the answer: restraint is an ought, ought implies can, and the long has left the parent no 'can' it accepts."
+   },
+   "shape": "routed_answer_silent",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (routed_answer_silent)"
+  },
+  {
+   "n": 23,
+   "target": "most-people-happy#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "future-solve#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+      "at": "future-solve#short",
+      "class": "b",
+      "phase": "C"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-056",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says the proxy gamble proves too much: we impose population risk on non-consenting minorities everywhere, as with vaccination or cities on fault lines. The answer's principled difference is that procreation manufactures the risk-bearer. The map's own (d) at cherry-picking-worst's sophisticate slot says that same fact defeats the gamble frame rather than rescuing it: with no antecedent subject there is no baseline the risk worsens (HR-05). The future-solve leg cites a distinction that the map's own (b) on that node says the node never makes.",
+    "stronger_continuation": "The (d)'s own: every other domain has an antecedent subject whose prospects the risk degrades; procreation has none at the moment of decision, so either name the baseline the wager worsens or admit the regulatory analogy was doing the work."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 24,
+   "target": "most-people-happy#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T2",
+   "answered_by": [
+    "cherry-picking-worst#archetypeVariants.sophisticate",
+    "just-depressed#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "in every serious domain of risk ethics that object is the whole distribution",
+      "at": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "two utterances incompatible with a single motive of care",
+      "at": "just-depressed#long",
+      "class": "b",
+      "phase": "R"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "It does not lean on depressive realism",
+      "at": "just-depressed#archetypeVariants.sophisticate",
+      "class": "b",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-010",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The answers rest the suffering premise on guaranteed occurrences that need no calibrated rating, and they state the bias claim as directional and modest, which meets the parity charge. The map's (d) at cherry-picking-worst's sophisticate slot (HR-05) hits that slot's risk-ethics sentence, not the baseline sentence this answer uses.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 25,
+   "target": "masochist-counterexample#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-057",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move presses the node's own concession toward engineered beings for whom existence is pure good. The grounds say the hub grants suffering-mutability arguendo, but the hub's text never discusses mutability; transhumanist-objection#long does, and the route avoided it. Against a pain-free existence the hub condemns nothing: its fallback makes the harm depend on a suffering load its B1 (b) says is never established. The only ground left is imposition regardless of harm, which is HR-06. Basis as presented: map record and register; the hub's silence on mutability is the seat's reading, checkable in the hub text.",
+    "stronger_continuation": "The move's payload, pressed: engineer beings for whom existence is pure good. Then nothing in the routed asymmetry condemns creating them, and what remains is that imposing existence without consent is wrong whatever the harm ledger says, which is HR-06."
+   },
+   "shape": "routed_answer_silent",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (routed_answer_silent)"
+  },
+  {
+   "n": 26,
+   "target": "wild-animal-suffering-consistency#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "negative-util-aggregation#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "a cost is not a contradiction",
+      "at": "negative-util-aggregation#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-043",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The dilemma's first horn grants there are no means today. The answer shows forced extinction by any real means is contraindicated on the framework's own ledger, and the node already avows capacity-indexing (L2 held that at #27). The second horn is met by the discretion line, not by species. The move does not press the costless button. Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 27,
+   "target": "wild-animal-suffering-consistency#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "wild-animal-suffering-consistency#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-009",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The long avows capacity-indexing and grounds it in ought-implies-can, so the arbitrariness charge is met rather than deferred.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 28,
+   "target": "wild-animal-suffering-consistency#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "wild-animal-suffering-consistency#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-032",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move says only authored suffering generates obligation, so arbitrariness returns. The long says openly that obligation, not salience, tracks discretion, which is the ordinary structure of obligation and not an anthropocentric cut. It also keeps a conditioned obligation toward suffering humans did not author, so the move's premise is false.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 29,
+   "target": "wild-animal-suffering-consistency#archetypeVariants.drifter",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "wild-animal-suffering-consistency#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-033",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move says the criterion's practical reach rounds to nothing, so it is doing expressive work. The long gives it a reach that is large and concrete (factory farming and the rest, condemned with full force) and does not rest the criterion's warrant on reach.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 30,
+   "target": "wild-animal-suffering-consistency#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T4",
+   "answered_by": [
+    "wild-animal-suffering-consistency#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-034",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move charges inconsistency: the same outcome-conditioning should dissolve the human case. The long states a real disanalogy that it does not stipulate: creating is a positive election by an agent, imposed on a being never consulted, while leaving the wild alone is neither. So the conditioning does not transfer.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 31,
+   "target": "antinatalism-misanthropic#archetypeVariants.blended",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "antinatalism-misanthropic#archetypeVariants.sophisticate"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+      "at": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "at": "antinatalism-misanthropic#long",
+      "class": "b",
+      "phase": "E"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-035",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The slot confines itself to the suppression version and routes the axiological claim to the sophisticate slot. The map's own (d) at that slot says the impersonal-grounding cut does not survive the conclusion: ranking bearerless worlds above inhabited ones is what axiological misanthropy names, and that ends at HR-03. The routed answer is registered bedrock, so it is not an answer.",
+    "stronger_continuation": "The (d)'s own: a theory that disvalues suffering impersonally and concludes no further bearers should exist has ranked bearerless worlds above inhabited ones, and axiological misanthropy is a name for that ranking."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 32,
+   "target": "antinatalism-misanthropic#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "antinatalism-misanthropic#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+      "at": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "at": "antinatalism-misanthropic#long",
+      "class": "b",
+      "phase": "E"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-036",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer rests on the building analogy. The map's own Phase E (b) at antinatalism-misanthropic#long is anchored on that very sentence. It says the node answers only the motivational form, and that the analogy (\"stop building more of these\") concedes what the position expresses. So the expressive charge this move presses is left standing.",
+    "stronger_continuation": "The (b)'s own: misanthropy is an accusation about what a framework recommends, and a verdict coinciding exactly with hatred's is read off its content, not its author's warmth."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 33,
+   "target": "antinatalism-misanthropic#archetypeVariants.drifter",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "antinatalism-misanthropic#archetypeVariants.sophisticate"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+      "at": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "at": "antinatalism-misanthropic#long",
+      "class": "b",
+      "phase": "E"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-037",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says non-creation protects no one, so the care has no object. That is the value-requires-a-valuer point. The answer is the sophisticate slot's impersonal grounding, and the sentence it rests on is the anchor of the map's own (d) there, which registers the point as HR-03.",
+    "stronger_continuation": "None needed: the move is HR-03's value-requires-a-valuer facet, stated plainly, and its own answering sentence carries the (d)."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 34,
+   "target": "speak-for-everyone#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-058",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says 'forced participation' presupposes a participant who exists before the lottery; creation makes the participant. The map's own (d) at cherry-picking-worst's sophisticate slot registers that move as HR-05: risk imposed with no antecedent subject. The answer concedes the move's premise (no pre-existing subject is forced) and then leans on the risk spine that the (d) says does not transfer.",
+    "stronger_continuation": "The (d)'s own: 'Either the wager has a bearer, in which case name the baseline it worsens, or it has none, in which case the regulatory analogy has been doing the argument's work.'"
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 35,
+   "target": "evolution-purpose#short",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "evolution-purpose#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-059",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move is neo-Aristotelian in its own words: facts about a living thing's nature are already evaluative, so reproduction is a natural good. The answer is that purpose does not equal ethical justification, an is-ought reply the neo-Aristotelian denies. The entry's own grounds concede that this form routes to bedrock. The map's own (d) at natural-reproduce#diagnosis registers the is-ought floor as HR-04 and names evolution-purpose as its second surface.",
+    "stronger_continuation": "The natural-reproduce (d)'s own boomerang: the naturalistic fallacy cuts the appeal to nature and the appeal to suffering with one stroke, and the corpus needs the second to survive. That is HR-04."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 36,
+   "target": "future-solve#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "most-people-happy#long",
+    "cherry-picking-worst#archetypeVariants.sophisticate"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "in every serious domain of risk ethics that object is the whole distribution",
+      "at": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+      "at": "future-solve#short",
+      "class": "b",
+      "phase": "C"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-038",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move says \"transitional sacrifice\" presupposes net-negative lives. The answer shows the case never needed that: it grants net-positive lives and still holds, on the non-consensual wager and the guaranteed baseline.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 37,
+   "target": "next-person-cure-cancer#long",
+   "phase": "E",
+   "tier": "T1",
+   "answered_by": [
+    "next-person-cure-cancer#medium"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-066",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move says the long's symmetry argument concedes a commensurability the corpus denies. On its best reading the medium runs a conditional from the objector's own premise, and arguing from an opponent's scales concedes nothing. The long's guaranteed-suffering point carries the asymmetric case on its own. Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 38,
+   "target": "next-person-cure-cancer#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "next-person-cure-cancer#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-039",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move is right that the slot's deprivation sentence misses actual beneficiaries. The node's long meets the move where it lands: a third party's benefit does not license a non-consensual imposition, and the child is used as a means. This is design §11.1's own worked example of inheritance curing.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 39,
+   "target": "privileged-first-world#long",
+   "phase": "E",
+   "tier": "T1",
+   "answered_by": [
+    "slippery-slope-eugenics#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "These positions are structurally opposite",
+      "at": "slippery-slope-eugenics#short",
+      "class": "d",
+      "phase": "C"
+     },
+     {
+      "anchor": "What makes eugenics monstrous is the sorting, the ranking",
+      "at": "slippery-slope-eugenics#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "cascade-math voids it on the framework's own calculus",
+      "at": "slippery-slope-eugenics#archetypeVariants.blended",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "whether any negative-utilitarian framework can ground a coercion-floor without sliding",
+      "at": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-067",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says that a wrongness which scales with deprivation, said of populations, ranks the deprived: the objection was built to make the node write that sentence. The answer is formal universality: no one should reproduce. The map's own (d) at the answering node's short says universality answers the rule, not the outcome, and conflates formal universality with substantive non-discrimination (HR-03, group-continuity facet).",
+    "stronger_continuation": "The (d)'s own: a rule that is formally universal can still bear hardest in substance on the precarious, and a prohibition that condemns procreation most where deprivation is worst does exactly that."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 40,
+   "target": "privileged-first-world#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "privileged-first-world#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-006",
+    "verdict": "FAILS",
+    "basis": "seat-reading",
+    "reason": "The move stops before its payload. It leaves \"the priority claim\" standing without saying what the priority delivers, and the long meets only that stopped-short form, with a short list of pessimist authors. This FAILS is the seat's reading alone: no map entry backs it.",
+    "stronger_continuation": "Grant defeasible priority, then cash it: the most affected, taken as a population, largely affirm their lives and have children, so the better-placed witnesses contradict the comfortable antinatalist's evaluative premise. A canon of pessimist authors does not meet that. (Also: the grounds cite \"Benatar in South Africa\", which appears in #short and #medium, not in the routed #long.)"
+   },
+   "shape": "under_strength_move",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (under_strength_move)"
+  },
+  {
+   "n": 41,
+   "target": "selfish-lazy#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T1",
+   "answered_by": [
+    "selfish-lazy#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "the most radical form of altruism available to a biological organism",
+      "at": "selfish-lazy#long",
+      "class": "b",
+      "phase": "E"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-005",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The long answers the creditability question itself, setting what each party gains beside what it gives up, and does not fall back on the validity point or the tu quoque. The map's minor (b) at #long strikes only the word \"altruism\" and leaves that ledger standing.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 42,
+   "target": "consent-incoherent#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "bradley-no-subject#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "There is no third branch",
+      "at": "bradley-no-subject#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-044",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says a consent norm with no interest-bearer yields silence. The answer is bradley's poisoned well: the relatum is the actual future person who will bear the harm. The map's own headline (b) at that locus says those analogies assert non-comparative harm and do not establish it, and this entry's own grounds say it inherits that (b).",
+    "stronger_continuation": "The (b)'s own: the poisoned-well drinker exists independently and has a worse-off comparison; the created child has none, so 'a harm that will belong to someone' asserts the non-comparative harm the comparativist denies (HR-05)."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 43,
+   "target": "suffering-makes-human#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "joy-outweighs-harms#long",
+    "love-beauty-art#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The goods of existence raise no claim on behalf of the merely possible",
+      "at": "love-beauty-art#long",
+      "class": "d",
+      "phase": "D"
+     },
+     {
+      "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "at": "joy-outweighs-harms#long",
+      "class": "d",
+      "phase": "D"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-060",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move's core is that the goods suffering makes possible outweigh it. Both routed loci carry (d)s from the same session recording where that answer ends. At joy-outweighs-harms#long, the opponent who holds that a merely possible person can be benefited by creation is not refuted; the dispute relocates to the asymmetry (HR-02). At love-beauty-art#long, the no-deprivation move never reaches an agent-neutral reason to create (HR-03). The entry's own grounds call the residue 'the registered asymmetry'.",
+    "stronger_continuation": "The joy-outweighs (d)'s own: on the intrapersonal horn the person who suffers is the person who gains the depth, and the argument does not finish the job; it relocates to the asymmetry (HR-02)."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 44,
+   "target": "red-button-repugnant#long",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "negative-util-aggregation#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "a cost is not a contradiction",
+      "at": "negative-util-aggregation#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-016",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer concedes the move for anyone who holds side-constraints and keeps the button's arithmetic only for the maximizer, whose defence is to call the separateness intuition question-begging. The map's own B1 (d) at that same locus says this reply ends at bedrock. Conceding one branch and leaving the other at bedrock is not \"we answer this\".",
+    "stronger_continuation": "The Moorean shift the (d) records: that annihilating contented billions to forestall a pinprick is monstrous is more certain than any premise of the arithmetic, so a premise goes, not the intuition."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 45,
+   "target": "red-button-repugnant#long",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "eliminativism#medium",
+    "benatar-asymmetry-attack#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     },
+     {
+      "anchor": "The property is conserved under redescription; only the label moves",
+      "at": "eliminativism#long",
+      "class": "d",
+      "phase": "B2"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-017",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The wash (eliminativism) disarms the recoil and the long's own case alike, so the work falls to the creation asymmetry as tie-breaker. The map registers that asymmetry's impersonal comparison as bedrock (HR-03, the F (d) at benatar-asymmetry-attack's sophisticate slot). The corpus itself says importing the asymmetry to existing beings equivocates, and the button concerns existing beings. The re-route floated for #47 therefore cures nothing.",
+    "stronger_continuation": "None needed: the symmetric debunk stands, and the tie-breaker offered against it is registered bedrock, applied to beings it does not cover."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 46,
+   "target": "red-button-repugnant#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T5",
+   "answered_by": [
+    "red-button-repugnant#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-011",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "On the best reading (gate 2), a pro tanto weight is finite, and the long already holds that no finite good redeems the content. The remaining contest, existence as a terminal value, is the (d) registered at red-button-repugnant#medium.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 47,
+   "target": "red-button-repugnant#archetypeVariants.sophisticate",
+   "phase": "F",
+   "tier": "T5",
+   "answered_by": [
+    "red-button-repugnant#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "at": "red-button-repugnant#medium",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "at": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-012",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The routed long restates the firmware claim and never says why aversion to suffering escapes it; \"no symmetric target\" is argued in the grounds, not in the text. The map's own Phase A (d) at red-button-repugnant#medium makes this charge and registers it as bedrock.",
+    "stronger_continuation": "None needed: the move is at full strength as written, and the answer is what's missing. Phase A maps the same symmetric-debunk move at red-button-repugnant#long (entry #45) and routes it to eliminativism#medium and benatar-asymmetry-attack#medium. A re-route may cure this entry; that gets decided when #45 is read."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 48,
+   "target": "slippery-slope-eugenics#archetypeVariants.defender",
+   "phase": "F",
+   "tier": "T3",
+   "answered_by": [
+    "slippery-slope-eugenics#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "These positions are structurally opposite",
+      "at": "slippery-slope-eugenics#short",
+      "class": "d",
+      "phase": "C"
+     },
+     {
+      "anchor": "What makes eugenics monstrous is the sorting, the ranking",
+      "at": "slippery-slope-eugenics#archetypeVariants.drifter",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "cascade-math voids it on the framework's own calculus",
+      "at": "slippery-slope-eugenics#archetypeVariants.blended",
+      "class": "b",
+      "phase": "F"
+     },
+     {
+      "anchor": "whether any negative-utilitarian framework can ground a coercion-floor without sliding",
+      "at": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-040",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move is a facilitation charge: the safe reading is reachable only by the careful. The entry's own grounds concede that whether the actor cut answers a facilitation charge is the separate headline (b) at ai-fear's defender slot. The \"framework's own math\" safeguard the slot relies on is flagged by the map's headline (b) at this node's blended slot: a contingent calculation cannot bound a normative licensing claim. The coercion floor itself is HR-14, adjudicated nowhere.",
+    "stronger_continuation": "The (b)'s own: stipulate a regime that could sterilize without backlash and the arithmetic reverses while the framework stands unchanged. An empirical calculation is offered where the coercion question needs a constraint."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 49,
+   "target": "adoption-instead#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "joy-outweighs-harms#long",
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "at": "joy-outweighs-harms#long",
+      "class": "d",
+      "phase": "D"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-061",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move names goods of biological parenthood that adoption cannot supply: the gestational bond and the lineage relation. Those are the parent's goods, funded by the child's imposed harms. joy-outweighs-harms#long's side-constraint argument forbids exactly that transfer, and the map's own (d) there calls that dilemma decisive. That (d) concerns only the intrapersonal horn, the child as beneficiary, which this move does not raise. Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 50,
+   "target": "bitter-childhood#long",
+   "phase": "E",
+   "tier": "T1",
+   "answered_by": [
+    "bitter-childhood#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "not seeing falsely, he is seeing without the anaesthetic",
+      "at": "bitter-childhood#archetypeVariants.defender",
+      "class": "b",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-068",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move holds the node to its own rule: if etiology is inert, it is inert both ways. The answer is the medium, which ends by suggesting the arguer's suffering 'validates the framework'; the long says it 'proves the antinatalist point'. The map's own headline (b) on a sibling slot of this node records the corpus's rule that the boomerang is licensed only as a self-refutation demonstration, and that no locus meets the charge because that rule condemns it. That (b) is anchored on the defender slot's clearer-sight sentence; applying it to the long's closing move is the seat's reading.",
+    "stronger_continuation": "The (b)'s own: run the etiology principle to its self-refutation and stop. A closing move that says the arguer's suffering proves the point keeps its own argument while spending the opponent's."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 51,
+   "target": "animals-reproduce#long",
+   "phase": "E",
+   "tier": "T1",
+   "answered_by": [
+    "wild-animal-suffering-consistency#medium"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-069",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move demands the asymmetry that lets animals count as victims but not as authorities. The answer supplies it: animals are moral patients whose suffering the criterion counts, never agents whose behaviour sets norms. The slaughterhouse verdict is on the suffering, which needs a patient, not a predator's culpability. Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 52,
+   "target": "overpopulation-addressed#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "economy-population#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-051",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move stays inside the node's own suffering ledger: falling births may add suffering to the existing old. The routed economy long answers on that ledger. Births to fix the shortfall hand a whole new life to each recruit so the current generation gains a few decades, and each recruit needs successors in turn. The move does not press the hub's flagged core. Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 53,
+   "target": "hedonic-contrast#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "transhumanist-objection#long",
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "carried where the terminus is defended",
+      "at": "transhumanist-objection#long",
+      "class": "b",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-045",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move doubts that an engineered being would still feel pleasure. The answer shows nothing turns on it: the long's own third point already grants that removing suffering might remove pleasure, and transhumanist-objection#long says the verdict holds whatever the technology does. The move does not press the hub's flagged core, and the transhumanist (b) sits in a paragraph this answer does not use (K338, ratified). Basis as presented: the seat's reading.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 54,
+   "target": "anthropic-principle#long",
+   "phase": "B1",
+   "tier": "T4",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "consent-incoherent#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-046",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "K350: Not engaged at the move's stated form: it attacks 'exploitation', not the wrong of non-consent. The consent route stands and is read on its merits. The move's core is that observers constitute an intrinsic good of the cosmos. That is an impersonal value claim. The hub answers with deprivation, which meets only the person-affecting reading, and the map's own (d) at the hub's sophisticate slot records the impersonal reading as the live dispute (HR-03). The consent route states a default of restraint but never says why an impersonal good cannot override it (that leg is the seat's reading).",
+    "stronger_continuation": "The core, pressed: if conscious observers constitute an intrinsic good of the cosmos, creating them realizes that good whether or not anyone is deprived by its absence. The asymmetry must then deny impersonal goods the standing it grants impersonal bads. That is HR-03."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 55,
+   "target": "meta-ethical-pluralism#medium",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "consent-incoherent#long",
+    "non-identity-problem#long",
+    "contractualism-scanlon#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "You do not need to name the victim to condemn the system",
+      "at": "non-identity-problem#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "ex-ante versus ex-post rejection is a live internal dispute",
+      "at": "contractualism-scanlon#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "It simply is, and it is bad",
+      "at": "meta-ethical-pluralism#long",
+      "class": "d",
+      "phase": "A"
+     },
+     {
+      "anchor": "Negative utilitarianism merely refuses the tolerance",
+      "at": "meta-ethical-pluralism#medium",
+      "class": "d",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-018",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The rule is creation-indexed in its own words (\"imposed on a new being\"), so the proves-too-much horn misses. The second horn, that the creation distinction and not negative utilitarianism does the work, is one the node's own long already embraces, and the distinction is argued at the cited seats.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 56,
+   "target": "heat-death-futility#medium",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "heat-death-futility#long",
+    "heat-death-futility#medium"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "to make the indifference of the universe your own",
+      "at": "heat-death-futility#medium",
+      "class": "d",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-019",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The selective-disabling move needs the extinction prescription to rest on cosmic-scale mattering. The shipped text rests it on an aggregate of nervous-system-scale sufferings, each of which the objector's own person-scale concession keeps. The stronger whole-futility form is already a registered (d) on the next clause.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 57,
+   "target": "cherry-picking-worst#short",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "in every serious domain of risk ethics that object is the whole distribution",
+      "at": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-062",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move is the charge that the map's own (d) registers on a sibling slot of this node: the risk-ethics analogies smuggle in a prior subject, and procreation has none. The (d) records it as HR-05 bedrock, while the (a) at #short answers the same move with the asymmetry. One node cannot hold the move both answered and bedrock.",
+    "stronger_continuation": "The sibling (d)'s own: 'Either the wager has a bearer, in which case name the baseline it worsens, or it has none, in which case the regulatory analogy has been doing the argument's work.'"
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 58,
+   "target": "social-contract#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "why-not-suicide#long",
+    "consent-incoherent#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "whether the NU layer can be independently motivated",
+      "at": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-052",
+    "verdict": "FAILS",
+    "basis": "seat-reading",
+    "reason": "K350: Not engaged. Fair-play obligation is not consent-scepticism, so the consent-incoherent route is open and is read on its merits. The move concedes there was no consent to existence. It relocates to fair-play obligations incurred given existence, and notes that a society, unlike existence, has exits. Both routed loci answer the version the move set aside: why-not-suicide#long treats the exit from existence, and consent-incoherent#long treats consent at creation. The answer is argued in the grounds, not in the routed text, which is L2's #47 basis. This rests on the seat's reading alone.",
+    "stronger_continuation": "The fair-play version cashed (the seat's cashing): you draw on pensions, care and infrastructure that others' children will fund, in a scheme you could leave, so declining to supply its next members while drawing on them is free-riding. Neither routed locus speaks to obligations incurred given existence."
+   },
+   "shape": "routed_answer_silent",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (routed_answer_silent)"
+  },
+  {
+   "n": 59,
+   "target": "moral-progress#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "benatar-asymmetry-attack#long",
+    "consent-incoherent#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-053",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "K350: Engaged. At its core the move is normative consent-scepticism: a welfare-attentive creator's considered decision makes creation acceptable where the created cannot consent (L2's #61 form). The consent-incoherent route is barred. With that route barred, the hub remains. It meets the move only through the universal asymmetry (HR-03) or, on its own fallback, a suffering threshold its B1 (b) says is established nowhere. The move's claim is precisely that the suffering load keeps falling. The target's own reply, impermissible regardless of the conditions, is HR-06, registered bedrock.",
+    "stronger_continuation": "The core, cashed: a welfare-attentive, consent-sensitive creator decides for one who cannot consent, as a guardian decides for an infant, so as conditions improve the imposition is justified. The corpus's reply ('regardless of the conditions') is HR-06."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 60,
+   "target": "boonin-critique#note",
+   "phase": "G",
+   "tier": "T4",
+   "answered_by": [
+    "boonin-critique#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "Defeating one column does not collapse a building with four foundations",
+      "at": "boonin-critique#short",
+      "class": "d",
+      "phase": "B2"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-001",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer rests on the four grounds being independent of the asymmetry. The map's own B2 entry at boonin-critique#short (K228, class d) says they are \"one foundation wearing four hats\" and \"nothing in-corpus defends the pillars' independence\"; canon holds that dispute open (non_univocality_consent_independence_K350, UNRESOLVED).",
+    "stronger_continuation": "The K228 entry's own move: each of the four grounds presupposes that existence can net-harm or wrong the created subject, the very premise Boonin's evaluative-status objection targets, so the critique does reach the architecture."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 61,
+   "target": "moral-particularism#long",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "consent-incoherent#long",
+    "contractualism-scanlon#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "ex-ante versus ex-post rejection is a live internal dispute",
+      "at": "contractualism-scanlon#long",
+      "class": "d",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [
+     {
+      "anchor": "rigorous particularist analysis of procreation strengthens the antinatalist position",
+      "at": "moral-particularism#long",
+      "class": "d",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-020",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move is normative consent-scepticism: consent-absence stops being wrong-making where consent is impossible and a guardian decides. Canon's K350 constraint bars routing that to consent-incoherent. The other route's generalization rests on the \"no occupant\" argument, which the map's own B1 (d) at contractualism-scanlon#long says presupposes ex-post scoring, leaving the ex-ante rival standing at bedrock.",
+    "stronger_continuation": "Press the guardian analogy from the ex-ante standpoint: the prospective child is the patient whose prospects the parent weighs, as a guardian weighs an infant's. contractualism-scanlon#long itself calls that rival coherent."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 62,
+   "target": "buddhist-objection#long",
+   "phase": "B2",
+   "tier": "T4",
+   "answered_by": [
+    "neuroscience-positive-states#long",
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "a joy never instantiated is withheld from no one",
+      "at": "neuroscience-positive-states#long",
+      "class": "b",
+      "phase": "B2"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-047",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The answer rests on neuroscience-positive-states#long's sentence that a joy never instantiated is withheld from no one. The map's own headline (b) at that locus, written in the same session, is anchored on that exact sentence: it calls it the absence-asymmetry smuggled back in against the valence-symmetry the node adopts. It adds that the risk-imposition fallback presupposes bedrock-III (HR-06).",
+    "stronger_continuation": "The (b)'s own, applied to awakening: grant valence-realism in both signs, as the answering node does, and absent awakening is as neutral as absent dukkha. Non-creation is then not better, and the supreme goods stand against the risk-bundle on a symmetric ledger."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 63,
+   "target": "luxury-belief#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "economy-population#long"
+   ],
+   "collided": false,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-063",
+    "verdict": "FAILS",
+    "basis": "corpus-record",
+    "reason": "The move is right about the sentence it attacks: demographic contraction costs real people, not just an economic model. The routed answer concedes it, because economy-population#long says the aging-care problem is real and must be solved. That contradicts the target's 'not by individual people'. The grounds call the sentence an overclaim and dispensable, but a sentence the move defeats is a repair (a (b)), not an answer. This rests on the corpus's own words, not a map entry.",
+    "stronger_continuation": "None needed: the move defeats the sentence as written, and the corpus's own economy long agrees with it."
+   },
+   "shape": "aggravation_cross_node",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (aggravation_cross_node)"
+  },
+  {
+   "n": 64,
+   "target": "survivor-testimony#long",
+   "phase": "D",
+   "tier": "T2",
+   "answered_by": [
+    "joy-outweighs-harms#long",
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "at": "joy-outweighs-harms#long",
+      "class": "d",
+      "phase": "D"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-064",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The move says survivors' own endorsement is evidence that suffering is bearable, and the case needs it very bad. The answer says the verdict holds even for net-positive lives, via joy-outweighs-harms#long. But a survivor who endorses her own life is on the intrapersonal horn, where the map's own (d) there records that the dispute relocates to the asymmetry (HR-02). The hub's fallback makes the harm depend on a suffering load its B1 (b) says is never established, and survivor testimony is evidence on exactly that load.",
+    "stronger_continuation": "The (d)'s own, applied: the survivor is her own beneficiary, so the goods and harms fall on one person and the monster argument does not reach her. What remains is the asymmetry, which is where the dispute was always fought."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 65,
+   "target": "rights-future-generations#long",
+   "phase": "C",
+   "tier": "T3",
+   "answered_by": [
+    "benatar-asymmetry-attack#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [
+     {
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "phase": "B1"
+     },
+     {
+      "anchor": "how much suffering typical human lives actually contain",
+      "at": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "phase": "B1"
+     }
+    ],
+    "on_own_node": [],
+    "on_answering_node_other_slots": [
+     {
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "at": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "phase": "F"
+     }
+    ]
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-054",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "This is the parity charge L2 ruled at #8, sharpened. The node's own no-claimant premise is person-affecting, so the rescue must be an impersonal comparative that the premise disallows. The map's own (d) at the hub's sophisticate slot says the decomposition relocates the dispute to whether impersonal ranking is available (HR-03).",
+    "stronger_continuation": "Parity at full strength, from the node's own premise: if a right needs a claimant, so does a wrong. The asymmetry then needs impersonal ranking for pain while the node denies standing to anything with no claimant. That is HR-03."
+   },
+   "shape": "route_to_bedrock",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (route_to_bedrock)"
+  },
+  {
+   "n": 66,
+   "target": "indigenous-philosophy#note",
+   "phase": "G",
+   "tier": "T4",
+   "answered_by": [
+    "indigenous-philosophy#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "a node's suffering a constitutive, non-vetoing part of a good",
+      "at": "indigenous-philosophy#long",
+      "class": "d",
+      "phase": "B2"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-002",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The move's conclusion (\"not an answer at all\") fails. The long confines itself to the objection's logical form, which needs no practitioner, and it already concedes the tie; the map registers that tie as a (d) at #long. So the card claims no more than the long delivers.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 67,
+   "target": "eliminativism#note",
+   "phase": "G",
+   "tier": "T4",
+   "answered_by": [
+    "eliminativism#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "The property is conserved under redescription; only the label moves",
+      "at": "eliminativism#long",
+      "class": "d",
+      "phase": "B2"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-003",
+    "verdict": "FAILS",
+    "basis": "map-record",
+    "reason": "The entry's grounds lean on the barren-ledger sentence to meet the honest illusionist. The map's own K229 entry at eliminativism#long logged that exact sentence as an overclaim: global nihilism voids the reason to refrain as fully as the reason to create.",
+    "stronger_continuation": "The move pressed through the long's own reply: the honest illusionist's barren ledger is symmetric. It defeats the natalist's use of the objection but hands the antinatalist nothing. What survives is the is-ought (d) already registered at eliminativism#long."
+   },
+   "shape": "answer_flagged_b",
+   "status": "BLOCKED: R1 FAILS -> drafting pass (answer_flagged_b)"
+  },
+  {
+   "n": 68,
+   "target": "self-effacing-under-universalization#long",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "economy-population#long",
+    "self-effacing-under-universalization#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "Universal compliance is a norm's success condition",
+      "at": "self-effacing-under-universalization#long",
+      "class": "d",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-021",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The contradiction-in-will needs the last cohort's care duties to be undischargeable. The shipped text denies that (care without new births) and names the objector's only repair, conscripting successors as care labour, as the instrumentalization the Humanity formula forbids.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  },
+  {
+   "n": 69,
+   "target": "self-effacing-under-universalization#long",
+   "phase": "A",
+   "tier": "T5",
+   "answered_by": [
+    "self-effacing-under-universalization#long"
+   ],
+   "collided": true,
+   "collisions": {
+    "at_answering_locus": [],
+    "on_own_node": [
+     {
+      "anchor": "Universal compliance is a norm's success condition",
+      "at": "self-effacing-under-universalization#long",
+      "class": "d",
+      "phase": "A"
+     }
+    ],
+    "on_answering_node_other_slots": []
+   },
+   "for_reading_elsewhere_on_answering_nodes": [],
+   "r1": {
+    "row": "R1-022",
+    "verdict": "HOLDS",
+    "basis": "seat-reading",
+    "reason": "The will-test's precedents run through an existing willer's own ends, and the maxim ends no existing willer. What the move needs, rational nature's continuation as an end in itself, the long rightly names an axiological claim, not a formal one.",
+    "stronger_continuation": null
+   },
+   "shape": null,
+   "status": "SHIP-ELIGIBLE: R1 HOLDS"
+  }
+ ]
+}

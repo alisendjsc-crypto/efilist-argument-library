@@ -17,9 +17,14 @@ It exits 1 when the rule is broken: a collided (a) with no ruling, or a ruling w
 (the evidence file or the map no longer at the md5s the rulings file names). Ship status is a report,
 not a failure: a blocked card is the rule working.
 
-  python3 r1_collision_list.py                  # check and print the summary
-  python3 r1_collision_list.py --emit <dir>     # also write r1_collision_list_v0_1.json and .md
-  python3 r1_collision_list.py --self-test [--emit <path>]   # controls; the unmutated control runs first
+Two rule versions. v0_1 is the rule as adopted at L2: a (b)/(d) at an answering locus, or anywhere on the
+entry's own node. v0_2 is the widening Josiah adopted at L3: also any (b)/(d) on another slot of an
+answering node (L2's law made mechanical: the contradictions hide at siblings). v0_2 is the default;
+--rule v0_1 reproduces the v0_1 list byte for byte.
+
+  python3 r1_collision_list.py [--rule v0_1|v0_2]                 # check and print the summary
+  python3 r1_collision_list.py [--rule ...] --emit <dir>          # also write r1_collision_list_<rule>.json/.md
+  python3 r1_collision_list.py --self-test [--emit <path>]        # controls; the unmutated control runs first
 
 Repo-relative. Writes nothing unless --emit is given. Deterministic.
 """
@@ -28,7 +33,15 @@ import copy, glob, hashlib, json, os, shutil, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 RULINGS = "adversarial_map_staging/r1/R1_rulings.json"
-NAME = "r1_collision_list_v0_1"
+RULE_TEXT = {
+    "v0_1": "Every (a) whose answered_by locus or same-node sibling carries a (b) or (d) is listed for reading, "
+            "and the list must be empty or ruled before any (a) card ships (canon "
+            "adversarial_map.a_vs_own_record_collision_finding_L2, adopted at L2; built at L3).",
+    "v0_2": "Every (a) whose answered_by locus, same-node sibling, or any other slot of an answering node carries "
+            "a (b) or (d) is listed for reading, and the list must be empty or ruled before any (a) card ships "
+            "(the L2 rule, widened at L3 on Josiah's word; canon adversarial_map.collision_rule_WIDENED_L3).",
+}
+DEFAULT_RULE = "v0_2"
 
 
 def md5(path):
@@ -53,8 +66,9 @@ def shapes_from_canon(root):
     return os.path.basename(canons[0]), by_n, {k: v["means"] for k, v in shapes.items()}
 
 
-def build(root):
+def build(root, rule=DEFAULT_RULE):
     """Return (fails, report). fails is a list of rule breaches; report is the full list."""
+    assert rule in RULE_TEXT, rule
     doc = load(root, RULINGS)
     ev_rel, map_rel = doc["evidence"]["file"], doc["map"]["file"]
     fails = []
@@ -93,7 +107,7 @@ def build(root):
         elsewhere = [a for a in elsewhere if not a["at"].startswith(own + "#")]
         uniq = lambda xs: [dict(t) for t in sorted({tuple(sorted(x.items())) for x in xs})]
         answering, elsewhere, own_node = uniq(answering), uniq(elsewhere), uniq(own_node)
-        collided = bool(answering or own_node)
+        collided = bool(answering or own_node or (rule == "v0_2" and elsewhere))
         r = last.get(e["n"])
         if r is None:
             status = "BLOCKED: unruled"
@@ -106,8 +120,9 @@ def build(root):
         items.append({
             "n": e["n"], "target": "%s#%s" % (own, e["target_locus"]), "phase": e["phase"], "tier": e["tier"],
             "answered_by": refs, "collided": collided,
-            "collisions": {"at_answering_locus": answering, "on_own_node": own_node},
-            "for_reading_elsewhere_on_answering_nodes": elsewhere,
+            "collisions": dict({"at_answering_locus": answering, "on_own_node": own_node},
+                               **({"on_answering_node_other_slots": elsewhere} if rule == "v0_2" else {})),
+            "for_reading_elsewhere_on_answering_nodes": elsewhere if rule == "v0_1" else [],
             "r1": None if r is None else {"row": r["row"], "verdict": r["verdict"], "basis": r["basis"],
                                           "reason": r["reason"], "stronger_continuation": r["stronger_continuation"]},
             "shape": shape_of.get(e["n"]) if r is not None and r["verdict"] == "FAILS" else None,
@@ -120,10 +135,8 @@ def build(root):
         if i["shape"]:
             shapes.setdefault(i["shape"], []).append(i["n"])
     report = {
-        "artifact": NAME + ".json",
-        "rule": "Every (a) whose answered_by locus or same-node sibling carries a (b) or (d) is listed for reading, "
-                "and the list must be empty or ruled before any (a) card ships (canon "
-                "adversarial_map.a_vs_own_record_collision_finding_L2, adopted at L2; built at L3).",
+        "artifact": "r1_collision_list_%s.json" % rule,
+        "rule": RULE_TEXT[rule],
         "inputs": {"rulings": {"file": RULINGS, "md5": md5(os.path.join(root, RULINGS))},
                    "evidence": {"file": ev_rel, "md5": doc["evidence"]["md5"]},
                    "map": {"file": map_rel, "md5": doc["map"]["md5"]}, "canon": canon_file},
@@ -145,7 +158,7 @@ def build(root):
 
 def render_md(rep):
     s = rep["summary"]
-    L = ["# R1 collision list v0_1: the drafting pass's worklist", "",
+    L = ["# R1 collision list %s: the drafting pass's worklist" % rep["artifact"][len("r1_collision_list_"):-5], "",
          "Generated by `adversarial_map_staging/r1/r1_collision_list.py` from the rulings file `%s`, the evidence "
          "file and the map it names, and `%s`. Do not edit; regenerate." % (rep["inputs"]["rulings"]["md5"][:8],
                                                                            rep["inputs"]["canon"]), "",
@@ -165,6 +178,8 @@ def render_md(rep):
             out.append("  - collision at the answering locus: (%s) `%s` [%s] \"%s\"" % (x["class"], x["at"], x["phase"], x["anchor"]))
         for x in i["collisions"]["on_own_node"]:
             out.append("  - collision on its own node: (%s) `%s` [%s] \"%s\"" % (x["class"], x["at"], x["phase"], x["anchor"]))
+        for x in i["collisions"].get("on_answering_node_other_slots", []):
+            out.append("  - collision on an answering node's other slot: (%s) `%s` [%s] \"%s\"" % (x["class"], x["at"], x["phase"], x["anchor"]))
         for x in i["for_reading_elsewhere_on_answering_nodes"]:
             out.append("  - for reading (answering node, other slot): (%s) `%s` [%s]" % (x["class"], x["at"], x["phase"]))
         return out
@@ -197,9 +212,10 @@ def render_md(rep):
 
 def emit(rep, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, NAME + ".json"), "w", encoding="utf-8", newline="\n") as fh:
+    stem = rep["artifact"][:-5]
+    with open(os.path.join(out_dir, stem + ".json"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write(json.dumps(rep, indent=1, ensure_ascii=False) + "\n")
-    with open(os.path.join(out_dir, NAME + ".md"), "w", encoding="utf-8", newline="\n") as fh:
+    with open(os.path.join(out_dir, stem + ".md"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write(render_md(rep))
 
 
@@ -233,8 +249,10 @@ def self_test(emit_path=None):
             return m
 
         _, rep0 = build(REPO)
+        _, rep1 = build(REPO, "v0_1")
         collided = [i["n"] for i in rep0["items"] if i["collided"]]
         clean = [i["n"] for i in rep0["items"] if not i["collided"]]
+        widened = sorted(set(collided) - {i["n"] for i in rep1["items"] if i["collided"]})
         controls = [
             ("C0", "unmutated", lambda d: None, 0),
             ("C1", "a collided (a) loses its ruling (#%d)" % collided[0], drop_rows_for(collided[0]), 1),
@@ -242,6 +260,8 @@ def self_test(emit_path=None):
             ("C3", "the evidence file moves one byte", append_byte(doc0["evidence"]["file"]), 1),
             ("C4", "an uncollided (a) loses its ruling (#%d): blocked, not a breach" % clean[0],
              drop_rows_for(clean[0]), 0),
+            ("C5", "a widened-only (a) loses its ruling (#%d): v0_2 catches it" % widened[0],
+             drop_rows_for(widened[0]), 1),
         ]
         for cid, what, mut, want in controls:
             d = stage(cid, mut)
@@ -269,7 +289,8 @@ def self_test(emit_path=None):
                "tool_md5": md5(os.path.abspath(__file__)),
                "rulings_md5": md5(os.path.join(REPO, RULINGS)),
                "rule": "C0, the unmutated control, runs first and must be GREEN; C1-C3 must go RED; C4 must stay "
-                       "GREEN with the entry reported as blocked (unruled).",
+                       "GREEN with the entry reported as blocked (unruled); C5, an entry only the v0_2 widening "
+                       "reaches, must go RED when it loses its ruling.",
                "controls": results}
         with open(emit_path, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
@@ -280,7 +301,8 @@ def main():
     a = sys.argv[1:]
     if a[:1] == ["--self-test"]:
         return self_test(a[a.index("--emit") + 1] if "--emit" in a else None)
-    fails, rep = build(REPO)
+    rule = a[a.index("--rule") + 1] if "--rule" in a else DEFAULT_RULE
+    fails, rep = build(REPO, rule)
     s = rep["summary"]
     for f_ in fails:
         print("FAIL", f_)
@@ -290,8 +312,8 @@ def main():
     print("blocked by shape: %s" % json.dumps({k: len(v) for k, v in s["blocked_by_shape"].items()}))
     if "--emit" in a:
         emit(rep, a[a.index("--emit") + 1])
-        print("wrote %s.json and %s.md" % (NAME, NAME))
-    print("COLLISION RULE: %s" % ("GREEN" if not fails else "RED"))
+        print("wrote %s and %s.md" % (rep["artifact"], rep["artifact"][:-5]))
+    print("COLLISION RULE %s: %s" % (rule, "GREEN" if not fails else "RED"))
     return 1 if fails else 0
 
 

@@ -1,0 +1,65 @@
+{
+ "artifact": "r1_collision_list_control_v0_2.json",
+ "tool": "adversarial_map_staging/r1/r1_collision_list.py",
+ "tool_md5": "cb3cd460a6f72a47ac31232eb4287240",
+ "rulings_md5": "3f1dfad54021d7920576c7bd4840b62f",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; C1-C3 must go RED; C4 must stay GREEN with the entry reported as blocked (unruled); C5, an entry only the v0_2 widening reaches, must go RED when it loses its ruling.",
+ "controls": [
+  {
+   "control": "C0",
+   "what": "unmutated",
+   "rc": 0,
+   "expected_rc": 0,
+   "as_expected": true,
+   "fail_lines": []
+  },
+  {
+   "control": "C1",
+   "what": "a collided (a) loses its ruling (#1)",
+   "rc": 1,
+   "expected_rc": 1,
+   "as_expected": true,
+   "fail_lines": [
+    "#1 just-depressed#archetypeVariants.defender: collided and unruled"
+   ]
+  },
+  {
+   "control": "C2",
+   "what": "the map moves one byte",
+   "rc": 1,
+   "expected_rc": 1,
+   "as_expected": true,
+   "fail_lines": [
+    "referent moved: adversarial_map_staging/adversarial_map_v1_3.json is not at the md5 the rulings file names"
+   ]
+  },
+  {
+   "control": "C3",
+   "what": "the evidence file moves one byte",
+   "rc": 1,
+   "expected_rc": 1,
+   "as_expected": true,
+   "fail_lines": [
+    "referent moved: adversarial_map_staging/r1/R1_evidence_2026-09-19.json is not at the md5 the rulings file names"
+   ]
+  },
+  {
+   "control": "C4",
+   "what": "an uncollided (a) loses its ruling (#22): blocked, not a breach",
+   "rc": 0,
+   "expected_rc": 0,
+   "as_expected": true,
+   "fail_lines": []
+  },
+  {
+   "control": "C5",
+   "what": "a widened-only (a) loses its ruling (#39): v0_2 catches it",
+   "rc": 1,
+   "expected_rc": 1,
+   "as_expected": true,
+   "fail_lines": [
+    "#39 privileged-first-world#long: collided and unruled"
+   ]
+  }
+ ]
+}
