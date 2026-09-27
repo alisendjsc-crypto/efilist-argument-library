@@ -19,6 +19,9 @@
 // fb     -- every page that links the layer, seven widths, both grounds, two engines: card text lying under
 //           the per-card feedback link. Line boxes, not element boxes: a block's box spans the card whether
 //           or not its words reach the link.
+// tilt   -- the chin's tilt toggle (K410): it leans and is not inert, the far edge foreshortens, it rests flat
+//           and as sharp as with the toggle off, scroll and zoom flatten it, phone / reduced motion / narrow never
+//           show it, the chin row is exposed and does not overlap, and frames while it leans. Not in the default run.
 import { createRequire } from 'module';
 import { writeFileSync } from 'fs';
 const PW = process.env.PLAYWRIGHT || 'playwright';
@@ -280,6 +283,104 @@ async function fb(rec) {
   for (const P of Object.values(rec.fb.pages)) P.detail = P.detail.slice(0, 12);
 }
 
+// ---- tilt (K410) -----------------------------------------------------------------------------------------
+// The chin's tilt toggle, where the layer has one: the lean happens and is not inert (section 11), the far
+// edge foreshortens, it settles flat at rest with text exactly as sharp as with the toggle off, scroll and
+// the magnifier flatten it, a phone and reduced motion never get it, the chin row does not overlap and is
+// exposed to assistive technology, and what a lean costs per frame.
+async function tilt(rec) {
+  const b = await chromium.launch({ channel: 'chromium', args: ARGS[GPU] });
+  rec.tilt = { engine: b.version(), gpu: GPU, pages: {} };
+  const flatCSS = 'html.wz-tilting .wz-stage{transform:translate3d(var(--wz-px,0px),var(--wz-py,0px),0) scale(var(--wz-zoom,1))!important}';
+  const mx = p => p.evaluate(() => { const s = document.querySelector('.wz-stage'), t = getComputedStyle(s).transform;
+    return { is2D: t === 'none' || new DOMMatrix(t).is2D, tilting: document.documentElement.classList.contains('wz-tilting'),
+             blur: getComputedStyle(document.querySelector('.wz-soft-l')).backdropFilter }; });
+  for (const url of DEPTH_PAGES) {
+    const { ctx, p, errs } = await open(b, url);
+    const out = {};
+    out.hasToggle = await p.evaluate(() => !!document.querySelector('.wz-tilt'));
+    if (!out.hasToggle) { rec.tilt.pages[url] = { hasToggle: false }; await ctx.close(); continue; }
+    await addStyle(p, '.wz-focus{display:none!important}');
+    out.off = { pressed: await p.getAttribute('.wz-tilt', 'aria-pressed'), ...(await mx(p)) };
+    await p.mouse.move(1400, 450, { steps: 6 }); await p.waitForTimeout(3300);
+    const offImg = await shot(p);                                   // toggle off, pointer right, settled
+    await p.click('.wz-tilt'); await p.waitForTimeout(300);
+    out.on = { pressed: await p.getAttribute('.wz-tilt', 'aria-pressed'), stored: await p.evaluate(() => localStorage.getItem('wz-tilt')), ...(await mx(p)) };
+    // lean: move to the right edge, measure inside the idle window
+    await p.mouse.move(1100, 450, { steps: 4 }); await p.mouse.move(1400, 450, { steps: 6 }); await p.waitForTimeout(650);
+    out.leaning = await mx(p);
+    out.foreshortening = await p.evaluate(() => { const s = document.querySelector('.wz-stage'), M = new DOMMatrix(getComputedStyle(s).transform);
+      const W = document.documentElement.clientWidth, oy = scrollY + innerHeight / 2 - s.offsetTop, P = (x, y) => { const q = M.transformPoint(new DOMPoint(x, y, 0, 1)); return [q.x / q.w, q.y / q.w]; };
+      const hl = P(0, oy + 400)[1] - P(0, oy - 400)[1], hr = P(W, oy + 400)[1] - P(W, oy - 400)[1];
+      return { leftEdge: +(hl / 800).toFixed(4), rightEdge: +(hr / 800).toFixed(4) }; });
+    const lean = await shot(p);
+    await addStyle(p, flatCSS); const flatSame = await shot(p);   // same moment, lean suppressed
+    await dropStyles(p); await addStyle(p, '.wz-focus{display:none!important}');
+    out.leanDiff = diff(lean, flatSame, region(lean, 0, 0, lean.width, lean.height));
+    save(lean, `${url.replace(/\W+/g, '_')}_tilt_lean`);
+    // settle: no move for longer than the idle interval
+    await p.waitForTimeout(3300);
+    out.settled = await mx(p);
+    const onImg = await shot(p);
+    const C = region(onImg, 560, 250, 880, 650);
+    out.restSharpness = +(100 * sharp(onImg, C) / sharp(offImg, C)).toFixed(2);   // toggle on at rest vs toggle off
+    // scroll flattens at once
+    await p.mouse.move(1380, 450, { steps: 3 }); await p.waitForTimeout(150);
+    const before = await mx(p);
+    await p.mouse.wheel(0, 300); await p.waitForTimeout(120);
+    out.scroll = { leaningBefore: before.tilting, leaningAfter: (await mx(p)).tilting };
+    // the magnifier: no lean while zoomed
+    await p.evaluate(() => scrollTo(0, 0)); await p.waitForTimeout(200);
+    await p.click('.wz-mag'); await p.waitForTimeout(400);
+    await p.mouse.move(1200, 450, { steps: 4 }); await p.waitForTimeout(300);
+    out.zoomed = await mx(p);
+    await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+    // persistence across a reload
+    await p.reload({ waitUntil: 'load' }); await p.waitForTimeout(900);
+    out.afterReload = { pressed: await p.getAttribute('.wz-tilt', 'aria-pressed'), on: await p.evaluate(() => document.documentElement.classList.contains('wz-tilt-on')) };
+    // the chin: exposed, and no two controls sharing a point
+    out.chin = await p.evaluate(() => { const c = document.querySelector('.wz-chin'), bs = [...c.querySelectorAll('button')].filter(x => getComputedStyle(x).display !== 'none');
+      const rs = bs.map(x => x.getBoundingClientRect()), hit = bs.map((x, k) => document.elementFromPoint(rs[k].left + rs[k].width / 2, rs[k].top + rs[k].height / 2) === x);
+      let overlap = 0; for (let a = 0; a < rs.length; a++) for (let z = a + 1; z < rs.length; z++) if (rs[a].left < rs[z].right && rs[z].left < rs[a].right && rs[a].top < rs[z].bottom && rs[z].top < rs[a].bottom) overlap++;
+      const mk = c.querySelector('.wz-mark'), mr = mk && getComputedStyle(mk).display !== 'none' ? mk.getBoundingClientRect() : null, tr = c.querySelector('.wz-tilt').getBoundingClientRect();
+      return { chinHidden: c.getAttribute('aria-hidden'), exposed: bs.filter(x => !x.closest('[aria-hidden="true"]')).map(x => x.className), hitOwnCentre: hit.every(Boolean),
+               overlaps: overlap, markHidden: mk && mk.getAttribute('aria-hidden'), markClear: !mr || mr.right <= tr.left }; });
+    out.errors = errs;
+    rec.tilt.pages[url] = out;
+    await ctx.close();
+  }
+  // where the toggle must not appear: a phone, reduced motion, a narrow window; and where it must (just above)
+  const vis = async (o, w, h) => { const { ctx, p } = await open(b, '/right-to-die/combined', { w, h, ...o });
+    const r = await p.evaluate(() => { const t = document.querySelector('.wz-tilt'); return t ? getComputedStyle(t).display : 'absent'; }); await ctx.close(); return r; };
+  rec.tilt.visibility = { phone390: await vis({ touch: true }, 390, 844), reducedMotion: await vis({ reduced: 'reduce' }, 1440, 900),
+    narrow760: await vis({}, 760, 900), wide800: await vis({}, 800, 900), desktop1440: await vis({}, 1440, 900) };
+  // the wordmark against the row, every 20px from 780 to 1000 (the mark is centred and scales with vw)
+  { const { ctx, p } = await open(b, '/right-to-die/combined'); const clash = [];
+    for (let w = 780; w <= 1000; w += 20) { await p.setViewportSize({ width: w, height: 900 }); await p.waitForTimeout(120);
+      const r = await p.evaluate(() => { const mk = document.querySelector('.wz-chin .wz-mark'), t = document.querySelector('.wz-tilt');
+        if (!mk || getComputedStyle(t).display === 'none') return null; const a = mk.getBoundingClientRect(), z = t.getBoundingClientRect(); return +(z.left - a.right).toFixed(1); });
+      clash.push([w, r]); }
+    rec.tilt.markToToggleGap = clash; await ctx.close(); }
+  // frames while leaning: a continuous pointer sweep with the recorder running, toggle off against on
+  const sweep = p => p.evaluate(() => new Promise(res => { const t = []; let k = 0;
+    const f = ts => { t.push(ts); if (++k < 121) requestAnimationFrame(f); else { const d = t.slice(1).map((v, i) => v - t[i]).sort((a, b) => a - b), q = x => d[Math.floor(x * d.length)];
+      res({ med: +q(.5).toFixed(2), p95: +q(.95).toFixed(2), max: +d[d.length - 1].toFixed(2), over20: d.filter(v => v > 20).length }); } };
+    requestAnimationFrame(f); }));
+  rec.tilt.frames = {};
+  for (const [label, on] of [['toggleOff', false], ['toggleOn', true]]) {
+    const { ctx, p } = await open(b, '/combined');
+    if (on) await p.click('.wz-tilt');
+    const runs = [];
+    for (let k = 0; k < 3; k++) {
+      await p.mouse.move(200, 300);
+      const [r] = await Promise.all([sweep(p), p.mouse.move(1400, 700, { steps: 120 })]);
+      runs.push(r);
+    }
+    rec.tilt.frames[label] = runs; await ctx.close();
+  }
+  await b.close();
+}
+
 const rec = { base: BASE, layer: LAYER || 'live', when: new Date().toISOString() };
-for (const s of SECTIONS) await ({ depth, frames, fb })[s](rec);
+for (const s of SECTIONS) await ({ depth, frames, fb, tilt })[s](rec);
 console.log(JSON.stringify(rec, null, 1));

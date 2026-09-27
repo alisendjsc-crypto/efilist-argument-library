@@ -137,6 +137,40 @@
      clearing has always had in the stylesheet. Under the magnifier the pointer IS the camera (K317)
      and that path is left exactly as it was. */
   var FINE = matchMedia('(hover: hover) and (pointer: fine)');
+  /* THE TILT (K410) -- the chin's toggle; the reason it only leans while the pointer moves is in the
+     stylesheet (:root and 5b). Off by default, remembered per reader like the tier. */
+  var tiltOn = false, tiltIdle = 0;
+  function tiltRecall(){ try { return localStorage.getItem('wz-tilt') === '1'; } catch (e) { return false; } }
+  function tiltRemember(v){ try { if (v) localStorage.setItem('wz-tilt', '1'); else localStorage.removeItem('wz-tilt'); } catch (e) {} }
+  function tiltFlat(){ clearTimeout(tiltIdle); if (H.classList.contains('wz-tilting')) H.classList.remove('wz-tilting'); }
+  function tiltPaint(){
+    H.classList.toggle('wz-tilt-on', tiltOn);
+    if (!tiltOn) tiltFlat();
+    var b = document.querySelector('.wz-tilt');
+    if (b) { b.setAttribute('aria-pressed', tiltOn ? 'true' : 'false');
+             b.setAttribute('title', tiltOn ? 'Tilt: on' : 'Tilt: off');
+             b.setAttribute('aria-label', 'Tilt: the page leans toward the pointer while it moves. ' + (tiltOn ? 'On.' : 'Off.')); }
+  }
+  /* EVERY READ BEFORE THE FRAME'S FIRST WRITE. The first build read the stage's offsets in tiltLean, after
+     applyCam had written the camera: a layout read after a style write forces a whole extra style and
+     layout pass, and on the flagship's DOM that halved the frame rate while leaning -- measured 33.3ms
+     median against 16.7 with the toggle off, and 16.7 on a wing, whose DOM is small enough not to show
+     it. So the tokens, the offsets and the viewport are all read here, before applyCam writes. */
+  function tiltRead(){
+    var cs = getComputedStyle(H), s = stage();
+    return { y: num(cs.getPropertyValue('--wz-tilt-y'), 1), x: num(cs.getPropertyValue('--wz-tilt-x'), .6),
+             idle: num(cs.getPropertyValue('--wz-tilt-idle'), 2600),
+             ox: Math.round(cw() / 2 - (s ? s.offsetLeft : 0)), oy: Math.round(scrollY + ch() / 2 - (s ? s.offsetTop : 0)) };
+  }
+  function tiltLean(dx, dy, t){
+    H.style.setProperty('--wz-tox', t.ox + 'px');
+    H.style.setProperty('--wz-toy', t.oy + 'px');
+    H.style.setProperty('--wz-tay', (-dx * t.y).toFixed(3) + 'deg');   // pointer right: the left edge recedes
+    H.style.setProperty('--wz-tax', ( dy * t.x).toFixed(3) + 'deg');   // pointer low: the top recedes
+    H.classList.add('wz-tilting');
+    clearTimeout(tiltIdle);
+    tiltIdle = setTimeout(tiltFlat, t.idle);
+  }
   function onMove(e) {
     if (i !== 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     if (zoom <= 1.0001 && (!FINE.matches || (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents))) return;
@@ -145,7 +179,9 @@
     raf = requestAnimationFrame(function () {
       raf = null;
       var m = model(ptr.x, ptr.y);
+      var lean = tiltOn && zoom <= 1.0001 ? tiltRead() : null;
       applyCam(m.px, m.py, m.dx, m.dy);
+      if (lean) tiltLean(m.dx, m.dy, lean);
       H.style.setProperty('--wz-fx', ptr.x + 'px');
       H.style.setProperty('--wz-fy', ptr.y + 'px');
       if (!focusOn) { focusOn = true; H.classList.add('wz-focusing'); }
@@ -157,6 +193,7 @@
   }
   addEventListener('pointerleave', function () {
     clearTimeout(focusIdle); focusOn = false; H.classList.remove('wz-focusing');
+    tiltFlat();
   }, { passive: true });
   /* NOT WHILE SCROLLING, and the reason is both cost and intent. Cost: measured on these bytes at
      1440x1000, scrolling AND moving the pointer at once, focus display:none vs on --
@@ -167,6 +204,7 @@
   var scrollHold = 0;
   addEventListener('scroll', function () {
     if (focusOn) { focusOn = false; H.classList.remove('wz-focusing'); }
+    tiltFlat();                        // a reader who is scrolling is reading: flat, and never resampled
     clearTimeout(scrollHold);
   }, { passive: true });
   /* A wheel scroll with the pointer still moves the bounds, not the camera: clamp to the new bounds
@@ -283,6 +321,7 @@
       if (Math.abs(scrollX - sx) > 0.01 || Math.abs(scrollY - sy) > 0.01) applyCam(scrollX - ux, scrollY - uy, dx, dy);
     }
     H.classList.toggle('wz-zoomed', k1 > 1.0001);
+    if (k1 > 1.0001) tiltFlat();
     if (k1 <= 1.0001) H.classList.remove('wz-mag-on');
     clearTimeout(setZoom._t);
     setZoom._t = setTimeout(function(){ H.classList.remove('wz-zooming'); }, 90);
@@ -397,6 +436,23 @@
       var d = document.createElement('div'); d.className = c; d.setAttribute('aria-hidden', 'true');
       document.body.appendChild(d);
     });
+    /* THE CHIN IS NOT DECORATION (K410). The furniture shipped it aria-hidden, so every control in it --
+       the only route to the tier, the magnifier, the sound and the tutorial -- was hidden from assistive
+       technology while still taking keyboard focus. Measured on the live flagship, a wing, the umbrella
+       and wuld.ink/argue/: every chin button under aria-hidden="true". The ornament stays hidden; the
+       controls do not. Done here as well as in the furniture, for pages that ship their own chin. */
+    var chin = document.querySelector('.wz-chin');
+    if (chin) {
+      chin.removeAttribute('aria-hidden');
+      chin.querySelectorAll('.wz-perf, .wz-mark').forEach(function (n) { n.setAttribute('aria-hidden', 'true'); });
+      if (!document.querySelector('.wz-tilt')) {
+        var tb = document.createElement('button');
+        tb.type = 'button'; tb.className = 'wz-tilt'; tb.textContent = '\u25B1';   // a plane seen at an angle
+        tb.addEventListener('click', function (e) { e.stopPropagation(); tiltOn = !tiltOn; tiltRemember(tiltOn); tiltPaint(); });
+        chin.appendChild(tb);
+      }
+    }
+    tiltOn = tiltRecall(); tiltPaint();
     var b = document.querySelector('.wz-power');
     if (b) b.addEventListener('click', function () { i = (i + 2) % 3; remember(i); apply(); });
 
@@ -417,6 +473,7 @@
     rest = function () {
       H.style.setProperty('--wz-sl','0');   H.style.setProperty('--wz-sr','0');
       H.style.setProperty('--wz-st','0');   H.style.setProperty('--wz-sb','0');
+      tiltFlat();
       // Zoomed, the pointer leaving the window keeps the camera where it was: a reader who overshoots
       // the window's edge while finishing a line must not have the line pulled away (K317).
       if (zoom > 1.0001) return;
@@ -1549,7 +1606,7 @@
 })();
 
 (function(){
-  var FURNITURE = "<!-- append as the last children of <body>; add class wz-on to <html> -->\n<div class=\"wz-frame\" aria-hidden=\"true\"></div>\n<div class=\"wz-chin\" aria-hidden=\"true\">\n  <span class=\"wz-perf\"></span>\n  <span class=\"wz-mark\">W<i class=\"wz-led\"></i>U<i class=\"wz-led\"></i>L<i class=\"wz-led\"></i>D<i class=\"wz-led\"></i></span>\n  <span class=\"wz-perf\"></span>\n  <button class=\"wz-mag\" title=\"Magnifier\" aria-label=\"Magnifier. Shift and scroll to zoom.\">&#x2315;</button>\n  <button class=\"wz-power\" title=\"Cosmetics\" aria-label=\"Toggle cosmetics\">&#x23FB;</button>\n</div>\n";
+  var FURNITURE = "<!-- append as the last children of <body>; add class wz-on to <html> -->\n<div class=\"wz-frame\" aria-hidden=\"true\"></div>\n<div class=\"wz-chin\">\n  <span class=\"wz-perf\" aria-hidden=\"true\"></span>\n  <span class=\"wz-mark\" aria-hidden=\"true\">W<i class=\"wz-led\"></i>U<i class=\"wz-led\"></i>L<i class=\"wz-led\"></i>D<i class=\"wz-led\"></i></span>\n  <span class=\"wz-perf\" aria-hidden=\"true\"></span>\n  <button class=\"wz-mag\" title=\"Magnifier\" aria-label=\"Magnifier. Shift and scroll to zoom.\">&#x2315;</button>\n  <button class=\"wz-power\" title=\"Cosmetics\" aria-label=\"Toggle cosmetics\">&#x23FB;</button>\n</div>\n";
   function boot(){
     if (!document.querySelector('.wz-frame')) document.body.insertAdjacentHTML('beforeend', FURNITURE);
     window.wzInit();
