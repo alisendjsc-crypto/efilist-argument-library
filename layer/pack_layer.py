@@ -31,7 +31,7 @@ def banner(n): return b'\n\n/* ' + BAR + b'\n   ' + n.encode() + b'\n   ' + BAR 
 def md5(b): return hashlib.md5(b).hexdigest()
 
 CSS_HEAD = (b'/* wuld-layer.css -- library.wuld.ink shared presentation + cosmetic layer.\n'
-            b'   Concatenated by pack_layer.py. Edit the sources in build/, never this file. */\n')
+            b'   Packed by layer/pack_layer.py (efilist repo). Edit layer/src/, never this file. */\n')
 CSS = ['wuld-type.css', 'wuld-bezel.css', 'wuld-vfx.css']
 JS_HEAD = b'/* wuld-layer.js -- library.wuld.ink cosmetic + sound layer. */\n'
 JS = ['wuld-vfx.js', 'wuld-sfx.js', 'wuld-fb.js', 'wuld-tour.js']

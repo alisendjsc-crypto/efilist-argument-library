@@ -13,6 +13,20 @@ nothing here is served.
 
 A layer change does not move the pin. The flagship links the layer and does not inline it.
 
+## See it, measure it, before it ships
+
+Both run the live pages and swap only the two layer files, by route interception. Nothing deploys.
+
+- `LAYER=site node layer/preview.mjs` opens a real Chrome window with the candidate beside one with
+  the live layer, so you can try the look by hand.
+- `LAYER=site node layer/measure_depth.mjs > out.json` measures the camera and the gap it opens,
+  and the far-side blur by the §11 test: render with the treatment and without, then diff. The
+  treated side must move and the untreated side must read exactly 0. It also measures the vignette,
+  frame intervals over a scripted scroll, and card text under the feedback link on every page,
+  width, mode and engine. That last check includes a control that must fail.
+
+Both need `PLAYWRIGHT=<.../node_modules/playwright/index.mjs>`. The file headers carry the options.
+
 ## The parts, in pack order
 
 | part | carries |

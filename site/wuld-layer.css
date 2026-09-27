@@ -1,5 +1,5 @@
 /* wuld-layer.css -- library.wuld.ink shared presentation + cosmetic layer.
-   Concatenated by pack_layer.py. Edit the sources in build/, never this file. */
+   Packed by layer/pack_layer.py (efilist repo). Edit layer/src/, never this file. */
 
 
 /* ==============================================================================================
@@ -701,11 +701,20 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   /* THE CLAMP IS THE WHOLE DESIGN. The handoff's "immersive at 2, nauseating at 8" was written for
    * a camera move in a film, where the whole frame swings. On a page the reader's eye is fixed on
    * text, and 2deg reads as the page sliding rather than as a camera. Dropped to 0.7 on the
-   * operator's call -- "just enough to give the user a sense of movement". */
-  --wz-pan:      6px;      /* camera travel. MUST stay under the lip width (10.7px at 1440) or a
-                            * gap opens outside the frame -- that is the whole no-void guarantee. */
+   * operator's call -- "just enough to give the user a sense of movement".
+   * RAISED 2026-09-26 (WI-K410), 6px -> 12px, on his TO DO line: "...increase POV perspective and
+   * peripheral blurring to create a field of depth illusion." */
+  --wz-pan:      12px;     /* camera travel. This said it MUST stay under the lip (10.7px at 1440) or a
+                            * gap opens outside the frame. Measured K410: the gap is GROUND. html and
+                            * the stage are transparent and body paints the ground, so what opens is
+                            * more of the same black. The real bound is content that paints to the
+                            * stage's edge -- see section 5. */
   --wz-pan-ease: 260ms;
   --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
+  --wz-soft-blur: 3px;    /* NEVER DECLARED until K410. blur(var(--wz-soft-blur)) with no value is
+                            * invalid at computed-value time, so backdrop-filter fell back to none and
+                            * the strips blurred nothing on every page: section 11's failure exactly --
+                            * configured, rendered, inert. Measured by that test, not read off this line. */
   --wz-tilt-ease: 220ms;
   /* --- THE FOCUS, 2026-09-13 -----------------------------------------------------------------
    * Josiah: "the sharpening / focusing when hovering with the mouse ... Everything should feel more
@@ -979,6 +988,14 @@ html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
  * --wz-pan, and the fixed bezel lip is wider than that, so the gap opened at one edge is always
  * underneath the frame that is painted on top of it. One number, derived from another number,
  * rather than two numbers that have to be kept in agreement by hand.
+ *   CORRECTED K410: that guarantee covered the stage's EDGE, which paints nothing -- the stage is
+ * transparent and the ground behind it is body's, the same ground -- so a pan past the lip opens only
+ * more ground. What can show is content that paints up to the stage's edge. Measured across all nine
+ * layer pages at 1440 and 1024: nothing paints within 52px of the lip except the flagship's two
+ * full-width navs (nav.rl-wing and nav.top-nav, 11..1429 at 1440), whose ends therefore come in from
+ * under the lip at full pan -- by ~7px at the old 6px, ~13px at 12px. They are rules on the ground,
+ * dimmed by the lip's ramp and the vignette's corner. A page that adds a full-bleed band should
+ * re-measure this with layer/measure_depth.mjs.
  *   UNDER THE MAGNIFIER THE BOUND IS THE GEOMETRY INSTEAD (K317, wuld-vfx.js "THE CAMERA"): the
  * pointer's place across the viewport maps onto what the scaled stage hides past that edge, so the
  * sweep is exactly the overflow and the stage's edge never crosses the viewport's. The 6px rides on
@@ -1042,12 +1059,22 @@ html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{
   backdrop-filter:blur(var(--wz-soft-blur)); -webkit-backdrop-filter:blur(var(--wz-soft-blur));
   transition:opacity var(--wz-pan-ease) linear;
 }
+/* THE FALLOFF IS THE FILM'S (K410): power 1.7, as the showcase's peripheral softening (handoff §4),
+   so the blur lives at the far edge and has nearly gone by the time it reaches the reading column.
+   Stops are (1-x)^1.7 at quarters: 1, .613, .308, .095, 0. A linear ramp spent half its strength in
+   the middle third, which is where the flagship's objection text starts. */
 html.wz-vfx .wz-soft-l{ left:0;  opacity:var(--wz-sl,0);
-  -webkit-mask-image:linear-gradient(to right,#000 0%,transparent 100%);
-          mask-image:linear-gradient(to right,#000 0%,transparent 100%); }
+  -webkit-mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%);
+          mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%); }
 html.wz-vfx .wz-soft-r{ right:0; opacity:var(--wz-sr,0);
-  -webkit-mask-image:linear-gradient(to left,#000 0%,transparent 100%);
-          mask-image:linear-gradient(to left,#000 0%,transparent 100%); }
+  -webkit-mask-image:linear-gradient(to left,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%);
+          mask-image:linear-gradient(to left,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%); }
+/* A TOUCH IS NOT A GAZE (K410). The strips follow the camera, and the camera followed the one mousemove
+   a tap synthesises -- so on a phone, once the blur rendered, every tap near the right edge would have
+   softened the left third of the reading column. Gated exactly like the clearing (section 1b). */
+@media (hover:none), (pointer:coarse){
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ display:none !important; }
+}
 
 /* --- MOTION IS NOT NEGOTIABLE. The pivot is vestibular, not photosensitive: reduced-motion KILLS
  * it rather than softening it. Vignette, bloom and softening carry no motion and may stay. */

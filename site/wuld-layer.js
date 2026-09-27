@@ -112,8 +112,13 @@
     cam.px = px; cam.py = py;
     // The camera moves TOWARD the cursor, so the picture slides the other way and you see further
     // to that side.
-    H.style.setProperty('--wz-px', (px - dx * base).toFixed(2) + 'px');
-    H.style.setProperty('--wz-py', (py - dy * base * 0.6).toFixed(2) + 'px');
+    // WHOLE PIXELS (K410). Chrome composites the stage at whatever offset it is given, and at a
+    // fractional one it resamples the layer: every glyph on the page went soft wherever the pointer
+    // happened to rest. Measured on a wing at 1440: edge energy -13.2% at -1.5px, -7.2% at -1.2px,
+    // nothing at 0 or -3px; the flagship -10.0% at -1.5px; Firefox unaffected. The transition still
+    // eases between steps, so the move is as smooth as before -- only the resting place snaps.
+    H.style.setProperty('--wz-px', Math.round(px - dx * base) + 'px');
+    H.style.setProperty('--wz-py', Math.round(py - dy * base * 0.6) + 'px');
     // Blur the end the camera is NOT at.
     H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
     H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
@@ -123,8 +128,15 @@
      work to say the same thing twice. Two custom properties and one class; the box's transform and
      the vignette's mask both read them, so the DOM writes are 2 per frame, not 2 per consumer. */
   var focusOn = false, focusIdle = 0;
+  /* A TOUCH IS NOT A GAZE (K410). A tap synthesises one mousemove at the tap point, so on a phone every
+     tap swung the camera -- measured at 390px: 5.88px against a 2px lip -- and lit the far-side strip
+     over the reading column. Unzoomed, the camera now answers only a real pointer, the same gate the
+     clearing has always had in the stylesheet. Under the magnifier the pointer IS the camera (K317)
+     and that path is left exactly as it was. */
+  var FINE = matchMedia('(hover: hover) and (pointer: fine)');
   function onMove(e) {
     if (i !== 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (zoom <= 1.0001 && (!FINE.matches || (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents))) return;
     ptr.x = e.clientX; ptr.y = e.clientY;
     if (raf) return;
     raf = requestAnimationFrame(function () {
