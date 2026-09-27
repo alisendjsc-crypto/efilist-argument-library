@@ -1,0 +1,199 @@
+{
+ "artifact": "r1_v1_6_judgments_gate_control_v0_1.json",
+ "gate": "adversarial_map_staging/r1/r1_v1_6_judgments_gate.py",
+ "gate_md5": "8631bdf248ca779edeb747fd02b9f870",
+ "judgments_md5": "fa89adc9dcc8bef39795bc830efdc427",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its own failure line; C11 (a proper correction row), C12 (the rulings grown by an appended row), C14 (the canon gone by the rename convention) and C16 (a simulated pin move) must stay GREEN.",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "the redraft goes unjudged",
+   "expected_rc": 1,
+   "expected_message": "redrafts not judged",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "coverage: redrafts not judged: redraft #46"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "the queue row reads MAYBE",
+   "expected_rc": 1,
+   "expected_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-004: verdict 'MAYBE' is not one of ACCEPT/AMEND/REJECT"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "an AMEND owes nothing",
+   "expected_rc": 1,
+   "expected_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-004: AMEND without saying what is owed"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "a register row misquotes its delta",
+   "expected_rc": 1,
+   "expected_message": "declared delta",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-002: delta '#46 (red-button-repugnant, defender slot), re-rule' is not register v0_7's declared delta 0"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "the measure's claim is not the record's",
+   "expected_rc": 1,
+   "expected_message": "knock-on record",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-003: the claim is not the knock-on record's {\"holds_newly_collided\": [], \"a_entries_left_in_v1_6\": 29}"
+   ]
+  },
+  {
+   "control": "C6",
+   "mutation": "a queue row names a row the queue lacks",
+   "expected_rc": 1,
+   "expected_message": "not a row the redrafts file adds",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-004: PQ-99 is not a row the redrafts file adds to the queue",
+    "coverage: queue additions not judged: queue row PQ-17"
+   ]
+  },
+  {
+   "control": "C7",
+   "mutation": "a quoted span is not declared",
+   "expected_rc": 1,
+   "expected_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-001: undeclared quotation 'an undeclared span'"
+   ]
+  },
+  {
+   "control": "C8",
+   "mutation": "a declared quote is one character off",
+   "expected_rc": 1,
+   "expected_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-001: undeclared quotation 'The recoil still has an object you have not removed'",
+    "W-001: quote 1 NOT VERBATIM at v1_6:red-button-repugnant#archetypeVariants.defender: 'The recoil still has an object you have not remove#'"
+   ]
+  },
+  {
+   "control": "C9",
+   "mutation": "map v1_6 moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "pin map_v1_6",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin map_v1_6: adversarial_map_staging/adversarial_map_v1_6.json is b97180ead1acb2df55ec1a0933624505, header names 7a69bc9fd197047c3cf7cecdb37a44ed"
+   ]
+  },
+  {
+   "control": "C10",
+   "mutation": "a committed row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "append-only: committed row W-001 was edited or removed"
+   ]
+  },
+  {
+   "control": "C11",
+   "mutation": "a correction row supersedes properly",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C12",
+   "mutation": "the rulings file grows by one appended row",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C13",
+   "mutation": "a committed rulings row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "not merely grown by appended rows",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin rulings: adversarial_map_staging/r1/R1_rulings.json is ef541a98e6f00f041be8b9e6192a6005, header names d829437e938a8b9dded5cb8cbaa26b74, and it has not merely grown by appended rows"
+   ]
+  },
+  {
+   "control": "C14",
+   "mutation": "the canon is gone (the rename convention)",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C15",
+   "mutation": "the canon is edited in place",
+   "expected_rc": 1,
+   "expected_message": "pin canon",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "pin canon: project_canon_v38_28.json is f78cd6c714d67595f69fc260a0b6f985, header names d9d0c23a9e47bd1cc38f69a378c2198f"
+   ]
+  },
+  {
+   "control": "C16",
+   "mutation": "a simulated pin: a quoted corpus span is gone",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C17",
+   "mutation": "the same, with git history withheld",
+   "expected_rc": 1,
+   "expected_message": "is not recoverable",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "W-004: quote 2 source corpus:why-not-suicide#archetypeVariants.defender -- 'the corpus the judged map pins (04bf6482) is not recoverable'"
+   ]
+  }
+ ]
+}

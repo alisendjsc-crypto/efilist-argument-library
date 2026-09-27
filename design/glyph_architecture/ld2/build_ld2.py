@@ -462,8 +462,55 @@ def sheet(out):
     print('sheet', path, os.path.getsize(path), 'B')
 
 
+
+# ------------------------------------------------------------------------------------------------------
+# THE PREVIEW (step 4 of R0144): the built pages and the flagship package, as preview_ld2.mjs shot them into
+# <out>/preview, for Josiah's look before anything goes live.
+def preview(out):
+    P = os.path.join(out, 'preview')
+    def im(name, alt, cap=None, width=None):
+        src = 'data:image/png;base64,' + base64.b64encode(open(os.path.join(P, name + '.png'), 'rb').read()).decode()
+        st = ' style="max-width:%dpx"' % width if width else ''
+        return '<figure><img alt="%s" src="%s"%s>%s</figure>' % (alt, src, st, '<figcaption>%s</figcaption>' % cap if cap else '')
+    H = ['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+         '<title>LD2 preview</title><style>' + SHEET_CSS + '</style></head><body><div class="wrap">']
+    w = H.append
+    w('<div class="eyebrow">Design lane &middot; LD2 &middot; 2026-09-26 &middot; built on a branch, not live</div>')
+    w('<h1>What you asked for, built &mdash; before it goes live</h1>')
+    w('<div class="box"><p class="lead"><b>What changes for a reader.</b> On the front door, each library&rsquo;s mark '
+      'builds itself once the first time you see its card, the way its line in the key says it is built, and again '
+      'when you hover the card. Each wing now shows its mark beside its title, the small tier marks sit beside the '
+      'words &ldquo;tier 3&rdquo; on every card and filter, and the About tab draws the wing&rsquo;s mark large with its '
+      'parts named. Right to Die has a thin column of dots in its left margin; the lit dot is the objection you are '
+      'reading. Nothing moves on a light page, for readers who turn motion off, or when effects are turned down.</p>'
+      '<p><b>What I need:</b> your word to put this live (merge and push). The flagship&rsquo;s part is packed '
+      'separately and waits for a pin move you open.</p></div>')
+    w('<h2>The front door</h2>' + im('door_dark', 'Front door, dark', 'Dark ground. The GIF sent with this page shows these marks building themselves.'))
+    w('<div class="grid g2">' + im('door_light', 'Front door, legible', 'Legible (light): marks keep their tile and stay still.')
+      + im('door_phone', 'Front door, phone', 'Phone.') + '</div>')
+    w('<h2>A wing: Right to Die</h2>' + im('rtd_dark', 'Right to Die, dark', 'The doorway beside the title; tier marks on the filters and on each card&rsquo;s tier line; the reading spine in the left margin.'))
+    w(im('rtd_spine', 'Right to Die, scrolled', 'Scrolled to the tenth objection: the tenth dot is lit.'))
+    w(im('rtd_light', 'Right to Die, legible', 'Legible: the spine takes the page&rsquo;s ink.'))
+    w('<div class="grid g2">' + im('rtd_phone_dark', 'Phone, dark', 'Phone: no spine (no margin).') + im('rtd_phone_light', 'Phone, legible') + '</div>')
+    w('<h2>Every wing&rsquo;s title and About plate</h2>')
+    for x in M.WINGS:
+        w(im('title_' + x, M.TITLE[x] + ' title') + im('plate_' + x, M.TITLE[x] + ' plate'))
+    w('<h2>The flagship package (waits for your pin move)</h2>'
+      + im('flag_head', 'Flagship title with its ladder') + im('flag_badges', 'Flagship tier badges in tier colour',
+      'Each tier badge and filter carries its mark, lit in that tier&rsquo;s own colour.'))
+    w('<div class="plain"><h3>Measured</h3><p>Chromium and Firefox. Wings: 240 page loads across six widths and four '
+      'reading modes, no sideways scrolling on either tab, text contrast at least 5.37:1 (the bar is 4.5). Front door: '
+      '80 loads, at least 5.06:1. Every motion check passed (title, cards, links landing on a card, the spine). '
+      'Over the wire the front door grows 1.1 KB, Right to Die 3.4 KB, the other wings about 2.4 KB each. The flagship '
+      'on the live site is untouched.</p></div>')
+    w('</div></body></html>')
+    path = os.path.join(out, 'preview_ld2.html')
+    open(path, 'w', encoding='utf-8', newline='\n').write(''.join(H))
+    print('preview', path, os.path.getsize(path), 'B')
+
+
 if __name__ == '__main__':
     cmd, out = sys.argv[1], os.path.abspath(sys.argv[2])
     assert not out.startswith(M.REPO + os.sep) and out != M.REPO, 'write outside the repo'
     os.makedirs(out, exist_ok=True)
-    {'proto': proto, 'costs': lambda o: print(json.dumps(costs(o), indent=1)), 'sheet': sheet}[cmd](out)
+    {'proto': proto, 'costs': lambda o: print(json.dumps(costs(o), indent=1)), 'sheet': sheet, 'preview': preview}[cmd](out)

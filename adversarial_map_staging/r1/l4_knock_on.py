@@ -58,7 +58,13 @@ def measure():
     ev = load(EVID)["entries"]
     m3, m4 = load(V1_3)["entries"], load(V1_4)["entries"]
     last = {}
-    for r in load(RULINGS)["rows"]:
+    # L4c: the record measures R1 as ruled at 3f1dfad5; a later row (R1_rulings.json is append-only) is
+    # read by its own record, not by this one. pinned.py recovers those bytes if the file grew.
+    sys.path.insert(0, HERE)
+    import pinned
+    rul = json.loads(pinned.bytes_at(os.path.dirname(STAGE), "adversarial_map_staging/r1/R1_rulings.json",
+                                     "3f1dfad54021d7920576c7bd4840b62f").decode("utf-8"))
+    for r in rul["rows"]:
         last[r["n"]] = r
     # 1. agreement with the instrument, on the map the instrument reads
     c3 = collisions(m3, [(e["n"], e["target_id"], e["answered_by"]) for e in ev])

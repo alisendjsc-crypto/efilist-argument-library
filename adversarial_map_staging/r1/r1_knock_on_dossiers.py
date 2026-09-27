@@ -57,12 +57,19 @@ def main():
     m3, m5 = load(M3)["entries"], load(M5)["entries"]
     was = {key(e): e for e in m3}
     ev = {e["n"]: e for e in load(EVID)["entries"]}
-    rows = load(RULINGS)["rows"]
+    # L5: read the rulings at the md5 the v1_5 judgment pins (3f1dfad5). R1-070 appended a row that supersedes
+    # R1-011, so the working file no longer calls #46 a HOLDS and this instrument refused the record it was
+    # built to read. Same law as R1-070's gate change.
+    import sys
+    sys.path.insert(0, HERE)
+    import pinned
+    rows = json.loads(pinned.bytes_at(REPO, RULINGS, "3f1dfad54021d7920576c7bd4840b62f").decode("utf-8"))["rows"]
     superseded = {r["supersedes"] for r in rows if r.get("supersedes")}
     current = {r["n"]: r for r in rows if r["row"] not in superseded}
     knock = {r["n"]: r for r in load(KNOCK)["rows"]}
     holds = [n for n in load(KNOCK)["holds_newly_collided"] if not a.n or n in a.n]
-    nodes = {o["id"]: o for o in load(CORPUS)["objections"]}
+    # L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+    nodes = {o["id"]: o for o in json.loads(pinned.bytes_at(REPO, CORPUS, "04bf6482aa0374ee92a81c1d55ec41f8").decode("utf-8"))["objections"]}
     reg = load(REGISTER)["bedrocks"]
     trib = {}
     for b in reg:

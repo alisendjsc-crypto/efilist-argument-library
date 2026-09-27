@@ -31,7 +31,11 @@ def load(path, name):
 
 
 V = load(os.path.join(HERE, "adv_map_validator_v0_6.py"), "v6")
-CORPUS = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+# The farm below symlinks this path in, so build_assembly_v1_2.py reads the pinned bytes too.
+sys.path.insert(0, os.path.join(HERE, "r1"))
+import pinned  # noqa: E402
+CORPUS = pinned.path_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8")
 md5f = lambda p: V.md5_bytes(open(p, "rb").read())
 TARGET = ("care-ethics", "note")
 

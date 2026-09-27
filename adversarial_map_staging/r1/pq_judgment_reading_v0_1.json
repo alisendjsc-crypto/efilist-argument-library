@@ -1,0 +1,677 @@
+{
+ "artifact": "pq_judgment_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/pq_judgment_reading.py",
+ "reads": {
+  "drafts": "0819125d28c58561bcda42570181e105",
+  "knock_on": "b20fdef1ba8d600a49a4cc8a18163ac3",
+  "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+  "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+  "evidence": "719b5ddb27680f32181a8a953c84b6c2",
+  "patch_tool": "092b9adc7cfbac33ed0f99d2b6170bb5",
+  "corpus": "04bf6482aa0374ee92a81c1d55ec41f8",
+  "set": "all: 23 rows (PD-01, PD-02, PD-03, PD-04, PD-05, PD-06, PD-07, PD-08, PD-09, PD-10, PD-11, PD-12, PD-13, PD-14, PD-15, PD-16, PD-17, PD-18, PC-01, PC-02, PC-03, PC-04, PC-05)"
+ },
+ "knock_on_independent": {
+  "anchor_inside_a_repaired_sentence": 14,
+  "anchor_inside": 13,
+  "anchor_inside_but_also_outside": [
+   {
+    "locus": "benatar-asymmetry-attack#long",
+    "class": "b",
+    "anchor": "how much suffering typical human lives actually contain",
+    "rows": [
+     "PD-02"
+    ],
+    "occurrences_in_locus": 2,
+    "moves_with_the_repair": false
+   }
+  ],
+  "answer_routes_here": 10,
+  "holds": [
+   18,
+   24,
+   49,
+   52,
+   53
+  ],
+  "fails": [
+   1,
+   7,
+   11,
+   32,
+   50
+  ],
+  "anchor_inside_matches_record": true,
+  "answer_routes_here_matches_record": true,
+  "quoted_in_map": "not reproduced here (L5's shingle match); pin_repair_drafts_gate.py recomputes it",
+  "inside": [
+   {
+    "locus": "just-depressed#long",
+    "class": "b",
+    "anchor": "two utterances incompatible with a single motive of care",
+    "rows": [
+     "PD-01"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "why-not-suicide#archetypeVariants.defender",
+    "class": "a",
+    "anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+    "rows": [
+     "PD-18"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "why-not-suicide#archetypeVariants.drifter",
+    "class": "b",
+    "anchor": "Nothing in that tells the living to stop",
+    "rows": [
+     "PD-08"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "consent-both-ways#long",
+    "class": "d",
+    "anchor": "Presumed consent is only valid when it prevents a greater harm",
+    "rows": [
+     "PD-14"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "benatar-asymmetry-attack#long",
+    "class": "b",
+    "anchor": "how much suffering typical human lives actually contain",
+    "rows": [
+     "PD-02"
+    ],
+    "occurrences_in_locus": 2,
+    "moves_with_the_repair": false
+   },
+   {
+    "locus": "self-defeating#long",
+    "class": "b",
+    "anchor": "requires only the development of sufficient technological capacity",
+    "rows": [
+     "PD-03"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "ai-fear#archetypeVariants.defender",
+    "class": "b",
+    "anchor": "Either show the premises themselves entail the recklessness",
+    "rows": [
+     "PD-06"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+    "class": "d",
+    "anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition",
+    "rows": [
+     "PD-15"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "antinatalism-misanthropic#long",
+    "class": "b",
+    "anchor": "structural criticism of a species is not the same as hatred of individuals",
+    "rows": [
+     "PD-04"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+    "class": "b",
+    "anchor": "cascade-math voids it on the framework's own calculus",
+    "rows": [
+     "PD-05"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "social-contract#long",
+    "class": "b",
+    "anchor": "the antinatalist objection is to existence itself, not to any particular society",
+    "rows": [
+     "PD-16"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "bradley-no-subject#long",
+    "class": "b",
+    "anchor": "There is no third branch",
+    "rows": [
+     "PD-13"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "neuroscience-positive-states#long",
+    "class": "b",
+    "anchor": "a joy never instantiated is withheld from no one",
+    "rows": [
+     "PD-12"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   },
+   {
+    "locus": "luxury-belief#long",
+    "class": "b",
+    "anchor": "consequences for economic systems, not for sentient beings",
+    "rows": [
+     "PD-09"
+    ],
+    "occurrences_in_locus": 1,
+    "moves_with_the_repair": true
+   }
+  ],
+  "routes": [
+   {
+    "routed_to": "just-depressed#long",
+    "target": "just-depressed#archetypeVariants.defender",
+    "anchor": "pointing at the second sentence and asking which one was sincere",
+    "n": 1,
+    "ruling_row": "R1-004",
+    "verdict": "FAILS"
+   },
+   {
+    "routed_to": "benatar-asymmetry-attack#long",
+    "target": "economy-population#long",
+    "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+    "n": 7,
+    "ruling_row": "R1-048",
+    "verdict": "FAILS"
+   },
+   {
+    "routed_to": "self-defeating#long",
+    "target": "self-defeating#diagnosis",
+    "anchor": "confuses evolutionary fitness with logical validity",
+    "n": 11,
+    "ruling_row": "R1-013",
+    "verdict": "FAILS"
+   },
+   {
+    "routed_to": "violence-as-reductio#archetypeVariants.sophisticate",
+    "target": "violence-as-reductio#archetypeVariants.blended",
+    "anchor": "take the structural one first and the other two resolve under it",
+    "n": 18,
+    "ruling_row": "R1-030",
+    "verdict": "HOLDS"
+   },
+   {
+    "routed_to": "just-depressed#long",
+    "target": "most-people-happy#archetypeVariants.sophisticate",
+    "anchor": "the instrument doing the rating is the same nervous system",
+    "n": 24,
+    "ruling_row": "R1-010",
+    "verdict": "HOLDS"
+   },
+   {
+    "routed_to": "antinatalism-misanthropic#long",
+    "target": "antinatalism-misanthropic#archetypeVariants.defender",
+    "anchor": "its truth-value is not a function of the speaker's warmth",
+    "n": 32,
+    "ruling_row": "R1-036",
+    "verdict": "FAILS"
+   },
+   {
+    "routed_to": "benatar-asymmetry-attack#long",
+    "target": "adoption-instead#long",
+    "anchor": "Adoption satisfies the desire to parent completely",
+    "n": 49,
+    "ruling_row": "R1-061",
+    "verdict": "HOLDS"
+   },
+   {
+    "routed_to": "bitter-childhood#medium",
+    "target": "bitter-childhood#long",
+    "anchor": "even if my childhood WAS the catalyst for this philosophy",
+    "n": 50,
+    "ruling_row": "R1-068",
+    "verdict": "FAILS"
+   },
+   {
+    "routed_to": "benatar-asymmetry-attack#long",
+    "target": "overpopulation-addressed#long",
+    "anchor": "incrementally better from a negative utilitarian perspective",
+    "n": 52,
+    "ruling_row": "R1-051",
+    "verdict": "HOLDS"
+   },
+   {
+    "routed_to": "benatar-asymmetry-attack#long",
+    "target": "hedonic-contrast#long",
+    "anchor": "it would still experience positive states",
+    "n": 53,
+    "ruling_row": "R1-045",
+    "verdict": "HOLDS"
+   }
+  ]
+ },
+ "confinement": {
+  "repaired_loci": 18,
+  "rows": 23,
+  "changed_loci": 18,
+  "changed_loci_are_the_repaired_loci": true,
+  "loci_added_or_removed": [],
+  "per_locus": [
+   {
+    "locus": "just-depressed#long",
+    "rows": [
+     "PD-01"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "benatar-asymmetry-attack#long",
+    "rows": [
+     "PD-02"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "self-defeating#long",
+    "rows": [
+     "PD-03"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "antinatalism-misanthropic#long",
+    "rows": [
+     "PD-04"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+    "rows": [
+     "PD-05"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "ai-fear#archetypeVariants.defender",
+    "rows": [
+     "PD-06"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "bitter-childhood#long",
+    "rows": [
+     "PD-07"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "why-not-suicide#archetypeVariants.drifter",
+    "rows": [
+     "PD-08",
+     "PC-02"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "luxury-belief#long",
+    "rows": [
+     "PD-09",
+     "PC-03",
+     "PC-04"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "free-will-defense#long",
+    "rows": [
+     "PD-10"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "eliminativism#long",
+    "rows": [
+     "PD-11"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "neuroscience-positive-states#long",
+    "rows": [
+     "PD-12"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "bradley-no-subject#long",
+    "rows": [
+     "PD-13",
+     "PC-05"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "consent-both-ways#long",
+    "rows": [
+     "PD-14"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+    "rows": [
+     "PD-15"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "social-contract#long",
+    "rows": [
+     "PD-16"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "why-not-suicide#archetypeVariants.defender",
+    "rows": [
+     "PD-17",
+     "PD-18"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   },
+   {
+    "locus": "bitter-childhood#medium",
+    "rows": [
+     "PC-01"
+    ],
+    "each_current_once_before": true,
+    "post_is_pre_with_the_replacements": true
+   }
+  ]
+ },
+ "holds": [
+  {
+   "n": 24,
+   "verdict": "HOLDS",
+   "rests_on": "just-depressed#long",
+   "locus_repaired": true,
+   "sentence": "The claim is symmetric and modest",
+   "stands_after_the_pin": true,
+   "outside_every_repaired_span": true
+  },
+  {
+   "n": 49,
+   "verdict": "HOLDS",
+   "rests_on": "joy-outweighs-harms#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 52,
+   "verdict": "HOLDS",
+   "rests_on": "economy-population#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 53,
+   "verdict": "HOLDS",
+   "rests_on": "hedonic-contrast#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 53,
+   "verdict": "HOLDS",
+   "rests_on": "transhumanist-objection#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 18,
+   "verdict": "HOLDS",
+   "rests_on": "violence-as-reductio#archetypeVariants.sophisticate",
+   "locus_repaired": true,
+   "sentence": "Concede the one residue this does not reach",
+   "stands_after_the_pin": true,
+   "outside_every_repaired_span": true
+  }
+ ],
+ "sibling_loci": [
+  {
+   "defect": "consent-asymmetry read as a general ban on imposition",
+   "pattern": "maximally non-consensual|maximal such imposition|exact same principle of consent|framework-self-undermining|swapped the (?:premise|engine)",
+   "loci": [
+    "why-not-suicide#long",
+    "violence-as-reductio#long"
+   ],
+   "hits": [
+    {
+     "locus": "why-not-suicide#long",
+     "match": "exact same principle of consent"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "framework-self-undermining"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "maximally non-consensual"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "swapped the premise"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "maximally non-consensual"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "maximal such imposition"
+    },
+    {
+     "locus": "violence-as-reductio#long",
+     "match": "swapped the engine"
+    }
+   ]
+  },
+  {
+   "defect": "the lone-actor analogy",
+   "pattern": "one violent actor|single violent actor|Unabomber",
+   "loci": [
+    "why-not-suicide#long",
+    "ai-fear#archetypeVariants.defender"
+   ],
+   "hits": [
+    {
+     "locus": "why-not-suicide#long",
+     "match": "Unabomber"
+    },
+    {
+     "locus": "why-not-suicide#long",
+     "match": "one violent actor"
+    },
+    {
+     "locus": "ai-fear#archetypeVariants.defender",
+     "match": "single violent actor"
+    }
+   ]
+  },
+  {
+   "defect": "grabbed, not produced",
+   "pattern": "grabbed[-, ]+not[-, ]+produced",
+   "loci": [
+    "slippery-slope-eugenics#long",
+    "slippery-slope-eugenics#archetypeVariants.defender"
+   ],
+   "hits": [
+    {
+     "locus": "slippery-slope-eugenics#long",
+     "match": "grabbed-not-produced"
+    },
+    {
+     "locus": "slippery-slope-eugenics#archetypeVariants.defender",
+     "match": "grabbed, not produced"
+    }
+   ]
+  },
+  {
+   "defect": "the calculation as the safeguard",
+   "pattern": "structural safeguard is not a rule|cascade-math-safeguard then shows",
+   "loci": [
+    "slippery-slope-eugenics#long",
+    "slippery-slope-eugenics#archetypeVariants.sophisticate"
+   ],
+   "hits": [
+    {
+     "locus": "slippery-slope-eugenics#long",
+     "match": "structural safeguard is not a rule"
+    },
+    {
+     "locus": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+     "match": "cascade-math-safeguard then shows"
+    }
+   ]
+  },
+  {
+   "defect": "clearer sight",
+   "pattern": "seeing without the anaesthetic|he is the more reliable one",
+   "loci": [
+    "bitter-childhood#archetypeVariants.defender"
+   ],
+   "hits": [
+    {
+     "locus": "bitter-childhood#archetypeVariants.defender",
+     "match": "seeing without the anaesthetic"
+    },
+    {
+     "locus": "bitter-childhood#archetypeVariants.defender",
+     "match": "he is the more reliable one"
+    }
+   ]
+  },
+  {
+   "defect": "motive frequency",
+   "pattern": "Genuine concern is the rare exception",
+   "loci": [
+    "just-depressed#long"
+   ],
+   "hits": [
+    {
+     "locus": "just-depressed#long",
+     "match": "Genuine concern is the rare exception"
+    }
+   ]
+  }
+ ],
+ "exit_framing": {
+  "patterns": [
+   "barriers? to exit",
+   "exit barriers",
+   "trap(?:s|ped)? (?:conscious beings|by (?:their|its) own survival|by them)",
+   "body vetoes the mind",
+   "only 'exit' from existence is death",
+   "graceful exit",
+   "failure rate of suicide attempts",
+   "It is a trap\\.",
+   "recruited into the same firmware and then trapped"
+  ],
+  "pre_equals_post": true,
+  "hits": [
+   {
+    "locus": "why-not-suicide#long",
+    "match": "exit barriers"
+   },
+   {
+    "locus": "why-not-suicide#long",
+    "match": "trap conscious beings"
+   },
+   {
+    "locus": "why-not-suicide#long",
+    "match": "body vetoes the mind"
+   },
+   {
+    "locus": "red-button-repugnant#long",
+    "match": "trapped by them"
+   },
+   {
+    "locus": "red-button-repugnant#long",
+    "match": "trapped by their own survival"
+   },
+   {
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "match": "recruited into the same firmware and then trapped"
+   },
+   {
+    "locus": "heat-death-futility#long",
+    "match": "graceful exit"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "barrier to exit"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "failure rate of suicide attempts"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "It is a trap."
+   },
+   {
+    "locus": "social-contract#long",
+    "match": "only 'exit' from existence is death"
+   }
+  ],
+  "loci": [
+   "why-not-suicide#long",
+   "red-button-repugnant#long",
+   "red-button-repugnant#archetypeVariants.sophisticate",
+   "heat-death-futility#long",
+   "revealed-preference#medium",
+   "social-contract#long"
+  ],
+  "nodes": [
+   "heat-death-futility",
+   "red-button-repugnant",
+   "revealed-preference",
+   "social-contract",
+   "why-not-suicide"
+  ]
+ }
+}

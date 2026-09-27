@@ -85,12 +85,18 @@ class World:
         self.map_rel, self.corpus_rel = inp["map"], inp["corpus"]
         if not os.path.exists(os.path.join(REPO, self.map_rel)):
             self.map_rel = os.path.join("adversarial_map_staging", os.path.basename(inp["map"]))
-        for rel, want in ((self.map_rel, inp["map_md5"]), (self.corpus_rel, inp["corpus_md5"])):
-            got = md5(os.path.join(REPO, rel))
-            if got != want:
-                sys.exit("REFUSED: %s is %s, the evidence was measured at %s" % (rel, got, want))
+        got = md5(os.path.join(REPO, self.map_rel))
+        if got != inp["map_md5"]:
+            sys.exit("REFUSED: %s is %s, the evidence was measured at %s" % (self.map_rel, got, inp["map_md5"]))
         self.map = load(self.map_rel)
-        self.corpus = {o["id"]: o for o in load(self.corpus_rel)["objections"]}
+        # L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+        sys.path.insert(0, HERE)
+        import pinned
+        try:
+            raw = pinned.bytes_at(REPO, self.corpus_rel, inp["corpus_md5"])
+        except LookupError as err:
+            sys.exit("REFUSED: %s" % err)
+        self.corpus = {o["id"]: o for o in json.loads(raw.decode("utf-8"))["objections"]}
         canons = sorted(glob.glob(os.path.join(REPO, "project_canon_v38_*.json")))
         if len(canons) != 1:
             sys.exit("REFUSED: expected exactly one project_canon_v38_*.json, found %d" % len(canons))
@@ -171,7 +177,7 @@ class World:
         L.append("")
         L.append("Sources: evidence `%s`, map `%s` `%s`, corpus `%s`, canon `%s`, register `%s`."
                  % (md5(os.path.join(REPO, EVID))[:8], os.path.basename(self.map_rel),
-                    md5(os.path.join(REPO, self.map_rel))[:8], md5(os.path.join(REPO, self.corpus_rel))[:8],
+                    md5(os.path.join(REPO, self.map_rel))[:8], self.ev["inputs"]["corpus_md5"][:8],
                     self.canon_rel, os.path.basename(self.reg_rel)))
         L += ["", "## R1 question", "", e["R1_question"], ""]
 

@@ -10,7 +10,12 @@ const { chromium, firefox } = await import(process.env.PLAYWRIGHT || 'playwright
 const URL = process.env.URL || 'http://127.0.0.1:8765/libraries/', BASE = process.env.BASELINE_URL || '';
 const MODES = ['standard', 'legible', 'high-contrast', 'both'];
 const WIDTHS = [360, 390, 430, 600, 768, 1024, 1152, 1280, 1440, 1920];
-const init = ([mode, tier]) => { try { localStorage.setItem('wuld:libmode', mode);
+const init = ([mode, tier]) => { try {
+  // LD2: count the title's one-shots from before the page runs, so a sample taken after it ends cannot miss it
+  window.__titleStarts = 0;
+  document.addEventListener('animationstart', e => { const t = e.target;
+    if (t && t.closest && t.closest('header.site h1 .lib-mark')) window.__titleStarts++; }, true);
+  localStorage.setItem('wuld:libmode', mode);
   localStorage.setItem('wz-tour:library:index', '1'); sessionStorage.setItem('wz-hint-seen', '1');
   if (tier !== '') localStorage.setItem('wz-tier', tier); } catch (e) {} };
 
@@ -75,6 +80,7 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
     const { ctx, p } = await open(b, URL, o);
     const r = { engine: en, case: name };
     r.title = await lm(p, 'header.site h1 .lib-mark rect');
+    r.titleStarts = await p.evaluate(() => window.__titleStarts);
     r.keyRows = await lm(p, '.mk-libs rect');
     const last = '.lib-card[href="/veganism/combined"]';
     r.lastBeforeSeen = await lm(p, last + ' .lib-mark rect');   // below the fold at both sizes: waits to be seen
@@ -83,9 +89,9 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
     await p.waitForTimeout(1600); r.lastAfter = await lm(p, last + ' .lib-mark rect');
     if (o.w > 600) { await p.locator(last).hover(); await p.waitForTimeout(120); r.hover = await lm(p, last + ' .lib-mark rect'); }
     await ctx.close();
-    r.ok = want ? r.title > 0 && r.titleAfter === 0 && r.lastBeforeSeen === 0 && r.lastWhenSeen > 0 && r.lastAfter === 0 && r.keyRows === 0
+    r.ok = want ? r.titleStarts > 0 && r.titleAfter === 0 && r.lastBeforeSeen === 0 && r.lastWhenSeen > 0 && r.lastAfter === 0 && r.keyRows === 0
                   && (o.w <= 600 || r.hover > 0)
-                : r.title === 0 && r.lastWhenSeen === 0 && r.keyRows === 0 && (r.hover || 0) === 0;
+                : r.titleStarts === 0 && r.lastWhenSeen === 0 && r.keyRows === 0 && (r.hover || 0) === 0;
     rec.libraryMotion.push(r);
   }
   // 3. sticky only while the key fits the window
@@ -109,7 +115,7 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   }
   await b.close();
 }
-rec.summary = { layoutOk: rec.layout.overflowRuns === 0 && rec.layout.aaBelow === 0 && rec.layout.errors === 0 && rec.layout.namedMarksMin === 7,
+rec.summary = { layoutOk: rec.layout.overflowRuns === 0 && rec.layout.aaBelow === 0 && rec.layout.errors === 0 && rec.layout.namedMarksMin === 8,
                 motionOk: rec.motion.filter(m => m.ok).length + ' of ' + rec.motion.length,
                 libraryMotionOk: rec.libraryMotion.filter(m => m.ok).length + ' of ' + rec.libraryMotion.length };
 console.log(JSON.stringify(rec, null, 1));

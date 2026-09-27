@@ -16,7 +16,10 @@ import json, os, sys, hashlib, re, importlib.util
 _HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.environ.get("K347_REPO") or os.path.dirname(_HERE)
 OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else _HERE
-CORPUS = os.path.join(REPO, "efilist_argument_library_v4_0_0.json")
+# L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+sys.path.insert(0, os.path.join(_HERE, "r1"))
+import pinned  # noqa: E402
+CORPUS = pinned.path_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8")
 DEST = os.path.join(OUT, "adv_map_phaseF_v0_1.json")
 DATE = "2026-09-17"          # operator-local (America/Phoenix); the VM clock reads UTC
 SEAT = "wuld.ink Cowork, K347 (library seat)"

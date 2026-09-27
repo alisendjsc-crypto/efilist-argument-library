@@ -1,0 +1,231 @@
+{
+ "artifact": "pq_redraft_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/pq_redraft_reading.py",
+ "reads": {
+  "drafts": "496c3a5c63541d8657e7d7e949e43648",
+  "drafts_first_judged": "0819125d28c58561bcda42570181e105",
+  "first_reading": "16e8bd96b7c3f81e2cea356af59b0f26",
+  "first_instrument": "d11cfbc7182e8fba0f549467b654b1bd",
+  "knock_on_v0_2": "2cde775ee82cd16b0e5cdb88820bd130",
+  "patch_v0_1": "092b9adc7cfbac33ed0f99d2b6170bb5",
+  "patch_v0_2": "6b810494885853aec7f43b12a51cb3f9",
+  "corpus": "04bf6482aa0374ee92a81c1d55ec41f8"
+ },
+ "new_rows": [
+  {
+   "id": "PD-19",
+   "kind": "draft",
+   "supersedes": "PD-02",
+   "locus": "benatar-asymmetry-attack#long"
+  },
+  {
+   "id": "PD-20",
+   "kind": "draft",
+   "supersedes": "PD-03",
+   "locus": "self-defeating#long"
+  },
+  {
+   "id": "PD-21",
+   "kind": "draft",
+   "supersedes": "PD-08",
+   "locus": "why-not-suicide#archetypeVariants.drifter"
+  },
+  {
+   "id": "PC-06",
+   "kind": "companion",
+   "supersedes": "PC-05",
+   "locus": "bradley-no-subject#long"
+  }
+ ],
+ "owed_changes": {
+  "PD-19": {
+   "answers": "X-002",
+   "supersedes": "PD-02",
+   "gone": {
+    "every life carries": true
+   },
+   "present": {
+    "The floor the typical life carries": true,
+    "only if the person-affecting view that prevails keeps the weight against non-consensual imposition": true
+   },
+   "current_text_unchanged": true
+  },
+  "PD-20": {
+   "answers": "X-003",
+   "supersedes": "PD-03",
+   "gone": {
+    "does not depend on the act it forbids": true
+   },
+   "present": {
+    "the view does not will, as its means, the act it forbids": true,
+    "whatever that path owes to the births others choose": true
+   },
+   "current_text_unchanged": true
+  },
+  "PD-21": {
+   "answers": "X-008",
+   "supersedes": "PD-08",
+   "gone": {
+    "Some efilists": true,
+    "Its core was": true
+   },
+   "present": {
+    "Efilism itself goes further": true,
+    "Its core is": true,
+    "its own burden": true,
+    "painlessly and all at once": true
+   },
+   "current_text_unchanged": true
+  },
+  "PC-06": {
+   "answers": "X-034",
+   "supersedes": "PC-05",
+   "gone": {
+    "Bradley": true
+   },
+   "present": {
+    "the person-affecting re-explanation": true
+   },
+   "current_text_unchanged": true
+  }
+ },
+ "patch_equivalence": {
+  "declared": {
+   "rows": [
+    "PD-01",
+    "PD-04",
+    "PD-05",
+    "PD-06",
+    "PD-07",
+    "PD-09",
+    "PD-10",
+    "PD-11",
+    "PD-12",
+    "PD-13",
+    "PD-14",
+    "PD-15",
+    "PD-16",
+    "PD-17",
+    "PD-18",
+    "PD-19",
+    "PD-20",
+    "PD-21"
+   ],
+   "same_rows": true,
+   "surfaces": {
+    "efilist_argument_library_v4_0_0.json": "7ba0df415a38422e361f0ac983c11c4e",
+    "efilist_argument_library_v4_0_0.jsx": "793e1bb77d2237bf73da0b69d95b0040",
+    "site/combined.html": "dfc08007ab6944ab5b8ee62e10b2abc4"
+   },
+   "byte_identical": true
+  },
+  "all": {
+   "rows": [
+    "PD-01",
+    "PD-04",
+    "PD-05",
+    "PD-06",
+    "PD-07",
+    "PD-09",
+    "PD-10",
+    "PD-11",
+    "PD-12",
+    "PD-13",
+    "PD-14",
+    "PD-15",
+    "PD-16",
+    "PD-17",
+    "PD-18",
+    "PC-01",
+    "PC-02",
+    "PC-03",
+    "PC-04",
+    "PD-19",
+    "PD-20",
+    "PD-21",
+    "PC-06"
+   ],
+   "same_rows": true,
+   "surfaces": {
+    "efilist_argument_library_v4_0_0.json": "b4fda5f72ad4579ef425e975e40b35da",
+    "efilist_argument_library_v4_0_0.jsx": "518c62f4ce3fe40ea3408475f608b1ff",
+    "site/combined.html": "f72e6762173dada604e0fe250e76f810"
+   },
+   "byte_identical": true
+  }
+ },
+ "confinement": {
+  "repaired_loci": 18,
+  "rows": 23,
+  "changed_loci_are_the_repaired_loci": true,
+  "each_locus_is_pre_with_the_replacements": true,
+  "loci_added_or_removed": []
+ },
+ "knock_on": {
+  "anchor_inside": 13,
+  "answer_routes_here": 10,
+  "holds": [
+   18,
+   24,
+   49,
+   52,
+   53
+  ],
+  "fails": [
+   1,
+   7,
+   11,
+   32,
+   50
+  ],
+  "same_as_first_reading": true,
+  "matches_knock_on_v0_2": true
+ },
+ "holds": [
+  {
+   "n": 24,
+   "rests_on": "just-depressed#long",
+   "locus_repaired": true,
+   "sentence": "The claim is symmetric and modest",
+   "stands_after_the_pin": true
+  },
+  {
+   "n": 49,
+   "rests_on": "joy-outweighs-harms#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 52,
+   "rests_on": "economy-population#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 53,
+   "rests_on": "hedonic-contrast#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 53,
+   "rests_on": "transhumanist-objection#long",
+   "locus_repaired": false
+  },
+  {
+   "n": 18,
+   "rests_on": "violence-as-reductio#archetypeVariants.sophisticate",
+   "locus_repaired": true,
+   "sentence": "Concede the one residue this does not reach",
+   "stands_after_the_pin": true
+  }
+ ],
+ "exit_framing": {
+  "pre_equals_post": true,
+  "loci": [
+   "heat-death-futility#long",
+   "red-button-repugnant#archetypeVariants.sophisticate",
+   "red-button-repugnant#long",
+   "revealed-preference#medium",
+   "social-contract#long",
+   "why-not-suicide#long"
+  ]
+ }
+}

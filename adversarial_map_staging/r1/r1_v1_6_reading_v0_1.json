@@ -1,0 +1,147 @@
+{
+ "artifact": "r1_v1_6_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/r1_v1_6_reading.py",
+ "pins": {
+  "map_v1_5": "0df413ed655a5373468c218832854bbe",
+  "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+  "register_v0_6": "0689f46f18a4dbe8d40c9982a2ad06f9",
+  "register_v0_7": "bcbff23113f3fb0135d5fd5b3e2630d5",
+  "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+  "canon": "d9d0c23a9e47bd1cc38f69a378c2198f",
+  "corpus": "04bf6482aa0374ee92a81c1d55ec41f8",
+  "jsx": "b196548b6eb39065842d62292acca89f",
+  "combined": "006aa9833f7a8b103ad27a289ab22fa9"
+ },
+ "map": {
+  "changed_entries": [
+   {
+    "index": 75,
+    "target": "red-button-repugnant#archetypeVariants.defender",
+    "fields_changed": [
+     "class",
+     "grounds",
+     "provenance",
+     "routing"
+    ],
+    "fields_unchanged": [
+     "adversarial_move",
+     "status",
+     "target_anchor",
+     "target_id",
+     "target_locus"
+    ]
+   }
+  ],
+  "meta_keys_changed": [
+   "artifact",
+   "assembled",
+   "class_counts",
+   "fences",
+   "per_phase",
+   "per_tier",
+   "r1_rerulings",
+   "siblings",
+   "successor_to"
+  ]
+ },
+ "register": {
+  "tributaries_added": [
+   {
+    "bedrock": "HR-14",
+    "facet": "terminus-held-open",
+    "node": "red-button-repugnant",
+    "locus": "archetypeVariants.defender"
+   }
+  ],
+  "v0_7_minus_added_equals_v0_6": true,
+  "audit_unchanged": true,
+  "hr14_relations": [
+   [
+    "independent_of",
+    "HR-02"
+   ],
+   [
+    "independent_of",
+    "HR-03"
+   ],
+   [
+    "independent_of",
+    "HR-05"
+   ]
+  ]
+ },
+ "knock_on_independent": {
+  "a_entries": 29,
+  "a_on_or_routed_to_node": [],
+  "current_r1_verdicts_of_a_entries": {
+   "FAILS": 6,
+   "HOLDS": 23
+  }
+ },
+ "n46_bedrock": {
+  "n46_class": "d",
+  "n46_bedrock_name": "create-vs-destroy: whether an independently-motivated suffering-minimization layer grounds a positive case against existing beings",
+  "equals_sophisticate_d": true,
+  "node_entries": [
+   {
+    "locus": "long",
+    "class": "d",
+    "bedrock_name": "epistemic authority of the anti-extinction intuition (Moorean datum) versus its evolutionary debunking"
+   },
+   {
+    "locus": "long",
+    "class": "d",
+    "bedrock_name": "asymmetry-contingency (intrinsic-value-of-existence stake; purified Moorean retreat)"
+   },
+   {
+    "locus": "medium",
+    "class": "d",
+    "bedrock_name": "asymmetry-contingency (intrinsic-value-of-existence stake; purified Moorean retreat)"
+   },
+   {
+    "locus": "archetypeVariants.defender",
+    "class": "d",
+    "bedrock_name": "create-vs-destroy: whether an independently-motivated suffering-minimization layer grounds a positive case against existing beings"
+   },
+   {
+    "locus": "archetypeVariants.sophisticate",
+    "class": "d",
+    "bedrock_name": "asymmetry-contingency (intrinsic-value-of-existence stake; purified Moorean retreat)"
+   },
+   {
+    "locus": "archetypeVariants.sophisticate",
+    "class": "d",
+    "bedrock_name": "create-vs-destroy: whether an independently-motivated suffering-minimization layer grounds a positive case against existing beings"
+   }
+  ]
+ },
+ "pq17": {
+  "rows_in_queue": 17,
+  "pq17_locus": "why-not-suicide#archetypeVariants.defender",
+  "pq17_serves": [
+   "#4"
+  ],
+  "named_sentence_per_surface": {
+   "corpus": 1,
+   "jsx": 1,
+   "combined": 1
+  },
+  "lone_actor_sentence_per_surface": {
+   "corpus": 1,
+   "jsx": 1,
+   "combined": 1
+  },
+  "both_in_the_defender_slot": true,
+  "lone_actor_follows_named": true,
+  "r1_024_names_the_analogy": true,
+  "n4_anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+  "n4_anchor_in_lone_actor_sentence": true,
+  "phrase_paths_in_corpus": [
+   ".objections[2].responses.archetypeVariants.defender",
+   ".objections[39].responses.archetypeVariants.defender",
+   ".realWorldExamples[11].rhetorical_move_observed",
+   ".registered_moves[1].rebuttal_template",
+   ".registered_moves[1].first_articulated_in_source_material.canonical_quotation"
+  ]
+ }
+}

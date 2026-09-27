@@ -18,11 +18,17 @@ checks, and exits 1 on any failure:
      current judgment, and the gate change has one (a later row supersedes the one before it for
      the same subject, and nothing else);
   5. every double-quoted span in a row's text is declared in that row's quotes, and every declared
-     quote is verbatim at its source. Sources: r1_quote_check.py's corpus:, map: (v1_3) and canon:;
+     quote is verbatim at its source. Sources: r1_quote_check.py's map: (v1_3) and canon:; corpus: by
+     its rule but against the corpus map_v1_5 pins (meta.source_corpus_md5), from git history once
+     the working corpus moves (gate2, 2026-09-26, before the declared pin session);
      and, each resolved against the file this record's header pins, v1_4:, v1_5:, redrafts:#n,
      rulings:R1-nnn, judgments:J-nnn, register_v0_5:HR-nn and register_v0_6:HR-nn; plus design:
      and render: files in adversarial_map_staging/;
-  6. the judged artifacts are still at the md5s the header names;
+  6. the judged artifacts are still at the md5s the header names, except an append-only record
+     (R1_rulings.json, R1_drafts_judgments.json), which may have grown by appended rows since the
+     judgment: its pinned bytes must then be recoverable from git history, with their header
+     unchanged and their rows a prefix of the current file's. Every judged artifact is read at its
+     pinned bytes, never at a later state (gate2, 2026-09-26, when R1-070 was appended);
   7. append-only: the committed base (git HEAD's copy, or --base) is intact: header unchanged,
      every committed row still present, unchanged and in order.
 
@@ -67,6 +73,65 @@ def md5(path):
     return hashlib.md5(open(path, "rb").read()).hexdigest()
 
 
+APPEND_ONLY = {"adversarial_map_staging/r1/R1_rulings.json", "adversarial_map_staging/r1/R1_drafts_judgments.json"}
+
+
+def git_bytes_at(repo_dir, rel, want):
+    """The newest committed blob of rel whose md5 is want, or None."""
+    log = subprocess.run(["git", "-C", repo_dir, "log", "--format=%H", "--", rel], capture_output=True, text=True)
+    for sha in log.stdout.split() if log.returncode == 0 else []:
+        r = subprocess.run(["git", "-C", repo_dir, "show", "%s:%s" % (sha, rel)], capture_output=True)
+        if r.returncode == 0 and hashlib.md5(r.stdout).hexdigest() == want:
+            return r.stdout
+    return None
+
+
+def pinned_bytes(repo_dir, rel, want, history=None):
+    """The bytes a pin names: the working copy if it still matches, else from history, else None."""
+    p = os.path.join(repo_dir, rel)
+    if os.path.exists(p):
+        b = open(p, "rb").read()
+        if hashlib.md5(b).hexdigest() == want:
+            return b
+    return (history or (lambda r_, w_: git_bytes_at(repo_dir, r_, w_)))(rel, want)
+
+
+def rows_grown(base_bytes, path):
+    """How many rows a record gained by appending since base_bytes, or None if it changed otherwise."""
+    try:
+        base, cur = json.loads(base_bytes.decode("utf-8")), json.load(open(path, encoding="utf-8"))
+    except (ValueError, OSError):
+        return None
+    if {k: v for k, v in base.items() if k != "rows"} != {k: v for k, v in cur.items() if k != "rows"}:
+        return None
+    if cur.get("rows", [])[:len(base.get("rows", []))] != base.get("rows", []):
+        return None
+    return len(cur["rows"]) - len(base["rows"])
+
+
+def corpus_at(repo_dir, rel, want, history=None):
+    """The corpus a judged map was built against, at the md5 its meta names, as {id: objection}; or None."""
+    b = pinned_bytes(repo_dir, rel, want, history)
+    return None if b is None else {o["id"]: o for o in json.loads(b.decode("utf-8"))["objections"]}
+
+
+def corpus_text(corpus, rest):
+    """r1_quote_check's corpus: rule, read against a pinned corpus."""
+    node, _, locus = rest.partition("#")
+    if node not in corpus:
+        raise KeyError("no corpus node %s" % node)
+    o = corpus[node]
+    if locus in ("short", "medium", "long"):
+        t = o["responses"].get(locus)
+    elif locus.startswith("archetypeVariants."):
+        t = o["responses"].get("archetypeVariants", {}).get(locus.split(".", 1)[1])
+    else:
+        t = o.get(locus)
+    if not isinstance(t, str):
+        raise KeyError("no corpus text at %s" % rest)
+    return [t]
+
+
 def strings(o):
     if isinstance(o, dict):
         for v in o.values():
@@ -83,20 +148,32 @@ def jload(repo_dir, rel):
 
 
 class Sources:
-    """Every source resolves against a file the header pins, except r1_quote_check's own three."""
+    """Every source resolves against a file the header pins, at the bytes it pins, except
+    r1_quote_check's own three."""
 
-    def __init__(self, repo_dir, doc):
+    def __init__(self, repo_dir, doc, history=None):
         self.repo = repo_dir
         self.q = Q.Texts()
         j = doc["judged"]
-        self.maps = {"v1_4": jload(repo_dir, j["map_v1_4"]["file"])["entries"],
-                     "v1_5": jload(repo_dir, j["map_v1_5"]["file"])["entries"]}
-        self.redrafts = jload(repo_dir, j["redrafts"]["file"])
-        self.rulings = jload(repo_dir, j["rulings"]["file"])["rows"]
-        self.judgments = jload(repo_dir, j["judgments_v1_4"]["file"])["rows"]
-        self.regs = {k: {b["bedrock_id"]: b for b in jload(repo_dir, j[k]["file"])["bedrocks"]}
-                     for k in ("register_v0_5", "register_v0_6")}
-        self.knock = jload(repo_dir, j["knock_on"]["file"])
+
+        def at(key):
+            b = pinned_bytes(repo_dir, j[key]["file"], j[key]["md5"], history)
+            return json.loads(b.decode("utf-8")) if b is not None else jload(repo_dir, j[key]["file"])
+
+        m15 = at("map_v1_5")
+        self.maps = {"v1_4": at("map_v1_4")["entries"], "v1_5": m15["entries"]}
+        # gate2, 2026-09-26, before the declared pin session: corpus: resolves against the corpus the
+        # judged map was built against (its meta.source_corpus_md5), read back from git history once the
+        # working corpus moves. If it cannot be recovered, a corpus quote fails; it never floats.
+        self.corpus_pin = (m15["meta"]["source_corpus"], m15["meta"]["source_corpus_md5"])
+        self.corpus = corpus_at(repo_dir, self.corpus_pin[0], self.corpus_pin[1], history)
+        self.redrafts = at("redrafts")
+        self.rulings = at("rulings")["rows"]
+        self.judgments = at("judgments_v1_4")["rows"]
+        reg = {k: at(k) for k in ("register_v0_5", "register_v0_6")}
+        self.regs = {k: {b["bedrock_id"]: b for b in v["bedrocks"]} for k, v in reg.items()}
+        self.deltas = reg["register_v0_6"]["meta"]["changes_from_v0_5"]
+        self.knock = at("knock_on")
 
     def resolve(self, src):
         kind, _, rest = src.partition(":")
@@ -129,7 +206,11 @@ class Sources:
             if not os.path.exists(p):
                 raise KeyError("no file %s" % rest)
             return [open(p, encoding="utf-8").read()]
-        if kind in ("corpus", "map", "canon"):
+        if kind == "corpus":
+            if self.corpus is None:
+                raise KeyError("the corpus the judged map pins (%s) is not recoverable" % self.corpus_pin[1][:8])
+            return corpus_text(self.corpus, rest)
+        if kind in ("map", "canon"):
             return self.q.resolve(src)
         raise KeyError("unknown source kind %r" % kind)
 
@@ -157,7 +238,7 @@ def texts_of(r):
     return [t for t in out if isinstance(t, str)]
 
 
-def check(path, repo_dir, base_text):
+def check(path, repo_dir, base_text, history=None):
     fails, info = [], []
     doc = json.load(open(path, encoding="utf-8"))
     if list(doc) != HEADER_KEYS:
@@ -168,15 +249,26 @@ def check(path, repo_dir, base_text):
     if not isinstance(rows, list) or not rows:
         return ["structure: no rows"], info
 
-    # 6 -- the referents have not moved
+    # 6 -- the referents have not moved, or an append-only one has only grown
     for name, pin in doc["judged"].items():
         p = os.path.join(repo_dir, pin["file"])
         got = md5(p) if os.path.exists(p) else "MISSING"
-        if got != pin["md5"]:
+        if got == pin["md5"]:
+            continue
+        if pin["file"] not in APPEND_ONLY:
             fails.append("pin %s: %s is %s, header names %s" % (name, pin["file"], got, pin["md5"]))
-    src = Sources(repo_dir, doc)
+            continue
+        base = pinned_bytes(repo_dir, pin["file"], pin["md5"], history)
+        grown = rows_grown(base, p) if base is not None and got != "MISSING" else None
+        if grown is None:
+            fails.append("pin %s: %s is %s, header names %s, and it has not merely grown by appended rows"
+                         % (name, pin["file"], got, pin["md5"]))
+        else:
+            info.append("pin %s: %s has grown by %d appended row(s) since the judgment; read at %s"
+                        % (name, pin["file"], grown, pin["md5"][:8]))
+    src = Sources(repo_dir, doc, history)
     redrafts = {x["n"]: x for x in src.redrafts["redrafts"]}
-    deltas = jload(repo_dir, doc["judged"]["register_v0_6"]["file"])["meta"]["changes_from_v0_5"]
+    deltas = src.deltas
     holds = list(src.knock["holds_newly_collided"])
     superseded = {r["supersedes"] for r in src.rulings if r.get("supersedes")}
     current_r1 = {r["n"]: r for r in src.rulings if r["row"] not in superseded}
@@ -302,15 +394,38 @@ def self_test(emit=None):
     tmp = tempfile.mkdtemp(prefix="r1v15gate_")
     results = []
     try:
-        def stage(mut_doc=None, mut_pin=None, base=None):
+        def stage(mut_doc=None, mut_pin=None, base=None, grow=None, corpus_edit=False):
+            # every judged artifact is staged at its pinned bytes; `grow` = (file suffix, fn) rewrites
+            # that append-only record from its pinned document, to test the append-only exception
             d = os.path.join(tmp, "c%d" % len(results))
             for pin in doc0["judged"].values():
                 dst = os.path.join(d, pin["file"])
                 os.makedirs(os.path.dirname(dst), exist_ok=True)
-                shutil.copyfile(os.path.join(REPO, pin["file"]), dst)
+                b = pinned_bytes(REPO, pin["file"], pin["md5"])
+                if grow and pin["file"].endswith(grow[0]):
+                    rd = json.loads(b.decode("utf-8")); grow[1](rd)
+                    b = json.dumps(rd, ensure_ascii=False).encode("utf-8")
+                open(dst, "wb").write(b)
                 if mut_pin and pin["file"].endswith(mut_pin):
-                    b = open(dst, "rb").read()
                     open(dst, "wb").write(b[:-1] + (b"\n" if b[-1:] != b"\n" else b" "))
+            if corpus_edit:
+                # a simulated pin move: the working corpus no longer carries the record's first corpus quote
+                pm = doc0["judged"]["map_v1_5"]
+                m = json.loads(pinned_bytes(REPO, pm["file"], pm["md5"]).decode("utf-8"))["meta"]
+                cd = json.loads(pinned_bytes(REPO, m["source_corpus"], m["source_corpus_md5"]).decode("utf-8"))
+                src, quote = next((q["src"], q["quote"]) for r in doc0["rows"] for q in r["quotes"]
+                                  if q["src"].startswith("corpus:"))
+                node, _, locus = src.split(":", 1)[1].partition("#")
+                o = next(x for x in cd["objections"] if x["id"] == node)
+                if locus in ("short", "medium", "long"):
+                    cont, key = o["responses"], locus
+                elif locus.startswith("archetypeVariants."):
+                    cont, key = o["responses"]["archetypeVariants"], locus.split(".", 1)[1]
+                else:
+                    cont, key = o, locus
+                assert quote in cont[key], "the control's corpus quote is not in the pinned corpus"
+                cont[key] = cont[key].replace(quote, "[the declared pin session's repair]")
+                open(os.path.join(d, m["source_corpus"]), "w", encoding="utf-8").write(json.dumps(cd, ensure_ascii=False))
             for name in os.listdir(os.path.join(REPO, STG)):
                 if re.fullmatch(r"adversarial_map_design_v0_\d+\.md|render_[a-z0-9_]+\.py", name):
                     shutil.copyfile(os.path.join(REPO, STG, name), os.path.join(d, STG, name))
@@ -358,11 +473,22 @@ def self_test(emit=None):
              dict(mut_doc=mut(lambda d: d["rows"][0].update(reason=d["rows"][0]["reason"] + " (edited)")), base=doc0), 1, "was edited or removed"),
             ("C12", "a correction row supersedes properly",
              dict(mut_doc=mut(lambda d: d["rows"].append(dict(extra, supersedes=d["rows"][first("redraft")]["id"]))), base=doc0), 0, None),
+            ("C13", "the rulings file grows by one appended row",
+             dict(grow=("R1_rulings.json", lambda rd: rd["rows"].append(dict(rd["rows"][-1], row="R1-%03d" % (len(rd["rows"]) + 1))))), 0, None),
+            ("C14", "a committed rulings row is edited in place",
+             dict(grow=("R1_rulings.json", lambda rd: rd["rows"][0].update(reason=rd["rows"][0]["reason"] + " (edited)"))), 1, "not merely grown by appended rows"),
+            ("C15", "the first judgment record grows by one row",
+             dict(grow=("R1_drafts_judgments.json", lambda rd: rd["rows"].append(dict(rd["rows"][-1], id="J-%03d" % (len(rd["rows"]) + 1))))), 0, None),
+            ("C16", "a simulated pin: a quoted corpus span is gone", dict(corpus_edit=True), 0, None),
+            ("C17", "the same, with git history withheld", dict(corpus_edit=True, _history=lambda rel, want: None), 1, "is not recoverable"),
         ]
+        # the staged tree has no git; history resolves against this repo's own, as the real run does
+        history = lambda rel, want: pinned_bytes(REPO, rel, want)
         ok_all = True
         for cid, what, kw, want_rc, want_msg in controls:
+            kw = dict(kw); hist = kw.pop("_history", history)
             p, d, base = stage(**kw)
-            fails, _ = check(p, d, base)
+            fails, _ = check(p, d, base, hist)
             rc = 1 if fails else 0
             matched = (want_msg is None and not fails) or (want_msg is not None and any(want_msg in f for f in fails))
             good = rc == want_rc and matched
@@ -382,7 +508,10 @@ def self_test(emit=None):
         rec = {"artifact": os.path.basename(emit), "gate": "adversarial_map_staging/r1/r1_v1_5_judgments_gate.py",
                "gate_md5": md5(os.path.abspath(__file__)), "judgments_md5": md5(real),
                "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its "
-                       "own failure line; C12, a proper correction row, must stay GREEN.",
+                       "own failure line; C12, a proper correction row, must stay GREEN; C13 and C15, an append-only "
+                       "record grown by an appended row, must stay GREEN, and C14, a committed rulings row edited in "
+                       "place, must go RED; C16, a simulated pin move, must stay GREEN, and C17, the same with git "
+                       "history withheld, must go RED.",
                "controls": results}
         open(emit, "w", encoding="utf-8").write(json.dumps(rec, indent=1, ensure_ascii=False) + "\n")
     return 0 if ok_all else 1

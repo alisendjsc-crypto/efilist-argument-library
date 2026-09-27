@@ -14,6 +14,84 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.1.3] — 2026-09-26
+
+**PATCH** by the invariants convention (the canon's `invariants` subtree is byte-identical), and **a content cut**: 18 sentences repaired across 16 objections, with 5 companion sentences beside them, on all three surfaces at once — the corpus JSON (whose `version` field now reads `4.1.3`, naming the cut), the JSX, and `site/combined.html`. The cross-surface gate (`tools/xsurface_v4_1_0.py`) moves from `6cd132ee5b8c7ca78ad0e095806f1c93` to `8b76672fa3ca3cc33ca99e5b35fc25bd`, the three surfaces agreeing at both; both map sidecars regenerate byte for byte from the new flagship. The adversarial maps stay pinned to the pre-cut corpus (`04bf6482`), as the frozen-map law requires; a successor map re-anchors the entries whose anchors lay inside a repaired sentence.
+
+Each repair answers a defect the adversarial map found in the library's own text — a motive read off a thread, a premise asserted and never argued, a claim wider than its argument, a principle stretched past what it covers — and follows the repair the map asked for. The text grows by 587 words. A session that wrote none of it judged every sentence; three came back once and were judged again. Josiah ratified it on 2026-09-26: "Go with your recommendations on all of the above." The record is `adversarial_map_staging/r1/PQ_repair_drafts_L5.json`.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.1.0 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` | 2,982,770 |
+| superseded — v4.1.1 | `f095c0ce0e5a1d796d57fa5a5dd62f7d` | 2,985,989 |
+| superseded — v4.1.2 | `006aa9833f7a8b103ad27a289ab22fa9` | 2,987,411 |
+| **current — v4.1.3** | **`f72e6762173dada604e0fe250e76f810`** | **2,990,639** |
+
+---
+
+## The corrections judged: every repair ready for Josiah's word — 2026-09-26 (no release; the pin stands)
+
+The judging session has read the pin session's three corrected repairs and its reworded Bradley sentence, and accepts all four. Each makes exactly the change it was sent back for. The consent threshold on the Benatar hub's fallback is now conditional on the view that prevails, and the floor it cites is scoped to the typical life. The self-defeating answer now claims only that the view does not will the births it forbids. The plain-language answer on suicide now says the red-button claim belongs to efilism itself, and it keeps that claim separate from the reader's own life. The Bradley sentence now names the reply, not the man. The answers that lean on repaired passages still stand, and the tool that will apply the repairs builds exactly the text that was judged.
+
+With that, every sentence Josiah would ratify has been judged, and both sessions recommend the same four things: ratify the eighteen, admit the five extra sentences, leave the larger rewrites for a later queue, and run a short safety pass over six passages right after the pin. Nothing served changed; the flagship is still v4.1.2. Canon v38.34.
+
+---
+
+## Three repairs corrected — 2026-09-26 (no release; the pin stands)
+
+The judging session accepted fifteen of the eighteen drafted repairs and sent three back, each with one narrow fix. The Benatar hub's fallback now says the consent threshold holds only if the view that prevails keeps the weight its own paragraph says a strict version explains away, and it speaks of the typical life rather than every life. The self-defeating repair now claims only what its argument shows: the view does not will the births it forbids. The drifter's answer to "why not kill yourself" now says the red-button view belongs to efilism itself, not to some of its holders, and still leaves the reader's own life out of it. One companion sentence now names the reply rather than Bradley, whose own position the judge could not confirm.
+
+A housekeeping fault is recorded too: an early rehearsal of the pin ran itself inside itself and kept running out of sight until the machine's shared temporary space was full. It was stopped, cleaned up, and fixed so it cannot recur. Nothing served changed; the flagship is still v4.1.2. Canon v38.33.
+
+---
+
+## The drafted repairs judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the pin session's eighteen replacement sentences. Fifteen are accepted as written. Three go back for one narrow correction each: one offers as settled a reason that its own paragraph has just said the rival view would discard; one ends by claiming more than its argument shows; and one tells a newcomer that only some efilists hold the second, eliminationist claim, when the library's own pages say it belongs to the view itself. All five proposed extra sentences are accepted, with the recommendation that Josiah admit them. The pin session's seven findings are confirmed, and the five answers that lean on repaired passages still stand.
+
+The judgment also found two things outside this queue. Six passages frame the will to survive, or the taboo against suicide, as a barrier in front of an exit. Their argument, that surviving is a drive and not proof that a life is good, stays; the framing is a question for Josiah under his rule that nothing here encourages self-harm and nothing turns pro-life. And several defects this pin repairs in one place still stand in a sibling passage, so they are recommended for the next queue. Nothing served changed; the flagship is still v4.1.2. Canon v38.32.
+
+---
+
+## The queued repairs drafted — 2026-09-26 (no release; the pin stands)
+
+The pin session has written replacement text for all seventeen queued repairs to the flagship's corpus, eighteen sentences in all. Each replacement follows the repair the adversarial map asked for: a motive guess becomes something a reader can check, an overclaim is scoped to what the argument actually shows, a cross-reference points to where the argument is made, and an open question is named as open. Together they add about five hundred words. A patch built from them on a scratch copy leaves the three copies of the corpus agreeing, and the two map data files unchanged.
+
+Five more sentences are proposed alongside, because repairing only the queued sentence would leave its paragraph contradicting itself or leave an answer the map is waiting on untouched. Those five need Josiah's word to join. Seven findings go with the drafts, among them three waiting entries that this queue cannot fix on its own. A session that wrote none of this judges it next; nothing served changes before his word. Canon v38.31.
+
+---
+
+## The pin session opens: the checking tools read the text they checked — 2026-09-26 (no release; the pin stands)
+
+The session that will make the queued corpus repairs has opened. Before touching a sentence it made sure the adversarial map's tools cannot be fooled by the repairs. Every map, register and measurement was built against the corpus as it stands today; the tools that check them used to read whatever the corpus file currently says. A rehearsal on a scratch copy, with every queued sentence replaced, showed five checks going red and four records quietly changing with no error. The tools now read the corpus exactly as each record saw it, recovered from the repository's history, so the repairs cannot make an old record look wrong or right. Three older map builders are kept byte for byte, because their successors check them; a new helper runs them against the old corpus instead. The same rehearsal now comes back clean.
+
+Josiah's word on the last judgment is recorded, so the queue's seventeenth row now names both sentences of the why-not-suicide defender answer, the "grabbed, not produced" sentence and the lone-actor comparison after it. Nothing served changed; the flagship is still v4.1.2. Canon v38.30.
+
+---
+
+## The marks across the wings — 2026-09-26 (no release; the pin stands)
+
+Each library's mark now says what its shape says, once. On the front door, the first time a card is seen its mark builds itself the way its line in the key describes it: the index's cells fill in reading order, the flagship's ladder stacks from its shortest rung, Right to Die's doorway draws and its step appears in place, Abortion's stem forks and both branches appear together, Transgenderism's edge draws from its middle both ways, Anthropocentrism's four peers arrive together around an empty centre, and Veganism's boundary closes around both its nodes. Hovering a card plays it again. Each wing page carries its own mark beside its title, and its About tab draws that mark large on its pixel grid with its parts named. Every wing already sorts its objections on the flagship's five tiers, so the tier marks now sit beside the words "tier N" on each card and each tier filter, and a link straight to one objection plays its tier mark once as it lands. Right to Die has a thin column of dots in its left margin, one per objection; the lit dot is the one being read. The Adversarial Map has its own mark at last: the flagship's ladder facing its reflection across a lit mirror, on its card on the front door (its page's tab takes it in that page's next update). Josiah on the drawing: *"I'm liking it. Approved as is."* Josiah's word on the design sheet: *"Go with your recommendations on all of the above."* Nothing moves on a light reading mode, with reduced motion, or below full effects, and nothing loops. Every mark and the styles that move them are drawn by `icons/gen_icons.py`, and `tools/icons_regen_check.py` requires each of the six pages to carry exactly what it draws. The record is `design/glyph_architecture/ARCHITECTURE_library_v0_2.md`. **The flagship is untouched:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before; its tier marks are packed on a branch and land only in a pin move.
+---
+
+## #46's new card judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the drafting seat's new card for the red-button defender entry (#46). The card now says the argument ends at an open question, whether any positive case for ending lives that already exist can be made, and the judgment accepts it: the objection's own last step leads there, and the other candidate, the creation asymmetry, does not reach lives that already exist. The register change and the check that no other answered entry is affected are confirmed. One correction is owed on the pin queue: its 17th row names one sentence of the why-not-suicide defender slot, but the concession was about the next one, the lone-actor analogy, so the pin session repairs both. Before any page changes, the three gates that check the judgments now read the corpus as it was when each judgment was made, tested against an edited copy of the corpus. The record is `adversarial_map_staging/r1/R1_v1_6_judgments.json`. Canon `project_canon_v38_29.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## #46 given its new class — 2026-09-26 (no release; the pin stands)
+
+The red-button defender entry (#46), re-ruled on Josiah's word, is drafted as a "where this line terminates" entry. Its line ends at registered bedrock HR-14, where the same node's sophisticate slot already holds open whether a positive case against existing beings stands. The draft is a new map, `adversarial_map_staging/adversarial_map_v1_6.json` (the previous map stays byte-identical), and register `honest_residuals_register_v0_7.json` adds the entry to HR-14. No other entry moved, and no entry that still holds meets anything new, because every entry on that node is now a terminus entry. Josiah's list of corpus sentences to repair gains one, the "grabbed, not produced" sentence on the why-not-suicide defender page, for 17 in all. He has declared the session that repairs them, to open once this draft is judged. His notes on the adversarial page (a favicon, a plain mode with short definitions, a methodology panel, a tutorial) and on a "for your agent" file are recorded in canon with their order. A seat that did not draft #46's entry judges it next. Canon `project_canon_v38_28.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
+## #46 re-ruled — 2026-09-26 (no release; the pin stands)
+
+On Josiah's word, *"Proceed with all of your recommendations."*, the red-button defender entry (#46) no longer holds. Its answer needed the long to show that the worth of the lives the button ends is outweighed, and the map now records at that very spot (#45's "where this line terminates" entry) that the long's case ends in a tie. The ruling is a new row, **R1-070**, in `adversarial_map_staging/r1/R1_rulings.json`; it replaces R1-011 without editing it, and R1 now stands at 23 holds and 46 fails over the same 69 entries. The two gates that check the judgments now read the rulings as they were when each judgment was made, so a row appended later cannot turn them red, or make a judgment look wrong for something that happened after it. The drafting seat gives #46 its new class next, and a seat that did not draft it judges that. Canon `project_canon_v38_27.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.
+
+---
+
 ## The fixes judged, and the entries they touched re-read — 2026-09-26 (no release; the pin stands)
 
 A session that wrote none of them has judged the six fixes Josiah's word called for. All six are accepted. #14's objection now reaches the bedrock its card names. #58 becomes a repair candidate, and the repair it needs rests on no disputed premise. Three cards' routing notes and one card's grounds say what they mean. The register's three changes are accepted too, including the corrected direction of the relation he ratified at K349, and so is the four-line change the drafting session made to the first judgment's gate. The eleven entries that held in R1, but now sit next to the new drafts, were read again. Ten still hold. One, #46, does not: a new record at the place its answer points to shows that the objection it had to empty still stands, so it goes back to Josiah with a recommendation to re-rule it. The record is **`adversarial_map_staging/r1/R1_v1_5_judgments.json`**, append-only, with every quotation checked and its own gate. **Judged is not ruled.** Canon `project_canon_v38_26.json`. **No served byte changed:** `/combined` is `006aa9833f7a8b103ad27a289ab22fa9` / 2,987,411 B, as before.

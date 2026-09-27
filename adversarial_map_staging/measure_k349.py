@@ -21,7 +21,11 @@ def read_json(p):
 def main():
     vpath = os.path.join(HERE, "adv_map_validator_v0_5.py")
     V = load_validator(vpath)
-    corpus = read_json(os.path.join(REPO, "efilist_argument_library_v4_0_0.json"))
+    # L5 (R0150 phase 1): the corpus at the md5 this record pins; git keeps those bytes once the pin moves it.
+    sys.path.insert(0, os.path.join(HERE, "r1"))
+    import pinned
+    corpus_raw = pinned.bytes_at(REPO, "efilist_argument_library_v4_0_0.json", "04bf6482aa0374ee92a81c1d55ec41f8")
+    corpus = json.loads(corpus_raw.decode("utf-8"))
     asm = read_json(os.path.join(HERE, "adversarial_map_v1_1.json"))
     nodes = corpus["objections"]
     by = {o["id"]: o for o in nodes}
@@ -89,7 +93,7 @@ def main():
         "session": "K349",
         "date_operator_local": "2026-09-17",
         "inputs": {
-            "corpus_md5": V.md5_bytes(open(os.path.join(REPO, "efilist_argument_library_v4_0_0.json"), "rb").read()),
+            "corpus_md5": V.md5_bytes(corpus_raw),
             "objections_digest": V.objections_digest(corpus),
             "assembly_v1_1_md5": V.md5_bytes(open(os.path.join(HERE, "adversarial_map_v1_1.json"), "rb").read()),
             "validator_v0_5_md5": V.md5_bytes(open(vpath, "rb").read()),

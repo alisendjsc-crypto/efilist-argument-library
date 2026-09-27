@@ -1,0 +1,817 @@
+{
+ "artifact": "PQ_repair_drafts_L5.json",
+ "state": "DRAFTED, NOT JUDGED. The pin session's repair text for pin_move_queue_L5 (17 rows, 18 sentences) and five proposed companion sentences. gate2 judges (K258); Josiah's word ratifies before a served byte moves (R0150 phases 3 and 4).",
+ "law": "Append-only. A committed row is never edited: an AMEND, an admitted companion or ratified text is a new row whose 'supersedes' names the row it replaces. The gate (pin_repair_drafts_gate.py) holds the committed rows to their bytes, recomputes every row's current text from the pinned corpus, and simulates the three-surface patch.",
+ "kickoff": {
+  "relay": "R0150",
+  "md5": "fbafd18cf1cb91289c2a89b07934edd2",
+  "from": "gate2",
+  "to": "l"
+ },
+ "queue": {
+  "block": "pin_move_queue_L5",
+  "canon": "project_canon_v38_30.json",
+  "canon_md5": "c1af1fb5f2bc5c7a265e7a8901818ef2"
+ },
+ "pinned": {
+  "surfaces": {
+   "efilist_argument_library_v4_0_0.json": "04bf6482aa0374ee92a81c1d55ec41f8",
+   "efilist_argument_library_v4_0_0.jsx": "b196548b6eb39065842d62292acca89f",
+   "site/combined.html": "006aa9833f7a8b103ad27a289ab22fa9"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  }
+ },
+ "rows": [
+  {
+   "id": "PD-01",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-01",
+   "part": 1,
+   "locus": "just-depressed#long",
+   "serves": [
+    "#1"
+   ],
+   "current": "The reliable tell is that the same interlocutor who counsels \"get help\" will, minutes later in the same thread, offer \"so why don't you kill yourself\" — two utterances incompatible with a single motive of care, fully compatible with a single motive of hostility.",
+   "replacement": "The reliable tell is in what the remark does: it arrives in place of a reply, names no premise, and asks nothing about the person it is aimed at — the shape of a conversation-ender, whatever the mood of the person who says it.",
+   "repair_followed": "The node has to either produce evidence the motive was hostile from the start or drop the motive claim and rest on the argument-level case, which it can afford to do.",
+   "how": "Option two of the repair: the motive inference is dropped. The tell becomes what the remark does in the exchange, which a reader can check, instead of a verdict on the speaker's motive read off a sequence of utterances. The argument-level case in the paragraphs below is untouched. The node's two frequency sentences stay and now rest on this behavioural tell; whether that is enough is the (b)'s re-judgment.",
+   "words": {
+    "current": 44,
+    "replacement": 44,
+    "delta": 0
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-02",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-02",
+   "part": 1,
+   "locus": "benatar-asymmetry-attack#long",
+   "serves": [
+    "#7"
+   ],
+   "current": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+   "replacement": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits: the guaranteed floor every life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent, while whether typical lives fall below a life worth having is an empirical question this node does not settle.",
+   "repair_followed": "Repair: substantiate or cross-reference the suffering-load premise on the fallback branch.",
+   "how": "Cross-references the suffering-load premise (the repair's second option) and substantiates it as far as the corpus does: the guaranteed floor clears a consent threshold; a net-balance threshold is stated as open rather than asserted. The paragraph's last sentence already states the claim conditionally and stays.",
+   "words": {
+    "current": 48,
+    "replacement": 90,
+    "delta": 42
+   },
+   "quotes": [
+    {
+     "src": "corpus:cherry-picking-worst#archetypeVariants.sophisticate",
+     "quote": "aging, the loss of everyone loved, bodily decline, death"
+    }
+   ],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-03",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-03",
+   "part": 1,
+   "locus": "self-defeating#long",
+   "serves": [
+    "#11"
+   ],
+   "current": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+   "replacement": "It requires only that whoever exists, however they came to exist, develop the capacity—potentially through artificial intelligence—to address sentient suffering at a structural level; that others will go on having children is a prediction about them, not a means the view wills, so its realization does not depend on the act it forbids.",
+   "repair_followed": "The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means",
+   "how": "States the fence the (b) names: the principle forbids creating; the realization path works on whatever agents exist, however they came to; others' predicted non-compliance is not a means the theorist wills.",
+   "words": {
+    "current": 22,
+    "replacement": 53,
+    "delta": 31
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-04",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-04",
+   "part": 1,
+   "locus": "antinatalism-misanthropic#long",
+   "serves": [
+    "#32"
+   ],
+   "current": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants.",
+   "replacement": "But structural criticism of a species is not the same as hatred of individuals—any more than criticizing the design of a building constitutes hatred of its occupants—and the difference lies in the verdict itself, not only in the warmth of whoever delivers it: 'create no more' is conditional on the suffering creation imposes and would lapse if that suffering lapsed, which no verdict grounded in contempt would do.",
+   "repair_followed": "The repair is available inside the node: the antinatalist verdict is conditional on suffering-imposition and would lapse if suffering lapsed, which no contempt-driven verdict would, and that is a content-level discriminator the node currently leaves unstated.",
+   "how": "Keeps the sentence and its building figure, and adds the content-level discriminator the (b) says the node leaves unstated: the verdict is conditional on suffering-imposition and would lapse with it. The (b)'s anchor clause is kept word for word.",
+   "words": {
+    "current": 27,
+    "replacement": 68,
+    "delta": 41
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-05",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-05",
+   "part": 1,
+   "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+   "serves": [
+    "#48"
+   ],
+   "current": "If the interlocutor presses the structure — 'universal still means coercive' — escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content, cascade-math voids it on the framework's own calculus, and the residual coercion-floor question routes to violence-as-reductio.",
+   "replacement": "If the interlocutor presses the structure — 'universal still means coercive' — escalate to the sophisticate backbone: framework-vs-actor fixes the coercive route as actor-content; the asymmetry authorizes only the negative act of refraining and gives no warrant for anything done to people who already exist, which is why what antinatalism asks for is refusal, not enforcement; cascade-math is a second, weaker witness, because a calculation's verdict moves with circumstances; and the residual coercion-floor question routes to violence-as-reductio.",
+   "repair_followed": "ground the anti-coercion verdict in the consent-asymmetry and in the voluntariness the node elsewhere attributes to antinatalism, and let cascade-math be the second, weaker witness it is at violence-as-reductio.",
+   "how": "Grounds the anti-coercion verdict in the asymmetry's negative-act-only authorization and in the voluntariness the node attributes to antinatalism, and makes cascade-math the second, weaker witness it is at violence-as-reductio. It does not read the consent-asymmetry as a general ban on imposition, the equivocation PQ-15 repairs.",
+   "words": {
+    "current": 40,
+    "replacement": 77,
+    "delta": 37
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-06",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-06",
+   "part": 1,
+   "locus": "ai-fear#archetypeVariants.defender",
+   "serves": [
+    "#48"
+   ],
+   "current": "Either show the premises themselves entail the recklessness — which means deriving a positive displacement-program out of substrate-neutral deterrence, and that derivation is exactly what fails — or concede the premises are clean and the indictment was always aimed at actors.",
+   "replacement": "Entailment is the right test here, not a convenient one: a charge that the view merely makes displacement easier to reach needs a base rate showing its holders act on it more often than holders of other views, which no one has supplied, and a standard that convicts a view by what some of its holders might do would convict every substantive ethics with a radical fringe, animal and environmental ethics included. So either show the premises themselves entail the recklessness — which means deriving a positive displacement-program out of substrate-neutral deterrence, and that derivation is exactly what fails — or concede the premises are clean and the indictment was always aimed at actors.",
+   "repair_followed": "argue the test, either by showing a facilitation claim needs a base rate nobody has supplied, or by showing a facilitation standard indicts every substantive ethical framework.",
+   "how": "Argues the test by both routes the (b) names, the missing base rate and a facilitation standard's overbreadth, then keeps the dilemma.",
+   "words": {
+    "current": 41,
+    "replacement": 114,
+    "delta": 73
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-07",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-07",
+   "part": 1,
+   "locus": "bitter-childhood#long",
+   "serves": [
+    "#50"
+   ],
+   "current": "The biographical objection inadvertently proves the antinatalist point: the suffering that supposedly 'caused' my philosophy is itself evidence of the proxy gamble's consequences.",
+   "replacement": "It is an irony, not a proof: how I came to the argument settles nothing about it, in my favor any more than against me.",
+   "repair_followed": "run the etiology principle to its self-refutation and stop, without claiming the wounded arguer sees more clearly.",
+   "how": "Runs the etiology principle to its self-refutation and stops. The preceding sentence's irony, a childhood imposed by a gamble, stands; the claim that the suffering proves the point is withdrawn.",
+   "words": {
+    "current": 23,
+    "replacement": 25,
+    "delta": 2
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-08",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-08",
+   "part": 1,
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "serves": [
+    "#5"
+   ],
+   "current": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+   "replacement": "Its core was 'do not start a life that cannot agree to it,' and nothing in that core tells the living to stop. Some efilists go further and hold that it would be better if all feeling life ended, painlessly and all at once — the 'red button' — but that is a separate claim with its own burden, and not starting a life settles nothing about it either way.",
+   "repair_followed": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant.",
+   "how": "Scopes the reassurance to the antinatalist core and names the second layer in the drifter's register, as a separate claim the core does not settle; the sophisticate slot routes the same question to red-button-repugnant, where it is held open.",
+   "words": {
+    "current": 20,
+    "replacement": 70,
+    "delta": 50
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-09",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-09",
+   "part": 1,
+   "locus": "luxury-belief#long",
+   "serves": [
+    "#63"
+   ],
+   "current": "The demographic consequences the critic fears are consequences for economic systems, not for sentient beings.",
+   "replacement": "The demographic consequences the critic fears are real costs to real people — the old who need care, the young in a contracting economy — and they have to be weighed, not waved away; economy-population weighs them and meets them through automation, institutional reform, mutual aid, and resource reallocation, not with new people made to carry them.",
+   "repair_followed": "the (b) drafted for #63: grant that contraction costs real people and send the weighing of those costs to economy-population#long.",
+   "how": "Grants that contraction costs real people and sends the weighing to economy-population#long, whose own words concede the aging-care problem is real.",
+   "words": {
+    "current": 15,
+    "replacement": 57,
+    "delta": 42
+   },
+   "quotes": [
+    {
+     "src": "corpus:economy-population#long",
+     "quote": "automation, institutional reform, mutual aid, and resource reallocation"
+    }
+   ],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-10",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-10",
+   "part": 1,
+   "locus": "free-will-defense#long",
+   "serves": [
+    "#22"
+   ],
+   "current": "Compatibilism attempts to salvage free will by redefining it as 'acting in accordance with one's desires without external coercion'—but this merely relocates the problem, since the desires themselves are products of unchosen biological and environmental factors.",
+   "replacement": "Compatibilism salvages a real freedom—acting on one's own desires without external coercion—but not the one the theodicy needs, since a God who designed those desires still stands behind what they produce; it is, though, exactly the freedom a prospective parent exercises, and it is all the ethical level below needs to hold that choice to account.",
+   "repair_followed": "the (b) drafted for #22: confine the second level to the theodicy and let the third level's verdict fall on the act.",
+   "how": "Confines the second level's dismissal to the theodicy, where compatibilist freedom does not move responsibility off the designer, and leaves the parent the agency the third level's verdict falls on.",
+   "words": {
+    "current": 36,
+    "replacement": 56,
+    "delta": 20
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-11",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-11",
+   "part": 1,
+   "locus": "eliminativism#long",
+   "serves": [
+    "#67"
+   ],
+   "current": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger hands the antinatalist everything — for where nothing is good, there is no good reason to set a new sufferer running, illusion or not.",
+   "replacement": "The badness of suffering and the goodness of joy stand or fall together; the eliminativist who fells one has felled both, and a barren ledger leaves no good reason to set a new sufferer running — but none to refrain either, so the objection wins nothing for creation; it empties every column, illusion or not.",
+   "repair_followed": "the second movement's closing 'a barren ledger hands the antinatalist everything' overclaims",
+   "how": "Withdraws the overclaim the (d) logs: global nihilism is symmetric, so it defeats the objection's pro-natal use without delivering the antinatalist conclusion.",
+   "words": {
+    "current": 49,
+    "replacement": 55,
+    "delta": 6
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-12",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-12",
+   "part": 1,
+   "locus": "neuroscience-positive-states#long",
+   "serves": [
+    "#62"
+   ],
+   "current": "For the absence of a positive to be a loss, there must be someone deprived of it; a joy never instantiated is withheld from no one, because before creation there is no one in the void to be cheated.",
+   "replacement": "Nor does the joy's absence cheat anyone — before creation there is no one in the void to be cheated — but on the realism about both signs granted above, the pain's absence spares no one either, so the move that survives total surrender cannot rest on what the unborn would miss; it rests on what creation does to the one it creates.",
+   "repair_followed": "the honest repair-chain routes there",
+   "how": "Stops relying on the absence-asymmetry against the node's own valence symmetry, and routes the surviving move to imposition, the repair chain the (b) names. That chain ends at bedrock-III (HR-06), which is why #62 is a (d) and does not wait on this row.",
+   "words": {
+    "current": 39,
+    "replacement": 63,
+    "delta": 24
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-13",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-13",
+   "part": 1,
+   "locus": "bradley-no-subject#long",
+   "serves": [
+    "#42"
+   ],
+   "current": "There is no third branch on which Bradley both defeats the asymmetry and rescues procreation, because the only materials with which he defeats it are themselves a charge against it.",
+   "replacement": "There is a third branch, and it should be named: a comparativist, for whom a harm is always a matter of being made worse off than some baseline, can defeat the asymmetry and clear procreation together, so the fork holds only as far as creation can wrong a person with no worse-off baseline — the question the poisoned-well and wrongful-life cases below press, and that a committed comparativist will not concede.",
+   "repair_followed": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+   "how": "Routes to the comparative-vs-non-comparative harm bedrock (the repair's second option) instead of denying the branch exists. The analogies below are described as pressing a question the comparativist does not concede, which is what the (b) says of them.",
+   "words": {
+    "current": 30,
+    "replacement": 71,
+    "delta": 41
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-14",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-14",
+   "part": 1,
+   "locus": "consent-both-ways#long",
+   "serves": [
+    "#6"
+   ],
+   "current": "Presumed consent is only valid when it prevents a greater harm.",
+   "replacement": "Presumed consent licenses an imposition that spares a person a greater harm or serves an interest they already have—which is how a child comes to be vaccinated or schooled before they can agree—and before conception there is no one with interests for an imposition to serve.",
+   "repair_followed": "narrow the over-narrow restriction: presumed consent also licenses beneficial impositions, as the move says; the v1_3 (a) called the phrase excisable colour",
+   "how": "Narrows the over-narrow restriction as the move asks (beneficial impositions count) and states the condition the node relies on, an interest already had. The stake asymmetry this leaves is the (d) at #6 (HR-05), which does not wait on this row.",
+   "words": {
+    "current": 11,
+    "replacement": 46,
+    "delta": 35
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-15",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-15",
+   "part": 1,
+   "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+   "serves": [
+    "#20"
+   ],
+   "current": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework neither supplies nor can consistently hold, since terminating a preference-bearer is itself the maximally non-consensual imposition the consent-asymmetry forbids — the maximizer has not run the framework further than its cautious holders, he has swapped the premise that does the work for its negation the moment a subject exists.",
+   "replacement": "The asymmetry is explicit that its work happens at the locus of creation, not destruction; reaching an existing person requires a bridging premise the framework does not supply — that continuing to exist is worse for that person than ceasing to — so the maximizer has not run the framework further than its cautious holders; he has added a premise of his own, which the consent and asymmetry arguments neither contain nor imply.",
+   "repair_followed": "the slot's consent sentence is conceded as defeated by the map (J-016 carry; J-053): the consent-asymmetry is creation-specific, so the sentence reads a creation principle as a general anti-imposition principle the corpus never defends",
+   "how": "Removes the reading of the creation-specific consent-asymmetry as a general anti-imposition principle, and names the bridging premise the maximizer adds, as R1-007's stronger continuation states it.",
+   "words": {
+    "current": 74,
+    "replacement": 73,
+    "delta": -1
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-16",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-16",
+   "part": 1,
+   "locus": "social-contract#long",
+   "serves": [
+    "#58"
+   ],
+   "current": "But the antinatalist objection is to existence itself, not to any particular society.",
+   "replacement": "But the antinatalist objection is to existence itself, not to any particular society. A society, which one can leave, may fairly ask its members for a share of its burdens—taxes, care, mutual aid—but not for new members, since no one pays their own dues by conscripting someone who was never asked; existence, the thing actually objected to, offers no such exit.",
+   "repair_followed": "the (b) redrafted for #58: after the exit point, grant fair-play obligations given existence and say they are paid in burdens, not in members",
+   "how": "Grants fair-play obligations given existence and says they are paid in burdens, not in members. It sits at the queued sentence, before the exit point, because only that sentence is in the queue; the next sentence ('There is no territory to emigrate to.') still follows. The (b)'s anchor clause is kept word for word.",
+   "words": {
+    "current": 13,
+    "replacement": 61,
+    "delta": 48
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-17",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-17",
+   "part": 1,
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "serves": [
+    "#4"
+   ],
+   "current": "The structural layer does not produce the NU layer — the two are derivationally distinct — so the adherent who reaches for the red button is running a separate commitment the premises did not hand him: grabbed, not produced.",
+   "replacement": "The structural layer does not produce the NU layer — the two are derivationally distinct — so whoever reaches for the red button, the view's own founders included, is running a second commitment the consent and asymmetry premises do not supply.",
+   "repair_followed": "gate2's lean (R0142 item 3, finding V-023): the defender slot's 'grabbed, not produced' framing and its lone-actor analogy are a misfit that R1-024 conceded and the map never filed as a (b), the same shape as #5's (b) at the drifter slot; repair it beside #5's (PQ-08)",
+   "how": "Drops 'grabbed, not produced', which R1-024 conceded misfits the founders; keeps the derivational claim, which R1-024 held.",
+   "words": {
+    "current": 39,
+    "replacement": 41,
+    "delta": 2
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-18",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-17",
+   "part": 2,
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "serves": [
+    "#4"
+   ],
+   "current": "Just as one violent actor does not represent environmentalism, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license.",
+   "replacement": "Who holds that commitment is a fact about the movement, not about the argument: however central to efilism its authors make it, an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license.",
+   "repair_followed": "gate2's lean (R0142 item 3, finding V-023): the defender slot's 'grabbed, not produced' framing and its lone-actor analogy are a misfit that R1-024 conceded and the map never filed as a (b), the same shape as #5's (b) at the drifter slot; repair it beside #5's (PQ-08)",
+   "how": "Replaces the lone-actor analogy R1-024 conceded (W-004, ruled at R0164) and keeps #4's anchor clause word for word, so #4's HOLDS (entailment, not centrality) keeps its target.",
+   "words": {
+    "current": 22,
+    "replacement": 35,
+    "delta": 13
+   },
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.defender",
+     "quote": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license"
+    }
+   ],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PC-01",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-07",
+   "part": null,
+   "locus": "bitter-childhood#medium",
+   "serves": [
+    "#50"
+   ],
+   "current": "If the suffering was severe enough to generate an entire philosophical framework of opposition, perhaps the interlocutor should consider whether that suffering validates the framework rather than invalidates it.",
+   "replacement": "If the suffering was severe enough to generate an entire philosophical framework of opposition, the interlocutor has conceded it was real and formative, which strains claim (b); but it validates the framework no more than it invalidates it, because the path to a belief bears on its truth in neither direction.",
+   "repair_followed": "run the etiology principle to its self-refutation and stop, without claiming the wounded arguer sees more clearly.",
+   "how": "#50's answer routes here (answered_by bitter-childhood#medium), and R1-068 failed #50 on this sentence and the long's together. The queue repairs only the long, which leaves #50's answer as it was. The queue row's own 'also' field names this sentence.",
+   "words": {
+    "current": 29,
+    "replacement": 51,
+    "delta": 22
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PC-02",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-08",
+   "part": null,
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "serves": [
+    "#5"
+   ],
+   "current": "It never was.",
+   "replacement": "Not at its core.",
+   "repair_followed": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant.",
+   "how": "The (b) names this sentence with the queued one: \"'It never was' and 'Nothing in that tells the living to stop' hand the drifter the layer that acquits\". Before a row that now names the second layer, a flat 'never' would contradict it.",
+   "words": {
+    "current": 3,
+    "replacement": 4,
+    "delta": 1
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PC-03",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-09",
+   "part": null,
+   "locus": "luxury-belief#long",
+   "serves": [
+    "#63"
+   ],
+   "current": "But antinatalism, if adopted, would prevent suffering — it would not create it.",
+   "replacement": "But antinatalism, if adopted, would prevent suffering — it would not create new sufferers.",
+   "repair_followed": "the (b) drafted for #63: grant that contraction costs real people and send the weighing of those costs to economy-population#long.",
+   "how": "Once PQ-09 grants the transition's costs to existing people, 'it would not create it' would deny them again. 'New sufferers' keeps the part that is true.",
+   "words": {
+    "current": 13,
+    "replacement": 14,
+    "delta": 1
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PC-04",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-09",
+   "part": null,
+   "locus": "luxury-belief#long",
+   "serves": [
+    "#63"
+   ],
+   "current": "The cost is borne by an economic model that requires a perpetual supply of new laborers and consumers — not by individual people.",
+   "replacement": "Those costs would fall on everyone the transition reaches, the belief's holders among them, so they are not the costs pushed onto others that the model's third feature requires; what the belief would retire is an economic model that needs a perpetual supply of new laborers and consumers.",
+   "repair_followed": "the (b) drafted for #63: grant that contraction costs real people and send the weighing of those costs to economy-population#long.",
+   "how": "This is the sentence the (b)'s move attacks, in the (b)'s own words: \"The move is right about the sentence it attacks\". Left standing, its 'not by individual people' contradicts the repaired PQ-09. The replacement keeps feature three failing for a reason the corpus can hold: the costs are not pushed onto others while the holder stays insulated, and the distribution paragraph shows the holders are not an insulated class.",
+   "words": {
+    "current": 23,
+    "replacement": 48,
+    "delta": 25
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PC-05",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-13",
+   "part": null,
+   "locus": "bradley-no-subject#long",
+   "serves": [
+    "#42"
+   ],
+   "current": "The objection cannot be pushed hard enough to reach its intended conclusion; pushed to its strongest, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "replacement": "Short of that ground, the objection cannot be pushed hard enough to reach its intended conclusion; pushed as far as Bradley pushes it, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "repair_followed": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+   "how": "Unrepaired, it says the objection cannot reach its conclusion one sentence after PQ-13's repair names the branch on which it does.",
+   "words": {
+    "current": 30,
+    "replacement": 37,
+    "delta": 7
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-01",
+   "kind": "finding",
+   "title": "#1 will not pass on this pin alone",
+   "finding": "PQ-01 repairs just-depressed#long, where #1's answer routes. #1's own target, the defender slot, still reads motive off the thread ('pointing at the second sentence and asking which one was sincere', and 'The \"care\" is contempt with better public relations'). After the pin, the repaired long no longer supplies the motive evidence #1's answer leaned on, and the slot's motive verdict is the vice the node condemns.",
+   "lean": "Re-judge #1 at the successor map. Expect a (b) at the defender slot: a slot rewrite of three or four sentences, which belongs in a later queue after it is filed, not a sentence repair here.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-02",
+   "kind": "finding",
+   "title": "#48 routes to a paragraph this pin does not touch",
+   "finding": "#48's answer routes to slippery-slope-eugenics#long, whose cascade-math-safeguard paragraph says 'The structural safeguard is not a rule bolted on from outside; it is the calculation itself'. PQ-05 and PQ-06 repair the blended slot and ai-fear's defender slot. The long keeps the claim the blended slot's (b) calls 'not locus-local'.",
+   "lean": "At the successor map, either re-route #48 to the two repaired slots (a re-route is an (a) like any other, and its answer must live in the routed text) or queue the long's safeguard paragraph for a later pin. It is paragraph-scale, so it is not drafted here.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-03",
+   "kind": "finding",
+   "title": "the (b) PQ-07 answers is not repaired by any row",
+   "finding": "The (b) PQ-07 names sits at bitter-childhood#archetypeVariants.defender, anchored on 'not seeing falsely, he is seeing without the anaesthetic'. The next sentence restates it ('he is the more reliable one'). PQ-07 applies that (b)'s rule to the long's closing, which is the seat's reading (R1-068); PC-01 applies it to the medium.",
+   "lean": "Leave the defender slot's clearer-sight sentences for a later queue once the successor map re-judges the (b); they are two sentences carrying one claim.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-04",
+   "kind": "finding",
+   "title": "#7 is likely to re-judge as a (d), not an (a)",
+   "finding": "PQ-02 grounds the fallback premise for a consent threshold (the guaranteed floor) and leaves a net-balance threshold open. #7's move (the Ponzi 'victims') then rests on the consent reading of harm, which the map holds at HR-05 and HR-06.",
+   "lean": "The seat's reading only. Re-judge #7 against the repaired hub.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-05",
+   "kind": "finding",
+   "title": "#11's first ground is outside this repair",
+   "finding": "R1-013 failed #11 on two grounds. PQ-03 answers the second: the technological aside no longer concedes dependence on births. The first is aims-frustration, the claim that accepting the view demoralizes the agents its path needs; no queued sentence speaks to it.",
+   "lean": "Re-judge #11 after the pin. Expect it to fail again on the first ground.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-06",
+   "kind": "finding",
+   "title": "#4's move targets text the repair removes",
+   "finding": "PD-18 replaces the lone-actor analogy that #4's move attacks ('your environmentalism analogy compares a lone actor to a founding thesis') and keeps #4's anchor clause word for word. The HOLDS rests on violence-as-reductio#long's entailment-vs-centrality answer, which the repair does not touch.",
+   "lean": "Re-read #4 at the successor map: its anchor stands, its move should be restated against the repaired slot, and its verdict should not move.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PF-07",
+   "kind": "finding",
+   "title": "the five HOLDS routed to repaired loci, read against the repairs",
+   "finding": "#24 (most-people-happy sophisticate) routes to just-depressed#long and rests on its symmetry disclaimer, a paragraph PD-01 does not touch (R1-010). #49, #52 and #53 route to benatar-asymmetry-attack#long and rest on its consent and no-deprivation passages (R1-061, R1-051, R1-045), not on the person-affecting fallback PD-02 repairs. #18 routes to violence-as-reductio's sophisticate slot and rests on its 'Concede the one residue' sentence (R1-030), which follows PD-15 and is unchanged.",
+   "lean": "The seat's reading: all five stand. PQ_knock_on_L5_v0_1.json sets each old sentence beside its replacement for the judge.",
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "PD-19",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-02",
+   "part": 1,
+   "locus": "benatar-asymmetry-attack#long",
+   "serves": [
+    "#7"
+   ],
+   "current": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+   "replacement": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits. The floor the typical life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent only if the person-affecting view that prevails keeps the weight against non-consensual imposition that its strict form explains away as confusion; whether typical lives fall below a life worth having is an empirical question this node does not settle.",
+   "repair_followed": "Repair: substantiate or cross-reference the suffering-load premise on the fallback branch.",
+   "how": "Answers X-002 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). First owed change: the consent threshold is stated as cleared only on the condition the paragraph's own residue sentence names, since its strict person-affecting form explains that weight away. Second: the floor is scoped to the typical life, as its source says ('which the modal life delivers in full'). The rest is PD-02's, which X-002 did not fault.",
+   "words": {
+    "current": 48,
+    "replacement": 110,
+    "delta": 62
+   },
+   "quotes": [
+    {
+     "src": "corpus:cherry-picking-worst#archetypeVariants.sophisticate",
+     "quote": "aging, the loss of everyone loved, bodily decline, death"
+    },
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "explain away as confusion"
+    }
+   ],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-02"
+  },
+  {
+   "id": "PD-20",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-03",
+   "part": 1,
+   "locus": "self-defeating#long",
+   "serves": [
+    "#11"
+   ],
+   "current": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+   "replacement": "It requires only that whoever exists, however they came to exist, develop the capacity—potentially through artificial intelligence—to address sentient suffering at a structural level; that others will go on having children is a prediction about them, and whatever that path owes to the births others choose, the view does not will, as its means, the act it forbids.",
+   "repair_followed": "The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means",
+   "how": "Answers X-003 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): it concludes what the fence gives, that the view does not will the forbidden act as its means, and no longer claims its realization is independent of births; 'whatever that path owes to the births others choose' leaves the (b)'s dependence where the (b) put it.",
+   "words": {
+    "current": 22,
+    "replacement": 58,
+    "delta": 36
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-03"
+  },
+  {
+   "id": "PD-21",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-08",
+   "part": 1,
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "serves": [
+    "#5"
+   ],
+   "current": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+   "replacement": "Its core is 'do not start a life that cannot agree to it,' and nothing in that core tells the living to stop. Efilism itself goes further, to the 'red button': the view that it would be better if all feeling life ended, painlessly and all at once. That is a separate claim with its own burden, and not starting a life settles nothing about it either way.",
+   "repair_followed": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant.",
+   "how": "Answers X-008 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). The second layer is attributed to efilism itself, as the (b), the node's long and PD-17 do, not to some efilists. The tense agrees with PC-02 ('Not at its core.' then 'Its core is'). The safety properties X-008 found are kept: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+   "words": {
+    "current": 20,
+    "replacement": 68,
+    "delta": 48
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-08"
+  },
+  {
+   "id": "PC-06",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-13",
+   "part": null,
+   "locus": "bradley-no-subject#long",
+   "serves": [
+    "#42"
+   ],
+   "current": "The objection cannot be pushed hard enough to reach its intended conclusion; pushed to its strongest, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "replacement": "Short of that ground, the objection cannot be pushed hard enough to reach its intended conclusion; pushed as far as the person-affecting re-explanation takes it, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "repair_followed": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+   "how": "X-034's safe wording (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): the sentence names the reply, not the man, so it holds whichever branch Bradley's own case sits on. PC-05's reason for being a companion is unchanged; whether the node misdescribes Bradley elsewhere is X-034's finding for the next queue.",
+   "words": {
+    "current": 30,
+    "replacement": 39,
+    "delta": 9
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PC-05"
+  },
+  {
+   "id": "PR-01",
+   "kind": "ratification",
+   "rows": [
+    "PD-01",
+    "PD-04",
+    "PD-05",
+    "PD-06",
+    "PD-07",
+    "PD-09",
+    "PD-10",
+    "PD-11",
+    "PD-12",
+    "PD-13",
+    "PD-14",
+    "PD-15",
+    "PD-16",
+    "PD-17",
+    "PD-18",
+    "PD-19",
+    "PD-20",
+    "PD-21",
+    "PC-01",
+    "PC-02",
+    "PC-03",
+    "PC-04",
+    "PC-06"
+   ],
+   "his_words_verbatim": "Go with your recommendations on all of the above.",
+   "said": "2026-09-26 18:50 America/Phoenix, in chat to the L5 session directly, answering R0181's four asks as L5 summarized them",
+   "relay": {
+    "relay": "R0181",
+    "md5": "131e57468a9aaa86be9e9a449dd8e30b"
+   },
+   "judgment": {
+    "file": "adversarial_map_staging/r1/PQ_repair_redrafts_judgments.json",
+    "md5": "612ab67282831c527dac1476f4af1423",
+    "first": {
+     "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+     "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e"
+    }
+   },
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}

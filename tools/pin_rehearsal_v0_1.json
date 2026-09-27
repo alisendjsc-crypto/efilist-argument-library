@@ -1,0 +1,2008 @@
+{
+ "queue_block": "pin_move_queue_L5",
+ "sentences": [
+  "PQ-01",
+  "PQ-02",
+  "PQ-03",
+  "PQ-04",
+  "PQ-05",
+  "PQ-06",
+  "PQ-07",
+  "PQ-08",
+  "PQ-09",
+  "PQ-10",
+  "PQ-11",
+  "PQ-12",
+  "PQ-13",
+  "PQ-14",
+  "PQ-15",
+  "PQ-16",
+  "PQ-17",
+  "PQ-17.2"
+ ],
+ "base_commit": "09289dd2c2f8b730fa7df73a84e349f8ad53983d",
+ "C0_unmutated": {
+  "gates": {
+   "xsurface": 0,
+   "sidecars": 0,
+   "rulings_gate": 0,
+   "quote_check_rulings": 0,
+   "quote_check_selftest": 0,
+   "collision_v0_2": 0,
+   "collision_v0_1": 0,
+   "controls_assembly_v1_4": 0,
+   "controls_register_v0_5": 0,
+   "l4_knock_on": 0,
+   "judgments_gate": 0,
+   "controls_v1_5": 0,
+   "v1_5_judgments_gate": 0,
+   "icons": 0,
+   "controls_v1_6": 0,
+   "l4c_knock_on": 0,
+   "l4c_knock_on_selftest": 0,
+   "v1_6_judgments_gate": 0,
+   "v1_6_reading": 0
+  },
+  "self_tests": {
+   "rulings_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "v1_5_judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "v1_6_judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   }
+  }
+ },
+ "edited_surfaces_md5": {
+  "efilist_argument_library_v4_0_0.json": "79f542befe3f0f7308149dacdba23b7f",
+  "efilist_argument_library_v4_0_0.jsx": "ca732c46c0fa98d2a946d93681abd6b6",
+  "site/combined.html": "94df91f5cddda72f716111c1974a3927"
+ },
+ "C1_edited_pinned": {
+  "gates": {
+   "xsurface": 0,
+   "sidecars": 0,
+   "rulings_gate": 0,
+   "quote_check_rulings": 0,
+   "quote_check_selftest": 0,
+   "collision_v0_2": 0,
+   "collision_v0_1": 0,
+   "controls_assembly_v1_4": 0,
+   "controls_register_v0_5": 0,
+   "l4_knock_on": 0,
+   "judgments_gate": 0,
+   "controls_v1_5": 0,
+   "v1_5_judgments_gate": 0,
+   "icons": 0,
+   "controls_v1_6": 0,
+   "l4c_knock_on": 0,
+   "l4c_knock_on_selftest": 0,
+   "v1_6_judgments_gate": 0,
+   "v1_6_reading": 0
+  },
+  "self_tests": {
+   "rulings_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "v1_5_judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   },
+   "v1_6_judgments_selftest": {
+    "rc": 0,
+    "reproduces_committed_control": true
+   }
+  }
+ },
+ "outputs_C0_vs_C1": {
+  "draft_dossiers": {
+   "rc_unmutated": 0,
+   "rc_edited": 0,
+   "identical": true
+  },
+  "knock_on_dossiers": {
+   "rc_unmutated": 0,
+   "rc_edited": 0,
+   "identical": true
+  },
+  "r1_dossiers_all": {
+   "rc_unmutated": 0,
+   "rc_edited": 0,
+   "identical": true
+  },
+  "build_v1_6": {
+   "rc_unmutated": 0,
+   "rc_edited": 0,
+   "identical": true
+  },
+  "render_wing": {
+   "rc_unmutated": 0,
+   "rc_edited": 0,
+   "identical": true
+  }
+ },
+ "C3_lineage_via_farm": {
+  "build_assembly_v1_1.py": {
+   "rc": 0,
+   "reproduces": true,
+   "map_md5": "e9e5abf820e3f7a687e2b84443883ade"
+  },
+  "build_assembly_v1_3.py": {
+   "rc": 0,
+   "reproduces": true,
+   "map_md5": "681827419df72a16a7c6fe70df8fe77f"
+  }
+ },
+ "C2_edited_unpinned": {
+  "instruments_at_base": [
+   "adversarial_map_staging/build_assembly_v1_4.py",
+   "adversarial_map_staging/build_assembly_v1_5.py",
+   "adversarial_map_staging/build_assembly_v1_6.py",
+   "adversarial_map_staging/build_phaseF.py",
+   "adversarial_map_staging/build_phaseF_register.py",
+   "adversarial_map_staging/build_phaseR.py",
+   "adversarial_map_staging/controls_assembly_v1_3.py",
+   "adversarial_map_staging/controls_assembly_v1_4.py",
+   "adversarial_map_staging/controls_phaseF.py",
+   "adversarial_map_staging/controls_phaseF_proper.py",
+   "adversarial_map_staging/controls_v1_5.py",
+   "adversarial_map_staging/controls_v1_6.py",
+   "adversarial_map_staging/measure_ccclxv_v0_1.py",
+   "adversarial_map_staging/measure_k348_v0_1.py",
+   "adversarial_map_staging/measure_k349.py",
+   "adversarial_map_staging/r1/measure_r1_v0_1.py",
+   "adversarial_map_staging/r1/pinned.py",
+   "adversarial_map_staging/r1/r1_dossiers.py",
+   "adversarial_map_staging/r1/r1_draft_dossiers.py",
+   "adversarial_map_staging/r1/r1_knock_on_dossiers.py",
+   "adversarial_map_staging/r1/r1_quote_check.py",
+   "adversarial_map_staging/render_wing_v0_1.py"
+  ],
+  "gates": {
+   "xsurface": 0,
+   "sidecars": 0,
+   "rulings_gate": 0,
+   "quote_check_rulings": 1,
+   "quote_check_selftest": 1,
+   "collision_v0_2": 0,
+   "collision_v0_1": 0,
+   "controls_assembly_v1_4": 1,
+   "controls_register_v0_5": 0,
+   "l4_knock_on": 0,
+   "judgments_gate": 0,
+   "controls_v1_5": 1,
+   "v1_5_judgments_gate": 0,
+   "icons": 0,
+   "controls_v1_6": 1,
+   "l4c_knock_on": 0,
+   "l4c_knock_on_selftest": 0,
+   "v1_6_judgments_gate": 0,
+   "v1_6_reading": 0
+  }
+ },
+ "SW_sweep_base": {
+  "adversarial_map_staging/build_assembly.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adversarial_map_v1_2.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_4.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_5.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_6.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_flowstates_spec.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_measurement.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/loci_coverage_measurement_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/loci_coverage_measurement_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseE.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseF.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_phaseF_register.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_phaseG.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adv_map_phaseG_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adv_map_phaseG_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseR.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_regen_spec.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_register.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_rulings.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_assembly_v1_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_2.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_2.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_assembly_v1_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_3.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_assembly_v1_4.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_phaseF.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/phaseF_class_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_phaseF_proper.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/phaseF_proper_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_phaseG.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_phaseR.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_register_v0_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_register_v0_4.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_v1_5.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_v1_6.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_wing_v0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_archetype_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_ccclxv_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/measure_ccclxv_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/measure_k348_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/measure_k348_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/measure_k349.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/measure_k349_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/measure_rwe_map1_join.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/measure_r1_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.md"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/r1/r1_draft_dossiers.py": {
+   "unmutated": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/r1_knock_on_dossiers.py": {
+   "unmutated": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/r1_v1_6_reading.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/render_wing_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": [
+     "adversarial/"
+    ]
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/rwe_map1_calibration_v0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_10.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_14.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_17.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_23.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_25.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_28.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_4.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_k349_pins.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_k351_pins.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/l1_sidecar_controls.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/patch_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/pinned_farm.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/restamp_v4_0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/restamp_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/sweep_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K352.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K353.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K354.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_k349.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_k351.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/xsurface_v4_1_0.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  }
+ },
+ "SW_sweep": {
+  "adversarial_map_staging/build_assembly.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adversarial_map_v1_2.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/build_assembly_v1_4.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_5.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_assembly_v1_6.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_flowstates_spec.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_measurement.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/loci_coverage_measurement_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/loci_coverage_measurement_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseE.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseF.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseF_register.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseG.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adv_map_phaseG_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/adv_map_phaseG_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_phaseR.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_regen_spec.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_register.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/build_rulings.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_assembly_v1_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_1.json"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_2.json"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [
+     "adversarial_map_staging/assembly_control_v0_2.json"
+    ],
+    "added": []
+   },
+   "same": false
+  },
+  "adversarial_map_staging/controls_assembly_v1_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_assembly_v1_4.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_phaseF.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_phaseF_proper.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_phaseG.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_phaseR.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_register_v0_3.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_register_v0_4.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_v1_5.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_v1_6.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/controls_wing_v0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_archetype_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_ccclxv_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_k348_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_k349.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/measure_rwe_map1_join.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/measure_r1_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.md"
+    ],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+     "adversarial_map_staging/r1/R1_evidence_2026-09-19.md"
+    ],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/pinned.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/r1_draft_dossiers.py": {
+   "unmutated": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/r1_knock_on_dossiers.py": {
+   "unmutated": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 2,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/r1/r1_v1_6_reading.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "adversarial_map_staging/render_wing_v0_1.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": [
+     "adversarial/"
+    ]
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": [
+     "adversarial/"
+    ]
+   },
+   "same": true
+  },
+  "adversarial_map_staging/rwe_map1_calibration_v0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_10.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_14.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_17.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_23.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_25.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_28.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_canon_v38_4.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_k349_pins.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/build_k351_pins.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/l1_sidecar_controls.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/patch_assembly_v1_2.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/pinned_farm.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/restamp_v4_0_1.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/restamp_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/sweep_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K352.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K353.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_K354.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_k349.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_k351.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/verify_v4_1_0.py": {
+   "unmutated": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 1,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  },
+  "tools/xsurface_v4_1_0.py": {
+   "unmutated": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "edited": {
+    "rc": 0,
+    "changed": [],
+    "added": []
+   },
+   "same": true
+  }
+ },
+ "SW_skipped": {
+  "tools/build_canon_v38_30.py": "reads the record this file writes",
+  "tools/build_k354_pins.py": "names a Cowork /sessions path",
+  "tools/rehearse_pin.py": "this file"
+ },
+ "verdict": {
+  "C0_all_gates_green": true,
+  "C0_self_tests_reproduce": true,
+  "C1_all_gates_green": true,
+  "C1_self_tests_reproduce": true,
+  "C1_outputs_identical_to_C0": true,
+  "C1_outputs_all_rc0": true,
+  "C2_red_with_unpinned_instruments": [
+   "controls_assembly_v1_4",
+   "controls_v1_5",
+   "controls_v1_6",
+   "quote_check_rulings",
+   "quote_check_selftest"
+  ],
+  "C3_lineage_reproduces": true,
+  "SW_same_outcome_edited": [
+   "adversarial_map_staging/build_assembly.py",
+   "adversarial_map_staging/build_assembly_v1_4.py",
+   "adversarial_map_staging/build_assembly_v1_5.py",
+   "adversarial_map_staging/build_assembly_v1_6.py",
+   "adversarial_map_staging/build_flowstates_spec.py",
+   "adversarial_map_staging/build_measurement.py",
+   "adversarial_map_staging/build_phaseE.py",
+   "adversarial_map_staging/build_phaseF.py",
+   "adversarial_map_staging/build_phaseF_register.py",
+   "adversarial_map_staging/build_phaseG.py",
+   "adversarial_map_staging/build_phaseR.py",
+   "adversarial_map_staging/build_regen_spec.py",
+   "adversarial_map_staging/build_register.py",
+   "adversarial_map_staging/build_rulings.py",
+   "adversarial_map_staging/controls_assembly_v1_1.py",
+   "adversarial_map_staging/controls_assembly_v1_3.py",
+   "adversarial_map_staging/controls_assembly_v1_4.py",
+   "adversarial_map_staging/controls_phaseF.py",
+   "adversarial_map_staging/controls_phaseF_proper.py",
+   "adversarial_map_staging/controls_phaseG.py",
+   "adversarial_map_staging/controls_phaseR.py",
+   "adversarial_map_staging/controls_register_v0_3.py",
+   "adversarial_map_staging/controls_register_v0_4.py",
+   "adversarial_map_staging/controls_v1_5.py",
+   "adversarial_map_staging/controls_v1_6.py",
+   "adversarial_map_staging/controls_wing_v0_1.py",
+   "adversarial_map_staging/measure_archetype_v0_1.py",
+   "adversarial_map_staging/measure_ccclxv_v0_1.py",
+   "adversarial_map_staging/measure_k348_v0_1.py",
+   "adversarial_map_staging/measure_k349.py",
+   "adversarial_map_staging/measure_rwe_map1_join.py",
+   "adversarial_map_staging/r1/measure_r1_v0_1.py",
+   "adversarial_map_staging/r1/pinned.py",
+   "adversarial_map_staging/r1/r1_draft_dossiers.py",
+   "adversarial_map_staging/r1/r1_knock_on_dossiers.py",
+   "adversarial_map_staging/r1/r1_v1_6_reading.py",
+   "adversarial_map_staging/render_wing_v0_1.py",
+   "adversarial_map_staging/rwe_map1_calibration_v0_1.py",
+   "tools/build_canon_v38_10.py",
+   "tools/build_canon_v38_14.py",
+   "tools/build_canon_v38_17.py",
+   "tools/build_canon_v38_23.py",
+   "tools/build_canon_v38_25.py",
+   "tools/build_canon_v38_28.py",
+   "tools/build_canon_v38_4.py",
+   "tools/build_k349_pins.py",
+   "tools/build_k351_pins.py",
+   "tools/l1_sidecar_controls.py",
+   "tools/patch_assembly_v1_2.py",
+   "tools/pinned_farm.py",
+   "tools/restamp_v4_0_1.py",
+   "tools/restamp_v4_1_0.py",
+   "tools/sweep_v4_1_0.py",
+   "tools/verify_K352.py",
+   "tools/verify_K353.py",
+   "tools/verify_K354.py",
+   "tools/verify_k349.py",
+   "tools/verify_k351.py",
+   "tools/verify_v4_1_0.py",
+   "tools/xsurface_v4_1_0.py"
+  ],
+  "SW_differs_lineage": [
+   "adversarial_map_staging/build_assembly_v1_1.py",
+   "adversarial_map_staging/build_assembly_v1_2.py",
+   "adversarial_map_staging/build_assembly_v1_3.py"
+  ],
+  "SW_differs_not_reproducing_unmutated": [
+   "adversarial_map_staging/controls_assembly_v1_2.py"
+  ],
+  "SW_differs_unexplained": [],
+  "GREEN": true
+ }
+}
