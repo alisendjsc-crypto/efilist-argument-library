@@ -14,6 +14,15 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The chin's tilt toggle, and the chin's controls exposed to screen readers — 2026-09-26 (no release; the pin stands)
+
+The house layer again (`site/wuld-layer.css` and `.js`). The flagship links it and does not inline it, so the v4.1.5 pin (`6fd3617c`) does not move. WI-K410, on the rest of Josiah's TO DO line: *"Add tilt toggle effect on WULD chin bezel to increase POV perspective and peripheral blurring to create a field of depth illusion."* He approved it on the clips: *"Approved as is."*
+
+- **A tilt toggle on the chin**, a fifth control. It is off by default and remembered per reader. With it on, the page leans toward the pointer in true perspective, up to 1° left or right and 0.6° up or down, while the pointer moves. The far edge draws back (0.84% shorter at full lean) and the far-side blur deepens from 3 px to 5 px.
+- **It settles flat after 2.6 s of stillness, on any scroll, and under the magnifier.** A leaning page is resampled, and every word goes soft: measured before building, 90–95% sharpness at the centre and about 80% at the sides. So reading happens flat. At rest, text is 100% as sharp as with the toggle off.
+- **It never appears on a phone, under reduced motion, or in a window narrower than 760 px.** No cost was measured: frames stay at 16.7 ms while it leans, on Intel and NVIDIA.
+- **The chin's controls are exposed to screen readers.** The chin was marked `aria-hidden`, so the tier, magnifier, sound and tutorial buttons were hidden from assistive technology while still taking keyboard focus. The chin is exposed now, and only its ornament stays hidden.
+
 ## The safety pass read back, and the variations design's rulings recorded — 2026-09-26 (no release; the pin stands)
 
 v4.1.5 is live and was read back three ways: the flagship's bytes on three consecutive reads, the front door's badge, and the page as a browser renders it, with the new passages present and the old ones gone. wuld.ink moved its own labels to v4.1.5 and was read back surface by surface. The card game still shows the old passages until it takes the new text, and it has been asked to. The canon also records Josiah's word on the six rulings that shape how objections will carry their variations, including one that lets the game play the adversarial map's retreats once the next map lands. That ruling is recorded beside the map's audience ruling, without changing it. Nothing served changed; the flagship is still v4.1.5. Canon v38.42.
