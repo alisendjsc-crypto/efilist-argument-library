@@ -1,0 +1,42 @@
+{
+ "artifact": "sp_redraft_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/sp_redraft_reading.py",
+ "reads": {
+  "drafts": "8742b882b6055761207c7dc1618b645b",
+  "drafts_first_judged": "050d240fe08f5ea69b883fb4b199c959",
+  "patch_tool": "4686278407b961c3aefa00ac1b08c11a",
+  "knock_on_v0_1": "feff44032200e5617bd420b6f7440bd9",
+  "knock_on_v0_2": "013319b88335e3b6ce6bc8dd9ac709a4",
+  "set": "all: 20 rows (SD-01, SD-03, SD-04, SD-05, SD-06, SD-07, SD-08, SD-09, SC-01, SC-02, SC-03, SC-04, SW-01, SW-02, SW-03, SW-04, SW-05, SW-06, SW-07, SD-10)"
+ },
+ "new_rows": [
+  "SD-10"
+ ],
+ "diff": [
+  {
+   "row": "SD-10",
+   "supersedes": "SD-02",
+   "fields_moved": [
+    "how",
+    "id",
+    "quotes",
+    "replacement",
+    "supersedes",
+    "words"
+   ],
+   "current_unchanged": true,
+   "replacement_change": {
+    "from": " — ",
+    "to": "—"
+   }
+  }
+ ],
+ "patch": {
+  "x032_hits_after_every_row": 0,
+  "rows_mixing_dash_styles": []
+ },
+ "knock_on": {
+  "v0_2_rows_equal_v0_1": true,
+  "rows": 5
+ }
+}

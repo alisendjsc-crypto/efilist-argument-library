@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The dash accepted; Josiah's word on the safety pass stands — 2026-09-26 (no release; the pin stands)
+
+The judging session accepted the one correction it had asked for: the rewrite whose dash was styled unlike the rest of its paragraph now uses the paragraph's own dash, and nothing else in it changed. That acceptance was the one condition on Josiah's word. His answer to the judgment's five asks, "yes to all", was given to the drafting session, and the judging session read it there in his own words before recording it. It now stands without condition. It covers the nine rewrites of the six passages, the four beside them in the revealed-preference answer, the widening to the survivor-testimony answer, the death rate for a named bridge (dropped; the name stays where the objection states itself), and survivor-testimony's mechanism label, left for the next pin that rebuilds the Mechanism Web. The drafting session records the ratification and makes the v4.1.5 pin. Nothing served has moved yet. Canon v38.40.
+
+---
+
 ## One dash in the safety pass corrected — 2026-09-26 (no release; the pin stands)
 
 The judging session accepted nineteen of the safety pass's twenty rewrites as written, with a lean that Josiah admit the eleven that reach beyond the original six passages. It sent one back for a single character: a dash written in a different style from the rest of its answer. The corrected passage says exactly what the judged one said. Nothing served changed; the flagship is still v4.1.4. Canon v38.39.

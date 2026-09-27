@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.39",
+  "canon_version": "38.40",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L6",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.4. Next, in order: gate2 judges SD-10, L6's answer to SD-02's AMEND (adversarial_map.safety_pass_redraft_L6); his word on the five asks (adversarial_map.safety_pass_judgment_gate2.for_his_word); the v4.1.5 pin (L6), a content cut; then the successor map, which also takes X-033's sibling loci, PF-01..03, Z-033's honest-evaluation phrasing and SF-05's label. Then adversarial wing v2 and /llms.txt, R2, and the interconnection design.",
+    "session": "L6: his word on the safety pass ('yes to all', R0208's five asks, unconditional now that SD-10 is accepted) goes into one ratification row; then the v4.1.5 pin, a content cut, and the successor map, which also takes X-033's sibling loci, PF-01..03, Z-033's honest-evaluation phrasing and SF-05's label. Then adversarial wing v2 and /llms.txt, R2, and the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1839,7 +1839,8 @@
       "judgment": "adversarial_map_staging/r1/SP_drafts_judgments.json",
       "then": "his word (R0208); the v4.1.5 pin"
     },
-    "judged_safety_pass_gate2": "gate2 judged the X-032 safety pass: companion ACCEPT 4; draft ACCEPT 8, AMEND 1; finding_review CONFIRM 10; knock_on CONFIRM 1; widening ACCEPT 7. Judged is not ruled."
+    "judged_safety_pass_gate2": "gate2 judged the X-032 safety pass: companion ACCEPT 4; draft ACCEPT 8, AMEND 1; finding_review CONFIRM 10; knock_on CONFIRM 1; widening ACCEPT 7. Judged is not ruled.",
+    "judged_safety_pass_redraft_gate2": "gate2 judged SD-10: ACCEPT. Every row his word ratifies is judged; his word is recorded at adversarial_map.safety_pass_redraft_judgment_gate2.his_word."
   },
   "open_questions": {
     "active": {
@@ -1970,7 +1971,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.39",
+  "canon_version_marker": "v38.40",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2669,7 +2670,8 @@
     "v38_36_LD3": "MINOR. keyset UNCHANGED at 42. PIN MOVE v4.1.3 -> v4.1.4 (f72e6762 -> ed040cad), page design only. next_recommended_session re-pointed with an LD3_pin record; flagship_sidecars.extracted_from moved forward (sidecars byte-identical); canon-meta; this note; one session_log_recent append. invariants, schemas, hazard_map and adversarial_map asserted byte-identical: a PATCH.",
     "v38_37_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_drafts_L6 (the X-032 safety pass's drafts, not judged); next_recommended_session re-pointed with an L6_safety_pass record; canon-meta; this note; one session_log_recent append. No served byte moved; invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical.",
     "v38_38_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_safety_pass_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
-    "v38_39_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_redraft_L6 (SD-10 answers Z-002; the drafts gate's v0_2 and its knock-on v0_2 and control v0_2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved."
+    "v38_39_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_redraft_L6 (SD-10 answers Z-002; the drafts gate's v0_2 and its knock-on v0_2 and control v0_2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
+    "v38_40_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_redraft_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2918,7 +2920,8 @@
     "LD3 (2026-09-26): THE PIN MOVE, v4.1.3 -> v4.1.4 (ed040cad / 2999806). The design lane's flagship marks, approved on the preview (\"Approved as is.\"); no objection moved (corpus, JSX, index byte-identical; xsurface 8b76672f); labels moved with the pin.",
     "L6 (2026-09-26): the X-032 safety pass DRAFTED, not judged. gate2's patterns re-find exactly the six on v4.1.4; a wider sweep finds the same framing at revealed-preference's long and short and at survivor-testimony. 9 drafts over the six, 4 proposed companions, 7 proposed widening rows, 10 findings (SP_drafts_L6.json 050d240f). No pin.",
     "gate2 (2026-09-26; NO PIN): L6's X-032 safety pass judged (R0207). Record 43701320: SD-01, SD-03..09 ACCEPT; SD-02 AMEND (the slot's unspaced em dash); SC-01..04 and SW-01..07 ACCEPT, lean admit; SF-01..10 CONFIRM; knock-on CONFIRM. Found: X-032's own patterns were a floor (the framing stood at six more slots); the honest-evaluation phrasing survives at boonin-critique, about procreation intuitions, for the successor map. Judged, not ruled.",
-    "L6 (2026-09-26): SD-02's AMEND (Z-002, a dash) answered as SD-10; drafts record 8742b882; gate v0_2 (the knock-on check reads each record at its md5). No pin."
+    "L6 (2026-09-26): SD-02's AMEND (Z-002, a dash) answered as SD-10; drafts record 8742b882; gate v0_2 (the knock-on check reads each record at its md5). No pin.",
+    "gate2 (2026-09-26; NO PIN): SD-10 judged (R0210). Record 3cd8dbb9: ACCEPT, the one dash Z-002 owed; knock-on and patch CONFIRM. His word on R0208, 'yes to all' (20:56, to L6), was conditional on this row and now stands; L6 records the ratification row at the pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -9177,6 +9180,116 @@
       ],
       "next": "gate2 judges SD-10 alone; his word on the five asks (adversarial_map.safety_pass_judgment_gate2.for_his_word; R0208 asks for it now, conditional on that one-row judgment); then the v4.1.5 pin.",
       "not_moved": "No served byte. SD-02 stays in the record, superseded."
+    },
+    "safety_pass_redraft_judgment_gate2": {
+      "status": "JUDGED, AND HIS WORD STANDS. gate2's second judgment of the safety pass accepts SD-10, which meets the one condition his word carried; every row it ratifies or admits has been judged.",
+      "judge": "gate2, which drafted none of SD-10 (K258); the change is the one gate2's own Z-002 owed.",
+      "kickoff": {
+        "relay": "R0210",
+        "md5": "fe30b1b9f6e635974af8d5095e63dd48"
+      },
+      "answers": {
+        "record": {
+          "md5": "437013204cfafc4c740a763e1fb79349",
+          "bytes": 37381,
+          "file": "adversarial_map_staging/r1/SP_drafts_judgments.json"
+        },
+        "canon_block": "adversarial_map.safety_pass_judgment_gate2"
+      },
+      "record": {
+        "md5": "3cd8dbb92a034351fb28c63dbb3a74ad",
+        "bytes": 5442,
+        "file": "adversarial_map_staging/r1/SP_redrafts_judgments.json",
+        "gate": {
+          "md5": "81830bcb0e1e88d077aa5bc0ebd67dd8",
+          "bytes": 28710,
+          "file": "adversarial_map_staging/r1/sp_redrafts_gate.py",
+          "control": {
+            "md5": "91c345f43c5ea468ab39b911b4ab44af",
+            "bytes": 4907,
+            "file": "adversarial_map_staging/r1/sp_redrafts_gate_control_v0_1.json",
+            "result": "19 of 19 as expected, the unmutated control first; byte-identical under two forced hash seeds"
+          }
+        },
+        "instrument": {
+          "md5": "b9194c1cab5486bed780f8a63715b687",
+          "bytes": 5438,
+          "file": "adversarial_map_staging/r1/sp_redraft_reading.py",
+          "record": {
+            "md5": "bb9cab35e390fbc471a073e67b74ad4e",
+            "bytes": 1019,
+            "file": "adversarial_map_staging/r1/sp_redraft_reading_v0_1.json"
+          }
+        }
+      },
+      "judged": {
+        "drafts": "8742b882b6055761207c7dc1618b645b",
+        "first_judgment": "437013204cfafc4c740a763e1fb79349",
+        "knock_on": "013319b88335e3b6ce6bc8dd9ac709a4",
+        "patch_tool": "4686278407b961c3aefa00ac1b08c11a",
+        "drafts_gate_v0_2": "80d289c5d7a8461a52a7b3bb0d5a0038",
+        "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+        "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+        "canon": "acc1caaca1eed507405c4e950f3c2059"
+      },
+      "verdicts": {
+        "knock_on": {
+          "CONFIRM": 1
+        },
+        "patch": {
+          "CONFIRM": 1
+        },
+        "redraft": {
+          "ACCEPT": 1
+        }
+      },
+      "sd10": "ACCEPT: SD-02's replacement with its one spaced em dash made unspaced, as the slot writes its others; nothing else moved (reading record, diff).",
+      "the_text_his_word_ratifies": {
+        "drafts": [
+          "SD-01",
+          "SD-03",
+          "SD-04",
+          "SD-05",
+          "SD-06",
+          "SD-07",
+          "SD-08",
+          "SD-09",
+          "SD-10"
+        ],
+        "companions_and_widening": [
+          "SC-01",
+          "SC-02",
+          "SC-03",
+          "SC-04",
+          "SW-01",
+          "SW-02",
+          "SW-03",
+          "SW-04",
+          "SW-05",
+          "SW-06",
+          "SW-07"
+        ],
+        "drafts_record": {
+          "md5": "8742b882b6055761207c7dc1618b645b",
+          "bytes": 54617,
+          "file": "adversarial_map_staging/r1/SP_drafts_L6.json"
+        }
+      },
+      "his_word": {
+        "verbatim": "yes to all",
+        "given": "2026-09-26, in chat to L6 (session local_e2a20571); 20:56 MST as L6 reports it",
+        "answering": "R0208's five asks as L6 put them to him, each with both seats' lean yes, and conditional on gate2 accepting SD-10",
+        "asks": {
+          "relay": "R0208",
+          "md5": "669b6d2fe34acf872fa47f7c758a230c",
+          "file": "~/Downloads/Claude Code/relays/2026-09-26-gate2-L6-gate2-to-josiah-safety_pass_judged_five_asks-R0208.md"
+        },
+        "condition": "met: SD-10 ACCEPT (this record)",
+        "read_at_source": "gate2 read his turn in L6's transcript before recording it (K392: a relay points to his words, it does not replace them)",
+        "what_it_covers": "(1) the nine rewrites, SD-10 standing in for SD-02; (2) SC-01..04; (3) the widening to survivor-testimony, SW-01..06; (4) SW-07, the bridge's death rate dropped and its name kept where the objection states itself, as R0208's lean; (5) survivor-testimony's mechanism label left for the next pin that rebuilds the Mechanism Web",
+        "recorded_by": "L6, in one ratification row at the pin; this block records it for the judgment it waited on"
+      },
+      "next": "L6's ratification row, then the v4.1.5 pin (a content cut), the labels, wuld-ink, and argue's re-vendor notice. Canon passes back to L6."
     }
   },
   "flagship_sidecars": {

@@ -1,0 +1,127 @@
+{
+ "artifact": "SP_redrafts_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's second judgment of L6's X-032 safety pass: SD-10, which answers Z-002 (SP_drafts_judgments.json), the knock-on and the patch after it. His word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared and verbatim at its source, read at the bytes this header pins: drafts:<row id>, judgment:Z-nnn (the first judgment), corpus:<node#locus>, v1_6:<node#locus>, rulings:R1-nnn, canon:<dotted.path> and reading:record. Gate: sp_redrafts_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the correction makes the change its first-judgment row owed and adds no new defect; it may ship once he gives his word",
+  "AMEND": "a named defect is owed a correction, made by the drafting seat as a superseding row",
+  "REJECT": "the correction is wrong",
+  "CONFIRM": "the measure is right as made",
+  "CORRECT": "the measure is wrong, and what is owed is named",
+  "lean": "for a companion only: whether gate2 would admit it; admission is his word"
+ },
+ "his_word": [
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "said": "2026-09-25",
+   "applies": "SD-10, as every row of the pass",
+   "recorded": "wuld-ink docs/ledger/2026-09-25-WI-K395.md"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0210",
+  "md5": "fe30b1b9f6e635974af8d5095e63dd48"
+ },
+ "judged": {
+  "drafts": {
+   "file": "adversarial_map_staging/r1/SP_drafts_L6.json",
+   "md5": "8742b882b6055761207c7dc1618b645b"
+  },
+  "first_judgment": {
+   "file": "adversarial_map_staging/r1/SP_drafts_judgments.json",
+   "md5": "437013204cfafc4c740a763e1fb79349"
+  },
+  "knock_on": {
+   "file": "adversarial_map_staging/r1/SP_knock_on_L6_v0_2.json",
+   "md5": "013319b88335e3b6ce6bc8dd9ac709a4"
+  },
+  "patch_tool": {
+   "file": "tools/pin_patch_l6.py",
+   "md5": "4686278407b961c3aefa00ac1b08c11a"
+  },
+  "drafts_gate_v0_2": {
+   "file": "adversarial_map_staging/r1/sp_drafts_gate_l6_v0_2.py",
+   "md5": "80d289c5d7a8461a52a7b3bb0d5a0038"
+  },
+  "map_v1_6": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "canon": {
+   "file": "project_canon_v38_39.json",
+   "md5": "acc1caaca1eed507405c4e950f3c2059"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/sp_redraft_reading.py",
+  "record": "adversarial_map_staging/r1/sp_redraft_reading_v0_1.json",
+  "md5": "bb9cab35e390fbc471a073e67b74ad4e",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "Z2-001",
+   "kind": "redraft",
+   "row_id": "SD-10",
+   "replaces": "SD-02",
+   "answers": "Z-002",
+   "locus": "revealed-preference#medium",
+   "verdict": "ACCEPT",
+   "reason": "It makes exactly the change Z-002 owed (\"Use the slot's unspaced em dash, or a construction without one.\"): SD-02's replacement with its one spaced em dash made unspaced (\"good—it is not evidence\"), as the slot writes its others (\"question—continued survival—is\"). Measured (reading record, diff): the current text is unchanged, and the replacement's only change is that dash. With SD-10 in place, no row brings the other dash style into its slot, and X-032's patterns find nothing after every row. Everything Z-002 accepted in SD-02 stands.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "judgment:Z-002",
+     "quote": "Use the slot's unspaced em dash, or a construction without one."
+    },
+    {
+     "src": "drafts:SD-10",
+     "quote": "good—it is not evidence"
+    },
+    {
+     "src": "corpus:revealed-preference#medium",
+     "quote": "question—continued survival—is"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SD-10 or the drafts record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Z2-002",
+   "kind": "knock_on",
+   "claim": {
+    "v0_2_rows_equal_v0_1": true
+   },
+   "verdict": "CONFIRM",
+   "reason": "SD-10 keeps SD-02's current text, so the knock-on cannot move. L6's knock-on record v0_2 has the same five rows as the v0_1 gate2 confirmed at Z-031 (reading record, knock_on).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SD-10 or the drafts record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Z2-003",
+   "kind": "patch",
+   "claim": {
+    "x032_hits_after_every_row": 0,
+    "rows_mixing_dash_styles": []
+   },
+   "verdict": "CONFIRM",
+   "reason": "The patch for every current row, built by L6's patch tool at its pinned bytes with SD-10 in place of SD-02, leaves no hit of X-032's patterns, and no row mixes em-dash styles with its slot (reading record, patch).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SD-10 or the drafts record",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}
