@@ -1,0 +1,1955 @@
+{
+  "artifact": "l7_measure_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l7_measure.py",
+  "session": "L7 (R0223 order 1), seat l, Code; measures only, drafts nothing",
+  "pinned": {
+    "map": {
+      "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+      "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+    },
+    "corpus_pre": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "04bf6482aa0374ee92a81c1d55ec41f8"
+    },
+    "corpus_mid": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "f3d88311ea98f8333aebbecb67766351"
+    },
+    "corpus_post": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+    },
+    "drafts_L5": {
+      "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+      "md5": "8c57223e8f9170cb8303bcc4b9d982c4"
+    },
+    "drafts_L6": {
+      "file": "adversarial_map_staging/r1/SP_drafts_L6.json",
+      "md5": "e493f8cdcf74aa3ad7982e1e906cffde"
+    },
+    "knock_on_L5": {
+      "file": "adversarial_map_staging/r1/PQ_knock_on_L5_v0_2.json",
+      "md5": "2cde775ee82cd16b0e5cdb88820bd130"
+    },
+    "knock_on_L6": {
+      "file": "adversarial_map_staging/r1/SP_knock_on_L6_v0_2.json",
+      "md5": "013319b88335e3b6ce6bc8dd9ac709a4"
+    },
+    "rulings": {
+      "file": "adversarial_map_staging/r1/R1_rulings.json",
+      "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+    },
+    "evidence": {
+      "file": "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+      "md5": "719b5ddb27680f32181a8a953c84b6c2"
+    }
+  },
+  "modules": {
+    "validator": {
+      "file": "adversarial_map_staging/adv_map_validator_v0_6.py",
+      "md5": "c002e93877b09d523daf786036af7a57"
+    },
+    "sp_dossiers": {
+      "file": "adversarial_map_staging/r1/sp_dossiers_l6.py",
+      "md5": "3bad7a4a29ac661197fe1955c6480100",
+      "uses": "sentence_bounds, shingles (the L6 knock-on's own functions)"
+    }
+  },
+  "classes": {
+    "unchanged": "the locus did not move, or an occurrence lies outside every repaired sentence and is still verbatim (gate2, fifth stratum)",
+    "moved": "every occurrence lies inside a repaired sentence; the anchor string is still in the v4.1.5 locus (W-007)",
+    "gone": "the anchor is no longer verbatim in the v4.1.5 locus"
+  },
+  "shingle_words": 6,
+  "chain": {
+    "L5": {
+      "cut": "v4.1.3",
+      "ratification": "PR-01",
+      "rows": 23,
+      "loci": 18,
+      "objections_equal": true
+    },
+    "L6": {
+      "cut": "v4.1.5",
+      "ratification": "SR-01",
+      "rows": 20,
+      "loci": 12,
+      "objections_equal": true
+    }
+  },
+  "changed_loci": [
+    "ai-fear#archetypeVariants.defender",
+    "antinatalism-misanthropic#long",
+    "benatar-asymmetry-attack#long",
+    "bitter-childhood#long",
+    "bitter-childhood#medium",
+    "bradley-no-subject#long",
+    "consent-both-ways#long",
+    "eliminativism#long",
+    "free-will-defense#long",
+    "heat-death-futility#long",
+    "just-depressed#long",
+    "luxury-belief#long",
+    "neuroscience-positive-states#long",
+    "red-button-repugnant#archetypeVariants.sophisticate",
+    "red-button-repugnant#long",
+    "revealed-preference#long",
+    "revealed-preference#medium",
+    "revealed-preference#short",
+    "self-defeating#long",
+    "slippery-slope-eugenics#archetypeVariants.blended",
+    "social-contract#long",
+    "survivor-testimony#diagnosis",
+    "survivor-testimony#long",
+    "survivor-testimony#medium",
+    "survivor-testimony#short",
+    "violence-as-reductio#archetypeVariants.sophisticate",
+    "why-not-suicide#archetypeVariants.defender",
+    "why-not-suicide#archetypeVariants.drifter",
+    "why-not-suicide#long"
+  ],
+  "status_counts": {
+    "gone": 11,
+    "moved": 4,
+    "unchanged": 123
+  },
+  "entries": [
+    {
+      "i": 0,
+      "n": null,
+      "target": "life-gift#long",
+      "class": "d",
+      "anchor": "legitimate unsolicited benefit requires an antecedent recipient with a stake",
+      "status": "unchanged"
+    },
+    {
+      "i": 1,
+      "n": 1,
+      "target": "just-depressed#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "pointing at the second sentence and asking which one was sincere",
+      "status": "unchanged"
+    },
+    {
+      "i": 2,
+      "n": null,
+      "target": "just-depressed#long",
+      "class": "b",
+      "anchor": "two utterances incompatible with a single motive of care",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-01"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 508,
+          "inside_span": [
+            "PD-01"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 3,
+      "n": null,
+      "target": "just-depressed#archetypeVariants.sophisticate",
+      "class": "b",
+      "anchor": "It does not lean on depressive realism",
+      "status": "unchanged"
+    },
+    {
+      "i": 4,
+      "n": 2,
+      "target": "why-not-suicide#long",
+      "class": "d",
+      "anchor": "agent stands on the side of the non-existent",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L6 SD-01"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2822,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 5,
+      "n": 3,
+      "target": "why-not-suicide#archetypeVariants.blended",
+      "class": "a",
+      "anchor": "Stop there if the jab was the whole of it",
+      "status": "unchanged"
+    },
+    {
+      "i": 6,
+      "n": 4,
+      "target": "why-not-suicide#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+      "status": "moved",
+      "locus_changed_by": [
+        "L5 PD-17",
+        "L5 PD-18"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 845,
+          "inside_span": [
+            "PD-18"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 7,
+      "n": 5,
+      "target": "why-not-suicide#archetypeVariants.drifter",
+      "class": "b",
+      "anchor": "Nothing in that tells the living to stop",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PC-02",
+        "L5 PD-21"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 617,
+          "inside_span": [
+            "PD-21"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 8,
+      "n": null,
+      "target": "why-not-suicide#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "whether the NU layer can be independently motivated",
+      "status": "unchanged"
+    },
+    {
+      "i": 9,
+      "n": 6,
+      "target": "consent-both-ways#long",
+      "class": "d",
+      "anchor": "Presumed consent is only valid when it prevents a greater harm",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-14"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1038,
+          "inside_span": [
+            "PD-14"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 10,
+      "n": null,
+      "target": "nihilism-label#long",
+      "class": "d",
+      "anchor": "for the norm to bind the agents who actually exist inside it",
+      "status": "unchanged"
+    },
+    {
+      "i": 11,
+      "n": 7,
+      "target": "economy-population#long",
+      "class": "a",
+      "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+      "status": "unchanged"
+    },
+    {
+      "i": 12,
+      "n": null,
+      "target": "benatar-asymmetry-attack#long",
+      "class": "d",
+      "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L5 PD-19"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 7612,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 13,
+      "n": null,
+      "target": "benatar-asymmetry-attack#long",
+      "class": "b",
+      "anchor": "how much suffering typical human lives actually contain",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L5 PD-19"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 7219,
+          "inside_span": [
+            "PD-19"
+          ],
+          "inside_sentence": []
+        },
+        {
+          "at": 8149,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 14,
+      "n": 8,
+      "target": "benatar-asymmetry-attack#archetypeVariants.blended",
+      "class": "d",
+      "anchor": "no one is missing the lives that don't start",
+      "status": "unchanged"
+    },
+    {
+      "i": 15,
+      "n": 9,
+      "target": "benatar-asymmetry-attack#archetypeVariants.defender",
+      "class": "d",
+      "anchor": "answers a question the argument never asked",
+      "status": "unchanged"
+    },
+    {
+      "i": 16,
+      "n": 10,
+      "target": "benatar-asymmetry-attack#archetypeVariants.drifter",
+      "class": "d",
+      "anchor": "being glad you're here is not a mistake",
+      "status": "unchanged"
+    },
+    {
+      "i": 17,
+      "n": null,
+      "target": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "The gap between a comparative over scenarios and a relational predicate",
+      "status": "unchanged"
+    },
+    {
+      "i": 18,
+      "n": null,
+      "target": "transhumanist-objection#long",
+      "class": "b",
+      "anchor": "carried where the terminus is defended",
+      "status": "unchanged"
+    },
+    {
+      "i": 19,
+      "n": 11,
+      "target": "self-defeating#diagnosis",
+      "class": "a",
+      "anchor": "confuses evolutionary fitness with logical validity",
+      "status": "unchanged"
+    },
+    {
+      "i": 20,
+      "n": null,
+      "target": "self-defeating#long",
+      "class": "b",
+      "anchor": "requires only the development of sufficient technological capacity",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-20"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1169,
+          "inside_span": [
+            "PD-20"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 21,
+      "n": 12,
+      "target": "imposing-values#medium",
+      "class": "d",
+      "anchor": "The antinatalist merely declines to create the situation in which imposition is possible",
+      "status": "unchanged"
+    },
+    {
+      "i": 22,
+      "n": 13,
+      "target": "imposing-values#short",
+      "class": "d",
+      "anchor": "there is no one there to be imposed upon",
+      "status": "unchanged"
+    },
+    {
+      "i": 23,
+      "n": 14,
+      "target": "ai-fear#short",
+      "class": "d",
+      "anchor": "consciousness should be evaluated by its capacity for suffering, not by its substrate",
+      "status": "unchanged"
+    },
+    {
+      "i": 24,
+      "n": 15,
+      "target": "ai-fear#archetypeVariants.blended",
+      "class": "d",
+      "anchor": "substrate-neutral suffering-DETERRENCE, not a positive program to minimize-and-displace",
+      "status": "unchanged"
+    },
+    {
+      "i": 25,
+      "n": null,
+      "target": "ai-fear#archetypeVariants.defender",
+      "class": "b",
+      "anchor": "Either show the premises themselves entail the recklessness",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-06"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1783,
+          "inside_span": [
+            "PD-06"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 26,
+      "n": 16,
+      "target": "ai-fear#archetypeVariants.drifter",
+      "class": "d",
+      "anchor": "an AI that CREATES more suffering is exactly what a suffering-first view is against",
+      "status": "unchanged"
+    },
+    {
+      "i": 27,
+      "n": null,
+      "target": "ai-fear#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "whether the minimization layer can be independently motivated",
+      "status": "unchanged"
+    },
+    {
+      "i": 28,
+      "n": 17,
+      "target": "violence-as-reductio#long",
+      "class": "d",
+      "anchor": "adherent-prominence is not the unit of evaluation",
+      "status": "unchanged"
+    },
+    {
+      "i": 29,
+      "n": 18,
+      "target": "violence-as-reductio#archetypeVariants.blended",
+      "class": "a",
+      "anchor": "take the structural one first and the other two resolve under it",
+      "status": "unchanged"
+    },
+    {
+      "i": 30,
+      "n": 19,
+      "target": "violence-as-reductio#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "Bartkus and the disowned grabbers are actor-content",
+      "status": "unchanged"
+    },
+    {
+      "i": 31,
+      "n": null,
+      "target": "violence-as-reductio#archetypeVariants.drifter",
+      "class": "b",
+      "anchor": "hurting people is the opposite of caring whether they suffer",
+      "status": "unchanged"
+    },
+    {
+      "i": 32,
+      "n": 20,
+      "target": "violence-as-reductio#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-15"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1498,
+          "inside_span": [
+            "PD-15"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 33,
+      "n": null,
+      "target": "natural-reproduce#diagnosis",
+      "class": "d",
+      "anchor": "'Natural' has zero moral content.",
+      "status": "unchanged"
+    },
+    {
+      "i": 34,
+      "n": null,
+      "target": "gods-plan#long",
+      "class": "b",
+      "anchor": "No theodicy has resolved this trilemma",
+      "status": "unchanged"
+    },
+    {
+      "i": 35,
+      "n": null,
+      "target": "just-edgy#long",
+      "class": "b",
+      "anchor": "the ones who remained alive and vocal",
+      "status": "unchanged"
+    },
+    {
+      "i": 36,
+      "n": 21,
+      "target": "meaning-through-suffering#long",
+      "class": "d",
+      "anchor": "a survival mechanism, not an ethical justification",
+      "status": "unchanged"
+    },
+    {
+      "i": 37,
+      "n": 22,
+      "target": "free-will-defense#long",
+      "class": "b",
+      "anchor": "Free will does not mitigate the proxy gamble",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L5 PD-10"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1740,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 38,
+      "n": 23,
+      "target": "most-people-happy#long",
+      "class": "d",
+      "anchor": "procreation is a proxy gamble",
+      "status": "unchanged"
+    },
+    {
+      "i": 39,
+      "n": 24,
+      "target": "most-people-happy#archetypeVariants.sophisticate",
+      "class": "a",
+      "anchor": "the instrument doing the rating is the same nervous system",
+      "status": "unchanged"
+    },
+    {
+      "i": 40,
+      "n": null,
+      "target": "love-beauty-art#long",
+      "class": "d",
+      "anchor": "The goods of existence raise no claim on behalf of the merely possible",
+      "status": "unchanged"
+    },
+    {
+      "i": 41,
+      "n": null,
+      "target": "joy-outweighs-harms#long",
+      "class": "d",
+      "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+      "status": "unchanged"
+    },
+    {
+      "i": 42,
+      "n": 25,
+      "target": "masochist-counterexample#long",
+      "class": "d",
+      "anchor": "rare atypical neurology never cross-wires nociception and reward",
+      "status": "unchanged"
+    },
+    {
+      "i": 43,
+      "n": null,
+      "target": "procreative-liberty#long",
+      "class": "d",
+      "anchor": "it does not cause harm to others",
+      "status": "unchanged"
+    },
+    {
+      "i": 44,
+      "n": null,
+      "target": "negative-util-aggregation#long",
+      "class": "d",
+      "anchor": "a cost is not a contradiction",
+      "status": "unchanged"
+    },
+    {
+      "i": 45,
+      "n": 26,
+      "target": "wild-animal-suffering-consistency#long",
+      "class": "a",
+      "anchor": "the relevant distinction is not species-based but discretion-based",
+      "status": "unchanged"
+    },
+    {
+      "i": 46,
+      "n": 27,
+      "target": "wild-animal-suffering-consistency#archetypeVariants.blended",
+      "class": "a",
+      "anchor": "the stopping point is discretion-based, not anthropocentric",
+      "status": "unchanged"
+    },
+    {
+      "i": 47,
+      "n": 28,
+      "target": "wild-animal-suffering-consistency#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "the only point of discretion left",
+      "status": "unchanged"
+    },
+    {
+      "i": 48,
+      "n": 29,
+      "target": "wild-animal-suffering-consistency#archetypeVariants.drifter",
+      "class": "a",
+      "anchor": "You don't decide the wild",
+      "status": "unchanged"
+    },
+    {
+      "i": 49,
+      "n": 30,
+      "target": "wild-animal-suffering-consistency#archetypeVariants.sophisticate",
+      "class": "a",
+      "anchor": "Salience is the input; intervention-obligation is the conditioned output",
+      "status": "unchanged"
+    },
+    {
+      "i": 50,
+      "n": null,
+      "target": "western-philosophy#long",
+      "class": "b",
+      "anchor": "The Pythagorean theorem originated in a specific cultural context; it applies universally",
+      "status": "unchanged"
+    },
+    {
+      "i": 51,
+      "n": null,
+      "target": "antinatalism-misanthropic#long",
+      "class": "b",
+      "anchor": "structural criticism of a species is not the same as hatred of individuals",
+      "status": "moved",
+      "locus_changed_by": [
+        "L5 PD-04"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 989,
+          "inside_span": [
+            "PD-04"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 52,
+      "n": 31,
+      "target": "antinatalism-misanthropic#archetypeVariants.blended",
+      "class": "d",
+      "anchor": "naming it is the whole of the response",
+      "status": "unchanged"
+    },
+    {
+      "i": 53,
+      "n": 32,
+      "target": "antinatalism-misanthropic#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "its truth-value is not a function of the speaker's warmth",
+      "status": "unchanged"
+    },
+    {
+      "i": 54,
+      "n": 33,
+      "target": "antinatalism-misanthropic#archetypeVariants.drifter",
+      "class": "d",
+      "anchor": "Keeping someone out of harm's way is not the same as wishing them ill",
+      "status": "unchanged"
+    },
+    {
+      "i": 55,
+      "n": null,
+      "target": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+      "status": "unchanged"
+    },
+    {
+      "i": 56,
+      "n": 34,
+      "target": "speak-for-everyone#long",
+      "class": "d",
+      "anchor": "The existence of lottery winners does not justify forced participation in the lottery",
+      "status": "unchanged"
+    },
+    {
+      "i": 57,
+      "n": 35,
+      "target": "evolution-purpose#short",
+      "class": "d",
+      "anchor": "Evolution has no purpose. It has no direction",
+      "status": "unchanged"
+    },
+    {
+      "i": 58,
+      "n": null,
+      "target": "future-solve#short",
+      "class": "b",
+      "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+      "status": "unchanged"
+    },
+    {
+      "i": 59,
+      "n": 36,
+      "target": "future-solve#archetypeVariants.sophisticate",
+      "class": "a",
+      "anchor": "non-consenting transitional sacrifices for a population that does not yet exist",
+      "status": "unchanged"
+    },
+    {
+      "i": 60,
+      "n": null,
+      "target": "extinction-culture#long",
+      "class": "d",
+      "anchor": "The absence of culture is not bad for the non-existent",
+      "status": "unchanged"
+    },
+    {
+      "i": 61,
+      "n": null,
+      "target": "playing-god#long",
+      "class": "b",
+      "anchor": "the default state of the universe is non-existence",
+      "status": "unchanged"
+    },
+    {
+      "i": 62,
+      "n": null,
+      "target": "policy-proposal#long",
+      "class": "b",
+      "anchor": "that would at least be an informed decision rather than an instinctive one",
+      "status": "unchanged"
+    },
+    {
+      "i": 63,
+      "n": 37,
+      "target": "next-person-cure-cancer#long",
+      "class": "a",
+      "anchor": "if the speculative possibility of extraordinary positive outcomes justifies creation",
+      "status": "unchanged"
+    },
+    {
+      "i": 64,
+      "n": 38,
+      "target": "next-person-cure-cancer#archetypeVariants.sophisticate",
+      "class": "a",
+      "anchor": "the good a possible person might produce is not a good whose absence harms anyone",
+      "status": "unchanged"
+    },
+    {
+      "i": 65,
+      "n": null,
+      "target": "pinker-better-world#medium",
+      "class": "b",
+      "anchor": "Statistics describe populations; suffering is experienced by individuals",
+      "status": "unchanged"
+    },
+    {
+      "i": 66,
+      "n": 39,
+      "target": "privileged-first-world#long",
+      "class": "d",
+      "anchor": "applies MORE forcefully in conditions of extreme deprivation",
+      "status": "unchanged"
+    },
+    {
+      "i": 67,
+      "n": 40,
+      "target": "privileged-first-world#archetypeVariants.defender",
+      "class": "d",
+      "anchor": "the comfortable natalist defending procreation is disqualified first and worst",
+      "status": "unchanged"
+    },
+    {
+      "i": 68,
+      "n": null,
+      "target": "selfish-lazy#long",
+      "class": "b",
+      "anchor": "the most radical form of altruism available to a biological organism",
+      "status": "unchanged"
+    },
+    {
+      "i": 69,
+      "n": 41,
+      "target": "selfish-lazy#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "motive and validity are orthogonal",
+      "status": "unchanged"
+    },
+    {
+      "i": 70,
+      "n": 42,
+      "target": "consent-incoherent#long",
+      "class": "d",
+      "anchor": "presumed consent is valid only when inaction would cause greater harm",
+      "status": "unchanged"
+    },
+    {
+      "i": 71,
+      "n": 43,
+      "target": "suffering-makes-human#long",
+      "class": "d",
+      "anchor": "evaluate the component (suffering) on its own terms",
+      "status": "unchanged"
+    },
+    {
+      "i": 72,
+      "n": 44,
+      "target": "red-button-repugnant#long",
+      "class": "d",
+      "anchor": "at what point does the perpetual manufacturing of beings",
+      "status": "moved",
+      "locus_changed_by": [
+        "L6 SD-05",
+        "L6 SD-06",
+        "L6 SD-07"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2850,
+          "inside_span": [
+            "SD-07"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 73,
+      "n": 45,
+      "target": "red-button-repugnant#long",
+      "class": "d",
+      "anchor": "driven by biological compulsion operating below rational deliberation",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L6 SD-05",
+        "L6 SD-06",
+        "L6 SD-07"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2276,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 74,
+      "n": null,
+      "target": "red-button-repugnant#medium",
+      "class": "d",
+      "anchor": "That is a metaphysical commitment, not an ethical argument",
+      "status": "unchanged"
+    },
+    {
+      "i": 75,
+      "n": 46,
+      "target": "red-button-repugnant#archetypeVariants.defender",
+      "class": "d",
+      "anchor": "is existence, regardless of what it contains, worth preserving for its own sake?",
+      "status": "unchanged"
+    },
+    {
+      "i": 76,
+      "n": 47,
+      "target": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "products of the survival firmware the framework already identifies as distorting honest evaluation",
+      "status": "gone",
+      "locus_changed_by": [
+        "L6 SD-08",
+        "L6 SD-09"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 801,
+          "inside_span": [
+            "SD-08"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 77,
+      "n": null,
+      "target": "red-button-repugnant#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "this node's terminus to hold open rather than pretend closed",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L6 SD-08",
+        "L6 SD-09"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2461,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 78,
+      "n": null,
+      "target": "slippery-slope-eugenics#short",
+      "class": "d",
+      "anchor": "These positions are structurally opposite",
+      "status": "unchanged"
+    },
+    {
+      "i": 79,
+      "n": null,
+      "target": "slippery-slope-eugenics#archetypeVariants.blended",
+      "class": "b",
+      "anchor": "cascade-math voids it on the framework's own calculus",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-05"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 370,
+          "inside_span": [
+            "PD-05"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 80,
+      "n": 48,
+      "target": "slippery-slope-eugenics#archetypeVariants.defender",
+      "class": "a",
+      "anchor": "the adherent who endorses it is running a slogan, not the framework",
+      "status": "unchanged"
+    },
+    {
+      "i": 81,
+      "n": null,
+      "target": "slippery-slope-eugenics#archetypeVariants.drifter",
+      "class": "b",
+      "anchor": "What makes eugenics monstrous is the sorting, the ranking",
+      "status": "unchanged"
+    },
+    {
+      "i": 82,
+      "n": null,
+      "target": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "whether any negative-utilitarian framework can ground a coercion-floor without sliding",
+      "status": "unchanged"
+    },
+    {
+      "i": 83,
+      "n": 49,
+      "target": "adoption-instead#long",
+      "class": "a",
+      "anchor": "Adoption satisfies the desire to parent completely",
+      "status": "unchanged"
+    },
+    {
+      "i": 84,
+      "n": 50,
+      "target": "bitter-childhood#long",
+      "class": "a",
+      "anchor": "even if my childhood WAS the catalyst for this philosophy",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L5 PD-07"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1762,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 85,
+      "n": null,
+      "target": "bitter-childhood#archetypeVariants.defender",
+      "class": "b",
+      "anchor": "not seeing falsely, he is seeing without the anaesthetic",
+      "status": "unchanged"
+    },
+    {
+      "i": 86,
+      "n": null,
+      "target": "cant-prove-nonexistence-better#long",
+      "class": "b",
+      "anchor": "the precautionary principle favors restraint",
+      "status": "unchanged"
+    },
+    {
+      "i": 87,
+      "n": 51,
+      "target": "animals-reproduce#long",
+      "class": "a",
+      "anchor": "Animals reproduce because they are driven by instinct",
+      "status": "unchanged"
+    },
+    {
+      "i": 88,
+      "n": 52,
+      "target": "overpopulation-addressed#long",
+      "class": "a",
+      "anchor": "incrementally better from a negative utilitarian perspective",
+      "status": "unchanged"
+    },
+    {
+      "i": 89,
+      "n": 53,
+      "target": "hedonic-contrast#long",
+      "class": "a",
+      "anchor": "it would still experience positive states",
+      "status": "unchanged"
+    },
+    {
+      "i": 90,
+      "n": null,
+      "target": "ableist-objection#long",
+      "class": "b",
+      "anchor": "they are being centered by it",
+      "status": "unchanged"
+    },
+    {
+      "i": 91,
+      "n": null,
+      "target": "change-your-mind#long",
+      "class": "c",
+      "anchor": "This is not wisdom; it is motivated reasoning.",
+      "status": "unchanged"
+    },
+    {
+      "i": 92,
+      "n": 54,
+      "target": "anthropic-principle#long",
+      "class": "d",
+      "anchor": "It is cosmic exploitation",
+      "status": "unchanged"
+    },
+    {
+      "i": 93,
+      "n": null,
+      "target": "meta-ethical-pluralism#long",
+      "class": "d",
+      "anchor": "It simply is, and it is bad",
+      "status": "unchanged"
+    },
+    {
+      "i": 94,
+      "n": null,
+      "target": "meta-ethical-pluralism#medium",
+      "class": "d",
+      "anchor": "Negative utilitarianism merely refuses the tolerance",
+      "status": "unchanged"
+    },
+    {
+      "i": 95,
+      "n": 55,
+      "target": "meta-ethical-pluralism#medium",
+      "class": "a",
+      "anchor": "the minimum acceptable level of unconsented suffering imposed on a new being is zero",
+      "status": "unchanged"
+    },
+    {
+      "i": 96,
+      "n": 56,
+      "target": "heat-death-futility#medium",
+      "class": "a",
+      "anchor": "Suffering is experienced at the scale of the nervous system",
+      "status": "unchanged"
+    },
+    {
+      "i": 97,
+      "n": null,
+      "target": "heat-death-futility#medium",
+      "class": "d",
+      "anchor": "to make the indifference of the universe your own",
+      "status": "unchanged"
+    },
+    {
+      "i": 98,
+      "n": null,
+      "target": "happiness-is-choice#long",
+      "class": "b",
+      "anchor": "the environmental share is itself largely unchosen",
+      "status": "unchanged"
+    },
+    {
+      "i": 99,
+      "n": 57,
+      "target": "cherry-picking-worst#short",
+      "class": "d",
+      "anchor": "does not justify forcing someone to play",
+      "status": "unchanged"
+    },
+    {
+      "i": 100,
+      "n": null,
+      "target": "cherry-picking-worst#archetypeVariants.sophisticate",
+      "class": "d",
+      "anchor": "in every serious domain of risk ethics that object is the whole distribution",
+      "status": "unchanged"
+    },
+    {
+      "i": 101,
+      "n": null,
+      "target": "revealed-preference#long",
+      "class": "b",
+      "anchor": "genuine revealed preference requires informed agents",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L6 SC-01",
+        "L6 SC-02",
+        "L6 SC-03"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1620,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 102,
+      "n": 58,
+      "target": "social-contract#long",
+      "class": "b",
+      "anchor": "the antinatalist objection is to existence itself, not to any particular society",
+      "status": "moved",
+      "locus_changed_by": [
+        "L5 PD-16",
+        "L6 SD-03"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 1066,
+          "inside_span": [
+            "PD-16"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 103,
+      "n": 59,
+      "target": "moral-progress#long",
+      "class": "d",
+      "anchor": "the ledger is at best ambiguous",
+      "status": "unchanged"
+    },
+    {
+      "i": 104,
+      "n": null,
+      "target": "non-identity-problem#long",
+      "class": "d",
+      "anchor": "You do not need to name the victim to condemn the system",
+      "status": "unchanged"
+    },
+    {
+      "i": 105,
+      "n": null,
+      "target": "bradley-no-subject#long",
+      "class": "b",
+      "anchor": "There is no third branch",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PC-06",
+        "L5 PD-13"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 3521,
+          "inside_span": [
+            "PD-13"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 106,
+      "n": null,
+      "target": "contractualism-scanlon#long",
+      "class": "d",
+      "anchor": "ex-ante versus ex-post rejection is a live internal dispute",
+      "status": "unchanged"
+    },
+    {
+      "i": 107,
+      "n": null,
+      "target": "phenomenological-existentialism#long",
+      "class": "d",
+      "anchor": "this is precisely the question at issue, not its answer",
+      "status": "unchanged"
+    },
+    {
+      "i": 108,
+      "n": null,
+      "target": "harman-benign-creation#long",
+      "class": "d",
+      "anchor": "was subjected to that outcome by another person's probabilistic optimism",
+      "status": "unchanged"
+    },
+    {
+      "i": 109,
+      "n": null,
+      "target": "population-ethics-paradoxes#long",
+      "class": "d",
+      "anchor": "This is iteration, not aggregation",
+      "status": "unchanged"
+    },
+    {
+      "i": 110,
+      "n": null,
+      "target": "boonin-critique#short",
+      "class": "d",
+      "anchor": "Defeating one column does not collapse a building with four foundations",
+      "status": "unchanged"
+    },
+    {
+      "i": 111,
+      "n": 60,
+      "target": "boonin-critique#note",
+      "class": "d",
+      "anchor": "broad attack categories rather than engaged with at the level of symbolic reconstruction",
+      "status": "unchanged"
+    },
+    {
+      "i": 112,
+      "n": 61,
+      "target": "moral-particularism#long",
+      "class": "d",
+      "anchor": "in emergency medicine or infant care it may be overridden",
+      "status": "unchanged"
+    },
+    {
+      "i": 113,
+      "n": null,
+      "target": "moral-particularism#long",
+      "class": "d",
+      "anchor": "rigorous particularist analysis of procreation strengthens the antinatalist position",
+      "status": "unchanged"
+    },
+    {
+      "i": 114,
+      "n": null,
+      "target": "performative-contradiction#long",
+      "class": "d",
+      "anchor": "The argument proves too much",
+      "status": "unchanged"
+    },
+    {
+      "i": 115,
+      "n": null,
+      "target": "marxist-materialist#long",
+      "class": "d",
+      "anchor": "The EFIList critique operates at the level of ontology",
+      "status": "unchanged"
+    },
+    {
+      "i": 116,
+      "n": 62,
+      "target": "buddhist-objection#long",
+      "class": "d",
+      "anchor": "why create new beings who will need to escape the cycle",
+      "status": "unchanged"
+    },
+    {
+      "i": 117,
+      "n": null,
+      "target": "virtue-ethics-flourishing#long",
+      "class": "b",
+      "anchor": "Flourishing is not the addition of positive value to a neutral baseline",
+      "status": "unchanged"
+    },
+    {
+      "i": 118,
+      "n": null,
+      "target": "neuroscience-positive-states#long",
+      "class": "b",
+      "anchor": "a joy never instantiated is withheld from no one",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PD-12"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 4864,
+          "inside_span": [
+            "PD-12"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 119,
+      "n": null,
+      "target": "epistemic-humility#long",
+      "class": "d",
+      "anchor": "The worst case of not creating is nothing",
+      "status": "unchanged"
+    },
+    {
+      "i": 120,
+      "n": null,
+      "target": "incommensurability#long",
+      "class": "d",
+      "anchor": "The ethical evaluation is act-directed, not state-comparative",
+      "status": "unchanged"
+    },
+    {
+      "i": 121,
+      "n": null,
+      "target": "flow-states-csikszentmihalyi#long",
+      "class": "b",
+      "anchor": "it is the most damning confirmation of the deficit grammar",
+      "status": "unchanged"
+    },
+    {
+      "i": 122,
+      "n": null,
+      "target": "flow-states-csikszentmihalyi#note",
+      "class": "b",
+      "anchor": "The Dismantle response presents the EFIList counter-interpretation but acknowledges this is an open question",
+      "status": "unchanged"
+    },
+    {
+      "i": 123,
+      "n": 63,
+      "target": "luxury-belief#long",
+      "class": "b",
+      "anchor": "consequences for economic systems, not for sentient beings",
+      "status": "gone",
+      "locus_changed_by": [
+        "L5 PC-03",
+        "L5 PC-04",
+        "L5 PD-09"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2002,
+          "inside_span": [
+            "PD-09"
+          ],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 0
+    },
+    {
+      "i": 124,
+      "n": null,
+      "target": "pragmatist-objection#long",
+      "class": "d",
+      "anchor": "for each being not created, is a concrete practical outcome",
+      "status": "unchanged"
+    },
+    {
+      "i": 125,
+      "n": 64,
+      "target": "survivor-testimony#long",
+      "class": "d",
+      "anchor": "evidence about the preferences of already-existing beings",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L6 SW-04",
+        "L6 SW-05",
+        "L6 SW-06",
+        "L6 SW-07"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2051,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 126,
+      "n": null,
+      "target": "care-ethics#long",
+      "class": "d",
+      "anchor": "Care ethics evaluates the relationship after instantiation",
+      "status": "unchanged"
+    },
+    {
+      "i": 127,
+      "n": null,
+      "target": "care-ethics#note",
+      "class": "d",
+      "anchor": "would benefit from deeper engagement with Held's distinction between 'chosen' and 'unchosen' caring relationships",
+      "status": "unchanged"
+    },
+    {
+      "i": 128,
+      "n": 65,
+      "target": "rights-future-generations#long",
+      "class": "d",
+      "anchor": "a right without a claimant is not a right but a rhetorical gesture",
+      "status": "unchanged"
+    },
+    {
+      "i": 129,
+      "n": null,
+      "target": "indigenous-philosophy#long",
+      "class": "d",
+      "anchor": "a node's suffering a constitutive, non-vetoing part of a good",
+      "status": "unchanged"
+    },
+    {
+      "i": 130,
+      "n": 66,
+      "target": "indigenous-philosophy#note",
+      "class": "a",
+      "anchor": "A fully adequate treatment would require engagement with specific traditions by their own practitioners",
+      "status": "unchanged"
+    },
+    {
+      "i": 131,
+      "n": null,
+      "target": "eliminativism#long",
+      "class": "d",
+      "anchor": "The property is conserved under redescription; only the label moves",
+      "status": "unchanged",
+      "survives_outside": true,
+      "locus_changed_by": [
+        "L5 PD-11"
+      ],
+      "occurrences_pre": [
+        {
+          "at": 2013,
+          "inside_span": [],
+          "inside_sentence": []
+        }
+      ],
+      "occurrences_post": 1
+    },
+    {
+      "i": 132,
+      "n": 67,
+      "target": "eliminativism#note",
+      "class": "d",
+      "anchor": "refutation is dialectical (non-selectivity) rather than a knockdown of the metaphysics",
+      "status": "unchanged"
+    },
+    {
+      "i": 133,
+      "n": null,
+      "target": "solipsism#long",
+      "class": "d",
+      "anchor": "the dialectic does not resolve in his favor",
+      "status": "unchanged"
+    },
+    {
+      "i": 134,
+      "n": null,
+      "target": "suffering-as-meaning#long",
+      "class": "d",
+      "anchor": "the asymmetry, where the objection meets the antinatalist core",
+      "status": "unchanged"
+    },
+    {
+      "i": 135,
+      "n": null,
+      "target": "self-effacing-under-universalization#long",
+      "class": "d",
+      "anchor": "Universal compliance is a norm's success condition",
+      "status": "unchanged"
+    },
+    {
+      "i": 136,
+      "n": 68,
+      "target": "self-effacing-under-universalization#long",
+      "class": "a",
+      "anchor": "a last generation keeping its rule to the end is fully conceivable",
+      "status": "unchanged"
+    },
+    {
+      "i": 137,
+      "n": 69,
+      "target": "self-effacing-under-universalization#long",
+      "class": "a",
+      "anchor": "can a rational agent will that rational agency not continue?",
+      "status": "unchanged"
+    }
+  ],
+  "routes": [
+    {
+      "i": 1,
+      "n": 1,
+      "target": "just-depressed#archetypeVariants.defender",
+      "anchor": "pointing at the second sentence and asking which one was sincere",
+      "answered_by": "just-depressed#long",
+      "rows": [
+        "L5 PD-01"
+      ],
+      "ruling_row": "R1-004",
+      "verdict": "FAILS"
+    },
+    {
+      "i": 5,
+      "n": 3,
+      "target": "why-not-suicide#archetypeVariants.blended",
+      "anchor": "Stop there if the jab was the whole of it",
+      "answered_by": "why-not-suicide#long",
+      "rows": [
+        "L6 SD-01"
+      ],
+      "ruling_row": "R1-023",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 11,
+      "n": 7,
+      "target": "economy-population#long",
+      "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+      "answered_by": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ],
+      "ruling_row": "R1-048",
+      "verdict": "FAILS"
+    },
+    {
+      "i": 19,
+      "n": 11,
+      "target": "self-defeating#diagnosis",
+      "anchor": "confuses evolutionary fitness with logical validity",
+      "answered_by": "self-defeating#long",
+      "rows": [
+        "L5 PD-20"
+      ],
+      "ruling_row": "R1-013",
+      "verdict": "FAILS"
+    },
+    {
+      "i": 29,
+      "n": 18,
+      "target": "violence-as-reductio#archetypeVariants.blended",
+      "anchor": "take the structural one first and the other two resolve under it",
+      "answered_by": "violence-as-reductio#archetypeVariants.sophisticate",
+      "rows": [
+        "L5 PD-15"
+      ],
+      "ruling_row": "R1-030",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 39,
+      "n": 24,
+      "target": "most-people-happy#archetypeVariants.sophisticate",
+      "anchor": "the instrument doing the rating is the same nervous system",
+      "answered_by": "just-depressed#long",
+      "rows": [
+        "L5 PD-01"
+      ],
+      "ruling_row": "R1-010",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 53,
+      "n": 32,
+      "target": "antinatalism-misanthropic#archetypeVariants.defender",
+      "anchor": "its truth-value is not a function of the speaker's warmth",
+      "answered_by": "antinatalism-misanthropic#long",
+      "rows": [
+        "L5 PD-04"
+      ],
+      "ruling_row": "R1-036",
+      "verdict": "FAILS"
+    },
+    {
+      "i": 83,
+      "n": 49,
+      "target": "adoption-instead#long",
+      "anchor": "Adoption satisfies the desire to parent completely",
+      "answered_by": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ],
+      "ruling_row": "R1-061",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 84,
+      "n": 50,
+      "target": "bitter-childhood#long",
+      "anchor": "even if my childhood WAS the catalyst for this philosophy",
+      "answered_by": "bitter-childhood#medium",
+      "rows": [
+        "L5 PC-01"
+      ],
+      "ruling_row": "R1-068",
+      "verdict": "FAILS"
+    },
+    {
+      "i": 88,
+      "n": 52,
+      "target": "overpopulation-addressed#long",
+      "anchor": "incrementally better from a negative utilitarian perspective",
+      "answered_by": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ],
+      "ruling_row": "R1-051",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 89,
+      "n": 53,
+      "target": "hedonic-contrast#long",
+      "anchor": "it would still experience positive states",
+      "answered_by": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ],
+      "ruling_row": "R1-045",
+      "verdict": "HOLDS"
+    },
+    {
+      "i": 96,
+      "n": 56,
+      "target": "heat-death-futility#medium",
+      "anchor": "Suffering is experienced at the scale of the nervous system",
+      "answered_by": "heat-death-futility#long",
+      "rows": [
+        "L6 SD-04"
+      ],
+      "ruling_row": "R1-019",
+      "verdict": "HOLDS"
+    }
+  ],
+  "quotes": [
+    {
+      "i": 53,
+      "n": 32,
+      "target": "antinatalism-misanthropic#archetypeVariants.defender",
+      "class": "a",
+      "field": "grounds",
+      "quotes_from": "antinatalism-misanthropic#long",
+      "row": "L5 PD-04",
+      "shingles": 7,
+      "first": "a species is not the same",
+      "still_verbatim_post": 7
+    },
+    {
+      "i": 131,
+      "n": null,
+      "target": "eliminativism#long",
+      "class": "d",
+      "field": "grounds",
+      "quotes_from": "eliminativism#long",
+      "row": "L5 PD-11",
+      "shingles": 2,
+      "first": "a barren ledger hands the antinatalist",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 131,
+      "n": null,
+      "target": "eliminativism#long",
+      "class": "d",
+      "field": "terminus_routing",
+      "quotes_from": "eliminativism#long",
+      "row": "L5 PD-11",
+      "shingles": 1,
+      "first": "barren ledger hands the antinatalist everything",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 132,
+      "n": 67,
+      "target": "eliminativism#note",
+      "class": "d",
+      "field": "grounds",
+      "quotes_from": "eliminativism#long",
+      "row": "L5 PD-11",
+      "shingles": 2,
+      "first": "a barren ledger hands the antinatalist",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 37,
+      "n": 22,
+      "target": "free-will-defense#long",
+      "class": "b",
+      "field": "grounds",
+      "quotes_from": "free-will-defense#long",
+      "row": "L5 PD-10",
+      "shingles": 31,
+      "first": "'acting in accordance with one's desires",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 123,
+      "n": 63,
+      "target": "luxury-belief#long",
+      "class": "b",
+      "field": "grounds",
+      "quotes_from": "luxury-belief#long",
+      "row": "L5 PC-04",
+      "shingles": 18,
+      "first": "The cost is borne by an",
+      "still_verbatim_post": 3
+    },
+    {
+      "i": 116,
+      "n": 62,
+      "target": "buddhist-objection#long",
+      "class": "d",
+      "field": "grounds",
+      "quotes_from": "neuroscience-positive-states#long",
+      "row": "L5 PD-12",
+      "shingles": 3,
+      "first": "a joy never instantiated is withheld",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 118,
+      "n": null,
+      "target": "neuroscience-positive-states#long",
+      "class": "b",
+      "field": "adversarial_move",
+      "quotes_from": "neuroscience-positive-states#long",
+      "row": "L5 PD-12",
+      "shingles": 3,
+      "first": "a joy never instantiated is withheld",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 118,
+      "n": null,
+      "target": "neuroscience-positive-states#long",
+      "class": "b",
+      "field": "grounds",
+      "quotes_from": "neuroscience-positive-states#long",
+      "row": "L5 PD-12",
+      "shingles": 3,
+      "first": "a joy never instantiated is withheld",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 102,
+      "n": 58,
+      "target": "social-contract#long",
+      "class": "b",
+      "field": "grounds",
+      "quotes_from": "social-contract#long",
+      "row": "L5 PD-16",
+      "shingles": 6,
+      "first": "antinatalist objection is to existence itself,",
+      "still_verbatim_post": 6
+    },
+    {
+      "i": 7,
+      "n": 5,
+      "target": "why-not-suicide#archetypeVariants.drifter",
+      "class": "b",
+      "field": "grounds",
+      "quotes_from": "why-not-suicide#archetypeVariants.drifter",
+      "row": "L5 PD-21",
+      "shingles": 2,
+      "first": "Nothing in that tells the living",
+      "still_verbatim_post": 0
+    },
+    {
+      "i": 5,
+      "n": 3,
+      "target": "why-not-suicide#archetypeVariants.blended",
+      "class": "a",
+      "field": "grounds",
+      "quotes_from": "why-not-suicide#long",
+      "row": "L6 SD-01",
+      "shingles": 2,
+      "first": "that biology has installed exit barriers",
+      "still_verbatim_post": 0
+    }
+  ],
+  "agreement": {
+    "rows": 38,
+    "reproduced": 38,
+    "by_record": {
+      "L5": 33,
+      "L6": 5
+    }
+  },
+  "beyond_the_knock_on_records": {
+    "anchors": [],
+    "routes": [],
+    "quotes": [
+      {
+        "i": 131,
+        "n": null,
+        "target": "eliminativism#long",
+        "field": "terminus_routing",
+        "quotes_from": "eliminativism#long",
+        "row": "L5 PD-11"
+      }
+    ]
+  },
+  "survives_outside_a_repaired_sentence": [
+    {
+      "i": 4,
+      "target": "why-not-suicide#long",
+      "rows": [
+        "L6 SD-01"
+      ]
+    },
+    {
+      "i": 12,
+      "target": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ]
+    },
+    {
+      "i": 13,
+      "target": "benatar-asymmetry-attack#long",
+      "rows": [
+        "L5 PD-19"
+      ]
+    },
+    {
+      "i": 37,
+      "target": "free-will-defense#long",
+      "rows": [
+        "L5 PD-10"
+      ]
+    },
+    {
+      "i": 73,
+      "target": "red-button-repugnant#long",
+      "rows": [
+        "L6 SD-05",
+        "L6 SD-06",
+        "L6 SD-07"
+      ]
+    },
+    {
+      "i": 77,
+      "target": "red-button-repugnant#archetypeVariants.sophisticate",
+      "rows": [
+        "L6 SD-08",
+        "L6 SD-09"
+      ]
+    },
+    {
+      "i": 84,
+      "target": "bitter-childhood#long",
+      "rows": [
+        "L5 PD-07"
+      ]
+    },
+    {
+      "i": 101,
+      "target": "revealed-preference#long",
+      "rows": [
+        "L6 SC-01",
+        "L6 SC-02",
+        "L6 SC-03"
+      ]
+    },
+    {
+      "i": 125,
+      "target": "survivor-testimony#long",
+      "rows": [
+        "L6 SW-04",
+        "L6 SW-05",
+        "L6 SW-06",
+        "L6 SW-07"
+      ]
+    },
+    {
+      "i": 131,
+      "target": "eliminativism#long",
+      "rows": [
+        "L5 PD-11"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "artifact": "l7_measure_control_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l7_measure.py --self-test",
+  "record": {
+    "file": "adversarial_map_staging/r1/l7_measure_v0_1.json",
+    "md5": "4d98b4a3b5c3a57ef62543001ba7ff64"
+  },
+  "result": "9 of 9 controls as expected, the unmutated first",
+  "controls": [
+    {
+      "control": "C0 unmutated: reproduces the committed record",
+      "expect": "reproduces the committed record",
+      "as_expected": true
+    },
+    {
+      "control": "C1 a landed L6 row dropped from SR-01 (SD-07)",
+      "expect": "refuses, naming 'CHAIN: L6'",
+      "as_expected": true
+    },
+    {
+      "control": "C2 a landed L5 row dropped from PR-01 (PD-16)",
+      "expect": "refuses, naming 'CHAIN: L5'",
+      "as_expected": true
+    },
+    {
+      "control": "C3 text moved in v4.1.5 that no row landed",
+      "expect": "refuses, naming 'CHAIN: L6'",
+      "as_expected": true
+    },
+    {
+      "control": "C4 a knock-on anchor altered by one character",
+      "expect": "refuses, naming 'AGREEMENT: knock-on L6'",
+      "as_expected": true
+    },
+    {
+      "control": "C5 a knock-on verdict flipped",
+      "expect": "refuses, naming 'AGREEMENT: knock-on L5'",
+      "as_expected": true
+    },
+    {
+      "control": "C6 a knock-on 'survives the repair' flipped",
+      "expect": "refuses, naming 'AGREEMENT: knock-on L6'",
+      "as_expected": true
+    },
+    {
+      "control": "C7 a knock-on shingle no passage carries",
+      "expect": "refuses, naming 'AGREEMENT: knock-on L5'",
+      "as_expected": true
+    },
+    {
+      "control": "C8 a map anchor absent from the pre-cut locus",
+      "expect": "refuses, naming 'ANCHOR: entry 0'",
+      "as_expected": true
+    }
+  ]
+}
