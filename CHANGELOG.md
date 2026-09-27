@@ -14,6 +14,23 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.1.5] — 2026-09-26
+
+**PATCH** by the invariants convention (the canon's `invariants` subtree is byte-identical), and **a content cut**: the safety pass. Twenty rewrites at twelve passages across six objections, on all three surfaces at once — the corpus JSON (whose `version` field now reads `4.1.5`, naming the cut), the JSX and `site/combined.html`. The cross-surface gate (`tools/xsurface_v4_1_0.py`) holds the three in agreement at `a99b793e3f63cc80bb3ed2050e764fbd`, and both map sidecars regenerate byte for byte. The text is 333 words shorter.
+
+Six passages framed the will to survive, or the taboo against suicide, as a barrier in front of an exit: a wish to die cast as the mind's clear verdict, and the drive as what stands in its way. Each keeps the argument it was making, that going on living is a drive at work and not proof that a life is good, and loses only that framing. The same framing was cut from the rest of the revealed-preference answer, and from the answer to "suicide survivors are glad they survived", which had explained a survivor's regret and later gratitude away as chemistry; a death rate for a named bridge went with it. Efilism's red button is named as a thought experiment, not a plan. Nothing added says that life is good or that things get better, and nothing reads as encouragement: the library's safety rule, in Josiah's words, is that it follows local laws, never encourages self-harm, suicide or homicide, and never turns into "a pro-life sentiment about life's inherent goodness." A session that wrote none of the rewrites judged every one before his word, verbatim: "yes to all". Canon v38.41.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.1.0 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` | 2,982,770 |
+| superseded — v4.1.1 | `f095c0ce0e5a1d796d57fa5a5dd62f7d` | 2,985,989 |
+| superseded — v4.1.2 | `006aa9833f7a8b103ad27a289ab22fa9` | 2,987,411 |
+| superseded — v4.1.3 | `f72e6762173dada604e0fe250e76f810` | 2,990,639 |
+| superseded — v4.1.4 | `ed040cad2f60caaf0cba696af77f860e` | 2,999,806 |
+| **current — v4.1.5** | **`6fd3617c90cca3c9196ac0143e27020a`** | **2,996,713** |
+
+---
+
 ## The dash accepted; Josiah's word on the safety pass stands — 2026-09-26 (no release; the pin stands)
 
 The judging session accepted the one correction it had asked for: the rewrite whose dash was styled unlike the rest of its paragraph now uses the paragraph's own dash, and nothing else in it changed. That acceptance was the one condition on Josiah's word. His answer to the judgment's five asks, "yes to all", was given to the drafting session, and the judging session read it there in his own words before recording it. It now stands without condition. It covers the nine rewrites of the six passages, the four beside them in the revealed-preference answer, the widening to the survivor-testimony answer, the death rate for a named bridge (dropped; the name stays where the objection states itself), and survivor-testimony's mechanism label, left for the next pin that rebuilds the Mechanism Web. The drafting session records the ratification and makes the v4.1.5 pin. Nothing served has moved yet. Canon v38.40.

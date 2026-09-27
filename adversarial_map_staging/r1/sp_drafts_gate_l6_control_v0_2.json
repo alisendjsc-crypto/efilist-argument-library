@@ -2,7 +2,7 @@
  "artifact": "sp_drafts_gate_l6_control_v0_2.json",
  "gate": "adversarial_map_staging/r1/sp_drafts_gate_l6_v0_2.py",
  "gate_md5": "80d289c5d7a8461a52a7b3bb0d5a0038",
- "record_md5": "8742b882b6055761207c7dc1618b645b",
+ "record_md5": "e493f8cdcf74aa3ad7982e1e906cffde",
  "controls": [
   {
    "control": "C0",

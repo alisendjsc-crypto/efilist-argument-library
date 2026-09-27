@@ -778,6 +778,49 @@
    "seat": "L6, the X-032 safety pass (seat l, Code): drafting seat; judges none of this (K258)",
    "date": "2026-09-26",
    "supersedes": "SD-02"
+  },
+  {
+   "id": "SR-01",
+   "kind": "ratification",
+   "rows": [
+    "SD-01",
+    "SD-03",
+    "SD-04",
+    "SD-05",
+    "SD-06",
+    "SD-07",
+    "SD-08",
+    "SD-09",
+    "SD-10",
+    "SC-01",
+    "SC-02",
+    "SC-03",
+    "SC-04",
+    "SW-01",
+    "SW-02",
+    "SW-03",
+    "SW-04",
+    "SW-05",
+    "SW-06",
+    "SW-07"
+   ],
+   "his_words_verbatim": "yes to all",
+   "said": "2026-09-26 20:56 America/Phoenix, in chat to the L6 session directly, answering R0208's five asks as L6 put them to him (both seats' lean yes on each), conditional on gate2 accepting SD-10; the condition met at efilist 5d35b13 (SP_redrafts_judgments.json Z2-001)",
+   "relay": {
+    "relay": "R0208",
+    "md5": "669b6d2fe34acf872fa47f7c758a230c"
+   },
+   "judgment": {
+    "file": "adversarial_map_staging/r1/SP_redrafts_judgments.json",
+    "md5": "3cd8dbb92a034351fb28c63dbb3a74ad",
+    "first": {
+     "file": "adversarial_map_staging/r1/SP_drafts_judgments.json",
+     "md5": "437013204cfafc4c740a763e1fb79349"
+    }
+   },
+   "seat": "L6, the X-032 safety pass (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
   }
  ]
 }
