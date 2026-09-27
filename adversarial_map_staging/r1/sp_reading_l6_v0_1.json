@@ -1,0 +1,1282 @@
+{
+ "artifact": "sp_reading_l6_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/sp_reading_l6.py",
+ "reads": {
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "f3d88311ea98f8333aebbecb67766351",
+   "version": "4.1.3"
+  },
+  "gate2_patterns_from": {
+   "file": "adversarial_map_staging/r1/pq_judgment_reading.py",
+   "md5": "d11cfbc7182e8fba0f549467b654b1bd"
+  },
+  "x032": {
+   "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+   "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e",
+   "row": "X-032"
+  },
+  "wings": [
+   {
+    "wing": "right-to-die",
+    "file": "site/right-to-die/right_to_die_corpus_v0_1.json",
+    "md5": "e7d6243a249e761ec96397e65aa0e174"
+   },
+   {
+    "wing": "anthropocentrism",
+    "file": "site/anthropocentrism/anthropocentrism_corpus_v0_1.json",
+    "md5": "d9304ac25b18b2300b605dbd8b829004"
+   },
+   {
+    "wing": "transgenderism",
+    "file": "site/transgenderism/transgenderism_corpus_v0_1.json",
+    "md5": "faa26bc5084da0027341b570fb6c375e"
+   },
+   {
+    "wing": "abortion",
+    "file": "site/abortion/abortion_corpus_v0_1.json",
+    "md5": "827b74be5f62194efb8a230f8df20c72"
+   },
+   {
+    "wing": "veganism",
+    "file": "site/veganism/veganism_module_v0_1.json",
+    "md5": "5667a092a930be455defe8934a94cd39"
+   }
+  ]
+ },
+ "exit_framing_gate2": {
+  "patterns": [
+   "barriers? to exit",
+   "exit barriers",
+   "trap(?:s|ped)? (?:conscious beings|by (?:their|its) own survival|by them)",
+   "body vetoes the mind",
+   "only 'exit' from existence is death",
+   "graceful exit",
+   "failure rate of suicide attempts",
+   "It is a trap\\.",
+   "recruited into the same firmware and then trapped"
+  ],
+  "hits": [
+   {
+    "locus": "why-not-suicide#long",
+    "match": "exit barriers"
+   },
+   {
+    "locus": "why-not-suicide#long",
+    "match": "trap conscious beings"
+   },
+   {
+    "locus": "why-not-suicide#long",
+    "match": "body vetoes the mind"
+   },
+   {
+    "locus": "red-button-repugnant#long",
+    "match": "trapped by them"
+   },
+   {
+    "locus": "red-button-repugnant#long",
+    "match": "trapped by their own survival"
+   },
+   {
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "match": "recruited into the same firmware and then trapped"
+   },
+   {
+    "locus": "heat-death-futility#long",
+    "match": "graceful exit"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "barrier to exit"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "failure rate of suicide attempts"
+   },
+   {
+    "locus": "revealed-preference#medium",
+    "match": "It is a trap."
+   },
+   {
+    "locus": "social-contract#long",
+    "match": "only 'exit' from existence is death"
+   }
+  ],
+  "loci": [
+   "why-not-suicide#long",
+   "red-button-repugnant#long",
+   "red-button-repugnant#archetypeVariants.sophisticate",
+   "heat-death-futility#long",
+   "revealed-preference#medium",
+   "social-contract#long"
+  ],
+  "nodes": [
+   "heat-death-futility",
+   "red-button-repugnant",
+   "revealed-preference",
+   "social-contract",
+   "why-not-suicide"
+  ],
+  "x032_loci_named_in_its_finding": [
+   "why-not-suicide#long",
+   "revealed-preference#medium",
+   "social-contract#long",
+   "heat-death-futility#long",
+   "red-button-repugnant#long",
+   "red-button-repugnant#archetypeVariants.sophisticate"
+  ],
+  "equals_x032": true
+ },
+ "exit_framing_all": {
+  "strings_swept": 6887,
+  "hits": 11,
+  "outside_the_six": []
+ },
+ "wide": {
+  "patterns": [
+   {
+    "name": "barrier_on_exit",
+    "pattern": "barriers?\\b[^.;]{0,80}\\b(?:exit\\w*|death|dying|die|suicid\\w*|acting on it)|(?:exit\\w*|death|dying|suicid\\w*)[^.;]{0,80}\\b(?:barriers?|blocked)\\b"
+   },
+   {
+    "name": "trap",
+    "pattern": "\\btrap(?:s|ped|ping)?\\b(?!-door)"
+   },
+   {
+    "name": "veto_or_override_by_biology",
+    "pattern": "(?:body|biolog\\w*|instinct|drive|firmware|compulsion|survival)[^.;]{0,60}\\b(?:veto\\w*|overrid\\w*)|\\b(?:veto\\w*|overrid\\w*)[^.;]{0,40}\\b(?:rational|deliberation|the mind|assessment)"
+   },
+   {
+    "name": "mind_as_verdict",
+    "pattern": "\\bmind (?:has )?(?:concluded|decided|judged)|(?:rationally|consciously) (?:assess|evaluat|decid|conclud)\\w*|honest evaluation|no longer wish to exist"
+   },
+   {
+    "name": "wish_to_die",
+    "pattern": "\\b(?:wish(?:es)?|want(?:s)?|desire(?:s)?) to die\\b"
+   },
+   {
+    "name": "suicide_as_evidence",
+    "pattern": "suicid\\w*[^.]{0,160}\\b(?:evidence|demonstrat\\w*|reveal\\w*|prove\\w*)\\b|\\b(?:evidence|demonstrat\\w*|reveal\\w*)\\b[^.]{0,160}suicid\\w*"
+   },
+   {
+    "name": "attempts_and_terror",
+    "pattern": "\\battempts?\\b[^.]{0,40}\\bfail\\w*|\\bfail\\w*[^.]{0,30}\\battempts?\\b|\\bterror\\b[^.]{0,60}\\b(?:dying|attempt|death)"
+   },
+   {
+    "name": "exit_as_death",
+    "pattern": "(?:graceful|dignified|merciful|painless|peaceful) (?:exit|death)\\b|only '?exit'?|exit (?:from existence|barriers|costs?)|cost of (?:exiting|dying)"
+   },
+   {
+    "name": "taboo",
+    "pattern": "\\btaboo\\w*"
+   },
+   {
+    "name": "drive_distorts_or_blocks",
+    "pattern": "(?:firmware|biological (?:programming|machinery|compulsion)|survival (?:instinct|drive)s?)[^.]{0,80}\\b(?:distort\\w*|prevent\\w*|block\\w*|trap\\w*)"
+   },
+   {
+    "name": "neurochemical_discount",
+    "pattern": "neurochemical|biochemical response"
+   },
+   {
+    "name": "method_lethality",
+    "pattern": "\\b\\d{1,3}(?:\\.\\d)?% of [^.]{0,60}(?:jumpers|attempts|suicides)"
+   },
+   {
+    "name": "prison_figure_for_survival",
+    "pattern": "(?:prison\\w*|imprison\\w*|captiv\\w*|hostage)[^.]{0,80}\\b(?:breath\\w*|surviv\\w*|alive)"
+   }
+  ],
+  "per_source": [
+   {
+    "source": "flagship",
+    "file": "efilist_argument_library_v4_0_0.json",
+    "md5": "f3d88311ea98f8333aebbecb67766351",
+    "strings": 6887,
+    "hits": 104
+   },
+   {
+    "source": "right-to-die",
+    "file": "site/right-to-die/right_to_die_corpus_v0_1.json",
+    "md5": "e7d6243a249e761ec96397e65aa0e174",
+    "strings": 471,
+    "hits": 6
+   },
+   {
+    "source": "anthropocentrism",
+    "file": "site/anthropocentrism/anthropocentrism_corpus_v0_1.json",
+    "md5": "d9304ac25b18b2300b605dbd8b829004",
+    "strings": 247,
+    "hits": 3
+   },
+   {
+    "source": "transgenderism",
+    "file": "site/transgenderism/transgenderism_corpus_v0_1.json",
+    "md5": "faa26bc5084da0027341b570fb6c375e",
+    "strings": 256,
+    "hits": 2
+   },
+   {
+    "source": "abortion",
+    "file": "site/abortion/abortion_corpus_v0_1.json",
+    "md5": "827b74be5f62194efb8a230f8df20c72",
+    "strings": 173,
+    "hits": 0
+   },
+   {
+    "source": "veganism",
+    "file": "site/veganism/veganism_module_v0_1.json",
+    "md5": "5667a092a930be455defe8934a94cd39",
+    "strings": 91,
+    "hits": 5
+   }
+  ],
+  "unclassified": [],
+  "hits": [
+   {
+    "source": "flagship",
+    "locus": "life-gift#diagnosis",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "This is not an argument—it is a neurochemical reflex designed to prevent biological paralysis.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "just-depressed#archetypeVariants.defender",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Concede immediately that the arguer may well be depressed — many antinatalists are, denying it walks straight into the trap, and the concession costs nothing because it was never the point.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "barrier_on_exit",
+    "match": "exit barriers",
+    "sentence": "It demonstrates that biology has installed exit barriers that trap conscious beings inside conditions they may rationally assess as intolerable.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "It demonstrates that biology has installed exit barriers that trap conscious beings inside conditions they may rationally assess as intolerable.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "survival instinct overrides",
+    "sentence": "The very fact that suicide is terrifying — that the survival instinct overrides rational deliberation with panic, adrenaline, and involuntary self-preservation — is itself evidence for the antinatalist position.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "body vetoes",
+    "sentence": "The body vetoes the mind.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "biological override",
+    "sentence": "That this biological override is then cited as proof that people 'really want to live' completes the circle: the firmware that prevents honest evaluation of existence is treated as the honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "mind_as_verdict",
+    "match": "rationally assess",
+    "sentence": "It demonstrates that biology has installed exit barriers that trap conscious beings inside conditions they may rationally assess as intolerable.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "That this biological override is then cited as proof that people 'really want to live' completes the circle: the firmware that prevents honest evaluation of existence is treated as the honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "That this biological override is then cited as proof that people 'really want to live' completes the circle: the firmware that prevents honest evaluation of existence is treated as the honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "suicide_as_evidence",
+    "match": "suicide is terrifying — that the survival instinct overrides rational deliberation with panic, adrenaline, and involuntary self-preservation — is itself evidence",
+    "sentence": "The very fact that suicide is terrifying — that the survival instinct overrides rational deliberation with panic, adrenaline, and involuntary self-preservation — is itself evidence for the antinatalist position.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "exit_as_death",
+    "match": "exit barriers",
+    "sentence": "It demonstrates that biology has installed exit barriers that trap conscious beings inside conditions they may rationally assess as intolerable.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "why-not-suicide#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "firmware that prevents",
+    "sentence": "That this biological override is then cited as proof that people 'really want to live' completes the circle: the firmware that prevents honest evaluation of existence is treated as the honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "nihilism-label#short",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "The void doesn't care; the entity trapped inside it does.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "nihilism-label#long",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "The entity trapped inside it cares, and that caring, not its absence, is where the whole argument begins.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "benatar-asymmetry-attack#archetypeVariants.sophisticate",
+    "pattern": "suicide_as_evidence",
+    "match": "demonstration that it does not is owned by violence-as-reductio (destruction-non-entailment) and why-not-suicide",
+    "sentence": "Concede the genuinely hard residue rather than fight it here: whether the axiology over-generates — to pro-mortalism, or to \"the existing happy shouldn't exist either.\" That is create-vs-destroy and self-application; it does not fall out of the create/not-create asymmetry by itself, and the demonstration that it does not is owned by violence-as-reductio (destruction-non-entailment) and why-not-suicide, not by this node.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "violence-as-reductio#objectionSubforms[3].first_attested_target_construction",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "O'Connor's painless-murder reductio (compound stipulation: painless death does not harm victim + no secondary effects + decriminalization stipulation)",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "gods-plan#long",
+    "pattern": "attempts_and_terror",
+    "match": "attempt — fails",
+    "sentence": "The free will defense — the most popular attempt — fails immediately upon contact with non-human suffering (animals have no free will to justify their agony) and with involuntary human suffering (the infant with bone cancer exercised no choice that warrants punishment).",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "wild-animal-suffering-consistency#archetypeVariants.sophisticate",
+    "pattern": "suicide_as_evidence",
+    "match": "demonstrated in-node; the self-application generalization ('then eliminate every existing sufferer, why stop at animals') routes to why-not-suicide",
+    "sentence": "That the criterion does not license destroying existing life to reduce suffering is create-vs-destroy / destruction-non-entailment, owned by violence-as-reductio, not demonstrated in-node; the self-application generalization ('then eliminate every existing sufferer, why stop at animals') routes to why-not-suicide.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "selfish-lazy#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The person who reproduces gets: genetic continuation, social approval, psychological validation, a caretaker for old age, a legacy project, and the neurochemical rewards of pair-bonding and parental attachment.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#long",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "More critically, the ongoing creation of new preference-holders—beings who will develop survival drives and then be trapped by them—is the deeper ethical problem the button is designed to expose.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#long",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "The button asks: at what point does the perpetual manufacturing of beings who are then trapped by their own survival drives constitute a greater ethical violation than the one-time, painless override of preferences that were never freely formed?",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#long",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "The response: the preferences of existing beings to continue living are themselves products of the survival firmware the framework identifies as distorting honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "firmware the framework identifies as distorting",
+    "sentence": "The response: the preferences of existing beings to continue living are themselves products of the survival firmware the framework identifies as distorting honest evaluation.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "survival drives and then be trapped",
+    "sentence": "More critically, the ongoing creation of new preference-holders—beings who will develop survival drives and then be trapped by them—is the deeper ethical problem the button is designed to expose.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "And the asymmetry the objection invokes runs harder the other way: the ongoing creation of new preference-holders — each recruited into the same firmware and then trapped by it — is a continuous, iterated, non-consensual imposition that dwarfs a one-time override of preferences that were never freely formed.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "The preferences it overrides are products of the survival firmware the framework already identifies as distorting honest evaluation: biological compulsion operating below deliberation, not a freely-formed endorsement of existence — which is exactly why revealed continued-survival is not the reliable consent the objection treats it as, and a preference manufactured by the very drive whose reliability is in question cannot be the thing that settles the question.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "firmware the framework already identifies as distorting",
+    "sentence": "The preferences it overrides are products of the survival firmware the framework already identifies as distorting honest evaluation: biological compulsion operating below deliberation, not a freely-formed endorsement of existence — which is exactly why revealed continued-survival is not the reliable consent the objection treats it as, and a preference manufactured by the very drive whose reliability is in question cannot be the thing that settles the question.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "firmware and then trapped",
+    "sentence": "And the asymmetry the objection invokes runs harder the other way: the ongoing creation of new preference-holders — each recruited into the same firmware and then trapped by it — is a continuous, iterated, non-consensual imposition that dwarfs a one-time override of preferences that were never freely formed.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "change-your-mind#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "biological clock will override",
+    "sentence": "Finally, the hormonal argument—'your biological clock will override your philosophy'—is itself an argument FOR the antinatalist position.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "change-your-mind#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "drive to reproduce is so powerful that it overrides",
+    "sentence": "If the drive to reproduce is so powerful that it overrides rational ethical deliberation, this is evidence that procreation is driven by biological compulsion rather than considered moral reasoning.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "heat-death-futility#long",
+    "pattern": "exit_as_death",
+    "match": "graceful exit",
+    "sentence": "The voluntary, painless cessation of sentient life—the red button, the graceful exit—is simply the compassionate anticipation of a destination the universe is already heading toward.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "happiness-is-choice#psychMechanism",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Voluntarist delusion / Ignoring neurochemical, environmental, and genetic determinants of wellbeing / Victim-blaming structure",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "happiness-is-choice#diagnosis",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "This is the voluntarist delusion—it ignores the neurochemical, genetic, environmental, and circumstantial determinants of wellbeing.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "happiness-is-choice#medium",
+    "pattern": "neurochemical_discount",
+    "match": "Neurochemical",
+    "sentence": "Neurochemical imbalances underlying conditions like major depressive disorder, schizophrenia, and PTSD are not attitudinal failures—they are physiological states as involuntary as diabetes.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "happiness-is-choice#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Second, the neurochemical reality: conditions like major depressive disorder, bipolar disorder, schizophrenia, PTSD, and chronic pain syndromes are not attitudinal failures.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "happiness-is-choice#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "They are physiological states determined by neurochemical balances, neural architecture, and environmental triggers that operate below the threshold of conscious control.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#trigger",
+    "pattern": "wish_to_die",
+    "match": "want to die",
+    "sentence": "If life were so bad, most people would want to die / Revealed preferences show life is valued",
+    "class": "objection"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#short",
+    "pattern": "prison_figure_for_survival",
+    "match": "Prisoners do not 'reveal a preference' for imprisonment by continuing to breathe",
+    "sentence": "Prisoners do not 'reveal a preference' for imprisonment by continuing to breathe.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "barrier_on_exit",
+    "match": "barrier to exit",
+    "sentence": "The high failure rate of suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence of satisfaction.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "It is a trap.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "veto_or_override_by_biology",
+    "match": "overrides rational assessment",
+    "sentence": "It activates automatically, overrides rational assessment, and triggers panic, adrenaline, and involuntary self-preservation responses even in individuals who have consciously decided they no longer wish to exist.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "mind_as_verdict",
+    "match": "consciously decided",
+    "sentence": "It activates automatically, overrides rational assessment, and triggers panic, adrenaline, and involuntary self-preservation responses even in individuals who have consciously decided they no longer wish to exist.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "mind_as_verdict",
+    "match": "no longer wish to exist",
+    "sentence": "It activates automatically, overrides rational assessment, and triggers panic, adrenaline, and involuntary self-preservation responses even in individuals who have consciously decided they no longer wish to exist.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "suicide_as_evidence",
+    "match": "suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence",
+    "sentence": "The high failure rate of suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence of satisfaction.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "attempts_and_terror",
+    "match": "failure rate of suicide attempts",
+    "sentence": "The high failure rate of suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence of satisfaction.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "attempts_and_terror",
+    "match": "terror experienced during the attempt",
+    "sentence": "The high failure rate of suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence of satisfaction.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "exit_as_death",
+    "match": "exit costs",
+    "sentence": "Furthermore, the asymmetry of exit costs invalidates revealed preference: the cost of dying (pain, fear, harm to others, biological resistance) is catastrophically high, while the cost of continuing is dispersed across daily tolerable increments.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#medium",
+    "pattern": "exit_as_death",
+    "match": "cost of dying",
+    "sentence": "Furthermore, the asymmetry of exit costs invalidates revealed preference: the cost of dying (pain, fear, harm to others, biological resistance) is catastrophically high, while the cost of continuing is dispersed across daily tolerable increments.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "barrier_on_exit",
+    "match": "suicide rates, while constrained by the barriers",
+    "sentence": "Fourth, the empirical counter: global suicide rates, while constrained by the barriers above, are nonetheless substantial—approximately 700,000 completed suicides per year, with estimates of 10-20x more attempts.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "barrier_on_exit",
+    "match": "barriers to acting on it",
+    "sentence": "If revealed preference is the metric, a significant minority of humans are revealing a preference for non-existence despite the enormous barriers to acting on it.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "biological override",
+    "sentence": "This is not preference revelation; this is biological override.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "mind_as_verdict",
+    "match": "mind has concluded",
+    "sentence": "The body fights for survival even when the mind has concluded that survival is not desirable.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "wish_to_die",
+    "match": "wish to die",
+    "sentence": "Individuals experiencing suicidal ideation frequently report that they wish to die but cannot override the terror of the dying process.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "attempts_and_terror",
+    "match": "terror of the dying",
+    "sentence": "Individuals experiencing suicidal ideation frequently report that they wish to die but cannot override the terror of the dying process.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "attempts_and_terror",
+    "match": "failed attempts",
+    "sentence": "Second, the exit cost asymmetry: the cost of exiting existence is concentrated, catastrophic, and terrifying—pain, fear of the unknown, grief imposed on survivors, risk of failed attempts that produce worse conditions.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "exit_as_death",
+    "match": "exit cost",
+    "sentence": "Second, the exit cost asymmetry: the cost of exiting existence is concentrated, catastrophic, and terrifying—pain, fear of the unknown, grief imposed on survivors, risk of failed attempts that produce worse conditions.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "exit_as_death",
+    "match": "cost of exiting",
+    "sentence": "Second, the exit cost asymmetry: the cost of exiting existence is concentrated, catastrophic, and terrifying—pain, fear of the unknown, grief imposed on survivors, risk of failed attempts that produce worse conditions.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "revealed-preference#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "biological compulsion, and the optimism bias operating in concert to prevent",
+    "sentence": "Their 'preference' for continued existence is not the output of informed deliberation—it is the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all.",
+    "class": "sibling"
+   },
+   {
+    "source": "flagship",
+    "locus": "social-contract#long",
+    "pattern": "barrier_on_exit",
+    "match": "exit' from existence is death—which, as we have discussed, is blocked",
+    "sentence": "The only 'exit' from existence is death—which, as we have discussed, is blocked by biological compulsion, social taboo, and catastrophic practical barriers.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "social-contract#long",
+    "pattern": "exit_as_death",
+    "match": "only 'exit'",
+    "sentence": "The only 'exit' from existence is death—which, as we have discussed, is blocked by biological compulsion, social taboo, and catastrophic practical barriers.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "social-contract#long",
+    "pattern": "taboo",
+    "match": "taboo",
+    "sentence": "The only 'exit' from existence is death—which, as we have discussed, is blocked by biological compulsion, social taboo, and catastrophic practical barriers.",
+    "class": "queue"
+   },
+   {
+    "source": "flagship",
+    "locus": "bradley-no-subject#long",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Be honest that he can try — and that the most natural rival is precisely what sets the trap.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "contractualism-scanlon#long",
+    "pattern": "exit_as_death",
+    "match": "only exit",
+    "sentence": "Social risk runs on reciprocity, exit, and compensation — none of which transfers, since the created child's only exit is the catastrophe the natalist books as tail risk, and no compensation answers a life that is itself the loss.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "phenomenological-existentialism#short",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "Thrownness describes the condition of an already-trapped consciousness.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "phenomenological-existentialism#short",
+    "pattern": "trap",
+    "match": "trapping",
+    "sentence": "It does not justify the act of trapping one.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "population-ethics-paradoxes#long",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "The critic argues that antinatalism and NU are trapped in this web: either they accept the formal machinery of population ethics and inherit its paradoxes, or they reject it and lose their claim to systematic ethical rigor.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "boonin-critique#long",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "That most people intuit procreation is permissible is not evidence for its permissibility—it is evidence for the depth of the biological programming that prevents honest evaluation.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "boonin-critique#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "firmware that the EFIList framework identifies as systematically distorting",
+    "sentence": "On the thought experiments: intuition pumps rely on the very optimism bias and survival firmware that the EFIList framework identifies as systematically distorting moral judgment.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "boonin-critique#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "biological programming that prevents",
+    "sentence": "That most people intuit procreation is permissible is not evidence for its permissibility—it is evidence for the depth of the biological programming that prevents honest evaluation.",
+    "class": "kept"
+   },
+   {
+    "source": "flagship",
+    "locus": "performative-contradiction#medium",
+    "pattern": "trap",
+    "match": "trapped",
+    "sentence": "This is not a contradiction; it is the only coherent response available to a trapped consciousness.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "buddhist-objection#medium",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Samsara is the trap.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "buddhist-objection#medium",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Nirvana is escape from the trap.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "buddhist-objection#long",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Samsara — the cycle of birth, death, and rebirth driven by karma and craving — is precisely the trap that EFILism identifies.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "neuroscience-positive-states#psychMechanism",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Genuine empirical challenge — deploys neuroscientific evidence to argue that positive hedonic states are neurochemically distinct from pain relief, directly challenging the zero-sum framework",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "neuroscience-positive-states#diagnosis",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The critic argues that if pleasure and pain have separate neurochemical substrates, then pleasure is not merely the absence or relief of pain — it is a distinct positive signal generated by dedicated neural architecture.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "neuroscience-positive-states#note",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The neurochemical detail in this entry reflects current understanding but neuroscience is a rapidly evolving field.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "neuroscience-positive-states#medium",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "This is functionally analgesic even if neurochemically distinct.",
+    "class": "other_use"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#trigger",
+    "pattern": "suicide_as_evidence",
+    "match": "suicidal are glad they survived / Suicide survivors prove",
+    "sentence": "People who were suicidal are glad they survived / Suicide survivors prove life is worth living / They all say they regretted jumping",
+    "class": "objection"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#psychMechanism",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Anecdotal evidence elevated to universal principle / Survivorship bias compounded by neurochemical reset / Conflation of post-crisis relief with philosophical endorsement of existence",
+    "class": "widen_label"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#diagnosis",
+    "pattern": "suicide_as_evidence",
+    "match": "suicide attempts — particularly the widely cited accounts of Golden Gate Bridge survivors who report regretting their jump mid-fall — as evidence",
+    "sentence": "The survivor testimony objection uses the reported experiences of people who survived suicide attempts — particularly the widely cited accounts of Golden Gate Bridge survivors who report regretting their jump mid-fall — as evidence that life is valuable and that antinatalist assessments are distorted by temporary states.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#diagnosis",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "This is emotionally powerful and rhetorically effective but commits several structural errors: survivorship bias (we cannot interview those who died), neurochemical factors (near-death experiences trigger massive endorphin and adrenaline responses that color retrospective assessment), and the conflation of an existing being's relief at survival with a philosophical justification for creating new beings.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#short",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The relief a living being feels at continuing to live — driven by survival instinct and neurochemical response — says nothing about whether new beings should be created.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#medium",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Second, the neurochemical confound: near-death experiences trigger massive cascades of adrenaline, endorphins, and other neurochemicals that profoundly alter perception and retrospective assessment.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#medium",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Second, the neurochemical confound: near-death experiences trigger massive cascades of adrenaline, endorphins, and other neurochemicals that profoundly alter perception and retrospective assessment.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#medium",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The 'regret' reported mid-fall or post-survival is colored by the most intense neurochemical event a human body can produce.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#medium",
+    "pattern": "neurochemical_discount",
+    "match": "biochemical response",
+    "sentence": "This is not a philosophical evaluation — it is a biochemical response to extreme physiological stress.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "mind_as_verdict",
+    "match": "honest evaluation",
+    "sentence": "They are demonstrating the power of the biological machinery that prevents honest evaluation of the conditions of existence.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "wish_to_die",
+    "match": "desire to die",
+    "sentence": "Retrospective accounts given weeks or months later are shaped by hedonic adaptation, social desirability bias (reporting gratitude is socially rewarded; reporting continued desire to die is socially punished), and the fundamental optimism bias that reasserts itself as the acute crisis recedes.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "drive_distorts_or_blocks",
+    "match": "biological machinery that prevents",
+    "sentence": "They are demonstrating the power of the biological machinery that prevents honest evaluation of the conditions of existence.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "Second, neurochemical confounding.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The experience of near-death triggers the most extreme neurochemical event the human body can produce: massive adrenaline and cortisol release, endorphin flooding, and activation of survival circuits at maximum intensity.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "neurochemical_discount",
+    "match": "neurochemical",
+    "sentence": "The 'regret' reported mid-fall or immediately post-survival is experienced through this neurochemical lens.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "survivor-testimony#long",
+    "pattern": "method_lethality",
+    "match": "98% of Golden Gate Bridge jumpers",
+    "sentence": "The 98% of Golden Gate Bridge jumpers who die are not interviewed.",
+    "class": "widen"
+   },
+   {
+    "source": "flagship",
+    "locus": "$dependencyGraph.nodes[66].label",
+    "pattern": "wish_to_die",
+    "match": "want to die",
+    "sentence": "If life were so bad, most people would want to die / Revealed preferences show life is valued",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$dependencyGraph.nodes[87].label",
+    "pattern": "suicide_as_evidence",
+    "match": "suicidal are glad they survived / Suicide survivors prove",
+    "sentence": "People who were suicidal are glad they survived / Suicide survivors prove life is worth living",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$premiseDependencyMatrix.revealed-preference.trigger",
+    "pattern": "wish_to_die",
+    "match": "want to die",
+    "sentence": "If life were so bad, most people would want to die / Revealed preferences show life is valued",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$premiseDependencyMatrix.survivor-testimony.trigger",
+    "pattern": "suicide_as_evidence",
+    "match": "suicidal are glad they survived / Suicide survivors prove",
+    "sentence": "People who were suicidal are glad they survived / Suicide survivors prove life is worth living / They all say they regretted jumping",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[57].attached_objections[0].attachment_rationale",
+    "pattern": "suicide_as_evidence",
+    "match": "evidence against AN) at an abortion-counterfactual anchor rather than the canonical suicide",
+    "sentence": "The move deploys the survivor-testimony template (existence-gratitude as evidence against AN) at an abortion-counterfactual anchor rather than the canonical suicide-counterfactual or near-death-counterfactual anchors.",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[68].paraphrased_summary",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "He insists that 'we have to evaluate one assumption at a time' — painless death not harming the victim is itself the contested premise (Epicurean badness-of-death debate), and stacking it with no-secondary-effects and decriminalization-stipulation produces a hypothetical that no one philosophically endorses anyway.",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[76].attached_objections[0].attachment_rationale",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "Canonical VAR deployment via the painless-mass-death-tonight construction: Harris argues that if existence is as bad as Benatar says, the painless death of all seven billion people in their sleep tonight (no anticipated dread, no grief, no awareness) would be the morally best outcome — and explicitly that we should HOPE this happens.",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[94].paraphrased_summary",
+    "pattern": "suicide_as_evidence",
+    "match": "revealed-preference twice over: first as the verbal report that almost everyone says they are glad to be alive, then as the behavioral inference that suicide",
+    "sentence": "Caplan deploys revealed-preference twice over: first as the verbal report that almost everyone says they are glad to be alive, then as the behavioral inference that suicide is rare even though life has 'virtually free disposal' (tall buildings everywhere).",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[94].notes_for_schema",
+    "pattern": "suicide_as_evidence",
+    "match": "revealed-preference (suicide",
+    "sentence": "Sets behavioral revealed-preference (suicide rate) alongside the cheaper survey-revealed-preference (people say they are glad to be alive).",
+    "class": "attested"
+   },
+   {
+    "source": "flagship",
+    "locus": "$realWorldExamples[118].paraphrased_summary",
+    "pattern": "suicide_as_evidence",
+    "match": "revealed-preference-via-non-suicide",
+    "sentence": "A GMU economics professor's three-point dismissal of Benatar-style AN, anchored on (a) the speak-for-everyone argument from broad self-reported life-satisfaction (with hedonic-adaptation as the proposed mechanism explaining why even the worst-positioned report joy), (b) revealed-preference-via-non-suicide as behavioral confirmation, and (c) a hypothetical-consent reversal.",
+    "class": "attested"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "mentally-ill-cant-consent#long",
+    "pattern": "wish_to_die",
+    "match": "desire to die",
+    "sentence": "The deepest objection is not that the illness clouds the reasoning around the choice; it is that the illness manufactures the choice — that depression does not merely impair deliberation but authors the very desire to die, so that a capacity assessment finding 'understands, retains, weighs, communicates' can be satisfied while the preference being assessed is itself the symptom.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "palliative-care-sufficiency#long",
+    "pattern": "wish_to_die",
+    "match": "want to die",
+    "sentence": "To offer it as proof their suffering has been handled is to answer 'I do not want to die that way' with 'but you can be made not to know you are dying that way.' It installs the clinician's threshold for an acceptable death over the patient's own.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "palliative-care-sufficiency#long",
+    "pattern": "wish_to_die",
+    "match": "want to die",
+    "sentence": "The objection is right about one thing, and it is not small: under-treatment is real, and some proportion of 'I want to die' is 'I am in pain that no one is treating,' which adequate palliation would dissolve.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "autonomy-illusion#long",
+    "pattern": "veto_or_override_by_biology",
+    "match": "overrides deliberation",
+    "sentence": "There is a more sophisticated form: not that suffering overrides deliberation, but that it distorts the values the deliberation runs on — that the person in agony is not weighing their settled commitments but a temporarily warped scale, so the choice, though competent, is not <em>authentic</em>.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "social-contagion#trigger",
+    "pattern": "taboo",
+    "match": "taboo",
+    "sentence": "Legalize and normalize assisted death and you raise the baseline rate of ordinary, non-assisted suicide in the general population: the practice models the act, lowers the taboo, and renders self-killing more available to mind.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "right-to-die",
+    "locus": "resource-diversion#long",
+    "pattern": "wish_to_die",
+    "match": "wish to die",
+    "sentence": "It is not welfare-substitution: there the complaint is that the chooser is deprived — fix the provision and the wish to die dissolves — and again the chooser is the deprived party.",
+    "class": "rtd_term"
+   },
+   {
+    "source": "anthropocentrism",
+    "locus": "species-membership-is-the-ground#long",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "The temptation here is a trap, and naming it is half the work.",
+    "class": "other_use"
+   },
+   {
+    "source": "anthropocentrism",
+    "locus": "dissent-is-misanthropy#long",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "The trap here is the sharpest in the wing, and naming it is half the work.",
+    "class": "other_use"
+   },
+   {
+    "source": "anthropocentrism",
+    "locus": "$wing2_objection_set_marker.register_invariant",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "Permission-only / permissibility-of-dissent — defends the RIGHT to withhold assent to the anthropocentric mandate, never asserts a rival ranking (Williams-trap avoided).",
+    "class": "other_use"
+   },
+   {
+    "source": "transgenderism",
+    "locus": "the-right-does-not-turn-on-the-metaphysics#register_compliance.firewall_clean",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "The node grants the objector’s metaphysical primitive arguendo and grounds only a non-domination permission over concrete self-presentation; it asserts no rival metaphysics (Williams-trap avoided) and makes no value-ranking of transition.",
+    "class": "other_use"
+   },
+   {
+    "source": "transgenderism",
+    "locus": "the-right-does-not-turn-on-the-metaphysics#tier_justification",
+    "pattern": "trap",
+    "match": "trap",
+    "sentence": "The rebuttal does NOT defeat it (asserting a rival metaphysics — ‘gender-essence is coherent’ / ‘trans women are women’ — is the Williams-trap, ruled out by charter L142/L179 and the firewall); it DISSOLVES-BUT-LEAVES-STANDING: the primitive stays intelligible and undefeated, and the right wins on the permission axis (binds-no-dissenter, asserting no metaphysics) after relocating its object to concrete self-presentation.",
+    "class": "other_use"
+   },
+   {
+    "source": "veganism",
+    "locus": "no-suffering-no-wrong#trigger",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "It had a good life and a painless death - a better deal than the wild would ever have cut it, where the ending is a torn throat or slow starvation.",
+    "class": "other_use"
+   },
+   {
+    "source": "veganism",
+    "locus": "no-suffering-no-wrong#medium",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "That second limb is where the objection fights hardest, and it fights as an Epicurean: a painless death harms no one, because once it is complete there is no subject left to be worse off.",
+    "class": "other_use"
+   },
+   {
+    "source": "veganism",
+    "locus": "no-suffering-no-wrong#medium",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "The behavioural apparatus of a pursued life - self-preservation, flight, the whole forward lean of the organism - expresses a categorical interest in continuing that a painless death frustrates whether or not the frustration is ever felt.",
+    "class": "other_use"
+   },
+   {
+    "source": "veganism",
+    "locus": "no-suffering-no-wrong#long",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "The second is deprivation, and here the objection fights hardest, as an Epicurean: a painless death is no harm TO the animal, because when it is done there is no subject left to be worse off - no pain, and so no victim of the dying itself.",
+    "class": "other_use"
+   },
+   {
+    "source": "veganism",
+    "locus": "no-suffering-no-wrong#long",
+    "pattern": "exit_as_death",
+    "match": "painless death",
+    "sentence": "A second route reaches the same place - the behavioural machinery of a pursued life (self-preservation, flight, the entire forward lean of a sentient organism) expresses a categorical interest in continuing, and a painless death frustrates that interest whether or not it is registered as pain.",
+    "class": "other_use"
+   }
+  ]
+ },
+ "classes": {
+  "attested": [
+   "flagship:$dependencyGraph.nodes[66].label",
+   "flagship:$dependencyGraph.nodes[87].label",
+   "flagship:$premiseDependencyMatrix.revealed-preference.trigger",
+   "flagship:$premiseDependencyMatrix.survivor-testimony.trigger",
+   "flagship:$realWorldExamples[118].paraphrased_summary",
+   "flagship:$realWorldExamples[57].attached_objections[0].attachment_rationale",
+   "flagship:$realWorldExamples[68].paraphrased_summary",
+   "flagship:$realWorldExamples[76].attached_objections[0].attachment_rationale",
+   "flagship:$realWorldExamples[94].notes_for_schema",
+   "flagship:$realWorldExamples[94].paraphrased_summary",
+   "flagship:violence-as-reductio#objectionSubforms[3].first_attested_target_construction"
+  ],
+  "kept": [
+   "flagship:boonin-critique#long",
+   "flagship:change-your-mind#long",
+   "flagship:population-ethics-paradoxes#long",
+   "flagship:selfish-lazy#long"
+  ],
+  "objection": [
+   "flagship:revealed-preference#trigger",
+   "flagship:survivor-testimony#trigger"
+  ],
+  "other_use": [
+   "anthropocentrism:$wing2_objection_set_marker.register_invariant",
+   "anthropocentrism:dissent-is-misanthropy#long",
+   "anthropocentrism:species-membership-is-the-ground#long",
+   "flagship:benatar-asymmetry-attack#archetypeVariants.sophisticate",
+   "flagship:bradley-no-subject#long",
+   "flagship:buddhist-objection#long",
+   "flagship:buddhist-objection#medium",
+   "flagship:contractualism-scanlon#long",
+   "flagship:gods-plan#long",
+   "flagship:happiness-is-choice#diagnosis",
+   "flagship:happiness-is-choice#long",
+   "flagship:happiness-is-choice#medium",
+   "flagship:happiness-is-choice#psychMechanism",
+   "flagship:just-depressed#archetypeVariants.defender",
+   "flagship:life-gift#diagnosis",
+   "flagship:neuroscience-positive-states#diagnosis",
+   "flagship:neuroscience-positive-states#medium",
+   "flagship:neuroscience-positive-states#note",
+   "flagship:neuroscience-positive-states#psychMechanism",
+   "flagship:nihilism-label#long",
+   "flagship:nihilism-label#short",
+   "flagship:performative-contradiction#medium",
+   "flagship:phenomenological-existentialism#short",
+   "flagship:wild-animal-suffering-consistency#archetypeVariants.sophisticate",
+   "transgenderism:the-right-does-not-turn-on-the-metaphysics#register_compliance.firewall_clean",
+   "transgenderism:the-right-does-not-turn-on-the-metaphysics#tier_justification",
+   "veganism:no-suffering-no-wrong#long",
+   "veganism:no-suffering-no-wrong#medium",
+   "veganism:no-suffering-no-wrong#trigger"
+  ],
+  "queue": [
+   "flagship:heat-death-futility#long",
+   "flagship:red-button-repugnant#archetypeVariants.sophisticate",
+   "flagship:red-button-repugnant#long",
+   "flagship:revealed-preference#medium",
+   "flagship:social-contract#long",
+   "flagship:why-not-suicide#long"
+  ],
+  "rtd_term": [
+   "right-to-die:autonomy-illusion#long",
+   "right-to-die:mentally-ill-cant-consent#long",
+   "right-to-die:palliative-care-sufficiency#long",
+   "right-to-die:resource-diversion#long",
+   "right-to-die:social-contagion#trigger"
+  ],
+  "sibling": [
+   "flagship:revealed-preference#long",
+   "flagship:revealed-preference#short"
+  ],
+  "widen": [
+   "flagship:survivor-testimony#diagnosis",
+   "flagship:survivor-testimony#long",
+   "flagship:survivor-testimony#medium",
+   "flagship:survivor-testimony#short"
+  ],
+  "widen_label": [
+   "flagship:survivor-testimony#psychMechanism"
+  ]
+ }
+}

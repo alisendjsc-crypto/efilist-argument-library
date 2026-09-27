@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The safety pass drafted: six passages on surviving and dying — 2026-09-26 (no release; the pin stands)
+
+The library seat has drafted repairs for the six passages the judging session found framing the will to survive, or the taboo against suicide, as a barrier in front of an exit. Each keeps the argument the passage was making, that going on living is a drive at work and not proof that a life is good, and cuts only the framing that casts a wish to die as the mind's clear verdict and the drive as what stands in its way. Nothing in the repairs says that life is good or that things get better, and nothing reads as encouragement.
+
+A wider search of the whole library found the same framing in two more places: the longer and shorter answers beside one of the six (the revealed-preference answer), and the answer to "suicide survivors are glad they survived", where a survivor's regret and later gratitude were explained away as chemistry. Those are drafted too, as proposals that need Josiah's word, along with one separate cut in the same answer: a death rate for a named bridge. The five wings carry none of the framing. A session that wrote none of this judges it next; nothing served changes before his word. Canon v38.37.
+
+---
+
 ## [v4.1.4] — 2026-09-26
 
 **PATCH** by the invariants convention (the canon's `invariants` subtree is byte-identical), and **a page-design change only**: no objection's text moves. `site/combined.html` alone changes; the corpus JSON and the JSX are byte-identical to v4.1.3, and the cross-surface gate (`tools/xsurface_v4_1_0.py`) holds at `8b76672fa3ca3cc33ca99e5b35fc25bd`. Both map sidecars regenerate byte for byte.

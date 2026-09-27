@@ -1,0 +1,72 @@
+{
+ "artifact": "SP_knock_on_L6_v0_1.json",
+ "record": {
+  "file": "adversarial_map_staging/r1/SP_drafts_L6.json",
+  "md5": "050d240fe08f5ea69b883fb4b199c959"
+ },
+ "map": {
+  "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+  "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+ },
+ "rulings": {
+  "file": "adversarial_map_staging/r1/R1_rulings.json",
+  "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+ },
+ "corpus_md5": "f3d88311ea98f8333aebbecb67766351",
+ "rows": [
+  {
+   "kind": "answer_routes_here",
+   "locus": "why-not-suicide#long",
+   "n": 3,
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "anchor": "Stop there if the jab was the whole of it",
+   "ruling_row": "R1-023",
+   "verdict": "HOLDS"
+  },
+  {
+   "kind": "answer_routes_here",
+   "locus": "heat-death-futility#long",
+   "n": 56,
+   "target": "heat-death-futility#medium",
+   "anchor": "Suffering is experienced at the scale of the nervous system",
+   "ruling_row": "R1-019",
+   "verdict": "HOLDS"
+  },
+  {
+   "kind": "anchor_meets_repair",
+   "locus": "red-button-repugnant#long",
+   "n": 44,
+   "class": "d",
+   "anchor": "at what point does the perpetual manufacturing of beings",
+   "occurrences_now": 1,
+   "survives_the_repair": true,
+   "inside_span": [
+    "SD-07"
+   ],
+   "inside_sentence": []
+  },
+  {
+   "kind": "anchor_meets_repair",
+   "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+   "n": 47,
+   "class": "d",
+   "anchor": "products of the survival firmware the framework already identifies as distorting honest evaluation",
+   "occurrences_now": 1,
+   "survives_the_repair": false,
+   "inside_span": [
+    "SD-08"
+   ],
+   "inside_sentence": []
+  },
+  {
+   "kind": "quoted_in_map",
+   "row": "SD-01",
+   "locus": "why-not-suicide#long",
+   "n": 3,
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "class": "a",
+   "field": "grounds",
+   "shingle": "that biology has installed exit barriers"
+  }
+ ]
+}
