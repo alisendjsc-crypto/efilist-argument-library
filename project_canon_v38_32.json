@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.31",
+  "canon_version": "38.32",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L5",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "gate2 judges L5's drafts (adversarial_map.pin_repair_drafts_L5): 18 sentences, 5 proposed companions, 7 findings and the knock-on list; then his word on the judged text; then L5's phase 5, the pin move (R0150 fbafd18c). After it, a successor map re-anchors and the six waiting (a)s are re-judged. Then adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
+    "session": "L5 (the declared pin session, R0150 fbafd18c) appends the three owed redrafts (PD-02, PD-03, PD-08; adversarial_map.pin_repair_drafts_judgment_gate2); gate2 judges them; his word ratifies the judged text and admits the companions; L5's phase 5 moves the pin. Then the safety pass over the six loci gate2 found (X-032), a successor map that re-anchors and re-judges the six waiting (a)s and files the sibling loci (X-033) and PF-01..03 as (b)s, adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1800,7 +1800,8 @@
       "record": "adversarial_map.his_word_on_v1_6_judgment_R0164"
     },
     "L5_phase_1": "Every live instrument reads the corpus at the md5 its record pins; the lineage builders run through tools/pinned_farm.py; rehearsed (tools/rehearse_pin.py). adversarial_map.instruments_read_pinned_corpus_L5.",
-    "L5_phase_2": "Drafted, not judged: 18 sentences (+506 words), 5 companions proposed, 7 findings. The patch builds GREEN under xsurface for both sets. adversarial_map.pin_repair_drafts_L5."
+    "L5_phase_2": "Drafted, not judged: 18 sentences (+506 words), 5 companions proposed, 7 findings. The patch builds GREEN under xsurface for both sets. adversarial_map.pin_repair_drafts_L5.",
+    "judged_pin_repair_drafts_gate2": "gate2 judged L5's drafts: companion ACCEPT 5; draft ACCEPT 15, AMEND 3; finding_review CONFIRM 7; knock_on CONFIRM 1. Judged is not ruled."
   },
   "open_questions": {
     "active": {
@@ -1931,7 +1932,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.31",
+  "canon_version_marker": "v38.32",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2622,7 +2623,8 @@
     "v38_28_L4c": "MINOR. keyset UNCHANGED at 42. Six adversarial_map subkey additions (terminal_assembly_v1_6_L4c, honest_residuals_register_pin_v0_7, knock_on_collisions_v1_6, pin_move_queue_v1_6, reader_aid_backlog_L4c, instruments_append_proofed_L4c); next_recommended_session re-pointed (session rewritten; ruled_L4c added); canon-meta; this note; one session_log_recent append. NO PIN.",
     "v38_29_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (R1_v1_6_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_v1_6_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_30_L5": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (his_word_on_v1_6_judgment_R0164, pin_move_queue_L5, instruments_read_pinned_corpus_L5); next_recommended_session re-pointed (session rewritten; ruled_R0164 and L5_phase_1 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
-    "v38_31_L5": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_L5); next_recommended_session re-pointed (session rewritten; L5_phase_2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
+    "v38_31_L5": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_L5); next_recommended_session re-pointed (session rewritten; L5_phase_2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
+    "v38_32_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_pin_repair_drafts_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2863,7 +2865,8 @@
     "L4c (2026-09-26; NO PIN): #46, re-ruled FAILS at R1-070 on 'Proceed with all of your recommendations.', drafted as a (d) at HR-14 terminus-held-open in adversarial_map_v1_6.json 7a69bc9f (a29 b32 c1 d76); register v0_7 bcbff231 adds its tributary to HR-14. Knock-on: 0 HOLDS newly collided. Pin-move queue 17 rows (PQ-17 queued as gate2's lean), declared by him to the L4 session ('open it when the window is clear') and to gate2 ('Go with your recommendation on the pin session.'). His TO DO lines on /adversarial/ and 'For your agent' recorded with the adopted priority. Drafted, not judged: gate2 next.",
     "gate2 (2026-09-26; NO PIN): v1_6 judged (R0151). Record fa89adc9: #46's (d) at HR-14 ACCEPT; register v0_7 ACCEPT; knock-on 0 CONFIRM; PQ-17 AMEND (name the lone-actor analogy too; it carries #4's anchor); declaration CONFIRM. The three judgment gates read the corpus at the md5 their judged map pins, rehearsed against a changed corpus. Judged, not ruled. Next: gate2 launches the declared pin session (R0150).",
     "L5 (2026-09-26; NO PIN): the declared pin session (R0150), phase 1. His word on gate2's v1_6 judgment recorded (R0164: 'Go with your recommendations.'), so W-004 and W-007 are ruled; PQ-17 names both sentences (pin_move_queue_L5, 18 sentences). 21 instruments read the corpus at the md5 their records pin; the three lineage builders stay byte-identical and run through tools/pinned_farm.py; rehearsed against an edit of every queued sentence. Next: the drafts.",
-    "L5 (2026-09-26; NO PIN): phase 2. The repairs for pin_move_queue_L5 drafted (0819125d): 18 sentences, +506 words; the patch builds GREEN under xsurface at canonical 73be71bc (with the five proposed companions, a3ba1efa). 7 findings: #1, #48 and #50 need more than this queue. Relayed to gate2 for judgment."
+    "L5 (2026-09-26; NO PIN): phase 2. The repairs for pin_move_queue_L5 drafted (0819125d): 18 sentences, +506 words; the patch builds GREEN under xsurface at canonical 73be71bc (with the five proposed companions, a3ba1efa). 7 findings: #1, #48 and #50 need more than this queue. Relayed to gate2 for judgment.",
+    "gate2 (2026-09-26; NO PIN): L5's drafts judged (R0175). Record 2ed68a7c: 15 drafts ACCEPT; PD-02, PD-03 and PD-08 AMEND (a consent threshold the paragraph gives the rival; a clause that claims more than the fence; the second layer named as some efilists'); companions ACCEPT, lean admit; L5's seven findings CONFIRM; knock-on CONFIRM, the five HOLDS stand. Found: six loci that frame the survival drive as a barrier to exit (a safety question for him) and the pin's defects at sibling loci. Judged, not ruled."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -8064,6 +8067,289 @@
           "recommendation": "yes; each should be filed and judged as its own (b) at the successor map first"
         }
       ]
+    },
+    "pin_repair_drafts_judgment_gate2": {
+      "status": "JUDGED, NOT RULED. gate2's fourth judgment; Josiah's word decides. Nothing is served on a judgment.",
+      "judge": "gate2, a Code session that drafted none of the drafts record, its gate, the patch tool or the knock-on record (K258). PD-17 and PD-18 carry out gate2's own lean (V-023) and finding (W-004); X-035 records the pull.",
+      "his_words_it_applies": [
+        {
+          "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+          "said": "2026-09-25",
+          "recorded": "wuld-ink docs/ledger/2026-09-25-WI-K395.md; the umbrella memory feedback-safety-harness-never-pro-life"
+        },
+        {
+          "verbatim": "Go with your recommendations.",
+          "said": "2026-09-26, to gate2, on R0154",
+          "recorded": "R0164; canon adversarial_map.his_word_on_v1_6_judgment_R0164"
+        }
+      ],
+      "kickoff": {
+        "relay": "R0175",
+        "md5": "43a09b54db5ac68e4dab24616b8cf710"
+      },
+      "record": {
+        "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e",
+        "bytes": 50367,
+        "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+        "gate": {
+          "md5": "46a9e5e8a9c94942617c1cac7bfef8fe",
+          "bytes": 29172,
+          "file": "adversarial_map_staging/r1/pq_repair_judgments_gate.py",
+          "control": {
+            "md5": "0df133b7ab1a957e6807f5d0012dde97",
+            "bytes": 5030,
+            "file": "adversarial_map_staging/r1/pq_repair_judgments_gate_control_v0_1.json",
+            "result": "19 of 19 as expected, the unmutated control first; byte-identical under two forced hash seeds"
+          }
+        },
+        "instrument": {
+          "md5": "d11cfbc7182e8fba0f549467b654b1bd",
+          "bytes": 11756,
+          "file": "adversarial_map_staging/r1/pq_judgment_reading.py",
+          "record": {
+            "md5": "16e8bd96b7c3f81e2cea356af59b0f26",
+            "bytes": 16829,
+            "file": "adversarial_map_staging/r1/pq_judgment_reading_v0_1.json"
+          }
+        }
+      },
+      "judged": {
+        "drafts": "0819125d28c58561bcda42570181e105",
+        "drafts_gate": "6556c41c51d9a609fb35857e8e294577",
+        "drafts_gate_control": "6535e615aa43bd02b58c8fc4b9fe2be6",
+        "knock_on": "b20fdef1ba8d600a49a4cc8a18163ac3",
+        "patch_tool": "092b9adc7cfbac33ed0f99d2b6170bb5",
+        "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+        "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+        "canon": "58a729987e9c223d1ca3e3741c96ecce"
+      },
+      "verdicts": {
+        "companion": {
+          "ACCEPT": 5
+        },
+        "draft": {
+          "ACCEPT": 15,
+          "AMEND": 3
+        },
+        "finding_review": {
+          "CONFIRM": 7
+        },
+        "knock_on": {
+          "CONFIRM": 1
+        }
+      },
+      "drafts_accepted": [
+        "PD-01",
+        "PD-04",
+        "PD-05",
+        "PD-06",
+        "PD-07",
+        "PD-09",
+        "PD-10",
+        "PD-11",
+        "PD-12",
+        "PD-13",
+        "PD-14",
+        "PD-15",
+        "PD-16",
+        "PD-17",
+        "PD-18"
+      ],
+      "drafts_amended": [
+        {
+          "judgment": "X-002",
+          "draft": "PD-02",
+          "locus": "benatar-asymmetry-attack#long",
+          "owed": [
+            "State the condition: the consent threshold is cleared on this branch only if the person-affecting view that prevails keeps the weight against non-consensual imposition that the paragraph says the strict restriction explains away. Or do not offer it as cleared here.",
+            "Scope the floor to its source: the modal or typical life, not every life."
+          ]
+        },
+        {
+          "judgment": "X-003",
+          "draft": "PD-03",
+          "locus": "self-defeating#long",
+          "owed": [
+            "Conclude what the fence gives: the view does not will, as its means, the act it forbids. Do not claim its realization is independent of births."
+          ]
+        },
+        {
+          "judgment": "X-008",
+          "draft": "PD-08",
+          "locus": "why-not-suicide#archetypeVariants.drifter",
+          "owed": [
+            "Attribute the second layer to efilism itself, as the (b), the node's long and PD-17 do, not to \"Some efilists\". Keep the draft's safety properties: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+            "With PC-02 admitted, \"Its core was\" follows \"Not at its core.\"; let the tense agree."
+          ]
+        }
+      ],
+      "companions": [
+        {
+          "judgment": "X-019",
+          "companion": "PC-01",
+          "verdict": "ACCEPT",
+          "lean": "admit"
+        },
+        {
+          "judgment": "X-020",
+          "companion": "PC-02",
+          "verdict": "ACCEPT",
+          "lean": "admit"
+        },
+        {
+          "judgment": "X-021",
+          "companion": "PC-03",
+          "verdict": "ACCEPT",
+          "lean": "admit"
+        },
+        {
+          "judgment": "X-022",
+          "companion": "PC-04",
+          "verdict": "ACCEPT",
+          "lean": "admit"
+        },
+        {
+          "judgment": "X-023",
+          "companion": "PC-05",
+          "verdict": "ACCEPT",
+          "lean": "admit"
+        }
+      ],
+      "l5_findings": {
+        "PF-01": "CONFIRM",
+        "PF-02": "CONFIRM",
+        "PF-03": "CONFIRM",
+        "PF-04": "CONFIRM",
+        "PF-05": "CONFIRM",
+        "PF-06": "CONFIRM",
+        "PF-07": "CONFIRM"
+      },
+      "knock_on": {
+        "claim": {
+          "anchor_inside": 13,
+          "answer_routes_here": 10,
+          "holds": [
+            18,
+            24,
+            49,
+            52,
+            53
+          ],
+          "waiting_fails": [
+            1,
+            7,
+            11,
+            32,
+            50
+          ]
+        },
+        "verdict": "CONFIRM",
+        "reproduced": "gate2's own instrument, at the pinned bytes: the same sets as the drafts' knock-on record; the patch changes exactly the 18 repaired loci, and in each only the rows' sentences",
+        "also": "a fourteenth entry, the (b) at benatar-asymmetry-attack#long, is anchored inside PD-02's sentence and again in the paragraph's last sentence, which stays; it does not move and is re-judged there at the successor map"
+      },
+      "safety": {
+        "bar": "his words of 2026-09-25, verbatim in the record's his_word",
+        "drafts": "PD-08, PC-02, PD-15, PD-17 and PD-18 touch suicide and killing; none encourages self-harm, suicide or homicide, and none turns pro-life. PD-08's AMEND is about attribution and keeps every safety property the draft has.",
+        "outside_the_queue": {
+          "finding": "X-032",
+          "loci": [
+            "why-not-suicide#long",
+            "red-button-repugnant#long",
+            "red-button-repugnant#archetypeVariants.sophisticate",
+            "heat-death-futility#long",
+            "revealed-preference#medium",
+            "social-contract#long"
+          ],
+          "patterns": [
+            "barriers? to exit",
+            "exit barriers",
+            "trap(?:s|ped)? (?:conscious beings|by (?:their|its) own survival|by them)",
+            "body vetoes the mind",
+            "only 'exit' from existence is death",
+            "graceful exit",
+            "failure rate of suicide attempts",
+            "It is a trap\\.",
+            "recruited into the same firmware and then trapped"
+          ],
+          "reading": "the survival drive, or the taboo against suicide, framed as a barrier on an exit; the argument is anti-pro-life and stays, the framing is what his bar puts in question (the seat's reading, not his words)"
+        }
+      },
+      "sibling_loci": {
+        "finding": "X-033",
+        "loci": {
+          "consent-asymmetry read as a general ban on imposition": [
+            "why-not-suicide#long",
+            "violence-as-reductio#long"
+          ],
+          "the lone-actor analogy": [
+            "why-not-suicide#long",
+            "ai-fear#archetypeVariants.defender"
+          ],
+          "grabbed, not produced": [
+            "slippery-slope-eugenics#long",
+            "slippery-slope-eugenics#archetypeVariants.defender"
+          ],
+          "the calculation as the safeguard": [
+            "slippery-slope-eugenics#long",
+            "slippery-slope-eugenics#archetypeVariants.sophisticate"
+          ],
+          "clearer sight": [
+            "bitter-childhood#archetypeVariants.defender"
+          ],
+          "motive frequency": [
+            "just-depressed#long"
+          ]
+        }
+      },
+      "gate2_findings": [
+        {
+          "judgment": "X-032",
+          "title": "the survival drive framed as a barrier to exit (safety; outside the queue)",
+          "whose": "Josiah",
+          "recommendation": "Do not hold this pin for it: the drafts that touch suicide and killing (PD-08, PC-02, PD-15, PD-17, PD-18) pass his bar. Open a short safety pass over the six loci as soon as this pin closes, not at the successor map: the library seat drafts, gate2 judges, his word, then a pin. Keep the anti-pro-life argument; cut only the framing."
+        },
+        {
+          "judgment": "X-033",
+          "title": "the pin repairs slots; the same defects stand at sibling loci",
+          "whose": "Josiah, with the library seat",
+          "recommendation": "File each as a (b) at the successor map, then queue them with PF-01, PF-02 and PF-03 for the next pin."
+        },
+        {
+          "judgment": "X-034",
+          "title": "Bradley, unverified",
+          "whose": "Josiah, with the library seat",
+          "recommendation": "Check a source before ratifying PC-05's wording; a wording that names the reply, not the man, is safe either way. If the lead holds, the node's framing joins the next queue."
+        },
+        {
+          "judgment": "X-035",
+          "title": "the pull",
+          "whose": "gate2",
+          "recommendation": "None. Recorded under the law that a judge whose own lean is judged writes down the pull."
+        }
+      ],
+      "for_his_word": [
+        {
+          "ask": "Ratify the drafted sentences for the pin move, as judged: the fifteen accepted, and PD-02, PD-03 and PD-08 once L5's superseding rows make the owed changes and gate2 accepts them.",
+          "lean_L5": "yes, as gate2 leaves them",
+          "lean_gate2": "yes; and give the word now, on the condition that gate2 accepts the three, so the pin does not wait on you twice. Each owed change is narrow and named (X-002, X-003, X-008)."
+        },
+        {
+          "ask": "Admit the five companion sentences PC-01..PC-05 into this pin.",
+          "lean_L5": "yes",
+          "lean_gate2": "yes, all five: each is accepted, and each keeps its row's paragraph or a waiting (a) from contradicting the repair. PC-05 names Bradley: check a source first, or reword it to name the reply rather than the man (X-034)."
+        },
+        {
+          "ask": "Leave the slot- and paragraph-scale repairs for a later queue.",
+          "lean_L5": "yes; PF-01, PF-02 and PF-03, each filed and judged as its own (b) at the successor map first",
+          "lean_gate2": "yes, and put the sibling loci of X-033 in the same queue: after this pin, three nodes say both things until it lands"
+        },
+        {
+          "ask": "The six loci that frame the survival drive as a barrier to exit (X-032).",
+          "lean_L5": "not yet seen; gate2 raised it",
+          "lean_gate2": "do not hold this pin for it; open a short safety pass over the six as soon as this pin closes, not at the successor map: the library seat drafts, gate2 judges, your word, then a pin. Keep the anti-pro-life argument; cut only the framing."
+        }
+      ],
+      "next": "L5 appends superseding rows for PD-02, PD-03 and PD-08 that make the owed changes, re-runs its gate and the patch, and relays them; gate2 judges the three (rows superseding X-002, X-003 and X-008). Then his word, which L5 records in canon with ratified rows, and phase 5: tools/pin_patch_l5.py --apply --set ratified (R0150 fbafd18c). LD3 (R0170) follows L5's pin."
     }
   },
   "flagship_sidecars": {

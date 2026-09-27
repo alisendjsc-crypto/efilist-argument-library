@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The drafted repairs judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the pin session's eighteen replacement sentences. Fifteen are accepted as written. Three go back for one narrow correction each: one offers as settled a reason that its own paragraph has just said the rival view would discard; one ends by claiming more than its argument shows; and one tells a newcomer that only some efilists hold the second, eliminationist claim, when the library's own pages say it belongs to the view itself. All five proposed extra sentences are accepted, with the recommendation that Josiah admit them. The pin session's seven findings are confirmed, and the five answers that lean on repaired passages still stand.
+
+The judgment also found two things outside this queue. Six passages frame the will to survive, or the taboo against suicide, as a barrier in front of an exit. Their argument, that surviving is a drive and not proof that a life is good, stays; the framing is a question for Josiah under his rule that nothing here encourages self-harm and nothing turns pro-life. And several defects this pin repairs in one place still stand in a sibling passage, so they are recommended for the next queue. Nothing served changed; the flagship is still v4.1.2. Canon v38.32.
+
+---
+
 ## The queued repairs drafted — 2026-09-26 (no release; the pin stands)
 
 The pin session has written replacement text for all seventeen queued repairs to the flagship's corpus, eighteen sentences in all. Each replacement follows the repair the adversarial map asked for: a motive guess becomes something a reader can check, an overclaim is scoped to what the argument actually shows, a cross-reference points to where the argument is made, and an open question is named as open. Together they add about five hundred words. A patch built from them on a scratch copy leaves the three copies of the corpus agreeing, and the two map data files unchanged.

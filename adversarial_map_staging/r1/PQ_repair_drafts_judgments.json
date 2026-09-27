@@ -1,0 +1,1026 @@
+{
+ "artifact": "PQ_repair_drafts_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's fourth judgment: the pin session's drafted repairs for pin_move_queue_L5 (18 sentences), its five proposed companions, its seven findings and the knock-on. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's 'quotes' and is verbatim at its source, each source read at the bytes this header pins: drafts:<row id> (the drafts record), corpus:<node#locus> (the corpus the drafts record pins), v1_6:<node#locus>, rulings:R1-nnn and canon:<dotted.path>. Gate: pq_repair_judgments_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the draft or companion does what its row's repair asks, overclaims nothing, contradicts neither another draft nor its own paragraph, fits its node and slot, and passes his safety bar; it may ship once he gives his word and its carries are met",
+  "AMEND": "the disposition stands, but a named defect is owed a correction, made by a drafting seat as a superseding row and judged by one that did not make it",
+  "REJECT": "the draft is wrong; it returns to a drafting seat",
+  "CONFIRM": "the finding or measure is right as made",
+  "CORRECT": "the finding or measure is wrong, and what is owed is named",
+  "lean": "for a companion only: whether gate2 would admit it into this pin; admission is his word"
+ },
+ "his_word": [
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "said": "2026-09-25",
+   "applies": "question 4 of the kickoff: the drafts at why-not-suicide and violence-as-reductio, and finding X-032",
+   "recorded": "wuld-ink docs/ledger/2026-09-25-WI-K395.md; the umbrella memory feedback-safety-harness-never-pro-life"
+  },
+  {
+   "verbatim": "Go with your recommendations.",
+   "said": "2026-09-26, to gate2, on R0154",
+   "applies": "PQ-17 names both sentences (W-004)",
+   "recorded": "R0164; canon adversarial_map.his_word_on_v1_6_judgment_R0164"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0175",
+  "md5": "43a09b54db5ac68e4dab24616b8cf710"
+ },
+ "judged": {
+  "drafts": {
+   "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+   "md5": "0819125d28c58561bcda42570181e105"
+  },
+  "drafts_gate": {
+   "file": "adversarial_map_staging/r1/pin_repair_drafts_gate.py",
+   "md5": "6556c41c51d9a609fb35857e8e294577"
+  },
+  "drafts_gate_control": {
+   "file": "adversarial_map_staging/r1/pin_repair_drafts_gate_control_v0_1.json",
+   "md5": "6535e615aa43bd02b58c8fc4b9fe2be6"
+  },
+  "knock_on": {
+   "file": "adversarial_map_staging/r1/PQ_knock_on_L5_v0_1.json",
+   "md5": "b20fdef1ba8d600a49a4cc8a18163ac3"
+  },
+  "patch_tool": {
+   "file": "tools/pin_patch_l5.py",
+   "md5": "092b9adc7cfbac33ed0f99d2b6170bb5"
+  },
+  "map_v1_6": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "canon": {
+   "file": "project_canon_v38_31.json",
+   "md5": "58a729987e9c223d1ca3e3741c96ecce"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/pq_judgment_reading.py",
+  "record": "adversarial_map_staging/r1/pq_judgment_reading_v0_1.json",
+  "md5": "16e8bd96b7c3f81e2cea356af59b0f26",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "X-001",
+   "kind": "draft",
+   "row_id": "PD-01",
+   "locus": "just-depressed#long",
+   "verdict": "ACCEPT",
+   "reason": "The repair's second option, inside its sentence: the tell becomes what the remark does, \"whatever the mood of the person who says it\", so it no longer infers a motive from a sequence of utterances, which is what the (b) found (\"it then infers hostility from a sequence of utterances, which is that inference in the same direction\"). A remark that \"names no premise\" and \"asks nothing about the person it is aimed at\" can be checked on the page, and the test agrees with the node's own closing mark of good faith (\"attending to the person at the same time\"). 44 words for 44; the register holds.",
+   "owed": [],
+   "carries": [
+    "The (b) at just-depressed#long keeps its frequency half. The new tell holds \"whatever the mood of the person who says it\", so it cannot license the paragraph's motive-frequency sentence (\"Genuine concern is the rare exception here, not the ordinary case.\"), which this pin leaves standing. The successor map should re-judge the (b) with the tell discharged and that sentence carried (X-033)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-01",
+     "quote": "whatever the mood of the person who says it"
+    },
+    {
+     "src": "v1_6:just-depressed#long",
+     "quote": "it then infers hostility from a sequence of utterances, which is that inference in the same direction"
+    },
+    {
+     "src": "drafts:PD-01",
+     "quote": "names no premise"
+    },
+    {
+     "src": "drafts:PD-01",
+     "quote": "asks nothing about the person it is aimed at"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "attending to the person at the same time"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "Genuine concern is the rare exception here, not the ordinary case."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-002",
+   "kind": "draft",
+   "row_id": "PD-02",
+   "locus": "benatar-asymmetry-attack#long",
+   "verdict": "AMEND",
+   "reason": "It takes the repair's second option (cross-reference) and states the net-balance threshold as open instead of asserting it. Two defects. First, on the branch it describes the paragraph has already given the consent weight to the rival: Shiffrin's weight against non-doomed lives is \"a residue the strict person-affecting restriction must explain away as confusion\". The draft then offers that same weight as the threshold typical lives clear if person-affecting evaluation prevails, so a universal verdict returns on the fallback through the residue the paragraph assigned to the other side, and a critic can press that at once. Second, \"the guaranteed floor every life carries\" is wider than its source, which gives the floor as the certainties \"which the modal life delivers in full\". The sentence asks about typical lives and needs no more.",
+   "owed": [
+    "State the condition: the consent threshold is cleared on this branch only if the person-affecting view that prevails keeps the weight against non-consensual imposition that the paragraph says the strict restriction explains away. Or do not offer it as cleared here.",
+    "Scope the floor to its source: the modal or typical life, not every life."
+   ],
+   "carries": [
+    "PF-04 (#7 likely to re-judge as a (d)) is strengthened by the first owed change, which marks the consent reading as contested where it is used.",
+    "The (b)'s anchor also occurs in the paragraph's last sentence, which this pin leaves standing, so that (b) keeps its anchor and is re-judged there (reading record, knock_on_independent; X-031)."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "a residue the strict person-affecting restriction must explain away as confusion"
+    },
+    {
+     "src": "drafts:PD-02",
+     "quote": "the guaranteed floor every life carries"
+    },
+    {
+     "src": "corpus:cherry-picking-worst#archetypeVariants.sophisticate",
+     "quote": "which the modal life delivers in full"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-003",
+   "kind": "draft",
+   "row_id": "PD-03",
+   "locus": "self-defeating#long",
+   "verdict": "AMEND",
+   "reason": "It states the fence the (b) names, in the (b)'s order: whoever exists, \"however they came to exist\", and others' births as a prediction, \"not a means the view wills\". Its last clause goes further than the fence: \"so its realization does not depend on the act it forbids\". The fence shows the births are not the view's willed means. It does not show the capacity's development is independent of them, and that dependence is exactly the (b)'s move (\"a capacity whose actual development rides on a continuing, resourced, motivated civilization, which rides on continuing births\"). As drafted, the sentence answers the willing, denies the riding, and the denial reopens the (b).",
+   "owed": [
+    "Conclude what the fence gives: the view does not will, as its means, the act it forbids. Do not claim its realization is independent of births."
+   ],
+   "carries": [
+    "PF-05 stands either way: #11's first ground, aims-frustration, is outside this sentence."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-03",
+     "quote": "however they came to exist"
+    },
+    {
+     "src": "drafts:PD-03",
+     "quote": "not a means the view wills"
+    },
+    {
+     "src": "drafts:PD-03",
+     "quote": "so its realization does not depend on the act it forbids"
+    },
+    {
+     "src": "v1_6:self-defeating#long",
+     "quote": "a capacity whose actual development rides on a continuing, resourced, motivated civilization, which rides on continuing births"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-004",
+   "kind": "draft",
+   "row_id": "PD-04",
+   "locus": "antinatalism-misanthropic#long",
+   "verdict": "ACCEPT",
+   "reason": "It adds the content-level discriminator the (b) says the node leaves unstated, in the (b)'s terms: the verdict \"would lapse if that suffering lapsed, which no verdict grounded in contempt would do\". The anchor clause and the building figure stay word for word, and the verdict is now read off its content, which is what the (b)'s competent version asks (\"rather than its content\"). No overclaim; the node's unspaced dashes are kept.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-04",
+     "quote": "would lapse if that suffering lapsed, which no verdict grounded in contempt would do"
+    },
+    {
+     "src": "v1_6:antinatalism-misanthropic#long",
+     "quote": "rather than its content"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-005",
+   "kind": "draft",
+   "row_id": "PD-05",
+   "locus": "slippery-slope-eugenics#archetypeVariants.blended",
+   "verdict": "ACCEPT",
+   "reason": "It grounds the anti-coercion verdict where the repair asks, in the first layer and in the voluntariness the node attributes to antinatalism (\"what antinatalism asks for is refusal, not enforcement\"), and makes cascade-math \"a second, weaker witness\", as violence-as-reductio#long already does (\"the second, weaker witness\"). It departs from the repair's literal words: it grounds the verdict in the asymmetry's negative-act-only authorization, not in the consent-asymmetry read as a ban on imposition. The departure is right. That reading is the equivocation PD-15 removes, and the negative-act reading is the corpus's own (\"only the negative action of not procreating is authorized\"). It agrees with PD-15 and PD-17.",
+   "owed": [],
+   "carries": [
+    "The (b) is not locus-local, as its own grounds say. After the pin the node disagrees with itself: its long still says \"The structural safeguard is not a rule bolted on from outside; it is the calculation itself\", and its sophisticate slot still runs the calculation as a backbone step. PF-02 names the long; X-025 adds the slot."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-05",
+     "quote": "what antinatalism asks for is refusal, not enforcement"
+    },
+    {
+     "src": "drafts:PD-05",
+     "quote": "a second, weaker witness"
+    },
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "the second, weaker witness"
+    },
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "only the negative action of not procreating is authorized"
+    },
+    {
+     "src": "corpus:slippery-slope-eugenics#long",
+     "quote": "The structural safeguard is not a rule bolted on from outside; it is the calculation itself"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-006",
+   "kind": "draft",
+   "row_id": "PD-06",
+   "locus": "ai-fear#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "reason": "It argues the test by both routes the (b) names: a facilitation charge \"needs a base rate\" that no one has supplied, and a standard that convicts a view by what some of its holders might do overreaches. Both run at the level of action, which is where the slot puts the charge (\"what your fellow travelers would DO\"). It answers \"Entailment is your test, not the charge's.\" directly, overclaims nothing and keeps the dilemma.",
+   "owed": [],
+   "carries": [
+    "Its parity class (\"every substantive ethics with a radical fringe\") holds for what holders might do. At the level of the thesis the corpus concedes the eliminationist commitment is its founders' (violence-as-reductio#long; PD-17 in this pin), so the successor map should test the parity there. The slot keeps an unqueued analogy (\"any more than a single violent actor convicts environmentalism\") of the shape R1-024 conceded at why-not-suicide (X-033)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-06",
+     "quote": "needs a base rate"
+    },
+    {
+     "src": "corpus:ai-fear#archetypeVariants.defender",
+     "quote": "what your fellow travelers would DO"
+    },
+    {
+     "src": "v1_6:ai-fear#archetypeVariants.defender",
+     "quote": "Entailment is your test, not the charge's."
+    },
+    {
+     "src": "drafts:PD-06",
+     "quote": "every substantive ethics with a radical fringe"
+    },
+    {
+     "src": "corpus:ai-fear#archetypeVariants.defender",
+     "quote": "any more than a single violent actor convicts environmentalism"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-007",
+   "kind": "draft",
+   "row_id": "PD-07",
+   "locus": "bitter-childhood#long",
+   "verdict": "ACCEPT",
+   "reason": "It runs the etiology principle to its self-refutation and stops (\"in my favor any more than against me\"), and claims no clearer sight. The irony in the sentence before, a childhood imposed by a gamble, stands, so the datum survives and only the proof is withdrawn. First person kept, as the long speaks.",
+   "owed": [],
+   "carries": [
+    "After the pin the node says both things: the long and the medium say the path to a belief bears on it in neither direction, and the defender slot still says \"he is the more reliable one\". PF-03's later queue should take the defender's clearer-sight sentences first (X-026)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-07",
+     "quote": "in my favor any more than against me"
+    },
+    {
+     "src": "corpus:bitter-childhood#archetypeVariants.defender",
+     "quote": "he is the more reliable one"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-008",
+   "kind": "draft",
+   "row_id": "PD-08",
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "verdict": "AMEND",
+   "reason": "It scopes the reassurance to the core and names the red button as a separate claim held open. On his 2026-09-25 bar it is safe: it encourages no one, turns nothing pro-life, keeps the red button a hypothetical, all-at-once claim with \"its own burden\", and leaves the reader's own life where the slot put it. One defect, in the naming: \"Some efilists go further\" makes the second layer something some adherents add. The (b) it answers calls it \"efilism's founding commitment\", the node's own long says \"The efilist position is two-layered\", and PD-17 in this same pin says the red button is held by \"the view's own founders included\". A drifter told that only some efilists hold it is handed a smaller second layer than the node concedes, which is the (b)'s move again in smaller form.",
+   "owed": [
+    "Attribute the second layer to efilism itself, as the (b), the node's long and PD-17 do, not to \"Some efilists\". Keep the draft's safety properties: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+    "With PC-02 admitted, \"Its core was\" follows \"Not at its core.\"; let the tense agree."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-08",
+     "quote": "its own burden"
+    },
+    {
+     "src": "drafts:PD-08",
+     "quote": "Some efilists go further"
+    },
+    {
+     "src": "v1_6:why-not-suicide#archetypeVariants.drifter",
+     "quote": "efilism's founding commitment"
+    },
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "The efilist position is two-layered"
+    },
+    {
+     "src": "drafts:PD-17",
+     "quote": "the view's own founders included"
+    },
+    {
+     "src": "drafts:PD-08",
+     "quote": "Some efilists"
+    },
+    {
+     "src": "drafts:PD-08",
+     "quote": "Its core was"
+    },
+    {
+     "src": "drafts:PC-02",
+     "quote": "Not at its core."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-009",
+   "kind": "draft",
+   "row_id": "PD-09",
+   "locus": "luxury-belief#long",
+   "verdict": "ACCEPT",
+   "reason": "It grants that contraction costs real people and sends the weighing to economy-population#long, which concedes the problem (\"The problem of caring for an aging population is real and must be solved\") and names the four means the draft quotes. It adds nothing that node does not hold (\"not with new people made to carry them\"). The node's spaced dashes are kept.",
+   "owed": [],
+   "carries": [
+    "It needs PC-03 and PC-04, or the paragraph denies the costs twice more (X-021, X-022)."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:economy-population#long",
+     "quote": "The problem of caring for an aging population is real and must be solved"
+    },
+    {
+     "src": "drafts:PD-09",
+     "quote": "not with new people made to carry them"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-010",
+   "kind": "draft",
+   "row_id": "PD-10",
+   "locus": "free-will-defense#long",
+   "verdict": "ACCEPT",
+   "reason": "It confines the second level to the theodicy and lets the third level's verdict fall on the act, which is the repair: compatibilist freedom is \"a real freedom\", not the one a theodicy needs, because a designer \"still stands behind what they produce\", and it is \"exactly the freedom a prospective parent exercises\". The asymmetry is principled: an agent designed the desires the theodicy is about; no agent designed the parent's. #22's move is now met in the node's own text.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-10",
+     "quote": "a real freedom"
+    },
+    {
+     "src": "drafts:PD-10",
+     "quote": "still stands behind what they produce"
+    },
+    {
+     "src": "drafts:PD-10",
+     "quote": "exactly the freedom a prospective parent exercises"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-011",
+   "kind": "draft",
+   "row_id": "PD-11",
+   "locus": "eliminativism#long",
+   "verdict": "ACCEPT",
+   "reason": "It withdraws the overclaim the (d) logs and says why, in the (d)'s terms: the barren ledger leaves no reason to create \"but none to refrain either\", so the objection \"wins nothing for creation\". That matches the paragraph's own verdict on global nihilism (\"the evacuation of every position\").",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-11",
+     "quote": "but none to refrain either"
+    },
+    {
+     "src": "drafts:PD-11",
+     "quote": "wins nothing for creation"
+    },
+    {
+     "src": "corpus:eliminativism#long",
+     "quote": "the evacuation of every position"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-012",
+   "kind": "draft",
+   "row_id": "PD-12",
+   "locus": "neuroscience-positive-states#long",
+   "verdict": "ACCEPT",
+   "reason": "It stops leaning on the absence-asymmetry against the node's valence symmetry, which is the (b)'s charge, and grants the symmetry in so many words (\"the pain's absence spares no one either\"). It routes the surviving move to imposition (\"what creation does to the one it creates\"), the chain the (b) names, which ends at bedrock-III, so it claims no win. It agrees with the hub, which disclaims the reading on which absent pain benefits anyone (\"the antinatalist neither needs nor asserts that reading\").",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-12",
+     "quote": "the pain's absence spares no one either"
+    },
+    {
+     "src": "drafts:PD-12",
+     "quote": "what creation does to the one it creates"
+    },
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "the antinatalist neither needs nor asserts that reading"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-013",
+   "kind": "draft",
+   "row_id": "PD-13",
+   "locus": "bradley-no-subject#long",
+   "verdict": "ACCEPT",
+   "reason": "It takes the repair's second option: it names the comparativist branch instead of denying it, routes the fork to the comparative-versus-non-comparative question, and describes the cases below as pressing that question, not settling it (\"the question the poisoned-well and wrongful-life cases below press\"), which is what the (b) says of them.",
+   "owed": [],
+   "carries": [
+    "It needs PC-05 (X-023).",
+    "Attribution, unverified (X-034): whether the historical Bradley is himself the comparativist this sentence names is not checked here."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-13",
+     "quote": "the question the poisoned-well and wrongful-life cases below press"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-014",
+   "kind": "draft",
+   "row_id": "PD-14",
+   "locus": "consent-both-ways#long",
+   "verdict": "ACCEPT",
+   "reason": "It narrows the over-narrow restriction as the move asks (an imposition that \"serves an interest they already have\" counts) and states the condition the node relies on: \"before conception there is no one with interests for an imposition to serve\". That sharpens the stake asymmetry the (d) at #6 records instead of hiding it, which is the honest direction. Unspaced dashes, as the node.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-14",
+     "quote": "serves an interest they already have"
+    },
+    {
+     "src": "drafts:PD-14",
+     "quote": "before conception there is no one with interests for an imposition to serve"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-015",
+   "kind": "draft",
+   "row_id": "PD-15",
+   "locus": "violence-as-reductio#archetypeVariants.sophisticate",
+   "verdict": "ACCEPT",
+   "reason": "It removes the reading the map concedes is defeated, a creation principle read as a general ban on imposition, and names the bridging premise (\"that continuing to exist is worse for that person than ceasing to\"), as R1-007's stronger continuation does. The maximizer \"has added a premise of his own\", which the first layer neither contains nor implies; the draft does not claim the first layer forbids it. On his bar it encourages nothing and argues for no one's continued life. It agrees with PD-05 and PD-17.",
+   "owed": [],
+   "carries": [
+    "violence-as-reductio#long keeps the conceded reading twice (\"the bridge is framework-self-undermining\", and the dilemma's second horn) and says the maximizer \"has swapped the premise that does the work\"; why-not-suicide#long keeps it once (\"that would violate the exact same principle of consent\"). After the pin the slot and its long give two accounts of the maximizer. Unfiled; next queue (X-033)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-15",
+     "quote": "that continuing to exist is worse for that person than ceasing to"
+    },
+    {
+     "src": "drafts:PD-15",
+     "quote": "has added a premise of his own"
+    },
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "the bridge is framework-self-undermining"
+    },
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "has swapped the premise that does the work"
+    },
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "that would violate the exact same principle of consent"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-016",
+   "kind": "draft",
+   "row_id": "PD-16",
+   "locus": "social-contract#long",
+   "verdict": "ACCEPT",
+   "reason": "It grants fair-play obligations given existence and says they are paid in burdens, not in members (\"a share of its burdens—taxes, care, mutual aid—but not for new members\"), the (b)'s own line. It sits at the queued sentence, after Locke's exit point, and keeps the (b)'s anchor clause word for word. No overclaim.",
+   "owed": [],
+   "carries": [
+    "The paragraph goes on, unchanged: \"The only 'exit' from existence is death—which, as we have discussed, is blocked by biological compulsion, social taboo, and catastrophic practical barriers.\" See the safety finding (X-032)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-16",
+     "quote": "a share of its burdens—taxes, care, mutual aid—but not for new members"
+    },
+    {
+     "src": "corpus:social-contract#long",
+     "quote": "The only 'exit' from existence is death—which, as we have discussed, is blocked by biological compulsion, social taboo, and catastrophic practical barriers."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-017",
+   "kind": "draft",
+   "row_id": "PD-17",
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "reason": "It drops \"grabbed, not produced\", which R1-024 conceded misfits the founders, and keeps the derivational claim R1-024 held. It concedes centrality in plain words (\"the view's own founders included\") and names what the red button needs, \"a second commitment the consent and asymmetry premises do not supply\", which agrees with PD-15. On his bar it denies that the argument licenses anything and argues for no one's continued life, so it neither encourages nor turns pro-life. PQ-17 was gate2's own lean (V-023); see the pull (X-035).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.defender",
+     "quote": "grabbed, not produced"
+    },
+    {
+     "src": "drafts:PD-17",
+     "quote": "the view's own founders included"
+    },
+    {
+     "src": "drafts:PD-17",
+     "quote": "a second commitment the consent and asymmetry premises do not supply"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-018",
+   "kind": "draft",
+   "row_id": "PD-18",
+   "locus": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "reason": "It replaces the lone-actor analogy R1-024 conceded (W-004, ruled at R0164) with the cut the node's answer rests on (\"a fact about the movement, not about the argument\"), and keeps #4's anchor clause word for word, so #4's HOLDS keeps its target (PF-06). \"however central to efilism its authors make it\" concedes what the analogy denied. Safe on his bar, as PD-17.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-18",
+     "quote": "a fact about the movement, not about the argument"
+    },
+    {
+     "src": "drafts:PD-18",
+     "quote": "however central to efilism its authors make it"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-019",
+   "kind": "companion",
+   "row_id": "PC-01",
+   "locus": "bitter-childhood#medium",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "#50's answer routes here, and the medium ends on the claim R1-068 failed (\"perhaps the interlocutor should consider whether that suffering validates the framework\"). Without it PD-07 repairs the long and #50's answer still fails. The replacement stops at \"the path to a belief bears on its truth in neither direction\", which is the medium's own opening principle (\"entirely independent of the psychological path that led someone to discover it\").",
+   "owed": [],
+   "carries": [
+    "The sentence before still calls the objection \"a revealing self-contradiction\"; the replacement's \"strains claim (b)\" now grades it lower. Minor, not owed."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:bitter-childhood#medium",
+     "quote": "perhaps the interlocutor should consider whether that suffering validates the framework"
+    },
+    {
+     "src": "drafts:PC-01",
+     "quote": "the path to a belief bears on its truth in neither direction"
+    },
+    {
+     "src": "corpus:bitter-childhood#medium",
+     "quote": "entirely independent of the psychological path that led someone to discover it"
+    },
+    {
+     "src": "corpus:bitter-childhood#medium",
+     "quote": "a revealing self-contradiction"
+    },
+    {
+     "src": "drafts:PC-01",
+     "quote": "strains claim (b)"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-020",
+   "kind": "companion",
+   "row_id": "PC-02",
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "The (b) names this sentence beside the queued one: its grounds say both hand the drifter \"the layer that acquits\". Left, the flat three words stand two sentences before the second layer PD-08 now names. \"Not at its core.\" keeps the true part.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "v1_6:why-not-suicide#archetypeVariants.drifter",
+     "quote": "the layer that acquits"
+    },
+    {
+     "src": "drafts:PC-02",
+     "quote": "Not at its core."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-021",
+   "kind": "companion",
+   "row_id": "PC-03",
+   "locus": "luxury-belief#long",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "Once PD-09 grants the costs to existing people, \"it would not create it\" denies them again one sentence earlier; \"it would not create new sufferers\" keeps the true part.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:luxury-belief#long",
+     "quote": "it would not create it"
+    },
+    {
+     "src": "drafts:PC-03",
+     "quote": "it would not create new sufferers"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-022",
+   "kind": "companion",
+   "row_id": "PC-04",
+   "locus": "luxury-belief#long",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "It is the sentence the (b)'s move attacks, and the (b) says the move \"is right about the sentence it attacks\". Left, its \"not by individual people\" contradicts PD-09 two sentences earlier. The replacement keeps feature three failing for a reason the paragraph can hold: the belief's holders bear the costs too, and the distribution paragraph shows they are not an insulated class.",
+   "owed": [],
+   "carries": [
+    "It answers the insulation half of feature three. That the costs would still fall hardest on the less privileged rests on the distribution paragraph; the successor map may test it."
+   ],
+   "quotes": [
+    {
+     "src": "v1_6:luxury-belief#long",
+     "quote": "is right about the sentence it attacks"
+    },
+    {
+     "src": "corpus:luxury-belief#long",
+     "quote": "not by individual people"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-023",
+   "kind": "companion",
+   "row_id": "PC-05",
+   "locus": "bradley-no-subject#long",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "Unrepaired, \"pushed to its strongest\" says the objection cannot reach its conclusion one sentence after PD-13 names the branch on which it does. \"Short of that ground\" and \"as far as Bradley pushes it\" make the two agree.",
+   "owed": [],
+   "carries": [
+    "Attribution, unverified (X-034): \"as far as Bradley pushes it\" follows the node's own reconstruction of Bradley's best version as person-affecting harm. If the historical Bradley takes the comparativist branch, both misdescribe him; a wording that names the reply, not the man, is safe either way. Check a source before ratifying this wording."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "pushed to its strongest"
+    },
+    {
+     "src": "drafts:PC-05",
+     "quote": "Short of that ground"
+    },
+    {
+     "src": "drafts:PC-05",
+     "quote": "as far as Bradley pushes it"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-024",
+   "kind": "finding_review",
+   "row_id": "PF-01",
+   "verdict": "CONFIRM",
+   "reason": "The defender slot still reads motive off the thread (\"pointing at the second sentence and asking which one was sincere\"), and PD-01 removes from the long the evidence #1's answer leaned on. #1 cannot pass on this pin; the slot rewrite belongs in a later queue after it is filed as a (b).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:just-depressed#archetypeVariants.defender",
+     "quote": "pointing at the second sentence and asking which one was sincere"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-025",
+   "kind": "finding_review",
+   "row_id": "PF-02",
+   "verdict": "CONFIRM",
+   "reason": "The long keeps the safeguard claim (quoted at X-005). The defect reaches further than the finding says: the sophisticate slot runs the same calculation as a backbone step (\"The cascade-math-safeguard then shows the framework's outcome-calculus, run honestly, returns a negative verdict\"), and the long and the defender slot keep the framing PD-17 removes at why-not-suicide (\"grabbed-not-produced\"; \"grabbed, not produced\"). The later queue should take the sophisticate slot with the long.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:slippery-slope-eugenics#archetypeVariants.sophisticate",
+     "quote": "The cascade-math-safeguard then shows the framework's outcome-calculus, run honestly, returns a negative verdict"
+    },
+    {
+     "src": "corpus:slippery-slope-eugenics#long",
+     "quote": "grabbed-not-produced"
+    },
+    {
+     "src": "corpus:slippery-slope-eugenics#archetypeVariants.defender",
+     "quote": "grabbed, not produced"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-026",
+   "kind": "finding_review",
+   "row_id": "PF-03",
+   "verdict": "CONFIRM",
+   "reason": "The (b)'s anchor sentence and the one after it stay (\"he is seeing without the anaesthetic\"). PD-07 and PC-01 apply its rule to the long and the medium, so after the pin the node says both things (X-007). Two sentences carry one claim, as the finding says. The lean for a later queue stands, with this slot first in it.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:bitter-childhood#archetypeVariants.defender",
+     "quote": "he is seeing without the anaesthetic"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-027",
+   "kind": "finding_review",
+   "row_id": "PF-04",
+   "verdict": "CONFIRM",
+   "reason": "The seat's reading, and sound: the draft grounds only a consent threshold and holds the net-balance threshold open, so #7's charge about calling the created victims rests on the consent reading of harm (HR-05, HR-06). PD-02's first owed change marks that reading as contested where it is used, which makes the (d) more likely, not less.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-028",
+   "kind": "finding_review",
+   "row_id": "PF-05",
+   "verdict": "CONFIRM",
+   "reason": "R1-013's first ground is untouched: the truth/utility split does not reach aims-frustration (\"never touches aims-frustration\"). PD-03 speaks to the second ground only, and its owed change does not alter that.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "rulings:R1-013",
+     "quote": "never touches aims-frustration"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-029",
+   "kind": "finding_review",
+   "row_id": "PF-06",
+   "verdict": "CONFIRM",
+   "reason": "#4's move attacks the analogy PD-18 removes (\"your environmentalism analogy compares a lone actor to a founding thesis\"), and its anchor clause is kept word for word. R1-024's HOLDS rests on violence-as-reductio#long, which this pin does not touch. Re-read #4 at the successor map; its verdict should not move.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "v1_6:why-not-suicide#archetypeVariants.defender",
+     "quote": "your environmentalism analogy compares a lone actor to a founding thesis"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-030",
+   "kind": "finding_review",
+   "row_id": "PF-07",
+   "verdict": "CONFIRM",
+   "reason": "Reproduced with gate2's own instrument (reading record, holds and confinement). #24 rests on just-depressed#long's symmetry disclaimer (\"The claim is symmetric and modest\"), outside PD-01's span. #49, #52 and #53 rest on loci the pin does not touch (joy-outweighs-harms#long, economy-population#long, hedonic-contrast#long, transhumanist-objection#long), and the hub changes only inside PD-02's sentence. #18 rests on \"Concede the one residue this does not reach\", unchanged after PD-15. All five STAND, and they stand under the owed amends too, which stay inside their sentences.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "The claim is symmetric and modest"
+    },
+    {
+     "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+     "quote": "Concede the one residue this does not reach"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-031",
+   "kind": "knock_on",
+   "claim": {
+    "anchor_inside": 13,
+    "answer_routes_here": 10,
+    "holds": [
+     18,
+     24,
+     49,
+     52,
+     53
+    ],
+    "waiting_fails": [
+     1,
+     7,
+     11,
+     32,
+     50
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "Reproduced with gate2's own instrument (reading record, knock_on_independent), at the pinned bytes: 13 entries of v1_6 are anchored inside a repaired sentence and move with it, and 10 (a) entries route an answer to a repaired locus, the same sets as the drafts' knock-on record. The ten are HOLDS #18 #24 #49 #52 #53 and waiting FAILS #1 #7 #11 #32 #50. The patch changes exactly the 18 repaired loci and, in each, only the rows' sentences. The ten map passages that quote a repaired sentence were not reproduced (a shingle match); the drafts gate recomputes them.",
+   "owed": [],
+   "carries": [
+    "A fourteenth entry is anchored inside a repaired sentence and does not move: the (b) at benatar-asymmetry-attack#long, whose anchor also occurs in the paragraph's last sentence, which stays. The successor map re-judges it there."
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-032",
+   "kind": "finding",
+   "title": "the survival drive framed as a barrier to exit (safety; outside the queue)",
+   "finding": "Measured on the post-pin text with named patterns (reading record, exit_framing): six loci on five nodes frame the survival drive, or the taboo against suicide, as a barrier on an exit. why-not-suicide#long (\"The body vetoes the mind.\"), revealed-preference#medium (\"the survival instinct functions as a barrier to exit\"), social-contract#long (quoted at X-016), heat-death-futility#long (\"the graceful exit\"), and red-button-repugnant#long (\"trapped by their own survival drives\") and its sophisticate slot. None is in the queue, and the pin makes none of them worse. The argument they carry is sound and anti-pro-life, and his bar keeps it: survival is a drive, not a verdict that a life is good. What his bar puts in question is the framing that casts a wish to die as the mind's rational verdict and the survival drive as what blocks it. The seat's reading, not his words.",
+   "recommendation": "Do not hold this pin for it: the drafts that touch suicide and killing (PD-08, PC-02, PD-15, PD-17, PD-18) pass his bar. Open a short safety pass over the six loci as soon as this pin closes, not at the successor map: the library seat drafts, gate2 judges, his word, then a pin. Keep the anti-pro-life argument; cut only the framing.",
+   "whose": "Josiah",
+   "entries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "The body vetoes the mind."
+    },
+    {
+     "src": "corpus:revealed-preference#medium",
+     "quote": "the survival instinct functions as a barrier to exit"
+    },
+    {
+     "src": "corpus:heat-death-futility#long",
+     "quote": "the graceful exit"
+    },
+    {
+     "src": "corpus:red-button-repugnant#long",
+     "quote": "trapped by their own survival drives"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-033",
+   "kind": "finding",
+   "title": "the pin repairs slots; the same defects stand at sibling loci",
+   "finding": "Measured on the post-pin text with named patterns (reading record, sibling_loci). The consent-asymmetry read as a general ban on imposition stands at violence-as-reductio#long and why-not-suicide#long; the lone-actor analogy at why-not-suicide#long and ai-fear's defender slot; the grabbed-not-produced framing at slippery-slope-eugenics#long and its defender slot; the calculation as the safeguard at slippery-slope-eugenics#long and its sophisticate slot; clearer sight at bitter-childhood's defender slot; and the motive-frequency sentence at just-depressed#long. So after the pin violence-as-reductio, slippery-slope-eugenics and bitter-childhood each say both things, and why-not-suicide#long says what its own defender slot withdraws. None of these is filed as a (b).",
+   "recommendation": "File each as a (b) at the successor map, then queue them with PF-01, PF-02 and PF-03 for the next pin.",
+   "whose": "Josiah, with the library seat",
+   "entries": [
+    1,
+    4,
+    20,
+    48,
+    50
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-034",
+   "kind": "finding",
+   "title": "Bradley, unverified",
+   "finding": "The node reconstructs \"Bradley's best version\" as person-affecting harm, and PC-05 now says how far \"Bradley pushes it\". The seat's recollection, unverified: Bradley's own case against Benatar is framed in the logic of comparative betterness, which would put him on the comparativist branch PD-13 names. If so, the node misdescribes him, and its closing line (\"What is closed is Bradley's objection\") contradicts PD-13.",
+   "recommendation": "Check a source before ratifying PC-05's wording; a wording that names the reply, not the man, is safe either way. If the lead holds, the node's framing joins the next queue.",
+   "whose": "Josiah, with the library seat",
+   "entries": [
+    42
+   ],
+   "quotes": [
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "Bradley's best version"
+    },
+    {
+     "src": "drafts:PC-05",
+     "quote": "Bradley pushes it"
+    },
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "What is closed is Bradley's objection"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "X-035",
+   "kind": "finding",
+   "title": "the pull",
+   "finding": "PD-17 and PD-18 carry out gate2's own lean (V-023) and finding (W-004). They were tested against R1-024's concession and the slot's own concession (\"some adherents hold layer-2 eliminationist views\"); the ACCEPT stands on the text. A second pull ran the other way. At PD-08, \"Some efilists\" is the gentler wording for a reader who may be in crisis, and the judge felt the pull to leave it. It was not followed: his bar asks that the text neither encourage nor turn pro-life, not that it understate the view, and the AMEND keeps every safety property the draft has.",
+   "recommendation": "None. Recorded under the law that a judge whose own lean is judged writes down the pull.",
+   "whose": "gate2",
+   "entries": [
+    4,
+    5
+   ],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.defender",
+     "quote": "some adherents hold layer-2 eliminationist views"
+    },
+    {
+     "src": "drafts:PD-08",
+     "quote": "Some efilists"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in PQ_repair_drafts_L5.json, its gate, the patch tool or the knock-on record",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}
