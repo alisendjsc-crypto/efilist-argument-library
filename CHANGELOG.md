@@ -14,6 +14,17 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The house layer's depth: the far-side blur renders, the camera pans 12 px — 2026-09-26 (no release; the pin stands)
+
+The layer every library page links, `site/wuld-layer.css` and `.js`. The flagship links it and does not inline it, so `site/combined.html` stays `ed040cad` and the pin does not move. WI-K410, on Josiah's TO DO line: *"...to increase POV perspective and peripheral blurring to create a field of depth illusion."* The same line's tilt toggle on the chin is not part of this change. He approved it on the preview: *"Approved as is."*
+
+- **The peripheral blur now renders.** Its value was never declared, so the blur computed to `none` on every page. It is now 3 px, with the showcase film's falloff, on the side away from the pointer: left or right, and now top or bottom too (pointer low, the top recedes). This was measured by rendering with and without the blur. The far side moves 47.7% of pixels on the flagship and 21.4% in a wing's top band. The near side reads exactly 0.
+- **The camera pans 12 px instead of 6 and rests on whole pixels.** At a fractional offset Chrome resampled the page and every word went soft, losing 13% edge sharpness at 1.5 px. Text now stays within 0.2% at every pointer position.
+- **A tap no longer moves the camera.** On phones a tap moved it 5.7 px against a 2 px frame lip, and it would have blurred the reading column.
+- **No cost was measured.** Frames stay at 16.7 ms with none over 20 ms, on Intel and NVIDIA, with two blur strips lit.
+- **The layer's sources are restored** to `layer/src/`, with `layer/pack_layer.py`. The pack's header had named a `build/` folder that was never committed. `python3 layer/pack_layer.py --check` checks the served pack against the sources byte for byte. `layer/measure_depth.mjs` measures a candidate on the live pages, and `layer/preview.mjs` previews it in a browser window, without deploying.
+- The change also reaches `wuld.ink/argue/`, which links this layer.
+
 ## The safety pass drafted: six passages on surviving and dying — 2026-09-26 (no release; the pin stands)
 
 The library seat has drafted repairs for the six passages the judging session found framing the will to survive, or the taboo against suicide, as a barrier in front of an exit. Each keeps the argument the passage was making, that going on living is a drive at work and not proof that a life is good, and cuts only the framing that casts a wish to die as the mind's clear verdict and the drive as what stands in its way. Nothing in the repairs says that life is good or that things get better, and nothing reads as encouragement.
