@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "argument_shapes_schema_v0_1.json",
+  "title": "argumentShapes v0_1 -- one objection, a different argument (V1, 2026-09-26)",
+  "description": "Built from the variations design v0_1, section 3 (efilist design/variations/VARIATIONS_design_v0_1.md, md5 fcf6f6fe), as ruled on 2026-09-26 (R-V1..R-V6; canon v38.42 adversarial_map.variations_rulings_V0). A shape is the same objection argued from a different premise or move. In the corpus, argumentShapes is a TOP-LEVEL list on a node, beside objectionSubforms, and never under responses (the game embeds responses whole). The corpus carries class (a) shapes only (R-V2). This file is the contract; shape_validator_v0_1.py enforces it, and its self-test asserts that the validator's constants equal the ones below.",
+  "$defs": {
+    "shape": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["shape_id", "label", "statement", "differs_by", "attested_by", "answered_by", "provenance"],
+      "properties": {
+        "shape_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "<node-id>/<slug>. The node-id is the objection the shape belongs to, and must resolve in the pinned corpus. Unique across every file loaded together."
+        },
+        "label": {
+          "type": "string",
+          "x-words": [3, 6],
+          "x-ascii": true,
+          "description": "3-6 words."
+        },
+        "statement": {
+          "type": "string",
+          "x-words": [30, 70],
+          "x-ascii": true,
+          "x-no-dash-tokens": true,
+          "description": "The objection in this shape, in the objector's voice, written plain (one register: the game shows it in PLAIN and SCHOLAR). 30-70 words, ASCII, no standalone dash tokens."
+        },
+        "differs_by": {
+          "type": "string",
+          "minLength": 1,
+          "x-ascii": true,
+          "description": "One sentence: the premise or move that makes this a different argument from the node's trigger, layman line and scholar line."
+        },
+        "class": {
+          "enum": ["a", "b", "c", "d"],
+          "description": "The map's class law. Required in a staging file. In anything bound for the corpus it may be absent (implied a) and, if present, must be a (R-V2): (b) goes to the regen queue, (d) to the map, (c) to the intake."
+        },
+        "attested_by": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [
+              {"type": "string", "description": "A realWorldExamples instance_id whose attached_objections include this shape's node."},
+              {"type": "object", "additionalProperties": false, "required": ["citation"],
+               "properties": {"citation": {"type": "string", "minLength": 1, "description": "author, title, year, locator"}}}
+            ]
+          }
+        },
+        "answered_by": {
+          "type": "array",
+          "description": "Required non-empty for classes a and b (where the library answers the shape, well or badly). May be empty for c and d.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["locus", "anchor"],
+            "properties": {
+              "locus": {
+                "type": "string",
+                "description": "<node-id>#<locus>. The locus is whatever map validator v0_6's locus_valid() accepts on that node: short, medium, long, diagnosis, and, existence-gated, archetypeVariants.<slot> and note."
+              },
+              "anchor": {
+                "type": "string",
+                "x-words": [1, 15],
+                "description": "At most 15 words, a verbatim substring of the text at that locus (F5: a routing names the answering sentence, not only its locus)."
+              }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["phase", "date", "seat"],
+          "properties": {
+            "phase": {"enum": ["S"], "description": "The shape phase letter. S is new and disjoint from the map's PHASES (A, B1, B2, C, D, E, F, R, G)."},
+            "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+            "seat": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    }
+  },
+  "type": "object",
+  "description": "A staging file (a fragment). The same shape object is what a corpus node carries in its top-level argumentShapes list.",
+  "additionalProperties": false,
+  "required": ["meta", "shapes"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["source_corpus_md5", "bound_for", "shape_coverage"],
+      "properties": {
+        "source_corpus_md5": {"type": "string", "pattern": "^[0-9a-f]{32}$", "description": "Whole-file md5 of the corpus the anchors are cut from. The validator reads the corpus at this md5 (pinned.py), never the working copy by default."},
+        "source_corpus_objections_md5": {"type": "string", "pattern": "^[0-9a-f]{32}$", "description": "Optional; hard when declared. The objections-array digest (map validator v0_6's objections_digest)."},
+        "bound_for": {"enum": ["corpus", "staging"], "description": "corpus: every shape must be class a (R-V2)."},
+        "shape_coverage": {"type": "string", "pattern": "^\\d+/\\d+$", "description": "REQUIRED and gated against THIS file (ccclxx): <nodes carrying at least one shape in this file>/<objections in the pinned corpus>."}
+      }
+    },
+    "shapes": {"type": "array", "items": {"$ref": "#/$defs/shape"}}
+  },
+  "x-caps": {"shapes_per_node": 3, "description": "At most 3 shapes per node across every file loaded together (the pilot's cap, design section 4)."}
+}

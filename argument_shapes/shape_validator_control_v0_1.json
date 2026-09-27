@@ -1,0 +1,474 @@
+{
+ "cases": [
+  {
+   "case": "control-staging",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-bound-corpus",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-two-files-own-coverage",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "container-extra-key",
+   "expect": "container-shape",
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-pin-wrong",
+   "expect": "meta-corpus-pin",
+   "failed": [
+    "meta-corpus-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-digest-wrong",
+   "expect": "meta-corpus-pin",
+   "failed": [
+    "meta-corpus-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-bound-for-unknown",
+   "expect": "meta-bound-for",
+   "failed": [
+    "meta-bound-for"
+   ],
+   "ok": true
+  },
+  {
+   "case": "keys-unknown",
+   "expect": "shape-keys",
+   "failed": [
+    "shape-keys"
+   ],
+   "ok": true
+  },
+  {
+   "case": "keys-missing-differs-by",
+   "expect": "shape-keys",
+   "failed": [
+    "shape-keys"
+   ],
+   "ok": true
+  },
+  {
+   "case": "keys-staging-needs-class",
+   "expect": "shape-keys",
+   "failed": [
+    "shape-keys"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-bad-format",
+   "expect": "shape-id",
+   "failed": [
+    "shape-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-unknown-node",
+   "expect": "shape-id",
+   "failed": [
+    "shape-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-duplicate",
+   "expect": "shape-id",
+   "failed": [
+    "shape-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-duplicate-across-files",
+   "expect": "shape-id",
+   "failed": [
+    "shape-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "label-two-words",
+   "expect": "label-band",
+   "failed": [
+    "label-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "label-seven-words",
+   "expect": "label-band",
+   "failed": [
+    "label-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "statement-29-words",
+   "expect": "statement-band",
+   "failed": [
+    "statement-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "statement-71-words",
+   "expect": "statement-band",
+   "failed": [
+    "statement-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "statement-em-dash",
+   "expect": "statement-ascii",
+   "failed": [
+    "statement-ascii"
+   ],
+   "ok": true
+  },
+  {
+   "case": "statement-dash-token",
+   "expect": "statement-ascii",
+   "failed": [
+    "statement-ascii"
+   ],
+   "ok": true
+  },
+  {
+   "case": "differs-by-empty",
+   "expect": "differs-by",
+   "failed": [
+    "differs-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "class-unknown",
+   "expect": "class-enum",
+   "failed": [
+    "class-enum"
+   ],
+   "ok": true
+  },
+  {
+   "case": "class-b-bound-for-corpus",
+   "expect": "class-corpus-a",
+   "failed": [
+    "class-corpus-a"
+   ],
+   "ok": true
+  },
+  {
+   "case": "attested-empty",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "attested-unknown-instance",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "attested-instance-on-another-node",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "attested-citation-empty",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "attested-citation-extra-key",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "answered-empty-for-a",
+   "expect": "answered-by",
+   "failed": [
+    "answered-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "answered-empty-for-b",
+   "expect": "answered-by",
+   "failed": [
+    "answered-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "control-answered-empty-for-d",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "answered-item-missing-anchor",
+   "expect": "answered-by",
+   "failed": [
+    "answered-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-unknown",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-no-hash",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-unknown-node",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-variant-absent",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-note-absent",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-not-verbatim",
+   "expect": "anchor-rule",
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-16-words",
+   "expect": "anchor-rule",
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-empty",
+   "expect": "anchor-rule",
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-from-long-at-variant",
+   "expect": "anchor-rule",
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-map-phase",
+   "expect": "provenance",
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-bad-date",
+   "expect": "provenance",
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-no-seat",
+   "expect": "provenance",
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "cap-four-on-one-node",
+   "expect": "shape-cap-node",
+   "failed": [
+    "shape-cap-node"
+   ],
+   "ok": true
+  },
+  {
+   "case": "cap-across-files",
+   "expect": "shape-cap-node",
+   "failed": [
+    "shape-cap-node"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-overclaimed",
+   "expect": "shape-coverage",
+   "failed": [
+    "shape-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-undeclared",
+   "expect": "shape-coverage",
+   "failed": [
+    "shape-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-summed-across-files",
+   "expect": "shape-coverage",
+   "failed": [
+    "shape-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "control-embedded",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "embedded-under-responses",
+   "expect": "container-shape",
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "embedded-not-a-list",
+   "expect": "container-shape",
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "embedded-class-b",
+   "expect": "class-corpus-a",
+   "failed": [
+    "class-corpus-a"
+   ],
+   "ok": true
+  },
+  {
+   "case": "embedded-wrong-host",
+   "expect": "shape-id",
+   "failed": [
+    "shape-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-control",
+   "expect": "PASS",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "real-variant-absent-on-life-gift",
+   "expect": "answered-locus",
+   "failed": [
+    "answered-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-rwe-attached-elsewhere",
+   "expect": "attested-by",
+   "failed": [
+    "attested-by"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-corpus-has-no-argumentShapes-yet",
+   "expect": "0 nodes",
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "schema-agrees-with-validator",
+   "expect": "all true",
+   "failed": [],
+   "ok": true
+  }
+ ],
+ "instrument": "argument_shapes/shape_validator_v0_1.py",
+ "map_validator": {
+  "md5": "c002e93877b09d523daf786036af7a57",
+  "path": "adversarial_map_staging/adv_map_validator_v0_6.py"
+ },
+ "real_corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+ "summary": {
+  "as_expected": 59,
+  "cases": 59,
+  "checks": 18,
+  "checks_never_turned_red": [],
+  "checks_turned_red_by_a_mutation": 18,
+  "first_case_is_the_unmutated_control": true
+ }
+}
