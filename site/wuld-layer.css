@@ -712,6 +712,18 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
   --wz-pan-ease: 260ms;
   --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
   --wz-soft-h:   34%;      /* the same, down from the top and up from the bottom (K410) */
+  /* --- THE TILT, 2026-09-26 (K410) ------------------------------------------------------------
+   * Josiah's TO DO line, whole: "Add tilt toggle effect on WULD chin bezel to increase POV perspective
+   * and peripheral blurring to create a field of depth illusion." A chin toggle, off by default. On, the
+   * page leans toward the pointer in true perspective WHILE THE POINTER MOVES and settles flat when it
+   * stops, because a 3D-transformed layer is resampled and every word goes soft while it leans --
+   * measured on a wing at 1440, Chrome and Firefox alike: centre 95% / sides 83% of their sharpness at
+   * 0.6deg, 90% / ~80% at 1.2deg. So the lean happens when you look around, and reading happens flat. */
+  --wz-tilt-y:     1deg;     /* the lean at the pointer's left or right edge */
+  --wz-tilt-x:     .6deg;    /* up or down: the pan's own 0.6 ratio */
+  --wz-tilt-persp: 1400px;   /* the eye's distance. At 1deg the far edge of a 1440 page recedes 12.6px */
+  --wz-tilt-blur:  5px;      /* the far-side blur while the toggle is on (--wz-soft-blur is 3px off) */
+  --wz-tilt-idle:  2600ms;   /* stillness before it settles flat: the clearing's own interval (1b) */
   --wz-soft-blur: 3px;    /* NEVER DECLARED until K410. blur(var(--wz-soft-blur)) with no value is
                             * invalid at computed-value time, so backdrop-filter fell back to none and
                             * the strips blurred nothing on every page: section 11's failure exactly --
@@ -1048,6 +1060,29 @@ html.wz-zooming .wz-stage{ transition:none !important; }
 html.wz-zoomed .wz-stage .top-nav,
 html.wz-zoomed .wz-stage .sidebar{ position:relative !important; }
 
+/* --- 5b. THE TILT (K410) -- the chin's toggle; tokens and the measured reason in :root ---------------
+ * THE PIVOT IS THE MIDDLE OF THE SCREEN, NOT OF THE STAGE. The stage is the whole document, thousands of
+ * pixels tall, and its transform-origin is 0 0 for the magnifier's sake -- a rotation about either would
+ * put the vanishing point far off screen and slope every rule in view. wuld-vfx.js writes the
+ * viewport's centre in the stage's own coordinates (--wz-tox / --wz-toy) on each lean, and the
+ * translate() pair below turns the rotation about that point. The camera's pan stays outside it, as it
+ * stays outside the scale, and the lean is never applied under the magnifier.
+ *   While it leans the far side recedes -- smaller, by the perspective, and softer, by the strips -- so
+ * the toggle deepens the strips' blur as well (--wz-tilt-blur), on the toggle rather than on each lean:
+ * a blur radius cannot be eased without animating a filter, which this layer never does.
+ *   Settling flat is a class coming off (wz-tilting), so the ease back is the stage's own transition and
+ * the resting transform is the plain 2D one again: at rest nothing is resampled. Reduced motion's
+ * transform:none !important outranks all of it. */
+html.wz-vfx.wz-tilt-on.wz-tilting:not(.wz-zoomed) .wz-stage{
+  transform:translate3d(var(--wz-px,0px), var(--wz-py,0px), 0)
+            translate(var(--wz-tox,0px), var(--wz-toy,0px))
+            perspective(var(--wz-tilt-persp))
+            rotateX(var(--wz-tax,0deg)) rotateY(var(--wz-tay,0deg))
+            translate(calc(-1 * var(--wz-tox,0px)), calc(-1 * var(--wz-toy,0px)))
+            scale(var(--wz-zoom,1));
+}
+html.wz-vfx.wz-tilt-on{ --wz-soft-blur: var(--wz-tilt-blur); }
+
 /* --- 6. PERIPHERAL BLUR, ON THE FAR SIDE FROM THE CAMERA -------------------------------------
  * RETRACTION: an earlier build cut this as "inert -- three mechanisms, max abs delta 0.000". That
  * was true of the form tested (a full-viewport element with a RADIAL mask) and false as a general
@@ -1158,6 +1193,24 @@ html.wz-vfx.wz-lightbg .wz-grille{ display:none !important; }
 .wz-mag:hover{ opacity:1; }
 .wz-mag:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
 html.wz-mag-on .wz-mag{ opacity:1; color:var(--wz-led); }
+/* The tilt toggle (5b), fifth in the chin row at +200px -- the same 44px target, the same 6px gap to its
+ * neighbour, lit like the magnifier when on. A plane seen at an angle for a glyph. Shown only where the
+ * tilt can run: the vfx tier, a real pointer, motion allowed, and a window wide enough that the row
+ * (now 250px from the right edge) clears the centred wordmark, measured. */
+.wz-tilt{
+  position:absolute; right:calc(max(1.0vw,6px) + 200px); bottom:50%; transform:translateY(50%);
+  min-width:44px; min-height:44px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--wz-mark); opacity:.75; font-size:1.05em; line-height:1;
+  pointer-events:auto; cursor:pointer; background:none; border:0; padding:0; border-radius:50%;
+}
+.wz-tilt:hover{ opacity:1; }
+.wz-tilt:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
+html.wz-tilt-on .wz-tilt{ opacity:1; color:var(--wz-led); }
+html:not(.wz-vfx) .wz-tilt{ display:none; }
+@media (hover:none), (pointer:coarse), (max-width:760px), (prefers-reduced-motion:reduce){
+  .wz-tilt{ display:none !important; }
+}
 
 /* The focus also thins the vignette where the reader is looking -- 34% of it survives at the centre,
    so it is attenuated and never absent, which was the brief. Measured off-centre (the only place the
