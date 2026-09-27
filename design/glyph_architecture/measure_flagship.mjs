@@ -5,7 +5,7 @@
 // Asserts: no horizontal overflow; the ladder beside the title; exactly one tier mark in every tier badge and on
 // every tier filter, each lit in its own tier's colour from the page's TIERS; the title's one-shot only where the
 // house gate is open (read from the layer's own classes on that run, since the flagship's high-contrast axis is
-// the one that turns the ground light); a shared link to one objection plays that badge's mark once and no other.
+// the one that turns the ground light); no header text under the layer's feedback link (LD3); a shared link to one objection plays that badge's mark once and no other.
 const { chromium, firefox } = await import(process.env.PLAYWRIGHT || 'playwright');
 const BASE = process.env.BASE || 'http://127.0.0.1:8784';
 const MODES = ['standard', 'legible', 'high-contrast', 'both'];
@@ -21,7 +21,12 @@ const PROBE = () => {
   const filters = [...document.querySelectorAll('#tierFilters .filter-btn[data-tier]')];
   const litWrong = [...badges, ...filters].filter(b => { const t = +b.getAttribute('data-tier'), l = b.querySelector('.sg-lit');
     return !l || hex(getComputedStyle(l).fill) !== TIERS[t].color.toLowerCase(); }).length;
-  return { overflow: document.documentElement.scrollWidth - innerWidth,
+  // LD3: text in a card header that runs under the house layer's feedback link (it sits absolute at the top right)
+  const fbHit = [...document.querySelectorAll('#results .objection-header')].filter(h => { const fb = h.querySelector('.wz-fb');
+    if (!fb) return false; const r = fb.getBoundingClientRect();
+    return [...h.querySelectorAll('*')].some(e => !fb.contains(e) && e.children.length === 0 && e.textContent.trim() && (q => q.width &&
+      q.left < r.right && q.right > r.left && q.top < r.bottom && q.bottom > r.top)(e.getBoundingClientRect())); }).length;
+  return { overflow: document.documentElement.scrollWidth - innerWidth, fbHit,
     titleMark: document.querySelectorAll('.header h1 .lib-mark').length,
     badges: badges.length, badgesMarked: badges.filter(b => b.querySelectorAll('.mk-tile').length === 1).length,
     filters: filters.length, filtersMarked: filters.filter(b => b.querySelectorAll('.mk-tile').length === 1).length,
@@ -36,15 +41,15 @@ async function open(b, url, { w = 1440, h = 900, mode = 'standard', tier = '', r
 }
 const running = (p, sel) => p.evaluate(s => [...document.querySelectorAll(s)]
   .reduce((n, e) => n + e.getAnimations().filter(a => a.playState === 'running').length, 0), sel);
-const rec = { base: BASE, engines: {}, layout: { runs: 0, overflowRuns: 0, errors: 0, marksWrong: 0, litWrong: 0 }, motion: [], arrival: [] };
+const rec = { base: BASE, engines: {}, layout: { runs: 0, overflowRuns: 0, errors: 0, marksWrong: 0, litWrong: 0, fbHitRuns: 0 }, motion: [], arrival: [] };
 for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   const b = await eng.launch(); rec.engines[en] = b.version();
   for (const mode of MODES) for (const w of WIDTHS) {
     const { ctx, p, errs } = await open(b, '/combined', { w, h: w <= 600 ? 844 : 900, mode, tier: '1' });
     await p.waitForTimeout(250); const r = await p.evaluate(PROBE); await ctx.close();
-    const L = rec.layout; L.runs++; L.overflowRuns += r.overflow > 0; L.errors += errs.length; L.litWrong += r.litWrong;
+    const L = rec.layout; L.runs++; L.overflowRuns += r.overflow > 0; L.errors += errs.length; L.litWrong += r.litWrong; L.fbHitRuns += r.fbHit > 0;
     const wrong = r.titleMark !== 1 || r.badges !== 82 || r.badgesMarked !== 82 || r.filters !== 5 || r.filtersMarked !== 5;
-    if (wrong || r.overflow > 0 || errs.length) (L.detail ||= []).push({ engine: en, mode, w, ...r, errs: errs.slice(0, 2) });
+    if (wrong || r.overflow > 0 || r.fbHit > 0 || errs.length) (L.detail ||= []).push({ engine: en, mode, w, ...r, errs: errs.slice(0, 2) });
     L.marksWrong += wrong;
   }
   for (const [name, o] of [['vfx, standard', {}], ['vfx, legible', { mode: 'legible' }], ['vfx, high-contrast', { mode: 'high-contrast' }],
@@ -73,8 +78,8 @@ for (const [en, eng] of [['chromium', chromium], ['firefox', firefox]]) {
   await b.close();
 }
 const L = rec.layout;
-rec.summary = { layoutOk: L.overflowRuns === 0 && L.errors === 0 && L.marksWrong === 0 && L.litWrong === 0,
-  layout: `${L.runs} runs: overflow ${L.overflowRuns}, errors ${L.errors}, marks wrong ${L.marksWrong}, lit not its tier colour ${L.litWrong}`,
+rec.summary = { layoutOk: L.overflowRuns === 0 && L.errors === 0 && L.marksWrong === 0 && L.litWrong === 0 && L.fbHitRuns === 0,
+  layout: `${L.runs} runs: overflow ${L.overflowRuns}, errors ${L.errors}, marks wrong ${L.marksWrong}, lit not its tier colour ${L.litWrong}, text under the feedback link ${L.fbHitRuns}`,
   motion: rec.motion.filter(m => m.ok).length + ' of ' + rec.motion.length,
   arrival: rec.arrival.filter(m => m.ok).length + ' of ' + rec.arrival.length };
 console.log(JSON.stringify(rec, null, 1));

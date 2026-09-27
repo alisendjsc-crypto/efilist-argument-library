@@ -354,6 +354,9 @@ flag_css = ('<style>\n/* THE FLAGSHIP\'S MARKS (LD2 package, 2026-09-26). Genera
             '.header h1{display:flex;align-items:center;gap:14px}\n'
             '.tier-badge .mk-tile{margin:-1px 6px -1px -3px;vertical-align:-4px}\n'
             '.filter-btn .mk-tile{margin-right:7px;vertical-align:-4px}\n'
+            '/* the house layer sets its feedback link at a card header\'s top right (LD3): the badge row keeps\n'
+            '   clear of it and wraps its category under the badge when the card is narrow */\n'
+            '.objection-header[data-wz-fb]>div:first-child>div:first-child{flex-wrap:wrap;row-gap:4px;padding-right:88px}\n'
             '%s.t5 .sg-m{transform-box:view-box;transform-origin:8px 8px}\n'
             '@media (prefers-reduced-motion:no-preference){\n%s}\n</style>\n') % (
     wing_css[wing_css.index('@keyframes lib-sig-return'):wing_css.index('.t5 .sg-m')],

@@ -246,11 +246,11 @@
  ],
  "gate": "tools/icons_regen_check.py",
  "inputs": {
-  "icons/gen_icons.py": "4458f1997556e2f42770b5d55d105b61",
+  "icons/gen_icons.py": "aee2785dcd59345a684dbd9eb16b1de7",
   "icons/sigils.json": "1e7e99bd628e65bb10d246f859eefe64",
   "site/abortion/combined.html": "d5a551d83e1cc425ab59c8e81c456b9d",
   "site/anthropocentrism/combined.html": "7b39591d36924bf03947631665d59ed8",
-  "site/combined.html": "62f69dcb5a5f50dd339069df216b8cd7",
+  "site/combined.html": "ed040cad2f60caaf0cba696af77f860e",
   "site/icon-abortion.svg": "fc6f8e8eb4898933f04e1a37085dc94b",
   "site/icon-adversarial.svg": "afa3a69f79d6aec862d4a75d82419205",
   "site/icon-anthropocentrism.svg": "7667b76b8c4ca22c6ecbb6b91ccf1d17",

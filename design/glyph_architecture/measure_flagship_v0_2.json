@@ -9,7 +9,8 @@
   "overflowRuns": 0,
   "errors": 0,
   "marksWrong": 0,
-  "litWrong": 0
+  "litWrong": 0,
+  "fbHitRuns": 0
  },
  "motion": [
   {
@@ -165,7 +166,7 @@
  ],
  "summary": {
   "layoutOk": true,
-  "layout": "48 runs: overflow 0, errors 0, marks wrong 0, lit not its tier colour 0",
+  "layout": "48 runs: overflow 0, errors 0, marks wrong 0, lit not its tier colour 0, text under the feedback link 0",
   "motion": "14 of 14",
   "arrival": "4 of 4"
  }
