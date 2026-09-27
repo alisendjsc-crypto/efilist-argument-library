@@ -69,7 +69,9 @@ def main():
     # ---------------------------------------------------------------- the gate, in-process
     G = load_mod(FILES["gate"], "sp_gate")
     rec = json.load(open(os.path.join(REPO, FILES["record"]), encoding="utf-8"))
-    fails, notes = G.check(rec, G.committed_base())
+    # base None: the build precedes the commit, so the notes are the build-time notes and a rebuild from the commit
+    # reproduces them (the append-only check, G10, is the gate's own, run in the battery against HEAD)
+    fails, notes = G.check(rec, None)
     assert not fails, "the drafts gate is RED:\n" + "\n".join(fails)
     ko = (json.dumps(G.knock_on_record(rec), indent=1, ensure_ascii=False) + "\n").encode("utf-8")
     assert ko == open(os.path.join(REPO, FILES["knock_on"]), "rb").read(), "the knock-on record is not what the gate emits"
