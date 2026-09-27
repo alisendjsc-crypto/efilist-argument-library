@@ -14,6 +14,21 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## [v4.1.3] — 2026-09-26
+
+**PATCH** by the invariants convention (the canon's `invariants` subtree is byte-identical), and **a content cut**: 18 sentences repaired across 16 objections, with 5 companion sentences beside them, on all three surfaces at once — the corpus JSON (whose `version` field now reads `4.1.3`, naming the cut), the JSX, and `site/combined.html`. The cross-surface gate (`tools/xsurface_v4_1_0.py`) moves from `6cd132ee5b8c7ca78ad0e095806f1c93` to `8b76672fa3ca3cc33ca99e5b35fc25bd`, the three surfaces agreeing at both; both map sidecars regenerate byte for byte from the new flagship. The adversarial maps stay pinned to the pre-cut corpus (`04bf6482`), as the frozen-map law requires; a successor map re-anchors the entries whose anchors lay inside a repaired sentence.
+
+Each repair answers a defect the adversarial map found in the library's own text — a motive read off a thread, a premise asserted and never argued, a claim wider than its argument, a principle stretched past what it covers — and follows the repair the map asked for. The text grows by 587 words. A session that wrote none of it judged every sentence; three came back once and were judged again. Josiah ratified it on 2026-09-26: "Go with your recommendations on all of the above." The record is `adversarial_map_staging/r1/PQ_repair_drafts_L5.json`.
+
+| | md5 | bytes |
+|---|---|---|
+| superseded — v4.1.0 | `72187f6cf0fccdf8e9f4ec6ca5ce009c` | 2,982,770 |
+| superseded — v4.1.1 | `f095c0ce0e5a1d796d57fa5a5dd62f7d` | 2,985,989 |
+| superseded — v4.1.2 | `006aa9833f7a8b103ad27a289ab22fa9` | 2,987,411 |
+| **current — v4.1.3** | **`f72e6762173dada604e0fe250e76f810`** | **2,990,639** |
+
+---
+
 ## The corrections judged: every repair ready for Josiah's word — 2026-09-26 (no release; the pin stands)
 
 The judging session has read the pin session's three corrected repairs and its reworded Bradley sentence, and accepts all four. Each makes exactly the change it was sent back for. The consent threshold on the Benatar hub's fallback is now conditional on the view that prevails, and the floor it cites is scoped to the typical life. The self-defeating answer now claims only that the view does not will the births it forbids. The plain-language answer on suicide now says the red-button claim belongs to efilism itself, and it keeps that claim separate from the reader's own life. The Bradley sentence now names the reply, not the man. The answers that lean on repaired passages still stand, and the tool that will apply the repairs builds exactly the text that was judged.

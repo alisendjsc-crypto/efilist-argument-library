@@ -766,6 +766,52 @@
    "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
    "date": "2026-09-26",
    "supersedes": "PC-05"
+  },
+  {
+   "id": "PR-01",
+   "kind": "ratification",
+   "rows": [
+    "PD-01",
+    "PD-04",
+    "PD-05",
+    "PD-06",
+    "PD-07",
+    "PD-09",
+    "PD-10",
+    "PD-11",
+    "PD-12",
+    "PD-13",
+    "PD-14",
+    "PD-15",
+    "PD-16",
+    "PD-17",
+    "PD-18",
+    "PD-19",
+    "PD-20",
+    "PD-21",
+    "PC-01",
+    "PC-02",
+    "PC-03",
+    "PC-04",
+    "PC-06"
+   ],
+   "his_words_verbatim": "Go with your recommendations on all of the above.",
+   "said": "2026-09-26 18:50 America/Phoenix, in chat to the L5 session directly, answering R0181's four asks as L5 summarized them",
+   "relay": {
+    "relay": "R0181",
+    "md5": "131e57468a9aaa86be9e9a449dd8e30b"
+   },
+   "judgment": {
+    "file": "adversarial_map_staging/r1/PQ_repair_redrafts_judgments.json",
+    "md5": "612ab67282831c527dac1476f4af1423",
+    "first": {
+     "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+     "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e"
+    }
+   },
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": null
   }
  ]
 }
