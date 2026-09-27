@@ -468,7 +468,7 @@ html.wz-muted .wz-mute{ opacity:.45; }
  * it belongs on a screen and nowhere else. Everything the layer adds comes off, the reserved band
  * comes back, and the page prints as the document it is. */
 @media print{
-  .wz-frame, .wz-chin, .wz-vig, .wz-soft-l, .wz-soft-r, .wz-hint{ display:none !important; }
+  .wz-frame, .wz-chin, .wz-vig, .wz-soft-l, .wz-soft-r, .wz-soft-t, .wz-soft-b, .wz-hint{ display:none !important; }
   html.wz-on body{ padding-bottom:0 !important; }
   html.wz-on .wz-stage{ padding-inline:0 !important; }
   html.wz-vfx .wz-stage, html.wz-vfx .wz-stage *{
@@ -711,6 +711,7 @@ html.wz-vfx .wz-fb{ text-shadow:none !important; }
                             * stage's edge -- see section 5. */
   --wz-pan-ease: 260ms;
   --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
+  --wz-soft-h:   34%;      /* the same, down from the top and up from the bottom (K410) */
   --wz-soft-blur: 3px;    /* NEVER DECLARED until K410. blur(var(--wz-soft-blur)) with no value is
                             * invalid at computed-value time, so backdrop-filter fell back to none and
                             * the strips blurred nothing on every page: section 11's failure exactly --
@@ -954,7 +955,9 @@ html.wz-vfx.wz-lightbg .wz-stage *{
 }
 html.wz-vfx.wz-lightbg .wz-vig,
 html.wz-vfx.wz-lightbg .wz-soft-l,
-html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
+html.wz-vfx.wz-lightbg .wz-soft-r,
+html.wz-vfx.wz-lightbg .wz-soft-t,
+html.wz-vfx.wz-lightbg .wz-soft-b{ display:none !important; }
 
 /* The floor. Not keyed to any site vocabulary, and it outranks a dark background. */
 @media (prefers-contrast: more), (forced-colors: active){
@@ -962,7 +965,8 @@ html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
     text-shadow:none !important; box-shadow:none !important; filter:none !important;
   }
   html.wz-vfx .wz-vig,
-  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ display:none !important; }
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r,
+  html.wz-vfx .wz-soft-t, html.wz-vfx .wz-soft-b{ display:none !important; }
 }
 
 /* --- 4. PERIPHERAL SOFTENING -- CUT, AND THE REASON MATTERS ----------------------------------
@@ -1069,18 +1073,41 @@ html.wz-vfx .wz-soft-l{ left:0;  opacity:var(--wz-sl,0);
 html.wz-vfx .wz-soft-r{ right:0; opacity:var(--wz-sr,0);
   -webkit-mask-image:linear-gradient(to left,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%);
           mask-image:linear-gradient(to left,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%); }
+/* THE VERTICAL AXIS (K410). Josiah, on the first candidate's sweep: "Going left and right only shows
+   the sides which are blank, so I can't see any change." Measured, he is right about the pages he means:
+   the five wings and the adversarial map keep their column 260px in from each side at 1440 (the
+   troubleshooting page 349px, the umbrella 100px), so a far side that is only ever left or right lands
+   on margin. A column is full top to bottom, so the far
+   END of the page is where the depth can be seen on every page: pointer low, the top recedes; pointer
+   high, the bottom does. Same blur, same film falloff, same opacity law as the side strips. At a corner
+   the two far strips stack and the far corner is the softest point on the screen -- which is where the
+   film's own softening measured strongest (corner 54.3%, mid-edge 95.2%). */
+html.wz-vfx .wz-soft-t, html.wz-vfx .wz-soft-b{
+  position:fixed; left:0; width:100%; height:var(--wz-soft-h);
+  z-index:2147481200; pointer-events:none;
+  backdrop-filter:blur(var(--wz-soft-blur)); -webkit-backdrop-filter:blur(var(--wz-soft-blur));
+  transition:opacity var(--wz-pan-ease) linear;
+}
+html.wz-vfx .wz-soft-t{ top:0; opacity:var(--wz-st,0);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%);
+          mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%); }
+html.wz-vfx .wz-soft-b{ bottom:0; opacity:var(--wz-sb,0);
+  -webkit-mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%);
+          mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.613) 25%,rgba(0,0,0,.308) 50%,rgba(0,0,0,.095) 75%,transparent 100%); }
 /* A TOUCH IS NOT A GAZE (K410). The strips follow the camera, and the camera followed the one mousemove
    a tap synthesises -- so on a phone, once the blur rendered, every tap near the right edge would have
    softened the left third of the reading column. Gated exactly like the clearing (section 1b). */
 @media (hover:none), (pointer:coarse){
-  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ display:none !important; }
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r,
+  html.wz-vfx .wz-soft-t, html.wz-vfx .wz-soft-b{ display:none !important; }
 }
 
 /* --- MOTION IS NOT NEGOTIABLE. The pivot is vestibular, not photosensitive: reduced-motion KILLS
  * it rather than softening it. Vignette, bloom and softening carry no motion and may stay. */
 @media (prefers-reduced-motion:reduce){
   html.wz-vfx .wz-stage{ transform:none !important; transition:none !important; }
-  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ opacity:0 !important; }
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r,
+  html.wz-vfx .wz-soft-t, html.wz-vfx .wz-soft-b{ opacity:0 !important; }
 }
 
 

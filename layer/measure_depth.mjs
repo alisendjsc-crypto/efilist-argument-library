@@ -12,7 +12,8 @@
 //           inside the lip; the far-side blur by the layer's own section-11 test (render with the treatment
 //           and without, diff: amplitude, area, and the sharpness kept on the treated side, where the
 //           untreated side must read exactly 0); the vignette's corner darkening. A phone tap at the right
-//           edge, because the camera listens to mousemove and a touch screen synthesises one per tap.
+//           edge, because the camera listens to mousemove and a touch screen synthesises one per tap. The
+//           vertical far side the same way, pointer at the bottom, where the layer has top/bottom strips.
 // frames -- rAF intervals over a scripted scroll with the pointer at the right edge (the left strip lit),
 //           the strips as configured against the strips hidden, three runs each.
 // fb     -- every page that links the layer, seven widths, both grounds, two engines: card text lying under
@@ -79,6 +80,7 @@ async function camAt(p, x, y, tap = false) {
   return p.evaluate(() => {
     const H = document.documentElement, st = document.querySelector('.wz-stage'), fr = document.querySelector('.wz-frame');
     const sl = document.querySelector('.wz-soft-l'), sr = document.querySelector('.wz-soft-r');
+    const stp = document.querySelector('.wz-soft-t'), sbt = document.querySelector('.wz-soft-b');
     const m = new DOMMatrix(getComputedStyle(st).transform === 'none' ? undefined : getComputedStyle(st).transform);
     const f = getComputedStyle(fr), r = st.getBoundingClientRect(), W = H.clientWidth;
     const lipX = parseFloat(f.borderLeftWidth), lipY = parseFloat(f.borderTopWidth);
@@ -87,6 +89,7 @@ async function camAt(p, x, y, tap = false) {
       // what neither the stage nor the lip covers: the stage's edge pulled inside the lip's inner edge
       gapL: +Math.max(0, r.left - lipX).toFixed(2), gapR: +Math.max(0, (W - lipX) - r.right).toFixed(2),
       sl: sl ? +(+getComputedStyle(sl).opacity).toFixed(3) : null, sr: sr ? +(+getComputedStyle(sr).opacity).toFixed(3) : null,
+      st: stp ? +(+getComputedStyle(stp).opacity).toFixed(3) : null, sb: sbt ? +(+getComputedStyle(sbt).opacity).toFixed(3) : null,
       softW: sl ? Math.round(sl.getBoundingClientRect().width) : null,
       blur: sl ? getComputedStyle(sl).backdropFilter : null };
   });
@@ -143,6 +146,23 @@ async function depth(rec) {
         return [x, +(100 * sharp(A, G) / sharp(B, G)).toFixed(1)]; }) };
     save(A, `${url.replace(/\W+/g, '_')}_blur_on`); save(B, `${url.replace(/\W+/g, '_')}_blur_off`);
     await dropStyles(p);
+    // the vertical far side (K410): pointer at the bottom, centred, so the TOP strip is the treated side
+    await addStyle(p, '.wz-focus{display:none!important}');
+    out.camBottom = await camAt(p, W / 2, H - 2);
+    const hasT = await p.evaluate(() => !!document.querySelector('.wz-soft-t'));
+    if (hasT) {
+      const VA = await shot(p);
+      await addStyle(p, '.wz-soft-l,.wz-soft-r,.wz-soft-t,.wz-soft-b{visibility:hidden!important}');
+      const VB = await shot(p);
+      const sh = await p.evaluate(() => Math.round(document.querySelector('.wz-soft-t').getBoundingClientRect().height));
+      const T = region(VA, 0, 0, W, sh), Bm = region(VA, 0, H - sh, W, H);
+      out.blurV = { strip: sh, st: await p.evaluate(() => +getComputedStyle(document.querySelector('.wz-soft-t')).opacity),
+        treated: diff(VA, VB, T), untreated: diff(VA, VB, Bm),
+        bands: [0, 50, 100, 150, 200, 250].filter(y => y < sh).map(y => { const G = region(VA, 0, y, W, y + 50);
+          return [y, +(100 * sharp(VA, G) / sharp(VB, G)).toFixed(1)]; }) };
+      save(VA, `${url.replace(/\W+/g, '_')}_blurV_on`); save(VB, `${url.replace(/\W+/g, '_')}_blurV_off`);
+    } else out.blurV = 'no vertical strips in this layer';
+    await dropStyles(p);
     await addStyle(p, '.wz-focus{display:none!important}');
     // the vignette, camera at rest
     out.camRest = await camAt(p, W / 2, H * 0.45);
@@ -191,9 +211,11 @@ async function frames(rec) {
   });
   for (const url of DEPTH_PAGES) {
     const { ctx, p } = await open(b, url);
-    const out = { state: await state(p), cam: await camAt(p, 1438, 450), lit: [], hidden: [] };
+    const out = { state: await state(p), cam: await camAt(p, 1438, 450), lit: [], corner: [], hidden: [] };
     for (let k = 0; k < 3; k++) out.lit.push(await run(p));
-    await addStyle(p, '.wz-soft-l,.wz-soft-r{visibility:hidden!important}');
+    out.camCorner = await camAt(p, 1438, 895);          // bottom-right: the left AND the top strip lit
+    for (let k = 0; k < 3; k++) out.corner.push(await run(p));
+    await addStyle(p, '.wz-soft-l,.wz-soft-r,.wz-soft-t,.wz-soft-b{visibility:hidden!important}');
     for (let k = 0; k < 3; k++) out.hidden.push(await run(p));
     rec.frames.pages[url] = out;
     await ctx.close();

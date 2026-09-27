@@ -122,6 +122,9 @@
     // Blur the end the camera is NOT at.
     H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
     H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
+    // ...and the end it is not at, vertically (K410): pointer low, the top softens.
+    H.style.setProperty('--wz-st', Math.max(0,  dy).toFixed(3));
+    H.style.setProperty('--wz-sb', Math.max(0, -dy).toFixed(3));
   }
   /* THE FOCUS RIDES THE TICK THAT ALREADY EXISTS. One rAF, already coalesced, already gated on the
      tier and on reduced motion -- adding a second listener for the same pointer would double the
@@ -389,7 +392,7 @@
       mo.observe(document.body, { attributes: true, attributeFilter: ['class', 'data-mode', 'style'] });
     }
     addEventListener('click', function () { setTimeout(gradeBg, 0); }, true);
-    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r','wz-focus'].forEach(function (c) {
+    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r','wz-soft-t','wz-soft-b','wz-focus'].forEach(function (c) {
       if (document.querySelector('.' + c)) return;
       var d = document.createElement('div'); d.className = c; d.setAttribute('aria-hidden', 'true');
       document.body.appendChild(d);
@@ -413,6 +416,7 @@
     // looking like a plain page, and it should not depend on the cursor still moving.
     rest = function () {
       H.style.setProperty('--wz-sl','0');   H.style.setProperty('--wz-sr','0');
+      H.style.setProperty('--wz-st','0');   H.style.setProperty('--wz-sb','0');
       // Zoomed, the pointer leaving the window keeps the camera where it was: a reader who overshoots
       // the window's edge while finishing a line must not have the line pulled away (K317).
       if (zoom > 1.0001) return;

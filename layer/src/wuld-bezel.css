@@ -228,7 +228,7 @@ html.wz-muted .wz-mute{ opacity:.45; }
  * it belongs on a screen and nowhere else. Everything the layer adds comes off, the reserved band
  * comes back, and the page prints as the document it is. */
 @media print{
-  .wz-frame, .wz-chin, .wz-vig, .wz-soft-l, .wz-soft-r, .wz-hint{ display:none !important; }
+  .wz-frame, .wz-chin, .wz-vig, .wz-soft-l, .wz-soft-r, .wz-soft-t, .wz-soft-b, .wz-hint{ display:none !important; }
   html.wz-on body{ padding-bottom:0 !important; }
   html.wz-on .wz-stage{ padding-inline:0 !important; }
   html.wz-vfx .wz-stage, html.wz-vfx .wz-stage *{
