@@ -28,6 +28,9 @@ def claims(J):
     wings = J["wings"]["objections_by_wing"]
     pn = {x["id"]: x for x in pil["nodes"]}
     top = dict(J["map1"]["top10_in_degree"])
+    fx = av["in_flux"]
+    assert fx["slots_named_by_the_live_safety_pass_X032"] == [["red-button-repugnant", "sophisticate"]]
+    assert fx["slots_on_stable_nodes"] + fx["slots_on_in_flux_nodes"] == av["slots"]
     v = J["validator_v0_6"]
     band = re.match(r"adversarial_move (\d+)-(\d+) words; class \(a\) additionally <=(\d+)", v["move_band"]).groups()
     assert v["entry_cap_locus"] == "<=3 entries per (target_id, target_locus)"
@@ -113,6 +116,12 @@ def claims(J):
         "commit `%s`, `inject_data.py` `%s`, `index.html` `%s`, scholar v1.1" % tuple(J["pins_argue"][k][:8] for k in ("commit", "inject_data", "index")),
         "`%s`." % J["pins_argue"]["scholar"][:8],
         "(corpus `%s`)" % J["pins"]["corpus"][:8],
+        "But %s of the %s nodes that carry them are in flux, and %s slots are named by pending repairs"
+        % (fx["nodes"], av["nodes"], len(fx["slots_named_by_pending_findings"])),
+        "Only %s of the %s nodes are stable (%s slots). The other %s carry %s slots."
+        % (fx["stable_nodes"], av["nodes"], fx["slots_on_stable_nodes"], fx["nodes"], fx["slots_on_in_flux_nodes"]),
+        "Pending repairs name %s slots: red-button-repugnant's sophisticate (X-032" % len(fx["slots_named_by_pending_findings"]),
+        "show the %s stable nodes' slots first" % fx["stable_nodes"],
     ]
     return L
 

@@ -73,6 +73,56 @@
       "4": 2,
       "5": 1
     },
+    "in_flux": {
+      "node_ids": [
+        "ai-fear",
+        "benatar-asymmetry-attack",
+        "bitter-childhood",
+        "just-depressed",
+        "most-people-happy",
+        "red-button-repugnant",
+        "slippery-slope-eugenics",
+        "violence-as-reductio",
+        "why-not-suicide"
+      ],
+      "nodes": 9,
+      "slots_named_by_pending_findings": [
+        [
+          "X-032",
+          "red-button-repugnant",
+          "sophisticate"
+        ],
+        [
+          "X-033",
+          "ai-fear",
+          "defender"
+        ],
+        [
+          "X-033",
+          "slippery-slope-eugenics",
+          "defender"
+        ],
+        [
+          "X-033",
+          "slippery-slope-eugenics",
+          "sophisticate"
+        ],
+        [
+          "X-033",
+          "bitter-childhood",
+          "defender"
+        ]
+      ],
+      "slots_named_by_the_live_safety_pass_X032": [
+        [
+          "red-button-repugnant",
+          "sophisticate"
+        ]
+      ],
+      "slots_on_in_flux_nodes": 26,
+      "slots_on_stable_nodes": 13,
+      "stable_nodes": 7
+    },
     "node_ids": [
       "ai-fear",
       "antinatalism-misanthropic",

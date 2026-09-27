@@ -4,6 +4,11 @@
 his go, and his words on new objections). Worktree branch `design/variations`, cut from efilist `70d224c`.
 No corpus, canon or served byte moved. **Every count below** comes from `measure_variations.py`, which
 writes `measure_variations_v0_1.json` (byte-identical under three hash seeds; `--check` recomputes).
+`check_design_counts.py` gates each count in this text against that record.
+
+*Amended the same evening, before any ruling, after argue's R0203 answered §6's questions. The changes:
+§3 (the register a shape is written in; scoring), F3 and §6 (argue's answers; which archetype slots are in
+flux).*
 
 ---
 
@@ -59,7 +64,9 @@ One reading of those figures does not hold (F1). The other findings are new.
   New wording for the same pair delays memorising it; it does not prevent it. A variation that lasts
   changes *which card is right*, or *whether any card is*.
 - **F3. The game holds variation it never shows.** See recommendation 1. The embed keeps `responses`
-  whole, so all 39 archetype answers are in the page, and the code reads them 0 times.
+  whole, so all 39 archetype answers are in the page, and the code reads them 0 times. But 9 of the 16
+  nodes that carry them are in flux, and 5 slots are named by pending repairs. One of those,
+  red-button-repugnant's sophisticate slot, is inside L6's safety pass right now (§6).
 - **F4. Attested shapes are thin wherever the text is stable.**
   - Real-world deployments that do not fit the trigger exactly: 54 attachments over 33 nodes.
   - 28 of those sit on the 13 nodes whose text is in flux (named by X-032/033/034 or PF-01..07).
@@ -113,6 +120,13 @@ the next re-vendor without the argue seat choosing to take it.
 
 The 30-70 word band sits between the layman lines (49-71 words) and the scholar lines (96-120). It is long
 enough to carry an argument and short enough to deal as a prompt.
+
+- **One register per shape.** The game shows the layman line in PLAIN and the scholar line in SCHOLAR, and
+  the corpus trigger only as a fallback (R0203). So a shape's `statement` is written plain, and the game
+  shows it in both registers. A scholar form would be a later, optional field, like the scholar layer.
+- **No new grading.** An (a) shape is answered by text the ledger already grades, so the game scores it at
+  the answering (id, depth) cell. The grade-the-argument drill keeps to each node's own objection, because
+  RSI was graded against that objection and not against the shape.
 
 **Triage is the map's class law, unchanged (a, then c, then b/d):**
 - **(a)** the library already answers the shape. It ships.
@@ -206,17 +220,32 @@ it out, so it opens the scale-up.
      The rest carry no status. Show the library's attribution and source, and never the word "verified".
    - The non-exact attachments are shapes, not surfaces. They belong to §3.
 3. **Voice-matched answers.** When the opponent is the sophisticate, the defender or the drifter and the
-   node has that slot, the reveal shows it: 16 nodes, 39 texts, already embedded.
+   node has that slot, the reveal shows it: 16 nodes, 39 texts, already embedded. Argue ranks this first
+   (R0203). **Caveat, measured:**
+   - Only 7 of the 16 nodes are stable (13 slots). The other 9 carry 26 slots.
+   - Pending repairs name 5 slots: red-button-repugnant's sophisticate (X-032, L6's safety pass, now);
+     ai-fear's defender, both of slippery-slope-eugenics' slots, and bitter-childhood's defender (X-033,
+     the next pin).
+   - **Lean:** show the 7 stable nodes' slots first. Hold red-button-repugnant's sophisticate slot until the
+     v4.1.5 re-vendor: on screen today it would show the framing the safety pass is cutting.
 4. **The advanced sets.** 50 wing objections: right-to-die 17, transgenderism 12, veganism 8, abortion 7,
    anthropocentrism 6. They open in Article 10's order.
 
 Already in use, so not listed above: the three depths (the reveal, and grade-the-argument) and Map 1
 (Next Move, and Call the Next Move).
 
-**Asked of argue by relay:**
-- How often each node is dealt over their seeded walks. This checks the in-degree proxy.
-- Whether CORE can score a prompt whose right card is another id.
-- The data they would want from a shape: prompt, right card, depth, and anchor.
+**Argue answered before it was asked (R0203, measured at game `c5b60e6`):**
+- The embed keeps `id, tier, category, trigger, keywords, responses, diagnosis`. A new corpus key needs a
+  line in KEEP, plus gates.
+- Each card answers exactly one objection. Scoring is by (id, depth) ledger cell. Map 1's edges are by id.
+- Tier drives the badge, the decoys (one never-asked card per tier in the hand) and the register exits.
+- Argue agrees that the library authors the variations and the game re-vendors them.
+
+**Still open for argue's build, when shapes or rejoinders reach it:**
+- the engine change for a prompt whose right card is another objection's;
+- the hand must hold that card, which can sit in another tier;
+- a shape keeps its own node's tier and its place in the Map 1 walk;
+- how often each node is dealt over argue's seeded walks, to check the in-degree proxy §5 uses.
 
 ---
 

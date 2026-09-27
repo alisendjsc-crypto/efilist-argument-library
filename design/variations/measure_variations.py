@@ -73,6 +73,17 @@ FLUX_DRAFT_PREFIX = "PF-"
 # Control on that derivation: R0193 names X-032's five nodes; if the parse misses any, the derivation is wrong.
 X032_NODES = ("heat-death-futility", "red-button-repugnant", "revealed-preference", "social-contract", "why-not-suicide")
 
+# Archetype slots whose text a pending finding names, each with the finding's own words (asserted verbatim,
+# and the slot asserted to exist). Argue's first "now" option (R0203) would put these slots on screen.
+SLOTS_NAMED = (
+    ("X-032", "red-button-repugnant", "sophisticate",
+     'red-button-repugnant#long ("trapped by their own survival drives") and its sophisticate slot'),
+    ("X-033", "ai-fear", "defender", "ai-fear's defender slot"),
+    ("X-033", "slippery-slope-eugenics", "defender", "slippery-slope-eugenics#long and its defender slot"),
+    ("X-033", "slippery-slope-eugenics", "sophisticate", "slippery-slope-eugenics#long and its sophisticate slot"),
+    ("X-033", "bitter-childhood", "defender", "bitter-childhood's defender slot"),
+)
+
 NONEXACT_FITS = ("loose", "parallel-structure-different-anchor", "partial")
 CHARACTER_MODELS = ("defender", "drifter", "sophisticate")  # Map 1 models a Next Move opponent can be
 # Planning constants for the cost estimate (the design's, not measurements; stated so the arithmetic is checkable).
@@ -354,6 +365,18 @@ def measure():
     att_best = sorted(elig, key=lambda i: (-len(nonexact[i]), -indeg[i], i))[0]
     if att_best not in [p for p, _ in pick]:
         pick.append((att_best, "most attested non-exact deployments among stable nodes (%d)" % len(nonexact[att_best])))
+    fnd = {r["id"]: r["finding"] for r in jrows if r.get("id") in FLUX_JUDGMENT_ROWS}
+    for rid, nid, slot, phrase in SLOTS_NAMED:
+        assert phrase in fnd[rid], "%s does not say: %s" % (rid, phrase)
+        assert slot in av.get(nid, {}), "%s has no %s slot" % (nid, slot)
+    av_flux = sorted(set(av) & set(flux))
+    R["archetypeVariants"]["in_flux"] = {
+        "nodes": len(av_flux), "node_ids": av_flux,
+        "slots_on_in_flux_nodes": sum(len(av[i]) for i in av_flux),
+        "stable_nodes": len(av) - len(av_flux),
+        "slots_on_stable_nodes": sum(len(av[i]) for i in av if i not in flux),
+        "slots_named_by_pending_findings": [[rid, nid, slot] for rid, nid, slot, _ in SLOTS_NAMED],
+        "slots_named_by_the_live_safety_pass_X032": [[nid, slot] for rid, nid, slot, _ in SLOTS_NAMED if rid == "X-032"]}
     R["pilot"] = {
         "rule": ("exclude nodes named by a pending pin-queue finding (X-032, X-033, X-034, PF-*); then, for each "
                  "tier, the stable node the three Next Move characters reach most often (Map 1 in-degree); then the "
