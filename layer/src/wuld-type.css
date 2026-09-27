@@ -1,0 +1,226 @@
+/* wuld-type.css -- shared presentation tokens for library.wuld.ink
+ *
+ * PART A: THE PALETTE. Four declarations, and they fix 473 failing elements per wing.
+ *
+ * THE FIRST ATTEMPT AT THIS FILE WAS A SELECTOR LIST and it was the wrong mechanism -- exactly the
+ * failure wuld-vfx.css carries a comment warning about. It enumerated .rsi-axis-label, .rwe-byline,
+ * .lbl, .kw and a dozen more, harvested from a probe's top-3-per-colour output, and it moved the
+ * wing from 78.7% of elements below WCAG AA to 40.9%. Half the page, because a list of names can
+ * only ever reach the names on it. The largest remaining group was 175 unclassed <span>s inside
+ * div.kw -- and div.kw sets no colour at all, so they were inheriting from somewhere the list did
+ * not go.
+ *   The page does not style by selector. It styles by VARIABLE: nine of them in :root, redefined
+ * per mode. Every one of the six surfaces -- right-to-die, abortion, veganism, transgenderism,
+ * anthropocentrism, and the libraries umbrella -- declares the identical nine names. So the fix is
+ * to redefine the variables, which reaches every element in every mode and cannot go stale, because
+ * there is no list.
+ *
+ * MEASURED, all visible text >=3 chars, 1440x900, per mode, contrast against the painted ground:
+ *
+ *   mode            shipped                                    after
+ *   STANDARD        dim 4.35!  faint 2.13!  accent 3.37!       dim 7.58  faint 5.28  accent 4.84
+ *   legible                    faint 3.32!                               faint 5.06
+ *   high-contrast   all pass                                   untouched
+ *   both            all pass                                   untouched
+ *
+ * NOTHING THAT ALREADY PASSED WAS MOVED. legible's --dim (5.99) and --accent (6.40) clear AA and
+ * are left exactly as designed; only --faint moves. Two of the four modes are not touched at all.
+ * This is a correctness patch, not a re-design.
+ *
+ * WHY THESE VALUES. The ink is warm (#d8d4cc, #f0ebe5) so the dim tiers are warm too -- a neutral
+ * grey reads cold beside it. They are chosen with headroom rather than at the 4.5 minimum: a
+ * palette that scrapes the line fails again the next time a background moves one shade. And the
+ * hierarchy survives: 13.31 > 7.58 > 5.28 is a wider, more legible ladder than 13.31 > 4.35 > 2.13,
+ * which was drawing its bottom distinction between "dim" and "cannot be read".
+ *
+ * THE CRIMSON IS NOT SWAPPED FOR THE FLAGSHIP'S #FF3333. It is lifted in lightness with the hue
+ * held -- #c41e3a -> #e83a56, 3.37:1 -> 4.84:1. The signature colour survives. --accent also draws
+ * 1px hairlines, where contrast minima do not apply and where the change is imperceptible. */
+
+/* SCOPING. The first version of this patch put the STANDARD values on :root and made LEGIBLE and
+ * BOTH catastrophically worse -- BOTH went from 2.8% of elements failing to 81.5%. :root and
+ * [data-mode="..."] carry the SAME specificity (0,1,0), so an injected :root that arrives after the
+ * page's own mode blocks beats all of them, and the dark-ground values leaked onto the cream
+ * grounds. Scope to the mode being fixed and nothing else; never restate a value that already
+ * passes, so nothing here can drift out of sync with the page's own palette.
+ *   This was caught only because the harness sweeps four modes on six surfaces rather than the one
+ * mode being fixed. cccxxiv's counter-discipline, working: vary the property while holding the
+ * mechanism fixed, and a regression you were not looking for shows up in a row you did not need. */
+:root:not([data-mode]),
+[data-mode="standard"]{
+  --dim:    #a6a096;   /* was #7a766e -- 4.35:1, failing in 288 places per wing */
+  --faint:  #88847c;   /* was #4a4742 -- 2.13:1, the worst text on the site */
+  --accent: #ef3a58;   /* was #c41e3a -- 3.37:1 as text; hue held, lightness lifted */
+}
+/* /troubleshooting/ is NOT part of the nine-variable family -- its own palette (--ink #f0ebe5,
+ * --dim #9a938b, --accent #c41e3a) sits on three grounds: #0a0a0a, --panel #141210 and --panel-2
+ * #1b1815. Measured: --ink 16.7:1 and --dim 6.5:1 both clear everywhere and are left alone; only
+ * the crimson fails, in six places, at 3.39 / 3.20 / 3.03.
+ *   ONE CRIMSON FOR THE WHOLE LIBRARY. #e83a56 cleared the wings at 4.84 but dipped to 4.35 on
+ * troubleshooting's deepest panel, which would have meant two reds. #ef3a58 clears every ground in
+ * the library -- wings 5.07, and 5.11 / 4.82 / 4.56 here -- so there is one value, not a family of
+ * near-identical ones that drift apart.
+ *   Keyed to [data-mode="dark"], which cccxxiii called out as DECORATION on this page. That is
+ * exactly why it is safe here: it identifies the page rather than standing proxy for a reader
+ * preference, and it is the only page that carries it. The hazard is keying a rule to a name that
+ * SUBSTITUTES for the property you care about; using an attribute as a page identifier, knowingly,
+ * is a different thing. */
+[data-mode="dark"]{ --accent: #ef3a58; }
+[data-mode="legible"]{
+  --faint:  #6b6559;   /* was #8a8275 -- 3.32:1 on the cream ground */
+  /* GROUND IS NOT ALWAYS THE PAGE GROUND. --stub clears 4.56:1 against --bg (#f5efe6) and was read
+   * as passing on that basis -- but .rwe>.lbl sits on --panel (#ebe3d4), where the same gold is
+   * 4.09:1. Eight elements per wing, failing only where they happen to be inside a panel. Contrast
+   * is a property of a PAIR, so a colour does not "pass"; it passes against a named ground, and a
+   * palette with two grounds has to clear the darker one. Dropped to 84% lightness, hue held:
+   * 5.96:1 on bg, 5.35:1 on panel. */
+  --stub:   #71571b;   /* was #876820 */
+}
+/* [data-mode="high-contrast"] and [data-mode="both"] are deliberately absent: every value in them
+ * already clears AA and changing a passing colour is not a fix, it is churn. */
+
+/* THE ONE COLOUR THAT IS NOT A VARIABLE. .rsi-badge is hardcoded #6699CC in every mode -- it is the
+ * only text colour on the page that does not come from the nine. On the dark grounds it is fine
+ * (6.29:1). On the light ones it is 3.00:1 on white and 2.63:1 on cream, and it was the ONLY thing
+ * still failing after the palette patch: 17 elements on right-to-die, 2.8-6.5% of every wing, and a
+ * failure that predates this work rather than one it introduced.
+ * Hue held, lightness dropped to 66%: #6699CC -> #436587, 6.09:1 on white and 5.33:1 on cream. Only
+ * the light modes are touched; the dark ones keep the original blue exactly. */
+/* !important IS REQUIRED AND IS NOT LAZINESS. The badge colour is set INLINE -- 17 style attributes
+ * carrying a colour on right-to-die, exactly the 17 badges -- and an inline declaration outranks any
+ * author-stylesheet rule at normal weight regardless of specificity. !important in a sheet is the
+ * only thing that beats it. The count was sitting in an earlier probe's output ("inline style=
+ * attributes: 102, of which set colour: 17") and went unread until the fix silently did nothing. */
+[data-mode="legible"] .rsi-badge,
+[data-mode="both"] .rsi-badge{ color:#436587 !important; border-color:#436587 !important; }
+
+
+/* ==============================================================================================
+ * PART B: THE TYPE SCALE. Filed at first as an aesthetic item. That was wrong, and the numbers say
+ * so: the wings put the MAJORITY of their text elements below 10px, and the flagship essentially
+ * never does.
+ *
+ *   surface         elements   under 10px            distinct sizes
+ *   flagship            274    1  (0.4 pct)          5   (9, 10, 11, 13, 14)
+ *   right-to-die        601  429 (71.4 pct)         12   (8.3 .. 16.3)
+ *   veganism            296  187 (63.2 pct)         10
+ *   libraries            45   22 (48.9 pct)          8
+ *
+ * 429 of 601 elements under 10px, 327 of them at exactly 9.92px, and 17 at 8.3px. Sub-10px is below
+ * any practical reading floor, and it is the larger part of what the operator was seeing as "unique
+ * awkward looking text" -- and of why the palette patch, which was real, was hard to SEE: 324 of its
+ * 473 changed elements sit at 9.9px, and only 46 of them are above the fold of an 8,394px document.
+ * A contrast fix on type this small is a compliance win before it is a reading one.
+ *
+ * THE SELECTOR LIST BELOW IS NOT INFERRED. It is every rule in the page's own stylesheet that sets a
+ * font-size, extracted by parsing that sheet with comments stripped first -- 36 rules, bucketed by
+ * computed px. Part A taught the lesson: a list assembled from a probe's top-N output reaches only
+ * the names on it, but a list that IS the stylesheet's own font-size rules is exhaustive by
+ * construction. If the page gains a rule, re-extract; never add names by hand.
+ *
+ * Expressed in rem, not px, so [data-mode="legible"]'s 17px root still scales them -- that is the
+ * whole purpose of the mode, and px would silently defeat it.
+ * Three sizes, mapped onto the flagship's: 10 / 11 / 13. */
+
+:root{ --wt-s: .625rem;  --wt-m: .6875rem;  --wt-b: .8125rem; }
+
+/* --- 10px: labels, badges, chips, meta (20 rules across all six surfaces) --- */
+.badge,
+.ctl-label,
+.obj-access,
+.kw span,
+.diag .lbl,
+.resp .lbl,
+.rwe>.lbl,
+.rwe-src a::after,
+.rwe-byline,
+.rwe-more summary,
+.rwe-meta,
+.mode-toggle button,
+.resp-d>summary,
+.rsi-badge,
+.rsi-detail .rsi-axis,
+.rsi-detail .rsi-formula,
+.register-toggle button,
+.obj.lay .lay-lbl,
+.sources .lbl,
+.lib-meta{ font-size:var(--wt-s); }
+
+/* --- 11px: secondary (10 rules) --- */
+.eyebrow,
+.tab,
+.chip,
+.count,
+.obj-meta,
+.mech,
+.permalink,
+footer.site,
+.sources,
+.psych{ font-size:var(--wt-m); }
+
+/* --- 13px: body (9 rules) --- */
+.sub,
+.notice,
+.search input,
+.diag,
+.resp p,
+.rwe-src a,
+.rwe-quote,
+.rwe-more p,
+.lib-card p{ font-size:var(--wt-b); }
+
+/* WEIGHT IS THE OTHER HALF. The wings are font-weight 400 on every element on the page; the flagship
+ * uses 400 / 500 / 700 with heavy tracking as structure. That is WHY the wings had to reach for a
+ * third dim tier at 2.13:1 to build hierarchy -- brightness was the only axis they were using. With
+ * weight and tracking carrying it, one readable ink tier is enough, which is what Part A assumed. */
+.resp p, .diag, .rwe-quote{ font-weight:500; }
+.badge, .rsi-badge, .diag .lbl, .resp .lbl, .rwe>.lbl, .ctl-label, .obj-access{
+  font-weight:700; letter-spacing:.1em;
+}
+/* TAP TARGETS. WCAG 2.5.8 (AA) wants 24x24. Audited on a wing: 91 of 122 interactive elements were
+ * under it. Most of that count is INLINE prose links, which the success criterion explicitly
+ * exempts -- a target "in a sentence or whose size is constrained by the line-height of non-target
+ * text" is not required to meet the minimum, and padding them would only make hit boxes on adjacent
+ * lines overlap. The block-level ones have no such excuse: <summary> measured 870x15, which is a
+ * disclosure control 9px short of usable, x22 per page.
+ * Padding only, no size change, so nothing about the type reflows. */
+ * A bare `summary` rule reached only half of them: .resp-d>summary carries its own padding at
+ * (0,1,1) specificity and kept its 2.4px, landing at 22px -- two short. Named explicitly, from the
+ * stylesheet, same discipline as the font-size buckets above. */
+summary{ padding-block:.3rem; }
+.resp-d>summary, .rwe-more summary{ padding-block:.3rem; }
+.permalink{ display:inline-block; padding-block:.24rem; }
+
+/* Hard edges are the flagship's identity; 2-3px is the visible tell that a wing is a different site. */
+.obj, .card, .panel, .diag, .resp, .chip, .kw span, .badge, .rsi-badge, .lbl,
+.mode-toggle button, .register-toggle button, .tab, .search input{ border-radius:0 !important; }
+
+
+/* ==============================================================================================
+ * THE WARM CAST, AS COLOUR RATHER THAN AS A BLEND LAYER.
+ * The brief was "give all of the text a subtle orangish tint, like the chin's LED panels have."
+ * The first build did it with a fixed soft-light overlay and it cost half the frame rate -- see the
+ * measurement in wuld-vfx.css. These are the same colours the overlay was producing, pre-mixed 16%
+ * toward --wz-tint (#FF9A78) and written as literals, because color-mix() cannot reference the
+ * variable it is redefining without a cycle.
+ *
+ * ONLY WHERE THE GLOW IS, AND ONLY AT THE VFX TIER: stepping the power button down to cosmetic or
+ * off restores the neutral palette, because html.wz-vfx is in every selector. The light modes are
+ * untouched -- warming a cream ground muddies it -- and so is high-contrast, deliberately: that mode
+ * exists to maximise separation and a tint spends a little of it for a look.
+ *
+ * Every value re-checked against its own ground; the worst is --faint at 5.58:1, so the AA result
+ * survives the warming with room to spare. */
+html.wz-vfx:not([data-mode]),
+html.wz-vfx[data-mode="standard"]{
+  --fg:     #decbbf;   /* from #d8d4cc  12.55:1 */
+  --dim:    #b49f91;   /* from #a6a096   7.78:1 */
+  --faint:  #9b887b;   /* from #88847c   5.81:1 */
+  --accent: #f2495d;   /* from #ef3a58   5.51:1 */
+  --stub:   #c39236;   /* from #b8902a   7.01:1 */
+}
+html.wz-vfx[data-mode="dark"]{     /* /troubleshooting/, its own palette */
+  --ink:    #f2ded4;   /* from #f0ebe5  15.25:1 */
+  --dim:    #aa9488;   /* from #9a938b   6.88:1 */
+  --accent: #f2495d;   /* from #c41e3a   5.55:1 */
+}

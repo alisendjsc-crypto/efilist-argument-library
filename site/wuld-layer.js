@@ -112,19 +112,34 @@
     cam.px = px; cam.py = py;
     // The camera moves TOWARD the cursor, so the picture slides the other way and you see further
     // to that side.
-    H.style.setProperty('--wz-px', (px - dx * base).toFixed(2) + 'px');
-    H.style.setProperty('--wz-py', (py - dy * base * 0.6).toFixed(2) + 'px');
+    // WHOLE PIXELS (K410). Chrome composites the stage at whatever offset it is given, and at a
+    // fractional one it resamples the layer: every glyph on the page went soft wherever the pointer
+    // happened to rest. Measured on a wing at 1440: edge energy -13.2% at -1.5px, -7.2% at -1.2px,
+    // nothing at 0 or -3px; the flagship -10.0% at -1.5px; Firefox unaffected. The transition still
+    // eases between steps, so the move is as smooth as before -- only the resting place snaps.
+    H.style.setProperty('--wz-px', Math.round(px - dx * base) + 'px');
+    H.style.setProperty('--wz-py', Math.round(py - dy * base * 0.6) + 'px');
     // Blur the end the camera is NOT at.
     H.style.setProperty('--wz-sl', Math.max(0,  dx).toFixed(3));
     H.style.setProperty('--wz-sr', Math.max(0, -dx).toFixed(3));
+    // ...and the end it is not at, vertically (K410): pointer low, the top softens.
+    H.style.setProperty('--wz-st', Math.max(0,  dy).toFixed(3));
+    H.style.setProperty('--wz-sb', Math.max(0, -dy).toFixed(3));
   }
   /* THE FOCUS RIDES THE TICK THAT ALREADY EXISTS. One rAF, already coalesced, already gated on the
      tier and on reduced motion -- adding a second listener for the same pointer would double the
      work to say the same thing twice. Two custom properties and one class; the box's transform and
      the vignette's mask both read them, so the DOM writes are 2 per frame, not 2 per consumer. */
   var focusOn = false, focusIdle = 0;
+  /* A TOUCH IS NOT A GAZE (K410). A tap synthesises one mousemove at the tap point, so on a phone every
+     tap swung the camera -- measured at 390px: 5.88px against a 2px lip -- and lit the far-side strip
+     over the reading column. Unzoomed, the camera now answers only a real pointer, the same gate the
+     clearing has always had in the stylesheet. Under the magnifier the pointer IS the camera (K317)
+     and that path is left exactly as it was. */
+  var FINE = matchMedia('(hover: hover) and (pointer: fine)');
   function onMove(e) {
     if (i !== 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (zoom <= 1.0001 && (!FINE.matches || (e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents))) return;
     ptr.x = e.clientX; ptr.y = e.clientY;
     if (raf) return;
     raf = requestAnimationFrame(function () {
@@ -377,7 +392,7 @@
       mo.observe(document.body, { attributes: true, attributeFilter: ['class', 'data-mode', 'style'] });
     }
     addEventListener('click', function () { setTimeout(gradeBg, 0); }, true);
-    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r','wz-focus'].forEach(function (c) {
+    ['wz-vig','wz-grille','wz-soft-l','wz-soft-r','wz-soft-t','wz-soft-b','wz-focus'].forEach(function (c) {
       if (document.querySelector('.' + c)) return;
       var d = document.createElement('div'); d.className = c; d.setAttribute('aria-hidden', 'true');
       document.body.appendChild(d);
@@ -401,6 +416,7 @@
     // looking like a plain page, and it should not depend on the cursor still moving.
     rest = function () {
       H.style.setProperty('--wz-sl','0');   H.style.setProperty('--wz-sr','0');
+      H.style.setProperty('--wz-st','0');   H.style.setProperty('--wz-sb','0');
       // Zoomed, the pointer leaving the window keeps the camera where it was: a reader who overshoots
       // the window's edge while finishing a line must not have the line pulled away (K317).
       if (zoom > 1.0001) return;
