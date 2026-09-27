@@ -1,0 +1,70 @@
+{
+  "artifact": "controls_v1_8_v0_1.json",
+  "instrument": "adversarial_map_staging/controls_v1_8.py",
+  "map": {
+    "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+    "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register": {
+    "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+    "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "result": "11 of 11 controls as expected, each builder's unmutated control first",
+  "controls": [
+    {
+      "control": "B0 map builder, unmutated",
+      "expect": "writes the committed adversarial_map_v1_8.json",
+      "as_expected": true
+    },
+    {
+      "control": "B1 a redraft answering a row that is not an AMEND (U-003)",
+      "expect": "refuses, naming \"which is not gate2's AMEND on SM-01\"",
+      "as_expected": true
+    },
+    {
+      "control": "B2 a register-only redraft that also changes its grounds",
+      "expect": "refuses, naming \"its AMEND allows ['adversarial_move']\"",
+      "as_expected": true
+    },
+    {
+      "control": "B3 an AMEND left without a redraft (SM-02)",
+      "expect": "refuses, naming \"AMENDs without a redraft: ['SM-02']\"",
+      "as_expected": true
+    },
+    {
+      "control": "B4 a declared quotation altered by one letter (SM-69)",
+      "expect": "refuses, naming 'NOT VERBATIM'",
+      "as_expected": true
+    },
+    {
+      "control": "B5 SM-69's bedrock_from claims a facet the register does not file",
+      "expect": "refuses, naming 'register v0_8 does not file bedrock_from'",
+      "as_expected": true
+    },
+    {
+      "control": "B6 a redraft superseding a row that does not exist",
+      "expect": "refuses, naming \"supersedes 'SM-99'\"",
+      "as_expected": true
+    },
+    {
+      "control": "B7 v1_7 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    },
+    {
+      "control": "R0 register builder, unmutated",
+      "expect": "writes the committed honest_residuals_register_v0_9.json",
+      "as_expected": true
+    },
+    {
+      "control": "R1 an inherited (d)'s routing moved in the map",
+      "expect": "refuses, naming 'register and map disagree'",
+      "as_expected": true
+    },
+    {
+      "control": "R2 register v0_8 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    }
+  ]
+}

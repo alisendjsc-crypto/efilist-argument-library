@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""controls_v1_7.py -- prove build_assembly_v1_7.py's and build_register_v0_8.py's gates by failing them (L7).
+"""controls_v1_8.py -- prove build_assembly_v1_8.py's and build_register_v0_9.py's gates by failing them (L7, round 2).
 
 Each control copies the staging tree, the corpus (at the md5 the successor pins) and the canon to scratch, mutates one
 thing, runs the builder there with K348_REPO pointed at the copy, and requires the refusal to name its own check. Each
@@ -9,20 +9,19 @@ The assembly builder pins its drafts record and the measure by md5, so a control
 in the scratch copy of the builder: otherwise every such control would stop at the base guard and prove nothing about
 the check behind it. The committed builder is never touched.
 
-  python3 controls_v1_7.py            # run, write controls_v1_7_v0_1.json
-  python3 controls_v1_7.py --check    # run, compare with the committed record
+  python3 controls_v1_8.py            # run, write controls_v1_8_v0_1.json
+  python3 controls_v1_8.py --check    # run, compare with the committed record
 """
 import hashlib, json, os, re, shutil, subprocess, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 STAGE = "adversarial_map_staging"
-RECORD = os.path.join(HERE, "controls_v1_7_v0_1.json")
-MAP, REG = "adversarial_map_v1_7.json", "honest_residuals_register_v0_8.json"
+RECORD = os.path.join(HERE, "controls_v1_8_v0_1.json")
+MAP, REG = "adversarial_map_v1_8.json", "honest_residuals_register_v0_9.json"
 DRAFTS = os.path.join("r1", "L7_successor_drafts.json")
-BUILDER = "build_assembly_v1_7.py"
+BUILDER = "build_assembly_v1_8.py"
 CORPUS_PIN = "7b6e65e531018fecb37baf2a4fedd6d1"
-DRAFTS_PIN = "fd9267f853a5a09fe5aa3972b16fa2a7"   # the bytes build_assembly_v1_7.py pins
 
 
 def md5b(b):
@@ -30,7 +29,7 @@ def md5b(b):
 
 
 def scratch():
-    d = tempfile.mkdtemp(prefix="l7_controls_")
+    d = tempfile.mkdtemp(prefix="l7b_controls_")
     shutil.copytree(os.path.join(REPO, STAGE), os.path.join(d, STAGE),
                     ignore=shutil.ignore_patterns("__pycache__", "*.tmp"))
     for f in os.listdir(REPO):
@@ -40,11 +39,6 @@ def scratch():
     import pinned
     open(os.path.join(d, "efilist_argument_library_v4_0_0.json"), "wb").write(
         pinned.bytes_at(REPO, "efilist_argument_library_v4_0_0.json", CORPUS_PIN))
-    # L7, second round: the drafts record is append-only and build_assembly_v1_7.py pins it at DRAFTS_PIN. Stage those
-    # bytes, so a later row cannot turn an unmutated control RED (the L4c law for R1_rulings.json); pinned.py reads
-    # them from git once the file has grown.
-    open(os.path.join(d, STAGE, DRAFTS), "wb").write(pinned.bytes_at(REPO, STAGE + "/r1/L7_successor_drafts.json",
-                                                                    DRAFTS_PIN))
     return d
 
 
@@ -81,49 +75,36 @@ def drafts_edit(fn):
     return m
 
 
-def row(doc, pred):
-    return [r for r in doc["rows"] if pred(r)][0]
+def rid(i):
+    return lambda doc: [r for r in doc["rows"] if r["id"] == i][0]
 
 
-def drop(pred):
-    return lambda doc: doc["rows"].remove(row(doc, pred))
+def c_answers(doc):
+    rid("SM-52")(doc)["answers"] = "U-003"
 
 
-def at(i):
-    return lambda r: (r.get("entry") or {}).get("i") == i
+def c_grounds(doc):
+    r = rid("SM-52")(doc)
+    r["set"]["grounds"] = r["set"]["grounds"] + " A widened redraft."
 
 
-def c_unset_grounds(doc):
-    row(doc, at(5))["set"].pop("grounds")
-
-
-def c_wrong_anchor(doc):
-    row(doc, at(4))["entry"]["anchor"] = "not the anchor of entry 4"
+def c_drop(doc):
+    doc["rows"].remove(rid("SM-53")(doc))
 
 
 def c_misquote(doc):
-    r = row(doc, at(9))
-    q = r["quotes"][0]["quote"]
-    r["quotes"][0]["quote"] = q.replace("already", "alrady")
-    r["set"]["grounds"] = r["set"]["grounds"].replace(q, r["quotes"][0]["quote"])
+    r = rid("SM-69")(doc)
+    q = r["quotes"][2]["quote"]
+    r["quotes"][2]["quote"] = q.replace("genetic", "genetik")
+    r["set"]["grounds"] = r["set"]["grounds"].replace(q, r["quotes"][2]["quote"])
 
 
-def c_undeclared(doc):
-    r = row(doc, at(12))
-    r["set"]["grounds"] += ' It adds "a quotation nobody declared".'
+def c_facet(doc):
+    rid("SM-69")(doc)["bedrock_from"]["facet"] = "impersonal-comparison-reading"
 
 
-def c_wrong_facet(doc):
-    row(doc, at(51))["bedrock_from"]["facet"] = "metaethical-locus"
-
-
-def c_twice(doc):
-    doc["rows"].append(dict(row(doc, at(4)), id="SM-99"))
-
-
-def c_dash(doc):
-    r = row(doc, lambda r: r["kind"] == "file")
-    r["new_entry"]["adversarial_move"] = r["new_entry"]["adversarial_move"].replace(". ", " — ", 1)
+def c_orphan(doc):
+    rid("SM-54")(doc)["supersedes"] = "SM-99"
 
 
 def c_base(rel):
@@ -138,41 +119,27 @@ def c_base(rel):
 def c_map_routing(d):
     def fn(doc):
         e = [x for x in doc["entries"] if x["class"] == "d" and "successor_L7" not in x["provenance"]
-             and "filed" not in x["provenance"]][0]
+             and "filed" not in x["provenance"] and "redrafted_L7" not in x["provenance"]][0]
         e["routing"]["residue"]["terminus_routing"] += " (moved)"
     edit_json(d, MAP, fn)
 
 
-def c_no_relation(d):
-    edit_json(d, DRAFTS, drop(lambda r: r["kind"] == "relation"))
-    new = md5b(open(os.path.join(d, STAGE, DRAFTS), "rb").read())
-    edit_json(d, MAP, lambda doc: doc["meta"]["l7_successor"]["drafts"].__setitem__("md5", new))
-
-
 CONTROLS = [
-    ("A0 map builder, unmutated", BUILDER, None, MAP),
-    ("A1 a gone anchor loses its row (entry 2)", BUILDER, drafts_edit(drop(at(2))),
-     "COVERAGE: entry 2's anchor is gone"),
-    ("A2 a routed HOLDS loses its read (#24, entry 39)", BUILDER, drafts_edit(drop(at(39))),
-     "COVERAGE: entry 39 routes to moved"),
-    ("A3 a stale quotation left unrewritten (#3's grounds)", BUILDER, drafts_edit(c_unset_grounds),
-     "COVERAGE: entry 5's grounds quotes words gone"),
-    ("A4 a waiting (a) loses its re-judgment (#48)", BUILDER, drafts_edit(drop(at(80))),
-     "COVERAGE: waiting (a) #48"),
-    ("A5 a row names an anchor its entry does not carry", BUILDER, drafts_edit(c_wrong_anchor), "is not"),
-    ("A6 a declared quotation altered by one letter", BUILDER, drafts_edit(c_misquote), "NOT VERBATIM"),
-    ("A7 an undeclared quotation in changed grounds", BUILDER, drafts_edit(c_undeclared), "undeclared quotation"),
-    ("A8 bedrock_from claims a facet the register does not file", BUILDER, drafts_edit(c_wrong_facet),
-     "register v0_7 does not file bedrock_from"),
-    ("A9 two rows for one entry", BUILDER, drafts_edit(c_twice), "has 2 rows"),
-    ("A10 a filed move carrying a dash token (the validator, in-process)", BUILDER, drafts_edit(c_dash),
-     "validator v0_7 --assembly"),
-    ("A11 v1_6 moved by one byte", BUILDER, c_base("adversarial_map_v1_6.json"), "BASE GUARD"),
-    ("R0 register builder, unmutated", "build_register_v0_8.py", None, REG),
-    ("R1 an inherited (d)'s routing moved in the map", "build_register_v0_8.py", c_map_routing,
+    ("B0 map builder, unmutated", BUILDER, None, MAP),
+    ("B1 a redraft answering a row that is not an AMEND (U-003)", BUILDER, drafts_edit(c_answers),
+     "which is not gate2's AMEND on SM-01"),
+    ("B2 a register-only redraft that also changes its grounds", BUILDER, drafts_edit(c_grounds),
+     "its AMEND allows ['adversarial_move']"),
+    ("B3 an AMEND left without a redraft (SM-02)", BUILDER, drafts_edit(c_drop), "AMENDs without a redraft: ['SM-02']"),
+    ("B4 a declared quotation altered by one letter (SM-69)", BUILDER, drafts_edit(c_misquote), "NOT VERBATIM"),
+    ("B5 SM-69's bedrock_from claims a facet the register does not file", BUILDER, drafts_edit(c_facet),
+     "register v0_8 does not file bedrock_from"),
+    ("B6 a redraft superseding a row that does not exist", BUILDER, drafts_edit(c_orphan), "supersedes 'SM-99'"),
+    ("B7 v1_7 moved by one byte", BUILDER, c_base("adversarial_map_v1_7.json"), "BASE GUARD"),
+    ("R0 register builder, unmutated", "build_register_v0_9.py", None, REG),
+    ("R1 an inherited (d)'s routing moved in the map", "build_register_v0_9.py", c_map_routing,
      "register and map disagree"),
-    ("R2 the drafted relation removed", "build_register_v0_8.py", c_no_relation, "UNDECLARED ADJACENCY: HR-02+HR-06"),
-    ("R3 register v0_7 moved by one byte", "build_register_v0_8.py", c_base("honest_residuals_register_v0_7.json"),
+    ("R2 register v0_8 moved by one byte", "build_register_v0_9.py", c_base("honest_residuals_register_v0_8.json"),
      "BASE GUARD"),
 ]
 
@@ -202,7 +169,7 @@ def main():
         if mut is None and not ok:
             print("CONTROLS: an unmutated control failed; nothing after it means anything")
             return 1
-    rec = {"artifact": "controls_v1_7_v0_1.json", "instrument": "adversarial_map_staging/controls_v1_7.py",
+    rec = {"artifact": "controls_v1_8_v0_1.json", "instrument": "adversarial_map_staging/controls_v1_8.py",
            "map": {"file": "adversarial_map_staging/" + MAP, "md5": md5b(open(os.path.join(HERE, MAP), "rb").read())},
            "register": {"file": "adversarial_map_staging/" + REG, "md5": md5b(open(os.path.join(HERE, REG), "rb").read())},
            "result": "%d of %d controls as expected, each builder's unmutated control first" % (good, len(CONTROLS)),

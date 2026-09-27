@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The successor map's corrections redrafted — 2026-09-26 (no release; the pin stands)
+
+A session that drafted none of the successor map judged it: 22 of its rows accepted, 11 re-reads confirmed, and 18 sent back for correction, none rejected. Sixteen of the eighteen were one wording fault: the objection spoke of how the library's text used to read, which a reader of today's text cannot see. Two misstated the passage they answer. All eighteen are redrafted as rows that replace the ones sent back, and nothing else in the map moves (v1_8). One of them now ends where two others with the same charge already end, so the honest-residuals register moves that one line (v0_9). A new check also confirms that every answer the corrections brought into contact with a newly filed problem has been read. None of it is judged yet; then Josiah rules. Nothing served changed; the flagship is still v4.1.5. Canon v38.45.
+
 ## The successor map judged — 2026-09-26 (no release; the pin stands)
 
 A session that drafted none of it read the successor map's 51 drafted rows against the library's text as it now stands. Every judgment about where an objection ends holds: which answers the library gives, which lines end at a question it registers as open, and which passages it should rewrite. 22 rows are accepted and 11 re-reads confirmed. 18 go back for a redraft: in 16 the objection's own wording narrates how the library's text used to read, which a reader of today's text cannot see, and two objections misstate the passage they answer. The judgment also measured what the drafting session had not: nine answers now meet a newly filed problem nearby, and all nine still hold. It found three passages the safety pass left standing, for a later queue. Four answers that had been waiting are now met, and so is one new answer; Josiah rules on those. Nothing served changed; the flagship is still v4.1.5. Canon v38.44.

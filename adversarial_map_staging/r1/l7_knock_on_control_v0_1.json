@@ -1,0 +1,31 @@
+{
+  "artifact": "l7_knock_on_control_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l7_knock_on.py --self-test",
+  "record": {
+    "file": "adversarial_map_staging/r1/l7_knock_on_v0_1.json",
+    "md5": "6635d5ec3aaa4018c146260bb6b58ab0"
+  },
+  "result": "4 of 4 controls as expected, the unmutated first",
+  "controls": [
+    {
+      "control": "C0 unmutated: reproduces the committed record",
+      "expect": "reproduces the committed record",
+      "as_expected": true
+    },
+    {
+      "control": "C1 gate2's read of #19 removed (U-059)",
+      "expect": "refuses, naming 'UNREAD: (a) 30'",
+      "as_expected": true
+    },
+    {
+      "control": "C2 gate2's read of #68 removed (U-062)",
+      "expect": "refuses, naming 'UNREAD: (a) 136'",
+      "as_expected": true
+    },
+    {
+      "control": "C3 a new (b) at an unread (a)'s answering locus (entry 63)",
+      "expect": "refuses, naming 'UNREAD: (a) 63'",
+      "as_expected": true
+    }
+  ]
+}

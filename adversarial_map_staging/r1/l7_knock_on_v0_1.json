@@ -1,0 +1,270 @@
+{
+  "artifact": "l7_knock_on_v0_1.json",
+  "instrument": "adversarial_map_staging/r1/l7_knock_on.py",
+  "adopts": "gate2's U-064: a successor's controls run the knock-on after the drafts apply",
+  "rule": "collision rule v0_2, l4_knock_on.collisions at its pinned bytes, the successor against v1_6",
+  "pinned": {
+    "v1_6": {
+      "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+      "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+    },
+    "successor": {
+      "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+      "md5": "691930ab76908a85a6850bdb714d3827"
+    },
+    "judgment": {
+      "file": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+      "md5": "bd3b4e89f25e7f874f5aa553b998fe0d"
+    },
+    "drafts": {
+      "file": "adversarial_map_staging/r1/L7_successor_drafts.json",
+      "md5": "370e7d02457314e10d6211f95d5ae8c0"
+    },
+    "tool": {
+      "file": "adversarial_map_staging/r1/l4_knock_on.py",
+      "md5": "66022fa8e9ba7ad3ff26e42aee5b0b1c"
+    }
+  },
+  "a_entries_in_successor": 28,
+  "newly_collided": 12,
+  "read_by_gate2": 9,
+  "items": [
+    {
+      "i": 5,
+      "target": "why-not-suicide#archetypeVariants.blended",
+      "anchor": "Stop there if the jab was the whole of it",
+      "new_collisions": [
+        {
+          "i": 7,
+          "at": "why-not-suicide#archetypeVariants.drifter",
+          "class": "d"
+        },
+        {
+          "i": 138,
+          "at": "why-not-suicide#long",
+          "class": "b"
+        },
+        {
+          "i": 139,
+          "at": "why-not-suicide#long",
+          "class": "b"
+        }
+      ],
+      "read_by": [
+        "U-054",
+        "SM-13"
+      ]
+    },
+    {
+      "i": 6,
+      "target": "why-not-suicide#archetypeVariants.defender",
+      "anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license",
+      "new_collisions": [
+        {
+          "i": 7,
+          "at": "why-not-suicide#archetypeVariants.drifter",
+          "class": "d"
+        },
+        {
+          "i": 32,
+          "at": "violence-as-reductio#archetypeVariants.sophisticate",
+          "class": "d"
+        },
+        {
+          "i": 138,
+          "at": "why-not-suicide#long",
+          "class": "b"
+        },
+        {
+          "i": 139,
+          "at": "why-not-suicide#long",
+          "class": "b"
+        },
+        {
+          "i": 140,
+          "at": "violence-as-reductio#long",
+          "class": "b"
+        }
+      ],
+      "read_by": [
+        "U-055",
+        "SM-14"
+      ]
+    },
+    {
+      "i": 19,
+      "target": "self-defeating#diagnosis",
+      "anchor": "confuses evolutionary fitness with logical validity",
+      "new_collisions": [
+        {
+          "i": 135,
+          "at": "self-effacing-under-universalization#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "U-056",
+        "SM-28"
+      ]
+    },
+    {
+      "i": 20,
+      "target": "self-defeating#long",
+      "anchor": "whatever that path owes to the births others choose",
+      "new_collisions": [
+        {
+          "i": 135,
+          "at": "self-effacing-under-universalization#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "U-057",
+        "SM-61"
+      ]
+    },
+    {
+      "i": 29,
+      "target": "violence-as-reductio#archetypeVariants.blended",
+      "anchor": "take the structural one first and the other two resolve under it",
+      "new_collisions": [
+        {
+          "i": 32,
+          "at": "violence-as-reductio#archetypeVariants.sophisticate",
+          "class": "d"
+        },
+        {
+          "i": 140,
+          "at": "violence-as-reductio#long",
+          "class": "b"
+        }
+      ],
+      "read_by": [
+        "U-058",
+        "SM-19"
+      ]
+    },
+    {
+      "i": 30,
+      "target": "violence-as-reductio#archetypeVariants.defender",
+      "anchor": "Bartkus and the disowned grabbers are actor-content",
+      "new_collisions": [
+        {
+          "i": 32,
+          "at": "violence-as-reductio#archetypeVariants.sophisticate",
+          "class": "d"
+        },
+        {
+          "i": 140,
+          "at": "violence-as-reductio#long",
+          "class": "b"
+        }
+      ],
+      "read_by": [
+        "U-059"
+      ]
+    },
+    {
+      "i": 39,
+      "target": "most-people-happy#archetypeVariants.sophisticate",
+      "anchor": "the instrument doing the rating is the same nervous system",
+      "new_collisions": [
+        {
+          "i": 1,
+          "at": "just-depressed#archetypeVariants.defender",
+          "class": "b"
+        },
+        {
+          "i": 2,
+          "at": "just-depressed#long",
+          "class": "b"
+        }
+      ],
+      "read_by": [
+        "U-060",
+        "SM-03"
+      ]
+    },
+    {
+      "i": 53,
+      "target": "antinatalism-misanthropic#archetypeVariants.defender",
+      "anchor": "its truth-value is not a function of the speaker's warmth",
+      "new_collisions": [
+        {
+          "i": 51,
+          "at": "antinatalism-misanthropic#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "SM-05"
+      ]
+    },
+    {
+      "i": 83,
+      "target": "adoption-instead#long",
+      "anchor": "Adoption satisfies the desire to parent completely",
+      "new_collisions": [
+        {
+          "i": 13,
+          "at": "benatar-asymmetry-attack#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "SM-09"
+      ]
+    },
+    {
+      "i": 88,
+      "target": "overpopulation-addressed#long",
+      "anchor": "incrementally better from a negative utilitarian perspective",
+      "new_collisions": [
+        {
+          "i": 11,
+          "at": "economy-population#long",
+          "class": "d"
+        },
+        {
+          "i": 13,
+          "at": "benatar-asymmetry-attack#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "U-061",
+        "SM-10"
+      ]
+    },
+    {
+      "i": 89,
+      "target": "hedonic-contrast#long",
+      "anchor": "it would still experience positive states",
+      "new_collisions": [
+        {
+          "i": 13,
+          "at": "benatar-asymmetry-attack#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "SM-11"
+      ]
+    },
+    {
+      "i": 136,
+      "target": "self-effacing-under-universalization#long",
+      "anchor": "a last generation keeping its rule to the end is fully conceivable",
+      "new_collisions": [
+        {
+          "i": 11,
+          "at": "economy-population#long",
+          "class": "d"
+        }
+      ],
+      "read_by": [
+        "U-062"
+      ]
+    }
+  ]
+}
