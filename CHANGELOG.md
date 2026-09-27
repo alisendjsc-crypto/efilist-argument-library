@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The safety pass read back, and the variations design's rulings recorded — 2026-09-26 (no release; the pin stands)
+
+v4.1.5 is live and was read back three ways: the flagship's bytes on three consecutive reads, the front door's badge, and the page as a browser renders it, with the new passages present and the old ones gone. wuld.ink moved its own labels to v4.1.5 and was read back surface by surface. The card game still shows the old passages until it takes the new text, and it has been asked to. The canon also records Josiah's word on the six rulings that shape how objections will carry their variations, including one that lets the game play the adversarial map's retreats once the next map lands. That ruling is recorded beside the map's audience ruling, without changing it. Nothing served changed; the flagship is still v4.1.5. Canon v38.42.
+
+---
+
 ## [v4.1.5] — 2026-09-26
 
 **PATCH** by the invariants convention (the canon's `invariants` subtree is byte-identical), and **a content cut**: the safety pass. Twenty rewrites at twelve passages across six objections, on all three surfaces at once — the corpus JSON (whose `version` field now reads `4.1.5`, naming the cut), the JSX and `site/combined.html`. The cross-surface gate (`tools/xsurface_v4_1_0.py`) holds the three in agreement at `a99b793e3f63cc80bb3ed2050e764fbd`, and both map sidecars regenerate byte for byte. The text is 333 words shorter.

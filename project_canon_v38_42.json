@@ -1,5 +1,5 @@
 {
-  "canon_version": "38.41",
+  "canon_version": "38.42",
   "last_updated": "2026-09-26",
   "last_updated_by_session": "L6",
   "project": {
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. Next, in order: the successor map, which re-anchors (adversarial_map.corpus_repairs_LANDED_L5.for_the_successor_map and safety_pass_LANDED_L6.for_the_successor_map), re-judges the six waiting (a)s and files PF-01..03, X-033's siblings, X-034 and Z-033 as (b)s for a later queue; V0 (variations of objections and rebuttals, R0194/R0197) in its own lane; then adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
+    "session": "The pin is v4.1.5. Next, side by side: V1 (R0217) lands design/variations on main (--no-ff from main's side) and builds the argumentShapes schema and shape validator in new files (no canon: the six rulings are recorded at adversarial_map.variations_rulings_V0; no pin); and the successor map, which holds the canon: it re-anchors (adversarial_map.corpus_repairs_LANDED_L5.for_the_successor_map and safety_pass_LANDED_L6.for_the_successor_map), re-judges the six waiting (a)s, files PF-01..03, X-033's siblings, X-034 and Z-033 as (b)s, and its validator bump carries argumentShapes.<shape_id> as an existence-gated locus (R0194's sequence). Then V2 drafts the pilot's shapes (R-V4) and gate2 judges; argue re-vendors v4.1.5 (R0222); then adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1833,9 +1833,12 @@
       }
     },
     "L6_safety_pass": {
-      "state": "LANDED",
+      "state": "LANDED and read back (efilist and wuld.ink); argue's re-vendor pending",
       "pin": "v4.1.4 -> v4.1.5",
-      "block": "safety_pass_LANDED_L6"
+      "blocks": [
+        "safety_pass_LANDED_L6",
+        "safety_pass_LANDED_L6_tail"
+      ]
     },
     "judged_safety_pass_gate2": "gate2 judged the X-032 safety pass: companion ACCEPT 4; draft ACCEPT 8, AMEND 1; finding_review CONFIRM 10; knock_on CONFIRM 1; widening ACCEPT 7. Judged is not ruled.",
     "judged_safety_pass_redraft_gate2": "gate2 judged SD-10: ACCEPT. Every row his word ratifies is judged; his word is recorded at adversarial_map.safety_pass_redraft_judgment_gate2.his_word."
@@ -1969,7 +1972,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.41",
+  "canon_version_marker": "v38.42",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2670,7 +2673,8 @@
     "v38_38_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_safety_pass_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
     "v38_39_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_redraft_L6 (SD-10 answers Z-002; the drafts gate's v0_2 and its knock-on v0_2 and control v0_2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
     "v38_40_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_redraft_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
-    "v38_41_L6": "MINOR. keyset UNCHANGED at 42. PIN MOVE v4.1.4 -> v4.1.5 (ed040cad -> 6fd3617c). One adversarial_map subkey addition (safety_pass_LANDED_L6); flagship_sidecars.extracted_from moved forward (sidecars byte-identical); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical: a PATCH."
+    "v38_41_L6": "MINOR. keyset UNCHANGED at 42. PIN MOVE v4.1.4 -> v4.1.5 (ed040cad -> 6fd3617c). One adversarial_map subkey addition (safety_pass_LANDED_L6); flagship_sidecars.extracted_from moved forward (sidecars byte-identical); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical: a PATCH.",
+    "v38_42_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_LANDED_L6_tail, variations_rulings_V0, audience_forward_note_V0_R_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved; audience_and_purpose_ruling_L1a asserted byte-identical (R-V5 is recorded forward beside it)."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2921,7 +2925,8 @@
     "gate2 (2026-09-26; NO PIN): L6's X-032 safety pass judged (R0207). Record 43701320: SD-01, SD-03..09 ACCEPT; SD-02 AMEND (the slot's unspaced em dash); SC-01..04 and SW-01..07 ACCEPT, lean admit; SF-01..10 CONFIRM; knock-on CONFIRM. Found: X-032's own patterns were a floor (the framing stood at six more slots); the honest-evaluation phrasing survives at boonin-critique, about procreation intuitions, for the successor map. Judged, not ruled.",
     "L6 (2026-09-26): SD-02's AMEND (Z-002, a dash) answered as SD-10; drafts record 8742b882; gate v0_2 (the knock-on check reads each record at its md5). No pin.",
     "gate2 (2026-09-26; NO PIN): SD-10 judged (R0210). Record 3cd8dbb9: ACCEPT, the one dash Z-002 owed; knock-on and patch CONFIRM. His word on R0208, 'yes to all' (20:56, to L6), was conditional on this row and now stands; L6 records the ratification row at the pin.",
-    "L6 (2026-09-26): THE PIN MOVE, v4.1.4 -> v4.1.5 (6fd3617c / 2996713). The X-032 safety pass: 20 rewrites at 12 loci across 6 objections, ratified on his word (\"yes to all\"), applied to the three surfaces in one edit; xsurface 8b76672f -> a99b793e; sidecars and the objections index unchanged; labels moved with the pin."
+    "L6 (2026-09-26): THE PIN MOVE, v4.1.4 -> v4.1.5 (6fd3617c / 2996713). The X-032 safety pass: 20 rewrites at 12 loci across 6 objections, ratified on his word (\"yes to all\"), applied to the three surfaces in one edit; xsurface 8b76672f -> a99b793e; sidecars and the objections index unchanged; labels moved with the pin.",
+    "L6 (2026-09-26): the v4.1.5 pin's tail (wuld-ink b2171719, read back; argue's re-vendor notice R0222) and his word on V0's six rulings (\"Go with your leans on all of the rulings.\", R0216, read at source), R-V5 recorded forward beside L1a. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -9411,6 +9416,65 @@
       },
       "served_labels": "README (pin table, libraries row, stable-at, canon file, BibTeX), CITATION.cff, the /libraries badge and a CHANGELOG release entry, by tools/pin_labels_l6.py (the K362 law).",
       "next_in_this_session": "wuld-ink's half (the release manifest, tools/library-pin.py once the deploy reads back, the releases entry, the feed and the search index) and argue's re-vendor notice: wuld.ink/argue/ embeds the corpus, and every landed row is text it shows."
+    },
+    "safety_pass_LANDED_L6_tail": {
+      "wuld_ink": {
+        "commit": "b21717192c86dfaf2ad543e4cbb6620c9f0162c8",
+        "manifest": {
+          "file": "release_v4_1_5.json",
+          "md5": "9275403dc739473cad465a8b35039559",
+          "bytes": 3671
+        },
+        "files": 17,
+        "did": "tools/library-pin.py --apply --date 2026-09-26 after its live gate read 6fd3617c three times: 12 src surfaces (md5 x2, version x24, bytes x1), 0 residual over 108 files; tools/apply_release_summary.py (the release's own prose; feed 100 items); src/search-index.json 1,014 -> 1,014 entries, two version labels changed. Branched from origin/main 1ff18d2 in its own worktree and pushed fast-forward."
+      },
+      "read_back_live": [
+        "library.wuld.ink/combined: 6fd3617c on 3 consecutive reads, 18 s after the efilist push (21:07 MST)",
+        "library.wuld.ink/libraries/: byte-identical to the committed page (078d89de), badge 'pinned v4.1.5'",
+        "rendered in the browser: 82 objection cards; five sampled replacements present and five sampled removed passages absent; no console error; every request 200",
+        "wuld.ink: 14 of 15 changed surfaces byte-identical to b217171; /contact/ differs only by Cloudflare's edge email obfuscation and carries v4.1.5"
+      ],
+      "argue": {
+        "relay": "R0222",
+        "md5": "32244aef4d9d6d67c37a7daddc0dce56",
+        "state": "wuld.ink/argue/ (fc5e3ee8, byte-identical to its source) still embeds 20 of 20 pre-cut passages until argue re-vendors corpus 4.1.5 and re-mounts; L6's lean: at its next session"
+      }
+    },
+    "variations_rulings_V0": {
+      "his_words_verbatim": "Go with your leans on all of the rulings.",
+      "said": "2026-09-26, in chat to the V0 session (local_09acbf8f), as R0216 reports it",
+      "read_at_source": "L6 found the sentence verbatim in the V0 session's transcript (K392: a relay points to his words, it does not replace them)",
+      "relay": {
+        "relay": "R0216",
+        "md5": "b15f0a83b7b2ac933f320e022311cf9d"
+      },
+      "adopts": "V0's design section 9, each ruling as leaned (recorded in the design's section 11)",
+      "rulings": {
+        "R-V1": "argumentShapes is a new top-level node key. objectionSubforms stays as ratified (it holds the defender's refusal shapes: 4 of 4 definitions open 'Position-holder').",
+        "R-V2": "The corpus carries (a) shapes only. (b) goes to the regen queue, (d) to the map, (c) to the intake.",
+        "R-V3": "Shapes render on the flagship card in a pin; the game re-vendors them from the corpus.",
+        "R-V4": "Pilot: life-gift, joy-outweighs-harms, future-solve, free-will-defense, meta-ethical-pluralism, meaning-through-suffering.",
+        "R-V5": "The game may play the adversarial map's retreats in ROUTE THE RETREAT, after the successor map lands, (a) entries first; the (d) entries fall under the same ruling. Recorded forward beside L1a: audience_forward_note_V0_R_V5.",
+        "R-V6": "The new-objection intake runs after the pilot is judged, over scholarly and published work including 2024-2026 (his K345a scope)."
+      },
+      "design": {
+        "branch": "design/variations",
+        "commit": "08a3402809dba39b4e24462e6707f9186fbf2359",
+        "file": "design/variations/VARIATIONS_design_v0_1.md",
+        "md5": "fcf6f6fe0813072a3c66edd723a1ec80",
+        "record": {
+          "file": "design/variations/measure_variations_v0_1.json",
+          "md5": "67aa82418682b03560945c4d77f0c504"
+        },
+        "state": "on its branch, not on main: V1 (R0217) lands it --no-ff from main's side"
+      },
+      "recorded_by": "L6, the canon writer at its close (the R0164 precedent: a word relayed to the canon writer is recorded in its next bump); V1 therefore writes no canon for these"
+    },
+    "audience_forward_note_V0_R_V5": {
+      "note": "For the game, R-V5 changes L1a's 'public to read, never promoted': the game may play the adversarial map's retreats in ROUTE THE RETREAT once the successor map lands, (a) entries first, the (d) entries under the same ruling. Everywhere else L1a stands as ruled.",
+      "his_words_verbatim": "Go with your leans on all of the rulings.",
+      "ruling": "variations_rulings_V0.rulings.R-V5",
+      "leaves_untouched": "adversarial_map.audience_and_purpose_ruling_L1a (its text is not edited; this note sits beside it, forward-only)"
     }
   },
   "flagship_sidecars": {
