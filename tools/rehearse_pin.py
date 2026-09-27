@@ -28,8 +28,13 @@ In a scratch clone of this repository, carrying the working tree's tracked chang
   python3 tools/rehearse_pin.py --check    # exit 1 unless the committed record equals a fresh run
 
 Deterministic: outputs are hashed, never quoted; no scratch path, time or scratch commit enters the record.
+
+HOUSEKEEPING (added the same day, after it bit): every subprocess runs with TMPDIR inside this run's scratch, so the
+older instruments' leaked scratch directories (k349asm_, k351asm_, k346ctl_ ...) go when the scratch goes; and a
+swept script that times out is killed with its whole process group. The first run of this tool swept itself, and the
+timeout killed only the direct child: its grandchildren kept rehearsing, recursively, and filled the shared /tmp.
 """
-import hashlib, io, json, os, re, shutil, subprocess, sys, tempfile
+import hashlib, io, json, os, re, shutil, signal, subprocess, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -86,9 +91,11 @@ def md5b(b):
     return hashlib.md5(b).hexdigest()
 
 
+ENV = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
+
+
 def sh(cmd, cwd, **kw):
-    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True,
-                          env=dict(os.environ, PYTHONDONTWRITEBYTECODE="1"), **kw)
+    return subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, env=ENV, **kw)
 
 
 def tree_md5(d):
@@ -179,11 +186,13 @@ def sweep(clone, edit=None):
         if f in SWEEP_SKIP:
             continue
         reset(clone, edit)
+        p = subprocess.Popen([sys.executable, f], cwd=clone, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                             stdin=subprocess.DEVNULL, env=ENV, start_new_session=True)
         try:
-            r = subprocess.run([sys.executable, f], cwd=clone, capture_output=True, timeout=300,
-                               stdin=subprocess.DEVNULL, env=dict(os.environ, PYTHONDONTWRITEBYTECODE="1"))
-            rc = r.returncode
+            rc = p.wait(timeout=300)
         except subprocess.TimeoutExpired:
+            os.killpg(p.pid, signal.SIGKILL)   # the whole group: a timeout must not orphan grandchildren
+            p.wait()
             rc = "timeout"
         st = sh(["git", "status", "--porcelain"], clone).stdout.splitlines()
         changed = sorted(l[3:] for l in st if l[:2] == " M" and l[3:] not in SURFACES)
@@ -195,6 +204,8 @@ def sweep(clone, edit=None):
 
 def rehearse():
     scratch = tempfile.mkdtemp(prefix="rehearse_pin_")
+    os.makedirs(os.path.join(scratch, "tmp"))
+    ENV["TMPDIR"] = os.path.join(scratch, "tmp")
     try:
         clone = os.path.join(scratch, "clone")
         assert sh(["git", "clone", "--quiet", "--no-hardlinks", REPO, clone], scratch).returncode == 0

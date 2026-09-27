@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.32",
+  "canon_version": "38.33",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "gate2",
+  "last_updated_by_session": "L5",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "L5 (the declared pin session, R0150 fbafd18c) appends the three owed redrafts (PD-02, PD-03, PD-08; adversarial_map.pin_repair_drafts_judgment_gate2); gate2 judges them; his word ratifies the judged text and admits the companions; L5's phase 5 moves the pin. Then the safety pass over the six loci gate2 found (X-032), a successor map that re-anchors and re-judges the six waiting (a)s and files the sibling loci (X-033) and PF-01..03 as (b)s, adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
+    "session": "gate2 judges L5's four correction rows (PD-19, PD-20, PD-21, PC-06; adversarial_map.pin_repair_redrafts_L5); then his word on R0178's asks; then L5's phase 5, the pin move. Then the safety pass over the six loci gate2 found (X-032), a successor map that re-anchors, re-judges the six waiting (a)s and files the sibling loci (X-033) and PF-01..03 as (b)s, adversarial wing v2 and /llms.txt (adversarial_map.reader_aid_backlog_L4c), R2, and the interconnection design.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1801,7 +1801,8 @@
     },
     "L5_phase_1": "Every live instrument reads the corpus at the md5 its record pins; the lineage builders run through tools/pinned_farm.py; rehearsed (tools/rehearse_pin.py). adversarial_map.instruments_read_pinned_corpus_L5.",
     "L5_phase_2": "Drafted, not judged: 18 sentences (+506 words), 5 companions proposed, 7 findings. The patch builds GREEN under xsurface for both sets. adversarial_map.pin_repair_drafts_L5.",
-    "judged_pin_repair_drafts_gate2": "gate2 judged L5's drafts: companion ACCEPT 5; draft ACCEPT 15, AMEND 3; finding_review CONFIRM 7; knock_on CONFIRM 1. Judged is not ruled."
+    "judged_pin_repair_drafts_gate2": "gate2 judged L5's drafts: companion ACCEPT 5; draft ACCEPT 15, AMEND 3; finding_review CONFIRM 7; knock_on CONFIRM 1. Judged is not ruled.",
+    "L5_corrections": "PD-02, PD-03, PD-08 corrected as owed (PD-19, PD-20, PD-21); PC-05 reworded to name the reply (PC-06). adversarial_map.pin_repair_redrafts_L5."
   },
   "open_questions": {
     "active": {
@@ -1932,7 +1933,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.32",
+  "canon_version_marker": "v38.33",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2624,7 +2625,8 @@
     "v38_29_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (R1_v1_6_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_v1_6_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_30_L5": "MINOR. keyset UNCHANGED at 42. Three adversarial_map subkey additions (his_word_on_v1_6_judgment_R0164, pin_move_queue_L5, instruments_read_pinned_corpus_L5); next_recommended_session re-pointed (session rewritten; ruled_R0164 and L5_phase_1 added); canon-meta; this note; one session_log_recent append. NO PIN. invariants, schemas, hazard_map and flagship_sidecars asserted byte-identical, and every other top-level key too.",
     "v38_31_L5": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_L5); next_recommended_session re-pointed (session rewritten; L5_phase_2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
-    "v38_32_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_pin_repair_drafts_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
+    "v38_32_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_drafts_judgment_gate2); next_recommended_session re-pointed (session rewritten; judged_pin_repair_drafts_gate2 added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
+    "v38_33_L5": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (pin_repair_redrafts_L5); next_recommended_session re-pointed (session rewritten; L5_corrections added); canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2866,7 +2868,8 @@
     "gate2 (2026-09-26; NO PIN): v1_6 judged (R0151). Record fa89adc9: #46's (d) at HR-14 ACCEPT; register v0_7 ACCEPT; knock-on 0 CONFIRM; PQ-17 AMEND (name the lone-actor analogy too; it carries #4's anchor); declaration CONFIRM. The three judgment gates read the corpus at the md5 their judged map pins, rehearsed against a changed corpus. Judged, not ruled. Next: gate2 launches the declared pin session (R0150).",
     "L5 (2026-09-26; NO PIN): the declared pin session (R0150), phase 1. His word on gate2's v1_6 judgment recorded (R0164: 'Go with your recommendations.'), so W-004 and W-007 are ruled; PQ-17 names both sentences (pin_move_queue_L5, 18 sentences). 21 instruments read the corpus at the md5 their records pin; the three lineage builders stay byte-identical and run through tools/pinned_farm.py; rehearsed against an edit of every queued sentence. Next: the drafts.",
     "L5 (2026-09-26; NO PIN): phase 2. The repairs for pin_move_queue_L5 drafted (0819125d): 18 sentences, +506 words; the patch builds GREEN under xsurface at canonical 73be71bc (with the five proposed companions, a3ba1efa). 7 findings: #1, #48 and #50 need more than this queue. Relayed to gate2 for judgment.",
-    "gate2 (2026-09-26; NO PIN): L5's drafts judged (R0175). Record 2ed68a7c: 15 drafts ACCEPT; PD-02, PD-03 and PD-08 AMEND (a consent threshold the paragraph gives the rival; a clause that claims more than the fence; the second layer named as some efilists'); companions ACCEPT, lean admit; L5's seven findings CONFIRM; knock-on CONFIRM, the five HOLDS stand. Found: six loci that frame the survival drive as a barrier to exit (a safety question for him) and the pin's defects at sibling loci. Judged, not ruled."
+    "gate2 (2026-09-26; NO PIN): L5's drafts judged (R0175). Record 2ed68a7c: 15 drafts ACCEPT; PD-02, PD-03 and PD-08 AMEND (a consent threshold the paragraph gives the rival; a clause that claims more than the fence; the second layer named as some efilists'); companions ACCEPT, lean admit; L5's seven findings CONFIRM; knock-on CONFIRM, the five HOLDS stand. Found: six loci that frame the survival drive as a barrier to exit (a safety question for him) and the pin's defects at sibling loci. Judged, not ruled.",
+    "L5 (2026-09-26; NO PIN): the corrections gate2 owed, appended (496c3a5c): PD-19 (X-002), PD-20 (X-003), PD-21 (X-008), and PC-06 naming the reply (X-034). Patch GREEN at 2f4d20c2 (with companions 8b76672f). A runaway rehearsal recursion that filled /tmp was killed, cleaned and fixed at the source. Relayed to gate2."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -8350,6 +8353,141 @@
         }
       ],
       "next": "L5 appends superseding rows for PD-02, PD-03 and PD-08 that make the owed changes, re-runs its gate and the patch, and relays them; gate2 judges the three (rows superseding X-002, X-003 and X-008). Then his word, which L5 records in canon with ratified rows, and phase 5: tools/pin_patch_l5.py --apply --set ratified (R0150 fbafd18c). LD3 (R0170) follows L5's pin."
+    },
+    "pin_repair_redrafts_L5": {
+      "status": "DRAFTED, NOT JUDGED. gate2 judges the four rows below (K258); then his word (R0178's four asks); then the pin move.",
+      "answers": {
+        "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+        "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e",
+        "canon_block": "adversarial_map.pin_repair_drafts_judgment_gate2"
+      },
+      "corrections": [
+        {
+          "row": "PD-19",
+          "supersedes": "PD-02",
+          "answers": "X-002",
+          "verdict_answered": "AMEND",
+          "owed": [
+            "State the condition: the consent threshold is cleared on this branch only if the person-affecting view that prevails keeps the weight against non-consensual imposition that the paragraph says the strict restriction explains away. Or do not offer it as cleared here.",
+            "Scope the floor to its source: the modal or typical life, not every life."
+          ],
+          "how": "Answers X-002 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). First owed change: the consent threshold is stated as cleared only on the condition the paragraph's own residue sentence names, since its strict person-affecting form explains that weight away. Second: the floor is scoped to the typical life, as its source says ('which the modal life delivers in full'). The rest is PD-02's, which X-002 did not fault.",
+          "words": {
+            "current": 48,
+            "replacement": 110,
+            "delta": 62
+          }
+        },
+        {
+          "row": "PD-20",
+          "supersedes": "PD-03",
+          "answers": "X-003",
+          "verdict_answered": "AMEND",
+          "owed": [
+            "Conclude what the fence gives: the view does not will, as its means, the act it forbids. Do not claim its realization is independent of births."
+          ],
+          "how": "Answers X-003 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): it concludes what the fence gives, that the view does not will the forbidden act as its means, and no longer claims its realization is independent of births; 'whatever that path owes to the births others choose' leaves the (b)'s dependence where the (b) put it.",
+          "words": {
+            "current": 22,
+            "replacement": 58,
+            "delta": 36
+          }
+        },
+        {
+          "row": "PD-21",
+          "supersedes": "PD-08",
+          "answers": "X-008",
+          "verdict_answered": "AMEND",
+          "owed": [
+            "Attribute the second layer to efilism itself, as the (b), the node's long and PD-17 do, not to \"Some efilists\". Keep the draft's safety properties: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+            "With PC-02 admitted, \"Its core was\" follows \"Not at its core.\"; let the tense agree."
+          ],
+          "how": "Answers X-008 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). The second layer is attributed to efilism itself, as the (b), the node's long and PD-17 do, not to some efilists. The tense agrees with PC-02 ('Not at its core.' then 'Its core is'). The safety properties X-008 found are kept: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+          "words": {
+            "current": 20,
+            "replacement": 68,
+            "delta": 48
+          }
+        },
+        {
+          "row": "PC-06",
+          "supersedes": "PC-05",
+          "answers": "X-034",
+          "verdict_answered": "finding",
+          "owed": "Check a source before ratifying PC-05's wording; a wording that names the reply, not the man, is safe either way. If the lead holds, the node's framing joins the next queue.",
+          "how": "X-034's safe wording (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): the sentence names the reply, not the man, so it holds whichever branch Bradley's own case sits on. PC-05's reason for being a companion is unchanged; whether the node misdescribes Bradley elsewhere is X-034's finding for the next queue.",
+          "words": {
+            "current": 30,
+            "replacement": 39,
+            "delta": 9
+          }
+        }
+      ],
+      "record": {
+        "md5": "496c3a5c63541d8657e7d7e949e43648",
+        "bytes": 46947,
+        "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+        "appended": "30 committed rows intact, 4 appended",
+        "gate": {
+          "md5": "6d35aae528bda92f4a9532c04db4b54e",
+          "bytes": 19331,
+          "file": "adversarial_map_staging/r1/pin_repair_drafts_gate_v0_2.py",
+          "control": {
+            "md5": "b1611f1cafbf044a2a422a77a0977ab1",
+            "bytes": 2305,
+            "file": "adversarial_map_staging/r1/pin_repair_drafts_gate_control_v0_2.json",
+            "result": "14 of 14 as expected, the unmutated control first"
+          },
+          "changed": "v0_2, a new file: G10 (a ratification row names only current drafts and companions and covers every queue sentence once, with his words and the relay and judgment it answers); the patch simulation's temp directory removes itself; control C7 aims at a current row; the patch is read through the v0_2 tool"
+        },
+        "judged_v0_1_kept": {
+          "gate": {
+            "md5": "6556c41c51d9a609fb35857e8e294577",
+            "bytes": 16192,
+            "file": "adversarial_map_staging/r1/pin_repair_drafts_gate.py"
+          },
+          "patch": {
+            "md5": "092b9adc7cfbac33ed0f99d2b6170bb5",
+            "bytes": 5931,
+            "file": "tools/pin_patch_l5.py"
+          },
+          "why": "gate2's judgment gate pins both at the md5s it judged; a new version is a new file (the lineage law), and v0_1 still gates the grown record GREEN"
+        }
+      },
+      "knock_on": {
+        "md5": "2cde775ee82cd16b0e5cdb88820bd130",
+        "bytes": 34816,
+        "file": "adversarial_map_staging/r1/PQ_knock_on_L5_v0_2.json",
+        "note": "v0_1 (phase 2) kept; v0_2 carries the corrected text beside the old"
+      },
+      "patch": {
+        "md5": "6b810494885853aec7f43b12a51cb3f9",
+        "bytes": 7311,
+        "file": "tools/pin_patch_l5_v0_2.py",
+        "changed": "a new file over v0_1's patch: --set ratified reads the newest current ratification row; --corpus-version moves the corpus JSON's content-cut version (K335) and nothing else",
+        "patched_canonical_md5": {
+          "declared": "2f4d20c2fd2e6aa80636d7b0c3904fa5",
+          "with_companions": "8b76672fa3ca3cc33ca99e5b35fc25bd"
+        }
+      },
+      "housekeeping": {
+        "what": "The phase-1 rehearsal's first run swept every script that names the corpus, itself included, and the sweep's timeout killed only the direct child: its grandchildren went on rehearsing, recursively, in orphaned clones under /tmp, and the older instruments each run leaked a scratch directory. The shared 16 GB /tmp filled at about 17:45; the drafts gate's own patch simulation leaked too.",
+        "done": "The orphaned process tree was killed by PID (the shell's own ancestry excluded); 74 orphaned rehearsal clones, 78 patch-simulation directories and 2,417 leaked instrument directories, all owned by this seat and in use by no process, were removed; /tmp went from 100% to 35%.",
+        "fixed": {
+          "md5": "3559501c69ccbe36c093ffc36d3655be",
+          "bytes": 16978,
+          "file": "tools/rehearse_pin.py",
+          "how": "every subprocess runs with TMPDIR inside the run's scratch; a swept script that times out is killed with its whole process group; the tool skips itself. Its phase-1 record, tools/pin_rehearsal_v0_1.json, is a receipt of that run and does not move."
+        },
+        "law": "A tool that runs other tools must own their scratch and their process group: a timeout that kills one process of a tree orphans the rest."
+      },
+      "lean_on_R0178_ask_4": "Agree with gate2: do not hold this pin for the six survival-as-barrier passages (X-032). Open a short safety pass over them once the pin closes: keep the argument that the drive to survive is a drive, not proof that a life is good; cut only the framing that casts a wish to die as the mind's rational verdict and the drive as what blocks it. One of the six is social-contract#long's exit sentence, which follows PD-16; PD-16 makes it no worse.",
+      "for_his_word": {
+        "relay": "R0178",
+        "md5": "4f2f362dc7b56e8ec7bcff6f6a56e98b",
+        "from": "gate2",
+        "to": "josiah"
+      }
     }
   },
   "flagship_sidecars": {

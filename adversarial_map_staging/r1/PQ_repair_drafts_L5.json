@@ -661,6 +661,111 @@
    "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
    "date": "2026-09-26",
    "supersedes": null
+  },
+  {
+   "id": "PD-19",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-02",
+   "part": 1,
+   "locus": "benatar-asymmetry-attack#long",
+   "serves": [
+    "#7"
+   ],
+   "current": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—yet that restricted version still carries weight proportional to how much suffering typical human lives actually contain.",
+   "replacement": "Now, if person-affecting evaluation ultimately prevails, antinatalism doesn't disappear but contracts—from the claim that existence is always harmful to the narrower claim that it becomes harmful once suffering reaches a certain threshold—and whether typical lives reach it turns on where the threshold sits. The floor the typical life carries, set out at cherry-picking-worst (aging, the loss of everyone loved, bodily decline, death), clears a threshold of serious harm imposed without consent only if the person-affecting view that prevails keeps the weight against non-consensual imposition that its strict form explains away as confusion; whether typical lives fall below a life worth having is an empirical question this node does not settle.",
+   "repair_followed": "Repair: substantiate or cross-reference the suffering-load premise on the fallback branch.",
+   "how": "Answers X-002 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). First owed change: the consent threshold is stated as cleared only on the condition the paragraph's own residue sentence names, since its strict person-affecting form explains that weight away. Second: the floor is scoped to the typical life, as its source says ('which the modal life delivers in full'). The rest is PD-02's, which X-002 did not fault.",
+   "words": {
+    "current": 48,
+    "replacement": 110,
+    "delta": 62
+   },
+   "quotes": [
+    {
+     "src": "corpus:cherry-picking-worst#archetypeVariants.sophisticate",
+     "quote": "aging, the loss of everyone loved, bodily decline, death"
+    },
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "explain away as confusion"
+    }
+   ],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-02"
+  },
+  {
+   "id": "PD-20",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-03",
+   "part": 1,
+   "locus": "self-defeating#long",
+   "serves": [
+    "#11"
+   ],
+   "current": "It requires only the development of sufficient technological capacity—potentially through artificial intelligence—to address the problem of sentient suffering at a structural level.",
+   "replacement": "It requires only that whoever exists, however they came to exist, develop the capacity—potentially through artificial intelligence—to address sentient suffering at a structural level; that others will go on having children is a prediction about them, and whatever that path owes to the births others choose, the view does not will, as its means, the act it forbids.",
+   "repair_followed": "The fence exists and is cheap: the principle forbids creating; the realization path operates on whatever agents exist however they came to exist; predicted non-compliance by others is not the theorist's willed means",
+   "how": "Answers X-003 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): it concludes what the fence gives, that the view does not will the forbidden act as its means, and no longer claims its realization is independent of births; 'whatever that path owes to the births others choose' leaves the (b)'s dependence where the (b) put it.",
+   "words": {
+    "current": 22,
+    "replacement": 58,
+    "delta": 36
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-03"
+  },
+  {
+   "id": "PD-21",
+   "kind": "draft",
+   "status": "declared",
+   "pq": "PQ-08",
+   "part": 1,
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "serves": [
+    "#5"
+   ],
+   "current": "It was 'do not start a life that cannot agree to it.' Nothing in that tells the living to stop.",
+   "replacement": "Its core is 'do not start a life that cannot agree to it,' and nothing in that core tells the living to stop. Efilism itself goes further, to the 'red button': the view that it would be better if all feeling life ended, painlessly and all at once. That is a separate claim with its own burden, and not starting a life settles nothing about it either way.",
+   "repair_followed": "the (b) drafted for #5: scope the reassurance to the antinatalist core and name the second layer as the question held open at red-button-repugnant.",
+   "how": "Answers X-008 (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json). The second layer is attributed to efilism itself, as the (b), the node's long and PD-17 do, not to some efilists. The tense agrees with PC-02 ('Not at its core.' then 'Its core is'). The safety properties X-008 found are kept: a separate, all-at-once claim with its own burden that the core does not settle, and nothing that turns it toward the reader's own life.",
+   "words": {
+    "current": 20,
+    "replacement": 68,
+    "delta": 48
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PD-08"
+  },
+  {
+   "id": "PC-06",
+   "kind": "companion",
+   "status": "proposed: needs his word to enter the queue",
+   "pq": "PQ-13",
+   "part": null,
+   "locus": "bradley-no-subject#long",
+   "serves": [
+    "#42"
+   ],
+   "current": "The objection cannot be pushed hard enough to reach its intended conclusion; pushed to its strongest, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "replacement": "Short of that ground, the objection cannot be pushed hard enough to reach its intended conclusion; pushed as far as the person-affecting re-explanation takes it, it changes which argument the antinatalist is standing on without dislodging where he stands.",
+   "repair_followed": "Repair: handle the comparative branch explicitly or route to the comparative-vs-non-comparative harm bedrock.",
+   "how": "X-034's safe wording (adversarial_map_staging/r1/PQ_repair_drafts_judgments.json): the sentence names the reply, not the man, so it holds whichever branch Bradley's own case sits on. PC-05's reason for being a companion is unchanged; whether the node misdescribes Bradley elsewhere is X-034's finding for the next queue.",
+   "words": {
+    "current": 30,
+    "replacement": 39,
+    "delta": 9
+   },
+   "quotes": [],
+   "seat": "L5, the declared pin session (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "PC-05"
   }
  ]
 }

@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## Three repairs corrected — 2026-09-26 (no release; the pin stands)
+
+The judging session accepted fifteen of the eighteen drafted repairs and sent three back, each with one narrow fix. The Benatar hub's fallback now says the consent threshold holds only if the view that prevails keeps the weight its own paragraph says a strict version explains away, and it speaks of the typical life rather than every life. The self-defeating repair now claims only what its argument shows: the view does not will the births it forbids. The drifter's answer to "why not kill yourself" now says the red-button view belongs to efilism itself, not to some of its holders, and still leaves the reader's own life out of it. One companion sentence now names the reply rather than Bradley, whose own position the judge could not confirm.
+
+A housekeeping fault is recorded too: an early rehearsal of the pin ran itself inside itself and kept running out of sight until the machine's shared temporary space was full. It was stopped, cleaned up, and fixed so it cannot recur. Nothing served changed; the flagship is still v4.1.2. Canon v38.33.
+
+---
+
 ## The drafted repairs judged — 2026-09-26 (no release; the pin stands)
 
 A session that wrote none of it has judged the pin session's eighteen replacement sentences. Fifteen are accepted as written. Three go back for one narrow correction each: one offers as settled a reason that its own paragraph has just said the rival view would discard; one ends by claiming more than its argument shows; and one tells a newcomer that only some efilists hold the second, eliminationist claim, when the library's own pages say it belongs to the view itself. All five proposed extra sentences are accepted, with the recommendation that Josiah admit them. The pin session's seven findings are confirmed, and the five answers that lean on repaired passages still stand.
