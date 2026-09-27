@@ -1,0 +1,189 @@
+{
+ "artifact": "pq_repair_redrafts_gate control record",
+ "gate": "adversarial_map_staging/r1/pq_repair_redrafts_gate.py",
+ "gate_md5": "4186b09fef1212959b0365cefa8323d8",
+ "judgments_md5": "612ab67282831c527dac1476f4af1423",
+ "controls": [
+  {
+   "control": "C0",
+   "what": "unmutated",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C1",
+   "what": "a correction goes unjudged",
+   "want_rc": 1,
+   "want_message": "not judged",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "coverage: rows added since the first judgment not judged: redraft PD-19"
+  },
+  {
+   "control": "C2",
+   "what": "a verdict reads MAYBE",
+   "want_rc": 1,
+   "want_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: verdict 'MAYBE' is not one of ACCEPT/AMEND/REJECT"
+  },
+  {
+   "control": "C3",
+   "what": "an AMEND owes nothing",
+   "want_rc": 1,
+   "want_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: AMEND without saying what is owed"
+  },
+  {
+   "control": "C4",
+   "what": "a companion's lean is not a lean",
+   "want_rc": 1,
+   "want_message": "lean",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-004: lean 'maybe' is not one of admit/do not admit"
+  },
+  {
+   "control": "C5",
+   "what": "a row names a row the record lacks",
+   "want_rc": 1,
+   "want_message": "added since the first judgment",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: PD-99 is not a current draft row added since the first judgment"
+  },
+  {
+   "control": "C6",
+   "what": "a row names one the first judgment already read",
+   "want_rc": 1,
+   "want_message": "added since the first judgment",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: PD-04 is not a current draft row added since the first judgment"
+  },
+  {
+   "control": "C7",
+   "what": "a row answers a judgment that did not AMEND it",
+   "want_rc": 1,
+   "want_message": "does not AMEND",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: X-001 does not AMEND PD-02 and is not a finding"
+  },
+  {
+   "control": "C8",
+   "what": "the knock-on claim is not the reading's",
+   "want_rc": 1,
+   "want_message": "reading record's",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-005: the claim is not the reading record's {\"anchor_inside\": 13, \"answer_routes_here\": 10, \"holds\": [18, 24, 49, 52, 53], \"waiting_fails\": [1, 7, 11, 32, 50]}, or its flags fail"
+  },
+  {
+   "control": "C9",
+   "what": "the patch claim is not the reading's",
+   "want_rc": 1,
+   "want_message": "reading record's",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-006: the claim is not the reading record's {\"byte_identical\": true, \"sets\": [\"all\", \"declared\"]}, or its flags fail"
+  },
+  {
+   "control": "C10",
+   "what": "a quoted span is not declared",
+   "want_rc": 1,
+   "want_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: undeclared quotation 'an undeclared span'"
+  },
+  {
+   "control": "C11",
+   "what": "a declared quote is one character off",
+   "want_rc": 1,
+   "want_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "Y-001: undeclared quotation 'only if the person-affecting view that prevails keeps the we'"
+  },
+  {
+   "control": "C12",
+   "what": "map v1_6 moves by one byte",
+   "want_rc": 1,
+   "want_message": "pin map_v1_6",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin map_v1_6: adversarial_map_staging/adversarial_map_v1_6.json is b97180ead1acb2df55ec1a0933624505, header names 7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  {
+   "control": "C13",
+   "what": "a committed row is edited in place",
+   "want_rc": 1,
+   "want_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "append-only: committed row Y-001 was edited or removed"
+  },
+  {
+   "control": "C14",
+   "what": "a correction row supersedes properly",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C15",
+   "what": "the drafts record grows by a ratification row",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C16",
+   "what": "the first judgment grows by an appended row",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C17",
+   "what": "the canon is gone (the rename convention)",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C18",
+   "what": "a simulated pin: a quoted corpus span is gone",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C19",
+   "what": "the same, with git history withheld",
+   "want_rc": 1,
+   "want_message": "not recoverable",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin corpus: the corpus the drafts record pins (04bf6482) is not recoverable"
+  }
+ ],
+ "all_as_expected": true
+}

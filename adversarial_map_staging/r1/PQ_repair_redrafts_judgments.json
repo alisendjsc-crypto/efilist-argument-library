@@ -1,0 +1,268 @@
+{
+ "artifact": "PQ_repair_redrafts_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's second judgment of the pin session's repairs: the four correction rows (PD-19, PD-20, PD-21, PC-06) that answer its first judgment (PQ_repair_drafts_judgments.json X-002, X-003, X-008, X-034), the knock-on after them, and the phase-5 patch tool against the judged one. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's 'quotes' and is verbatim at its source, each source read at the bytes this header pins: drafts:<row id>, judgment:X-nnn (the first judgment), corpus:<node#locus> (the corpus the drafts record pins), v1_6:<node#locus>, rulings:R1-nnn, canon:<dotted.path> and reading:record. Gate: pq_repair_redrafts_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the correction makes the change its first-judgment row owed, adds no new defect, fits its node and slot, and passes his safety bar; it may ship once he gives his word",
+  "AMEND": "a named defect is owed a correction, made by a drafting seat as a superseding row and judged by one that did not make it",
+  "REJECT": "the correction is wrong; it returns to a drafting seat",
+  "CONFIRM": "the measure is right as made",
+  "CORRECT": "the measure is wrong, and what is owed is named",
+  "lean": "for a companion only: whether gate2 would admit it into this pin; admission is his word"
+ },
+ "his_word": [
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "said": "2026-09-25",
+   "applies": "PD-21, the why-not-suicide drifter slot",
+   "recorded": "wuld-ink docs/ledger/2026-09-25-WI-K395.md; the umbrella memory feedback-safety-harness-never-pro-life"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0179",
+  "md5": "c4bf691a144554f6d04014ce141d739e"
+ },
+ "judged": {
+  "drafts": {
+   "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+   "md5": "496c3a5c63541d8657e7d7e949e43648"
+  },
+  "first_judgment": {
+   "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+   "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e"
+  },
+  "knock_on": {
+   "file": "adversarial_map_staging/r1/PQ_knock_on_L5_v0_2.json",
+   "md5": "2cde775ee82cd16b0e5cdb88820bd130"
+  },
+  "patch_tool": {
+   "file": "tools/pin_patch_l5.py",
+   "md5": "092b9adc7cfbac33ed0f99d2b6170bb5"
+  },
+  "patch_tool_v0_2": {
+   "file": "tools/pin_patch_l5_v0_2.py",
+   "md5": "6b810494885853aec7f43b12a51cb3f9"
+  },
+  "drafts_gate_v0_2": {
+   "file": "adversarial_map_staging/r1/pin_repair_drafts_gate_v0_2.py",
+   "md5": "6d35aae528bda92f4a9532c04db4b54e"
+  },
+  "map_v1_6": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "canon": {
+   "file": "project_canon_v38_33.json",
+   "md5": "3a9415fccf78fe08acfb19814692f8ed"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/pq_redraft_reading.py",
+  "record": "adversarial_map_staging/r1/pq_redraft_reading_v0_1.json",
+  "md5": "083b4406060472666bcd6a113296e530",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "Y-001",
+   "kind": "redraft",
+   "row_id": "PD-19",
+   "replaces": "PD-02",
+   "answers": "X-002",
+   "locus": "benatar-asymmetry-attack#long",
+   "verdict": "ACCEPT",
+   "reason": "Both owed changes are made. The consent threshold is now cleared \"only if the person-affecting view that prevails keeps the weight against non-consensual imposition\" that the paragraph gives to the strict form, so the fallback no longer brings a universal verdict back through the rival's residue. The floor is now \"The floor the typical life carries\", its source's scope, which is what X-002 asked (\"the modal or typical life, not every life\"). The rest is PD-02's, which X-002 did not fault. The sentence became two; the node's unspaced dashes are kept, and it still agrees with the paragraph's last sentence. Measured: the current text is unchanged and the owed phrases are gone or present as owed (reading record, owed_changes).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-19",
+     "quote": "only if the person-affecting view that prevails keeps the weight against non-consensual imposition"
+    },
+    {
+     "src": "drafts:PD-19",
+     "quote": "The floor the typical life carries"
+    },
+    {
+     "src": "judgment:X-002",
+     "quote": "the modal or typical life, not every life"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-002",
+   "kind": "redraft",
+   "row_id": "PD-20",
+   "replaces": "PD-03",
+   "answers": "X-003",
+   "locus": "self-defeating#long",
+   "verdict": "ACCEPT",
+   "reason": "It concludes what the fence gives, \"the view does not will, as its means, the act it forbids\", and drops the claim X-003 faulted (\"Do not claim its realization is independent of births.\"). \"whatever that path owes to the births others choose\" leaves the (b)'s dependence standing where the (b) put it, which is the honest place for it. The next sentence, on propagation as the least important vector, still reads true after it.",
+   "owed": [],
+   "carries": [
+    "PF-05 is unchanged by it: #11's first ground, aims-frustration, stays outside this sentence."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PD-20",
+     "quote": "the view does not will, as its means, the act it forbids"
+    },
+    {
+     "src": "judgment:X-003",
+     "quote": "Do not claim its realization is independent of births."
+    },
+    {
+     "src": "drafts:PD-20",
+     "quote": "whatever that path owes to the births others choose"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-003",
+   "kind": "redraft",
+   "row_id": "PD-21",
+   "replaces": "PD-08",
+   "answers": "X-008",
+   "locus": "why-not-suicide#archetypeVariants.drifter",
+   "verdict": "ACCEPT",
+   "reason": "The second layer is attributed to efilism itself (\"Efilism itself goes further\"), as the (b), the node's long and PD-17 do, and \"Its core is\" agrees with PC-02. Read in its full slot, on his 2026-09-25 bar, it keeps every safety property X-008 found: the red button stays a hypothetical claim about all feeling life ending \"painlessly and all at once\", with \"its own burden\", which the core does not settle; and nothing turns it toward the reader's own life, which the slot keeps apart (\"still live out the one you are already in\"). It encourages no one and turns nothing pro-life. The drifter register holds.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:PD-21",
+     "quote": "Efilism itself goes further"
+    },
+    {
+     "src": "drafts:PD-21",
+     "quote": "Its core is"
+    },
+    {
+     "src": "drafts:PD-21",
+     "quote": "painlessly and all at once"
+    },
+    {
+     "src": "drafts:PD-21",
+     "quote": "its own burden"
+    },
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+     "quote": "still live out the one you are already in"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-004",
+   "kind": "companion_redraft",
+   "row_id": "PC-06",
+   "replaces": "PC-05",
+   "answers": "X-034",
+   "locus": "bradley-no-subject#long",
+   "verdict": "ACCEPT",
+   "lean": "admit",
+   "reason": "It takes X-034's safe wording: \"pushed as far as the person-affecting re-explanation takes it\" names the reply the paragraph reconstructs (Bradley's strongest reply is to \"re-explain them on a person-affecting basis\"), not the man, so it holds whichever branch Bradley's own case sits on. PC-05's reason for being a companion stands: unrepaired, the sentence contradicts PD-13, the sentence before it.",
+   "owed": [],
+   "carries": [
+    "X-034's other half is for the next queue: whether the node's closing line (\"What is closed is Bradley's objection\") misdescribes him is still unchecked."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:PC-06",
+     "quote": "pushed as far as the person-affecting re-explanation takes it"
+    },
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "re-explain them on a person-affecting basis"
+    },
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "What is closed is Bradley's objection"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-005",
+   "kind": "knock_on",
+   "claim": {
+    "anchor_inside": 13,
+    "answer_routes_here": 10,
+    "holds": [
+     18,
+     24,
+     49,
+     52,
+     53
+    ],
+    "waiting_fails": [
+     1,
+     7,
+     11,
+     32,
+     50
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "The corrections keep every current text, so the sets are the first judgment's (X-031), reproduced for the corrected set and equal to the drafts' knock-on record v0_2 (reading record, knock_on). The patch still changes exactly the 18 repaired loci and, in each, only the rows' sentences; the five HOLDS stand on the sentences X-030 named; and the corrections add or remove no survival-as-barrier framing.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-006",
+   "kind": "patch",
+   "claim": {
+    "byte_identical": true,
+    "sets": [
+     "all",
+     "declared"
+    ]
+   },
+   "verdict": "CONFIRM",
+   "reason": "The judged patch tool (pin_patch_l5.py) and its phase-5 successor (pin_patch_l5_v0_2.py), each run at its pinned bytes, choose the same rows and build byte-identical surfaces for the declared set and for all (reading record, patch_equivalence). v0_2's additions do not touch the patch: it selects the ratified set from the newest ratification row, and its --corpus-version option moves only the corpus JSON's content-cut field. So phase 5 applies the text judged here. v0_1 stays byte-identical, as the first judgment's pins require.",
+   "owed": [],
+   "carries": [
+    "The content-cut field that --corpus-version moves is release metadata, not judged text; the pin session names its value in its own record."
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "Y-007",
+   "kind": "finding",
+   "title": "the pull",
+   "finding": "All four rows carry out gate2's own owed changes, and PC-06 uses gate2's own wording. So each was read against its full paragraph or slot, not only against the owed text: PD-19's two sentences against the paragraph's last sentence, PD-20 against the sentence after it, PD-21 against the whole drifter slot under his safety bar, and PC-06 against PD-13. Each holds there.",
+   "recommendation": "None. Recorded under the law that a judge whose own lean is judged writes down the pull.",
+   "whose": "gate2",
+   "entries": [
+    5,
+    11,
+    42
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in the correction rows, the drafts record, its gates, the patch tools or the knock-on records",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}

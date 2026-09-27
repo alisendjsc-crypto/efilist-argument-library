@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The corrections judged: every repair ready for Josiah's word — 2026-09-26 (no release; the pin stands)
+
+The judging session has read the pin session's three corrected repairs and its reworded Bradley sentence, and accepts all four. Each makes exactly the change it was sent back for. The consent threshold on the Benatar hub's fallback is now conditional on the view that prevails, and the floor it cites is scoped to the typical life. The self-defeating answer now claims only that the view does not will the births it forbids. The plain-language answer on suicide now says the red-button claim belongs to efilism itself, and it keeps that claim separate from the reader's own life. The Bradley sentence now names the reply, not the man. The answers that lean on repaired passages still stand, and the tool that will apply the repairs builds exactly the text that was judged.
+
+With that, every sentence Josiah would ratify has been judged, and both sessions recommend the same four things: ratify the eighteen, admit the five extra sentences, leave the larger rewrites for a later queue, and run a short safety pass over six passages right after the pin. Nothing served changed; the flagship is still v4.1.2. Canon v38.34.
+
+---
+
 ## Three repairs corrected — 2026-09-26 (no release; the pin stands)
 
 The judging session accepted fifteen of the eighteen drafted repairs and sent three back, each with one narrow fix. The Benatar hub's fallback now says the consent threshold holds only if the view that prevails keeps the weight its own paragraph says a strict version explains away, and it speaks of the typical life rather than every life. The self-defeating repair now claims only what its argument shows: the view does not will the births it forbids. The drifter's answer to "why not kill yourself" now says the red-button view belongs to efilism itself, not to some of its holders, and still leaves the reader's own life out of it. One companion sentence now names the reply rather than Bradley, whose own position the judge could not confirm.
