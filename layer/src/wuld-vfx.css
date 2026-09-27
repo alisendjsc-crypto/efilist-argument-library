@@ -1,0 +1,471 @@
+/* wuld-vfx.css -- the opt-in second tier. Requires wuld-bezel.css.
+ *
+ * THE POWER BUTTON CYCLES: off -> cosmetic -> vfx -> off. Right-click was considered and rejected --
+ * undiscoverable, hijacks the context menu, no touch equivalent, unreachable from a keyboard. On a
+ * site shipping LEGIBLE and HIGH-CONTRAST modes, a control only a mouse user can find is not a
+ * control, and §3's argument is that this button is what makes the layer legitimate rather than imposed.
+ *
+ * WHAT THE FILM'S GLOW ACTUALLY IS. The film scales 1892 px of content down into a monitor a few
+ * hundred px wide, which CONCENTRATES each glyph's energy into fewer, brighter pixels, and blooms
+ * that. At 1:1 there is nothing to concentrate: a text-shadow sweep from nothing to past-legible
+ * moved mean luma 19.90 -> 20.20 and was indistinguishable by eye at every step. So the bloom is
+ * built where it reads in the film -- on POINT SOURCES (badges, graph nodes, LEDs) -- plus a whisper
+ * on prose that costs nothing (background median held at exactly 17.00 across the whole sweep, glyph
+ * contrast 10.28 -> 10.27) and contributes against the vignette below.
+ */
+
+:root{
+  --wz-vig-in:   42%;    --wz-vig-mid:  74%;
+  --wz-vig-a1:   .26;    --wz-vig-a2:   .58;
+  --wz-glow:      rgba(255,150,165,.45);
+  --wz-glow-hot:  rgba(255,196,206,.55);
+  /* Glow the colour the thing actually emits: a rose glow measured +24.1% where white measured
+   * +36.3% at comparable alpha, because rose's luma is 173 against white's 255 -- a tinted glow
+   * throws away a third of the light before it starts. currentColor generalises that per element. */
+  --wz-glow-mix:       80%;    --wz-text-blur:      10px;   /* plain text  */
+  --wz-glow-mix-bold: 100%;    --wz-text-blur-bold: 16px;   /* bold / bright */
+  /* THE WARM CAST. The chin's LEDs are #FF8195 and the operator reads the picture as lit by them:
+   * "give all of the text a subtle orangish tint, like the chin's LED panels have." Two mechanisms,
+   * because one cannot do it. The HALO mixes toward --wz-tint, which warms the emitted light where
+   * the bloom actually lives. The WASH is a fixed soft-light overlay that warms the glyph cores and
+   * everything else without touching any element's declared colour -- the reason a per-element
+   * `color:` override is not used is that `currentColor` INSIDE the color property resolves to the
+   * INHERITED colour, so `* { color: color-mix(currentColor ...) }` would replace every tier badge
+   * and accent with a value derived from its parent and destroy the palette. soft-light warms
+   * highlights and leaves black at black, which is what a phosphor does. */
+  --wz-tint:       #FF9A78;   /* between the LED rose (#FF8195) and amber; see the tint strip */
+  --wz-tint-glow:  34%;       /* share of the halo that is tint rather than the text's own colour */
+  --wz-dark-max:   90;
+  /* --- THE MAGNIFIER ------------------------------------------------------------------------
+   * Clamped at 1 on the low side, and that clamp is load-bearing: below 1 the stage shrinks away
+   * from the frame and the bezel stops being a frame around anything. Above 1 the content always
+   * overflows, so the camera pan can never expose an edge -- the no-void guarantee gets STRONGER
+   * as you zoom, which is the opposite of what was feared when this was written up as a risk. */
+  --wz-zoom:       1;
+  --wz-zoom-max:   4;
+  --wz-grille:     3px;   /* phosphor triad pitch at 1x, before zoom multiplies it */
+  /* THE FIRST BUILD OF THIS RAMP HIT FULL OPACITY BY 2.6x AND DROWNED THE PAGE -- at 4x the type was
+   * behind a curtain of RGB stripes rather than lit by them. Without a blend mode the grille ADDS
+   * light instead of modulating it, so its alpha has to stay low enough to read as texture. Ramp is
+   * linear across the whole zoom range and peaks here, not at 1. */
+  --wz-grille-max: .42;        /* background luma at or under which the layer is allowed to glow */
+  --wz-svg-blur:  4px;
+  --wz-svg-glow:  rgba(255,255,255,.45);   /* one glow for the whole graph; per-node currentColor
+                                            * measured inert and cost more */
+
+  /* THE CLAMP IS THE WHOLE DESIGN. The handoff's "immersive at 2, nauseating at 8" was written for
+   * a camera move in a film, where the whole frame swings. On a page the reader's eye is fixed on
+   * text, and 2deg reads as the page sliding rather than as a camera. Dropped to 0.7 on the
+   * operator's call -- "just enough to give the user a sense of movement". */
+  --wz-pan:      6px;      /* camera travel. MUST stay under the lip width (10.7px at 1440) or a
+                            * gap opens outside the frame -- that is the whole no-void guarantee. */
+  --wz-pan-ease: 260ms;
+  --wz-soft-w:   34%;      /* how far in from the edge the far-side blur reaches */
+  --wz-tilt-ease: 220ms;
+  /* --- THE FOCUS, 2026-09-13 -----------------------------------------------------------------
+   * Josiah: "the sharpening / focusing when hovering with the mouse ... Everything should feel more
+   * clear and enhanced when the cursor goes over it, not to the point where the bloom and vignette
+   * vanish -- just enough so that a user can see more clearly."
+   *
+   * CONTRAST IS THE OPERATOR, AND IT IS THE RIGHT ONE BY ARITHMETIC RATHER THAN BY TASTE. contrast()
+   * pivots at 0.5. On this ground the page sits at luma 0.04 and the type at ~0.85, so contrast(1.11)
+   * sends the ground to 0.0 and the type to 0.89: the ground goes blacker, the type goes brighter,
+   * and the HALO -- which lives between them -- is pushed toward the ground. The bloom therefore
+   * tightens rather than growing, which is what "sharper" has to mean here: the measured fact from
+   * K313b is that the glow PEAKS near 80% and degrades past it (+47.8% at 60%, +78.9% at 92% and
+   * visibly worse), because the same light spread wider reads as fog. Less spread, not more light.
+   *
+   * K313b ALSO RECORDED A RADIAL-MASKED backdrop-filter AS INERT -- "three mechanisms, max abs delta
+   * 0.000" -- and filed the instrument that produced it under cccviii in the same stratum. Re-measured
+   * on the live page 2026-09-13: contrast(1.18) inside a radial mask moves 97.6% of the pixels in the
+   * radius by a mean of 8.95 levels and 0.1% of the pixels outside it by 0.005. It is not inert; the
+   * test was. The first re-run of the VIGNETTE leg then read 0.0000 for the same reason -- the probe
+   * point sat at the viewport centre, inside the vignette's own transparent stop -- and read 2.41 /
+   * 88.4% once moved off-centre. Twice in one hour, the same shape. Probe where the thing paints. */
+  --wz-focus-r:    210px;  /* radius of the clearing. Under a third of the viewport's short side, so
+                            * it reads as attention rather than as a spotlight. */
+  --wz-focus-c:    1.13;   /* contrast, applied to what is behind: separates the type from the ground */
+  --wz-focus-b:    1.08;   /* brightness, same pass */
+  --wz-focus-s:    1.05;   /* saturation, so the warm cast survives the clearing rather than washing */
+  --wz-focus-lift: 0.105;  /* alpha of the warm radial painted OVER the filtered result. This is the
+                            * half that pushes the darkness back; the filter alone only darkens. */
+  --wz-focus-tint: 255,238,222;
+  --wz-focus-ease: 90ms;   /* the box lags the pointer by this much -- a lens, not a cursor */
+  /* MEASURED STOPS, on the flagship's own pixels, against the same box of body text. gnd = the ground
+   * between the strokes, peak = the strokes, ratio = the two separated, halo = peak/annulus (the
+   * bloom's brightness relative to the type it surrounds -- the number that says "tighter"):
+   *   c/b/lift            gnd      peak    ratio    halo
+   *   -- off --         17.00     20.37     1.20    1.198
+   *   1.13/1.08/0.105   +5.4%    +26.8%   +20.3%    1.261   <- shipped, "gently"
+   *   1.16/1.10/0.130  +11.1%    +32.4%   +19.1%    1.296   <- one notch up, still no clipping
+   *   1.20/1.12/0.130   +4.1%    +21.9%   +17.0%    1.275   <- contrast starts eating the lift
+   * Nothing clipped at any stop (pixels >= 250 in a box holding a tier badge and the crimson
+   * accent: 0.000% at every row, unchanged from off). To try a notch live, one line:
+   *   var s=document.documentElement.style;
+   *   s.setProperty('--wz-focus-c','1.16'); s.setProperty('--wz-focus-b','1.10');
+   *   s.setProperty('--wz-focus-lift','0.130');
+   * then write the numbers here. */
+  --wz-sfx-gain: 1;        /* master level for every cue and the room tone (wuld-sfx.js reads it when a
+                            * sound starts; 0..2). Tune live: document.documentElement.style.setProperty(
+                            * '--wz-sfx-gain','0.5') -- then write the number here. Softened 2026-09-12. */
+}
+
+/* --- 1. VIGNETTE -- and it is load-bearing, not decoration ------------------------------------
+ * A bloom is perceived against its surround. The earlier glow test ran against a flat luma of 17
+ * across the whole frame, which is why a real lift measured as nothing. Darkening the periphery is
+ * what lets the centre's bright things read as emitting. A plain gradient also always paints, unlike
+ * the masked backdrop-filter below, which measured inert to six decimal places. */
+html.wz-vfx .wz-vig{
+  position:fixed; inset:0; pointer-events:none; z-index:2147481500;
+  /* DEFAULT (farthest-corner) SIZING, DELIBERATELY. The first build wrote `125% 135%`, which put
+   * the ending shape so far outside the viewport that a point 180 px from the corner sat at
+   * normalised radius 0.371 -- inside the 38% transparent stop. The whole frame was in the clear
+   * zone and the measured centre/corner ratio moved 0.947 -> 0.942, i.e. nothing. With the default,
+   * 100% IS the farthest corner and the stops mean what they say. Third time today a parameter was
+   * carried over without checking it against the geometry it lands on. */
+  background:radial-gradient(ellipse at 50% 45%,
+             transparent var(--wz-vig-in),
+             rgba(0,0,0,var(--wz-vig-a1)) var(--wz-vig-mid),
+             rgba(0,0,0,var(--wz-vig-a2)) 100%);
+}
+
+/* --- 1b. THE FOCUS -------------------------------------------------------------------------
+ * A FIXED-SIZE BOX TRANSLATED TO THE POINTER, not a full-viewport element with a moving mask. The
+ * two look identical and cost differently: a moving mask repaints a screen-sized filtered layer on
+ * every pointer frame, while a translate is a compositor transform over an area of
+ * (2r)^2 = 176,400 px against the viewport's 1,440,000. Measured below at the same 16.7ms budget
+ * the rest of the layer holds.
+ * Gated exactly like the glow: the vfx tier, a dark ground, a real pointer, and motion allowed.
+ * The last of those is not fussiness -- this is a thing that follows the eye, and a reader who has
+ * asked for less movement has asked for this too. */
+html.wz-vfx .wz-focus{
+  position:fixed; left:0; top:0; pointer-events:none; z-index:2147481550;
+  width:calc(var(--wz-focus-r) * 2); height:calc(var(--wz-focus-r) * 2);
+  transform:translate3d(calc(var(--wz-fx, -9999px) - var(--wz-focus-r)),
+                        calc(var(--wz-fy, -9999px) - var(--wz-focus-r)), 0);
+  transition:transform var(--wz-focus-ease) linear, opacity 300ms ease;
+  will-change:transform;
+  opacity:0;
+  /* TWO HALVES, AND THE ORDER IS THE WHOLE POINT. backdrop-filter acts on what is BEHIND the
+     element; the element's own background then paints over that result. So: contrast separates the
+     type from the ground (and sends this ground, at luma 0.04, to 0 -- contrast pivots at 0.5, so on
+     a near-black page it can only darken), and the warm radial then lifts what is left. Ground ends
+     ABOVE where it started, type ends higher still. Either half alone fails the brief: filter only
+     is a shadow following the cursor, lift only is brighter fog. */
+  -webkit-backdrop-filter:contrast(var(--wz-focus-c)) brightness(var(--wz-focus-b)) saturate(var(--wz-focus-s));
+          backdrop-filter:contrast(var(--wz-focus-c)) brightness(var(--wz-focus-b)) saturate(var(--wz-focus-s));
+  background:radial-gradient(circle at 50% 50%,
+             rgba(var(--wz-focus-tint), var(--wz-focus-lift)) 0%,
+             rgba(var(--wz-focus-tint), calc(var(--wz-focus-lift) * 0.42)) 55%,
+             transparent 100%);
+  /* The mask is what makes it a clearing and not a rectangle. Full strength at the centre, gone by
+     the edge, so there is no boundary to see -- a hard edge here would read as a bug. */
+  -webkit-mask-image:radial-gradient(circle at 50% 50%, #000 0%, rgba(0,0,0,.62) 46%,
+                                     rgba(0,0,0,.22) 74%, transparent 100%);
+          mask-image:radial-gradient(circle at 50% 50%, #000 0%, rgba(0,0,0,.62) 46%,
+                                     rgba(0,0,0,.22) 74%, transparent 100%);
+}
+html.wz-vfx.wz-focusing .wz-focus{ opacity:1; }
+/* No pointer, no clearing: a touch screen has no hover state to sharpen, and a reader who asked for
+   reduced motion is not given a thing that chases them. */
+@media (hover:none), (pointer:coarse), (prefers-reduced-motion:reduce){
+  html.wz-vfx .wz-focus{ display:none !important; }
+}
+html.wz-lightbg .wz-focus{ display:none !important; }
+/* NOT UNDER THE MAGNIFIER. Josiah, 2026-09-13: "The magnification feature is plenty clear as is, so
+   it doesn't need any sharpening with that area." He is right for a reason worth writing down: the
+   clearing is a screen-space box and the stage under it is scaled, so at 2.5x the clearing covers a
+   fifth of the text it covers at 1x and reads as a smear rather than as attention. The magnifier is
+   already the sharpening tool for that job. */
+html.wz-zoomed .wz-focus{ display:none !important; }
+@media print{ .wz-focus{ display:none !important; } }
+
+/* --- 2. BLOOM ON POINT SOURCES ---------------------------------------------------------------- */
+/* currentColor so each tier halos in its OWN hue rather than everything blooming rose. */
+html.wz-vfx .tier-badge{
+  box-shadow:0 0 11px 1px currentColor, 0 0 3px var(--wz-glow-hot);
+}
+/* --- THE GRAPH VIEWS, now measured rather than guessed --------------------------------------
+ * d3 is vendored into the local test fixture, so the mechanism web, dependency graph and argument
+ * flow render for real. What they are made of: SVG <text> for every label (116-233 of them), plus
+ * circles, lines and rects for the structure.
+ *   SVG <text> NEEDS NOTHING. It inherits text-shadow from .wz-stage like any other text and was
+ *   already glowing: +29.7% on the annulus with no SVG rule at all.
+ *   PER-ELEMENT FILTERS ARE INERT HERE. drop-shadow on every circle measured 43.074 against 43.045
+ *   for no rule -- indistinguishable, on 82-199 filtered elements. Not shipped: an effect that
+ *   changes nothing is the thing this whole harness exists to catch.
+ *   ONE FILTER ON THE SVG ROOT WINS ON BOTH AXES: +63.3% against +38.8% for circles+lines, and a
+ *   cheaper repaint (21.6 ms vs 24.3 ms) because it is one filter instead of ~600. */
+html.wz-vfx .wz-stage svg{
+  filter:drop-shadow(0 0 var(--wz-svg-blur) var(--wz-svg-glow));
+}
+/* Graph LABELS get a tighter, hotter glow than body prose. They render at ~10px against 13px in the
+ * cards, so the same 10px blur spreads the same light over proportionally more area and reads as
+ * less. Measured A/B on one page instance with the force layout frozen -- two separate page loads
+ * cannot be compared here, because d3 re-simulates and the node positions move. */
+html.wz-vfx .wz-stage svg text{
+  text-shadow:0 0 5px color-mix(in srgb, currentColor 100%, transparent),
+              0 0 2px color-mix(in srgb, currentColor 70%, transparent);
+}
+html.wz-vfx .wz-led{ opacity:.95; box-shadow:0 0 .8em .09em var(--wz-led); }
+
+/* --- 3. THE GLOW ON THE TEXT ITSELF -----------------------------------------------------------
+ * INHERITED FROM THE STAGE, AND KEYED TO currentColor. text-shadow inherits, so one rule reaches
+ * every text node on every view -- no selector list to go stale, which is what went wrong twice:
+ * an earlier build listed (p, span, td, h1, h3, h4) and matched NONE of the 82 `div.trigger-text`
+ * elements that hold the bright prose, then concluded from that silence that a glow does not
+ * transfer to prose at 1:1. That was a claim about a selector, not about the page.
+ * currentColor makes it self-scaling: white text glows white, grey text glows grey. A fixed white
+ * glow would put a white halo around a grey letter, which is the wrong picture and reads as haze.
+ *
+ * MEASURED on the annulus around the glyphs (light added NEAR a glyph, not ON it), against the
+ * page's own pixels, with the dim-text ring watched separately so the tint stays proportionate:
+ *      55% / 8px   +60.6%      70% / 9,14px  +81.8%      80% / 10,16px  +83.5%      92% / 12,18px  +78.9%
+ * IT PEAKS AND THEN DEGRADES. Past ~80% the same light spreads over a wider ring and the halo
+ * flattens -- more alpha is not more glow. 80/100 is the measured maximum and is what ships.
+ * Background median held at exactly 17.00 at every level, so none of it costs legibility. */
+html.wz-vfx .wz-stage{
+  text-shadow:0 0 var(--wz-text-blur)
+                color-mix(in srgb, color-mix(in srgb, currentColor calc(100% - var(--wz-tint-glow)),
+                          var(--wz-tint)) var(--wz-glow-mix), transparent),
+              0 0 2px color-mix(in srgb, currentColor 40%, transparent);
+}
+/* STRUCTURAL PROMINENCE TAKES MORE -- not brightness, which is what an earlier version of this
+ * comment claimed and which is measurably the wrong rule. Audited across the wings: editorial <em>
+ * renders at colour luma 160 while <strong> renders at 95, because <strong> mostly sits inside
+ * deliberately quiet blocks (.rsi-formula) and inherits their colour. So the brighter element is
+ * the one NOT on this list, and correctly so -- <em> is stress inside a sentence and appears 35
+ * times in running prose on one wing, where the loudest paint on the view has no business. What
+ * this list actually selects is text that is prominent by structure: headings, table headers,
+ * definition terms, badges, and the trigger line. `.trigger-text` is w500 rather than w700 but is
+ * a single isolated headline element, which is why it belongs here despite its weight.
+ * Also audited and deliberately left on the base glow: <code> (luma 62 on the accent red -- a glow
+ * scales with currentColor, so dark text cannot smear) and <pre> (rendered and inspected; the
+ * monospace stays crisp at 10px blur). */
+html.wz-vfx .wz-stage :is(strong,b,h1,h2,h3,h4,h5,h6,th,dt,.tier-badge,.trigger-text){
+  text-shadow:0 0 var(--wz-text-blur-bold)
+                color-mix(in srgb, color-mix(in srgb, currentColor calc(100% - var(--wz-tint-glow)),
+                          var(--wz-tint)) var(--wz-glow-mix-bold), transparent),
+              0 0 3px color-mix(in srgb, currentColor 55%, transparent);
+}
+/* THE WASH WAS CUT, AND THE REASON IS A NUMBER. It was a fixed full-viewport overlay with
+ * mix-blend-mode:soft-light, and it cost HALF THE FRAME RATE. Measured over a scripted full-document
+ * scroll at 1440x900, frame intervals in ms:
+ *       original page, no layer     median 16.70   p95 16.70   0.0% of frames over 32ms
+ *       vfx with the wash           median 33.30   p95 50.00  85.4%
+ *       vfx with the wash removed   median 16.70   p95 16.75   1.1%
+ * Isolated one mechanism at a time: killing the vignette, the peripheral blur, the text glow, the
+ * stage transform, the SVG drop-shadow or the badge shadows changed NOTHING. Only the wash did. A
+ * blend mode has to re-composite its whole backdrop every frame, and on an 8,400px document that
+ * backdrop is the document. With the tier now defaulting to vfx, every visitor would have got a
+ * 30fps scroll.
+ *   The look did not have to go with it. The warmth is now baked into the PALETTE -- the same nine
+ * variables, pre-mixed 16% toward --wz-tint and written out as literals in wuld-type.css. Same
+ * picture, no compositing, and it is closer to the brief anyway: the operator asked for the TEXT to
+ * be tinted, and the wash was tinting panels and grounds along with it.
+ *   --wz-tint stays as the value those literals were derived from; --wz-tint-glow still tints the
+ * halo, which costs nothing because a text-shadow is paint, not blend. */
+/* THE GATE IS MEASURED, NOT NAMED. Three gates were written here and the first two were wrong in
+ * the same way -- both asked WHICH MODE, and the answer to that question does not determine whether
+ * a glow is a good idea.
+ *   v1  html.wz-vfx[data-mode="legible"]          vacuous on the flagship, which sets body classes.
+ *   v2  body.legible + [data-mode]:not(standard)  correct on both conventions, and still wrong:
+ *       it fired on /troubleshooting/, whose data-mode="dark" is DECORATION (no rule selects on it,
+ *       no switcher on the page), silencing the whole tier there. Measured: p and h1 both none.
+ *   v3  detect whether [data-mode] is wired to any stylesheet rule. That repaired v2 and left the
+ *       real defect untouched, which the operator found by looking: THE MODE NAME DOES NOT PREDICT
+ *       THE BACKGROUND. The flagship is DARK in legible and CREAM in high-contrast; the libraries
+ *       umbrella is CREAM in legible and BOTH, and DARK in high-contrast. One name, two grounds.
+ * So the gate now measures the thing it actually cares about. wuld-vfx.js reads the computed
+ * background of <body> (falling through to <html> when it is transparent), takes its Rec.709 luma,
+ * and sets html.wz-lightbg above --wz-dark-max. A MutationObserver re-grades on every mode change,
+ * so the toggles drive it without the layer knowing a single mode name. Unknown background -> light
+ * -> silent, so the failure direction is unchanged.
+ *   THE ACCESSIBILITY FLOOR MOVED TO WHERE IT BELONGS. Suppressing on a mode named "high-contrast"
+ * was always a proxy; prefers-contrast and forced-colors are the real signals, they come from the
+ * OS rather than from one site's vocabulary, and they are what a low-vision reader actually sets.
+ *   ONE RESERVATION, RECORDED AND OVERRULED: a halo fills the luminance step at the glyph edge, so
+ * on a dark high-contrast ground it does cost some of the contrast that mode exists to provide.
+ * The operator's call is that the tier is opt-in behind a power button that defaults to off, so a
+ * reader who switched it on has asked for it. The OS-level floor below is what remains of it.
+ *
+ * SCOPED TO .wz-stage, NOT TO `*`. The first version used a bare universal selector and stripped the
+ * bezel's own inner shadow and the LED glow along with the content effects -- measured in legible
+ * mode as frameShadow:none, ledShadow:none. The frame is CHROME, not an effect: a reader who wants
+ * plain type still wants the monitor around it. Scoping to the stage spares the furniture for free,
+ * because the furniture already lives outside the stage so that it cannot pivot -- one structural
+ * decision paying twice. */
+html.wz-vfx.wz-lightbg .wz-stage *{
+  text-shadow:none !important; box-shadow:none !important; filter:none !important;
+}
+html.wz-vfx.wz-lightbg .wz-vig,
+html.wz-vfx.wz-lightbg .wz-soft-l,
+html.wz-vfx.wz-lightbg .wz-soft-r{ display:none !important; }
+
+/* The floor. Not keyed to any site vocabulary, and it outranks a dark background. */
+@media (prefers-contrast: more), (forced-colors: active){
+  html.wz-vfx .wz-stage *{
+    text-shadow:none !important; box-shadow:none !important; filter:none !important;
+  }
+  html.wz-vfx .wz-vig,
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ display:none !important; }
+}
+
+/* --- 4. PERIPHERAL SOFTENING -- CUT, AND THE REASON MATTERS ----------------------------------
+ * Not shipped. Three mechanisms were built and all three measured INERT to the last decimal:
+ *     unmasked backdrop-filter child        max abs delta 0.000, 0.0000% of pixels moved
+ *     masked parent + filtered child        max abs delta 0.000
+ *     + near-transparent background on it   max abs delta 0.000
+ * backdrop-filter inside a mask-image'd parent does not composite in this engine. An effect that is
+ * configured, rendered and changes nothing is exactly what §11 exists to catch, so it is cut rather
+ * than tuned -- shipping it would be the failure this whole harness was built to prevent.
+ * THE VIGNETTE DOES ITS PERCEPTUAL JOB. "The edges recede" is carried by darkening, measured at
+ * centre/corner 0.964 -> 1.468; the film's own retention table already says the softening lives in
+ * the corners (centre 100%, mid-edge 95.2%, corner 54.3%) where the vignette is strongest.
+ * It comes back if a mechanism composites: a real duplicated layer with `filter: blur()` on a copy,
+ * masked -- which costs a second paint of the subtree and should be measured before it is believed. */
+
+/* --- 5. THE CAMERA -------------------------------------------------------------------------
+ * A PAN, NOT A TILT. This was rotate3d, and a rotation bends the subject: the page visibly skewed,
+ * the rules sloped, and the corners pulled away to show the ground behind. A camera that follows a
+ * cursor translates -- the frame stays square to the picture and you simply see a little further to
+ * one side. Nothing about the page's own geometry changes.
+ * THE AMPLITUDE IS BOUNDED BY THE LIP, which is why no void can appear: the stage slides at most
+ * --wz-pan, and the fixed bezel lip is wider than that, so the gap opened at one edge is always
+ * underneath the frame that is painted on top of it. One number, derived from another number,
+ * rather than two numbers that have to be kept in agreement by hand.
+ *   UNDER THE MAGNIFIER THE BOUND IS THE GEOMETRY INSTEAD (K317, wuld-vfx.js "THE CAMERA"): the
+ * pointer's place across the viewport maps onto what the scaled stage hides past that edge, so the
+ * sweep is exactly the overflow and the stage's edge never crosses the viewport's. The 6px rides on
+ * top, under the lip as before. */
+/* TRANSFORM-ORIGIN IS 0 0, AND THAT IS THE DIFFERENCE BETWEEN A MAGNIFIER THAT WORKS AND ONE THAT
+ * EATS THE PAGE. Measured with the origin at 50%: at zoom 2 the stage grows 720px past each side of
+ * the viewport and only the RIGHT 714px is reachable, because there is no negative scroll -- the
+ * left 726px of every line is permanently unreachable. With origin 0 0 the growth is right-and-down
+ * only, maxScrollX matches the growth exactly at every zoom tested, and nothing is lost.
+ *   The translate stays OUTSIDE the scale in the composed matrix, so the camera pan is a constant
+ * pixel amount at any zoom rather than being multiplied by it: scale(3) with --wz-px:-10px composes
+ * to matrix(3,0,0,3,-10,0). Verified on the computed style, not assumed from the spec. */
+html.wz-vfx .wz-stage{
+  will-change:transform;
+  transition:transform var(--wz-pan-ease) cubic-bezier(.22,.61,.36,1);
+  transform-origin:0 0;
+  transform:translate3d(var(--wz-px,0px), var(--wz-py,0px), 0) scale(var(--wz-zoom,1));
+}
+/* While zooming, the transition would fight the scroll compensation and the anchor point would
+ * visibly slide. Zoom steps are instant; the pan keeps its easing. */
+html.wz-zooming .wz-stage{ transition:none !important; }
+/* THE PAN'S 6px. With the cursor at the left edge the stage slides +6px right, and the document
+ * gains 6px of scrollable width -- on Windows a horizontal scrollbar that appears and disappears with
+ * the pointer, on every surface (K314 measured it, wing and flagship alike, 0 at rest). The lip
+ * already covers the gap; the overflow is only the scroller's opinion of it. Clipped on the root,
+ * which the viewport reads as overflow-x:hidden while overflow-y stays as it was (clip does not force
+ * the other axis, unlike hidden). ONLY while unzoomed and ONLY for a fine pointer: the pan is
+ * pointer-driven, and the magnifier's growth is right-and-down and NEEDS the horizontal overflow
+ * (transform-origin 0 0, see above) -- html.wz-zoomed releases it. */
+@media (hover:hover) and (pointer:fine){
+  html.wz-vfx:not(.wz-zoomed){ overflow-x:clip; }
+}
+/* STICKY IS LAID OUT IN UNSCALED SPACE AND PAINTED IN SCALED SPACE. The flagship's LIBRARY | EXAMPLES
+ * | CODA bar is position:sticky; top:0, and so is the examples view's sidebar. Sticky offsets are
+ * computed by layout against the scrollport in the page's own coordinates, and the stage's scale is
+ * applied at paint: scrolled by s under zoom k, the bar is placed at layout y = s and painted at
+ * screen y = k*s - s = (k-1)*s (plus k times its own `top`) -- it drifts DOWN the viewport as the
+ * reader scrolls and floats mid-panel until that passes the viewport's height, after which it is
+ * simply below the fold, which is why it was seen in one section of the methodology text (near the
+ * top of the page) and "nowhere else". Measured at 1.97x scrolled 752: the bar 761px down the
+ * viewport, (k-1)*752 + k*14.4 to the pixel. Under the magnifier the bar stops being
+ * sticky and scrolls with the page like everything else; Escape restores the zoom and the stickiness
+ * with it. `relative` rather than `static` so its z-index and its offsets keep meaning; scoped to the
+ * stage, so the layer's own fixed furniture is untouched. (K317, TODO 22; only the flagship carries
+ * sticky elements -- the five wings and the index carry none.) */
+html.wz-zoomed .wz-stage .top-nav,
+html.wz-zoomed .wz-stage .sidebar{ position:relative !important; }
+
+/* --- 6. PERIPHERAL BLUR, ON THE FAR SIDE FROM THE CAMERA -------------------------------------
+ * RETRACTION: an earlier build cut this as "inert -- three mechanisms, max abs delta 0.000". That
+ * was true of the form tested (a full-viewport element with a RADIAL mask) and false as a general
+ * claim about backdrop-filter, which is how it was written down. Re-tested as a strip with a LINEAR
+ * mask: max delta 167.93, 16.3% of pixels moved on the treated side and exactly 0.00 on the other.
+ * The mechanism was never the problem; the configuration was. Same error as concluding a glow does
+ * not transfer to prose from a selector that matched no prose.
+ * Opacity is driven from the cursor, so the blur sits opposite the camera: look right, the left edge
+ * softens. */
+html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{
+  position:fixed; top:0; height:100%; width:var(--wz-soft-w);
+  z-index:2147481200; pointer-events:none;
+  backdrop-filter:blur(var(--wz-soft-blur)); -webkit-backdrop-filter:blur(var(--wz-soft-blur));
+  transition:opacity var(--wz-pan-ease) linear;
+}
+html.wz-vfx .wz-soft-l{ left:0;  opacity:var(--wz-sl,0);
+  -webkit-mask-image:linear-gradient(to right,#000 0%,transparent 100%);
+          mask-image:linear-gradient(to right,#000 0%,transparent 100%); }
+html.wz-vfx .wz-soft-r{ right:0; opacity:var(--wz-sr,0);
+  -webkit-mask-image:linear-gradient(to left,#000 0%,transparent 100%);
+          mask-image:linear-gradient(to left,#000 0%,transparent 100%); }
+
+/* --- MOTION IS NOT NEGOTIABLE. The pivot is vestibular, not photosensitive: reduced-motion KILLS
+ * it rather than softening it. Vignette, bloom and softening carry no motion and may stay. */
+@media (prefers-reduced-motion:reduce){
+  html.wz-vfx .wz-stage{ transform:none !important; transition:none !important; }
+  html.wz-vfx .wz-soft-l, html.wz-vfx .wz-soft-r{ opacity:0 !important; }
+}
+
+
+/* --- THE PHOSPHOR --------------------------------------------------------------------------------
+ * What there is to zoom INTO. Invisible at 1x by construction -- opacity is driven from the zoom by
+ * wuld-vfx.js and is literally 0 until you magnify -- and it resolves into an aperture grille and
+ * scanlines as the triad pitch grows past what the eye can resolve.
+ *
+ * A FIXED OVERLAY, NOT ONE INSIDE THE STAGE, AND NO BLEND MODE. Both are the warm wash's lesson paid
+ * forward: a blend layer cost half the frame rate, and a texture painted across a 25,000px scaled
+ * document would be worse. Fixed means one compositor layer the size of the viewport however far in
+ * you go. It is also the better fiction -- phosphor belongs to the glass, not to the image -- and
+ * growing its pitch with zoom is what sells "getting closer to the screen" rather than "the picture
+ * got bigger". */
+html.wz-vfx .wz-grille{
+  position:fixed; inset:0; pointer-events:none; z-index:2147481250;
+  opacity:var(--wz-grille-a, 0);
+  background-image:
+    repeating-linear-gradient(90deg,
+      rgba(255,86,86,.34) 0 33.34%, rgba(86,255,130,.30) 33.34% 66.67%, rgba(110,130,255,.34) 66.67% 100%),
+    repeating-linear-gradient(0deg,
+      rgba(0,0,0,.30) 0 42%, rgba(0,0,0,0) 42% 100%);
+  background-size:
+    calc(var(--wz-grille) * var(--wz-zoom, 1)) 100%,
+    100% calc(var(--wz-grille) * var(--wz-zoom, 1));
+  transition:opacity .18s linear;
+}
+/* Zoom is part of the effect, so it dies with the effect -- with the ground and with the OS signals,
+ * exactly like the glow. */
+html.wz-vfx.wz-lightbg .wz-grille{ display:none !important; }
+@media (prefers-contrast: more), (forced-colors: active){
+  html.wz-vfx .wz-grille{ display:none !important; }
+}
+@media print{ .wz-grille{ display:none !important; } }
+@media (prefers-reduced-motion:reduce){ .wz-grille{ transition:none; } }
+
+/* The magnifier button, beside the power button in the chin. Same 44px target, same focus ring.
+ * The offset must clear the power button's FULL 44px, not most of it: at +42px the two hit areas
+ * overlapped by 2px at every width tested, and overlapping tap targets mean the thumb lands on
+ * whichever the stacking order favours rather than the one it aimed at. +50px leaves a 6px gap. */
+.wz-mag{
+  position:absolute; right:calc(max(1.0vw,6px) + 50px); bottom:50%; transform:translateY(50%);
+  min-width:44px; min-height:44px;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--wz-mark); opacity:.75; font-size:1.05em; line-height:1;
+  pointer-events:auto; cursor:pointer; background:none; border:0; padding:0; border-radius:50%;
+}
+.wz-mag:hover{ opacity:1; }
+.wz-mag:focus-visible{ outline:2px solid var(--wz-led); outline-offset:-6px; opacity:1; }
+html.wz-mag-on .wz-mag{ opacity:1; color:var(--wz-led); }
+
+/* The focus also thins the vignette where the reader is looking -- 34% of it survives at the centre,
+   so it is attenuated and never absent, which was the brief. Measured off-centre (the only place the
+   vignette paints): 2.41 mean levels across 88.4% of the pixels in the radius, 0.0000 outside. */
+html.wz-vfx.wz-focusing:not(.wz-zoomed) .wz-vig{
+  -webkit-mask-image:radial-gradient(circle var(--wz-focus-r) at var(--wz-fx, -9999px) var(--wz-fy, -9999px),
+                     rgba(0,0,0,.34) 0%, rgba(0,0,0,.74) 58%, #000 100%);
+          mask-image:radial-gradient(circle var(--wz-focus-r) at var(--wz-fx, -9999px) var(--wz-fy, -9999px),
+                     rgba(0,0,0,.34) 0%, rgba(0,0,0,.74) 58%, #000 100%);
+}
