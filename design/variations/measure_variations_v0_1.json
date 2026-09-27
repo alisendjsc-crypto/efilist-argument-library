@@ -1,0 +1,688 @@
+{
+  "adversarial_map_v1_6": {
+    "a_entries_routing_to_another_node": 12,
+    "a_routing_targets": 40,
+    "a_routing_targets_locus_only_no_anchor": 40,
+    "a_routing_targets_on_another_node": 20,
+    "c_entries": [
+      [
+        "change-your-mind",
+        "diagnosis-not-refutation",
+        "presupposition-inversion"
+      ]
+    ],
+    "class_counts": {
+      "a": 29,
+      "b": 32,
+      "c": 1,
+      "d": 76
+    },
+    "entries": 138,
+    "locus_kinds": {
+      "note": 5,
+      "primary": 93,
+      "variant": 40
+    },
+    "move_words_by_class": {
+      "a": {
+        "max": 59,
+        "mean": 48.62,
+        "median": 48,
+        "min": 41,
+        "n": 29,
+        "total": 1410
+      },
+      "b": {
+        "max": 139,
+        "mean": 94.5,
+        "median": 96.5,
+        "min": 48,
+        "n": 32,
+        "total": 3024
+      },
+      "c": {
+        "max": 96,
+        "mean": 96.0,
+        "median": 96,
+        "min": 96,
+        "n": 1,
+        "total": 96
+      },
+      "d": {
+        "max": 149,
+        "mean": 81.25,
+        "median": 61.0,
+        "min": 43,
+        "n": 76,
+        "total": 6175
+      }
+    },
+    "source_corpus_md5": "04bf6482aa0374ee92a81c1d55ec41f8"
+  },
+  "archetypeVariants": {
+    "by_slot": {
+      "blended": 7,
+      "defender": 12,
+      "drifter": 7,
+      "sophisticate": 13
+    },
+    "by_tier": {
+      "1": 7,
+      "2": 2,
+      "3": 4,
+      "4": 2,
+      "5": 1
+    },
+    "node_ids": [
+      "ai-fear",
+      "antinatalism-misanthropic",
+      "benatar-asymmetry-attack",
+      "bitter-childhood",
+      "cherry-picking-worst",
+      "future-solve",
+      "just-depressed",
+      "most-people-happy",
+      "next-person-cure-cancer",
+      "privileged-first-world",
+      "red-button-repugnant",
+      "selfish-lazy",
+      "slippery-slope-eugenics",
+      "violence-as-reductio",
+      "why-not-suicide",
+      "wild-animal-suffering-consistency"
+    ],
+    "nodes": 16,
+    "slots": 39,
+    "words_per_slot": {
+      "max": 432,
+      "mean": 262.62,
+      "median": 269,
+      "min": 112,
+      "n": 39,
+      "total": 10242
+    }
+  },
+  "corpus": {
+    "depths_on_every_node": true,
+    "keywords_per_node": {
+      "max": 15,
+      "mean": 9.13,
+      "median": 9.0,
+      "min": 5,
+      "n": 82,
+      "total": 749
+    },
+    "objections": 82,
+    "registered_moves": 4,
+    "strong_premise_deps_per_node": {
+      "max": 7,
+      "mean": 2.04,
+      "median": 2.0,
+      "min": 0,
+      "n": 82,
+      "total": 167
+    },
+    "strong_premise_max_nodes": [
+      "harman-benign-creation",
+      "joy-outweighs-harms"
+    ],
+    "tiers": {
+      "1": 13,
+      "2": 17,
+      "3": 14,
+      "4": 31,
+      "5": 7
+    },
+    "top_level_keys_by_count": {
+      "category": 82,
+      "confidence": 18,
+      "diagnosis": 82,
+      "id": 82,
+      "keywords": 82,
+      "note": 9,
+      "objectionSubforms": 1,
+      "psychMechanism": 82,
+      "responses": 82,
+      "sources": 82,
+      "tier": 82,
+      "trigger": 82
+    },
+    "trigger_phrasing_words": {
+      "max": 17,
+      "mean": 4.64,
+      "median": 4,
+      "min": 1,
+      "n": 277,
+      "total": 1286
+    },
+    "trigger_phrasings": {
+      "max": 11,
+      "mean": 3.38,
+      "median": 3.0,
+      "min": 1,
+      "n": 82,
+      "total": 277
+    },
+    "trigger_phrasings_total": 277,
+    "version_field": "4.1.3"
+  },
+  "cost": {
+    "anchors_words_per_unit": {
+      "archetype_variant_slot_mean": 262.62,
+      "layman_trigger_mean": 56.74,
+      "map_move_mean_class_a": 48.62,
+      "scholar_objection_mean": 111.61,
+      "trigger_phrasing_mean": 4.64
+    },
+    "estimate": {
+      "full_drafting_sessions": 8,
+      "full_judging_sessions": 8,
+      "full_shapes": 246,
+      "full_words": 22140,
+      "pilot_shapes": 18,
+      "pilot_words": 1620
+    },
+    "existing_layer_totals_words": {
+      "archetypeVariants": 10242,
+      "scholar_layer": 9152
+    }
+  },
+  "game": {
+    "code_reads": {
+      "archetypeVariants": 0,
+      "layman_trigger": 2,
+      "objectionSubforms": 0,
+      "realWorldExamples": 0,
+      "responses.short": 3,
+      "scholar_objection": 2
+    },
+    "code_splits_trigger_phrasings": false,
+    "data_blocks": [
+      "corpus",
+      "ledger",
+      "index",
+      "layman",
+      "fcorpus",
+      "fledger",
+      "freg",
+      "findex",
+      "flayman",
+      "fscholar",
+      "fmech",
+      "fflow",
+      "opp",
+      "sigils"
+    ],
+    "default_register": "layman",
+    "embeds_objectionSubforms": false,
+    "embeds_responses_whole": true,
+    "lean_embed_keep_fields": [
+      "id",
+      "tier",
+      "category",
+      "trigger",
+      "keywords",
+      "responses",
+      "diagnosis"
+    ],
+    "one_fixed_line_per_node_per_register": true,
+    "scholar_layer": {
+      "nodes": 82,
+      "words": {
+        "max": 120,
+        "mean": 111.61,
+        "median": 112.0,
+        "min": 96,
+        "n": 82,
+        "total": 9152
+      }
+    }
+  },
+  "map1": {
+    "absent_as_source": [
+      "eliminativism",
+      "self-effacing-under-universalization",
+      "solipsism",
+      "suffering-as-meaning"
+    ],
+    "edge_counts": {
+      "blended": 1295,
+      "defender": 526,
+      "drifter": 390,
+      "sophisticate": 675,
+      "total": 2886
+    },
+    "in_degree_three_character_models": {
+      "max": 109,
+      "mean": 19.4,
+      "median": 12.0,
+      "min": 0,
+      "n": 82,
+      "total": 1591
+    },
+    "sources": 78,
+    "top10_in_degree": [
+      [
+        "joy-outweighs-harms",
+        109
+      ],
+      [
+        "masochist-counterexample",
+        106
+      ],
+      [
+        "violence-as-reductio",
+        99
+      ],
+      [
+        "life-gift",
+        60
+      ],
+      [
+        "free-will-defense",
+        46
+      ],
+      [
+        "meta-ethical-pluralism",
+        44
+      ],
+      [
+        "self-defeating",
+        42
+      ],
+      [
+        "consent-both-ways",
+        37
+      ],
+      [
+        "transhumanist-objection",
+        37
+      ],
+      [
+        "meaning-through-suffering",
+        36
+      ]
+    ]
+  },
+  "note_and_confidence": {
+    "confidence_nodes": 18,
+    "note_nodes": 9
+  },
+  "objectionSubforms": {
+    "corpus_anchor_polarity": {
+      "refutation-of-deployment": 4
+    },
+    "definitions_opening_Position-holder": 4,
+    "deployment_registers": [
+      "direct-rebuttal",
+      "mechanism-substitution",
+      "preemptive-self-disavowal",
+      "premise-isolation"
+    ],
+    "nodes": [
+      "violence-as-reductio"
+    ],
+    "occurrences_in_combined_html": 1,
+    "occurrences_in_jsx": 1,
+    "rwe_instances_coding_refutation_variant_id": 5,
+    "rwe_schema_calls_it_a_refutational_variant": true,
+    "units": 4,
+    "words": 601
+  },
+  "pilot": {
+    "eligible": 69,
+    "eligible_with_2plus_attested_nonexact": [
+      "meaning-through-suffering"
+    ],
+    "in_flux": [
+      "ai-fear",
+      "benatar-asymmetry-attack",
+      "bitter-childhood",
+      "bradley-no-subject",
+      "heat-death-futility",
+      "just-depressed",
+      "most-people-happy",
+      "red-button-repugnant",
+      "revealed-preference",
+      "slippery-slope-eugenics",
+      "social-contract",
+      "violence-as-reductio",
+      "why-not-suicide"
+    ],
+    "nodes": [
+      {
+        "attested_exact": 3,
+        "attested_nonexact": [],
+        "has_archetypeVariants": false,
+        "has_note": false,
+        "id": "life-gift",
+        "keywords": 8,
+        "map1_in_degree": 60,
+        "strong_premises": 5,
+        "tier": 1,
+        "trigger_phrasings": 3,
+        "variant_slots": [],
+        "why": "highest Map 1 in-degree in T1"
+      },
+      {
+        "attested_exact": 1,
+        "attested_nonexact": [],
+        "has_archetypeVariants": false,
+        "has_note": false,
+        "id": "joy-outweighs-harms",
+        "keywords": 8,
+        "map1_in_degree": 109,
+        "strong_premises": 7,
+        "tier": 2,
+        "trigger_phrasings": 6,
+        "variant_slots": [],
+        "why": "highest Map 1 in-degree in T2"
+      },
+      {
+        "attested_exact": 1,
+        "attested_nonexact": [],
+        "has_archetypeVariants": true,
+        "has_note": false,
+        "id": "future-solve",
+        "keywords": 9,
+        "map1_in_degree": 28,
+        "strong_premises": 2,
+        "tier": 3,
+        "trigger_phrasings": 2,
+        "variant_slots": [
+          "sophisticate"
+        ],
+        "why": "highest Map 1 in-degree in T3"
+      },
+      {
+        "attested_exact": 1,
+        "attested_nonexact": [],
+        "has_archetypeVariants": false,
+        "has_note": false,
+        "id": "free-will-defense",
+        "keywords": 8,
+        "map1_in_degree": 46,
+        "strong_premises": 2,
+        "tier": 4,
+        "trigger_phrasings": 3,
+        "variant_slots": [],
+        "why": "highest Map 1 in-degree in T4"
+      },
+      {
+        "attested_exact": 0,
+        "attested_nonexact": [
+          "harris-moral-landscape-meta-ethical-pluralism-001"
+        ],
+        "has_archetypeVariants": false,
+        "has_note": false,
+        "id": "meta-ethical-pluralism",
+        "keywords": 9,
+        "map1_in_degree": 44,
+        "strong_premises": 3,
+        "tier": 5,
+        "trigger_phrasings": 2,
+        "variant_slots": [],
+        "why": "highest Map 1 in-degree in T5"
+      },
+      {
+        "attested_exact": 0,
+        "attested_nonexact": [
+          "peterson-better-never-meaning-through-suffering-001",
+          "peterson-renegade-meaning-through-suffering-001"
+        ],
+        "has_archetypeVariants": false,
+        "has_note": false,
+        "id": "meaning-through-suffering",
+        "keywords": 10,
+        "map1_in_degree": 36,
+        "strong_premises": 1,
+        "tier": 4,
+        "trigger_phrasings": 4,
+        "variant_slots": [],
+        "why": "most attested non-exact deployments among stable nodes (2)"
+      }
+    ],
+    "rule": "exclude nodes named by a pending pin-queue finding (X-032, X-033, X-034, PF-*); then, for each tier, the stable node the three Next Move characters reach most often (Map 1 in-degree); then the stable node with the most attested non-exact deployments, if not already chosen",
+    "rwe_concentration": {
+      "nonexact_attachments_on_in_flux_nodes": 28,
+      "nonexact_attachments_total": 54
+    }
+  },
+  "pins": {
+    "advmap": "7a69bc9fd197047c3cf7cecdb37a44ed",
+    "combined": "ed040cad2f60caaf0cba696af77f860e",
+    "corpus": "f3d88311ea98f8333aebbecb67766351",
+    "jsx": "518c62f4ce3fe40ea3408475f608b1ff",
+    "layman": "7a1f0881a6a9e964a4155d7897c312f8",
+    "ledger": "96c492cf4a9e15aefabdcb362838a515",
+    "map1": "1b059c498321cc2bbb960a3f8dac3c52",
+    "pq_drafts": "8c57223e8f9170cb8303bcc4b9d982c4",
+    "pq_judgments": "2ed68a7cf7f83b8d61a977f0aad0b08e",
+    "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+    "rwe_schema": "13ca1171725b8652dffc04b864692d40",
+    "validator": "c002e93877b09d523daf786036af7a57"
+  },
+  "pins_argue": {
+    "commit": "a801c556882f98adac248aa5ea841e823f327af1",
+    "index": "c3dc6fc44ab0190242be8335675faf09",
+    "inject_data": "a740d36388d51d7dec95b3e613e18015",
+    "scholar": "20999eb9b1b384d0f871a9deec464b2a"
+  },
+  "pins_ledgers": {
+    "abortion": "35fdee8ac2ae8af94258da8e86442717",
+    "anthropocentrism": "4be54416d2a089da8263b1dfd5a44fa9",
+    "right-to-die": "846379a5bba3c516bb70ddcdd80a509c",
+    "transgenderism": "e4e852a0394532facedd2ed950e12538",
+    "veganism": "a6a4dc136cf497a0a84634a9a6c18b40"
+  },
+  "pins_wings": {
+    "abortion": "827b74be5f62194efb8a230f8df20c72",
+    "anthropocentrism": "d9304ac25b18b2300b605dbd8b829004",
+    "right-to-die": "e7d6243a249e761ec96397e65aa0e174",
+    "transgenderism": "faa26bc5084da0027341b570fb6c375e",
+    "veganism": "5667a092a930be455defe8934a94cd39"
+  },
+  "plan_constants": {
+    "pilot_nodes": 6,
+    "shapes_per_judging_session": 35,
+    "shapes_per_node": 3,
+    "words_per_shape": 90
+  },
+  "r1": {
+    "entries_ruled": 69,
+    "rows": 70,
+    "verdicts": {
+      "FAILS": 46,
+      "HOLDS": 23
+    }
+  },
+  "realWorldExamples": {
+    "archetype_signal_observed": {
+      "blended": 5,
+      "defender": 15,
+      "drifter": 6,
+      "not-applicable": 38,
+      "sophisticate": 72
+    },
+    "attachments": 171,
+    "dated_2024_or_later": 39,
+    "deploys_against_nonexact_attachments": 54,
+    "deploys_against_nonexact_by_node": {
+      "ai-fear": 9,
+      "animals-reproduce": 1,
+      "antinatalism-misanthropic": 1,
+      "benatar-asymmetry-attack": 7,
+      "bitter-childhood": 3,
+      "cant-prove-nonexistence-better": 1,
+      "cherry-picking-worst": 1,
+      "consent-incoherent": 1,
+      "epistemic-humility": 1,
+      "flow-states-csikszentmihalyi": 1,
+      "imposing-values": 1,
+      "indigenous-philosophy": 1,
+      "just-edgy": 1,
+      "love-beauty-art": 1,
+      "luxury-belief": 1,
+      "meaning-through-suffering": 2,
+      "meta-ethical-pluralism": 1,
+      "moral-particularism": 1,
+      "moral-progress": 1,
+      "natural-reproduce": 1,
+      "negative-util-aggregation": 1,
+      "overpopulation-addressed": 1,
+      "policy-proposal": 1,
+      "red-button-repugnant": 2,
+      "selfish-lazy": 1,
+      "slippery-slope-eugenics": 3,
+      "social-contract": 1,
+      "suffering-makes-human": 1,
+      "survivor-testimony": 1,
+      "transhumanist-objection": 1,
+      "violence-as-reductio": 1,
+      "virtue-ethics-flourishing": 1,
+      "why-not-suicide": 2
+    },
+    "deploys_against_nonexact_nodes": 33,
+    "fit_to_trigger_phrases": {
+      "None": 5,
+      "exact": 89,
+      "loose": 20,
+      "moderate": 2,
+      "parallel-structure-different-anchor": 29,
+      "partial": 25,
+      "strong": 1
+    },
+    "instances": 136,
+    "nodes_attached": 78,
+    "polarity": {
+      "deploys-against": 91,
+      "deploys-for": 10,
+      "neutral-attestation": 12,
+      "refutation-of-deployment": 23
+    },
+    "short_quote_attestation_status": {
+      "None": 131,
+      "speaker_attributed_unverified": 4,
+      "verbatim_verified": 1
+    },
+    "short_quote_node_pairs_deploys_against_exact_fit": 47,
+    "short_quote_node_pairs_deploys_against_exact_fit_nodes": 30,
+    "short_quotes_nonempty": 96,
+    "short_quotes_on_deploys_against": 69
+  },
+  "retreat_lattice": {
+    "abortion": {
+      "by_kind": {},
+      "nodes_graded": 7,
+      "retreat_edges": 0
+    },
+    "anthropocentrism": {
+      "by_kind": {
+        "terminus:clean_dissolve": 1,
+        "terminus:contested": 4,
+        "terminus:firebreak_out_of_scope": 1,
+        "to_node": 6
+      },
+      "nodes_graded": 6,
+      "retreat_edges": 12
+    },
+    "flagship": {
+      "by_kind": {},
+      "nodes_graded": 82,
+      "retreat_edges": 0
+    },
+    "right-to-die": {
+      "by_kind": {},
+      "nodes_graded": 17,
+      "retreat_edges": 0
+    },
+    "transgenderism": {
+      "by_kind": {},
+      "nodes_graded": 12,
+      "retreat_edges": 0
+    },
+    "veganism": {
+      "by_kind": {},
+      "nodes_graded": 8,
+      "retreat_edges": 0
+    }
+  },
+  "surfaces": {
+    "held_not_shown": {
+      "attributed_short_quotes_deploys_against": 69,
+      "trigger_phrasings": 277
+    },
+    "layman_trigger_words": {
+      "max": 71,
+      "mean": 56.74,
+      "median": 56.5,
+      "min": 49,
+      "n": 82,
+      "total": 4653
+    },
+    "shown_per_register": 82
+  },
+  "validator_v0_6": {
+    "CLASSES": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "ENTRY_KEYS": [
+      "target_id",
+      "target_locus",
+      "target_anchor",
+      "adversarial_move",
+      "class",
+      "grounds",
+      "routing",
+      "status",
+      "provenance"
+    ],
+    "IND_GROUNDS": [
+      "presupposition-inversion",
+      "reader-test",
+      "grading-object-integrity"
+    ],
+    "LOCI": [
+      "short",
+      "medium",
+      "long",
+      "diagnosis"
+    ],
+    "NOTE_LOCUS": "note",
+    "PHASES": [
+      "A",
+      "B1",
+      "B2",
+      "C",
+      "D",
+      "E",
+      "F",
+      "R",
+      "G"
+    ],
+    "VARIANT_PREFIX": "archetypeVariants.",
+    "VARIANT_SLOTS": [
+      "sophisticate",
+      "defender",
+      "drifter",
+      "blended"
+    ],
+    "anchor_rule": "target_anchor nonempty, <=15 words, verbatim substring at target_locus",
+    "entry_cap_locus": "<=3 entries per (target_id, target_locus)",
+    "entry_cap_node": "<=3 + 3*(variant loci on that node) entries per node",
+    "move_band": "adversarial_move 40-150 words; class (a) additionally <=60"
+  },
+  "wings": {
+    "objections_by_wing": {
+      "abortion": 7,
+      "anthropocentrism": 6,
+      "right-to-die": 17,
+      "transgenderism": 12,
+      "veganism": 8
+    },
+    "total": 50
+  }
+}
