@@ -748,6 +748,36 @@
    "seat": "L6, the X-032 safety pass (seat l, Code): drafting seat; judges none of this (K258)",
    "date": "2026-09-26",
    "supersedes": null
+  },
+  {
+   "id": "SD-10",
+   "kind": "draft",
+   "status": "declared",
+   "part": 1,
+   "locus": "revealed-preference#medium",
+   "answers": [
+    "X-032"
+   ],
+   "current": "It activates automatically, overrides rational assessment, and triggers panic, adrenaline, and involuntary self-preservation responses even in individuals who have consciously decided they no longer wish to exist. The high failure rate of suicide attempts—and the terror experienced during the attempt—demonstrates that the survival instinct functions as a barrier to exit, not as evidence of satisfaction. Furthermore, the asymmetry of exit costs invalidates revealed preference: the cost of dying (pain, fear, harm to others, biological resistance) is catastrophically high, while the cost of continuing is dispersed across daily tolerable increments. People do not continue living because life is good. They continue because the alternative is terrifying and practically difficult. This is not a preference. It is a trap.",
+   "replacement": "It runs in lives that are going well and in lives that are not, so its running does not tell the two apart. Continued survival shows a drive at work, not a judgment that life is good—it is not evidence of satisfaction, nor of its absence.",
+   "cuts": "The instinct overriding 'rational assessment' in people who have 'consciously decided they no longer wish to exist'; the failure rate and terror of suicide attempts as proof of 'a barrier to exit'; the exit-cost asymmetry that makes death the alternative blocked by terror and difficulty; 'It is a trap.'",
+   "keeps": "The first three sentences stand: revealed-preference theory assumes behaviour reflects preference, and continued survival is driven by a compulsion installed by selection. The repair keeps the conclusion that survival is not evidence of satisfaction, and adds why without the framing: the drive runs in good lives and bad alike, so its running cannot tell them apart. 'Nor of its absence' keeps it symmetric.",
+   "how": "Answers Z-002 (gate2, SP_drafts_judgments.json 43701320, R0209): the slot's own unspaced em dash in place of the spaced one SD-02 brought in, as the slot writes it ('question—continued survival—is'). Nothing else changes: the current text, what it cuts and what it keeps are SD-02's.",
+   "words": {
+    "current": 117,
+    "replacement": 46,
+    "delta": -71
+   },
+   "residual": [],
+   "quotes": [
+    {
+     "src": "corpus:revealed-preference#medium",
+     "quote": "question—continued survival—is"
+    }
+   ],
+   "seat": "L6, the X-032 safety pass (seat l, Code): drafting seat; judges none of this (K258)",
+   "date": "2026-09-26",
+   "supersedes": "SD-02"
   }
  ]
 }

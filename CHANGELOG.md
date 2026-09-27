@@ -14,6 +14,12 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## One dash in the safety pass corrected — 2026-09-26 (no release; the pin stands)
+
+The judging session accepted nineteen of the safety pass's twenty rewrites as written, with a lean that Josiah admit the eleven that reach beyond the original six passages. It sent one back for a single character: a dash written in a different style from the rest of its answer. The corrected passage says exactly what the judged one said. Nothing served changed; the flagship is still v4.1.4. Canon v38.39.
+
+---
+
 ## The safety pass judged — 2026-09-26 (no release; the pin stands)
 
 A session that wrote none of it has judged the safety pass over the passages that cast the will to survive as a barrier in front of an exit. Every rewrite removes that framing and keeps the argument beneath it: surviving is a drive, not proof that a life is good, and going on living says nothing about what a person has concluded either way. Nothing in the rewrites turns pro-life, and nothing reads as encouragement. Efilism's red button is named as the thought experiment it is, not as a plan.
