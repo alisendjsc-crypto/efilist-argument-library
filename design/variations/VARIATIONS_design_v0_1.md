@@ -1,6 +1,6 @@
 # V0: variations of objections and rebuttals (design v0_1)
 
-**Seat l, V0, 2026-09-26. Drafted, not ruled.** Built on R0194 (LD3's kickoff) and R0197 (its addendum:
+**Seat l, V0, 2026-09-26. Drafted, then ruled the same evening (§11).** Built on R0194 (LD3's kickoff) and R0197 (its addendum:
 his go, and his words on new objections). Worktree branch `design/variations`, cut from efilist `70d224c`.
 No corpus, canon or served byte moved. **Every count below** comes from `measure_variations.py`, which
 writes `measure_variations_v0_1.json` (byte-identical under three hash seeds; `--check` recomputes).
@@ -318,3 +318,36 @@ at any time.
 - **The game was read through `git show` at that commit, never its working tree.** A live argue session
   holds uncommitted edits there.
 - **V0 wrote only under `design/variations/`,** in its own worktree beside L6.
+
+---
+
+## 11. His ruling (2026-09-26)
+
+His words, verbatim, in the V0 session: *"Go with your leans on all of the rulings."*
+
+That adopts §9 as leaned:
+- **R-V1.** `argumentShapes` is a new top-level key. `objectionSubforms` stays as ratified.
+- **R-V2.** The corpus carries (a) shapes only. (b) goes to the regen queue, (d) to the map, (c) to the
+  intake.
+- **R-V3.** Shapes render on the flagship card in a pin. The game re-vendors them from the corpus.
+- **R-V4.** The pilot is `life-gift`, `joy-outweighs-harms`, `future-solve`, `free-will-defense`,
+  `meta-ethical-pluralism` and `meaning-through-suffering`.
+- **R-V5.** The game may play the map's retreats in ROUTE THE RETREAT, after the successor map lands,
+  (a) entries first. The (d) entries fall under the same ruling. For the game, this changes L1a's "public
+  to read, never promoted".
+- **R-V6.** The intake runs after the pilot is judged, over scholarly and published work including 2024
+  to 2026.
+
+**Not ruled by this word:** §6's lean on voice-matched answers (show the 7 stable nodes' slots first; hold
+red-button-repugnant's sophisticate slot until the v4.1.5 re-vendor). That option is argue's to put to
+him. The lean goes to argue as the library's.
+
+**What follows, in order:**
+1. The canon records R-V1 to R-V6, and R-V5's change to L1a, at its next bump. L6 holds the canon now;
+   the record is relayed to seat l.
+2. V1 builds the schema and the shape validator (new files only). The map validator's shape locus rides
+   the successor map's bump.
+3. V2: l drafts the pilot. V3: gate2 judges it. Then his word. V4: the pin and the render, after L6's
+   v4.1.5 and the successor map's pin.
+4. The intake, after V3.
+5. Argue: the "now" list is theirs to build; the map's retreats come after the successor map.
