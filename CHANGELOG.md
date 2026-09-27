@@ -14,6 +14,14 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The safety pass judged — 2026-09-26 (no release; the pin stands)
+
+A session that wrote none of it has judged the safety pass over the passages that cast the will to survive as a barrier in front of an exit. Every rewrite removes that framing and keeps the argument beneath it: surviving is a drive, not proof that a life is good, and going on living says nothing about what a person has concluded either way. Nothing in the rewrites turns pro-life, and nothing reads as encouragement. Efilism's red button is named as the thought experiment it is, not as a plan.
+
+Nineteen of the twenty rewrites are accepted as written. One goes back for a single character: a dash styled differently from the rest of its paragraph. The judgment recommends that Josiah admit the proposed rewrites beyond the original six passages. These are two more slots of the revealed-preference answer, and the survivor-testimony answer, which read a survivor's recovery as a bias that returns as the crisis fades. It also recommends dropping the death rate for a named bridge. Nothing served changed; the flagship is still v4.1.4. Canon v38.38.
+
+---
+
 ## The house layer's depth: the far-side blur renders, the camera pans 12 px — 2026-09-26 (no release; the pin stands)
 
 The layer every library page links, `site/wuld-layer.css` and `.js`. The flagship links it and does not inline it, so `site/combined.html` stays `ed040cad` and the pin does not move. WI-K410, on Josiah's TO DO line: *"...to increase POV perspective and peripheral blurring to create a field of depth illusion."* The same line's tilt toggle on the chin is not part of this change. He approved it on the preview: *"Approved as is."*

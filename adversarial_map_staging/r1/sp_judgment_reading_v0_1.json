@@ -1,0 +1,378 @@
+{
+ "artifact": "sp_judgment_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/sp_judgment_reading.py",
+ "reads": {
+  "drafts": "050d240fe08f5ea69b883fb4b199c959",
+  "patch_tool": "4686278407b961c3aefa00ac1b08c11a",
+  "first_instrument": "d11cfbc7182e8fba0f549467b654b1bd",
+  "corpus": "f3d88311ea98f8333aebbecb67766351",
+  "set": "all: 20 rows (SD-01, SD-02, SD-03, SD-04, SD-05, SD-06, SD-07, SD-08, SD-09, SC-01, SC-02, SC-03, SC-04, SW-01, SW-02, SW-03, SW-04, SW-05, SW-06, SW-07)"
+ },
+ "exit_patterns": {
+  "pattern_count": 9,
+  "before": {
+   "hits": 11,
+   "loci": [
+    "heat-death-futility#long",
+    "red-button-repugnant#archetypeVariants.sophisticate",
+    "red-button-repugnant#long",
+    "revealed-preference#medium",
+    "social-contract#long",
+    "why-not-suicide#long"
+   ]
+  },
+  "after_every_row": {
+   "hits": 0,
+   "loci": []
+  }
+ },
+ "dashes": {
+  "rows_bringing_the_other_style": [
+   "SD-02"
+  ],
+  "per_row": [
+   {
+    "row": "SD-01",
+    "locus": "why-not-suicide#long",
+    "slot_rest": {
+     "spaced": 3,
+     "unspaced": 1
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-02",
+    "locus": "revealed-preference#medium",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 2
+    },
+    "replacement": {
+     "spaced": 1,
+     "unspaced": 0
+    },
+    "brings_the_other_style": true
+   },
+   {
+    "row": "SD-03",
+    "locus": "social-contract#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 5
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-04",
+    "locus": "heat-death-futility#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 3
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-05",
+    "locus": "red-button-repugnant#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 10
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-06",
+    "locus": "red-button-repugnant#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 8
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 2
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-07",
+    "locus": "red-button-repugnant#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 10
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-08",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "slot_rest": {
+     "spaced": 8,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 1,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SD-09",
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "slot_rest": {
+     "spaced": 7,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 2,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SC-01",
+    "locus": "revealed-preference#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 5
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 1
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SC-02",
+    "locus": "revealed-preference#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 4
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SC-03",
+    "locus": "revealed-preference#long",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 4
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SC-04",
+    "locus": "revealed-preference#short",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-01",
+    "locus": "survivor-testimony#diagnosis",
+    "slot_rest": {
+     "spaced": 2,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-02",
+    "locus": "survivor-testimony#short",
+    "slot_rest": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-03",
+    "locus": "survivor-testimony#medium",
+    "slot_rest": {
+     "spaced": 1,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-04",
+    "locus": "survivor-testimony#long",
+    "slot_rest": {
+     "spaced": 5,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-05",
+    "locus": "survivor-testimony#long",
+    "slot_rest": {
+     "spaced": 5,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-06",
+    "locus": "survivor-testimony#long",
+    "slot_rest": {
+     "spaced": 5,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   },
+   {
+    "row": "SW-07",
+    "locus": "survivor-testimony#long",
+    "slot_rest": {
+     "spaced": 5,
+     "unspaced": 0
+    },
+    "replacement": {
+     "spaced": 0,
+     "unspaced": 0
+    },
+    "brings_the_other_style": false
+   }
+  ]
+ },
+ "honest_evaluation_phrasing": {
+  "before": [
+   {
+    "locus": "why-not-suicide#long",
+    "match": "prevents honest"
+   },
+   {
+    "locus": "red-button-repugnant#long",
+    "match": "distorting honest"
+   },
+   {
+    "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+    "match": "distorting honest"
+   },
+   {
+    "locus": "boonin-critique#long",
+    "match": "systematically distorting moral judgment"
+   },
+   {
+    "locus": "boonin-critique#long",
+    "match": "prevents honest"
+   },
+   {
+    "locus": "survivor-testimony#long",
+    "match": "prevents honest"
+   }
+  ],
+  "after_every_row": [
+   {
+    "locus": "boonin-critique#long",
+    "match": "systematically distorting moral judgment"
+   },
+   {
+    "locus": "boonin-critique#long",
+    "match": "prevents honest"
+   }
+  ]
+ },
+ "knock_on": [
+  {
+   "what": "#3 half 1",
+   "locus": "why-not-suicide#long",
+   "text": "explicitly differentiates between preventing future suffering and terminating existing life",
+   "before": 1,
+   "after": 1
+  },
+  {
+   "what": "#3 half 2",
+   "locus": "why-not-suicide#long",
+   "text": "it keeps a body going, it does not weigh the life",
+   "before": 0,
+   "after": 1
+  },
+  {
+   "what": "#3 sincerity",
+   "locus": "why-not-suicide#long",
+   "text": "not that someone who argues the case does not mean it",
+   "before": 0,
+   "after": 1
+  },
+  {
+   "what": "#44 anchor",
+   "locus": "red-button-repugnant#long",
+   "text": "at what point does the perpetual manufacturing of beings",
+   "before": 1,
+   "after": 1
+  },
+  {
+   "what": "#47 anchor",
+   "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+   "text": "products of the survival firmware the framework already identifies as distorting honest evaluation",
+   "before": 1,
+   "after": 0
+  },
+  {
+   "what": "#56 value base",
+   "locus": "heat-death-futility#long",
+   "text": "HOW MUCH suffering occurs along the way",
+   "before": 1,
+   "after": 1
+  }
+ ]
+}
