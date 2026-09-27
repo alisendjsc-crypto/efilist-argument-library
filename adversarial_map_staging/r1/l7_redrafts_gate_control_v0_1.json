@@ -1,0 +1,171 @@
+{
+ "artifact": "l7_redrafts_gate control record",
+ "gate": "adversarial_map_staging/r1/l7_redrafts_gate.py",
+ "gate_md5": "f1393c8d44a16c082ce1c0d8d447a427",
+ "judgments_md5": "8f2ee5e4bdeb51899f5143a7779afc1a",
+ "controls": [
+  {
+   "control": "C0",
+   "what": "unmutated",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C1",
+   "what": "a new row goes unjudged",
+   "want_rc": 1,
+   "want_message": "new rows not judged",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "coverage: new rows not judged: redraft SM-52"
+  },
+  {
+   "control": "C2",
+   "what": "a redraft's verdict reads MAYBE",
+   "want_rc": 1,
+   "want_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: verdict 'MAYBE' is not one of ACCEPT/AMEND/REJECT"
+  },
+  {
+   "control": "C3",
+   "what": "a redraft names a row the first judgment already read",
+   "want_rc": 1,
+   "want_message": "gained after the first judgment",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: SM-01 is not a current row the drafts record gained after the first judgment"
+  },
+  {
+   "control": "C4",
+   "what": "a redraft answers a row that is not the AMEND of what it replaces",
+   "want_rc": 1,
+   "want_message": "does not AMEND",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: U-004 does not AMEND SM-01"
+  },
+  {
+   "control": "C5",
+   "what": "a redraft names the wrong replaced row",
+   "want_rc": 1,
+   "want_message": "supersedes",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: SM-52 supersedes SM-01, not SM-04"
+  },
+  {
+   "control": "C6",
+   "what": "a class-change row is dropped",
+   "want_rc": 1,
+   "want_message": "do not match the reading record",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "coverage: knock-on rows [6, 53, 83, 88, 89] do not match the reading record's class changes [5, 6, 53, 83, 88, 89]"
+  },
+  {
+   "control": "C7",
+   "what": "the route row is not U-065's",
+   "want_rc": 1,
+   "want_message": "is not U-065",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-023: route 'U-064' is not U-065's"
+  },
+  {
+   "control": "C8",
+   "what": "a quoted span is not declared",
+   "want_rc": 1,
+   "want_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: undeclared quotation 'an undeclared span'"
+  },
+  {
+   "control": "C9",
+   "what": "a declared quote is one character off",
+   "want_rc": 1,
+   "want_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: undeclared quotation 'the tell, the one test offered, is built not to'"
+  },
+  {
+   "control": "C10",
+   "what": "map v1_8 moves by one byte",
+   "want_rc": 1,
+   "want_message": "pin map_v1_8",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin map_v1_8: adversarial_map_staging/adversarial_map_v1_8.json is e860f851a0c04fd195803e8cfdb7a007, header names 691930ab76908a85a6850bdb714d3827"
+  },
+  {
+   "control": "C11",
+   "what": "a committed row is edited in place",
+   "want_rc": 1,
+   "want_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "append-only: committed row U2-001 was edited or removed"
+  },
+  {
+   "control": "C12",
+   "what": "a correction row supersedes properly",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C13",
+   "what": "the first judgment grows by an appended row",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C14",
+   "what": "a committed first-judgment row is edited in place",
+   "want_rc": 1,
+   "want_message": "not merely grown by appended rows",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin first_judgment: adversarial_map_staging/r1/L7_successor_drafts_judgments.json is 7eb82c947813d94a5b5f0f0454cf0166, header names bd3b4e89f25e7f874f5aa553b998fe0d, and it has not merely grown by appended rows"
+  },
+  {
+   "control": "C15",
+   "what": "the canon is gone (the rename convention)",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C16",
+   "what": "a finding names an entry R1 never ruled",
+   "want_rc": 1,
+   "want_message": "are not R1 entries",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-030: entries [999] are not R1 entries"
+  },
+  {
+   "control": "C17",
+   "what": "an AMEND owes nothing",
+   "want_rc": 1,
+   "want_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U2-001: AMEND without saying what is owed"
+  }
+ ],
+ "all_as_expected": true
+}

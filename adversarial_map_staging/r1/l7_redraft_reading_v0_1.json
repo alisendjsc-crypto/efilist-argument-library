@@ -1,0 +1,510 @@
+{
+ "artifact": "l7_redraft_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/l7_redraft_reading.py",
+ "reads": {
+  "controls_v1_7_record": "a0fc503133221975b4dcb1393a41bc99",
+  "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "drafts": "370e7d02457314e10d6211f95d5ae8c0",
+  "drafts_first": "fd9267f853a5a09fe5aa3972b16fa2a7",
+  "exit_patterns": "d11cfbc7182e8fba0f549467b654b1bd",
+  "first_gate": "419d4e06e668e47b5ac4b605e66ecc02",
+  "first_judgment": "bd3b4e89f25e7f874f5aa553b998fe0d",
+  "first_reading": "122a34339bc4afbbaff58a7643ef8878",
+  "knock_on_record": "6635d5ec3aaa4018c146260bb6b58ab0",
+  "knock_on_tool": "66022fa8e9ba7ad3ff26e42aee5b0b1c",
+  "register_v0_8": "8f6d38886b95033600752a5be052bd99",
+  "register_v0_9": "8e53d920099e8b850baa2879dfd3e351",
+  "v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+  "v1_7": "db40b45693eff1297b3f3152c6295c15",
+  "v1_8": "691930ab76908a85a6850bdb714d3827",
+  "validator_v0_7": "8a74dcc452338f127ec03e078090c2ed",
+  "wide_patterns": "dc2525ef40fc5353a670484f511bd668"
+ },
+ "new_rows": [
+  {
+   "row": "SM-52",
+   "supersedes": "SM-01",
+   "answers": "U-001",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-53",
+   "supersedes": "SM-02",
+   "answers": "U-002",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-54",
+   "supersedes": "SM-06",
+   "answers": "U-006",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-55",
+   "supersedes": "SM-08",
+   "answers": "U-008",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-56",
+   "supersedes": "SM-15",
+   "answers": "U-015",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-57",
+   "supersedes": "SM-16",
+   "answers": "U-016",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-58",
+   "supersedes": "SM-17",
+   "answers": "U-017",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-59",
+   "supersedes": "SM-20",
+   "answers": "U-020",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-60",
+   "supersedes": "SM-25",
+   "answers": "U-025",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-61",
+   "supersedes": "SM-27",
+   "answers": "U-027",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-62",
+   "supersedes": "SM-30",
+   "answers": "U-030",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-63",
+   "supersedes": "SM-31",
+   "answers": "U-031",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-64",
+   "supersedes": "SM-33",
+   "answers": "U-033",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-65",
+   "supersedes": "SM-34",
+   "answers": "U-034",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-66",
+   "supersedes": "SM-37",
+   "answers": "U-037",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-67",
+   "supersedes": "SM-38",
+   "answers": "U-038",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-68",
+   "supersedes": "SM-39",
+   "answers": "U-039",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move"
+   ],
+   "other_fields_changed": []
+  },
+  {
+   "row": "SM-69",
+   "supersedes": "SM-45",
+   "answers": "U-045",
+   "answers_the_amend_of_it": true,
+   "set_fields_changed": [
+    "adversarial_move",
+    "grounds",
+    "routing"
+   ],
+   "other_fields_changed": [
+    "bedrock_from",
+    "quotes"
+   ]
+  }
+ ],
+ "coverage": {
+  "amended_in_the_first_judgment": [
+   "SM-01",
+   "SM-02",
+   "SM-06",
+   "SM-08",
+   "SM-15",
+   "SM-16",
+   "SM-17",
+   "SM-20",
+   "SM-25",
+   "SM-27",
+   "SM-30",
+   "SM-31",
+   "SM-33",
+   "SM-34",
+   "SM-37",
+   "SM-38",
+   "SM-39",
+   "SM-45"
+  ],
+  "superseded_by_a_new_row": [
+   "SM-01",
+   "SM-02",
+   "SM-06",
+   "SM-08",
+   "SM-15",
+   "SM-16",
+   "SM-17",
+   "SM-20",
+   "SM-25",
+   "SM-27",
+   "SM-30",
+   "SM-31",
+   "SM-33",
+   "SM-34",
+   "SM-37",
+   "SM-38",
+   "SM-39",
+   "SM-45"
+  ],
+  "equal": true
+ },
+ "derivation": {
+  "v1_7_entries": 146,
+  "v1_8_entries": 146,
+  "carried_byte_for_byte": 128,
+  "changed": 18,
+  "class_counts_v1_7": {
+   "a": 28,
+   "b": 30,
+   "c": 1,
+   "d": 87
+  },
+  "class_counts_v1_8": {
+   "a": 28,
+   "b": 30,
+   "c": 1,
+   "d": 87
+  },
+  "failures": []
+ },
+ "move_register": {
+  "patterns": [
+   "now",
+   "still",
+   "in place of",
+   "since",
+   "withdrew/withdrawn",
+   "the repair",
+   "as repaired",
+   "the old",
+   "the new ground"
+  ],
+  "new_moves_with_history_wording": []
+ },
+ "quotes": {
+  "declared": 48,
+  "verbatim": 48,
+  "not_verbatim": [],
+  "undeclared_spans": []
+ },
+ "bedrock": [
+  {
+   "row": "SM-54",
+   "from": "moral-progress#long",
+   "hr": "HR-06",
+   "facet": "unrefusable-condition-on-non-antecedent-subject",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-55",
+   "from": "moral-progress#long",
+   "hr": "HR-06",
+   "facet": "unrefusable-condition-on-non-antecedent-subject",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-56",
+   "from": "red-button-repugnant#archetypeVariants.sophisticate",
+   "hr": "HR-14",
+   "facet": "terminus-held-open",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-60",
+   "from": "moral-progress#long",
+   "hr": "HR-06",
+   "facet": "unrefusable-condition-on-non-antecedent-subject",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-63",
+   "from": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+   "hr": "HR-14",
+   "facet": "coercion-floor",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-66",
+   "from": "harman-benign-creation#long",
+   "hr": "HR-05",
+   "facet": "no-worse-off-baseline",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-68",
+   "from": "boonin-critique#short",
+   "hr": "HR-06",
+   "facet": "unrefusable-condition-on-non-antecedent-subject",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  },
+  {
+   "row": "SM-69",
+   "from": "red-button-repugnant#medium",
+   "hr": "HR-02",
+   "facet": "intrinsic-value-of-existence",
+   "name_copied_equal": true,
+   "v0_8_files_the_source_there": true,
+   "v0_9_files_the_entry_there": true
+  }
+ ],
+ "register": {
+  "removed": [
+   "HR-05/no-worse-off-baseline revealed-preference#long"
+  ],
+  "added": [
+   "HR-02/intrinsic-value-of-existence revealed-preference#long"
+  ],
+  "counts_changed": {
+   "HR-02": [
+    10,
+    11
+   ],
+   "HR-05": [
+    14,
+    13
+   ]
+  },
+  "new_pairs": [],
+  "undeclared_in_v0_9": []
+ },
+ "knock_on": {
+  "collision_rule": "v0_2, l4_knock_on.collisions at its pinned bytes",
+  "newly_collided_by_lineage": [
+   5,
+   6,
+   19,
+   20,
+   29,
+   30,
+   39,
+   88,
+   136
+  ],
+  "by_lineage_and_class": [
+   5,
+   6,
+   19,
+   20,
+   29,
+   30,
+   39,
+   53,
+   83,
+   88,
+   89,
+   136
+  ],
+  "by_node_locus_anchor_class": [
+   5,
+   6,
+   19,
+   20,
+   29,
+   30,
+   39,
+   53,
+   83,
+   88,
+   89,
+   136
+  ],
+  "a_class_change_at_an_entry_already_met": [
+   {
+    "i": 5,
+    "target": "why-not-suicide#archetypeVariants.blended",
+    "reclassed_at_a_known_entry": [
+     "why-not-suicide#archetypeVariants.drifter (d, i=7)"
+    ]
+   },
+   {
+    "i": 6,
+    "target": "why-not-suicide#archetypeVariants.defender",
+    "reclassed_at_a_known_entry": [
+     "why-not-suicide#archetypeVariants.drifter (d, i=7)"
+    ]
+   },
+   {
+    "i": 53,
+    "target": "antinatalism-misanthropic#archetypeVariants.defender",
+    "reclassed_at_a_known_entry": [
+     "antinatalism-misanthropic#long (d, i=51)"
+    ]
+   },
+   {
+    "i": 83,
+    "target": "adoption-instead#long",
+    "reclassed_at_a_known_entry": [
+     "benatar-asymmetry-attack#long (d, i=13)"
+    ]
+   },
+   {
+    "i": 88,
+    "target": "overpopulation-addressed#long",
+    "reclassed_at_a_known_entry": [
+     "benatar-asymmetry-attack#long (d, i=13)"
+    ]
+   },
+   {
+    "i": 89,
+    "target": "hedonic-contrast#long",
+    "reclassed_at_a_known_entry": [
+     "benatar-asymmetry-attack#long (d, i=13)"
+    ]
+   }
+  ],
+  "the_controls_record_lists": [
+   5,
+   6,
+   19,
+   20,
+   29,
+   30,
+   39,
+   53,
+   83,
+   88,
+   89,
+   136
+  ]
+ },
+ "safety": {
+  "hits_in_new_fields": [
+   {
+    "row": "SM-69",
+    "field": "grounds",
+    "set": "L6 wide:drive_distorts_or_blocks",
+    "match": "biological compulsion, and the optimism bias operating in concert to prevent"
+   }
+  ]
+ },
+ "pins": {
+  "gate2_L7_instrument_names_controls_v1_7": {
+   "adversarial_map_staging/r1/l7_judgments_gate.py": false,
+   "adversarial_map_staging/r1/l7_judgment_reading.py": false
+  },
+  "controls_v1_7_record_read_at": "a0fc503133221975b4dcb1393a41bc99"
+ },
+ "validator": {
+  "v0_7_assembly_on_v1_8": {
+   "passed": true,
+   "violations": 0,
+   "advisories": 0
+  }
+ }
+}

@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The successor map's corrections accepted — 2026-09-26 (no release; the pin stands)
+
+The same judging session read the 18 corrections. All are accepted. In sixteen, the objection now speaks to the library's text as it reads today; the correction session changed nothing else in them. One objection now states the passage it answers correctly. Another now presses the passage's real weakness: it explains away the wish to live as bias, which the library forbids elsewhere. The check of nearby problems is now part of every build, and it found 12 answers to look at, not the 9 the judging session first counted; all 12 still hold. The first judgment's condition for Josiah's four questions is met; his word decides them. Nothing served changed; the flagship is still v4.1.5. Canon v38.46.
+
 ## The successor map's corrections redrafted — 2026-09-26 (no release; the pin stands)
 
 A session that drafted none of the successor map judged it: 22 of its rows accepted, 11 re-reads confirmed, and 18 sent back for correction, none rejected. Sixteen of the eighteen were one wording fault: the objection spoke of how the library's text used to read, which a reader of today's text cannot see. Two misstated the passage they answer. All eighteen are redrafted as rows that replace the ones sent back, and nothing else in the map moves (v1_8). One of them now ends where two others with the same charge already end, so the honest-residuals register moves that one line (v0_9). A new check also confirms that every answer the corrections brought into contact with a newly filed problem has been read. None of it is judged yet; then Josiah rules. Nothing served changed; the flagship is still v4.1.5. Canon v38.45.

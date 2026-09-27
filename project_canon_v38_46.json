@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.45",
+  "canon_version": "38.46",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L7",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. Next: a seat that drafted none of it judges L7's 18 redrafts (adversarial_map.successor_redrafts_L7; v1_8, register v0_9), a narrow second round: each superseding move equals the drafted one but for the named wording, plus SM-55's and SM-69's content. Then his word on R0244's four asks, conditional on that acceptance; then L7 closes: the R1 rows he rules (#11, #22, #32, #50, and the new (a) at self-defeating#long through the evidence addendum), canon records his word, and the /adversarial/ tab icon is wired if he does not object. Beside it: V2 drafts the pilot's shapes (R-V4); argue re-vendors v4.1.5 (R0222). After: the next queue (successor_carries_L7_round2 and carries_L7), adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
+    "session": "The pin is v4.1.5. gate2 judged L7's 18 redrafts (adversarial_map.successor_redrafts_judgment_gate2): all ACCEPT; v1_8 and register v0_9 CONFIRM; R0244's condition is met. Next: his word on R0244's four asks; then L7 closes: the R1 rows he rules (#11, #22, #32, #50, and the new (a) at self-defeating#long through the evidence addendum, on U2-023's two conditions), canon records his word, and the /adversarial/ tab icon is wired if he does not object. Beside it: V2 drafts the pilot's shapes (R-V4); argue re-vendors v4.1.5 (R0222). After: the next queue (successor_carries_L7_round2 and carries_L7), adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1863,7 +1863,8 @@
         "knock_on_successor_L7",
         "successor_carries_L7_round2"
       ]
-    }
+    },
+    "judged_successor_redrafts_gate2": "gate2 judged SM-52..SM-69 (record L7_successor_redrafts_judgments.json, gate l7_redrafts_gate.py): 18 ACCEPT; v1_8, v0_9, the knock-on control, the controls_v1_7 change and the U-065 route CONFIRM. Judged, not ruled."
   },
   "open_questions": {
     "active": {
@@ -1994,7 +1995,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.45",
+  "canon_version_marker": "v38.46",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2699,7 +2700,8 @@
     "v38_42_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_LANDED_L6_tail, variations_rulings_V0, audience_forward_note_V0_R_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved; audience_and_purpose_ruling_L1a asserted byte-identical (R-V5 is recorded forward beside it).",
     "v38_43_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_measure_L7, successor_drafts_L7, validator_pin_v0_7, terminal_assembly_v1_7_L7, honest_residuals_register_pin_v0_8, carries_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
     "v38_44_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (successor_drafts_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
-    "v38_45_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_redrafts_L7, terminal_assembly_v1_8_L7, honest_residuals_register_pin_v0_9, knock_on_successor_L7, successor_carries_L7_round2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved."
+    "v38_45_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_redrafts_L7, terminal_assembly_v1_8_L7, honest_residuals_register_pin_v0_9, knock_on_successor_L7, successor_carries_L7_round2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
+    "v38_46_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (successor_redrafts_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2954,7 +2956,8 @@
     "L6 (2026-09-26): the v4.1.5 pin's tail (wuld-ink b2171719, read back; argue's re-vendor notice R0222) and his word on V0's six rulings (\"Go with your leans on all of the rulings.\", R0216, read at source), R-V5 recorded forward beside L1a. No pin.",
     "L7 (2026-09-26): the successor map over the v4.1.3 and v4.1.5 cuts, drafted and not judged: measure (every v1_6 entry, 38 of 38 knock-on rows reproduced), 51 drafted rows, adversarial_map_v1_7.json (146 entries), register v0_8, validator v0_7 with the argumentShapes locus. No pin.",
     "gate2 (2026-09-26; NO PIN): L7's successor drafts judged (R0237). Record bd3b4e89: 22 ACCEPT, 11 CONFIRM, 18 AMEND (16 moves narrate the corpus's history; SM-08 and SM-45 misstate the text); validator v0_7 and register v0_8 CONFIRM; the knock-on the drafting seat did not run, measured here: nine (a)s newly collided, all stand. Four proposed HOLDS accepted; the new (a) at self-defeating#long read HOLDS. Canon back to L7.",
-    "L7 (2026-09-26), second round: gate2's 18 AMENDs redrafted as superseding rows (SM-52..SM-69); adversarial_map_v1_8.json (v1_7 plus the redrafts), register v0_9 (SM-69 moves to HR-02), the knock-on as a build control (U-064). No pin."
+    "L7 (2026-09-26), second round: gate2's 18 AMENDs redrafted as superseding rows (SM-52..SM-69); adversarial_map_v1_8.json (v1_7 plus the redrafts), register v0_9 (SM-69 moves to HR-02), the knock-on as a build control (U-064). No pin.",
+    "gate2 (2026-09-26; NO PIN): L7's 18 redrafts judged (R0245). Record 8f2ee5e4: all ACCEPT (16 without the corpus-history wording, SM-55's hub condition as it stands, SM-69 pressing the diagnosis to HR-02); v1_8, v0_9, the knock-on control (12, which corrects gate2's own 9) and the controls_v1_7 change CONFIRM; the U-065 route CONFIRM with two conditions. R0244's condition met; canon back to L7."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -10282,6 +10285,170 @@
         "said": "in chat to the L7 session, about 22:25 America/Phoenix, with screenshots of the /adversarial/ stat strip, its browser tab and the /libraries rail",
         "seat_lean": "Tab icon: the mark is drawn, approved and served (/icon-adversarial.svg, afa3a69f); only the page's <link rel=\"icon\"> in render_wing_v0_1.py is owed (R0167). Lean: wire it at L7's close as a one-line change, no pin, read back live. Count icons: yes on the /adversarial/ strip, where the counts are dispositions and LD2's outcome glyphs (R0159) already encode two of them, placed with the plain-layer glosses; on the /libraries rail, only 'libraries' (the six library marks, as 'tiers' carries the tier marks); objections, mechanisms and attested deployments stay bare unless the design lane draws each from its own data. Every mark a datum (his game-visuals rule)."
       }
+    },
+    "successor_redrafts_judgment_gate2": {
+      "status": "JUDGED, NOT RULED. gate2's second judgment of L7's successor map: all 18 redrafts ACCEPT; map v1_8, register v0_9, the knock-on control and the controls_v1_7 change CONFIRM; the U-065 route CONFIRM with two conditions for when it is built. R0244's condition is met. Nothing ships on a judgment.",
+      "judge": "gate2, which drafted none of SM-52..SM-69, v1_8, v0_9, their builders or controls (K258); SM-69 carries gate2's own U-045 lean (U2-032 records the pull)",
+      "kickoff": {
+        "relay": "R0245",
+        "md5": "7ecc0659301d2bb21fee4e6dde7ee4dc"
+      },
+      "answers": {
+        "record": {
+          "md5": "bd3b4e89f25e7f874f5aa553b998fe0d",
+          "bytes": 91761,
+          "file": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json"
+        },
+        "canon_block": "adversarial_map.successor_drafts_judgment_gate2"
+      },
+      "record": {
+        "md5": "8f2ee5e4bdeb51899f5143a7779afc1a",
+        "bytes": 37239,
+        "file": "adversarial_map_staging/r1/L7_successor_redrafts_judgments.json",
+        "gate": {
+          "md5": "f1393c8d44a16c082ce1c0d8d447a427",
+          "bytes": 27962,
+          "file": "adversarial_map_staging/r1/l7_redrafts_gate.py",
+          "control": {
+            "md5": "f75563a78fb6729692be0e2eaa928f96",
+            "bytes": 4788,
+            "file": "adversarial_map_staging/r1/l7_redrafts_gate_control_v0_1.json",
+            "result": "18 of 18 as expected, the unmutated control first; byte-identical under two forced hash seeds"
+          }
+        },
+        "instrument": {
+          "md5": "78eb5653271dc28f4e63af901a172a8e",
+          "bytes": 18774,
+          "file": "adversarial_map_staging/r1/l7_redraft_reading.py",
+          "record": {
+            "md5": "ed3bf20b3889636070e5c0e5e20e4fa6",
+            "bytes": 10399,
+            "file": "adversarial_map_staging/r1/l7_redraft_reading_v0_1.json"
+          }
+        }
+      },
+      "judged": {
+        "drafts": "370e7d02457314e10d6211f95d5ae8c0",
+        "first_judgment": "bd3b4e89f25e7f874f5aa553b998fe0d",
+        "map_v1_7": "db40b45693eff1297b3f3152c6295c15",
+        "map_v1_8": "691930ab76908a85a6850bdb714d3827",
+        "register_v0_8": "8f6d38886b95033600752a5be052bd99",
+        "register_v0_9": "8e53d920099e8b850baa2879dfd3e351",
+        "knock_on_record": "6635d5ec3aaa4018c146260bb6b58ab0",
+        "controls_v1_7_record": "a0fc503133221975b4dcb1393a41bc99",
+        "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+        "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+        "canon": "725f2a4a7ed160179a37f2ea11965392"
+      },
+      "verdicts": {
+        "artifact": {
+          "CONFIRM": 2
+        },
+        "knock_on": {
+          "STANDS": 6
+        },
+        "measure": {
+          "CONFIRM": 1
+        },
+        "redraft": {
+          "ACCEPT": 18
+        },
+        "route": {
+          "CONFIRM": 1
+        },
+        "tool": {
+          "CONFIRM": 1
+        }
+      },
+      "reproduced": {
+        "coverage": true,
+        "derivation": {
+          "carried_byte_for_byte": 128,
+          "changed": 18,
+          "class_counts_v1_8": {
+            "a": 28,
+            "b": 30,
+            "c": 1,
+            "d": 87
+          }
+        },
+        "history_wording_in_new_moves": 0,
+        "quotes_verbatim": "48 of 48",
+        "bedrock_copies_hold": true,
+        "register": {
+          "removed": [
+            "HR-05/no-worse-off-baseline revealed-preference#long"
+          ],
+          "added": [
+            "HR-02/intrinsic-value-of-existence revealed-preference#long"
+          ],
+          "counts_changed": {
+            "HR-02": [
+              10,
+              11
+            ],
+            "HR-05": [
+              14,
+              13
+            ]
+          },
+          "new_pairs": [],
+          "undeclared_in_v0_9": []
+        },
+        "validator_v0_7_assembly_on_v1_8": {
+          "passed": true,
+          "violations": 0,
+          "advisories": 0
+        }
+      },
+      "knock_on": {
+        "by_entry": [
+          5,
+          6,
+          19,
+          20,
+          29,
+          30,
+          39,
+          88,
+          136
+        ],
+        "by_entry_and_class": [
+          5,
+          6,
+          19,
+          20,
+          29,
+          30,
+          39,
+          53,
+          83,
+          88,
+          89,
+          136
+        ],
+        "the_control": [
+          5,
+          6,
+          19,
+          20,
+          29,
+          30,
+          39,
+          53,
+          83,
+          88,
+          89,
+          136
+        ],
+        "correction": "U-064's count of 9 keyed by entry and missed six class changes; the control's 12 is right; the three not named in round one (#3, #4, #52) were read here and stand (U2-030)"
+      },
+      "u065_route_conditions": [
+        "The addendum pins its own map and corpus (v1_8 at 691930ab, the corpus at 7b6e65e5): R1's evidence and the rulings file pin v1_3 and the pre-cut corpus, where self-defeating#long is a (b).",
+        "The new collision list computes each entry against the map its current ruling was made on: n=70 and the four re-rulings (#11 re-routed, #22 self-routed, #32, #50) against v1_8, or it says why not. Read on v1_3's routes, #11 would be reported against a route it no longer has."
+      ],
+      "r0244_condition": "met: all 18 redrafts accepted",
+      "next": "His word on R0244's four asks; then L7 writes the R1 rows (#11, #22, #32, #50, and n=70 through the evidence addendum on U2-023's conditions) and closes. Canon passes back to L7."
     }
   },
   "flagship_sidecars": {

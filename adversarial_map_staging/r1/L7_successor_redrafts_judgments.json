@@ -1,0 +1,782 @@
+{
+ "artifact": "L7_successor_redrafts_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's second judgment of L7's successor map: the 18 rows L7 appended after gate2's first judgment (SM-52..SM-69), map v1_8, register v0_9, the knock-on control, the controls_v1_7 change and the U-065 route. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's quotes and is verbatim at its source, read at the bytes this header pins: drafts:<row id>, judgment:U-nnn (the first judgment), corpus:<node#locus>, v1_8:<node#locus>, canon:<dotted.path> and reading:record. Gate: l7_redrafts_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the redraft does what the first judgment's AMEND owed, changes nothing else, and may ship once he gives his word",
+  "AMEND": "a named defect is still owed, corrected by the drafting seat as a superseding row",
+  "REJECT": "the redraft is wrong; it returns to the drafting seat",
+  "CONFIRM": "the artifact, measure, tool change or route is right as made",
+  "CORRECT": "it is wrong, and what is owed is named",
+  "STANDS": "an (a) whose collisions changed keeps its verdict on gate2's reading",
+  "REOPENS": "it no longer holds"
+ },
+ "his_word": [
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "said": "2026-09-25",
+   "applies": "the redrafted moves that touch suicide or killing (R0245 ask 7)",
+   "recorded": "the umbrella memory feedback-safety-harness-never-pro-life"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0245",
+  "md5": "7ecc0659301d2bb21fee4e6dde7ee4dc"
+ },
+ "judged": {
+  "drafts": {
+   "file": "adversarial_map_staging/r1/L7_successor_drafts.json",
+   "md5": "370e7d02457314e10d6211f95d5ae8c0"
+  },
+  "first_judgment": {
+   "file": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+   "md5": "bd3b4e89f25e7f874f5aa553b998fe0d"
+  },
+  "map_v1_7": {
+   "file": "adversarial_map_staging/adversarial_map_v1_7.json",
+   "md5": "db40b45693eff1297b3f3152c6295c15"
+  },
+  "map_v1_8": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register_v0_8": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_8.json",
+   "md5": "8f6d38886b95033600752a5be052bd99"
+  },
+  "register_v0_9": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "knock_on_record": {
+   "file": "adversarial_map_staging/r1/l7_knock_on_v0_1.json",
+   "md5": "6635d5ec3aaa4018c146260bb6b58ab0"
+  },
+  "controls_v1_7_record": {
+   "file": "adversarial_map_staging/controls_v1_7_v0_1.json",
+   "md5": "a0fc503133221975b4dcb1393a41bc99"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "canon": {
+   "file": "project_canon_v38_45.json",
+   "md5": "725f2a4a7ed160179a37f2ea11965392"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/l7_redraft_reading.py",
+  "record": "adversarial_map_staging/r1/l7_redraft_reading_v0_1.json",
+  "md5": "ed3bf20b3889636070e5c0e5e20e4fa6",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "U2-001",
+   "kind": "redraft",
+   "row_id": "SM-52",
+   "replaces": "SM-01",
+   "answers": "U-001",
+   "target": "just-depressed#long",
+   "verdict": "ACCEPT",
+   "reason": "The move now argues from the v4.1.5 paragraph alone: the tell is read off the remark whatever the mood, so it cannot evidence a motive ratio (\"the tell, the one test offered, is built not to\"), and nothing else in the node does. That was U-001's owed item. No history wording; only the move changed.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-52",
+     "quote": "the tell, the one test offered, is built not to"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-002",
+   "kind": "redraft",
+   "row_id": "SM-53",
+   "replaces": "SM-02",
+   "answers": "U-002",
+   "target": "just-depressed#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "reason": "\"claims no motive from the thread\" replaces the narration and is accurate: the long's tell is read off what the remark does, not off a sequence of utterances. The slot still reads contempt off the thread, so the node says both things, in the present tense of the text.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-53",
+     "quote": "claims no motive from the thread"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-003",
+   "kind": "redraft",
+   "row_id": "SM-54",
+   "replaces": "SM-06",
+   "answers": "U-006",
+   "target": "benatar-asymmetry-attack#long",
+   "verdict": "ACCEPT",
+   "reason": "\"Take the fallback on its own terms\" replaces the narration, and the move also takes the round-one carry: it names the route the hub leaves open (\"the other route, whether typical lives fall below a life worth having, you leave open\") and says \"the verdict you argue rests on\". The continuation still reaches HR-06.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-54",
+     "quote": "Take the fallback on its own terms"
+    },
+    {
+     "src": "drafts:SM-54",
+     "quote": "the other route, whether typical lives fall below a life worth having, you leave open"
+    },
+    {
+     "src": "drafts:SM-54",
+     "quote": "the verdict you argue rests on"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-004",
+   "kind": "redraft",
+   "row_id": "SM-55",
+   "replaces": "SM-08",
+   "answers": "U-008",
+   "target": "economy-population#long",
+   "verdict": "ACCEPT",
+   "reason": "The hub's condition is now stated as it stands: \"the floor the typical life carries clears a threshold of serious harm imposed without consent\" only if the anti-imposition weight survives, \"and it leaves open whether typical lives fall below a life worth having\". The victim label then rests on that weight or on a route the hub does not settle, so the (d) still reaches HR-06. No history wording (the scan's one match, \"new entrants\", is the Ponzi figure).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-55",
+     "quote": "the floor the typical life carries clears a threshold of serious harm imposed without consent"
+    },
+    {
+     "src": "drafts:SM-55",
+     "quote": "and it leaves open whether typical lives fall below a life worth having"
+    },
+    {
+     "src": "drafts:SM-55",
+     "quote": "new entrants"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-005",
+   "kind": "redraft",
+   "row_id": "SM-56",
+   "replaces": "SM-15",
+   "answers": "U-015",
+   "target": "why-not-suicide#archetypeVariants.drifter",
+   "verdict": "ACCEPT",
+   "reason": "\"now\" is gone from \"the slot tells the drifter\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-15",
+     "quote": "now"
+    },
+    {
+     "src": "drafts:SM-56",
+     "quote": "the slot tells the drifter"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-006",
+   "kind": "redraft",
+   "row_id": "SM-57",
+   "replaces": "SM-16",
+   "answers": "U-016",
+   "target": "why-not-suicide#long",
+   "verdict": "ACCEPT",
+   "reason": "\"now says in place of this reading\" is replaced by \"as does violence-as-reductio's sophisticate slot, without any appeal to consent\", which is accurate: that slot names the consent and asymmetry arguments only as what does not contain the bridge, never as what forbids it. Only the move changed.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-16",
+     "quote": "now says in place of this reading"
+    },
+    {
+     "src": "drafts:SM-57",
+     "quote": "as does violence-as-reductio's sophisticate slot, without any appeal to consent"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-007",
+   "kind": "redraft",
+   "row_id": "SM-58",
+   "replaces": "SM-17",
+   "answers": "U-017",
+   "target": "why-not-suicide#long",
+   "verdict": "ACCEPT",
+   "reason": "The narration is gone, and the move takes the round-one carry: \"The analogy argues by marginality\", which for efilism misfires because the founders hold the eliminationist layer, \"as this node's defender slot says\". The charge now matches what the analogy does. Only the move changed.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-58",
+     "quote": "The analogy argues by marginality"
+    },
+    {
+     "src": "drafts:SM-58",
+     "quote": "as this node's defender slot says"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-008",
+   "kind": "redraft",
+   "row_id": "SM-59",
+   "replaces": "SM-20",
+   "answers": "U-020",
+   "target": "violence-as-reductio#long",
+   "verdict": "ACCEPT",
+   "reason": "\"now\" is gone from \"your own sophisticate slot avoids\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-20",
+     "quote": "now"
+    },
+    {
+     "src": "drafts:SM-59",
+     "quote": "your own sophisticate slot avoids"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-009",
+   "kind": "redraft",
+   "row_id": "SM-60",
+   "replaces": "SM-25",
+   "answers": "U-025",
+   "target": "social-contract#long",
+   "verdict": "ACCEPT",
+   "reason": "\"now\" is gone from \"Grant the line you draw\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-25",
+     "quote": "now"
+    },
+    {
+     "src": "drafts:SM-60",
+     "quote": "Grant the line you draw"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-010",
+   "kind": "redraft",
+   "row_id": "SM-61",
+   "replaces": "SM-27",
+   "answers": "U-027",
+   "target": "self-defeating#long",
+   "verdict": "ACCEPT",
+   "reason": "\"you now concede\" reads \"as you concede\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-27",
+     "quote": "you now concede"
+    },
+    {
+     "src": "drafts:SM-61",
+     "quote": "as you concede"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-011",
+   "kind": "redraft",
+   "row_id": "SM-62",
+   "replaces": "SM-30",
+   "answers": "U-030",
+   "target": "ai-fear#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "reason": "\"now concedes in place of the same analogy\" reads \"concedes\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-30",
+     "quote": "now concedes in place of the same analogy"
+    },
+    {
+     "src": "drafts:SM-62",
+     "quote": "concedes"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-012",
+   "kind": "redraft",
+   "row_id": "SM-63",
+   "replaces": "SM-31",
+   "answers": "U-031",
+   "target": "slippery-slope-eugenics#archetypeVariants.blended",
+   "verdict": "ACCEPT",
+   "reason": "\"Grant the new ground\" reads \"Grant the ground\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-31",
+     "quote": "Grant the new ground"
+    },
+    {
+     "src": "drafts:SM-63",
+     "quote": "Grant the ground"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-013",
+   "kind": "redraft",
+   "row_id": "SM-64",
+   "replaces": "SM-33",
+   "answers": "U-033",
+   "target": "slippery-slope-eugenics#long",
+   "verdict": "ACCEPT",
+   "reason": "\"now says so\" and \"still calls\" read \"says so\" and \"calls\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-33",
+     "quote": "now says so"
+    },
+    {
+     "src": "drafts:SM-33",
+     "quote": "still calls"
+    },
+    {
+     "src": "drafts:SM-64",
+     "quote": "says so"
+    },
+    {
+     "src": "drafts:SM-64",
+     "quote": "calls"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-014",
+   "kind": "redraft",
+   "row_id": "SM-65",
+   "replaces": "SM-34",
+   "answers": "U-034",
+   "target": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+   "verdict": "ACCEPT",
+   "reason": "\"now ranks\" and \"now gives\" read \"ranks\" and \"gives\"; \"no longer returns\" is the objector's stipulated regime, not the corpus's history. The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-34",
+     "quote": "now ranks"
+    },
+    {
+     "src": "drafts:SM-34",
+     "quote": "now gives"
+    },
+    {
+     "src": "drafts:SM-65",
+     "quote": "ranks"
+    },
+    {
+     "src": "drafts:SM-65",
+     "quote": "gives"
+    },
+    {
+     "src": "drafts:SM-65",
+     "quote": "no longer returns"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-015",
+   "kind": "redraft",
+   "row_id": "SM-66",
+   "replaces": "SM-37",
+   "answers": "U-037",
+   "target": "bradley-no-subject#long",
+   "verdict": "ACCEPT",
+   "reason": "\"your fork now holds\" reads \"your fork holds\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-37",
+     "quote": "your fork now holds"
+    },
+    {
+     "src": "drafts:SM-66",
+     "quote": "your fork holds"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-016",
+   "kind": "redraft",
+   "row_id": "SM-67",
+   "replaces": "SM-38",
+   "answers": "U-038",
+   "target": "bradley-no-subject#long",
+   "verdict": "ACCEPT",
+   "reason": "\"your own fork now names\" reads \"your own fork names\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-38",
+     "quote": "your own fork now names"
+    },
+    {
+     "src": "drafts:SM-67",
+     "quote": "your own fork names"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-017",
+   "kind": "redraft",
+   "row_id": "SM-68",
+   "replaces": "SM-39",
+   "answers": "U-039",
+   "target": "neuroscience-positive-states#long",
+   "verdict": "ACCEPT",
+   "reason": "\"the symmetry you now state\" reads \"the symmetry you state\". The history wording U-063 named is gone (reading record: no new move carries it), and the move is otherwise the round-one move: the set differs from the superseded row's in the move only. The class, anchor, grounds and routing judged in round one carry.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-39",
+     "quote": "the symmetry you now state"
+    },
+    {
+     "src": "drafts:SM-68",
+     "quote": "the symmetry you state"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-018",
+   "kind": "redraft",
+   "row_id": "SM-69",
+   "replaces": "SM-45",
+   "answers": "U-045",
+   "target": "revealed-preference#long",
+   "verdict": "ACCEPT",
+   "reason": "Both owed items are met. The move states what the information paragraph claims (it \"calls the preference for existence uninformed and diagnoses it\") and presses the diagnosis as \"the etiology inference your own corpus forbids\" before any retreat to stated preference. The continuation runs to one bedrock and reaches it: \"Strip the diagnosis from both sides and the preference stands as testimony, against an aversion the same selection installed\" is the tie red-button-repugnant#medium's (d) registers, the shape #45 and SM-48 end on. HR-02 is copied from that (d) by locus and anchor, register v0_8 files the source there and v0_9 the entry (reading record). The grounds say why not (b): striking the diagnosis only moves the question to stated endorsement, which ends at HR-05. \"no one needs an argument about creation to judge their own life\" is the objector's claim in an adversarial card; it says nothing of life's worth and nothing to the reader.",
+   "owed": [],
+   "carries": [
+    "The sentence the move presses is still the safety-pass residual U-066 names; the card is the map's side, the text's side waits for his word (R0244 ask 4)."
+   ],
+   "quotes": [
+    {
+     "src": "drafts:SM-69",
+     "quote": "calls the preference for existence uninformed and diagnoses it"
+    },
+    {
+     "src": "drafts:SM-69",
+     "quote": "the etiology inference your own corpus forbids"
+    },
+    {
+     "src": "drafts:SM-69",
+     "quote": "Strip the diagnosis from both sides and the preference stands as testimony, against an aversion the same selection installed"
+    },
+    {
+     "src": "drafts:SM-69",
+     "quote": "no one needs an argument about creation to judge their own life"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-019",
+   "kind": "artifact",
+   "artifact": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "verdict": "CONFIRM",
+   "reason": "Re-derived here from v1_7 and the 18 rows without the builder: 128 entries byte for byte, 18 with exactly their rows' fields, provenance v1_7's plus redrafted_L7; class counts a28/b30/c1/d87 as v1_7; validator v0_7 --assembly 0 violations, 0 advisories (reading record). v1_7 stays unchanged beside it.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-020",
+   "kind": "artifact",
+   "artifact": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "verdict": "CONFIRM",
+   "reason": "v0_9 is v0_8 with one tributary moved, revealed-preference#long from HR-05's no-worse-off-baseline facet to HR-02's intrinsic-value-of-existence facet (counts 14 to 13 and 10 to 11); no pair of bedrocks newly shares a node and none is undeclared; the moved entry carries the map's routing and novel flag (reading record).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-021",
+   "kind": "measure",
+   "measure": "knock_on_control",
+   "verdict": "CONFIRM",
+   "reason": "The control's 12 is right. Counted by entry and class, or by node, locus, anchor and class, v1_8 against v1_6 gives the same 12 entries the control lists (5, 6, 19, 20, 29, 30, 39, 53, 83, 88, 89, 136). Counted by entry alone, as U-064 did, it gives 9, because a flag reclassed at an entry an (a) already met is not new by entry. The six such class changes are read below (U2-024 to U2-029).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-022",
+   "kind": "tool",
+   "tool": "adversarial_map_staging/controls_v1_7.py",
+   "verdict": "CONFIRM",
+   "reason": "Staging the drafts record at fd9267f8, the bytes build_assembly_v1_7.py pins, is the L4c law for an append-only record; controls_v1_7_v0_1.json is byte-identical at a0fc5031, and neither of gate2's committed L7 instruments names controls_v1_7 (reading record, pins).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-023",
+   "kind": "route",
+   "route": "U-065: the new (a) at self-defeating#long into R1",
+   "verdict": "CONFIRM",
+   "reason": "An evidence addendum carrying the entry as n=70, read by new versions of the rulings gate and the collision list while the committed versions stay byte-identical, is the judged-instrument law applied, and it keeps R1's 69 intact. Nothing is built yet, so the conditions below are for when it is.",
+   "owed": [],
+   "carries": [
+    "The addendum pins its own map and corpus (v1_8 at 691930ab, the corpus at 7b6e65e5): R1's evidence and the rulings file pin v1_3 and the pre-cut corpus, where self-defeating#long is a (b).",
+    "The new collision list computes each entry against the map its current ruling was made on: n=70 and the four re-rulings (#11 re-routed, #22 self-routed, #32, #50) against v1_8, or it says why not. Read on v1_3's routes, #11 would be reported against a route it no longer has."
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-024",
+   "kind": "knock_on",
+   "i": 5,
+   "n": 3,
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "verdict": "STANDS",
+   "reason": "Not named in round one: the drifter slot on #3's own node went from (b) to (d) (SM-15, HR-14, the red button's case held open). #3's answer is the survival-drive paragraph on the sincerity challenge; it does not touch the red button's case.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-025",
+   "kind": "knock_on",
+   "i": 6,
+   "n": 4,
+   "target": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "STANDS",
+   "reason": "Not named in round one: the same drifter (d) on #4's own node. It records the NU layer's positive case as held open, which R1-024's note already says the concession leaves standing; #4's anchor is limited to layer one (V-012).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-026",
+   "kind": "knock_on",
+   "i": 53,
+   "n": 32,
+   "target": "antinatalism-misanthropic#archetypeVariants.defender",
+   "verdict": "STANDS",
+   "reason": "Read in round one at SM-05 with the long's new (d) in view: it records the ranking charge, which the move does not press.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-027",
+   "kind": "knock_on",
+   "i": 83,
+   "n": 49,
+   "target": "adoption-instead#long",
+   "verdict": "STANDS",
+   "reason": "Read in round one at SM-09 with the hub's HR-06 (d) in view: the move presses neither of the hub's flags.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-028",
+   "kind": "knock_on",
+   "i": 88,
+   "n": 52,
+   "target": "overpopulation-addressed#long",
+   "verdict": "STANDS",
+   "reason": "Not named in round one: #52 also routes to the hub, whose (b) is now the HR-06 (d). The answer the move meets is the hub's no-deprivation passage (the averted creation is costless), not the person-affecting fallback's consent weight.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-029",
+   "kind": "knock_on",
+   "i": 89,
+   "n": 53,
+   "target": "hedonic-contrast#long",
+   "verdict": "STANDS",
+   "reason": "Read in round one at SM-11 with the hub's flags in view: the answer is the no-deprivation paragraph, untouched.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-030",
+   "kind": "finding",
+   "title": "the first judgment's knock-on count, corrected",
+   "finding": "U-064 counted collisions by entry lineage and found 9 newly collided (a)s. That count cannot see a flag reclassed at an entry the (a) already met, and a class change is exactly what can reopen an answer (V-017). By lineage and class the count is 12, the drafting seat's control's count. Of the six class changes at entries already met, three were read in round one with the new (d) in view (SM-05, SM-09, SM-11) and three were not named anywhere (#3 and #4 meeting the drifter slot's (d), #52 meeting the hub's); all six stand (U2-024 to U2-029).",
+   "recommendation": "A knock-on keys collisions on the entry and its class at least; a reclassed flag is a new collision.",
+   "whose": "gate2, for the record",
+   "entries": [
+    3,
+    4,
+    32,
+    49,
+    52,
+    53
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-031",
+   "kind": "finding",
+   "title": "safety, on his 2026-09-25 bar",
+   "finding": "The redrafted moves that touch suicide or killing (SM-56, SM-57, SM-58, SM-59, SM-62, SM-63) change wording only; the substance judged in round one stands, and none argues for anyone's death or continued life or speaks to the reader's life. The one wide-set hit in the new fields is SM-69's grounds quoting the corpus's residual sentence, a record of the defect, not framing (reading record, safety).",
+   "recommendation": "None beyond U-066's residuals, which wait for his word.",
+   "whose": "gate2, for the record",
+   "entries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-032",
+   "kind": "finding",
+   "title": "the pull: SM-69 carries gate2's own lean",
+   "finding": "SM-69 takes the terminus gate2 leaned to at U-045, HR-02 by parity with SM-48, so the pull was toward accepting it. Tested on the text instead: the last sentence reaches the tie the source (d) registers, and the alternative gate2 offered, HR-05, is argued against in the grounds (striking the diagnosis only moves the question). SM-54 and SM-58 also take round-one carries gate2 marked as not owed; each was read as a change, not waved through.",
+   "recommendation": "None.",
+   "whose": "gate2, for the record",
+   "entries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U2-033",
+   "kind": "finding",
+   "title": "sequence after this judgment",
+   "finding": "All 18 redrafts are accepted; v1_8 and register v0_9 are confirmed; the knock-on control and the controls_v1_7 change are confirmed; the U-065 route is confirmed with two conditions for when it is built. R0244's condition is met.",
+   "recommendation": "His word on R0244's four asks; then L7 writes the R1 rows (#11, #22, #32, #50, and n=70 through the addendum on the U2-023 conditions) and closes. Canon passes back to L7.",
+   "whose": "Josiah, then seat l",
+   "entries": [
+    11,
+    22,
+    32,
+    50
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in SM-52..SM-69, adversarial_map_v1_8.json, register v0_9, their builders, controls or the knock-on control; judged round one, whose U-045 lean SM-69 carries (U2-032 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}
