@@ -1,0 +1,2405 @@
+{
+  "artifact": "L7_successor_drafts.json",
+  "state": "DRAFTED, NOT JUDGED. Append-only: a later row may supersede an earlier one by naming it; no row is edited. The drafting seat's rows for the successor map, adversarial_map_v1_7.json, pinned to corpus 7b6e65e5 (v4.1.5). A seat that drafted none of it judges them (K258, the gate2 role); the judgment is recorded in canon and in gate2's own record, never here.",
+  "law": [
+    "A frozen map is never edited or re-pinned; its successor is a new file pinned to the corpus it reads (R0223).",
+    "Every change names its cause: the cut, the landed row, the finding, and what l7_measure_v0_1.json says of the entry.",
+    "Unchanged entries carry over byte for byte; a row of kind 'stands' records a re-read and moves no byte.",
+    "An entry whose (b) landed is adjudicated afresh under the K346 strongest ruling (the Phase R precedent), never assumed discharged into an (a).",
+    "A waiting (a)'s R1 verdict is not written here. Where the repaired text now meets it, the row proposes HOLDS; the R1 row is appended only after gate2's judgment and his word.",
+    "A (d)'s bedrock_name is copied from a registered (d) by locus and anchor, and register v0_7 must file that (d) under the facet claimed (L4's law).",
+    "Every double-quoted span in a changed field is declared in the row's quotes and checked verbatim at its source."
+  ],
+  "kickoff": {
+    "relay": "R0223",
+    "md5": "78a6b9853ba6c83ae855f09d7127a8e6",
+    "from": "L6 (seat l), 2026-09-26"
+  },
+  "his_word": {
+    "verbatim": "Go with your recommendations on all of the above.",
+    "said": "to LD3; relayed with R0193 and quoted in R0223",
+    "adopted": "the order: the X-032 safety pass first (landed as v4.1.5 by L6), then the successor map"
+  },
+  "pinned": {
+    "map": {
+      "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+      "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+    },
+    "corpus": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+      "version": "4.1.5"
+    },
+    "corpus_pre": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "04bf6482aa0374ee92a81c1d55ec41f8"
+    },
+    "measure": {
+      "file": "adversarial_map_staging/r1/l7_measure_v0_1.json",
+      "md5": "4d98b4a3b5c3a57ef62543001ba7ff64"
+    },
+    "rulings": {
+      "file": "adversarial_map_staging/r1/R1_rulings.json",
+      "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+    },
+    "evidence": {
+      "file": "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+      "md5": "719b5ddb27680f32181a8a953c84b6c2"
+    },
+    "register": {
+      "file": "adversarial_map_staging/honest_residuals_register_v0_7.json",
+      "md5": "bcbff23113f3fb0135d5fd5b3e2630d5"
+    },
+    "drafts_L5": {
+      "file": "adversarial_map_staging/r1/PQ_repair_drafts_L5.json",
+      "md5": "8c57223e8f9170cb8303bcc4b9d982c4"
+    },
+    "drafts_L6": {
+      "file": "adversarial_map_staging/r1/SP_drafts_L6.json",
+      "md5": "e493f8cdcf74aa3ad7982e1e906cffde"
+    }
+  },
+  "row_kinds": {
+    "amend": "changes named fields of a v1_6 entry ('set'); the builder records the prior values in provenance.successor_L7",
+    "stands": "a re-read the measure or a finding owes; no byte of the entry moves",
+    "file": "a new entry, phase H, filed from a finding ('new_entry')",
+    "carry": "a finding that is not the map's; it goes to canon's carries, and no entry is made",
+    "relation": "a register relation between two bedrocks, drafted where the successor makes them share a node"
+  },
+  "dispositions": {
+    "readjudicate": "the entry's locus moved and its anchor or its (b) went with it; adjudicated afresh under K346",
+    "rejudge_waiting": "one of the six (a)s that waited on a (b) repair (R1 FAILS), re-judged against the repaired text",
+    "restate": "the anchor survives; the move named text the cut removed and is restated at the same force",
+    "reanchor": "the anchor's text was replaced; the anchor moves onto the replacement and the move stands",
+    "regrounds": "the grounds (and where needed terminus_routing) quoted text the cut removed or an entry the successor re-adjudicates",
+    "holds_rerouted_read": "an R1 HOLDS whose answer routes to a moved locus; read against the repair",
+    "survivor_read": "an entry at a moved locus whose anchor lies outside every repaired sentence",
+    "rejudge_b_stands": "a (b) a finding asked to be re-judged before its slot is queued",
+    "file_b": "a (b) filed from a finding",
+    "file_d": "a (d) filed from a finding",
+    "carry_not_map": "carried to canon, not a map locus",
+    "draft_relation": "a relation the register's adjacency gate owes, drafted for judgment"
+  },
+  "rows": [
+    {
+      "id": "SM-01",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 2,
+        "n": null,
+        "target": "just-depressed#long",
+        "anchor": "two utterances incompatible with a single motive of care"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-01"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-001",
+          "X-033"
+        ]
+      },
+      "set": {
+        "target_anchor": "Genuine concern is the rare exception here, not the ordinary case",
+        "adversarial_move": "Your tell is now read off the remark, whatever the mood of the person who says it, so by its own terms it cannot tell concern from contempt. Yet the paragraph still asserts a distribution of motives: the remark almost never arrives as concern, and genuine concern is the rare exception. The old two-utterance tell was the only evidence ever offered for that ratio, and the repair withdrew it. The frequency claim now stands on nothing, while the paragraph says the rebuttal is built for the ordinary case that claim defines.",
+        "grounds": "Re-adjudicated at L7 against the v4.1.5 text (PD-01, v4.1.3; gate2 X-001). The prior (b)'s tell half is discharged: the repaired tell is read off what the remark does, \"whatever the mood of the person who says it\", which is what that (b) asked for. Its frequency half stands, and is now unsupported rather than wrongly supported: \"Genuine concern is the rare exception here, not the ordinary case\" and the opening \"almost never arrives as concern\" assert a distribution of motives that nothing in the node evidences. Best reading: the ratio is offered as observation of the wild; even so it is unsourced, and the node's argument-level case (etiology is orthogonal to truth, the dilemma, the decoupling) never needs it. Not (a): no locus supplies the ratio. Not (d): it is an empirical claim, not bedrock. A stronger text inside the node's identity drops the ratio or sources it. Headline, because the paragraph says \"The rebuttal is built for the ordinary case\". Filed per X-033; it queues with PF-01.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "r"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "The (b)'s anchor sentence was replaced (PD-01); the locus is adjudicated afresh under the K346 strongest ruling, as Phase R did after the v4.1.0 cut. X-001 names what survives the repair.",
+      "quotes": [
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "whatever the mood of the person who says it"
+        },
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "Genuine concern is the rare exception here, not the ordinary case"
+        },
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "almost never arrives as concern"
+        },
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "The rebuttal is built for the ordinary case"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-02",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 1,
+        "n": 1,
+        "target": "just-depressed#archetypeVariants.defender",
+        "anchor": "pointing at the second sentence and asking which one was sincere"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-01"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-01",
+          "X-024"
+        ],
+        "r1": "R1-004 FAILS (answer_flagged_b; waited on PQ-01)"
+      },
+      "set": {
+        "class": "b",
+        "adversarial_move": "The slot's headline play is a motive verdict, the move this node condemns, fired in the other direction. Exasperation is one motive and produces both sentences, so the two-sentence tell shows no hostility. The node's own long has since withdrawn that tell: it reads the remark by what it does, whatever the mood of the person who says it. The slot still reads contempt off the thread, so the node now says both things.",
+        "grounds": "Re-judged at L7 (PF-01, confirmed by gate2 at X-024). R1-004 failed this (a) because its answer, just-depressed#long, rested on the two-utterance tell that the map's own (b) there found infers hostility from a sequence of utterances. PD-01 (v4.1.3) replaced that tell with one read off what the remark does, \"whatever the mood of the person who says it\", so the long no longer supplies motive evidence, and the slot's reply, \"pointing at the second sentence and asking which one was sincere\", is now the vice the long condemns. Not (a): no locus answers a motive verdict the node itself disowns. Not (d): nothing here is bedrock; the slot can expose the dodge by its function, as the repaired long does. A stronger text inside the node's identity moves the slot's exposure from motive to what the remark does. Headline: the slot calls this its \"real work\". A rewrite of three or four sentences, for a later queue (PF-01).",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "r"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "The waiting (a) is re-judged against the repaired text it waited on. Its R1 verdict (FAILS) stands; its disposition moves from waits to a (b) at its own slot, where the defect now lies.",
+      "quotes": [
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "whatever the mood of the person who says it"
+        },
+        {
+          "src": "corpus:just-depressed#archetypeVariants.defender",
+          "quote": "pointing at the second sentence and asking which one was sincere"
+        },
+        {
+          "src": "corpus:just-depressed#archetypeVariants.defender",
+          "quote": "real work"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-03",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 39,
+        "n": 24,
+        "target": "most-people-happy#archetypeVariants.sophisticate",
+        "anchor": "the instrument doing the rating is the same nervous system"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-01"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-07",
+          "X-030"
+        ],
+        "r1": "R1-010 HOLDS"
+      },
+      "why": "Read against the repaired just-depressed#long: #24's answer rests on the symmetry disclaimer, \"The claim is symmetric and modest\", in a paragraph PD-01 does not touch; PD-01 changes only the tell sentence of the first paragraph. The HOLDS stands and the entry carries byte for byte (PF-07, X-030).",
+      "quotes": [
+        {
+          "src": "corpus:just-depressed#long",
+          "quote": "The claim is symmetric and modest"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-04",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 51,
+        "n": null,
+        "target": "antinatalism-misanthropic#long",
+        "anchor": "structural criticism of a species is not the same as hatred of individuals"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-04"
+        ],
+        "measure": "moved",
+        "findings": [
+          "X-004"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+        "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+        "hr": "HR-03",
+        "facet": "value-requires-a-valuer"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "is conditional on the suffering creation imposes and would lapse if that suffering lapsed",
+        "adversarial_move": "Grant the discriminator: the verdict tracks the suffering creation imposes, and contempt would not lapse with it. The charge was never only about motive. A verdict conditional on suffering still ranks a world without the species above the world with it, because the lives it would stop contain suffering. Misanthropy in the axiology names that ranking, whatever the verdict is conditional on. Conditionality shows how the ranking is reached, not that it is not made.",
+        "grounds": "Re-adjudicated at L7 against the v4.1.5 text (PD-04, v4.1.3; gate2 X-004). The prior (b) is discharged: PD-04 states the content-level discriminator it asked for, \"the difference lies in the verdict itself, not only in the warmth of whoever delivers it\". The strongest continuation past the discriminator is the ranking charge, and the map already records where that ends: the (d) at this node's sophisticate slot, \"A theory that disvalues suffering impersonally and concludes that no further bearers should exist has ranked bearerless worlds above inhabited ones\". Not (a): the node's only answer to the ranking is that impersonal-grounding cut, which that (d) records as failing at the conclusion. Not (b): the discriminator is the node's strongest text here and is correctly made. Terminus HR-03, value-requires-a-valuer facet; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-03; reached through the (d) at antinatalism-misanthropic#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; re-adjudicated at L7 after PD-04 (v4.1.3) discharged the Phase E (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "The (b)'s anchor sentence was repaired to carry the discriminator the (b) asked for (W-007: the anchor moves with its sentence). The locus is adjudicated afresh; the strongest continuation past the repair is the ranking charge the map already holds at HR-03.",
+      "quotes": [
+        {
+          "src": "corpus:antinatalism-misanthropic#long",
+          "quote": "the difference lies in the verdict itself, not only in the warmth of whoever delivers it"
+        },
+        {
+          "src": "v1_6:antinatalism-misanthropic#archetypeVariants.sophisticate",
+          "quote": "A theory that disvalues suffering impersonally and concludes that no further bearers should exist has ranked bearerless worlds above inhabited ones"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-05",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 53,
+        "n": 32,
+        "target": "antinatalism-misanthropic#archetypeVariants.defender",
+        "anchor": "its truth-value is not a function of the speaker's warmth"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-04"
+        ],
+        "measure": "routes to a moved locus; grounds quote the moved sentence (still verbatim)",
+        "findings": [
+          "X-004",
+          "X-031"
+        ],
+        "r1": "R1-036 FAILS (answer_flagged_b; waited on PQ-04)"
+      },
+      "proposed_r1": {
+        "verdict": "HOLDS",
+        "supersedes": "R1-036"
+      },
+      "set": {
+        "grounds": "(a) on the repaired text; re-judged at L7. R1-036 failed it on the v4.1.0 text because the answer rested on the building analogy, which the map's (b) at the long said answers only the motivational form. PD-04 (v4.1.3) added the content-level reading that (b) asked for, \"the difference lies in the verdict itself, not only in the warmth of whoever delivers it\": the verdict is conditional on the suffering creation imposes and would lapse with it. That meets the expressive half of this move, since what a position expresses is read off its verdict and adherent temperament does not change the verdict's condition. The promotion half is met in the same locus by the censorship-reversal paragraph: suppression on projected harm \"IS the structural pattern of disregard-for-actually-existing-beings\" the charge alleges. The (d) now at the long records the ranking charge, which this move does not press. Proposed HOLDS, superseding R1-036; the R1 row is written only after gate2's judgment and his word."
+      },
+      "why": "The waiting (a) is re-judged against the repaired text it waited on (PQ-04 landed as PD-04). The seat's reading is that the repaired long now meets it; the class and routing do not move, the grounds are rewritten to rest on the repaired text, and the verdict change is proposed, not written.",
+      "quotes": [
+        {
+          "src": "corpus:antinatalism-misanthropic#long",
+          "quote": "the difference lies in the verdict itself, not only in the warmth of whoever delivers it"
+        },
+        {
+          "src": "corpus:antinatalism-misanthropic#long",
+          "quote": "IS the structural pattern of disregard-for-actually-existing-beings"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-06",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 13,
+        "n": null,
+        "target": "benatar-asymmetry-attack#long",
+        "anchor": "how much suffering typical human lives actually contain"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "unchanged: one occurrence inside PD-19, one outside it (the paragraph's last sentence)",
+        "findings": [
+          "X-002",
+          "X-031",
+          "X-027",
+          "PF-04"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "moral-progress#long",
+        "anchor": "the ledger is at best ambiguous",
+        "hr": "HR-06",
+        "facet": "unrefusable-condition-on-non-antecedent-subject"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "only if the person-affecting view that prevails keeps the weight against non-consensual imposition",
+        "adversarial_move": "Take the fallback as repaired. On the branch where person-affecting evaluation prevails, the floor clears your consent threshold only if the prevailing view keeps a weight against non-consensual imposition that its strict form calls confusion, and the net-balance question you leave open. So on that branch the verdict rests wholly on whether imposing an unrefusable condition on someone who did not antecedently exist wrongs them whatever the balance of their life. That is the question the strict view denies, and nothing here decides it.",
+        "grounds": "Re-adjudicated at L7 (PD-19, v4.1.3; gate2 X-002, X-031, X-027). The prior (b) said the fallback's empirical antecedent was asserted twice and established nowhere. PD-19 now says the question is open, \"an empirical question this node does not settle\", and the paragraph's last sentence, where that (b)'s anchor survives, is conditional (\"remains powerful depending on how much suffering typical human lives actually contain\"), so on its best reading it asserts nothing the repair withdrew: that (b) is discharged. The strongest continuation is the condition PD-19 names: the typical floor clears the consent threshold \"only if the person-affecting view that prevails keeps the weight against non-consensual imposition\". Not (a): no locus shows that weight survives on the strict view, which \"explains away as confusion\" the residue carrying it. Not (b): stating the condition is the honest text, correctly stated. Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet; not novel. The impersonal branch ends at HR-03 at this locus's other (d).",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-06, unrefusable-condition-on-non-antecedent-subject facet; node-registered at benatar-asymmetry-attack#long by PD-19 (v4.1.3), which makes the fallback's consent threshold conditional on the anti-imposition weight; re-adjudicated at L7 after PD-19 discharged the Phase B1 (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "gate2 X-031: this (b)'s anchor also occurs outside PD-19's sentence and is re-judged where it survives. At the surviving sentence the (b) no longer bites on its best reading, so the locus's fallback is adjudicated afresh; the strongest continuation is the consent condition PD-19 states.",
+      "quotes": [
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "an empirical question this node does not settle"
+        },
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "remains powerful depending on how much suffering typical human lives actually contain"
+        },
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "only if the person-affecting view that prevails keeps the weight against non-consensual imposition"
+        },
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "explains away as confusion"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-07",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 12,
+        "n": null,
+        "target": "benatar-asymmetry-attack#long",
+        "anchor": "The choice between person-affecting and impersonal frameworks is fundamentally metaethical"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "unchanged (anchor outside the repair, locus moved)",
+        "findings": [],
+        "consequential_to": "entry 13's re-adjudication at the same locus"
+      },
+      "set": {
+        "grounds": "The move does not defeat the prose; it presses the concession the node already makes. The node localizes the terminus to the impersonal-versus-person-affecting choice and states antinatalism contracts if person-affecting evaluation prevails. Already-registered bedrock: the universal conclusion is dialectically hostage to an undecided metaethical primitive. Not novel. Distinct from this locus's other entry, re-adjudicated at L7 as a (d) at HR-06, which concerns the consent condition on the person-affecting branch, not the metaethical locus."
+      },
+      "why": "Its last grounds sentence named 'the (b) entry' at this locus. That entry is re-adjudicated here as a (d), so the sentence is corrected and nothing else moves. The move, anchor, class and routing carry byte for byte: PD-19 does not touch the metaethical-locus paragraph.",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-08",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 11,
+        "n": 7,
+        "target": "economy-population#long",
+        "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-04",
+          "X-027"
+        ],
+        "r1": "R1-048 FAILS (answer_flagged_b; waited on PQ-02)"
+      },
+      "bedrock_from": {
+        "locus": "moral-progress#long",
+        "anchor": "the ledger is at best ambiguous",
+        "hr": "HR-06",
+        "facet": "unrefusable-condition-on-non-antecedent-subject"
+      },
+      "set": {
+        "class": "d",
+        "adversarial_move": "The Ponzi analogy equivocates on victim. Fraud collapses because returns need deceived new entrants; intergenerational care is reciprocal, each cohort receives and provides. Calling the created victims smuggles the harm verdict into the premise. Your own hub now grants that, if person-affecting evaluation prevails, the created are seriously harmed only if a weight against non-consensual imposition survives that the strict view calls confusion.",
+        "grounds": "Re-judged at L7 (PF-04, confirmed by gate2 at X-027). R1-048 failed this (a) because its answer, the hub's person-affecting fallback, rested on an empirical antecedent the map's (b) there found undischarged. PD-19 (v4.1.3) repaired the fallback by stating its condition: the typical floor clears the consent threshold \"only if the person-affecting view that prevails keeps the weight against non-consensual imposition\". The move's charge, that the created are called victims, therefore meets the question the map holds at HR-06 on that branch, and at HR-03 on the impersonal one (the hub's metaethical-locus (d)). Not (a): the answer ends at registered bedrock, the L2 standard. Not (b): the hub's repaired text is correct. Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet; not novel; reached through the (d) now at benatar-asymmetry-attack#long.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-06; reached through the (d) at benatar-asymmetry-attack#long (re-adjudicated at L7 after PD-19); unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L7 under the R1 standard (R1-048)",
+            "novel": false
+          }
+        }
+      },
+      "why": "The waiting (a) is re-judged against the repaired hub. Its R1 verdict (FAILS) stands; the repair makes the answer's condition explicit and that condition is registered bedrock, so the disposition moves from waits to a (d). The move's last sentence is restated against the repaired fallback (it had cited the threshold the repair now leaves open).",
+      "quotes": [
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "only if the person-affecting view that prevails keeps the weight against non-consensual imposition"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-09",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 83,
+        "n": 49,
+        "target": "adoption-instead#long",
+        "anchor": "Adoption satisfies the desire to parent completely"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-07",
+          "X-030"
+        ],
+        "r1": "R1-061 HOLDS"
+      },
+      "why": "R1-061 rests on joy-outweighs-harms#long and on the hub's consent and no-deprivation passages; PD-19 changes only the person-affecting fallback sentence. The HOLDS stands; the entry carries byte for byte (PF-07, X-030).",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-10",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 88,
+        "n": 52,
+        "target": "overpopulation-addressed#long",
+        "anchor": "incrementally better from a negative utilitarian perspective"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-07",
+          "X-030"
+        ],
+        "r1": "R1-051 HOLDS"
+      },
+      "why": "R1-051 rests on economy-population#long and the hub's passages PD-19 does not touch. The HOLDS stands; the entry carries byte for byte (PF-07, X-030).",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-11",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 89,
+        "n": 53,
+        "target": "hedonic-contrast#long",
+        "anchor": "it would still experience positive states"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-19"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-07",
+          "X-030"
+        ],
+        "r1": "R1-045 HOLDS"
+      },
+      "why": "R1-045 rests on transhumanist-objection#long and the hub's no-deprivation passage; PD-19 changes only the fallback sentence. The HOLDS stands; the entry carries byte for byte (PF-07, X-030).",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-12",
+      "kind": "stands",
+      "disposition": "survivor_read",
+      "entry": {
+        "i": 4,
+        "n": 2,
+        "target": "why-not-suicide#long",
+        "anchor": "agent stands on the side of the non-existent"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-01"
+        ],
+        "measure": "unchanged (anchor outside the repair, locus moved)",
+        "findings": [
+          "SF-06"
+        ],
+        "r1": "R1-065 FAILS (a_to_d at L4)"
+      },
+      "why": "SD-01 replaced the survival-drive sentences of the long; the (d)'s anchor sits in the volta, untouched, and its move (what the second layer licenses, and why the first layer's silence binds it) presses nothing SD-01 changed. Carries byte for byte.",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-13",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 5,
+        "n": 3,
+        "target": "why-not-suicide#archetypeVariants.blended",
+        "anchor": "Stop there if the jab was the whole of it"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-01"
+        ],
+        "measure": "routes to a moved locus; grounds quote the replaced sentences (0 of 2 shingles survive)",
+        "findings": [
+          "SF-06"
+        ],
+        "r1": "R1-023 HOLDS"
+      },
+      "set": {
+        "grounds": "(a). why-not-suicide#long meets the sincerity version directly, in the v4.1.5 text: \"Nor does anyone's continued life, the antinatalist's included, count as evidence here\", because the survival drive \"keeps a body going, it does not weigh the life\", so continued life testifies to nothing either way, including \"not that someone who argues the case does not mean it\". The triage's escalation target is the structural seam, and the testimony version is answered by the node it escalates into. Grounds rewritten at L7: the v1_6 grounds quoted the sentences SD-01 (v4.1.5) replaced; both halves R1-023 names stand in the repaired text (SF-06)."
+      },
+      "why": "The HOLDS stands on the repaired text, which now answers the sincerity challenge in so many words. Only the grounds move: they quoted text SD-01 removed. Move, anchor, class and routing carry byte for byte.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "Nor does anyone's continued life, the antinatalist's included, count as evidence here"
+        },
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "keeps a body going, it does not weigh the life"
+        },
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "not that someone who argues the case does not mean it"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-14",
+      "kind": "amend",
+      "disposition": "restate",
+      "entry": {
+        "i": 6,
+        "n": 4,
+        "target": "why-not-suicide#archetypeVariants.defender",
+        "anchor": "an eliminationist adherent does not convert the consent-and-asymmetry argument into a suicide license"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-17",
+          "PD-18"
+        ],
+        "measure": "moved (anchor verbatim inside PD-18's sentence)",
+        "findings": [
+          "PF-06",
+          "X-029"
+        ],
+        "r1": "R1-024 HOLDS"
+      },
+      "set": {
+        "adversarial_move": "The holders are the authors. Filing the red button under actor-content, a fact about the movement, works where its advocates are followers. Here the slot itself grants the view's own founders hold it, so for efilism the second layer is part of the view as named, not something adherents added to it.",
+        "grounds": "(a). violence-as-reductio#long concedes the fact and answers where the move lands: \"Centrality is sociology; entailment is logic\", and \"The framework-versus-actor cut was never the claim that the violent or the eliminationist are peripheral\", so the founders' holding the button relocates nothing in the entailment structure. Restated at L7 (PF-06, gate2 X-029): PD-18 (v4.1.3) replaced the lone-actor analogy the v1_6 move attacked, and PD-17 concedes \"the view's own founders included\"; the anchor clause is kept word for word, so the move is restated against the repaired slot and R1-024's HOLDS does not move."
+      },
+      "why": "W-007: the anchor's sentence was repaired, though the clause survives verbatim. The move attacked the analogy PD-18 removed, so it is restated against the repaired slot at the same force; the answer and the verdict do not move.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:violence-as-reductio#long",
+          "quote": "Centrality is sociology; entailment is logic"
+        },
+        {
+          "src": "corpus:violence-as-reductio#long",
+          "quote": "The framework-versus-actor cut was never the claim that the violent or the eliminationist are peripheral"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.defender",
+          "quote": "the view's own founders included"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-15",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 7,
+        "n": 5,
+        "target": "why-not-suicide#archetypeVariants.drifter",
+        "anchor": "Nothing in that tells the living to stop"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-21",
+          "PC-02"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-008",
+          "X-020"
+        ],
+        "r1": "R1-025 FAILS (a_to_b at L4: aggravation)"
+      },
+      "bedrock_from": {
+        "locus": "red-button-repugnant#archetypeVariants.sophisticate",
+        "anchor": "this node's terminus to hold open rather than pretend closed",
+        "hr": "HR-14",
+        "facet": "terminus-held-open"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "That is a separate claim with its own burden",
+        "adversarial_move": "Grant the scoping: the core forbids starting a life and says nothing to the living. But the slot now tells the drifter that the view it speaks for goes further, to the red button, and calls that a separate claim with its own burden. Naming a burden is not carrying it. A drifter who asks about the view is owed the view's case for that second claim, and the corpus holds it open.",
+        "grounds": "Re-adjudicated at L7 (PD-21 and PC-02, v4.1.3; gate2 X-008, X-020). The prior (b) is discharged: the slot now scopes its reassurance to the core, \"nothing in that core tells the living to stop\", and names the second layer as efilism's own, which is the repair that (b) asked for. The strongest continuation is what the scoping leaves: the slot names the burden and does not carry it, and the node routes the second claim to red-button-repugnant, whose sophisticate slot holds it open. Not (a): holding a question open is not answering it. Not (b): the slot's text is now accurate, and no rewrite of a drifter slot carries the red button's case. Terminus HR-14, terminus-held-open facet; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-14, terminus-held-open facet; reached through red-button-repugnant#archetypeVariants.sophisticate, which holds the second layer's case open; re-adjudicated at L7 after PD-21 and PC-02 (v4.1.3) discharged the Phase F (b) (R1-025)",
+            "novel": false
+          }
+        }
+      },
+      "why": "The (b)'s anchor sentence was replaced by the repair the (b) asked for. The slot is adjudicated afresh; the strongest continuation is the question it now names and leaves open, which the map holds at HR-14.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+          "quote": "nothing in that core tells the living to stop"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-16",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-033",
+        "X-015"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-15"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "X-015",
+          "X-033"
+        ]
+      },
+      "new_entry": {
+        "target_id": "why-not-suicide",
+        "target_locus": "long",
+        "target_anchor": "that would violate the exact same principle of consent and harm-reduction",
+        "adversarial_move": "A principle against starting a life without consent is not a ban on every non-consensual act; read as one it would forbid every coercive rescue, and the corpus defends no such ban. So the exact same principle of consent is not what stands between this view and violence against the living. What stands there is that the first layer supplies no premise for it, which this node's own volta says, and which violence-as-reductio's sophisticate slot now says in place of this reading.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-015, X-033). The first paragraph's argument against the suicide demand reads the consent-asymmetry as a general ban on imposition, \"that would violate the exact same principle of consent and harm-reduction\", the reading PD-15 (v4.1.3) removed from violence-as-reductio's sophisticate slot, which now says the maximizer \"has added a premise of his own\". Best reading: the node's own volta gives the correct and sufficient account, \"The two layers are derivationally distinct\" and \"only the negative action of not procreating is authorized\"; the first paragraph sets an overreaching account beside it. Not (a): no locus defends a general ban. Not (d): the repair is textual, and PD-15 is its model. Minor: the volta carries the node's decisive argument. For the next queue, with PF-01 to PF-03.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "v",
+              "c"
+            ],
+            "severity": "minor"
+          }
+        }
+      },
+      "why": "X-033 names this sentence as the consent-ban reading standing at a sibling of PD-15's slot; filed as a (b) so the next queue can take it.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "that would violate the exact same principle of consent and harm-reduction"
+        },
+        {
+          "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+          "quote": "has added a premise of his own"
+        },
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "The two layers are derivationally distinct"
+        },
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "only the negative action of not procreating is authorized"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-17",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-033"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-18"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "X-033",
+          "X-029"
+        ]
+      },
+      "new_entry": {
+        "target_id": "why-not-suicide",
+        "target_locus": "long",
+        "target_anchor": "just as one violent actor does not represent environmentalism",
+        "adversarial_move": "The analogy's lone actor misfits here. The eliminationist layer this node's own volta names is held by the view's founders, not by a violent outlier, and this node's defender slot now says so in place of the same analogy. What separates the suicide demand from the position is the entailment cut, not a founder's marginality.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-033; the sibling of PD-18, v4.1.3). R1-024 conceded that the lone-actor analogy misfits the founders, and PD-18 replaced it at this node's defender slot with the cut the node's answer rests on, \"a fact about the movement, not about the argument\", conceding \"the view's own founders included\". The long keeps the analogy, so the node says what its own defender slot withdrew. Best reading: the analogy is aimed at the conflation of non-procreation with suicide, which it fits for antinatalism; but the node speaks for efilism too, whose second layer its volta names, and a reader shown that the founders hold the red button meets the analogy's lone actor as a denial. Not (a) or (d): a textual repair, and PD-18 is its model. Minor: an illustration, not the argument.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "minor"
+          }
+        }
+      },
+      "why": "X-033 names the lone-actor analogy at why-not-suicide#long; filed as a (b) beside the consent-ban (b) at the same locus (different clauses).",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:why-not-suicide#long",
+          "quote": "just as one violent actor does not represent environmentalism"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.defender",
+          "quote": "a fact about the movement, not about the argument"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.defender",
+          "quote": "the view's own founders included"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-18",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 32,
+        "n": 20,
+        "target": "violence-as-reductio#archetypeVariants.sophisticate",
+        "anchor": "terminating a preference-bearer is itself the maximally non-consensual imposition"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-15"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-015"
+        ],
+        "r1": "R1-007 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "target_anchor": "he has added a premise of his own",
+        "adversarial_move": "Grant the relocation: the bridge is a premise the maximizer adds, that continuing to exist is worse for a person than ceasing to, and the core neither contains nor implies it. Locating a premise is not answering it. The long concedes the architects hold that addition, and no locus argues it false, so the charge moves from what the core entails to what the view's founders affirm, and there the corpus holds the question open.",
+        "grounds": "Re-adjudicated at L7 (PD-15, v4.1.3; gate2 X-015). The prior move is discharged at this slot: it attacked the reading of the consent-asymmetry as a general ban on imposition, and PD-15 removed that reading and names the bridge instead, \"that continuing to exist is worse for that person than ceasing to\", which is R1-007's stronger continuation. What survives the repair is the question the repair locates: the slot shows the premise is added, \"which the consent and asymmetry arguments neither contain nor imply\", and no locus argues it false; the node's long concedes the architects hold it. Not (a): locating a premise is not answering it. Not (b): the slot's text is now correct. Terminus HR-14, positive-case-for-cessation facet; not novel; reached through the (d) at why-not-suicide#archetypeVariants.sophisticate, as before."
+      },
+      "why": "The (d)'s anchor sentence was replaced (PD-15). The slot is adjudicated afresh: the class and routing hold, the anchor moves onto the repaired clause and the move is restated against it.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+          "quote": "that continuing to exist is worse for that person than ceasing to"
+        },
+        {
+          "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+          "quote": "which the consent and asymmetry arguments neither contain nor imply"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-19",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 29,
+        "n": 18,
+        "target": "violence-as-reductio#archetypeVariants.blended",
+        "anchor": "take the structural one first and the other two resolve under it"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-15"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-07",
+          "X-030"
+        ],
+        "r1": "R1-030 HOLDS"
+      },
+      "why": "R1-030 rests on the sophisticate slot's \"Concede the one residue this does not reach\", which follows PD-15's sentence and is unchanged. The HOLDS stands; the entry carries byte for byte (PF-07, X-030).",
+      "quotes": [
+        {
+          "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+          "quote": "Concede the one residue this does not reach"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-20",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-033",
+        "X-015"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-15"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "X-015",
+          "X-033"
+        ]
+      },
+      "new_entry": {
+        "target_id": "violence-as-reductio",
+        "target_locus": "long",
+        "target_anchor": "the bridge is framework-self-undermining",
+        "adversarial_move": "Your consent-asymmetry concerns imposing existence on someone who does not yet exist. Read as a general ban on non-consensual imposition it would forbid every coercive rescue, and the corpus defends no such ban. So calling the bridge self-undermining, and the maximizer's addition a swap of the premise for its negation, is the equivocation your own sophisticate slot now avoids: there the maximizer has added a premise the core neither contains nor implies, which is true and enough.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-015, X-033; the sibling of PD-15, v4.1.3). The long's \"Second and decisively\" point, \"the bridge is framework-self-undermining\", reads the consent-asymmetry as a general ban on non-consensual imposition, and its dilemma's second horn repeats it: \"the consent-asymmetry that grounds the first layer forbids maximally non-consensual impositions on a subject\". PD-15 removed exactly that reading from this node's sophisticate slot, which now says the maximizer \"has added a premise of his own, which the consent and asymmetry arguments neither contain nor imply\", so the slot and its long give two accounts of the maximizer. Best reading: the long's first point, that the bridge is contained in none of the three premises, is correct and sufficient; the second overreaches. Not (a): no locus defends a general ban. Not (d): the repair is textual, and PD-15 is its model. Headline: the long calls the overreaching point decisive. For the next queue, with PF-01 to PF-03.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "v",
+              "c"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "X-015 and X-033 name the conceded reading at violence-as-reductio#long twice (the self-undermining point and the dilemma's second horn); one (b) on the clause the long calls decisive, which the second horn restates.",
+      "safety": "His 2026-09-25 bar, read on the drafted text: the move stays on the universal claim the corpus names, argues for no one's death and for no one's continued life, and says nothing to the reader's own life.",
+      "quotes": [
+        {
+          "src": "corpus:violence-as-reductio#long",
+          "quote": "Second and decisively"
+        },
+        {
+          "src": "corpus:violence-as-reductio#long",
+          "quote": "the bridge is framework-self-undermining"
+        },
+        {
+          "src": "corpus:violence-as-reductio#long",
+          "quote": "the consent-asymmetry that grounds the first layer forbids maximally non-consensual impositions on a subject"
+        },
+        {
+          "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+          "quote": "has added a premise of his own, which the consent and asymmetry arguments neither contain nor imply"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-21",
+      "kind": "amend",
+      "disposition": "restate",
+      "entry": {
+        "i": 72,
+        "n": 44,
+        "target": "red-button-repugnant#long",
+        "anchor": "at what point does the perpetual manufacturing of beings"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-07"
+        ],
+        "measure": "moved (anchor verbatim inside SD-07's sentence)",
+        "findings": [
+          "SF-06"
+        ],
+        "r1": "R1-016 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "adversarial_move": "Even granting the drive's genealogy, existing beings' categorical desires are theirs; persons are separate; no aggregate of impositions prevented on future beings licenses overriding A's actual will for B's possible one. The question's 'at what point' arithmetic presupposes the interpersonal trade a side-constraint deontology forbids outright.",
+        "grounds": "(d) on registered bedrock. The answer concedes the move to anyone who holds side-constraints and keeps the button's arithmetic only for the maximizer, whose defence is to debunk the separateness intuition. The (d) at negative-util-aggregation#long, the locus routed to, records that \"debunking-versus-datum is exactly the bedrock\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-016). Terminus HR-11, moorean-datum-vs-debunking facet; not novel. Restated at L7 (SD-07, v4.1.5; SF-06): the anchor survives verbatim inside SD-07's sentence, which no longer calls the beings trapped, so the move's future entrapment is restated as imposition on future beings; the terminus does not move."
+      },
+      "why": "W-007: the anchor's sentence was repaired; the clause survives verbatim. The move named the entrapment SD-07 removed, so it is restated at the same force; class, routing and terminus hold.",
+      "quotes": [
+        {
+          "src": "v1_6:negative-util-aggregation#long",
+          "quote": "debunking-versus-datum is exactly the bedrock"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-22",
+      "kind": "amend",
+      "disposition": "restate",
+      "entry": {
+        "i": 73,
+        "n": 45,
+        "target": "red-button-repugnant#long",
+        "anchor": "driven by biological compulsion operating below rational deliberation"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-05",
+          "SD-06",
+          "SD-07"
+        ],
+        "measure": "unchanged (anchor outside the repair, locus moved)",
+        "findings": [
+          "SF-06",
+          "Z-033"
+        ],
+        "r1": "R1-017 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "adversarial_move": "The reply's engine is genealogical: the preference to continue is the survival drive's product, hence no reliable endorsement. Symmetry bites: aversion to suffering is installed by the same selection. A debunk voiding one valence while crediting the other as a reliable verdict states no independent reliability criterion; strip both and the recoil stands undebunked.",
+        "grounds": "(d) on registered bedrock. The symmetric debunk strips both valences, and the tie-breaker the answer then needs, the creation asymmetry, is registered bedrock and does not reach the existing beings the button ends. What remains is the tie this node's own (d) at #medium registers: \"The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-017). Terminus HR-02, intrinsic-value-of-existence facet; not novel. Restated at L7 (SD-05, v4.1.5): the long now reads the preference as the survival drive's, \"a drive and not as a verdict on the life it keeps going\", and no longer speaks of honest evaluation, so the move's wording follows; the debunk it presses stands in the long, and \"strip both and the recoil stands undebunked\" is kept word for word, since #46's (d) and R1-070 quote it."
+      },
+      "why": "The anchor sits outside the repaired sentences, but the move characterized the long's debunk in words SD-05 removed ('honest evaluation'). Restated at the same force so the card reads against the text it now sits under; class, routing and terminus hold.",
+      "quotes": [
+        {
+          "src": "v1_6:red-button-repugnant#medium",
+          "quote": "The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering"
+        },
+        {
+          "src": "corpus:red-button-repugnant#long",
+          "quote": "a drive and not as a verdict on the life it keeps going"
+        },
+        {
+          "src": "v1_6:red-button-repugnant#long",
+          "quote": "strip both and the recoil stands undebunked"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-23",
+      "kind": "amend",
+      "disposition": "reanchor",
+      "entry": {
+        "i": 76,
+        "n": 47,
+        "target": "red-button-repugnant#archetypeVariants.sophisticate",
+        "anchor": "products of the survival firmware the framework already identifies as distorting honest evaluation"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-08"
+        ],
+        "measure": "gone",
+        "findings": [
+          "SF-06",
+          "Z-033"
+        ],
+        "r1": "R1-012 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "target_anchor": "which the framework already reads as a drive and not as a verdict",
+        "grounds": "(d) on registered bedrock. The routed long restates the debunk without saying why aversion to suffering escapes it, and this node's own (d) at #medium makes the charge and registers where it ends: \"The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering\". (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-012). Terminus HR-02, intrinsic-value-of-existence facet; not novel. Re-anchored at L7 (SD-08, v4.1.5): the anchor lay in the replaced phrase; the slot's debunk stands in the repaired sentence, which still reads the preference as \"biological compulsion operating below deliberation\", so the move is met at the new clause word for word and the terminus does not move."
+      },
+      "why": "SD-08 replaced the phrase the anchor quoted. The selective debunk the move presses stands in the repaired sentence, so the anchor moves onto its replacement and nothing else changes but the grounds' re-anchor note.",
+      "quotes": [
+        {
+          "src": "v1_6:red-button-repugnant#medium",
+          "quote": "The firmware genealogy cannot break the tie, because it demotes the pro-existence intuition only under an axiology that already privileges suffering"
+        },
+        {
+          "src": "corpus:red-button-repugnant#archetypeVariants.sophisticate",
+          "quote": "biological compulsion operating below deliberation"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-24",
+      "kind": "stands",
+      "disposition": "survivor_read",
+      "entry": {
+        "i": 77,
+        "n": null,
+        "target": "red-button-repugnant#archetypeVariants.sophisticate",
+        "anchor": "this node's terminus to hold open rather than pretend closed"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-08",
+          "SD-09"
+        ],
+        "measure": "unchanged (anchor outside the repair, locus moved)",
+        "findings": [
+          "SF-06"
+        ]
+      },
+      "why": "The birth-certificate (d) reads the routing graph, which the safety pass did not touch; its anchor and the concession it quotes stand. Carries byte for byte.",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-25",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 102,
+        "n": 58,
+        "target": "social-contract#long",
+        "anchor": "the antinatalist objection is to existence itself, not to any particular society"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-16"
+        ],
+        "measure": "moved (anchor verbatim inside PD-16's span); grounds quote it",
+        "findings": [
+          "X-016"
+        ],
+        "r1": "R1-052 FAILS (routed_answer_silent; L4 re-route rejected at J-037; (b) at L4b)"
+      },
+      "bedrock_from": {
+        "locus": "moral-progress#long",
+        "anchor": "the ledger is at best ambiguous",
+        "hr": "HR-06",
+        "facet": "unrefusable-condition-on-non-antecedent-subject"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "no one pays their own dues by conscripting someone who was never asked",
+        "adversarial_move": "Grant the line you now draw: a society may ask its members for burdens, not for members. Your reason is that no one pays their own dues by conscripting someone who was never asked. To the fair-play critic, raising a child who will share the scheme's burdens is a contribution, not a conscription, unless being brought into existence wrongs the one brought, which is the verdict in dispute. So the line holds exactly as far as that verdict does.",
+        "grounds": "Re-adjudicated at L7 (PD-16, v4.1.3; gate2 X-016). The prior (b) is discharged: PD-16 grants fair-play obligations given existence and says they are paid in burdens, not in members, which is that (b)'s own repair. The strongest continuation is the reason PD-16 gives for the line: members are not a due \"since no one pays their own dues by conscripting someone who was never asked\". That reason holds only if bringing someone into existence imposes on them in a way that wrongs them whatever the balance of their life, and a critic who denies that reads child-rearing as a contribution. Not (a): the answer rests on the question the map holds at HR-06. Not (b): the node's text is correct and cannot close that question on its own. Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet; not novel. History: R1-052 failed the v1_3 route and gate2 rejected the L4 re-route (J-037); the free-rider move the (b) carried is now met in the node, up to this terminus.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-06, unrefusable-condition-on-non-antecedent-subject facet; node-registered at social-contract#long by PD-16 (v4.1.3), whose burdens-not-members line rests on creation as conscription; re-adjudicated at L7 after PD-16 discharged the (b) (R1-052, J-037)",
+            "novel": false
+          }
+        }
+      },
+      "why": "PD-16 is the (b)'s own repair, landed; the anchor survives inside PD-16's span (W-007). The locus is adjudicated afresh: the free-rider move is met, and the reason that meets it rests on registered bedrock, so the entry is a (d), not an (a).",
+      "quotes": [
+        {
+          "src": "corpus:social-contract#long",
+          "quote": "since no one pays their own dues by conscripting someone who was never asked"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-26",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 9,
+        "n": 6,
+        "target": "consent-both-ways#long",
+        "anchor": "Presumed consent is only valid when it prevents a greater harm"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-14"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-014"
+        ],
+        "r1": "R1-055 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "target_anchor": "before conception there is no one with interests for an imposition to serve",
+        "adversarial_move": "Grant the narrowed rule: presumed consent covers an imposition that serves an interest the person already has. Before conception there is no one with interests, you say, so creation serves none. But then before conception there is no one with interests for creation to set back either, and the node still counts the created person as imposed upon. Either a stake can be acquired by the act, for harm and benefit alike, or for neither.",
+        "grounds": "(d) on registered bedrock. Re-adjudicated at L7 (PD-14, v4.1.3; gate2 X-014): the prior move is granted in the repaired text, which now lets presumed consent license an imposition that \"serves an interest they already have\", and the node's reply moves onto the condition \"before conception there is no one with interests for an imposition to serve\". That sharpens the stake asymmetry the prior (d) recorded rather than closing it: the node counts the created person as the victim of the imposition while denying the created person a stake the imposition could serve. The (d) at life-gift#long registers that symmetry: \"Either a subject can be wronged without an antecedent stake, in which case a subject can be benefited without one, or neither can\". (a) withdrawn at L4 under the R1 standard (row R1-055). Terminus HR-05, no-worse-off-baseline facet; not novel."
+      },
+      "why": "PD-14 grants the (d)'s old move in the text itself, so the anchor's sentence is gone. The locus is adjudicated afresh: the repaired condition carries the same stake asymmetry, so class, routing and terminus hold, and the anchor and move follow the repaired clause.",
+      "quotes": [
+        {
+          "src": "corpus:consent-both-ways#long",
+          "quote": "serves an interest they already have"
+        },
+        {
+          "src": "corpus:consent-both-ways#long",
+          "quote": "before conception there is no one with interests for an imposition to serve"
+        },
+        {
+          "src": "v1_6:life-gift#long",
+          "quote": "Either a subject can be wronged without an antecedent stake, in which case a subject can be benefited without one, or neither can"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-27",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 20,
+        "n": null,
+        "target": "self-defeating#long",
+        "anchor": "requires only the development of sufficient technological capacity"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-20"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-003",
+          "X-028"
+        ]
+      },
+      "set": {
+        "class": "a",
+        "target_anchor": "whatever that path owes to the births others choose",
+        "adversarial_move": "Your path owes its agents to the births you forbid, you now concede. Then the view's aim is reachable only while the view fails to persuade: universal adoption could leave no one in time to build the capacity. A view that needs its own non-adoption to succeed is indirectly self-defeating, and that, not propagation, is the charge.",
+        "grounds": "(a). self-effacing-under-universalization#long meets it on the best reading: \"a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle\". A view whose aim is better served if not everyone holds it is self-effacing, Parfit's case, and that bears on its propagation, not on its truth, which is what this node defends. Re-adjudicated at L7 (PD-20, v4.1.3; gate2 X-003): the prior (b)'s means-inconsistency is discharged, since the repaired text says \"the view does not will, as its means, the act it forbids\"; the dependence it leaves conceded is the strongest continuation, and it is answered at the routed locus. The (d) at that locus concerns its success-condition sentence, which this answer does not use.",
+        "routing": {
+          "answered_by": [
+            "self-effacing-under-universalization#long"
+          ]
+        }
+      },
+      "why": "PD-20 replaced the (b)'s anchor sentence with the fence the (b) named, in the amended form gate2 required (X-003: it concedes the dependence rather than denying it). The locus is adjudicated afresh; the strongest continuation is the conceded dependence, and the corpus answers it at self-effacing-under-universalization, whose own (a)s route to the same locus.",
+      "quotes": [
+        {
+          "src": "corpus:self-effacing-under-universalization#long",
+          "quote": "a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle"
+        },
+        {
+          "src": "corpus:self-defeating#long",
+          "quote": "the view does not will, as its means, the act it forbids"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-28",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 19,
+        "n": 11,
+        "target": "self-defeating#diagnosis",
+        "anchor": "confuses evolutionary fitness with logical validity"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-20"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "PF-05",
+          "X-028"
+        ],
+        "r1": "R1-013 FAILS (answer_flagged_b; waited on PQ-03)"
+      },
+      "proposed_r1": {
+        "verdict": "HOLDS",
+        "supersedes": "R1-013",
+        "reroute": true
+      },
+      "set": {
+        "grounds": "(a) on the re-route; re-judged at L7. R1-013 failed the v1_3 routes: the truth/utility split never touches aims-frustration, and the long's aside conceded a dependence on the civilization the move says the view demoralizes. The Parfitian charge is answered at self-effacing-under-universalization#long, which names it: \"a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle\". If accepting the view frustrates its aims, the view is self-effacing, which bears on whether to propagate it, not on whether it is true. The means half is met at the repaired long (PD-20, v4.1.3): \"the view does not will, as its means, the act it forbids\". A re-route is an (a) like any other, and this answer lives in the routed text. Proposed HOLDS, superseding R1-013; the R1 row is written only after gate2's judgment and his word.",
+        "routing": {
+          "answered_by": [
+            "self-effacing-under-universalization#long",
+            "self-defeating#long"
+          ]
+        }
+      },
+      "why": "Departs from PF-05's expectation, and says why. PF-05 (confirmed at X-028) expected #11 to fail again on its first ground, because neither routed locus speaks to aims-frustration. It is true of the v1_3 routes. The corpus does answer the Parfitian charge, at self-effacing-under-universalization#long, in Parfit's own terms; the re-route carries the answer in the routed text (gate2's law at J-037). pragmatist-objection#medium is dropped from the route: R1-013 found it answers a charge the move steps past.",
+      "quotes": [
+        {
+          "src": "corpus:self-effacing-under-universalization#long",
+          "quote": "a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle"
+        },
+        {
+          "src": "corpus:self-defeating#long",
+          "quote": "the view does not will, as its means, the act it forbids"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-29",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 25,
+        "n": null,
+        "target": "ai-fear#archetypeVariants.defender",
+        "anchor": "Either show the premises themselves entail the recklessness"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-06"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-006"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "ai-fear#archetypeVariants.sophisticate",
+        "anchor": "whether the minimization layer can be independently motivated",
+        "hr": "HR-14",
+        "facet": "successor-preference"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "would convict every substantive ethics with a radical fringe",
+        "adversarial_move": "Your parity holds for what some holders might do. It does not hold at the thesis. Animal and environmental ethics have radical fringes; efilism's red button is held by the founders who named the view, as this corpus concedes. So the recklessness charge needs no base rate: it reads the preference for a painless successor off the view as its authors define it, and there the corpus holds the question open.",
+        "grounds": "Re-adjudicated at L7 (PD-06, v4.1.3; gate2 X-006). The prior (b) is discharged: the slot now argues the entailment test by both routes that (b) named, a base rate \"which no one has supplied\" and a parity with \"every substantive ethics with a radical fringe, animal and environmental ethics included\". The strongest continuation is the one X-006 names: the parity holds for what holders might do, and at the thesis the corpus concedes the eliminationist commitment is its founders', \"the view's own founders included\" (why-not-suicide's defender slot, PD-17). The charge then rests on the view's preference for a painless successor, which this node's own (d)s register at HR-14's successor-preference facet. Not (a): no locus closes it. Not (b): the slot's argument is correct at the level it argues. Terminus HR-14, successor-preference facet; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-14, successor-preference facet; reached through the (d) at ai-fear#archetypeVariants.sophisticate (Phase F), which routes the successor question to red-button-repugnant, where it is held open; re-adjudicated at L7 after PD-06 (v4.1.3) discharged the Phase F (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "PD-06 replaced the (b)'s anchor sentence with the argued test the (b) asked for. The slot is adjudicated afresh; the strongest continuation is the thesis-level parity X-006 names, which ends at the bedrock this node's own (d)s hold.",
+      "quotes": [
+        {
+          "src": "corpus:ai-fear#archetypeVariants.defender",
+          "quote": "which no one has supplied"
+        },
+        {
+          "src": "corpus:ai-fear#archetypeVariants.defender",
+          "quote": "every substantive ethics with a radical fringe, animal and environmental ethics included"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.defender",
+          "quote": "the view's own founders included"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-30",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-033",
+        "X-006"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-18"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "X-006",
+          "X-033"
+        ]
+      },
+      "new_entry": {
+        "target_id": "ai-fear",
+        "target_locus": "archetypeVariants.defender",
+        "target_anchor": "any more than a single violent actor convicts environmentalism",
+        "adversarial_move": "The analogy's single violent actor misfits the adherents this slot names. A lone actor is peripheral to environmentalism; the extinction-welcoming commitment in this corpus is held by the view's founders, as why-not-suicide's defender slot now concedes in place of the same analogy. The framework-versus-actor cut survives, because it measures entailment, not marginality; the analogy denies a fact the cut does not need.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-006, X-033; the sibling of PD-18, v4.1.3). R1-024 conceded that the lone-actor analogy misfits the founders, and PD-18 replaced it at why-not-suicide's defender slot with \"a fact about the movement, not about the argument\". This slot keeps the analogy, and at \"identical force\". Best reading: the analogy is aimed at adherents who would stand down on alignment, some of whom are followers; but the map's own (d) at this node's blended slot records that \"the red button is a founding commitment of the view this node defends\", and a reader who meets that meets the analogy's lone actor as a denial. Not (a) or (d): a textual repair, and PD-18 is its model. Minor: the slot's dilemma, not the analogy, carries its argument.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "minor"
+          }
+        }
+      },
+      "why": "X-006 and X-033 name the lone-actor analogy at ai-fear's defender slot; filed as a (b) beside the slot's re-adjudicated (d), on a different clause.",
+      "quotes": [
+        {
+          "src": "corpus:ai-fear#archetypeVariants.defender",
+          "quote": "any more than a single violent actor convicts environmentalism"
+        },
+        {
+          "src": "corpus:why-not-suicide#archetypeVariants.defender",
+          "quote": "a fact about the movement, not about the argument"
+        },
+        {
+          "src": "corpus:ai-fear#archetypeVariants.defender",
+          "quote": "identical force"
+        },
+        {
+          "src": "v1_6:ai-fear#archetypeVariants.blended",
+          "quote": "the red button is a founding commitment of the view this node defends"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-31",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 79,
+        "n": null,
+        "target": "slippery-slope-eugenics#archetypeVariants.blended",
+        "anchor": "cascade-math voids it on the framework's own calculus"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-05"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-005"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+        "anchor": "whether any negative-utilitarian framework can ground a coercion-floor without sliding",
+        "hr": "HR-14",
+        "facet": "coercion-floor"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "gives no warrant for anything done to people who already exist",
+        "adversarial_move": "Grant the new ground: the asymmetry authorizes only refraining and warrants nothing done to the living. No warrant is not a prohibition. A suffering-minimizing layer that reads universal sterilization as less suffering needs no warrant from the asymmetry; it needs only that nothing in the framework forbids the means. You route that question to violence-as-reductio, which routes the eugenic anchor back here, so the floor that would forbid it is adjudicated in neither.",
+        "grounds": "Re-adjudicated at L7 (PD-05, v4.1.3; gate2 X-005). The prior (b) is discharged at this slot: the anti-coercion verdict now rests where that (b) asked, on the negative-act reading, \"which is why what antinatalism asks for is refusal, not enforcement\", and cascade-math is \"a second, weaker witness\". The strongest continuation is the gap between warrant and prohibition, which the slot routes on: \"the residual coercion-floor question routes to violence-as-reductio\", and the map's (d) at this node's sophisticate slot records that route as a closed cycle. Not (a): a question routed in a circle is adjudicated nowhere. Not (b): the slot's text is now correct. Terminus HR-14, coercion-floor facet; not novel. The defect X-005 and PF-02 name at the long and the sophisticate slot is filed at those loci.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-14, coercion-floor facet; reached through the (d) at slippery-slope-eugenics#archetypeVariants.sophisticate (Phase F), which records the slippery-slope-eugenics / violence-as-reductio route as a closed cycle; re-adjudicated at L7 after PD-05 (v4.1.3) discharged the Phase F (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "PD-05 replaced the (b)'s anchor clause with the ground the (b) asked for. The slot is adjudicated afresh; the strongest continuation is the coercion floor it routes on, which the map already holds at HR-14.",
+      "quotes": [
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "which is why what antinatalism asks for is refusal, not enforcement"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "a second, weaker witness"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "the residual coercion-floor question routes to violence-as-reductio"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-32",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 80,
+        "n": 48,
+        "target": "slippery-slope-eugenics#archetypeVariants.defender",
+        "anchor": "the adherent who endorses it is running a slogan, not the framework"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-05",
+          "PD-06"
+        ],
+        "measure": "answer routes to an unmoved locus (the long); the slots PF-02 names moved",
+        "findings": [
+          "PF-02",
+          "X-025",
+          "X-033"
+        ],
+        "r1": "R1-040 FAILS (answer_flagged_b; waited on PQ-05 and PQ-06)"
+      },
+      "set": {
+        "class": "b",
+        "grounds": "(b), headline: aggravation under design section 11.1; re-judged at L7 (PF-02, gate2 X-025, X-033). R1-040 failed this (a): its answer, the long's cascade-math safeguard, rests on a calculation the map's (b) at the blended slot found cannot bound a licensing claim. The pin repaired the blended slot, which now grounds the anti-coercion verdict where ordinary holders reach it without a calculation, \"which is why what antinatalism asks for is refusal, not enforcement\", and makes cascade-math \"a second, weaker witness\". This slot still rests the verdict on the calculation, \"The framework's own math rejects the coercive slide\", and files the endorsers as \"grabbed, not produced\", the framing why-not-suicide's defender slot dropped (PD-17). So the move defeats this slot's text and not the position: the node now holds the accessible ground one slot over. Re-routing to it would ship an (a) whose own target still says what its node withdrew. The repair belongs at this slot: take the blended slot's ground and drop the framing. For the next queue, with the long (PF-02).",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "Departs from PF-02's first option, and says why. PF-02 offered a re-route to the two repaired slots, or a queued repair of the long. The re-route fails design section 11.1: #48's move attacks this slot's own reliance on the calculation, which the node has since withdrawn one slot over, so the slot aggravates rather than inherits the cure (the shape of #5 at L4). As a (b) here it also carries X-033's defender-slot filing (grabbed-not-produced), since both live in the one sentence #48's anchor closes. The move carries byte for byte.",
+      "quotes": [
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "which is why what antinatalism asks for is refusal, not enforcement"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "a second, weaker witness"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.defender",
+          "quote": "The framework's own math rejects the coercive slide"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.defender",
+          "quote": "grabbed, not produced"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-33",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "PF-02",
+        "X-025",
+        "X-033",
+        "X-005"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-05"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "PF-02",
+          "X-005",
+          "X-025",
+          "X-033"
+        ]
+      },
+      "new_entry": {
+        "target_id": "slippery-slope-eugenics",
+        "target_locus": "long",
+        "target_anchor": "The structural safeguard is not a rule bolted on from outside",
+        "adversarial_move": "A calculation cannot be the safeguard. Its verdict moves with the conditions it sums: stipulate a regime that could sterilize without backlash, designation or discourse closure, and the arithmetic reverses while the framework stands unchanged. Your own blended slot now says so, calling cascade-math a second, weaker witness and resting the verdict on refusal, not enforcement. The long still calls the calculation itself the structural safeguard, and files those who bypass it as grabbed, not produced.",
+        "class": "b",
+        "grounds": "Filed at L7 (PF-02; gate2 X-005, X-025, X-033). The long's safeguard paragraph says \"The structural safeguard is not a rule bolted on from outside; it is the calculation itself\", the claim the map's (b) at the blended slot found contingent, and which PD-05 (v4.1.3) corrected there to \"a second, weaker witness, because a calculation's verdict moves with circumstances\". After the pin the node disagrees with itself. Best reading: the long offers the calculation as the framework's own corroboration; but it names it the safeguard, and the ground that does not move with circumstances, the negative-act reading, is stated at the blended slot and not here. Not (a): no locus defends a calculation as a safeguard. Not (d): the repair is textual, and PD-05 is its model. Headline: the paragraph is the long's structural complement to its volta. For the next queue, with #48's (b) at the defender slot.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "PF-02 names the long's safeguard paragraph for a later queue, and X-025 and X-033 add the grabbed-not-produced framing in the same paragraph; one (b) on the safeguard clause, whose move names both.",
+      "quotes": [
+        {
+          "src": "corpus:slippery-slope-eugenics#long",
+          "quote": "The structural safeguard is not a rule bolted on from outside; it is the calculation itself"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "a second, weaker witness, because a calculation's verdict moves with circumstances"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-34",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-025",
+        "X-033"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-05"
+        ],
+        "measure": "sibling locus of a repaired slot",
+        "findings": [
+          "X-025",
+          "X-033"
+        ]
+      },
+      "new_entry": {
+        "target_id": "slippery-slope-eugenics",
+        "target_locus": "archetypeVariants.sophisticate",
+        "target_anchor": "The cascade-math-safeguard then shows the framework's outcome-calculus, run honestly, returns a negative verdict",
+        "adversarial_move": "Your backbone's second step is a calculation, and your own blended slot now ranks it a second, weaker witness, because its verdict moves with circumstances. Stipulate a regime that could sterilize universally without the cascades you list, and the outcome-calculus no longer returns a negative verdict, while the framework is unchanged. The step the sophisticate needs is the one the blended slot now gives: the asymmetry warrants nothing done to the living.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-025, X-033). The sophisticate slot runs the calculation as a backbone step, \"The cascade-math-safeguard then shows the framework's outcome-calculus, run honestly, returns a negative verdict on the coercive route\", which PD-05 (v4.1.3) demoted at the blended slot to \"a second, weaker witness\". Best reading: the step follows the framework-versus-actor cut and is offered as the framework's own verdict; but a verdict that moves with circumstances cannot be the backbone against a sophisticate who stipulates the circumstances away. Not (a) or (d): the repair is textual, PD-05 its model, and the slot already routes the coercion floor on. Headline: the step is half the slot's backbone.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "X-025 extends PF-02 to the sophisticate slot, which runs the same calculation as a backbone step; filed beside the slot's (d) on the coercion floor, on a different clause.",
+      "quotes": [
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.sophisticate",
+          "quote": "The cascade-math-safeguard then shows the framework's outcome-calculus, run honestly, returns a negative verdict on the coercive route"
+        },
+        {
+          "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+          "quote": "a second, weaker witness"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-35",
+      "kind": "amend",
+      "disposition": "rejudge_waiting",
+      "entry": {
+        "i": 84,
+        "n": 50,
+        "target": "bitter-childhood#long",
+        "anchor": "even if my childhood WAS the catalyst for this philosophy"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-07",
+          "PC-01"
+        ],
+        "measure": "unchanged anchor at a moved locus; routes to a moved locus",
+        "findings": [
+          "X-007",
+          "X-019"
+        ],
+        "r1": "R1-068 FAILS (answer_flagged_b; waited on PQ-07 and PC-01)"
+      },
+      "proposed_r1": {
+        "verdict": "HOLDS",
+        "supersedes": "R1-068"
+      },
+      "set": {
+        "grounds": "(a) on the repaired text; re-judged at L7. R1-068 failed it on the v4.1.0 text: the move holds the node to its own rule, and the long's closing and the medium's ending then spent the biography as evidence. PD-07 and PC-01 (v4.1.3) withdrew both: the long now closes \"It is an irony, not a proof: how I came to the argument settles nothing about it, in my favor any more than against me\", and the medium, the routed locus, ends \"because the path to a belief bears on its truth in neither direction\". That is the move's own first branch, taken. The node's defender slot still claims clearer sight for the wounded arguer; that is the (b) filed there (PF-03), and this answer does not rest on it. Proposed HOLDS, superseding R1-068; the R1 row is written only after gate2's judgment and his word."
+      },
+      "why": "The waiting (a) is re-judged against the repaired text it waited on. The long withdrew the proof claim the move attacked and the routed medium states the rule the move demanded; the class and routing do not move, the grounds rest on the repaired text, and the verdict change is proposed, not written.",
+      "quotes": [
+        {
+          "src": "corpus:bitter-childhood#long",
+          "quote": "It is an irony, not a proof: how I came to the argument settles nothing about it, in my favor any more than against me"
+        },
+        {
+          "src": "corpus:bitter-childhood#medium",
+          "quote": "because the path to a belief bears on its truth in neither direction"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-36",
+      "kind": "stands",
+      "disposition": "rejudge_b_stands",
+      "entry": {
+        "i": 85,
+        "n": null,
+        "target": "bitter-childhood#archetypeVariants.defender",
+        "anchor": "not seeing falsely, he is seeing without the anaesthetic"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-07",
+          "PC-01"
+        ],
+        "measure": "unchanged (the slot did not move; its node's long and medium did)",
+        "findings": [
+          "PF-03",
+          "X-026",
+          "X-007"
+        ]
+      },
+      "why": "PF-03 asks the successor map to re-judge this (b) before its slot is queued. It stands, and is aggravated: PD-07 and PC-01 now state the node's rule in its own long and medium (\"in my favor any more than against me\"; \"bears on its truth in neither direction\"), while this slot still says the wounded arguer \"is the more reliable one\", so the node says both things (X-007). The entry's move, grounds and severity remain true as written and carry byte for byte; PF-03's filing is this entry, first in the next queue (X-026).",
+      "quotes": [
+        {
+          "src": "corpus:bitter-childhood#long",
+          "quote": "in my favor any more than against me"
+        },
+        {
+          "src": "corpus:bitter-childhood#medium",
+          "quote": "bears on its truth in neither direction"
+        },
+        {
+          "src": "corpus:bitter-childhood#archetypeVariants.defender",
+          "quote": "he is the more reliable one"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-37",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 105,
+        "n": null,
+        "target": "bradley-no-subject#long",
+        "anchor": "There is no third branch"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-13",
+          "PC-06"
+        ],
+        "measure": "gone",
+        "findings": [
+          "X-013",
+          "X-023"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "harman-benign-creation#long",
+        "anchor": "was subjected to that outcome by another person's probabilistic optimism",
+        "hr": "HR-05",
+        "facet": "no-worse-off-baseline"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "creation can wrong a person with no worse-off baseline",
+        "adversarial_move": "Grant the named branch: a comparativist defeats the asymmetry and clears procreation, and your fork now holds only as far as creation can wrong a person with no worse-off baseline. The poisoned well and wrongful life press that question without settling it, since their victims have a worse-off comparison the created child lacks. So on the branch you have named, the verdict rests on non-comparative wronging, which the comparativist denies and nothing here establishes.",
+        "grounds": "Re-adjudicated at L7 (PD-13 and PC-06, v4.1.3; gate2 X-013, X-023). The prior (b) is discharged: PD-13 names the comparativist branch that (b) said the fork denied, and routes it to \"the question the poisoned-well and wrongful-life cases below press, and that a committed comparativist will not concede\". That (b)'s own escalation clause applies: with the non-comparative defence stated as open, the branch ends at the primitive. Not (a): no locus establishes non-comparative wronging against the comparativist. Not (b): naming the branch is the honest text. Terminus HR-05, no-worse-off-baseline facet, birth certificate at harman-benign-creation#long; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-05, no-worse-off-baseline facet, birth certificate at harman-benign-creation#long (Phase B2); node-registered at bradley-no-subject#long by PD-13 (v4.1.3), which names the comparativist branch; re-adjudicated at L7 after PD-13 discharged the Phase B1 (b), under that (b)'s own escalation clause",
+            "novel": false
+          }
+        }
+      },
+      "why": "PD-13 replaced the (b)'s anchor sentence by naming the branch the (b) found. The (b) had said what follows: if the non-comparative defence proves unavailable, the entry escalates to a (d) at that primitive. PD-13 states it as open, so the locus's fork terminates at HR-05.",
+      "quotes": [
+        {
+          "src": "corpus:bradley-no-subject#long",
+          "quote": "the question the poisoned-well and wrongful-life cases below press, and that a committed comparativist will not concede"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-38",
+      "kind": "file",
+      "disposition": "file_b",
+      "finding": [
+        "X-034"
+      ],
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-13",
+          "PC-06"
+        ],
+        "measure": "the repaired locus's framing, read against a source",
+        "findings": [
+          "X-034",
+          "X-013",
+          "X-023"
+        ]
+      },
+      "source": {
+        "checked": "Ben Bradley, Asymmetries in Benefiting, Harming and Creating, The Journal of Ethics 17 (2013); penultimate version at benbradleyweb.com/wp-content/uploads/2016/09/asymmetries-final-web.pdf, read 2026-09-26: section 1 summarizes his 2010 objection (Benatar and the Logic of Betterness, JESP 2010) as a link between goodness and betterness that Benatar's asymmetry breaks; section 4 defends the possibility of making someone better or worse off by creating her, after arguing there is no axiological asymmetry.",
+        "not_read": "the 2010 JESP note itself: its download link returned 404 on 2026-09-26; its abstract says Benatar's master argument rests on a conceptual incoherence."
+      },
+      "new_entry": {
+        "target_id": "bradley-no-subject",
+        "target_locus": "long",
+        "target_anchor": "What is closed is Bradley's objection",
+        "adversarial_move": "Your closing says Bradley's objection is closed, and your reconstruction makes his best reply a person-affecting re-explanation of the asymmetries. On his own account it is neither. His objection runs on the logic of betterness, and his positive view is that creation can make a person better or worse off, so there is no asymmetry and a good life can be a benefit. That is the comparativist branch your own fork now names and leaves open.",
+        "class": "b",
+        "grounds": "Filed at L7 (gate2 X-034, with X-013 and X-023); the source check X-034 asked for was made. Bradley's own later summary of his 2010 objection (Benatar and the Logic of Betterness, JESP 2010) frames it in the logic of betterness, a link between goodness and betterness that Benatar's asymmetry breaks, and the same paper (Asymmetries in Benefiting, Harming and Creating, The Journal of Ethics, 2013, sections 1 and 4) argues there is no axiological asymmetry and defends the possibility of making someone better or worse off by creating her. So the node's reconstruction, \"Bradley's best version does not return procreation to the column of the permissible\", describes a reply that is not Bradley's, and its closing line claims more than PD-13 allows, since PD-13 leaves the comparativist branch open up to HR-05. Best reading: the name may stand for the subject-relativity objection as the node reconstructs it, not for the man; PC-06's wording (\"pushed as far as the person-affecting re-explanation takes it\") already names the reply. Not (a) or (d): a textual repair, naming the reply rather than the man and bringing the close into line with the named branch. Headline: the node's title and its verdict name him.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "headline"
+          }
+        }
+      },
+      "why": "X-034's lead, checked against a source as it asked, holds. Filed as a (b) for the next queue, beside the locus's re-adjudicated (d), on a different clause.",
+      "quotes": [
+        {
+          "src": "corpus:bradley-no-subject#long",
+          "quote": "Bradley's best version does not return procreation to the column of the permissible"
+        },
+        {
+          "src": "corpus:bradley-no-subject#long",
+          "quote": "pushed as far as the person-affecting re-explanation takes it"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-39",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 118,
+        "n": null,
+        "target": "neuroscience-positive-states#long",
+        "anchor": "a joy never instantiated is withheld from no one"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-12"
+        ],
+        "measure": "gone; its move and grounds quote the replaced sentence",
+        "findings": [
+          "X-012"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "boonin-critique#short",
+        "anchor": "Defeating one column does not collapse a building with four foundations",
+        "hr": "HR-06",
+        "facet": "unrefusable-condition-on-non-antecedent-subject"
+      },
+      "set": {
+        "class": "d",
+        "target_anchor": "it rests on what creation does to the one it creates",
+        "adversarial_move": "Grant the symmetry you now state: the joy's absence cheats no one and the pain's absence spares no one. Then non-creation is neutral on the ledger, and the case rests, as you say, on what creation does to the one it creates. That is imposition: installing someone who could not agree into the risk-bundle of a life. Whether that wrongs them whatever the balance of their life is the question, and nothing in the neuroscience or here settles it.",
+        "grounds": "Re-adjudicated at L7 (PD-12, v4.1.3; gate2 X-012). The prior (b) is discharged: PD-12 grants the valence symmetry that (b) said the climax contradicted, \"the pain's absence spares no one either\", and re-grounds the surviving move where that (b)'s repair chain led, on imposition. The strongest continuation is the premise the re-grounding needs, which that (b) named: risk-imposition \"presupposes that installing a non-consenting subject into a risk-bundle wrongs them\", the question the map holds at HR-06. Not (a): no locus settles it. Not (b): the repaired climax claims no win beyond it. Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-06, birth certificate boonin-critique#short (Phase B2); node-registered at neuroscience-positive-states#long by PD-12 (v4.1.3), which rests the surviving move on imposition; re-adjudicated at L7 after PD-12 discharged the Phase B2 (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "PD-12 is the (b)'s repair, landed: the anchor sentence is gone and the climax now grants the symmetry. The locus is adjudicated afresh; the strongest continuation is the imposition premise the (b)'s own repair chain named, registered at HR-06.",
+      "quotes": [
+        {
+          "src": "corpus:neuroscience-positive-states#long",
+          "quote": "the pain's absence spares no one either"
+        },
+        {
+          "src": "v1_6:neuroscience-positive-states#long",
+          "quote": "presupposes that installing a non-consenting subject into a risk-bundle wrongs them"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-40",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 116,
+        "n": 62,
+        "target": "buddhist-objection#long",
+        "anchor": "why create new beings who will need to escape the cycle"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-12"
+        ],
+        "measure": "grounds quote the replaced sentence at neuroscience-positive-states#long (0 of 3 shingles survive)",
+        "findings": [
+          "X-012"
+        ],
+        "r1": "R1-047 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "grounds": "(d) on registered bedrock. The answer rested on neuroscience-positive-states#long's no-deprivation sentence, which PD-12 (v4.1.3) replaced: the repaired climax grants that \"the pain's absence spares no one either\" and rests the surviving move \"on what creation does to the one it creates\". On that symmetric ledger the supreme goods stand against the risk-bundle, and what remains is the imposition itself, which the (d) now at neuroscience-positive-states#long records at HR-06. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-047). Terminus HR-06, unrefusable-condition-on-non-antecedent-subject facet, birth certificate at boonin-critique#short; not novel. Grounds rewritten at L7: the v1_6 grounds quoted the sentence PD-12 replaced and the (b) it discharged.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "bedrock-III: imposition of an unrefusable condition on a non-antecedent subject as wrong independent of harm",
+            "terminus_routing": "already-registered HR-06, birth certificate boonin-critique#short (Phase B2); reached through the (d) at neuroscience-positive-states#long (re-adjudicated at L7 after PD-12, v4.1.3), which rests the surviving move on imposition; unrefusable-condition-on-non-antecedent-subject facet; reclassified from (a) at L4 under the R1 standard (R1-047)",
+            "novel": false
+          }
+        }
+      },
+      "why": "The (d) stands on the same bedrock. Its grounds and terminus_routing quoted the sentence PD-12 replaced and the (b) at neuroscience that the successor re-adjudicates, so both are rewritten to the repaired text; move, anchor, class and bedrock carry.",
+      "quotes": [
+        {
+          "src": "corpus:neuroscience-positive-states#long",
+          "quote": "the pain's absence spares no one either"
+        },
+        {
+          "src": "corpus:neuroscience-positive-states#long",
+          "quote": "on what creation does to the one it creates"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-41",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 123,
+        "n": 63,
+        "target": "luxury-belief#long",
+        "anchor": "consequences for economic systems, not for sentient beings"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-09",
+          "PC-03",
+          "PC-04"
+        ],
+        "measure": "gone; grounds quote PC-04's replaced sentence",
+        "findings": [
+          "X-009",
+          "X-021",
+          "X-022"
+        ],
+        "r1": "R1-063 FAILS (a_to_b at L4: cross-node aggravation)"
+      },
+      "set": {
+        "target_anchor": "so they are not the costs pushed onto others that the model's third feature requires",
+        "adversarial_move": "Sharing a cost is not bearing it equally. The belief's holders would bear some of a contraction's costs, but feature three asks where they fall hardest, and a transition that thins care and work falls hardest on the old without family or savings and the young in contracting trades, not on the comfortable holder. That the costs reach everyone answers insulation, not incidence.",
+        "grounds": "Re-adjudicated at L7 (PD-09, PC-03, PC-04, v4.1.3; gate2 X-009, X-021, X-022). The prior (b) is discharged: the long now grants that contraction's costs are \"real costs to real people\" and sends their weighing to economy-population. The strongest continuation is the half X-022 left open: \"Those costs would fall on everyone the transition reaches, the belief's holders among them\" answers whether holders are insulated, not whether the costs fall hardest on the less privileged, which is feature three as the node itself states it (\"particularly the less privileged\"). economy-population names means, \"automation, institutional reform, mutual aid, and resource reallocation\", and says nothing about who bears the transition. Not (a): no locus answers the incidence. Not (d): it is an empirical and political question, not bedrock. The node's spine, its genetic-fallacy paragraph, is untouched: a stronger text concedes that the incidence may be regressive and says that bears on how the transition is managed, not on the belief's truth. Minor.",
+        "routing": {
+          "regen_candidate": {
+            "axis_hit": [
+              "s",
+              "c"
+            ],
+            "severity": "minor"
+          }
+        }
+      },
+      "why": "PD-09 and its companions landed the (b)'s repair; the anchor's sentence is gone. The locus is adjudicated afresh; X-022 names what the repair left open, and it is still a textual gap, so the entry stays a (b) on a new clause.",
+      "quotes": [
+        {
+          "src": "corpus:luxury-belief#long",
+          "quote": "real costs to real people"
+        },
+        {
+          "src": "corpus:luxury-belief#long",
+          "quote": "Those costs would fall on everyone the transition reaches, the belief's holders among them"
+        },
+        {
+          "src": "corpus:luxury-belief#long",
+          "quote": "particularly the less privileged"
+        },
+        {
+          "src": "corpus:economy-population#long",
+          "quote": "automation, institutional reform, mutual aid, and resource reallocation"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-42",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 37,
+        "n": 22,
+        "target": "free-will-defense#long",
+        "anchor": "Free will does not mitigate the proxy gamble"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-10"
+        ],
+        "measure": "unchanged anchor at a moved locus; grounds quote PD-10's replaced sentence (0 of 31 shingles survive)",
+        "findings": [
+          "X-010"
+        ],
+        "r1": "R1-042 FAILS (routed_answer_silent; a_to_b at L4)"
+      },
+      "proposed_r1": {
+        "verdict": "HOLDS",
+        "supersedes": "R1-042",
+        "reroute": true
+      },
+      "set": {
+        "class": "a",
+        "grounds": "(a) on the repaired text; re-judged at L7 (PD-10, v4.1.3; gate2 X-010). R1-042 failed the v1_3 route, and L4 made this a (b) at the long, whose second level dismissed compatibilism on a reason that reached the parent's desires as fully as anyone's. PD-10 is that (b)'s own repair: compatibilism now \"salvages a real freedom\", not the one the theodicy needs, because \"a God who designed those desires still stands behind what they produce\", and it is \"exactly the freedom a prospective parent exercises\". The asymmetry is principled: an agent designed the desires the theodicy is about, and no agent designed the parent's (X-010). So the node no longer spends determinism on the child while banking responsibility for the parent. Proposed HOLDS, superseding R1-042, with the route moved to the node's own long; the R1 row is written only after gate2's judgment and his word.",
+        "routing": {
+          "answered_by": [
+            "free-will-defense#long"
+          ]
+        }
+      },
+      "why": "X-010: '#22's move is now met in the node's own text.' The (b) landed; the entry is re-judged as the (a) it was authored as, routed to the repaired locus it targets (self-routing has precedent at self-effacing-under-universalization#long, entries 136 and 137). The move carries byte for byte; the verdict change is proposed, not written.",
+      "quotes": [
+        {
+          "src": "corpus:free-will-defense#long",
+          "quote": "salvages a real freedom"
+        },
+        {
+          "src": "corpus:free-will-defense#long",
+          "quote": "a God who designed those desires still stands behind what they produce"
+        },
+        {
+          "src": "corpus:free-will-defense#long",
+          "quote": "exactly the freedom a prospective parent exercises"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-43",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 131,
+        "n": null,
+        "target": "eliminativism#long",
+        "anchor": "The property is conserved under redescription; only the label moves"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-11"
+        ],
+        "measure": "unchanged anchor at a moved locus; grounds and terminus_routing quote PD-11's replaced clause",
+        "findings": [
+          "X-011"
+        ]
+      },
+      "set": {
+        "grounds": "Attacked on its own shipped prose (Phase-A routing not imported). The node's first movement rests on 'the property is conserved under redescription; only the label moves.' The illusionist can concede a conserved functional-dispositional property (a state the organism is built to avoid) while denying any intrinsically disvaluable felt quality, and 'reliably avoided' does not entail 'intrinsically bad'; deriving the harm premise's disvalue from the conserved naturalistic property crosses is-ought. Not (a): the corpus's structural-features and self-undermining replies establish avoidance/representation, not stance-independent disvalue, the same gap phenomenological-existentialism#long hits. Not (b) at the terminus: supplying stance-independent disvalue in-place is the bedrock itself; the node's defense is hostage to it, not repairable around it. Terminus is moral-realism / is-ought (N1), already-surfaced (convergent with phenomenological-existentialism, A+B entry 1), novel false; triage-vs-meta-ethical-pluralism#long carries over. The secondary regen item K229 logged here, that the second movement's closing overclaimed on global nihilism, landed at v4.1.3 (PD-11): the closing now says a barren ledger leaves no good reason to create \"but none to refrain either, so the objection wins nothing for creation\".",
+        "routing": {
+          "residue": {
+            "bedrock_name": "moral-realism / is-ought: whether the property conserved under redescription is intrinsically disvaluable or merely reliably avoided",
+            "terminus_routing": "already-surfaced (N1), convergent with phenomenological-existentialism (A+B entry 1); N1 triage-vs-meta-ethical-pluralism#long carries over; the secondary regen item K229 logged here, the movement-two closing's overclaim, landed at v4.1.3 (PD-11)",
+            "novel": false
+          }
+        }
+      },
+      "why": "The (d)'s main move is untouched. Its grounds and terminus_routing carried a secondary regen item that PD-11 landed (X-011); both now record it as landed instead of quoting the sentence PD-11 replaced. Move, anchor, class and bedrock carry.",
+      "quotes": [
+        {
+          "src": "corpus:eliminativism#long",
+          "quote": "but none to refrain either, so the objection wins nothing for creation"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-44",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 132,
+        "n": 67,
+        "target": "eliminativism#note",
+        "anchor": "refutation is dialectical (non-selectivity) rather than a knockdown of the metaphysics"
+      },
+      "cause": {
+        "cut": "v4.1.3",
+        "rows": [
+          "PD-11"
+        ],
+        "measure": "grounds quote PD-11's replaced clause (via the (d) at eliminativism#long)",
+        "findings": [
+          "X-011"
+        ],
+        "r1": "R1-003 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "grounds": "(d) on registered bedrock. The former grounds met the honest illusionist with the barren-ledger sentence, which K229 logged as an overclaim and PD-11 (v4.1.3) withdrew: the long now says a barren ledger leaves no good reason to create \"but none to refrain either, so the objection wins nothing for creation\". That concedes what the move says: the illusionist who holds the view non-selectively is untouched, and what the node holds across him is the is-ought question the (d) at eliminativism#long registers. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-003). Terminus HR-04, conserved-property-under-redescription facet; not novel. Grounds rewritten at L7: the v1_6 grounds quoted the sentence PD-11 replaced."
+      },
+      "why": "The (d) stands; the repaired closing concedes exactly what its move says. Its grounds quoted the overclaim PD-11 withdrew, so they are rewritten to the repaired text; move, anchor, class and routing carry.",
+      "quotes": [
+        {
+          "src": "corpus:eliminativism#long",
+          "quote": "but none to refrain either, so the objection wins nothing for creation"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-45",
+      "kind": "amend",
+      "disposition": "readjudicate",
+      "entry": {
+        "i": 101,
+        "n": null,
+        "target": "revealed-preference#long",
+        "anchor": "genuine revealed preference requires informed agents"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SC-01",
+          "SC-02",
+          "SC-03"
+        ],
+        "measure": "unchanged anchor at a moved locus; the (b)'s own repair landed",
+        "findings": [
+          "SF-02",
+          "SF-06"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "most-people-happy#long",
+        "anchor": "procreation is a proxy gamble",
+        "hr": "HR-05",
+        "facet": "no-worse-off-baseline"
+      },
+      "set": {
+        "class": "d",
+        "adversarial_move": "Grant the neutral ledger: going on living settles nothing either way. Then ask instead of watching. Asked, most people say their lives are worth living, and your information paragraph shows only that behavior cannot tell us this, not that the answer is uninformed. The corpus meets stated endorsement at most-people-happy only by calling procreation a proxy gamble, which holds only if creating someone can wrong them with no worse-off baseline.",
+        "grounds": "Re-adjudicated at L7 (SC-01, SC-02, SC-03, v4.1.5; SF-02, SF-06). The prior (b) is discharged: SC-03 makes the metric cut both ways, \"a count of what people do is not a count of what they have judged, in either direction\", so the node no longer credits the suicide datum under a standard it also fails. With behavior set aside on both sides, the strongest continuation is the objector's retreat from revealed to stated preference, which this node's paragraphs do not reach and which the corpus meets at most-people-happy#long. The map records where that answer ends: the (d) there, anchored on \"procreation is a proxy gamble\", files it at HR-05. Not (a): the answer ends at registered bedrock. Not (b): the repaired long is correct about behavior. Terminus HR-05, no-worse-off-baseline facet; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-05, no-worse-off-baseline facet; reached through the (d) at most-people-happy#long (Phase D), where the stated-preference answer rests on the proxy gamble; re-adjudicated at L7 after SC-01 to SC-03 (v4.1.5) discharged the Phase B1 (b)",
+            "novel": false
+          }
+        }
+      },
+      "why": "SF-06: SC-01..03 answer this (b). The anchor sits outside the repaired sentences, but the (b) no longer bites, so the locus is adjudicated afresh; the strongest continuation leaves behavior for stated endorsement, which the corpus answers at a node whose own (d) ends at HR-05.",
+      "quotes": [
+        {
+          "src": "corpus:revealed-preference#long",
+          "quote": "a count of what people do is not a count of what they have judged, in either direction"
+        },
+        {
+          "src": "v1_6:most-people-happy#long",
+          "quote": "procreation is a proxy gamble"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-46",
+      "kind": "amend",
+      "disposition": "regrounds",
+      "entry": {
+        "i": 125,
+        "n": 64,
+        "target": "survivor-testimony#long",
+        "anchor": "evidence about the preferences of already-existing beings"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SW-04",
+          "SW-05",
+          "SW-06",
+          "SW-07"
+        ],
+        "measure": "unchanged anchor at a moved locus",
+        "findings": [
+          "SF-03",
+          "SF-06"
+        ],
+        "consequential_to": "the hub's (b) at benatar-asymmetry-attack#long, re-adjudicated here",
+        "r1": "R1-064 FAILS (a_to_d at L4)"
+      },
+      "set": {
+        "grounds": "(d) on registered bedrock. A survivor who endorses her own life is on the intrapersonal horn, where the (d) at joy-outweighs-harms#long records: \"That opponent is not refuted; the dispute is relocated to the asymmetry.\" The node now says so itself: the survivor is \"answering a question about their own life, which is theirs to answer\" (SW-05, v4.1.5). And the hub's fallback, as PD-19 (v4.1.3) repaired it, leaves the suffering load \"an empirical question this node does not settle\", so survivor testimony remains evidence on exactly that load. (a) withdrawn at L4 under the R1 standard Josiah adopted at L2 (row R1-064). Terminus HR-02, merely-possible-beneficiary facet; not novel. Grounds updated at L7: the v1_6 grounds cited the hub's (b), which the successor re-adjudicates as a (d)."
+      },
+      "why": "The (d)'s move and terminus stand; the widening strengthens the node's own concession. The grounds cited 'its own (b)' at the hub, which the successor re-adjudicates, so they are updated to the repaired hub and the widened long.",
+      "quotes": [
+        {
+          "src": "v1_6:joy-outweighs-harms#long",
+          "quote": "That opponent is not refuted; the dispute is relocated to the asymmetry."
+        },
+        {
+          "src": "corpus:survivor-testimony#long",
+          "quote": "answering a question about their own life, which is theirs to answer"
+        },
+        {
+          "src": "corpus:benatar-asymmetry-attack#long",
+          "quote": "an empirical question this node does not settle"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-47",
+      "kind": "stands",
+      "disposition": "holds_rerouted_read",
+      "entry": {
+        "i": 96,
+        "n": 56,
+        "target": "heat-death-futility#medium",
+        "anchor": "Suffering is experienced at the scale of the nervous system"
+      },
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [
+          "SD-04"
+        ],
+        "measure": "routes to a moved locus",
+        "findings": [
+          "SF-06"
+        ],
+        "r1": "R1-019 HOLDS"
+      },
+      "why": "R1-019 rests on the long's value base, an aggregate of nervous-system-scale sufferings, which stands after SD-04: \"HOW MUCH suffering occurs along the way\". SD-04 recasts the button \"as a thought experiment rather than a plan\", which weakens the move's premise that the node prescribes cessation and leaves the answer untouched. The HOLDS stands; the entry carries byte for byte.",
+      "quotes": [
+        {
+          "src": "corpus:heat-death-futility#long",
+          "quote": "HOW MUCH suffering occurs along the way"
+        },
+        {
+          "src": "corpus:heat-death-futility#long",
+          "quote": "as a thought experiment rather than a plan"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-48",
+      "kind": "file",
+      "disposition": "file_d",
+      "finding": [
+        "Z-033"
+      ],
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [],
+        "measure": "a phrasing the safety pass retired everywhere else",
+        "findings": [
+          "Z-033"
+        ]
+      },
+      "bedrock_from": {
+        "locus": "red-button-repugnant#medium",
+        "anchor": "That is a metaphysical commitment, not an ethical argument",
+        "hr": "HR-02",
+        "facet": "intrinsic-value-of-existence"
+      },
+      "new_entry": {
+        "target_id": "boonin-critique",
+        "target_locus": "long",
+        "target_anchor": "evidence for the depth of the biological programming that prevents honest evaluation",
+        "adversarial_move": "Your debunk is selective. The aversion to suffering your framework rests on is installed by the same selection as the intuition that procreation is permissible, and runs as far below deliberation. If the programming makes one intuition dishonest, it makes the other so too; strip both and Boonin's thought experiments stand against a premise with no better standing. Calling one side's intuition programming and the other's evaluation is the asymmetry assumed, not shown.",
+        "class": "d",
+        "grounds": "Filed at L7 (gate2 Z-033). The thought-experiments reply reads the permissibility intuition as \"evidence for the depth of the biological programming that prevents honest evaluation\", the selective debunk the map holds at bedrock at red-button-repugnant (#45 at #long, #47 at the sophisticate slot), where the (d) at #medium records that the genealogy \"demotes the pro-existence intuition only under an axiology that already privileges suffering\". After the v4.1.5 safety pass this is the only locus that still says a drive or programming \"prevents honest evaluation\"; the pass reworded the others as a drive and not a verdict, and Z-033 finds no safety question here, since these passages concern intuitions about procreation, not a wish to die. Not (a): no locus breaks the tie. Not (b): a symmetric wording would leave Boonin's intuitions standing as data, so no rewrite of the sentence closes the charge; the phrase can still be brought into the pass's register in a later queue. Terminus HR-02, intrinsic-value-of-existence facet; not novel.",
+        "routing": {
+          "residue": {
+            "bedrock_name": "@from",
+            "terminus_routing": "already-registered HR-02; reached through the (d) at red-button-repugnant#medium (Phase A), where the firmware genealogy's tie is registered, as #45 and #47 are; intrinsic-value-of-existence facet; filed at L7 from gate2's Z-033",
+            "novel": false
+          }
+        }
+      },
+      "why": "Departs from the kickoff's summary, which lists Z-033 among the (b)s, and follows Z-033's own words: 'file it where #45's and #47's charge already sits', a charge the map holds at bedrock. By the class law the strongest continuation against the sentence is that charge, and no rewrite closes it, so the entry is a (d). The wording carry (the phrase the pass retired elsewhere) goes to canon's carries for the next queue, where a (b) is not needed to reword a phrase.",
+      "quotes": [
+        {
+          "src": "corpus:boonin-critique#long",
+          "quote": "evidence for the depth of the biological programming that prevents honest evaluation"
+        },
+        {
+          "src": "v1_6:red-button-repugnant#medium",
+          "quote": "demotes the pro-existence intuition only under an axiology that already privileges suffering"
+        },
+        {
+          "src": "corpus:boonin-critique#long",
+          "quote": "prevents honest evaluation"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-49",
+      "kind": "carry",
+      "disposition": "carry_not_map",
+      "finding": [
+        "SF-05"
+      ],
+      "why": "SF-05: survivor-testimony's psychMechanism, 'Survivorship bias compounded by neurochemical reset', is mirrored as mechanism_raw in MAP_GRAPH_DATA and sidecars/map_graph_data.json. Not a map locus. Carried in canon to the next pin that regenerates the Mechanism Web sidecar, with L1's two served-text repairs.",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-50",
+      "kind": "carry",
+      "disposition": "carry_not_map",
+      "finding": [
+        "SF-07"
+      ],
+      "why": "SF-07: DEP_REVIEW_NOTES['_premise_contextus-claudit'] in site/combined.html names two passages SW-04 and SC-01 removed as reasons two dependency edges were graded strong (v3.5). Not a map locus. Carried in canon to the next dependency review, which re-grades the two edges; the note records a v3.5 review and stays.",
+      "quotes": [],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    },
+    {
+      "id": "SM-51",
+      "kind": "relation",
+      "disposition": "draft_relation",
+      "finding": [
+        "Z-033"
+      ],
+      "cause": {
+        "cut": "v4.1.5",
+        "rows": [],
+        "measure": "the adjacency gate: the (d) filed at boonin-critique#long (Z-033) puts HR-02 beside HR-06 at one node",
+        "findings": [
+          "Z-033"
+        ]
+      },
+      "relation": {
+        "from": "HR-06",
+        "kind": "independent_of",
+        "to": "HR-02",
+        "note": "L7, drafted: co-located at boonin-critique, where #short's (d), HR-06's birth certificate, records the imposition wrong as \"the only asymmetry-free repair\", and the (d) filed at #long from Z-033 sits on HR-02's intrinsic-value-of-existence facet. HR-02 asks whether the positive-states cluster survives rejecting Benatar's asymmetry; HR-06 asks whether imposing an unrefusable condition on a non-antecedent subject wrongs whatever the harm ledger says. HR-06 is posed without the asymmetry, so HR-02's answer does not reach it, and the ledger HR-02 weighs does not decide whether an imposition wrongs independent of it. Sharing a node is a fact about where the Z-033 filing surfaced."
+      },
+      "why": "The register's adjacency gate refuses any pair that newly shares a node (L4's finding). One pair is new: HR-02+HR-06, at boonin-critique. Declared as independent_of, on the ground the node's own birth-certificate (d) states; drafted, not ruled.",
+      "quotes": [
+        {
+          "src": "v1_6:boonin-critique#short",
+          "quote": "the only asymmetry-free repair"
+        }
+      ],
+      "seat": "L7, the successor map (seat l, Code): drafting seat; judges none of this (K258)",
+      "date": "2026-09-26",
+      "supersedes": null
+    }
+  ]
+}

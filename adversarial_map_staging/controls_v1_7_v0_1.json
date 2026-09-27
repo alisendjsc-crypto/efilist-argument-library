@@ -1,0 +1,95 @@
+{
+  "artifact": "controls_v1_7_v0_1.json",
+  "instrument": "adversarial_map_staging/controls_v1_7.py",
+  "map": {
+    "file": "adversarial_map_staging/adversarial_map_v1_7.json",
+    "md5": "db40b45693eff1297b3f3152c6295c15"
+  },
+  "register": {
+    "file": "adversarial_map_staging/honest_residuals_register_v0_8.json",
+    "md5": "8f6d38886b95033600752a5be052bd99"
+  },
+  "result": "16 of 16 controls as expected, each builder's unmutated control first",
+  "controls": [
+    {
+      "control": "A0 map builder, unmutated",
+      "expect": "writes the committed adversarial_map_v1_7.json",
+      "as_expected": true
+    },
+    {
+      "control": "A1 a gone anchor loses its row (entry 2)",
+      "expect": "refuses, naming \"COVERAGE: entry 2's anchor is gone\"",
+      "as_expected": true
+    },
+    {
+      "control": "A2 a routed HOLDS loses its read (#24, entry 39)",
+      "expect": "refuses, naming 'COVERAGE: entry 39 routes to moved'",
+      "as_expected": true
+    },
+    {
+      "control": "A3 a stale quotation left unrewritten (#3's grounds)",
+      "expect": "refuses, naming \"COVERAGE: entry 5's grounds quotes words gone\"",
+      "as_expected": true
+    },
+    {
+      "control": "A4 a waiting (a) loses its re-judgment (#48)",
+      "expect": "refuses, naming 'COVERAGE: waiting (a) #48'",
+      "as_expected": true
+    },
+    {
+      "control": "A5 a row names an anchor its entry does not carry",
+      "expect": "refuses, naming 'is not'",
+      "as_expected": true
+    },
+    {
+      "control": "A6 a declared quotation altered by one letter",
+      "expect": "refuses, naming 'NOT VERBATIM'",
+      "as_expected": true
+    },
+    {
+      "control": "A7 an undeclared quotation in changed grounds",
+      "expect": "refuses, naming 'undeclared quotation'",
+      "as_expected": true
+    },
+    {
+      "control": "A8 bedrock_from claims a facet the register does not file",
+      "expect": "refuses, naming 'register v0_7 does not file bedrock_from'",
+      "as_expected": true
+    },
+    {
+      "control": "A9 two rows for one entry",
+      "expect": "refuses, naming 'has 2 rows'",
+      "as_expected": true
+    },
+    {
+      "control": "A10 a filed move carrying a dash token (the validator, in-process)",
+      "expect": "refuses, naming 'validator v0_7 --assembly'",
+      "as_expected": true
+    },
+    {
+      "control": "A11 v1_6 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    },
+    {
+      "control": "R0 register builder, unmutated",
+      "expect": "writes the committed honest_residuals_register_v0_8.json",
+      "as_expected": true
+    },
+    {
+      "control": "R1 an inherited (d)'s routing moved in the map",
+      "expect": "refuses, naming 'register and map disagree'",
+      "as_expected": true
+    },
+    {
+      "control": "R2 the drafted relation removed",
+      "expect": "refuses, naming 'UNDECLARED ADJACENCY: HR-02+HR-06'",
+      "as_expected": true
+    },
+    {
+      "control": "R3 register v0_7 moved by one byte",
+      "expect": "refuses, naming 'BASE GUARD'",
+      "as_expected": true
+    }
+  ]
+}

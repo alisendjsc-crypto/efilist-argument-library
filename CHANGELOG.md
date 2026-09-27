@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The successor map drafted over the two cuts — 2026-09-26 (no release; the pin stands)
+
+The adversarial map's ruled version (v1_6) was drawn against the library's text before the two corrections of 2026-09-26, the 23 sentences repaired in v4.1.3 and the 20 rewrites of the safety pass in v4.1.5. Its successor, v1_7, reads the text as it now stands. First a measurement: every one of v1_6's 138 entries was located in the new text, 11 had lost their anchor and 4 had it inside a rewritten sentence, and both earlier knock-on records were reproduced row for row. Then 51 drafted rows: the entries the corrections reached were read again and, where their text had moved, judged afresh; the six answers that had been waiting on a correction were judged against it; and the defects the two correction sessions found beside their repairs were filed for a later queue. The map's validator learns the locus the variations design needs (an objection's other argument shapes), and the honest-residuals register follows the map. None of it is judged yet: a session that drafted none of it judges it, then Josiah rules. Nothing served changed; the flagship is still v4.1.5. Canon v38.43.
+
 ## The chin's tilt toggle, and the chin's controls exposed to screen readers — 2026-09-26 (no release; the pin stands)
 
 The house layer again (`site/wuld-layer.css` and `.js`). The flagship links it and does not inline it, so the v4.1.5 pin (`6fd3617c`) does not move. WI-K410, on the rest of Josiah's TO DO line: *"Add tilt toggle effect on WULD chin bezel to increase POV perspective and peripheral blurring to create a field of depth illusion."* He approved it on the clips: *"Approved as is."*

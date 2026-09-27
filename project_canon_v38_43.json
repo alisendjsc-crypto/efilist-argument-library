@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.42",
+  "canon_version": "38.43",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L6",
+  "last_updated_by_session": "L7",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. Next, side by side: V1 (R0217) lands design/variations on main (--no-ff from main's side) and builds the argumentShapes schema and shape validator in new files (no canon: the six rulings are recorded at adversarial_map.variations_rulings_V0; no pin); and the successor map, which holds the canon: it re-anchors (adversarial_map.corpus_repairs_LANDED_L5.for_the_successor_map and safety_pass_LANDED_L6.for_the_successor_map), re-judges the six waiting (a)s, files PF-01..03, X-033's siblings, X-034 and Z-033 as (b)s, and its validator bump carries argumentShapes.<shape_id> as an existence-gated locus (R0194's sequence). Then V2 drafts the pilot's shapes (R-V4) and gate2 judges; argue re-vendors v4.1.5 (R0222); then adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
+    "session": "The pin is v4.1.5. Next: gate2 judges L7's successor drafts (adversarial_map_v1_7.json, r1/L7_successor_drafts.json, register v0_8, validator v0_7) under K258, with the checkout held idle; L7 redrafts on any AMEND; then his word, and L7 closes (the R1 rows it proposes are appended only then). Beside it: V2 drafts the pilot's shapes (R-V4), which validator v0_7 can now adjudicate as map loci once V4 puts them in the corpus; argue re-vendors v4.1.5 (R0222). After: the next queue from carries_L7, adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1841,7 +1841,18 @@
       ]
     },
     "judged_safety_pass_gate2": "gate2 judged the X-032 safety pass: companion ACCEPT 4; draft ACCEPT 8, AMEND 1; finding_review CONFIRM 10; knock_on CONFIRM 1; widening ACCEPT 7. Judged is not ruled.",
-    "judged_safety_pass_redraft_gate2": "gate2 judged SD-10: ACCEPT. Every row his word ratifies is judged; his word is recorded at adversarial_map.safety_pass_redraft_judgment_gate2.his_word."
+    "judged_safety_pass_redraft_gate2": "gate2 judged SD-10: ACCEPT. Every row his word ratifies is judged; his word is recorded at adversarial_map.safety_pass_redraft_judgment_gate2.his_word.",
+    "L7_successor_map": {
+      "state": "DRAFTED, NOT JUDGED",
+      "blocks": [
+        "successor_measure_L7",
+        "successor_drafts_L7",
+        "validator_pin_v0_7",
+        "terminal_assembly_v1_7_L7",
+        "honest_residuals_register_pin_v0_8",
+        "carries_L7"
+      ]
+    }
   },
   "open_questions": {
     "active": {
@@ -1972,7 +1983,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.42",
+  "canon_version_marker": "v38.43",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2674,7 +2685,8 @@
     "v38_39_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_redraft_L6 (SD-10 answers Z-002; the drafts gate's v0_2 and its knock-on v0_2 and control v0_2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
     "v38_40_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_redraft_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
     "v38_41_L6": "MINOR. keyset UNCHANGED at 42. PIN MOVE v4.1.4 -> v4.1.5 (ed040cad -> 6fd3617c). One adversarial_map subkey addition (safety_pass_LANDED_L6); flagship_sidecars.extracted_from moved forward (sidecars byte-identical); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical: a PATCH.",
-    "v38_42_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_LANDED_L6_tail, variations_rulings_V0, audience_forward_note_V0_R_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved; audience_and_purpose_ruling_L1a asserted byte-identical (R-V5 is recorded forward beside it)."
+    "v38_42_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_LANDED_L6_tail, variations_rulings_V0, audience_forward_note_V0_R_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved; audience_and_purpose_ruling_L1a asserted byte-identical (R-V5 is recorded forward beside it).",
+    "v38_43_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_measure_L7, successor_drafts_L7, validator_pin_v0_7, terminal_assembly_v1_7_L7, honest_residuals_register_pin_v0_8, carries_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2926,7 +2938,8 @@
     "L6 (2026-09-26): SD-02's AMEND (Z-002, a dash) answered as SD-10; drafts record 8742b882; gate v0_2 (the knock-on check reads each record at its md5). No pin.",
     "gate2 (2026-09-26; NO PIN): SD-10 judged (R0210). Record 3cd8dbb9: ACCEPT, the one dash Z-002 owed; knock-on and patch CONFIRM. His word on R0208, 'yes to all' (20:56, to L6), was conditional on this row and now stands; L6 records the ratification row at the pin.",
     "L6 (2026-09-26): THE PIN MOVE, v4.1.4 -> v4.1.5 (6fd3617c / 2996713). The X-032 safety pass: 20 rewrites at 12 loci across 6 objections, ratified on his word (\"yes to all\"), applied to the three surfaces in one edit; xsurface 8b76672f -> a99b793e; sidecars and the objections index unchanged; labels moved with the pin.",
-    "L6 (2026-09-26): the v4.1.5 pin's tail (wuld-ink b2171719, read back; argue's re-vendor notice R0222) and his word on V0's six rulings (\"Go with your leans on all of the rulings.\", R0216, read at source), R-V5 recorded forward beside L1a. No pin."
+    "L6 (2026-09-26): the v4.1.5 pin's tail (wuld-ink b2171719, read back; argue's re-vendor notice R0222) and his word on V0's six rulings (\"Go with your leans on all of the rulings.\", R0216, read at source), R-V5 recorded forward beside L1a. No pin.",
+    "L7 (2026-09-26): the successor map over the v4.1.3 and v4.1.5 cuts, drafted and not judged: measure (every v1_6 entry, 38 of 38 knock-on rows reproduced), 51 drafted rows, adversarial_map_v1_7.json (146 entries), register v0_8, validator v0_7 with the argumentShapes locus. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -9475,6 +9488,376 @@
       "his_words_verbatim": "Go with your leans on all of the rulings.",
       "ruling": "variations_rulings_V0.rulings.R-V5",
       "leaves_untouched": "adversarial_map.audience_and_purpose_ruling_L1a (its text is not edited; this note sits beside it, forward-only)"
+    },
+    "successor_measure_L7": {
+      "what": "R0223 order 1: where every entry of the ruled map v1_6 stands in the v4.1.5 text, measured before a word of the successor was drafted. The two knock-on records are inputs, read at their md5s; every row of each is reproduced, or the instrument refuses.",
+      "instrument": {
+        "file": "adversarial_map_staging/r1/l7_measure.py",
+        "md5": "c7f2283ddda284805da7e724b396c1d1",
+        "bytes": 24215
+      },
+      "record": {
+        "file": "adversarial_map_staging/r1/l7_measure_v0_1.json",
+        "md5": "4d98b4a3b5c3a57ef62543001ba7ff64",
+        "bytes": 50923
+      },
+      "control": {
+        "file": "adversarial_map_staging/r1/l7_measure_control_v0_1.json",
+        "md5": "602db6a548a180841e688dc037fdc531",
+        "bytes": 1737,
+        "result": "9 of 9 controls as expected, the unmutated first"
+      },
+      "chain": {
+        "L5": {
+          "cut": "v4.1.3",
+          "ratification": "PR-01",
+          "rows": 23,
+          "loci": 18,
+          "objections_equal": true
+        },
+        "L6": {
+          "cut": "v4.1.5",
+          "ratification": "SR-01",
+          "rows": 20,
+          "loci": 12,
+          "objections_equal": true
+        }
+      },
+      "status_counts": {
+        "gone": 11,
+        "moved": 4,
+        "unchanged": 123
+      },
+      "survives_outside_a_repaired_sentence": 10,
+      "routed_answers": 12,
+      "quoting_passages": 12,
+      "agreement": {
+        "rows": 38,
+        "reproduced": 38,
+        "by_record": {
+          "L5": 33,
+          "L6": 5
+        }
+      },
+      "beyond_the_knock_on_records": {
+        "anchors": 0,
+        "routes": 0,
+        "quotes": 1
+      },
+      "reading_instrument": {
+        "file": "adversarial_map_staging/r1/l7_dossiers.py",
+        "md5": "3e5557a07e943fd81f88eb4c8e38f52a",
+        "bytes": 11897,
+        "note": "one dossier per node the successor had to read; writes only under --out"
+      },
+      "commit": "390d2ca (order 1, pushed before any draft)"
+    },
+    "successor_drafts_L7": {
+      "state": "DRAFTED, NOT JUDGED. A seat that drafted none of it judges it (K258, the gate2 role); then his word.",
+      "record": {
+        "file": "adversarial_map_staging/r1/L7_successor_drafts.json",
+        "md5": "fd9267f853a5a09fe5aa3972b16fa2a7",
+        "bytes": 135994
+      },
+      "his_word": {
+        "verbatim": "Go with your recommendations on all of the above.",
+        "said": "to LD3; relayed with R0193 and quoted in R0223",
+        "adopted": "the order: the X-032 safety pass first (landed as v4.1.5 by L6), then the successor map"
+      },
+      "kickoff": {
+        "relay": "R0223",
+        "md5": "78a6b9853ba6c83ae855f09d7127a8e6"
+      },
+      "rows": 51,
+      "by_kind": {
+        "amend/readjudicate": 15,
+        "amend/reanchor": 1,
+        "amend/regrounds": 6,
+        "amend/rejudge_waiting": 6,
+        "amend/restate": 3,
+        "carry/carry_not_map": 2,
+        "file/file_b": 7,
+        "file/file_d": 1,
+        "relation/draft_relation": 1,
+        "stands/holds_rerouted_read": 6,
+        "stands/rejudge_b_stands": 1,
+        "stands/survivor_read": 2
+      },
+      "by_disposition": {
+        "file_b": [
+          "SM-16 why-not-suicide#long",
+          "SM-17 why-not-suicide#long",
+          "SM-20 violence-as-reductio#long",
+          "SM-30 ai-fear#archetypeVariants.defender",
+          "SM-33 slippery-slope-eugenics#long",
+          "SM-34 slippery-slope-eugenics#archetypeVariants.sophisticate",
+          "SM-38 bradley-no-subject#long"
+        ],
+        "file_d": [
+          "SM-48 boonin-critique#long"
+        ],
+        "holds_rerouted_read": [
+          "SM-03 #24 most-people-happy#archetypeVariants.sophisticate",
+          "SM-09 #49 adoption-instead#long",
+          "SM-10 #52 overpopulation-addressed#long",
+          "SM-11 #53 hedonic-contrast#long",
+          "SM-19 #18 violence-as-reductio#archetypeVariants.blended",
+          "SM-47 #56 heat-death-futility#medium"
+        ],
+        "readjudicate": [
+          "SM-01 just-depressed#long",
+          "SM-04 antinatalism-misanthropic#long",
+          "SM-06 benatar-asymmetry-attack#long",
+          "SM-15 #5 why-not-suicide#archetypeVariants.drifter",
+          "SM-18 #20 violence-as-reductio#archetypeVariants.sophisticate",
+          "SM-25 #58 social-contract#long",
+          "SM-26 #6 consent-both-ways#long",
+          "SM-27 self-defeating#long",
+          "SM-29 ai-fear#archetypeVariants.defender",
+          "SM-31 slippery-slope-eugenics#archetypeVariants.blended",
+          "SM-37 bradley-no-subject#long",
+          "SM-39 neuroscience-positive-states#long",
+          "SM-41 #63 luxury-belief#long",
+          "SM-42 #22 free-will-defense#long",
+          "SM-45 revealed-preference#long"
+        ],
+        "reanchor": [
+          "SM-23 #47 red-button-repugnant#archetypeVariants.sophisticate"
+        ],
+        "regrounds": [
+          "SM-07 benatar-asymmetry-attack#long",
+          "SM-13 #3 why-not-suicide#archetypeVariants.blended",
+          "SM-40 #62 buddhist-objection#long",
+          "SM-43 eliminativism#long",
+          "SM-44 #67 eliminativism#note",
+          "SM-46 #64 survivor-testimony#long"
+        ],
+        "rejudge_b_stands": [
+          "SM-36 bitter-childhood#archetypeVariants.defender"
+        ],
+        "rejudge_waiting": [
+          "SM-02 #1 just-depressed#archetypeVariants.defender",
+          "SM-05 #32 antinatalism-misanthropic#archetypeVariants.defender",
+          "SM-08 #7 economy-population#long",
+          "SM-28 #11 self-defeating#diagnosis",
+          "SM-32 #48 slippery-slope-eugenics#archetypeVariants.defender",
+          "SM-35 #50 bitter-childhood#long"
+        ],
+        "restate": [
+          "SM-14 #4 why-not-suicide#archetypeVariants.defender",
+          "SM-21 #44 red-button-repugnant#long",
+          "SM-22 #45 red-button-repugnant#long"
+        ],
+        "survivor_read": [
+          "SM-12 #2 why-not-suicide#long",
+          "SM-24 red-button-repugnant#archetypeVariants.sophisticate"
+        ]
+      },
+      "proposed_r1_rows": [
+        {
+          "row": "SM-05",
+          "n": 32,
+          "target": "antinatalism-misanthropic#archetypeVariants.defender",
+          "verdict": "HOLDS",
+          "supersedes": "R1-036"
+        },
+        {
+          "row": "SM-28",
+          "n": 11,
+          "target": "self-defeating#diagnosis",
+          "verdict": "HOLDS",
+          "supersedes": "R1-013",
+          "reroute": true
+        },
+        {
+          "row": "SM-35",
+          "n": 50,
+          "target": "bitter-childhood#long",
+          "verdict": "HOLDS",
+          "supersedes": "R1-068"
+        },
+        {
+          "row": "SM-42",
+          "n": 22,
+          "target": "free-will-defense#long",
+          "verdict": "HOLDS",
+          "supersedes": "R1-042",
+          "reroute": true
+        }
+      ],
+      "proposed_r1_note": "No R1 row is written. Four re-judgments propose HOLDS on the repaired text (#11 on a re-route, #22, #32, #50); each R1 row is appended only after gate2's judgment and his word, as R1-070 was.",
+      "departures_named": [
+        "#48 (PF-02): not re-routed to the repaired slots; re-judged a (b) at its own slot (design s11.1, aggravation), which also carries X-033's defender-slot filing. The re-route would ship an (a) whose own target still says what its node withdrew.",
+        "#11 (PF-05, X-028): PF-05 expected it to fail again. It is re-routed to self-effacing-under-universalization#long, whose Parfit sentence answers the Parfitian charge in the routed text, and HOLDS is proposed.",
+        "Z-033: the kickoff's summary lists it among the (b)s; Z-033's own words ('file it where #45's and #47's charge already sits') and the class law make it a (d) at HR-02, with the wording carry in carries_L7.",
+        "X-034: the source check was made. Bradley's own summary of his 2010 objection (in 'Asymmetries in Benefiting, Harming and Creating', The Journal of Ethics 17, 2013; penultimate version on his site) frames it in the logic of betterness, and that paper defends making someone better or worse off by creating her. The 2010 note itself was not read (its download link returned 404). Filed as a headline (b)."
+      ],
+      "safety": "His 2026-09-25 bar, read on every row that touches suicide or killing (why-not-suicide's long, drifter, defender and blended slots; violence-as-reductio's sophisticate slot and long): no move argues for anyone's death or anyone's continued life, and none speaks to the reader's own life.",
+      "adjudication_rule": "An entry whose (b) landed is adjudicated afresh under K346 (the strongest continuation against the repaired text), the Phase R precedent; it is never assumed discharged into an (a).",
+      "former_b_now": {
+        "(b) -> (a)": [
+          "self-defeating#long",
+          "free-will-defense#long"
+        ],
+        "(b) -> (b)": [
+          "just-depressed#long",
+          "luxury-belief#long"
+        ],
+        "(b) -> (d)": [
+          "why-not-suicide#archetypeVariants.drifter",
+          "benatar-asymmetry-attack#long",
+          "ai-fear#archetypeVariants.defender",
+          "antinatalism-misanthropic#long",
+          "slippery-slope-eugenics#archetypeVariants.blended",
+          "revealed-preference#long",
+          "social-contract#long",
+          "bradley-no-subject#long",
+          "neuroscience-positive-states#long"
+        ]
+      }
+    },
+    "validator_pin_v0_7": {
+      "artifact": "adversarial_map_staging/adv_map_validator_v0_7.py",
+      "md5": "8a74dcc452338f127ec03e078090c2ed",
+      "bytes": 68772,
+      "derived_by": {
+        "file": "tools/patch_validator_v0_7.py",
+        "md5": "b0c3caae9220f96f48919c78d042bdb1",
+        "bytes": 15897,
+        "note": "11 anchored single-occurrence patches over v0_6, which stays byte-identical; --check re-derives it"
+      },
+      "base": {
+        "file": "adversarial_map_staging/adv_map_validator_v0_6.py",
+        "md5": "c002e93877b09d523daf786036af7a57"
+      },
+      "self_test": "100 of 100 (the 78 carried from v0_6, and 22 new: the shape locus both ways, the node bound, shape_coverage, coverage, phase H in and S out)",
+      "adds": [
+        "argumentShapes.<shape_id> as a map locus, existence-gated on the node's top-level argumentShapes list (a shape counts only with a non-empty statement); locus_text reads the statement alone",
+        "the node bound: 3 + 3*(variant loci) + 3*(shape loci)",
+        "coverage excludes shape loci, as it excludes note (apparatus cannot satisfy 82/82)",
+        "shape_coverage, when declared, gated per file (ccclxx)",
+        "PHASES += H, the L7 successor filings; S stays the shapes' own letter (V1)"
+      ],
+      "regression": "v0_6 and v0_7 give identical verdicts on v1_6 against 04bf6482; v0_7 prints one more line, shape-coverage 0/0. The corpus carries no shapes yet, so nothing moves until V4 puts them in.",
+      "why": "R0223 order 3; design/variations section 4 (fcf6f6fe); R-V1, his word at V0 (variations_rulings_V0)."
+    },
+    "terminal_assembly_v1_7_L7": {
+      "artifact": "adversarial_map_v1_7.json",
+      "md5": "db40b45693eff1297b3f3152c6295c15",
+      "bytes": 452207,
+      "builder": {
+        "file": "adversarial_map_staging/build_assembly_v1_7.py",
+        "md5": "6fe135719f0ce775dc29595bd1fe7876",
+        "bytes": 21097
+      },
+      "state": "DRAFTED, NOT JUDGED (the successor's changed and filed entries); everything else carried from v1_6.",
+      "pinned_to": {
+        "corpus": "7b6e65e5 (v4.1.5)",
+        "objections_digest": "bcf722097441eb4926e0e443ee925a64"
+      },
+      "entries": 146,
+      "class_counts": {
+        "d": 87,
+        "b": 30,
+        "a": 28,
+        "c": 1
+      },
+      "class_counts_v1_6": {
+        "d": 76,
+        "a": 29,
+        "b": 32,
+        "c": 1
+      },
+      "changed": 31,
+      "filed": 8,
+      "carried_byte_for_byte": 107,
+      "coverage": {
+        "primary": "82/82",
+        "variant": "39/39",
+        "note": "5/9"
+      },
+      "validation": "validator v0_7 under --assembly against the v4.1.5 corpus, in-process at build: 0 violations AND 0 advisories, or this file is not written.",
+      "controls": {
+        "file": "adversarial_map_staging/controls_v1_7_v0_1.json",
+        "md5": "a0fc503133221975b4dcb1393a41bc99",
+        "bytes": 3108,
+        "result": "16 of 16 controls as expected, each builder's unmutated control first"
+      },
+      "reproducible": "byte-identical under PYTHONHASHSEED 0 and 1, and from its builder at this canon's build",
+      "predecessor": {
+        "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+        "md5": "7a69bc9fd197047c3cf7cecdb37a44ed",
+        "note": "FROZEN: never edited, never re-pinned; it stays pinned to 04bf6482"
+      }
+    },
+    "honest_residuals_register_pin_v0_8": {
+      "artifact": "honest_residuals_register_v0_8.json",
+      "md5": "8f6d38886b95033600752a5be052bd99",
+      "bytes": 85941,
+      "bedrocks": 15,
+      "residue_entries": 87,
+      "rendered": {
+        "file": "adversarial_map_staging/honest_residuals_register_v0_8.md",
+        "md5": "3cad5e5a2f2c906f2e4332cab6d7f7d4",
+        "bytes": 28990
+      },
+      "builder": {
+        "file": "adversarial_map_staging/build_register_v0_8.py",
+        "md5": "911a666e827de15333fca1dd4af574fb",
+        "bytes": 12914
+      },
+      "renderer": {
+        "file": "adversarial_map_staging/render_register_v0_8.py",
+        "md5": "72e121083c18f4eee6e57ffbc34b79b3",
+        "bytes": 6209
+      },
+      "changes_from_v0_7": [
+        "HR-14/terminus-held-open why-not-suicide#archetypeVariants.drifter: joins (SM-15)",
+        "HR-05/no-worse-off-baseline consent-both-ways#long: anchor (SM-26, readjudicate)",
+        "HR-06/unrefusable-condition-on-non-antecedent-subject economy-population#long: joins (SM-08)",
+        "HR-06/unrefusable-condition-on-non-antecedent-subject benatar-asymmetry-attack#long: joins (SM-06)",
+        "HR-14/successor-preference ai-fear#archetypeVariants.defender: joins (SM-29)",
+        "HR-14/positive-case-for-cessation violence-as-reductio#archetypeVariants.sophisticate: anchor (SM-18, readjudicate)",
+        "HR-03/value-requires-a-valuer antinatalism-misanthropic#long: joins (SM-04)",
+        "HR-02/intrinsic-value-of-existence red-button-repugnant#archetypeVariants.sophisticate: anchor (SM-23, reanchor)",
+        "HR-14/coercion-floor slippery-slope-eugenics#archetypeVariants.blended: joins (SM-31)",
+        "HR-05/no-worse-off-baseline revealed-preference#long: joins (SM-45)",
+        "HR-06/unrefusable-condition-on-non-antecedent-subject social-contract#long: joins (SM-25)",
+        "HR-05/no-worse-off-baseline bradley-no-subject#long: joins (SM-37)",
+        "HR-06/unrefusable-condition-on-non-antecedent-subject buddhist-objection#long: terminus_routing (SM-40, regrounds)",
+        "HR-06/unrefusable-condition-on-non-antecedent-subject neuroscience-positive-states#long: joins (SM-39)",
+        "HR-04/conserved-property-under-redescription eliminativism#long: terminus_routing (SM-43, regrounds)",
+        "HR-02/intrinsic-value-of-existence boonin-critique#long: joins (SM-48)",
+        "relation drafted: HR-06 independent_of HR-02 (SM-51)"
+      ],
+      "relations_drafted": [
+        "HR-02+HR-06"
+      ],
+      "parity": "Asserted before the write: the bedrocks that moved are exactly those the successor's rows reach (HR-02, HR-03, HR-04, HR-05, HR-06, HR-14); every (d) in adversarial_map_v1_7.json is a tributary here with the map's terminus_routing and novel flag; no (d) left; no adjacency pair is undeclared.",
+      "predecessor": {
+        "file": "adversarial_map_staging/honest_residuals_register_v0_7.json",
+        "md5": "bcbff23113f3fb0135d5fd5b3e2630d5"
+      }
+    },
+    "carries_L7": {
+      "the_b_for_the_next_queue": [
+        "just-depressed#archetypeVariants.defender",
+        "just-depressed#long",
+        "slippery-slope-eugenics#archetypeVariants.defender",
+        "luxury-belief#long",
+        "why-not-suicide#long",
+        "why-not-suicide#long",
+        "violence-as-reductio#long",
+        "ai-fear#archetypeVariants.defender",
+        "slippery-slope-eugenics#long",
+        "slippery-slope-eugenics#archetypeVariants.sophisticate",
+        "bradley-no-subject#long"
+      ],
+      "queue_gap": "build_queue.py derives the regen queue from the A-E fragments only (K349's measured gap), so these (b)s, phase H and the re-adjudicated ones alike, are adjudicated and unqueued until the queue is built from the assembly.",
+      "SF-05": "survivor-testimony's psychMechanism, mirrored as mechanism_raw in MAP_GRAPH_DATA and sidecars/map_graph_data.json: to the next pin that regenerates the Mechanism Web sidecar, with L1's two served-text repairs.",
+      "SF-07": "two dependency edges graded strong at v3.5 partly on passages SW-04 and SC-01 removed (DEP_REVIEW_NOTES['_premise_contextus-claudit']): to the next dependency review; the note stays.",
+      "Z-033_wording": "boonin-critique#long is the only locus that still says programming \"prevents honest evaluation\"; the adjudication is the (d) filed there, and the phrase can be brought into the safety pass's register in a later queue.",
+      "boonin_lead": "L2's unverified Boonin lead (the 2012 article versus 'book-length treatment') stands, not checked here."
     }
   },
   "flagship_sidecars": {
