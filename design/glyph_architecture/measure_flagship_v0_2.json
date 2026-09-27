@@ -1,0 +1,173 @@
+{
+ "base": "http://127.0.0.1:8784",
+ "engines": {
+  "chromium": "153.0.8010.12",
+  "firefox": "155.0"
+ },
+ "layout": {
+  "runs": 48,
+  "overflowRuns": 0,
+  "errors": 0,
+  "marksWrong": 0,
+  "litWrong": 0,
+  "fbHitRuns": 0
+ },
+ "motion": [
+  {
+   "engine": "chromium",
+   "case": "vfx, standard",
+   "gateOpen": true,
+   "early": 5,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "vfx, legible",
+   "gateOpen": true,
+   "early": 5,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "vfx, high-contrast",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "vfx, both",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: cosmetic",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "display: off",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, standard",
+   "gateOpen": true,
+   "early": 5,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, legible",
+   "gateOpen": true,
+   "early": 5,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, high-contrast",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, both",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: cosmetic",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "display: off",
+   "gateOpen": false,
+   "early": 0,
+   "after": 0,
+   "ok": true
+  }
+ ],
+ "arrival": [
+  {
+   "engine": "chromium",
+   "case": "vfx, standard",
+   "focused": true,
+   "target": 1,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "chromium",
+   "case": "reduced motion",
+   "focused": true,
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "vfx, standard",
+   "focused": true,
+   "target": 1,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  },
+  {
+   "engine": "firefox",
+   "case": "reduced motion",
+   "focused": true,
+   "target": 0,
+   "others": 0,
+   "after": 0,
+   "ok": true
+  }
+ ],
+ "summary": {
+  "layoutOk": true,
+  "layout": "48 runs: overflow 0, errors 0, marks wrong 0, lit not its tier colour 0, text under the feedback link 0",
+  "motion": "14 of 14",
+  "arrival": "4 of 4"
+ }
+}
