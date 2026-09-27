@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.43",
+  "canon_version": "38.44",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "L7",
+  "last_updated_by_session": "gate2",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. Next: gate2 judges L7's successor drafts (adversarial_map_v1_7.json, r1/L7_successor_drafts.json, register v0_8, validator v0_7) under K258, with the checkout held idle; L7 redrafts on any AMEND; then his word, and L7 closes (the R1 rows it proposes are appended only then). Beside it: V2 drafts the pilot's shapes (R-V4), which validator v0_7 can now adjudicate as map loci once V4 puts them in the corpus; argue re-vendors v4.1.5 (R0222). After: the next queue from carries_L7, adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
+    "session": "The pin is v4.1.5. gate2 judged L7's successor drafts (adversarial_map.successor_drafts_judgment_gate2): 22 ACCEPT, 11 CONFIRM, 18 AMEND. Next: L7 appends 18 superseding rows (16 change a move's corpus-history wording only; SM-08 and SM-45 restate moves that misstate the text) and rebuilds; a seat that did not draft them judges them; then his word on four asks, and the R1 rows it rules (#11, #22, #32, #50 and the new (a) at self-defeating#long). Beside it: V2 drafts the pilot's shapes (R-V4); argue re-vendors v4.1.5 (R0222). After: the next queue from carries_L7 and the three safety residuals, adversarial wing v2 and /llms.txt, R2, the interconnection design, and the new-objection intake (R-V6) once the pilot is judged.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1852,7 +1852,8 @@
         "honest_residuals_register_pin_v0_8",
         "carries_L7"
       ]
-    }
+    },
+    "judged_successor_drafts_gate2": "gate2 judged the 51 rows (record L7_successor_drafts_judgments.json, gate l7_judgments_gate.py): 22 ACCEPT, 11 CONFIRM, 18 AMEND; validator v0_7 and register v0_8 confirmed; the nine newly collided (a)s stand. Judged, not ruled."
   },
   "open_questions": {
     "active": {
@@ -1983,7 +1984,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.43",
+  "canon_version_marker": "v38.44",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2686,7 +2687,8 @@
     "v38_40_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (safety_pass_redraft_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
     "v38_41_L6": "MINOR. keyset UNCHANGED at 42. PIN MOVE v4.1.4 -> v4.1.5 (ed040cad -> 6fd3617c). One adversarial_map subkey addition (safety_pass_LANDED_L6); flagship_sidecars.extracted_from moved forward (sidecars byte-identical); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. invariants, schemas and hazard_map asserted byte-identical: a PATCH.",
     "v38_42_L6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains safety_pass_LANDED_L6_tail, variations_rulings_V0, audience_forward_note_V0_R_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved; audience_and_purpose_ruling_L1a asserted byte-identical (R-V5 is recorded forward beside it).",
-    "v38_43_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_measure_L7, successor_drafts_L7, validator_pin_v0_7, terminal_assembly_v1_7_L7, honest_residuals_register_pin_v0_8, carries_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved."
+    "v38_43_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_measure_L7, successor_drafts_L7, validator_pin_v0_7, terminal_assembly_v1_7_L7, honest_residuals_register_pin_v0_8, carries_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
+    "v38_44_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (successor_drafts_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2939,7 +2941,8 @@
     "gate2 (2026-09-26; NO PIN): SD-10 judged (R0210). Record 3cd8dbb9: ACCEPT, the one dash Z-002 owed; knock-on and patch CONFIRM. His word on R0208, 'yes to all' (20:56, to L6), was conditional on this row and now stands; L6 records the ratification row at the pin.",
     "L6 (2026-09-26): THE PIN MOVE, v4.1.4 -> v4.1.5 (6fd3617c / 2996713). The X-032 safety pass: 20 rewrites at 12 loci across 6 objections, ratified on his word (\"yes to all\"), applied to the three surfaces in one edit; xsurface 8b76672f -> a99b793e; sidecars and the objections index unchanged; labels moved with the pin.",
     "L6 (2026-09-26): the v4.1.5 pin's tail (wuld-ink b2171719, read back; argue's re-vendor notice R0222) and his word on V0's six rulings (\"Go with your leans on all of the rulings.\", R0216, read at source), R-V5 recorded forward beside L1a. No pin.",
-    "L7 (2026-09-26): the successor map over the v4.1.3 and v4.1.5 cuts, drafted and not judged: measure (every v1_6 entry, 38 of 38 knock-on rows reproduced), 51 drafted rows, adversarial_map_v1_7.json (146 entries), register v0_8, validator v0_7 with the argumentShapes locus. No pin."
+    "L7 (2026-09-26): the successor map over the v4.1.3 and v4.1.5 cuts, drafted and not judged: measure (every v1_6 entry, 38 of 38 knock-on rows reproduced), 51 drafted rows, adversarial_map_v1_7.json (146 entries), register v0_8, validator v0_7 with the argumentShapes locus. No pin.",
+    "gate2 (2026-09-26; NO PIN): L7's successor drafts judged (R0237). Record bd3b4e89: 22 ACCEPT, 11 CONFIRM, 18 AMEND (16 moves narrate the corpus's history; SM-08 and SM-45 misstate the text); validator v0_7 and register v0_8 CONFIRM; the knock-on the drafting seat did not run, measured here: nine (a)s newly collided, all stand. Four proposed HOLDS accepted; the new (a) at self-defeating#long read HOLDS. Canon back to L7."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -9858,6 +9861,199 @@
       "SF-07": "two dependency edges graded strong at v3.5 partly on passages SW-04 and SC-01 removed (DEP_REVIEW_NOTES['_premise_contextus-claudit']): to the next dependency review; the note stays.",
       "Z-033_wording": "boonin-critique#long is the only locus that still says programming \"prevents honest evaluation\"; the adjudication is the (d) filed there, and the phrase can be brought into the safety pass's register in a later queue.",
       "boonin_lead": "L2's unverified Boonin lead (the 2012 article versus 'book-length treatment') stands, not checked here."
+    },
+    "successor_drafts_judgment_gate2": {
+      "status": "JUDGED, NOT RULED. gate2's judgment of L7's successor-map drafts. Every class and terminus holds on the v4.1.5 text; 18 rows owe a redraft (16 for corpus-history wording in their moves, SM-08 and SM-45 for moves that misstate the text). Nothing ships on a judgment.",
+      "judge": "gate2, which drafted none of the drafts record, v1_7, validator v0_7, register v0_8, their builders or the measure (K258); it wrote X-033, X-034 and Z-033, which 13 of the rows cite as cause (U-067 records the pull)",
+      "kickoff": {
+        "relay": "R0237",
+        "md5": "b0f7e81b55a0bc5da58574680e37b803"
+      },
+      "record": {
+        "md5": "bd3b4e89f25e7f874f5aa553b998fe0d",
+        "bytes": 91761,
+        "file": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+        "gate": {
+          "md5": "419d4e06e668e47b5ac4b605e66ecc02",
+          "bytes": 29881,
+          "file": "adversarial_map_staging/r1/l7_judgments_gate.py",
+          "control": {
+            "md5": "6bc764ccc489b1f644edbd60cc99e68d",
+            "bytes": 5430,
+            "file": "adversarial_map_staging/r1/l7_judgments_gate_control_v0_1.json",
+            "result": "20 of 20 as expected, the unmutated control first; byte-identical under two forced hash seeds"
+          }
+        },
+        "instrument": {
+          "md5": "122a34339bc4afbbaff58a7643ef8878",
+          "bytes": 22156,
+          "file": "adversarial_map_staging/r1/l7_judgment_reading.py",
+          "record": {
+            "md5": "3c197fd232f6b7a560c2ff4537802439",
+            "bytes": 19152,
+            "file": "adversarial_map_staging/r1/l7_judgment_reading_v0_1.json"
+          }
+        }
+      },
+      "judged": {
+        "drafts": "fd9267f853a5a09fe5aa3972b16fa2a7",
+        "map_v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+        "map_v1_7": "db40b45693eff1297b3f3152c6295c15",
+        "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+        "validator_v0_7": "8a74dcc452338f127ec03e078090c2ed",
+        "register_v0_7": "bcbff23113f3fb0135d5fd5b3e2630d5",
+        "register_v0_8": "8f6d38886b95033600752a5be052bd99",
+        "measure": "4d98b4a3b5c3a57ef62543001ba7ff64",
+        "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+        "judgment_pq": "2ed68a7cf7f83b8d61a977f0aad0b08e",
+        "judgment_sp": "437013204cfafc4c740a763e1fb79349",
+        "l6_reading": "37ed5875e4ca00acbeeddeff839b24fa",
+        "canon": "68733040959dabe6f7b338e5e2e296af"
+      },
+      "verdicts": {
+        "of_the_51_rows": {
+          "ACCEPT": 22,
+          "AMEND": 18,
+          "CONFIRM": 11
+        },
+        "artifacts": {
+          "CONFIRM": 2
+        },
+        "knock_on": {
+          "STANDS": 9
+        }
+      },
+      "reproduced": {
+        "derivation": {
+          "carried_byte_for_byte": 107,
+          "changed": 31,
+          "filed": 8,
+          "class_counts_v1_7": {
+            "a": 28,
+            "b": 30,
+            "c": 1,
+            "d": 87
+          }
+        },
+        "quotes_verbatim": "102 of 102",
+        "anchors_present": true,
+        "bedrock_copies_hold": true,
+        "validator_v0_7_assembly_on_v1_7": {
+          "passed": true,
+          "violations": 0,
+          "advisories": 0
+        },
+        "adjacency_undeclared": []
+      },
+      "amend_owed": {
+        "move_register_only": [
+          "SM-01",
+          "SM-02",
+          "SM-06",
+          "SM-15",
+          "SM-16",
+          "SM-17",
+          "SM-20",
+          "SM-25",
+          "SM-27",
+          "SM-30",
+          "SM-31",
+          "SM-33",
+          "SM-34",
+          "SM-37",
+          "SM-38",
+          "SM-39"
+        ],
+        "content": {
+          "SM-08": "the move misstates the hub's condition (the typical floor clears a threshold of serious harm imposed without consent only if the anti-imposition weight survives; the net-balance route is left open)",
+          "SM-45": "the move misstates its own anchor paragraph and passes over its diagnosis of stated preference (the etiology inference the corpus forbids); the continuation must reach one named bedrock (lean HR-02 by parity with SM-48)"
+        },
+        "how": "one batch of superseding rows, each changing its move only (SM-45 may also change its routing if its terminus changes); a seat that did not draft them judges them"
+      },
+      "proposed_r1_accepted": [
+        {
+          "row": "SM-05",
+          "target": "antinatalism-misanthropic#archetypeVariants.defender",
+          "n": 32,
+          "supersedes": "R1-036"
+        },
+        {
+          "row": "SM-28",
+          "target": "self-defeating#diagnosis",
+          "n": 11,
+          "supersedes": "R1-013"
+        },
+        {
+          "row": "SM-35",
+          "target": "bitter-childhood#long",
+          "n": 50,
+          "supersedes": "R1-068"
+        },
+        {
+          "row": "SM-42",
+          "target": "free-will-defense#long",
+          "n": 22,
+          "supersedes": "R1-042"
+        }
+      ],
+      "new_a_without_r1": {
+        "target": "self-defeating#long",
+        "row": "SM-27",
+        "gate2_reading": "HOLDS",
+        "owed": "an R1 row after his word; the drafting seat decides how the R1 instruments admit an (a) the evidence file does not list (U-065)"
+      },
+      "knock_on": {
+        "a_entries_in_v1_7": 28,
+        "newly_collided": [
+          3,
+          4,
+          11,
+          null,
+          18,
+          19,
+          24,
+          52,
+          68
+        ],
+        "without_an_L7_row": [
+          19,
+          68
+        ],
+        "all_stand": true,
+        "owed_forward": "a successor's controls run the knock-on after the drafts are applied (U-064)"
+      },
+      "findings": {
+        "U-063": "the move register: moves that narrate the corpus's history",
+        "U-064": "the knock-on the successor owed was not measured by the drafting seat",
+        "U-065": "an (a) born in the successor has no R1 row, and R1's instruments cannot see it",
+        "U-066": "what the safety pass left standing, and gate2's own floor",
+        "U-067": "the pull: most of these rows carry out gate2's own findings",
+        "U-068": "sequence after this judgment"
+      },
+      "safety_residuals_for_the_next_queue": [
+        "revealed-preference#long: the preference for continued existence as the output of conditioning, compulsion and bias; classed sibling by L6's wide sweep, taken by no row (U-066)",
+        "survivor-testimony#long and #diagnosis: the named bridge and the jump, the site-and-method detail SF-04 flagged; SW-07 removed only the death rate (U-066; gate2's lean: drop the site name)",
+        "ai-fear#archetypeVariants.defender: 'The accelerationist grabbed the recommendation', to go with SM-30's (b)"
+      ],
+      "asks_for_his_word": [
+        {
+          "ask": "Adopt this judgment: 22 ACCEPT and 11 CONFIRM now; the 18 AMENDs return to L7 for redraft.",
+          "lean": "yes: every class and terminus holds on the v4.1.5 text; the AMENDs are wording (16) and two moves that misstate the text"
+        },
+        {
+          "ask": "Rule the four proposed HOLDS (#11 re-routed, #22, #32, #50) and the new (a) at self-defeating#long as HOLDS; the R1 rows are appended after your word, as R1-070 was.",
+          "lean": "yes: each answer now lives in the routed text, and each newly met (b) or (d) was read and does not reach it"
+        },
+        {
+          "ask": "Let the successor stand once a non-drafting seat accepts the 18 redrafts, conditional as 'yes to all' was on SD-10.",
+          "lean": "yes: the redrafts are narrow and measurable (the move only, but SM-45)"
+        },
+        {
+          "ask": "Send the three safety residuals (U-066) to the next safety queue under your 2026-09-25 bar.",
+          "lean": "yes for the revealed-preference sentence and the grabbed sentence; the bridge's name optional, gate2's lean drop it"
+        }
+      ],
+      "next": "L7 appends the 18 superseding rows and rebuilds; a seat that did not draft them judges them; then his word on the asks and the R1 rows. Canon passes back to L7."
     }
   },
   "flagship_sidecars": {

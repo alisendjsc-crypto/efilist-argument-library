@@ -1,0 +1,1611 @@
+{
+ "artifact": "L7_successor_drafts_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's judgment of L7's successor-map drafts: 31 amend, 8 file, 9 stands, 2 carry and 1 relation rows over adversarial_map_v1_7.json, validator v0_7 and register v0_8, with the knock-on the successor owed. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's quotes and is verbatim at its source, each read at the bytes this header pins: drafts:<row id>, corpus:<node#locus> (v4.1.5), v1_6:<node#locus>, v1_7:<node#locus>, rulings:R1-nnn, judgment_pq:X-nnn, judgment_sp:Z-nnn, canon:<dotted.path>, reading:record and l6_reading:record. Gate: l7_judgments_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the row does what its cause asks, its class and terminus are right on the v4.1.5 text and its move is fit to ship; it may ship once he gives his word",
+  "AMEND": "the disposition stands, but a named defect is owed a correction, made by the drafting seat as a superseding row and judged by a seat that did not make it",
+  "REJECT": "the disposition is wrong; it returns to the drafting seat",
+  "CONFIRM": "the re-read, carry, artifact or measure is right as made",
+  "CORRECT": "the carry or artifact is wrong, and what is owed is named",
+  "REOPEN": "a stands row's entry no longer holds on the v4.1.5 text",
+  "STANDS": "a newly collided (a) keeps its verdict on gate2's reading",
+  "REOPENS": "a newly collided (a) no longer holds",
+  "r1": "on an amend row whose drafts row proposes an R1 verdict: whether gate2 accepts it; the R1 row is appended after his word"
+ },
+ "his_word": [
+  {
+   "verbatim": "Go with your recommendations on all of the above.",
+   "said": "to LD3; relayed with R0193 and quoted in R0223",
+   "applies": "the order: the X-032 safety pass first, then the successor map; not the successor's content, which waits for his word on this judgment",
+   "recorded": "canon adversarial_map.successor_drafts_L7.his_word"
+  },
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "said": "2026-09-25",
+   "applies": "every row that touches suicide or killing (R0237 ask 6)",
+   "recorded": "the umbrella memory feedback-safety-harness-never-pro-life"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0237",
+  "md5": "b0f7e81b55a0bc5da58574680e37b803"
+ },
+ "judged": {
+  "drafts": {
+   "file": "adversarial_map_staging/r1/L7_successor_drafts.json",
+   "md5": "fd9267f853a5a09fe5aa3972b16fa2a7"
+  },
+  "map_v1_6": {
+   "file": "adversarial_map_staging/adversarial_map_v1_6.json",
+   "md5": "7a69bc9fd197047c3cf7cecdb37a44ed"
+  },
+  "map_v1_7": {
+   "file": "adversarial_map_staging/adversarial_map_v1_7.json",
+   "md5": "db40b45693eff1297b3f3152c6295c15"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "validator_v0_7": {
+   "file": "adversarial_map_staging/adv_map_validator_v0_7.py",
+   "md5": "8a74dcc452338f127ec03e078090c2ed"
+  },
+  "register_v0_7": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_7.json",
+   "md5": "bcbff23113f3fb0135d5fd5b3e2630d5"
+  },
+  "register_v0_8": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_8.json",
+   "md5": "8f6d38886b95033600752a5be052bd99"
+  },
+  "measure": {
+   "file": "adversarial_map_staging/r1/l7_measure_v0_1.json",
+   "md5": "4d98b4a3b5c3a57ef62543001ba7ff64"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "d829437e938a8b9dded5cb8cbaa26b74"
+  },
+  "judgment_pq": {
+   "file": "adversarial_map_staging/r1/PQ_repair_drafts_judgments.json",
+   "md5": "2ed68a7cf7f83b8d61a977f0aad0b08e"
+  },
+  "judgment_sp": {
+   "file": "adversarial_map_staging/r1/SP_drafts_judgments.json",
+   "md5": "437013204cfafc4c740a763e1fb79349"
+  },
+  "l6_reading": {
+   "file": "adversarial_map_staging/r1/sp_reading_l6_v0_1.json",
+   "md5": "37ed5875e4ca00acbeeddeff839b24fa"
+  },
+  "canon": {
+   "file": "project_canon_v38_43.json",
+   "md5": "68733040959dabe6f7b338e5e2e296af"
+  }
+ },
+ "instrument": {
+  "file": "adversarial_map_staging/r1/l7_judgment_reading.py",
+  "record": "adversarial_map_staging/r1/l7_judgment_reading_v0_1.json",
+  "md5": "3c197fd232f6b7a560c2ff4537802439",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s"
+ },
+ "rows": [
+  {
+   "id": "U-001",
+   "kind": "amend",
+   "row_id": "SM-01",
+   "target": "just-depressed#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-01's tell is read off what the remark does, \"whatever the mood of the person who says it\", so the (b)'s tell half is discharged, and the frequency half now stands unsupported: \"Genuine concern is the rare exception here, not the ordinary case\" asserts a ratio nothing in the node evidences, and the paragraph builds on it (\"The rebuttal is built for the ordinary case\"). Not (a): no locus supplies the ratio; not (d): it is empirical. Headline is right. The defect is the move's register: it argues from a text the reader never meets, \"The old two-utterance tell was the only evidence ever offered for that ratio, and the repair withdrew it\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"The old two-utterance tell was the only evidence ever offered for that ratio, and the repair withdrew it\", and the two uses of now (\"is now read off\", \"now stands on nothing\"). The ratio's lack of support can be put against the v4.1.5 paragraph alone."
+   ],
+   "carries": [
+    "The frequency claim is not confined to the anchor. The long's last paragraph repeats it (\"the rare honest interlocutor and the common bad-faith one\"; \"deployed as it almost always is\") and the defender slot keeps it (\"genuine worry is the rare exception\"). A repair keyed on the anchor sentence alone would leave them standing, the lesson of W-004; the next queue takes the three together with PF-01."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "whatever the mood of the person who says it"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "Genuine concern is the rare exception here, not the ordinary case"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "The rebuttal is built for the ordinary case"
+    },
+    {
+     "src": "drafts:SM-01",
+     "quote": "The old two-utterance tell was the only evidence ever offered for that ratio, and the repair withdrew it"
+    },
+    {
+     "src": "drafts:SM-01",
+     "quote": "is now read off"
+    },
+    {
+     "src": "drafts:SM-01",
+     "quote": "now stands on nothing"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "the rare honest interlocutor and the common bad-faith one"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "deployed as it almost always is"
+    },
+    {
+     "src": "corpus:just-depressed#archetypeVariants.defender",
+     "quote": "genuine worry is the rare exception"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-002",
+   "kind": "amend",
+   "row_id": "SM-02",
+   "target": "just-depressed#archetypeVariants.defender",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The disposition is right: the long now reads the remark by function, so it no longer supplies the motive evidence R1-004's answer leaned on, while the slot still reads contempt off the thread (\"pointing at the second sentence and asking which one was sincere\"). No locus answers a motive verdict the node disowns, and nothing here is bedrock, so (b) at the slot, headline. R1-004's FAILS stands and no R1 row is owed. The defect is the move's register: \"The node's own long has since withdrawn that tell\" and \"the node now says both things\" narrate a change the reader cannot see.",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"has since withdrawn that tell\" and \"now says both things\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:just-depressed#archetypeVariants.defender",
+     "quote": "pointing at the second sentence and asking which one was sincere"
+    },
+    {
+     "src": "drafts:SM-02",
+     "quote": "The node's own long has since withdrawn that tell"
+    },
+    {
+     "src": "drafts:SM-02",
+     "quote": "the node now says both things"
+    },
+    {
+     "src": "drafts:SM-02",
+     "quote": "has since withdrawn that tell"
+    },
+    {
+     "src": "drafts:SM-02",
+     "quote": "now says both things"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-003",
+   "kind": "stands",
+   "row_id": "SM-03",
+   "target": "most-people-happy#archetypeVariants.sophisticate",
+   "verdict": "CONFIRM",
+   "reason": "#24's answer rests on just-depressed#long's symmetry disclaimer, \"The claim is symmetric and modest\", in the fourth paragraph, which PD-01 does not touch (PD-01 replaces one sentence, the tell), and on cherry-picking-worst's baseline sentence, unmoved. The HOLDS stands. The knock-on adds one collision the row does not name: SM-02 makes just-depressed's defender slot a (b), on the answering node; it concerns the motive verdict, which #24's answer does not use (U-060).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "The claim is symmetric and modest"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-004",
+   "kind": "amend",
+   "row_id": "SM-04",
+   "target": "antinatalism-misanthropic#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "PD-04 states the discriminator the (b) asked for, \"the difference lies in the verdict itself, not only in the warmth of whoever delivers it\", so the (b) is discharged. The strongest continuation past it is the ranking charge, and the move reaches it in the (d)'s own terms: a verdict conditional on suffering still \"ranks a world without the species above the world with it\", which is HR-03's value-requires-a-valuer question, as the sophisticate slot's (d) records. The bedrock is copied from that (d) character for character (reading record). No history in the move.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:antinatalism-misanthropic#long",
+     "quote": "the difference lies in the verdict itself, not only in the warmth of whoever delivers it"
+    },
+    {
+     "src": "drafts:SM-04",
+     "quote": "ranks a world without the species above the world with it"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-005",
+   "kind": "amend",
+   "row_id": "SM-05",
+   "target": "antinatalism-misanthropic#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "r1": "HOLDS accepted",
+   "reason": "R1-036 failed #32 on the expressive charge, the (b)'s own continuation. PD-04 now reads what a position expresses off its verdict's condition, which meets the move's core: adherent contempt is weak evidence where the verdict's grounding can be read directly. The collision was tested: the long's new (d) records the ranking charge, and the move does not press it (the (d) itself separates them: \"The charge was never only about motive\"); the blended slot's (d) records the reversal failing only where the axiological claim is kept. The promotion half is met in the form the long names, \"should not be amplified\"; judged at its core (L2's law), the move is met. HOLDS accepted; the R1 row follows his word.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-04",
+     "quote": "The charge was never only about motive"
+    },
+    {
+     "src": "corpus:antinatalism-misanthropic#long",
+     "quote": "should not be amplified"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-006",
+   "kind": "amend",
+   "row_id": "SM-06",
+   "target": "benatar-asymmetry-attack#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-19 disowns the empirical antecedent (\"an empirical question this node does not settle\"), and the (b)'s surviving anchor sits in a conditional (\"remains powerful depending on how much suffering typical human lives actually contain\"), so that (b) is discharged, as X-031 asked to be checked. The strongest continuation is PD-19's condition, and the move reaches HR-06 (\"wrongs them whatever the balance of their life\"). One register defect: the move opens \"Take the fallback as repaired\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"Take the fallback as repaired\"."
+   ],
+   "carries": [
+    "The move says the verdict on that branch rests wholly on the anti-imposition weight; the hub leaves the net-balance route open rather than closed, so wholly holds only as what the node argues. Not owed; the redraft may say so."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "an empirical question this node does not settle"
+    },
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "remains powerful depending on how much suffering typical human lives actually contain"
+    },
+    {
+     "src": "drafts:SM-06",
+     "quote": "wrongs them whatever the balance of their life"
+    },
+    {
+     "src": "drafts:SM-06",
+     "quote": "Take the fallback as repaired"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-007",
+   "kind": "amend",
+   "row_id": "SM-07",
+   "target": "benatar-asymmetry-attack#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "Only the grounds' last sentence moves, to name the other entry as the HR-06 (d). The move is byte for byte v1_6's and still true of the v4.1.5 paragraph: the conditional it cites survives, and PD-19 did not touch the metaethical-locus sentence.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-008",
+   "kind": "amend",
+   "row_id": "SM-08",
+   "target": "economy-population#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The disposition is right. R1-048 found both of the hub's routes flagged: the universal verdict at HR-03 and the person-affecting fallback at the (b) that SM-06 now makes a (d) at HR-06. Both routes end at registered bedrock, so (d), and the continuation the move presses reaches HR-06. The restated last sentence misstates the hub: \"the created are seriously harmed only if a weight against non-consensual imposition survives\". The hub says the typical floor clears a threshold \"of serious harm imposed without consent\" only if that weight survives, and it leaves open whether typical lives fall below a life worth having, a second route to harm on that branch. It also says \"Your own hub now grants\".",
+   "owed": [
+    "State the hub's condition as it stands: the typical floor clears a threshold of serious harm imposed without consent only if the anti-imposition weight survives, and the hub leaves the net-balance question open. Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here, also: \"Your own hub now grants\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-08",
+     "quote": "the created are seriously harmed only if a weight against non-consensual imposition survives"
+    },
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "of serious harm imposed without consent"
+    },
+    {
+     "src": "drafts:SM-08",
+     "quote": "Your own hub now grants"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-009",
+   "kind": "stands",
+   "row_id": "SM-09",
+   "target": "adoption-instead#long",
+   "verdict": "CONFIRM",
+   "reason": "R1-061 rests on joy-outweighs-harms#long's side constraint, which the map records as decisive on the interpersonal horn, and on the hub's consent and no-deprivation passages; PD-19 moves only the fallback. The move presses neither of the hub's flags (HR-03, and now HR-06 in place of the (b)). The HOLDS stands.",
+   "owed": [],
+   "carries": [
+    "The answer's own premise, that imposing the typical floor on a newcomer is a wrong, is on the person-affecting branch now explicitly the HR-06 question (PD-19). A next round that presses it ends there; a second clause, not this move, like R1-061's own note."
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-010",
+   "kind": "stands",
+   "row_id": "SM-10",
+   "target": "overpopulation-addressed#long",
+   "verdict": "CONFIRM",
+   "reason": "R1-051 holds on the node's own suffering ledger, answered at economy-population#long. The row misses a collision the successor itself makes: SM-08 turns economy-population#long, #52's answering locus, into a (d) at HR-06. That (d) records the victim charge; #52's move stays on the suffering ledger and does not call anyone a victim, so the HOLDS stands (U-061).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-011",
+   "kind": "stands",
+   "row_id": "SM-11",
+   "target": "hedonic-contrast#long",
+   "verdict": "CONFIRM",
+   "reason": "R1-045 rests on transhumanist-objection#long and the hub's no-deprivation paragraph, both untouched; the move presses neither of the hub's flags. The HOLDS stands.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-012",
+   "kind": "stands",
+   "row_id": "SM-12",
+   "target": "why-not-suicide#long",
+   "verdict": "CONFIRM",
+   "reason": "#2's anchor is in the volta, which SD-01 did not touch, and its move (what the second layer licenses, and why the first layer's silence binds it) presses nothing SD-01 changed. The (d) carries.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-013",
+   "kind": "amend",
+   "row_id": "SM-13",
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "Only the grounds move, to quote the v4.1.5 text: \"Nor does anyone's continued life, the antinatalist's included, count as evidence here\" answers the sincerity challenge in words, and both halves R1-023 names stand. The two new (b)s at the long (SM-16, SM-17) sit on the consent sentence and the analogy, which the answer does not use (U-054). On his bar the move and answer argue for no one's death and no one's continued life.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "Nor does anyone's continued life, the antinatalist's included, count as evidence here"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-014",
+   "kind": "amend",
+   "row_id": "SM-14",
+   "target": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The move is restated against the repaired slot at the same force: the analogy it attacked is gone, and the slot concedes \"the view's own founders included\"; the charge is the definitional one. V-012's reason holds word for word: the anchor is limited to layer one, and the answer (the core does not entail the button, whoever holds it) meets the move within that limit. The row does not name the new collisions: the long's two new (b)s and the new (b) at violence-as-reductio#long, #4's answering locus, which sits on the self-undermining prong, not on the entailment point the answer uses (U-055).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.defender",
+     "quote": "the view's own founders included"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-015",
+   "kind": "amend",
+   "row_id": "SM-15",
+   "target": "why-not-suicide#archetypeVariants.drifter",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-21 scopes the reassurance (\"nothing in that core tells the living to stop\") and names the red button as efilism's own with \"its own burden\", which discharges the aggravation (b). What remains is the burden named and not carried, held open at red-button's sophisticate slot: HR-14, terminus-held-open, and the move reaches it. On his bar the move is a burden-of-proof point about a universal claim; it urges nothing and says nothing to the reader's life. Register: \"But the slot now tells the drifter\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: the now in \"But the slot now tells the drifter\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+     "quote": "nothing in that core tells the living to stop"
+    },
+    {
+     "src": "corpus:why-not-suicide#archetypeVariants.drifter",
+     "quote": "its own burden"
+    },
+    {
+     "src": "drafts:SM-15",
+     "quote": "But the slot now tells the drifter"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-016",
+   "kind": "file",
+   "row_id": "SM-16",
+   "target": "why-not-suicide#long",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and minor. The first paragraph reads the creation principle as \"the exact same principle of consent and harm-reduction\" that forbids killing the living; the map conceded that reading defeated at #20 (coercive rescue), and a charitable reading that admits rescue admits the maximizer's rescue claim, so either way the consent principle is not what stands between the view and killing. The volta's account (\"The two layers are derivationally distinct\") is the node's own, and PD-15 is the model. Register: \"now says in place of this reading\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"now says in place of this reading\"."
+   ],
+   "carries": [
+    "The move reads the sentence as consent alone; its harm-reduction conjunct, pressed, cuts toward the maximizer's own premise. The (b) stands without it."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "the exact same principle of consent and harm-reduction"
+    },
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "The two layers are derivationally distinct"
+    },
+    {
+     "src": "drafts:SM-16",
+     "quote": "now says in place of this reading"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-017",
+   "kind": "file",
+   "row_id": "SM-17",
+   "target": "why-not-suicide#long",
+   "verdict": "AMEND",
+   "reason": "A weaker filing than X-033 made it, and that is gate2's own record corrected (U-067). Here the analogy maps \"the conflation of non-procreation with suicide\" onto the lone actor, scoped to antinatalism, which the volta calls layer one; at the defender slot it mapped an eliminationist adherent. What survives is the reader's implication: the analogy's force is marginality, false for efilism's founders, while the node's answer is entailment, as the move's last sentence says. Minor is right. Register: \"now says so in place of the same analogy\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"now says so in place of the same analogy\"."
+   ],
+   "carries": [
+    "The move says the eliminationist layer is held by founders, not by a violent outlier, as if the analogy said otherwise; the redraft can put the charge as the analogy's marginality."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "the conflation of non-procreation with suicide"
+    },
+    {
+     "src": "drafts:SM-17",
+     "quote": "now says so in place of the same analogy"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-018",
+   "kind": "amend",
+   "row_id": "SM-18",
+   "target": "violence-as-reductio#archetypeVariants.sophisticate",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "PD-15 removed the consent-ban sentence and named the bridge, \"that continuing to exist is worse for that person than ceasing to\", which is R1-007's stronger continuation; the anchor moves onto the repaired clause. The restated move, that locating a premise is not answering it, reaches HR-14's positive-case facet, and the class and routing hold.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+     "quote": "that continuing to exist is worse for that person than ceasing to"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-019",
+   "kind": "stands",
+   "row_id": "SM-19",
+   "target": "violence-as-reductio#archetypeVariants.blended",
+   "verdict": "CONFIRM",
+   "reason": "R1-030 rests on the sophisticate slot's \"Concede the one residue this does not reach\", after PD-15's sentence and unchanged. The row misses one collision: SM-20's (b) at violence-as-reductio#long is on #18's own node; it sits on the self-undermining prong, which the answer does not use (U-058).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:violence-as-reductio#archetypeVariants.sophisticate",
+     "quote": "Concede the one residue this does not reach"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-020",
+   "kind": "file",
+   "row_id": "SM-20",
+   "target": "violence-as-reductio#long",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and headline. \"the bridge is framework-self-undermining\" is the reading PD-15 removed from this node's sophisticate slot, and the dilemma's second horn repeats it; the long calls it decisive. The first point, that the bridge is contained in none of the three premises, is correct and enough. Register: \"now avoids\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"your own sophisticate slot now avoids\"."
+   ],
+   "carries": [
+    "A repair must take the dilemma's second horn with it (\"the consent-asymmetry that grounds the first layer forbids maximally non-consensual impositions on a subject\"), as the grounds say."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "the bridge is framework-self-undermining"
+    },
+    {
+     "src": "drafts:SM-20",
+     "quote": "now avoids"
+    },
+    {
+     "src": "drafts:SM-20",
+     "quote": "your own sophisticate slot now avoids"
+    },
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "the consent-asymmetry that grounds the first layer forbids maximally non-consensual impositions on a subject"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-021",
+   "kind": "amend",
+   "row_id": "SM-21",
+   "target": "red-button-repugnant#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The anchor survives inside SD-07's sentence; the move follows the text (the drive, not firmware; impositions prevented on future beings, not entrapment; \"The button asks\") at the same force, and HR-11 does not move.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:red-button-repugnant#long",
+     "quote": "The button asks"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-022",
+   "kind": "amend",
+   "row_id": "SM-22",
+   "target": "red-button-repugnant#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The move follows SD-05 (\"a drive and not as a verdict on the life it keeps going\") and keeps \"strip both and the recoil stands undebunked\" word for word, which #46's (d) and R1-070 quote. The symmetry charge still bites: aversion to suffering is installed by the same selection. HR-02 holds.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:red-button-repugnant#long",
+     "quote": "a drive and not as a verdict on the life it keeps going"
+    },
+    {
+     "src": "drafts:SM-22",
+     "quote": "strip both and the recoil stands undebunked"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-023",
+   "kind": "amend",
+   "row_id": "SM-23",
+   "target": "red-button-repugnant#archetypeVariants.sophisticate",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "SD-08 replaced the anchored phrase; the move, unchanged, still bites the repaired sentence, which reads the preference as \"biological compulsion operating below deliberation\" and extends the same demotion to nothing else. HR-02 holds.",
+   "owed": [],
+   "carries": [
+    "The new anchor is the safety pass's phrase; \"biological compulsion operating below deliberation\" would match the move's own terms more closely. Not a defect."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:red-button-repugnant#archetypeVariants.sophisticate",
+     "quote": "biological compulsion operating below deliberation"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-024",
+   "kind": "stands",
+   "row_id": "SM-24",
+   "target": "red-button-repugnant#archetypeVariants.sophisticate",
+   "verdict": "CONFIRM",
+   "reason": "The birth-certificate (d) reads the routing graph; its anchor sentence (\"this node's terminus to hold open rather than pretend closed\") is untouched by SD-08 and SD-09, and the inbound routes it names stand in the v4.1.5 text.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:red-button-repugnant#archetypeVariants.sophisticate",
+     "quote": "this node's terminus to hold open rather than pretend closed"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-025",
+   "kind": "amend",
+   "row_id": "SM-25",
+   "target": "social-contract#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-16 is the (b)'s own repair (burdens, not members), so the (b) is discharged. The line's reason, \"no one pays their own dues by conscripting someone who was never asked\", holds only if bringing someone into existence wrongs them; the fair-play critic who denies that reads child-rearing as a contribution. That is HR-06, and the move reaches it. Register: \"Grant the line you now draw\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: the now in \"Grant the line you now draw\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:social-contract#long",
+     "quote": "no one pays their own dues by conscripting someone who was never asked"
+    },
+    {
+     "src": "drafts:SM-25",
+     "quote": "Grant the line you now draw"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-026",
+   "kind": "amend",
+   "row_id": "SM-26",
+   "target": "consent-both-ways#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "PD-14 grants beneficial presumed consent and narrows it to interests \"they already have\"; the stake asymmetry survives (the created person counted as imposed upon, denied a stake the imposition could serve), and life-gift's (d) holds it at HR-05. The narrowed rule is the text's own narrowing; no history.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:consent-both-ways#long",
+     "quote": "they already have"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-027",
+   "kind": "amend",
+   "row_id": "SM-27",
+   "target": "self-defeating#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-20's fence discharges the means-inconsistency (\"the view does not will, as its means, the act it forbids\"); what it concedes is dependence, and the strongest continuation is indirect self-defeat, which the Parfit sentence at the routed locus answers in Parfit's own terms. The (d) at that locus concerns the success condition, not pressed (U-057). This (a) is new: it is not one of R1's 69 (U-065). Register: \"you now concede\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: the now in \"you now concede\"."
+   ],
+   "carries": [
+    "The grounds gloss the Parfit line as bearing on propagation, which the move says is not its charge; the quoted sentence (\"its practical fate among its holders is a fact about holders\") does meet it."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:self-defeating#long",
+     "quote": "the view does not will, as its means, the act it forbids"
+    },
+    {
+     "src": "drafts:SM-27",
+     "quote": "you now concede"
+    },
+    {
+     "src": "corpus:self-effacing-under-universalization#long",
+     "quote": "its practical fate among its holders is a fact about holders"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-028",
+   "kind": "amend",
+   "row_id": "SM-28",
+   "target": "self-defeating#diagnosis",
+   "verdict": "ACCEPT",
+   "r1": "HOLDS accepted",
+   "reason": "#11's move is Parfit's indirect self-defeat: acceptance frustrates the theory's aims. The re-route carries Parfit's own answer in the routed text, \"a self-effacing principle is not thereby self-defeating\", and the demoralization is a practical fate among holders; R1-013's stronger continuation (the means-audit) is met by PD-20's fence. The departure from PF-05, which X-028 (gate2) confirmed, is argued and sound: X-028 held for the v1_3 routes. The (d) at the routed locus concerns the success condition, which the move does not press (U-056). HOLDS accepted; the R1 row follows his word.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:self-effacing-under-universalization#long",
+     "quote": "a self-effacing principle is not thereby self-defeating"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-029",
+   "kind": "amend",
+   "row_id": "SM-29",
+   "target": "ai-fear#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "PD-06 argues the test by both routes the (b) named, so the (b) is discharged. The continuation is the one X-006's carry named: the parity (\"every substantive ethics with a radical fringe\") holds for what holders might do, not at the thesis, where the founders hold the red button. The slot's dilemma is a layer-one test; the case for the successor preference is held open, HR-14's successor-preference facet, and the move reaches it.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:ai-fear#archetypeVariants.defender",
+     "quote": "every substantive ethics with a radical fringe"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-030",
+   "kind": "file",
+   "row_id": "SM-30",
+   "target": "ai-fear#archetypeVariants.defender",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and minor, and stronger than SM-17: here the analogy maps an adherent onto the lone actor (\"any more than a single violent actor convicts environmentalism\"), the misfit R1-024 conceded at why-not-suicide's defender slot. Register: \"now concedes in place of the same analogy\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"now concedes in place of the same analogy\"."
+   ],
+   "carries": [
+    "The same slot keeps \"The accelerationist grabbed the recommendation; the framework did not hand it to him.\", the grabbed-not-produced framing PD-17 removed at why-not-suicide's defender slot. X-033 named that framing only at slippery-slope-eugenics, and no row files it here. The repair of this (b) takes both sentences (U-066)."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:ai-fear#archetypeVariants.defender",
+     "quote": "any more than a single violent actor convicts environmentalism"
+    },
+    {
+     "src": "drafts:SM-30",
+     "quote": "now concedes in place of the same analogy"
+    },
+    {
+     "src": "corpus:ai-fear#archetypeVariants.defender",
+     "quote": "The accelerationist grabbed the recommendation; the framework did not hand it to him."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-031",
+   "kind": "amend",
+   "row_id": "SM-31",
+   "target": "slippery-slope-eugenics#archetypeVariants.blended",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-05 grounds the verdict in the negative act (\"which is why what antinatalism asks for is refusal, not enforcement\"); the continuation is the gap between no warrant and a prohibition, routed in the cycle the sophisticate slot's (d) records: HR-14, coercion floor. PD-15's lesson sharpens it: the consent principle is creation-specific and forbids nothing done to the living. Register: \"Grant the new ground\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"Grant the new ground\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:slippery-slope-eugenics#archetypeVariants.blended",
+     "quote": "which is why what antinatalism asks for is refusal, not enforcement"
+    },
+    {
+     "src": "drafts:SM-31",
+     "quote": "Grant the new ground"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-032",
+   "kind": "amend",
+   "row_id": "SM-32",
+   "target": "slippery-slope-eugenics#archetypeVariants.defender",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The departure from PF-02 is right. Re-routed to the blended slot, the (a) would meet SM-31's (d) only on the floor, which #48 does not press, but the slot's own text would keep what its node withdrew one slot over: \"The framework's own math rejects the coercive slide\" and \"grabbed, not produced\". Waiting on the long's (b) (SM-33) leaves the same defect behind an (a) that claims coverage. So (b) at the slot, headline: the aggravation shape of #5 at L4. R1-040's FAILS stands; no R1 row is owed.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:slippery-slope-eugenics#archetypeVariants.defender",
+     "quote": "The framework's own math rejects the coercive slide"
+    },
+    {
+     "src": "corpus:slippery-slope-eugenics#archetypeVariants.defender",
+     "quote": "grabbed, not produced"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-033",
+   "kind": "file",
+   "row_id": "SM-33",
+   "target": "slippery-slope-eugenics#long",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and headline: \"The structural safeguard is not a rule bolted on from outside; it is the calculation itself\" is the claim PD-05 corrected at the blended slot, and the same sentence files the bypassers as grabbed-not-produced. Register: \"Your own blended slot now says so\" and \"The long still calls\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"Your own blended slot now says so\" and \"The long still calls\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:slippery-slope-eugenics#long",
+     "quote": "The structural safeguard is not a rule bolted on from outside; it is the calculation itself"
+    },
+    {
+     "src": "drafts:SM-33",
+     "quote": "Your own blended slot now says so"
+    },
+    {
+     "src": "drafts:SM-33",
+     "quote": "The long still calls"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-034",
+   "kind": "file",
+   "row_id": "SM-34",
+   "target": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and headline: the backbone's second step is the calculation PD-05 demoted. The move's close, that the no-warrant ground is the step the sophisticate needs, agrees with the (d)s (a step that does not move with circumstances, the floor still open at the slot's own (d)). Register: \"now ranks it\" and \"the blended slot now gives\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"now ranks it\" and \"the blended slot now gives\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-34",
+     "quote": "now ranks it"
+    },
+    {
+     "src": "drafts:SM-34",
+     "quote": "the blended slot now gives"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-035",
+   "kind": "amend",
+   "row_id": "SM-35",
+   "target": "bitter-childhood#long",
+   "verdict": "ACCEPT",
+   "r1": "HOLDS accepted",
+   "reason": "PD-07 and PC-01 take the move's own first branch: the long closes \"It is an irony, not a proof\", and the routed medium ends \"because the path to a belief bears on its truth in neither direction\". The defender slot's (b) is on the node, not the answer; the node's remaining inconsistency lives there (SM-36). HOLDS accepted; the R1 row follows his word.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:bitter-childhood#long",
+     "quote": "It is an irony, not a proof"
+    },
+    {
+     "src": "corpus:bitter-childhood#medium",
+     "quote": "because the path to a belief bears on its truth in neither direction"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-036",
+   "kind": "stands",
+   "row_id": "SM-36",
+   "target": "bitter-childhood#archetypeVariants.defender",
+   "verdict": "CONFIRM",
+   "reason": "The slot is unchanged and still says the wounded arguer \"is the more reliable one\"; the long and the medium now state the node's rule, and just-depressed#long's rule stands. The (b) is aggravated and stands, first in the next queue (X-026).",
+   "owed": [],
+   "carries": [
+    "The slot's closing dilemma (\"If formative, it is data, and the argument is its report.\") is the evidential use X-007 kept; the repair's scope is the clearer-sight sentences."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:bitter-childhood#archetypeVariants.defender",
+     "quote": "is the more reliable one"
+    },
+    {
+     "src": "corpus:bitter-childhood#archetypeVariants.defender",
+     "quote": "If formative, it is data, and the argument is its report."
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-037",
+   "kind": "amend",
+   "row_id": "SM-37",
+   "target": "bradley-no-subject#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-13 names the comparativist branch; the fork now holds only as far as creation can wrong a person with no worse-off baseline, which is HR-05's question in its own words, and the prior (b)'s escalation clause applies. Register: \"your fork now holds only as far as\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"your fork now holds only as far as\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "drafts:SM-37",
+     "quote": "your fork now holds only as far as"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-038",
+   "kind": "file",
+   "row_id": "SM-38",
+   "target": "bradley-no-subject#long",
+   "verdict": "AMEND",
+   "reason": "The (b) is right and headline. Its internal half needs no source: \"What is closed is Bradley's objection\" claims more than PD-13 allows, which leaves the comparativist branch open up to HR-05. The attribution half X-034 asked to be checked; gate2 checked it independently against the published abstracts, not L7's reading: Bradley 2013 (The Journal of Ethics 17) argues the procreative asymmetry fails and that it is possible to harm or benefit someone by bringing her into existence, and Bradley 2010 (JESP) finds Benatar's argument incoherent. He denies the asymmetries, so \"Bradley's strongest reply is not to deny the four asymmetries\" misdescribes him. Register: \"your own fork now names and leaves open\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: \"your own fork now names and leaves open\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "What is closed is Bradley's objection"
+    },
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "Bradley's strongest reply is not to deny the four asymmetries"
+    },
+    {
+     "src": "drafts:SM-38",
+     "quote": "your own fork now names and leaves open"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-039",
+   "kind": "amend",
+   "row_id": "SM-39",
+   "target": "neuroscience-positive-states#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "The class is right. PD-12 grants the symmetry (\"the pain's absence spares no one either\") and rests the surviving move on imposition, the chain the prior (b) named; the move reaches HR-06. Register: \"Grant the symmetry you now state\".",
+   "owed": [
+    "Restate the move without the corpus's history, as U-063 sets out: it speaks to the v4.1.5 text as a reader meets it. The superseding row changes the move only; anchor, class, grounds and routing carry. Here: the now in \"Grant the symmetry you now state\"."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "the pain's absence spares no one either"
+    },
+    {
+     "src": "drafts:SM-39",
+     "quote": "Grant the symmetry you now state"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-040",
+   "kind": "amend",
+   "row_id": "SM-40",
+   "target": "buddhist-objection#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "Grounds and terminus_routing now cite PD-12's text and the neuroscience (d); the move is unchanged and true of the repaired node, which grants valence symmetry. HR-06 holds.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-041",
+   "kind": "amend",
+   "row_id": "SM-41",
+   "target": "luxury-belief#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The repair discharged the redescription; X-022's carry is tested and holds: \"Those costs would fall on everyone the transition reaches, the belief's holders among them\" answers insulation, not where the costs fall hardest (\"particularly the less privileged\", the node's own feature three). Empirical and political, so not (d). Minor.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:luxury-belief#long",
+     "quote": "Those costs would fall on everyone the transition reaches, the belief's holders among them"
+    },
+    {
+     "src": "corpus:luxury-belief#long",
+     "quote": "particularly the less privileged"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-042",
+   "kind": "amend",
+   "row_id": "SM-42",
+   "target": "free-will-defense#long",
+   "verdict": "ACCEPT",
+   "r1": "HOLDS accepted",
+   "reason": "PD-10 is the (b)'s repair: compatibilism \"salvages a real freedom\", not the one the theodicy needs, and it is \"exactly the freedom a prospective parent exercises\". The tu quoque's premise, hard determinism stripping the child's agency, is gone. Tested against the obvious counter, that designed and undesigned desires are no principled difference: it concerns the designed agent's responsibility, while the node's claim is that the designer still stands behind what the desires produce, and responsibility is not zero-sum. Self-routing has precedent (#136, #137). HOLDS accepted; the R1 row follows his word.",
+   "owed": [],
+   "carries": [
+    "Logged, not ruled (the node carries one entry): the anchor's own claim at strength, that agency's goods cannot mitigate the gamble, presupposes the imposition wrongs whatever the goods (HR-06); and \"Libet's experiments and subsequent neuroscientific research consistently demonstrate\" overclaims a contested literature, a possible minor (b) the ethical level does not need."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:free-will-defense#long",
+     "quote": "salvages a real freedom"
+    },
+    {
+     "src": "corpus:free-will-defense#long",
+     "quote": "exactly the freedom a prospective parent exercises"
+    },
+    {
+     "src": "corpus:free-will-defense#long",
+     "quote": "Libet's experiments and subsequent neuroscientific research consistently demonstrate"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-043",
+   "kind": "amend",
+   "row_id": "SM-43",
+   "target": "eliminativism#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "Only the secondary regen item is re-recorded as landed (PD-11), in grounds and terminus_routing; the move is unchanged. This closes the one quoting passage the measure found beyond the knock-on records.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-044",
+   "kind": "amend",
+   "row_id": "SM-44",
+   "target": "eliminativism#note",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The grounds cite PD-11's repaired closing (\"but none to refrain either\"), which concedes what the move says; HR-04 holds.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:eliminativism#long",
+     "quote": "but none to refrain either"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-045",
+   "kind": "amend",
+   "row_id": "SM-45",
+   "target": "revealed-preference#long",
+   "verdict": "AMEND",
+   "r1": null,
+   "reason": "SC-03 discharges the prior (b) (\"a count of what people do is not a count of what they have judged, in either direction\"), and the class (d) may stand. The move does not: it says \"your information paragraph shows only that behavior cannot tell us this, not that the answer is uninformed\". That is the anchor's own paragraph, and it asserts the answer is uninformed and diagnoses it: \"it is the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all\". So the strongest continuation at this locus is unadjudicated: the diagnosis is the etiology inference the corpus's own rule forbids (\"diagnosing the natalist's optimism would be the same genetic fallacy fired in reverse\"; \"the path to a belief bears on its truth in neither direction\"), and informedness about one argument about creation is no condition on judging one's own life.",
+   "owed": [
+    "Restate the move against what the information paragraph claims, and press its diagnosis before the retreat to stated preference.",
+    "Run the continuation to one bedrock and copy it by locus and anchor. gate2's lean: by parity with SM-48, the same selective debunk filed at HR-02 from Z-033, the tie is HR-02; HR-05 by way of most-people-happy (as drafted) is what remains if the drafter strikes the diagnosis instead. Name one."
+   ],
+   "carries": [
+    "The sentence is also a safety-pass residual (U-066): L6's wide sweep classed it and no row took it."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:revealed-preference#long",
+     "quote": "a count of what people do is not a count of what they have judged, in either direction"
+    },
+    {
+     "src": "drafts:SM-45",
+     "quote": "your information paragraph shows only that behavior cannot tell us this, not that the answer is uninformed"
+    },
+    {
+     "src": "corpus:revealed-preference#long",
+     "quote": "it is the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all"
+    },
+    {
+     "src": "corpus:just-depressed#long",
+     "quote": "diagnosing the natalist's optimism would be the same genetic fallacy fired in reverse"
+    },
+    {
+     "src": "corpus:bitter-childhood#medium",
+     "quote": "the path to a belief bears on its truth in neither direction"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-046",
+   "kind": "amend",
+   "row_id": "SM-46",
+   "target": "survivor-testimony#long",
+   "verdict": "ACCEPT",
+   "r1": null,
+   "reason": "The grounds cite SW-05 (\"answering a question about their own life, which is theirs to answer\") and PD-19's open load; the move is unchanged. It is the objector's survivor-evidence point, voiced as an objection in the adversarial map; it encourages no one and says nothing to the reader's own life. HR-02 holds.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:survivor-testimony#long",
+     "quote": "answering a question about their own life, which is theirs to answer"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-047",
+   "kind": "stands",
+   "row_id": "SM-47",
+   "target": "heat-death-futility#medium",
+   "verdict": "CONFIRM",
+   "reason": "R1-019 rests on the long's value base, \"HOW MUCH suffering occurs along the way\", standing after SD-04; SD-04's \"as a thought experiment rather than a plan\" only weakens the move's premise. The own-node (d) is unchanged.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:heat-death-futility#long",
+     "quote": "HOW MUCH suffering occurs along the way"
+    },
+    {
+     "src": "corpus:heat-death-futility#long",
+     "quote": "as a thought experiment rather than a plan"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-048",
+   "kind": "file",
+   "row_id": "SM-48",
+   "target": "boonin-critique#long",
+   "verdict": "ACCEPT",
+   "reason": "Z-033's own words point to a (d): \"file it where #45's and #47's charge already sits\", which is HR-02. Tested: a symmetric rewording leaves Boonin's intuitions standing as data, so no rewrite closes the charge; the departure from the kickoff's summary is right, and the wording carry is in canon. Z-033's claim that only this locus keeps the phrasing was a floor (U-066).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "judgment_sp:Z-033",
+     "quote": "file it where #45's and #47's charge already sits"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-049",
+   "kind": "carry",
+   "row_id": "SM-49",
+   "verdict": "CONFIRM",
+   "reason": "SF-05 is a label mirrored in the Mechanism Web sidecar, not a map locus; the next pin that regenerates the sidecar is its place, with L1's two served-text repairs.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-050",
+   "kind": "carry",
+   "row_id": "SM-50",
+   "verdict": "CONFIRM",
+   "reason": "SF-07 is a dependency-review note, not a map locus; the next dependency review re-grades the two edges and the note stays as a record of v3.5.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-051",
+   "kind": "relation",
+   "row_id": "SM-51",
+   "verdict": "ACCEPT",
+   "reason": "independent_of is right on the ground the node's own birth-certificate (d) states, \"the only asymmetry-free repair\": HR-06 is posed without the asymmetry, so HR-02's answer does not reach it, and the ledger HR-02 weighs does not decide it. One correction to the row's count: two pairs newly share a node, not one. HR-03 and HR-06 now meet at benatar-asymmetry-attack (SM-06), but HR-06 already depends_on HR-03, so only HR-02 and HR-06 needed a relation (reading record, adjacency: none undeclared).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "v1_6:boonin-critique#short",
+     "quote": "the only asymmetry-free repair"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-052",
+   "kind": "artifact",
+   "artifact": "adversarial_map_staging/adv_map_validator_v0_7.py",
+   "verdict": "CONFIRM",
+   "reason": "Re-derived from v0_6 by its patch tool (--check GREEN); self-test 100 of 100; run in-process at its pinned bytes on v1_7 against the v4.1.5 corpus under --assembly it gives 0 violations and 0 advisories (reading record). The shape locus is existence-gated on a non-empty statement, the node bound adds three per shape locus, coverage excludes shape loci as it excludes note, and H is a phase while S stays the shapes' own letter: what R-V1 and the variations design ask, and nothing moves until V4 puts shapes in the corpus.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-053",
+   "kind": "artifact",
+   "artifact": "adversarial_map_staging/honest_residuals_register_v0_8.json",
+   "verdict": "CONFIRM",
+   "reason": "Every (d) of v1_7 is a tributary of v0_8. For the eleven rows that copy a bedrock, the source (d) is filed in v0_7 under the facet the row claims and the entry in v0_8 under the same facet with the map's routing and novel flag (reading record, bedrocks: all hold); the builder asserts that parity for every (d). No pair of bedrocks that share a node is undeclared. The relation drafted is judged at SM-51. Redrafts that change only moves do not move the register; SM-45's may, if its terminus changes.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-054",
+   "kind": "knock_on",
+   "i": 5,
+   "n": 3,
+   "target": "why-not-suicide#archetypeVariants.blended",
+   "verdict": "STANDS",
+   "reason": "New: SM-16's and SM-17's (b)s at why-not-suicide#long, the answering locus. They sit on the consent sentence and the analogy; #3's answer is the survival-drive paragraph (\"it keeps a body going, it does not weigh the life\").",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:why-not-suicide#long",
+     "quote": "it keeps a body going, it does not weigh the life"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-055",
+   "kind": "knock_on",
+   "i": 6,
+   "n": 4,
+   "target": "why-not-suicide#archetypeVariants.defender",
+   "verdict": "STANDS",
+   "reason": "New: SM-16's and SM-17's (b)s on #4's own node, and SM-20's (b) at violence-as-reductio#long, its answering locus. The answer is the entailment point (\"Centrality is sociology; entailment is logic\"); SM-20 sits on the self-undermining prong, and the own-node (b)s agree with #4's move that founders hold the button.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "Centrality is sociology; entailment is logic"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-056",
+   "kind": "knock_on",
+   "i": 19,
+   "n": 11,
+   "target": "self-defeating#diagnosis",
+   "verdict": "STANDS",
+   "reason": "New through the re-route: the (d) at self-effacing-under-universalization#long on its success-condition sentence. The answer uses the Parfit sentence; the move does not press the success condition.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-057",
+   "kind": "knock_on",
+   "i": 20,
+   "n": null,
+   "target": "self-defeating#long",
+   "verdict": "STANDS",
+   "reason": "An (a) new in v1_7, so every collision is new: the same success-condition (d) at the routed node. Not pressed; the answer is the Parfit sentence. gate2's reading for R1: HOLDS (U-065).",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-058",
+   "kind": "knock_on",
+   "i": 29,
+   "n": 18,
+   "target": "violence-as-reductio#archetypeVariants.blended",
+   "verdict": "STANDS",
+   "reason": "New: SM-20's (b) on #18's own node. The answer is the sophisticate slot's residue sentence, not the long's self-undermining prong.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-059",
+   "kind": "knock_on",
+   "i": 30,
+   "n": 19,
+   "target": "violence-as-reductio#archetypeVariants.defender",
+   "verdict": "STANDS",
+   "reason": "No L7 row reads #19, and its answering locus gains SM-20's (b). R1-031's answer is the two-figure separation and the architect's added premise, \"a movement architect who holds the button openly has made the button central to the movement without making it entailed by the core\"; neither uses the self-undermining prong.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:violence-as-reductio#long",
+     "quote": "a movement architect who holds the button openly has made the button central to the movement without making it entailed by the core"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-060",
+   "kind": "knock_on",
+   "i": 39,
+   "n": 24,
+   "target": "most-people-happy#archetypeVariants.sophisticate",
+   "verdict": "STANDS",
+   "reason": "New: SM-02's (b) at just-depressed's defender slot, an answering node's other slot. It concerns the motive verdict; #24's answer is the long's symmetry disclaimer.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-061",
+   "kind": "knock_on",
+   "i": 88,
+   "n": 52,
+   "target": "overpopulation-addressed#long",
+   "verdict": "STANDS",
+   "reason": "New: SM-08's (d) at economy-population#long, the answering locus, recording the victim charge at HR-06. #52's move stays on the suffering ledger and calls no one a victim.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-062",
+   "kind": "knock_on",
+   "i": 136,
+   "n": 68,
+   "target": "self-effacing-under-universalization#long",
+   "verdict": "STANDS",
+   "reason": "No L7 row reads #68, and its answering locus economy-population#long gains SM-08's (d). R1-021 holds on the first horn alone, care discharged without new births; the (d)'s victim charge is not what the move presses.",
+   "owed": [],
+   "carries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-063",
+   "kind": "finding",
+   "title": "the move register: moves that narrate the corpus's history",
+   "finding": "Measured (reading record, move_register). Of v1_6's 138 moves none narrates the corpus's history and none uses now; the scan's one match in v1_6 is entry 121's argumentative \"so the repair aligns\". Of the 27 moves the rows draft, 17 carry history wording: explicit narration a reader of the v4.1.5 text cannot parse (SM-01, SM-02, SM-06, SM-16, SM-17, SM-30, SM-31, SM-33) and a now that marks the post-repair text (SM-08, SM-15, SM-20, SM-25, SM-27, SM-34, SM-37, SM-38, SM-39). The map's moves speak to the text as the reader meets it; its grounds and provenance carry the history, as v1_6 does. Sixteen of the eighteen AMENDs are this and nothing else.",
+   "recommendation": "One batch of superseding rows, each changing its move only. A second-round judgment can then be narrow: the superseding move equals the drafted one but for the named wording, plus SM-08's and SM-45's content.",
+   "whose": "seat l (L7)",
+   "entries": [
+    1,
+    5,
+    7,
+    58
+   ],
+   "quotes": [
+    {
+     "src": "v1_6:flow-states-csikszentmihalyi#long",
+     "quote": "so the repair aligns"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-064",
+   "kind": "finding",
+   "title": "the knock-on the successor owed was not measured by the drafting seat",
+   "finding": "gate2's V-022 recommended re-running the knock-on against the successor. L7 measured before drafting (390d2ca) and not after. Measured here with l4_knock_on.collisions at its pinned bytes: 9 of v1_7's 28 (a)s meet a (b) or (d) they did not meet in v1_6 (U-054 to U-062). Two have no L7 row at all (#19, #68), and six rows that read their entry do not name the new collision (SM-03, SM-10, SM-13, SM-14, SM-19, SM-28). All nine stand on gate2's reading.",
+   "recommendation": "A successor's controls run the knock-on after the drafts are applied, as l4c_knock_on did for v1_6, and a stands row reads every newly collided entry.",
+   "whose": "seat l",
+   "entries": [
+    3,
+    4,
+    11,
+    18,
+    19,
+    24,
+    52,
+    68
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-065",
+   "kind": "finding",
+   "title": "an (a) born in the successor has no R1 row, and R1's instruments cannot see it",
+   "finding": "The (a) at self-defeating#long (SM-27) is not one of R1's 69; the R1 evidence file lists only those, so the rulings gate and the collision list read nothing of it. The standard R1 enforces, that every (a) is ruled before its card ships, is then unmet for this entry. gate2's reading, recorded for the ruling: HOLDS (SM-27, U-057).",
+   "recommendation": "After his word, append its R1 row with the four proposed HOLDS; the drafting seat decides how the R1 instruments admit an entry the evidence file does not list, and says so before the row is written.",
+   "whose": "Josiah for the ruling; seat l for the instruments",
+   "entries": [],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-066",
+   "kind": "finding",
+   "title": "what the safety pass left standing, and gate2's own floor",
+   "finding": "Measured on the v4.1.5 text (reading record, wide_after_the_pin and honest_eval_family). L6's wide sweep classed revealed-preference#long a sibling locus; SC-01 to SC-03 took every hit there but two: SC-03's own declared denial, which Z-012 accepted, and one sentence no row took and gate2's Z-034 did not list among the passages read and left: the preference for continued existence as \"the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all\". The same family as boonin-critique#long's phrase, so Z-033's \"only boonin-critique#long\" was a floor, the error gate2's own Z-032 names. Separately, SF-04 gave the WHO media guidance on method and site detail as the ground for SW-07, which removed only the death rate; survivor-testimony#long and its diagnosis still name the bridge and the jump (\"Golden Gate Bridge survivors\"). Neither passage casts a wish to die as a verdict; the first is a one-directional debunk beside the pass's symmetric kept argument, the second the detail SF-04 itself flagged. And ai-fear's defender slot keeps a grabbed framing no row files (SM-30's carry).",
+   "recommendation": "The next safety queue, under his 2026-09-25 bar: the revealed-preference sentence (keep a drive, not a verdict, in either direction; drop the one-directional diagnosis; add nothing pro-life), and, gate2's lean, the survivor accounts without the site (survivors who reported regret, unnamed place). With SM-45's redraft the map's side is covered; the text's side is his word.",
+   "whose": "Josiah, with the library seat",
+   "entries": [
+    64
+   ],
+   "quotes": [
+    {
+     "src": "corpus:revealed-preference#long",
+     "quote": "the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all"
+    },
+    {
+     "src": "judgment_sp:Z-033",
+     "quote": "only boonin-critique#long"
+    },
+    {
+     "src": "corpus:survivor-testimony#long",
+     "quote": "Golden Gate Bridge survivors"
+    }
+   ],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-067",
+   "kind": "finding",
+   "title": "the pull: most of these rows carry out gate2's own findings",
+   "finding": "41 of the 51 rows cite gate2's earlier findings as cause (31 of its X-rows, and Z-033), so the pull was toward accepting its own record. Each was tested on the text instead. Where that record was wrong or a floor, this judgment says so: Z-033's only-here claim was a floor (U-066); the Z-rows missed an unrepaired sibling sentence (U-066); X-033's analogy filing is weaker at why-not-suicide#long than at the defender slot (SM-17); X-033 missed ai-fear's grabbed sentence (SM-30); X-028 held only for the v1_3 routes (SM-28). Where the rows carry out gate2's lean, the alternative was tested: X-034's attribution against the published abstracts (SM-38), X-010 against a manipulation-style counter (SM-42), X-006's carry at the thesis (SM-29). The residual, stated: SM-01's and SM-16's (b)s are filings gate2 asked for, judged here by the seat that asked.",
+   "recommendation": "None beyond the rows. A judge with no stake in X-033 could re-read the eight filings; gate2's lean: not needed, since each was tested on the text and one (SM-17) was marked down against gate2's own record.",
+   "whose": "gate2, for the record",
+   "entries": [
+    4,
+    11,
+    22,
+    48
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  },
+  {
+   "id": "U-068",
+   "kind": "finding",
+   "title": "sequence after this judgment",
+   "finding": "Of the 51 rows: 22 ACCEPT, 11 CONFIRM and 18 AMEND. Both artifacts are confirmed; the nine knock-on entries stand; four proposed HOLDS are accepted row by row (#11, #22, #32, #50), and gate2's reading of the new (a) at self-defeating#long is HOLDS.",
+   "recommendation": "Order: L7 appends the 18 superseding rows and rebuilds; a seat that did not draft them judges them; then his word on the asks (R0237's relay back), and the R1 rows after it.",
+   "whose": "seat l, then Josiah",
+   "entries": [
+    11,
+    22,
+    32,
+    50
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, 2026-09-26): judge only under K258; drafted nothing in L7_successor_drafts.json, adversarial_map_v1_7.json, validator v0_7, register v0_8, their builders, controls or measure; wrote X-033, X-034, Z-033 and other findings these rows carry out (U-067 records the pull)",
+   "date": "2026-09-26",
+   "supersedes": null
+  }
+ ]
+}

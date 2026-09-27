@@ -1,0 +1,802 @@
+{
+ "artifact": "l7_judgment_reading_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/l7_judgment_reading.py",
+ "reads": {
+  "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "drafts": "fd9267f853a5a09fe5aa3972b16fa2a7",
+  "exit_patterns": "d11cfbc7182e8fba0f549467b654b1bd",
+  "knock_on_tool": "66022fa8e9ba7ad3ff26e42aee5b0b1c",
+  "measure": "4d98b4a3b5c3a57ef62543001ba7ff64",
+  "register_v0_7": "bcbff23113f3fb0135d5fd5b3e2630d5",
+  "register_v0_8": "8f6d38886b95033600752a5be052bd99",
+  "rulings": "d829437e938a8b9dded5cb8cbaa26b74",
+  "v1_6": "7a69bc9fd197047c3cf7cecdb37a44ed",
+  "v1_7": "db40b45693eff1297b3f3152c6295c15",
+  "validator_v0_7": "8a74dcc452338f127ec03e078090c2ed",
+  "wide_patterns": "dc2525ef40fc5353a670484f511bd668"
+ },
+ "derivation": {
+  "v1_6_entries": 138,
+  "v1_7_entries": 146,
+  "carried_byte_for_byte": 107,
+  "changed": 31,
+  "filed": 8,
+  "stands_rows_moving_no_byte": 9,
+  "class_counts_v1_6": {
+   "a": 29,
+   "b": 32,
+   "c": 1,
+   "d": 76
+  },
+  "class_counts_v1_7": {
+   "a": 28,
+   "b": 30,
+   "c": 1,
+   "d": 87
+  },
+  "failures": []
+ },
+ "quotes": {
+  "declared": 102,
+  "verbatim": 102,
+  "not_verbatim": [],
+  "undeclared_spans": []
+ },
+ "anchors": {
+  "all_present": true,
+  "per_entry": [
+   {
+    "row": "SM-02",
+    "target": "just-depressed#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-01",
+    "target": "just-depressed#long",
+    "count": 1
+   },
+   {
+    "row": "SM-13",
+    "target": "why-not-suicide#archetypeVariants.blended",
+    "count": 1
+   },
+   {
+    "row": "SM-14",
+    "target": "why-not-suicide#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-15",
+    "target": "why-not-suicide#archetypeVariants.drifter",
+    "count": 1
+   },
+   {
+    "row": "SM-26",
+    "target": "consent-both-ways#long",
+    "count": 1
+   },
+   {
+    "row": "SM-08",
+    "target": "economy-population#long",
+    "count": 1
+   },
+   {
+    "row": "SM-07",
+    "target": "benatar-asymmetry-attack#long",
+    "count": 1
+   },
+   {
+    "row": "SM-06",
+    "target": "benatar-asymmetry-attack#long",
+    "count": 1
+   },
+   {
+    "row": "SM-28",
+    "target": "self-defeating#diagnosis",
+    "count": 1
+   },
+   {
+    "row": "SM-27",
+    "target": "self-defeating#long",
+    "count": 1
+   },
+   {
+    "row": "SM-29",
+    "target": "ai-fear#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-18",
+    "target": "violence-as-reductio#archetypeVariants.sophisticate",
+    "count": 1
+   },
+   {
+    "row": "SM-42",
+    "target": "free-will-defense#long",
+    "count": 1
+   },
+   {
+    "row": "SM-04",
+    "target": "antinatalism-misanthropic#long",
+    "count": 1
+   },
+   {
+    "row": "SM-05",
+    "target": "antinatalism-misanthropic#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-21",
+    "target": "red-button-repugnant#long",
+    "count": 1
+   },
+   {
+    "row": "SM-22",
+    "target": "red-button-repugnant#long",
+    "count": 1
+   },
+   {
+    "row": "SM-23",
+    "target": "red-button-repugnant#archetypeVariants.sophisticate",
+    "count": 1
+   },
+   {
+    "row": "SM-31",
+    "target": "slippery-slope-eugenics#archetypeVariants.blended",
+    "count": 1
+   },
+   {
+    "row": "SM-32",
+    "target": "slippery-slope-eugenics#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-35",
+    "target": "bitter-childhood#long",
+    "count": 1
+   },
+   {
+    "row": "SM-45",
+    "target": "revealed-preference#long",
+    "count": 1
+   },
+   {
+    "row": "SM-25",
+    "target": "social-contract#long",
+    "count": 1
+   },
+   {
+    "row": "SM-37",
+    "target": "bradley-no-subject#long",
+    "count": 1
+   },
+   {
+    "row": "SM-40",
+    "target": "buddhist-objection#long",
+    "count": 1
+   },
+   {
+    "row": "SM-39",
+    "target": "neuroscience-positive-states#long",
+    "count": 1
+   },
+   {
+    "row": "SM-41",
+    "target": "luxury-belief#long",
+    "count": 1
+   },
+   {
+    "row": "SM-46",
+    "target": "survivor-testimony#long",
+    "count": 1
+   },
+   {
+    "row": "SM-43",
+    "target": "eliminativism#long",
+    "count": 1
+   },
+   {
+    "row": "SM-44",
+    "target": "eliminativism#note",
+    "count": 1
+   },
+   {
+    "row": "SM-16",
+    "target": "why-not-suicide#long",
+    "count": 1
+   },
+   {
+    "row": "SM-17",
+    "target": "why-not-suicide#long",
+    "count": 1
+   },
+   {
+    "row": "SM-20",
+    "target": "violence-as-reductio#long",
+    "count": 1
+   },
+   {
+    "row": "SM-30",
+    "target": "ai-fear#archetypeVariants.defender",
+    "count": 1
+   },
+   {
+    "row": "SM-33",
+    "target": "slippery-slope-eugenics#long",
+    "count": 1
+   },
+   {
+    "row": "SM-34",
+    "target": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+    "count": 1
+   },
+   {
+    "row": "SM-38",
+    "target": "bradley-no-subject#long",
+    "count": 1
+   },
+   {
+    "row": "SM-48",
+    "target": "boonin-critique#long",
+    "count": 1
+   }
+  ]
+ },
+ "bedrocks": {
+  "all_hold": true,
+  "per_row": [
+   {
+    "row": "SM-04",
+    "from": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+    "hr": "HR-03",
+    "facet": "value-requires-a-valuer",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-06",
+    "from": "moral-progress#long",
+    "hr": "HR-06",
+    "facet": "unrefusable-condition-on-non-antecedent-subject",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-08",
+    "from": "moral-progress#long",
+    "hr": "HR-06",
+    "facet": "unrefusable-condition-on-non-antecedent-subject",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-15",
+    "from": "red-button-repugnant#archetypeVariants.sophisticate",
+    "hr": "HR-14",
+    "facet": "terminus-held-open",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-25",
+    "from": "moral-progress#long",
+    "hr": "HR-06",
+    "facet": "unrefusable-condition-on-non-antecedent-subject",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-29",
+    "from": "ai-fear#archetypeVariants.sophisticate",
+    "hr": "HR-14",
+    "facet": "successor-preference",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-31",
+    "from": "slippery-slope-eugenics#archetypeVariants.sophisticate",
+    "hr": "HR-14",
+    "facet": "coercion-floor",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-37",
+    "from": "harman-benign-creation#long",
+    "hr": "HR-05",
+    "facet": "no-worse-off-baseline",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-39",
+    "from": "boonin-critique#short",
+    "hr": "HR-06",
+    "facet": "unrefusable-condition-on-non-antecedent-subject",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-45",
+    "from": "most-people-happy#long",
+    "hr": "HR-05",
+    "facet": "no-worse-off-baseline",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   },
+   {
+    "row": "SM-48",
+    "from": "red-button-repugnant#medium",
+    "hr": "HR-02",
+    "facet": "intrinsic-value-of-existence",
+    "name_copied_equal": true,
+    "v0_7_files_the_source_there": true,
+    "v0_8_files_the_entry_there": true
+   }
+  ]
+ },
+ "knock_on": {
+  "a_entries_in_v1_7": 28,
+  "rule": "collision rule v0_2; l4_knock_on.collisions at its pinned bytes",
+  "newly_collided": [
+   {
+    "i": 5,
+    "n": 3,
+    "target": "why-not-suicide#archetypeVariants.blended",
+    "r1": "HOLDS (R1-023)",
+    "own_row": "SM-13",
+    "new_collisions": [
+     {
+      "at": "why-not-suicide#long",
+      "class": "b",
+      "anchor": "that would violate the exact same principle of consent and harm-reduction",
+      "made_by": "SM-16",
+      "made_by_named_in_own_row": false
+     },
+     {
+      "at": "why-not-suicide#long",
+      "class": "b",
+      "anchor": "just as one violent actor does not represent environmentalism",
+      "made_by": "SM-17",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 6,
+    "n": 4,
+    "target": "why-not-suicide#archetypeVariants.defender",
+    "r1": "HOLDS (R1-024)",
+    "own_row": "SM-14",
+    "new_collisions": [
+     {
+      "at": "why-not-suicide#long",
+      "class": "b",
+      "anchor": "that would violate the exact same principle of consent and harm-reduction",
+      "made_by": "SM-16",
+      "made_by_named_in_own_row": false
+     },
+     {
+      "at": "why-not-suicide#long",
+      "class": "b",
+      "anchor": "just as one violent actor does not represent environmentalism",
+      "made_by": "SM-17",
+      "made_by_named_in_own_row": false
+     },
+     {
+      "at": "violence-as-reductio#long",
+      "class": "b",
+      "anchor": "the bridge is framework-self-undermining",
+      "made_by": "SM-20",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 19,
+    "n": 11,
+    "target": "self-defeating#diagnosis",
+    "r1": "proposed HOLDS (SM-28)",
+    "own_row": "SM-28",
+    "new_collisions": [
+     {
+      "at": "self-effacing-under-universalization#long",
+      "class": "d",
+      "anchor": "Universal compliance is a norm's success condition",
+      "made_by": "unchanged entry, met through this (a)'s new class or route",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 20,
+    "n": null,
+    "target": "self-defeating#long",
+    "r1": "no R1 row",
+    "own_row": "SM-27",
+    "new_collisions": [
+     {
+      "at": "self-effacing-under-universalization#long",
+      "class": "d",
+      "anchor": "Universal compliance is a norm's success condition",
+      "made_by": "unchanged entry, met through this (a)'s new class or route",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 29,
+    "n": 18,
+    "target": "violence-as-reductio#archetypeVariants.blended",
+    "r1": "HOLDS (R1-030)",
+    "own_row": "SM-19",
+    "new_collisions": [
+     {
+      "at": "violence-as-reductio#long",
+      "class": "b",
+      "anchor": "the bridge is framework-self-undermining",
+      "made_by": "SM-20",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 30,
+    "n": 19,
+    "target": "violence-as-reductio#archetypeVariants.defender",
+    "r1": "HOLDS (R1-031)",
+    "own_row": null,
+    "new_collisions": [
+     {
+      "at": "violence-as-reductio#long",
+      "class": "b",
+      "anchor": "the bridge is framework-self-undermining",
+      "made_by": "SM-20",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 39,
+    "n": 24,
+    "target": "most-people-happy#archetypeVariants.sophisticate",
+    "r1": "HOLDS (R1-010)",
+    "own_row": "SM-03",
+    "new_collisions": [
+     {
+      "at": "just-depressed#archetypeVariants.defender",
+      "class": "b",
+      "anchor": "pointing at the second sentence and asking which one was sincere",
+      "made_by": "SM-02",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 88,
+    "n": 52,
+    "target": "overpopulation-addressed#long",
+    "r1": "HOLDS (R1-051)",
+    "own_row": "SM-10",
+    "new_collisions": [
+     {
+      "at": "economy-population#long",
+      "class": "d",
+      "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+      "made_by": "SM-08",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   },
+   {
+    "i": 136,
+    "n": 68,
+    "target": "self-effacing-under-universalization#long",
+    "r1": "HOLDS (R1-021)",
+    "own_row": null,
+    "new_collisions": [
+     {
+      "at": "economy-population#long",
+      "class": "d",
+      "anchor": "structurally identical to the argument a Ponzi scheme operator makes against dissolution",
+      "made_by": "SM-08",
+      "made_by_named_in_own_row": false
+     }
+    ]
+   }
+  ]
+ },
+ "new_a_without_r1": [
+  {
+   "i": 20,
+   "target": "self-defeating#long",
+   "made_by": "SM-27",
+   "v1_6_class": "b"
+  }
+ ],
+ "move_register": {
+  "v1_6_moves": 138,
+  "v1_6_moves_with_history_wording": 1,
+  "drafted_moves": 27,
+  "drafted_moves_with_history_wording": [
+   {
+    "row": "SM-01",
+    "hits": [
+     "now",
+     "the repair",
+     "withdrew/withdrawn"
+    ],
+    "phrases": [
+     "Your tell is now read off the remark, whatever",
+     "hdrew it. The frequency claim now stands on nothing, while the",
+     "or that ratio, and the repair withdrew it. The frequency claim now s",
+     "r offered for that ratio, and the repair withdrew it. The frequency cl"
+    ]
+   },
+   {
+    "row": "SM-02",
+    "hits": [
+     "now",
+     "since",
+     "still",
+     "withdrew/withdrawn"
+    ],
+    "phrases": [
+     "The node's own long has since withdrawn that tell: it reads the remar",
+     "ostility. The node's own long has since withdrawn that tell: it reads",
+     "person who says it. The slot still reads contempt off the thread, so t",
+     "t off the thread, so the node now says both things."
+    ]
+   },
+   {
+    "row": "SM-06",
+    "hits": [
+     "as repaired"
+    ],
+    "phrases": [
+     "Take the fallback as repaired. On the branch where person-a"
+    ]
+   },
+   {
+    "row": "SM-08",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "nto the premise. Your own hub now grants that, if person-affect"
+    ]
+   },
+   {
+    "row": "SM-15",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "g to the living. But the slot now tells the drifter that the vi"
+    ]
+   },
+   {
+    "row": "SM-16",
+    "hits": [
+     "in place of",
+     "now"
+    ],
+    "phrases": [
+     "'s sophisticate slot now says in place of this reading.",
+     "-reductio's sophisticate slot now says in place of this reading"
+    ]
+   },
+   {
+    "row": "SM-17",
+    "hits": [
+     "in place of",
+     "now"
+    ],
+    "phrases": [
+     "and this node's defender slot now says so in place of the same",
+     "e's defender slot now says so in place of the same analogy. What separa"
+    ]
+   },
+   {
+    "row": "SM-20",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "on your own sophisticate slot now avoids: there the maximizer h"
+    ]
+   },
+   {
+    "row": "SM-25",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "Grant the line you now draw: a society may ask its m"
+    ]
+   },
+   {
+    "row": "SM-27",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "to the births you forbid, you now concede. Then the view's aim"
+    ]
+   },
+   {
+    "row": "SM-30",
+    "hits": [
+     "in place of",
+     "now"
+    ],
+    "phrases": [
+     "'s defender slot now concedes in place of the same analogy. The framewo",
+     "y-not-suicide's defender slot now concedes in place of the same"
+    ]
+   },
+   {
+    "row": "SM-31",
+    "hits": [
+     "the new ground"
+    ],
+    "phrases": [
+     "Grant the new ground: the asymmetry authorizes onl"
+    ]
+   },
+   {
+    "row": "SM-33",
+    "hits": [
+     "now",
+     "still"
+    ],
+    "phrases": [
+     "al, not enforcement. The long still calls the calculation itself the st",
+     "hanged. Your own blended slot now says so, calling cascade-math"
+    ]
+   },
+   {
+    "row": "SM-34",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "on, and your own blended slot now ranks it a second, weaker wit",
+     "s is the one the blended slot now gives: the asymmetry warrants"
+    ]
+   },
+   {
+    "row": "SM-37",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "rs procreation, and your fork now holds only as far as creation"
+    ]
+   },
+   {
+    "row": "SM-38",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "rativist branch your own fork now names and leaves open."
+    ]
+   },
+   {
+    "row": "SM-39",
+    "hits": [
+     "now"
+    ],
+    "phrases": [
+     "Grant the symmetry you now state: the joy's absence chea"
+    ]
+   }
+  ]
+ },
+ "safety": {
+  "hits_in_drafted_fields": [
+   {
+    "row": "SM-21",
+    "field": "grounds",
+    "set": "L6 wide:trap",
+    "match": "trapped"
+   },
+   {
+    "row": "SM-22",
+    "field": "grounds",
+    "set": "L6 wide:mind_as_verdict",
+    "match": "honest evaluation"
+   },
+   {
+    "row": "SM-48",
+    "field": "grounds",
+    "set": "L6 wide:mind_as_verdict",
+    "match": "honest evaluation"
+   },
+   {
+    "row": "SM-48",
+    "field": "grounds",
+    "set": "L6 wide:mind_as_verdict",
+    "match": "honest evaluation"
+   },
+   {
+    "row": "SM-48",
+    "field": "grounds",
+    "set": "L6 wide:wish_to_die",
+    "match": "wish to die"
+   },
+   {
+    "row": "SM-48",
+    "field": "grounds",
+    "set": "L6 wide:drive_distorts_or_blocks",
+    "match": "biological programming that prevents"
+   }
+  ]
+ },
+ "adjacency": {
+  "pairs_sharing_a_node_v0_7": 9,
+  "pairs_sharing_a_node_v0_8": 11,
+  "new_pairs": [
+   "HR-02+HR-06",
+   "HR-03+HR-06"
+  ],
+  "undeclared_in_v0_8": [],
+  "tributaries_v0_8_equal_the_map_d": []
+ },
+ "wide_after_the_pin": [
+  {
+   "locus": "revealed-preference#long",
+   "l6_class": "sibling",
+   "pattern": "suicide_as_evidence",
+   "match": "revealed a verdict for existence, the roughly 700,000 deaths by suicide",
+   "sentence": "If going on living revealed a verdict for existence, the roughly 700,000 deaths by suicide the WHO records each year would have to be read as verdicts against it."
+  },
+  {
+   "locus": "revealed-preference#long",
+   "l6_class": "sibling",
+   "pattern": "drive_distorts_or_blocks",
+   "match": "biological compulsion, and the optimism bias operating in concert to prevent",
+   "sentence": "Their 'preference' for continued existence is not the output of informed deliberation—it is the output of cultural conditioning, biological compulsion, and the optimism bias operating in concert to prevent the organism from engaging with the question at all."
+  },
+  {
+   "locus": "survivor-testimony#diagnosis",
+   "l6_class": "widen",
+   "pattern": "suicide_as_evidence",
+   "match": "suicide attempts — particularly the widely cited accounts of Golden Gate Bridge survivors who report regretting their jump mid-fall — as evidence",
+   "sentence": "The survivor testimony objection uses the reported experiences of people who survived suicide attempts — particularly the widely cited accounts of Golden Gate Bridge survivors who report regretting their jump mid-fall — as evidence that life is valuable and that antinatalist assessments are distorted by temporary states."
+  }
+ ],
+ "honest_eval_family_v4_1_5": [
+  {
+   "locus": "revealed-preference#long",
+   "match": "prevent the organism from engaging"
+  },
+  {
+   "locus": "boonin-critique#long",
+   "match": "systematically distorting moral judgment"
+  },
+  {
+   "locus": "boonin-critique#long",
+   "match": "prevents honest"
+  }
+ ],
+ "validator": {
+  "v0_7_assembly_on_v1_7": {
+   "passed": true,
+   "violations": 0,
+   "advisories": 0
+  }
+ }
+}

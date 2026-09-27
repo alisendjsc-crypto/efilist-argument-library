@@ -1,0 +1,189 @@
+{
+ "artifact": "l7_judgments_gate control record",
+ "gate": "adversarial_map_staging/r1/l7_judgments_gate.py",
+ "gate_md5": "419d4e06e668e47b5ac4b605e66ecc02",
+ "judgments_md5": "bd3b4e89f25e7f874f5aa553b998fe0d",
+ "controls": [
+  {
+   "control": "C0",
+   "what": "unmutated",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C1",
+   "what": "an amend row goes unjudged",
+   "want_rc": 1,
+   "want_message": "amend rows not judged",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "coverage: amend rows not judged: amend SM-01"
+  },
+  {
+   "control": "C2",
+   "what": "an amend row's verdict reads MAYBE",
+   "want_rc": 1,
+   "want_message": "is not one of",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-001: verdict 'MAYBE' is not one of ACCEPT/AMEND/REJECT"
+  },
+  {
+   "control": "C3",
+   "what": "an AMEND owes nothing",
+   "want_rc": 1,
+   "want_message": "without saying what is owed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-001: AMEND without saying what is owed"
+  },
+  {
+   "control": "C4",
+   "what": "a proposed HOLDS goes unanswered",
+   "want_rc": 1,
+   "want_message": "an R1 verdict",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-005: r1 is None, but SM-05 proposes an R1 verdict"
+  },
+  {
+   "control": "C5",
+   "what": "a row names a drafts row the record lacks",
+   "want_rc": 1,
+   "want_message": "names no current file row",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-016: SM-98 names no current file row of the drafts record"
+  },
+  {
+   "control": "C6",
+   "what": "a stands row names the wrong target",
+   "want_rc": 1,
+   "want_message": "is not SM-",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-003: target why-not-suicide#medium is not SM-03's target most-people-happy#archetypeVariants.sophisticate"
+  },
+  {
+   "control": "C7",
+   "what": "a knock-on row is dropped",
+   "want_rc": 1,
+   "want_message": "do not match the reading record",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "coverage: knock-on rows [6, 19, 20, 29, 30, 39, 88, 136] do not match the reading record's newly collided [5, 6, 19, 20, 29, 30, 39, 88, 136]"
+  },
+  {
+   "control": "C8",
+   "what": "a quoted span is not declared",
+   "want_rc": 1,
+   "want_message": "undeclared quotation",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-001: undeclared quotation 'an undeclared span'"
+  },
+  {
+   "control": "C9",
+   "what": "a declared quote is one character off",
+   "want_rc": 1,
+   "want_message": "NOT VERBATIM",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-001: undeclared quotation 'whatever the mood of the person who says it'"
+  },
+  {
+   "control": "C10",
+   "what": "map v1_7 moves by one byte",
+   "want_rc": 1,
+   "want_message": "pin map_v1_7",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin map_v1_7: adversarial_map_staging/adversarial_map_v1_7.json is 855b3280eac082aa9c273eaf80f4e8b2, header names db40b45693eff1297b3f3152c6295c15"
+  },
+  {
+   "control": "C11",
+   "what": "a committed row is edited in place",
+   "want_rc": 1,
+   "want_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "append-only: committed row U-001 was edited or removed"
+  },
+  {
+   "control": "C12",
+   "what": "a correction row supersedes properly",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C13",
+   "what": "the drafts record grows by an appended redraft",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C14",
+   "what": "a committed drafts row is edited in place",
+   "want_rc": 1,
+   "want_message": "not merely grown by appended rows",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin drafts: adversarial_map_staging/r1/L7_successor_drafts.json is e8a35cf14b78ee7dab71401b3beb6fab, header names fd9267f853a5a09fe5aa3972b16fa2a7, and it has not merely grown by appended rows"
+  },
+  {
+   "control": "C15",
+   "what": "the canon is gone (the rename convention)",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C16",
+   "what": "the corpus moves (a later pin): a quoted span is gone",
+   "want_rc": 0,
+   "want_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "first_failure": null
+  },
+  {
+   "control": "C17",
+   "what": "the same, with git history withheld",
+   "want_rc": 1,
+   "want_message": "not in git history",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "pin corpus: efilist_argument_library_v4_0_0.json is not at 7b6e65e531018fecb37baf2a4fedd6d1 and its pinned bytes are not in git history"
+  },
+  {
+   "control": "C18",
+   "what": "a finding names an entry R1 never ruled",
+   "want_rc": 1,
+   "want_message": "are not R1 entries",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-063: entries [999] are not R1 entries"
+  },
+  {
+   "control": "C19",
+   "what": "an artifact row names a file the header does not judge",
+   "want_rc": 1,
+   "want_message": "is not one the header pins",
+   "rc": 1,
+   "as_expected": true,
+   "first_failure": "U-052: artifact adversarial_map_staging/adv_map_validator_v0_6.py is not one the header pins as judged"
+  }
+ ],
+ "all_as_expected": true
+}
