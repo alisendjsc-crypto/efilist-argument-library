@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The argument-shapes pilot judged — 2026-10-03 (no release; the pin stands)
+
+A seat that drafted none of the ten shapes judged them. Five stand as drafted. Two stand with a correction owed: one is stated more weakly than its source argues it, and one ends at a recorded disagreement rather than at a clean answer. Three were set aside because each turned out to be another objection's argument, already stated on that objection's card. One shape is left for the library to answer on its cards; its route waits for Josiah's word. Canon v38.49 records the judgment. No served page changed.
+
 ## The argument-shapes pilot drafted, and the owed rulings recorded — 2026-10-03 (no release; the pin stands)
 
 Ten "shapes" were drafted for six objections: the same objection argued from a different premise, each tied to a real instance or a checked publication. Two are answered cleanly by the library, two are answered in text the map already marks as flawed, five end where the map records a standing disagreement, and one turned out to be a different objection. A seat that drafted none of them judges them next. Canon v38.48 records Josiah's words owed since 2026-10-02, verbatim, including his pointer to his own argument for life, which opens the next intake. No served page changed.

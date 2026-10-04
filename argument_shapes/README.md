@@ -1,8 +1,9 @@
 # argument_shapes/ -- the same objection, a different argument (V1)
 
 Seat l, V1, 2026-09-26. **Not served** (`site/` is the served tree) and **not canon**. V2 (2026-10-03)
-drafted the pilot: 10 shapes over the six R-V4 nodes, drafted, not judged. gate2 judges it (V3). Then, on
-his word, V4 puts the (a) shapes in the corpus and renders them on the flagship.
+drafted the pilot: 10 shapes over the six R-V4 nodes. gate2 judged it in V3 (2026-10-03): 5 ACCEPT, 2 AMEND,
+3 REJECT; judged, not ruled. Then, on his word, V4 puts the (a) shapes in the corpus and renders them on the
+flagship.
 
 Built from the variations design v0_1, sections 3 and 4 (`design/variations/VARIATIONS_design_v0_1.md`,
 md5 `fcf6f6fe`). His word on its six rulings: *"Go with your leans on all of the rulings."* That word is
@@ -18,6 +19,9 @@ recorded in canon v38.42, `adversarial_map.variations_rulings_V0`.
 | `shapes_pilot_v0_1.json` | The pilot (V2): 10 shapes, `bound_for: "staging"`, phase S, pinned to corpus `7b6e65e5`. Classes a2 b2 c1 d5. Validator PASS, 0 violations. |
 | `shapes_pilot_measure_v0_1.json` | The pilot's measurement (design section 5): the cross-node share, the classes against R1, words per shape, the bar for a different shape, each (d)'s bedrock copied from the map and register, the collision check with the drafter's reading, the dropped candidates. |
 | `build_shapes_pilot.py` | Builds both from the shapes it holds; `--check` reproduces them byte for byte. |
+| `shapes_pilot_judgments.json` | gate2's judgment (V3): 23 rows, append-only. Each shape read four ways (the routing by R1's method, the strongest form, a shape and not a surface, the source makes the move) plus its class; the three pulls; the measurement. Every quote verbatim at pinned bytes. |
+| `shapes_judgments_gate.py` | The gate on that record: pins, coverage, routes, quotes, figures, append-only history. `--self-test` runs `shapes_judgments_gate_control_v0_1.json` (16 cases, the unmutated record first). |
+| `shapes_judgment_reading.py` | gate2's reading instrument: every figure the record states, recomputed from the judged artifacts at their md5s, into `shapes_judgment_reading_v0_1.json`; `--check` reproduces it. Needs the game's repository (the scholar lines). |
 
 ## The rules it enforces
 

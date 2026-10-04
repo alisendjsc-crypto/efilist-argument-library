@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.48",
+  "canon_version": "38.49",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V2",
+  "last_updated_by_session": "V3",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V2 recorded the words owed since R0274 and drafted the argument-shapes pilot (10 shapes over 6 nodes; classes a2 b2 c1 d5). Next, in order: (1) V3, gate2 judges the pilot, drafter != judge, then his word; (2) the responseVariants design (R0294), a small variations-lane session; (3) the relief variant, drafted from his words in relief_view_for_the_variant, judged by a seat that drafted none of it; (4) the next declared pin session, whose queue holds safety_queue_L7, the two phrases of pin_queue_additions_R0292 and the served-text repairs carried since L1 and LD3. After the pilot is judged: the variations intake, love-from-the-void first, then the R-V6 self-objection batch.",
+    "session": "The pin is v4.1.5. V3 (gate2) judged the argument-shapes pilot: 7 of 10 shapes kept (classes a1 b1 c1 d4); three were other nodes' objections. Next, in order: (1) his word on the six asks in adversarial_map.shapes_pilot_judgment_gate2.asks; (2) seat l's two redrafts (SJ-003's statement, SJ-008's route) as new rows or a new file, judged by gate2; (3) the responseVariants design (R0294); (4) the relief variant, from relief_view_for_the_variant, judged by a seat that drafted none of it; (5) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). After his word: V4 puts the one (a) in the corpus after the successor map's pin; the (d)s enter the map at its next validator bump; the (c) opens the intake, love-from-the-void first.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1887,6 +1887,11 @@
         "shapes_pilot_V2",
         "record_notes_V2"
       ]
+    },
+    "V3_closed": {
+      "state": "JUDGED, NOT RULED",
+      "block": "shapes_pilot_judgment_gate2",
+      "canon_writer_next": "seat l"
     }
   },
   "open_questions": {
@@ -2018,7 +2023,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.48",
+  "canon_version_marker": "v38.49",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2726,7 +2731,8 @@
     "v38_45_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_redrafts_L7, terminal_assembly_v1_8_L7, honest_residuals_register_pin_v0_9, knock_on_successor_L7, successor_carries_L7_round2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. No served byte moved.",
     "v38_46_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (successor_redrafts_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
     "v38_47_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_rulings_L7, successor_map_stands_L7, safety_queue_L7, U_065_route_BUILT_L7, adversarial_tab_icon_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: site/adversarial/index.html (the tab icon), no pin.",
-    "v38_48_V2": "MINOR. keyset UNCHANGED at 42. adversarial_map gains vault_v2_rulings_R0274, his_words_L8, relief_view_for_the_variant, love_from_the_void_intake_V2, r_v6_candidates_V2, pin_queue_additions_R0292, shapes_pilot_V2, record_notes_V2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_48_V2": "MINOR. keyset UNCHANGED at 42. adversarial_map gains vault_v2_rulings_R0274, his_words_L8, relief_view_for_the_variant, love_from_the_void_intake_V2, r_v6_candidates_V2, pin_queue_additions_R0292, shapes_pilot_V2, record_notes_V2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_49_V3": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_pilot_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2984,7 +2990,8 @@
     "L7 (2026-09-26), second round: gate2's 18 AMENDs redrafted as superseding rows (SM-52..SM-69); adversarial_map_v1_8.json (v1_7 plus the redrafts), register v0_9 (SM-69 moves to HR-02), the knock-on as a build control (U-064). No pin.",
     "gate2 (2026-09-26; NO PIN): L7's 18 redrafts judged (R0245). Record 8f2ee5e4: all ACCEPT (16 without the corpus-history wording, SM-55's hub condition as it stands, SM-69 pressing the diagnosis to HR-02); v1_8, v0_9, the knock-on control (12, which corrects gate2's own 9) and the controls_v1_7 change CONFIRM; the U-065 route CONFIRM with two conditions. R0244's condition met; canon back to L7.",
     "L7 (2026-09-26/27), close: his word on R0244; R1-071..R1-075 (HOLDS for #11, #22, #32, #50 and n=70, the (a) at self-defeating#long) through the evidence addendum, read by r1_rulings_gate_v0_2, r1_quote_check_v0_2 and r1_collision_list_l7; the successor map v1_8 stands; the /adversarial/ tab icon wired. No pin.",
-    "V2 (2026-10-03): his words owed since R0274 recorded verbatim from the user turns (R0274's six V2 rulings; R0292; R0294; R0295; R0296's pointer to love-from-the-void, now the post-pilot intake's first item); the argument-shapes pilot drafted on the six R-V4 nodes, validator PASS 0, for gate2 (V3). No pin."
+    "V2 (2026-10-03): his words owed since R0274 recorded verbatim from the user turns (R0274's six V2 rulings; R0292; R0294; R0295; R0296's pointer to love-from-the-void, now the post-pilot intake's first item); the argument-shapes pilot drafted on the six R-V4 nodes, validator PASS 0, for gate2 (V3). No pin.",
+    "V3 (gate2, 2026-10-03): the argument-shapes pilot judged (R0297): 5 ACCEPT, 2 AMEND, 3 REJECT. Three shapes were other nodes' scholar objections (gods-plan, extinction-culture, love-beauty-art); soul-making is (d) at HR-02, not (a); the golden rule owes Hare's weighed duty. One (a) remains, for V4. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -11102,7 +11109,389 @@
         "statement": "R0288 F6: love-from-the-void 'sits beside red-button'",
         "measured": "corrected by R0296: it is an argument for continued life (love_from_the_void_intake_V2)"
       }
-    ]
+    ],
+    "shapes_pilot_judgment_gate2": {
+      "state": "JUDGED, NOT RULED (V3, gate2, 2026-10-03). His word decides; nothing ships on a judgment.",
+      "K258": "gate2 drafted none of the pilot, its measurement, its builder, the validator or its control.",
+      "kickoff": {
+        "relay": "R0297",
+        "md5": "2a8a8ca2deea71aa39b1f12f30d7dc53"
+      },
+      "files": {
+        "record": {
+          "file": "argument_shapes/shapes_pilot_judgments.json",
+          "md5": "73503bccdd3ddf8b3a82f280181251d4",
+          "bytes": 53197
+        },
+        "gate": {
+          "file": "argument_shapes/shapes_judgments_gate.py",
+          "md5": "f56df1e7fdaa82bf3c0f1a11e9622837",
+          "bytes": 19268
+        },
+        "control": {
+          "file": "argument_shapes/shapes_judgments_gate_control_v0_1.json",
+          "md5": "5e669db46153c2e643a625a5c507075c",
+          "bytes": 2452
+        },
+        "reading": {
+          "file": "argument_shapes/shapes_judgment_reading.py",
+          "md5": "62f96b58c1d8422ed46cb58d3e489947",
+          "bytes": 14594
+        },
+        "reading_record": {
+          "file": "argument_shapes/shapes_judgment_reading_v0_1.json",
+          "md5": "0f1c71f9c31f985329cc27b011376c11",
+          "bytes": 14914
+        }
+      },
+      "judged": {
+        "pilot": {
+          "file": "argument_shapes/shapes_pilot_v0_1.json",
+          "md5": "1f9c5da6166b538a90efa6dc7598124e"
+        },
+        "measure": {
+          "file": "argument_shapes/shapes_pilot_measure_v0_1.json",
+          "md5": "576be8f2c469f84b4bc9ca628d9b41c1"
+        },
+        "builder": {
+          "file": "argument_shapes/build_shapes_pilot.py",
+          "md5": "4623c057a98482b85662b138acfc786e"
+        },
+        "validator": {
+          "file": "argument_shapes/shape_validator_v0_1.py",
+          "md5": "64553b25b6db0ff67edeb87b89178297"
+        },
+        "validator_control": {
+          "file": "argument_shapes/shape_validator_control_v0_1.json",
+          "md5": "64222600e415617bcd3ab8f7b8e453ef"
+        },
+        "schema": {
+          "file": "argument_shapes/argument_shapes_schema_v0_1.json",
+          "md5": "bef95b1dc2b9cb109760cd961d2da72b"
+        },
+        "corpus": {
+          "file": "efilist_argument_library_v4_0_0.json",
+          "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+        },
+        "map_v1_8": {
+          "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+          "md5": "691930ab76908a85a6850bdb714d3827"
+        },
+        "register_v0_9": {
+          "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+          "md5": "8e53d920099e8b850baa2879dfd3e351"
+        },
+        "rulings": {
+          "file": "adversarial_map_staging/r1/R1_rulings.json",
+          "md5": "f7d02b16f6837e53033b3c7fb68332a9"
+        },
+        "layman": {
+          "file": "site/flagship-layman-index.json",
+          "md5": "7a1f0881a6a9e964a4155d7897c312f8"
+        },
+        "scholar": {
+          "repo": "~/D/Argue the Argument",
+          "commit": "76cbbd13ef967617b181697675bd15dbbf0a6a0b",
+          "file": "data/flagship/scholar-objections_v1_1.json",
+          "md5": "20999eb9b1b384d0f871a9deec464b2a"
+        },
+        "canon": {
+          "file": "project_canon_v38_48.json",
+          "md5": "c971855b153a297f182503c342b3659c"
+        },
+        "design": {
+          "file": "design/variations/VARIATIONS_design_v0_1.md",
+          "md5": "fcf6f6fe0813072a3c66edd723a1ec80"
+        }
+      },
+      "counts": {
+        "shapes": {
+          "ACCEPT": 5,
+          "AMEND": 2,
+          "REJECT": 3
+        },
+        "kept": 7,
+        "classes_judged": {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "d": 4
+        },
+        "rows": 23
+      },
+      "verdicts": {
+        "life-gift/the-giver-vouches-for-the-gift": {
+          "row": "SJ-001",
+          "verdict": "REJECT",
+          "class_drafted": "b",
+          "class_judged": null,
+          "belongs_to": "gods-plan",
+          "route": null,
+          "reason": "Not a life-gift shape: another node's objection, a surface there. What the two theological instances attest is life-gift's own trigger said by a theist, which needs no shape."
+        },
+        "life-gift/a-gift-to-the-world": {
+          "row": "SJ-002",
+          "verdict": "REJECT",
+          "class_drafted": "d",
+          "class_judged": null,
+          "belongs_to": "extinction-culture",
+          "route": null,
+          "reason": "Not a life-gift shape: extinction-culture's objection under a new noun, a surface there."
+        },
+        "life-gift/the-golden-rule-passes-it-on": {
+          "row": "SJ-003",
+          "verdict": "AMEND",
+          "class_drafted": "d",
+          "class_judged": "d",
+          "belongs_to": null,
+          "route": {
+            "via": "joy-outweighs-harms#long",
+            "bedrock": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            }
+          },
+          "reason": "A real shape, rightly classed, stated a step weaker than its source. AMEND the statement only."
+        },
+        "joy-outweighs-harms/good-in-itself-not-a-sum": {
+          "row": "SJ-004",
+          "verdict": "REJECT",
+          "class_drafted": "d",
+          "class_judged": null,
+          "belongs_to": "love-beauty-art",
+          "route": null,
+          "reason": "Not a joy-outweighs-harms shape: love-beauty-art's objection, a surface there."
+        },
+        "future-solve/raise-the-people-who-fix-it": {
+          "row": "SJ-005",
+          "verdict": "ACCEPT",
+          "class_drafted": "a",
+          "class_judged": "a",
+          "belongs_to": null,
+          "route": {
+            "answered_by": [
+              "next-person-cure-cancer#long"
+            ]
+          },
+          "reason": "Accepted. The pilot's one (a); its right card is another objection's."
+        },
+        "future-solve/the-obligation-to-survive": {
+          "row": "SJ-006",
+          "verdict": "ACCEPT",
+          "class_drafted": "b",
+          "class_judged": "b",
+          "belongs_to": null,
+          "route": {
+            "answered_by": [
+              "wild-animal-suffering-consistency#long",
+              "transhumanist-objection#long"
+            ]
+          },
+          "reason": "Accepted as (b). The repair belongs where the terminus is stated."
+        },
+        "free-will-defense/everyone-comes-home-at-last": {
+          "row": "SJ-007",
+          "verdict": "ACCEPT",
+          "class_drafted": "c",
+          "class_judged": "c",
+          "belongs_to": null,
+          "route": {
+            "intake": "the new-objection intake (R-V2, R-V6), after his word"
+          },
+          "reason": "Accepted as (c), to the intake, which should test it as a gods-plan shape before minting a node."
+        },
+        "free-will-defense/a-vale-of-soul-making": {
+          "row": "SJ-008",
+          "verdict": "AMEND",
+          "class_drafted": "a",
+          "class_judged": "d",
+          "belongs_to": null,
+          "route": {
+            "via": "suffering-makes-human#long",
+            "bedrock": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            }
+          },
+          "reason": "A shape, but its class is (d), not (a). AMEND: the route."
+        },
+        "meta-ethical-pluralism/many-peaks-one-landscape": {
+          "row": "SJ-009",
+          "verdict": "ACCEPT",
+          "class_drafted": "d",
+          "class_judged": "d",
+          "belongs_to": null,
+          "route": {
+            "via": "meta-ethical-pluralism#medium",
+            "bedrock": {
+              "bedrock_id": "HR-09",
+              "name": "Tolerance-weighting pluralism",
+              "facet": "lexical-priority-above-suffering-minimization"
+            }
+          },
+          "reason": "Accepted as (d)."
+        },
+        "meaning-through-suffering/heroism-redeems-being": {
+          "row": "SJ-010",
+          "verdict": "ACCEPT",
+          "class_drafted": "d",
+          "class_judged": "d",
+          "belongs_to": null,
+          "route": {
+            "via": "meaning-through-suffering#long",
+            "bedrock": {
+              "bedrock_id": "HR-03",
+              "name": "Impersonal vs person-affecting axiology",
+              "facet": "value-requires-a-valuer"
+            }
+          },
+          "reason": "Accepted as (d)."
+        }
+      },
+      "pulls": {
+        "SJ-011": {
+          "pull": "future-solve/the-obligation-to-survive: (b) over (a)",
+          "verdict": "CONFIRM",
+          "answer": "The drafter asked whether the library's extinction terminus is the commitment the shape presses (\"(b) was chosen because the library's extinction terminus is the commitment the shape presses\"). It is. The shape argues against ending human births from the antinatalist's own premise, and the library states its extinction terminus on suffering-minimisation, which that premise turns against it. Against the core alone, (a) at wild-animal-suffering-consistency#long would hold; the shape does not stop at the core. (b), as drafted (SJ-006)."
+        },
+        "SJ-012": {
+          "pull": "free-will-defense/a-vale-of-soul-making (a) against meaning-through-suffering/heroism-redeems-being (d)",
+          "verdict": "CORRECT",
+          "answer": "The drafter asked gate2 to test the line (\"gate2 should test whether that line holds\"). It holds as a line between bedrocks, not between classes. The person-affecting form does not escape bedrock: a move about the created person's own goods is the intrapersonal horn the map already sends to HR-02, at suffering-makes-human#long and suffering-as-meaning#long (SJ-008). The impersonal form ends at HR-03 (SJ-010). Both are (d)."
+        },
+        "SJ-013": {
+          "pull": "meta-ethical-pluralism/many-peaks-one-landscape: the cut to the plurality of optima",
+          "verdict": "CONFIRM",
+          "answer": "The drafter left it open (\"Whether the cut understates his move is gate2's to read.\"). It does not understate this move. Harris's other move in the same episode, the descendants' lost beauty (\"deprived all of their descendants from even existing and discovering greater depths of beauty\"), is a separate instance the corpus attaches to love-beauty-art, whose (d) records it at HR-03 (\"Love, beauty, and art may carry impersonal, agent-neutral value\"). Folded in, it would make this shape love-beauty-art's objection, SJ-004's failure. The cut is node discipline."
+        }
+      },
+      "measures_after_judgment": {
+        "a_cross_node": "1 of 1",
+        "routed_cross_node": "4 of 6",
+        "not_shipping_as_a_of_drafted": "9 of 10",
+        "not_shipping_as_a_of_kept": "6 of 7",
+        "words_kept": {
+          "min": 51,
+          "max": 58,
+          "mean": 54.6,
+          "n": 7
+        },
+        "per_node": {
+          "free-will-defense": 2,
+          "future-solve": 2,
+          "life-gift": 1,
+          "meaning-through-suffering": 1,
+          "meta-ethical-pluralism": 1
+        }
+      },
+      "measures_as_drafted_recomputed": {
+        "a_cross_node": "1 of 2",
+        "routed_cross_node": "5 of 9",
+        "not_shipping_as_a": "8 of 10",
+        "words": {
+          "min": 51,
+          "max": 58,
+          "mean": 54.3,
+          "n": 10
+        }
+      },
+      "findings": [
+        {
+          "row": "SJ-015",
+          "finding": "The wording is right, and V2 applied its another-node clause to the dropped candidates (\"another node's objection (epistemic-humility)\"). It was not applied to the drafted shapes against other nodes' lines, and three fail it (SJ-001, SJ-002, SJ-004). A lexical floor flags one of the three: TF-IDF over every node's trigger, layman and scholar lines ranks love-beauty-art first for SJ-004, above the shape's own node; it ranks gods-plan 8th for SJ-001 and extinction-culture 4th for SJ-002, although their scholar lines state those shapes clause for clause. Like a named-pattern sweep, a lexical neighbour list is a floor, not a census.",
+          "recommendation": "Read the scholar lines of every node whose subject a shape touches (the theistic, the goods-of-life and the extinction nodes at least), not only its own node's."
+        },
+        {
+          "row": "SJ-016",
+          "finding": "Recomputed under the v0_2 rule without the builder, the collisions match the measurement for all four shapes it routed through answering loci, and the drafter's reading of each is right: the own-node (b) at future-solve#short is met by neither future-solve shape, and the own-node (d) at life-gift#long is not pressed. The rule cannot see SJ-008's case: the (d)s that record where its answer ends sit on nodes that share its premise, not on the answering node, so its list is empty while its route fails.",
+          "recommendation": "For shapes, read as collisions the (d)s on nodes whose objection carries the shape's load-bearing premise, as well as the rule's list."
+        },
+        {
+          "row": "SJ-021",
+          "finding": "benatar-asymmetry-attack#long rests its deprivation account on a datum (\"Almost no one—Bradley and Harman included—holds that declining to create a happy person wrongs that possible person\"). Hare 1988, by the records checked here, holds it, and SJ-003 is its shape. One published holder does not falsify almost no one, but the datum is offered as common ground.",
+          "recommendation": "When SJ-003's (d) enters the map at the successor map's bump, read whether the hub's datum should name its dissenter. Not judged here."
+        }
+      ],
+      "owed_to_seat_l": [
+        {
+          "row": "SJ-003",
+          "shape_id": "life-gift/the-golden-rule-passes-it-on",
+          "owed": [
+            "Seat l restates the duty as Hare states it, weighed with everyone's preferences, other things equal, inside the 30-70 band, in a new row or file. Class and route unchanged."
+          ]
+        },
+        {
+          "row": "SJ-008",
+          "shape_id": "free-will-defense/a-vale-of-soul-making",
+          "owed": [
+            "Seat l carries this shape as (d) in a new row or file, never in the pilot: no answering locus; terminus via suffering-makes-human#long at the anchor above, its bedrock copied from that entry and the register (HR-02, merely-possible-beneficiary) as this row's route states. The statement stands."
+          ]
+        }
+      ],
+      "carries": [
+        {
+          "row": "SJ-001",
+          "carry": "None for the pilot. A third life-gift shape is attestation-bound: the dropped beneficial-imposition candidate still lacks a checked source."
+        },
+        {
+          "row": "SJ-003",
+          "carry": "SJ-021: the shape is a published instance of the view the hub's datum says almost no one holds."
+        },
+        {
+          "row": "SJ-006",
+          "carry": "Regen queue: the headline (b) at transhumanist-objection#long now has two scenarios its repair must meet, abolition and this one; its pricing clause is false for human extinction while wild sentience remains."
+        },
+        {
+          "row": "SJ-007",
+          "carry": "Intake: test it first against gods-plan's bar, and against harman-benign-creation (every life guaranteed above the threshold), before a new node."
+        },
+        {
+          "row": "SJ-007",
+          "carry": "Hick's own theodicy ends in universal salvation (IEP entry, read this session), so the intake's strongest form of this shape is soul-making completed after death; read with SJ-008."
+        },
+        {
+          "row": "SJ-007",
+          "carry": "Safety: \"a finite stretch before an infinite good\" encourages nothing, but heard alone by someone in crisis it could sound like consolation about dying. It is not served and goes to the intake; keep it off any crisis-adjacent surface."
+        }
+      ],
+      "asks": [
+        {
+          "ask": "Adopt the judgment: 5 ACCEPT, 2 AMEND, 3 REJECT.",
+          "lean": "adopt; every verdict reads from text at pinned bytes, and the three REJECTs follow V2's own bar"
+        },
+        {
+          "ask": "The (a) goes to V4, after the successor map's pin: future-solve/raise-the-people-who-fix-it alone.",
+          "lean": "yes; it is the one shape the library answers cleanly"
+        },
+        {
+          "ask": "The (b) goes to the regen queue: future-solve/the-obligation-to-survive, as a second scenario on the existing headline (b) at transhumanist-objection#long, not a new item.",
+          "lean": "yes; one repair should meet both scenarios"
+        },
+        {
+          "ask": "The (d)s go to the map at the successor map's next validator bump: many-peaks and heroism as they stand; golden-rule and soul-making once seat l's redrafts are judged.",
+          "lean": "yes"
+        },
+        {
+          "ask": "The (c) goes to the intake, tested first as a gods-plan shape.",
+          "lean": "yes; the bar reads it as gods-plan's before it reads it as new"
+        },
+        {
+          "ask": "The three REJECTs leave life-gift with one shape and joy-outweighs-harms with none. Redraft replacements now?",
+          "lean": "no; the scale-up is attestation-bound, and V4 ships only (a)s"
+        }
+      ],
+      "order": "His word; seat l's two redrafts (SJ-003's statement, SJ-008's route) as new rows or a new file; gate2 judges them; V4 after the successor map's pin. Canon passes back to seat l.",
+      "collision_list_record_moved": {
+        "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+        "md5": "4c531b9d93f48b3aefe93196ce04046f",
+        "bytes": 9618,
+        "was": "d6353d243bc297797127c15d8b3f1539",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_48 to v38_49); regenerated by the tool's own --write"
+      },
+      "not_moved": "the pilot, its measurement, its builder, the validator, its control and the schema (the gate pins them); the map validator; no corpus or served byte"
+    }
   },
   "flagship_sidecars": {
     "block_kind": "flagship_sidecars",

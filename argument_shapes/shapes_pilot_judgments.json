@@ -1,0 +1,951 @@
+{
+ "artifact": "shapes_pilot_judgments.json",
+ "state": "JUDGED, NOT RULED. gate2's judgment (V3) of V2's argument-shapes pilot: the ten shapes, read four ways plus the class, the drafter's three pulls, and the measurement. Josiah's word decides; nothing ships on a judgment.",
+ "law": "APPEND-ONLY. A row is never edited or removed; a correction is a new row whose 'supersedes' names the row it replaces. Every double-quoted span in a row's text is declared in that row's quotes and is verbatim at its source, read at the bytes this header pins: pilot:<shape_id>.<field>, measure:<dotted.path>, corpus:<node>#<slot>, map:#<entry>.<field>, register:<HR-id>.<field>, canon:<dotted.path>, scholar:<node>, layman:<node>.<field>, rwe:<instance_id>.<field>. Figures a row states as measured are read from the reading record. An AMEND goes back to seat l as a new row or file, never as an edit of the pilot. Gate: shapes_judgments_gate.py beside this file.",
+ "what_a_verdict_means": {
+  "ACCEPT": "the shape is a shape of its node, stated at full strength, its source makes the move, and it routes as class_judged says; it takes that route once he gives his word",
+  "AMEND": "a shape of its node with a named defect still owed, corrected by seat l in a new row or file",
+  "REJECT": "not a shape of its node: another node's objection, or a surface; belongs_to names where it lives",
+  "CONFIRM": "the measure, pull, route or artifact is right as made",
+  "CORRECT": "it is wrong, and what is owed is named"
+ },
+ "his_word": [
+  {
+   "verbatim": "makes sure the safety harness is never \"pro-life\". It only needs to follow local laws. While it is never encouraging self-harm or suicide or homicide, it should not change into a pro-life sentiment about life's inherent goodness.",
+   "src": "canon:adversarial_map.safety_pass_LANDED_L6.the_bar.his_words_verbatim",
+   "applies": "every shape (R0297's laws)"
+  },
+  {
+   "verbatim": "Go with your leans on all of the rulings.",
+   "src": "canon:adversarial_map.variations_rulings_V0.his_words_verbatim",
+   "applies": "the variations design, its class law for shapes and the pilot"
+  },
+  {
+   "verbatim": "Go with your recommendations on all of the above. Proceed as you wish.",
+   "src": "canon:adversarial_map.R1_rules_L3.his_words_verbatim",
+   "applies": "R1's L3 rules, the joy-outweighs-harms reading among them, used here for routes about the created person's own goods and about others' goods"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0297",
+  "md5": "2a8a8ca2deea71aa39b1f12f30d7dc53"
+ },
+ "judged": {
+  "pilot": {
+   "file": "argument_shapes/shapes_pilot_v0_1.json",
+   "md5": "1f9c5da6166b538a90efa6dc7598124e"
+  },
+  "measure": {
+   "file": "argument_shapes/shapes_pilot_measure_v0_1.json",
+   "md5": "576be8f2c469f84b4bc9ca628d9b41c1"
+  },
+  "builder": {
+   "file": "argument_shapes/build_shapes_pilot.py",
+   "md5": "4623c057a98482b85662b138acfc786e"
+  },
+  "validator": {
+   "file": "argument_shapes/shape_validator_v0_1.py",
+   "md5": "64553b25b6db0ff67edeb87b89178297"
+  },
+  "validator_control": {
+   "file": "argument_shapes/shape_validator_control_v0_1.json",
+   "md5": "64222600e415617bcd3ab8f7b8e453ef"
+  },
+  "schema": {
+   "file": "argument_shapes/argument_shapes_schema_v0_1.json",
+   "md5": "bef95b1dc2b9cb109760cd961d2da72b"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "map_v1_8": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register_v0_9": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "f7d02b16f6837e53033b3c7fb68332a9"
+  },
+  "layman": {
+   "file": "site/flagship-layman-index.json",
+   "md5": "7a1f0881a6a9e964a4155d7897c312f8"
+  },
+  "scholar": {
+   "repo": "~/D/Argue the Argument",
+   "commit": "76cbbd13ef967617b181697675bd15dbbf0a6a0b",
+   "file": "data/flagship/scholar-objections_v1_1.json",
+   "md5": "20999eb9b1b384d0f871a9deec464b2a"
+  },
+  "canon": {
+   "file": "project_canon_v38_48.json",
+   "md5": "c971855b153a297f182503c342b3659c"
+  },
+  "design": {
+   "file": "design/variations/VARIATIONS_design_v0_1.md",
+   "md5": "fcf6f6fe0813072a3c66edd723a1ec80"
+  }
+ },
+ "instrument": {
+  "file": "argument_shapes/shapes_judgment_reading.py",
+  "record": "argument_shapes/shapes_judgment_reading_v0_1.json",
+  "note": "every figure the rows state as measured, recomputed from the judged artifacts at their pinned md5s; the record's md5 is pinned by the gate and by canon v38.49"
+ },
+ "rows": [
+  {
+   "id": "SJ-001",
+   "kind": "shape",
+   "shape_id": "life-gift/the-giver-vouches-for-the-gift",
+   "class_drafted": "b",
+   "class_judged": null,
+   "verdict": "REJECT",
+   "belongs_to": "gods-plan",
+   "route": null,
+   "reads": {
+    "routing": "Moot. Were it gods-plan's, the drafter's (b) would be right: the (b) at gods-plan#long records that \"skeptical theism is a defense, not a theodicy\" and that the node never engages it. That (b) is already a regen candidate (minor, c/r), so the shape would add nothing to the queue.",
+    "strongest_form": "At full strength, because it is the scholar line's strength.",
+    "shape_not_surface": "FAILS. The statement is gods-plan's scholar objection, clause for clause: the giver is God (\"If existence issues from a creator whose act is gift and whose command\"), the pain hides a good (\"Skeptical theism supplies the epistemic discipline\"), and refusing is an affront to the giver (\"the creature presuming to audit the Creator\"; the shape: \"To refuse to pass life on is to call the Giver a liar about His own gift.\"). The measurement's own bar puts it there: \"A shape that is another node's objection belongs to that node, not here.\" At gods-plan it is a surface of that scholar line, so it is a shape nowhere. The drafter tested it against life-gift's lines only.",
+    "source": "In part. The instances make the giver move (\"life-as-gift is the proper view because God-as-giver is the proper background\"); neither makes the hidden-good move. Instance 002's eschatology (\"the gift of being-with-God-eternally is what natalists actually offer\") is the (c) shape's move (SJ-007). The skeptical-theist clause came from gods-plan's scholar line, not from the sources."
+   },
+   "reason": "Not a life-gift shape: another node's objection, a surface there. What the two theological instances attest is life-gift's own trigger said by a theist, which needs no shape.",
+   "owed": [],
+   "carries": [
+    "None for the pilot. A third life-gift shape is attestation-bound: the dropped beneficial-imposition candidate still lacks a checked source."
+   ],
+   "quotes": [
+    {
+     "src": "map:#34.adversarial_move",
+     "quote": "skeptical theism is a defense, not a theodicy"
+    },
+    {
+     "src": "scholar:gods-plan",
+     "quote": "If existence issues from a creator whose act is gift and whose command"
+    },
+    {
+     "src": "scholar:gods-plan",
+     "quote": "Skeptical theism supplies the epistemic discipline"
+    },
+    {
+     "src": "scholar:gods-plan",
+     "quote": "the creature presuming to audit the Creator"
+    },
+    {
+     "src": "pilot:life-gift/the-giver-vouches-for-the-gift.statement",
+     "quote": "To refuse to pass life on is to call the Giver a liar about His own gift."
+    },
+    {
+     "src": "measure:measures.bar_for_a_different_shape",
+     "quote": "A shape that is another node's objection belongs to that node, not here."
+    },
+    {
+     "src": "rwe:life-gift-001.rhetorical_move_observed",
+     "quote": "life-as-gift is the proper view because God-as-giver is the proper background"
+    },
+    {
+     "src": "rwe:life-gift-002.paraphrased_summary",
+     "quote": "the gift of being-with-God-eternally is what natalists actually offer"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-002",
+   "kind": "shape",
+   "shape_id": "life-gift/a-gift-to-the-world",
+   "class_drafted": "d",
+   "class_judged": null,
+   "verdict": "REJECT",
+   "belongs_to": "extinction-culture",
+   "route": null,
+   "reads": {
+    "routing": "Moot. Were it kept, its strongest clause, the impersonal loss, reaches the (d) at extinction-culture#long as drafted (HR-03; the copy is confirmed in SJ-017), and its clause about others' goods is met at joy-outweighs-harms#long by his L3 reading (\"a move about others' goods is met there\").",
+    "strongest_form": "Its strongest clause is the impersonal one, at extinction-culture's own strength.",
+    "shape_not_surface": "FAILS. Its first sentence drops life-gift's conclusion (\"Forget whether the child owes thanks.\"), and the bar requires a shape to keep it. What carries it is the newcomer's value to others and to the world: extinction-culture's scholar objection (\"forecloses every good not yet realized\"; the shape: \"a world that stops making them throws away the source of everything worth valuing\"), with economy-population's warrant (\"claims written against future workers\") and next-person-cure-cancer's (\"procreation carries option value\") in its list. The bar names the case: \"A new noun for the same move is a surface\". Here the noun is gift. Its terminus being extinction-culture's own (d) is the measurement saying the same.",
+    "source": "For the resource clause, yes: the instance asserts that \"children are the most valuable resource humanity has\". The extinction clause is the drafter's extension."
+   },
+   "reason": "Not a life-gift shape: extinction-culture's objection under a new noun, a surface there.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.R1_rules_L3.joy_outweighs_reading.the_recommendation_he_adopted",
+     "quote": "a move about others' goods is met there"
+    },
+    {
+     "src": "pilot:life-gift/a-gift-to-the-world.statement",
+     "quote": "Forget whether the child owes thanks."
+    },
+    {
+     "src": "scholar:extinction-culture",
+     "quote": "forecloses every good not yet realized"
+    },
+    {
+     "src": "pilot:life-gift/a-gift-to-the-world.statement",
+     "quote": "a world that stops making them throws away the source of everything worth valuing"
+    },
+    {
+     "src": "scholar:economy-population",
+     "quote": "claims written against future workers"
+    },
+    {
+     "src": "scholar:next-person-cure-cancer",
+     "quote": "procreation carries option value"
+    },
+    {
+     "src": "measure:measures.bar_for_a_different_shape",
+     "quote": "A new noun for the same move is a surface"
+    },
+    {
+     "src": "rwe:anton-children-most-valuable-001.paraphrased_summary",
+     "quote": "children are the most valuable resource humanity has"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-003",
+   "kind": "shape",
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "class_drafted": "d",
+   "class_judged": "d",
+   "verdict": "AMEND",
+   "belongs_to": null,
+   "route": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    }
+   },
+   "reads": {
+    "routing": "(d) HOLDS. The premise that carries it, that a person who would be glad to exist is harmed by never being created, is a claim about the created person's own good, and his L3 reading sends that to HR-02 (\"a move about the created person's own goods ends at HR-02\"); the (d) at joy-outweighs-harms#long states the premise as its open remainder. The library meets the golden-rule clause at life-gift#long (\"no one is worse off for its absence, because there is no one\") and the duty at rights-future-generations#long (\"The obligation would be literally infinite\"), but both rest on the deprivation account the shape denies. The own-node (d) at life-gift#long is not met: it presses the antecedent-stake condition from the other side (\"takes your side down with the natalist's\"), which this shape never does.",
+    "strongest_form": "FAILS, narrowly. In the secondary records checked here, Hare's duty is to weigh possible people's preferences, not an unconditional duty to create; the shape says \"so passing life on is a duty, not a gamble\". Unqualified, it hands the library a reductio that Hare's form escapes (rights-future-generations#long, above), so the card would meet a weaker argument than Hare makes. The class does not move: qualified, the line ends at the same (d).",
+    "shape_not_surface": "Passes. No locus states the golden rule (the reading counts the phrase in the corpus), and life-gift's scholar line uses gladness as evidence of a benefit, not as a premise universalized into a duty.",
+    "source": "Yes, by secondary record only: Hare 1988 holds that a merely possible person can be harmed by being denied existence, from the golden rule. The publisher's page and two secondary records agree; the full text was read by neither V2 nor V3 (the university repository returned 403)."
+   },
+   "reason": "A real shape, rightly classed, stated a step weaker than its source. AMEND the statement only.",
+   "owed": [
+    "Seat l restates the duty as Hare states it, weighed with everyone's preferences, other things equal, inside the 30-70 band, in a new row or file. Class and route unchanged."
+   ],
+   "carries": [
+    "SJ-021: the shape is a published instance of the view the hub's datum says almost no one holds."
+   ],
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.R1_rules_L3.joy_outweighs_reading.the_recommendation_he_adopted",
+     "quote": "a move about the created person's own goods ends at HR-02"
+    },
+    {
+     "src": "corpus:life-gift#long",
+     "quote": "no one is worse off for its absence, because there is no one"
+    },
+    {
+     "src": "corpus:rights-future-generations#long",
+     "quote": "The obligation would be literally infinite"
+    },
+    {
+     "src": "map:#0.adversarial_move",
+     "quote": "takes your side down with the natalist's"
+    },
+    {
+     "src": "pilot:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "so passing life on is a duty, not a gamble"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-004",
+   "kind": "shape",
+   "shape_id": "joy-outweighs-harms/good-in-itself-not-a-sum",
+   "class_drafted": "d",
+   "class_judged": null,
+   "verdict": "REJECT",
+   "belongs_to": "love-beauty-art",
+   "route": null,
+   "reads": {
+    "routing": "Moot. Were it kept, his L3 reading would place it at HR-02 as drafted; but love-beauty-art#long answers it first (\"Give the goods their full weight.\").",
+    "strongest_form": "At strength.",
+    "shape_not_surface": "FAILS. The warrant is love-beauty-art's scholar line: goods that \"are not pleasant sensations to be netted against pains\", conferring worth that is \"not a ledger awaiting its suffering column\" (the shape: \"I am not adding anything up\"). Its goods are love-beauty-art's trigger (\"What about love? / Art? / Music?\"), and its last sentence (\"Giving someone a life that holds them gives them something good.\") is the move love-beauty-art#long meets by name (\"The objector's last and best move is the honest one\"). At love-beauty-art it is a surface of the scholar line. The drafter tested it against joy-outweighs-harms' own lines, where it does differ.",
+    "source": "Yes: the deployer asserts the balance and, by the instance's own record, retreats from it (\"later in-thread he concedes pleasure/pain are not additive\"). The retreat is real; it lands on another node's objection."
+   },
+   "reason": "Not a joy-outweighs-harms shape: love-beauty-art's objection, a surface there.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "corpus:love-beauty-art#long",
+     "quote": "Give the goods their full weight."
+    },
+    {
+     "src": "scholar:love-beauty-art",
+     "quote": "are not pleasant sensations to be netted against pains"
+    },
+    {
+     "src": "scholar:love-beauty-art",
+     "quote": "not a ledger awaiting its suffering column"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/good-in-itself-not-a-sum.statement",
+     "quote": "I am not adding anything up"
+    },
+    {
+     "src": "corpus:love-beauty-art#trigger",
+     "quote": "What about love? / Art? / Music?"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/good-in-itself-not-a-sum.statement",
+     "quote": "Giving someone a life that holds them gives them something good."
+    },
+    {
+     "src": "corpus:love-beauty-art#long",
+     "quote": "The objector's last and best move is the honest one"
+    },
+    {
+     "src": "rwe:joy-outweighs-harms-001.rhetorical_move_observed",
+     "quote": "later in-thread he concedes pleasure/pain are not additive"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-005",
+   "kind": "shape",
+   "shape_id": "future-solve/raise-the-people-who-fix-it",
+   "class_drafted": "a",
+   "class_judged": "a",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "answered_by": [
+     {
+      "locus": "next-person-cure-cancer#long",
+      "anchor": "creating a new consciousness to serve the interests of those already existing"
+     }
+    ]
+   },
+   "reads": {
+    "routing": "HOLDS. next-person-cure-cancer carries only (a)s on map v1_8 (the reading finds no (b) or (d) on any of its slots). The shape's goods are others' (\"it is an investment in the people who will fix things\"), and his L3 reading says such a move is met by the side-constraint (\"a move about others' goods is met there\"); the anchored sentence states that constraint, and the map already rules it the clean answer at that node (\"Third-party benefit does not license non-consensual imposition\"). The own-node (b) at future-solve#short is not met: the shape makes no transitional-sacrifice claim.",
+    "strongest_form": "At strength: it keeps the deployer's opener and puts the point about who stops having children in its first sentence.",
+    "shape_not_surface": "Passes, narrowly. Its premise, a child deliberately formed into a problem-solver, is stated by none of the trigger, the layman line (\"throw away exactly the minds that might fix everything\" comes closest) or the scholar line (\"keep the solvers coming\", the generational process); and it disowns next-person-cure-cancer's lottery.",
+    "source": "Yes: the instance's own sentence is the shape's premise (\"A well-raised kid is one of the better ways to improve the future.\")."
+   },
+   "reason": "Accepted. The pilot's one (a); its right card is another objection's.",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "pilot:future-solve/raise-the-people-who-fix-it.statement",
+     "quote": "it is an investment in the people who will fix things"
+    },
+    {
+     "src": "canon:adversarial_map.R1_rules_L3.joy_outweighs_reading.the_recommendation_he_adopted",
+     "quote": "a move about others' goods is met there"
+    },
+    {
+     "src": "map:#64.grounds",
+     "quote": "Third-party benefit does not license non-consensual imposition"
+    },
+    {
+     "src": "layman:future-solve.layman_trigger",
+     "quote": "throw away exactly the minds that might fix everything"
+    },
+    {
+     "src": "scholar:future-solve",
+     "quote": "keep the solvers coming"
+    },
+    {
+     "src": "rwe:future-solve-001.short_quote_under_15_words",
+     "quote": "A well-raised kid is one of the better ways to improve the future."
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-006",
+   "kind": "shape",
+   "shape_id": "future-solve/the-obligation-to-survive",
+   "class_drafted": "b",
+   "class_judged": "b",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "answered_by": [
+     {
+      "locus": "wild-animal-suffering-consistency#long",
+      "anchor": "do not create new instances of unconsented suffering where creation is discretionary"
+     },
+     {
+      "locus": "transhumanist-objection#long",
+      "anchor": "carried where the terminus is defended"
+     }
+    ]
+   },
+   "reads": {
+    "routing": "(b) HOLDS (the pull is tested in SJ-011). wild-animal-suffering-consistency#long meets the antinatalist core, but the shape presses the extinction terminus, and transhumanist-objection#long says what that terminus rests on (\"it rests not on the asymmetry, which forbids creating rather than destroying, but on negative-utilitarian suffering-minimisation\") and prices it as \"extinction is certain and monotone toward zero suffering\". On the shape's premise that clause is false for human extinction (\"Ending human births leaves all of it in place.\"). The library's answer to that pressure is the flagged sentence, whose (b) records that \"nothing there defends extinction-under-abolition, and no other node does either\". The answering node's own note sharpens it: \"the framework is not anti-intervention in principle\". The own-node (b) at future-solve#short is not met.",
+    "strongest_form": "At strength; the source's abstract states the paradox for antinatalists who would end all births.",
+    "shape_not_surface": "Passes. Its nearest scholar line is transhumanist-objection's (\"the problem's last victims are also its last possible engineers\"), whose answer it lands on, but its premise differs: the antinatalist's own sentiocentrism and non-human births, with no claim that suffering can be engineered away. Nor is it wild-animal-suffering-consistency's dilemma: it presses survival, not intervention or arbitrariness.",
+    "source": "Yes. Checked further this session: the publisher's citation metadata (issue 2025/10, online 2026/04/24, 34(4) 634-645, doi 10.1017/S0963180126100188) and the abstract, which states the move. The pilot's citation is right."
+   },
+   "reason": "Accepted as (b). The repair belongs where the terminus is stated.",
+   "owed": [],
+   "carries": [
+    "Regen queue: the headline (b) at transhumanist-objection#long now has two scenarios its repair must meet, abolition and this one; its pricing clause is false for human extinction while wild sentience remains."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:transhumanist-objection#long",
+     "quote": "it rests not on the asymmetry, which forbids creating rather than destroying, but on negative-utilitarian suffering-minimisation"
+    },
+    {
+     "src": "corpus:transhumanist-objection#long",
+     "quote": "extinction is certain and monotone toward zero suffering"
+    },
+    {
+     "src": "pilot:future-solve/the-obligation-to-survive.statement",
+     "quote": "Ending human births leaves all of it in place."
+    },
+    {
+     "src": "map:#18.adversarial_move",
+     "quote": "nothing there defends extinction-under-abolition, and no other node does either"
+    },
+    {
+     "src": "corpus:wild-animal-suffering-consistency#long",
+     "quote": "the framework is not anti-intervention in principle"
+    },
+    {
+     "src": "scholar:transhumanist-objection",
+     "quote": "the problem's last victims are also its last possible engineers"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-007",
+   "kind": "shape",
+   "shape_id": "free-will-defense/everyone-comes-home-at-last",
+   "class_drafted": "c",
+   "class_judged": "c",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "intake": "the new-objection intake (R-V2, R-V6), after his word"
+   },
+   "reads": {
+    "routing": "No answering locus, as a (c) should have.",
+    "strongest_form": "At strength; it keeps the universalist's freely.",
+    "shape_not_surface": "(c) CONFIRMED for free-will-defense: free will drops out. Not confirmed: that no node carries it. It keeps gods-plan's trigger family (\"It's God's plan / God wants us to have children / Divine purpose\") and conclusion with a warrant the scholar line does not state (\"procreation is participation in the divine creative work\"), so by the bar it reads as a candidate gods-plan shape, not a new node. The measurement tested gods-plan for a surface (\"No node states it: gods-plan's trigger is divine purpose, not universal salvation.\"), not for a shape.",
+    "source": "Yes (\"Christian universalism can make procreation permissible\")."
+   },
+   "reason": "Accepted as (c), to the intake, which should test it as a gods-plan shape before minting a node.",
+   "owed": [],
+   "carries": [
+    "Intake: test it first against gods-plan's bar, and against harman-benign-creation (every life guaranteed above the threshold), before a new node.",
+    "Hick's own theodicy ends in universal salvation (IEP entry, read this session), so the intake's strongest form of this shape is soul-making completed after death; read with SJ-008.",
+    "Safety: \"a finite stretch before an infinite good\" encourages nothing, but heard alone by someone in crisis it could sound like consolation about dying. It is not served and goes to the intake; keep it off any crisis-adjacent surface."
+   ],
+   "quotes": [
+    {
+     "src": "corpus:gods-plan#trigger",
+     "quote": "It's God's plan / God wants us to have children / Divine purpose"
+    },
+    {
+     "src": "scholar:gods-plan",
+     "quote": "procreation is participation in the divine creative work"
+    },
+    {
+     "src": "measure:shapes.6.reading",
+     "quote": "No node states it: gods-plan's trigger is divine purpose, not universal salvation."
+    },
+    {
+     "src": "rwe:sophia-christian-universalism-procreation-001.short_quote_under_15_words",
+     "quote": "Christian universalism can make procreation permissible"
+    },
+    {
+     "src": "pilot:free-will-defense/everyone-comes-home-at-last.statement",
+     "quote": "a finite stretch before an infinite good"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-008",
+   "kind": "shape",
+   "shape_id": "free-will-defense/a-vale-of-soul-making",
+   "class_drafted": "a",
+   "class_judged": "d",
+   "verdict": "AMEND",
+   "belongs_to": null,
+   "route": {
+    "via": "suffering-makes-human#long",
+    "via_anchor": "evaluate the component (suffering) on its own terms",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-060)",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    }
+   },
+   "reads": {
+    "routing": "FAILS as an (a); (d). Its premise is instrumental necessity (\"cannot be handed over ready-made\") and its conclusion is the created person's own good (\"So to create someone who will suffer is to create someone who can freely become good.\"). The map records where that move ends, twice: the (d) at suffering-makes-human#long (\"instrumental necessity: suffering is the causal precondition of goods, depth, compassion, resilience, meaning, and those goods outweigh\"; \"On the intrapersonal horn, where the person who suffers is the person who gains the depth\") and the (d) at suffering-as-meaning#long (\"creating them into a life where they will wrest meaning from their suffering benefits them\"), both at HR-02; and his L3 reading says the same (\"a move about the created person's own goods ends at HR-02\"). free-will-defense#long answers with the proxy gamble (\"Free will does not mitigate the proxy gamble.\"), the answer those (d)s record as ending there. The collision list cannot see it: the (d)s sit on nodes that share the shape's premise, not on the answering node (SJ-016).",
+    "strongest_form": "The this-worldly half of Hick. His theodicy ends in universal salvation (IEP), which answers the library's point that growth may never come; that half is the (c) shape's move (SJ-007). Keep the statement as it is: the intrapersonal form is how the argument is commonly made, and it is the form the HR-02 (d)s record.",
+    "shape_not_surface": "Passes. Freedom for growth is the Irenaean alternative to the scholar line's Plantinga (\"the core of Plantinga's defense\"). Its instrumental premise is suffering-makes-human's strong form, a shared terminus, not a shared identity: that node's scholar line is constitutive (\"courage is nothing without danger\"), not developmental.",
+    "source": "Yes. Checked further: the IEP entry on Hick sets out soul-making through free moral effort, completed by universal salvation."
+   },
+   "reason": "A shape, but its class is (d), not (a). AMEND: the route.",
+   "owed": [
+    "Seat l carries this shape as (d) in a new row or file, never in the pilot: no answering locus; terminus via suffering-makes-human#long at the anchor above, its bedrock copied from that entry and the register (HR-02, merely-possible-beneficiary) as this row's route states. The statement stands."
+   ],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "pilot:free-will-defense/a-vale-of-soul-making.statement",
+     "quote": "cannot be handed over ready-made"
+    },
+    {
+     "src": "pilot:free-will-defense/a-vale-of-soul-making.statement",
+     "quote": "So to create someone who will suffer is to create someone who can freely become good."
+    },
+    {
+     "src": "map:#71.adversarial_move",
+     "quote": "instrumental necessity: suffering is the causal precondition of goods, depth, compassion, resilience, meaning, and those goods outweigh"
+    },
+    {
+     "src": "map:#71.grounds",
+     "quote": "On the intrapersonal horn, where the person who suffers is the person who gains the depth"
+    },
+    {
+     "src": "map:#134.adversarial_move",
+     "quote": "creating them into a life where they will wrest meaning from their suffering benefits them"
+    },
+    {
+     "src": "canon:adversarial_map.R1_rules_L3.joy_outweighs_reading.the_recommendation_he_adopted",
+     "quote": "a move about the created person's own goods ends at HR-02"
+    },
+    {
+     "src": "corpus:free-will-defense#long",
+     "quote": "Free will does not mitigate the proxy gamble."
+    },
+    {
+     "src": "scholar:free-will-defense",
+     "quote": "the core of Plantinga's defense"
+    },
+    {
+     "src": "scholar:suffering-makes-human",
+     "quote": "courage is nothing without danger"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-009",
+   "kind": "shape",
+   "shape_id": "meta-ethical-pluralism/many-peaks-one-landscape",
+   "class_drafted": "d",
+   "class_judged": "d",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "via": "meta-ethical-pluralism#medium",
+    "via_anchor": "Negative utilitarianism merely refuses the tolerance",
+    "bedrock": {
+     "bedrock_name": "tolerance-weighting pluralism (lexical-priority stake above suffering-minimization)",
+     "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern",
+     "register": {
+      "bedrock_id": "HR-09",
+      "name": "Tolerance-weighting pluralism",
+      "facet": "lexical-priority-above-suffering-minimization"
+     }
+    }
+   },
+   "reads": {
+    "routing": "(d) HOLDS. The shape is pitched at what morality counts (\"A view that counts only the valleys has thrown away half the landscape.\"), which meets meta-ethical-pluralism#medium's tolerance answer; its objector weighs peaks against valleys and keeps his framework, the stake the (d) there records (\"he weighs, names his price, and stays coherent\"). Pushed onto procreation the line would reach the asymmetry instead; as stated, it stops at HR-09.",
+    "strongest_form": "At strength for this move (SJ-013).",
+    "shape_not_surface": "Passes. The scholar line's pluralism is of frameworks (\"under any serious accounting of moral uncertainty\"); the shape grants one axiology and pluralizes its optima. The plural-optima clause does no work against antinatalism; the valleys clause carries it: the trigger's question, asked inside one axiology.",
+    "source": "Yes (\"there's not just one peak there are many equivalent peaks\"); the attachment's fit is loose."
+   },
+   "reason": "Accepted as (d).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "pilot:meta-ethical-pluralism/many-peaks-one-landscape.statement",
+     "quote": "A view that counts only the valleys has thrown away half the landscape."
+    },
+    {
+     "src": "map:#94.grounds",
+     "quote": "he weighs, names his price, and stays coherent"
+    },
+    {
+     "src": "scholar:meta-ethical-pluralism",
+     "quote": "under any serious accounting of moral uncertainty"
+    },
+    {
+     "src": "rwe:harris-moral-landscape-meta-ethical-pluralism-001.short_quote_under_15_words",
+     "quote": "there's not just one peak there are many equivalent peaks"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-010",
+   "kind": "shape",
+   "shape_id": "meaning-through-suffering/heroism-redeems-being",
+   "class_drafted": "d",
+   "class_judged": "d",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "via": "meaning-through-suffering#long",
+    "via_anchor": "a survival mechanism, not an ethical justification",
+    "bedrock": {
+     "bedrock_name": "impersonal-vs-person-affecting axiology (value-requires-a-valuer: whether a valuerless world is assessable as better)",
+     "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-041)",
+     "register": {
+      "bedrock_id": "HR-03",
+      "name": "Impersonal vs person-affecting axiology",
+      "facet": "value-requires-a-valuer"
+     }
+    }
+   },
+   "reads": {
+    "routing": "(d) HOLDS. The consent answer meets the voluntary clause (the hero volunteers; the created person does not), but the conclusion is impersonal (\"It redeems existence as a whole.\"): the foreclosure the (d) at meaning-through-suffering#long records (\"a frictionless existence forecloses a higher kind of life\"), at HR-03.",
+    "strongest_form": "At strength; it is the instance's own escalation.",
+    "shape_not_surface": "Passes. The scholar line's ceiling is a person affirming his own life (\"the profoundest human accomplishment is to affirm one's life whole, including its worst\"); the shape's is the redemption of being itself, by an act. The dropped 2017 candidate was a surface; this one is not.",
+    "source": "Yes (\"voluntary heroism in the face of tragedy and malevolence\")."
+   },
+   "reason": "Accepted as (d).",
+   "owed": [],
+   "carries": [],
+   "quotes": [
+    {
+     "src": "pilot:meaning-through-suffering/heroism-redeems-being.statement",
+     "quote": "It redeems existence as a whole."
+    },
+    {
+     "src": "map:#36.adversarial_move",
+     "quote": "a frictionless existence forecloses a higher kind of life"
+    },
+    {
+     "src": "scholar:meaning-through-suffering",
+     "quote": "the profoundest human accomplishment is to affirm one's life whole, including its worst"
+    },
+    {
+     "src": "rwe:peterson-renegade-meaning-through-suffering-001.short_quote_under_15_words",
+     "quote": "voluntary heroism in the face of tragedy and malevolence"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-011",
+   "kind": "pull",
+   "pull": "future-solve/the-obligation-to-survive: (b) over (a)",
+   "verdict": "CONFIRM",
+   "answer": "The drafter asked whether the library's extinction terminus is the commitment the shape presses (\"(b) was chosen because the library's extinction terminus is the commitment the shape presses\"). It is. The shape argues against ending human births from the antinatalist's own premise, and the library states its extinction terminus on suffering-minimisation, which that premise turns against it. Against the core alone, (a) at wild-animal-suffering-consistency#long would hold; the shape does not stop at the core. (b), as drafted (SJ-006).",
+   "quotes": [
+    {
+     "src": "measure:the_pull.0",
+     "quote": "(b) was chosen because the library's extinction terminus is the commitment the shape presses"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-012",
+   "kind": "pull",
+   "pull": "free-will-defense/a-vale-of-soul-making (a) against meaning-through-suffering/heroism-redeems-being (d)",
+   "verdict": "CORRECT",
+   "answer": "The drafter asked gate2 to test the line (\"gate2 should test whether that line holds\"). It holds as a line between bedrocks, not between classes. The person-affecting form does not escape bedrock: a move about the created person's own goods is the intrapersonal horn the map already sends to HR-02, at suffering-makes-human#long and suffering-as-meaning#long (SJ-008). The impersonal form ends at HR-03 (SJ-010). Both are (d).",
+   "quotes": [
+    {
+     "src": "measure:the_pull.1",
+     "quote": "gate2 should test whether that line holds"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-013",
+   "kind": "pull",
+   "pull": "meta-ethical-pluralism/many-peaks-one-landscape: the cut to the plurality of optima",
+   "verdict": "CONFIRM",
+   "answer": "The drafter left it open (\"Whether the cut understates his move is gate2's to read.\"). It does not understate this move. Harris's other move in the same episode, the descendants' lost beauty (\"deprived all of their descendants from even existing and discovering greater depths of beauty\"), is a separate instance the corpus attaches to love-beauty-art, whose (d) records it at HR-03 (\"Love, beauty, and art may carry impersonal, agent-neutral value\"). Folded in, it would make this shape love-beauty-art's objection, SJ-004's failure. The cut is node discipline.",
+   "quotes": [
+    {
+     "src": "measure:the_pull.2",
+     "quote": "Whether the cut understates his move is gate2's to read."
+    },
+    {
+     "src": "rwe:harris-future-beauty-love-beauty-art-001.short_quote_under_15_words",
+     "quote": "deprived all of their descendants from even existing and discovering greater depths of beauty"
+    },
+    {
+     "src": "map:#40.adversarial_move",
+     "quote": "Love, beauty, and art may carry impersonal, agent-neutral value"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-014",
+   "kind": "measure",
+   "measure": "the pilot's four measures (design section 5)",
+   "verdict": "CORRECT",
+   "finding": "V2's figures recompute exactly as computed: the (a)s' right card is another objection's in 1 of 2, every routed shape's in 5 of 9; 8 of 10 do not ship as (a); 51 to 58 words, mean 54.3. After judgment they move: 7 shapes kept of 10, classes a1 b1 c1 d4; 1 of 1 and 4 of 6 cross-node; 9 of 10 drafted shapes do not ship as (a) (6 of 7 kept); the kept shapes run 51 to 58 words, mean 54.6. Per node: life-gift 1, joy-outweighs-harms 0, future-solve 2, free-will-defense 2, meta-ethical-pluralism 1, meaning-through-suffering 1.",
+   "figures": {
+    "drafted.a_cross_node": "1 of 2",
+    "drafted.routed_cross_node": "5 of 9",
+    "drafted.not_shipping_as_a": "8 of 10",
+    "drafted.words": {
+     "min": 51,
+     "max": 58,
+     "mean": 54.3,
+     "n": 10
+    },
+    "judged.kept": 7,
+    "judged.classes": {
+     "a": 1,
+     "b": 1,
+     "c": 1,
+     "d": 4
+    },
+    "judged.a_cross_node": "1 of 1",
+    "judged.routed_cross_node": "4 of 6",
+    "judged.not_shipping_as_a_of_drafted": "9 of 10",
+    "judged.not_shipping_as_a_of_kept": "6 of 7",
+    "judged.words_kept": {
+     "min": 51,
+     "max": 58,
+     "mean": 54.6,
+     "n": 7
+    },
+    "judged.per_node": {
+     "free-will-defense": 2,
+     "future-solve": 2,
+     "life-gift": 1,
+     "meaning-through-suffering": 1,
+     "meta-ethical-pluralism": 1
+    }
+   },
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-015",
+   "kind": "measure",
+   "measure": "the bar for a different shape",
+   "verdict": "CORRECT",
+   "finding": "The wording is right, and V2 applied its another-node clause to the dropped candidates (\"another node's objection (epistemic-humility)\"). It was not applied to the drafted shapes against other nodes' lines, and three fail it (SJ-001, SJ-002, SJ-004). A lexical floor flags one of the three: TF-IDF over every node's trigger, layman and scholar lines ranks love-beauty-art first for SJ-004, above the shape's own node; it ranks gods-plan 8th for SJ-001 and extinction-culture 4th for SJ-002, although their scholar lines state those shapes clause for clause. Like a named-pattern sweep, a lexical neighbour list is a floor, not a census.",
+   "recommendation": "Read the scholar lines of every node whose subject a shape touches (the theistic, the goods-of-life and the extinction nodes at least), not only its own node's.",
+   "figures": {
+    "lexical_floor.joy-outweighs-harms/good-in-itself-not-a-sum.rank_of.love-beauty-art": 1,
+    "lexical_floor.life-gift/the-giver-vouches-for-the-gift.rank_of.gods-plan": 8,
+    "lexical_floor.life-gift/a-gift-to-the-world.rank_of.extinction-culture": 4
+   },
+   "quotes": [
+    {
+     "src": "measure:dropped.4.why",
+     "quote": "another node's objection (epistemic-humility)"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-016",
+   "kind": "measure",
+   "measure": "the machine collisions and the drafter's reading of them",
+   "verdict": "CONFIRM",
+   "finding": "Recomputed under the v0_2 rule without the builder, the collisions match the measurement for all four shapes it routed through answering loci, and the drafter's reading of each is right: the own-node (b) at future-solve#short is met by neither future-solve shape, and the own-node (d) at life-gift#long is not pressed. The rule cannot see SJ-008's case: the (d)s that record where its answer ends sit on nodes that share its premise, not on the answering node, so its list is empty while its route fails.",
+   "recommendation": "For shapes, read as collisions the (d)s on nodes whose objection carries the shape's load-bearing premise, as well as the rule's list.",
+   "figures": {
+    "collisions_match_the_measure": {
+     "life-gift/the-giver-vouches-for-the-gift": true,
+     "future-solve/raise-the-people-who-fix-it": true,
+     "future-solve/the-obligation-to-survive": true,
+     "free-will-defense/a-vale-of-soul-making": true
+    },
+    "collisions_v0_2.free-will-defense/a-vale-of-soul-making": []
+   },
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-017",
+   "kind": "measure",
+   "measure": "each (d)'s bedrock, copied from map and register",
+   "verdict": "CONFIRM",
+   "finding": "Each of the five drafted (d)s' bedrock (name, terminus routing, register id, name and facet) equals the map entry at its via and the register's facet for that tributary. So do the four judged (d)s, SJ-008's new via included.",
+   "figures": {
+    "bedrock.drafted.life-gift/a-gift-to-the-world.ok": true,
+    "bedrock.drafted.life-gift/the-golden-rule-passes-it-on.ok": true,
+    "bedrock.drafted.joy-outweighs-harms/good-in-itself-not-a-sum.ok": true,
+    "bedrock.drafted.meta-ethical-pluralism/many-peaks-one-landscape.ok": true,
+    "bedrock.drafted.meaning-through-suffering/heroism-redeems-being.ok": true,
+    "bedrock.judged.life-gift/the-golden-rule-passes-it-on.ok": true,
+    "bedrock.judged.free-will-defense/a-vale-of-soul-making.ok": true,
+    "bedrock.judged.meta-ethical-pluralism/many-peaks-one-landscape.ok": true,
+    "bedrock.judged.meaning-through-suffering/heroism-redeems-being.ok": true
+   },
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-018",
+   "kind": "attestation",
+   "measure": "the source makes the move (read 4)",
+   "verdict": "CONFIRM",
+   "finding": "Every instance's rhetorical move and summary were read at the corpus's bytes; where a shape's clause goes past them, its row says so (SJ-001, SJ-002). The three citations V2 checked against records only were taken further where they could be: Morioka by the publisher's citation metadata and abstract (the move is stated; the citation is right); Hick by the IEP entry (soul-making through free moral effort, completed by universal salvation); Hare by the publisher's record and two secondary records, which agree on the move; the primary text stayed unread (the university repository returned 403). Nothing was taken from memory.",
+   "checked": [
+    "https://www.cambridge.org/core/journals/cambridge-quarterly-of-healthcare-ethics/article/paradox-of-sentiocentric-antinatalism-the-obligation-of-extinction-or-the-obligation-of-survival/5D1402C6047D2D9AAF936070364D985A",
+    "https://iep.utm.edu/hick/",
+    "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8519.1988.tb00055.x",
+    "https://deepblue.lib.umich.edu/handle/2027.42/74455 (403)"
+   ],
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-019",
+   "kind": "safety",
+   "measure": "his bar, over all ten",
+   "verdict": "CONFIRM",
+   "finding": "All ten were read against his bar. None encourages self-harm, suicide or homicide, and the reading finds no such word in any statement. None speaks in the library's voice: a shape is the objector's argument, and only (a)s reach the corpus, each answered on its card. The pilot stays off the suicide and violence nodes. One line is flagged for the intake (SJ-007).",
+   "figures": {
+    "safety_word_hits": {}
+   },
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-020",
+   "kind": "measure",
+   "measure": "the reserved move (R0296)",
+   "verdict": "CONFIRM",
+   "finding": "No statement uses love-from-the-void's modal move; it stays reserved for the intake.",
+   "figures": {
+    "reserved_move_hits": []
+   },
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-021",
+   "kind": "finding",
+   "title": "the hub's datum has a named dissenter",
+   "finding": "benatar-asymmetry-attack#long rests its deprivation account on a datum (\"Almost no one—Bradley and Harman included—holds that declining to create a happy person wrongs that possible person\"). Hare 1988, by the records checked here, holds it, and SJ-003 is its shape. One published holder does not falsify almost no one, but the datum is offered as common ground.",
+   "recommendation": "When SJ-003's (d) enters the map at the successor map's bump, read whether the hub's datum should name its dissenter. Not judged here.",
+   "whose": "seat l to draft, gate2 to judge",
+   "quotes": [
+    {
+     "src": "corpus:benatar-asymmetry-attack#long",
+     "quote": "Almost no one—Bradley and Harman included—holds that declining to create a happy person wrongs that possible person"
+    }
+   ],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-022",
+   "kind": "measure",
+   "measure": "the validator, the builder and the battery, at open",
+   "verdict": "CONFIRM",
+   "finding": "Measured at open on 3817eed by the battery, not by the reading: the shape validator passes the pilot with 0 violations and its self-test matches its control; the builder's --check reproduces the pilot and the measurement; canon v38.48's shapes_pilot_V2 pins the six files at the md5s this header pins. Battery 53 of 53 GREEN, 3 RED by design.",
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  },
+  {
+   "id": "SJ-023",
+   "kind": "sequence",
+   "title": "after this judgment: his word, with gate2's leans",
+   "asks": [
+    {
+     "ask": "Adopt the judgment: 5 ACCEPT, 2 AMEND, 3 REJECT.",
+     "lean": "adopt; every verdict reads from text at pinned bytes, and the three REJECTs follow V2's own bar"
+    },
+    {
+     "ask": "The (a) goes to V4, after the successor map's pin: future-solve/raise-the-people-who-fix-it alone.",
+     "lean": "yes; it is the one shape the library answers cleanly"
+    },
+    {
+     "ask": "The (b) goes to the regen queue: future-solve/the-obligation-to-survive, as a second scenario on the existing headline (b) at transhumanist-objection#long, not a new item.",
+     "lean": "yes; one repair should meet both scenarios"
+    },
+    {
+     "ask": "The (d)s go to the map at the successor map's next validator bump: many-peaks and heroism as they stand; golden-rule and soul-making once seat l's redrafts are judged.",
+     "lean": "yes"
+    },
+    {
+     "ask": "The (c) goes to the intake, tested first as a gods-plan shape.",
+     "lean": "yes; the bar reads it as gods-plan's before it reads it as new"
+    },
+    {
+     "ask": "The three REJECTs leave life-gift with one shape and joy-outweighs-harms with none. Redraft replacements now?",
+     "lean": "no; the scale-up is attestation-bound, and V4 ships only (a)s"
+    }
+   ],
+   "order": "His word; seat l's two redrafts (SJ-003's statement, SJ-008's route) as new rows or a new file; gate2 judges them; V4 after the successor map's pin. Canon passes back to seat l.",
+   "whose": "Josiah, then seat l",
+   "quotes": [],
+   "seat": "gate2 (Code, V3, 2026-10-03): judge only under K258; drafted none of the pilot, its measurement, its builder, the validator or its control",
+   "date": "2026-10-03",
+   "supersedes": null
+  }
+ ]
+}

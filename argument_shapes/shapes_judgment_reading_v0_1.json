@@ -1,0 +1,591 @@
+{
+ "what": "gate2's reading of the argument-shapes pilot (V3, 2026-10-03): every figure the judgment record states as measured, recomputed from the judged artifacts at their pinned md5s",
+ "reads": {
+  "pilot": "1f9c5da6166b538a90efa6dc7598124e",
+  "measure": "576be8f2c469f84b4bc9ca628d9b41c1",
+  "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "map_v1_8": "691930ab76908a85a6850bdb714d3827",
+  "register_v0_9": "8e53d920099e8b850baa2879dfd3e351",
+  "layman": "7a1f0881a6a9e964a4155d7897c312f8",
+  "scholar": "20999eb9b1b384d0f871a9deec464b2a"
+ },
+ "figures": {
+  "drafted": {
+   "shapes": 10,
+   "nodes": 6,
+   "classes": {
+    "a": 2,
+    "b": 2,
+    "c": 1,
+    "d": 5
+   },
+   "a_cross_node": "1 of 2",
+   "routed_cross_node": "5 of 9",
+   "not_shipping_as_a": "8 of 10",
+   "words": {
+    "min": 51,
+    "max": 58,
+    "mean": 54.3,
+    "n": 10
+   }
+  },
+  "judged": {
+   "kept": 7,
+   "rejected": [
+    "joy-outweighs-harms/good-in-itself-not-a-sum",
+    "life-gift/a-gift-to-the-world",
+    "life-gift/the-giver-vouches-for-the-gift"
+   ],
+   "classes": {
+    "a": 1,
+    "b": 1,
+    "c": 1,
+    "d": 4
+   },
+   "per_node": {
+    "free-will-defense": 2,
+    "future-solve": 2,
+    "life-gift": 1,
+    "meaning-through-suffering": 1,
+    "meta-ethical-pluralism": 1
+   },
+   "a_cross_node": "1 of 1",
+   "routed_cross_node": "4 of 6",
+   "not_shipping_as_a_of_drafted": "9 of 10",
+   "not_shipping_as_a_of_kept": "6 of 7",
+   "words_kept": {
+    "min": 51,
+    "max": 58,
+    "mean": 54.6,
+    "n": 7
+   }
+  },
+  "collisions_v0_2": {
+   "life-gift/the-giver-vouches-for-the-gift": [
+    {
+     "entry": 0,
+     "node": "life-gift",
+     "locus": "long",
+     "class": "d",
+     "anchor": "legitimate unsolicited benefit requires an antecedent recipient with a stake",
+     "why": "the shape's own node"
+    },
+    {
+     "entry": 34,
+     "node": "gods-plan",
+     "locus": "long",
+     "class": "b",
+     "anchor": "No theodicy has resolved this trilemma",
+     "why": "at the answering locus"
+    }
+   ],
+   "future-solve/raise-the-people-who-fix-it": [
+    {
+     "entry": 58,
+     "node": "future-solve",
+     "locus": "short",
+     "class": "b",
+     "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+     "why": "the shape's own node"
+    }
+   ],
+   "future-solve/the-obligation-to-survive": [
+    {
+     "entry": 18,
+     "node": "transhumanist-objection",
+     "locus": "long",
+     "class": "b",
+     "anchor": "carried where the terminus is defended",
+     "why": "at the answering locus"
+    },
+    {
+     "entry": 58,
+     "node": "future-solve",
+     "locus": "short",
+     "class": "b",
+     "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+     "why": "the shape's own node"
+    }
+   ],
+   "free-will-defense/a-vale-of-soul-making": []
+  },
+  "collisions_match_the_measure": {
+   "life-gift/the-giver-vouches-for-the-gift": true,
+   "future-solve/raise-the-people-who-fix-it": true,
+   "future-solve/the-obligation-to-survive": true,
+   "free-will-defense/a-vale-of-soul-making": true
+  },
+  "bedrock": {
+   "drafted": {
+    "life-gift/a-gift-to-the-world": {
+     "via": "extinction-culture#long",
+     "map_entry": 60,
+     "bedrock_name": "impersonal-vs-person-affecting axiology",
+     "terminus_routing": "already-surfaced K224 bedrock 1, facet value-requires-a-valuer / standpoint-dependence; route as registered, not a new bedrock",
+     "register": {
+      "bedrock_id": "HR-03",
+      "name": "Impersonal vs person-affecting axiology",
+      "facet": "unfacetted"
+     },
+     "ok": true
+    },
+    "life-gift/the-golden-rule-passes-it-on": {
+     "via": "joy-outweighs-harms#long",
+     "map_entry": 41,
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     },
+     "ok": true
+    },
+    "joy-outweighs-harms/good-in-itself-not-a-sum": {
+     "via": "joy-outweighs-harms#long",
+     "map_entry": 41,
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     },
+     "ok": true
+    },
+    "meta-ethical-pluralism/many-peaks-one-landscape": {
+     "via": "meta-ethical-pluralism#medium",
+     "map_entry": 94,
+     "bedrock_name": "tolerance-weighting pluralism (lexical-priority stake above suffering-minimization)",
+     "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern",
+     "register": {
+      "bedrock_id": "HR-09",
+      "name": "Tolerance-weighting pluralism",
+      "facet": "lexical-priority-above-suffering-minimization"
+     },
+     "ok": true
+    },
+    "meaning-through-suffering/heroism-redeems-being": {
+     "via": "meaning-through-suffering#long",
+     "map_entry": 36,
+     "bedrock_name": "impersonal-vs-person-affecting axiology (value-requires-a-valuer: whether a valuerless world is assessable as better)",
+     "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-041)",
+     "register": {
+      "bedrock_id": "HR-03",
+      "name": "Impersonal vs person-affecting axiology",
+      "facet": "value-requires-a-valuer"
+     },
+     "ok": true
+    }
+   },
+   "judged": {
+    "life-gift/the-golden-rule-passes-it-on": {
+     "via": "joy-outweighs-harms#long",
+     "map_entry": 41,
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     },
+     "ok": true
+    },
+    "free-will-defense/a-vale-of-soul-making": {
+     "via": "suffering-makes-human#long",
+     "map_entry": 71,
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-060)",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     },
+     "ok": true
+    },
+    "meta-ethical-pluralism/many-peaks-one-landscape": {
+     "via": "meta-ethical-pluralism#medium",
+     "map_entry": 94,
+     "bedrock_name": "tolerance-weighting pluralism (lexical-priority stake above suffering-minimization)",
+     "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern",
+     "register": {
+      "bedrock_id": "HR-09",
+      "name": "Tolerance-weighting pluralism",
+      "facet": "lexical-priority-above-suffering-minimization"
+     },
+     "ok": true
+    },
+    "meaning-through-suffering/heroism-redeems-being": {
+     "via": "meaning-through-suffering#long",
+     "map_entry": 36,
+     "bedrock_name": "impersonal-vs-person-affecting axiology (value-requires-a-valuer: whether a valuerless world is assessable as better)",
+     "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-041)",
+     "register": {
+      "bedrock_id": "HR-03",
+      "name": "Impersonal vs person-affecting axiology",
+      "facet": "value-requires-a-valuer"
+     },
+     "ok": true
+    }
+   }
+  },
+  "anchors": {
+   "life-gift/the-giver-vouches-for-the-gift": [
+    {
+     "locus": "gods-plan#long",
+     "anchor": "No theodicy has resolved this trilemma",
+     "verbatim": true,
+     "words": 6
+    }
+   ],
+   "life-gift/a-gift-to-the-world": [],
+   "life-gift/the-golden-rule-passes-it-on": [
+    {
+     "locus": "joy-outweighs-harms#long",
+     "anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+     "verbatim": true,
+     "words": 13
+    }
+   ],
+   "joy-outweighs-harms/good-in-itself-not-a-sum": [],
+   "future-solve/raise-the-people-who-fix-it": [
+    {
+     "locus": "next-person-cure-cancer#long",
+     "anchor": "creating a new consciousness to serve the interests of those already existing",
+     "verbatim": true,
+     "words": 12
+    }
+   ],
+   "future-solve/the-obligation-to-survive": [
+    {
+     "locus": "wild-animal-suffering-consistency#long",
+     "anchor": "do not create new instances of unconsented suffering where creation is discretionary",
+     "verbatim": true,
+     "words": 12
+    },
+    {
+     "locus": "transhumanist-objection#long",
+     "anchor": "carried where the terminus is defended",
+     "verbatim": true,
+     "words": 6
+    }
+   ],
+   "free-will-defense/everyone-comes-home-at-last": [],
+   "free-will-defense/a-vale-of-soul-making": [
+    {
+     "locus": "free-will-defense#long",
+     "anchor": "Free will does not mitigate the proxy gamble",
+     "verbatim": true,
+     "words": 8
+    },
+    {
+     "locus": "suffering-makes-human#long",
+     "anchor": "evaluate the component (suffering) on its own terms",
+     "verbatim": true,
+     "words": 8
+    }
+   ],
+   "meta-ethical-pluralism/many-peaks-one-landscape": [
+    {
+     "locus": "meta-ethical-pluralism#medium",
+     "anchor": "Negative utilitarianism merely refuses the tolerance",
+     "verbatim": true,
+     "words": 6
+    }
+   ],
+   "meaning-through-suffering/heroism-redeems-being": [
+    {
+     "locus": "meaning-through-suffering#long",
+     "anchor": "a survival mechanism, not an ethical justification",
+     "verbatim": true,
+     "words": 7
+    }
+   ]
+  },
+  "lexical_floor": {
+   "life-gift/the-giver-vouches-for-the-gift": {
+    "top5": [
+     [
+      "life-gift",
+      0.2909
+     ],
+     [
+      "joy-outweighs-harms",
+      0.1325
+     ],
+     [
+      "bradley-no-subject",
+      0.1004
+     ],
+     [
+      "free-will-defense",
+      0.0983
+     ],
+     [
+      "virtue-ethics-flourishing",
+      0.0983
+     ]
+    ],
+    "rank_of": {
+     "life-gift": 1,
+     "gods-plan": 8
+    }
+   },
+   "life-gift/a-gift-to-the-world": {
+    "top5": [
+     [
+      "life-gift",
+      0.1708
+     ],
+     [
+      "solipsism",
+      0.1167
+     ],
+     [
+      "love-beauty-art",
+      0.1034
+     ],
+     [
+      "extinction-culture",
+      0.1027
+     ],
+     [
+      "adoption-instead",
+      0.0904
+     ]
+    ],
+    "rank_of": {
+     "life-gift": 1,
+     "extinction-culture": 4
+    }
+   },
+   "life-gift/the-golden-rule-passes-it-on": {
+    "top5": [
+     [
+      "survivor-testimony",
+      0.1483
+     ],
+     [
+      "non-identity-problem",
+      0.1173
+     ],
+     [
+      "life-gift",
+      0.1169
+     ],
+     [
+      "harman-benign-creation",
+      0.1108
+     ],
+     [
+      "speak-for-everyone",
+      0.0865
+     ]
+    ],
+    "rank_of": {
+     "life-gift": 3
+    }
+   },
+   "joy-outweighs-harms/good-in-itself-not-a-sum": {
+    "top5": [
+     [
+      "love-beauty-art",
+      0.1675
+     ],
+     [
+      "joy-outweighs-harms",
+      0.1524
+     ],
+     [
+      "bradley-no-subject",
+      0.1301
+     ],
+     [
+      "harman-benign-creation",
+      0.1143
+     ],
+     [
+      "virtue-ethics-flourishing",
+      0.106
+     ]
+    ],
+    "rank_of": {
+     "joy-outweighs-harms": 2,
+     "love-beauty-art": 1
+    }
+   },
+   "future-solve/raise-the-people-who-fix-it": {
+    "top5": [
+     [
+      "care-ethics",
+      0.141
+     ],
+     [
+      "adoption-instead",
+      0.122
+     ],
+     [
+      "future-solve",
+      0.1117
+     ],
+     [
+      "transhumanist-objection",
+      0.1
+     ],
+     [
+      "moral-progress",
+      0.0777
+     ]
+    ],
+    "rank_of": {
+     "future-solve": 3
+    }
+   },
+   "future-solve/the-obligation-to-survive": {
+    "top5": [
+     [
+      "suffering-makes-human",
+      0.1847
+     ],
+     [
+      "ai-fear",
+      0.1504
+     ],
+     [
+      "virtue-ethics-flourishing",
+      0.1208
+     ],
+     [
+      "negative-util-aggregation",
+      0.1053
+     ],
+     [
+      "wild-animal-suffering-consistency",
+      0.0923
+     ]
+    ],
+    "rank_of": {
+     "future-solve": 10
+    }
+   },
+   "free-will-defense/everyone-comes-home-at-last": {
+    "top5": [
+     [
+      "free-will-defense",
+      0.2604
+     ],
+     [
+      "harman-benign-creation",
+      0.212
+     ],
+     [
+      "joy-outweighs-harms",
+      0.1027
+     ],
+     [
+      "life-gift",
+      0.0849
+     ],
+     [
+      "non-identity-problem",
+      0.0832
+     ]
+    ],
+    "rank_of": {
+     "free-will-defense": 1
+    }
+   },
+   "free-will-defense/a-vale-of-soul-making": {
+    "top5": [
+     [
+      "free-will-defense",
+      0.3006
+     ],
+     [
+      "suffering-as-meaning",
+      0.1318
+     ],
+     [
+      "privileged-first-world",
+      0.1059
+     ],
+     [
+      "phenomenological-existentialism",
+      0.099
+     ],
+     [
+      "meaning-through-suffering",
+      0.0847
+     ]
+    ],
+    "rank_of": {
+     "free-will-defense": 1
+    }
+   },
+   "meta-ethical-pluralism/many-peaks-one-landscape": {
+    "top5": [
+     [
+      "meta-ethical-pluralism",
+      0.1086
+     ],
+     [
+      "consent-both-ways",
+      0.0775
+     ],
+     [
+      "harman-benign-creation",
+      0.0743
+     ],
+     [
+      "moral-particularism",
+      0.0625
+     ],
+     [
+      "overpopulation-addressed",
+      0.0579
+     ]
+    ],
+    "rank_of": {
+     "meta-ethical-pluralism": 1
+    }
+   },
+   "meaning-through-suffering/heroism-redeems-being": {
+    "top5": [
+     [
+      "meaning-through-suffering",
+      0.1397
+     ],
+     [
+      "suffering-as-meaning",
+      0.1046
+     ],
+     [
+      "suffering-makes-human",
+      0.1035
+     ],
+     [
+      "virtue-ethics-flourishing",
+      0.0811
+     ],
+     [
+      "extinction-culture",
+      0.075
+     ]
+    ],
+    "rank_of": {
+     "meaning-through-suffering": 1
+    }
+   }
+  },
+  "corpus_term_hits": {
+   "golden rule": 0,
+   "skeptical theism": 0,
+   "soul-making": 0,
+   "universalis": 0,
+   "heroi": 0,
+   "Morioka": 0
+  },
+  "reserved_move_hits": [],
+  "safety_word_hits": {}
+ }
+}

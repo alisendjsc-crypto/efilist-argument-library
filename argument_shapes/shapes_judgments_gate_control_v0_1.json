@@ -1,0 +1,164 @@
+{
+ "what": "shapes_judgments_gate.py self-test: the unmutated record first, then one mutation per check",
+ "record": "argument_shapes/shapes_pilot_judgments.json",
+ "cases": 16,
+ "as_expected": 16,
+ "results": [
+  {
+   "mutation": "unmutated",
+   "expect_red": [],
+   "red": [],
+   "as_expected": true
+  },
+  {
+   "mutation": "verdict out of vocabulary",
+   "expect_red": [
+    "vocab"
+   ],
+   "red": [
+    "vocab"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a shape left unjudged",
+   "expect_red": [
+    "coverage"
+   ],
+   "red": [
+    "coverage"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a quote off by one character",
+   "expect_red": [
+    "quotes"
+   ],
+   "red": [
+    "quotes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "an undeclared quoted span",
+   "expect_red": [
+    "quotes"
+   ],
+   "red": [
+    "quotes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a pin moved",
+   "expect_red": [
+    "pins"
+   ],
+   "red": [
+    "pins"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a (d)'s facet retyped",
+   "expect_red": [
+    "routes"
+   ],
+   "red": [
+    "routes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "an anchor not verbatim",
+   "expect_red": [
+    "routes"
+   ],
+   "red": [
+    "routes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a REJECT kept on its own node",
+   "expect_red": [
+    "routes"
+   ],
+   "red": [
+    "routes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "class_drafted not the pilot's",
+   "expect_red": [
+    "routes"
+   ],
+   "red": [
+    "routes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "an AMEND owing nothing",
+   "expect_red": [
+    "routes"
+   ],
+   "red": [
+    "routes"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a figure not the reading's",
+   "expect_red": [
+    "figures"
+   ],
+   "red": [
+    "figures"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a duplicate id",
+   "expect_red": [
+    "ids"
+   ],
+   "red": [
+    "ids"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "supersedes names no earlier row",
+   "expect_red": [
+    "ids"
+   ],
+   "red": [
+    "ids"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "his word not verbatim",
+   "expect_red": [
+    "his_word"
+   ],
+   "red": [
+    "his_word"
+   ],
+   "as_expected": true
+  },
+  {
+   "mutation": "a committed row edited",
+   "expect_red": [
+    "history"
+   ],
+   "red": [
+    "history"
+   ],
+   "as_expected": true
+  }
+ ]
+}
