@@ -1,0 +1,71 @@
+{
+ "what": "his word owed to canon v38.53, cut byte-exact from the user turn (V6, seat l, 2026-10-04)",
+ "tool": "tools/extract_his_words_v38_53.py",
+ "transcript": {
+  "V5": "e013cfb0-df3e-4174-b2ea-e9c65822debb"
+ },
+ "excerpts": {
+  "R0316_word": {
+   "answers": "R0316",
+   "recorded_by": "R0318",
+   "turn": {
+    "transcript": "V5",
+    "line": 760,
+    "utc": "2026-10-04T08:53:19.797Z",
+    "turn_md5": "4dace677153a5e04d76bd77caa032ca1"
+   },
+   "answers_message": {
+    "seat": "l (V5)",
+    "line": 753,
+    "utc": "2026-10-04T08:48:07.608Z",
+    "text_md5": "383c5aab5b75b6c6f1fa56a585d8c5d6"
+   },
+   "offsets": [
+    0,
+    54
+   ],
+   "md5": "c24ca0f6cfe8f0ce3fc76953427bbf8f",
+   "words": 9,
+   "whole_turn": false,
+   "text": "Proceed with your recommendations on all of the above."
+  },
+  "R0316_whole_turn": {
+   "answers": "R0316",
+   "recorded_by": "R0318",
+   "turn": {
+    "transcript": "V5",
+    "line": 760,
+    "utc": "2026-10-04T08:53:19.797Z",
+    "turn_md5": "4dace677153a5e04d76bd77caa032ca1"
+   },
+   "answers_message": {
+    "seat": "l (V5)",
+    "line": 753,
+    "utc": "2026-10-04T08:48:07.608Z",
+    "text_md5": "383c5aab5b75b6c6f1fa56a585d8c5d6"
+   },
+   "offsets": [
+    0,
+    145
+   ],
+   "md5": "4dace677153a5e04d76bd77caa032ca1",
+   "words": 25,
+   "whole_turn": true,
+   "text": "Proceed with your recommendations on all of the above. Draft a new prompt and launch when ready, if you want a fresh session, otherwise continue."
+  }
+ },
+ "relays": {
+  "R0316": {
+   "md5": "b37c0fb48c8d2473fb03da30bc644289",
+   "from": "l",
+   "to": "josiah"
+  },
+  "R0318": {
+   "md5": "c6078a2d9c65fba129503092a8008a96",
+   "from": "l",
+   "to": "l",
+   "carries": "R0316_whole_turn",
+   "names_the_turn": true
+  }
+ }
+}

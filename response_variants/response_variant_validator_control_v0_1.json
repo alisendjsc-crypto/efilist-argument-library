@@ -1,0 +1,804 @@
+{
+ "cases": [
+  {
+   "case": "control-staging",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-two-files-own-coverage",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-text-at-120",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-text-at-300",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-anchor-at-15-words",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "control-floor-words-inside-other-words",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "container-extra-key",
+   "expect": [
+    "container-shape"
+   ],
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "container-shapes-not-variants",
+   "expect": [
+    "container-shape"
+   ],
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-corpus-pin-wrong",
+   "expect": [
+    "meta-corpus-pin"
+   ],
+   "failed": [
+    "meta-corpus-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-digest-wrong",
+   "expect": [
+    "meta-corpus-pin"
+   ],
+   "failed": [
+    "meta-corpus-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-canon-md5-wrong",
+   "expect": [
+    "meta-canon-pin"
+   ],
+   "failed": [
+    "meta-canon-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "meta-canon-missing",
+   "expect": [
+    "meta-canon-pin"
+   ],
+   "failed": [
+    "meta-canon-pin"
+   ],
+   "ok": true
+  },
+  {
+   "case": "keys-unknown",
+   "expect": [
+    "variant-keys"
+   ],
+   "failed": [
+    "variant-keys"
+   ],
+   "ok": true
+  },
+  {
+   "case": "keys-missing-residual",
+   "expect": [
+    "variant-keys"
+   ],
+   "failed": [
+    "variant-keys"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-bad-format",
+   "expect": [
+    "variant-id"
+   ],
+   "failed": [
+    "variant-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-unknown-node",
+   "expect": [
+    "variant-id"
+   ],
+   "failed": [
+    "variant-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "id-suffix-not-type",
+   "expect": [
+    "variant-id"
+   ],
+   "failed": [
+    "variant-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "type-open",
+   "expect": [
+    "type-closed"
+   ],
+   "failed": [
+    "type-closed"
+   ],
+   "ok": true
+  },
+  {
+   "case": "cap-two-on-one-node",
+   "expect": [
+    "variant-cap"
+   ],
+   "failed": [
+    "variant-cap"
+   ],
+   "ok": true
+  },
+  {
+   "case": "cap-across-files",
+   "expect": [
+    "variant-cap"
+   ],
+   "failed": [
+    "variant-cap"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-short",
+   "expect": [
+    "varies-locus"
+   ],
+   "failed": [
+    "varies-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "locus-extra-key",
+   "expect": [
+    "varies-locus"
+   ],
+   "failed": [
+    "varies-locus"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-not-verbatim",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-16-words",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-not-unique",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-empty",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "anchor-from-another-node",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "text-119-words",
+   "expect": [
+    "text-band"
+   ],
+   "failed": [
+    "text-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "text-301-words",
+   "expect": [
+    "text-band"
+   ],
+   "failed": [
+    "text-band"
+   ],
+   "ok": true
+  },
+  {
+   "case": "text-curly-quote",
+   "expect": [
+    "text-ascii"
+   ],
+   "failed": [
+    "text-ascii"
+   ],
+   "ok": true
+  },
+  {
+   "case": "text-dash-token",
+   "expect": [
+    "text-ascii"
+   ],
+   "failed": [
+    "text-ascii"
+   ],
+   "ok": true
+  },
+  {
+   "case": "residual-closed",
+   "expect": [
+    "residual"
+   ],
+   "failed": [
+    "residual"
+   ],
+   "ok": true
+  },
+  {
+   "case": "residual-no-account-concession",
+   "expect": [
+    "residual"
+   ],
+   "failed": [
+    "residual"
+   ],
+   "ok": true
+  },
+  {
+   "case": "residual-empty-stop",
+   "expect": [
+    "residual"
+   ],
+   "failed": [
+    "residual"
+   ],
+   "ok": true
+  },
+  {
+   "case": "residual-extra-key",
+   "expect": [
+    "residual"
+   ],
+   "failed": [
+    "residual"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-refutes",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-defeats",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-proves",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-settles",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-decisive",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-text-wins",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "no-win-in-residual",
+   "expect": [
+    "floor-no-win"
+   ],
+   "failed": [
+    "floor-no-win"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-0",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-1",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-2",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-3",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-4",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "pro-life-in-residual",
+   "expect": [
+    "floor-pro-life"
+   ],
+   "failed": [
+    "floor-pro-life"
+   ],
+   "ok": true
+  },
+  {
+   "case": "wide-only-taboo",
+   "expect": [
+    "floor-wide"
+   ],
+   "failed": [
+    "floor-wide"
+   ],
+   "ok": true
+  },
+  {
+   "case": "wide-in-residual",
+   "expect": [
+    "floor-wide"
+   ],
+   "failed": [
+    "floor-wide"
+   ],
+   "ok": true
+  },
+  {
+   "case": "exit-pattern-and-wide-together",
+   "expect": [
+    "floor-exit",
+    "floor-wide"
+   ],
+   "failed": [
+    "floor-exit",
+    "floor-wide"
+   ],
+   "ok": true
+  },
+  {
+   "case": "sources-empty",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "sources-outside-root",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "sources-unresolved-index",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "sources-turn-md5-wrong",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "sources-extra-key",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-shape-phase",
+   "expect": [
+    "provenance"
+   ],
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-bad-date",
+   "expect": [
+    "provenance"
+   ],
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "provenance-no-seat",
+   "expect": [
+    "provenance"
+   ],
+   "failed": [
+    "provenance"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-overclaimed",
+   "expect": [
+    "variant-coverage"
+   ],
+   "failed": [
+    "variant-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-undeclared",
+   "expect": [
+    "variant-coverage"
+   ],
+   "failed": [
+    "variant-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "coverage-summed-across-files",
+   "expect": [
+    "variant-coverage"
+   ],
+   "failed": [
+    "variant-coverage"
+   ],
+   "ok": true
+  },
+  {
+   "case": "control-embedded",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "embedded-under-responses",
+   "expect": [
+    "container-shape"
+   ],
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "embedded-not-a-list",
+   "expect": [
+    "container-shape"
+   ],
+   "failed": [
+    "container-shape"
+   ],
+   "ok": true
+  },
+  {
+   "case": "embedded-wrong-host",
+   "expect": [
+    "variant-id"
+   ],
+   "failed": [
+    "variant-id"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-control-seven-measured-anchors",
+   "expect": [
+    "PASS"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "real-anchor-not-unique",
+   "expect": [
+    "anchor-rule"
+   ],
+   "failed": [
+    "anchor-rule"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-turn-md5-of-another-account",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-his-ruling-not-an-account",
+   "expect": [
+    "account-sources"
+   ],
+   "failed": [
+    "account-sources"
+   ],
+   "ok": true
+  },
+  {
+   "case": "real-corpus-has-no-responseVariants-yet",
+   "expect": [
+    "0 nodes"
+   ],
+   "failed": [],
+   "ok": true
+  },
+  {
+   "case": "schema-validator-canon-design-agree",
+   "expect": [
+    "all true"
+   ],
+   "failed": [],
+   "ok": true
+  }
+ ],
+ "his_accounts_for_the_drafter": [
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 60
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[1]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 31
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[2]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 24
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[3]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 313
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[4]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 264
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 241
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[6]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 48
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[7]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 26
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[8]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 236
+  },
+  {
+   "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+   "floor_hits": [],
+   "non_ascii": [],
+   "words": 64
+  }
+ ],
+ "imports": {
+  "map_validator": {
+   "md5": "c002e93877b09d523daf786036af7a57",
+   "path": "adversarial_map_staging/adv_map_validator_v0_6.py"
+  },
+  "safety_floors": {
+   "exit": 9,
+   "md5": "dc2525ef40fc5353a670484f511bd668",
+   "path": "adversarial_map_staging/r1/sp_reading_l6.py",
+   "wide": 13
+  }
+ },
+ "instrument": "response_variants/response_variant_validator_v0_1.py",
+ "real_data": {
+  "canon": {
+   "file": "project_canon_v38_52.json",
+   "md5": "9697f796baacc7c54bd8212057f4e486"
+  },
+  "corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "design": {
+   "file": "design/variations/RESPONSE_VARIANTS_design_v0_1.md",
+   "md5": "1c4be4d36addc95a757b43f57c489b7e"
+  },
+  "measure": {
+   "file": "design/variations/measure_response_variants_v0_1.json",
+   "md5": "cbae330fe2106d79d572de8e20ac8459"
+  }
+ },
+ "summary": {
+  "as_expected": 72,
+  "cases": 72,
+  "checks": 19,
+  "checks_never_turned_red": [],
+  "checks_turned_red_by_a_mutation": 19,
+  "first_case_is_the_unmutated_control": true
+ }
+}

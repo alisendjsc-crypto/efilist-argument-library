@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The checker for alternative answers — 2026-10-04 (no release; the pin stands)
+
+Josiah adopted all eight recommendations of the design for "another answer". The checker it called for is built, in a new folder beside the argument shapes: a description of what each alternative answer must contain, a program that tests every rule the design listed, and a record showing that each rule catches the fault it is meant to catch. An alternative answer must name the one sentence of the library's longest reply it differs from, carry the point where the two answers stop agreeing, cite Josiah's own words from the project record, and claim no win. It is also held to his safety bar, using the same word lists as the earlier safety pass. No alternative answer is written yet; the next session drafts the first set, on seven objections. Canon v38.53 records his word and the build. No served page changed.
+
 ## The golden rule's third draft, and a design for alternative answers — 2026-10-04 (no release; the pin stands)
 
 Josiah adopted the second judgment. The golden-rule shape has its third draft, in a new file beside the earlier ones. Its duty now rests on the good of the person who would exist, and the total good only limits it, as its source states. It keeps the source's stopping point, where the worst-off would fall below a life just worth living, and it cites the 1975 paper where the source first made the golden-rule argument. A seat that did not draft it judges it next. Separately, a design was drafted for "another answer": a marked alternative to the library's chosen reply, shown on request at the longest depth, starting with Josiah's own view that pleasure is the easing of a prior lack. It puts eight decisions to him, each with a recommendation. It also counts seven objections where the library's reply and his view part ways, one more than first counted. Canon v38.52 records his word, the draft and the design. No served page changed.
