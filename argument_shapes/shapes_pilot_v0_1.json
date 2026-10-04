@@ -1,0 +1,201 @@
+{
+ "meta": {
+  "source_corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "source_corpus_objections_md5": "bcf722097441eb4926e0e443ee925a64",
+  "bound_for": "staging",
+  "shape_coverage": "6/82"
+ },
+ "shapes": [
+  {
+   "shape_id": "life-gift/the-giver-vouches-for-the-gift",
+   "label": "The giver vouches for the gift",
+   "statement": "Life is a gift because of who gives it. A perfectly good God does not hand out harms dressed as presents, so whatever pain a life contains belongs to a good we cannot yet see from inside it. To refuse to pass life on is to call the Giver a liar about His own gift.",
+   "differs_by": "The gift's goodness is vouched for by the giver's nature, with apparent harms deferred to a good beyond our sight, not by the life's contents or by the recipient's later affirmation.",
+   "class": "b",
+   "attested_by": [
+    "life-gift-001",
+    "life-gift-002"
+   ],
+   "answered_by": [
+    {
+     "locus": "gods-plan#long",
+     "anchor": "No theodicy has resolved this trilemma"
+    }
+   ],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "life-gift/a-gift-to-the-world",
+   "label": "A gift to the world",
+   "statement": "Forget whether the child owes thanks. Every person born is a gift to everyone else: new love, new work, new minds, the people who will carry knowledge and culture forward. Children are the most valuable resource humanity has, and a world that stops making them throws away the source of everything worth valuing.",
+   "differs_by": "Moves the beneficiary from the child to humanity and the world, so the gift is the value a new person adds, not a benefit conferred on that person.",
+   "class": "d",
+   "attested_by": [
+    "anton-children-most-valuable-001"
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "label": "The golden rule passes it on",
+   "statement": "You are glad you were brought into existence, and so are nearly all of us. The golden rule says do to others what you are glad was done to you. A person who would be glad to exist is harmed if we choose never to create them, so passing life on is a duty, not a gamble.",
+   "differs_by": "Rests on universalizing one's own gladness by the golden rule, and on the claim that a possible person is harmed by not being created, rather than on gratitude as a virtue or on the recipient's later affirmation as evidence.",
+   "class": "d",
+   "attested_by": [
+    {
+     "citation": "R. M. Hare, Possible People, Bioethics 2(4), 1988, pp. 279-293"
+    }
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "joy-outweighs-harms/good-in-itself-not-a-sum",
+   "label": "Good in itself, not a sum",
+   "statement": "I am not adding anything up, and pleasure and pain may not even be addable. Music, love, discovery, the sheer size of the universe to learn about: these make a life good in itself, in a way its pains do not cancel. Giving someone a life that holds them gives them something good.",
+   "differs_by": "Drops the hedonic arithmetic that the trigger, layman and scholar lines all rely on: the goods make a life good in itself rather than outnumbering its bads.",
+   "class": "d",
+   "attested_by": [
+    "joy-outweighs-harms-001"
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "future-solve/raise-the-people-who-fix-it",
+   "label": "Raise the people who fix it",
+   "statement": "Who is going to solve tomorrow's problems if the people who care about them stop having children? A child raised well, taught to care and to think, is one of the best things anyone can add to the future. Having one is not a bet on luck; it is an investment in the people who will fix things.",
+   "differs_by": "The warrant is the parent's deliberate formation of a problem-solver, an investment through upbringing, rather than generational progress at large or the lottery chance of a genius.",
+   "class": "a",
+   "attested_by": [
+    "future-solve-001"
+   ],
+   "answered_by": [
+    {
+     "locus": "next-person-cure-cancer#long",
+     "anchor": "creating a new consciousness to serve the interests of those already existing"
+    }
+   ],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "future-solve/the-obligation-to-survive",
+   "label": "The obligation to survive",
+   "statement": "Take your own premise seriously: suffering is what matters, and not only human suffering. Animals will keep being born into pain for as long as this planet can hold life. If anything is ever to stop that, someone has to remain who can. Ending human births leaves all of it in place.",
+   "differs_by": "Argues from the antinatalist's own sentiocentric premise to an obligation of human survival, since only a remaining humanity could ever stop non-human births into suffering, instead of from human welfare or technological optimism.",
+   "class": "b",
+   "attested_by": [
+    {
+     "citation": "Masahiro Morioka, The Paradox of Sentiocentric Antinatalism: The Obligation of Extinction or the Obligation of Survival?, Cambridge Quarterly of Healthcare Ethics 34(4), 2025, pp. 634-645"
+    }
+   ],
+   "answered_by": [
+    {
+     "locus": "wild-animal-suffering-consistency#long",
+     "anchor": "do not create new instances of unconsented suffering where creation is discretionary"
+    },
+    {
+     "locus": "transhumanist-objection#long",
+     "anchor": "carried where the terminus is defended"
+    }
+   ],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "free-will-defense/everyone-comes-home-at-last",
+   "label": "Everyone comes home at last",
+   "statement": "If God brings every person, in the end, freely into eternal life with Him, then no life created is a loss on the whole. However hard a worldly life turns out, it is a finite stretch before an infinite good. On that view, having a child is permissible even when the child's life will be hard.",
+   "differs_by": "Justifies creation by a guaranteed eschatological outcome for every person, not by the value of freedom or of a world with free agents, so free will drops out of the argument.",
+   "class": "c",
+   "attested_by": [
+    "sophia-christian-universalism-procreation-001"
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "free-will-defense/a-vale-of-soul-making",
+   "label": "A vale of soul-making",
+   "statement": "What freedom is for is growth. Courage, compassion and patience cannot be handed over ready-made; a free person has to grow into them against real hardship. A painless world could make comfortable people, never good ones. So to create someone who will suffer is to create someone who can freely become good.",
+   "differs_by": "Suffering is justified as the necessary means of free moral growth, not as the permitted cost of freedom's possibility, which is the free-will defense the scholar line states.",
+   "class": "a",
+   "attested_by": [
+    {
+     "citation": "John Hick, Evil and the God of Love, 1966, the soul-making (Irenaean) theodicy"
+    }
+   ],
+   "answered_by": [
+    {
+     "locus": "free-will-defense#long",
+     "anchor": "Free will does not mitigate the proxy gamble"
+    }
+   ],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "meta-ethical-pluralism/many-peaks-one-landscape",
+   "label": "Many peaks, one landscape",
+   "statement": "Grant that well-being is the only basis of value. It still has many peaks, not one: different ways of living well that are equally good. Avoiding the worst valleys is part of morality, not the whole of it. A view that counts only the valleys has thrown away half the landscape.",
+   "differs_by": "Pluralism of optima inside a single well-being realism, not pluralism of frameworks under moral uncertainty as in the scholar line.",
+   "class": "d",
+   "attested_by": [
+    "harris-moral-landscape-meta-ethical-pluralism-001"
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  },
+  {
+   "shape_id": "meaning-through-suffering/heroism-redeems-being",
+   "label": "Heroism redeems being itself",
+   "statement": "Suffering is not a cost that meaning pays off. It is the field on which people can freely stand up to tragedy and malice, and that voluntary heroism is the highest thing a human being can do. It redeems existence as a whole. Stop every new life and you abolish the possibility of redemption with it.",
+   "differs_by": "Locates the value in the voluntary heroic response that redeems being as a whole, an act-centred theodicy of heroism, rather than in meaning made after suffering or in goods that adversity makes possible.",
+   "class": "d",
+   "attested_by": [
+    "peterson-renegade-meaning-through-suffering-001"
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2, Code)"
+   }
+  }
+ ]
+}

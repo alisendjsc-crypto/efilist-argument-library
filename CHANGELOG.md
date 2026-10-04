@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The argument-shapes pilot drafted, and the owed rulings recorded — 2026-10-03 (no release; the pin stands)
+
+Ten "shapes" were drafted for six objections: the same objection argued from a different premise, each tied to a real instance or a checked publication. Two are answered cleanly by the library, two are answered in text the map already marks as flawed, five end where the map records a standing disagreement, and one turned out to be a different objection. A seat that drafted none of them judges them next. Canon v38.48 records Josiah's words owed since 2026-10-02, verbatim, including his pointer to his own argument for life, which opens the next intake. No served page changed.
+
 ## The successor map ruled — 2026-10-03 (no release; the pin stands)
 
 Josiah ruled on the judged successor map: "yes to all" on the four questions. The successor map v1_8 and its register v0_9 now stand. Four answers that were waiting on the v4.1.3 repairs, and one answer new in this map, are ruled as holding (R1-071 to R1-075). Each is read against the successor's own evidence file, by new versions of the rulings gate, the quote check and the collision list, while the versions that ruled the first 70 rows stay unchanged. Three passages go to the next safety queue, with the bridge's place name dropped. The Adversarial Map's page now carries its own tab icon. The flagship is still v4.1.5. Canon v38.47.

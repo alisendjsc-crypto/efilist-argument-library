@@ -1,8 +1,8 @@
 # argument_shapes/ -- the same objection, a different argument (V1)
 
-Seat l, V1, 2026-09-26. **Not served** (`site/` is the served tree) and **not canon**. No shape exists
-yet: V2 drafts the pilot and gate2 judges it (V3). Then, on his word, V4 puts the shapes in the corpus
-and renders them on the flagship.
+Seat l, V1, 2026-09-26. **Not served** (`site/` is the served tree) and **not canon**. V2 (2026-10-03)
+drafted the pilot: 10 shapes over the six R-V4 nodes, drafted, not judged. gate2 judges it (V3). Then, on
+his word, V4 puts the (a) shapes in the corpus and renders them on the flagship.
 
 Built from the variations design v0_1, sections 3 and 4 (`design/variations/VARIATIONS_design_v0_1.md`,
 md5 `fcf6f6fe`). His word on its six rulings: *"Go with your leans on all of the rulings."* That word is
@@ -15,6 +15,9 @@ recorded in canon v38.42, `adversarial_map.variations_rulings_V0`.
 | `argument_shapes_schema_v0_1.json` | The contract, as a JSON Schema. It covers a staging file (`{meta, shapes}`) and the shape object that a corpus node carries in its top-level `argumentShapes` list. |
 | `shape_validator_v0_1.py` | The validator: 18 checks. It runs over staging files, or over the corpus's own shapes with `--embedded`. |
 | `shape_validator_control_v0_1.json` | The self-test record: 59 cases, the unmutated control first, and every one of the 18 checks turned RED by a mutation. It is byte-identical under two hash seeds. |
+| `shapes_pilot_v0_1.json` | The pilot (V2): 10 shapes, `bound_for: "staging"`, phase S, pinned to corpus `7b6e65e5`. Classes a2 b2 c1 d5. Validator PASS, 0 violations. |
+| `shapes_pilot_measure_v0_1.json` | The pilot's measurement (design section 5): the cross-node share, the classes against R1, words per shape, the bar for a different shape, each (d)'s bedrock copied from the map and register, the collision check with the drafter's reading, the dropped candidates. |
+| `build_shapes_pilot.py` | Builds both from the shapes it holds; `--check` reproduces them byte for byte. |
 
 ## The rules it enforces
 

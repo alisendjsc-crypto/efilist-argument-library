@@ -1,0 +1,428 @@
+{
+ "what": "the argument-shapes pilot's measurement (design section 5), V2, seat l, 2026-10-03; drafted, not judged",
+ "pins": {
+  "pilot": {
+   "file": "argument_shapes/shapes_pilot_v0_1.json",
+   "md5": "1f9c5da6166b538a90efa6dc7598124e",
+   "bytes": 9389
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "f7d02b16f6837e53033b3c7fb68332a9"
+  },
+  "validator": {
+   "file": "argument_shapes/shape_validator_v0_1.py",
+   "md5": "64553b25b6db0ff67edeb87b89178297"
+  }
+ },
+ "counts": {
+  "shapes": 10,
+  "nodes": 6,
+  "per_node": {
+   "life-gift": 3,
+   "joy-outweighs-harms": 1,
+   "future-solve": 2,
+   "free-will-defense": 2,
+   "meta-ethical-pluralism": 1,
+   "meaning-through-suffering": 1
+  },
+  "classes": {
+   "a": 2,
+   "b": 2,
+   "c": 1,
+   "d": 5
+  }
+ },
+ "measures": {
+  "right_card_another_objections": {
+   "a_shapes": "1 of 2",
+   "all_routed_shapes": "5 of 9",
+   "routed_means": "every shape with an answering or terminus locus; the (c) has neither",
+   "map_v1_8_a_targets_cross_node": "19 of 38",
+   "design_prior": "20 of 40 (map v1_6, design section 5)"
+  },
+  "classes_against_R1": {
+   "not_shipping_as_a": "8 of 10",
+   "R1_FAILS": "42 of 70",
+   "R1_HOLDS": 28,
+   "note": "Not the same quantity: R1 ruled continuations against the answers the map routed them to; a shape is classed by where the library's answer to it ends. Both count how often a route meets a recorded (b) or (d)."
+  },
+  "words_per_shape": {
+   "min": 51,
+   "max": 58,
+   "mean": 54.3,
+   "band": [
+    30,
+    70
+   ]
+  },
+  "bar_for_a_different_shape": "A different shape changes the premise that carries the conclusion. It keeps the objection's conclusion and its trigger family, but the node's trigger, layman line and scholar line do not state its warrant, and its objector would not accept them as a fair statement of the argument. A new noun for the same move is a surface (the dropped Peterson 2017 candidate). A shape that is another node's objection belongs to that node, not here. Where an answer exists, the shape is classed by where the library's answer ends: a clean answer is (a); an answer the map records as flawed is (b); an answer the map records as ending at bedrock is (d), with the bedrock copied from that (d); and an argument whose warrant this objection does not carry is (c)."
+ },
+ "attestation": {
+  "rwe": 8,
+  "citations": 3,
+  "binding": "Attestation bound the pilot below about 18: the six nodes carry 9 instances, and 4 of the 6 nodes carry one or none that makes a non-surface move. Every citation was checked against a publisher, journal or encyclopedia record this session; none was read in full, and each says so. Nothing is cited from memory."
+ },
+ "reserved_for_the_intake": "love-from-the-void (his own argument for life, R0296) is the post-pilot intake's first item. Its modal move, that a good able to make up for suffering is not impossible, so waiting for it is not illogical, is reserved for that intake: no future-solve shape uses it (checked by the builder).",
+ "dropped": [
+  {
+   "node": "life-gift",
+   "candidate": "unconsented benefit is ordinary (the rescue and vaccination analogy)",
+   "why": "no checkable published source makes the move in this session; the long states it as the natalist's best analogy, which is the library's voice, not attestation"
+  },
+  {
+   "node": "joy-outweighs-harms",
+   "candidate": "expected value across the lives one might create",
+   "why": "no checked source; Hare 1988, searched for it, makes the golden-rule move instead, which became life-gift/the-golden-rule-passes-it-on"
+  },
+  {
+   "node": "joy-outweighs-harms",
+   "candidate": "we impose risks on children for expected good all the time",
+   "why": "no checked source"
+  },
+  {
+   "node": "free-will-defense",
+   "candidate": "the determinism dilemma (if no one is free your ought is idle; if we are, freedom is the good)",
+   "why": "no checked source"
+  },
+  {
+   "node": "meta-ethical-pluralism",
+   "candidate": "under moral uncertainty keep options open, since extinction is irreversible",
+   "why": "another node's objection (epistemic-humility)"
+  },
+  {
+   "node": "meaning-through-suffering",
+   "candidate": "life is a series of ethical decisions, not a hedonic ledger (peterson-better-never-meaning-through-suffering-001)",
+   "why": "a surface: the scholar line already makes the frame substitution (the hedonic ledger is the wrong instrument; meaning is the superordinate category); only the substituted noun differs"
+  },
+  {
+   "node": "future-solve",
+   "candidate": "the world is measurably getting better",
+   "why": "another node's objection (pinker-better-world)"
+  },
+  {
+   "node": "future-solve",
+   "candidate": "a good beyond suffering is not impossible, so waiting for it is not illogical",
+   "why": "reserved for the post-pilot intake (R0296): it is love-from-the-void's modal move; no pilot shape uses it"
+  }
+ ],
+ "shapes": [
+  {
+   "shape_id": "life-gift/the-giver-vouches-for-the-gift",
+   "class": "b",
+   "words": 55,
+   "answer_nodes": [
+    "gods-plan"
+   ],
+   "machine_collisions": [
+    {
+     "node": "gods-plan",
+     "locus": "long",
+     "class": "b",
+     "anchor": "No theodicy has resolved this trilemma",
+     "why": "at the answering locus"
+    },
+    {
+     "node": "life-gift",
+     "locus": "long",
+     "class": "d",
+     "anchor": "legitimate unsolicited benefit requires an antecedent recipient with a stake",
+     "why": "the shape's own node"
+    }
+   ],
+   "cross_node": true,
+   "lands_on": {
+    "entry": "gods-plan#long",
+    "anchor": "No theodicy has resolved this trilemma",
+    "regen_candidate": {
+     "axis_hit": [
+      "c",
+      "r"
+     ],
+     "severity": "minor"
+    }
+   },
+   "reading": "FAILS as an (a), so (b). Its strongest form trusts a good we cannot see from inside the harm, which is skeptical theism; the (b) at gods-plan#long records exactly that the node never engages skeptical theism or divine-command theory. The shape waits on that (b)'s repair. The own-node (d) at life-gift#long is not met: it presses the antecedent-stake condition, and this route never uses it.",
+   "attestation": [
+    {
+     "instance_id": "life-gift-001",
+     "fit_to_trigger_phrases": "exact",
+     "polarity": "deploys-against"
+    },
+    {
+     "instance_id": "life-gift-002",
+     "fit_to_trigger_phrases": "exact",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "life-gift/a-gift-to-the-world",
+   "class": "d",
+   "words": 53,
+   "answer_nodes": [],
+   "terminus": {
+    "via": "extinction-culture#long",
+    "via_anchor": "The absence of culture is not bad for the non-existent",
+    "bedrock_name": "impersonal-vs-person-affecting axiology",
+    "terminus_routing": "already-surfaced K224 bedrock 1, facet value-requires-a-valuer / standpoint-dependence; route as registered, not a new bedrock",
+    "register": {
+     "bedrock_id": "HR-03",
+     "name": "Impersonal vs person-affecting axiology",
+     "facet": "unfacetted"
+    }
+   },
+   "cross_node": true,
+   "reading": "(d). The library's answer is that a lost good registers only for a valuer; the (d) at extinction-culture#long records that an impersonal-value claim is never reached by it.",
+   "attestation": [
+    {
+     "instance_id": "anton-children-most-valuable-001",
+     "fit_to_trigger_phrases": "exact",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "class": "d",
+   "words": 57,
+   "answer_nodes": [],
+   "terminus": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+    "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+    "register": {
+     "bedrock_id": "HR-02",
+     "name": "Asymmetry-contingency of the positive-states cluster",
+     "facet": "merely-possible-beneficiary"
+    }
+   },
+   "cross_node": true,
+   "reading": "(d). The line turns on whether a merely possible person is harmed by non-creation; the (d) at joy-outweighs-harms#long records that question as the open premise the corpus routes to and does not meet.",
+   "attestation": [
+    {
+     "citation": "R. M. Hare, Possible People, Bioethics 2(4), 1988, pp. 279-293",
+     "checked": "Checked 2026-10-03 against the publisher's record (volume, issue, pages) and a secondary summary of its thesis: we can harm possible people by preventing them from becoming actual, by a golden rule read as 'do to others as we are glad that they did to us'. Full text not read.",
+     "urls": [
+      "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8519.1988.tb00055.x",
+      "https://www.researchgate.net/publication/8557150_The_Golden_Rule_and_the_Potentiality_Principle_Future_Persons_and_Contingent_Interests"
+     ]
+    }
+   ]
+  },
+  {
+   "shape_id": "joy-outweighs-harms/good-in-itself-not-a-sum",
+   "class": "d",
+   "words": 53,
+   "answer_nodes": [],
+   "terminus": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+    "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+    "register": {
+     "bedrock_id": "HR-02",
+     "name": "Asymmetry-contingency of the positive-states cluster",
+     "facet": "merely-possible-beneficiary"
+    }
+   },
+   "cross_node": false,
+   "reading": "(d). Grant the goods in full, as the long does; the claim that giving such a life benefits its recipient is the merely-possible-beneficiary premise the (d) at the same locus records as bedrock.",
+   "attestation": [
+    {
+     "instance_id": "joy-outweighs-harms-001",
+     "fit_to_trigger_phrases": "exact",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "future-solve/raise-the-people-who-fix-it",
+   "class": "a",
+   "words": 58,
+   "answer_nodes": [
+    "next-person-cure-cancer"
+   ],
+   "machine_collisions": [
+    {
+     "node": "future-solve",
+     "locus": "short",
+     "class": "b",
+     "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+     "why": "the shape's own node"
+    }
+   ],
+   "cross_node": true,
+   "reading": "HOLDS. next-person-cure-cancer carries no (b) or (d) on any slot. The machine collision is the (b) at future-solve#short, which presses the over-broad transitional-sacrifice framing; this shape makes no transitional-sacrifice claim, so the (b) is not met.",
+   "attestation": [
+    {
+     "instance_id": "future-solve-001",
+     "fit_to_trigger_phrases": "exact",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "future-solve/the-obligation-to-survive",
+   "class": "b",
+   "words": 52,
+   "answer_nodes": [
+    "transhumanist-objection",
+    "wild-animal-suffering-consistency"
+   ],
+   "machine_collisions": [
+    {
+     "node": "transhumanist-objection",
+     "locus": "long",
+     "class": "b",
+     "anchor": "carried where the terminus is defended",
+     "why": "at the answering locus"
+    },
+    {
+     "node": "future-solve",
+     "locus": "short",
+     "class": "b",
+     "anchor": "never consented to serve as transitional sacrifices in your optimistic experiment",
+     "why": "the shape's own node"
+    }
+   ],
+   "cross_node": true,
+   "lands_on": {
+    "entry": "transhumanist-objection#long",
+    "anchor": "carried where the terminus is defended",
+    "regen_candidate": {
+     "axis_hit": [
+      "c",
+      "r"
+     ],
+     "severity": "headline"
+    }
+   },
+   "reading": "FAILS as an (a), so (b). wild-animal-suffering-consistency#long answers the antinatalist core: the framework forbids discretionary creation and was never committed to ending all births. But the library also holds an extinction terminus that rests on suffering-minimisation, and the (b) at transhumanist-objection#long (headline) records that terminus as defended nowhere. The shape presses exactly that gap, so the library answers it with a commitment its own terminus contradicts. The repair belongs where the terminus is stated. The (b) at future-solve#short is not met: the shape makes no transitional-sacrifice claim.",
+   "attestation": [
+    {
+     "citation": "Masahiro Morioka, The Paradox of Sentiocentric Antinatalism: The Obligation of Extinction or the Obligation of Survival?, Cambridge Quarterly of Healthcare Ethics 34(4), 2025, pp. 634-645",
+     "checked": "Checked 2026-10-03 against the journal's and PubMed's records and the abstract: sentiocentric antinatalists who would end all births must bear an obligation to survive to prevent other creatures from being born. Full text not read.",
+     "urls": [
+      "https://www.cambridge.org/core/journals/cambridge-quarterly-of-healthcare-ethics/article/paradox-of-sentiocentric-antinatalism-the-obligation-of-extinction-or-the-obligation-of-survival/5D1402C6047D2D9AAF936070364D985A",
+      "https://pubmed.ncbi.nlm.nih.gov/42028605/",
+      "https://w-rdb.waseda.jp/html/100001337_en.html"
+     ]
+    }
+   ]
+  },
+  {
+   "shape_id": "free-will-defense/everyone-comes-home-at-last",
+   "class": "c",
+   "words": 56,
+   "answer_nodes": [],
+   "intake": "a candidate for the new-objection intake (R-V2, R-V6), after the pilot is judged",
+   "reading": "(c). The warrant is eschatological compensation, which free will does not carry; the instance's own attachment note says a schema revision might split it from this objection. No node states it: gods-plan's trigger is divine purpose, not universal salvation. It goes to the intake.",
+   "attestation": [
+    {
+     "instance_id": "sophia-christian-universalism-procreation-001",
+     "fit_to_trigger_phrases": "moderate",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "free-will-defense/a-vale-of-soul-making",
+   "class": "a",
+   "words": 52,
+   "answer_nodes": [
+    "free-will-defense"
+   ],
+   "machine_collisions": [],
+   "cross_node": false,
+   "reading": "HOLDS. free-will-defense carries no (b) or (d) on any slot, so no machine collision. The long's third level grants the good for argument's sake and answers at creation: the being is made without consent and exposed to a world where growth may never come. That answer needs no axiology. The pull, for gate2: the statement's constitutive clause is the move the (d) at meaning-through-suffering#long records as reaching HR-03, but that (d) bites only on an impersonal reading, and this shape's conclusion is about the person created.",
+   "attestation": [
+    {
+     "citation": "John Hick, Evil and the God of Love, 1966, the soul-making (Irenaean) theodicy",
+     "checked": "Checked 2026-10-03 against the Internet Encyclopedia of Philosophy entry on Hick and summaries: the 1966 book is the main presentation of the soul-making theodicy, in which God is responsible for evil but justified by its benefit for the moral and spiritual growth of free persons. Full text not read.",
+     "urls": [
+      "https://iep.utm.edu/hick/",
+      "https://en.wikipedia.org/wiki/Irenaean_theodicy"
+     ]
+    }
+   ]
+  },
+  {
+   "shape_id": "meta-ethical-pluralism/many-peaks-one-landscape",
+   "class": "d",
+   "words": 51,
+   "answer_nodes": [],
+   "terminus": {
+    "via": "meta-ethical-pluralism#medium",
+    "via_anchor": "Negative utilitarianism merely refuses the tolerance",
+    "bedrock_name": "tolerance-weighting pluralism (lexical-priority stake above suffering-minimization)",
+    "terminus_routing": "flagship_t5_register_dispositions_v0_1 (defanged rationale names the survivor); pressure seats: meta-ethical-pluralism#long third ground, contractualism-scanlon#long priced-bullet pattern",
+    "register": {
+     "bedrock_id": "HR-09",
+     "name": "Tolerance-weighting pluralism",
+     "facet": "lexical-priority-above-suffering-minimization"
+    }
+   },
+   "cross_node": false,
+   "reading": "(d). The library's answer is that negative utilitarianism refuses the tolerance others accept; the (d) at the same locus records that a pluralist who weighs and names his price stays coherent: a stake, not a defeat.",
+   "attestation": [
+    {
+     "instance_id": "harris-moral-landscape-meta-ethical-pluralism-001",
+     "fit_to_trigger_phrases": "loose",
+     "polarity": "deploys-against"
+    }
+   ]
+  },
+  {
+   "shape_id": "meaning-through-suffering/heroism-redeems-being",
+   "class": "d",
+   "words": 56,
+   "answer_nodes": [],
+   "terminus": {
+    "via": "meaning-through-suffering#long",
+    "via_anchor": "a survival mechanism, not an ethical justification",
+    "bedrock_name": "impersonal-vs-person-affecting axiology (value-requires-a-valuer: whether a valuerless world is assessable as better)",
+    "terminus_routing": "already-registered HR-03; reached through the (d) at benatar-asymmetry-attack#archetypeVariants.sophisticate (Phase F); value-requires-a-valuer facet; reclassified from (a) at L4 under the R1 standard (R1-041)",
+    "register": {
+     "bedrock_id": "HR-03",
+     "name": "Impersonal vs person-affecting axiology",
+     "facet": "value-requires-a-valuer"
+    }
+   },
+   "cross_node": false,
+   "reading": "(d). The library's consent answer meets the voluntary-heroism clause (the hero volunteers; the created person is drafted), but the shape's conclusion is an impersonal loss, the possibility of redemption itself, which the (d) at the same locus records as reaching HR-03.",
+   "attestation": [
+    {
+     "instance_id": "peterson-renegade-meaning-through-suffering-001",
+     "fit_to_trigger_phrases": "loose",
+     "polarity": "deploys-against"
+    }
+   ]
+  }
+ ],
+ "the_pull": [
+  "future-solve/the-obligation-to-survive: (a) at wild-animal-suffering-consistency#long alone was the easier call; (b) was chosen because the library's extinction terminus is the commitment the shape presses, and the map records it as undefended.",
+  "free-will-defense/a-vale-of-soul-making against meaning-through-suffering/heroism-redeems-being: the same constitutive move is (a) where the conclusion is about the person created and (d) where it is an impersonal loss. gate2 should test whether that line holds.",
+  "meta-ethical-pluralism/many-peaks-one-landscape: Harris's surrounding argument also reaches an empty world's rank (HR-03); the statement was cut to the plurality of optima, so its terminus is the tolerance stake. Whether the cut understates his move is gate2's to read."
+ ],
+ "validator_run": {
+  "rc": 0,
+  "verdict": "PASS",
+  "violation_count": 0,
+  "shapes": 10,
+  "nodes_with_shapes": 6
+ }
+}
