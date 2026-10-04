@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The pilot's two corrections drafted, and Josiah's word recorded — 2026-10-03 (no release; the pin stands)
+
+Josiah adopted the judgment of the argument-shapes pilot. The two corrections it owed are drafted in a new file, beside the pilot rather than inside it. The golden-rule shape now states its source's duty the way the source states it: a possible person's interests are weighed with everyone else's, other things equal, instead of an outright duty to have children. The soul-making shape keeps its words; it is now recorded as ending at a disagreement the map already registers, not as answered. A seat that drafted neither judges them next. Canon v38.50 records his two rulings word for word; his other statements that evening are recorded by fingerprint only. No served page changed.
+
 ## The argument-shapes pilot judged — 2026-10-03 (no release; the pin stands)
 
 A seat that drafted none of the ten shapes judged them. Five stand as drafted. Two stand with a correction owed: one is stated more weakly than its source argues it, and one ends at a recorded disagreement rather than at a clean answer. Three were set aside because each turned out to be another objection's argument, already stated on that objection's card. One shape is left for the library to answer on its cards; its route waits for Josiah's word. Canon v38.49 records the judgment. No served page changed.

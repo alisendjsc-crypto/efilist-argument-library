@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.49",
+  "canon_version": "38.50",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V3",
+  "last_updated_by_session": "V2b",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V3 (gate2) judged the argument-shapes pilot: 7 of 10 shapes kept (classes a1 b1 c1 d4); three were other nodes' objections. Next, in order: (1) his word on the six asks in adversarial_map.shapes_pilot_judgment_gate2.asks; (2) seat l's two redrafts (SJ-003's statement, SJ-008's route) as new rows or a new file, judged by gate2; (3) the responseVariants design (R0294); (4) the relief variant, from relief_view_for_the_variant, judged by a seat that drafted none of it; (5) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). After his word: V4 puts the one (a) in the corpus after the successor map's pin; the (d)s enter the map at its next validator bump; the (c) opens the intake, love-from-the-void first.",
+    "session": "The pin is v4.1.5. V2b drafted the two redrafts gate2's V3 judgment owed (SJ-003's statement, SJ-008's route) in a new file, and recorded his words on R0298 and R0308. Next, in order: (1) gate2 round two judges the two redrafts only (argument_shapes/shapes_redrafts_v0_1.json and its record), drafter != judge, then his word; (2) the responseVariants design (R0294); (3) the relief variant, drafted from relief_view_for_the_variant and judged by a seat that drafted none of it; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks and heroism now; the golden rule and soul-making once round two accepts them); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1892,6 +1892,17 @@
       "state": "JUDGED, NOT RULED",
       "block": "shapes_pilot_judgment_gate2",
       "canon_writer_next": "seat l"
+    },
+    "V2b_closed": {
+      "state": "DRAFTED (the two redrafts) and RECORDED (his words on R0298 and R0308; his private statements by md5 only)",
+      "blocks": [
+        "his_words_V2b",
+        "r_v6_adopted_V2b",
+        "private_statements_V2",
+        "shapes_redrafts_V2b",
+        "record_notes_V2b"
+      ],
+      "canon_writer_next": "gate2 (round two), then seat l"
     }
   },
   "open_questions": {
@@ -2023,7 +2034,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.49",
+  "canon_version_marker": "v38.50",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2732,7 +2743,8 @@
     "v38_46_gate2": "MINOR. keyset UNCHANGED at 42. One adversarial_map subkey addition (successor_redrafts_judgment_gate2); next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. NO PIN. Every other top-level key asserted byte-identical.",
     "v38_47_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_rulings_L7, successor_map_stands_L7, safety_queue_L7, U_065_route_BUILT_L7, adversarial_tab_icon_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: site/adversarial/index.html (the tab icon), no pin.",
     "v38_48_V2": "MINOR. keyset UNCHANGED at 42. adversarial_map gains vault_v2_rulings_R0274, his_words_L8, relief_view_for_the_variant, love_from_the_void_intake_V2, r_v6_candidates_V2, pin_queue_additions_R0292, shapes_pilot_V2, record_notes_V2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
-    "v38_49_V3": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_pilot_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_49_V3": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_pilot_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_50_V2b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V2b, r_v6_adopted_V2b, private_statements_V2, shapes_redrafts_V2b, record_notes_V2b; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -2991,7 +3003,8 @@
     "gate2 (2026-09-26; NO PIN): L7's 18 redrafts judged (R0245). Record 8f2ee5e4: all ACCEPT (16 without the corpus-history wording, SM-55's hub condition as it stands, SM-69 pressing the diagnosis to HR-02); v1_8, v0_9, the knock-on control (12, which corrects gate2's own 9) and the controls_v1_7 change CONFIRM; the U-065 route CONFIRM with two conditions. R0244's condition met; canon back to L7.",
     "L7 (2026-09-26/27), close: his word on R0244; R1-071..R1-075 (HOLDS for #11, #22, #32, #50 and n=70, the (a) at self-defeating#long) through the evidence addendum, read by r1_rulings_gate_v0_2, r1_quote_check_v0_2 and r1_collision_list_l7; the successor map v1_8 stands; the /adversarial/ tab icon wired. No pin.",
     "V2 (2026-10-03): his words owed since R0274 recorded verbatim from the user turns (R0274's six V2 rulings; R0292; R0294; R0295; R0296's pointer to love-from-the-void, now the post-pilot intake's first item); the argument-shapes pilot drafted on the six R-V4 nodes, validator PASS 0, for gate2 (V3). No pin.",
-    "V3 (gate2, 2026-10-03): the argument-shapes pilot judged (R0297): 5 ACCEPT, 2 AMEND, 3 REJECT. Three shapes were other nodes' scholar objections (gods-plan, extinction-culture, love-beauty-art); soul-making is (d) at HR-02, not (a); the golden rule owes Hare's weighed duty. One (a) remains, for V4. No pin."
+    "V3 (gate2, 2026-10-03): the argument-shapes pilot judged (R0297): 5 ACCEPT, 2 AMEND, 3 REJECT. Three shapes were other nodes' scholar objections (gods-plan, extinction-culture, love-beauty-art); soul-making is (d) at HR-02, not (a); the golden rule owes Hare's weighed duty. One (a) remains, for V4. No pin.",
+    "V2b (seat l, 2026-10-03): his words on R0298 and R0308 recorded verbatim from the user turns; his private statements by md5 only; R0288 F5's four candidates adopted into the R-V6 batch; gate2's two AMENDs redrafted in a new file (the golden rule restates Hare's weighed duty; soul-making carried as (d) at HR-02), validator PASS 0, for gate2's round two. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -11491,7 +11504,430 @@
         "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_48 to v38_49); regenerated by the tool's own --write"
       },
       "not_moved": "the pilot, its measurement, its builder, the validator, its control and the schema (the gate pins them); the map validator; no corpus or served byte"
-    }
+    },
+    "his_words_V2b": {
+      "R0298": {
+        "his_word": {
+          "verbatim": "Go with your recommendations on all of the above.",
+          "said": "2026-10-04T05:10:18.273Z UTC (America/Phoenix is UTC-7), V2 transcript line 719",
+          "turn_md5": "d80c299aa385b0ae56b6b9c5e3f5f339",
+          "answers_message": {
+            "line": 715,
+            "text_md5": "4d0bcd45fa8bcb8b394a950042febba5"
+          }
+        },
+        "recorded_by": {
+          "relay": "R0299",
+          "md5": "486c96f8be874784ab96dcdfd7191986"
+        },
+        "adopts": [
+          "V3: gate2 judges the pilot (done; adversarial_map.shapes_pilot_judgment_gate2)",
+          "R0288 F5's four candidates join the R-V6 self-objection batch, with the gloss rule (r_v6_adopted_V2b)",
+          "the resentment line stays in canon by md5 only, as r_v6_candidates_V2 carries it"
+        ]
+      },
+      "R0308": {
+        "his_word": {
+          "verbatim": "Go with your recommendations on the rest.",
+          "said": "2026-10-04T05:51:34.005Z UTC (America/Phoenix is UTC-7), V2 transcript line 874",
+          "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7",
+          "answers_message": {
+            "line": 867,
+            "text_md5": "ca69f9a49597e7c4f8f5f0ba4af50cfb"
+          }
+        },
+        "recorded_by": {
+          "relay": "R0309",
+          "md5": "75d347417326463ac27baba0fbc514ea"
+        },
+        "answers": {
+          "relay": "R0308",
+          "md5": "f4112683a046d2bfc5b3811194929211",
+          "seat": "gate2 (V3)"
+        },
+        "the_message_it_answers": "V2's message of 2026-10-04T05:43:47.438Z UTC (line 867): adopt all six asks, its lean matching gate2's on each, then hand the two redrafts and canon v38.50 to a fresh seat-l session",
+        "adopts": {
+          "the_six_asks": [
+            {
+              "ask": "Adopt the judgment: 5 ACCEPT, 2 AMEND, 3 REJECT.",
+              "lean": "adopt; every verdict reads from text at pinned bytes, and the three REJECTs follow V2's own bar",
+              "adopted": true
+            },
+            {
+              "ask": "The (a) goes to V4, after the successor map's pin: future-solve/raise-the-people-who-fix-it alone.",
+              "lean": "yes; it is the one shape the library answers cleanly",
+              "adopted": true
+            },
+            {
+              "ask": "The (b) goes to the regen queue: future-solve/the-obligation-to-survive, as a second scenario on the existing headline (b) at transhumanist-objection#long, not a new item.",
+              "lean": "yes; one repair should meet both scenarios",
+              "adopted": true
+            },
+            {
+              "ask": "The (d)s go to the map at the successor map's next validator bump: many-peaks and heroism as they stand; golden-rule and soul-making once seat l's redrafts are judged.",
+              "lean": "yes",
+              "adopted": true
+            },
+            {
+              "ask": "The (c) goes to the intake, tested first as a gods-plan shape.",
+              "lean": "yes; the bar reads it as gods-plan's before it reads it as new",
+              "adopted": true
+            },
+            {
+              "ask": "The three REJECTs leave life-gift with one shape and joy-outweighs-harms with none. Redraft replacements now?",
+              "lean": "no; the scale-up is attestation-bound, and V4 ships only (a)s",
+              "adopted": true
+            }
+          ],
+          "from": "adversarial_map.shapes_pilot_judgment_gate2.asks (gate2's asks and leans)",
+          "the_hand_off": "a fresh seat-l session (V2b) drafts SJ-003's statement and SJ-008's route and writes canon v38.50 (shapes_redrafts_V2b)"
+        },
+        "the_same_turn": "the rest of the turn is private (private_statements_V2)"
+      },
+      "read": "each verbatim is an exact slice of the user turn named, pinned by the turn's md5, read at the user turn and not at a search hit; tools/v38_50_his_words.json at 6f2d0c5e060de228cabe9b6bcc357890",
+      "rule": "Quote his words; never paraphrase them."
+    },
+    "r_v6_adopted_V2b": {
+      "moved_to_adopted": {
+        "items": [
+          "td-005 and pj-057, at negative-util-aggregation",
+          "yr-029's forced exposure, at policy-proposal",
+          "yr-036 and td-007, at antinatalism-misanthropic",
+          "the 2026-10-03 \"crash out\" sentence"
+        ],
+        "from": "adversarial_map.r_v6_candidates_V2.waiting_for_his_word (R0288 F5)",
+        "by": "his word on R0298 (his_words_V2b.R0298)"
+      },
+      "the_rule_adopted_with_them": {
+        "lean": "add them, with his word; any text near violence goes in with his 2026-10-03 gloss quoted beside it, never the 2014 lines alone; the pilot keeps off the suicide and violence nodes",
+        "from": "adversarial_map.r_v6_candidates_V2.waiting_for_his_word.lean"
+      },
+      "his_gloss": {
+        "key": "R0300_gloss",
+        "carried_by_md5_only": {
+          "turn": {
+            "transcript": "V2 (b664995c-43f2-4ec1-877b-d18b71cb68d8)",
+            "line": 751,
+            "utc": "2026-10-04T05:19:45.415Z",
+            "turn_md5": "69964e34acdf2687f06e659fc863ee4f"
+          },
+          "offsets": [
+            0,
+            958
+          ],
+          "md5": "69964e34acdf2687f06e659fc863ee4f",
+          "words": 160,
+          "whole_turn": true,
+          "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)"
+        },
+        "relay": {
+          "relay": "R0300",
+          "md5": "0ec1a18764a3f630093164d540cc5266"
+        },
+        "use": "quoted beside the lines it glosses when the intake drafts them, with his word"
+      },
+      "added_on_the_seats_lean": {
+        "what": "his July 2026 line in the vault (fb-2026-07, body line 25), beside the 2026-10-03 sentence, under the same gloss",
+        "lean": "V2's (R0300), standing under his default rule; reversible by his word",
+        "carried_by_md5_only": {
+          "file": "~/Documents/Obsidian Vault/raw/facebook/2026/fb-2026-07.md",
+          "file_md5": "01ccc618713a165585a5acc5f51b4cb8",
+          "line": 38,
+          "body_line": 25,
+          "numbering": "body_line counts from the line after the front matter, as the vault's claude/tools/grep_sources.py does; R0300's 'L25'",
+          "line_md5": "a72287d04d4a1e95f63954f0cfdd86bc",
+          "line_words": 94,
+          "excerpt": {
+            "as_quoted_by": "R0300",
+            "offsets": [
+              0,
+              184
+            ],
+            "md5": "866aa016adddf1d6260598de6293fff4",
+            "words": 33
+          },
+          "also_at": [
+            {
+              "line": 40,
+              "offset": 8
+            }
+          ],
+          "authorship": "josiah (the vault's label)",
+          "text_withheld": "recorded by md5 and offsets only, as R0300 asks: the line reaches the adversarial side only when the R-V6 intake drafts it, with his 2026-10-03 gloss beside it"
+        }
+      },
+      "the_batch_now": [
+        "pj-016, pj-127, yr-017 (R0274 item 3)",
+        "the resentment line (R0292 item 3)",
+        "R0288 F5's four (R0298)",
+        "the July line (the seat's lean)"
+      ],
+      "where": "the new-objection intake (R-V6), after the pilot is judged; adversarial side only, never the flagship's voice",
+      "the_bar": "his 2026-09-25 safety bar binds every entry, in his words at adversarial_map.safety_pass_LANDED_L6.the_bar.his_words_verbatim"
+    },
+    "private_statements_V2": {
+      "rule": "His private statements are recorded here by turn and md5 only. The texts live in the relays named, on the operator's desk, and never enter this public repository as text (R0309's law). Each relay's quotation was asserted equal to its turn.",
+      "statements": [
+        {
+          "turn": {
+            "transcript": "V2 (b664995c-43f2-4ec1-877b-d18b71cb68d8)",
+            "line": 751,
+            "utc": "2026-10-04T05:19:45.415Z",
+            "turn_md5": "69964e34acdf2687f06e659fc863ee4f"
+          },
+          "offsets": [
+            0,
+            958
+          ],
+          "md5": "69964e34acdf2687f06e659fc863ee4f",
+          "words": 160,
+          "whole_turn": true,
+          "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+          "key": "R0300_gloss",
+          "relay": {
+            "relay": "R0300",
+            "md5": "0ec1a18764a3f630093164d540cc5266"
+          }
+        },
+        {
+          "turn": {
+            "transcript": "V2 (b664995c-43f2-4ec1-877b-d18b71cb68d8)",
+            "line": 789,
+            "utc": "2026-10-04T05:28:31.627Z",
+            "turn_md5": "798ed6c18977308f7d3b5385d0a8460c"
+          },
+          "offsets": [
+            0,
+            1569
+          ],
+          "md5": "798ed6c18977308f7d3b5385d0a8460c",
+          "words": 267,
+          "whole_turn": true,
+          "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+          "key": "R0302_followup",
+          "relay": {
+            "relay": "R0302",
+            "md5": "a28d2312361286e5f23d7a001e4b0e1b"
+          }
+        },
+        {
+          "turn": {
+            "transcript": "V2 (b664995c-43f2-4ec1-877b-d18b71cb68d8)",
+            "line": 810,
+            "utc": "2026-10-04T05:40:03.052Z",
+            "turn_md5": "545fdc8cd255c4abf05e0bc39eb609c5"
+          },
+          "offsets": [
+            0,
+            1525
+          ],
+          "md5": "545fdc8cd255c4abf05e0bc39eb609c5",
+          "words": 261,
+          "whole_turn": true,
+          "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+          "key": "R0304_third_followup",
+          "relay": {
+            "relay": "R0304",
+            "md5": "16f4b671ccc7b8cd9e79b309decd4eb0"
+          }
+        },
+        {
+          "turn": {
+            "transcript": "V2 (b664995c-43f2-4ec1-877b-d18b71cb68d8)",
+            "line": 874,
+            "utc": "2026-10-04T05:51:34.005Z",
+            "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7"
+          },
+          "offsets": [
+            0,
+            1508
+          ],
+          "md5": "c978ff1fcb7fd598d72eda08b1a10594",
+          "words": 254,
+          "whole_turn": false,
+          "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+          "key": "R0309_statement_2251",
+          "relay": {
+            "relay": "R0309",
+            "md5": "75d347417326463ac27baba0fbc514ea"
+          }
+        }
+      ],
+      "the_22_51_turn": "the statement is the turn up to his word on R0308, which closes it (his_words_V2b.R0308)",
+      "library_change": "none; the R-V6 intake and the relief and metaethics forks read them, with his word, before any text quotes them"
+    },
+    "shapes_redrafts_V2b": {
+      "state": "DRAFTED, NOT JUDGED. gate2 judges these two redrafts in round two (K258); his word decides.",
+      "files": {
+        "redrafts": {
+          "file": "argument_shapes/shapes_redrafts_v0_1.json",
+          "md5": "fc28cd12265e2712a9d610bbb2c1b69f",
+          "bytes": 2098
+        },
+        "record": {
+          "file": "argument_shapes/shapes_redrafts_record_v0_1.json",
+          "md5": "ace5fb88886f7f7ce49a90658b590954",
+          "bytes": 12033
+        },
+        "builder": {
+          "file": "argument_shapes/build_shapes_redrafts.py",
+          "md5": "ee38e0ad8d83cb95539d40af7931fdc9",
+          "bytes": 21022
+        }
+      },
+      "authority": {
+        "his_word": "Go with your recommendations on the rest.",
+        "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7",
+        "utc": "2026-10-04T05:51:34.005Z",
+        "answers": "R0308",
+        "from": "tools/v38_50_his_words.json at 6f2d0c5e060de228cabe9b6bcc357890",
+        "adopted": "gate2's judgment (5 ACCEPT, 2 AMEND, 3 REJECT) and V2's hand-off: a fresh seat-l session drafts the two AMENDs"
+      },
+      "supersession": "Each row supersedes the pilot shape of the same shape_id. The pilot stays byte-identical (gate2's gate pins it), so the staging file repeats the pilot's ids and validates alone. The current set is the pilot with each superseded shape replaced by its redraft: 'superseded_view' below. Loading the pilot and this file together fails shape-id, as it should.",
+      "rows": [
+        {
+          "id": "RD-01",
+          "shape_id": "life-gift/the-golden-rule-passes-it-on",
+          "answers": "SJ-003",
+          "changed": [
+            "provenance",
+            "statement"
+          ],
+          "class": "d",
+          "words": {
+            "pilot": 57,
+            "redraft": 69
+          },
+          "terminus": {
+            "via": "joy-outweighs-harms#long",
+            "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+            "register": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            },
+            "copied_from": {
+              "map_entry": 41,
+              "register": "HR-02 / merely-possible-beneficiary"
+            }
+          }
+        },
+        {
+          "id": "RD-02",
+          "shape_id": "free-will-defense/a-vale-of-soul-making",
+          "answers": "SJ-008",
+          "changed": [
+            "answered_by",
+            "class",
+            "provenance"
+          ],
+          "class": "d",
+          "words": {
+            "pilot": 52,
+            "redraft": 52
+          },
+          "terminus": {
+            "via": "suffering-makes-human#long",
+            "via_anchor": "evaluate the component (suffering) on its own terms",
+            "register": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            },
+            "copied_from": {
+              "map_entry": 71,
+              "register": "HR-02 / merely-possible-beneficiary"
+            }
+          }
+        }
+      ],
+      "validator_runs": {
+        "redrafts_alone": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 2,
+          "nodes_with_shapes": 2,
+          "file": "argument_shapes/shapes_redrafts_v0_1.json"
+        },
+        "superseded_view": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 10,
+          "nodes_with_shapes": 6,
+          "what": "the pilot's ten shapes in its order, the two superseded ones replaced by these"
+        },
+        "ruled_view": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 7,
+          "nodes_with_shapes": 5,
+          "what": "the shapes his word on R0308 kept: gate2's five ACCEPTs and these two redrafts; the three REJECTs left out",
+          "shape_ids": [
+            "life-gift/the-golden-rule-passes-it-on",
+            "future-solve/raise-the-people-who-fix-it",
+            "future-solve/the-obligation-to-survive",
+            "free-will-defense/everyone-comes-home-at-last",
+            "free-will-defense/a-vale-of-soul-making",
+            "meta-ethical-pluralism/many-peaks-one-landscape",
+            "meaning-through-suffering/heroism-redeems-being"
+          ]
+        }
+      },
+      "pulls": {
+        "RD-01": [
+          "Wording: 'interests', Hare's own word in the chapter's opening (source 2), where SJ-003's owed line says 'preferences' (the SEP's 'total satisfaction of preference'). In Hare's preference utilitarianism they name the same thing; gate2 reads whether 'interests' is the better fit.",
+          "Omitted for the band: the indexer's abstract (source 3) adds two conditions, the proportionate distribution held fixed and a floor where the worst-off lives are just worth living. The statement keeps only the total good, which is the clause that bounds the duty. gate2 reads whether the omission understates Hare.",
+          "Attestation is unchanged, because it was not owed. The golden-rule step is attested for Hare's view of possible people by the SEP (citing his 1975, 1988b and 1988c, not this article) and by Chan 2004; the article's own opening, through its 1993 reprint, attests the weighing. If gate2 reads the golden-rule step as better attested by Hare 1975 ('Abortion and the Golden Rule'), adding that citation is a one-line change."
+        ]
+      },
+      "sources": "RD-01's Hare restatement rests on six records, each named with its URL and short verbatim excerpts in the record; neither the article nor its reprint was read in full",
+      "after_round_two": {
+        "ruled_set_classes": {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "d": 4
+        },
+        "routes": "(d)s to the map at the successor map's next validator bump (many-peaks and heroism now; these two once judged); the (a) to the corpus in V4 after the successor map's pin; the (b) to the regen queue; the (c) to the intake"
+      },
+      "run_at_this_build": {
+        "build_shapes_redrafts --check": "GREEN",
+        "shape_validator_v0_1 shapes_redrafts_v0_1.json": "GREEN: PASS, 2 shapes, 0 violations"
+      },
+      "not_moved": "the pilot, its measurement, its builder, the validator, its control, the schema and gate2's records; no corpus or served byte"
+    },
+    "record_notes_V2b": [
+      {
+        "statement": "R0304 gives its turn md5 as `md5`",
+        "measured": "a placeholder left unfilled; measured at the user turn, the turn's md5 is 545fdc8cd255c4abf05e0bc39eb609c5 (R0309 carried its first eight characters). The quotation itself equals the turn byte for byte.",
+        "relay": {
+          "relay": "R0304",
+          "md5": "16f4b671ccc7b8cd9e79b309decd4eb0",
+          "as_printed": "md5 (a placeholder; measured at the turn: see excerpts)"
+        }
+      },
+      {
+        "statement": "R0300 places the July line at fb-2026-07 'L25'",
+        "measured": "right in the vault's own numbering, which counts from the line after the front matter (claude/tools/grep_sources.py); it is file line 38. The words R0300 quotes occur once more, at file line 40."
+      },
+      {
+        "statement": "the pilot's attestation note for Hare 1988: 'a secondary summary of its thesis: we can harm possible people by preventing them from becoming actual'",
+        "measured": "in the records this seat read, those words are the publisher's description of Essays on Bioethics (1993), the collection that reprints the article as chapter 5. The article's own opening, in the reprint's record, says that the possible person's interests have to be considered. The redraft's harm clause rests on the collection's description; its weighed duty rests on the opening and on the indexer's abstract (shapes_redrafts_V2b.sources)"
+      },
+      {
+        "statement": "shapes_pilot_judgment_gate2 pins r1_collision_list_l7_v0_1.json at 4c531b9d93f48b3aefe93196ce04046f",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_49 to v38_50); regenerated by the tool's own --write",
+        "record": {
+          "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+          "md5": "930e71278e09585097fe7a873871ef9c",
+          "bytes": 9618,
+          "was": "4c531b9d93f48b3aefe93196ce04046f"
+        }
+      }
+    ]
   },
   "flagship_sidecars": {
     "block_kind": "flagship_sidecars",

@@ -1,0 +1,46 @@
+{
+ "meta": {
+  "source_corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "source_corpus_objections_md5": "bcf722097441eb4926e0e443ee925a64",
+  "bound_for": "staging",
+  "shape_coverage": "2/82"
+ },
+ "shapes": [
+  {
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "label": "The golden rule passes it on",
+   "statement": "You are glad you were brought into existence, and so are nearly all of us. The golden rule says do to others what you are glad was done to you. A person who would be glad to exist is harmed if we choose never to create them, so their interests are weighed with everyone's: other things equal, we ought to create them whenever that adds to the total good.",
+   "differs_by": "Rests on universalizing one's own gladness by the golden rule, and on the claim that a possible person is harmed by not being created, rather than on gratitude as a virtue or on the recipient's later affirmation as evidence.",
+   "class": "d",
+   "attested_by": [
+    {
+     "citation": "R. M. Hare, Possible People, Bioethics 2(4), 1988, pp. 279-293"
+    }
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2b, Code)"
+   }
+  },
+  {
+   "shape_id": "free-will-defense/a-vale-of-soul-making",
+   "label": "A vale of soul-making",
+   "statement": "What freedom is for is growth. Courage, compassion and patience cannot be handed over ready-made; a free person has to grow into them against real hardship. A painless world could make comfortable people, never good ones. So to create someone who will suffer is to create someone who can freely become good.",
+   "differs_by": "Suffering is justified as the necessary means of free moral growth, not as the permitted cost of freedom's possibility, which is the free-will defense the scholar line states.",
+   "class": "d",
+   "attested_by": [
+    {
+     "citation": "John Hick, Evil and the God of Love, 1966, the soul-making (Irenaean) theodicy"
+    }
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-03",
+    "seat": "l (V2b, Code)"
+   }
+  }
+ ]
+}

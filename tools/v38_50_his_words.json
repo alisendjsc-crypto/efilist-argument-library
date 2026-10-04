@@ -1,0 +1,200 @@
+{
+ "what": "his words owed to canon v38.50, cut byte-exact from the user turns (V2b, seat l, 2026-10-03); his private statements by turn, md5 and offsets only",
+ "tool": "tools/extract_his_words_v38_50.py",
+ "transcript": {
+  "V2": "b664995c-43f2-4ec1-877b-d18b71cb68d8"
+ },
+ "excerpts": {
+  "R0298_word": {
+   "answers": "R0298",
+   "recorded_by": "R0299",
+   "turn": {
+    "transcript": "V2",
+    "line": 719,
+    "utc": "2026-10-04T05:10:18.273Z",
+    "turn_md5": "d80c299aa385b0ae56b6b9c5e3f5f339"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 715,
+    "utc": "2026-10-04T05:06:45.512Z",
+    "text_md5": "4d0bcd45fa8bcb8b394a950042febba5"
+   },
+   "offsets": [
+    0,
+    49
+   ],
+   "md5": "d80c299aa385b0ae56b6b9c5e3f5f339",
+   "words": 9,
+   "text": "Go with your recommendations on all of the above."
+  },
+  "R0300_gloss": {
+   "recorded_by": "R0300",
+   "turn": {
+    "transcript": "V2",
+    "line": 751,
+    "utc": "2026-10-04T05:19:45.415Z",
+    "turn_md5": "69964e34acdf2687f06e659fc863ee4f"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 747,
+    "utc": "2026-10-04T05:11:13.205Z",
+    "text_md5": "2e6ff789d6487482a117340c3e7ec505"
+   },
+   "offsets": [
+    0,
+    958
+   ],
+   "md5": "69964e34acdf2687f06e659fc863ee4f",
+   "words": 160,
+   "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+   "whole_turn": true
+  },
+  "R0302_followup": {
+   "recorded_by": "R0302",
+   "turn": {
+    "transcript": "V2",
+    "line": 789,
+    "utc": "2026-10-04T05:28:31.627Z",
+    "turn_md5": "798ed6c18977308f7d3b5385d0a8460c"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 785,
+    "utc": "2026-10-04T05:21:47.067Z",
+    "text_md5": "ef4c5442991ce3305895842d3e2240b2"
+   },
+   "offsets": [
+    0,
+    1569
+   ],
+   "md5": "798ed6c18977308f7d3b5385d0a8460c",
+   "words": 267,
+   "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+   "whole_turn": true
+  },
+  "R0304_third_followup": {
+   "recorded_by": "R0304",
+   "turn": {
+    "transcript": "V2",
+    "line": 810,
+    "utc": "2026-10-04T05:40:03.052Z",
+    "turn_md5": "545fdc8cd255c4abf05e0bc39eb609c5"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 806,
+    "utc": "2026-10-04T05:30:08.575Z",
+    "text_md5": "f3cfaca90c189e01e232da3a8c5802be"
+   },
+   "offsets": [
+    0,
+    1525
+   ],
+   "md5": "545fdc8cd255c4abf05e0bc39eb609c5",
+   "words": 261,
+   "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)",
+   "whole_turn": true
+  },
+  "R0308_word": {
+   "answers": "R0308",
+   "recorded_by": "R0309",
+   "turn": {
+    "transcript": "V2",
+    "line": 874,
+    "utc": "2026-10-04T05:51:34.005Z",
+    "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 867,
+    "utc": "2026-10-04T05:43:47.438Z",
+    "text_md5": "ca69f9a49597e7c4f8f5f0ba4af50cfb"
+   },
+   "offsets": [
+    1511,
+    1552
+   ],
+   "md5": "632138eb0d532c451fdd20175d869cbc",
+   "words": 7,
+   "text": "Go with your recommendations on the rest."
+  },
+  "R0309_statement_2251": {
+   "recorded_by": "R0309",
+   "turn": {
+    "transcript": "V2",
+    "line": 874,
+    "utc": "2026-10-04T05:51:34.005Z",
+    "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7"
+   },
+   "answers_message": {
+    "seat": "l (V2)",
+    "line": 867,
+    "utc": "2026-10-04T05:43:47.438Z",
+    "text_md5": "ca69f9a49597e7c4f8f5f0ba4af50cfb"
+   },
+   "offsets": [
+    0,
+    1508
+   ],
+   "md5": "c978ff1fcb7fd598d72eda08b1a10594",
+   "words": 254,
+   "text_withheld": "recorded by turn, md5 and offsets only: this repository is public, and his private statements stay in the relays named (R0309's law)"
+  }
+ },
+ "relays": {
+  "R0299": {
+   "md5": "486c96f8be874784ab96dcdfd7191986",
+   "carries": "R0298_word"
+  },
+  "R0300": {
+   "md5": "0ec1a18764a3f630093164d540cc5266",
+   "first_quote_equals_turn": true,
+   "turn_md5": "69964e34acdf2687f06e659fc863ee4f"
+  },
+  "R0302": {
+   "md5": "a28d2312361286e5f23d7a001e4b0e1b",
+   "first_quote_equals_turn": true,
+   "turn_md5": "798ed6c18977308f7d3b5385d0a8460c"
+  },
+  "R0304": {
+   "md5": "16f4b671ccc7b8cd9e79b309decd4eb0",
+   "first_quote_equals_turn": true,
+   "turn_md5": "545fdc8cd255c4abf05e0bc39eb609c5",
+   "turn_md5_as_printed": "md5 (a placeholder; measured at the turn: see excerpts)"
+  },
+  "R0309": {
+   "md5": "75d347417326463ac27baba0fbc514ea",
+   "first_quote_equals_turn": true,
+   "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7",
+   "carries": "R0308_word"
+  }
+ },
+ "july_line": {
+  "file": "~/Documents/Obsidian Vault/raw/facebook/2026/fb-2026-07.md",
+  "file_md5": "01ccc618713a165585a5acc5f51b4cb8",
+  "line": 38,
+  "body_line": 25,
+  "numbering": "body_line counts from the line after the front matter, as the vault's claude/tools/grep_sources.py does; R0300's 'L25'",
+  "line_md5": "a72287d04d4a1e95f63954f0cfdd86bc",
+  "line_words": 94,
+  "excerpt": {
+   "as_quoted_by": "R0300",
+   "offsets": [
+    0,
+    184
+   ],
+   "md5": "866aa016adddf1d6260598de6293fff4",
+   "words": 33
+  },
+  "also_at": [
+   {
+    "line": 40,
+    "offset": 8
+   }
+  ],
+  "authorship": "josiah (the vault's label)",
+  "text_withheld": "recorded by md5 and offsets only, as R0300 asks: the line reaches the adversarial side only when the R-V6 intake drafts it, with his 2026-10-03 gloss beside it"
+ }
+}

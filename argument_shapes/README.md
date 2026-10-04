@@ -2,8 +2,9 @@
 
 Seat l, V1, 2026-09-26. **Not served** (`site/` is the served tree) and **not canon**. V2 (2026-10-03)
 drafted the pilot: 10 shapes over the six R-V4 nodes. gate2 judged it in V3 (2026-10-03): 5 ACCEPT, 2 AMEND,
-3 REJECT; judged, not ruled. Then, on his word, V4 puts the (a) shapes in the corpus and renders them on the
-flagship.
+3 REJECT, and his word adopted the judgment. V2b (2026-10-03) redrafted the two AMENDs in a new file, which
+supersedes the pilot's two shapes of the same ids; gate2 judges them in round two. Then, on his word, V4 puts
+the (a) shape in the corpus and renders it on the flagship.
 
 Built from the variations design v0_1, sections 3 and 4 (`design/variations/VARIATIONS_design_v0_1.md`,
 md5 `fcf6f6fe`). His word on its six rulings: *"Go with your leans on all of the rulings."* That word is
@@ -22,6 +23,9 @@ recorded in canon v38.42, `adversarial_map.variations_rulings_V0`.
 | `shapes_pilot_judgments.json` | gate2's judgment (V3): 23 rows, append-only. Each shape read four ways (the routing by R1's method, the strongest form, a shape and not a surface, the source makes the move) plus its class; the three pulls; the measurement. Every quote verbatim at pinned bytes. |
 | `shapes_judgments_gate.py` | The gate on that record: pins, coverage, routes, quotes, figures, append-only history. `--self-test` runs `shapes_judgments_gate_control_v0_1.json` (16 cases, the unmutated record first). |
 | `shapes_judgment_reading.py` | gate2's reading instrument: every figure the record states, recomputed from the judged artifacts at their md5s, into `shapes_judgment_reading_v0_1.json`; `--check` reproduces it. Needs the game's repository (the scholar lines). |
+| `shapes_redrafts_v0_1.json` | The two redrafts the judgment owed (V2b): the golden rule now states Hare's duty as weighed, other things equal, and soul-making is carried as (d). Each supersedes the pilot's shape of the same id, so the file repeats the pilot's ids and validates alone. Validator PASS, 0 violations. Drafted, not judged. |
+| `shapes_redrafts_record_v0_1.json` | Their record: the pilot shape each supersedes and the judgment row it answers, the fields that changed, each (d)'s terminus copied from the map and the register, the sources checked for Hare, and three validator runs (the file alone, the pilot with the two replaced, and the seven shapes his word kept). |
+| `build_shapes_redrafts.py` | Builds both from the pilot and the judgment record at their pinned md5s; `--check` reproduces them byte for byte, validator runs included. |
 
 ## The rules it enforces
 

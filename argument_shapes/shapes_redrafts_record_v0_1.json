@@ -1,0 +1,261 @@
+{
+ "what": "the two redrafts gate2's V3 judgment owed seat l (SJ-003, SJ-008), V2b, seat l, 2026-10-03; drafted, not judged",
+ "state": "DRAFTED, NOT JUDGED. gate2 judges these two redrafts in round two (K258); his word decides.",
+ "authority": {
+  "his_word": "Go with your recommendations on the rest.",
+  "turn_md5": "327c7ceb3a68bfe317a55f44f87c17f7",
+  "utc": "2026-10-04T05:51:34.005Z",
+  "answers": "R0308",
+  "from": "tools/v38_50_his_words.json at 6f2d0c5e060de228cabe9b6bcc357890",
+  "adopted": "gate2's judgment (5 ACCEPT, 2 AMEND, 3 REJECT) and V2's hand-off: a fresh seat-l session drafts the two AMENDs"
+ },
+ "supersession": "Each row supersedes the pilot shape of the same shape_id. The pilot stays byte-identical (gate2's gate pins it), so the staging file repeats the pilot's ids and validates alone. The current set is the pilot with each superseded shape replaced by its redraft: 'superseded_view' below. Loading the pilot and this file together fails shape-id, as it should.",
+ "pins": {
+  "redrafts": {
+   "file": "argument_shapes/shapes_redrafts_v0_1.json",
+   "md5": "fc28cd12265e2712a9d610bbb2c1b69f",
+   "bytes": 2098
+  },
+  "pilot": {
+   "file": "argument_shapes/shapes_pilot_v0_1.json",
+   "md5": "1f9c5da6166b538a90efa6dc7598124e"
+  },
+  "measure": {
+   "file": "argument_shapes/shapes_pilot_measure_v0_1.json",
+   "md5": "576be8f2c469f84b4bc9ca628d9b41c1"
+  },
+  "judgments": {
+   "file": "argument_shapes/shapes_pilot_judgments.json",
+   "md5": "73503bccdd3ddf8b3a82f280181251d4"
+  },
+  "judgments_gate": {
+   "file": "argument_shapes/shapes_judgments_gate.py",
+   "md5": "f56df1e7fdaa82bf3c0f1a11e9622837"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "validator": {
+   "file": "argument_shapes/shape_validator_v0_1.py",
+   "md5": "64553b25b6db0ff67edeb87b89178297"
+  },
+  "his_words": {
+   "file": "tools/v38_50_his_words.json",
+   "md5": "6f2d0c5e060de228cabe9b6bcc357890"
+  }
+ },
+ "rows": [
+  {
+   "id": "RD-01",
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "answers": {
+    "row": "SJ-003",
+    "verdict": "AMEND",
+    "owed": [
+     "Seat l restates the duty as Hare states it, weighed with everyone's preferences, other things equal, inside the 30-70 band, in a new row or file. Class and route unchanged."
+    ]
+   },
+   "supersedes": {
+    "file": "argument_shapes/shapes_pilot_v0_1.json",
+    "md5": "1f9c5da6166b538a90efa6dc7598124e",
+    "shape_id": "life-gift/the-golden-rule-passes-it-on"
+   },
+   "changed": [
+    "provenance",
+    "statement"
+   ],
+   "class": "d",
+   "words": {
+    "pilot": 57,
+    "redraft": 69
+   },
+   "terminus": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    },
+    "copied_from": {
+     "map_entry": 41,
+     "register": "HR-02 / merely-possible-beneficiary"
+    }
+   },
+   "route_equals_the_judged_route": true,
+   "reading": "(d), unchanged. The duty is now bounded twice, by other things equal and by the total good, so the reductio at rights-future-generations#long (\"The obligation would be literally infinite\") no longer meets it; that answer belongs to the unqualified form gate2 struck. The premise that carries the line is untouched: a person who would be glad to exist is harmed by never being created. That is the merely-possible-beneficiary premise the (d) at joy-outweighs-harms#long records as its open remainder.",
+   "quotes": [
+    {
+     "src": "corpus:rights-future-generations#long",
+     "quote": "The obligation would be literally infinite"
+    }
+   ],
+   "pulls": [
+    "Wording: 'interests', Hare's own word in the chapter's opening (source 2), where SJ-003's owed line says 'preferences' (the SEP's 'total satisfaction of preference'). In Hare's preference utilitarianism they name the same thing; gate2 reads whether 'interests' is the better fit.",
+    "Omitted for the band: the indexer's abstract (source 3) adds two conditions, the proportionate distribution held fixed and a floor where the worst-off lives are just worth living. The statement keeps only the total good, which is the clause that bounds the duty. gate2 reads whether the omission understates Hare.",
+    "Attestation is unchanged, because it was not owed. The golden-rule step is attested for Hare's view of possible people by the SEP (citing his 1975, 1988b and 1988c, not this article) and by Chan 2004; the article's own opening, through its 1993 reprint, attests the weighing. If gate2 reads the golden-rule step as better attested by Hare 1975 ('Abortion and the Golden Rule'), adding that citation is a one-line change."
+   ],
+   "sources_checked": [
+    {
+     "what": "the publisher's record of the article (Wiley, through Crossref)",
+     "url": "https://api.crossref.org/works/10.1111/j.1467-8519.1988.tb00055.x",
+     "supports": "the citation: R. M. Hare, Possible People, Bioethics 2(4), October 1988, pp. 279-293. No abstract.",
+     "excerpts": []
+    },
+    {
+     "what": "the publisher's record of the article's reprint, chapter 5 of Hare's Essays on Bioethics (Oxford University Press, 1993, pp. 67-83, through Crossref); its abstract is the chapter's opening paragraph",
+     "url": "https://api.crossref.org/works/10.1093/oso/9780198239833.003.0005",
+     "supports": "the weighing, in Hare's own words: when we choose whether to create someone, that possible person's interests count",
+     "excerpts": [
+      "the interests of that possible person have to be con sidered"
+     ],
+     "note": "'con sidered' is the record's own line-break artifact, kept verbatim"
+    },
+    {
+     "what": "the MEDLINE record of the article, with the Kennedy Institute of Ethics' abstract (PMID 11651921)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/11651921/",
+     "supports": "the weighing again, and the bound: Hare's population policy adds people only while the total grows",
+     "excerpts": [
+      "the interests of the possible person must be considered",
+      "increasing the population of a society while increasing the total utility"
+     ]
+    },
+    {
+     "what": "the Stanford Encyclopedia of Philosophy, 'Richard Mervyn Hare', section 6 (Possible People); it cites Hare 1975, 1988b and 1988c, not this article",
+     "url": "https://plato.stanford.edu/entries/hare/",
+     "supports": "the golden-rule step from one's own gladness, other things equal, and the total",
+     "excerpts": [
+      "I must prescribe, ceteris paribus, the bringing into existence of others relevantly like me",
+      "so long as this will increase the total satisfaction of preference"
+     ]
+    },
+    {
+     "what": "the publisher's record of Essays on Bioethics (Oxford University Press, 1993, through Crossref)",
+     "url": "https://api.crossref.org/works/10.1093/oso/9780198239833.001.0001",
+     "supports": "the harm clause, unchanged from the pilot",
+     "excerpts": [
+      "we can harm possible people by preventing them from becoming actual people"
+     ]
+    },
+    {
+     "what": "K. M. Chan, The Golden Rule and the Potentiality Principle, Journal of Applied Philosophy 21(1), 2004, pp. 33-42, its abstract (PMID 15148950)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/15148950/",
+     "supports": "Hare derived duties to potential people from the golden rule",
+     "excerpts": [
+      "R.M. Hare purportedly derived counterintuitive duties to potential people"
+     ]
+    }
+   ],
+   "not_read": "The full text of the article and of its reprint. The publisher's article page and PhilPapers returned 403 to this seat, as the university repository did to gate2; OUP's book page returned nothing. The statement claims only what the six records above support. Checked 2026-10-03 (V2b); the builder does not re-fetch them."
+  },
+  {
+   "id": "RD-02",
+   "shape_id": "free-will-defense/a-vale-of-soul-making",
+   "answers": {
+    "row": "SJ-008",
+    "verdict": "AMEND",
+    "owed": [
+     "Seat l carries this shape as (d) in a new row or file, never in the pilot: no answering locus; terminus via suffering-makes-human#long at the anchor above, its bedrock copied from that entry and the register (HR-02, merely-possible-beneficiary) as this row's route states. The statement stands."
+    ]
+   },
+   "supersedes": {
+    "file": "argument_shapes/shapes_pilot_v0_1.json",
+    "md5": "1f9c5da6166b538a90efa6dc7598124e",
+    "shape_id": "free-will-defense/a-vale-of-soul-making"
+   },
+   "changed": [
+    "answered_by",
+    "class",
+    "provenance"
+   ],
+   "class": "d",
+   "words": {
+    "pilot": 52,
+    "redraft": 52
+   },
+   "terminus": {
+    "via": "suffering-makes-human#long",
+    "via_anchor": "evaluate the component (suffering) on its own terms",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "already-registered HR-02; reached through the (d) at joy-outweighs-harms#long (Phase D); merely-possible-beneficiary facet; reclassified from (a) at L4 under the R1 standard (R1-060)",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    },
+    "copied_from": {
+     "map_entry": 71,
+     "register": "HR-02 / merely-possible-beneficiary"
+    }
+   },
+   "route_equals_the_judged_route": true,
+   "reading": "(d) at HR-02, as SJ-008 states the route; the statement stands. Its conclusion is about the created person's own good, and the (d) at suffering-makes-human#long already records the intrapersonal instrumental move (\"instrumental necessity: suffering is the causal precondition of goods\") ending there.",
+   "quotes": [
+    {
+     "src": "map:#71.adversarial_move",
+     "quote": "instrumental necessity: suffering is the causal precondition of goods"
+    }
+   ]
+  }
+ ],
+ "validator_runs": {
+  "redrafts_alone": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 2,
+   "nodes_with_shapes": 2,
+   "file": "argument_shapes/shapes_redrafts_v0_1.json"
+  },
+  "superseded_view": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 10,
+   "nodes_with_shapes": 6,
+   "what": "the pilot's ten shapes in its order, the two superseded ones replaced by these"
+  },
+  "ruled_view": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 7,
+   "nodes_with_shapes": 5,
+   "what": "the shapes his word on R0308 kept: gate2's five ACCEPTs and these two redrafts; the three REJECTs left out",
+   "shape_ids": [
+    "life-gift/the-golden-rule-passes-it-on",
+    "future-solve/raise-the-people-who-fix-it",
+    "future-solve/the-obligation-to-survive",
+    "free-will-defense/everyone-comes-home-at-last",
+    "free-will-defense/a-vale-of-soul-making",
+    "meta-ethical-pluralism/many-peaks-one-landscape",
+    "meaning-through-suffering/heroism-redeems-being"
+   ]
+  }
+ },
+ "after_round_two": {
+  "ruled_set_classes": {
+   "a": 1,
+   "b": 1,
+   "c": 1,
+   "d": 4
+  },
+  "routes": "(d)s to the map at the successor map's next validator bump (many-peaks and heroism now; these two once judged); the (a) to the corpus in V4 after the successor map's pin; the (b) to the regen queue; the (c) to the intake"
+ },
+ "not_moved": "the pilot, its measurement, its builder, the validator, its control, the schema and gate2's records; no corpus or served byte"
+}
