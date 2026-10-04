@@ -1,0 +1,942 @@
+{
+ "artifact": "gate2's judgment of V7's relief variant pilot (V8, 2026-10-04): one relief-account variant on each of the seven pleasure-fork nodes (RV-7), the builder's checks and controls, the source check, the three findings and the five pulls",
+ "state": "JUDGED, NOT RULED. His word decides; nothing ships on a judgment. The owed lines go to seat l; the render waits for a declared pin, drawn by the design lane (RV-4).",
+ "law": [
+  "K258: the judge drafted none of what it judges.",
+  "Append-only: a later round adds rows and never edits one; a row is corrected by a row that supersedes it.",
+  "An AMEND owes lines, never replacement text.",
+  "His words are quoted from canon at its md5 and were read at their user turns; his private statements never enter this file."
+ ],
+ "what_a_verdict_means": {
+  "ACCEPT": "the variant may go to his word as drafted",
+  "AMEND": "the variant may go to his word once seat l meets the owed lines in a new file; nothing else in it moves",
+  "REJECT": "the variant does not go to his word; seat l redrafts it whole",
+  "CONFIRM": "the drafter's statement holds as written",
+  "CORRECT": "the drafter's statement is corrected by the row; the drafter's record stays as written"
+ },
+ "his_word": [
+  {
+   "src": "canon:adversarial_map.his_words_V6.R0316.his_word.verbatim",
+   "verbatim": "Proceed with your recommendations on all of the above.",
+   "answers": "R0316",
+   "adopts": "RV-1..RV-8 as leaned; RV's order puts gate2's judgment after the relief variant's draft and before his word"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0320",
+  "md5": "e0ed9ab632807f71a9194be9d683e9aa"
+ },
+ "judged": {
+  "pilot": {
+   "file": "response_variants/relief_variants_pilot_v0_1.json",
+   "md5": "1d5e8f1c65a387da495dba91edbee9e8"
+  },
+  "record": {
+   "file": "response_variants/relief_variants_record_v0_1.json",
+   "md5": "1d8556443af14f95bff9e906f2a67037"
+  },
+  "builder": {
+   "file": "response_variants/build_relief_variants.py",
+   "md5": "c5f02c47f1daf965f2dbd29bfa9aec9a"
+  },
+  "schema": {
+   "file": "response_variants/response_variants_schema_v0_1.json",
+   "md5": "169c15b30f3fcc578689daa257d5b41f"
+  },
+  "validator": {
+   "file": "response_variants/response_variant_validator_v0_1.py",
+   "md5": "30cb7f3bc4f9e81b0ff5c85ecfaacdf3"
+  },
+  "validator_control": {
+   "file": "response_variants/response_variant_validator_control_v0_1.json",
+   "md5": "44a77cc75a062fb6e4bac7b47aaec421"
+  },
+  "measurement": {
+   "file": "design/variations/measure_response_variants_v0_1.json",
+   "md5": "cbae330fe2106d79d572de8e20ac8459"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "canon_pinned": {
+   "file": "project_canon_v38_53.json",
+   "md5": "4bc14ae1a5fc6103df820900642f9728"
+  },
+  "canon": {
+   "file": "project_canon_v38_54.json",
+   "md5": "e0f3e2f695a43f18d0c90d6ce3e08748"
+  }
+ },
+ "rows": [
+  {
+   "id": "VJ-001",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "life-gift/relief-account",
+   "node": "life-gift",
+   "tier": 1,
+   "razor_node": true,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read. No sentence says life is good or worth living, or argues for or against staying alive. The zero-sum line is about a benefit conferred by creation (\"a benefit conferred that way could relieve what it imposes but not exceed it\"), not about a life already held.",
+    "his_words": "Six spans, each exact at the account it names (figures). The deprivation figure keeps his lessening: \"99% of people will not experience pleasure in such a circumstance.\" Account [0] is read at its turn in VJ-020.",
+    "strength": "The zero-sum line is stated on the account, beside his limit. It caps the goods at what they relieve and does not empty them (\"eating does feel good\"): inside account [9] (pull 2, VJ-015).",
+    "razor": "Met head on, and fair to both sides. The account keeps the report (\"eating does feel good\"), disputes the level, and names evidence that is not a preference between reports. It also says where it lands: \"The account comes near the conclusion the library refuses here, but by another road.\" His in substance (pull 1, VJ-014).",
+    "correction": "None. It names the library's refusal and leaves the genetic-fallacy point standing.",
+    "anchor": "Met at its strongest. The anchor refuses an inference (\"the positives are therefore illusory\") on two grounds, the genetic fallacy and the symmetric razor, and the variant answers both by name.",
+    "residual": "Canon's clause, status open. The library's concession is the long's own sentence: \"It licenses discounting the rosy ledger; it does not license calling the gratitude false.\"",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "Exact, at his strength, fair to the library at the sentence it varies, and open where canon says both sides stop.",
+   "quotes": [
+    {
+     "src": "pilot:life-gift/relief-account.text",
+     "quote": "a benefit conferred that way could relieve what it imposes but not exceed it"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.8.verbatim",
+     "quote": "99% of people will not experience pleasure in such a circumstance."
+    },
+    {
+     "src": "pilot:life-gift/relief-account.text",
+     "quote": "eating does feel good"
+    },
+    {
+     "src": "pilot:life-gift/relief-account.text",
+     "quote": "The account comes near the conclusion the library refuses here, but by another road."
+    },
+    {
+     "src": "corpus:life-gift#long",
+     "quote": "the positives are therefore illusory"
+    },
+    {
+     "src": "corpus:life-gift#long",
+     "quote": "It licenses discounting the rosy ledger; it does not license calling the gratitude false."
+    }
+   ],
+   "figures": {
+    "life-gift/relief-account.words": 293,
+    "life-gift/relief-account.quotes_exact": true,
+    "life-gift/relief-account.sources_used": true,
+    "life-gift/relief-account.anchor_in_long": true,
+    "life-gift/relief-account.anchor_is_measured": true,
+    "life-gift/relief-account.concession_spans_in_long": true,
+    "life-gift/relief-account.residual_clause_copied": true,
+    "life-gift/relief-account.ends_on_the_residual": true,
+    "life-gift/relief-account.status": "open",
+    "life-gift/relief-account.by_role": 1,
+    "life-gift/relief-account.names": 0,
+    "life-gift/relief-account.pronouns": 0,
+    "life-gift/relief-account.label_words": 0,
+    "life-gift/relief-account.berridge": 0,
+    "life-gift/relief-account.floor": [],
+    "life-gift/relief-account.neutral": 1,
+    "life-gift/relief-account.base_state": 1
+   }
+  },
+  {
+   "id": "VJ-002",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "joy-outweighs-harms/relief-account",
+   "node": "joy-outweighs-harms",
+   "tier": 2,
+   "razor_node": false,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read. The joy column cannot outgrow the other on the account: a claim about the slogan's ledger, not an argument for or against staying alive. The floor read's one hit, \"matters\", is his measure (account [2]).",
+    "his_words": "Seven spans, exact. Account [2] is framed as \"the measure the author names\", which is what it is at its turn: a measure (\"a numbers game\"). The inferential 'then' before it is the seat's link and does not change what the quotation says. Account [1] keeps its sense: the library is not built to mirror its author.",
+    "strength": "Pull 2 (VJ-015): the zero-sum line follows from his own \"0 sum game\" and from goods as the \"transition from a bad state to a less bad state\". It is stated on the account and caps the joy column without emptying it.",
+    "correction": "None. The long calls the claim \"false\". The variant says so plainly (\"holds the claim this sentence calls false and sets aside\") and answers with the alternative. That the long's word and canon's open residual now share a page is gate2's finding F4 (VJ-023), a served-text question, not this variant's.",
+    "anchor": "Met at its strongest. The long's verdict rests on the delights it grants in full (the flow state, the aesthetic shock, the joy of discovery); the variant re-reads exactly those and states the account's test (it \"asks for one that answers nothing\").",
+    "residual": "Canon's clause, open. The concession is the long's: \"the apparent surplus is partly inflated by entries that are returns to baseline\".",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "Exact and at his strength. It meets the delights the long uses against the account, names the long's verdict without softening it, and stops where canon stops.",
+   "quotes": [
+    {
+     "src": "pilot:joy-outweighs-harms/relief-account.text",
+     "quote": "the measure the author names"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.2.verbatim",
+     "quote": "a numbers game"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.0.verbatim",
+     "quote": "0 sum game"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.0.verbatim",
+     "quote": "transition from a bad state to a less bad state"
+    },
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "false"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/relief-account.text",
+     "quote": "holds the claim this sentence calls false and sets aside"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/relief-account.text",
+     "quote": "asks for one that answers nothing"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/relief-account.text",
+     "quote": "matters"
+    },
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "the apparent surplus is partly inflated by entries that are returns to baseline"
+    }
+   ],
+   "figures": {
+    "joy-outweighs-harms/relief-account.words": 290,
+    "joy-outweighs-harms/relief-account.quotes_exact": true,
+    "joy-outweighs-harms/relief-account.sources_used": true,
+    "joy-outweighs-harms/relief-account.anchor_in_long": true,
+    "joy-outweighs-harms/relief-account.anchor_is_measured": true,
+    "joy-outweighs-harms/relief-account.concession_spans_in_long": true,
+    "joy-outweighs-harms/relief-account.residual_clause_copied": true,
+    "joy-outweighs-harms/relief-account.ends_on_the_residual": true,
+    "joy-outweighs-harms/relief-account.status": "open",
+    "joy-outweighs-harms/relief-account.by_role": 1,
+    "joy-outweighs-harms/relief-account.names": 0,
+    "joy-outweighs-harms/relief-account.pronouns": 0,
+    "joy-outweighs-harms/relief-account.label_words": 0,
+    "joy-outweighs-harms/relief-account.berridge": 0,
+    "joy-outweighs-harms/relief-account.floor": [
+     "matters"
+    ]
+   }
+  },
+  {
+   "id": "VJ-003",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "love-beauty-art/relief-account",
+   "node": "love-beauty-art",
+   "tier": 2,
+   "razor_node": false,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read; nothing pro-life, nothing toward harm. The good is granted as felt.",
+    "his_words": "Six spans, exact. \"When you've gone without personal connection for days, you can get lonely.\" states the deficit; love answering loneliness is the seat's application, marked (\"On the account\"), and kept apart from his sentence (pull 3, VJ-016).",
+    "correction": "None.",
+    "anchor": "Met at its strongest. The variant grants both of the anchor's claims, no demotion by substrate and no argument from origin to worth, and moves the dispute to the level: \"what the account doubts is that it rises above neutral rather than lifting a deficit toward it\". It answers the long's 'counterfeit' in the long's terms: \"It does not call love counterfeit.\"",
+    "residual": "Canon's clause. The concession is the long's (\"these goods are bounded\"; \"A finite good is still a good.\"). 'Neutral' is used twice, both times for the level, never for the base state.",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "It concedes what the anchor says, disputes only the level, and names what would change the author's mind in his own words.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.3.verbatim",
+     "quote": "When you've gone without personal connection for days, you can get lonely."
+    },
+    {
+     "src": "pilot:love-beauty-art/relief-account.text",
+     "quote": "On the account"
+    },
+    {
+     "src": "pilot:love-beauty-art/relief-account.text",
+     "quote": "what the account doubts is that it rises above neutral rather than lifting a deficit toward it"
+    },
+    {
+     "src": "pilot:love-beauty-art/relief-account.text",
+     "quote": "It does not call love counterfeit."
+    },
+    {
+     "src": "corpus:love-beauty-art#long",
+     "quote": "these goods are bounded"
+    },
+    {
+     "src": "corpus:love-beauty-art#long",
+     "quote": "A finite good is still a good."
+    }
+   ],
+   "figures": {
+    "love-beauty-art/relief-account.words": 282,
+    "love-beauty-art/relief-account.quotes_exact": true,
+    "love-beauty-art/relief-account.sources_used": true,
+    "love-beauty-art/relief-account.anchor_in_long": true,
+    "love-beauty-art/relief-account.anchor_is_measured": true,
+    "love-beauty-art/relief-account.concession_spans_in_long": true,
+    "love-beauty-art/relief-account.residual_clause_copied": true,
+    "love-beauty-art/relief-account.ends_on_the_residual": true,
+    "love-beauty-art/relief-account.status": "open",
+    "love-beauty-art/relief-account.by_role": 1,
+    "love-beauty-art/relief-account.names": 0,
+    "love-beauty-art/relief-account.pronouns": 0,
+    "love-beauty-art/relief-account.label_words": 0,
+    "love-beauty-art/relief-account.berridge": 0,
+    "love-beauty-art/relief-account.floor": [],
+    "love-beauty-art/relief-account.neutral": 2
+   }
+  },
+  {
+   "id": "VJ-004",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "masochist-counterexample/relief-account",
+   "node": "masochist-counterexample",
+   "tier": 2,
+   "razor_node": false,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read. The self-harm figure the long treats is neither named nor extended; the variant speaks of the thrill seeker, and of \"every figure here but one\" as the long's own count. Nothing reads as encouragement (pull 5, VJ-018).",
+    "his_words": "Six spans, exact. \"I believe it's doable though, just not convenient.\" keeps its turn's sense: at L8 line 505 it answers the burden of finding the deficit each time, and that is how the variant uses it.",
+    "strength": "It claims less than the account could: it names the test the account owes (\"the seeking should rise as stimulation falls and recede when stimulation is met\") and leaves the exception open.",
+    "correction": "None; the long's exception stands, open.",
+    "anchor": "Met at its strongest, by the library's own standard. The long's regulation account wins by discriminating predictions; the variant holds the relief reading of thrill seeking to the same kind of prediction (\"a deficit posited after the fact explains nothing\").",
+    "residual": "Canon's clause. The concession is the long's (\"is, on inspection, relief-from-greater-pain\"; \"The thrill-seeker is the honest exception\").",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "The fairest of the seven to the other side: the account is bound by the rejoinder the library answers, and the exception stays open until the test is met.",
+   "quotes": [
+    {
+     "src": "pilot:masochist-counterexample/relief-account.text",
+     "quote": "every figure here but one"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.5.verbatim",
+     "quote": "I believe it's doable though, just not convenient."
+    },
+    {
+     "src": "pilot:masochist-counterexample/relief-account.text",
+     "quote": "the seeking should rise as stimulation falls and recede when stimulation is met"
+    },
+    {
+     "src": "pilot:masochist-counterexample/relief-account.text",
+     "quote": "a deficit posited after the fact explains nothing"
+    },
+    {
+     "src": "corpus:masochist-counterexample#long",
+     "quote": "is, on inspection, relief-from-greater-pain"
+    },
+    {
+     "src": "corpus:masochist-counterexample#long",
+     "quote": "The thrill-seeker is the honest exception"
+    }
+   ],
+   "figures": {
+    "masochist-counterexample/relief-account.words": 268,
+    "masochist-counterexample/relief-account.quotes_exact": true,
+    "masochist-counterexample/relief-account.sources_used": true,
+    "masochist-counterexample/relief-account.anchor_in_long": true,
+    "masochist-counterexample/relief-account.anchor_is_measured": true,
+    "masochist-counterexample/relief-account.concession_spans_in_long": true,
+    "masochist-counterexample/relief-account.residual_clause_copied": true,
+    "masochist-counterexample/relief-account.ends_on_the_residual": true,
+    "masochist-counterexample/relief-account.status": "open",
+    "masochist-counterexample/relief-account.by_role": 1,
+    "masochist-counterexample/relief-account.names": 0,
+    "masochist-counterexample/relief-account.pronouns": 0,
+    "masochist-counterexample/relief-account.label_words": 0,
+    "masochist-counterexample/relief-account.berridge": 0,
+    "masochist-counterexample/relief-account.floor": []
+   }
+  },
+  {
+   "id": "VJ-005",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "bradley-no-subject/relief-account",
+   "node": "bradley-no-subject",
+   "tier": 4,
+   "razor_node": true,
+   "verdict": "AMEND",
+   "reads": {
+    "bar": "Every line read; nothing pro-life, nothing toward harm. The uncreated lacking relief is said of the uncreated only.",
+    "his_words": "Six spans, each exact; five keep their turn's sense, account [7] among them (VJ-021). Account [2] does not. At L8 line 337 it is his measure, named in its own first sentence (\"For me, it's more of a numbers game.\"), said of what matters to him in his position. The variant sets it under a sentence of its own, \"Relief is what the library's author values most\", two sentences after reading \"each valued state as a deficit shrinking\". There 'relief' is the account's word for a felt state, so the frame turns his measure of how much suffering is reduced into a valuation of states, at the node whose anchor is about what subjects value. That is a paraphrase of his intention set over his words.",
+    "strength": "Otherwise at his strength.",
+    "razor": "Met head on and fair, as at life-gift: \"the deprivation test, not a preference between reports, places the base state among the bads\" (pull 1, VJ-014).",
+    "correction": "None.",
+    "anchor": "Met. The variant grants that the states are genuinely valued and disputes what they are; the long's own ground is named as the library's case.",
+    "residual": "Canon's clause. The concession is the long's: \"the case rests not on denying the goods but on the structural facts of their imposition\".",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "One frame bends one quotation; the rest holds. The repair is a line, not a redraft.",
+   "owed": [
+    "Account [2] keeps its sense at its turn (L8 line 337, offsets 414 to 549): his measure of what matters, how much suffering is reduced, the 'numbers game' of its own first sentence. No sentence may present it as what the library's author values among states, or as relief in the account's sense of a felt state. Frame it as his measure, or leave it out at this node and drop its account_sources entry with it.",
+    "Nothing else moves. In a new file; the pilot stays byte-identical; the variant stays inside the band and passes the validator."
+   ],
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.2.verbatim",
+     "quote": "For me, it's more of a numbers game."
+    },
+    {
+     "src": "pilot:bradley-no-subject/relief-account.text",
+     "quote": "Relief is what the library's author values most"
+    },
+    {
+     "src": "pilot:bradley-no-subject/relief-account.text",
+     "quote": "each valued state as a deficit shrinking"
+    },
+    {
+     "src": "pilot:bradley-no-subject/relief-account.text",
+     "quote": "the deprivation test, not a preference between reports, places the base state among the bads"
+    },
+    {
+     "src": "corpus:bradley-no-subject#long",
+     "quote": "the case rests not on denying the goods but on the structural facts of their imposition"
+    }
+   ],
+   "figures": {
+    "bradley-no-subject/relief-account.words": 286,
+    "bradley-no-subject/relief-account.quotes_exact": true,
+    "bradley-no-subject/relief-account.sources_used": true,
+    "bradley-no-subject/relief-account.anchor_in_long": true,
+    "bradley-no-subject/relief-account.anchor_is_measured": true,
+    "bradley-no-subject/relief-account.concession_spans_in_long": true,
+    "bradley-no-subject/relief-account.residual_clause_copied": true,
+    "bradley-no-subject/relief-account.ends_on_the_residual": true,
+    "bradley-no-subject/relief-account.status": "open",
+    "bradley-no-subject/relief-account.by_role": 1,
+    "bradley-no-subject/relief-account.names": 0,
+    "bradley-no-subject/relief-account.pronouns": 0,
+    "bradley-no-subject/relief-account.label_words": 0,
+    "bradley-no-subject/relief-account.berridge": 0,
+    "bradley-no-subject/relief-account.floor": [
+     "matters"
+    ],
+    "bradley-no-subject/relief-account.neutral": 1,
+    "bradley-no-subject/relief-account.base_state": 1
+   }
+  },
+  {
+   "id": "VJ-006",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "hedonic-contrast/relief-account",
+   "node": "hedonic-contrast",
+   "tier": 4,
+   "razor_node": false,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read. The floor read's one hit, \"drown\", is the long's own rescue figure (\"Drowning is a precondition for the intense relief of being rescued.\"), carried as the account's model; it names no act and urges none.",
+    "his_words": "Eight spans, exact. The cut \"Does something being harder to achieve and demonstrate make it wrong or impossible? No\" stops before his \"but it doesn't support its argument either\". The variant uses only the concession, which is his answer to the question asked, so the cut does not bend it. \"I admit the gap.\" keeps its turn's sense: the gap between his inference about mechanism and proof of another's report.",
+    "strength": "At his strength: the dessert case comes as he gave it, with his doubt (the taste \"does dwindle\"), his limit (another's report cannot be checked) and his admission.",
+    "correction": "None.",
+    "anchor": "Met head on. The anchor's engineered being would still have positive states; the account says it would have nothing to relieve, and asks, in his words, for the case that being would supply.",
+    "residual": "Canon's clause. The concession is the long's: \"Humans do experience pleasure more intensely when it follows suffering, and prolonged pleasure habituates toward a neutral baseline.\" The one 'neutral' in the text is his neutral state, not the base state.",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "Exact, his limits carried with his claim, and the anchor met where it is strongest.",
+   "quotes": [
+    {
+     "src": "corpus:hedonic-contrast#long",
+     "quote": "drown"
+    },
+    {
+     "src": "corpus:hedonic-contrast#long",
+     "quote": "Drowning is a precondition for the intense relief of being rescued."
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.8.verbatim",
+     "quote": "Does something being harder to achieve and demonstrate make it wrong or impossible? No"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.8.verbatim",
+     "quote": "but it doesn't support its argument either"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.5.verbatim",
+     "quote": "I admit the gap."
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.5.verbatim",
+     "quote": "does dwindle"
+    },
+    {
+     "src": "corpus:hedonic-contrast#long",
+     "quote": "Humans do experience pleasure more intensely when it follows suffering, and prolonged pleasure habituates toward a neutral baseline."
+    }
+   ],
+   "figures": {
+    "hedonic-contrast/relief-account.words": 294,
+    "hedonic-contrast/relief-account.quotes_exact": true,
+    "hedonic-contrast/relief-account.sources_used": true,
+    "hedonic-contrast/relief-account.anchor_in_long": true,
+    "hedonic-contrast/relief-account.anchor_is_measured": true,
+    "hedonic-contrast/relief-account.concession_spans_in_long": true,
+    "hedonic-contrast/relief-account.residual_clause_copied": true,
+    "hedonic-contrast/relief-account.ends_on_the_residual": true,
+    "hedonic-contrast/relief-account.status": "open",
+    "hedonic-contrast/relief-account.by_role": 1,
+    "hedonic-contrast/relief-account.names": 0,
+    "hedonic-contrast/relief-account.pronouns": 0,
+    "hedonic-contrast/relief-account.label_words": 0,
+    "hedonic-contrast/relief-account.berridge": 0,
+    "hedonic-contrast/relief-account.floor": [
+     "drown"
+    ],
+    "hedonic-contrast/relief-account.neutral": 1
+   }
+  },
+  {
+   "id": "VJ-007",
+   "kind": "variant",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "variant_id": "neuroscience-positive-states/relief-account",
+   "node": "neuroscience-positive-states",
+   "tier": 4,
+   "razor_node": true,
+   "verdict": "ACCEPT",
+   "reads": {
+    "bar": "Every line read; nothing pro-life, nothing toward harm.",
+    "his_words": "Five spans, exact. \"What is the state before liking?\" keeps its turn's sense exactly: at L8 line 505 it answers the wanting-and-liking point raised at L8 line 501, the point the variant sets it against.",
+    "razor": "Met head on and fair, in the long's own terms: \"the library relocates the occasion of a positive, and the account relocates its level\" (the long's modest deflation \"concedes the valence and relocates its occasion\"). It meets the long's charge of gaslighting directly: \"It does not tell anyone that their pleasure is not pleasure\".",
+    "berridge": "Says what both sources say, and only that (VJ-019).",
+    "correction": "None. F1 stays a finding about the long, not a line of the variant.",
+    "anchor": "Met at its strongest.",
+    "residual": "Canon's clause. The concessions are the long's (\"Structurally, the goods of a life are deficit-occasioned\"; \"whether it is the only motive force is a question this argument need not settle\").",
+    "attribution": "By role throughout; no name, no pronoun, no label word (figures)."
+   },
+   "reason": "Exact, sourced at the source, and fair to the long in the long's own vocabulary.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.5.verbatim",
+     "quote": "What is the state before liking?"
+    },
+    {
+     "src": "pilot:neuroscience-positive-states/relief-account.text",
+     "quote": "the library relocates the occasion of a positive, and the account relocates its level"
+    },
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "concedes the valence and relocates its occasion"
+    },
+    {
+     "src": "pilot:neuroscience-positive-states/relief-account.text",
+     "quote": "It does not tell anyone that their pleasure is not pleasure"
+    },
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "Structurally, the goods of a life are deficit-occasioned"
+    },
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "whether it is the only motive force is a question this argument need not settle"
+    }
+   ],
+   "figures": {
+    "neuroscience-positive-states/relief-account.words": 296,
+    "neuroscience-positive-states/relief-account.quotes_exact": true,
+    "neuroscience-positive-states/relief-account.sources_used": true,
+    "neuroscience-positive-states/relief-account.anchor_in_long": true,
+    "neuroscience-positive-states/relief-account.anchor_is_measured": true,
+    "neuroscience-positive-states/relief-account.concession_spans_in_long": true,
+    "neuroscience-positive-states/relief-account.residual_clause_copied": true,
+    "neuroscience-positive-states/relief-account.ends_on_the_residual": true,
+    "neuroscience-positive-states/relief-account.status": "open",
+    "neuroscience-positive-states/relief-account.by_role": 1,
+    "neuroscience-positive-states/relief-account.names": 0,
+    "neuroscience-positive-states/relief-account.pronouns": 0,
+    "neuroscience-positive-states/relief-account.label_words": 0,
+    "neuroscience-positive-states/relief-account.berridge": 3,
+    "neuroscience-positive-states/relief-account.floor": [],
+    "neuroscience-positive-states/relief-account.neutral": 1,
+    "neuroscience-positive-states/relief-account.base_state": 1
+   }
+  },
+  {
+   "id": "VJ-008",
+   "kind": "checks",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CORRECT",
+   "finding": "All ten of the builder's checks are GREEN on the seven (\"GREEN, 7 variants\"), but five are proven to fire by a mutation: quote-exact, sources-used, strength-and-reason, no-name and berridge-scope. The other five, apostrophes, attribution-by-role, concessions-sourced, no-label and residual-copied, have none, so V7's statement that each check is proven to fire holds for half, and its own law (one mutation per check) is met for half. gate2 re-derived what four of the unproven five claim with its own code (the residual clause copied and ended on, the concession spans in the long, attribution by role, no label word) and each holds on the seven; apostrophes is a typographic check gate2 did not re-derive. Nothing in the pilot moves.",
+   "reason": "The record's claim is wider than its controls.",
+   "carries": [
+    "The builder owes five mutations, one per unproven check, at its next use (seat l, with the AMEND's new file)."
+   ],
+   "quotes": [
+    {
+     "src": "record:builder_checks.quote-exact",
+     "quote": "GREEN, 7 variants"
+    }
+   ],
+   "figures": {
+    "builder.checks": [
+     "apostrophes",
+     "attribution-by-role",
+     "berridge-scope",
+     "concessions-sourced",
+     "no-label",
+     "no-name",
+     "quote-exact",
+     "residual-copied",
+     "sources-used",
+     "strength-and-reason"
+    ],
+    "builder.green": [
+     "apostrophes",
+     "attribution-by-role",
+     "berridge-scope",
+     "concessions-sourced",
+     "no-label",
+     "no-name",
+     "quote-exact",
+     "residual-copied",
+     "sources-used",
+     "strength-and-reason"
+    ],
+    "builder.controlled": [
+     "berridge-scope",
+     "no-name",
+     "quote-exact",
+     "sources-used",
+     "strength-and-reason"
+    ],
+    "builder.uncontrolled": [
+     "apostrophes",
+     "attribution-by-role",
+     "concessions-sourced",
+     "no-label",
+     "residual-copied"
+    ]
+   }
+  },
+  {
+   "id": "VJ-009",
+   "kind": "controls",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "finding": "Five controls after C0, the unmutated draft first. Each expects one check and trips exactly that check (figures). The builder's check mode reproduced the record byte for byte at V8's open (battery).",
+   "reason": "As stated, for the five checks they cover (VJ-008 for the five they do not).",
+   "figures": {
+    "builder.controls": 5,
+    "builder.c0_first": true,
+    "builder.each_trips_only_its_own": true
+   }
+  },
+  {
+   "id": "VJ-010",
+   "kind": "source",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "finding": "gate2's own reader (this gate, --turns) found each of the ten accounts at its user turn: the turn whose text has canon's md5, at the line canon names, holding the verbatim. 10 of 10, read at V8's open (L8 87cc1d8f, vault_V2 038df8e5). The accounts are the same at the canon the pilot pins (v38.53) and at v38.54, and all ASCII (figures).",
+   "reason": "Measured with gate2's instrument, not the builder's.",
+   "figures": {
+    "accounts.n": 10,
+    "accounts.same_at_the_pinned_canon": true,
+    "accounts.ascii": true
+   }
+  },
+  {
+   "id": "VJ-011",
+   "kind": "finding",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "finding_id": "F1",
+   "finding_text": "the long ties the felt positive to dopamine's difference signal, and Berridge and Robinson 1998 conclude that dopamine is needed for wanting a reward but not for liking it. The variant cites only the separability, so it does not contradict the long on screen; the long's sentence is a served-text question for a later declared pin. Logged, not repaired: no corpus byte.",
+   "verdict": "CONFIRM",
+   "reads": "Read at the source by gate2 (E-utilities efetch, MEDLINE). The long says \"Dopamine encodes reward-prediction error\" and, from that difference signal, that the felt positive \"is largely the experienced narrowing of a lack\". Berridge and Robinson conclude that dopamine is not needed \"to mediate the hedonic pleasure of reinforcers\" and is \"necessary for 'wanting' incentives, but not for 'liking' them\". The conflict is with the felt-positive inference, as F1 says. The same abstract's no to dopamine mediating hedonic learning concerns mediation (depleted rats still learned new likes) and does not deny the firing the long's first sentence describes, so F1's scope is the right one.",
+   "reason": "A served-text question for the next declared pin; no corpus byte.",
+   "checked": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text"
+   ],
+   "quotes": [
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "Dopamine encodes reward-prediction error"
+    },
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "is largely the experienced narrowing of a lack"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "to mediate the hedonic pleasure of reinforcers"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "necessary for 'wanting' incentives, but not for 'liking' them"
+    }
+   ]
+  },
+  {
+   "id": "VJ-012",
+   "kind": "finding",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "finding_id": "F2",
+   "finding_text": "the library's own long already says, in its words, what account [3] says in his (\"We were not designed to be satisfied, but motivated\"); R0290's note that two longs run his mechanism locally holds at this sentence too",
+   "verdict": "CONFIRM",
+   "reads": "The long's \"We are motivated, not satisfied\" is account [3]'s \"We were not designed to be satisfied, but motivated\" in the library's words.",
+   "reason": "As stated.",
+   "quotes": [
+    {
+     "src": "corpus:neuroscience-positive-states#long",
+     "quote": "We are motivated, not satisfied"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.3.verbatim",
+     "quote": "We were not designed to be satisfied, but motivated"
+    }
+   ]
+  },
+  {
+   "id": "VJ-013",
+   "kind": "finding",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "finding_id": "F3",
+   "finding_text": "all ten accounts were read at their user turns (L8 87cc1d8f, vault_V2 038df8e5): each turn's text has the turn_md5 canon gives, sits at the line canon names, and contains the verbatim",
+   "verdict": "CONFIRM",
+   "reads": "Confirmed by gate2's own reader (VJ-010).",
+   "reason": "As stated."
+  },
+  {
+   "id": "VJ-014",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "pull": 0,
+   "pull_text": "The razor answer is built, not quoted. His accounts give the deprivation test, the parsimony move and the base state; the seat put them against the symmetric razor as: the account keeps both introspective reports and disputes the level (above neutral, or the deficit shrinking), and the deprivation test, not a preference between reports, places the base state among the bads. 'Neutral' and 'base state' are kept apart on purpose (his \"at least not bad\" and \"The base state is pain, not pleasure.\"). Read first on the three razor nodes.",
+   "verdict": "CONFIRM",
+   "reads": "Fair to both sides. The library's razor needs a denial of felt positive value; the account denies a level, not the feeling, and rests the base state on evidence that is not introspective (the deprivation test). His in substance: the parsimony of account [4], the base state of account [3] (\"The base state is pain, not pleasure.\"), the deprivation test of account [8], and his stance on another's report (\"I cannot verify or disprove\"). In all seven, 'neutral' names the level and 'base state' the default, never the other way (figures count both; the reading is gate2's).",
+   "reason": "Built, not quoted, and built from his parts.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.3.verbatim",
+     "quote": "The base state is pain, not pleasure."
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.5.verbatim",
+     "quote": "I cannot verify or disprove"
+    }
+   ]
+  },
+  {
+   "id": "VJ-015",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "pull": 1,
+   "pull_text": "The zero-sum lines (life-gift: a benefit conferred that way could relieve what it imposes but not exceed it; joy-outweighs-harms: the joy column cannot outgrow the other) follow from his \"0 sum game\" format and are stated on the account, beside his limit. Check they do not exceed \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\"",
+   "verdict": "CONFIRM",
+   "reads": "Inside his strength. Both lines are stated on the account; they follow from his \"0 sum game\" and from goods as the \"transition from a bad state to a less bad state\"; each caps the goods at what they relieve and none empties them, which is what \"completely discounting all pleasure\" would be.",
+   "reason": "A cap is not a discount.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.0.verbatim",
+     "quote": "0 sum game"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.0.verbatim",
+     "quote": "transition from a bad state to a less bad state"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.9.verbatim",
+     "quote": "completely discounting all pleasure"
+    }
+   ]
+  },
+  {
+   "id": "VJ-016",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "pull": 2,
+   "pull_text": "The node applications are the seat's, marked 'on the account' or 'on this reading': love answers loneliness, thrill seeking as a lack of stimulation, the uncreated lack no relief, the engineered being with nothing to relieve. Each extends a mechanism his words state; none is his sentence.",
+   "verdict": "CONFIRM",
+   "reads": "Each application is marked as the account's and extends a mechanism his words state; none is quoted as his. The one frame that is not an application but a reading of his words is bradley-no-subject's, and that is VJ-005's AMEND.",
+   "reason": "Marked and his in mechanism."
+  },
+  {
+   "id": "VJ-017",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "pull": 3,
+   "pull_text": "Berridge appears once, for the separability alone. The 1998 dopamine conclusion would have read as a correction of the long beside it (F1), and a variant states his view as an alternative, never as a correction.",
+   "verdict": "CONFIRM",
+   "reads": "Berridge appears in one variant, for the separability, which is what the sources say (VJ-019).",
+   "reason": "As stated.",
+   "figures": {
+    "berridge.variants_citing": [
+     "neuroscience-positive-states/relief-account"
+    ]
+   }
+  },
+  {
+   "id": "VJ-018",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "pull": 4,
+   "pull_text": "masochist-counterexample leaves the exception open and names the test the account owes (the seeking should rise as stimulation falls), rather than claiming thrill seeking for the account; the self-harm figures are not touched.",
+   "verdict": "CONFIRM",
+   "reads": "The exception stays open, the test is named, and the self-harm figure is not touched (VJ-004).",
+   "reason": "As stated."
+  },
+  {
+   "id": "VJ-019",
+   "kind": "berridge",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "reads": "gate2 fetched both MEDLINE records itself (E-utilities efetch). Berridge 1996 (Neurosci Biobehav Rev 20(1): 1-25, PMID 8622814): liking and wanting \"can be manipulated and measured separately\" and \"have separable neural substrates\". Berridge and Robinson 1998 (Brain Res Brain Res Rev 28(3): 309-69, PMID 9858756): dopamine needed for wanting, not liking. The variant's sentence, \"liking a reward and wanting it are separable, with separable brain substrates\", says what both say, and only that. The stronger form raised from memory at L8, liking without deprivation, is in neither abstract, and no variant states it. Cited once, on the one node the check allows (figures).",
+   "reason": "The citation is right and its scope is right.",
+   "checked": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text"
+   ],
+   "quotes": [
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "can be manipulated and measured separately"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "have separable neural substrates"
+    },
+    {
+     "src": "pilot:neuroscience-positive-states/relief-account.text",
+     "quote": "liking a reward and wanting it are separable, with separable brain substrates"
+    }
+   ],
+   "figures": {
+    "neuroscience-positive-states/relief-account.berridge": 3,
+    "berridge.variants_citing": [
+     "neuroscience-positive-states/relief-account"
+    ]
+   }
+  },
+  {
+   "id": "VJ-020",
+   "kind": "note",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "account": 0,
+   "reads": "Account [0]'s 'them': not bent. At its turn (vault_V2 line 805) the sentence follows his account of why the library granted the goods (it \"helped the argumentation, moreso than my theory\"), so its 'It' is his theory and the sentence is his reason the library chose otherwise; the variants' frame (\"for the author's own reason\") gives it the same role. Its 'them' has no single antecedent there (the objector, the premises, the goods), and the variants neither resolve it nor supply a closer one. The one reading their context drops, 'them' as the goods (his theory does not completely defeat them), is the point account [9] makes outright beside it in every variant. Whether one reading is his is his to say.",
+   "reason": "The quotation plays the role at its turn that it plays in the variants.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.0.verbatim",
+     "quote": "helped the argumentation, moreso than my theory"
+    },
+    {
+     "src": "pilot:life-gift/relief-account.text",
+     "quote": "for the author's own reason"
+    }
+   ]
+  },
+  {
+   "id": "VJ-021",
+   "kind": "note",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "account": 7,
+   "reads": "Account [7]'s 'it': not bent. At L8 line 505, \"it works regardless of what I believe here\" answers the line at L8 501 that the antinatalist conclusion does not need the relief thesis and that the library wins without it; his 'it' is the library's argumentation (\"don't need the relief thesis\"). The variant's 'it' is \"The library's case here\", one instance of that argumentation, and 'here', his for the relief thesis, reads as this node's question, which is the same question.",
+   "reason": "An instance of what he granted, at the question he granted it on.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.7.verbatim",
+     "quote": "it works regardless of what I believe here"
+    },
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.7.verbatim",
+     "quote": "don't need the relief thesis"
+    },
+    {
+     "src": "pilot:bradley-no-subject/relief-account.text",
+     "quote": "The library's case here"
+    }
+   ]
+  },
+  {
+   "id": "VJ-022",
+   "kind": "safety",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "reads": "His bar, read on every line of the seven, residuals included. No sentence is pro-life: none says life is good, a gift, precious or worth living, or that things get better. None encourages self-harm, suicide or homicide. gate2's floor read, independent of the checker's, has three hits, each read in its sentence: \"matters\" twice (his measure, account [2]) and \"drown\" once (the long's rescue figure). The checker's floors pass (figures). A floor is not a census; the census is the reading.",
+   "reason": "Neither failure his bar names.",
+   "quotes": [
+    {
+     "src": "canon:adversarial_map.relief_view_for_the_variant.his_accounts_verbatim.2.verbatim",
+     "quote": "matters"
+    },
+    {
+     "src": "corpus:hedonic-contrast#long",
+     "quote": "drown"
+    }
+   ],
+   "figures": {
+    "validator.verdict": "PASS",
+    "validator.violation_count": 0,
+    "validator.variants": 7,
+    "life-gift/relief-account.floor": [],
+    "joy-outweighs-harms/relief-account.floor": [
+     "matters"
+    ],
+    "love-beauty-art/relief-account.floor": [],
+    "masochist-counterexample/relief-account.floor": [],
+    "bradley-no-subject/relief-account.floor": [
+     "matters"
+    ],
+    "hedonic-contrast/relief-account.floor": [
+     "drown"
+    ],
+    "neuroscience-positive-states/relief-account.floor": []
+   }
+  },
+  {
+   "id": "VJ-023",
+   "kind": "found",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of the pilot, its record, its builder, the checker or canon v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "found_id": "F4",
+   "found": "joy-outweighs-harms#long calls the relief thesis \"the false claim that all pleasure is relief\"; canon's open residual registers the same question as open, neither side claiming proof, and the variant carries canon's clause beside that sentence (\"Both sides stop, open\"). On one page the long's verdict and the residual's 'open' now meet. Not the variant's to fix: it names the long's word (VJ-002). A served-text question for the next declared pin, beside F1.",
+   "whose": "gate2; his word decides whether the long's word stands as the library's verdict or moves",
+   "quotes": [
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "the false claim that all pleasure is relief"
+    },
+    {
+     "src": "pilot:joy-outweighs-harms/relief-account.text",
+     "quote": "Both sides stop, open"
+    }
+   ]
+  }
+ ]
+}

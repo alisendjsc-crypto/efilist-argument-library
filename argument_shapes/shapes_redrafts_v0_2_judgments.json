@@ -1,0 +1,384 @@
+{
+ "artifact": "gate2's third-round judgment of RD-03, the golden rule's third pass (V8, 2026-10-04): its own record, beside the round-two record, which stays byte-identical",
+ "state": "JUDGED, NOT RULED. His word decides; on it, the golden rule joins the (d)s at the successor map's next validator bump.",
+ "law": [
+  "K258: the judge drafted none of what it judges.",
+  "Append-only: a later round adds rows and never edits one.",
+  "An AMEND owes lines, never replacement text.",
+  "A judge re-derives the views and the runs with its own code; it never imports the drafter's builder."
+ ],
+ "what_a_verdict_means": {
+  "ACCEPT": "the redraft carries what was owed, is a shape of its node at full strength, its source makes the move, and it routes as class_judged says; it takes that route once he gives his word",
+  "AMEND": "a shape of its node with a named defect still owed, corrected by seat l in a new row or file",
+  "REJECT": "not a shape of its node: another node's objection, or a surface; belongs_to names where it lives",
+  "CONFIRM": "the source, pull or note is right as made",
+  "CORRECT": "it is wrong, and what is owed is named"
+ },
+ "his_word": [
+  {
+   "src": "canon:adversarial_map.his_words_V5.R0314.his_word.verbatim",
+   "verbatim": "Proceed with your recommendations",
+   "answers": "R0314",
+   "adopts": "gate2's three round-two asks; ask 3 put this row in gate2's next round, beside the relief variant"
+  }
+ ],
+ "kickoff": {
+  "relay": "R0320",
+  "md5": "e0ed9ab632807f71a9194be9d683e9aa"
+ },
+ "relay": {
+  "relay": "R0317",
+  "md5": "6c61dd850d1fdcbda7db2d64664ec047"
+ },
+ "judged": {
+  "redraft": {
+   "file": "argument_shapes/shapes_redrafts_v0_2.json",
+   "md5": "159c546ef224f87037578f7dee1464e2"
+  },
+  "redraft_record": {
+   "file": "argument_shapes/shapes_redrafts_record_v0_2.json",
+   "md5": "c7bdef1e18f4a2763118a305be25ef4c"
+  },
+  "redraft_builder": {
+   "file": "argument_shapes/build_shapes_redrafts_v0_2.py",
+   "md5": "cf505158a26b35de977d11c3d14a732b"
+  },
+  "redrafts_v0_1": {
+   "file": "argument_shapes/shapes_redrafts_v0_1.json",
+   "md5": "fc28cd12265e2712a9d610bbb2c1b69f"
+  },
+  "redrafts_v0_1_record": {
+   "file": "argument_shapes/shapes_redrafts_record_v0_1.json",
+   "md5": "ace5fb88886f7f7ce49a90658b590954"
+  },
+  "pilot": {
+   "file": "argument_shapes/shapes_pilot_v0_1.json",
+   "md5": "1f9c5da6166b538a90efa6dc7598124e"
+  },
+  "judgments_r1": {
+   "file": "argument_shapes/shapes_pilot_judgments.json",
+   "md5": "73503bccdd3ddf8b3a82f280181251d4"
+  },
+  "judgments_r2": {
+   "file": "argument_shapes/shapes_redrafts_judgments.json",
+   "md5": "6f4974966c23920234f495cb20813d4c"
+  },
+  "judgments_r2_gate": {
+   "file": "argument_shapes/shapes_redrafts_judgments_gate.py",
+   "md5": "950c715c4b7ba35b6db8715600df8832"
+  },
+  "validator": {
+   "file": "argument_shapes/shape_validator_v0_1.py",
+   "md5": "64553b25b6db0ff67edeb87b89178297"
+  },
+  "schema": {
+   "file": "argument_shapes/argument_shapes_schema_v0_1.json",
+   "md5": "bef95b1dc2b9cb109760cd961d2da72b"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "map_v1_8": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register_v0_9": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "canon": {
+   "file": "project_canon_v38_54.json",
+   "md5": "e0f3e2f695a43f18d0c90d6ce3e08748"
+  }
+ },
+ "rows": [
+  {
+   "id": "TJ-001",
+   "kind": "shape",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "answers": "RJ-001",
+   "class_drafted": "d",
+   "class_judged": "d",
+   "verdict": "ACCEPT",
+   "belongs_to": null,
+   "route": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    }
+   },
+   "reads": {
+    "owed": "Both of RJ-001's owed lines are met (figures): the total as a limit (\"so long as the total good grows\"), the shares held (\"the shares held as they are\"), the halt (\"stopping before the worst-off fall below a life just worth living\"), and the ground kept on the possible person's own good (\"A possible person who would be glad to exist is harmed if never created\"); 67 words, inside the 30-70 owed; Hare 1975 first in attested_by, with the 1993 reprint.",
+    "strongest_form": "Passes. The statement carries Hare's argument as his records state it: the SEP's step, the total as a limit (\"so long as this will increase the total satisfaction of preference\"), and the 1988 abstract's policy, which halts \"until the lowest segment of the population comes below the break-even point\" with the distribution held (\"without altering its proportionate distribution\"). The card meets the argument at its strength (K346).",
+    "routing": "(d) at HR-02 via joy-outweighs-harms#long holds, now as worded. The total is stated as the duty's limit, so the ground stays the possible person's own good (V3b's law: a bound's wording decides its horn), and that ground is the premise the via locus's (d) names: \"hold that a merely possible person can be a genuine beneficiary of being brought into a net-positive existence\".",
+    "shape_not_surface": "Passes. The bound's clauses are population policy, but the shape is a duty to create, not population-ethics-paradoxes' objection, whose trigger is that \"Population ethics paradoxes undermine antinatalism\".",
+    "source": "Every clause is a record's: the step and the limit the SEP's, the halt and the held shares the 1988 abstract's, the harm clause the 1993 collection's description (RJ-009). Neither paper was read in full, as the record says.",
+    "changed_beyond_owed": "The golden-rule step's wording moved to the SEP's, toward the records (pull 1, TJ-002)."
+   },
+   "reason": "RJ-001's owed lines are met in Hare's own terms, and the line meets his bound as his records state it. Class and route unchanged.",
+   "checked": [
+    "https://plato.stanford.edu/entries/hare/",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text"
+   ],
+   "quotes": [
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "so long as the total good grows"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "the shares held as they are"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "stopping before the worst-off fall below a life just worth living"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "A possible person who would be glad to exist is harmed if never created"
+    },
+    {
+     "src": "web:https://plato.stanford.edu/entries/hare/",
+     "quote": "so long as this will increase the total satisfaction of preference"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "until the lowest segment of the population comes below the break-even point"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "without altering its proportionate distribution"
+    },
+    {
+     "src": "map:#41.adversarial_move",
+     "quote": "hold that a merely possible person can be a genuine beneficiary of being brought into a net-positive existence"
+    },
+    {
+     "src": "corpus:population-ethics-paradoxes#trigger",
+     "quote": "Population ethics paradoxes undermine antinatalism"
+    }
+   ],
+   "figures": {
+    "RD-03.words.v0_1": 69,
+    "RD-03.words.redraft": 67,
+    "RD-03.changed": [
+     "attested_by",
+     "provenance",
+     "statement"
+    ],
+    "RD-03.owed_met": {
+     "the total as a limit on the duty": true,
+     "the shares held as they are": true,
+     "the halt before the worst-off fall below a life just worth living": true,
+     "the duty's ground stays the possible person's own good": true
+    },
+    "RD-03.hare_1975_first": true,
+    "RD-03.class": "d",
+    "RD-03.terminus_is_the_route": true,
+    "RD-03.supersedes_v0_1": true,
+    "validator.redraft_alone": {
+     "verdict": "PASS",
+     "violation_count": 0,
+     "shapes": 1,
+     "nodes_with_shapes": 1
+    },
+    "validator.superseded_view": {
+     "verdict": "PASS",
+     "violation_count": 0,
+     "shapes": 10,
+     "nodes_with_shapes": 6
+    },
+    "validator.ruled_view": {
+     "verdict": "PASS",
+     "violation_count": 0,
+     "shapes": 7,
+     "nodes_with_shapes": 5
+    },
+    "validator.pilot_and_redraft_as_one": {
+     "verdict": "FAIL",
+     "violation_count": 1,
+     "shapes": 11,
+     "nodes_with_shapes": 6,
+     "failed": [
+      "shape-id"
+     ]
+    },
+    "validator.record_runs_match": true
+   }
+  },
+  {
+   "id": "TJ-002",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "pull": 0,
+   "pull_text": "The golden-rule step is now worded as the SEP states it (source 1: glad that I exist, I prescribe my own creation; universalized, I prescribe creating others relevantly like me, ceteris paribus), not as 'do to others what you are glad was done to you'. RJ-008 found that wording in none of the records read, and no record read this session has it either. Not owed by RJ-001; changed because the statement may claim only what the records read support.",
+   "verdict": "CONFIRM",
+   "reads": "gate2 read the SEP's section 6 itself: \"if I am glad that I exist, I tenselessly prescribe\", and, universalizing, \"the bringing into existence of others relevantly like me\", cited to 1975, 1988b and 1988c. The statement follows that step (\"Glad to exist, you prescribe your own creation\"); 'by the golden rule' is the 1975 paper's title, which the SEP cites first. The SEP gives ceteris paribus on both prescriptions and the statement on the second (\"other things equal\"); the second is the one the duty rests on, so nothing is owed.",
+   "reason": "Toward the records, and not owed.",
+   "checked": [
+    "https://plato.stanford.edu/entries/hare/"
+   ],
+   "quotes": [
+    {
+     "src": "web:https://plato.stanford.edu/entries/hare/",
+     "quote": "if I am glad that I exist, I tenselessly prescribe"
+    },
+    {
+     "src": "web:https://plato.stanford.edu/entries/hare/",
+     "quote": "the bringing into existence of others relevantly like me"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "Glad to exist, you prescribe your own creation"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "other things equal"
+    }
+   ]
+  },
+  {
+   "id": "TJ-003",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "pull": 1,
+   "pull_text": "The weighing SJ-003 owed ('weighed with everyone's preferences') is carried by the limit: the total is everyone's good, the possible person's included. Stated as a clause of the duty itself it read as the trigger (RJ-001), so it is not repeated there.",
+   "verdict": "CONFIRM",
+   "reads": "The limit is a condition on the total of everyone's good, the possible person's included: a creation is allowed only while that total grows, so the possible person's gain is weighed against every loss the creation causes. That is the weighing SJ-003 owed, stated where RJ-001 asked for it, as a limit (\"so long as the total good grows\"), not as the trigger.",
+   "reason": "The weighing is carried by the limit.",
+   "quotes": [
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "so long as the total good grows"
+    }
+   ]
+  },
+  {
+   "id": "TJ-004",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "pull": 2,
+   "pull_text": "The halt sits at the break-even point, the level at which the Repugnant Conclusion's lives already stand, so in an equal society Hare's bound narrows Parfit's chain without refusing its end. The held shares refuse the step the library's chain is built from (\"adding a person with positive but lower-than-average welfare\"). The card meets Hare's bound as his records state it; whether the library may still press the bare total view's verdict (\"devastating against Total utilitarianism, which must weigh aggregate welfare across populations\") against a bounded total is gate2's to read. The route does not move either way: the library's own answer at that node ends at bedrock (#109).",
+   "verdict": "CONFIRM",
+   "reads": "The one to read first, read: yes, the library may still press the bare total view's verdict against the bounded total, at the Repugnant Conclusion itself and not through the Mere Addition chain. The long states the Conclusion as a comparison of totals between two worlds (\"provided the total sum of welfare is higher in the first world\"), whose lives are \"barely-worth-living\"; Hare halts at \"the break-even point at which life is just worth living\". In an equal society the bounded duty goes from the few to the many with the shares held (all equal), the total growing and no one below the halt: the Conclusion's own comparison. So the bound narrows the path and does not refuse the end, as V5 says. What the held shares refuse is the chain's step (\"adding a person with positive but lower-than-average welfare\"), so the chain does not meet the bounded total and the Conclusion does. Pressed, the exchange ends at the bedrock the map records at that node (#109, impersonal against person-affecting axiology). Class and route do not move: the shape's ground is the possible person's own good, and its route is HR-02 (TJ-001).",
+   "reason": "V5's reading holds; the press is the Conclusion's, not the chain's.",
+   "checked": [
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text"
+   ],
+   "quotes": [
+    {
+     "src": "corpus:population-ethics-paradoxes#long",
+     "quote": "provided the total sum of welfare is higher in the first world"
+    },
+    {
+     "src": "corpus:population-ethics-paradoxes#long",
+     "quote": "barely-worth-living"
+    },
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "the break-even point at which life is just worth living"
+    },
+    {
+     "src": "corpus:population-ethics-paradoxes#long",
+     "quote": "adding a person with positive but lower-than-average welfare"
+    }
+   ]
+  },
+  {
+   "id": "TJ-005",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "pull": 3,
+   "pull_text": "Ex ante, a creation is a prospect over possible lives, and the via locus's first horn reads the prospect as interpersonal (\"across the distribution of lives the gamble might produce, the goods outweigh in prospect\"). At its strongest the line restricts the duty to a person who would be glad and treats the prospect as that person's own, which is the merely-possible-beneficiary premise again; read as an expectation over different possible people it is the weaker line the first horn meets. So the route is HR-02 for the line at its strongest.",
+   "verdict": "CONFIRM",
+   "reads": "The via locus's first horn reads the prospect as a sum across possible people (\"across the distribution of lives the gamble might produce, the goods outweigh in prospect\"). The statement restricts the duty to a person \"who would be glad to exist\" and grounds it in that person's harm, so at its strongest the prospect is that person's own: HR-02's premise, the second horn's ground. Read as an expectation over different possible people it would be the first horn's weaker line, which the card does not state.",
+   "reason": "HR-02 for the line at its strongest.",
+   "quotes": [
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "across the distribution of lives the gamble might produce, the goods outweigh in prospect"
+    },
+    {
+     "src": "redraft:life-gift/the-golden-rule-passes-it-on.statement",
+     "quote": "who would be glad to exist"
+    }
+   ]
+  },
+  {
+   "id": "TJ-006",
+   "kind": "pull",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "redraft": "RD-03",
+   "pull": 4,
+   "pull_text": "The bounded duty no longer meets the reductio at rights-future-generations#long (\"The obligation would be literally infinite\"), as RJ-001 found of v0_1; the no-claimant (d) there stays on the library's side, as RJ-001 read it.",
+   "verdict": "CONFIRM",
+   "reads": "The reductio meets an unbounded duty (\"The obligation would be literally infinite\"); the third pass is bounded by the total and the halt, so it does not meet it, as RJ-001 found of v0_1. The no-claimant (d) there stays on the library's side, as RJ-001 read it.",
+   "reason": "As stated.",
+   "quotes": [
+    {
+     "src": "corpus:rights-future-generations#long",
+     "quote": "The obligation would be literally infinite"
+    }
+   ]
+  },
+  {
+   "id": "TJ-007",
+   "kind": "sources",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "measure": "the six records the row rests on, re-read by gate2",
+   "finding": "Re-read at V8: the SEP's section 6 and bibliography (the step, the limit, and the 1975 entry, reprinted in 1993a at pages 147-67); MEDLINE 11661183 (Philos Public Aff 4(3): 201-22, no abstract) and 11651921 (Bioethics 2(4): 279-93, the indexer's abstract with the halt and the held shares, which proposes \"increasing the population of a society while increasing the total utility\"), both through E-utilities; Crossref for the reprint (Essays On Bioethics, pp. 147-167, 1993). The attestation is right as written.",
+   "reason": "As stated in the v0_2 record.",
+   "checked": [
+    "https://plato.stanford.edu/entries/hare/",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+    "https://api.crossref.org/works/10.1093/oso/9780198239833.003.0010"
+   ],
+   "quotes": [
+    {
+     "src": "web:https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8622814,9858756,11651921,11661183&rettype=medline&retmode=text",
+     "quote": "increasing the population of a society while increasing the total utility"
+    }
+   ]
+  },
+  {
+   "id": "TJ-008",
+   "kind": "safety",
+   "seat": "gate2 (Code, V8, 2026-10-04): judge only under K258; drafted none of RD-03, its record, its builder or canon v38.52-v38.54",
+   "date": "2026-10-04",
+   "supersedes": null,
+   "verdict": "CONFIRM",
+   "measure": "his bar, over RD-03",
+   "finding": "Read against his bar. It encourages no self-harm, suicide or homicide, and it does not speak in the library's voice: it is the objector's argument, routed (d) to the map and never to a served page. It does not touch the safety harness.",
+   "reason": "As RJ-010 read the two before it."
+  }
+ ]
+}

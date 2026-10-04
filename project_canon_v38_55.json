@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.54",
+  "canon_version": "38.55",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V7",
+  "last_updated_by_session": "V8",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V7 drafted the relief variant: one relief-account variant on each of the seven pleasure-fork nodes (RV-7), from relief_view_for_the_variant, his accounts quoted verbatim and read at their user turns, the measured anchors, validator PASS 0, Berridge checked at the source; drafted, not judged (adversarial_map.relief_variants_pilot_V7). Next, in order: (1) gate2's round, drafter != judge (K258): the relief variant and the golden rule's third pass (R0317, RD-03); (2) his word; (3) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3, the dopamine sentence V7 logged; the responseVariants render, RV-4, drawn by the design lane). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
+    "session": "The pin is v4.1.5. gate2 (V8) judged V7's relief variant (6 ACCEPT, 1 AMEND: bradley-no-subject, the frame over account [2]) and RD-03 (ACCEPT as (d) at HR-02); judged, not ruled (adversarial_map.relief_variants_judgment_gate2, shapes_redrafts_v0_2_judgment_gate2). Next, in order: (1) his word on gate2's four asks; (2) seat l meets the one owed line in a new file, with five mutations for the builder's unproven checks; (3) gate2 judges that line; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3, F1's dopamine sentence and F4's 'false claim' if his word queues it; the responseVariants render, RV-4, drawn by the design lane). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1937,6 +1937,15 @@
         "record_notes_V7"
       ],
       "canon_writer_next": "gate2 (its next round), then seat l"
+    },
+    "V8_closed": {
+      "state": "JUDGED, NOT RULED (the relief variant pilot and RD-03)",
+      "blocks": [
+        "relief_variants_judgment_gate2",
+        "shapes_redrafts_v0_2_judgment_gate2",
+        "record_notes_V8"
+      ],
+      "canon_writer_next": "seat l"
     }
   },
   "open_questions": {
@@ -2068,7 +2077,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.54",
+  "canon_version_marker": "v38.55",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2782,7 +2791,8 @@
     "v38_51_V3b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_redrafts_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_52_V5": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V5, shapes_redrafts_V5, response_variants_design_V5, record_notes_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_53_V6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V6, response_variants_rulings_V6, response_variants_build_V6, record_notes_V6; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
-    "v38_54_V7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains relief_variants_pilot_V7, berridge_check_V7, record_notes_V7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_54_V7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains relief_variants_pilot_V7, berridge_check_V7, record_notes_V7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_55_V8": "MINOR. keyset UNCHANGED at 42. adversarial_map gains relief_variants_judgment_gate2, shapes_redrafts_v0_2_judgment_gate2, record_notes_V8; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -3046,7 +3056,8 @@
     "V3b (gate2, 2026-10-04): V2b's two redrafts judged (R0311): soul-making ACCEPT as (d) at HR-02; the golden rule AMEND, because its total is stated as the duty's trigger, which his L3 reading meets at joy-outweighs-harms, and without Hare's halt; Hare 1975 to be added to its attestation. Round one's Hare source read corrected forward. No pin.",
     "V5 (seat l, 2026-10-04): his word on R0314 recorded verbatim from the user turn (gate2's three asks adopted); the golden rule's third pass drafted in a new file (Hare's total as a limit, the shares held, the halt; Hare 1975 added; route unchanged after reading the premise-sharers), validator PASS 0, for gate2's next round; the responseVariants design drafted with eight rulings and leans for his word; the pleasure fork measured at seven nodes. No pin.",
     "V6 (seat l, 2026-10-04): his word on R0316 recorded verbatim from the user turn (RV-1..RV-8 adopted as leaned); response_variants/ built on V1's pattern: the schema (one closed type, relief-account, its label copied from canon), the validator (RV-6's 19 checks; EXIT and WIDE imported at their md5) and its self-test control (72 of 72, every check RED by a mutation, the seven measured anchors as a real-data control). No pin.",
-    "V7 (seat l, 2026-10-04): the relief variant drafted on the seven fork nodes (RV-7) in response_variants/ (staging, 268-296 words each, his words only as quotation and read at their user turns); validator PASS 0; the builder's quote check and five controls; Berridge checked at the source (MEDLINE) and cited for the separability alone. Drafted, not judged. No pin."
+    "V7 (seat l, 2026-10-04): the relief variant drafted on the seven fork nodes (RV-7) in response_variants/ (staging, 268-296 words each, his words only as quotation and read at their user turns); validator PASS 0; the builder's quote check and five controls; Berridge checked at the source (MEDLINE) and cited for the separability alone. Drafted, not judged. No pin.",
+    "V8 (gate2, 2026-10-04): V7's relief variant judged (6 ACCEPT, 1 AMEND, 0 REJECT; the builder's checks CORRECT, five of ten unproven by a mutation; F1-F3 and the five pulls CONFIRM; F4 found) and RD-03 judged (ACCEPT as (d) at HR-02); gate2's own gates and controls; judged, not ruled. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -13229,6 +13240,343 @@
           "md5": "4f1b6a71651c4845d941bbe3b68eccc1",
           "bytes": 9618,
           "was": "50c51d7419d673ca05b9ca8ee76bdb12"
+        }
+      }
+    ],
+    "relief_variants_judgment_gate2": {
+      "state": "JUDGED, NOT RULED. His word decides; nothing ships on a judgment. The owed lines go to seat l; the render waits for a declared pin, drawn by the design lane (RV-4).",
+      "kickoff": {
+        "relay": "R0320",
+        "md5": "e0ed9ab632807f71a9194be9d683e9aa",
+        "read_at_the_index": true
+      },
+      "files": {
+        "record": {
+          "file": "response_variants/relief_variants_judgments.json",
+          "md5": "58bb3db1e603198cc013fb32bc5651c2",
+          "bytes": 51357
+        },
+        "gate": {
+          "file": "response_variants/relief_variants_judgments_gate.py",
+          "md5": "3f9756febf66e3a417c75dffad17b4c1",
+          "bytes": 26877
+        },
+        "control": {
+          "file": "response_variants/relief_variants_judgments_gate_control_v0_1.json",
+          "md5": "1529e4d646e8f3dc9ee5a058111cdb05",
+          "bytes": 2658
+        }
+      },
+      "judged": {
+        "pilot": {
+          "file": "response_variants/relief_variants_pilot_v0_1.json",
+          "md5": "1d5e8f1c65a387da495dba91edbee9e8"
+        },
+        "record": {
+          "file": "response_variants/relief_variants_record_v0_1.json",
+          "md5": "1d8556443af14f95bff9e906f2a67037"
+        },
+        "builder": {
+          "file": "response_variants/build_relief_variants.py",
+          "md5": "c5f02c47f1daf965f2dbd29bfa9aec9a"
+        },
+        "schema": {
+          "file": "response_variants/response_variants_schema_v0_1.json",
+          "md5": "169c15b30f3fcc578689daa257d5b41f"
+        },
+        "validator": {
+          "file": "response_variants/response_variant_validator_v0_1.py",
+          "md5": "30cb7f3bc4f9e81b0ff5c85ecfaacdf3"
+        },
+        "validator_control": {
+          "file": "response_variants/response_variant_validator_control_v0_1.json",
+          "md5": "44a77cc75a062fb6e4bac7b47aaec421"
+        },
+        "measurement": {
+          "file": "design/variations/measure_response_variants_v0_1.json",
+          "md5": "cbae330fe2106d79d572de8e20ac8459"
+        },
+        "corpus": {
+          "file": "efilist_argument_library_v4_0_0.json",
+          "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+        },
+        "canon_pinned": {
+          "file": "project_canon_v38_53.json",
+          "md5": "4bc14ae1a5fc6103df820900642f9728"
+        },
+        "canon": {
+          "file": "project_canon_v38_54.json",
+          "md5": "e0f3e2f695a43f18d0c90d6ce3e08748"
+        }
+      },
+      "verdicts": {
+        "life-gift/relief-account": "ACCEPT",
+        "joy-outweighs-harms/relief-account": "ACCEPT",
+        "love-beauty-art/relief-account": "ACCEPT",
+        "masochist-counterexample/relief-account": "ACCEPT",
+        "bradley-no-subject/relief-account": "AMEND",
+        "hedonic-contrast/relief-account": "ACCEPT",
+        "neuroscience-positive-states/relief-account": "ACCEPT"
+      },
+      "count": {
+        "ACCEPT": 6,
+        "AMEND": 1,
+        "REJECT": 0
+      },
+      "owed": {
+        "bradley-no-subject/relief-account": [
+          "Account [2] keeps its sense at its turn (L8 line 337, offsets 414 to 549): his measure of what matters, how much suffering is reduced, the 'numbers game' of its own first sentence. No sentence may present it as what the library's author values among states, or as relief in the account's sense of a felt state. Frame it as his measure, or leave it out at this node and drop its account_sources entry with it.",
+          "Nothing else moves. In a new file; the pilot stays byte-identical; the variant stays inside the band and passes the validator."
+        ]
+      },
+      "amend_reason": {
+        "bradley-no-subject/relief-account": "Six spans, each exact; five keep their turn's sense, account [7] among them (VJ-021). Account [2] does not. At L8 line 337 it is his measure, named in its own first sentence (\"For me, it's more of a numbers game.\"), said of what matters to him in his position. The variant sets it under a sentence of its own, \"Relief is what the library's author values most\", two sentences after reading \"each valued state as a deficit shrinking\". There 'relief' is the account's word for a felt state, so the frame turns his measure of how much suffering is reduced into a valuation of states, at the node whose anchor is about what subjects value. That is a paraphrase of his intention set over his words."
+      },
+      "builder_checks": {
+        "verdict": "CORRECT",
+        "finding": "All ten of the builder's checks are GREEN on the seven (\"GREEN, 7 variants\"), but five are proven to fire by a mutation: quote-exact, sources-used, strength-and-reason, no-name and berridge-scope. The other five, apostrophes, attribution-by-role, concessions-sourced, no-label and residual-copied, have none, so V7's statement that each check is proven to fire holds for half, and its own law (one mutation per check) is met for half. gate2 re-derived what four of the unproven five claim with its own code (the residual clause copied and ended on, the concession spans in the long, attribution by role, no label word) and each holds on the seven; apostrophes is a typographic check gate2 did not re-derive. Nothing in the pilot moves.",
+        "carries": [
+          "The builder owes five mutations, one per unproven check, at its next use (seat l, with the AMEND's new file)."
+        ]
+      },
+      "controls": {
+        "verdict": "CONFIRM",
+        "finding": "Five controls after C0, the unmutated draft first. Each expects one check and trips exactly that check (figures). The builder's check mode reproduced the record byte for byte at V8's open (battery)."
+      },
+      "source_check": {
+        "verdict": "CONFIRM",
+        "finding": "gate2's own reader (this gate, --turns) found each of the ten accounts at its user turn: the turn whose text has canon's md5, at the line canon names, holding the verbatim. 10 of 10, read at V8's open (L8 87cc1d8f, vault_V2 038df8e5). The accounts are the same at the canon the pilot pins (v38.53) and at v38.54, and all ASCII (figures)."
+      },
+      "findings": {
+        "F1": "CONFIRM",
+        "F2": "CONFIRM",
+        "F3": "CONFIRM"
+      },
+      "pulls": [
+        "CONFIRM",
+        "CONFIRM",
+        "CONFIRM",
+        "CONFIRM",
+        "CONFIRM"
+      ],
+      "berridge": {
+        "verdict": "CONFIRM",
+        "reads": "gate2 fetched both MEDLINE records itself (E-utilities efetch). Berridge 1996 (Neurosci Biobehav Rev 20(1): 1-25, PMID 8622814): liking and wanting \"can be manipulated and measured separately\" and \"have separable neural substrates\". Berridge and Robinson 1998 (Brain Res Brain Res Rev 28(3): 309-69, PMID 9858756): dopamine needed for wanting, not liking. The variant's sentence, \"liking a reward and wanting it are separable, with separable brain substrates\", says what both say, and only that. The stronger form raised from memory at L8, liking without deprivation, is in neither abstract, and no variant states it. Cited once, on the one node the check allows (figures)."
+      },
+      "quotations_read_at_their_turns": {
+        "account_0": {
+          "verdict": "CONFIRM",
+          "reads": "Account [0]'s 'them': not bent. At its turn (vault_V2 line 805) the sentence follows his account of why the library granted the goods (it \"helped the argumentation, moreso than my theory\"), so its 'It' is his theory and the sentence is his reason the library chose otherwise; the variants' frame (\"for the author's own reason\") gives it the same role. Its 'them' has no single antecedent there (the objector, the premises, the goods), and the variants neither resolve it nor supply a closer one. The one reading their context drops, 'them' as the goods (his theory does not completely defeat them), is the point account [9] makes outright beside it in every variant. Whether one reading is his is his to say."
+        },
+        "account_7": {
+          "verdict": "CONFIRM",
+          "reads": "Account [7]'s 'it': not bent. At L8 line 505, \"it works regardless of what I believe here\" answers the line at L8 501 that the antinatalist conclusion does not need the relief thesis and that the library wins without it; his 'it' is the library's argumentation (\"don't need the relief thesis\"). The variant's 'it' is \"The library's case here\", one instance of that argumentation, and 'here', his for the relief thesis, reads as this node's question, which is the same question."
+        }
+      },
+      "safety": {
+        "verdict": "CONFIRM",
+        "reads": "His bar, read on every line of the seven, residuals included. No sentence is pro-life: none says life is good, a gift, precious or worth living, or that things get better. None encourages self-harm, suicide or homicide. gate2's floor read, independent of the checker's, has three hits, each read in its sentence: \"matters\" twice (his measure, account [2]) and \"drown\" once (the long's rescue figure). The checker's floors pass (figures). A floor is not a census; the census is the reading."
+      },
+      "found": {
+        "F4": "joy-outweighs-harms#long calls the relief thesis \"the false claim that all pleasure is relief\"; canon's open residual registers the same question as open, neither side claiming proof, and the variant carries canon's clause beside that sentence (\"Both sides stop, open\"). On one page the long's verdict and the residual's 'open' now meet. Not the variant's to fix: it names the long's word (VJ-002). A served-text question for the next declared pin, beside F1."
+      },
+      "asks_for_his_word": [
+        {
+          "ask": "Adopt gate2's judgment of the relief variant: six ACCEPT (life-gift, joy-outweighs-harms, love-beauty-art, masochist-counterexample, hedonic-contrast, neuroscience-positive-states) and one AMEND (bradley-no-subject: the frame over account [2]).",
+          "lean": "adopt; seat l meets the one owed line in a new file, gate2 judges that line, and the seven then wait for the render in a declared pin (RV-4)"
+        },
+        {
+          "ask": "Adopt RD-03, the golden rule's third pass: ACCEPT as (d) at HR-02 via joy-outweighs-harms#long.",
+          "lean": "adopt; the golden rule joins the (d)s at the successor map's next validator bump"
+        },
+        {
+          "ask": "F4: joy-outweighs-harms#long calls the relief thesis 'the false claim', beside a variant that ends on canon's open residual. Queue it with F1 for the next declared pin's served-text pass?",
+          "lean": "queue it; the pin session drafts any change, gate2 judges it, and his word decides whether the long's word stands as the library's verdict"
+        },
+        {
+          "ask": "Account [0]: in 'though, it does not completely defeat them' (vault_V2 line 805), 'them' has no single antecedent; the variants carry the sentence whole and leave it open. Name the referent only if one reading is wrong for you.",
+          "lean": "no change; the sentence plays the same role in the variants as at its turn"
+        }
+      ],
+      "run_at_this_build": {
+        "response_variants/relief_variants_judgments_gate.py": "RELIEF VARIANTS JUDGMENTS GATE: GREEN (23 rows)",
+        "response_variants/relief_variants_judgments_gate.py --self-test": "SELF-TEST: 17 of 17 as expected; control record matches"
+      },
+      "copied_from": "response_variants/relief_variants_judgments.json at 58bb3db1e603198cc013fb32bc5651c2"
+    },
+    "shapes_redrafts_v0_2_judgment_gate2": {
+      "state": "JUDGED, NOT RULED. His word decides; on it, the golden rule joins the (d)s at the successor map's next validator bump.",
+      "kickoff": {
+        "relay": "R0320",
+        "md5": "e0ed9ab632807f71a9194be9d683e9aa",
+        "read_at_the_index": true
+      },
+      "relay_folded": {
+        "relay": "R0317",
+        "md5": "6c61dd850d1fdcbda7db2d64664ec047"
+      },
+      "files": {
+        "record": {
+          "file": "argument_shapes/shapes_redrafts_v0_2_judgments.json",
+          "md5": "8308d14a98c55bad39317e353e719d56",
+          "bytes": 20651
+        },
+        "gate": {
+          "file": "argument_shapes/shapes_redrafts_v0_2_judgments_gate.py",
+          "md5": "0a1776f3367ab0f3ea8cfd3367fc9a6e",
+          "bytes": 26386
+        },
+        "control": {
+          "file": "argument_shapes/shapes_redrafts_v0_2_judgments_gate_control_v0_1.json",
+          "md5": "13f1d664820eeaa2b43eb1c26e267267",
+          "bytes": 2679
+        }
+      },
+      "judged": {
+        "redraft": {
+          "file": "argument_shapes/shapes_redrafts_v0_2.json",
+          "md5": "159c546ef224f87037578f7dee1464e2"
+        },
+        "redraft_record": {
+          "file": "argument_shapes/shapes_redrafts_record_v0_2.json",
+          "md5": "c7bdef1e18f4a2763118a305be25ef4c"
+        },
+        "redraft_builder": {
+          "file": "argument_shapes/build_shapes_redrafts_v0_2.py",
+          "md5": "cf505158a26b35de977d11c3d14a732b"
+        },
+        "redrafts_v0_1": {
+          "file": "argument_shapes/shapes_redrafts_v0_1.json",
+          "md5": "fc28cd12265e2712a9d610bbb2c1b69f"
+        },
+        "redrafts_v0_1_record": {
+          "file": "argument_shapes/shapes_redrafts_record_v0_1.json",
+          "md5": "ace5fb88886f7f7ce49a90658b590954"
+        },
+        "pilot": {
+          "file": "argument_shapes/shapes_pilot_v0_1.json",
+          "md5": "1f9c5da6166b538a90efa6dc7598124e"
+        },
+        "judgments_r1": {
+          "file": "argument_shapes/shapes_pilot_judgments.json",
+          "md5": "73503bccdd3ddf8b3a82f280181251d4"
+        },
+        "judgments_r2": {
+          "file": "argument_shapes/shapes_redrafts_judgments.json",
+          "md5": "6f4974966c23920234f495cb20813d4c"
+        },
+        "judgments_r2_gate": {
+          "file": "argument_shapes/shapes_redrafts_judgments_gate.py",
+          "md5": "950c715c4b7ba35b6db8715600df8832"
+        },
+        "validator": {
+          "file": "argument_shapes/shape_validator_v0_1.py",
+          "md5": "64553b25b6db0ff67edeb87b89178297"
+        },
+        "schema": {
+          "file": "argument_shapes/argument_shapes_schema_v0_1.json",
+          "md5": "bef95b1dc2b9cb109760cd961d2da72b"
+        },
+        "corpus": {
+          "file": "efilist_argument_library_v4_0_0.json",
+          "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+        },
+        "map_v1_8": {
+          "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+          "md5": "691930ab76908a85a6850bdb714d3827"
+        },
+        "register_v0_9": {
+          "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+          "md5": "8e53d920099e8b850baa2879dfd3e351"
+        },
+        "canon": {
+          "file": "project_canon_v38_54.json",
+          "md5": "e0f3e2f695a43f18d0c90d6ce3e08748"
+        }
+      },
+      "verdict": {
+        "redraft": "RD-03",
+        "shape_id": "life-gift/the-golden-rule-passes-it-on",
+        "answers": "RJ-001",
+        "verdict": "ACCEPT",
+        "class_judged": "d",
+        "route": {
+          "via": "joy-outweighs-harms#long",
+          "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+          "bedrock": {
+            "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+            "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+            "register": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            }
+          }
+        },
+        "reason": "RJ-001's owed lines are met in Hare's own terms, and the line meets his bound as his records state it. Class and route unchanged."
+      },
+      "pulls": [
+        {
+          "pull": 0,
+          "verdict": "CONFIRM",
+          "reads": "gate2 read the SEP's section 6 itself: \"if I am glad that I exist, I tenselessly prescribe\", and, universalizing, \"the bringing into existence of others relevantly like me\", cited to 1975, 1988b and 1988c. The statement follows that step (\"Glad to exist, you prescribe your own creation\"); 'by the golden rule' is the 1975 paper's title, which the SEP cites first. The SEP gives ceteris paribus on both prescriptions and the statement on the second (\"other things equal\"); the second is the one the duty rests on, so nothing is owed."
+        },
+        {
+          "pull": 1,
+          "verdict": "CONFIRM",
+          "reads": "The limit is a condition on the total of everyone's good, the possible person's included: a creation is allowed only while that total grows, so the possible person's gain is weighed against every loss the creation causes. That is the weighing SJ-003 owed, stated where RJ-001 asked for it, as a limit (\"so long as the total good grows\"), not as the trigger."
+        },
+        {
+          "pull": 2,
+          "verdict": "CONFIRM",
+          "reads": "The one to read first, read: yes, the library may still press the bare total view's verdict against the bounded total, at the Repugnant Conclusion itself and not through the Mere Addition chain. The long states the Conclusion as a comparison of totals between two worlds (\"provided the total sum of welfare is higher in the first world\"), whose lives are \"barely-worth-living\"; Hare halts at \"the break-even point at which life is just worth living\". In an equal society the bounded duty goes from the few to the many with the shares held (all equal), the total growing and no one below the halt: the Conclusion's own comparison. So the bound narrows the path and does not refuse the end, as V5 says. What the held shares refuse is the chain's step (\"adding a person with positive but lower-than-average welfare\"), so the chain does not meet the bounded total and the Conclusion does. Pressed, the exchange ends at the bedrock the map records at that node (#109, impersonal against person-affecting axiology). Class and route do not move: the shape's ground is the possible person's own good, and its route is HR-02 (TJ-001)."
+        },
+        {
+          "pull": 3,
+          "verdict": "CONFIRM",
+          "reads": "The via locus's first horn reads the prospect as a sum across possible people (\"across the distribution of lives the gamble might produce, the goods outweigh in prospect\"). The statement restricts the duty to a person \"who would be glad to exist\" and grounds it in that person's harm, so at its strongest the prospect is that person's own: HR-02's premise, the second horn's ground. Read as an expectation over different possible people it would be the first horn's weaker line, which the card does not state."
+        },
+        {
+          "pull": 4,
+          "verdict": "CONFIRM",
+          "reads": "The reductio meets an unbounded duty (\"The obligation would be literally infinite\"); the third pass is bounded by the total and the halt, so it does not meet it, as RJ-001 found of v0_1. The no-claimant (d) there stays on the library's side, as RJ-001 read it."
+        }
+      ],
+      "sources": {
+        "verdict": "CONFIRM",
+        "finding": "Re-read at V8: the SEP's section 6 and bibliography (the step, the limit, and the 1975 entry, reprinted in 1993a at pages 147-67); MEDLINE 11661183 (Philos Public Aff 4(3): 201-22, no abstract) and 11651921 (Bioethics 2(4): 279-93, the indexer's abstract with the halt and the held shares, which proposes \"increasing the population of a society while increasing the total utility\"), both through E-utilities; Crossref for the reprint (Essays On Bioethics, pp. 147-167, 1993). The attestation is right as written."
+      },
+      "safety": {
+        "verdict": "CONFIRM",
+        "finding": "Read against his bar. It encourages no self-harm, suicide or homicide, and it does not speak in the library's voice: it is the objector's argument, routed (d) to the map and never to a served page. It does not touch the safety harness."
+      },
+      "run_at_this_build": {
+        "argument_shapes/shapes_redrafts_v0_2_judgments_gate.py": "SHAPES REDRAFTS V0_2 JUDGMENTS GATE: GREEN (8 rows)",
+        "argument_shapes/shapes_redrafts_v0_2_judgments_gate.py --self-test": "SELF-TEST: 17 of 17 as expected; control record matches"
+      },
+      "copied_from": "argument_shapes/shapes_redrafts_v0_2_judgments.json at 8308d14a98c55bad39317e353e719d56"
+    },
+    "record_notes_V8": [
+      {
+        "statement": "V7 (efilist primer and R0320): the builder's ten checks, each proven to fire by a mutation (C1-C5, C0 first)",
+        "measured": "All ten of the builder's checks are GREEN on the seven (\"GREEN, 7 variants\"), but five are proven to fire by a mutation: quote-exact, sources-used, strength-and-reason, no-name and berridge-scope. The other five, apostrophes, attribution-by-role, concessions-sourced, no-label and residual-copied, have none, so V7's statement that each check is proven to fire holds for half, and its own law (one mutation per check) is met for half. gate2 re-derived what four of the unproven five claim with its own code (the residual clause copied and ended on, the concession spans in the long, attribution by role, no label word) and each holds on the seven; apostrophes is a typographic check gate2 did not re-derive. Nothing in the pilot moves."
+      },
+      {
+        "statement": "R0320: battery at V7's close 70/70 GREEN + 3 RED by design",
+        "measured": "reproduced at V8's open with gate2's own runner (gate2 V3b's list plus the post-V2..post-V7 additions read from the primer's verify_before chain): 70 of 70 GREEN, 3 of 3 RED by design"
+      },
+      {
+        "statement": "relief_view_for_the_variant: his ten accounts, verbatim, each with its turn md5 (F3)",
+        "measured": "gate2's own reader (this gate, --turns) found each of the ten accounts at its user turn: the turn whose text has canon's md5, at the line canon names, holding the verbatim. 10 of 10, read at V8's open (L8 87cc1d8f, vault_V2 038df8e5). The accounts are the same at the canon the pilot pins (v38.53) and at v38.54, and all ASCII (figures)."
+      },
+      {
+        "statement": "record_notes_V7 pins r1_collision_list_l7_v0_1.json at 4f1b6a71651c4845d941bbe3b68eccc1",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_54 to v38_55); regenerated by the tool's own --write",
+        "record": {
+          "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+          "md5": "0130ec55e3b6efe834605ae2ab461a48",
+          "bytes": 9618,
+          "was": "4f1b6a71651c4845d941bbe3b68eccc1"
         }
       }
     ]

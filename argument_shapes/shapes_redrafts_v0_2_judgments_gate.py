@@ -1,0 +1,506 @@
+#!/usr/bin/env python3
+"""shapes_redrafts_v0_2_judgments_gate.py -- the gate on gate2's third-round judgment of V5's RD-03, the golden
+rule's third pass (V8, 2026-10-04).
+
+A third-round judgment is its own record and gate; the round-one and round-two records and their gates are not
+touched. K258: gate2 drafted none of RD-03, its record, its builder or canon v38.52-v38.54. This gate is gate2's own
+code; it imports the shape validator (the checker) and never the drafter's builder.
+
+GREEN only if shapes_redrafts_v0_2_judgments.json is what its header says it is:
+  pins      every referent the header pins resolves at its md5 (working tree or git history, via
+            adversarial_map_staging/r1/pinned.py), the header pins equal this gate's, and the kickoff (R0320) and the
+            relay that carries the row (R0317) are named at their md5s
+  his_word  his word in the header is verbatim at canon v38.54
+  ids       row ids TJ-nnn, unique and in order; 'supersedes' names an earlier row of the same kind and redraft
+  vocab     kinds and verdicts from the record's vocabulary; verdict rows carry one; every row a seat and date
+  coverage  each redraft in the v0_2 record judged by exactly one standing shape row (its id, shape and the round-two
+            row it answers), and each of its pulls by exactly one standing pull row carrying the pull verbatim
+  routes    class_drafted is the redraft's; AMEND owes something, nothing else does; a kept (d) names a via whose map
+            entry is a (d) at that anchor, with the bedrock copied from that entry and the register's facet, and its
+            route is the terminus the v0_2 record carries
+  quotes    every double-quoted span in a row's text is declared in its quotes, every declared quote is used, and each
+            is verbatim at its pinned source; a web: quote is at most 15 words and its url is in the row's 'checked'
+            list (only a fresh fetch can check its words)
+  figures   every figure a row states is recomputed here: word counts, changed fields, the owed lines met in the
+            statement and the attestation, the terminus, and four validator runs (RD-03 alone, the pilot with the golden
+            rule replaced by RD-03 and soul-making by v0_1's RD-02, the shapes his word kept, and the pilot and RD-03
+            loaded as one document, which must fail on shape-id)
+  history   append-only: every committed version's rows are a prefix of today's, and its header is today's (the state
+            line excepted)
+
+  python3 argument_shapes/shapes_redrafts_v0_2_judgments_gate.py [--self-test [--write]] [--figures]
+"""
+import copy, hashlib, json, os, re, shutil, subprocess, sys, tempfile
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(HERE)
+sys.path.insert(0, os.path.join(REPO, "adversarial_map_staging", "r1"))
+sys.path.insert(0, HERE)
+import pinned  # noqa: E402
+
+REL = "argument_shapes/shapes_redrafts_v0_2_judgments.json"
+CONTROL = "argument_shapes/shapes_redrafts_v0_2_judgments_gate_control_v0_1.json"
+KICKOFF = ("R0320", "e0ed9ab632807f71a9194be9d683e9aa")
+RELAY = ("R0317", "6c61dd850d1fdcbda7db2d64664ec047")
+INDEX = os.path.expanduser("~/Downloads/Claude Code/relays/RELAY_INDEX.tsv")
+PINS = {
+    "redraft": ("argument_shapes/shapes_redrafts_v0_2.json", "159c546ef224f87037578f7dee1464e2"),
+    "redraft_record": ("argument_shapes/shapes_redrafts_record_v0_2.json", "c7bdef1e18f4a2763118a305be25ef4c"),
+    "redraft_builder": ("argument_shapes/build_shapes_redrafts_v0_2.py", "cf505158a26b35de977d11c3d14a732b"),
+    "redrafts_v0_1": ("argument_shapes/shapes_redrafts_v0_1.json", "fc28cd12265e2712a9d610bbb2c1b69f"),
+    "redrafts_v0_1_record": ("argument_shapes/shapes_redrafts_record_v0_1.json", "ace5fb88886f7f7ce49a90658b590954"),
+    "pilot": ("argument_shapes/shapes_pilot_v0_1.json", "1f9c5da6166b538a90efa6dc7598124e"),
+    "judgments_r1": ("argument_shapes/shapes_pilot_judgments.json", "73503bccdd3ddf8b3a82f280181251d4"),
+    "judgments_r2": ("argument_shapes/shapes_redrafts_judgments.json", "6f4974966c23920234f495cb20813d4c"),
+    "judgments_r2_gate": ("argument_shapes/shapes_redrafts_judgments_gate.py", "950c715c4b7ba35b6db8715600df8832"),
+    "validator": ("argument_shapes/shape_validator_v0_1.py", "64553b25b6db0ff67edeb87b89178297"),
+    "schema": ("argument_shapes/argument_shapes_schema_v0_1.json", "bef95b1dc2b9cb109760cd961d2da72b"),
+    "corpus": ("efilist_argument_library_v4_0_0.json", "7b6e65e531018fecb37baf2a4fedd6d1"),
+    "map_v1_8": ("adversarial_map_staging/adversarial_map_v1_8.json", "691930ab76908a85a6850bdb714d3827"),
+    "register_v0_9": ("adversarial_map_staging/honest_residuals_register_v0_9.json", "8e53d920099e8b850baa2879dfd3e351"),
+    "canon": ("project_canon_v38_54.json", "e0f3e2f695a43f18d0c90d6ce3e08748"),
+}
+KINDS = {"shape", "sources", "pull", "note", "finding", "safety"}
+VERDICT_KINDS = {"shape", "sources", "pull", "note", "safety"}
+SHAPE_VERDICTS = {"ACCEPT", "AMEND", "REJECT"}
+OTHER_VERDICTS = {"CONFIRM", "CORRECT"}
+NO_SPAN = {"id", "kind", "redraft", "shape_id", "answers", "class_drafted", "class_judged", "verdict", "belongs_to",
+           "route", "seat", "date", "supersedes", "quotes", "figures", "checked", "whose", "pull", "pull_text"}
+SLOTS = ("short", "medium", "long")
+WEB_MAX_WORDS = 15
+RUN_KEYS = ("verdict", "violation_count", "shapes", "nodes_with_shapes")
+OWED = {"the total as a limit on the duty": "so long as the total good grows",
+        "the shares held as they are": "the shares held as they are",
+        "the halt before the worst-off fall below a life just worth living":
+            "stopping before the worst-off fall below a life just worth living",
+        "the duty's ground stays the possible person's own good":
+            "A possible person who would be glad to exist is harmed if never created"}
+HARE_1975 = ("Abortion and the Golden Rule", "Philosophy and Public Affairs 4(3), 1975, pp. 201-222",
+             "chapter 10 of Essays on Bioethics", "1993, pp. 147-167")
+
+
+def md5b(b):
+    return hashlib.md5(b).hexdigest()
+
+
+def walk(obj, path):
+    for p in path.split("."):
+        obj = obj[int(p)] if isinstance(obj, list) else obj[p]
+    return obj
+
+
+class Sources:
+    def __init__(self):
+        raw = {k: pinned.bytes_at(REPO, *v) for k, v in PINS.items()}
+        j = lambda k: json.loads(raw[k].decode("utf-8"))  # noqa: E731
+        self.redraft_doc = j("redraft")
+        self.redraft = {s["shape_id"]: s for s in self.redraft_doc["shapes"]}
+        self.record = j("redraft_record")
+        self.v0_1 = {s["shape_id"]: s for s in j("redrafts_v0_1")["shapes"]}
+        self.pilot_doc = j("pilot")
+        self.pilot = {s["shape_id"]: s for s in self.pilot_doc["shapes"]}
+        self.r1 = {r["id"]: r for r in j("judgments_r1")["rows"]}
+        self.r2 = {r["id"]: r for r in j("judgments_r2")["rows"]}
+        self.corpus = {o["id"]: o for o in j("corpus")["objections"]}
+        self.map = j("map_v1_8")
+        self.register = {b["bedrock_id"]: b for b in j("register_v0_9")["bedrocks"]}
+        self.canon = j("canon")
+        self.figures = compute_figures(self)
+
+    def locus(self, node, slot):
+        o = self.corpus[node]
+        if slot in ("trigger", "diagnosis"):
+            return o[slot]
+        if slot in SLOTS:
+            return o["responses"][slot]
+        raise KeyError(slot)
+
+    def text(self, src):
+        kind, ref = src.split(":", 1)
+        if kind in ("redraft", "v0_1", "pilot"):
+            sid, field = ref.rsplit(".", 1)
+            v = {"redraft": self.redraft, "v0_1": self.v0_1, "pilot": self.pilot}[kind][sid][field]
+        elif kind == "record":
+            v = walk(self.record, ref)
+        elif kind in ("judgments_r1", "judgments_r2"):
+            rid, path = ref.split(".", 1)
+            v = walk((self.r1 if kind == "judgments_r1" else self.r2)[rid], path)
+        elif kind == "corpus":
+            node, slot = ref.split("#", 1)
+            v = self.locus(node, slot)
+        elif kind == "map":
+            n, field = ref.lstrip("#").split(".", 1)
+            v = self.map["entries"][int(n)][field]
+        elif kind == "register":
+            hr, path = ref.split(".", 1)
+            v = walk(self.register[hr], path)
+        elif kind == "canon":
+            v = walk(self.canon, ref)
+        else:
+            raise KeyError(kind)
+        return v if isinstance(v, str) else json.dumps(v, ensure_ascii=False)
+
+
+def validator_runs(S):
+    """The four runs, with the pinned validator over the pinned corpus; the two views are written to scratch."""
+    if md5b(open(os.path.join(REPO, PINS["validator"][0]), "rb").read()) != PINS["validator"][1]:
+        raise LookupError("the validator in the working tree is not the one pinned (%s)" % PINS["validator"][1][:8])
+    import shape_validator_v0_1 as SV
+    corpus = pinned.path_at(REPO, *PINS["corpus"])
+    scratch = tempfile.mkdtemp(prefix="v8_gate_")
+    try:
+        paths = {k: pinned.path_at(REPO, *PINS[k]) for k in ("pilot", "redraft")}
+        current = dict(S.v0_1, **S.redraft)
+        sup = {"meta": S.pilot_doc["meta"], "shapes": [current.get(s["shape_id"], s) for s in S.pilot_doc["shapes"]]}
+        kept = [r["shape_id"] for r in S.r1.values() if r.get("kind") == "shape" and r.get("verdict") == "ACCEPT"]
+        kept += [r["shape_id"] for r in S.r2.values() if r.get("kind") == "shape" and r.get("verdict") == "ACCEPT"]
+        kept += list(S.redraft)
+        ruled_shapes = [s for s in sup["shapes"] if s["shape_id"] in kept]
+        nodes = {s["shape_id"].split("/")[0] for s in ruled_shapes}
+        ruled = {"meta": dict(S.pilot_doc["meta"], shape_coverage="%d/%d" % (len(nodes), len(S.corpus))),
+                 "shapes": ruled_shapes}
+        one = {"meta": S.pilot_doc["meta"], "shapes": S.pilot_doc["shapes"] + S.redraft_doc["shapes"]}
+        for name, doc in (("superseded_view", sup), ("ruled_view", ruled), ("pilot_and_redraft_as_one", one)):
+            paths[name] = os.path.join(scratch, name + ".json")
+            open(paths[name], "w", encoding="utf-8").write(json.dumps(doc, indent=1, ensure_ascii=False))
+
+        def run(ps, failed=False):
+            lines = []
+            _ok, f, _v = SV.validate(ps, corpus, out=lines.append)
+            s = json.loads(lines[-1])
+            out = {k: s[k] for k in RUN_KEYS}
+            if failed:
+                out["failed"] = sorted(f)
+            return out
+        runs = {"redraft_alone": run([paths["redraft"]]),
+                "superseded_view": run([paths["superseded_view"]]),
+                "ruled_view": run([paths["ruled_view"]]),
+                "pilot_and_redraft_as_one": run([paths["pilot_and_redraft_as_one"]], failed=True)}
+        rv = S.record.get("validator_runs", {})
+        runs["record_runs_match"] = (
+            all({k: rv.get(n, {}).get(k) for k in RUN_KEYS} == runs[n]
+                for n in ("redraft_alone", "superseded_view", "ruled_view"))
+            and {k: rv.get("pilot_and_this_file_together", {}).get(k) for k in RUN_KEYS + ("failed",)} ==
+            runs["pilot_and_redraft_as_one"]
+            and rv.get("ruled_view", {}).get("shape_ids") == [s["shape_id"] for s in ruled_shapes])
+        runs["ruled_view_shapes"] = [s["shape_id"] for s in ruled_shapes]
+        return runs
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def compute_figures(S):
+    import shape_validator_v0_1 as SV
+    F = {}
+    for r in S.record["rows"]:
+        sid = r["shape_id"]
+        a, b, p = S.v0_1[sid], S.redraft[sid], S.pilot[sid]
+        term = {k: v for k, v in r["terminus"].items() if k != "copied_from"}
+        judged = S.r2[r["answers"]["row"]]["route"]
+        cit = b["attested_by"][0]["citation"]
+        F[r["id"]] = {"words": {"pilot": SV.wc(p["statement"]), "v0_1": SV.wc(a["statement"]),
+                                "redraft": SV.wc(b["statement"])},
+                      "changed": sorted(k for k in set(a) | set(b) if a.get(k) != b.get(k)),
+                      "owed_met": {k: v in b["statement"] for k, v in OWED.items()},
+                      "hare_1975_first": all(x in cit for x in HARE_1975),
+                      "attested": len(b["attested_by"]),
+                      "class": b["class"],
+                      "terminus_is_the_route": term == judged,
+                      "supersedes_v0_1": r["supersedes"] == {"file": PINS["redrafts_v0_1"][0],
+                                                             "md5": PINS["redrafts_v0_1"][1], "row": "RD-01",
+                                                             "shape_id": sid}}
+    F["validator"] = validator_runs(S)
+    return F
+
+
+def figure(F, path):
+    obj = F
+    for p in path.split("."):
+        obj = obj[p]
+    return obj
+
+
+def spans(row):
+    out = []
+
+    def go(v, key=None):
+        if key in NO_SPAN:
+            return
+        if isinstance(v, str):
+            out.extend(re.findall(r'"([^"]+)"', v))
+        elif isinstance(v, list):
+            for x in v:
+                go(x)
+        elif isinstance(v, dict):
+            for k, x in v.items():
+                go(x, k)
+    for k, v in row.items():
+        go(v, k)
+    return out
+
+
+def check(rec, S, history):
+    red = {}
+
+    def fail(name, msg):
+        red.setdefault(name, []).append(msg)
+
+    # pins
+    J = rec.get("judged", {})
+    for k, (rel, m) in PINS.items():
+        if J.get(k) != {"file": rel, "md5": m}:
+            fail("pins", "header pin %s is not the gate's" % k)
+    if set(J) != set(PINS):
+        fail("pins", "header pins a referent the gate does not")
+    if rec.get("kickoff") != {"relay": KICKOFF[0], "md5": KICKOFF[1]}:
+        fail("pins", "kickoff relay")
+    if rec.get("relay") != {"relay": RELAY[0], "md5": RELAY[1]}:
+        fail("pins", "the relay that carries the row")
+    for w in rec.get("his_word", []):
+        try:
+            if S.text(w["src"]) != w["verbatim"]:
+                fail("his_word", "not verbatim at %s" % w["src"])
+        except (KeyError, IndexError, ValueError):
+            fail("his_word", "no source %s" % w["src"])
+
+    rows = rec.get("rows", [])
+    # ids
+    ids = [r.get("id") for r in rows]
+    if len(set(ids)) != len(ids) or any(not re.fullmatch(r"TJ-\d{3}", str(i)) for i in ids) or ids != sorted(ids):
+        fail("ids", "row ids not unique, well-formed and in order")
+    seen = {}
+    for r in rows:
+        s = r.get("supersedes")
+        if s is not None:
+            o = seen.get(s)
+            if not o or o.get("kind") != r.get("kind") or o.get("redraft") != r.get("redraft"):
+                fail("ids", "%s supersedes %s, which is not an earlier row of its kind" % (r.get("id"), s))
+        seen[r.get("id")] = r
+    superseded = {r["supersedes"] for r in rows if r.get("supersedes")}
+    standing = [r for r in rows if r.get("id") not in superseded]
+
+    # vocab
+    for r in rows:
+        k = r.get("kind")
+        if k not in KINDS:
+            fail("vocab", "%s: kind %r" % (r.get("id"), k))
+        if k == "shape" and r.get("verdict") not in SHAPE_VERDICTS:
+            fail("vocab", "%s: a shape verdict is ACCEPT, AMEND or REJECT" % r.get("id"))
+        elif k in VERDICT_KINDS - {"shape"} and r.get("verdict") not in OTHER_VERDICTS:
+            fail("vocab", "%s: verdict %r" % (r.get("id"), r.get("verdict")))
+        elif k not in VERDICT_KINDS and "verdict" in r:
+            fail("vocab", "%s: a %s row carries no verdict" % (r.get("id"), k))
+        if not r.get("seat") or not r.get("date"):
+            fail("vocab", "%s: seat and date" % r.get("id"))
+
+    # coverage
+    want = {x["id"]: x for x in S.record["rows"]}
+    shape_rows = [r for r in standing if r.get("kind") == "shape"]
+    if sorted(str(r.get("redraft")) for r in shape_rows) != sorted(want):
+        fail("coverage", "standing shape rows %s != the record's redrafts %s"
+             % (sorted(str(r.get("redraft")) for r in shape_rows), sorted(want)))
+    for r in shape_rows:
+        x = want.get(r.get("redraft"))
+        if x and (r.get("shape_id") != x["shape_id"] or r.get("answers") != x["answers"]["row"]):
+            fail("coverage", "%s: shape or answered row is not the record's" % r.get("id"))
+    prow = [r for r in standing if r.get("kind") == "pull"]
+    pulls = sorted((r.get("redraft"), r.get("pull")) for r in prow)
+    want_pulls = sorted((x["id"], i) for x in S.record["rows"] for i in range(len(x.get("pulls", []))))
+    if pulls != want_pulls:
+        fail("coverage", "standing pull rows %s != the record's pulls %s" % (pulls, want_pulls))
+    for r in prow:
+        x = want.get(r.get("redraft"))
+        i = r.get("pull")
+        if not x or not isinstance(i, int) or not 0 <= i < len(x["pulls"]) or r.get("pull_text") != x["pulls"][i]:
+            fail("coverage", "%s: the pull is not carried verbatim" % r.get("id"))
+
+    # routes
+    for r in shape_rows:
+        x = want.get(r.get("redraft"))
+        if not x:
+            continue
+        sid, v, cj, rt = x["shape_id"], r.get("verdict"), r.get("class_judged"), r.get("route")
+        own = sid.split("/")[0]
+        if r.get("class_drafted") != S.redraft[sid]["class"]:
+            fail("routes", "%s: class_drafted is not the redraft's" % sid)
+        if (v == "AMEND") != bool(r.get("owed")):
+            fail("routes", "%s: AMEND owes something; nothing else does" % sid)
+        if v == "REJECT":
+            if cj is not None or rt is not None or r.get("belongs_to") not in S.corpus or r.get("belongs_to") == own:
+                fail("routes", "%s: a REJECT has no class or route, and belongs to another node" % sid)
+            continue
+        if r.get("belongs_to") is not None or cj not in ("a", "b", "c", "d") or not isinstance(rt, dict):
+            fail("routes", "%s: a kept shape has a class and a route" % sid)
+            continue
+        if cj == "d":
+            try:
+                node, slot = rt["via"].split("#", 1)
+                hits = [e for e in S.map["entries"] if e["target_id"] == node and e["target_locus"] == slot
+                        and e["class"] == "d" and e["target_anchor"] == rt["via_anchor"]]
+                res = hits[0]["routing"]["residue"] if len(hits) == 1 else {}
+                reg = [{"bedrock_id": b["bedrock_id"], "name": b["name"], "facet": f["facet_id"]}
+                       for b in S.register.values() for f in b["facets"] for t in f["tributaries"]
+                       if t["node"] == node and t["locus"] == slot and t["anchor"] == rt["via_anchor"]]
+                bd = rt["bedrock"]
+                ok = (len(hits) == 1 and bd["bedrock_name"] == res.get("bedrock_name") and
+                      bd["terminus_routing"] == res.get("terminus_routing") and reg == [bd["register"]])
+            except (KeyError, ValueError, TypeError):
+                ok = False
+            if not ok:
+                fail("routes", "%s: the (d)'s via and bedrock are not the map's and register's" % sid)
+            term = {k: v for k, v in x["terminus"].items() if k != "copied_from"}
+            if rt != term:
+                fail("routes", "%s: the route is not the terminus the v0_2 record carries" % sid)
+        elif cj in ("a", "b"):
+            fail("routes", "%s: an (a) or (b) here would move the route the round-two row judged" % sid)
+
+    # quotes
+    for r in rows:
+        declared = [q.get("quote") for q in r.get("quotes", [])]
+        used = spans(r)
+        for sp in used:
+            if sp not in declared:
+                fail("quotes", "%s: undeclared span %r" % (r.get("id"), sp[:40]))
+        for q in r.get("quotes", []):
+            if q.get("quote") not in used:
+                fail("quotes", "%s: declared quote not used %r" % (r.get("id"), str(q.get("quote"))[:40]))
+            src = str(q.get("src"))
+            if src.startswith("web:"):
+                url = src[4:]
+                if (len(str(q.get("quote")).split()) > WEB_MAX_WORDS or
+                        not any(c == url or c.startswith(url + " ") for c in r.get("checked", []))):
+                    fail("quotes", "%s: web quote over %d words or its url unchecked" % (r.get("id"), WEB_MAX_WORDS))
+                continue
+            try:
+                if q["quote"] not in S.text(src):
+                    fail("quotes", "%s: not verbatim at %s" % (r.get("id"), src))
+            except (KeyError, IndexError, ValueError, AttributeError):
+                fail("quotes", "%s: no source %s" % (r.get("id"), src))
+
+    # figures
+    for r in rows:
+        for path, val in (r.get("figures") or {}).items():
+            try:
+                if figure(S.figures, path) != val:
+                    fail("figures", "%s: %s is not the recomputed figure" % (r.get("id"), path))
+            except (KeyError, TypeError):
+                fail("figures", "%s: no figure %s" % (r.get("id"), path))
+
+    # history
+    head = {k: v for k, v in rec.items() if k not in ("rows", "state")}
+    for old in history:
+        if {k: v for k, v in old.items() if k not in ("rows", "state")} != head:
+            fail("history", "a committed header differs")
+        if rows[:len(old.get("rows", []))] != old.get("rows", []):
+            fail("history", "a committed row was edited or removed")
+    return red
+
+
+def committed_versions():
+    out = subprocess.run(["git", "-C", REPO, "log", "--format=%H", "--", REL], capture_output=True, text=True).stdout
+    vs = []
+    for h in out.split():
+        b = subprocess.run(["git", "-C", REPO, "show", "%s:%s" % (h, REL)], capture_output=True).stdout
+        if b:
+            vs.append(json.loads(b.decode("utf-8")))
+    return vs
+
+
+def index_ok():
+    found = {}
+    if os.path.exists(INDEX):
+        for line in open(INDEX, encoding="utf-8"):
+            f = line.rstrip("\n").split("\t")
+            if len(f) > 8 and f[1] == "SENT" and f[2] in (KICKOFF[0], RELAY[0]):
+                found[f[2]] = f[8]
+        return found.get(KICKOFF[0], KICKOFF[1]) == KICKOFF[1] and found.get(RELAY[0], RELAY[1]) == RELAY[1]
+    return True
+
+
+def _row(r, rid):
+    return next(x for x in r["rows"] if x["id"] == rid)
+
+
+MUTATIONS = [
+    ("unmutated", lambda r: None, []),
+    ("verdict out of vocabulary", lambda r: _row(r, "TJ-002").update(verdict="MAYBE"), ["vocab"]),
+    ("the redraft left unjudged", lambda r: r["rows"].remove(_row(r, "TJ-001")), ["coverage"]),
+    ("a pull left unjudged", lambda r: r["rows"].remove(_row(r, "TJ-006")), ["coverage"]),
+    ("a pull not carried verbatim", lambda r: _row(r, "TJ-004").update(pull_text=_row(r, "TJ-004")["pull_text"][1:]),
+     ["coverage"]),
+    ("a quote off by one character", lambda r: _row(r, "TJ-001")["quotes"][0].update(
+        quote=_row(r, "TJ-001")["quotes"][0]["quote"] + "s"), ["quotes"]),
+    ("an undeclared quoted span", lambda r: _row(r, "TJ-003").update(reason=_row(r, "TJ-003")["reason"] + ' "invented"'),
+     ["quotes"]),
+    ("a web quote from an unchecked url", lambda r: next(
+        q for q in _row(r, "TJ-007")["quotes"] if q["src"].startswith("web:")).update(src="web:https://example.org/"),
+     ["quotes"]),
+    ("a pin moved", lambda r: r["judged"]["corpus"].update(md5="0" * 32), ["pins"]),
+    ("a (d)'s facet retyped", lambda r: _row(r, "TJ-001")["route"]["bedrock"]["register"].update(facet="typed"),
+     ["routes"]),
+    ("class_drafted not the redraft's", lambda r: _row(r, "TJ-001").update(class_drafted="a"), ["routes"]),
+    ("an ACCEPT owing something", lambda r: _row(r, "TJ-001").update(owed=["something"]), ["routes"]),
+    ("a figure not recomputed", lambda r: _row(r, "TJ-001")["figures"].update({"RD-03.words.redraft": 68}),
+     ["figures"]),
+    ("a duplicate id", lambda r: _row(r, "TJ-002").update(id="TJ-001"), ["ids"]),
+    ("supersedes names no earlier row", lambda r: _row(r, "TJ-008").update(supersedes="TJ-099"), ["ids"]),
+    ("his word not verbatim", lambda r: r["his_word"][0].update(verbatim=r["his_word"][0]["verbatim"][:-1]),
+     ["his_word"]),
+    ("a committed row edited", "HISTORY", ["history"]),
+]
+
+
+def self_test(S, rec):
+    results = []
+    for name, mut, expect in MUTATIONS:
+        r = copy.deepcopy(rec)
+        hist = []
+        if mut == "HISTORY":
+            old = copy.deepcopy(rec)
+            _row(old, "TJ-007")["reason"] += " (an earlier wording)"
+            hist = [old]
+        else:
+            mut(r)
+        red = sorted(check(r, S, hist))
+        results.append({"mutation": name, "expect_red": sorted(expect), "red": red, "as_expected": red == sorted(expect)})
+    return {"what": ("shapes_redrafts_v0_2_judgments_gate.py self-test: the unmutated record first, then one mutation "
+                     "per check, each expected to trip its own check only"),
+            "record": REL, "cases": len(results), "as_expected": sum(x["as_expected"] for x in results),
+            "results": results}
+
+
+def main():
+    try:
+        S = Sources()
+    except LookupError as e:
+        print("RED pins      %s" % e)
+        print("SHAPES REDRAFTS V0_2 JUDGMENTS GATE: RED (a pinned referent is unreadable)")
+        sys.exit(1)
+    if "--figures" in sys.argv:
+        print(json.dumps(S.figures, indent=1, ensure_ascii=False))
+        return
+    rec = json.loads(open(os.path.join(REPO, REL), encoding="utf-8").read())
+    if "--self-test" in sys.argv:
+        out = (json.dumps(self_test(S, rec), indent=1, ensure_ascii=False) + "\n").encode("utf-8")
+        path = os.path.join(REPO, CONTROL)
+        if "--write" in sys.argv:
+            open(path, "wb").write(out)
+            print("SELF-TEST: wrote %s %s" % (CONTROL, md5b(out)))
+            return
+        ok = os.path.exists(path) and open(path, "rb").read() == out
+        st = json.loads(out.decode("utf-8"))
+        print("SELF-TEST: %d of %d as expected; control record %s" % (
+            st["as_expected"], st["cases"], "matches" if ok else "DIFFERS"))
+        sys.exit(0 if ok and st["as_expected"] == st["cases"] else 1)
+    red = check(rec, S, committed_versions())
+    if not index_ok():
+        red.setdefault("pins", []).append("the relay index gives R0320 or R0317 another md5")
+    for name in ("pins", "his_word", "ids", "vocab", "coverage", "routes", "quotes", "figures", "history"):
+        msgs = red.get(name, [])
+        print("%-5s %-9s %s" % ("RED" if msgs else "GREEN", name, "; ".join(msgs[:3]) if msgs else ""))
+    print("SHAPES REDRAFTS V0_2 JUDGMENTS GATE: %s (%d rows)" % ("RED" if red else "GREEN", len(rec.get("rows", []))))
+    sys.exit(1 if red else 0)
+
+
+if __name__ == "__main__":
+    main()
