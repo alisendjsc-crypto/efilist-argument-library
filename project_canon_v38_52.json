@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.51",
+  "canon_version": "38.52",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V3b",
+  "last_updated_by_session": "V5",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V3b (gate2) judged V2b's two redrafts: soul-making ACCEPT as (d) at HR-02; the golden rule AMEND (Hare's total stated as a limit on the duty, with his halt and the held distribution; Hare 1975 added). Next, in order: (1) his word on the three asks in adversarial_map.shapes_redrafts_judgment_gate2.asks; (2) the responseVariants design (R0294), in whose seat-l session, on his word, the golden rule's third redraft is drafted in a new file (shapes_redrafts_v0_2.json), judged in gate2's next round; (3) the relief variant, drafted from relief_view_for_the_variant and judged by a seat that drafted none of it; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once round three accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
+    "session": "The pin is v4.1.5. V5 recorded his word on R0314 (gate2's three asks, adopted), drafted the golden rule's third pass in a new file (shapes_redrafts_v0_2.json; RD-03 answers RJ-001), and drafted the responseVariants design (R0294) with rulings RV-1..RV-8 and leans. Next, in order: (1) his word on the design's rulings; (2) the build on V1's pattern (schema, validator, --self-test control) and the relief variant, drafted by seat l from relief_view_for_the_variant; (3) gate2's next round: the relief variant and the golden rule's third pass, drafter != judge, then his word; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3; the responseVariants render once ruled and judged). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1908,6 +1908,16 @@
       "state": "JUDGED, NOT RULED",
       "block": "shapes_redrafts_judgment_gate2",
       "canon_writer_next": "seat l"
+    },
+    "V5_closed": {
+      "state": "RECORDED (his word on R0314) and DRAFTED (the golden rule's third pass; the responseVariants design, rulings pending his word)",
+      "blocks": [
+        "his_words_V5",
+        "shapes_redrafts_V5",
+        "response_variants_design_V5",
+        "record_notes_V5"
+      ],
+      "canon_writer_next": "seat l (his word on the design), then gate2 (its next round)"
     }
   },
   "open_questions": {
@@ -2039,7 +2049,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.51",
+  "canon_version_marker": "v38.52",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2750,7 +2760,8 @@
     "v38_48_V2": "MINOR. keyset UNCHANGED at 42. adversarial_map gains vault_v2_rulings_R0274, his_words_L8, relief_view_for_the_variant, love_from_the_void_intake_V2, r_v6_candidates_V2, pin_queue_additions_R0292, shapes_pilot_V2, record_notes_V2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_49_V3": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_pilot_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_50_V2b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V2b, r_v6_adopted_V2b, private_statements_V2, shapes_redrafts_V2b, record_notes_V2b; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
-    "v38_51_V3b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_redrafts_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_51_V3b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_redrafts_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_52_V5": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V5, shapes_redrafts_V5, response_variants_design_V5, record_notes_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -3011,7 +3022,8 @@
     "V2 (2026-10-03): his words owed since R0274 recorded verbatim from the user turns (R0274's six V2 rulings; R0292; R0294; R0295; R0296's pointer to love-from-the-void, now the post-pilot intake's first item); the argument-shapes pilot drafted on the six R-V4 nodes, validator PASS 0, for gate2 (V3). No pin.",
     "V3 (gate2, 2026-10-03): the argument-shapes pilot judged (R0297): 5 ACCEPT, 2 AMEND, 3 REJECT. Three shapes were other nodes' scholar objections (gods-plan, extinction-culture, love-beauty-art); soul-making is (d) at HR-02, not (a); the golden rule owes Hare's weighed duty. One (a) remains, for V4. No pin.",
     "V2b (seat l, 2026-10-03): his words on R0298 and R0308 recorded verbatim from the user turns; his private statements by md5 only; R0288 F5's four candidates adopted into the R-V6 batch; gate2's two AMENDs redrafted in a new file (the golden rule restates Hare's weighed duty; soul-making carried as (d) at HR-02), validator PASS 0, for gate2's round two. No pin.",
-    "V3b (gate2, 2026-10-04): V2b's two redrafts judged (R0311): soul-making ACCEPT as (d) at HR-02; the golden rule AMEND, because its total is stated as the duty's trigger, which his L3 reading meets at joy-outweighs-harms, and without Hare's halt; Hare 1975 to be added to its attestation. Round one's Hare source read corrected forward. No pin."
+    "V3b (gate2, 2026-10-04): V2b's two redrafts judged (R0311): soul-making ACCEPT as (d) at HR-02; the golden rule AMEND, because its total is stated as the duty's trigger, which his L3 reading meets at joy-outweighs-harms, and without Hare's halt; Hare 1975 to be added to its attestation. Round one's Hare source read corrected forward. No pin.",
+    "V5 (seat l, 2026-10-04): his word on R0314 recorded verbatim from the user turn (gate2's three asks adopted); the golden rule's third pass drafted in a new file (Hare's total as a limit, the shares held, the halt; Hare 1975 added; route unchanged after reading the premise-sharers), validator PASS 0, for gate2's next round; the responseVariants design drafted with eight rulings and leans for his word; the pleasure fork measured at seven nodes. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -12176,7 +12188,407 @@
         "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_50 to v38_51); regenerated by the tool's own --write"
       },
       "not_moved": "the redrafts, their record and builder, the pilot, gate2's round-one record, gate and reading, the validator and its control, the schema; no corpus or served byte"
-    }
+    },
+    "his_words_V5": {
+      "R0314": {
+        "his_word": {
+          "verbatim": "Proceed with your recommendations",
+          "said": "2026-10-04T08:20:27.387Z UTC (America/Phoenix is UTC-7), V2b transcript line 785",
+          "turn_md5": "2d211155785a303e9ac638b4c17edfaa",
+          "whole_turn": true,
+          "answers_message": {
+            "line": 781,
+            "text_md5": "a7cbb64c960dfc8512278a3d54086a83"
+          }
+        },
+        "recorded_by": {
+          "relay": "R0315",
+          "md5": "7dceab81f1757af658d01d54d297838f"
+        },
+        "answers": {
+          "relay": "R0314",
+          "md5": "554a2eb6a8c697ec2e57c68a2f1a41d3",
+          "seat": "gate2 (V3b)"
+        },
+        "the_message_it_answers": "V2b's message of 2026-10-04T07:15:51.189Z UTC (line 781): yes to all three of gate2's asks, matching gate2's leans",
+        "adopts": {
+          "the_three_asks": [
+            {
+              "ask": "Adopt the round-two judgment: soul-making ACCEPT as (d); the golden rule AMEND (Hare's total as a limit, with his halt and the held distribution; add Hare 1975).",
+              "lean": "adopt; both verdicts read from text at pinned bytes, and the AMEND rests on his own L3 reading",
+              "adopted": true
+            },
+            {
+              "ask": "Soul-making joins many-peaks and heroism as the (d)s for the map at the successor map's next validator bump.",
+              "lean": "yes; his word on R0308 already sent it there once judged",
+              "adopted": true
+            },
+            {
+              "ask": "The golden rule's third round: seat l redrafts it in its next session, and gate2 judges it in its next round, instead of a launch pair for one statement.",
+              "lean": "fold it in; the (d)s wait for the successor map's bump anyway, so nothing is held up",
+              "adopted": true
+            }
+          ],
+          "from": "adversarial_map.shapes_redrafts_judgment_gate2.asks (gate2's asks and leans)"
+        }
+      },
+      "read": "the verbatim is the whole user turn named, pinned by the turn's md5, read at the user turn and not at a search hit; tools/v38_52_his_words.json at 660d13821c69aa59e2e99b9f5747c20d",
+      "rule": "Quote his words; never paraphrase them."
+    },
+    "shapes_redrafts_V5": {
+      "state": "DRAFTED, NOT JUDGED. gate2 judges this row in its next round (K258); his word decides.",
+      "files": {
+        "redraft": {
+          "file": "argument_shapes/shapes_redrafts_v0_2.json",
+          "md5": "159c546ef224f87037578f7dee1464e2",
+          "bytes": 1448
+        },
+        "record": {
+          "file": "argument_shapes/shapes_redrafts_record_v0_2.json",
+          "md5": "c7bdef1e18f4a2763118a305be25ef4c",
+          "bytes": 15769
+        },
+        "builder": {
+          "file": "argument_shapes/build_shapes_redrafts_v0_2.py",
+          "md5": "cf505158a26b35de977d11c3d14a732b",
+          "bytes": 28133
+        }
+      },
+      "authority": {
+        "his_word": "Proceed with your recommendations",
+        "turn_md5": "2d211155785a303e9ac638b4c17edfaa",
+        "utc": "2026-10-04T08:20:27.387Z",
+        "answers": "R0314",
+        "from": "tools/v38_52_his_words.json at 660d13821c69aa59e2e99b9f5747c20d",
+        "adopted": "gate2's three round-two asks: the judgment; soul-making to the map's (d)s; this pass folded into seat l's next session and judged in gate2's next round"
+      },
+      "supersession": "RD-03 supersedes v0_1's RD-01 (file and md5 below), which superseded the pilot's shape of the same id. v0_1 and the pilot stay byte-identical (gate2's gates pin them), so this file repeats the id and validates alone. The current set is the pilot with the golden rule replaced by RD-03 and soul-making by v0_1's RD-02: 'superseded_view' below. Loading the pilot and this file together fails shape-id, as it should.",
+      "row": {
+        "id": "RD-03",
+        "shape_id": "life-gift/the-golden-rule-passes-it-on",
+        "answers": "RJ-001",
+        "supersedes": {
+          "file": "argument_shapes/shapes_redrafts_v0_1.json",
+          "md5": "fc28cd12265e2712a9d610bbb2c1b69f",
+          "row": "RD-01",
+          "shape_id": "life-gift/the-golden-rule-passes-it-on"
+        },
+        "changed": [
+          "attested_by",
+          "provenance",
+          "statement"
+        ],
+        "class": "d",
+        "words": {
+          "pilot": 57,
+          "v0_1": 69,
+          "redraft": 67
+        },
+        "owed_met": {
+          "the total as a limit on the duty": "so long as the total good grows",
+          "the shares held as they are": "the shares held as they are",
+          "the halt before the worst-off fall below a life just worth living": "stopping before the worst-off fall below a life just worth living",
+          "the duty's ground stays the possible person's own good": "A possible person who would be glad to exist is harmed if never created",
+          "Hare 1975 added": "R. M. Hare, Abortion and the Golden Rule, Philosophy and Public Affairs 4(3), 1975, pp. 201-222; reprinted as chapter 10 of Essays on Bioethics, Oxford University Press, 1993, pp. 147-167"
+        },
+        "terminus": {
+          "via": "joy-outweighs-harms#long",
+          "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+          "register": {
+            "bedrock_id": "HR-02",
+            "name": "Asymmetry-contingency of the positive-states cluster",
+            "facet": "merely-possible-beneficiary"
+          },
+          "copied_from": {
+            "map_entry": 41,
+            "register": "HR-02 / merely-possible-beneficiary"
+          }
+        },
+        "premise_sharers_read": {
+          "population-ethics-paradoxes": {
+            "loci": [
+              "trigger",
+              "diagnosis",
+              "short",
+              "medium",
+              "long"
+            ],
+            "map_entries": [
+              109
+            ],
+            "scholar": "data/flagship/scholar-objections_v1_1.json at 76cbbd13"
+          },
+          "joy-outweighs-harms#long": {
+            "horns": "the fork (pure aggregation or the side-constraint) and the two horns of the strongest reply (expected value; the actual person's actual balance)",
+            "map_entries": [
+              41
+            ],
+            "scholar": "data/flagship/scholar-objections_v1_1.json at 76cbbd13"
+          },
+          "rights-future-generations#long": {
+            "why": "the reductio v0_1 was read against"
+          }
+        }
+      },
+      "validator_runs": {
+        "redraft_alone": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 1,
+          "nodes_with_shapes": 1,
+          "file": "argument_shapes/shapes_redrafts_v0_2.json"
+        },
+        "superseded_view": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 10,
+          "nodes_with_shapes": 6,
+          "what": "the pilot's ten shapes in its order, the golden rule replaced by this row and soul-making by v0_1's RD-02"
+        },
+        "ruled_view": {
+          "rc": 0,
+          "verdict": "PASS",
+          "violation_count": 0,
+          "shapes": 7,
+          "nodes_with_shapes": 5,
+          "what": "the shapes his words kept: gate2's five round-one ACCEPTs, soul-making (v0_1's RD-02, ACCEPT at RJ-002) and this row",
+          "shape_ids": [
+            "life-gift/the-golden-rule-passes-it-on",
+            "future-solve/raise-the-people-who-fix-it",
+            "future-solve/the-obligation-to-survive",
+            "free-will-defense/everyone-comes-home-at-last",
+            "free-will-defense/a-vale-of-soul-making",
+            "meta-ethical-pluralism/many-peaks-one-landscape",
+            "meaning-through-suffering/heroism-redeems-being"
+          ]
+        },
+        "pilot_and_this_file_together": {
+          "rc": 1,
+          "verdict": "FAIL",
+          "violation_count": 1,
+          "shapes": 11,
+          "nodes_with_shapes": 6,
+          "failed": [
+            "shape-id"
+          ],
+          "what": "a control: the pilot and this file loaded as one must fail on shape-id"
+        }
+      },
+      "pulls": [
+        "The golden-rule step is now worded as the SEP states it (source 1: glad that I exist, I prescribe my own creation; universalized, I prescribe creating others relevantly like me, ceteris paribus), not as 'do to others what you are glad was done to you'. RJ-008 found that wording in none of the records read, and no record read this session has it either. Not owed by RJ-001; changed because the statement may claim only what the records read support.",
+        "The weighing SJ-003 owed ('weighed with everyone's preferences') is carried by the limit: the total is everyone's good, the possible person's included. Stated as a clause of the duty itself it read as the trigger (RJ-001), so it is not repeated there.",
+        "The halt sits at the break-even point, the level at which the Repugnant Conclusion's lives already stand, so in an equal society Hare's bound narrows Parfit's chain without refusing its end. The held shares refuse the step the library's chain is built from (\"adding a person with positive but lower-than-average welfare\"). The card meets Hare's bound as his records state it; whether the library may still press the bare total view's verdict (\"devastating against Total utilitarianism, which must weigh aggregate welfare across populations\") against a bounded total is gate2's to read. The route does not move either way: the library's own answer at that node ends at bedrock (#109).",
+        "Ex ante, a creation is a prospect over possible lives, and the via locus's first horn reads the prospect as interpersonal (\"across the distribution of lives the gamble might produce, the goods outweigh in prospect\"). At its strongest the line restricts the duty to a person who would be glad and treats the prospect as that person's own, which is the merely-possible-beneficiary premise again; read as an expectation over different possible people it is the weaker line the first horn meets. So the route is HR-02 for the line at its strongest.",
+        "The bounded duty no longer meets the reductio at rights-future-generations#long (\"The obligation would be literally infinite\"), as RJ-001 found of v0_1; the no-claimant (d) there stays on the library's side, as RJ-001 read it."
+      ],
+      "sources": "the restatement rests on six records, each named with its URL and short verbatim excerpts in the record (the SEP section 6 and bibliography; MEDLINE 11661183 and 11651921; Crossref for the 1993 reprint chapter, the 1993 collection and the 1988 article); neither paper was read in full",
+      "after_round_three": {
+        "ruled_set_classes": {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "d": 4
+        },
+        "routes": "(d)s to the map at the successor map's next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts this row); the (a) to the corpus in V4 after the successor map's pin; the (b) to the regen queue; the (c) to the intake"
+      },
+      "run_at_this_build": {
+        "build_shapes_redrafts_v0_2 --check": "GREEN",
+        "shape_validator_v0_1 shapes_redrafts_v0_2.json": "GREEN: PASS, 1 shape, 0 violations",
+        "measure_response_variants --check": "GREEN: the record and the doc's 8 figures",
+        "shapes_redrafts_judgments_gate (gate2's round two)": "GREEN: its pinned referents unmoved"
+      },
+      "not_moved": "the pilot, V2b's redrafts and their record and builder, gate2's records, gates and readings, the validator, its control and the schema; no corpus or served byte"
+    },
+    "response_variants_design_V5": {
+      "state": "DRAFTED. The rulings wait for his word; nothing is built until he rules (R0315).",
+      "charter": {
+        "relay": {
+          "relay": "R0294",
+          "md5": "56af368a4be20ab774dbf28837fadbdc"
+        },
+        "his_word": "adversarial_map.his_words_L8.R0294"
+      },
+      "files": {
+        "doc": {
+          "file": "design/variations/RESPONSE_VARIANTS_design_v0_1.md",
+          "md5": "1c4be4d36addc95a757b43f57c489b7e",
+          "bytes": 13089
+        },
+        "measure_script": {
+          "file": "design/variations/measure_response_variants.py",
+          "md5": "b0c200a3aa80f594bdb42441cbf9a7c7",
+          "bytes": 12614
+        },
+        "measure": {
+          "file": "design/variations/measure_response_variants_v0_1.json",
+          "md5": "cbae330fe2106d79d572de8e20ac8459",
+          "bytes": 6525
+        }
+      },
+      "recommendation": "A new top-level node key, responseVariants: typed alternative answers, each pinned to the sentence of the long it varies, labelled as not the library's chosen line, behind a closed disclosure at long depth; the RSI-graded long stays the default and keeps its grade. One closed type to start, relief-account, on the fork nodes the crossref measures. Each variant carries its open residual in the register's manner. The game leaves it out; the flagship shows it in a declared pin after gate2 and his word.",
+      "rulings": [
+        {
+          "id": "RV-1",
+          "ruling": "Where it lives: a new top-level key, not a key under responses.",
+          "lean": "top-level.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-2",
+          "ruling": "Types: a closed set, or an open one.",
+          "lean": "closed, with one type now, `relief-account`.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-3",
+          "ruling": "Labelling and attribution.",
+          "lean": "the label is fixed per type and rendered by the page, never written per variant:",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-4",
+          "ruling": "The flagship toggle (a pin move).",
+          "lean": "a closed disclosure at long depth, beside [NOTE] and under the note's own condition.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-5",
+          "ruling": "Does the game vendor it?",
+          "lean": "not in the pilot.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-6",
+          "ruling": "The validator's checks.",
+          "lean": "V1's pattern: a schema, a validator, and `--self-test` with one mutation per check, unmutated first.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-7",
+          "ruling": "The nodes: the six note 2 named, or the seven the crossref measures.",
+          "lean": "the seven.",
+          "state": "pending his word"
+        },
+        {
+          "id": "RV-8",
+          "ruling": "The open residual.",
+          "lean": "carried on each variant, in the register's manner, and never registered as a bedrock.",
+          "state": "pending his word"
+        }
+      ],
+      "label_leaned": "Another answer, not the library's chosen line: the author's relief account",
+      "measured": {
+        "fork_nodes": [
+          "life-gift",
+          "joy-outweighs-harms",
+          "love-beauty-art",
+          "masochist-counterexample",
+          "bradley-no-subject",
+          "hedonic-contrast",
+          "neuroscience-positive-states"
+        ],
+        "of_secondary_conflicts": 33,
+        "note_2_names": [
+          "life-gift",
+          "joy-outweighs-harms",
+          "bradley-no-subject",
+          "hedonic-contrast",
+          "neuroscience-positive-states",
+          "masochist-counterexample"
+        ],
+        "measured_not_in_note_2": [
+          "love-beauty-art"
+        ],
+        "razor_nodes": [
+          "life-gift",
+          "bradley-no-subject",
+          "neuroscience-positive-states"
+        ],
+        "game_keep": [
+          "id",
+          "tier",
+          "category",
+          "trigger",
+          "keywords",
+          "responses",
+          "diagnosis"
+        ],
+        "anchors": {
+          "life-gift": "the positives are therefore illusory, is one this corpus refuses on pain of incoherence",
+          "joy-outweighs-harms": "it does not require the false claim that all pleasure is relief",
+          "love-beauty-art": "Beauty is a real good, not demoted by having a neural substrate",
+          "masochist-counterexample": "has a genuine appetitive, arousal-driven component; it is not reducible to escape",
+          "bradley-no-subject": "positive states are real and genuinely valued by those who have them",
+          "hedonic-contrast": "but it would still experience positive states",
+          "neuroscience-positive-states": "positive states are real, and they are genuinely valued by the subject who has them"
+        },
+        "words": {
+          "archetype_variants": {
+            "n": 39,
+            "min": 112,
+            "p10": 159,
+            "median": 269,
+            "p90": 361,
+            "max": 441,
+            "total": 10251
+          },
+          "notes": {
+            "n": 9,
+            "min": 39,
+            "p10": 40,
+            "median": 52,
+            "p90": 92,
+            "max": 106,
+            "total": 544
+          },
+          "fork_longs": {
+            "n": 7,
+            "min": 277,
+            "p10": 457,
+            "median": 1227,
+            "p90": 1618,
+            "max": 1823,
+            "total": 7563
+          },
+          "shapes_band": [
+            30,
+            70
+          ]
+        }
+      },
+      "the_open_residual": {
+        "source": "adversarial_map.relief_view_for_the_variant.the_open_residual",
+        "md5": "e68719eca04c3010087036bf15d46c65"
+      },
+      "on_his_word": "the build on V1's pattern (schema, validator, --self-test control), then the relief variant drafted by seat l from relief_view_for_the_variant, judged by gate2 (K258), then his word, then the render in a declared pin",
+      "not_moved": "VARIATIONS_design_v0_1.md and its measurement; no corpus or served byte"
+    },
+    "record_notes_V5": [
+      {
+        "statement": "R0294 and R0315: pilot the responseVariants design on 'the six pleasure-fork nodes'",
+        "measured": "the crossref's 33 secondary-conflict rows carry the pleasure fork in 7: the six its note 2 names, which his word adopted, and love-beauty-art, which note 2's count missed. The design leans to all seven (RV-7); his word decides."
+      },
+      {
+        "statement": "R0313: Hare 1975 'reprinted as chapter 10 of Essays on Bioethics, 1993, pp. 147-167, by Crossref'",
+        "measured": "right: the publisher's record (Crossref 10.1093/oso/9780198239833.003.0010) gives the chapter at pp. 147-167. Crossref holds no record of the 1975 printing; its pages, 4(3): 201-222, are read from the MEDLINE record (PMID 11661183) and the SEP's bibliography, and the third pass says so"
+      },
+      {
+        "statement": "RJ-008: the golden rule read as doing to others what we are glad was done to us is in none of the six records",
+        "measured": "no record read in V5 has it either; the third pass words the step as the SEP states it (glad to exist, I prescribe my own creation; universalized, creating others relevantly like me, ceteris paribus) and flags the change as a pull for gate2"
+      },
+      {
+        "statement": "shapes_redrafts_judgment_gate2 pins r1_collision_list_l7_v0_1.json at b5810a39e4c50e6b5ee121418aaab313",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_51 to v38_52); regenerated by the tool's own --write",
+        "record": {
+          "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+          "md5": "90eb5e1688ca0200b859a0d4ab11f9d2",
+          "bytes": 9618,
+          "was": "b5810a39e4c50e6b5ee121418aaab313"
+        }
+      }
+    ]
   },
   "flagship_sidecars": {
     "block_kind": "flagship_sidecars",

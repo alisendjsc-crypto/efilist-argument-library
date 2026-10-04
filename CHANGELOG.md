@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The golden rule's third draft, and a design for alternative answers — 2026-10-04 (no release; the pin stands)
+
+Josiah adopted the second judgment. The golden-rule shape has its third draft, in a new file beside the earlier ones. Its duty now rests on the good of the person who would exist, and the total good only limits it, as its source states. It keeps the source's stopping point, where the worst-off would fall below a life just worth living, and it cites the 1975 paper where the source first made the golden-rule argument. A seat that did not draft it judges it next. Separately, a design was drafted for "another answer": a marked alternative to the library's chosen reply, shown on request at the longest depth, starting with Josiah's own view that pleasure is the easing of a prior lack. It puts eight decisions to him, each with a recommendation. It also counts seven objections where the library's reply and his view part ways, one more than first counted. Canon v38.52 records his word, the draft and the design. No served page changed.
+
 ## The pilot's two corrections judged — 2026-10-04 (no release; the pin stands)
 
 A seat that drafted neither correction judged them. The soul-making shape stands as corrected: it ends at a disagreement the map already registers. The golden-rule shape is closer to its source but not there yet. It now weighs the possible person's interests with everyone else's, but it makes the total good the reason to have children rather than a limit on that reason, and it leaves out the source's stopping point, where the worst-off lives would fall below worth living; the library answers that weaker form directly. It goes back for a third draft, which will also cite the 1975 paper where the source first made the golden-rule argument. The judgment also corrects, in a new record, how the first round described that source. Canon v38.51 records the judgment. No served page changed.

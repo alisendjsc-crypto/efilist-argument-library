@@ -1,0 +1,244 @@
+{
+ "what": "the measurement behind the responseVariants design v0_1 (V5, seat l, 2026-10-04)",
+ "pins": {
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "flagship": {
+   "file": "site/combined.html",
+   "md5": "6fd3617c90cca3c9196ac0143e27020a"
+  },
+  "canon": {
+   "file": "project_canon_v38_51.json",
+   "md5": "72efc067aab95b6db04e10db1caf5410"
+  },
+  "vault": {
+   "repo": "~/Documents/Obsidian Vault",
+   "commit": "e3cb5bbe017a9a5af5914501d9b6d3060a869dd5",
+   "crossref": {
+    "file": "wiki/syntheses/library-crossref.md",
+    "md5": "74784b04b3cdfc43ed9739bf24d95308"
+   },
+   "notes": {
+    "file": "claude/analyses/library-crossref-notes-2026-10-02.md",
+    "md5": "71f31df9ad4e1b41da40922e62f21669"
+   }
+  },
+  "game": {
+   "repo": "~/D/Argue the Argument",
+   "commit": "76cbbd13ef967617b181697675bd15dbbf0a6a0b",
+   "file": "inject_data.py",
+   "md5": "e7d1505d11ccc086839a830f1207a0ef"
+  }
+ },
+ "pleasure_fork": {
+  "secondary_conflict_rows": 33,
+  "fork_rows": [
+   "life-gift",
+   "joy-outweighs-harms",
+   "love-beauty-art",
+   "masochist-counterexample",
+   "bradley-no-subject",
+   "hedonic-contrast",
+   "neuroscience-positive-states"
+  ],
+  "fork_count": 7,
+  "floor": "pleasure|relief|illusor|illusion|real goods?|positive states|not actually good|push|escape",
+  "floor_equals_the_reading": true,
+  "note_2_names": [
+   "life-gift",
+   "joy-outweighs-harms",
+   "bradley-no-subject",
+   "hedonic-contrast",
+   "neuroscience-positive-states",
+   "masochist-counterexample"
+  ],
+  "measured_not_in_note_2": [
+   "love-beauty-art"
+  ]
+ },
+ "nodes": {
+  "life-gift": {
+   "tier": 1,
+   "crossref_row_md5": "f175779685a24c1a1b711f3cde7ae46b",
+   "in_note_2": true,
+   "long_words": 1482,
+   "long_sentences": 67,
+   "anchor": "the positives are therefore illusory, is one this corpus refuses on pain of incoherence",
+   "anchor_sentence_index": 12,
+   "anchor_sentence_words": 47,
+   "gives_the_symmetric_razor": true,
+   "top_level_keys_beyond_the_base": []
+  },
+  "joy-outweighs-harms": {
+   "tier": 2,
+   "crossref_row_md5": "52b6a398bd8d6676df0dae2e84b1fef0",
+   "in_note_2": true,
+   "long_words": 1823,
+   "long_sentences": 76,
+   "anchor": "it does not require the false claim that all pleasure is relief",
+   "anchor_sentence_index": 63,
+   "anchor_sentence_words": 49,
+   "gives_the_symmetric_razor": false,
+   "top_level_keys_beyond_the_base": []
+  },
+  "love-beauty-art": {
+   "tier": 2,
+   "crossref_row_md5": "75636f0e8bd1e060e66a09c4af9ff235",
+   "in_note_2": false,
+   "long_words": 577,
+   "long_sentences": 35,
+   "anchor": "Beauty is a real good, not demoted by having a neural substrate",
+   "anchor_sentence_index": 6,
+   "anchor_sentence_words": 22,
+   "gives_the_symmetric_razor": false,
+   "top_level_keys_beyond_the_base": []
+  },
+  "masochist-counterexample": {
+   "tier": 2,
+   "crossref_row_md5": "069d5aa67b469f43efd4fdf943642223",
+   "in_note_2": true,
+   "long_words": 940,
+   "long_sentences": 42,
+   "anchor": "has a genuine appetitive, arousal-driven component; it is not reducible to escape",
+   "anchor_sentence_index": 19,
+   "anchor_sentence_words": 16,
+   "gives_the_symmetric_razor": false,
+   "top_level_keys_beyond_the_base": [],
+   "already_runs_his_mechanism": "The 'pleasure' is the relief from that state, not a hedonic contribution from the food."
+  },
+  "bradley-no-subject": {
+   "tier": 4,
+   "crossref_row_md5": "989b31a3a1f4517b97de1950201372bf",
+   "in_note_2": true,
+   "long_words": 1237,
+   "long_sentences": 40,
+   "anchor": "positive states are real and genuinely valued by those who have them",
+   "anchor_sentence_index": 27,
+   "anchor_sentence_words": 64,
+   "gives_the_symmetric_razor": true,
+   "top_level_keys_beyond_the_base": []
+  },
+  "hedonic-contrast": {
+   "tier": 4,
+   "crossref_row_md5": "0c2c55506aa3bc81ea74ce83388fcbc5",
+   "in_note_2": true,
+   "long_words": 277,
+   "long_sentences": 19,
+   "anchor": "but it would still experience positive states",
+   "anchor_sentence_index": 5,
+   "anchor_sentence_words": 31,
+   "gives_the_symmetric_razor": false,
+   "top_level_keys_beyond_the_base": []
+  },
+  "neuroscience-positive-states": {
+   "tier": 4,
+   "crossref_row_md5": "b0e32a41db38d43274feb767f0f74b55",
+   "in_note_2": true,
+   "long_words": 1227,
+   "long_sentences": 51,
+   "anchor": "positive states are real, and they are genuinely valued by the subject who has them",
+   "anchor_sentence_index": 21,
+   "anchor_sentence_words": 26,
+   "gives_the_symmetric_razor": true,
+   "top_level_keys_beyond_the_base": [
+    "confidence",
+    "note"
+   ],
+   "already_runs_his_mechanism": "Structurally, the goods of a life are deficit-occasioned, and our estimate of them is inflated upward by design."
+  }
+ },
+ "words": {
+  "archetype_variants": {
+   "n": 39,
+   "min": 112,
+   "p10": 159,
+   "median": 269,
+   "p90": 361,
+   "max": 441,
+   "total": 10251
+  },
+  "notes": {
+   "n": 9,
+   "min": 39,
+   "p10": 40,
+   "median": 52,
+   "p90": 92,
+   "max": 106,
+   "total": 544
+  },
+  "fork_longs": {
+   "n": 7,
+   "min": 277,
+   "p10": 457,
+   "median": 1227,
+   "p90": 1618,
+   "max": 1823,
+   "total": 7563
+  },
+  "shapes_band": [
+   30,
+   70
+  ]
+ },
+ "razor_nodes": [
+  "life-gift",
+  "bradley-no-subject",
+  "neuroscience-positive-states"
+ ],
+ "flagship_precedents": {
+  "archetype_pills_inherit_rsi": {
+   "marker": "D6: variant inherits parent (base/long) RSI; no per-variant grade",
+   "occurrences": 1
+  },
+  "archetype_pills_replace_body": {
+   "marker": "const _bodyText = (_aSlot && _av && _av[_aSlot]) ? _av[_aSlot] : obj.responses[responseLevel];",
+   "occurrences": 1
+  },
+  "note_toggle_at_long": {
+   "marker": "if (obj.note && responseLevel === 'long') {",
+   "occurrences": 1
+  }
+ },
+ "game_embed": {
+  "keep": [
+   "id",
+   "tier",
+   "category",
+   "trigger",
+   "keywords",
+   "responses",
+   "diagnosis"
+  ],
+  "responses_kept_whole": true,
+  "top_level_keys_not_kept": [
+   "confidence",
+   "note",
+   "objectionSubforms",
+   "psychMechanism",
+   "sources"
+  ]
+ },
+ "corpus_top_level_keys": {
+  "category": 82,
+  "confidence": 18,
+  "diagnosis": 82,
+  "id": 82,
+  "keywords": 82,
+  "note": 9,
+  "objectionSubforms": 1,
+  "psychMechanism": 82,
+  "responses": 82,
+  "sources": 82,
+  "tier": 82,
+  "trigger": 82
+ },
+ "archetype_variant_nodes": 16,
+ "the_open_residual": {
+  "from": "adversarial_map.relief_view_for_the_variant.the_open_residual",
+  "md5": "e68719eca04c3010087036bf15d46c65",
+  "words": 68
+ },
+ "his_accounts_in_canon": 10
+}

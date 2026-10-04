@@ -1,0 +1,47 @@
+{
+ "what": "his word owed to canon v38.52, cut byte-exact from the user turn (V5, seat l, 2026-10-04)",
+ "tool": "tools/extract_his_words_v38_52.py",
+ "transcript": {
+  "V2b": "f5e10266-5519-4820-8d43-cd27cfcfdcf0"
+ },
+ "excerpts": {
+  "R0314_word": {
+   "answers": "R0314",
+   "recorded_by": "R0315",
+   "turn": {
+    "transcript": "V2b",
+    "line": 785,
+    "utc": "2026-10-04T08:20:27.387Z",
+    "turn_md5": "2d211155785a303e9ac638b4c17edfaa"
+   },
+   "answers_message": {
+    "seat": "l (V2b)",
+    "line": 781,
+    "utc": "2026-10-04T07:15:51.189Z",
+    "text_md5": "a7cbb64c960dfc8512278a3d54086a83"
+   },
+   "offsets": [
+    0,
+    33
+   ],
+   "md5": "2d211155785a303e9ac638b4c17edfaa",
+   "words": 4,
+   "whole_turn": true,
+   "text": "Proceed with your recommendations"
+  }
+ },
+ "relays": {
+  "R0314": {
+   "md5": "554a2eb6a8c697ec2e57c68a2f1a41d3",
+   "from": "gate2",
+   "to": "josiah"
+  },
+  "R0315": {
+   "md5": "7dceab81f1757af658d01d54d297838f",
+   "from": "l",
+   "to": "l",
+   "carries": "R0314_word",
+   "names_the_turn": true
+  }
+ }
+}

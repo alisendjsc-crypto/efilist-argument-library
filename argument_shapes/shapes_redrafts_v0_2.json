@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "source_corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "source_corpus_objections_md5": "bcf722097441eb4926e0e443ee925a64",
+  "bound_for": "staging",
+  "shape_coverage": "1/82"
+ },
+ "shapes": [
+  {
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "label": "The golden rule passes it on",
+   "statement": "Glad to exist, you prescribe your own creation; universalized by the golden rule, that prescribes creating others relevantly like you, other things equal. A possible person who would be glad to exist is harmed if never created. So we ought to create them so long as the total good grows, the shares held as they are, stopping before the worst-off fall below a life just worth living.",
+   "differs_by": "Rests on universalizing one's own gladness by the golden rule, and on the claim that a possible person is harmed by not being created, rather than on gratitude as a virtue or on the recipient's later affirmation as evidence.",
+   "class": "d",
+   "attested_by": [
+    {
+     "citation": "R. M. Hare, Abortion and the Golden Rule, Philosophy and Public Affairs 4(3), 1975, pp. 201-222; reprinted as chapter 10 of Essays on Bioethics, Oxford University Press, 1993, pp. 147-167"
+    },
+    {
+     "citation": "R. M. Hare, Possible People, Bioethics 2(4), 1988, pp. 279-293"
+    }
+   ],
+   "answered_by": [],
+   "provenance": {
+    "phase": "S",
+    "date": "2026-10-04",
+    "seat": "l (V5, Code)"
+   }
+  }
+ ]
+}

@@ -4,8 +4,9 @@ Seat l, V1, 2026-09-26. **Not served** (`site/` is the served tree) and **not ca
 drafted the pilot: 10 shapes over the six R-V4 nodes. gate2 judged it in V3 (2026-10-03): 5 ACCEPT, 2 AMEND,
 3 REJECT, and his word adopted the judgment. V2b (2026-10-03) redrafted the two AMENDs in a new file, which
 supersedes the pilot's two shapes of the same ids. gate2 judged them in round two (V3b, 2026-10-04):
-soul-making ACCEPT as (d); the golden rule AMEND, owed a third redraft in a new file. Then, on his word, V4
-puts the (a) shape in the corpus and renders it on the flagship.
+soul-making ACCEPT as (d); the golden rule AMEND, owed a third redraft in a new file. V5 (2026-10-04) drafted
+that third pass in `shapes_redrafts_v0_2.json`, which supersedes v0_1's golden rule; gate2 judges it in its
+next round. Then, on his word, V4 puts the (a) shape in the corpus and renders it on the flagship.
 
 Built from the variations design v0_1, sections 3 and 4 (`design/variations/VARIATIONS_design_v0_1.md`,
 md5 `fcf6f6fe`). His word on its six rulings: *"Go with your leans on all of the rulings."* That word is
@@ -29,6 +30,9 @@ recorded in canon v38.42, `adversarial_map.variations_rulings_V0`.
 | `build_shapes_redrafts.py` | Builds both from the pilot and the judgment record at their pinned md5s; `--check` reproduces them byte for byte, validator runs included. |
 | `shapes_redrafts_judgments.json` | gate2's round-two judgment (V3b): 11 rows, append-only, its own record (the round-one record is never edited). Each redraft read four ways plus its class; the supersession scheme; the six source records, fetched again; the three pulls; the record's third note; a forward correction of round one's Hare source read. Every quote verbatim at pinned bytes, or a fetched excerpt of at most 15 words. |
 | `shapes_redrafts_judgments_gate.py` | The gate on that record: pins, coverage of both redrafts and every pull, routes against the map, the register and the redrafts record, quotes, figures recomputed (four validator runs included), append-only history. `--self-test` runs `shapes_redrafts_judgments_gate_control_v0_1.json` (17 cases, the unmutated record first). Needs the game's repository (the scholar lines). |
+| `shapes_redrafts_v0_2.json` | The golden rule's third pass (V5), owed by RJ-001: Hare's total stated as a limit on the duty, the shares held, and the halt before the worst-off fall below a life just worth living; Hare 1975 added to its attestation. One shape; it supersedes v0_1's golden rule (RD-01), so it validates alone. |
+| `shapes_redrafts_record_v0_2.json` | Its record: the row it answers (RJ-001) and the v0_1 redraft it replaces, by file and md5; the terminus copied from the map and the register; the premise-sharers read before carrying the route; five pulls for gate2; six source records with short verbatim excerpts; validator runs alone, over the 10-shape and 7-shape views, and a control that must FAIL on shape-id. |
+| `build_shapes_redrafts_v0_2.py` | Builds both at pinned md5s; `--check` reproduces them byte for byte, validator runs included. |
 
 ## The rules it enforces
 

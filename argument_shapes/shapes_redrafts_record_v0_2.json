@@ -1,0 +1,305 @@
+{
+ "what": "the golden rule's third pass, owed by gate2's round-two judgment (RJ-001), V5, seat l, 2026-10-04; drafted, not judged",
+ "state": "DRAFTED, NOT JUDGED. gate2 judges this row in its next round (K258); his word decides.",
+ "authority": {
+  "his_word": "Proceed with your recommendations",
+  "turn_md5": "2d211155785a303e9ac638b4c17edfaa",
+  "utc": "2026-10-04T08:20:27.387Z",
+  "answers": "R0314",
+  "from": "tools/v38_52_his_words.json at 660d13821c69aa59e2e99b9f5747c20d",
+  "adopted": "gate2's three round-two asks: the judgment; soul-making to the map's (d)s; this pass folded into seat l's next session and judged in gate2's next round"
+ },
+ "supersession": "RD-03 supersedes v0_1's RD-01 (file and md5 below), which superseded the pilot's shape of the same id. v0_1 and the pilot stay byte-identical (gate2's gates pin them), so this file repeats the id and validates alone. The current set is the pilot with the golden rule replaced by RD-03 and soul-making by v0_1's RD-02: 'superseded_view' below. Loading the pilot and this file together fails shape-id, as it should.",
+ "pins": {
+  "redraft": {
+   "file": "argument_shapes/shapes_redrafts_v0_2.json",
+   "md5": "159c546ef224f87037578f7dee1464e2",
+   "bytes": 1448
+  },
+  "replaces": {
+   "file": "argument_shapes/shapes_redrafts_v0_1.json",
+   "md5": "fc28cd12265e2712a9d610bbb2c1b69f"
+  },
+  "replaces_record": {
+   "file": "argument_shapes/shapes_redrafts_record_v0_1.json",
+   "md5": "ace5fb88886f7f7ce49a90658b590954"
+  },
+  "judgment": {
+   "file": "argument_shapes/shapes_redrafts_judgments.json",
+   "md5": "6f4974966c23920234f495cb20813d4c"
+  },
+  "judgment_gate": {
+   "file": "argument_shapes/shapes_redrafts_judgments_gate.py",
+   "md5": "950c715c4b7ba35b6db8715600df8832"
+  },
+  "pilot": {
+   "file": "argument_shapes/shapes_pilot_v0_1.json",
+   "md5": "1f9c5da6166b538a90efa6dc7598124e"
+  },
+  "pilot_judgments": {
+   "file": "argument_shapes/shapes_pilot_judgments.json",
+   "md5": "73503bccdd3ddf8b3a82f280181251d4"
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "register": {
+   "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+   "md5": "8e53d920099e8b850baa2879dfd3e351"
+  },
+  "validator": {
+   "file": "argument_shapes/shape_validator_v0_1.py",
+   "md5": "64553b25b6db0ff67edeb87b89178297"
+  },
+  "his_words": {
+   "file": "tools/v38_52_his_words.json",
+   "md5": "660d13821c69aa59e2e99b9f5747c20d"
+  },
+  "scholar": {
+   "repo": "~/D/Argue the Argument",
+   "commit": "76cbbd13ef967617b181697675bd15dbbf0a6a0b",
+   "file": "data/flagship/scholar-objections_v1_1.json",
+   "md5": "20999eb9b1b384d0f871a9deec464b2a"
+  }
+ },
+ "rows": [
+  {
+   "id": "RD-03",
+   "shape_id": "life-gift/the-golden-rule-passes-it-on",
+   "answers": {
+    "row": "RJ-001",
+    "verdict": "AMEND",
+    "owed": [
+     "Seat l states Hare's bound as his records state it, in a new row or file: the total as a limit on the duty (so long as the total grows), the shares held as they are, and the halt before the worst-off fall below a life just worth living. The duty's ground stays the possible person's own good. 30-70 words. Class and route unchanged.",
+     "Add Hare 1975 to attested_by: R. M. Hare, Abortion and the Golden Rule, Philosophy and Public Affairs 4, 1975, pp. 201-222 (the SEP's bibliography; reprinted as chapter 10 of Essays on Bioethics, 1993, pp. 147-167, by Crossref)."
+    ]
+   },
+   "supersedes": {
+    "file": "argument_shapes/shapes_redrafts_v0_1.json",
+    "md5": "fc28cd12265e2712a9d610bbb2c1b69f",
+    "row": "RD-01",
+    "shape_id": "life-gift/the-golden-rule-passes-it-on"
+   },
+   "changed": [
+    "attested_by",
+    "provenance",
+    "statement"
+   ],
+   "class": "d",
+   "words": {
+    "pilot": 57,
+    "v0_1": 69,
+    "redraft": 67
+   },
+   "owed_met": {
+    "the total as a limit on the duty": "so long as the total good grows",
+    "the shares held as they are": "the shares held as they are",
+    "the halt before the worst-off fall below a life just worth living": "stopping before the worst-off fall below a life just worth living",
+    "the duty's ground stays the possible person's own good": "A possible person who would be glad to exist is harmed if never created",
+    "Hare 1975 added": "R. M. Hare, Abortion and the Golden Rule, Philosophy and Public Affairs 4(3), 1975, pp. 201-222; reprinted as chapter 10 of Essays on Bioethics, Oxford University Press, 1993, pp. 147-167"
+   },
+   "terminus": {
+    "via": "joy-outweighs-harms#long",
+    "via_anchor": "a merely possible person can be a genuine beneficiary of being brought into",
+    "bedrock": {
+     "bedrock_name": "Benatar's asymmetry (merely-possible-beneficiary)",
+     "terminus_routing": "registered asymmetry-contingent residue; reached via the hedonic-aggregation route; route as registered",
+     "register": {
+      "bedrock_id": "HR-02",
+      "name": "Asymmetry-contingency of the positive-states cluster",
+      "facet": "merely-possible-beneficiary"
+     }
+    },
+    "copied_from": {
+     "map_entry": 41,
+     "register": "HR-02 / merely-possible-beneficiary"
+    }
+   },
+   "route_equals_the_judged_route": true,
+   "route_equals_v0_1": true,
+   "premise_sharers_read": {
+    "population-ethics-paradoxes": {
+     "loci": [
+      "trigger",
+      "diagnosis",
+      "short",
+      "medium",
+      "long"
+     ],
+     "map_entries": [
+      109
+     ],
+     "scholar": "data/flagship/scholar-objections_v1_1.json at 76cbbd13"
+    },
+    "joy-outweighs-harms#long": {
+     "horns": "the fork (pure aggregation or the side-constraint) and the two horns of the strongest reply (expected value; the actual person's actual balance)",
+     "map_entries": [
+      41
+     ],
+     "scholar": "data/flagship/scholar-objections_v1_1.json at 76cbbd13"
+    },
+    "rights-future-generations#long": {
+     "why": "the reductio v0_1 was read against"
+    }
+   },
+   "reading": "(d), unchanged, read against the premise-sharers the bound touches. The duty's ground is the possible person's own good (\"A possible person who would be glad to exist is harmed if never created\"); the total now only limits the duty, so the line is no longer licensed by others' goods, the horn the via locus sinks (\"indifferent to whose pleasure and whose pain are being summed\"). It is the opponent the copied (d) records, who will \"decline the monster (the goods and harms fall on one person, not interpersonally)\", and his L3 reading sends that move to HR-02. population-ethics-paradoxes does not take it: its scholar line attacks the antinatalist's own axiology (\"the world-destroyer conclusion\"), and the answer its long gives is the iteration claim its own (d) records as ending at bedrock (\"The node cannot keep both.\"), so no (a) can route there under R1's standard.",
+   "quotes": [
+    {
+     "src": "statement:life-gift/the-golden-rule-passes-it-on",
+     "quote": "A possible person who would be glad to exist is harmed if never created"
+    },
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "indifferent to whose pleasure and whose pain are being summed"
+    },
+    {
+     "src": "map:#41.adversarial_move",
+     "quote": "decline the monster (the goods and harms fall on one person, not interpersonally)"
+    },
+    {
+     "src": "scholar:population-ethics-paradoxes",
+     "quote": "the world-destroyer conclusion"
+    },
+    {
+     "src": "map:#109.adversarial_move",
+     "quote": "The node cannot keep both."
+    },
+    {
+     "src": "corpus:population-ethics-paradoxes#medium",
+     "quote": "devastating against Total utilitarianism, which must weigh aggregate welfare across populations"
+    },
+    {
+     "src": "corpus:population-ethics-paradoxes#long",
+     "quote": "adding a person with positive but lower-than-average welfare"
+    },
+    {
+     "src": "corpus:joy-outweighs-harms#long",
+     "quote": "across the distribution of lives the gamble might produce, the goods outweigh in prospect"
+    },
+    {
+     "src": "corpus:rights-future-generations#long",
+     "quote": "The obligation would be literally infinite"
+    }
+   ],
+   "pulls": [
+    "The golden-rule step is now worded as the SEP states it (source 1: glad that I exist, I prescribe my own creation; universalized, I prescribe creating others relevantly like me, ceteris paribus), not as 'do to others what you are glad was done to you'. RJ-008 found that wording in none of the records read, and no record read this session has it either. Not owed by RJ-001; changed because the statement may claim only what the records read support.",
+    "The weighing SJ-003 owed ('weighed with everyone's preferences') is carried by the limit: the total is everyone's good, the possible person's included. Stated as a clause of the duty itself it read as the trigger (RJ-001), so it is not repeated there.",
+    "The halt sits at the break-even point, the level at which the Repugnant Conclusion's lives already stand, so in an equal society Hare's bound narrows Parfit's chain without refusing its end. The held shares refuse the step the library's chain is built from (\"adding a person with positive but lower-than-average welfare\"). The card meets Hare's bound as his records state it; whether the library may still press the bare total view's verdict (\"devastating against Total utilitarianism, which must weigh aggregate welfare across populations\") against a bounded total is gate2's to read. The route does not move either way: the library's own answer at that node ends at bedrock (#109).",
+    "Ex ante, a creation is a prospect over possible lives, and the via locus's first horn reads the prospect as interpersonal (\"across the distribution of lives the gamble might produce, the goods outweigh in prospect\"). At its strongest the line restricts the duty to a person who would be glad and treats the prospect as that person's own, which is the merely-possible-beneficiary premise again; read as an expectation over different possible people it is the weaker line the first horn meets. So the route is HR-02 for the line at its strongest.",
+    "The bounded duty no longer meets the reductio at rights-future-generations#long (\"The obligation would be literally infinite\"), as RJ-001 found of v0_1; the no-claimant (d) there stays on the library's side, as RJ-001 read it."
+   ],
+   "sources_checked": [
+    {
+     "what": "the Stanford Encyclopedia of Philosophy, 'Richard Mervyn Hare', section 6 (Possible People), and its bibliography",
+     "url": "https://plato.stanford.edu/entries/hare/",
+     "supports": "the golden-rule step, which the SEP cites to 1975, 1988b and 1988c, the 1975 paper first; the total as a limit; and the bibliography's 1975 entry: Philosophy and Public Affairs 4: 201-22, reprinted in 1993a: 147-67",
+     "excerpts": [
+      "if I am glad that I exist, I tenselessly prescribe",
+      "I must prescribe, ceteris paribus, the bringing into existence of others relevantly like me",
+      "(1975, 1988b, 1988c)",
+      "so long as this will increase the total satisfaction of preference"
+     ]
+    },
+    {
+     "what": "the MEDLINE record of Hare 1975 (PMID 11661183, indexed by the Kennedy Institute of Ethics), read through NCBI E-utilities",
+     "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11661183&retmode=xml",
+     "supports": "the citation: Philos Public Aff. 1975 Spring; 4(3): 201-22, 'Abortion and the golden rule', Hare RM. No abstract. Crossref carries no record of the 1975 printing (searched by title and author), so this indexer's record and the SEP's bibliography are the two records of its pages read",
+     "excerpts": []
+    },
+    {
+     "what": "the publisher's record of the reprint, chapter 10 of Hare's Essays on Bioethics (Oxford University Press, 1993, through Crossref)",
+     "url": "https://api.crossref.org/works/10.1093/oso/9780198239833.003.0010",
+     "supports": "the reprint: 'Abortion and the Golden Rule', Essays On Bioethics, pp. 147-167, 1993. Its abstract is the chapter's opening section (10.1), which does not reach the golden-rule step",
+     "excerpts": []
+    },
+    {
+     "what": "the MEDLINE record of Hare 1988 (PMID 11651921), with the Kennedy Institute of Ethics' abstract, read through NCBI E-utilities",
+     "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11651921&rettype=abstract&retmode=text",
+     "supports": "the bound: the population grows while the total grows, the shares held, until the worst-off reach the break-even point",
+     "excerpts": [
+      "increasing the population of a society while increasing the total utility",
+      "without altering its proportionate distribution",
+      "until the lowest segment of the population comes below the break-even point",
+      "at which life is just worth living"
+     ]
+    },
+    {
+     "what": "the publisher's record of Essays on Bioethics (Oxford University Press, 1993, through Crossref)",
+     "url": "https://api.crossref.org/works/10.1093/oso/9780198239833.001.0001",
+     "supports": "the harm clause, unchanged from v0_1",
+     "excerpts": [
+      "we can harm possible people by preventing them from becoming actual people"
+     ]
+    },
+    {
+     "what": "the publisher's record of Hare 1988 (Wiley, through Crossref)",
+     "url": "https://api.crossref.org/works/10.1111/j.1467-8519.1988.tb00055.x",
+     "supports": "the second citation: Possible People, Bioethics 2(4), October 1988, pp. 279-293. No abstract",
+     "excerpts": []
+    }
+   ],
+   "not_read": "The full text of either paper and of their reprints. The statement claims only what the six records above support. Checked 2026-10-04 (V5); the builder does not re-fetch them."
+  }
+ ],
+ "validator_runs": {
+  "redraft_alone": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 1,
+   "nodes_with_shapes": 1,
+   "file": "argument_shapes/shapes_redrafts_v0_2.json"
+  },
+  "superseded_view": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 10,
+   "nodes_with_shapes": 6,
+   "what": "the pilot's ten shapes in its order, the golden rule replaced by this row and soul-making by v0_1's RD-02"
+  },
+  "ruled_view": {
+   "rc": 0,
+   "verdict": "PASS",
+   "violation_count": 0,
+   "shapes": 7,
+   "nodes_with_shapes": 5,
+   "what": "the shapes his words kept: gate2's five round-one ACCEPTs, soul-making (v0_1's RD-02, ACCEPT at RJ-002) and this row",
+   "shape_ids": [
+    "life-gift/the-golden-rule-passes-it-on",
+    "future-solve/raise-the-people-who-fix-it",
+    "future-solve/the-obligation-to-survive",
+    "free-will-defense/everyone-comes-home-at-last",
+    "free-will-defense/a-vale-of-soul-making",
+    "meta-ethical-pluralism/many-peaks-one-landscape",
+    "meaning-through-suffering/heroism-redeems-being"
+   ]
+  },
+  "pilot_and_this_file_together": {
+   "rc": 1,
+   "verdict": "FAIL",
+   "violation_count": 1,
+   "shapes": 11,
+   "nodes_with_shapes": 6,
+   "failed": [
+    "shape-id"
+   ],
+   "what": "a control: the pilot and this file loaded as one must fail on shape-id"
+  }
+ },
+ "after_round_three": {
+  "ruled_set_classes": {
+   "a": 1,
+   "b": 1,
+   "c": 1,
+   "d": 4
+  },
+  "routes": "(d)s to the map at the successor map's next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts this row); the (a) to the corpus in V4 after the successor map's pin; the (b) to the regen queue; the (c) to the intake"
+ },
+ "not_moved": "the pilot, V2b's redrafts and their record and builder, gate2's records, gates and readings, the validator, its control and the schema; no corpus or served byte"
+}
