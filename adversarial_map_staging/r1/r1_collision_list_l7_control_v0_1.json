@@ -1,0 +1,65 @@
+{
+ "artifact": "r1_collision_list_l7_control_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/r1_collision_list_l7.py --self-test",
+ "record": {
+  "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+  "md5": "3b8dd24c0bd38de2f1314b7ebbdeaf1a"
+ },
+ "result": "6 of 6 controls as expected, the unmutated first",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated: reproduces the committed record",
+   "expected": "reproduces the record",
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "the first row ruled on the addendum removed",
+   "expected": "refuses, naming 'successor: #'",
+   "as_expected": true,
+   "failure_lines": [
+    "successor: #11 self-defeating#diagnosis: collided and unruled"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "a row names neither evidence",
+   "expected": "refuses, naming 'naming neither'",
+   "as_expected": true,
+   "failure_lines": [
+    "rows naming neither R1's evidence nor the addendum: R1-075",
+    "successor: #70 self-defeating#long: collided and unruled"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "the addendum moves by one byte",
+   "expected": "refuses, naming 'referent moved: adversarial_map_staging/r1/R1_evidence_L7_addendum.json'",
+   "as_expected": true,
+   "failure_lines": [
+    "referent moved: adversarial_map_staging/r1/R1_evidence_L7_addendum.json is a63e1992a57e74703d5911e09a70919b, pinned ba55917f971520743773f0eb6fb518ea",
+    "successor: referent moved: adversarial_map_staging/r1/R1_evidence_L7_addendum.json is not at the md5 the rulings file names"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "the successor map moves by one byte",
+   "expected": "refuses, naming 'successor: referent moved'",
+   "as_expected": true,
+   "failure_lines": [
+    "successor: referent moved: adversarial_map_staging/adversarial_map_v1_8.json is not at the md5 the rulings file names"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "v1_3 moves by one byte",
+   "expected": "refuses, naming 'v1_3: referent moved'",
+   "as_expected": true,
+   "failure_lines": [
+    "v1_3: referent moved: adversarial_map_staging/adversarial_map_v1_3.json is not at the md5 the rulings file names"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "artifact": "r1_collision_list_l7_v0_1.json",
+ "instrument": "adversarial_map_staging/r1/r1_collision_list_l7.py",
+ "rule": "Every (a) whose answered_by locus, same-node sibling, or any other slot of an answering node carries a (b) or (d) is listed for reading, and the list must be empty or ruled before any (a) card ships (the L2 rule, widened at L3 on Josiah's word; canon adversarial_map.collision_rule_WIDENED_L3).",
+ "why": "From R1-071 a row may be ruled on the L7 addendum (the successor v1_8) instead of R1's evidence (v1_3). Each part reads only the rows ruled on its own evidence (gate2 U2-023, condition 2).",
+ "inputs": {
+  "rulings": {
+   "file": "adversarial_map_staging/r1/R1_rulings.json",
+   "md5": "f7d02b16f6837e53033b3c7fb68332a9"
+  },
+  "r1_collision_list": {
+   "file": "adversarial_map_staging/r1/r1_collision_list.py",
+   "md5": "cb3cd460a6f72a47ac31232eb4287240",
+   "imported_at_pinned_bytes": true
+  },
+  "addendum": {
+   "file": "adversarial_map_staging/r1/R1_evidence_L7_addendum.json",
+   "md5": "ba55917f971520743773f0eb6fb518ea"
+  },
+  "canon": "project_canon_v38_47.json"
+ },
+ "rows": {
+  "ruled_on_R1_evidence": 70,
+  "ruled_on_the_addendum": 5
+ },
+ "v1_3": {
+  "evidence": {
+   "file": "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+   "md5": "719b5ddb27680f32181a8a953c84b6c2"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_3.json",
+   "md5": "681827419df72a16a7c6fe70df8fe77f"
+  },
+  "summary": {
+   "a_entries": 69,
+   "ruled": 69,
+   "collided": 58,
+   "collided_ruled": 58,
+   "collided_HOLDS": 16,
+   "collided_FAILS": 42,
+   "uncollided_HOLDS": 7,
+   "uncollided_FAILS": 4,
+   "ship_eligible": [
+    3,
+    4,
+    18,
+    19,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    36,
+    37,
+    38,
+    41,
+    49,
+    51,
+    52,
+    53,
+    55,
+    56,
+    66,
+    68,
+    69
+   ],
+   "blocked_by_shape": {
+    "aggravation_cross_node": [
+     63
+    ],
+    "aggravation_s11_1": [
+     5
+    ],
+    "answer_flagged_b": [
+     1,
+     7,
+     11,
+     32,
+     42,
+     48,
+     50,
+     62,
+     67
+    ],
+    "route_to_bedrock": [
+     2,
+     6,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     20,
+     21,
+     23,
+     31,
+     33,
+     34,
+     35,
+     39,
+     43,
+     44,
+     45,
+     46,
+     47,
+     54,
+     57,
+     59,
+     60,
+     61,
+     64,
+     65
+    ],
+    "routed_answer_silent": [
+     22,
+     25,
+     58
+    ],
+    "under_strength_move": [
+     40
+    ]
+   },
+   "unruled": [],
+   "rule_broken": false
+  }
+ },
+ "successor": {
+  "evidence": {
+   "file": "adversarial_map_staging/r1/R1_evidence_L7_addendum.json",
+   "md5": "ba55917f971520743773f0eb6fb518ea"
+  },
+  "map": {
+   "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+   "md5": "691930ab76908a85a6850bdb714d3827"
+  },
+  "summary": {
+   "a_entries": 5,
+   "ruled": 5,
+   "collided": 4,
+   "collided_ruled": 4,
+   "collided_HOLDS": 4,
+   "collided_FAILS": 0,
+   "uncollided_HOLDS": 1,
+   "uncollided_FAILS": 0,
+   "ship_eligible": [
+    11,
+    22,
+    32,
+    50,
+    70
+   ],
+   "blocked_by_shape": {},
+   "unruled": [],
+   "rule_broken": false
+  },
+  "items": [
+   {
+    "n": 11,
+    "target": "self-defeating#diagnosis",
+    "phase": "A",
+    "tier": "T5",
+    "answered_by": [
+     "self-effacing-under-universalization#long",
+     "self-defeating#long"
+    ],
+    "collided": true,
+    "collisions": {
+     "at_answering_locus": [
+      {
+       "anchor": "Universal compliance is a norm's success condition",
+       "at": "self-effacing-under-universalization#long",
+       "class": "d",
+       "phase": "A"
+      }
+     ],
+     "on_own_node": [],
+     "on_answering_node_other_slots": []
+    },
+    "for_reading_elsewhere_on_answering_nodes": [],
+    "r1": {
+     "row": "R1-071",
+     "verdict": "HOLDS",
+     "basis": "corpus-record",
+     "reason": "#11's move is Parfit's indirect self-defeat: acceptance frustrates the theory's aims. The re-route carries Parfit's own answer in the routed text, and the demoralization is a practical fate among holders; R1-013's stronger continuation (the means-audit) is met by PD-20's fence. The (d) at the routed locus concerns the success condition, which the move does not press (U-056). Basis as judged: gate2's U-028, ACCEPT.",
+     "stronger_continuation": null
+    },
+    "shape": null,
+    "status": "SHIP-ELIGIBLE: R1 HOLDS"
+   },
+   {
+    "n": 22,
+    "target": "free-will-defense#long",
+    "phase": "B1",
+    "tier": "T4",
+    "answered_by": [
+     "free-will-defense#long"
+    ],
+    "collided": false,
+    "collisions": {
+     "at_answering_locus": [],
+     "on_own_node": [],
+     "on_answering_node_other_slots": []
+    },
+    "for_reading_elsewhere_on_answering_nodes": [],
+    "r1": {
+     "row": "R1-072",
+     "verdict": "HOLDS",
+     "basis": "corpus-record",
+     "reason": "PD-10 is the (b)'s repair: compatibilism salvages a real freedom, not the one the theodicy needs, and it is the freedom a prospective parent exercises. The tu quoque's premise, hard determinism stripping the child's agency, is gone. The designed/undesigned difference concerns the designed agent's responsibility, while the node's claim is that the designer still stands behind what the desires produce. The route moves to the node's own long. Basis as judged: gate2's U-042, ACCEPT.",
+     "stronger_continuation": null
+    },
+    "shape": null,
+    "status": "SHIP-ELIGIBLE: R1 HOLDS"
+   },
+   {
+    "n": 32,
+    "target": "antinatalism-misanthropic#archetypeVariants.defender",
+    "phase": "F",
+    "tier": "T1",
+    "answered_by": [
+     "antinatalism-misanthropic#long"
+    ],
+    "collided": true,
+    "collisions": {
+     "at_answering_locus": [],
+     "on_own_node": [
+      {
+       "anchor": "Keeping someone out of harm's way is not the same as wishing them ill",
+       "at": "antinatalism-misanthropic#archetypeVariants.drifter",
+       "class": "d",
+       "phase": "F"
+      },
+      {
+       "anchor": "empathy aimed at a harm, not a negative valuation placed on a kind",
+       "at": "antinatalism-misanthropic#archetypeVariants.sophisticate",
+       "class": "d",
+       "phase": "F"
+      },
+      {
+       "anchor": "is conditional on the suffering creation imposes and would lapse if that suffering lapsed",
+       "at": "antinatalism-misanthropic#long",
+       "class": "d",
+       "phase": "E"
+      },
+      {
+       "anchor": "naming it is the whole of the response",
+       "at": "antinatalism-misanthropic#archetypeVariants.blended",
+       "class": "d",
+       "phase": "F"
+      }
+     ],
+     "on_answering_node_other_slots": []
+    },
+    "for_reading_elsewhere_on_answering_nodes": [],
+    "r1": {
+     "row": "R1-073",
+     "verdict": "HOLDS",
+     "basis": "corpus-record",
+     "reason": "R1-036 failed #32 on the expressive charge, the (b)'s own continuation. PD-04 now reads what a position expresses off its verdict's condition, which meets the move's core. The long's new (d) records the ranking charge, which the move does not press; the promotion half is met in the form the long names. Judged at its core (L2's law), the move is met. Basis as judged: gate2's U-005, ACCEPT.",
+     "stronger_continuation": null
+    },
+    "shape": null,
+    "status": "SHIP-ELIGIBLE: R1 HOLDS"
+   },
+   {
+    "n": 50,
+    "target": "bitter-childhood#long",
+    "phase": "E",
+    "tier": "T1",
+    "answered_by": [
+     "bitter-childhood#medium"
+    ],
+    "collided": true,
+    "collisions": {
+     "at_answering_locus": [],
+     "on_own_node": [
+      {
+       "anchor": "not seeing falsely, he is seeing without the anaesthetic",
+       "at": "bitter-childhood#archetypeVariants.defender",
+       "class": "b",
+       "phase": "F"
+      }
+     ],
+     "on_answering_node_other_slots": []
+    },
+    "for_reading_elsewhere_on_answering_nodes": [],
+    "r1": {
+     "row": "R1-074",
+     "verdict": "HOLDS",
+     "basis": "corpus-record",
+     "reason": "PD-07 and PC-01 take the move's own first branch: the long closes on an irony that is not a proof, and the routed medium ends on the path to a belief bearing on its truth in neither direction. The defender slot's (b) (PF-03) is on the node, not on this answer. Basis as judged: gate2's U-035, ACCEPT.",
+     "stronger_continuation": null
+    },
+    "shape": null,
+    "status": "SHIP-ELIGIBLE: R1 HOLDS"
+   },
+   {
+    "n": 70,
+    "target": "self-defeating#long",
+    "phase": "A",
+    "tier": "T5",
+    "answered_by": [
+     "self-effacing-under-universalization#long"
+    ],
+    "collided": true,
+    "collisions": {
+     "at_answering_locus": [
+      {
+       "anchor": "Universal compliance is a norm's success condition",
+       "at": "self-effacing-under-universalization#long",
+       "class": "d",
+       "phase": "A"
+      }
+     ],
+     "on_own_node": [],
+     "on_answering_node_other_slots": []
+    },
+    "for_reading_elsewhere_on_answering_nodes": [],
+    "r1": {
+     "row": "R1-075",
+     "verdict": "HOLDS",
+     "basis": "corpus-record",
+     "reason": "New in the successor map; not one of R1's 69 (U-065). PD-20's fence discharges the means-inconsistency; what it concedes is dependence, and the strongest continuation, indirect self-defeat, is answered at the routed locus in Parfit's own terms. The (d) there concerns the success condition, not pressed (U-057). The move's register was amended in round two (U2-010, ACCEPT); class, anchor, grounds and routing carry. Basis as judged: gate2's U-027 and U-065, with U2-023's route CONFIRM.",
+     "stronger_continuation": null
+    },
+    "shape": null,
+    "status": "SHIP-ELIGIBLE: R1 HOLDS"
+   }
+  ]
+ }
+}

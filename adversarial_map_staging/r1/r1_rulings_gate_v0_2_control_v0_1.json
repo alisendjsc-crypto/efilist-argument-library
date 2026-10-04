@@ -1,0 +1,190 @@
+{
+ "artifact": "r1_rulings_gate_v0_2_control_v0_1.json",
+ "gate": "adversarial_map_staging/r1/r1_rulings_gate_v0_2.py",
+ "addendum": {
+  "file": "adversarial_map_staging/r1/R1_evidence_L7_addendum.json",
+  "md5": "ba55917f971520743773f0eb6fb518ea"
+ },
+ "gate_md5": "8d7c0886007ac11768b9f4770e18be10",
+ "rulings_md5": "f7d02b16f6837e53033b3c7fb68332a9",
+ "rule": "C0, the unmutated control, runs first and must be GREEN; each mutation must go RED with its own failure line; C10, a proper correction row, and C11, a proper row naming the addendum, must stay GREEN.",
+ "controls": [
+  {
+   "control": "C0",
+   "mutation": "unmutated",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C1",
+   "mutation": "a row names n=999",
+   "expected_rc": 1,
+   "expected_message": "names no entry in the evidence it names",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: n=999 names no entry in the evidence it names"
+   ]
+  },
+  {
+   "control": "C2",
+   "mutation": "a row's target names the wrong locus",
+   "expected_rc": 1,
+   "expected_message": "!= evidence",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: target boonin-critique#short != evidence #60 boonin-critique#note"
+   ]
+  },
+  {
+   "control": "C3",
+   "mutation": "a verdict reads MAYBE",
+   "expected_rc": 1,
+   "expected_message": "is not HOLDS or FAILS",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: verdict 'MAYBE' is not HOLDS or FAILS"
+   ]
+  },
+  {
+   "control": "C4",
+   "mutation": "a FAILS row loses its stronger line",
+   "expected_rc": 1,
+   "expected_message": "FAILS without its stronger-continuation line",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: FAILS without its stronger-continuation line"
+   ]
+  },
+  {
+   "control": "C5",
+   "mutation": "an entry ruled twice, no supersedes",
+   "expected_rc": 1,
+   "expected_message": "ruled twice without superseding",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-076: #60 ruled twice without superseding R1-001"
+   ]
+  },
+  {
+   "control": "C6",
+   "mutation": "the evidence file moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "evidence md5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "evidence md5: file is 2567510cbca299e47e602543252473fb, header names 719b5ddb27680f32181a8a953c84b6c2",
+    "R1-001: names evidence md5 719b5ddb27680f32181a8a953c84b6c2, which is neither the evidence file (2567510cbca299e47e602543252473fb) nor the pinned addendum (ba55917f971520743773f0eb6fb518ea)",
+    "R1-001: n=60 names no entry in the evidence it names"
+   ]
+  },
+  {
+   "control": "C7",
+   "mutation": "the map file moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "map md5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "map md5: file is 55a44e3139cd38df9a05dd338424d107, header names 681827419df72a16a7c6fe70df8fe77f, evidence records 681827419df72a16a7c6fe70df8fe77f"
+   ]
+  },
+  {
+   "control": "C8",
+   "mutation": "a committed row is edited in place",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "append-only: committed row R1-001 was edited or removed"
+   ]
+  },
+  {
+   "control": "C9",
+   "mutation": "a committed row is removed",
+   "expected_rc": 1,
+   "expected_message": "was edited or removed",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-002: row ids must run R1-001, R1-002, ... in file order (expected R1-001)",
+    "R1-003: row ids must run R1-001, R1-002, ... in file order (expected R1-002)",
+    "R1-004: row ids must run R1-001, R1-002, ... in file order (expected R1-003)"
+   ]
+  },
+  {
+   "control": "C10",
+   "mutation": "a correction row supersedes properly",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C11",
+   "mutation": "a row for n=70 names the addendum",
+   "expected_rc": 0,
+   "expected_message": null,
+   "rc": 0,
+   "as_expected": true,
+   "failure_lines": []
+  },
+  {
+   "control": "C12",
+   "mutation": "a row for n=70 names the evidence file",
+   "expected_rc": 1,
+   "expected_message": "names no entry in the evidence it names",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-076: n=70 names no entry in the evidence it names"
+   ]
+  },
+  {
+   "control": "C13",
+   "mutation": "a row names an unknown evidence md5",
+   "expected_rc": 1,
+   "expected_message": "neither the evidence file",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-001: names evidence md5 00000000000000000000000000000000, which is neither the evidence file (719b5ddb27680f32181a8a953c84b6c2) nor the pinned addendum (ba55917f971520743773f0eb6fb518ea)",
+    "R1-001: n=60 names no entry in the evidence it names"
+   ]
+  },
+  {
+   "control": "C14",
+   "mutation": "the addendum moves by one byte",
+   "expected_rc": 1,
+   "expected_message": "addendum md5",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "addendum md5: file is a63e1992a57e74703d5911e09a70919b, v0_2 pins ba55917f971520743773f0eb6fb518ea",
+    "R1-071: n=11 names no entry in the evidence it names",
+    "R1-072: n=22 names no entry in the evidence it names"
+   ]
+  },
+  {
+   "control": "C15",
+   "mutation": "a row names the addendum with the wrong target",
+   "expected_rc": 1,
+   "expected_message": "!= evidence",
+   "rc": 1,
+   "as_expected": true,
+   "failure_lines": [
+    "R1-076: target self-defeating#short != evidence #70 self-defeating#long"
+   ]
+  }
+ ]
+}

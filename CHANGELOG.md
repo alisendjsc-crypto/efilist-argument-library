@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The successor map ruled — 2026-10-03 (no release; the pin stands)
+
+Josiah ruled on the judged successor map: "yes to all" on the four questions. The successor map v1_8 and its register v0_9 now stand. Four answers that were waiting on the v4.1.3 repairs, and one answer new in this map, are ruled as holding (R1-071 to R1-075). Each is read against the successor's own evidence file, by new versions of the rulings gate, the quote check and the collision list, while the versions that ruled the first 70 rows stay unchanged. Three passages go to the next safety queue, with the bridge's place name dropped. The Adversarial Map's page now carries its own tab icon. The flagship is still v4.1.5. Canon v38.47.
+
 ## The successor map's corrections accepted — 2026-09-26 (no release; the pin stands)
 
 The same judging session read the 18 corrections. All are accepted. In sixteen, the objection now speaks to the library's text as it reads today; the correction session changed nothing else in them. One objection now states the passage it answers correctly. Another now presses the passage's real weakness: it explains away the wish to live as bias, which the library forbids elsewhere. The check of nearby problems is now part of every build, and it found 12 answers to look at, not the 9 the judging session first counted; all 12 still hold. The first judgment's condition for Josiah's four questions is met; his word decides them. Nothing served changed; the flagship is still v4.1.5. Canon v38.46.

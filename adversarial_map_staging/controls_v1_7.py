@@ -23,6 +23,8 @@ DRAFTS = os.path.join("r1", "L7_successor_drafts.json")
 BUILDER = "build_assembly_v1_7.py"
 CORPUS_PIN = "7b6e65e531018fecb37baf2a4fedd6d1"
 DRAFTS_PIN = "fd9267f853a5a09fe5aa3972b16fa2a7"   # the bytes build_assembly_v1_7.py pins
+RULINGS = os.path.join("r1", "R1_rulings.json")
+RULINGS_PIN = "d829437e938a8b9dded5cb8cbaa26b74"  # the bytes build_assembly_v1_7.py pins
 
 
 def md5b(b):
@@ -45,6 +47,9 @@ def scratch():
     # them from git once the file has grown.
     open(os.path.join(d, STAGE, DRAFTS), "wb").write(pinned.bytes_at(REPO, STAGE + "/r1/L7_successor_drafts.json",
                                                                     DRAFTS_PIN))
+    # L7 close: the same for R1_rulings.json, which grows from R1-071 (a rehearsal with four rows appended turned A0
+    # RED: the scratch copy has no git history to read the pinned bytes back from).
+    open(os.path.join(d, STAGE, RULINGS), "wb").write(pinned.bytes_at(REPO, STAGE + "/r1/R1_rulings.json", RULINGS_PIN))
     return d
 
 

@@ -1,0 +1,265 @@
+{
+  "artifact": "R1_evidence_L7_addendum.json",
+  "state": "EVIDENCE, not a ruling. Rulings live in R1_rulings.json; a row naming this file's md5 is read against the map and corpus pinned here.",
+  "extends": {
+    "file": "adversarial_map_staging/r1/R1_evidence_2026-09-19.json",
+    "md5": "719b5ddb27680f32181a8a953c84b6c2",
+    "why_not_edited": "its builder rewrites its ruling slots (the K351 defect), and R1's rows pin it"
+  },
+  "inputs": {
+    "map": {
+      "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+      "md5": "691930ab76908a85a6850bdb714d3827"
+    },
+    "corpus": {
+      "file": "efilist_argument_library_v4_0_0.json",
+      "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+    },
+    "drafts": {
+      "file": "adversarial_map_staging/r1/L7_successor_drafts.json",
+      "md5": "370e7d02457314e10d6211f95d5ae8c0"
+    },
+    "judgment_round_one": {
+      "file": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+      "md5": "bd3b4e89f25e7f874f5aa553b998fe0d"
+    },
+    "judgment_round_two": {
+      "file": "adversarial_map_staging/r1/L7_successor_redrafts_judgments.json",
+      "md5": "8f2ee5e4bdeb51899f5143a7779afc1a"
+    }
+  },
+  "conditions_U2_023": [
+    "the addendum pins its own map and corpus (v1_8, 7b6e65e5), not R1's (v1_3, 04bf6482)",
+    "the new collision list reads these entries against v1_8: r1_collision_list_l7.py"
+  ],
+  "generated": "2026-09-26 (America/Phoenix), L7 (seat l, Code), by adversarial_map_staging/r1/build_r1_evidence_l7_addendum.py",
+  "entries": [
+    {
+      "n": 11,
+      "i": 19,
+      "target_id": "self-defeating",
+      "tier": "T5",
+      "category": "Meta-Objection",
+      "target_locus": "diagnosis",
+      "phase": "A",
+      "seat": "K222 (library)",
+      "date": "2026-07-11",
+      "adversarial_move": "At strength the charge is Parfitian, not memetic: a theory is indirectly self-defeating when acceptance frustrates its own aims. Efilism's acceptance-profile (despair, alienation among the only agents positioned to act) plausibly increases suffering, and demoralizes the civilization its realization path requires. Heliocentrism answers propagation-as-truth; it never touches aims-frustration.",
+      "move_words": 48,
+      "target_anchor": "confuses evolutionary fitness with logical validity",
+      "anchor_words": 6,
+      "anchor_found_in_locus": true,
+      "locus_words": 57,
+      "answered_by": [
+        "self-effacing-under-universalization#long",
+        "self-defeating#long"
+      ],
+      "answered_by_any_same_node": true,
+      "grounds": "(a) on the re-route; re-judged at L7. R1-013 failed the v1_3 routes: the truth/utility split never touches aims-frustration, and the long's aside conceded a dependence on the civilization the move says the view demoralizes. The Parfitian charge is answered at self-effacing-under-universalization#long, which names it: \"a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle\". If accepting the view frustrates its aims, the view is self-effacing, which bears on whether to propagate it, not on whether it is true. The means half is met at the repaired long (PD-20, v4.1.3): \"the view does not will, as its means, the act it forbids\". A re-route is an (a) like any other, and this answer lives in the routed text. Proposed HOLDS, superseding R1-013; the R1 row is written only after gate2's judgment and his word.",
+      "class": "a",
+      "R1_question": "Is the move the strongest continuation a maximally competent hostile interlocutor deploys against self-defeating#diagnosis as a reader meets it, and does self-effacing-under-universalization#long, self-defeating#long answer THAT form rather than a more repairable reading?",
+      "drafted_by": [
+        "SM-28"
+      ],
+      "judged_by": [
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-028",
+          "kind": "amend",
+          "verdict": "ACCEPT"
+        }
+      ],
+      "restates": {
+        "evidence_n": 11,
+        "evidence_md5": "719b5ddb27680f32181a8a953c84b6c2",
+        "changed_since_v1_3": [
+          "grounds",
+          "answered_by"
+        ]
+      }
+    },
+    {
+      "n": 22,
+      "i": 37,
+      "target_id": "free-will-defense",
+      "tier": "T4",
+      "category": "Genuine Philosophical",
+      "target_locus": "long",
+      "phase": "B1",
+      "seat": "K224 (library)",
+      "date": "2026-07-12",
+      "adversarial_move": "You lean on Libet to deny libertarian freedom, then condemn the parent as a gambler who could have refrained. But if determinism dissolves the child's authorship, it dissolves the parent's too; the procreative act was as unchosen as the existence it imposes. You cannot spend hard determinism to strip the child's agency while banking robust responsibility for the parent.",
+      "move_words": 59,
+      "target_anchor": "Free will does not mitigate the proxy gamble",
+      "anchor_words": 8,
+      "anchor_found_in_locus": true,
+      "locus_words": 295,
+      "answered_by": [
+        "free-will-defense#long"
+      ],
+      "answered_by_any_same_node": true,
+      "grounds": "(a) on the repaired text; re-judged at L7 (PD-10, v4.1.3; gate2 X-010). R1-042 failed the v1_3 route, and L4 made this a (b) at the long, whose second level dismissed compatibilism on a reason that reached the parent's desires as fully as anyone's. PD-10 is that (b)'s own repair: compatibilism now \"salvages a real freedom\", not the one the theodicy needs, because \"a God who designed those desires still stands behind what they produce\", and it is \"exactly the freedom a prospective parent exercises\". The asymmetry is principled: an agent designed the desires the theodicy is about, and no agent designed the parent's (X-010). So the node no longer spends determinism on the child while banking responsibility for the parent. Proposed HOLDS, superseding R1-042, with the route moved to the node's own long; the R1 row is written only after gate2's judgment and his word.",
+      "class": "a",
+      "R1_question": "Is the move the strongest continuation a maximally competent hostile interlocutor deploys against free-will-defense#long as a reader meets it, and does free-will-defense#long answer THAT form rather than a more repairable reading?",
+      "drafted_by": [
+        "SM-42"
+      ],
+      "judged_by": [
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-042",
+          "kind": "amend",
+          "verdict": "ACCEPT"
+        }
+      ],
+      "restates": {
+        "evidence_n": 22,
+        "evidence_md5": "719b5ddb27680f32181a8a953c84b6c2",
+        "changed_since_v1_3": [
+          "grounds",
+          "answered_by"
+        ]
+      }
+    },
+    {
+      "n": 32,
+      "i": 53,
+      "target_id": "antinatalism-misanthropic",
+      "tier": "T1",
+      "category": "Emotional/Reflexive",
+      "target_locus": "archetypeVariants.defender",
+      "phase": "F",
+      "seat": "wuld.ink Cowork, K347 (library seat)",
+      "date": "2026-09-17",
+      "adversarial_move": "Nobody said it was. The claim is that observed adherent contempt is evidence about what the position expresses and whom it attracts, which bears on adopting and promoting it rather than on its truth. Answering a non-truth-functional charge with a truth-functional cut leaves it standing.",
+      "move_words": 45,
+      "target_anchor": "its truth-value is not a function of the speaker's warmth",
+      "anchor_words": 10,
+      "anchor_found_in_locus": true,
+      "locus_words": 268,
+      "answered_by": [
+        "antinatalism-misanthropic#long"
+      ],
+      "answered_by_any_same_node": true,
+      "grounds": "(a) on the repaired text; re-judged at L7. R1-036 failed it on the v4.1.0 text because the answer rested on the building analogy, which the map's (b) at the long said answers only the motivational form. PD-04 (v4.1.3) added the content-level reading that (b) asked for, \"the difference lies in the verdict itself, not only in the warmth of whoever delivers it\": the verdict is conditional on the suffering creation imposes and would lapse with it. That meets the expressive half of this move, since what a position expresses is read off its verdict and adherent temperament does not change the verdict's condition. The promotion half is met in the same locus by the censorship-reversal paragraph: suppression on projected harm \"IS the structural pattern of disregard-for-actually-existing-beings\" the charge alleges. The (d) now at the long records the ranking charge, which this move does not press. Proposed HOLDS, superseding R1-036; the R1 row is written only after gate2's judgment and his word.",
+      "class": "a",
+      "R1_question": "Is the move the strongest continuation a maximally competent hostile interlocutor deploys against antinatalism-misanthropic#archetypeVariants.defender as a reader meets it, and does antinatalism-misanthropic#long answer THAT form rather than a more repairable reading?",
+      "drafted_by": [
+        "SM-05"
+      ],
+      "judged_by": [
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-005",
+          "kind": "amend",
+          "verdict": "ACCEPT"
+        }
+      ],
+      "restates": {
+        "evidence_n": 32,
+        "evidence_md5": "719b5ddb27680f32181a8a953c84b6c2",
+        "changed_since_v1_3": [
+          "grounds"
+        ]
+      }
+    },
+    {
+      "n": 50,
+      "i": 84,
+      "target_id": "bitter-childhood",
+      "tier": "T1",
+      "category": "Emotional/Reflexive",
+      "target_locus": "long",
+      "phase": "E",
+      "seat": "wuld-ink Cowork (K334)",
+      "date": "2026-09-16",
+      "adversarial_move": "You spent four paragraphs holding that biography cannot invalidate a philosophy, then offered your biography as evidence for one. If etiology is inert, it is inert in both directions. Either withdraw the closing move or concede that biographical facts bear on the question after all, and let mine bear too.",
+      "move_words": 50,
+      "target_anchor": "even if my childhood WAS the catalyst for this philosophy",
+      "anchor_words": 10,
+      "anchor_found_in_locus": true,
+      "locus_words": 300,
+      "answered_by": [
+        "bitter-childhood#medium"
+      ],
+      "answered_by_any_same_node": true,
+      "grounds": "(a) on the repaired text; re-judged at L7. R1-068 failed it on the v4.1.0 text: the move holds the node to its own rule, and the long's closing and the medium's ending then spent the biography as evidence. PD-07 and PC-01 (v4.1.3) withdrew both: the long now closes \"It is an irony, not a proof: how I came to the argument settles nothing about it, in my favor any more than against me\", and the medium, the routed locus, ends \"because the path to a belief bears on its truth in neither direction\". That is the move's own first branch, taken. The node's defender slot still claims clearer sight for the wounded arguer; that is the (b) filed there (PF-03), and this answer does not rest on it. Proposed HOLDS, superseding R1-068; the R1 row is written only after gate2's judgment and his word.",
+      "class": "a",
+      "R1_question": "Is the move the strongest continuation a maximally competent hostile interlocutor deploys against bitter-childhood#long as a reader meets it, and does bitter-childhood#medium answer THAT form rather than a more repairable reading?",
+      "drafted_by": [
+        "SM-35"
+      ],
+      "judged_by": [
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-035",
+          "kind": "amend",
+          "verdict": "ACCEPT"
+        }
+      ],
+      "restates": {
+        "evidence_n": 50,
+        "evidence_md5": "719b5ddb27680f32181a8a953c84b6c2",
+        "changed_since_v1_3": [
+          "grounds"
+        ]
+      }
+    },
+    {
+      "n": 70,
+      "i": 20,
+      "target_id": "self-defeating",
+      "tier": "T5",
+      "category": "Meta-Objection",
+      "target_locus": "long",
+      "phase": "A",
+      "seat": "K222 (library)",
+      "date": "2026-07-11",
+      "adversarial_move": "Your path owes its agents to the births you forbid, as you concede. Then the view's aim is reachable only while the view fails to persuade: universal adoption could leave no one in time to build the capacity. A view that needs its own non-adoption to succeed is indirectly self-defeating, and that, not propagation, is the charge.",
+      "move_words": 57,
+      "target_anchor": "whatever that path owes to the births others choose",
+      "anchor_words": 9,
+      "anchor_found_in_locus": true,
+      "locus_words": 239,
+      "answered_by": [
+        "self-effacing-under-universalization#long"
+      ],
+      "answered_by_any_same_node": false,
+      "grounds": "(a). self-effacing-under-universalization#long meets it on the best reading: \"a self-effacing principle is not thereby self-defeating; its practical fate among its holders is a fact about holders, not a defect in the principle\". A view whose aim is better served if not everyone holds it is self-effacing, Parfit's case, and that bears on its propagation, not on its truth, which is what this node defends. Re-adjudicated at L7 (PD-20, v4.1.3; gate2 X-003): the prior (b)'s means-inconsistency is discharged, since the repaired text says \"the view does not will, as its means, the act it forbids\"; the dependence it leaves conceded is the strongest continuation, and it is answered at the routed locus. The (d) at that locus concerns its success-condition sentence, which this answer does not use.",
+      "class": "a",
+      "R1_question": "Is the move the strongest continuation a maximally competent hostile interlocutor deploys against self-defeating#long as a reader meets it, and does self-effacing-under-universalization#long answer THAT form rather than a more repairable reading?",
+      "drafted_by": [
+        "SM-27",
+        "SM-61"
+      ],
+      "judged_by": [
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-027",
+          "kind": "amend",
+          "verdict": "AMEND"
+        },
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_drafts_judgments.json",
+          "row": "U-065",
+          "kind": "finding",
+          "verdict": null
+        },
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_redrafts_judgments.json",
+          "row": "U2-010",
+          "kind": "redraft",
+          "verdict": "ACCEPT"
+        },
+        {
+          "record": "adversarial_map_staging/r1/L7_successor_redrafts_judgments.json",
+          "row": "U2-023",
+          "kind": "route",
+          "verdict": "CONFIRM"
+        }
+      ],
+      "restates": null,
+      "new_in": "the successor map: a (b) in v1_3, re-adjudicated to (a) at L7 (SM-27, SM-61), after the v4.1.3 cut discharged the means-inconsistency"
+    }
+  ]
+}
