@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.50",
+  "canon_version": "38.51",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V2b",
+  "last_updated_by_session": "V3b",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V2b drafted the two redrafts gate2's V3 judgment owed (SJ-003's statement, SJ-008's route) in a new file, and recorded his words on R0298 and R0308. Next, in order: (1) gate2 round two judges the two redrafts only (argument_shapes/shapes_redrafts_v0_1.json and its record), drafter != judge, then his word; (2) the responseVariants design (R0294); (3) the relief variant, drafted from relief_view_for_the_variant and judged by a seat that drafted none of it; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks and heroism now; the golden rule and soul-making once round two accepts them); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
+    "session": "The pin is v4.1.5. V3b (gate2) judged V2b's two redrafts: soul-making ACCEPT as (d) at HR-02; the golden rule AMEND (Hare's total stated as a limit on the duty, with his halt and the held distribution; Hare 1975 added). Next, in order: (1) his word on the three asks in adversarial_map.shapes_redrafts_judgment_gate2.asks; (2) the responseVariants design (R0294), in whose seat-l session, on his word, the golden rule's third redraft is drafted in a new file (shapes_redrafts_v0_2.json), judged in gate2's next round; (3) the relief variant, drafted from relief_view_for_the_variant and judged by a seat that drafted none of it; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once round three accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1903,6 +1903,11 @@
         "record_notes_V2b"
       ],
       "canon_writer_next": "gate2 (round two), then seat l"
+    },
+    "V3b_closed": {
+      "state": "JUDGED, NOT RULED",
+      "block": "shapes_redrafts_judgment_gate2",
+      "canon_writer_next": "seat l"
     }
   },
   "open_questions": {
@@ -2034,7 +2039,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.50",
+  "canon_version_marker": "v38.51",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2744,7 +2749,8 @@
     "v38_47_L7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains successor_rulings_L7, successor_map_stands_L7, safety_queue_L7, U_065_route_BUILT_L7, adversarial_tab_icon_L7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: site/adversarial/index.html (the tab icon), no pin.",
     "v38_48_V2": "MINOR. keyset UNCHANGED at 42. adversarial_map gains vault_v2_rulings_R0274, his_words_L8, relief_view_for_the_variant, love_from_the_void_intake_V2, r_v6_candidates_V2, pin_queue_additions_R0292, shapes_pilot_V2, record_notes_V2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_49_V3": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_pilot_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
-    "v38_50_V2b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V2b, r_v6_adopted_V2b, private_statements_V2, shapes_redrafts_V2b, record_notes_V2b; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_50_V2b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V2b, r_v6_adopted_V2b, private_statements_V2, shapes_redrafts_V2b, record_notes_V2b; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_51_V3b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_redrafts_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -3004,7 +3010,8 @@
     "L7 (2026-09-26/27), close: his word on R0244; R1-071..R1-075 (HOLDS for #11, #22, #32, #50 and n=70, the (a) at self-defeating#long) through the evidence addendum, read by r1_rulings_gate_v0_2, r1_quote_check_v0_2 and r1_collision_list_l7; the successor map v1_8 stands; the /adversarial/ tab icon wired. No pin.",
     "V2 (2026-10-03): his words owed since R0274 recorded verbatim from the user turns (R0274's six V2 rulings; R0292; R0294; R0295; R0296's pointer to love-from-the-void, now the post-pilot intake's first item); the argument-shapes pilot drafted on the six R-V4 nodes, validator PASS 0, for gate2 (V3). No pin.",
     "V3 (gate2, 2026-10-03): the argument-shapes pilot judged (R0297): 5 ACCEPT, 2 AMEND, 3 REJECT. Three shapes were other nodes' scholar objections (gods-plan, extinction-culture, love-beauty-art); soul-making is (d) at HR-02, not (a); the golden rule owes Hare's weighed duty. One (a) remains, for V4. No pin.",
-    "V2b (seat l, 2026-10-03): his words on R0298 and R0308 recorded verbatim from the user turns; his private statements by md5 only; R0288 F5's four candidates adopted into the R-V6 batch; gate2's two AMENDs redrafted in a new file (the golden rule restates Hare's weighed duty; soul-making carried as (d) at HR-02), validator PASS 0, for gate2's round two. No pin."
+    "V2b (seat l, 2026-10-03): his words on R0298 and R0308 recorded verbatim from the user turns; his private statements by md5 only; R0288 F5's four candidates adopted into the R-V6 batch; gate2's two AMENDs redrafted in a new file (the golden rule restates Hare's weighed duty; soul-making carried as (d) at HR-02), validator PASS 0, for gate2's round two. No pin.",
+    "V3b (gate2, 2026-10-04): V2b's two redrafts judged (R0311): soul-making ACCEPT as (d) at HR-02; the golden rule AMEND, because its total is stated as the duty's trigger, which his L3 reading meets at joy-outweighs-harms, and without Hare's halt; Hare 1975 to be added to its attestation. Round one's Hare source read corrected forward. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -11927,7 +11934,249 @@
           "was": "4c531b9d93f48b3aefe93196ce04046f"
         }
       }
-    ]
+    ],
+    "shapes_redrafts_judgment_gate2": {
+      "state": "JUDGED, NOT RULED (V3b, gate2, 2026-10-04). His word decides; nothing ships on a judgment.",
+      "K258": "gate2 drafted none of the redrafts, their record, their builder, the his-words extractor or canon v38.50.",
+      "kickoff": {
+        "relay": "R0311",
+        "md5": "95ae9542298d5162efb407780e82d2ff"
+      },
+      "files": {
+        "record": {
+          "file": "argument_shapes/shapes_redrafts_judgments.json",
+          "md5": "6f4974966c23920234f495cb20813d4c",
+          "bytes": 27334
+        },
+        "gate": {
+          "file": "argument_shapes/shapes_redrafts_judgments_gate.py",
+          "md5": "950c715c4b7ba35b6db8715600df8832",
+          "bytes": 24657
+        },
+        "control": {
+          "file": "argument_shapes/shapes_redrafts_judgments_gate_control_v0_1.json",
+          "md5": "a66790d45a73a1698584d230877ac0ed",
+          "bytes": 2616
+        }
+      },
+      "judged": {
+        "redrafts": {
+          "file": "argument_shapes/shapes_redrafts_v0_1.json",
+          "md5": "fc28cd12265e2712a9d610bbb2c1b69f"
+        },
+        "redrafts_record": {
+          "file": "argument_shapes/shapes_redrafts_record_v0_1.json",
+          "md5": "ace5fb88886f7f7ce49a90658b590954"
+        },
+        "redrafts_builder": {
+          "file": "argument_shapes/build_shapes_redrafts.py",
+          "md5": "ee38e0ad8d83cb95539d40af7931fdc9"
+        },
+        "pilot": {
+          "file": "argument_shapes/shapes_pilot_v0_1.json",
+          "md5": "1f9c5da6166b538a90efa6dc7598124e"
+        },
+        "judgments": {
+          "file": "argument_shapes/shapes_pilot_judgments.json",
+          "md5": "73503bccdd3ddf8b3a82f280181251d4"
+        },
+        "judgments_gate": {
+          "file": "argument_shapes/shapes_judgments_gate.py",
+          "md5": "f56df1e7fdaa82bf3c0f1a11e9622837"
+        },
+        "validator": {
+          "file": "argument_shapes/shape_validator_v0_1.py",
+          "md5": "64553b25b6db0ff67edeb87b89178297"
+        },
+        "schema": {
+          "file": "argument_shapes/argument_shapes_schema_v0_1.json",
+          "md5": "bef95b1dc2b9cb109760cd961d2da72b"
+        },
+        "corpus": {
+          "file": "efilist_argument_library_v4_0_0.json",
+          "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+        },
+        "map_v1_8": {
+          "file": "adversarial_map_staging/adversarial_map_v1_8.json",
+          "md5": "691930ab76908a85a6850bdb714d3827"
+        },
+        "register_v0_9": {
+          "file": "adversarial_map_staging/honest_residuals_register_v0_9.json",
+          "md5": "8e53d920099e8b850baa2879dfd3e351"
+        },
+        "canon": {
+          "file": "project_canon_v38_50.json",
+          "md5": "98302afdf29af8ed3149111843d717ab"
+        },
+        "scholar": {
+          "repo": "~/D/Argue the Argument",
+          "commit": "76cbbd13ef967617b181697675bd15dbbf0a6a0b",
+          "file": "data/flagship/scholar-objections_v1_1.json",
+          "md5": "20999eb9b1b384d0f871a9deec464b2a"
+        }
+      },
+      "counts": {
+        "redrafts": {
+          "ACCEPT": 1,
+          "AMEND": 1
+        },
+        "rows": 11
+      },
+      "verdicts": {
+        "life-gift/the-golden-rule-passes-it-on": {
+          "row": "RJ-001",
+          "redraft": "RD-01",
+          "answers": "SJ-003",
+          "verdict": "AMEND",
+          "class_drafted": "d",
+          "class_judged": "d",
+          "route": {
+            "via": "joy-outweighs-harms#long",
+            "bedrock": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            }
+          },
+          "reason": "The redraft fixes what SJ-003 owed and opens a smaller gap: the total is stated as the duty's trigger, without Hare's halt. AMEND the statement and the attestation; class and route unchanged."
+        },
+        "free-will-defense/a-vale-of-soul-making": {
+          "row": "RJ-002",
+          "redraft": "RD-02",
+          "answers": "SJ-008",
+          "verdict": "ACCEPT",
+          "class_drafted": "d",
+          "class_judged": "d",
+          "route": {
+            "via": "suffering-makes-human#long",
+            "bedrock": {
+              "bedrock_id": "HR-02",
+              "name": "Asymmetry-contingency of the positive-states cluster",
+              "facet": "merely-possible-beneficiary"
+            }
+          },
+          "reason": "The route SJ-008 owed, carried exactly; the statement stands. ACCEPT as (d)."
+        }
+      },
+      "scheme": {
+        "row": "RJ-003",
+        "verdict": "CONFIRM",
+        "finding": "The scheme holds. Recomputed with the pinned validator, not the builder: the redrafts alone PASS (2 shapes); the pilot with the two replaced PASS (10); the seven his word kept PASS (7, on 5 nodes); and the pilot and the redrafts loaded together FAIL on shape-id, with shape-coverage failing as its knock-on, as the record says they should. Each redraft differs from the pilot's shape only in the fields the record names.",
+        "validator_runs": {
+          "redrafts_alone": {
+            "verdict": "PASS",
+            "violation_count": 0,
+            "shapes": 2,
+            "nodes_with_shapes": 2
+          },
+          "superseded_view": {
+            "verdict": "PASS",
+            "violation_count": 0,
+            "shapes": 10,
+            "nodes_with_shapes": 6
+          },
+          "ruled_view": {
+            "verdict": "PASS",
+            "violation_count": 0,
+            "shapes": 7,
+            "nodes_with_shapes": 5
+          },
+          "pilot_and_redrafts_together": {
+            "verdict": "FAIL",
+            "violation_count": 3,
+            "shapes": 12,
+            "nodes_with_shapes": 6,
+            "failed": [
+              "shape-coverage",
+              "shape-id"
+            ]
+          },
+          "record_runs_match": true
+        }
+      },
+      "sources": {
+        "row": "RJ-004",
+        "verdict": "CONFIRM",
+        "finding": "Fetched again this session and every excerpt the record gives is verbatim there: Crossref for the article (Bioethics 2(4), October 1988, pp. 279-293, no abstract), for its reprint (chapter 5 of Essays on Bioethics, pp. 67-83, whose abstract is the chapter's opening) and for the collection; the SEP entry, whitespace normalized; MEDLINE 11651921 and 15148950, read through NCBI's E-utilities because the PubMed page served a browser check. The SEP's bibliography was read too: its 1988b and 1988c are When does Potentiality Count? and A Kantian Approach to Abortion, so the record is right that the SEP does not cite this article. The full text stayed unread; the reprint of the 1975 paper (Crossref, chapter 10) has an opening that does not reach the golden-rule step.",
+        "checked": [
+          "https://api.crossref.org/works/10.1111/j.1467-8519.1988.tb00055.x",
+          "https://api.crossref.org/works/10.1093/oso/9780198239833.003.0005",
+          "https://pubmed.ncbi.nlm.nih.gov/11651921/ (read through https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11651921)",
+          "https://plato.stanford.edu/entries/hare/",
+          "https://api.crossref.org/works/10.1093/oso/9780198239833.001.0001",
+          "https://pubmed.ncbi.nlm.nih.gov/15148950/ (read through https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=15148950)",
+          "https://api.crossref.org/works/10.1093/oso/9780198239833.003.0010"
+        ]
+      },
+      "pulls": {
+        "RJ-005": {
+          "pull": "'interests' for SJ-003's 'preferences'",
+          "verdict": "CONFIRM",
+          "answer": "Keep 'interests'. It is the word of the article's opening (\"the interests of that possible person have to be con sidered\") and of the indexer's abstract; 'preferences' in SJ-003's owed line was the SEP's (\"total satisfaction of preference\"). In Hare's theory they name one thing."
+        },
+        "RJ-006": {
+          "pull": "the indexer's two conditions omitted for the word band",
+          "verdict": "CORRECT",
+          "answer": "The omission understates Hare. The two clauses are his halt and the held distribution (RJ-001); without them the bound reads as the trigger of the bare total view, which the library meets (\"devastating against Total utilitarianism, which must weigh aggregate welfare across populations\"). Owed in RJ-001; the band has room once the bound is stated as a limit."
+        },
+        "RJ-007": {
+          "pull": "the attestation left at Hare 1988",
+          "verdict": "CORRECT",
+          "answer": "Add Hare 1975. The statement opens with the golden-rule step. In the records read in both rounds that step is cited to 1975, 1988b and 1988c (the SEP) and to Hare in general (Chan 2004), never to Possible People itself, whose records attest the weighing and the policy. A card should cite where its first premise is made. Owed in RJ-001."
+        }
+      },
+      "note": {
+        "row": "RJ-008",
+        "on": "record_notes_V2b, third note (the pilot's attestation note for Hare 1988)",
+        "verdict": "CONFIRM",
+        "finding": "Measured: the words the pilot's note gives as a summary of the article's thesis are the collection's publisher description (\"we can harm possible people by preventing them from becoming actual people\"). The note's second half, the golden rule read as doing to others what we are glad was done to us, is in none of the six records; by the SEP it is the step of the 1975 paper and its two 1988 companions (RJ-007)."
+      },
+      "round_one_corrected_forward": {
+        "row": "RJ-009",
+        "corrects": [
+          "SJ-003 (reads.source)",
+          "SJ-018 (Hare clause)"
+        ],
+        "finding": "SJ-003 read the source as \"Hare 1988 holds that a merely possible person can be harmed by being denied existence, from the golden rule\", and SJ-018 said the records \"agree on the move\". In the records both rounds read, the harm thesis is the collection's description, the weighing is the article's opening, and the golden-rule step is cited to other papers. The move is Hare's; this article alone is not shown to make all of it. The first record stays as written, append-only; this row is the correction."
+      },
+      "safety": {
+        "row": "RJ-010",
+        "verdict": "CONFIRM"
+      },
+      "owed_to_seat_l": [
+        {
+          "row": "RJ-001",
+          "shape_id": "life-gift/the-golden-rule-passes-it-on",
+          "owed": [
+            "Seat l states Hare's bound as his records state it, in a new row or file: the total as a limit on the duty (so long as the total grows), the shares held as they are, and the halt before the worst-off fall below a life just worth living. The duty's ground stays the possible person's own good. 30-70 words. Class and route unchanged.",
+            "Add Hare 1975 to attested_by: R. M. Hare, Abortion and the Golden Rule, Philosophy and Public Affairs 4, 1975, pp. 201-222 (the SEP's bibliography; reprinted as chapter 10 of Essays on Bioethics, 1993, pp. 147-167, by Crossref)."
+          ]
+        }
+      ],
+      "asks": [
+        {
+          "ask": "Adopt the round-two judgment: soul-making ACCEPT as (d); the golden rule AMEND (Hare's total as a limit, with his halt and the held distribution; add Hare 1975).",
+          "lean": "adopt; both verdicts read from text at pinned bytes, and the AMEND rests on his own L3 reading"
+        },
+        {
+          "ask": "Soul-making joins many-peaks and heroism as the (d)s for the map at the successor map's next validator bump.",
+          "lean": "yes; his word on R0308 already sent it there once judged"
+        },
+        {
+          "ask": "The golden rule's third round: seat l redrafts it in its next session, and gate2 judges it in its next round, instead of a launch pair for one statement.",
+          "lean": "fold it in; the (d)s wait for the successor map's bump anyway, so nothing is held up"
+        }
+      ],
+      "order": "His word; seat l redrafts the golden rule in a new file (shapes_redrafts_v0_2.json) in its next session; gate2 judges it; the (d)s go to the map at the successor map's bump; V4 after the successor map's pin. Canon passes back to seat l.",
+      "collision_list_record_moved": {
+        "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+        "md5": "b5810a39e4c50e6b5ee121418aaab313",
+        "bytes": 9618,
+        "was": "930e71278e09585097fe7a873871ef9c",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_50 to v38_51); regenerated by the tool's own --write"
+      },
+      "not_moved": "the redrafts, their record and builder, the pilot, gate2's round-one record, gate and reading, the validator and its control, the schema; no corpus or served byte"
+    }
   },
   "flagship_sidecars": {
     "block_kind": "flagship_sidecars",
