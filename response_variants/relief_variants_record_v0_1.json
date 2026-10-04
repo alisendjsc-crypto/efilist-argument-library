@@ -1,0 +1,748 @@
+{
+ "what": "the relief variant pilot: one relief-account variant on each of the seven pleasure-fork nodes (RV-7), drafted by seat l (V7) from canon's relief_view_for_the_variant; R0319",
+ "state": "DRAFTED, NOT JUDGED. gate2 judges it in its next round with RD-03 (R0317), drafter != judge (K258); his word decides; the render waits for a declared pin, drawn by the design lane (RV-4); the game leaves it out (RV-5).",
+ "authority": {
+  "rulings": "adversarial_map.response_variants_rulings_V6 (RV-1..RV-8 adopted as leaned)",
+  "his_word": "Proceed with your recommendations on all of the above.",
+  "turn_md5": "4dace677153a5e04d76bd77caa032ca1",
+  "kickoff": "R0319 (V6 -> l), md5 bc1272c9aa8e2e5e82492673fdd7e94b"
+ },
+ "pins": {
+  "staging": {
+   "file": "response_variants/relief_variants_pilot_v0_1.json",
+   "md5": "1d5e8f1c65a387da495dba91edbee9e8",
+   "bytes": 23704
+  },
+  "corpus": {
+   "file": "efilist_argument_library_v4_0_0.json",
+   "md5": "7b6e65e531018fecb37baf2a4fedd6d1"
+  },
+  "canon": {
+   "file": "project_canon_v38_53.json",
+   "md5": "4bc14ae1a5fc6103df820900642f9728"
+  },
+  "measurement": {
+   "file": "design/variations/measure_response_variants_v0_1.json",
+   "md5": "cbae330fe2106d79d572de8e20ac8459"
+  },
+  "design": {
+   "file": "design/variations/RESPONSE_VARIANTS_design_v0_1.md",
+   "md5": "1c4be4d36addc95a757b43f57c489b7e"
+  },
+  "schema": {
+   "file": "response_variants/response_variants_schema_v0_1.json",
+   "md5": "169c15b30f3fcc578689daa257d5b41f"
+  },
+  "validator": {
+   "file": "response_variants/response_variant_validator_v0_1.py",
+   "md5": "30cb7f3bc4f9e81b0ff5c85ecfaacdf3"
+  },
+  "control": {
+   "file": "response_variants/response_variant_validator_control_v0_1.json",
+   "md5": "44a77cc75a062fb6e4bac7b47aaec421"
+  }
+ },
+ "label_rendered_by_the_page": "Another answer, not the library's chosen line: the author's relief account",
+ "words": {
+  "band": [
+   120,
+   300
+  ],
+  "per_variant": {
+   "life-gift/relief-account": 293,
+   "joy-outweighs-harms/relief-account": 290,
+   "love-beauty-art/relief-account": 282,
+   "masochist-counterexample/relief-account": 268,
+   "bradley-no-subject/relief-account": 286,
+   "hedonic-contrast/relief-account": 294,
+   "neuroscience-positive-states/relief-account": 296
+  },
+  "min": 268,
+  "max": 296,
+  "total": 2009
+ },
+ "variants": [
+  {
+   "variant_id": "life-gift/relief-account",
+   "tier": 1,
+   "anchor": "the positives are therefore illusory, is one this corpus refuses on pain of incoherence",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.life-gift.anchor",
+   "razor_node": true,
+   "text_words": 293,
+   "text_md5": "ffb5989d11bda91476770e4e925afdcd",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "99% of people will not experience pleasure in such a circumstance.",
+     "account": 8,
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14",
+     "offset": 929,
+     "words": 11
+    },
+    {
+     "in": "text",
+     "quote": "a transition from a known bad state to a state that is at least not bad",
+     "account": 4,
+     "turn_md5": "61cea7813b9998589cd38f63deff7ed5",
+     "offset": 570,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "0 sum game",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 204,
+     "words": 3
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 65,
+   "library_concession_rests_on": [
+    "It licenses discounting the rosy ledger; it does not license calling the gratitude false."
+   ]
+  },
+  {
+   "variant_id": "joy-outweighs-harms/relief-account",
+   "tier": 2,
+   "anchor": "it does not require the false claim that all pleasure is relief",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.joy-outweighs-harms.anchor",
+   "razor_node": false,
+   "text_words": 290,
+   "text_md5": "b4c9b164e4d2009ddac8e3bb2a21aff7",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "We were not designed to be satisfied, but motivated",
+     "account": 3,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 262,
+     "words": 9
+    },
+    {
+     "in": "text",
+     "quote": "0 sum game",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 204,
+     "words": 3
+    },
+    {
+     "in": "text",
+     "quote": "How much suffering is reduced? That's what matters to me primarily in most cases, almost entirely.",
+     "account": 2,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 37,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "The library is not meant to be an absolute mirror of my personal beliefs, necessarily.",
+     "account": 1,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 0,
+     "words": 15
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 78,
+   "library_concession_rests_on": [
+    "the apparent surplus is partly inflated by entries that are returns to baseline"
+   ]
+  },
+  {
+   "variant_id": "love-beauty-art/relief-account",
+   "tier": 2,
+   "anchor": "Beauty is a real good, not demoted by having a neural substrate",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.love-beauty-art.anchor",
+   "razor_node": false,
+   "text_words": 282,
+   "text_md5": "9d0b1826e469cff75eb34f62ecd15508",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "When you've gone without personal connection for days, you can get lonely.",
+     "account": 3,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 888,
+     "words": 12
+    },
+    {
+     "in": "text",
+     "quote": "A purely neutral state wouldn't want or long for anything.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 226,
+     "words": 10
+    },
+    {
+     "in": "text",
+     "quote": "If you could show an example of a human being in a default state of happiness or love or joy or satiety, then you would convince me more on the argument, but I don't see that existing anywhere practically speaking.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 498,
+     "words": 40
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 97,
+   "library_concession_rests_on": [
+    "these goods are bounded. Love ends in loss, beauty fades",
+    "A finite good is still a good."
+   ]
+  },
+  {
+   "variant_id": "masochist-counterexample/relief-account",
+   "tier": 2,
+   "anchor": "has a genuine appetitive, arousal-driven component; it is not reducible to escape",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.masochist-counterexample.anchor",
+   "razor_node": false,
+   "text_words": 268,
+   "text_md5": "2c035de87b52b226e8eae6da0dbfe409",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "When you sit long enough, you get uncomfortable and need to move.",
+     "account": 3,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 752,
+     "words": 12
+    },
+    {
+     "in": "text",
+     "quote": "where are the exceptions that do not fall under the deficit to relief equation?",
+     "account": 8,
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14",
+     "offset": 376,
+     "words": 14
+    },
+    {
+     "in": "text",
+     "quote": "I believe it's doable though, just not convenient.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1217,
+     "words": 8
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 69,
+   "library_concession_rests_on": [
+    "is, on inspection, relief-from-greater-pain",
+    "The thrill-seeker is the honest exception"
+   ]
+  },
+  {
+   "variant_id": "bradley-no-subject/relief-account",
+   "tier": 4,
+   "anchor": "positive states are real and genuinely valued by those who have them",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.bradley-no-subject.anchor",
+   "razor_node": true,
+   "text_words": 286,
+   "text_md5": "bfb9b9789417185c5f6ee2c1cabf2e0e",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "a transition from a known bad state to a state that is at least not bad",
+     "account": 4,
+     "turn_md5": "61cea7813b9998589cd38f63deff7ed5",
+     "offset": 570,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "How much suffering is reduced? That's what matters to me primarily in most cases, almost entirely.",
+     "account": 2,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 37,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "it works regardless of what I believe here.",
+     "account": 7,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 114,
+     "words": 8
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 75,
+   "library_concession_rests_on": [
+    "the case rests not on denying the goods but on the structural facts of their imposition"
+   ]
+  },
+  {
+   "variant_id": "hedonic-contrast/relief-account",
+   "tier": 4,
+   "anchor": "but it would still experience positive states",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.hedonic-contrast.anchor",
+   "razor_node": false,
+   "text_words": 294,
+   "text_md5": "f95d2fb45514fb1ca681e083d77dcdc1",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "A purely neutral state wouldn't want or long for anything.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 226,
+     "words": 10
+    },
+    {
+     "in": "text",
+     "quote": "If you could show an example of a human being in a default state of happiness or love or joy or satiety, then you would convince me more on the argument, but I don't see that existing anywhere practically speaking.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 498,
+     "words": 40
+    },
+    {
+     "in": "text",
+     "quote": "does dwindle",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 813,
+     "words": 2
+    },
+    {
+     "in": "text",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    },
+    {
+     "in": "text",
+     "quote": "Does something being harder to achieve and demonstrate make it wrong or impossible? No",
+     "account": 8,
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14",
+     "offset": 1201,
+     "words": 14
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 105,
+   "library_concession_rests_on": [
+    "Humans do experience pleasure more intensely when it follows suffering, and prolonged pleasure habituates toward a neutral baseline."
+   ]
+  },
+  {
+   "variant_id": "neuroscience-positive-states/relief-account",
+   "tier": 4,
+   "anchor": "positive states are real, and they are genuinely valued by the subject who has them",
+   "anchor_from": "design/variations/measure_response_variants_v0_1.json nodes.neuroscience-positive-states.anchor",
+   "razor_node": true,
+   "text_words": 296,
+   "text_md5": "5dfee76b6ff57bdcead9590eccb0a8b1",
+   "quotes": [
+    {
+     "in": "text",
+     "quote": "Yes, neuroscience says these states exist (chemically speaking), but they don't translate as that consciously speaking.",
+     "account": 3,
+     "turn_md5": "c7692763fa1f1ac503908f079e277530",
+     "offset": 438,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "What is the state before liking? Disliking, longing, unfulfilled emotional deficit of some kind.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 0,
+     "words": 14
+    },
+    {
+     "in": "text",
+     "quote": "a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.",
+     "account": 9,
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db",
+     "offset": 102,
+     "words": 16
+    },
+    {
+     "in": "text",
+     "quote": "It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.",
+     "account": 0,
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342",
+     "offset": 253,
+     "words": 19
+    },
+    {
+     "in": "residual.concedes.account",
+     "quote": "I admit the gap.",
+     "account": 5,
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7",
+     "offset": 1117,
+     "words": 4
+    }
+   ],
+   "his_words_in_text": 65,
+   "library_concession_rests_on": [
+    "Structurally, the goods of a life are deficit-occasioned",
+    "whether it is the only motive force is a question this argument need not settle"
+   ]
+  }
+ ],
+ "residual": {
+  "canon_statement": "Where both sides stop, by his words and the seat's: whether a deficit's constant co-presence shows that every good is that deficit shrinking. Neither side claims proof; his words: \"I admit the gap\" and \"I concede that i reliability doesn't prove the point\". The variant states his view as an alternative the library chose not to rest on, never as a correction, and registers the disagreement as open.",
+  "clause_copied": "whether a deficit's constant co-presence shows that every good is that deficit shrinking",
+  "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+  "account_concedes": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\"",
+  "status": "open"
+ },
+ "builder_checks": {
+  "quote-exact": "GREEN, 7 variants",
+  "sources-used": "GREEN, 7 variants",
+  "strength-and-reason": "GREEN, 7 variants",
+  "residual-copied": "GREEN, 7 variants",
+  "attribution-by-role": "GREEN, 7 variants",
+  "no-name": "GREEN, 7 variants",
+  "no-label": "GREEN, 7 variants",
+  "apostrophes": "GREEN, 7 variants",
+  "berridge-scope": "GREEN, 7 variants",
+  "concessions-sourced": "GREEN, 7 variants"
+ },
+ "controls": [
+  {
+   "case": "C0",
+   "mutation": "the unmutated draft",
+   "expect_red": [],
+   "red": [],
+   "ok": true
+  },
+  {
+   "case": "C1",
+   "mutation": "a quoted span changed by one character",
+   "expect_red": [
+    "quote-exact"
+   ],
+   "red": [
+    "quote-exact"
+   ],
+   "ok": true
+  },
+  {
+   "case": "C2",
+   "mutation": "an account named but never quoted",
+   "expect_red": [
+    "sources-used"
+   ],
+   "red": [
+    "sources-used"
+   ],
+   "ok": true
+  },
+  {
+   "case": "C3",
+   "mutation": "one text drafted without his strength (and without account [9])",
+   "expect_red": [
+    "strength-and-reason"
+   ],
+   "red": [
+    "strength-and-reason"
+   ],
+   "ok": true
+  },
+  {
+   "case": "C4",
+   "mutation": "a name in one text",
+   "expect_red": [
+    "no-name"
+   ],
+   "red": [
+    "no-name"
+   ],
+   "ok": true
+  },
+  {
+   "case": "C5",
+   "mutation": "Berridge cited on a node the check does not allow",
+   "expect_red": [
+    "berridge-scope"
+   ],
+   "red": [
+    "berridge-scope"
+   ],
+   "ok": true
+  }
+ ],
+ "validator_run": {
+  "rc": 0,
+  "verdict": "PASS",
+  "violation_count": 0,
+  "variants": 7,
+  "nodes_with_variants": 7,
+  "checks": [
+   "container-shape (1 ok / 0 fail)",
+   "meta-corpus-pin (1 ok / 0 fail)",
+   "meta-canon-pin (1 ok / 0 fail)",
+   "variant-keys (7 ok / 0 fail)",
+   "variant-id (7 ok / 0 fail)",
+   "type-closed (7 ok / 0 fail)",
+   "variant-cap (7 ok / 0 fail)",
+   "varies-locus (7 ok / 0 fail)",
+   "anchor-rule (7 ok / 0 fail)",
+   "text-band (7 ok / 0 fail)",
+   "text-ascii (7 ok / 0 fail)",
+   "residual (7 ok / 0 fail)",
+   "floor-no-win (7 ok / 0 fail)",
+   "floor-exit (7 ok / 0 fail)",
+   "floor-wide (7 ok / 0 fail)",
+   "floor-pro-life (7 ok / 0 fail)",
+   "account-sources (7 ok / 0 fail)",
+   "provenance (7 ok / 0 fail)",
+   "variant-coverage (1 ok / 0 fail)"
+  ],
+  "failed": []
+ },
+ "source_check": {
+  "transcripts": {
+   "L8": "87cc1d8f-fbf4-44dc-981f-9b205c311dbf.jsonl",
+   "vault_V2": "038df8e5-141f-4cb5-babe-d1c4caa5aaed.jsonl"
+  },
+  "accounts_quoted": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8,
+   9
+  ],
+  "how": "each quoted account's turn is found by the md5 of its text among the human turns of the transcript canon names, at the line canon names, and must contain the verbatim; run at every build when the transcripts are present, never by --check; the bytes here do not depend on it"
+ },
+ "berridge_check": {
+  "why": "L8 cited Berridge's liking/wanting dissociation from memory (R0292's drafting note); R0319 order 2: check the source itself before any variant leans on it, and if it cannot be checked, the variants do not use it",
+  "read": "2026-10-04, through NCBI E-utilities (esearch, then efetch in MEDLINE format), because PubMed's web page serves a browser check to curl (V3b's finding)",
+  "search": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=40&term=Berridge+KC%5BAuthor%5D+AND+%28liking%5BTitle%2FAbstract%5D+AND+wanting%5BTitle%2FAbstract%5D%29&sort=pub_date",
+  "search_count_at_read": 44,
+  "fetch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=9858756,8622814,25950633,19162544,19336238&rettype=medline&retmode=text",
+  "fetch_md5_at_read": "d05b5a784457043e3a8f20220f450562",
+  "fetch_note": "a MEDLINE record can be revised after reading; the md5 dates the bytes read, not the claims",
+  "records": [
+   {
+    "pmid": "8622814",
+    "cite_in_text": "Berridge 1996",
+    "citation": "Berridge KC. Food reward: brain substrates of wanting and liking. Neuroscience and Biobehavioral Reviews 20(1):1-25, 1996. doi:10.1016/0149-7634(95)00033-b",
+    "type": "Journal Article; Review",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8622814/",
+    "title_read": "Food reward: brain substrates of wanting and liking.",
+    "claims_read": "the abstract argues that reward contains distinguishable components, liking (pleasure, palatability) and wanting (appetite, incentive motivation), which can be manipulated and measured separately and have separable neural substrates (liking: opioid and GABA/benzodiazepine systems, ventral pallidum, brainstem gustatory relays; wanting: mesotelencephalic dopamine, divisions of nucleus accumbens and amygdala); and that both can exist without subjective awareness, so subjective report can misjudge the underlying process",
+    "used_in_text": true
+   },
+   {
+    "pmid": "9858756",
+    "cite_in_text": "Berridge and Robinson 1998",
+    "citation": "Berridge KC, Robinson TE. What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience? Brain Research Reviews 28(3):309-369, 1998. doi:10.1016/s0165-0173(98)00019-8",
+    "type": "Journal Article; Review (with a new study)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9858756/",
+    "title_read": "What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience?",
+    "claims_read": "rats depleted of dopamine in nucleus accumbens and neostriatum by up to 99% showed normal hedonic taste-reactivity patterns to sucrose against quinine, normal learning of new hedonic values and normal benzodiazepine enhancement of palatability; the authors conclude that dopamine mediates incentive salience, separable from hedonia and from reward learning",
+    "verbatim_phrase": "dopamine systems are necessary for 'wanting' incentives, but not for 'liking' them",
+    "used_in_text": true
+   },
+   {
+    "pmid": "25950633",
+    "cite_in_text": null,
+    "citation": "Berridge KC, Kringelbach ML. Pleasure systems in the brain. Neuron 86(3):646-664, 2015. doi:10.1016/j.neuron.2015.02.018",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25950633/",
+    "claims_read": "liking is generated by a small set of hedonic hot spots in limbic circuitry, wanting by a larger distributed system; the mesolimbic dopamine system may not generate pleasure",
+    "used_in_text": false
+   },
+   {
+    "pmid": "19162544",
+    "cite_in_text": null,
+    "citation": "Berridge KC, Robinson TE, Aldridge JW. Dissecting components of reward: 'liking', 'wanting', and learning. Current Opinion in Pharmacology 9(1):65-73, 2009. doi:10.1016/j.coph.2008.12.014",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19162544/",
+    "claims_read": "three dissociable components of reward: liking (hedonic impact), wanting (incentive salience), learning",
+    "used_in_text": false
+   },
+   {
+    "pmid": "19336238",
+    "cite_in_text": null,
+    "citation": "Berridge KC. 'Liking' and 'wanting' food rewards: brain substrates and roles in eating disorders. Physiology and Behavior 97(5):537-550, 2009. doi:10.1016/j.physbeh.2009.02.044",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19336238/",
+    "claims_read": "hedonic hotspots in nucleus accumbens and ventral pallidum for opioid amplification of sensory pleasure; wanting systems extend beyond them",
+    "used_in_text": false
+   }
+  ],
+  "verdict": "CHECKED. The dissociation L8 recalled is in the sources as recalled: liking and wanting are separable components of reward with separable substrates (1996), and dopamine is needed for wanting but not for liking (1998). Used in one variant only, neuroscience-positive-states, and only for the separability; its dopamine claim is left out of the text (see found, F1).",
+  "used_in": [
+   "neuroscience-positive-states"
+  ]
+ },
+ "found": [
+  {
+   "id": "F1",
+   "where": "neuroscience-positive-states#long",
+   "spans": [
+    "Dopamine encodes reward-prediction error",
+    "the felt \"positive\" is largely the experienced narrowing of a lack"
+   ],
+   "finding": "the long ties the felt positive to dopamine's difference signal, and Berridge and Robinson 1998 conclude that dopamine is needed for wanting a reward but not for liking it. The variant cites only the separability, so it does not contradict the long on screen; the long's sentence is a served-text question for a later declared pin. Logged, not repaired: no corpus byte."
+  },
+  {
+   "id": "F2",
+   "where": "neuroscience-positive-states#long",
+   "spans": [
+    "We are motivated, not satisfied"
+   ],
+   "finding": "the library's own long already says, in its words, what account [3] says in his (\"We were not designed to be satisfied, but motivated\"); R0290's note that two longs run his mechanism locally holds at this sentence too"
+  },
+  {
+   "id": "F3",
+   "where": "his_accounts_verbatim",
+   "finding": "all ten accounts were read at their user turns (L8 87cc1d8f, vault_V2 038df8e5): each turn's text has the turn_md5 canon gives, sits at the line canon names, and contains the verbatim"
+  }
+ ],
+ "pulls_for_gate2": [
+  "The razor answer is built, not quoted. His accounts give the deprivation test, the parsimony move and the base state; the seat put them against the symmetric razor as: the account keeps both introspective reports and disputes the level (above neutral, or the deficit shrinking), and the deprivation test, not a preference between reports, places the base state among the bads. 'Neutral' and 'base state' are kept apart on purpose (his \"at least not bad\" and \"The base state is pain, not pleasure.\"). Read first on the three razor nodes.",
+  "The zero-sum lines (life-gift: a benefit conferred that way could relieve what it imposes but not exceed it; joy-outweighs-harms: the joy column cannot outgrow the other) follow from his \"0 sum game\" format and are stated on the account, beside his limit. Check they do not exceed \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\"",
+  "The node applications are the seat's, marked 'on the account' or 'on this reading': love answers loneliness, thrill seeking as a lack of stimulation, the uncreated lack no relief, the engineered being with nothing to relieve. Each extends a mechanism his words state; none is his sentence.",
+  "Berridge appears once, for the separability alone. The 1998 dopamine conclusion would have read as a correction of the long beside it (F1), and a variant states his view as an alternative, never as a correction.",
+  "masochist-counterexample leaves the exception open and names the test the account owes (the seeking should rise as stimulation falls), rather than claiming thrill seeking for the account; the self-harm figures are not touched."
+ ],
+ "not_moved": "the design and its measurement, the checker (schema, validator, control, README), the shapes pilot, V2b's and V5's redrafts, gate2's records; no corpus or served byte"
+}

@@ -1,0 +1,319 @@
+{
+ "meta": {
+  "source_corpus_md5": "7b6e65e531018fecb37baf2a4fedd6d1",
+  "source_corpus_objections_md5": "bcf722097441eb4926e0e443ee925a64",
+  "source_canon": {
+   "file": "project_canon_v38_53.json",
+   "md5": "4bc14ae1a5fc6103df820900642f9728"
+  },
+  "variant_coverage": "7/82",
+  "state": "DRAFTED, NOT JUDGED (V7, seat l, 2026-10-04); gate2 judges it next (K258), then his word",
+  "record": "response_variants/relief_variants_record_v0_1.json"
+ },
+ "variants": [
+  {
+   "variant_id": "life-gift/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "the positives are therefore illusory, is one this corpus refuses on pain of incoherence"
+   },
+   "text": "The library's author reads the goods of a life another way, and the reading begins with an asymmetry of reliability. Remove food, water and company, and suffering follows in nearly everyone: \"99% of people will not experience pleasure in such a circumstance.\" No arrangement of conditions guarantees pleasure that way. From the fewest assumptions the author infers that going from hungry to full is \"a transition from a known bad state to a state that is at least not bad\", and that nothing in the evidence calls for a positive state beyond it. The account comes near the conclusion the library refuses here, but by another road. It does not infer falsehood from an evolutionary cause, and it does not run the razor that would dissolve the badness of suffering along with felt value. The introspection that reports hunger as bad also reports eating as good, and the account keeps both reports: eating does feel good. It asks whether that good stands above neutral or is the hunger shrinking, and the deprivation test places the base state among the bads. On this reading the goods a life holds out are reliefs of lacks the life itself brings, the \"0 sum game\" the author sees beneath the argument: a benefit conferred that way could relieve what it imposes but not exceed it. The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library does not rest on it, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that an optimism bias inflates the estimate of life's goods and licenses discounting the rosy ledger, though not calling the gratitude false.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[4]",
+     "turn_md5": "61cea7813b9998589cd38f63deff7ed5"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[8]",
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "joy-outweighs-harms/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "it does not require the false claim that all pleasure is relief"
+   },
+   "text": "The library's author holds the claim this sentence calls false and sets aside, and the reason begins with an asymmetry of reliability. Take away food, water and company and nearly everyone suffers, while nothing guarantees pleasure that way. From the fewest assumptions the author reads each good as a deficit shrinking, in a creature built to move: \"We were not designed to be satisfied, but motivated\". Even the delights the library grants in full, the flow state, the aesthetic shock, the joy of discovery, are read as answers to restlessness, curiosity or longing, and the account asks for one that answers nothing. On this account the slogan's ledger weighs the harms against their own partial relief. Each entry in the joy column is an entry in the harm column made smaller, so the joy column cannot outgrow the other: the \"0 sum game\" the author sees in the argument. What matters then is the measure the author names: \"How much suffering is reduced? That's what matters to me primarily in most cases, almost entirely.\" The library grants commensurability and a positive sum and answers the slogan anyway, so it does not need the account, and it is not built to mirror its author: \"The library is not meant to be an absolute mirror of my personal beliefs, necessarily.\" The author gives the reason it does not rest on the account: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that part of what is logged as joy is the suspension of want, a return to baseline that inflates the apparent surplus.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[1]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[2]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[3]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "love-beauty-art/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "Beauty is a real good, not demoted by having a neural substrate"
+   },
+   "text": "The account does not demote beauty for having a neural substrate, and it does not argue from origin to worth. It asks a different question: what state do love, beauty and art answer? It begins with an asymmetry of reliability. Take away food, water and company and suffering follows in nearly everyone, while nothing guarantees pleasure that way. And every good the library's author can point to grows out of a prior lack: \"When you've gone without personal connection for days, you can get lonely.\" On the account, love answers loneliness and beauty and art answer a restless or longing mind, since \"A purely neutral state wouldn't want or long for anything.\" Love is then among the deepest reliefs a person can have, and the relief is real; what the account doubts is that it rises above neutral rather than lifting a deficit toward it. It does not call love counterfeit. It calls love relief, and it names what would change the author's mind: \"If you could show an example of a human being in a default state of happiness or love or joy or satiety, then you would convince me more on the argument, but I don't see that existing anywhere practically speaking.\" The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library concedes the goods completely and does not rest on the account, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that these goods are bounded, ending in loss and fading, while holding that a finite good is still a good.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[3]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "masochist-counterexample/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "has a genuine appetitive, arousal-driven component; it is not reducible to escape"
+   },
+   "text": "The library runs the relief mechanism through every figure here but one, and the library's author would not grant the exception untested. The account begins with an asymmetry of reliability: take away food, water and company and suffering follows in nearly everyone, while nothing guarantees pleasure that way. Its further inference is that every good grows out of a prior lack, and restlessness is a lack: \"When you sit long enough, you get uncomfortable and need to move.\" On this reading the thrill seeker's appetite for arousal is a lack of stimulation pressing for relief, and the rush is the relief. The author's question for any proposed exception is \"where are the exceptions that do not fall under the deficit to relief equation?\" The rejoinder the library meets for its other figures binds the account too: a deficit posited after the fact explains nothing. The author accepts that burden, that the deficit must be found each time: \"I believe it's doable though, just not convenient.\" So the account owes the same test: the seeking should rise as stimulation falls and recede when stimulation is met. Until that is shown for thrill seeking, the exception stays open. The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library does not rest on it, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that most apparent pleasure from pain is relief from a greater pain, and holds out thrill seeking alone as more than escape.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[3]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[8]",
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "bradley-no-subject/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "positive states are real and genuinely valued by those who have them"
+   },
+   "text": "The account does not doubt that these states are genuinely valued; it disputes what they are. It begins with an asymmetry of reliability: take away food, water and company and suffering follows in nearly everyone, while no arrangement guarantees pleasure. From the fewest assumptions it reads each valued state as a deficit shrinking: going from hungry to full is \"a transition from a known bad state to a state that is at least not bad\". Relief is what the library's author values most: \"How much suffering is reduced? That's what matters to me primarily in most cases, almost entirely.\" The library holds realism in both signs because the razor that would dissolve positive value dissolves the badness of suffering with it: the introspection that reports hunger as bad also reports eating as good. The account does not run that razor. It keeps both reports and asks whether the good one stands above neutral or is the bad one shrinking, and the deprivation test, not a preference between reports, places the base state among the bads. On the account the uncreated lack no relief, since they carry no deficit to relieve. The library's case here rests on the structural facts of imposition, and the author grants that \"it works regardless of what I believe here.\" The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library does not rest on it, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that its case does not depend on what the goods are, since it rests on the structural facts of their imposition.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[2]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[4]",
+     "turn_md5": "61cea7813b9998589cd38f63deff7ed5"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[7]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "hedonic-contrast/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "but it would still experience positive states"
+   },
+   "text": "The library's author doubts that the engineered being would feel what the library expects, and the doubt begins with an asymmetry of reliability. Take away food, water and company and suffering follows in nearly everyone; no one can arrange conditions under which pleasure follows that reliably. Every good the author can point to grows from a prior lack, and \"A purely neutral state wouldn't want or long for anything.\" A being built without deficits would have nothing to relieve, and on the relief account nothing to feel as good. The rescue the library describes is the account's model for every pleasure: being pulled from the water feels good because the drowning came first. So the account asks for the case the engineered being would supply: \"If you could show an example of a human being in a default state of happiness or love or joy or satiety, then you would convince me more on the argument, but I don't see that existing anywhere practically speaking.\" Dessert after a full meal is the everyday candidate. The author thinks the taste \"does dwindle\", grants that another person's report of it cannot be checked, and says so: \"I admit the gap.\" Nor does a harder test count against the engineered being: \"Does something being harder to achieve and demonstrate make it wrong or impossible? No\". The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library does not rest on it, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that pleasure is felt more intensely after suffering and that prolonged pleasure habituates toward a neutral baseline.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[8]",
+     "turn_md5": "728eacfe3c84a830a26e93e4d9a35c14"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  },
+  {
+   "variant_id": "neuroscience-positive-states/relief-account",
+   "type": "relief-account",
+   "varies": {
+    "locus": "long",
+    "anchor": "positive states are real, and they are genuinely valued by the subject who has them"
+   },
+   "text": "The account does not doubt that these states are felt and valued, and it goes one step past the deflation the library allows: the library relocates the occasion of a positive, and the account relocates its level. It begins with an asymmetry of reliability: take away food, water and company and suffering follows in nearly everyone, while nothing guarantees pleasure that way. It grants the circuitry, as the library does, and reads it in the words of the library's author: \"Yes, neuroscience says these states exist (chemically speaking), but they don't translate as that consciously speaking.\" It does not tell anyone that their pleasure is not pleasure; it says what the pleasure is the pleasure of. Nor does it run the razor the library refuses. The introspection that reports hunger as bad also reports eating as good, and the account keeps both, asking whether the good stands above neutral or is the hunger shrinking; the deprivation test places the base state among the bads. The neuroscience it must meet is Berridge's evidence that liking a reward and wanting it are separable, with separable brain substrates (Berridge 1996; Berridge and Robinson 1998). The author replies one stage further back: \"What is the state before liking? Disliking, longing, unfulfilled emotional deficit of some kind.\" Liking apart from wanting is not yet liking apart from a deficit. The author holds the account with limits: \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\" The library does not rest on it, for the author's own reason: \"It requires more premises that the objector is more likely to reject, though, it does not completely defeat them.\" Both sides stop, open, at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+   "residual": {
+    "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+    "concedes": {
+     "library": "The library concedes that the goods of a life are deficit-occasioned and leaves open whether suffering is the only motive force.",
+     "account": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\""
+    },
+    "status": "open"
+   },
+   "account_sources": [
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[0]",
+     "turn_md5": "1c3d23785b363272ee12d6eafbf56342"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[3]",
+     "turn_md5": "c7692763fa1f1ac503908f079e277530"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[5]",
+     "turn_md5": "00b7dda99e83710ebcd568f9c12375d7"
+    },
+    {
+     "canon": "adversarial_map.relief_view_for_the_variant.his_accounts_verbatim[9]",
+     "turn_md5": "83e32a25c4ca95260519240a703fa8db"
+    }
+   ],
+   "provenance": {
+    "phase": "V",
+    "date": "2026-10-04",
+    "seat": "l (V7, Code)"
+   }
+  }
+ ]
+}

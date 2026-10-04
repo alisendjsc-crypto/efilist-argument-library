@@ -14,6 +14,10 @@ Per-release artifact integrity is canon-anchored in `archive_attestation.release
 
 ---
 
+## The first alternative answers, drafted — 2026-10-04 (no release; the pin stands)
+
+The first set of alternative answers is drafted, one on each of the seven objections where the library's reply and Josiah's own view of pleasure part ways. Each starts from the observation that view rests on: take away food, water and company and nearly everyone suffers, while nothing guarantees pleasure that way. From there it gives the reading that pleasure is the easing of a prior lack, meets the strongest objection to it, says in Josiah's own words how firmly the view is held and why the library does not rest on it, and ends where both sides stop. Josiah's words appear only as exact quotations, each checked against the project record and against the conversation where it was said. One line of research the drafts cite, on liking and wanting as separable parts of reward, was checked at its source first. A seat that did not draft them judges them next; nothing reaches the site until Josiah rules. Canon v38.54 records the draft. No served page changed.
+
 ## The checker for alternative answers — 2026-10-04 (no release; the pin stands)
 
 Josiah adopted all eight recommendations of the design for "another answer". The checker it called for is built, in a new folder beside the argument shapes: a description of what each alternative answer must contain, a program that tests every rule the design listed, and a record showing that each rule catches the fault it is meant to catch. An alternative answer must name the one sentence of the library's longest reply it differs from, carry the point where the two answers stop agreeing, cite Josiah's own words from the project record, and claim no win. It is also held to his safety bar, using the same word lists as the earlier safety pass. No alternative answer is written yet; the next session drafts the first set, on seven objections. Canon v38.53 records his word and the build. No served page changed.

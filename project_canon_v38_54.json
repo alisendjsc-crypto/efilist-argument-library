@@ -1,7 +1,7 @@
 {
-  "canon_version": "38.53",
+  "canon_version": "38.54",
   "last_updated": "2026-09-26",
-  "last_updated_by_session": "V6",
+  "last_updated_by_session": "V7",
   "project": {
     "name": "efilist_argument_library port",
     "domain": "antinatalism objection taxonomy",
@@ -1668,7 +1668,7 @@
     ]
   },
   "next_recommended_session": {
-    "session": "The pin is v4.1.5. V6 recorded his word on R0316 (RV-1..RV-8 adopted as leaned) and built response_variants/ on V1's pattern (schema, validator, --self-test control). Next, in order: (1) V7, seat l at max: the relief variant on the seven nodes (RV-7) from relief_view_for_the_variant, his accounts quoted verbatim, the measured anchors, a builder with --check, validator PASS 0, Berridge checked before any text uses it; (2) gate2's next round: the relief variant and the golden rule's third pass (R0317), drafter != judge; (3) his word; (4) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3; the responseVariants render, RV-4, drawn by the design lane). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
+    "session": "The pin is v4.1.5. V7 drafted the relief variant: one relief-account variant on each of the seven pleasure-fork nodes (RV-7), from relief_view_for_the_variant, his accounts quoted verbatim and read at their user turns, the measured anchors, validator PASS 0, Berridge checked at the source; drafted, not judged (adversarial_map.relief_variants_pilot_V7). Next, in order: (1) gate2's round, drafter != judge (K258): the relief variant and the golden rule's third pass (R0317, RD-03); (2) his word; (3) the next declared pin session (safety_queue_L7, pin_queue_additions_R0292, the served-text repairs carried since L1 and LD3, the dopamine sentence V7 logged; the responseVariants render, RV-4, drawn by the design lane). V4 takes the one (a) after the successor map's pin; the (d)s enter the map at its next validator bump (many-peaks, heroism and soul-making now; the golden rule once gate2 accepts it); the (c) goes to the intake, love-from-the-void first, and the R-V6 self-objection batch (r_v6_adopted_V2b) follows the pilot's judgment.",
     "why": "Unchanged by this session and now the ONLY thing standing between the map and its (a) surface. K354 closed the last flagship-side mechanism item canon was carrying, so nothing mechanical is in front of the rulings any more.",
     "scope": "A ruling, not a build. If a build session is wanted instead, the two clean no-pin candidates are the regen-queue gap (10 adjudicated (b) entries from R, F and G that build_queue.py structurally cannot reach) and the five wings' navs.",
     "do_not": "Ship (a) or (b) cards before their ruling. Flip responseLevel's default. Assume a count taken over free text. Trust a CSS text scan to tell you what a browser renders.",
@@ -1928,6 +1928,15 @@
         "record_notes_V6"
       ],
       "canon_writer_next": "seat l (V7), then gate2 (its next round)"
+    },
+    "V7_closed": {
+      "state": "DRAFTED, NOT JUDGED (the relief variant pilot, seven nodes)",
+      "blocks": [
+        "relief_variants_pilot_V7",
+        "berridge_check_V7",
+        "record_notes_V7"
+      ],
+      "canon_writer_next": "gate2 (its next round), then seat l"
     }
   },
   "open_questions": {
@@ -2059,7 +2068,7 @@
     ],
     "reverts_or_revisions_to_protocol": "None as of 13.1"
   },
-  "canon_version_marker": "v38.53",
+  "canon_version_marker": "v38.54",
   "canon_version_history_tail": {
     "compaction_at": "v33.0",
     "preserved_entries": [
@@ -2772,7 +2781,8 @@
     "v38_50_V2b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V2b, r_v6_adopted_V2b, private_statements_V2, shapes_redrafts_V2b, record_notes_V2b; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_51_V3b": "MINOR. keyset UNCHANGED at 42. adversarial_map gains shapes_redrafts_judgment_gate2; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
     "v38_52_V5": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V5, shapes_redrafts_V5, response_variants_design_V5, record_notes_V5; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
-    "v38_53_V6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V6, response_variants_rulings_V6, response_variants_build_V6, record_notes_V6; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
+    "v38_53_V6": "MINOR. keyset UNCHANGED at 42. adversarial_map gains his_words_V6, response_variants_rulings_V6, response_variants_build_V6, record_notes_V6; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin.",
+    "v38_54_V7": "MINOR. keyset UNCHANGED at 42. adversarial_map gains relief_variants_pilot_V7, berridge_check_V7, record_notes_V7; next_recommended_session re-pointed; canon-meta; this note; one session_log_recent append. Served: nothing; no pin."
   },
   "arc_compacted_session_log_pre_v33": {
     "compacted_at_canon_version": "33.0",
@@ -3035,7 +3045,8 @@
     "V2b (seat l, 2026-10-03): his words on R0298 and R0308 recorded verbatim from the user turns; his private statements by md5 only; R0288 F5's four candidates adopted into the R-V6 batch; gate2's two AMENDs redrafted in a new file (the golden rule restates Hare's weighed duty; soul-making carried as (d) at HR-02), validator PASS 0, for gate2's round two. No pin.",
     "V3b (gate2, 2026-10-04): V2b's two redrafts judged (R0311): soul-making ACCEPT as (d) at HR-02; the golden rule AMEND, because its total is stated as the duty's trigger, which his L3 reading meets at joy-outweighs-harms, and without Hare's halt; Hare 1975 to be added to its attestation. Round one's Hare source read corrected forward. No pin.",
     "V5 (seat l, 2026-10-04): his word on R0314 recorded verbatim from the user turn (gate2's three asks adopted); the golden rule's third pass drafted in a new file (Hare's total as a limit, the shares held, the halt; Hare 1975 added; route unchanged after reading the premise-sharers), validator PASS 0, for gate2's next round; the responseVariants design drafted with eight rulings and leans for his word; the pleasure fork measured at seven nodes. No pin.",
-    "V6 (seat l, 2026-10-04): his word on R0316 recorded verbatim from the user turn (RV-1..RV-8 adopted as leaned); response_variants/ built on V1's pattern: the schema (one closed type, relief-account, its label copied from canon), the validator (RV-6's 19 checks; EXIT and WIDE imported at their md5) and its self-test control (72 of 72, every check RED by a mutation, the seven measured anchors as a real-data control). No pin."
+    "V6 (seat l, 2026-10-04): his word on R0316 recorded verbatim from the user turn (RV-1..RV-8 adopted as leaned); response_variants/ built on V1's pattern: the schema (one closed type, relief-account, its label copied from canon), the validator (RV-6's 19 checks; EXIT and WIDE imported at their md5) and its self-test control (72 of 72, every check RED by a mutation, the seven measured anchors as a real-data control). No pin.",
+    "V7 (seat l, 2026-10-04): the relief variant drafted on the seven fork nodes (RV-7) in response_variants/ (staging, 268-296 words each, his words only as quotation and read at their user turns); validator PASS 0; the builder's quote check and five controls; Berridge checked at the source (MEDLINE) and cited for the separability alone. Drafted, not judged. No pin."
   ],
   "arc_compacted_legacy_cascade_index": {
     "block_kind": "arc_compacted_legacy_cascade_index",
@@ -12829,6 +12840,395 @@
           "md5": "50c51d7419d673ca05b9ca8ee76bdb12",
           "bytes": 9618,
           "was": "90eb5e1688ca0200b859a0d4ab11f9d2"
+        }
+      }
+    ],
+    "relief_variants_pilot_V7": {
+      "state": "DRAFTED, NOT JUDGED. gate2 judges it in its next round with RD-03 (R0317), drafter != judge (K258); his word decides; the render waits for a declared pin, drawn by the design lane (RV-4); the game leaves it out (RV-5). Staging only: not in the corpus, not served.",
+      "kickoff": {
+        "relay": "R0319",
+        "md5": "bc1272c9aa8e2e5e82492673fdd7e94b",
+        "read_at_the_index": true
+      },
+      "files": {
+        "staging": {
+          "file": "response_variants/relief_variants_pilot_v0_1.json",
+          "md5": "1d5e8f1c65a387da495dba91edbee9e8",
+          "bytes": 23704
+        },
+        "record": {
+          "file": "response_variants/relief_variants_record_v0_1.json",
+          "md5": "1d8556443af14f95bff9e906f2a67037",
+          "bytes": 28443
+        },
+        "builder": {
+          "file": "response_variants/build_relief_variants.py",
+          "md5": "c5f02c47f1daf965f2dbd29bfa9aec9a",
+          "bytes": 46870
+        }
+      },
+      "type": "relief-account",
+      "label_rendered_by_the_page": "Another answer, not the library's chosen line: the author's relief account",
+      "variant_coverage": "7/82",
+      "pins": {
+        "corpus": "7b6e65e531018fecb37baf2a4fedd6d1",
+        "canon": {
+          "file": "project_canon_v38_53.json",
+          "md5": "4bc14ae1a5fc6103df820900642f9728"
+        },
+        "objections_digest": "bcf722097441eb4926e0e443ee925a64"
+      },
+      "variants": [
+        {
+          "variant_id": "life-gift/relief-account",
+          "tier": 1,
+          "anchor": "the positives are therefore illusory, is one this corpus refuses on pain of incoherence",
+          "razor_node": true,
+          "text_words": 293,
+          "text_md5": "ffb5989d11bda91476770e4e925afdcd",
+          "accounts_quoted": [
+            0,
+            4,
+            5,
+            8,
+            9
+          ],
+          "his_words_in_text": 65
+        },
+        {
+          "variant_id": "joy-outweighs-harms/relief-account",
+          "tier": 2,
+          "anchor": "it does not require the false claim that all pleasure is relief",
+          "razor_node": false,
+          "text_words": 290,
+          "text_md5": "b4c9b164e4d2009ddac8e3bb2a21aff7",
+          "accounts_quoted": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            9
+          ],
+          "his_words_in_text": 78
+        },
+        {
+          "variant_id": "love-beauty-art/relief-account",
+          "tier": 2,
+          "anchor": "Beauty is a real good, not demoted by having a neural substrate",
+          "razor_node": false,
+          "text_words": 282,
+          "text_md5": "9d0b1826e469cff75eb34f62ecd15508",
+          "accounts_quoted": [
+            0,
+            3,
+            5,
+            9
+          ],
+          "his_words_in_text": 97
+        },
+        {
+          "variant_id": "masochist-counterexample/relief-account",
+          "tier": 2,
+          "anchor": "has a genuine appetitive, arousal-driven component; it is not reducible to escape",
+          "razor_node": false,
+          "text_words": 268,
+          "text_md5": "2c035de87b52b226e8eae6da0dbfe409",
+          "accounts_quoted": [
+            0,
+            3,
+            5,
+            8,
+            9
+          ],
+          "his_words_in_text": 69
+        },
+        {
+          "variant_id": "bradley-no-subject/relief-account",
+          "tier": 4,
+          "anchor": "positive states are real and genuinely valued by those who have them",
+          "razor_node": true,
+          "text_words": 286,
+          "text_md5": "bfb9b9789417185c5f6ee2c1cabf2e0e",
+          "accounts_quoted": [
+            0,
+            2,
+            4,
+            5,
+            7,
+            9
+          ],
+          "his_words_in_text": 75
+        },
+        {
+          "variant_id": "hedonic-contrast/relief-account",
+          "tier": 4,
+          "anchor": "but it would still experience positive states",
+          "razor_node": false,
+          "text_words": 294,
+          "text_md5": "f95d2fb45514fb1ca681e083d77dcdc1",
+          "accounts_quoted": [
+            0,
+            5,
+            8,
+            9
+          ],
+          "his_words_in_text": 105
+        },
+        {
+          "variant_id": "neuroscience-positive-states/relief-account",
+          "tier": 4,
+          "anchor": "positive states are real, and they are genuinely valued by the subject who has them",
+          "razor_node": true,
+          "text_words": 296,
+          "text_md5": "5dfee76b6ff57bdcead9590eccb0a8b1",
+          "accounts_quoted": [
+            0,
+            3,
+            5,
+            9
+          ],
+          "his_words_in_text": 65
+        }
+      ],
+      "words": {
+        "band": [
+          120,
+          300
+        ],
+        "min": 268,
+        "max": 296,
+        "total": 2009
+      },
+      "how_drafted": "each variant leads with the asymmetry of reliability his deprivation test establishes, gives the relief thesis as his further inference, meets its node's sentence (the symmetric razor head on at the three razor nodes), states the account at his strength (account [9]) and his reason the library does not rest on it (account [0]), and ends on canon's open residual. Attributed by role; the label is the type's; his words only as quotation.",
+      "residual": {
+        "canon_statement": "Where both sides stop, by his words and the seat's: whether a deficit's constant co-presence shows that every good is that deficit shrinking. Neither side claims proof; his words: \"I admit the gap\" and \"I concede that i reliability doesn't prove the point\". The variant states his view as an alternative the library chose not to rest on, never as a correction, and registers the disagreement as open.",
+        "clause_copied": "whether a deficit's constant co-presence shows that every good is that deficit shrinking",
+        "where_both_stop": "Both sides stop at whether a deficit's constant co-presence shows that every good is that deficit shrinking.",
+        "account_concedes": "The account concedes that its asymmetry of reliability does not prove the relief thesis and that the gap stays open: \"I admit the gap.\"",
+        "status": "open"
+      },
+      "validator_run": {
+        "verdict": "PASS",
+        "violation_count": 0,
+        "variants": 7,
+        "nodes_with_variants": 7,
+        "checks": [
+          "container-shape (1 ok / 0 fail)",
+          "meta-corpus-pin (1 ok / 0 fail)",
+          "meta-canon-pin (1 ok / 0 fail)",
+          "variant-keys (7 ok / 0 fail)",
+          "variant-id (7 ok / 0 fail)",
+          "type-closed (7 ok / 0 fail)",
+          "variant-cap (7 ok / 0 fail)",
+          "varies-locus (7 ok / 0 fail)",
+          "anchor-rule (7 ok / 0 fail)",
+          "text-band (7 ok / 0 fail)",
+          "text-ascii (7 ok / 0 fail)",
+          "residual (7 ok / 0 fail)",
+          "floor-no-win (7 ok / 0 fail)",
+          "floor-exit (7 ok / 0 fail)",
+          "floor-wide (7 ok / 0 fail)",
+          "floor-pro-life (7 ok / 0 fail)",
+          "account-sources (7 ok / 0 fail)",
+          "provenance (7 ok / 0 fail)",
+          "variant-coverage (1 ok / 0 fail)"
+        ]
+      },
+      "quote_check": {
+        "rule": "every double-quoted span in a variant's text and residual is an exact substring of an account its account_sources name, and every account named is quoted (the builder's quote-exact and sources-used; record_notes_V6 left this to V7's builder)",
+        "quotes": 44,
+        "accounts_quoted": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ],
+        "read_at_the_user_turns": {
+          "transcripts": {
+            "L8": "87cc1d8f-fbf4-44dc-981f-9b205c311dbf.jsonl",
+            "vault_V2": "038df8e5-141f-4cb5-babe-d1c4caa5aaed.jsonl"
+          },
+          "accounts_quoted": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "how": "each quoted account's turn is found by the md5 of its text among the human turns of the transcript canon names, at the line canon names, and must contain the verbatim; run at every build when the transcripts are present, never by --check; the bytes here do not depend on it"
+        }
+      },
+      "builder_checks": {
+        "quote-exact": "GREEN, 7 variants",
+        "sources-used": "GREEN, 7 variants",
+        "strength-and-reason": "GREEN, 7 variants",
+        "residual-copied": "GREEN, 7 variants",
+        "attribution-by-role": "GREEN, 7 variants",
+        "no-name": "GREEN, 7 variants",
+        "no-label": "GREEN, 7 variants",
+        "apostrophes": "GREEN, 7 variants",
+        "berridge-scope": "GREEN, 7 variants",
+        "concessions-sourced": "GREEN, 7 variants"
+      },
+      "controls": [
+        {
+          "case": "C0",
+          "mutation": "the unmutated draft",
+          "expect_red": [],
+          "ok": true
+        },
+        {
+          "case": "C1",
+          "mutation": "a quoted span changed by one character",
+          "expect_red": [
+            "quote-exact"
+          ],
+          "ok": true
+        },
+        {
+          "case": "C2",
+          "mutation": "an account named but never quoted",
+          "expect_red": [
+            "sources-used"
+          ],
+          "ok": true
+        },
+        {
+          "case": "C3",
+          "mutation": "one text drafted without his strength (and without account [9])",
+          "expect_red": [
+            "strength-and-reason"
+          ],
+          "ok": true
+        },
+        {
+          "case": "C4",
+          "mutation": "a name in one text",
+          "expect_red": [
+            "no-name"
+          ],
+          "ok": true
+        },
+        {
+          "case": "C5",
+          "mutation": "Berridge cited on a node the check does not allow",
+          "expect_red": [
+            "berridge-scope"
+          ],
+          "ok": true
+        }
+      ],
+      "run_at_this_build": {
+        "build_relief_variants --check": "GREEN: the staging file and record rebuilt byte for byte",
+        "response_variant_validator_v0_1 <staging>": "GREEN: PASS, 0 violations, 7 variants on 7 nodes, all 19 checks",
+        "response_variant_validator_v0_1 --self-test --check": "GREEN: the control record reproduced",
+        "response_variant_validator_v0_1 --embedded": "GREEN: PASS, 0 variants in the corpus (the pilot is staging only)"
+      },
+      "pulls_for_gate2": [
+        "The razor answer is built, not quoted. His accounts give the deprivation test, the parsimony move and the base state; the seat put them against the symmetric razor as: the account keeps both introspective reports and disputes the level (above neutral, or the deficit shrinking), and the deprivation test, not a preference between reports, places the base state among the bads. 'Neutral' and 'base state' are kept apart on purpose (his \"at least not bad\" and \"The base state is pain, not pleasure.\"). Read first on the three razor nodes.",
+        "The zero-sum lines (life-gift: a benefit conferred that way could relieve what it imposes but not exceed it; joy-outweighs-harms: the joy column cannot outgrow the other) follow from his \"0 sum game\" format and are stated on the account, beside his limit. Check they do not exceed \"a fragile pleasure or completely discounting all pleasure is hard to do. I won't do that.\"",
+        "The node applications are the seat's, marked 'on the account' or 'on this reading': love answers loneliness, thrill seeking as a lack of stimulation, the uncreated lack no relief, the engineered being with nothing to relieve. Each extends a mechanism his words state; none is his sentence.",
+        "Berridge appears once, for the separability alone. The 1998 dopamine conclusion would have read as a correction of the long beside it (F1), and a variant states his view as an alternative, never as a correction.",
+        "masochist-counterexample leaves the exception open and names the test the account owes (the seeking should rise as stimulation falls), rather than claiming thrill seeking for the account; the self-harm figures are not touched."
+      ],
+      "not_moved": "the design and its measurement, the checker (schema, validator, control, README), the shapes pilot, V2b's and V5's redrafts, gate2's records; no corpus or served byte"
+    },
+    "berridge_check_V7": {
+      "why": "L8 cited Berridge's liking/wanting dissociation from memory (R0292's drafting note); R0319 order 2: check the source itself before any variant leans on it, and if it cannot be checked, the variants do not use it",
+      "read": "2026-10-04, through NCBI E-utilities (esearch, then efetch in MEDLINE format), because PubMed's web page serves a browser check to curl (V3b's finding)",
+      "search": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=40&term=Berridge+KC%5BAuthor%5D+AND+%28liking%5BTitle%2FAbstract%5D+AND+wanting%5BTitle%2FAbstract%5D%29&sort=pub_date",
+      "search_count_at_read": 44,
+      "fetch": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=9858756,8622814,25950633,19162544,19336238&rettype=medline&retmode=text",
+      "fetch_md5_at_read": "d05b5a784457043e3a8f20220f450562",
+      "fetch_note": "a MEDLINE record can be revised after reading; the md5 dates the bytes read, not the claims",
+      "records": [
+        {
+          "pmid": "8622814",
+          "cite_in_text": "Berridge 1996",
+          "citation": "Berridge KC. Food reward: brain substrates of wanting and liking. Neuroscience and Biobehavioral Reviews 20(1):1-25, 1996. doi:10.1016/0149-7634(95)00033-b",
+          "type": "Journal Article; Review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8622814/",
+          "title_read": "Food reward: brain substrates of wanting and liking.",
+          "claims_read": "the abstract argues that reward contains distinguishable components, liking (pleasure, palatability) and wanting (appetite, incentive motivation), which can be manipulated and measured separately and have separable neural substrates (liking: opioid and GABA/benzodiazepine systems, ventral pallidum, brainstem gustatory relays; wanting: mesotelencephalic dopamine, divisions of nucleus accumbens and amygdala); and that both can exist without subjective awareness, so subjective report can misjudge the underlying process",
+          "used_in_text": true
+        },
+        {
+          "pmid": "9858756",
+          "cite_in_text": "Berridge and Robinson 1998",
+          "citation": "Berridge KC, Robinson TE. What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience? Brain Research Reviews 28(3):309-369, 1998. doi:10.1016/s0165-0173(98)00019-8",
+          "type": "Journal Article; Review (with a new study)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9858756/",
+          "title_read": "What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience?",
+          "claims_read": "rats depleted of dopamine in nucleus accumbens and neostriatum by up to 99% showed normal hedonic taste-reactivity patterns to sucrose against quinine, normal learning of new hedonic values and normal benzodiazepine enhancement of palatability; the authors conclude that dopamine mediates incentive salience, separable from hedonia and from reward learning",
+          "verbatim_phrase": "dopamine systems are necessary for 'wanting' incentives, but not for 'liking' them",
+          "used_in_text": true
+        },
+        {
+          "pmid": "25950633",
+          "cite_in_text": null,
+          "citation": "Berridge KC, Kringelbach ML. Pleasure systems in the brain. Neuron 86(3):646-664, 2015. doi:10.1016/j.neuron.2015.02.018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25950633/",
+          "claims_read": "liking is generated by a small set of hedonic hot spots in limbic circuitry, wanting by a larger distributed system; the mesolimbic dopamine system may not generate pleasure",
+          "used_in_text": false
+        },
+        {
+          "pmid": "19162544",
+          "cite_in_text": null,
+          "citation": "Berridge KC, Robinson TE, Aldridge JW. Dissecting components of reward: 'liking', 'wanting', and learning. Current Opinion in Pharmacology 9(1):65-73, 2009. doi:10.1016/j.coph.2008.12.014",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19162544/",
+          "claims_read": "three dissociable components of reward: liking (hedonic impact), wanting (incentive salience), learning",
+          "used_in_text": false
+        },
+        {
+          "pmid": "19336238",
+          "cite_in_text": null,
+          "citation": "Berridge KC. 'Liking' and 'wanting' food rewards: brain substrates and roles in eating disorders. Physiology and Behavior 97(5):537-550, 2009. doi:10.1016/j.physbeh.2009.02.044",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19336238/",
+          "claims_read": "hedonic hotspots in nucleus accumbens and ventral pallidum for opioid amplification of sensory pleasure; wanting systems extend beyond them",
+          "used_in_text": false
+        }
+      ],
+      "verdict": "CHECKED. The dissociation L8 recalled is in the sources as recalled: liking and wanting are separable components of reward with separable substrates (1996), and dopamine is needed for wanting but not for liking (1998). Used in one variant only, neuroscience-positive-states, and only for the separability; its dopamine claim is left out of the text (see found, F1).",
+      "used_in": [
+        "neuroscience-positive-states"
+      ],
+      "copied_from": "response_variants/relief_variants_record_v0_1.json at 1d8556443af14f95bff9e906f2a67037"
+    },
+    "record_notes_V7": [
+      {
+        "statement": "neuroscience-positive-states#long: \"Dopamine encodes reward-prediction error\" ... the felt positive \"is largely the experienced narrowing of a lack\"",
+        "measured": "the long ties the felt positive to dopamine's difference signal, and Berridge and Robinson 1998 conclude that dopamine is needed for wanting a reward but not for liking it. The variant cites only the separability, so it does not contradict the long on screen; the long's sentence is a served-text question for a later declared pin. Logged, not repaired: no corpus byte."
+      },
+      {
+        "statement": "R0290: two longs already run his mechanism locally",
+        "measured": "the library's own long already says, in its words, what account [3] says in his (\"We were not designed to be satisfied, but motivated\"); R0290's note that two longs run his mechanism locally holds at this sentence too"
+      },
+      {
+        "statement": "relief_view_for_the_variant: his ten accounts, verbatim, each with its turn md5",
+        "measured": "all ten accounts were read at their user turns (L8 87cc1d8f, vault_V2 038df8e5): each turn's text has the turn_md5 canon gives, sits at the line canon names, and contains the verbatim"
+      },
+      {
+        "statement": "response_variants_build_V6 coverage: the pilot's seven nodes live in V7's builder",
+        "measured": "the builder reads the seven and their anchors from the design's measurement record at its md5 and asserts them equal to nodes_RV_7; none is typed"
+      },
+      {
+        "statement": "record_notes_V6 pins r1_collision_list_l7_v0_1.json at 50c51d7419d673ca05b9ca8ee76bdb12",
+        "measured": "the record names the canon file present, so this bump moved it by exactly one line, its 'canon' field (v38_53 to v38_54); regenerated by the tool's own --write",
+        "record": {
+          "file": "adversarial_map_staging/r1/r1_collision_list_l7_v0_1.json",
+          "md5": "4f1b6a71651c4845d941bbe3b68eccc1",
+          "bytes": 9618,
+          "was": "50c51d7419d673ca05b9ca8ee76bdb12"
         }
       }
     ]
